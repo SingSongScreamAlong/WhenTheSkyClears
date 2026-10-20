@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 # Game-space feet remain planted during stance. The stride advances from the
 # distance actually travelled, rather than a free-running animation clock.
+const Painted=preload("res://scripts/painted_child.gd")
 const PerformancePose=preload("res://scripts/child_performance.gd")
 var game
 var performance_pose
@@ -61,6 +62,7 @@ var cloth_drag=0.0
 var cloth_velocity=0.0
 var braid_drag=0.0
 var previous_horizontal=0.0
+var passing_lean=0.0
 
 func _ready():
 	performance_pose=PerformancePose.new(self)
@@ -123,6 +125,17 @@ func _process(dt):
 	cloth_velocity*=exp(-dt*10)
 	cloth_drag=clampf(cloth_drag+cloth_velocity*dt,-6,6)
 	braid_drag=lerpf(braid_drag,-body_lean*1.7+sin(anim_time*4.6)*.45,1-exp(-dt*5))
+	var lean_target=0.0
+	if game!=null and game.slice_active:
+		var other=game.boy if is_girl else game.player
+		if is_instance_valid(other):
+			var separation=position.x-other.position.x
+			if absf(separation)<38 and absf(position.y-other.position.y)<90:
+				var side=signf(separation) if absf(separation)>3 else (-1.0 if is_girl else 1.0)
+				lean_target=side*4.0*(1-absf(separation)/38.0)
+			# The lower child paints in front when their paths cross in the air.
+			z_index=3 if position.y>other.position.y+8 else (1 if position.y<other.position.y-8 else (3 if is_girl else 2))
+	passing_lean=lerpf(passing_lean,lean_target,1-exp(-dt*12))
 	performance_pose.update(dt)
 	queue_redraw()
 
@@ -288,6 +301,9 @@ func solve_knee(hip,foot,length_a=25.0,length_b=24.0,bend=1.0):
 	return hip+axis*along+Vector2(-axis.y,axis.x)*sqrt(maxf(0,length_a*length_a-along*along))*bend
 
 func tube(a,b,c,width_a,width_b,width_c,color,material="",depth=1.0):
+	if game!=null and game.slice_active:
+		Painted.limb(self,a,b,c,width_a,width_b,width_c,material,depth)
+		return
 	var n1=Vector2(-(b-a).y,(b-a).x).normalized(); var n2=Vector2(-(c-b).y,(c-b).x).normalized(); var middle=(n1+n2).normalized()
 	var shape=PackedVector2Array([a+n1*width_a,b+middle*width_b,c+n2*width_c,c-n2*width_c,b-middle*width_b,a-n1*width_a])
 	if Geometry2D.triangulate_polygon(shape).is_empty():
@@ -325,6 +341,9 @@ func painted_cloth(points,origin,end_y,region,tint):
 
 func boot(ankle,color,draw_facing=0.0):
 	var f=facing if draw_facing==0 else draw_facing
+	if game!=null and game.slice_active:
+		Painted.boot(self,ankle,f,.75 if color.r<.18 else 1.0)
+		return
 	var outline=PackedVector2Array([ankle+Vector2(-4.5*f,-8),ankle+Vector2(3.5*f,-8),ankle+Vector2(4*f,-4),ankle+Vector2(9*f,-3),ankle+Vector2(12*f,-1),ankle+Vector2(12*f,1.5),ankle+Vector2(6*f,2.5),ankle+Vector2(-5*f,2.5),ankle+Vector2(-5*f,-3)])
 	draw_colored_polygon(outline,color)
 	draw_polyline(PackedVector2Array([ankle+Vector2(-5*f,1),ankle+Vector2(6*f,1.5),ankle+Vector2(11*f,.5)]),Color(.37,.38,.31,.45),1,true)
@@ -332,6 +351,9 @@ func boot(ankle,color,draw_facing=0.0):
 	draw_line(ankle+Vector2(3*f,-4),ankle+Vector2(6*f,-2),Color(.43,.46,.41,.27),.8,true)
 
 func draw_hand(at,elbow,color,open_hand=false):
+	if game!=null and game.slice_active:
+		Painted.hand(self,at,elbow,.7 if color.r<.20 else 1.0)
+		return
 	var direction=(at-elbow).normalized()
 	var across=Vector2(-direction.y,direction.x)
 	var points=PackedVector2Array([at-direction*2.2-across*2.0,at+direction*3.0-across*1.9,at+direction*4.3-across*.5,at+direction*3.7+across*1.5,at+direction*.5+across*2.2,at-direction*1.8+across*1.7])
@@ -393,6 +415,7 @@ func _draw():
 			low_y=maxf(low_y,center.y-height);high_y=minf(high_y,center.y+height)
 		if low_y<=high_y:hip.y=clampf(hip.y,low_y,high_y)
 		else:hip=(centers[0]+centers[1])*.5
+	if polished:shoulder.x+=passing_lean;hip.x+=passing_lean*.25
 	if pair_contact!=null:shoulder.x+=signf(pair_contact.x-global_position.x)*4.5
 	var bleak=float(game.chapter)/4.0 if game!=null else 0
 	var ink=Color("141d20"); var far=Color("273237"); var cloth=Color("213436").lerp(Color("1b262d"),bleak)
@@ -442,38 +465,44 @@ func _draw():
 	var body_outline=PackedVector2Array(body)
 	var torso_fallback=polished and Geometry2D.triangulate_polygon(body_outline).is_empty()
 	if torso_fallback:body_outline=Geometry2D.convex_hull(body_outline)
-	draw_colored_polygon(body_outline,cloth)
-	painted_cloth(body,shoulder,hem,Rect2(638,260,96,246),Color(.50,.60,.56,.88).lerp(Color(.39,.51,.53,.88),bleak))
-	# Cloth seams and edge light move with the silhouette, rather than floating
-	# pasted body rectangles. The final anatomy is authored for these children.
-	draw_polyline(PackedVector2Array([shoulder+Vector2(-8,1),shoulder+Vector2(-10,10),hip+Vector2(-9,0),Vector2(-15+skirt_wind,hem-2)]),Color(edge,.30),1.3,true)
-	for i in range(3):
-		var x=-7+i*7
-		draw_line(Vector2(x,hip.y-2),Vector2(x*1.5+skirt_wind,hem-3),Color(.38,.45,.43,.11),.8,true)
-	if not is_girl:
-		var lapel=PackedVector2Array([shoulder+Vector2(-3,1),shoulder+Vector2(4,2),shoulder+Vector2(3,12),shoulder+Vector2(-1,8)])
-		draw_colored_polygon(lapel,Color(.36,.42,.38,.35))
-		draw_line(shoulder+Vector2(4,12),hip+Vector2(4,3),Color(edge,.23),1,true)
-		for i in range(3): draw_circle(shoulder+Vector2(5,11+i*7),.9,Color("7e8070"))
-		# Worn knee cloth and a small pocket keep the boy's coat distinct from
-		# his sister's long skirt without introducing a generic adult costume.
-		draw_colored_polygon(PackedVector2Array([hip+Vector2(-7,-5),hip+Vector2(-1,-5),hip+Vector2(-1,1),hip+Vector2(-6,2)]),Color(.14,.20,.21))
+	if polished:
+		Painted.coat(self,shoulder,hip,hem,skirt_wind,face)
+	else:
+		draw_colored_polygon(body_outline,cloth)
+		painted_cloth(body,shoulder,hem,Rect2(638,260,96,246),Color(.50,.60,.56,.88).lerp(Color(.39,.51,.53,.88),bleak))
+		# Cloth seams and edge light move with the silhouette, rather than floating
+		# pasted body rectangles. The final anatomy is authored for these children.
+		draw_polyline(PackedVector2Array([shoulder+Vector2(-8,1),shoulder+Vector2(-10,10),hip+Vector2(-9,0),Vector2(-15+skirt_wind,hem-2)]),Color(edge,.30),1.3,true)
+		for i in range(3):
+			var x=-7+i*7
+			draw_line(Vector2(x,hip.y-2),Vector2(x*1.5+skirt_wind,hem-3),Color(.38,.45,.43,.11),.8,true)
+		if not is_girl:
+			var lapel=PackedVector2Array([shoulder+Vector2(-3,1),shoulder+Vector2(4,2),shoulder+Vector2(3,12),shoulder+Vector2(-1,8)])
+			draw_colored_polygon(lapel,Color(.36,.42,.38,.35))
+			draw_line(shoulder+Vector2(4,12),hip+Vector2(4,3),Color(edge,.23),1,true)
+			for i in range(3): draw_circle(shoulder+Vector2(5,11+i*7),.9,Color("7e8070"))
+			# Worn knee cloth and a small pocket keep the boy's coat distinct from
+			# his sister's long skirt without introducing a generic adult costume.
+			draw_colored_polygon(PackedVector2Array([hip+Vector2(-7,-5),hip+Vector2(-1,-5),hip+Vector2(-1,1),hip+Vector2(-6,2)]),Color(.14,.20,.21))
 	var foot=feet[1]+sole_offset; var near_hip=hip+Vector2(2,0); var knee=legs[1]
 	tube(near_hip,knee,foot,5.6,4.5,3.1,ink,"" if is_girl else "trouser"); boot(foot,ink,face if not polished or not acting.is_empty() else gait_direction)
-	if is_girl:
-		# The dress is in front of the thighs and has a stable, sculpted hem.
-		var hem_shape=PackedVector2Array([hip+Vector2(-10,-4),hip+Vector2(10,-4),Vector2(16+skirt_wind,hem),Vector2(-17+skirt_wind,hem-1)])
-		draw_colored_polygon(hem_shape,cloth)
-		painted_cloth(hem_shape,hip+Vector2(0,-4),hem,Rect2(590,430,120,85),Color(.46,.57,.53,.87).lerp(Color(.35,.46,.49,.87),bleak))
-		draw_line(Vector2(-16+skirt_wind,hem-2),Vector2(15+skirt_wind,hem-1),Color(edge,.25),1,true)
-		draw_line(hip+Vector2(-9,-2),hip+Vector2(8,-2),Color(.44,.47,.40,.32),1.2,true)
-		var patch=Vector2(-8+skirt_wind*.7,hem-8)
-		draw_colored_polygon(PackedVector2Array([patch+Vector2(-3,-3),patch+Vector2(3,-2),patch+Vector2(2,4),patch+Vector2(-3,3)]),Color(.23,.30,.29,.7))
-		draw_line(patch+Vector2(-2,-2),patch+Vector2(-2,3),Color(.55,.56,.46,.25),.7,true)
+	if is_girl and polished:
+		Painted.coat(self,shoulder,hip,hem,skirt_wind,face,true)
+	else:
+		if is_girl:
+			# The dress is in front of the thighs and has a stable, sculpted hem.
+			var hem_shape=PackedVector2Array([hip+Vector2(-10,-4),hip+Vector2(10,-4),Vector2(16+skirt_wind,hem),Vector2(-17+skirt_wind,hem-1)])
+			draw_colored_polygon(hem_shape,cloth)
+			painted_cloth(hem_shape,hip+Vector2(0,-4),hem,Rect2(590,430,120,85),Color(.46,.57,.53,.87).lerp(Color(.35,.46,.49,.87),bleak))
+			draw_line(Vector2(-16+skirt_wind,hem-2),Vector2(15+skirt_wind,hem-1),Color(edge,.25),1,true)
+			draw_line(hip+Vector2(-9,-2),hip+Vector2(8,-2),Color(.44,.47,.40,.32),1.2,true)
+			var patch=Vector2(-8+skirt_wind*.7,hem-8)
+			draw_colored_polygon(PackedVector2Array([patch+Vector2(-3,-3),patch+Vector2(3,-2),patch+Vector2(2,4),patch+Vector2(-3,3)]),Color(.23,.30,.29,.7))
+			draw_line(patch+Vector2(-2,-2),patch+Vector2(-2,3),Color(.55,.56,.46,.25),.7,true)
 	draw_line(shoulder+Vector2(0,-2),head+Vector2(0,6),ink,7,true)
 	draw_set_transform(head*s,head_tilt,Vector2(s*head_facing,s))
 	var profile_tint=Color(.23,.29,.29).lerp(Color(.15,.23,.28),bleak)
-	if polished:profile_tint=Color(.61,.64,.57).lerp(Color(.70,.65,.49),game.last_house.warm_light_at(position)*.5)
+	if polished:profile_tint=Color(.74,.76,.68).lerp(Color(.81,.76,.61),game.last_house.warm_light_at(position)*.5)
 	if is_girl: draw_texture_rect_region(girl_profile,Rect2(-19,-17,34,32),Rect2(30,15,1135,1000),profile_tint)
 	else: draw_texture_rect_region(head_atlas,Rect2(-15,-17,31,34),Rect2(0,0,440,490),profile_tint)
 	draw_set_transform(Vector2.ZERO,0,Vector2(s,s))
@@ -505,16 +534,18 @@ func _draw():
 	if acting.has("near_hand"):hand=to_local(acting.near_hand)
 	var desired_hand=hand
 	if polished:hand=shoulder+(hand-shoulder).limit_length(33.8)
-	var elbow=solve_knee(shoulder,hand,17 if polished else 15,17 if polished else 16,-face)
-	tube(shoulder+Vector2(1,3),elbow,hand,4.6,3.5,2.5,ink,"sleeve")
-	draw_line(shoulder+Vector2(-2,3),elbow+Vector2(-1,0),Color(edge,.20),1,true)
+	var near_anchor=shoulder+Vector2(-6*face,6) if polished else shoulder
+	if polished:near_anchor=hand+(near_anchor-hand).limit_length(33.8)
+	var elbow=solve_knee(near_anchor,hand,17 if polished else 15,17 if polished else 16,-face)
+	tube(near_anchor if polished else shoulder+Vector2(1,3),elbow,hand,5.1 if polished else 4.6,3.5,2.5,ink,"sleeve")
+	if not polished:draw_line(shoulder+Vector2(-2,3),elbow+Vector2(-1,0),Color(edge,.20),1,true)
 	draw_hand(hand,elbow,Color(.46,.45,.36) if polished else Color(.19,.25,.24),climbing or push_blend>.4 or danger_blend>.45)
 	# The sleeve cuff ends at the wrist, letting a small hand read separately.
 	var cuff=(hand-elbow).normalized()
 	var cuff_cross=Vector2(-cuff.y,cuff.x)
-	draw_line(hand-cuff*3+cuff_cross*2.7,hand-cuff*3-cuff_cross*2.7,Color(edge,.29),1.2,true)
+	if not polished:draw_line(hand-cuff*3+cuff_cross*2.7,hand-cuff*3-cuff_cross*2.7,Color(edge,.29),1.2,true)
 	# Small folded linen collar; no oversized pale patch or bright eyes.
-	draw_colored_polygon(PackedVector2Array([shoulder+Vector2(-3,-1),shoulder+Vector2(6,1),shoulder+Vector2(3,5)]),Color(.37,.42,.37,.55))
+	if not polished:draw_colored_polygon(PackedVector2Array([shoulder+Vector2(-3,-1),shoulder+Vector2(6,1),shoulder+Vector2(3,5)]),Color(.37,.42,.37,.55))
 	if polished:
 		if acting.get("mode","")=="meal":
 			draw_colored_polygon(PackedVector2Array([hand+Vector2(-3,-3),hand+Vector2(3,-4),hand+Vector2(5,0),hand+Vector2(1,3),hand+Vector2(-4,2)]),Color("a99569"))

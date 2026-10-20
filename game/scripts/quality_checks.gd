@@ -34,5 +34,14 @@ static func run(g):
 	g.assert_check("relief_has_no_extra_five_second_gate",g.flags.get("last_house_complete",false) and g.last_house.relief_clock<2)
 	g.assert_check("relief_has_contextual_attention",g.last_house.pose_for(g.player).get("mode")=="quiet" and g.last_house.pose_for(g.player).facing<0 and g.last_house.pose_for(g.boy).facing>0)
 	g.assert_check("equal_collision_heights_preserved",g.player.col.shape.size.y==g.boy.col.shape.size.y and g.player.scale==Vector2.ONE and g.boy.scale==Vector2.ONE)
+	release();g.last_house.start(false);g.player.position=Vector2(1280,699);g.boy.position=Vector2(1226,699);await frames(g,20)
+	Input.action_press("left");Input.action_press("jump");var airborne_yield=false
+	for i in range(38):
+		await frames(g,1)
+		if not g.player.is_on_floor() and g.boy.is_on_floor() and g.companion_yield_dir<0:airborne_yield=true
+	g.assert_check("grounded_companion_yields_during_safe_air_crossing",airborne_yield)
+	release();g.last_house.start(false);g.player.position=Vector2(1220,699);g.boy.position=Vector2(1270,699);g.boy.following=false;await frames(g,25)
+	var waiting_x=g.boy.position.x;Input.action_press("right");await frames(g,65)
+	g.assert_check("wait_command_preserves_companion_position_during_crossing",absf(g.boy.position.x-waiting_x)<.05 and not g.boy.following)
 	release();var passed=g.test_log.all(func(c):return c.passed)
-	var f=FileAccess.open(g.report_path("quality_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify({"build":"0.5.3","all_passed":passed,"checks":g.test_log,"reversal_cases":cases,"scope":"Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."},"\t"));f.close();g.quit_game(0 if passed else 1)
+	var f=FileAccess.open(g.report_path("quality_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify({"build":"0.5.4","all_passed":passed,"checks":g.test_log,"reversal_cases":cases,"scope":"Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."},"\t"));f.close();g.quit_game(0 if passed else 1)

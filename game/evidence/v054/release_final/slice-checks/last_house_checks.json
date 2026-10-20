@@ -1,0 +1,496 @@
+{
+	"all_passed": true,
+	"checks": [
+		{
+			"check": "arcade_route_completes",
+			"details": "{ \"upper_shop\": false, \"complete\": true, \"phase\": \"complete\", \"girl\": \"(8763.163, 699.9252)\", \"boy\": \"(8691.936, 699.9252)\", \"health\": 100.0, \"warmth\": 96.077979333334, \"wetness\": 0.12905000000001, \"deaths\": 0, \"maximum_separation\": 303.768310546875, \"playtime\": 82.8166666666633, \"frames\": 0, \"capture_fps\": 0, \"events\": [{ \"phase\": \"photo\", \"frame\": 0, \"time\": 0.5, \"girl\": \"(180.3, 699.9252)\", \"boy\": \"(137.1321, 699.9252)\", \"health\": 100 }, { \"phase\": \"bread\", \"frame\": 0, \"time\": 4.96666666666665, \"girl\": \"(912.4267, 699.9252)\", \"boy\": \"(841.5985, 699.9252)\", \"health\": 100 }, { \"phase\": \"approach\", \"frame\": 0, \"time\": 8.24999999999999, \"girl\": \"(1280.076, 699.9252)\", \"boy\": \"(1238.015, 699.9252)\", \"health\": 100 }, { \"phase\": \"arcade\", \"frame\": 0, \"time\": 12.5000000000002, \"girl\": \"(1855.221, 639.9252)\", \"boy\": \"(1815.866, 608.2574)\", \"health\": 100 }, { \"phase\": \"passage\", \"frame\": 0, \"time\": 31.5833333333328, \"girl\": \"(3251.443, 699.9252)\", \"boy\": \"(3100.693, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_approach\", \"frame\": 0, \"time\": 40.549999999999, \"girl\": \"(4404.083, 699.9252)\", \"boy\": \"(4326.144, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 46.9999999999986, \"girl\": \"(5474.758, 699.9252)\", \"boy\": \"(5403.528, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 56.3666666666647, \"girl\": \"(5482.843, 699.9252)\", \"boy\": \"(5431.126, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 58.9166666666646, \"girl\": \"(6128.238, 699.9252)\", \"boy\": \"(5922.076, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 65.9999999999975, \"girl\": \"(6150.099, 699.9252)\", \"boy\": \"(6098.122, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 68.8999999999974, \"girl\": \"(6888.24, 699.9252)\", \"boy\": \"(6666.745, 698.135)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 71.0833333333306, \"girl\": \"(6910.101, 699.9252)\", \"boy\": \"(6832.184, 699.9252)\", \"health\": 100 }, { \"phase\": \"room\", \"frame\": 0, \"time\": 73.1499999999971, \"girl\": \"(7427.417, 699.9252)\", \"boy\": \"(7282.37, 699.9252)\", \"health\": 100 }, { \"phase\": \"share\", \"frame\": 0, \"time\": 78.3499999999968, \"girl\": \"(8293.942, 699.9252)\", \"boy\": \"(8222.715, 699.9252)\", \"health\": 100 }, { \"phase\": \"quiet\", \"frame\": 0, \"time\": 80.53333333333, \"girl\": \"(8553.452, 699.9252)\", \"boy\": \"(8482.225, 699.9252)\", \"health\": 100.0 }, { \"phase\": \"complete\", \"frame\": 0, \"time\": 82.8166666666633, \"girl\": \"(8763.163, 699.9252)\", \"boy\": \"(8691.936, 699.9252)\", \"health\": 100.0 }], \"details\": {  }, \"stuck_frames\": 0 }",
+			"passed": true
+		},
+		{
+			"check": "arcade_preserves_shop_choice",
+			"details": "{ \"house_photo\": true, \"house_bread\": true, \"passage_braced\": true, \"passage_complete\": true, \"damaged_passage\": true, \"bag_down\": true, \"shared_meal\": true, \"last_house_complete\": true, \"quiet_window\": true }",
+			"passed": true
+		},
+		{
+			"check": "arcade_pair_survives",
+			"details": "{ \"upper_shop\": false, \"complete\": true, \"phase\": \"complete\", \"girl\": \"(8763.163, 699.9252)\", \"boy\": \"(8691.936, 699.9252)\", \"health\": 100.0, \"warmth\": 96.077979333334, \"wetness\": 0.12905000000001, \"deaths\": 0, \"maximum_separation\": 303.768310546875, \"playtime\": 82.8166666666633, \"frames\": 0, \"capture_fps\": 0, \"events\": [{ \"phase\": \"photo\", \"frame\": 0, \"time\": 0.5, \"girl\": \"(180.3, 699.9252)\", \"boy\": \"(137.1321, 699.9252)\", \"health\": 100 }, { \"phase\": \"bread\", \"frame\": 0, \"time\": 4.96666666666665, \"girl\": \"(912.4267, 699.9252)\", \"boy\": \"(841.5985, 699.9252)\", \"health\": 100 }, { \"phase\": \"approach\", \"frame\": 0, \"time\": 8.24999999999999, \"girl\": \"(1280.076, 699.9252)\", \"boy\": \"(1238.015, 699.9252)\", \"health\": 100 }, { \"phase\": \"arcade\", \"frame\": 0, \"time\": 12.5000000000002, \"girl\": \"(1855.221, 639.9252)\", \"boy\": \"(1815.866, 608.2574)\", \"health\": 100 }, { \"phase\": \"passage\", \"frame\": 0, \"time\": 31.5833333333328, \"girl\": \"(3251.443, 699.9252)\", \"boy\": \"(3100.693, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_approach\", \"frame\": 0, \"time\": 40.549999999999, \"girl\": \"(4404.083, 699.9252)\", \"boy\": \"(4326.144, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 46.9999999999986, \"girl\": \"(5474.758, 699.9252)\", \"boy\": \"(5403.528, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 56.3666666666647, \"girl\": \"(5482.843, 699.9252)\", \"boy\": \"(5431.126, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 58.9166666666646, \"girl\": \"(6128.238, 699.9252)\", \"boy\": \"(5922.076, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 65.9999999999975, \"girl\": \"(6150.099, 699.9252)\", \"boy\": \"(6098.122, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 68.8999999999974, \"girl\": \"(6888.24, 699.9252)\", \"boy\": \"(6666.745, 698.135)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 71.0833333333306, \"girl\": \"(6910.101, 699.9252)\", \"boy\": \"(6832.184, 699.9252)\", \"health\": 100 }, { \"phase\": \"room\", \"frame\": 0, \"time\": 73.1499999999971, \"girl\": \"(7427.417, 699.9252)\", \"boy\": \"(7282.37, 699.9252)\", \"health\": 100 }, { \"phase\": \"share\", \"frame\": 0, \"time\": 78.3499999999968, \"girl\": \"(8293.942, 699.9252)\", \"boy\": \"(8222.715, 699.9252)\", \"health\": 100 }, { \"phase\": \"quiet\", \"frame\": 0, \"time\": 80.53333333333, \"girl\": \"(8553.452, 699.9252)\", \"boy\": \"(8482.225, 699.9252)\", \"health\": 100.0 }, { \"phase\": \"complete\", \"frame\": 0, \"time\": 82.8166666666633, \"girl\": \"(8763.163, 699.9252)\", \"boy\": \"(8691.936, 699.9252)\", \"health\": 100.0 }], \"details\": {  }, \"stuck_frames\": 0 }",
+			"passed": true
+		},
+		{
+			"check": "arcade_reciprocal_help",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "arcade_relief",
+			"details": "[96.077979333334, 0.12905000000001]",
+			"passed": true
+		},
+		{
+			"check": "shop_route_completes",
+			"details": "{ \"upper_shop\": true, \"complete\": true, \"phase\": \"complete\", \"girl\": \"(8763.816, 699.9252)\", \"boy\": \"(8692.589, 699.9252)\", \"health\": 100.0, \"warmth\": 96.1502875000006, \"wetness\": 0.08068333333341, \"deaths\": 0, \"maximum_separation\": 285.825439453125, \"playtime\": 64.3499999999976, \"frames\": 0, \"capture_fps\": 0, \"events\": [{ \"phase\": \"photo\", \"frame\": 0, \"time\": 0.51666666666667, \"girl\": \"(180.3, 699.9252)\", \"boy\": \"(137.2121, 699.9252)\", \"health\": 100 }, { \"phase\": \"bread\", \"frame\": 0, \"time\": 4.98333333333332, \"girl\": \"(912.4267, 699.9252)\", \"boy\": \"(841.5985, 699.9252)\", \"health\": 100 }, { \"phase\": \"approach\", \"frame\": 0, \"time\": 8.26666666666666, \"girl\": \"(1280.076, 699.9252)\", \"boy\": \"(1238.015, 699.9252)\", \"health\": 100 }, { \"phase\": \"shop\", \"frame\": 0, \"time\": 12.5166666666669, \"girl\": \"(1855.221, 639.9252)\", \"boy\": \"(1815.866, 608.2574)\", \"health\": 100 }, { \"phase\": \"passage\", \"frame\": 0, \"time\": 22.9833333333333, \"girl\": \"(3285.014, 688.7918)\", \"boy\": \"(3213.789, 579.9252)\", \"health\": 100 }, { \"phase\": \"rail_approach\", \"frame\": 0, \"time\": 31.5333333333328, \"girl\": \"(4404.938, 699.9252)\", \"boy\": \"(4326.625, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 37.9666666666658, \"girl\": \"(5472.846, 699.9252)\", \"boy\": \"(5401.616, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 38.0166666666658, \"girl\": \"(5478.713, 699.9252)\", \"boy\": \"(5408.995, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 40.499999999999, \"girl\": \"(6124.475, 699.9252)\", \"boy\": \"(5913.243, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 47.5333333333319, \"girl\": \"(6146.335, 699.9252)\", \"boy\": \"(6094.629, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 50.4333333333318, \"girl\": \"(6884.477, 699.9252)\", \"boy\": \"(6663.911, 696.2961)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 52.5999999999983, \"girl\": \"(6906.338, 699.9252)\", \"boy\": \"(6827.983, 699.9252)\", \"health\": 100 }, { \"phase\": \"room\", \"frame\": 0, \"time\": 54.6833333333315, \"girl\": \"(7428.07, 699.9252)\", \"boy\": \"(7282.803, 699.9252)\", \"health\": 100 }, { \"phase\": \"share\", \"frame\": 0, \"time\": 59.8833333333312, \"girl\": \"(8294.596, 699.9252)\", \"boy\": \"(8223.368, 699.9252)\", \"health\": 100 }, { \"phase\": \"quiet\", \"frame\": 0, \"time\": 62.0666666666644, \"girl\": \"(8554.105, 699.9252)\", \"boy\": \"(8482.878, 699.9252)\", \"health\": 100.0 }, { \"phase\": \"complete\", \"frame\": 0, \"time\": 64.3499999999976, \"girl\": \"(8763.816, 699.9252)\", \"boy\": \"(8692.589, 699.9252)\", \"health\": 100.0 }], \"details\": {  }, \"stuck_frames\": 0 }",
+			"passed": true
+		},
+		{
+			"check": "shop_supplies_collected",
+			"details": "{ \"house_photo\": true, \"house_bread\": true, \"shop_supplies\": true, \"passage_braced\": true, \"passage_complete\": true, \"damaged_passage\": true, \"bag_down\": true, \"shared_meal\": true, \"last_house_complete\": true, \"quiet_window\": true }",
+			"passed": true
+		},
+		{
+			"check": "shop_pair_survives",
+			"details": "{ \"upper_shop\": true, \"complete\": true, \"phase\": \"complete\", \"girl\": \"(8763.816, 699.9252)\", \"boy\": \"(8692.589, 699.9252)\", \"health\": 100.0, \"warmth\": 96.1502875000006, \"wetness\": 0.08068333333341, \"deaths\": 0, \"maximum_separation\": 285.825439453125, \"playtime\": 64.3499999999976, \"frames\": 0, \"capture_fps\": 0, \"events\": [{ \"phase\": \"photo\", \"frame\": 0, \"time\": 0.51666666666667, \"girl\": \"(180.3, 699.9252)\", \"boy\": \"(137.2121, 699.9252)\", \"health\": 100 }, { \"phase\": \"bread\", \"frame\": 0, \"time\": 4.98333333333332, \"girl\": \"(912.4267, 699.9252)\", \"boy\": \"(841.5985, 699.9252)\", \"health\": 100 }, { \"phase\": \"approach\", \"frame\": 0, \"time\": 8.26666666666666, \"girl\": \"(1280.076, 699.9252)\", \"boy\": \"(1238.015, 699.9252)\", \"health\": 100 }, { \"phase\": \"shop\", \"frame\": 0, \"time\": 12.5166666666669, \"girl\": \"(1855.221, 639.9252)\", \"boy\": \"(1815.866, 608.2574)\", \"health\": 100 }, { \"phase\": \"passage\", \"frame\": 0, \"time\": 22.9833333333333, \"girl\": \"(3285.014, 688.7918)\", \"boy\": \"(3213.789, 579.9252)\", \"health\": 100 }, { \"phase\": \"rail_approach\", \"frame\": 0, \"time\": 31.5333333333328, \"girl\": \"(4404.938, 699.9252)\", \"boy\": \"(4326.625, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 37.9666666666658, \"girl\": \"(5472.846, 699.9252)\", \"boy\": \"(5401.616, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 38.0166666666658, \"girl\": \"(5478.713, 699.9252)\", \"boy\": \"(5408.995, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 40.499999999999, \"girl\": \"(6124.475, 699.9252)\", \"boy\": \"(5913.243, 699.9252)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 47.5333333333319, \"girl\": \"(6146.335, 699.9252)\", \"boy\": \"(6094.629, 699.9252)\", \"health\": 100 }, { \"phase\": \"cover_wait\", \"frame\": 0, \"time\": 50.4333333333318, \"girl\": \"(6884.477, 699.9252)\", \"boy\": \"(6663.911, 696.2961)\", \"health\": 100 }, { \"phase\": \"rail_run\", \"frame\": 0, \"time\": 52.5999999999983, \"girl\": \"(6906.338, 699.9252)\", \"boy\": \"(6827.983, 699.9252)\", \"health\": 100 }, { \"phase\": \"room\", \"frame\": 0, \"time\": 54.6833333333315, \"girl\": \"(7428.07, 699.9252)\", \"boy\": \"(7282.803, 699.9252)\", \"health\": 100 }, { \"phase\": \"share\", \"frame\": 0, \"time\": 59.8833333333312, \"girl\": \"(8294.596, 699.9252)\", \"boy\": \"(8223.368, 699.9252)\", \"health\": 100 }, { \"phase\": \"quiet\", \"frame\": 0, \"time\": 62.0666666666644, \"girl\": \"(8554.105, 699.9252)\", \"boy\": \"(8482.878, 699.9252)\", \"health\": 100.0 }, { \"phase\": \"complete\", \"frame\": 0, \"time\": 64.3499999999976, \"girl\": \"(8763.816, 699.9252)\", \"boy\": \"(8692.589, 699.9252)\", \"health\": 100.0 }], \"details\": {  }, \"stuck_frames\": 0 }",
+			"passed": true
+		},
+		{
+			"check": "shop_reciprocal_help",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "shop_relief",
+			"details": "[96.1502875000006, 0.08068333333341]",
+			"passed": true
+		},
+		{
+			"check": "share_prerequisite_prompt_has_no_false_action",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "share_requires_bag",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "share_waits_for_companion",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "share_consumes_one_ration_and_warms",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "repeat_share_never_duplicates_supplies",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "quiet_waits_for_shared_meal_gesture",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "dry_room_drains_wetness_and_preserves_warmth",
+			"details": "[98.0541264583344, 0.0]",
+			"passed": true
+		},
+		{
+			"check": "relief_completion_remains_playable",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "support_prompt_requires_held_input",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "support_transfer_prompt_releases_input",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pair_fits_at_cover_edge",
+			"details": "[(5362.0, 699.9954), (5406.278, 699.9252)]",
+			"passed": true
+		},
+		{
+			"check": "pair_feedback_reports_covered",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "uncovered_boy_gets_individual_seen_feedback",
+			"details": "{ \"Girl\": 0.0, \"Boy\": 0.31666666666667 }",
+			"passed": true
+		},
+		{
+			"check": "covered_girl_avoids_individual_injury",
+			"details": "{ \"Girl\": 0.0, \"Boy\": 2.18333333333333 }",
+			"passed": true
+		},
+		{
+			"check": "teleported_pose_feet_resync_with_body",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "early_release_returns_companion_safely",
+			"details": "[\"idle\", (3857.96, 699.9252)]",
+			"passed": true
+		},
+		{
+			"check": "reciprocal_retry_transfers_support",
+			"details": "boy_holds",
+			"passed": true
+		},
+		{
+			"check": "boy_holds_catch_standing",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "companion_call_cannot_interrupt_support",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "both_clear_retried_passage",
+			"details": "[(4394.673, 699.9252), (4352.633, 699.9252)]",
+			"passed": true
+		},
+		{
+			"check": "slice_save_resumes_own_layout",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "slice_save_leaves_main_absent",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "slice_preserves_existing_main_bytes",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "main_continue_after_slice_restores_journey",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "slice_fall_enters_recovery",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "slice_retry_keeps_completed_passage",
+			"details": "(4500.0, 699.9999)",
+			"passed": true
+		},
+		{
+			"check": "pause_menu_can_restart_slice_cleanly",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "slice_restart_preserves_main_bytes",
+			"details": "",
+			"passed": true
+		}
+	],
+	"routes": [
+		{
+			"boy": "(8691.936, 699.9252)",
+			"capture_fps": 0,
+			"complete": true,
+			"deaths": 0,
+			"details": {
+
+			},
+			"events": [
+				{
+					"boy": "(137.1321, 699.9252)",
+					"frame": 0,
+					"girl": "(180.3, 699.9252)",
+					"health": 100,
+					"phase": "photo",
+					"time": 0.5
+				},
+				{
+					"boy": "(841.5985, 699.9252)",
+					"frame": 0,
+					"girl": "(912.4267, 699.9252)",
+					"health": 100,
+					"phase": "bread",
+					"time": 4.96666666666665
+				},
+				{
+					"boy": "(1238.015, 699.9252)",
+					"frame": 0,
+					"girl": "(1280.076, 699.9252)",
+					"health": 100,
+					"phase": "approach",
+					"time": 8.24999999999999
+				},
+				{
+					"boy": "(1815.866, 608.2574)",
+					"frame": 0,
+					"girl": "(1855.221, 639.9252)",
+					"health": 100,
+					"phase": "arcade",
+					"time": 12.5000000000002
+				},
+				{
+					"boy": "(3100.693, 699.9252)",
+					"frame": 0,
+					"girl": "(3251.443, 699.9252)",
+					"health": 100,
+					"phase": "passage",
+					"time": 31.5833333333328
+				},
+				{
+					"boy": "(4326.144, 699.9252)",
+					"frame": 0,
+					"girl": "(4404.083, 699.9252)",
+					"health": 100,
+					"phase": "rail_approach",
+					"time": 40.549999999999
+				},
+				{
+					"boy": "(5403.528, 699.9252)",
+					"frame": 0,
+					"girl": "(5474.758, 699.9252)",
+					"health": 100,
+					"phase": "cover_wait",
+					"time": 46.9999999999986
+				},
+				{
+					"boy": "(5431.126, 699.9252)",
+					"frame": 0,
+					"girl": "(5482.843, 699.9252)",
+					"health": 100,
+					"phase": "rail_run",
+					"time": 56.3666666666647
+				},
+				{
+					"boy": "(5922.076, 699.9252)",
+					"frame": 0,
+					"girl": "(6128.238, 699.9252)",
+					"health": 100,
+					"phase": "cover_wait",
+					"time": 58.9166666666646
+				},
+				{
+					"boy": "(6098.122, 699.9252)",
+					"frame": 0,
+					"girl": "(6150.099, 699.9252)",
+					"health": 100,
+					"phase": "rail_run",
+					"time": 65.9999999999975
+				},
+				{
+					"boy": "(6666.745, 698.135)",
+					"frame": 0,
+					"girl": "(6888.24, 699.9252)",
+					"health": 100,
+					"phase": "cover_wait",
+					"time": 68.8999999999974
+				},
+				{
+					"boy": "(6832.184, 699.9252)",
+					"frame": 0,
+					"girl": "(6910.101, 699.9252)",
+					"health": 100,
+					"phase": "rail_run",
+					"time": 71.0833333333306
+				},
+				{
+					"boy": "(7282.37, 699.9252)",
+					"frame": 0,
+					"girl": "(7427.417, 699.9252)",
+					"health": 100,
+					"phase": "room",
+					"time": 73.1499999999971
+				},
+				{
+					"boy": "(8222.715, 699.9252)",
+					"frame": 0,
+					"girl": "(8293.942, 699.9252)",
+					"health": 100,
+					"phase": "share",
+					"time": 78.3499999999968
+				},
+				{
+					"boy": "(8482.225, 699.9252)",
+					"frame": 0,
+					"girl": "(8553.452, 699.9252)",
+					"health": 100.0,
+					"phase": "quiet",
+					"time": 80.53333333333
+				},
+				{
+					"boy": "(8691.936, 699.9252)",
+					"frame": 0,
+					"girl": "(8763.163, 699.9252)",
+					"health": 100.0,
+					"phase": "complete",
+					"time": 82.8166666666633
+				}
+			],
+			"frames": 0,
+			"girl": "(8763.163, 699.9252)",
+			"health": 100.0,
+			"maximum_separation": 303.768310546875,
+			"phase": "complete",
+			"playtime": 82.8166666666633,
+			"stuck_frames": 0,
+			"upper_shop": false,
+			"warmth": 96.077979333334,
+			"wetness": 0.129050000000007
+		},
+		{
+			"boy": "(8692.589, 699.9252)",
+			"capture_fps": 0,
+			"complete": true,
+			"deaths": 0,
+			"details": {
+
+			},
+			"events": [
+				{
+					"boy": "(137.2121, 699.9252)",
+					"frame": 0,
+					"girl": "(180.3, 699.9252)",
+					"health": 100,
+					"phase": "photo",
+					"time": 0.516666666666667
+				},
+				{
+					"boy": "(841.5985, 699.9252)",
+					"frame": 0,
+					"girl": "(912.4267, 699.9252)",
+					"health": 100,
+					"phase": "bread",
+					"time": 4.98333333333332
+				},
+				{
+					"boy": "(1238.015, 699.9252)",
+					"frame": 0,
+					"girl": "(1280.076, 699.9252)",
+					"health": 100,
+					"phase": "approach",
+					"time": 8.26666666666666
+				},
+				{
+					"boy": "(1815.866, 608.2574)",
+					"frame": 0,
+					"girl": "(1855.221, 639.9252)",
+					"health": 100,
+					"phase": "shop",
+					"time": 12.5166666666669
+				},
+				{
+					"boy": "(3213.789, 579.9252)",
+					"frame": 0,
+					"girl": "(3285.014, 688.7918)",
+					"health": 100,
+					"phase": "passage",
+					"time": 22.9833333333333
+				},
+				{
+					"boy": "(4326.625, 699.9252)",
+					"frame": 0,
+					"girl": "(4404.938, 699.9252)",
+					"health": 100,
+					"phase": "rail_approach",
+					"time": 31.5333333333328
+				},
+				{
+					"boy": "(5401.616, 699.9252)",
+					"frame": 0,
+					"girl": "(5472.846, 699.9252)",
+					"health": 100,
+					"phase": "cover_wait",
+					"time": 37.9666666666658
+				},
+				{
+					"boy": "(5408.995, 699.9252)",
+					"frame": 0,
+					"girl": "(5478.713, 699.9252)",
+					"health": 100,
+					"phase": "rail_run",
+					"time": 38.0166666666658
+				},
+				{
+					"boy": "(5913.243, 699.9252)",
+					"frame": 0,
+					"girl": "(6124.475, 699.9252)",
+					"health": 100,
+					"phase": "cover_wait",
+					"time": 40.499999999999
+				},
+				{
+					"boy": "(6094.629, 699.9252)",
+					"frame": 0,
+					"girl": "(6146.335, 699.9252)",
+					"health": 100,
+					"phase": "rail_run",
+					"time": 47.5333333333319
+				},
+				{
+					"boy": "(6663.911, 696.2961)",
+					"frame": 0,
+					"girl": "(6884.477, 699.9252)",
+					"health": 100,
+					"phase": "cover_wait",
+					"time": 50.4333333333318
+				},
+				{
+					"boy": "(6827.983, 699.9252)",
+					"frame": 0,
+					"girl": "(6906.338, 699.9252)",
+					"health": 100,
+					"phase": "rail_run",
+					"time": 52.5999999999983
+				},
+				{
+					"boy": "(7282.803, 699.9252)",
+					"frame": 0,
+					"girl": "(7428.07, 699.9252)",
+					"health": 100,
+					"phase": "room",
+					"time": 54.6833333333315
+				},
+				{
+					"boy": "(8223.368, 699.9252)",
+					"frame": 0,
+					"girl": "(8294.596, 699.9252)",
+					"health": 100,
+					"phase": "share",
+					"time": 59.8833333333312
+				},
+				{
+					"boy": "(8482.878, 699.9252)",
+					"frame": 0,
+					"girl": "(8554.105, 699.9252)",
+					"health": 100.0,
+					"phase": "quiet",
+					"time": 62.0666666666644
+				},
+				{
+					"boy": "(8692.589, 699.9252)",
+					"frame": 0,
+					"girl": "(8763.816, 699.9252)",
+					"health": 100.0,
+					"phase": "complete",
+					"time": 64.3499999999976
+				}
+			],
+			"frames": 0,
+			"girl": "(8763.816, 699.9252)",
+			"health": 100.0,
+			"maximum_separation": 285.825439453125,
+			"phase": "complete",
+			"playtime": 64.3499999999976,
+			"stuck_frames": 0,
+			"upper_shop": true,
+			"warmth": 96.1502875000006,
+			"wetness": 0.080683333333414
+		}
+	],
+	"scope": "Both routes use native held Input continuously from fresh start without repositioning, immunity, resource grants or geometry changes. Separate boundary, abort and save/retry fixtures deliberately set initial actor positions. Scripted verification; no human controller, Mac or audio review claimed."
+}

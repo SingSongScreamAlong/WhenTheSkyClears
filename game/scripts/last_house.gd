@@ -200,9 +200,16 @@ func draw_backdrop(w):
 		var far_x=cx+(8500-cx)*.075
 		paint_house(w,far_x,650,250,Color(.55,.65,.65,.24))
 		w.glow(Vector2(far_x+25,620),Color(.95,.72,.37),16,.12)
-	if left<1900:paint_house(w,880,700,1580,Color(.78,.84,.83))
-	if left<4600 and left+1700>3350:paint_house(w,3970,700,1180,Color(.64,.73,.72))
+	if left<1900:
+		# The first house is a cold, partial interior. Its missing right wing
+		# opens onto the shop route; only the final room keeps the full roof.
+		w.draw_texture_rect_region(house_texture,Rect2(110,26,1340,789),Rect2(0,0,1505,887),Color(.69,.77,.78))
+	if left<4600 and left+1700>3350:
+		# The damaged passage belongs to a collapsed street frontage, not a
+		# second copy of the kitchen waiting at the end of the railway.
+		w.art("School",3330,705,1280,Color(.55,.65,.65))
 	if left+1700>7400:paint_house(w,8550,700,1800,Color(.93,.89,.73))
+	draw_inhabited_details(w,left)
 	# Quiet street and railway planes keep the playable strip distinct.
 	# Broken wet strokes sit on the actual ground instead of a translucent
 	# screen-wide strip cutting through every pair of legs and room interior.
@@ -221,11 +228,26 @@ func draw_backdrop(w):
 		w.draw_colored_polygon(PackedVector2Array([Vector2(beam-220,50),Vector2(beam-100,708),Vector2(beam+100,708)]),Color(.88,.89,.69,.14))
 	if g.flags.get("rail_awning",false):w.paint_asset(w,"tent",Vector2(5550,704),520,174,Color(.63,.68,.59))
 	w.draw_rect(Rect2(left,700,1600,700),Color("263335"))
+func draw_inhabited_details(w,left):
+	# Reuse truly transparent painted props. Opaque rectangular crops of the
+	# room's furniture were rejected during gameplay-scale visual review.
+	if left<1750:
+		w.paint_asset(w,"cart",Vector2(475,702),102,65,Color(.56,.65,.63))
+	if left<3450 and left+1700>2100:
+		# Supplies belong to the exposed shelf; the sheltered low arcade stays
+		# visually clear. The reward is readable before the player climbs.
+		w.paint_asset(w,"crate",Vector2(2528,582),54,40,Color(.73,.76,.65))
+		w.paint_asset(w,"crate",Vector2(2945,582),42,32,Color(.64,.73,.68))
+	if left+1700>7900:
+		# The intact painted table/chairs provide the household detail. A low
+		# reflection connects the occupied floor to the existing warm stove.
+		w.glow(Vector2(8580,698),Color(.84,.60,.32),105,.14)
+
 func draw_interaction(w,p):
 	var pos=Vector2(p.x,p.y)
 	match p.kind:
 		"inspect":
-			w.draw_rect(Rect2(pos+Vector2(-12,-66),Vector2(25,19)),Color("8d8066"));w.draw_rect(Rect2(pos+Vector2(-9,-63),Vector2(19,13)),Color("b0b09b"))
+			w.draw_rect(Rect2(pos+Vector2(-12,-66),Vector2(25,19)),Color("8d8066"));w.draw_texture_rect_region(house_texture,Rect2(pos+Vector2(-9,-63),Vector2(19,13)),Rect2(390,300,950,400),Color(.93,.87,.70))
 			w.draw_line(pos+Vector2(-19,-44),pos+Vector2(30,-44),Color("4c5143"),7,true)
 		"reciprocal":
 			var y=620-lift*86

@@ -1,0 +1,151 @@
+{
+  "baseline_commit": "fd7520dceda2f8b31468d0092ab3a01274963163",
+  "frames": 648,
+  "fps": 30,
+  "native_simulation_frames": 1295,
+  "girl_positions_identical": true,
+  "contacts": {
+    "checks": {
+      "reachable_wrists": true,
+      "world_target_not_clamped": true,
+      "support_grip_contact": true,
+      "paired_wrists_meet": true,
+      "planted_horizontal_drift": true,
+      "sole_matches_surface": true,
+      "leg_chain_reach": true,
+      "upper_leg_length": true,
+      "lower_leg_length": true,
+      "first_step_leg_reach": true,
+      "pelvis_fit_remains_small": true,
+      "normal_poses_need_no_torso_fallback": true
+    },
+    "all_passed": true,
+    "render_samples": 2590,
+    "max_reach_by_mode": {
+      "locomotion": 31.6445770263672,
+      "cover": 21.6119441986084,
+      "support": 33.1522636413574,
+      "bag": 31.0862979888916,
+      "attend_bag": 29.0791969299316,
+      "meal": 26.4199142456055,
+      "quiet": 25.7736339569092
+    },
+    "max_target_error": 0,
+    "max_support_contact_error": 0,
+    "max_paired_contact_error": 0,
+    "stance_samples": 1888,
+    "max_stance_x_drift": 0.08300000000008367,
+    "max_sole_y_error": 0.048900000000003274,
+    "scope": "Measured actual rendered wrist/sole transforms from the native fixture. Support expectations are authored world handle locations. Ground stance samples exclude airborne frames, phase wraps and the first eight stable-floor samples after deliberate scenario resets. Numbers complement inspected pixels; not final weight/acting acceptance.",
+    "max_leg_chain_reach": 52.89256279516015,
+    "max_upper_leg": 27.00106581248199,
+    "max_lower_leg": 27.0010277767352,
+    "max_initial_step_leg_reach": 51.57786639092403,
+    "max_pelvis_fit_adjustment": 0.766104698181152
+  },
+  "performance": {
+    "before": {
+      "scenes": {
+        "6120": {
+          "draw_calls": {
+            "above_16_667": 860,
+            "above_33_334": 860,
+            "maximum": 1178.0,
+            "mean": 1177.61162790698,
+            "median": 1178.0,
+            "p95": 1178.0,
+            "p99": 1178.0,
+            "samples": 860
+          },
+          "frame_interval_ms": {
+            "above_16_667": 0,
+            "above_33_334": 0,
+            "maximum": 15.578,
+            "mean": 9.30371627906977,
+            "median": 8.927,
+            "p95": 11.126,
+            "p99": 13.452,
+            "samples": 860
+          },
+          "static_memory_bytes": 53420785.0
+        },
+        "8550": {
+          "draw_calls": {
+            "above_16_667": 894,
+            "above_33_334": 894,
+            "maximum": 1148.0,
+            "mean": 1147.58501118568,
+            "median": 1148.0,
+            "p95": 1148.0,
+            "p99": 1148.0,
+            "samples": 894
+          },
+          "frame_interval_ms": {
+            "above_16_667": 0,
+            "above_33_334": 0,
+            "maximum": 14.869,
+            "mean": 8.95367673378076,
+            "median": 8.428,
+            "p95": 11.004,
+            "p99": 13.094,
+            "samples": 894
+          },
+          "static_memory_bytes": 53666529.0
+        }
+      },
+      "scope": "Uncapped VSync-disabled native Godot4.6 source runtime,1440x810, audio dummy. Two8-second fixed viewpoints after2-second warmup each; no screenshot IO during measurement. Not human input latency, Mac or packaged performance."
+    },
+    "after": {
+      "scenes": {
+        "6120": {
+          "draw_calls": {
+            "above_16_667": 738,
+            "above_33_334": 738,
+            "maximum": 1300.0,
+            "mean": 1299.61111111111,
+            "median": 1300.0,
+            "p95": 1300.0,
+            "p99": 1300.0,
+            "samples": 738
+          },
+          "frame_interval_ms": {
+            "above_16_667": 0,
+            "above_33_334": 0,
+            "maximum": 15.904,
+            "mean": 10.8607317073171,
+            "median": 10.368,
+            "p95": 13.37,
+            "p99": 14.717,
+            "samples": 738
+          },
+          "static_memory_bytes": 54018667.0
+        },
+        "8550": {
+          "draw_calls": {
+            "above_16_667": 744,
+            "above_33_334": 744,
+            "maximum": 1277.0,
+            "mean": 1276.59408602151,
+            "median": 1277.0,
+            "p95": 1277.0,
+            "p99": 1277.0,
+            "samples": 744
+          },
+          "frame_interval_ms": {
+            "above_16_667": 2,
+            "above_33_334": 0,
+            "maximum": 20.499,
+            "mean": 10.7523844086022,
+            "median": 10.316,
+            "p95": 13.021,
+            "p99": 15.268,
+            "samples": 744
+          },
+          "static_memory_bytes": 54286707.0
+        }
+      },
+      "scope": "Uncapped VSync-disabled native Godot4.6 source runtime,1440x810, audio dummy. Two8-second fixed viewpoints after2-second warmup each; no screenshot IO during measurement. Not human input latency, Mac or packaged performance."
+    }
+  },
+  "limits": "Passing lean/depth and safe grounded yielding improve legibility, but a waiting child stays in place and exact co-location can still occlude. UV strips reuse retained art; not fresh frame-painted animation. Native contact probes represent rig anchors; painted texture silhouettes are inspected separately."
+}

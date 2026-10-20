@@ -32,3 +32,21 @@ The original handoff also lists Blender Studio Human Base Meshes and Spring as p
 ## Repository packaging
 
 Runtime assets and source licenses are included. Windows executables and versioned source ZIPs are distributed through [GitHub Releases](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases). Local engine installations, import caches, save games, redundant capture frames and session-bearing download-page HTML are not source assets. The source receipts and provenance files remain available for review without publishing those machine artifacts.
+
+
+## Last House visual milestone 0.5.4
+
+`painted_child.gd` maps the existing boy atlas's coat, sleeve, trouser, hand and
+boot paint to authored, deforming strips in the Last House runtime. The girl's
+long coat/skirt reuses that retained cloth with a distinct tint and hem; her
+original profile and blue braid ribbon remain. These are texture reuse and
+native geometry changes, not newly painted bitmap assets or frame animation.
+The existing source images are unchanged byte for byte. The original active
+rig and wider campaign visuals are retained outside the slice.
+
+The collapsed passage now composes the existing `School_v001.png` frontage,
+while the first house uses a partial cold view and the dry room retains the
+complete `LastHouse_v050.png` painting. Only transparent props from the existing
+survival atlas are added to the shelf/abandoned room. No external download,
+new generator output, character export, paid content or new asset license is
+introduced. Native before/after screenshots are gameplay evidence, not new art.
