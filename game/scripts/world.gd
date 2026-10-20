@@ -124,6 +124,7 @@ func _draw():
 		glow(Vector2(cp-22,cy-46),Color(.88,.69,.36),11,.15)
 		draw_circle(Vector2(cp-22,cy-46),2,Color("d9b975"))
 	draw_surface_dressing(left)
+	if game.slice_active:game.last_house.draw_contacts(self)
 	# Original painted foreground oaks move on their own parallax plane.
 	if game.chapter <= 1:
 		for i in range(2):
@@ -250,6 +251,7 @@ func terrain(p, earth):
 				paint_beam(Vector2(support,y+10),Vector2(support,surface(support,700)+3),10,Color(.35,.42,.36,.86))
 		paint_beam(Vector2(x,y+6),Vector2(x+w,y+6),14,Color(.49,.55,.46))
 		draw_line(Vector2(x+2,y+1),Vector2(x+w-2,y+1),Color(.49,.54,.45,.25),.8,true)
+		if game.slice_active:game.last_house.draw_platform(self,p)
 
 func surface(x, fallback=700.0):
 	return float(game.surface_y_at(x,fallback))

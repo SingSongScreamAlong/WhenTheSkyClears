@@ -49,6 +49,7 @@ var checkpoint_x = 180.0
 var trail = []
 var companion_jumps=[]
 var companion_alert_clock=0.0
+var companion_yield_dir=0.0
 var section_preview=false
 var slice_active=false
 var last_house
@@ -98,9 +99,9 @@ var wind_strain=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears · Development 0.5.2")
+	DisplayServer.window_set_title("When the Sky Clears · Development 0.5.3")
 	qa_args=OS.get_cmdline_user_args()
-	smoke_test="--access-checks" in qa_args or "--access-capture" in qa_args or "--audio-capture" in qa_args or "--visual-review" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--side-routes" in qa_args
+	smoke_test="--quality-checks" in qa_args or "--access-checks" in qa_args or "--access-capture" in qa_args or "--audio-capture" in qa_args or "--visual-review" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--side-routes" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args or "--trust-checks" in qa_args: smoke_test=true
 	last_house=LastHouse.new(self)
@@ -145,6 +146,7 @@ func _ready():
 	if "--capture-new" in qa_args: call_deferred("capture_new_journey")
 	if "--side-routes" in qa_args: SideRouteChecks.run.call_deferred(self)
 	if "--access-checks" in qa_args or "--access-capture" in qa_args or "--audio-capture" in qa_args:load("res://scripts/access_checks.gd").run.call_deferred(self)
+	if "--quality-checks" in qa_args:load("res://scripts/quality_checks.gd").run.call_deferred(self)
 	if "--chapter" in qa_args:
 		var idx = qa_args.find("--chapter")
 		if idx+1<qa_args.size():
@@ -408,7 +410,7 @@ func update_companion(dt):
 	for i in range(companion_jumps.size()-1,-1,-1):
 		if playtime-float(companion_jumps[i].time)>12: companion_jumps.remove_at(i)
 	companion_alert_clock=maxf(0,companion_alert_clock-dt)
-	boy.ai_axis=0; boy.ai_jump=false
+	boy.ai_axis=0;boy.ai_jump=false;boy.social_speed=0;companion_yield_dir=0
 	var gap=player.position.x-boy.position.x
 	var cover_target=companion_cover_target()
 	var follow_gap=gap if cover_target==null else float(cover_target)-boy.position.x
@@ -436,11 +438,29 @@ func update_companion(dt):
 					boy.ai_jump=true; boy.forced_crouch=false; companion_jumps.remove_at(i); break
 		if absf(gap)>390 and companion_alert_clock<=0:
 			announce_message("He is falling behind. Slow down and call him [Q].",3); companion_alert_clock=6
-	if slice_active: last_house.companion_override()
-	var close=absf(gap)<58 and absf(player.position.y-boy.position.y)<17 and not player.crouching and player.is_on_floor() and boy.is_on_floor() and player.action_time<=0 and boy.action_time<=0
+	if slice_active and boy.following and cover_target==null and not last_house.is_helping() and player.action_time<=0 and boy.action_time<=0:
+		var side=signf(boy.position.x-player.position.x)
+		var intent=Input.get_axis("left","right")
+		# Give room before she reaches him. Both native bodies still accelerate,
+		# coast and collide normally; the player is never slowed or repositioned.
+		if absf(gap)<112 and intent*side>.2 and not player.crouching and not boy.crouching and player.is_on_floor() and boy.is_on_floor() and absf(player.position.y-boy.position.y)<14 and not player.is_on_wall() and safe_yield_space(side):
+			companion_yield_dir=side;boy.ai_axis=side;boy.ai_jump=false
+			var pace=265.0 if Input.is_action_pressed("sprint") and stamina>2 else 166.0
+			boy.social_speed=clampf(pace+maxf(0,60-absf(gap))*3,166,285)
+	if slice_active:last_house.companion_override()
+	var close=companion_yield_dir==0 and absf(gap)<58 and absf(player.position.y-boy.position.y)<17 and not player.crouching and player.is_on_floor() and boy.is_on_floor() and player.action_time<=0 and boy.action_time<=0
 	player.hand_active=close; boy.hand_active=close
 	var hand=(player.position+boy.position)*.5+Vector2(0,-53)
 	player.contact_hand=hand; boy.contact_hand=hand
+
+func safe_yield_space(direction):
+	if direction==0 or boy.climbing:return false
+	for distance in [24,50,80]:
+		var x=boy.position.x+direction*distance
+		if x<32 or x>float(level.width)-32 or not ground_at(x) or absf(surface_y_at(x,boy.position.y)-boy.position.y)>18:return false
+		for gb in gate_bodies:
+			if gb.body.collision_layer!=0 and absf(x-float(gb.data.x))<32:return false
+	return true
 
 func companion_cover_target():
 	if not boy.following or not player.crouching or absf(player.velocity.x)>20: return null
@@ -735,7 +755,7 @@ func write_save():
 	if smoke_test: return
 	access.save_settings()
 	if not journey_active: return
-	var data={"schema":1,"build":"0.5.2","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed,"scenario":"last_house" if slice_active else ("rehearsal" if section_preview else "journey")}
+	var data={"schema":1,"build":"0.5.3","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed,"scenario":"last_house" if slice_active else ("rehearsal" if section_preview else "journey")}
 	var f=FileAccess.open(save_path+".tmp",FileAccess.WRITE)
 	if not f: save_notice="Could not save. Check the save folder before leaving."; return
 	f.store_string(JSON.stringify(data,"\t")); f.close()
@@ -775,6 +795,7 @@ func quit_game(code=0):
 	if is_instance_valid(ambience): ambience.stop(); ambience.stream=null
 	await get_tree().process_frame
 	await get_tree().process_frame
+	if smoke_test:OS.delay_msec(120) # Let the independent audio mixer release stopped QA streams.
 	get_tree().quit(code)
 
 func assert_check(name,condition,details=""):
@@ -970,7 +991,7 @@ func traverse_journey():
 					Input.action_release("right"); Input.action_press("crouch"); stalled=0
 		if frame%1800==0: print("TRAVERSE_PROGRESS ",chapter+1," ",int(player.position.x)," boy=",int(boy.position.x)," deaths=",death_count)
 	for action in ["left","right","jump","sprint","crouch","interact"]: Input.action_release(action)
-	var report={"build":"0.5.2","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
+	var report={"build":"0.5.3","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
 	var f=FileAccess.open(report_path("continuous_traversal.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("TRAVERSE_RESULT ",JSON.stringify(report))
 	call_deferred("quit_game",0 if completed else 1)
@@ -1111,7 +1132,7 @@ func run_encounter_tests():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.5.2","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
+	var report={"build":"0.5.3","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
 	var f=FileAccess.open(report_path("encounter_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("ENCOUNTER_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 
@@ -1149,7 +1170,7 @@ func run_motion_review():
 		previous_feet=current; previous_phase=player.foot_phase.duplicate()
 	var maximum=0.0
 	for drift in drifts: maximum=maxf(maximum,drift)
-	var report={"build":"0.5.2","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
+	var report={"build":"0.5.3","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
 	var f=FileAccess.open(report_path("motion_review.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("MOTION_REVIEW_COMPLETE ",JSON.stringify(report)); call_deferred("quit_game")
 
@@ -1269,7 +1290,7 @@ func run_journey_checks():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.5.2","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
+	var report={"build":"0.5.3","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
 	var f=FileAccess.open(report_path("journey_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("JOURNEY_CHECKS_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 

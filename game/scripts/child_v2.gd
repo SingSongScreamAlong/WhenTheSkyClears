@@ -18,6 +18,7 @@ var facing=1.0
 var crouching=false
 var forced_crouch=false
 var ai_axis=0.0
+var social_speed=0.0
 var ai_jump=false
 var leap_axis=0.0
 var phase=0.0
@@ -110,6 +111,8 @@ func _process(dt):
 			if absf(gap)>34 and absf(velocity.x)<215 and (glance_window>5.7 or threat>.35):
 				glance=1.0
 				glance_direction=signf(gap)
+	if not controlled and game!=null and game.slice_active and game.companion_yield_dir!=0:
+		glance=1.0;glance_direction=signf(game.player.position.x-position.x)
 	danger_blend=lerpf(danger_blend,threat,1-exp(-dt*4.5))
 	fatigue_blend=lerpf(fatigue_blend,tired,1-exp(-dt*2.0))
 	glance_blend=lerpf(glance_blend,glance,1-exp(-dt*5.0))
@@ -160,6 +163,7 @@ func _physics_process(dt):
 	if not controlled:
 		speed=clampf(166.0+(abs(game.player.position.x-position.x)-70.0)*1.1,166.0,265.0)
 		if jump or (not is_on_floor() and leap_axis!=0): speed=268
+		elif game.slice_active and social_speed>0:speed=social_speed
 	if crouching: speed=73
 	if game.in_water(position.x,position.y): speed*=.61
 	speed*=game.wind_speed_scale(self)
@@ -208,12 +212,18 @@ func _physics_process(dt):
 					gait_direction=direction
 					# Begin on the foot already ahead, with a short gathering step.
 					# A full half-stride from a trailing rest foot overstretched it.
-					var lead=maxf(feet[0].x*direction,feet[1].x*direction)
-					phase=0.0 if feet[0].x*direction>=feet[1].x*direction else .5
+					var first=0 if feet[0].x*direction>=feet[1].x*direction else 1
+					var errors=[]
+					for i in range(2):errors.append(absf(surface_height(position.x+feet[i].x,position.y)-(position.y+feet[i].y)))
+					# Reversing mid-swing must not declare an airborne foot planted.
+					if errors[first]>2 and errors[1-first]<=2:first=1-first
+					var lead=feet[first].x*direction
+					phase=0.0 if first==0 else .5
 					foot_phase=[fposmod(phase,1),fposmod(phase+.5,1)];foot_planted=[foot_phase[0]<.5,foot_phase[1]<.5]
 					initial_step_end=phase+.5
-					initial_stride=clampf((lead+(18 if crouching else 24))*2,28,116)
+					initial_stride=clampf((lead+(18 if crouching else 24))*2,8,116)
 					for i in range(2):foot_start[i]=position+feet[i];foot_lock[i]=foot_start[i]
+					foot_lock[first].y=surface_height(foot_lock[first].x,position.y)
 			else:
 				if not moving_last:reset_feet()
 				if facing!=last_direction:reset_feet()
@@ -268,7 +278,8 @@ func can_stand():
 	return get_world_2d().direct_space_state.intersect_shape(query,1).is_empty()
 
 func step(_side):
-	game.play_step(position,(-24 if crouching else -20) if controlled else (-32 if crouching else -28))
+	if game.slice_active:game.last_house.note_step(self,_side)
+	game.play_step(foot_lock[_side] if game.slice_active else position,(-24 if crouching else -20) if controlled else (-32 if crouching else -28))
 	if controlled and abs(velocity.x)>210: game.spawn_dust(position,2)
 
 func solve_knee(hip,foot,length_a=25.0,length_b=24.0,bend=1.0):
@@ -345,7 +356,7 @@ func _draw():
 	var run=clampf((abs(velocity.x)-160)/105,0,1)
 	var gait=fposmod(phase,1)*TAU
 	var bob=(1-cos(gait*2))*1.0*moving_blend
-	var squat=20.0*performance_pose.crouch_blend if polished else (20.0 if crouching else 0.0)
+	var squat=28.0*performance_pose.crouch_blend if polished else (20.0 if crouching else 0.0)
 	var landing=sin(land_time/.24*PI)*(4+4*performance_pose.impact if polished else 4) if land_time>0 else 0.0
 	var airborne=not is_on_floor() and game!=null and game.mode=="playing"
 	var rise=clampf(-velocity.y/400,0,1) if airborne else 0.0
@@ -389,7 +400,7 @@ func _draw():
 	if polished:
 		var warm=game.last_house.warm_light_at(position)
 		ink=Color("243638").lerp(Color("343b2e"),warm*.5);far=Color("273638").lerp(Color("353c30"),warm*.4)
-		cloth=Color("3b5050").lerp(Color("505746"),warm*.45);edge=Color("9aaca0").lerp(Color("c1b787"),warm*.7)
+		cloth=Color("3b5050").lerp(Color("505746"),warm*.45).darkened(game.wetness*.10);edge=Color("9aaca0").lerp(Color("c1b787"),warm*.7)
 	var breathe=sin(anim_time*(2.8+weary*.7))*(.5+weary*.3)*(1-moving_blend)
 	shoulder+=Vector2(shiver,breathe)
 	var head=shoulder+Vector2(face*(1.2+weary*2),-15+weary*1.7)
@@ -462,7 +473,7 @@ func _draw():
 	draw_line(shoulder+Vector2(0,-2),head+Vector2(0,6),ink,7,true)
 	draw_set_transform(head*s,head_tilt,Vector2(s*head_facing,s))
 	var profile_tint=Color(.23,.29,.29).lerp(Color(.15,.23,.28),bleak)
-	if polished:profile_tint=Color(.53,.59,.55).lerp(Color(.65,.61,.45),game.last_house.warm_light_at(position)*.5)
+	if polished:profile_tint=Color(.61,.64,.57).lerp(Color(.70,.65,.49),game.last_house.warm_light_at(position)*.5)
 	if is_girl: draw_texture_rect_region(girl_profile,Rect2(-19,-17,34,32),Rect2(30,15,1135,1000),profile_tint)
 	else: draw_texture_rect_region(head_atlas,Rect2(-15,-17,31,34),Rect2(0,0,440,490),profile_tint)
 	draw_set_transform(Vector2.ZERO,0,Vector2(s,s))

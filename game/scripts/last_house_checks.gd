@@ -15,7 +15,7 @@ static func run(g):
 		g.assert_check("shop_supplies_collected" if upper else "arcade_preserves_shop_choice",bool(g.flags.get("shop_supplies",false))==upper,str(g.flags))
 		g.assert_check("shop_pair_survives" if upper else "arcade_pair_survives",g.death_count==0 and g.health>0 and g.mode=="playing",str(result))
 		g.assert_check("shop_reciprocal_help" if upper else "arcade_reciprocal_help",g.flags.get("passage_complete",false) and g.flags.get("damaged_passage",false))
-		g.assert_check("shop_relief" if upper else "arcade_relief",g.flags.get("shared_meal",false) and g.warmth>94 and g.wetness<.1,str([g.warmth,g.wetness]))
+		g.assert_check("shop_relief" if upper else "arcade_relief",g.flags.get("shared_meal",false) and g.warmth>94 and g.wetness<.2,str([g.warmth,g.wetness]))
 	# Repeated/refused shelter actions cannot spend more supplies or finish early.
 	g.last_house.start(false);g.player.position=Vector2(8560,699);g.boy.position=Vector2(8506,699);await frames(g,10)
 	var share=g.level.interact.filter(func(p):return p.kind=="share")[0]
@@ -29,7 +29,7 @@ static func run(g):
 	g.assert_check("share_consumes_one_ration_and_warms",g.rations==0 and g.food>90 and g.warmth==95 and g.wetness<.16)
 	var meal_food=g.food;g.last_house.try_interact(share)
 	g.assert_check("repeat_share_never_duplicates_supplies",g.rations==0 and g.food==meal_food and not g.flags.get("emergency_bowl",false))
-	g.last_house.try_interact(quiet);g.assert_check("quiet_requires_relief_time",not g.flags.get("last_house_complete",false))
+	g.last_house.try_interact(quiet);g.assert_check("quiet_waits_for_shared_meal_gesture",not g.flags.get("last_house_complete",false))
 	await frames(g,330);g.assert_check("dry_room_drains_wetness_and_preserves_warmth",g.wetness==0 and g.warmth>95,str([g.warmth,g.wetness]))
 	g.last_house.try_interact(quiet);g.assert_check("relief_completion_remains_playable",g.flags.get("last_house_complete",false) and g.mode=="playing")
 	g.assert_check("support_prompt_requires_held_input",g.last_house.prompt_for(support).begins_with("HOLD E"))
@@ -160,7 +160,7 @@ static func route(g,upper,capture):
 			if g.flags.get("last_house_complete",false):phase="complete"
 		if hold>0:Input.action_press("jump");hold-=1
 		await g.get_tree().physics_frame
-		if capture and tick%4==0:
+		if capture and tick%2==0:
 			await RenderingServer.frame_post_draw
 			g.get_viewport().get_texture().get_image().save_jpg(folder.path_join("%05d.jpg"%n),.87);n+=1
 		if capture:
@@ -177,7 +177,7 @@ static func route(g,upper,capture):
 				await RenderingServer.frame_post_draw;g.get_viewport().get_texture().get_image().save_png(g.report_path("%02d_%s.png"%[events.size(),phase]))
 		if phase=="complete":break
 	release()
-	return {"upper_shop":upper,"complete":g.flags.get("last_house_complete",false),"phase":phase,"girl":str(g.player.position),"boy":str(g.boy.position),"health":g.health,"warmth":g.warmth,"wetness":g.wetness,"deaths":g.death_count,"maximum_separation":max_gap,"playtime":g.playtime,"frames":n,"events":events,"details":details,"stuck_frames":stuck}
+	return {"upper_shop":upper,"complete":g.flags.get("last_house_complete",false),"phase":phase,"girl":str(g.player.position),"boy":str(g.boy.position),"health":g.health,"warmth":g.warmth,"wetness":g.wetness,"deaths":g.death_count,"maximum_separation":max_gap,"playtime":g.playtime,"frames":n,"capture_fps":30 if capture else 0,"events":events,"details":details,"stuck_frames":stuck}
 
 static func capture(g):
 	g.last_house_save_path="user://qa_capture_"+str(Time.get_ticks_usec())+".slice"

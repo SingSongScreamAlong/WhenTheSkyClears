@@ -12,7 +12,7 @@ func _draw():
 	var left=game.camera.position.x-800
 	for i in range(maxi(0,int((left-40)/67)),int(minf(float(game.level.width),left+1660)/67)+1):
 		var x=i*67.0+game.world.noise_at(i*2)*21
-		if not game.ground_at(x): continue
+		if not game.ground_at(x) or (game.slice_active and game.last_house.room_floor(x)):continue
 		var y=float(game.surface_y_at(x,700))
 		var wind=sin(game.clock*1.3+i)*2
 		if game.slice_active:

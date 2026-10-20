@@ -129,7 +129,7 @@ static func run(g):
 	# Restart loops after stop_all only happens during shutdown, so end now.
 	for suffix in ["",".tmp",".bak"]:DirAccess.remove_absolute(g.settings_path+suffix)
 	var passed=g.test_log.all(func(c):return c.passed)
-	var report={"build":"0.5.2","all_passed":passed,"checks":g.test_log,"method":"Native keyboard and synthetic InputEventJoypadButton injection, real controller/physics/menu paths and disposable preference files. No physical controller or human hearing validation. Targeted audio state/fixture setups are separate from route completion."}
+	var report={"build":"0.5.3","all_passed":passed,"checks":g.test_log,"method":"Native keyboard and synthetic InputEventJoypadButton injection, real controller/physics/menu paths and disposable preference files. No physical controller or human hearing validation. Targeted audio state/fixture setups are separate from route completion."}
 	f=FileAccess.open(g.report_path("access_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify(report,"\t"));f.close();print("ACCESS_CHECKS ",passed," count=",g.test_log.size())
 	g.quit_game(0 if passed else 1)
 static func audio_capture(g):
@@ -154,6 +154,6 @@ static func audio_capture(g):
 	g.soundscape.cue("bread",-4,g.player.position,"SHARING FOOD")
 	await g.get_tree().create_timer(1).timeout
 	record.set_recording_active(false);var wav=record.get_recording();var err=wav.save_to_wav(g.report_path("native_mix.wav"))
-	var report={"build":"0.5.2","saved":err==OK,"seconds":wav.get_length(),"audio_driver":AudioServer.get_driver_name(),"events":g.soundscape.events,"scope":"Actual native master bus recording in a deliberate positional/roof transition fixture. No microphone or OS loopback. No subjective listening/physical device claim."}
+	var report={"build":"0.5.3","saved":err==OK,"seconds":wav.get_length(),"audio_driver":AudioServer.get_driver_name(),"events":g.soundscape.events,"scope":"Actual native master bus recording in a deliberate positional/roof transition fixture. No microphone or OS loopback. No subjective listening/physical device claim."}
 	var f=FileAccess.open(g.report_path("audio_capture.json"),FileAccess.WRITE);f.store_string(JSON.stringify(report,"\t"));f.close()
 	print("AUDIO_CAPTURE ",JSON.stringify(report));g.quit_game(0 if err==OK and wav.get_length()>8 else 1)

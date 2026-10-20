@@ -1,0 +1,1428 @@
+{
+  "version": "0.5.3",
+  "base_commit": "74919270958834c2a4752cca3701e1923754b2c8",
+  "branch": "dev/last-house-before-crossing",
+  "executable": "game/build/v0.5.3/When the Sky Clears.exe",
+  "executable_sha256": "1cd1bd9835cfde70bc74b57a31c7c1cdec96511f05c6df193bb5a1a53b143524",
+  "executable_bytes": 134020088,
+  "checks": {
+    "slice-checks": 38,
+    "trust-checks": 21,
+    "crossing-checks": 12,
+    "smoke": 120,
+    "survival": 13,
+    "encounters": 10,
+    "journey-checks": 35,
+    "side-routes": 13,
+    "access-capture": 48,
+    "quality-checks": 12
+  },
+  "total_checks": 322,
+  "journey": {
+    "build": "0.5.3",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 0,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.59999999999999
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6166666666668
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2666666666662
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_basket",
+        "kind": "cache",
+        "time": 44.1166666666654
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 51.1499999999984
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 66.2833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 75.0166666666637
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 80.9666666666634
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 90.4833333333295
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 94.4166666666626
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 106.633333333329
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 120.383333333328
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 136.433333333334
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 142.300000000005
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 147.883333333343
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 158.550000000018
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 162.600000000022
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 179.416666666702
+      },
+      {
+        "chapter": 2,
+        "id": "freight_loading_bar",
+        "kind": "relay",
+        "time": 200.766666666719
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 225.400000000072
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 231.100000000076
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 237.383333333414
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 240.26666666675
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 246.950000000089
+      },
+      {
+        "chapter": 2,
+        "id": "freight_kitchen",
+        "kind": "cache",
+        "time": 256.100000000096
+      },
+      {
+        "chapter": 2,
+        "id": "camp_waiting_roof",
+        "kind": "brace",
+        "time": 263.500000000089
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 274.266666666746
+      },
+      {
+        "chapter": 2,
+        "id": "freight_bread",
+        "kind": "cache",
+        "time": 280.833333333407
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 294.450000000061
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 313.66666666671
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 326.466666666698
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 328.30000000003
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 337.266666666689
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 342.016666666684
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 346.76666666668
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 354.08333333334
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 361.383333333333
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 369.333333333326
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 379.749999999983
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 391.06666666664
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 398.366666666633
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 414.416666666618
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 432.216666666602
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_tin",
+        "kind": "cache",
+        "time": 451.099999999918
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 464.049999999907
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 478.199999999894
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 489.649999999883
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 494.833333333212
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 1,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 494.833333333212
+  },
+  "routes": [
+    {
+      "boy": "(8691.936, 699.9252)",
+      "capture_fps": 0,
+      "complete": true,
+      "deaths": 0,
+      "details": {},
+      "events": [
+        {
+          "boy": "(137.1321, 699.9252)",
+          "frame": 0,
+          "girl": "(180.3, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.5
+        },
+        {
+          "boy": "(841.5985, 699.9252)",
+          "frame": 0,
+          "girl": "(912.4267, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.96666666666665
+        },
+        {
+          "boy": "(1238.015, 699.9252)",
+          "frame": 0,
+          "girl": "(1280.076, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.24999999999999
+        },
+        {
+          "boy": "(1815.866, 608.2574)",
+          "frame": 0,
+          "girl": "(1855.221, 639.9252)",
+          "health": 100,
+          "phase": "arcade",
+          "time": 12.5000000000002
+        },
+        {
+          "boy": "(3100.693, 699.9252)",
+          "frame": 0,
+          "girl": "(3251.443, 699.9252)",
+          "health": 100,
+          "phase": "passage",
+          "time": 31.5833333333328
+        },
+        {
+          "boy": "(4326.144, 699.9252)",
+          "frame": 0,
+          "girl": "(4404.083, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 40.549999999999
+        },
+        {
+          "boy": "(5403.528, 699.9252)",
+          "frame": 0,
+          "girl": "(5474.758, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 46.9999999999986
+        },
+        {
+          "boy": "(5431.126, 699.9252)",
+          "frame": 0,
+          "girl": "(5482.843, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 56.3666666666647
+        },
+        {
+          "boy": "(5922.076, 699.9252)",
+          "frame": 0,
+          "girl": "(6128.238, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 58.9166666666646
+        },
+        {
+          "boy": "(6098.122, 699.9252)",
+          "frame": 0,
+          "girl": "(6150.099, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 65.9999999999975
+        },
+        {
+          "boy": "(6666.745, 698.135)",
+          "frame": 0,
+          "girl": "(6888.24, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 68.8999999999974
+        },
+        {
+          "boy": "(6832.184, 699.9252)",
+          "frame": 0,
+          "girl": "(6910.101, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 71.0833333333306
+        },
+        {
+          "boy": "(7282.37, 699.9252)",
+          "frame": 0,
+          "girl": "(7427.417, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 73.1499999999971
+        },
+        {
+          "boy": "(8222.715, 699.9252)",
+          "frame": 0,
+          "girl": "(8293.942, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 78.3499999999968
+        },
+        {
+          "boy": "(8482.225, 699.9252)",
+          "frame": 0,
+          "girl": "(8553.452, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 80.53333333333
+        },
+        {
+          "boy": "(8691.936, 699.9252)",
+          "frame": 0,
+          "girl": "(8763.163, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 82.8166666666633
+        }
+      ],
+      "frames": 0,
+      "girl": "(8763.163, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 303.768310546875,
+      "phase": "complete",
+      "playtime": 82.8166666666633,
+      "stuck_frames": 0,
+      "upper_shop": false,
+      "warmth": 96.077979333334,
+      "wetness": 0.129050000000007
+    },
+    {
+      "boy": "(8692.589, 699.9252)",
+      "capture_fps": 0,
+      "complete": true,
+      "deaths": 0,
+      "details": {},
+      "events": [
+        {
+          "boy": "(137.2121, 699.9252)",
+          "frame": 0,
+          "girl": "(180.3, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.516666666666667
+        },
+        {
+          "boy": "(841.5985, 699.9252)",
+          "frame": 0,
+          "girl": "(912.4267, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.98333333333332
+        },
+        {
+          "boy": "(1238.015, 699.9252)",
+          "frame": 0,
+          "girl": "(1280.076, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.26666666666666
+        },
+        {
+          "boy": "(1815.866, 608.2574)",
+          "frame": 0,
+          "girl": "(1855.221, 639.9252)",
+          "health": 100,
+          "phase": "shop",
+          "time": 12.5166666666669
+        },
+        {
+          "boy": "(3213.789, 579.9252)",
+          "frame": 0,
+          "girl": "(3285.014, 688.7918)",
+          "health": 100,
+          "phase": "passage",
+          "time": 22.9833333333333
+        },
+        {
+          "boy": "(4326.625, 699.9252)",
+          "frame": 0,
+          "girl": "(4404.938, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 31.5333333333328
+        },
+        {
+          "boy": "(5401.616, 699.9252)",
+          "frame": 0,
+          "girl": "(5472.846, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 37.9666666666658
+        },
+        {
+          "boy": "(5408.995, 699.9252)",
+          "frame": 0,
+          "girl": "(5478.713, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 38.0166666666658
+        },
+        {
+          "boy": "(5913.243, 699.9252)",
+          "frame": 0,
+          "girl": "(6124.475, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 40.499999999999
+        },
+        {
+          "boy": "(6094.629, 699.9252)",
+          "frame": 0,
+          "girl": "(6146.335, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 47.5333333333319
+        },
+        {
+          "boy": "(6663.911, 696.2961)",
+          "frame": 0,
+          "girl": "(6884.477, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 50.4333333333318
+        },
+        {
+          "boy": "(6827.983, 699.9252)",
+          "frame": 0,
+          "girl": "(6906.338, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 52.5999999999983
+        },
+        {
+          "boy": "(7282.803, 699.9252)",
+          "frame": 0,
+          "girl": "(7428.07, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 54.6833333333315
+        },
+        {
+          "boy": "(8223.368, 699.9252)",
+          "frame": 0,
+          "girl": "(8294.596, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 59.8833333333312
+        },
+        {
+          "boy": "(8482.878, 699.9252)",
+          "frame": 0,
+          "girl": "(8554.105, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 62.0666666666644
+        },
+        {
+          "boy": "(8692.589, 699.9252)",
+          "frame": 0,
+          "girl": "(8763.816, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 64.3499999999976
+        }
+      ],
+      "frames": 0,
+      "girl": "(8763.816, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 285.825439453125,
+      "phase": "complete",
+      "playtime": 64.3499999999976,
+      "stuck_frames": 0,
+      "upper_shop": true,
+      "warmth": 96.1502875000006,
+      "wetness": 0.080683333333414
+    }
+  ],
+  "captures": {
+    "slice-capture": {
+      "boy": "(8694.603, 699.9252)",
+      "capture_fps": 30,
+      "complete": true,
+      "deaths": 0,
+      "details": {
+        "boy_holds_support": {
+          "boy": "(4186.162, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 1108,
+          "girl": "(3907.978, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 37.4666666666658
+        },
+        "girl_holds_support": {
+          "boy": "(4029.66, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 1090,
+          "girl": "(3907.978, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 36.8499999999992
+        },
+        "pair_covered_0": {
+          "boy": "(5432.676, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 1407,
+          "girl": "(5484.393, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 47.4499999999986
+        },
+        "pair_covered_1": {
+          "boy": "(6095.457, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 1823,
+          "girl": "(6147.232, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 61.3333333333311
+        }
+      },
+      "events": [
+        {
+          "boy": "(137.2398, 699.9252)",
+          "frame": 1,
+          "girl": "(180.9, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.516666666666667
+        },
+        {
+          "boy": "(841.6058, 699.9252)",
+          "frame": 134,
+          "girl": "(912.8323, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.96666666666665
+        },
+        {
+          "boy": "(1238.009, 699.9252)",
+          "frame": 232,
+          "girl": "(1280.076, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.23333333333332
+        },
+        {
+          "boy": "(1815.866, 608.2574)",
+          "frame": 360,
+          "girl": "(1855.221, 639.9252)",
+          "health": 100,
+          "phase": "arcade",
+          "time": 12.5000000000002
+        },
+        {
+          "boy": "(3101.91, 699.9252)",
+          "frame": 932,
+          "girl": "(3251.777, 699.9252)",
+          "health": 100,
+          "phase": "passage",
+          "time": 31.5666666666662
+        },
+        {
+          "boy": "(4322.498, 699.9252)",
+          "frame": 1199,
+          "girl": "(4400.1, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 40.499999999999
+        },
+        {
+          "boy": "(5402.312, 699.9252)",
+          "frame": 1393,
+          "girl": "(5473.542, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 46.9666666666653
+        },
+        {
+          "boy": "(5432.676, 699.9252)",
+          "frame": 1675,
+          "girl": "(5484.393, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 56.3833333333314
+        },
+        {
+          "boy": "(5909.459, 699.9252)",
+          "frame": 1751,
+          "girl": "(6120.955, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 58.9166666666646
+        },
+        {
+          "boy": "(6095.457, 699.9252)",
+          "frame": 1963,
+          "girl": "(6147.232, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 65.9999999999975
+        },
+        {
+          "boy": "(6656.195, 695.7684)",
+          "frame": 2050,
+          "girl": "(6880.957, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 68.8999999999974
+        },
+        {
+          "boy": "(6827.532, 699.9252)",
+          "frame": 2118,
+          "girl": "(6907.234, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 71.1666666666639
+        },
+        {
+          "boy": "(7275.242, 699.9252)",
+          "frame": 2180,
+          "girl": "(7420.134, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 73.2333333333305
+        },
+        {
+          "boy": "(8223.021, 699.9252)",
+          "frame": 2337,
+          "girl": "(8294.248, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 78.4666666666635
+        },
+        {
+          "boy": "(8479.764, 699.9252)",
+          "frame": 2402,
+          "girl": "(8550.991, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 80.63333333333
+        },
+        {
+          "boy": "(8692.241, 699.9252)",
+          "frame": 2471,
+          "girl": "(8763.469, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 82.9333333333299
+        }
+      ],
+      "frames": 2471,
+      "girl": "(8765.83, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 299.73486328125,
+      "pause_has_restart": true,
+      "phase": "complete",
+      "playtime": 82.9499999999966,
+      "stuck_frames": 0,
+      "title_has_slice": true,
+      "upper_shop": false,
+      "warmth": 96.0863429166674,
+      "wetness": 0.128316666666674
+    },
+    "slice-shop-capture": {
+      "boy": "(8695.345, 699.9252)",
+      "capture_fps": 30,
+      "complete": true,
+      "deaths": 0,
+      "details": {
+        "boy_holds_support": {
+          "boy": "(4186.442, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 837,
+          "girl": "(3904.516, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 28.4499999999997
+        },
+        "exposed_shop_supplies": {
+          "boy": "(2640.167, 579.9252)",
+          "boy_state": "OPEN",
+          "frame": 541,
+          "girl": "(2682.228, 579.9252)",
+          "girl_state": "OPEN",
+          "time": 18.5500000000002
+        },
+        "girl_holds_support": {
+          "boy": "(4029.34, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 819,
+          "girl": "(3904.516, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 27.833333333333
+        },
+        "pair_covered_1": {
+          "boy": "(6096.124, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 1273,
+          "girl": "(6147.975, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 42.9999999999988
+        }
+      },
+      "events": [
+        {
+          "boy": "(137.2398, 699.9252)",
+          "frame": 1,
+          "girl": "(180.9, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.516666666666667
+        },
+        {
+          "boy": "(841.6058, 699.9252)",
+          "frame": 134,
+          "girl": "(912.8323, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.96666666666665
+        },
+        {
+          "boy": "(1238.009, 699.9252)",
+          "frame": 232,
+          "girl": "(1280.076, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.23333333333332
+        },
+        {
+          "boy": "(1815.866, 608.2574)",
+          "frame": 360,
+          "girl": "(1855.221, 639.9252)",
+          "health": 100,
+          "phase": "shop",
+          "time": 12.5000000000002
+        },
+        {
+          "boy": "(3211.022, 579.9252)",
+          "frame": 673,
+          "girl": "(3282.247, 679.7196)",
+          "health": 100,
+          "phase": "passage",
+          "time": 22.95
+        },
+        {
+          "boy": "(4323.651, 699.9252)",
+          "frame": 929,
+          "girl": "(4402.171, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 31.5166666666662
+        },
+        {
+          "boy": "(5398.85, 699.9252)",
+          "frame": 1122,
+          "girl": "(5470.08, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 37.9499999999991
+        },
+        {
+          "boy": "(5408.995, 699.9252)",
+          "frame": 1124,
+          "girl": "(5478.713, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 38.0166666666658
+        },
+        {
+          "boy": "(5905.043, 699.9252)",
+          "frame": 1199,
+          "girl": "(6121.697, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 40.5166666666657
+        },
+        {
+          "boy": "(6096.124, 699.9252)",
+          "frame": 1409,
+          "girl": "(6147.975, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 47.5333333333319
+        },
+        {
+          "boy": "(6663.911, 696.2961)",
+          "frame": 1496,
+          "girl": "(6881.7, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 50.4333333333318
+        },
+        {
+          "boy": "(6829.751, 699.9252)",
+          "frame": 1561,
+          "girl": "(6907.977, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 52.5999999999983
+        },
+        {
+          "boy": "(7276.086, 699.9252)",
+          "frame": 1623,
+          "girl": "(7420.876, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 54.6666666666648
+        },
+        {
+          "boy": "(8223.763, 699.9252)",
+          "frame": 1780,
+          "girl": "(8294.99, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 59.8999999999979
+        },
+        {
+          "boy": "(8480.506, 699.9252)",
+          "frame": 1845,
+          "girl": "(8551.733, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 62.0666666666644
+        },
+        {
+          "boy": "(8692.983, 699.9252)",
+          "frame": 1914,
+          "girl": "(8764.211, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 64.3666666666643
+        }
+      ],
+      "frames": 1914,
+      "girl": "(8766.572, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 287.314208984375,
+      "pause_has_restart": true,
+      "phase": "complete",
+      "playtime": 64.383333333331,
+      "stuck_frames": 0,
+      "title_has_slice": true,
+      "upper_shop": true,
+      "warmth": 96.1585225277784,
+      "wetness": 0.080383333333414
+    }
+  },
+  "selected_screenshots": [
+    {
+      "file": "evidence/v053/selected/01_04_arcade.jpg",
+      "sha256": "990f98e2a55ebeb031d4b4cb5be3c913c7d82c4b81b336987120dc50594bd8b9",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v053/release_final/slice-capture/04_arcade.png",
+      "native_source_sha256": "8cf56c2c327e2b46f83fbfc5816189b4caeba0150df91247dfbea62f94faec48",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v053/selected/02_detail_exposed_shop_supplies.jpg",
+      "sha256": "e55398c25f6d0f102668a1f1d0fa868d8fe0f1a0a09552cc0ae5328425b7b4af",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v053/release_final/slice-shop-capture/detail_exposed_shop_supplies.png",
+      "native_source_sha256": "2a1ee082779da24a9969bc9d0cb62296bfde8f44acb1af4f57b6830fc631fe62",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v053/selected/03_detail_boy_holds_support.jpg",
+      "sha256": "a0b58675c22e4c229675a96e91131f055a73c8a712633f31ad10c0e8f3dd0876",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v053/release_final/slice-capture/detail_boy_holds_support.png",
+      "native_source_sha256": "02db00a9011327c300e19cb20671f58a19c48ae533f3ad5b3b6c1cbd930495f7",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v053/selected/04_detail_pair_covered_1.jpg",
+      "sha256": "e907065ea723851a70d15948c222a3db8553b514bcc09c94890cbcaccaa17101",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v053/release_final/slice-capture/detail_pair_covered_1.png",
+      "native_source_sha256": "328a35468d702a02d141f7d759d9901a2910332e91e2a6124d7057b87ff91480",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v053/selected/05_14_share.jpg",
+      "sha256": "ce2f9d47f4d3a1f8bbba58283f3247520e89af809e70a5833687818e07f6865f",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v053/release_final/slice-capture/14_share.png",
+      "native_source_sha256": "575282d08621be3b60d9b2abdc083bb06931f3b62020a3159985b1083a5c7a6d",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v053/selected/06_16_complete.jpg",
+      "sha256": "b410ecbe909e42a86ed6ba5ae875d0f6bde15d7aa1f6dfad4526d2d01be0794d",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v053/release_final/slice-capture/16_complete.png",
+      "native_source_sha256": "266ab58c16ae7487f58c3f8ee4834966690bafc843dbc644df2249d49d5b3229",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    }
+  ],
+  "source_sha256": {
+    "scripts/access_checks.gd": "ab494c04843ac62115e9146badfb55ce691ef51e0b24fef2758acc1bf2721270",
+    "scripts/access_checks.gd.uid": "355ec6a4166021c40becf47c895b4756413284f57acc6bb1c590b123beb4b5fd",
+    "scripts/access_settings.gd": "1a702258aa1076dc78a821fcde9438dcf6f01070773d8c5796728db49d08d76f",
+    "scripts/access_settings.gd.uid": "0b60cb36fbcc29d3ebf82c286b29144069154085dc89da832db333ca1ab1a069",
+    "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts/child.gd.uid": "e0358e821e975776dc050e03d9c5cc604195406304b1337dec459326785f1fac",
+    "scripts/child_performance.gd": "8328a28fcab7b20bf114c55fad5d29d7615d6b582b12454b3169aa41de079561",
+    "scripts/child_performance.gd.uid": "19f04267631fea7e57d2754b434b8b6c5562612dbdfd7b84d9a54f969b155d30",
+    "scripts/child_v2.gd": "251f71870d14fb23f580be0669b23c335ebec62d145a40970e760ea3dcff551b",
+    "scripts/child_v2.gd.uid": "7580c2baf68e24a1d94278973d79b7f6c10421420d0ce8d740c36c8e7be3caff",
+    "scripts/crossing_checks.gd": "dcb3d2c65ac7b7aab1cb3d70692d47930bf548d1fcd8f77d0fc4a595002e1e2d",
+    "scripts/crossing_checks.gd.uid": "3c484968f313bc08f69a23456b25e800d96efbe3c082dd4998bc47f557db3126",
+    "scripts/feedback_audio.gd": "412d9e7513b2022267081ffe87b3c48002c4db515dce99d3b0857a89c6286c9d",
+    "scripts/feedback_audio.gd.uid": "73975b86c6986a8e9a4c6311a7a44c4cbe3299519ff6640fddaa077c3299c7b7",
+    "scripts/foreground.gd": "00baf1dfee683884de3d3cdc7cb42736358e8c9c84e46ef48cdc696a4e5276ae",
+    "scripts/foreground.gd.uid": "53545838701b4c78dd59ee6366b2692cce1073857e7b2a5d9e5471097f5e3771",
+    "scripts/game.gd": "96806654eba40591e00bcfb976bda94b5edab2cccf92e7beaa68aaa0135935de",
+    "scripts/game.gd.uid": "b42abaf92f79be93b8e2ba006ff5f75317bfeaa8c2cf9240dcb53de4c7cce8fb",
+    "scripts/hud.gd": "76c448959de8eb475a5e8f287a6de48f8f312725a31a936e078cad56b2e8b7a5",
+    "scripts/hud.gd.uid": "0ca2f16dcd37a5654727716d4d4683366d5390456089439ab8e9604e61c73b9b",
+    "scripts/last_house.gd": "3eec92dbe01f6ab4e0c97fab7745589fe82762d933dc5542adccc0c8434fa187",
+    "scripts/last_house.gd.uid": "4e91d05b69f80c2b9990255bbb7eadc96d169d17ecd7d8a5a61e8e29a1c4b40e",
+    "scripts/last_house_checks.gd": "6bc849322cd30459c2866071ea4c13a350aaccc5a761004812b0d1757efd9352",
+    "scripts/last_house_checks.gd.uid": "b4b24f1454c889d97056b24a039709dded0288a6c1708da79ea4b42a32b6b676",
+    "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts/pushable.gd.uid": "8c0001652f3c85f1341165595471f167c48b12bb3d289b0d0b0c7fe9797f3348",
+    "scripts/quality_checks.gd": "04a2a9102200ff9dc0c5bfa532a1714c9a940a67651de68f68b40d6c9ba16ad3",
+    "scripts/quality_checks.gd.uid": "02ebe70ed6d23861c08e0a1745c32ecbb32eec1a03c593b11e85f3a263a07491",
+    "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts/side_route_checks.gd.uid": "db4937cc1c33b28b9a7959bc157f7a1f8ca3441b79d472d82c3f6d3c486513f7",
+    "scripts/trust_checks.gd": "c3b312fa2a7cea5439ff08a738d20e709f9af5e51d17829853cd8015eeacaba6",
+    "scripts/trust_checks.gd.uid": "c4e1d81755cc963b61f632ef3a4fddf4c5c941d22c9b6815cf5ab51cb41060c1",
+    "scripts/world.gd": "9738ecf14a6ac5272f550bda49347ae717c3b4a7feb5c96e87041e5da3b908db",
+    "scripts/world.gd.uid": "2186abbed5b3e691f821efdfdb136147f4232de492a2e11f7aabba293466ba71",
+    "levels/01.json": "6f06c7d7c3cd36e44e349d74d8ff89e229dba8de842c9692635590b5cbff56aa",
+    "levels/02.json": "13151c89c2ccc25825e18142dfff62c9730dbc17c0a51438bcea6634356f5bfc",
+    "levels/03.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+    "levels/04.json": "702473811c7222a46542976bdd5d19d6bc10b2806add6b6e78677ddb4c5db68c",
+    "levels/05.json": "b7b2d1995b2c0143c36cd2ded4a5e275737a6dbd8caad4f963fe5e0c032aed4c",
+    "levels/last_house.json": "d9a921e2d6ef4e0dd91b08b029b89c4814e8e447a5f36d3315cf9aeafcd922ee",
+    "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+    "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+    "assets/audio/bread.wav": "eb09b2365b48bce78653560429bcca4adf1c2305023cc665006bc1f0df0f7458",
+    "assets/audio/cloth.wav": "495fc25594611f97ec3832d9a9e5f44f9350def760533be03b83455dc570c862",
+    "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+    "assets/audio/FEEDBACK_PROVENANCE_v052.json": "4a97677737a8a38da4d27b24d7568aa0a4154df21fa1a629e24c496e12ad4069",
+    "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+    "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+    "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+    "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+    "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+    "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+    "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+    "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+    "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+    "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+    "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+    "assets/audio/rain_open.wav": "9e0ba00550675bdb86cd849c49cf17fab6dc6120715bc5b6e06b07e0870c488d",
+    "assets/audio/rain_roof.wav": "0f3d8f98b8136810f625c8715a9bf8b9704d6cf4ff01b4377aea2d662cd80d3d",
+    "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+    "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+    "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+    "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+    "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+    "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+    "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+    "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+    "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+    "assets/environments/LastHouse_PROVENANCE_v050.txt": "de765508c9b5a0dbd6c301846e9bb014fc7e0b3044efd29e9827575dc1c8f594",
+    "assets/environments/LastHouse_v050.png": "b3e3e2c2f81542c0f0e4c40c0e9ed2c93c07309d95e841dc8286002d628b3910",
+    "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+    "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+    "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+    "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+    "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+    "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+    "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+    "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+    "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+    "project.godot": "25c9f595ed0b6ced7cbeea65a7a506875a41a4ebfce1817971c866c98a9c52c3"
+  },
+  "motion": [
+    {
+      "file": "WTSC_v053_Before_Matched_Motion.mp4",
+      "sha256": "067b90f99b9aaea2fd094599489108f357b37a34651ec700d2f8b941604fd59b",
+      "frames": 554,
+      "fps": 30,
+      "seconds": 18.466666666666665,
+      "scope": "Silent native source-runtime matched fixed-input fixture. Deliberate starts between scenarios; no interpolation or position changes within a scenario."
+    },
+    {
+      "file": "WTSC_v053_After_Matched_Motion.mp4",
+      "sha256": "dad2dc710b558134d6a1dbaf2e0252b92422990bce3fb248548665b77004f6d3",
+      "frames": 554,
+      "fps": 30,
+      "seconds": 18.466666666666665,
+      "scope": "Silent native source-runtime matched fixed-input fixture. Deliberate starts between scenarios; no interpolation or position changes within a scenario."
+    },
+    {
+      "file": "WTSC_v053_Matched_Before_After.mp4",
+      "sha256": "e5e0af7237335b58d812be55cffbceb5e7dc3109658915e4a5af8b6f694eb192",
+      "frames": 554,
+      "fps": 30,
+      "seconds": 18.466666666666665,
+      "scope": "Left:7491927 source baseline; right:v053 accepted source. Actual same-frame captures, no AI repaint. Not a continuous route or artistic quality score."
+    },
+    {
+      "file": "WTSC_v052_Full_Arcade_Route.mp4",
+      "sha256": "c999462d5a5a2f11d4e5e047558b08cf569f63876cca34fd92a9207276f5de5b",
+      "frames": 1274,
+      "fps": 15,
+      "seconds": 84.93333333333334,
+      "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+    },
+    {
+      "file": "WTSC_v052_Full_Shop_Route.mp4",
+      "sha256": "7d86bcaf27422b6b004d3cda06d41cd142777dc653bc44ce7223f7f2d07e3973",
+      "frames": 999,
+      "fps": 15,
+      "seconds": 66.6,
+      "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+    },
+    {
+      "file": "WTSC_v053_Full_Arcade_Route.mp4",
+      "sha256": "d64009ed7d427fa8c8e5afc1abbaf61e901c6455139cb9d69c57527720c97f6f",
+      "frames": 2471,
+      "fps": 30,
+      "seconds": 82.36666666666666,
+      "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+    },
+    {
+      "file": "WTSC_v053_Full_Shop_Route.mp4",
+      "sha256": "78d04c26d85befdff79cda84ede0f23c63a4f1c19311788d22da2fa8b6ca0c5d",
+      "frames": 1914,
+      "fps": 30,
+      "seconds": 63.8,
+      "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+    }
+  ],
+  "pacing": "No padded timers; meal gesture replaces old five-second quiet gate. Route completion wetness begins recovery below.2; optional gradual drying remains tested. Scripted route durations do not validate human5-10minute pacing.",
+  "verification_limits": "Windows Godot4.6. Native input/physics/save regression plus inspected sampled frames and measured contacts; normal-speed silent movies. No human playtime/controller/Mac/hearing acceptance.",
+  "source_export_note": "After release export, only custom Windows template paths are cleared in the source preset for portable editor play; runtime source/project bytes are unchanged.",
+  "library": "Prior protected connection denial retained. No upload retry/bypass; no Library file ID available.",
+  "quality_review": {
+    "motion": [
+      {
+        "file": "WTSC_v053_Before_Matched_Motion.mp4",
+        "sha256": "067b90f99b9aaea2fd094599489108f357b37a34651ec700d2f8b941604fd59b",
+        "frames": 554,
+        "fps": 30,
+        "seconds": 18.466666666666665,
+        "scope": "Silent native source-runtime matched fixed-input fixture. Deliberate starts between scenarios; no interpolation or position changes within a scenario."
+      },
+      {
+        "file": "WTSC_v053_After_Matched_Motion.mp4",
+        "sha256": "dad2dc710b558134d6a1dbaf2e0252b92422990bce3fb248548665b77004f6d3",
+        "frames": 554,
+        "fps": 30,
+        "seconds": 18.466666666666665,
+        "scope": "Silent native source-runtime matched fixed-input fixture. Deliberate starts between scenarios; no interpolation or position changes within a scenario."
+      },
+      {
+        "file": "WTSC_v053_Matched_Before_After.mp4",
+        "sha256": "e5e0af7237335b58d812be55cffbceb5e7dc3109658915e4a5af8b6f694eb192",
+        "frames": 554,
+        "fps": 30,
+        "seconds": 18.466666666666665,
+        "scope": "Left:7491927 source baseline; right:v053 accepted source. Actual same-frame captures, no AI repaint. Not a continuous route or artistic quality score."
+      },
+      {
+        "file": "WTSC_v052_Full_Arcade_Route.mp4",
+        "sha256": "c999462d5a5a2f11d4e5e047558b08cf569f63876cca34fd92a9207276f5de5b",
+        "frames": 1274,
+        "fps": 15,
+        "seconds": 84.93333333333334,
+        "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+      },
+      {
+        "file": "WTSC_v052_Full_Shop_Route.mp4",
+        "sha256": "7d86bcaf27422b6b004d3cda06d41cd142777dc653bc44ce7223f7f2d07e3973",
+        "frames": 999,
+        "fps": 15,
+        "seconds": 66.6,
+        "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+      },
+      {
+        "file": "WTSC_v053_Full_Arcade_Route.mp4",
+        "sha256": "d64009ed7d427fa8c8e5afc1abbaf61e901c6455139cb9d69c57527720c97f6f",
+        "frames": 2471,
+        "fps": 30,
+        "seconds": 82.36666666666666,
+        "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+      },
+      {
+        "file": "WTSC_v053_Full_Shop_Route.mp4",
+        "sha256": "78d04c26d85befdff79cda84ede0f23c63a4f1c19311788d22da2fa8b6ca0c5d",
+        "frames": 1914,
+        "fps": 30,
+        "seconds": 63.8,
+        "scope": "Full native scripted release route at normal simulated speed; silent. Interactions, supplies, cover and physics run normally. No human/physical-controller/pacing claim."
+      }
+    ],
+    "matched_review": "C:\\Users\\conra\\Documents\\Codex\\2026-10-19\\task-3\\last_house_deliverables\\WTSC_v053_Matched_Review.jpg",
+    "selected_quality_images": [
+      {
+        "file": "evidence/v053/quality/before_reverse.jpg",
+        "sha256": "b2f3063b0a566d41f103f2957c35ba78eb1a89f7c97452847448b32a8a38bc9b",
+        "native_source_sha256": "b609085cbe43d303cfc00149fd70ae6932f9a82e3a24e8c08cf385e367b81f84"
+      },
+      {
+        "file": "evidence/v053/quality/final_matched_reverse.jpg",
+        "sha256": "9afbebb99844aa5e6ad0ba7b010169bb4176bc13ada494e101904a5923e1dccb",
+        "native_source_sha256": "a8647d7a39b793fc0a17ffea7b5ce7ec3e4ccb111fc016d6e49d63a66a83fc01"
+      },
+      {
+        "file": "evidence/v053/quality/before_cover_stop.jpg",
+        "sha256": "fb77c74eb8ef5a22360f0bf347d82155c631e22f323f1046c8f0f9e89eb9301c",
+        "native_source_sha256": "9c62239bc09a5c96ebc76110d56c20432d9552a63827d1e762e5e3b9ee12ef57"
+      },
+      {
+        "file": "evidence/v053/quality/final_matched_cover_stop.jpg",
+        "sha256": "8a8ed2c01f9b9f478e50a97838f85bbf9bd8e5329918afa302a600877941f20a",
+        "native_source_sha256": "b3ffd1b2a84e3b28e9f2f5b591a145907b305f2556bebc792c71a75ef7d01c4d"
+      },
+      {
+        "file": "evidence/v053/quality/before_relief.jpg",
+        "sha256": "b742ddcec4cb88d6a61faf7ad0a8d88408da451c7764df5e748bf429a8bb5628",
+        "native_source_sha256": "e19b4329e33f5c16d7abbc84aac0a7d8fe72b985ecdeb71564fed76b1ba1eb3b"
+      },
+      {
+        "file": "evidence/v053/quality/final_matched_relief.jpg",
+        "sha256": "97dbcec1b6fb0fc92a590a15b1b16dbb254035546706ac3dbdf067a76576d03b",
+        "native_source_sha256": "7bf10a986380b1f1c053c074d03dd37e20e4f1e0a69f8ed80d5cf5d58090f650"
+      }
+    ],
+    "comparison": {
+      "matched_fixture_frames": 554,
+      "base_commit": "74919270958834c2a4752cca3701e1923754b2c8",
+      "early_walk_reversal": {
+        "before_min_gap": 0.14111328125,
+        "after_min_gap": 44.1373291015625,
+        "before_frames_below30": 106,
+        "after_frames_below30": 0,
+        "player_positions_identical": true
+      },
+      "contact": {
+        "checks": {
+          "reachable_wrists": true,
+          "world_target_not_clamped": true,
+          "support_grip_contact": true,
+          "paired_wrists_meet": true,
+          "planted_horizontal_drift": true,
+          "sole_matches_surface": true,
+          "leg_chain_reach": true,
+          "upper_leg_length": true,
+          "lower_leg_length": true,
+          "first_step_leg_reach": true,
+          "pelvis_fit_remains_small": true,
+          "normal_poses_need_no_torso_fallback": true
+        },
+        "all_passed": true,
+        "render_samples": 2216,
+        "max_reach_by_mode": {
+          "locomotion": 31.6445770263672,
+          "cover": 21.3790950775146,
+          "support": 33.1522636413574,
+          "bag": 31.0862979888916,
+          "attend_bag": 29.0791969299316,
+          "meal": 26.4199142456055,
+          "quiet": 25.7736339569092
+        },
+        "max_target_error": 0,
+        "max_support_contact_error": 0,
+        "max_paired_contact_error": 0,
+        "stance_samples": 1822,
+        "max_stance_x_drift": 0.07799999999951979,
+        "max_sole_y_error": 0,
+        "scope": "Measured actual rendered wrist/sole transforms from the native fixture. Support expectations are authored world handle locations. Ground stance samples exclude airborne frames, phase wraps and deliberate scenario resets. Numbers complement inspected pixels; not final weight/acting acceptance.",
+        "max_leg_chain_reach": 52.89256279516015,
+        "max_upper_leg": 27.001050902510826,
+        "max_lower_leg": 27.0010277767352,
+        "max_initial_step_leg_reach": 51.57786639092403,
+        "max_pelvis_fit_adjustment": 0
+      },
+      "scope": "Native fixed-input comparison complements normal-scale visual/motion review; deliberately initialized scenarios, not whole route or artistic quality score.",
+      "final_source_contact": {
+        "checks": {
+          "reachable_wrists": true,
+          "world_target_not_clamped": true,
+          "support_grip_contact": true,
+          "paired_wrists_meet": true,
+          "planted_horizontal_drift": true,
+          "sole_matches_surface": true,
+          "leg_chain_reach": true,
+          "upper_leg_length": true,
+          "lower_leg_length": true,
+          "first_step_leg_reach": true,
+          "pelvis_fit_remains_small": true,
+          "normal_poses_need_no_torso_fallback": true
+        },
+        "all_passed": true,
+        "render_samples": 2216,
+        "max_reach_by_mode": {
+          "locomotion": 31.6445770263672,
+          "cover": 21.3790950775146,
+          "support": 33.1522636413574,
+          "bag": 31.0862979888916,
+          "attend_bag": 29.0791969299316,
+          "meal": 26.4199142456055,
+          "quiet": 25.7736339569092
+        },
+        "max_target_error": 0,
+        "max_support_contact_error": 0,
+        "max_paired_contact_error": 0,
+        "stance_samples": 1822,
+        "max_stance_x_drift": 0.07799999999951979,
+        "max_sole_y_error": 0,
+        "scope": "Measured actual rendered wrist/sole transforms from the native fixture. Support expectations are authored world handle locations. Ground stance samples exclude airborne frames, phase wraps and deliberate scenario resets. Numbers complement inspected pixels; not final weight/acting acceptance.",
+        "max_leg_chain_reach": 52.89256279516015,
+        "max_upper_leg": 27.001050902510826,
+        "max_lower_leg": 27.0010277767352,
+        "max_initial_step_leg_reach": 51.57786639092403,
+        "max_pelvis_fit_adjustment": 0
+      },
+      "before_contact_issue": "Repeated turns exposed a lifted swing foot being declared planted; accepted source chooses a grounded foot and its available travel.",
+      "visual_judgment": "Sampled normal-scale frames show separated bodies during tested reversals, lower cover postures, inward relief attention and less flat prop clutter. Stylized anatomy, repeated imagery and constrained/waiting crossings remain limitations; normal-speed movies are supplied for human judgment."
+    }
+  },
+  "audio_measurements": {
+    "file": "C:\\Users\\conra\\Documents\\Codex\\2026-10-19\\task-3\\WTSC_Godot_LastHouse\\game\\evidence\\v053\\release_final\\audio-capture\\native_mix.wav",
+    "sha256": "254c99e35778b34f53bbc49835dfb2e37703247cad82ab1049f48188be2af5db",
+    "seconds": 12.554666666666666,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak": 0.097808837890625,
+    "clipped_samples": 0,
+    "scope": "Actual release WASAPI master bus fixture; no microphone, subjective hearing or physical-device claim. Audio logic retained from v052; silent motion movies supplied separately."
+  },
+  "scope_reconciliation": {
+    "changed": [
+      "Anticipatory grounded yielding with native acceleration; no delay/position override on the girl.",
+      "Grounded foot selection during quick turns; lower cover posture and inward relief attention.",
+      "Sparse contact/weather/material treatment, receding background values and removed flat bench clutter; existing painted assets retained.",
+      "Risk/reward and pair-cover readiness labels; quiet waits for its meal gesture, with no extra5-second gate."
+    ],
+    "unresolved": [
+      "Blocked/waiting/airborne crossings may briefly occlude; yielding refuses unsafe ground and authored cooperation.",
+      "Profiles, joint/cloth transitions and repeated scenery remain stylized; no finished external Godot motion export available.",
+      "No subjective listening, physical controller/Mac runtime or human5-10minute pacing validation.",
+      "Prior accessibility limits remain; no full screen-reader/arbitrary chord/axis-rebinding audit."
+    ],
+    "blocked": [
+      "Private Library protected-connection denial remains; no retry/bypass or library_file_id."
+    ],
+    "artistic_review": "Functional counts and pose measurements are not artistic quality scores. Genuine matched and full normal-speed motion is supplied for human judgment."
+  }
+}

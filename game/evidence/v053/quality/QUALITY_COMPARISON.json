@@ -1,0 +1,92 @@
+{
+  "matched_fixture_frames": 554,
+  "base_commit": "74919270958834c2a4752cca3701e1923754b2c8",
+  "early_walk_reversal": {
+    "before_min_gap": 0.14111328125,
+    "after_min_gap": 44.1373291015625,
+    "before_frames_below30": 106,
+    "after_frames_below30": 0,
+    "player_positions_identical": true
+  },
+  "contact": {
+    "checks": {
+      "reachable_wrists": true,
+      "world_target_not_clamped": true,
+      "support_grip_contact": true,
+      "paired_wrists_meet": true,
+      "planted_horizontal_drift": true,
+      "sole_matches_surface": true,
+      "leg_chain_reach": true,
+      "upper_leg_length": true,
+      "lower_leg_length": true,
+      "first_step_leg_reach": true,
+      "pelvis_fit_remains_small": true,
+      "normal_poses_need_no_torso_fallback": true
+    },
+    "all_passed": true,
+    "render_samples": 2216,
+    "max_reach_by_mode": {
+      "locomotion": 31.6445770263672,
+      "cover": 21.3790950775146,
+      "support": 33.1522636413574,
+      "bag": 31.0862979888916,
+      "attend_bag": 29.0791969299316,
+      "meal": 26.4199142456055,
+      "quiet": 25.7736339569092
+    },
+    "max_target_error": 0,
+    "max_support_contact_error": 0,
+    "max_paired_contact_error": 0,
+    "stance_samples": 1822,
+    "max_stance_x_drift": 0.07799999999951979,
+    "max_sole_y_error": 0,
+    "scope": "Measured actual rendered wrist/sole transforms from the native fixture. Support expectations are authored world handle locations. Ground stance samples exclude airborne frames, phase wraps and deliberate scenario resets. Numbers complement inspected pixels; not final weight/acting acceptance.",
+    "max_leg_chain_reach": 52.89256279516015,
+    "max_upper_leg": 27.001050902510826,
+    "max_lower_leg": 27.0010277767352,
+    "max_initial_step_leg_reach": 51.57786639092403,
+    "max_pelvis_fit_adjustment": 0
+  },
+  "scope": "Native fixed-input comparison complements normal-scale visual/motion review; deliberately initialized scenarios, not whole route or artistic quality score.",
+  "final_source_contact": {
+    "checks": {
+      "reachable_wrists": true,
+      "world_target_not_clamped": true,
+      "support_grip_contact": true,
+      "paired_wrists_meet": true,
+      "planted_horizontal_drift": true,
+      "sole_matches_surface": true,
+      "leg_chain_reach": true,
+      "upper_leg_length": true,
+      "lower_leg_length": true,
+      "first_step_leg_reach": true,
+      "pelvis_fit_remains_small": true,
+      "normal_poses_need_no_torso_fallback": true
+    },
+    "all_passed": true,
+    "render_samples": 2216,
+    "max_reach_by_mode": {
+      "locomotion": 31.6445770263672,
+      "cover": 21.3790950775146,
+      "support": 33.1522636413574,
+      "bag": 31.0862979888916,
+      "attend_bag": 29.0791969299316,
+      "meal": 26.4199142456055,
+      "quiet": 25.7736339569092
+    },
+    "max_target_error": 0,
+    "max_support_contact_error": 0,
+    "max_paired_contact_error": 0,
+    "stance_samples": 1822,
+    "max_stance_x_drift": 0.07799999999951979,
+    "max_sole_y_error": 0,
+    "scope": "Measured actual rendered wrist/sole transforms from the native fixture. Support expectations are authored world handle locations. Ground stance samples exclude airborne frames, phase wraps and deliberate scenario resets. Numbers complement inspected pixels; not final weight/acting acceptance.",
+    "max_leg_chain_reach": 52.89256279516015,
+    "max_upper_leg": 27.001050902510826,
+    "max_lower_leg": 27.0010277767352,
+    "max_initial_step_leg_reach": 51.57786639092403,
+    "max_pelvis_fit_adjustment": 0
+  },
+  "before_contact_issue": "Repeated turns exposed a lifted swing foot being declared planted; accepted source chooses a grounded foot and its available travel.",
+  "visual_judgment": "Sampled normal-scale frames show separated bodies during tested reversals, lower cover postures, inward relief attention and less flat prop clutter. Stylized anatomy, repeated imagery and constrained/waiting crossings remain limitations; normal-speed movies are supplied for human judgment."
+}

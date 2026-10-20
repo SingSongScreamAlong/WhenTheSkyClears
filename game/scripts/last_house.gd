@@ -11,13 +11,14 @@ var beat=""
 var beat_clock=0.0
 var beat_duration=0.0
 var bag_at=Vector2(8318,700)
+var footfalls=[]
 var house_texture=preload("res://assets/environments/LastHouse_v050.png")
 func _init(game):
 	g=game
 	data=JSON.parse_string(FileAccess.get_file_as_string("res://levels/last_house.json"))
 func start(resume=true):
 	g.slice_active=true;g.section_preview=true;g.save_path=g.last_house_save_path
-	stage="idle";exposure={"Girl":0.0,"Boy":0.0};relief_clock=0;unavailable="";last_warning=-20;beat="";beat_clock=0;bag_at=Vector2(8318,700)
+	stage="idle";exposure={"Girl":0.0,"Boy":0.0};relief_clock=0;unavailable="";last_warning=-20;beat="";beat_clock=0;bag_at=Vector2(8318,700);footfalls.clear()
 	if resume and g.load_save(true):
 		g.mode="playing";return
 	g.flags={};g.memories={};g.cache_remaining={};g.journey_active=true;g.journey_completed=false
@@ -29,6 +30,7 @@ func reset_after_recovery():
 func beam_x():return 6200+sin(g.clock*.34)*650
 func shop_beam_x():return 2600+sin(g.clock*.42+.8)*430
 func label_for(p):
+	if p.kind=="brace" and p.id=="rail_awning":return "Spend 1 salvage: shelter the first crossing wall"
 	if p.kind=="reciprocal":
 		if stage=="boy_holds":return "He has the support. Walk through to him."
 		if stage in ["align","girl_holds"]:return "Keep the support steady while he crosses"
@@ -76,7 +78,7 @@ func try_interact(p):
 		"quiet":
 			if not g.flags.get("shared_meal",false):return refuse("Share a little warmth together first.")
 			if absf(g.player.position.x-g.boy.position.x)>130:return refuse("There is room for both of you by the window.")
-			if relief_clock<5:return refuse("Stay a moment. Let your hands grow warm.")
+			if beat=="meal":return refuse("Finish sharing, then come to the window together.")
 			g.flags["last_house_complete"]=true;g.flags[p.id]=true;g.journey_completed=true;g.player.action_time=.8;g.boy.action_time=.8
 			g.announce_message("For a little while, the rain can wait.",9);g.write_save();return true
 	return false
@@ -96,7 +98,7 @@ func companion_override():
 func gate_held():return stage in ["girl_holds","returning","boy_holds"] or g.flags.get("passage_braced",false)
 func is_helping():return stage in ["align","girl_holds","returning","boy_holds"]
 func warm_light_at(at):
-	return clampf((at.x-7900)/450,0,1) if g.in_safe_zone(at.x,at.y) else 0.0
+	return (.45+.55*clampf(1-absf(at.x-8710)/620,0,1))*clampf((at.x-7900)/450,0,1) if g.in_safe_zone(at.x,at.y) else 0.0
 func bag_grip():
 	var u=clampf(beat_clock/maxf(.01,beat_duration*.75),0,1) if beat=="bag" else 1.0
 	u=u*u*(3-2*u)
@@ -123,10 +125,17 @@ func pose_for(child):
 		var offer=Vector2(clampf(midpoint-child.position.x,-28,28),-50)
 		var taste=clampf((u-.25)/.5,0,1);taste=taste*taste*(3-2*taste)
 		return {"mode":"meal","facing":f,"hip":Vector2(-f,-42),"shoulder":Vector2(f*7,-66),"near_hand":child.position+offer.lerp(Vector2(f*9,-70),taste),"far_hand":child.position+Vector2(f*8,-48),"tilt":f*.08}
-	if g.flags.get("last_house_complete",false) and child.position.x>8450 and absf(child.velocity.x)<10:
-		return {"mode":"quiet","hip":Vector2(0,-46),"shoulder":Vector2(f,-73),"tilt":f*.025}
+	if child.crouching and child.is_on_floor() and absf(child.velocity.x)<10 and child.position.x>5200 and child.position.x<7300:
+		f=signf(beam_x()-child.position.x)
+		return {"mode":"cover","facing":f,"hip":Vector2(-f*2,-31),"shoulder":Vector2(f*4,-47),"near_hand":child.position+Vector2(f*10,-27),"far_hand":child.position+Vector2(-f*8,-29),"tilt":-f*.035}
+	if g.flags.get("shared_meal",false) and beat!="meal" and child.position.x>8450 and absf(child.velocity.x)<10:
+		var other=g.boy if child==g.player else g.player
+		f=signf(other.position.x-child.position.x) if absf(other.position.x-child.position.x)>6 else f
+		return {"mode":"quiet","facing":f,"hip":Vector2(-f*2,-43),"shoulder":Vector2(f*2,-67),"near_hand":child.position+Vector2(f*10,-43),"far_hand":child.position+Vector2(-f*3,-42),"tilt":f*.07}
 	return {}
 func tick(dt):
+	for step in footfalls:step.age+=dt
+	footfalls=footfalls.filter(func(step):return step.age<.65)
 	if beat!="":
 		beat_clock+=dt
 		if beat_clock>=beat_duration:beat=""
@@ -184,13 +193,13 @@ func draw_backdrop(w):
 	w.draw_rect(Rect2(left-100,-350,1800,1500),Color("8c9b9d"))
 	w.draw_texture_rect(w.textures.Sky_Painted,Rect2(left-100,-180,1800,1050),false,Color(.60,.73,.76,.75))
 	w.scenery("Distant_Hills",.12,2400,650,Color(.56,.66,.66,.62))
-	w.scenery("Village_Empty",.27,2600,670,Color(.50,.61,.63,.38))
+	w.scenery("Village_Empty",.27,2600,670,Color(.47,.56,.59,.24))
 	# A distant warm window is visible from the first room; its projection
 	# hands off to the actual shelter as the pair approaches.
 	if cx<7200:
 		var far_x=cx+(8500-cx)*.075
-		paint_house(w,far_x,590,210,Color(.55,.65,.65,.48))
-		w.glow(Vector2(far_x+25,567),Color(.95,.72,.37),16,.12)
+		paint_house(w,far_x,650,250,Color(.55,.65,.65,.24))
+		w.glow(Vector2(far_x+25,620),Color(.95,.72,.37),16,.12)
 	if left<1900:paint_house(w,880,700,1580,Color(.78,.84,.83))
 	if left<4600 and left+1700>3350:paint_house(w,3970,700,1180,Color(.64,.73,.72))
 	if left+1700>7400:paint_house(w,8550,700,1800,Color(.93,.89,.73))
@@ -264,3 +273,35 @@ func draw_weather(canvas):
 			for i in range(3):
 				var origin=child.position+Vector2(-child.facing*(3+i*3),-1)
 				canvas.draw_line(origin,origin+Vector2(-child.facing*(3+i*2),-3-i*2),Color(.62,.76,.74,(.28-phase)*.9),1,true)
+
+func room_floor(x):return (x>260 and x<1490) or (x>3510 and x<4410) or (x>7860 and x<9370)
+func draw_platform(w,p):
+	var x=float(p.x);var y=float(p.y);var width=float(p.w)
+	# Keep the painted rubble and timber. Sparse joinery sits on its exact tread.
+	for joint in range(int(width/86)+1):
+		var xx=x+joint*86
+		if xx>x+width-8:continue
+		w.draw_line(Vector2(xx,y+2),Vector2(xx+3,y+11),Color(.12,.19,.17,.45),1.1,true)
+		w.draw_line(Vector2(xx+8,y+2),Vector2(minf(xx+67,x+width),y+2),Color(.58,.61,.49,.23),.9,true)
+		w.draw_circle(Vector2(xx+5,y+6),1,Color(.15,.21,.19,.5))
+func note_step(child,side):
+	if not g.in_safe_zone(child.position.x,child.position.y) and child.is_on_floor():
+		footfalls.append({"at":child.foot_lock[side],"age":0.0})
+		if footfalls.size()>24:footfalls.pop_front()
+func draw_contacts(w):
+	var left=g.camera.position.x-800
+	# Sparse floorboard seams, rather than a full-width strip across legs.
+	for i in range(maxi(0,int(left/81)),int((left+1600)/81)+1):
+		var x=i*81.0
+		if room_floor(x):
+			w.draw_colored_polygon(PackedVector2Array([Vector2(x,700),Vector2(x+79,700),Vector2(x+82,706),Vector2(x-1,706)]),Color(.26,.28,.22,.7))
+			w.draw_line(Vector2(x+2,701),Vector2(x+76,701),Color(.61,.55,.38,.25),1,true)
+	for patch in [[1650,88],[3420,120],[4760,125],[5070,86],[5950,92],[7130,116],[7650,95]]:
+		var x=float(patch[0]);var width=float(patch[1])
+		if x<left-160 or x>left+1760 or not g.ground_at(x):continue
+		w.draw_colored_polygon(PackedVector2Array([Vector2(x-width*.5,702),Vector2(x-width*.25,699.5),Vector2(x+width*.46,700),Vector2(x+width*.55,704),Vector2(x+width*.1,708),Vector2(x-width*.48,707)]),Color(.47,.59,.58,.16))
+		w.draw_line(Vector2(x-width*.4,701),Vector2(x+width*.3,701),Color(.67,.74,.67,.18),.9,true)
+	for step in footfalls:
+		var ring=PackedVector2Array();var radius=2+step.age*22
+		for i in range(15):ring.append(step.at+Vector2(cos(i*TAU/14)*radius,2+sin(i*TAU/14)*radius*.2))
+		w.draw_polyline(ring,Color(.59,.70,.65,(.65-step.age)*.3),.9,true)

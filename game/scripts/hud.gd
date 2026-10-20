@@ -91,7 +91,7 @@ func title_screen():
 	button("Leave",Rect2(112,y,560,42),"quit")
 	text_at("AN ORIGINAL SURVIVAL JOURNEY",Vector2(119,844),11,dim)
 	if not game.save_notice.is_empty(): paragraph(game.save_notice,Vector2(920,716),580,15,gold)
-	text_at("DEVELOPMENT  0.5.2",Vector2(1338,847),10,dim)
+	text_at("DEVELOPMENT  0.5.3",Vector2(1338,847),10,dim)
 	text_at("Move with care. There is someone behind you.",Vector2(1015,816),17,Color(palette,.65),true)
 
 func playing_hud():
@@ -138,6 +138,12 @@ func playing_hud():
 		center(game.control_text(game.message),142,25,Color(palette,fade),true)
 	if game.soundscape.caption_time>0:
 		draw_rect(Rect2(320,206,960,45),Color(.025,.045,.05,.88));center(game.soundscape.caption,237,17,gold)
+	if game.slice_active and game.player.position.x>1600 and game.player.position.x<2400 and game.pending_action.is_empty() and game.chapter_card<=0:
+		draw_rect(Rect2(430,263,740,67),Color(.025,.045,.05,.75))
+		center("UPPER SHELF: supplies, exposed to the light",288,15,gold)
+		center("LOWER ARCADE: sheltered, fewer supplies",314,15,palette)
+	if game.slice_active and game.player.crouching and game.player.position.x>5200 and game.player.position.x<7300:
+		text_at("BOTH COVERED - WATCH THE LIGHT" if game.sheltered else "WAIT FOR BOTH TO REACH COVER",Vector2(1010,176),12,gold)
 	if game.chapter_card>0:
 		var alpha=minf(1,game.chapter_card/1.3)*minf(1,(5.5-game.chapter_card)*1.3)
 		center(game.level.title,280,58,Color(palette,alpha),true)
