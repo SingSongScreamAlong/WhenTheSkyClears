@@ -6,7 +6,10 @@ const World = preload("res://scripts/world.gd")
 const HUD = preload("res://scripts/hud.gd")
 const Foreground = preload("res://scripts/foreground.gd")
 const SideRouteChecks = preload("res://scripts/side_route_checks.gd")
+var journey_save_path="user://journey_v3.json"
+var rehearsal_save_path="user://freight_crossing_v040.json"
 var save_path = "user://journey_v3.json"
+var save_notice=""
 var settings_path = "user://settings_v1.json"
 var mode = "menu"
 var chapter = 0
@@ -85,11 +88,11 @@ var wind_strain=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears · Development 0.4.0")
+	DisplayServer.window_set_title("When the Sky Clears · Development 0.4.1")
 	qa_args=OS.get_cmdline_user_args()
 	smoke_test="--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--side-routes" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
-	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args: smoke_test=true
+	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args or "--trust-checks" in qa_args: smoke_test=true
 	setup_input()
 	for i in range(1,6):
 		levels.append(JSON.parse_string(FileAccess.get_file_as_string("res://levels/%02d.json" % i)))
@@ -104,6 +107,7 @@ func _ready():
 	mode="menu"
 	player.position.x=1240; boy.position.x=1188; camera.position.x=1050
 	qa_args = OS.get_cmdline_user_args()
+	if "--trust-checks" in qa_args: load("res://scripts/trust_checks.gd").run.call_deferred(self)
 	if "--crossing-checks" in qa_args: call_deferred("run_crossing_checks")
 	if "--crossing-capture" in qa_args: call_deferred("capture_crossing")
 	if "--freight-crossing" in qa_args: call_deferred("start_crossing")
@@ -135,7 +139,7 @@ func setup_input():
 		if not InputMap.has_action(action): InputMap.add_action(action)
 		for key in bindings[action]:
 			var ev = InputEventKey.new(); ev.physical_keycode=key; InputMap.action_add_event(action,ev)
-	var buttons = {"jump":JOY_BUTTON_A,"crouch":JOY_BUTTON_B,"interact":JOY_BUTTON_X,"companion":JOY_BUTTON_Y,"pause":JOY_BUTTON_START,"pack":JOY_BUTTON_BACK,"sprint":JOY_BUTTON_RIGHT_SHOULDER,"left":JOY_BUTTON_DPAD_LEFT,"right":JOY_BUTTON_DPAD_RIGHT}
+	var buttons = {"jump":JOY_BUTTON_A,"crouch":JOY_BUTTON_B,"interact":JOY_BUTTON_X,"companion":JOY_BUTTON_Y,"pause":JOY_BUTTON_START,"pack":JOY_BUTTON_BACK,"sprint":JOY_BUTTON_RIGHT_SHOULDER,"heal":JOY_BUTTON_LEFT_SHOULDER,"left":JOY_BUTTON_DPAD_LEFT,"right":JOY_BUTTON_DPAD_RIGHT}
 	for action in buttons:
 		var ev = InputEventJoypadButton.new(); ev.button_index=buttons[action]; InputMap.action_add_event(action,ev)
 	for action in ["left","right"]:
@@ -237,17 +241,35 @@ func surface_y_at(x,fallback_y=700.0):
 	return closest
 
 func new_journey():
-	save_path="user://journey_v3.json"; section_preview=false
+	save_path=journey_save_path; section_preview=false
 	journey_active=true; journey_completed=false
 	flags={}; memories={}; cache_remaining={}; rations=2; scrap=0; medicine=1
 	wetness=0; encounter_events=[]; action_interrupts=0
-	health=100; warmth=100; food=100; stamina=100; playtime=0; death_count=0
+	health=100; warmth=100; food=100; stamina=100; playtime=0; clock=0; death_count=0
 	load_chapter(0); mode="playing"; write_save()
 
 func continue_journey():
-	save_path="user://journey_v3.json"; section_preview=false
-	journey_active=true
-	load_save(true); mode="playing"
+	save_path=journey_save_path; section_preview=false; journey_active=false
+	if not load_save(true):
+		mode="menu"; return false
+	mode="ending" if journey_completed else "playing"
+	return true
+
+func return_to_title():
+	write_save()
+	section_preview=false; journey_active=false; save_path=journey_save_path
+	save_exists=false; unlocked=0; load_save(false); mode="menu"
+
+func open_chapters():
+	if section_preview: return_to_title()
+	save_path=journey_save_path; save_exists=false; unlocked=0; load_save(false)
+	settings_return="menu"; mode="chapters"
+
+func choose_chapter(index):
+	save_path=journey_save_path; section_preview=false
+	if not load_save(true): new_journey()
+	if index<=unlocked:
+		journey_active=true; load_chapter(index); mode="playing"; write_save()
 
 func _unhandled_input(event):
 	if event.is_action_pressed("fullscreen"):
@@ -272,7 +294,8 @@ func _unhandled_input(event):
 	if event.is_action_pressed("restart"): recover(false)
 
 func _process(dt):
-	clock+=dt; flash=move_toward(flash,0,dt*2.5); shake=move_toward(shake,0,dt*11)
+	if mode=="playing": clock+=dt
+	flash=move_toward(flash,0,dt*2.5); shake=move_toward(shake,0,dt*11)
 	message_time=maxf(0,message_time-dt)
 	if mode=="playing": chapter_card=maxf(0,chapter_card-dt)
 	if mode=="recovering":
@@ -415,14 +438,26 @@ func gate_open(g):
 		return (abs(player.position.x-g.plate)<45 and player.position.y>680) or (abs(boy.position.x-g.plate)<45 and boy.position.y>680)
 	return false
 
+func cache_has_room(p):
+	var remaining=cache_remaining.get(p.id,{"rations":int(p.get("rations",0)),"scrap":int(p.get("scrap",0)),"medicine":int(p.get("medicine",0))})
+	for resource in CAPACITY:
+		if int(remaining.get(resource,0))>0 and int(get(resource))<int(CAPACITY[resource]): return true
+	return false
+
 func update_prompt():
-	prompt=""; near_item={}
+	prompt=""; near_item={}; var best_score=INF; var full_cache={}
 	for p in level.interact:
 		if p.kind=="cache" and flags.get(p.id,false): continue
 		if p.kind in ["wheel","latch","repair","roof","pump","bridge","relay","clear","brace"] and flags.get(p.id,false): continue
-		if abs(player.position.x-p.x)<86 and abs(player.position.y-p.y)<100:
-			near_item=p; prompt="HOLD E   "+p.label; break
-	if prompt=="":
+		if abs(player.position.x-p.x)>=86 or abs(player.position.y-p.y)>=100: continue
+		if p.kind=="cache" and not cache_has_room(p): full_cache=p; continue
+		# World work wins over a co-located cache. Distance breaks ties of one kind.
+		var priority=180.0 if p.kind=="cache" else (90.0 if p.kind=="fire" else 0.0)
+		var score=priority+absf(player.position.x-float(p.x))
+		if score<best_score: best_score=score; near_item=p
+	if not near_item.is_empty(): prompt="HOLD E   "+near_item.label
+	elif not full_cache.is_empty(): prompt="PACK FULL - supplies remain here"
+	else:
 		for tutorial in level.tutorials:
 			if abs(player.position.x-tutorial.x)<180: prompt=tutorial.text; break
 
@@ -610,28 +645,62 @@ func announce_message(text,duration=4): message=text; message_time=duration
 func spawn_dust(pos,count):
 	for i in range(count): dust.append({"p":pos+Vector2(randf_range(-10,10),-3),"v":Vector2(randf_range(-20,20),randf_range(-16,-3)),"size":randf_range(1,4),"life":randf_range(.3,.8)})
 
+func valid_save_data(data):
+	if not data is Dictionary or data.get("schema",0)!=1: return false
+	for key in ["flags","memories","cache_remaining"]:
+		if not data.get(key,{}) is Dictionary: return false
+	for key in data.get("flags",{}):
+		if not key is String or not data.flags[key] is bool: return false
+	for key in data.get("memories",{}):
+		if not key is String or not data.memories[key] is String: return false
+	for id in data.get("cache_remaining",{}):
+		var cache=data.cache_remaining[id]
+		if not id is String or not cache is Dictionary: return false
+		for key in cache:
+			if key not in CAPACITY or not (cache[key] is int or cache[key] is float) or not is_finite(float(cache[key])) or float(cache[key])<0: return false
+	for key in ["chapter","checkpoint","unlocked","rations","scrap","medicine","health","warmth","food","wetness","stamina","playtime","volume"]:
+		var value=data.get(key,0)
+		if not (value is int or value is float) or not is_finite(float(value)): return false
+	for key in ["completed","muted","reduced_motion"]:
+		if not data.get(key,false) is bool: return false
+	return true
+
+func read_valid_save(path):
+	if not FileAccess.file_exists(path): return null
+	var data=JSON.parse_string(FileAccess.get_file_as_string(path))
+	return data if valid_save_data(data) else null
+
 func write_save():
 	if smoke_test: return
 	var prefs=FileAccess.open(settings_path,FileAccess.WRITE)
 	if prefs: prefs.store_string(JSON.stringify({"volume":volume,"muted":muted,"reduced_motion":reduced_motion})); prefs.close()
 	if not journey_active: return
-	var data={"schema":1,"build":"0.4.0","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed}
+	var data={"schema":1,"build":"0.4.1","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed}
 	var f=FileAccess.open(save_path+".tmp",FileAccess.WRITE)
-	if f:
-		f.store_string(JSON.stringify(data,"\t")); f.close()
-		DirAccess.rename_absolute(save_path+".tmp",save_path)
-		save_exists=true
+	if not f: save_notice="Could not save. Check the save folder before leaving."; return
+	f.store_string(JSON.stringify(data,"\t")); f.close()
+	if read_valid_save(save_path)!=null: DirAccess.copy_absolute(save_path,save_path+".bak")
+	var err=DirAccess.rename_absolute(save_path+".tmp",save_path)
+	if err!=OK: save_notice="Could not finish saving. Your last saved journey is preserved."; return
+	if not section_preview: save_exists=true
+	save_notice=""
 
 func load_save(resume=false):
 	if FileAccess.file_exists(settings_path):
 		var prefs=JSON.parse_string(FileAccess.get_file_as_string(settings_path))
 		if prefs is Dictionary:
-			volume=clampf(float(prefs.get("volume",.6)),0,1); muted=prefs.get("muted",false); reduced_motion=prefs.get("reduced_motion",false)
-	if not FileAccess.file_exists(save_path): return
-	var d=JSON.parse_string(FileAccess.get_file_as_string(save_path))
-	if not d is Dictionary or d.get("schema",0)!=1: return
+			var v=prefs.get("volume",.6)
+			if (v is int or v is float) and is_finite(float(v)): volume=clampf(float(v),0,1)
+			if prefs.get("muted",false) is bool: muted=prefs.get("muted",false)
+			if prefs.get("reduced_motion",false) is bool: reduced_motion=prefs.get("reduced_motion",false)
+	var d=read_valid_save(save_path)
+	if d==null:
+		d=read_valid_save(save_path+".bak")
+		if d!=null: save_notice="Recovered the last valid save."
+		elif FileAccess.file_exists(save_path): save_notice="This save could not be read. Begin a new journey, or restore a backup."
+	if d==null: save_exists=false; return false
 	save_exists=true; unlocked=clampi(int(d.get("unlocked",0)),0,4)
-	if not resume: return
+	if not resume: return true
 	journey_active=true; journey_completed=d.get("completed",false)
 	flags=d.get("flags",{}); memories=d.get("memories",{})
 	cache_remaining=d.get("cache_remaining",{})
@@ -640,6 +709,7 @@ func load_save(resume=false):
 	health=clampf(float(d.get("health",100)),0,100); warmth=clampf(float(d.get("warmth",100)),0,100); food=clampf(float(d.get("food",100)),0,100); stamina=clampf(float(d.get("stamina",100)),0,100)
 	playtime=float(d.get("playtime",0)); load_chapter(clampi(int(d.get("chapter",0)),0,4))
 	checkpoint_x=clampf(float(d.get("checkpoint",180)),180,float(level.width)-250); respawn(false); apply_volume()
+	return true
 
 func _notification(what):
 	if what==NOTIFICATION_WM_CLOSE_REQUEST: quit_game()
@@ -845,7 +915,7 @@ func traverse_journey():
 					Input.action_release("right"); Input.action_press("crouch"); stalled=0
 		if frame%1800==0: print("TRAVERSE_PROGRESS ",chapter+1," ",int(player.position.x)," boy=",int(boy.position.x)," deaths=",death_count)
 	for action in ["left","right","jump","sprint","crouch","interact"]: Input.action_release(action)
-	var report={"build":"0.4.0","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
+	var report={"build":"0.4.1","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
 	var f=FileAccess.open(report_path("continuous_traversal.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("TRAVERSE_RESULT ",JSON.stringify(report))
 	call_deferred("quit_game",0 if completed else 1)
@@ -986,7 +1056,7 @@ func run_encounter_tests():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.4.0","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
+	var report={"build":"0.4.1","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
 	var f=FileAccess.open(report_path("encounter_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("ENCOUNTER_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 
@@ -1024,7 +1094,7 @@ func run_motion_review():
 		previous_feet=current; previous_phase=player.foot_phase.duplicate()
 	var maximum=0.0
 	for drift in drifts: maximum=maxf(maximum,drift)
-	var report={"build":"0.4.0","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
+	var report={"build":"0.4.1","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
 	var f=FileAccess.open(report_path("motion_review.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("MOTION_REVIEW_COMPLETE ",JSON.stringify(report)); call_deferred("quit_game")
 
@@ -1144,7 +1214,7 @@ func run_journey_checks():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.4.0","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
+	var report={"build":"0.4.1","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
 	var f=FileAccess.open(report_path("journey_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("JOURNEY_CHECKS_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 
@@ -1181,7 +1251,7 @@ func capture_new_journey():
 
 func start_crossing():
 	# A separate rehearsal save leaves the full journey intact.
-	section_preview=true; save_path="user://freight_crossing_v040.json"
+	section_preview=true; save_path=rehearsal_save_path
 	journey_active=true; journey_completed=false; flags={}; memories={}; cache_remaining={}
 	rations=0; scrap=0; medicine=1; health=82; warmth=38; food=39; stamina=100; wetness=.22
 	load_chapter(2,false); mode="playing"; checkpoint_x=420; respawn(false)

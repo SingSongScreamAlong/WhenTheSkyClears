@@ -161,6 +161,7 @@ func terrain(p, earth):
 		var top=PackedVector2Array()
 		var start=maxf(x,left-60)
 		var finish=minf(x+w,left+1860)
+		if finish-start<2.0: return
 		var samples=[start,finish]
 		# The collision surface is piecewise linear. Its actual knots are enough;
 		# hundreds of almost-collinear points caused rare triangulation failures
@@ -181,6 +182,12 @@ func terrain(p, earth):
 		for depth in range(16,0,-1):
 			var notch=sin(depth*4.57+x)*12+cos(depth*2.4)*8
 			polygon.append(Vector2(start+notch*(1.0 if start<=x+1 else 0.0),left_y+depth*34))
+		# Clipped bank slivers can make fractured edges self-intersect.
+		# Preserve the exact top contour and use a solid cut face in that case.
+		if Geometry2D.triangulate_polygon(polygon).is_empty():
+			polygon=top.duplicate()
+			polygon.append(Vector2(finish,maxf(left_y,right_y)+570))
+			polygon.append(Vector2(start,maxf(left_y,right_y)+570))
 		draw_colored_polygon(polygon,ink)
 		var uv=PackedVector2Array()
 		for pt in polygon: uv.append(Vector2(pt.x/760.0,pt.y/760.0))
@@ -208,7 +215,7 @@ func terrain(p, earth):
 		for i in range(top.size()-1,-1,-1):
 			var pt=top[i]
 			# Keep a positive two-pixel minimum thickness at every vertex.
-			turf.append(pt+Vector2(0,4+noise_at(pt.x)*2))
+			turf.append(pt+Vector2(0,6+noise_at(pt.x)*2))
 		draw_colored_polygon(turf,Color(.20,.25,.19,.30) if game.chapter<2 else Color(.27,.31,.29,.26))
 		draw_polyline(top,Color(.55,.59,.45,.12),1.1,true)
 		# Root fans break the pit silhouettes. Each has a tap root and smaller

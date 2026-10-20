@@ -22,7 +22,7 @@ runtime. Asset provenance and third-party notices are in
 [ASSET_SOURCES.md](ASSET_SOURCES.md) and `docs/licenses`.
 
 Godot rebuilds the untracked `game/.godot` import cache on your Mac. Saves use
-Godot's portable `user://` location in the separate `WhenTheSkyClears/v040`
+Godot's portable `user://` location in the separate `WhenTheSkyClears/v041`
 user-data directory. The rehearsal has a separate save from the full journey.
 
 The included export preset targets Windows, but its custom template paths are

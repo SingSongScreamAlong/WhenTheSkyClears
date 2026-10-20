@@ -238,6 +238,12 @@ func solve_knee(hip,foot,length_a=25.0,length_b=24.0,bend=1.0):
 func tube(a,b,c,width_a,width_b,width_c,color,material="",depth=1.0):
 	var n1=Vector2(-(b-a).y,(b-a).x).normalized(); var n2=Vector2(-(c-b).y,(c-b).x).normalized(); var middle=(n1+n2).normalized()
 	var shape=PackedVector2Array([a+n1*width_a,b+middle*width_b,c+n2*width_c,c-n2*width_c,b-middle*width_b,a-n1*width_a])
+	if Geometry2D.triangulate_polygon(shape).is_empty():
+		# A fully folded limb can cross its own outline. Paint the two
+		# rounded segments directly instead of submitting invalid geometry.
+		draw_line(a,b,color,width_a+width_b,true); draw_line(b,c,color,width_b+width_c,true)
+		for joint in [[a,width_a],[b,width_b],[c,width_c]]: draw_circle(joint[0],joint[1],color)
+		return
 	draw_colored_polygon(shape,color)
 	draw_circle(a,width_a*.94,color); draw_circle(b,width_b*.94,color); draw_circle(c,width_c*.94,color)
 	if not material.is_empty():
@@ -262,7 +268,8 @@ func painted_cloth(points,origin,end_y,region,tint):
 		var center_x=lerpf(origin.x,body_lean*.65,v)
 		var u=clampf((p.x-center_x+18)/36.0,0,1)
 		uv.append((region.position+Vector2(u,v)*region.size)/Vector2(head_atlas.get_size()))
-	draw_polygon(PackedVector2Array(points),PackedColorArray([tint]),uv,head_atlas)
+	var outline=PackedVector2Array(points)
+	if not Geometry2D.triangulate_polygon(outline).is_empty(): draw_polygon(outline,PackedColorArray([tint]),uv,head_atlas)
 
 func boot(ankle,color):
 	var f=facing

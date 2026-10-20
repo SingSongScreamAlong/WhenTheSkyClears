@@ -81,7 +81,8 @@ func title_screen():
 	button("Settings & controls",Rect2(112,y,410,49),"settings"); y+=52
 	button("Leave",Rect2(112,y,410,49),"quit")
 	text_at("AN ORIGINAL SURVIVAL JOURNEY",Vector2(119,844),11,dim)
-	text_at("DEVELOPMENT  0.4.0",Vector2(1338,847),10,dim)
+	if not game.save_notice.is_empty(): paragraph(game.save_notice,Vector2(120,802),740,15,gold)
+	text_at("DEVELOPMENT  0.4.1",Vector2(1338,847),10,dim)
 	text_at("Move with care. There is someone behind you.",Vector2(1015,816),17,Color(palette,.65),true)
 
 func playing_hud():
@@ -170,7 +171,7 @@ func settings_screen():
 	button("Toggle fullscreen",Rect2(140,524,440,50),"fullscreen")
 	button("Back",Rect2(140,691,440,52),"back")
 	text_at("ON THE ROAD",Vector2(840,295),12,gold)
-	var controls=[["A / D or ← / →","Move"],["SPACE / W / ↑","Jump · release early for a short jump"],["SHIFT","Run · uses stamina"],["S / ↓","Crouch · shelter behind cover"],["HOLD E","Search · work · rest / push + A/D"],["Q","Ask him to wait / call him"],["H","Use one medicine"],["TAB","Open the pack"],["R / ESC","Last checkpoint / pause"],["F11 / M","Fullscreen / mute"]]
+	var controls=[["A / D or ← / →","Move"],["SPACE / W / ↑","Jump · release early for a short jump"],["SHIFT","Run · uses stamina"],["S / ↓","Crouch · shelter behind cover"],["HOLD E","Search · work · rest / push + A/D"],["Q","Ask him to wait / call him"],["H / LB","Use one medicine"],["TAB","Open the pack"],["R / ESC","Last checkpoint / pause"],["F11 / M","Fullscreen / mute"]]
 	for i in range(controls.size()):
 		text_at(controls[i][0],Vector2(842,336+i*34),14,palette)
 		text_at(controls[i][1],Vector2(1030,336+i*34),14,dim)
@@ -233,26 +234,22 @@ func _input(event):
 
 func activate(action):
 	match action:
-		"new": game.save_path="user://journey_v3.json"; game.new_journey()
+		"new": game.new_journey()
 		"crossing": game.start_crossing()
 		"continue": game.continue_journey()
 		"resume": game.mode="playing"
 		"restart": game.mode="playing"; game.recover(false)
 		"pack": game.mode="inventory"
-		"chapters": game.settings_return="menu"; game.mode="chapters"
+		"chapters": game.open_chapters()
 		"settings": game.settings_return=game.mode; game.mode="settings"
 		"back": game.mode=game.settings_return
-		"menu": game.write_save(); game.mode="menu"
+		"menu": game.return_to_title()
 		"quit": game.quit_game()
 		"mute": game.muted=not game.muted; game.apply_volume(); game.write_save()
 		"motion": game.reduced_motion=not game.reduced_motion; game.write_save()
 		"louder": game.volume=minf(1,game.volume+.1); game.apply_volume(); game.write_save()
 		"quieter": game.volume=maxf(0,game.volume-.1); game.apply_volume(); game.write_save()
 		"fullscreen": DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode()==DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN)
-	if action.begins_with("chapter_"):
-		var idx=int(action.trim_prefix("chapter_"))
-		if idx<=game.unlocked:
-			if game.save_exists: game.load_save(true)
-			game.journey_active=true; game.load_chapter(idx); game.mode="playing"; game.write_save()
+	if action.begins_with("chapter_"): game.choose_chapter(int(action.trim_prefix("chapter_")))
 	selected=0; hover=-1
 

@@ -1,0 +1,524 @@
+{
+  "version": "0.4.1",
+  "base_commit": "8d6743eba53b009c123abdfdd2c2081d8a35ce14",
+  "executable_sha256": "4cde7b420d6b4da5cb188a87d0b58b71c388d45ea3b27d451b19a7055b924d76",
+  "checks": {
+    "trust-checks": 21,
+    "crossing-checks": 12,
+    "smoke": 120,
+    "survival": 13,
+    "encounters": 10,
+    "journey-checks": 35,
+    "side-routes": 13
+  },
+  "journey": {
+    "build": "0.4.1",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 0,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.59999999999999
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6166666666668
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2666666666662
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_basket",
+        "kind": "cache",
+        "time": 44.1166666666654
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 51.1499999999984
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 66.2833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 75.0166666666637
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 80.9666666666634
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 90.4833333333295
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 94.4166666666626
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 106.633333333329
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 120.383333333328
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 136.433333333334
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 142.300000000005
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 147.883333333343
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 158.550000000018
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 162.600000000022
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 179.416666666702
+      },
+      {
+        "chapter": 2,
+        "id": "freight_loading_bar",
+        "kind": "relay",
+        "time": 200.766666666719
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 225.400000000072
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 231.100000000076
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 237.383333333414
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 240.26666666675
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 246.950000000089
+      },
+      {
+        "chapter": 2,
+        "id": "freight_kitchen",
+        "kind": "cache",
+        "time": 256.100000000096
+      },
+      {
+        "chapter": 2,
+        "id": "camp_waiting_roof",
+        "kind": "brace",
+        "time": 263.500000000089
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 274.266666666746
+      },
+      {
+        "chapter": 2,
+        "id": "freight_bread",
+        "kind": "cache",
+        "time": 280.833333333407
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 294.450000000061
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 313.66666666671
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 326.466666666698
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 328.30000000003
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 337.266666666689
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 342.016666666684
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 346.76666666668
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 354.08333333334
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 361.383333333333
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 369.333333333326
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 379.749999999983
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 391.06666666664
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 398.366666666633
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 414.416666666618
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 432.216666666602
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_tin",
+        "kind": "cache",
+        "time": 451.099999999918
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 464.049999999907
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 478.199999999894
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 489.649999999883
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 494.833333333212
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 1,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 494.833333333212
+  },
+  "capture": {
+    "boy": "(2181.369, 699.9252)",
+    "deaths": 0,
+    "frames": 917,
+    "girl": "(2252.589, 699.9252)",
+    "health": 35.0,
+    "maximum_separation": 228.336120605469,
+    "phase": "done",
+    "phase_events": [
+      {
+        "frame": 0,
+        "phase": "search",
+        "time": 0.0166666666666667
+      },
+      {
+        "frame": 86,
+        "phase": "return",
+        "time": 2.88333333333333
+      },
+      {
+        "frame": 134,
+        "phase": "rest",
+        "time": 4.48333333333332
+      },
+      {
+        "frame": 231,
+        "phase": "beam",
+        "time": 7.71666666666664
+      },
+      {
+        "frame": 394,
+        "phase": "wall",
+        "time": 13.1500000000002
+      },
+      {
+        "frame": 452,
+        "phase": "wait",
+        "time": 15.0833333333337
+      },
+      {
+        "frame": 618,
+        "phase": "gap",
+        "time": 20.6166666666668
+      },
+      {
+        "frame": 673,
+        "phase": "rejoin",
+        "time": 22.45
+      },
+      {
+        "frame": 697,
+        "phase": "gate",
+        "time": 23.25
+      },
+      {
+        "frame": 815,
+        "phase": "done",
+        "time": 27.1833333333331
+      }
+    ],
+    "reached_gate": true,
+    "rested": true,
+    "searched": true,
+    "warmth": 76.8672416666588
+  },
+  "rendered_scenes": [
+    {
+      "file": "evidence/v041/final/capture-new/01_orchard_ridge.png",
+      "sha256": "cbab8e0e9f1dd7c176faf8d3c2124d5d2873cd4375294d180be5931fe7006f16",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native staged authored scene capture"
+    },
+    {
+      "file": "evidence/v041/final/capture-new/02_rail_path.png",
+      "sha256": "07b17b22c35be66dec5bf0d097e4877bc381503817d6061297c6dda826a2da2a",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native staged authored scene capture"
+    },
+    {
+      "file": "evidence/v041/final/capture-new/03_carriage_lift.png",
+      "sha256": "b4b012ffa1dda6c61ed5c01b610ba79fc9b6438c386e227823d2dd09f1717f02",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native staged authored scene capture"
+    },
+    {
+      "file": "evidence/v041/final/capture-new/04_courtyard_gully.png",
+      "sha256": "99ddcac7cb95e94ef69a2bd5bd816f00cd5e4ceeb0844d445d307a8d193af3f4",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native staged authored scene capture"
+    },
+    {
+      "file": "evidence/v041/final/capture-new/05_ash_garden.png",
+      "sha256": "8296d81b587b7c8d149c4546e4543dc492f4b30c9839987b70ccff157c4dd9b6",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native staged authored scene capture"
+    },
+    {
+      "file": "evidence/v041/final/capture-new/06_character_close_study.png",
+      "sha256": "b53b26512f750be065c953c1c96ccce912672a481327cf75cb79dbbb85acf170",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native staged character fixture"
+    }
+  ],
+  "source_sha256": {
+    "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts/child.gd.uid": "e0358e821e975776dc050e03d9c5cc604195406304b1337dec459326785f1fac",
+    "scripts/child_v2.gd": "f439eff763615679f881dee543e9eba6d277dbb51ec89c4abc329ba43d78bb13",
+    "scripts/child_v2.gd.uid": "7580c2baf68e24a1d94278973d79b7f6c10421420d0ce8d740c36c8e7be3caff",
+    "scripts/crossing_checks.gd": "dcb3d2c65ac7b7aab1cb3d70692d47930bf548d1fcd8f77d0fc4a595002e1e2d",
+    "scripts/crossing_checks.gd.uid": "3c484968f313bc08f69a23456b25e800d96efbe3c082dd4998bc47f557db3126",
+    "scripts/foreground.gd": "643b72f09f83b56e769e21d770bb0c849ebe5b915836f45832c986cc4352763f",
+    "scripts/foreground.gd.uid": "53545838701b4c78dd59ee6366b2692cce1073857e7b2a5d9e5471097f5e3771",
+    "scripts/game.gd": "221001e2af0a873a867087b0719ad1ed80584e2196631a98f908b8f02a21ac27",
+    "scripts/game.gd.uid": "b42abaf92f79be93b8e2ba006ff5f75317bfeaa8c2cf9240dcb53de4c7cce8fb",
+    "scripts/hud.gd": "5a722c2e9b63b9853bb0b4882ef7bdb0d02e751fc7b92012c9df3a555119b635",
+    "scripts/hud.gd.uid": "0ca2f16dcd37a5654727716d4d4683366d5390456089439ab8e9604e61c73b9b",
+    "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts/pushable.gd.uid": "8c0001652f3c85f1341165595471f167c48b12bb3d289b0d0b0c7fe9797f3348",
+    "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts/side_route_checks.gd.uid": "db4937cc1c33b28b9a7959bc157f7a1f8ca3441b79d472d82c3f6d3c486513f7",
+    "scripts/trust_checks.gd": "c3b312fa2a7cea5439ff08a738d20e709f9af5e51d17829853cd8015eeacaba6",
+    "scripts/trust_checks.gd.uid": "c4e1d81755cc963b61f632ef3a4fddf4c5c941d22c9b6815cf5ab51cb41060c1",
+    "scripts/world.gd": "360ac8162aad57f89452e99e33a670eb729606c8bc5d8e520be721109dc157b1",
+    "scripts/world.gd.uid": "2186abbed5b3e691f821efdfdb136147f4232de492a2e11f7aabba293466ba71",
+    "levels/01.json": "6f06c7d7c3cd36e44e349d74d8ff89e229dba8de842c9692635590b5cbff56aa",
+    "levels/02.json": "13151c89c2ccc25825e18142dfff62c9730dbc17c0a51438bcea6634356f5bfc",
+    "levels/03.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+    "levels/04.json": "702473811c7222a46542976bdd5d19d6bc10b2806add6b6e78677ddb4c5db68c",
+    "levels/05.json": "b7b2d1995b2c0143c36cd2ded4a5e275737a6dbd8caad4f963fe5e0c032aed4c",
+    "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+    "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+    "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+    "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+    "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+    "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+    "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+    "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+    "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+    "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+    "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+    "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+    "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+    "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+    "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+    "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+    "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+    "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+    "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+    "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+    "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+    "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+    "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+    "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+    "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+    "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+    "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+    "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+    "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+    "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+    "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+    "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+    "project.godot": "87d77fa2660469aa8e6bf9d80d925ecde2b202665af6030d06bd7bec5a5d6341"
+  },
+  "motion": {
+    "file": "WTSC_v041_Checkpoint_Motion.mp4",
+    "sha256": "664c412006998920abdd2a17936da40479fd196a4b7129e8b83d529178a1d0b3",
+    "decoded_frames": 359,
+    "fps": 30,
+    "scope": "Actual native automated gameplay excerpt; no human controller or audio review claimed."
+  },
+  "scope": "Initial five trust fixes and rendering guards. Art/route/cover/audio/accessibility pass remains in progress. No physical controller or human audio verification claimed.",
+  "source_export_note": "Custom Windows template paths cleared in published preset after export for portable editor imports; runtime source and project settings are unchanged."
+}

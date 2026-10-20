@@ -1,0 +1,30 @@
+WHEN THE SKY CLEARS / 0.4.1 / TRUST FIX CHECKPOINT
+
+This checkpoint fixes the five reproduced audit failures before the larger
+Last House route and art pass. It retains the existing five chapters.
+
+- World work, including the school drainage pump, takes prompt priority over a
+  co-located cache. A full cache no longer masks another action; its supplies
+  remain available when the pack has room.
+- Pause and inventory freeze the clock that drives the searchlight.
+- Rehearsal saves and the main Continue state are kept separate. A rehearsal
+  cannot manufacture a Continue entry for a nonexistent main journey.
+- Save types are validated before applying state. A last-good backup is retained
+  and used after primary corruption. Failed writes/renames produce a notice.
+- Medicine is mapped to controller LB as well as keyboard H.
+- Guarded clipped terrain cut faces, positive turf thickness and fully folded
+  limb/cloth outlines avoid invalid polygons encountered during full traversal.
+
+Save isolation: this build uses Godot user:// under WhenTheSkyClears/v041.
+Earlier original/v040 saves were preserved. Native disk tests use unique
+disposable paths. Copying an earlier valid schema-1 journey into this build is
+supported by validation; no existing personal journey was present to migrate.
+
+Scope status: these are initial functional fixes. Pair cover positioning,
+individual exposure, painted presentation, authored physical transitions,
+The Last House Before the Crossing route, sound and accessibility work remain
+in the approved development plan. This checkpoint does not claim that they are
+finished, nor that scripted checks establish human controller feel or AAA quality.
+
+Evidence is in evidence/v041. Exact tested binary identity and check counts are
+recorded in CHECKPOINT_MANIFEST.json once packaged verification is complete.
