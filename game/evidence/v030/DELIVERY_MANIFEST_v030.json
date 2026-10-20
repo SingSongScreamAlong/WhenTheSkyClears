@@ -1,0 +1,480 @@
+{
+  "build": "0.3.0",
+  "date": "2026-10-19",
+  "executable": {
+    "file": "build\\v0.3.0\\When the Sky Clears.exe",
+    "bytes": 132177768,
+    "sha256": "e91d0a3cd80016aa6f6a09dfa5e8b9251ca7e90f4e0384de295d58cb3d02deaf"
+  },
+  "source": {
+    "scripts\\child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts\\child_v2.gd": "b07cad018624d7b627a059a3fd7104625a60b4e40999f8e799e790c930ba61c0",
+    "scripts\\foreground.gd": "643b72f09f83b56e769e21d770bb0c849ebe5b915836f45832c986cc4352763f",
+    "scripts\\game.gd": "8056c24504c4e3aef140698aab8d98f80a2f3e8b062896ebf9c5f01a46139bbf",
+    "scripts\\hud.gd": "375b145b5101fb894b95313a5e3186b104f9587b7277aa91d48c584fd4edec83",
+    "scripts\\pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts\\side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts\\world.gd": "9cc0d06ce5e858a25c48cff65a9ac0892b086d73d0707b429eb631f7c49bd928",
+    "levels\\01.json": "6f06c7d7c3cd36e44e349d74d8ff89e229dba8de842c9692635590b5cbff56aa",
+    "levels\\02.json": "13151c89c2ccc25825e18142dfff62c9730dbc17c0a51438bcea6634356f5bfc",
+    "levels\\03.json": "9f77e80e6629a128311cb0803973d40dc043faf279736df90cf42ac88ba8b6be",
+    "levels\\04.json": "702473811c7222a46542976bdd5d19d6bc10b2806add6b6e78677ddb4c5db68c",
+    "levels\\05.json": "b7b2d1995b2c0143c36cd2ded4a5e275737a6dbd8caad4f963fe5e0c032aed4c"
+  },
+  "journey_design": {
+    "route_units": 56000,
+    "previous_route_units": 27600,
+    "new_timed_lanes": 10,
+    "new_held_actions": 16,
+    "optional_supply_spurs": 6
+  },
+  "checks": {
+    "smoke": 118,
+    "survival": 13,
+    "encounters": 10,
+    "journey-checks": 35,
+    "side-routes": 13
+  },
+  "journey": {
+    "build": "0.3.0",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 1,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.59999999999999
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6166666666668
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2666666666662
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_basket",
+        "kind": "cache",
+        "time": 44.1166666666654
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 51.1499999999984
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 66.2833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 75.0166666666637
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 81.3999999999967
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 90.4833333333295
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 94.6666666666626
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 106.633333333329
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 120.599999999994
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 136.650000000001
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 142.516666666672
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 148.10000000001
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 158.766666666685
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 162.816666666688
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 179.416666666702
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 225.950000000072
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 231.650000000076
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 237.933333333415
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 240.81666666675
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 247.516666666756
+      },
+      {
+        "chapter": 2,
+        "id": "freight_kitchen",
+        "kind": "cache",
+        "time": 256.650000000095
+      },
+      {
+        "chapter": 2,
+        "id": "camp_waiting_roof",
+        "kind": "brace",
+        "time": 264.050000000089
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 274.833333333412
+      },
+      {
+        "chapter": 2,
+        "id": "freight_bread",
+        "kind": "cache",
+        "time": 281.383333333406
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 295.016666666727
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 314.200000000043
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 321.48333333337
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 327.016666666698
+      },
+      {
+        "chapter": 3,
+        "kind": "recovery",
+        "reason": "They need a safer way through.",
+        "time": 333.683333333359
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 341.950000000018
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 346.700000000013
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 354.03333333334
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 361.333333333333
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 369.283333333326
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 379.699999999983
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 391.01666666664
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 398.3333333333
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 414.366666666618
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 432.166666666602
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_tin",
+        "kind": "cache",
+        "time": 451.049999999918
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 463.999999999907
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 478.683333333227
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 490.816666666549
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 495.999999999878
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 1,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 495.999999999878
+  },
+  "motion_study": {
+    "build": "0.3.0",
+    "duration_seconds": 12,
+    "fps": 30,
+    "frames": 360,
+    "grounded_pose_solver": "distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion",
+    "maximum_stance_world_x_drift_pixels": 0.0,
+    "scene": "Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.",
+    "stance_samples": 184
+  },
+  "motion_movie": {
+    "build": "0.3.0",
+    "file": "evidence\\v030\\WTSC_Movement_Study_v030.mp4",
+    "decoded_frames": 360,
+    "fps": 30,
+    "size": [
+      1440,
+      810
+    ],
+    "bytes": 9765764,
+    "audio": "silent",
+    "scope": "Isolated flat movement study rendered by the actual Windows executable. Not a campaign playthrough."
+  },
+  "terrain_geometry_audit": {
+    "all_passed": true,
+    "camera_step_pixels": 2.3,
+    "chapters": [
+      {
+        "chapter": 1,
+        "failed_polygons": 0,
+        "polygon_checks": 77832
+      },
+      {
+        "chapter": 2,
+        "failed_polygons": 0,
+        "polygon_checks": 78543
+      },
+      {
+        "chapter": 3,
+        "failed_polygons": 0,
+        "polygon_checks": 81702
+      },
+      {
+        "chapter": 4,
+        "failed_polygons": 0,
+        "polygon_checks": 86562
+      },
+      {
+        "chapter": 5,
+        "failed_polygons": 0,
+        "polygon_checks": 84339
+      }
+    ],
+    "checks": 408978,
+    "elapsed_ms": 1841,
+    "failed_polygons": 0,
+    "failure_counts": {},
+    "first_failures": [],
+    "method": "Offline Geometry2D.triangulate_polygon audit of current world.gd earth, 7 soil bands and turf over 5 actual JSON chapters; dense camera samples plus exact profile-knot clipping probes. No game state changes.",
+    "mode": "current"
+  },
+  "graphics": {
+    "renderer": "Vulkan Forward Mobile / RTX 5070 Ti Laptop GPU",
+    "msaa_2d": 4,
+    "captures": [
+      {
+        "file": "evidence\\v030\\final_native_verified\\capture-new\\01_orchard_ridge.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "1a8d278ecb71796ecde0f65852efc1dc18d29ef280daeaf5bdbb85c5ae658655",
+        "scope": "Native gameplay scene capture"
+      },
+      {
+        "file": "evidence\\v030\\final_native_verified\\capture-new\\02_rail_path.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "44507426e9fbc402c3823b78c82ec0c373963d073a622fc3107039c480a4376f",
+        "scope": "Native gameplay scene capture"
+      },
+      {
+        "file": "evidence\\v030\\final_native_verified\\capture-new\\03_carriage_lift.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "d83da6448c1a45d94f5ddf61346f34a457fefdaceddc1e9650c0f269acad55dc",
+        "scope": "Native gameplay scene capture"
+      },
+      {
+        "file": "evidence\\v030\\final_native_verified\\capture-new\\04_courtyard_gully.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "a5bbf628d9a2114bd738063b5e9ad63f21a925d83b235c60d97318082ae55578",
+        "scope": "Native gameplay scene capture"
+      },
+      {
+        "file": "evidence\\v030\\final_native_verified\\capture-new\\05_ash_garden.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "a86dc12d3988024602e0af99d082522ae01ca29e5ffa62607c4572072c796131",
+        "scope": "Native gameplay scene capture"
+      },
+      {
+        "file": "evidence\\v030\\final_native_verified\\capture-new\\06_character_close_study.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "9daacb46716746f894820a426fa17b8b87468926b60a46a7cfe0b3f94feccdbb",
+        "scope": "Character close study"
+      }
+    ]
+  },
+  "new_art": {
+    "file": "assets\\environments\\Rail_Yard_v030.png",
+    "sha256": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "size": [
+      2172,
+      724
+    ],
+    "generated_mode": "built-in ImageGen",
+    "source_pixels_preserved": true,
+    "prompt": "assets/environments/Rail_Yard_PROVENANCE_v030.txt"
+  },
+  "notes": [
+    "All test invocations identify the exact binary hash copied to the final playable path.",
+    "Targeted setups and optional route fixtures are distinguished from continuous campaign navigation.",
+    "Original paintings, earlier builds and journey saves remain preserved in the workspace.",
+    "Source archive clears custom engine-template paths for standard Godot 4.6 templates; see SOURCE_SETUP.txt.",
+    "Route length is measured data; human playtime and artistic acceptance are not established.",
+    "Expanded development build; no claim of AAA production completion."
+  ]
+}

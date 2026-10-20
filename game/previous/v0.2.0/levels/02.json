@@ -1,0 +1,228 @@
+{
+  "id": "02",
+  "title": "Where the birds went",
+  "subtitle": "THE WOODS",
+  "epigraph": "She waited until he could hear her footsteps again.",
+  "objective": "Lower the crossing. Find a way through the logging gate together.",
+  "width": 5500,
+  "sky": "#778e91",
+  "fog": "#9aafad",
+  "cold": 0.075,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1210,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1540,
+      "y": 700,
+      "w": 2100,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3790,
+      "y": 700,
+      "w": 1710,
+      "h": 600,
+      "kind": "earth"
+    }
+  ],
+  "platforms": [
+    {
+      "x": 700,
+      "y": 640,
+      "w": 150,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 1540,
+      "y": 642,
+      "w": 145,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 4050,
+      "y": 635,
+      "w": 160,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 4290,
+      "y": 580,
+      "w": 220,
+      "h": 27,
+      "kind": "log"
+    }
+  ],
+  "scenery": [
+    "woods"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 400,
+      "y": 700,
+      "label": "LOGGING ROAD"
+    },
+    {
+      "kind": "cart",
+      "x": 1640,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 3140,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 4740,
+      "y": 700,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 940,
+      "y": 700,
+      "label": "A forester’s pack",
+      "id": "woods_pack",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "bridge",
+      "x": 1070,
+      "y": 700,
+      "id": "forest_bridge",
+      "label": "Lower the old crossing",
+      "hold_seconds": 2.4
+    },
+    {
+      "kind": "latch",
+      "x": 2790,
+      "y": 700,
+      "label": "Release the gate latch",
+      "id": "forest_latch",
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "fire",
+      "x": 3230,
+      "y": 700,
+      "label": "A sheltered hollow",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 4490,
+      "y": 700,
+      "label": "A tin beneath the roots",
+      "id": "woods_tin",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    }
+  ],
+  "gates": [
+    {
+      "x": 2580,
+      "y": 700,
+      "h": 205,
+      "key": "forest_latch",
+      "plate": 2230
+    }
+  ],
+  "covers": [
+    {
+      "x": 1600,
+      "w": 150,
+      "kind": "log"
+    },
+    {
+      "x": 3250,
+      "w": 220,
+      "kind": "tree"
+    }
+  ],
+  "memories": [
+    {
+      "x": 1590,
+      "y": 600,
+      "id": "birds",
+      "text": "They listened. The trees held no birds."
+    },
+    {
+      "x": 4390,
+      "y": 538,
+      "id": "drawing",
+      "text": "A house, two windows, a sun. Someone had folded it carefully."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1430,
+    2980,
+    4800
+  ],
+  "tutorials": [
+    {
+      "x": 650,
+      "text": "Q  asks him to wait. Press Q again to call him back."
+    },
+    {
+      "x": 2040,
+      "text": "The gate needs weight on the plate. Ask him to wait [Q], or push the crate onto it."
+    },
+    {
+      "x": 2670,
+      "text": "Release the latch [E] on this side. Then call him through [Q]."
+    },
+    {
+      "x": 1050,
+      "text": "The stream has taken the crossing. Hold E at the winch to lower it."
+    }
+  ],
+  "build": "0.2.0",
+  "bridges": [
+    {
+      "x": 1205,
+      "y": 700,
+      "w": 340,
+      "h": 15,
+      "key": "forest_bridge"
+    }
+  ],
+  "pushables": [
+    {
+      "id": "logging_crate",
+      "x": 2020,
+      "y": 672
+    }
+  ],
+  "water_zones": [
+    {
+      "x": 1210,
+      "w": 330,
+      "top": 740,
+      "key": "forest_bridge"
+    }
+  ],
+  "safe_zones": [
+    {
+      "x": 3150,
+      "w": 300
+    }
+  ]
+}

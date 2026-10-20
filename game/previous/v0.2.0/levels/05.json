@@ -1,0 +1,193 @@
+{
+  "id": "05",
+  "title": "The hand that stayed",
+  "subtitle": "THE ASH FIELDS",
+  "epigraph": "There was no promise of morning. Only another step.",
+  "objective": "Stay together through the ash. Reach the last doorway.",
+  "width": 5700,
+  "sky": "#788992",
+  "fog": "#b0b9b8",
+  "cold": 0.12,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1500,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1630,
+      "y": 700,
+      "w": 1570,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3340,
+      "y": 700,
+      "w": 870,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 4345,
+      "y": 700,
+      "w": 1355,
+      "h": 600,
+      "kind": "earth"
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1070,
+      "y": 640,
+      "w": 200,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 1830,
+      "y": 640,
+      "w": 170,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 2060,
+      "y": 584,
+      "w": 190,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 2310,
+      "y": 640,
+      "w": 200,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 3570,
+      "y": 640,
+      "w": 180,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 3810,
+      "y": 580,
+      "w": 200,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 4550,
+      "y": 640,
+      "w": 220,
+      "h": 27,
+      "kind": "letter"
+    }
+  ],
+  "scenery": [
+    "battlefield"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 480,
+      "y": 700,
+      "label": "KEEP GOING"
+    },
+    {
+      "kind": "title",
+      "x": 1600,
+      "y": 700,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 720,
+      "y": 700,
+      "label": "The last parcel",
+      "id": "ash_parcel",
+      "rations": 1,
+      "medicine": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "fire",
+      "x": 2850,
+      "y": 700,
+      "label": "A small fire in the ash",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "end",
+      "x": 5400,
+      "y": 700,
+      "label": "Take his hand",
+      "hold_seconds": 2.0
+    }
+  ],
+  "gates": [],
+  "covers": [
+    {
+      "x": 1120,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 2730,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 4640,
+      "w": 220,
+      "kind": "wall"
+    }
+  ],
+  "memories": [
+    {
+      "x": 2150,
+      "y": 544,
+      "id": "sun",
+      "text": "He drew the sun even after he had forgotten its warmth."
+    },
+    {
+      "x": 3890,
+      "y": 540,
+      "id": "hand",
+      "text": "The hand that pulled him into play was the hand that would not let go."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1710,
+    3400,
+    4900
+  ],
+  "tutorials": [
+    {
+      "x": 480,
+      "text": "Stay close. There is still a road ahead."
+    },
+    {
+      "x": 5100,
+      "text": "Some things survive because we carry them together."
+    }
+  ],
+  "build": "0.2.0",
+  "bridges": [],
+  "pushables": [],
+  "water_zones": [],
+  "safe_zones": [
+    {
+      "x": 2830,
+      "w": 220
+    }
+  ]
+}

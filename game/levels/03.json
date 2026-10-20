@@ -1,0 +1,600 @@
+{
+  "id": "03",
+  "title": "Under a borrowed roof",
+  "subtitle": "THE DISPLACEMENT CAMP",
+  "epigraph": "The light came first. Then the earth remembered.",
+  "objective": "Leave the shelter by the freight yard. Make the roofs safe or cross between the warnings.",
+  "width": 11800,
+  "sky": "#65787e",
+  "fog": "#8c9a9c",
+  "cold": 0.5,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1590,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1730,
+      "y": 700,
+      "w": 1700,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3570,
+      "y": 700,
+      "w": 2130,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 5700,
+      "y": 700,
+      "w": 2100,
+      "h": 600,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          250,
+          0
+        ],
+        [
+          600,
+          -46
+        ],
+        [
+          940,
+          -46
+        ],
+        [
+          1280,
+          0
+        ],
+        [
+          2100,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 7800,
+      "y": 700,
+      "w": 1800,
+      "h": 600,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 9600,
+      "y": 700,
+      "w": 2200,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          300,
+          0
+        ],
+        [
+          650,
+          38
+        ],
+        [
+          940,
+          38
+        ],
+        [
+          1250,
+          0
+        ],
+        [
+          2200,
+          0
+        ]
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1130,
+      "y": 640,
+      "w": 190,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 2310,
+      "y": 648,
+      "w": 180,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 3850,
+      "y": 640,
+      "w": 180,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 8990,
+      "y": 640.0,
+      "w": 150,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 9180,
+      "y": 580.0,
+      "w": 220,
+      "h": 22,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "camp",
+    "battlefield"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 450,
+      "y": 700,
+      "label": "KEEP LOW"
+    },
+    {
+      "kind": "washing",
+      "x": 1230,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 3260,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "barricade",
+      "x": 4460,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 5880,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 6820,
+      "y": 678.35,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 7350,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "barricade",
+      "x": 8630,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 11620,
+      "y": 700.0,
+      "label": "SCHOOL ROAD"
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 720,
+      "y": 700,
+      "label": "An abandoned tool roll",
+      "id": "camp_tools",
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 1910,
+      "y": 700,
+      "label": "Inside a torn rucksack",
+      "id": "camp_bag",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 2840,
+      "y": 700,
+      "label": "A medical tin",
+      "id": "camp_med",
+      "medicine": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "repair",
+      "x": 4670,
+      "y": 700,
+      "id": "shelter_door",
+      "label": "Clear and brace the shelter door · 2 salvage",
+      "hold_seconds": 3.5
+    },
+    {
+      "kind": "roof",
+      "x": 4990,
+      "y": 700,
+      "id": "shelter_roof",
+      "label": "Patch the leaking roof · 1 salvage",
+      "hold_seconds": 3.0
+    },
+    {
+      "kind": "fire",
+      "x": 5240,
+      "y": 700,
+      "label": "A roof for a little while",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 5400,
+      "y": 700,
+      "label": "A shared loaf",
+      "id": "camp_loaf",
+      "rations": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "clear",
+      "x": 5930,
+      "y": 700.0,
+      "label": "Pull the sacks from the loading door",
+      "hold_seconds": 2.8,
+      "id": "camp_sacks"
+    },
+    {
+      "kind": "cache",
+      "x": 7110,
+      "y": 700.0,
+      "label": "The freight kitchen’s last pot",
+      "hold_seconds": 1.2,
+      "id": "freight_kitchen",
+      "rations": 2,
+      "scrap": 2,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 7290,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "brace",
+      "x": 7630,
+      "y": 700.0,
+      "label": "Shore up the waiting-room beam · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "camp_waiting_roof",
+      "optional": true
+    },
+    {
+      "kind": "relay",
+      "x": 8760,
+      "y": 700.0,
+      "label": "Slide the jammed carriage door together",
+      "hold_seconds": 3.2,
+      "id": "camp_carriage",
+      "companion_required": true
+    },
+    {
+      "kind": "cache",
+      "x": 9280,
+      "y": 580.0,
+      "label": "A first-aid case above the luggage rack",
+      "hold_seconds": 1.2,
+      "id": "freight_first_aid",
+      "optional": true,
+      "route": "raised_supply_spur",
+      "rations": 0,
+      "medicine": 1,
+      "scrap": 1
+    },
+    {
+      "kind": "cache",
+      "x": 9480,
+      "y": 700.0,
+      "label": "Bread wrapped in a station timetable",
+      "hold_seconds": 1.2,
+      "id": "freight_bread",
+      "rations": 2,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 9660,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 11200,
+      "y": 700.0,
+      "label": "Clear the stones from the station passage",
+      "hold_seconds": 2.8,
+      "id": "camp_station_passage"
+    }
+  ],
+  "gates": [
+    {
+      "x": 4880,
+      "y": 700,
+      "h": 180,
+      "key": "shelter_door"
+    },
+    {
+      "x": 6150,
+      "y": 673.71,
+      "h": 190,
+      "key": "camp_sacks",
+      "kind": "sack_wall"
+    },
+    {
+      "x": 8990,
+      "y": 700.0,
+      "h": 190,
+      "key": "camp_carriage",
+      "kind": "carriage_door"
+    },
+    {
+      "x": 11400,
+      "y": 700.0,
+      "h": 190,
+      "key": "camp_station_passage",
+      "kind": "rubble"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1030,
+      "w": 210,
+      "kind": "wall"
+    },
+    {
+      "x": 2000,
+      "w": 240,
+      "kind": "tent"
+    },
+    {
+      "x": 2790,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 3700,
+      "w": 240,
+      "kind": "tent"
+    },
+    {
+      "x": 4400,
+      "w": 250,
+      "kind": "wall"
+    },
+    {
+      "x": 800,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 1450,
+      "w": 190,
+      "kind": "wall"
+    },
+    {
+      "x": 3300,
+      "w": 210,
+      "kind": "wall"
+    },
+    {
+      "x": 7255,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 7820,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 8550,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 9625,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 10050,
+      "w": 300,
+      "kind": "wall",
+      "y": 716.29
+    },
+    {
+      "x": 10870,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    }
+  ],
+  "danger": [
+    600,
+    4650
+  ],
+  "searchlight": true,
+  "memories": [
+    {
+      "x": 1200,
+      "y": 600,
+      "id": "cup",
+      "text": "A cup still warm. Whoever was here had not meant to leave."
+    },
+    {
+      "x": 3910,
+      "y": 600,
+      "id": "names",
+      "text": "Names scratched into a post. Too many to count."
+    },
+    {
+      "x": 6470,
+      "y": 584.0,
+      "id": "chalk_numbers",
+      "text": "Numbers on the carriage walls. The children did not ask what they counted."
+    },
+    {
+      "x": 9310,
+      "y": 630.0,
+      "id": "waiting_bench",
+      "text": "A folded coat on a bench. It still held the shape of waiting."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1810,
+    3620,
+    5100,
+    7040,
+    7255,
+    7480,
+    8630,
+    9625,
+    9840,
+    10980,
+    11600
+  ],
+  "tutorials": [
+    {
+      "x": 450,
+      "text": "The light can find either of you. Keep both children low, behind solid cover."
+    },
+    {
+      "x": 1850,
+      "text": "A moving light sweeps the camp. Crouch behind walls and tents."
+    },
+    {
+      "x": 4500,
+      "text": "Search the camp for salvage. The shelter needs two pieces."
+    },
+    {
+      "x": 4880,
+      "text": "The shelter leaks. Salvage for the roof, or save it. Hold E at the damaged beam."
+    },
+    {
+      "x": 7710,
+      "text": "The beams give a warning. Keep him under cover while you decide how to cross."
+    },
+    {
+      "x": 9990,
+      "text": "The light returns to the same place. Let it pass, then take him with you."
+    }
+  ],
+  "build": "0.3.0",
+  "bridges": [],
+  "pushables": [],
+  "water_zones": [],
+  "safe_zones": [
+    {
+      "x": 5070,
+      "w": 430,
+      "key": "shelter_door"
+    },
+    {
+      "x": 7255,
+      "w": 400
+    },
+    {
+      "x": 9625,
+      "w": 400
+    }
+  ],
+  "hazard_lanes": [
+    {
+      "x": 7970,
+      "w": 430,
+      "kind": "debris",
+      "period": 12.0,
+      "active": 2.5,
+      "offset": 1.0,
+      "key": "camp_waiting_roof"
+    },
+    {
+      "x": 10200,
+      "w": 520,
+      "kind": "sweep",
+      "period": 13.0,
+      "active": 2.4,
+      "offset": 5.0
+    }
+  ],
+  "zones": [
+    {
+      "x": 0,
+      "w": 5700,
+      "theme": "rail_yard"
+    },
+    {
+      "x": 5700,
+      "w": 2100,
+      "theme": "rail_yard"
+    },
+    {
+      "x": 7800,
+      "w": 1800,
+      "theme": "rain_gully"
+    },
+    {
+      "x": 9600,
+      "w": 2200,
+      "theme": "rail_yard"
+    }
+  ],
+  "route_length_units": 11800,
+  "original_route_end": 5700
+}

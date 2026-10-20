@@ -1,0 +1,198 @@
+{
+  "id": "01",
+  "title": "Before the silence",
+  "subtitle": "THE VILLAGE",
+  "epigraph": "Once, the distance between us was only a game.",
+  "objective": "Follow the old road. Stay together.",
+  "width": 5200,
+  "sky": "#9da59c",
+  "fog": "#bfc3ad",
+  "cold": 0.025,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1450,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1570,
+      "y": 700,
+      "w": 1780,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3495,
+      "y": 700,
+      "w": 1705,
+      "h": 600,
+      "kind": "earth"
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1020,
+      "y": 648,
+      "w": 135,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 1770,
+      "y": 650,
+      "w": 190,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 2300,
+      "y": 651,
+      "w": 88,
+      "h": 27,
+      "kind": "crate"
+    },
+    {
+      "x": 2420,
+      "y": 616,
+      "w": 180,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 3750,
+      "y": 635,
+      "w": 210,
+      "h": 27,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "village",
+    "woods"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 570,
+      "y": 700,
+      "label": "THE OLD ROAD"
+    },
+    {
+      "kind": "cart",
+      "x": 2080,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "well",
+      "x": 3890,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 1090,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 4350,
+      "y": 700,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 830,
+      "y": 700,
+      "label": "A paper parcel",
+      "id": "village_parcel",
+      "rations": 1,
+      "scrap": 1
+    },
+    {
+      "kind": "wheel",
+      "x": 2900,
+      "y": 700,
+      "label": "Raise the orchard gate",
+      "id": "orchard_gate"
+    },
+    {
+      "kind": "fire",
+      "x": 4040,
+      "y": 700,
+      "label": "The last warm hearth"
+    },
+    {
+      "kind": "cache",
+      "x": 4600,
+      "y": 700,
+      "label": "Bread left on a sill",
+      "id": "village_sill",
+      "rations": 1,
+      "scrap": 1
+    }
+  ],
+  "gates": [
+    {
+      "x": 3170,
+      "y": 700,
+      "h": 185,
+      "key": "orchard_gate"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1870,
+      "w": 150,
+      "kind": "wall"
+    },
+    {
+      "x": 4080,
+      "w": 150,
+      "kind": "wall"
+    }
+  ],
+  "memories": [
+    {
+      "x": 1850,
+      "y": 610,
+      "id": "ribbon",
+      "text": "A blue ribbon. She tied it twice so it would stay."
+    },
+    {
+      "x": 3840,
+      "y": 595,
+      "id": "puddle",
+      "text": "He used to jump over the puddles just to make her laugh."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1680,
+    3600,
+    4800
+  ],
+  "tutorials": [
+    {
+      "x": 300,
+      "text": "A / D  move     ·     SPACE  jump     ·     SHIFT  run"
+    },
+    {
+      "x": 760,
+      "text": "E  search or interact. Some things were left for someone else."
+    },
+    {
+      "x": 2670,
+      "text": "The gate has a hand wheel. Stand beside it and press E."
+    },
+    {
+      "x": 3980,
+      "text": "Rest at a fire. One ration restores food, warmth and strength."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "02",
+  "title": "Where the birds went",
+  "subtitle": "THE WOODS",
+  "epigraph": "She waited until he could hear her footsteps again.",
+  "objective": "Cross the logging gate. Leave no one behind.",
+  "width": 5500,
+  "sky": "#778e91",
+  "fog": "#9aafad",
+  "cold": 0.075,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1210,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1350,
+      "y": 700,
+      "w": 2290,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3790,
+      "y": 700,
+      "w": 1710,
+      "h": 600,
+      "kind": "earth"
+    }
+  ],
+  "platforms": [
+    {
+      "x": 700,
+      "y": 640,
+      "w": 150,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 1540,
+      "y": 642,
+      "w": 145,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 4050,
+      "y": 635,
+      "w": 160,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 4290,
+      "y": 580,
+      "w": 220,
+      "h": 27,
+      "kind": "log"
+    }
+  ],
+  "scenery": [
+    "woods"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 400,
+      "y": 700,
+      "label": "LOGGING ROAD"
+    },
+    {
+      "kind": "cart",
+      "x": 1640,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 3140,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 4740,
+      "y": 700,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 940,
+      "y": 700,
+      "label": "A forester’s pack",
+      "id": "woods_pack",
+      "rations": 1,
+      "scrap": 1
+    },
+    {
+      "kind": "latch",
+      "x": 2790,
+      "y": 700,
+      "label": "Release the gate latch",
+      "id": "forest_latch"
+    },
+    {
+      "kind": "fire",
+      "x": 3230,
+      "y": 700,
+      "label": "A sheltered hollow"
+    },
+    {
+      "kind": "cache",
+      "x": 4490,
+      "y": 700,
+      "label": "A tin beneath the roots",
+      "id": "woods_tin",
+      "rations": 1,
+      "scrap": 1
+    }
+  ],
+  "gates": [
+    {
+      "x": 2580,
+      "y": 700,
+      "h": 205,
+      "key": "forest_latch",
+      "plate": 2230
+    }
+  ],
+  "covers": [
+    {
+      "x": 1600,
+      "w": 150,
+      "kind": "log"
+    },
+    {
+      "x": 3250,
+      "w": 220,
+      "kind": "tree"
+    }
+  ],
+  "memories": [
+    {
+      "x": 1590,
+      "y": 600,
+      "id": "birds",
+      "text": "They listened. The trees held no birds."
+    },
+    {
+      "x": 4390,
+      "y": 538,
+      "id": "drawing",
+      "text": "A house, two windows, a sun. Someone had folded it carefully."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1430,
+    2980,
+    4800
+  ],
+  "tutorials": [
+    {
+      "x": 650,
+      "text": "Q  asks him to wait. Press Q again to call him back."
+    },
+    {
+      "x": 2040,
+      "text": "The plate holds the gate. Let him stand on it, then ask him to wait [Q]."
+    },
+    {
+      "x": 2670,
+      "text": "Release the latch [E] on this side. Then call him through [Q]."
+    }
+  ]
+}

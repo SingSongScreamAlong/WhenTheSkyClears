@@ -1,0 +1,114 @@
+WHEN THE SKY CLEARS — GAME DESIGN AND CHARACTER ASSET HANDOFF
+19 October 2026
+
+ADAPTATION
+The handoff's two children, girl with braid and faded blue ribbon, smaller boy
+with untidy hair, and warm-to-ash landscape progression guide this game. The
+specific puzzles, resource economy and memory text are original game adaptation
+material, subject to story review. No family relationship has been invented.
+The survival direction follows the user's This War of Mine / Limbo references:
+vulnerable traversal, scarcity, environmental storytelling and mutual protection.
+
+EDITABLE GAME STRUCTURE
+project.godot / scenes/main.tscn: native Godot project.
+scripts/game.gd: journey, supplies, finite caches, save/load, hazards, companion,
+  checkpoints and runtime validation commands.
+scripts/child.gd: native CharacterBody2D movement and editable 2D character rig,
+  retargeted animation blending, painted profile/garment registration and hand IK.
+scripts/world.gd: painted parallax planes, props, ground, cover, weather and light.
+scripts/hud.gd: menus, pack, controls, survival indicators and ending.
+levels/*.json: five authored chapters, independent of the renderer.
+tools/author_levels.py: editable source for route generation.
+tools/compose_audio.py: original ambient loop and five procedural foley cues.
+tools/bake_motion.py: glTF sampler, child proportion mapping and 2D motion bake.
+
+ASSETS ACTUALLY INTEGRATED
+Ten original workspace environment paintings are copied into assets/environments.
+The original source files in sets/painted_layers are unchanged. Source rectangle
+registration removes empty matte space during rendering without editing pixels.
+
+assets/characters/boy_atlas.png is copied from the project's painted v040 atlas.
+assets/characters/girl_profile.png is copied from the project's v050 girl profile.
+The faces retain those established studies. These are fixed side profiles;
+facial turns and new expressions are not supplied by those images.
+The game's editable vector/texture rig supplies child proportions, arms, legs,
+dress shape, braid/ribbon movement and a bounded paired hand contact.
+The older simple drawing routine is retained as a fallback.
+
+Downloaded: QUATERNIUS UNIVERSAL ANIMATION LIBRARY, FREE STANDARD
+Publisher: https://quaternius.itch.io/universal-animation-library
+Archive SHA-256: cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724
+The inspected GLB contains 43 named animations. Thirteen were sampled at 30 fps:
+Idle, Walk, Jog, Sprint, crouch idle/move, jump start/loop/land, Interact,
+Fixing_Kneeling, Hit_Head and Sitting_Idle. Runtime selects locomotion, crouch,
+jump, interaction and recoil states. The extra transition/rest clips remain
+available in the bake for further authored acting.
+The adult stock mannequin does not render. Its joint motion is projected into
+side view and reconstructed with constant child limb lengths. Baseline foot
+registration, profile rendering, cloth and paired contact are local adaptations.
+assets/motion/child_motion.json is the game-specific bake.
+
+Downloaded: QUATERNIUS UNIVERSAL BASE CHARACTERS, FREE STANDARD
+Publisher: https://quaternius.itch.io/universal-base-characters
+Archive SHA-256: fdbf1804c90dfc1ea03e992bff7da2dfd1a79318e13270a660180f9308455f40
+Actual free contents: male/female Superhero full-body rigged bases, textures,
+and six hair options plus eyebrows, in engine-ready formats. The advertised
+Teen/Regular bases are not present in this free archive. These downloaded adult
+bases provide topology and rig references; they are not finished child models
+and are not substituted for either hero. The game retains drawn 2D children.
+No paid edition, account, form or purchase was used.
+
+Both downloaded archives include a CC0 statement. Quaternius's current site
+also publishes QAL, so the local source archive and publisher licence snapshot
+are retained. Raw vendor packs are excluded from the release and source ZIPs;
+the game incorporates only its adapted motion. SOURCE_RECEIPTS.json records
+actual contents and hashes, rather than assuming advertised paid-tier contents.
+https://quaternius.com/license.html
+
+MODELING SHORTLIST
+Blender Studio Human Base Meshes v1.4.1: production modeling topology, CC0 on
+the official demo-file listing. Direct download returned 403 in this session;
+no local copy or native compatibility is claimed.
+https://www.blender.org/download/demo-files/
+Spring rig: useful child proportion and acting reference, CC-BY with credit.
+The publisher targets Blender 2.8–3.6 and BlenRig. Not downloaded or integrated,
+and not an identity replacement for our girl.
+https://studio.blender.org/characters/spring/v1/
+These are stronger modeling references than generic low-detail stock figures,
+but a bespoke model sheet and authored child anatomy are still required.
+
+OTHER CREDITS
+Cormorant Garamond and Inter: OFL. Fonts and OFL texts in assets/fonts.
+Godot Engine 4.6: MIT. Official portable editor and export template checksums
+are preserved in tools/ENGINE_PROVENANCE.json and tools/SHA512-SUMS.txt.
+Ambient score, footsteps, warning, blast and wheel cues were synthesized locally;
+the trailer's selected commercial song was not included.
+
+VERIFICATION
+evidence/packaged_smoke/runtime_smoke.json: 73 engine checks, including each
+chapter, native collision and movement, interactions, resources, recovery,
+actual atomic disk save, resume readback and title-screen save preservation.
+evidence/packaged_survival/survival_consequences.json: 13 consequence checks.
+Covering either child alone leaves strength at 35 after a blast; covering both
+leaves it at 100. Two open blasts end the attempt. Detecting the exposed boy
+while the girl is sheltered leaves strength at 66. Food and cold consequences,
+finite inventory, non-duplicating caches and reunion conditions are measured.
+evidence/packaged_traverse/continuous_traversal.json: all five chapters and the
+ending, with native physics and simulated input. No position jumps, collision
+bypass, supplies grants or damage immunity. It uses the actual interaction
+functions and the finite inventory. Zero falls/deaths in the automated route.
+The targeted scenario tests explicitly set initial positions and conditions;
+they do not claim a continuous playthrough. The traversal report does.
+
+NEXT AAA CRAFT PASSES
+1. Authored child acting: alert glance, fear, reaching, supporting, protective
+   hunker, warmth, fatigue and distinct recoveries; stock motion is a reference.
+2. Full child model/pose sheets and silhouette review at gameplay scale;
+   face/profile attachment, costume deformation, hands and grounded gait.
+3. More substantial level-specific survival encounters and choices. Current
+   route is compact; it does not represent a full-length commercial campaign.
+4. Distinct material and destruction passes on foreground collision geometry,
+   non-repeating scenery, deeper lighting, location-specific foley and ambience.
+5. Human keyboard/controller playtests, visibility/accessibility review,
+   performance on additional machines and tuning of scarcity/difficulty.
+Technical validation is not final artistic or release acceptance.

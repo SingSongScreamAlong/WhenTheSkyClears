@@ -1,0 +1,21 @@
+WHEN THE SKY CLEARS - EDITABLE SOURCE
+
+1. Install the Godot 4.6 editor and import project.godot.
+2. Open scenes/main.tscn or run the project from the editor.
+3. To export a Windows executable, install matching Godot 4.6 export templates
+   and use the included Windows Desktop export preset.
+
+The source ZIP does not include the editor, export template binaries or earlier
+playable builds. Its custom template fields are cleared to use standard Godot
+templates. The original workspace keeps its portable editor and custom template
+paths. The game itself does not require Python.
+
+assets/, scripts/, levels/ and scenes/ are the editable game. Levels are authored
+JSON; tools can rebuild the route from previous/v0.2.0/levels. The tools
+folder includes development/QA scripts, some of which expect the original
+workspace's engine location and provenance files. For normal play/edit/export,
+the Godot project is the entry point.
+
+The separate Windows ZIP contains the standalone playable executable. Extract
+that ZIP and run When the Sky Clears.exe to play without the Godot editor.
+

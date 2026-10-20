@@ -1,0 +1,73 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.3.0
+19 October 2026
+
+PLAY
+PLAY.cmd opens build/v0.3.0/When the Sky Clears.exe.
+Extract the Windows ZIP before running its executable. No engine installation
+is needed to play. The editable source is the Godot project in this folder.
+Existing v0.1.0 and v0.2.0 builds and full snapshots remain in the original
+workspace. The editable ZIP contains the current project and prior level data.
+This version keeps its own journey_v3.json in the existing Godot user folder.
+Previous journey files are preserved. Continue restores actual saved survival
+resources; checkpoint recovery is a separate action.
+
+CHARACTERS AND FEEL
+The two drawn children retain their established profiles and the blue ribbon.
+Companion glances, warning gestures, cold and fatigue posture, pushing effort,
+distinct rising/falling/mantling poses, cloth and braid follow-through, boot
+and hand shapes add character to the distance-driven planted-foot controller.
+Both actors stop for shared work. Hands meet at a reachable common height;
+they release while airborne or working. A waiting companion stays low.
+
+Ground profiles drive native collision polygons and the painted surface.
+Planted feet sample that same surface, so soles stay on a hill instead of
+floating above a decorative slope. Recovery clears old jump and climb state.
+Wading applies only when feet actually reach the water.
+
+A LONGER AUTHORED JOURNEY
+The five chapters now span 56,000 world units, up from 27,600. This is authored
+route length, not a human playtime estimate. Orchard ridges, a rail path and
+goods station, the freight yard, school courtyards and the ash garden give the
+journey new situations. Six elevated supply spurs reward exploration.
+Ten new timed lanes and sixteen held work actions extend the earlier encounters.
+Read JOURNEY_v0.3.0.txt for the chapter design.
+
+Both children must be together to lift a jammed barrier. Clearing debris costs
+time and effort. A roof brace costs one real salvage and permanently stops its
+falling-masonry lane; waiting for the quiet interval offers another way through.
+Moving light can detect either child, including one left behind. Falling dust
+and roof creaks warn of debris. Crosswinds reduce exposed movement and spend
+stamina; crouching steadies both children. Safe approaches fit both children.
+Finite supply caches and sheltered fires support the longer journey.
+
+LOOK AND SOUND
+The existing layered paintings are preserved. A new transparent painted railway
+station layer, grounded dressing, soil strata, roots, broken banks, varied zone
+details and foreground cover extend the visual world. The new painting is in
+assets/environments/Rail_Yard_v030.png; its exact built-in ImageGen prompt and
+provenance are in assets/environments/Rail_Yard_PROVENANCE_v030.txt.
+Vulkan Forward Mobile renders with 4x 2D MSAA and mipmapped paintings.
+Kenney CC0 footsteps from v0.2.0 remain, now with quieter companion contacts.
+
+CONTROLS
+A/D or arrows: move | Space/W/Up: jump | Shift: run | S/Down: crouch
+Hold E: search, work or rest | Hold E+A/D against crate: push
+Q: ask him to wait low / call him | H: medicine | Tab: pack/objective
+R: checkpoint recovery | Esc: pause | F11: fullscreen | M: mute
+Controller: left stick/D-pad move, A jump, B crouch, X held work,
+Y wait/call, RB run, Back pack, Start pause.
+
+VERIFICATION AND LIMITS
+Evidence is retained in evidence/v030. Continuous journey navigation uses real
+Input and native physics, held interactions, finite supplies and actual recovery.
+Targeted tests deliberately arrange isolated scenarios to measure slopes,
+sole contact, separate-child exposure, wind, work costs and save persistence.
+Optional spur checks are separate from the continuous main-route traversal.
+Character close views and movement studies are labeled as studies; 4K gameplay
+captures use the actual renderer. Technical tests do not establish artistic or
+human playtest acceptance.
+
+This is an expanded development build, with a compact campaign still requiring
+more bespoke acting, animation transitions, terrain/prop craft, encounter depth,
+sound design and human balancing to reach the requested AAA production target.
+It is not presented as a finished commercial game.

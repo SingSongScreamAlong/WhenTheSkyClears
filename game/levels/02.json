@@ -1,0 +1,585 @@
+{
+  "id": "02",
+  "title": "Where the birds went",
+  "subtitle": "THE WOODS",
+  "epigraph": "She waited until he could hear her footsteps again.",
+  "objective": "Follow the ridge to the old rail path. Wait for him at every crossing.",
+  "width": 11200,
+  "sky": "#778e91",
+  "fog": "#9aafad",
+  "cold": 0.075,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1210,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1540,
+      "y": 700,
+      "w": 2100,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3790,
+      "y": 700,
+      "w": 1710,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 5500,
+      "y": 700,
+      "w": 1500,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          150,
+          0
+        ],
+        [
+          580,
+          -98
+        ],
+        [
+          990,
+          -98
+        ],
+        [
+          1370,
+          0
+        ],
+        [
+          1500,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 7000,
+      "y": 700,
+      "w": 1700,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          1700,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 8700,
+      "y": 700,
+      "w": 2500,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          450,
+          0
+        ],
+        [
+          800,
+          54
+        ],
+        [
+          1110,
+          54
+        ],
+        [
+          1450,
+          0
+        ],
+        [
+          2500,
+          0
+        ]
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "x": 700,
+      "y": 640,
+      "w": 150,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 1540,
+      "y": 642,
+      "w": 145,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 4050,
+      "y": 635,
+      "w": 160,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 4290,
+      "y": 580,
+      "w": 220,
+      "h": 27,
+      "kind": "log"
+    },
+    {
+      "x": 6020,
+      "y": 542.0,
+      "w": 150,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 6210,
+      "y": 482.0,
+      "w": 220,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 10730,
+      "y": 640.0,
+      "w": 150,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 10920,
+      "y": 580.0,
+      "w": 220,
+      "h": 22,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "woods"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 400,
+      "y": 700,
+      "label": "LOGGING ROAD"
+    },
+    {
+      "kind": "cart",
+      "x": 1640,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 3140,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 4740,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 6010,
+      "y": 617.95,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 7460,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "barricade",
+      "x": 8460,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 9100,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 11000,
+      "y": 700.0,
+      "label": "THE CAMP"
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 940,
+      "y": 700,
+      "label": "A forester’s pack",
+      "id": "woods_pack",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "bridge",
+      "x": 1070,
+      "y": 700,
+      "id": "forest_bridge",
+      "label": "Lower the old crossing",
+      "hold_seconds": 2.4
+    },
+    {
+      "kind": "latch",
+      "x": 2790,
+      "y": 700,
+      "label": "Release the gate latch",
+      "id": "forest_latch",
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "fire",
+      "x": 3230,
+      "y": 700,
+      "label": "A sheltered hollow",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 4490,
+      "y": 700,
+      "label": "A tin beneath the roots",
+      "id": "woods_tin",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 6310,
+      "y": 482.0,
+      "label": "A scarf wrapped around a tin",
+      "hold_seconds": 1.2,
+      "id": "ridge_scarf",
+      "optional": true,
+      "route": "raised_supply_spur",
+      "rations": 1,
+      "medicine": 0,
+      "scrap": 1
+    },
+    {
+      "kind": "cache",
+      "x": 6930,
+      "y": 700.0,
+      "label": "The workers’ lunch pail",
+      "hold_seconds": 1.2,
+      "id": "ridge_lunch",
+      "rations": 2,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 7110,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "brace",
+      "x": 7330,
+      "y": 700.0,
+      "label": "Wedge the hanging loading roof · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "woods_loading_roof",
+      "optional": true
+    },
+    {
+      "kind": "relay",
+      "x": 8440,
+      "y": 700.0,
+      "label": "Raise the rusted rail fence together",
+      "hold_seconds": 3.2,
+      "id": "rail_fence",
+      "companion_required": true
+    },
+    {
+      "kind": "cache",
+      "x": 8790,
+      "y": 700.0,
+      "label": "A tin in the keeper’s hut",
+      "hold_seconds": 1.2,
+      "id": "woods_keeper_tin",
+      "rations": 1,
+      "scrap": 1,
+      "medicine": 1
+    },
+    {
+      "kind": "fire",
+      "x": 8970,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 10500,
+      "y": 700.0,
+      "label": "Pull the branches out of the culvert",
+      "hold_seconds": 2.8,
+      "id": "woods_culvert"
+    },
+    {
+      "kind": "cache",
+      "x": 11020,
+      "y": 580.0,
+      "label": "The high shelf in a ruined hut",
+      "hold_seconds": 1.2,
+      "id": "woods_high_sack",
+      "optional": true,
+      "route": "raised_supply_spur",
+      "rations": 1,
+      "medicine": 0,
+      "scrap": 0
+    }
+  ],
+  "gates": [
+    {
+      "x": 2580,
+      "y": 700,
+      "h": 205,
+      "key": "forest_latch",
+      "plate": 2230
+    },
+    {
+      "x": 8620,
+      "y": 700.0,
+      "h": 190,
+      "key": "rail_fence",
+      "kind": "timber_bar"
+    },
+    {
+      "x": 10700,
+      "y": 700.0,
+      "h": 190,
+      "key": "woods_culvert",
+      "kind": "fallen_bough"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1600,
+      "w": 150,
+      "kind": "log"
+    },
+    {
+      "x": 3250,
+      "w": 220,
+      "kind": "tree"
+    },
+    {
+      "x": 7075,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 7390,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 8090,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 8935,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 9600,
+      "w": 300,
+      "kind": "wall",
+      "y": 754.0
+    },
+    {
+      "x": 10360,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    }
+  ],
+  "memories": [
+    {
+      "x": 1590,
+      "y": 600,
+      "id": "birds",
+      "text": "They listened. The trees held no birds."
+    },
+    {
+      "x": 4390,
+      "y": 538,
+      "id": "drawing",
+      "text": "A house, two windows, a sun. Someone had folded it carefully."
+    },
+    {
+      "x": 6550,
+      "y": 547.47,
+      "id": "white_threads",
+      "text": "White threads on the thorns. Someone else had come this way."
+    },
+    {
+      "x": 9370,
+      "y": 663.94,
+      "id": "half_map",
+      "text": "The paper showed a road. The water had taken the names."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1430,
+    2980,
+    4800,
+    6980,
+    7075,
+    8200,
+    8935,
+    9140,
+    10400,
+    11000
+  ],
+  "tutorials": [
+    {
+      "x": 650,
+      "text": "Q  asks him to wait. Press Q again to call him back."
+    },
+    {
+      "x": 2040,
+      "text": "The gate needs weight on the plate. Ask him to wait [Q], or push the crate onto it."
+    },
+    {
+      "x": 2670,
+      "text": "Release the latch [E] on this side. Then call him through [Q]."
+    },
+    {
+      "x": 1050,
+      "text": "The stream has taken the crossing. Hold E at the winch to lower it."
+    },
+    {
+      "x": 7350,
+      "text": "The loading roof can be made safe. Or watch the dust and time your way through."
+    },
+    {
+      "x": 9560,
+      "text": "The gully carries every gust. There is room for both of you behind the fallen trunk."
+    }
+  ],
+  "build": "0.3.0",
+  "bridges": [
+    {
+      "x": 1205,
+      "y": 700,
+      "w": 340,
+      "h": 15,
+      "key": "forest_bridge"
+    }
+  ],
+  "pushables": [
+    {
+      "id": "logging_crate",
+      "x": 2020,
+      "y": 672
+    }
+  ],
+  "water_zones": [
+    {
+      "x": 1210,
+      "w": 330,
+      "top": 740,
+      "key": "forest_bridge"
+    }
+  ],
+  "safe_zones": [
+    {
+      "x": 3150,
+      "w": 300
+    },
+    {
+      "x": 7075,
+      "w": 400
+    },
+    {
+      "x": 8935,
+      "w": 400
+    }
+  ],
+  "hazard_lanes": [
+    {
+      "x": 7540,
+      "w": 400,
+      "kind": "debris",
+      "period": 12.0,
+      "active": 2.4,
+      "offset": 3.8,
+      "key": "woods_loading_roof"
+    },
+    {
+      "x": 9750,
+      "w": 460,
+      "kind": "wind",
+      "period": 12.5,
+      "active": 2.6,
+      "offset": 6.0
+    }
+  ],
+  "zones": [
+    {
+      "x": 0,
+      "w": 5500,
+      "theme": "ridge"
+    },
+    {
+      "x": 5500,
+      "w": 1500,
+      "theme": "ridge"
+    },
+    {
+      "x": 7000,
+      "w": 1700,
+      "theme": "rail_yard"
+    },
+    {
+      "x": 8700,
+      "w": 2500,
+      "theme": "rain_gully"
+    }
+  ],
+  "route_length_units": 11200,
+  "original_route_end": 5500
+}

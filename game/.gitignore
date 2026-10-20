@@ -1,0 +1,23 @@
+.godot/
+tools/godot/
+tools/*.zip
+tools/*.tpz
+tools/windows_*_x86_64.exe
+build/
+*.zip
+*.tmp
+__pycache__/
+*.pyc
+# Review movies and reports are retained; intermediate image sequences regenerate.
+evidence/**/motion_frames/
+evidence/legacy_capture_save_before_isolation.json
+# Acquired third-party libraries remain local; retain receipts and license snapshot.
+character_sources/*
+!character_sources/.gdignore
+!character_sources/SOURCE_RECEIPTS.json
+!character_sources/QUATERNIUS_CURRENT_LICENSE.html
+!character_sources/kenney-impact-sounds/
+character_sources/kenney-impact-sounds/*
+!character_sources/kenney-impact-sounds/RECEIPT.json
+# Download-page snapshots can contain session tokens and are never published.
+**/*_download_page.html

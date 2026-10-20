@@ -1,0 +1,29 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+TRAVERSE_CHAPTER 1
+TRAVERSE_PROGRESS 1 180 boy=123 deaths=0
+TRAVERSE_PROGRESS 1 4487 boy=4406 deaths=0
+TRAVERSE_PROGRESS 1 8159 boy=8064 deaths=0
+TRAVERSE_CHAPTER 2
+TRAVERSE_PROGRESS 2 867 boy=834 deaths=0
+TRAVERSE_PROGRESS 2 4574 boy=4532 deaths=0
+TRAVERSE_PROGRESS 2 7435 boy=7387 deaths=0
+TRAVERSE_PROGRESS 2 10423 boy=10385 deaths=0
+TRAVERSE_CHAPTER 3
+TRAVERSE_PROGRESS 3 3546 boy=3478 deaths=0
+TRAVERSE_PROGRESS 3 5334 boy=5296 deaths=0
+TRAVERSE_PROGRESS 3 8407 boy=8365 deaths=0
+TRAVERSE_CHAPTER 4
+TRAVERSE_PROGRESS 4 289 boy=235 deaths=0
+TRAVERSE_PROGRESS 4 3470 boy=3370 deaths=0
+TRAVERSE_PROGRESS 4 5332 boy=5290 deaths=1
+ERROR: Invalid polygon data, triangulation failed.
+   at: canvas_item_add_polygon (servers/rendering/renderer_canvas_cull.cpp:1727)
+TRAVERSE_PROGRESS 4 8613 boy=8571 deaths=1
+TRAVERSE_CHAPTER 5
+TRAVERSE_PROGRESS 5 1215 boy=1114 deaths=1
+TRAVERSE_PROGRESS 5 5410 boy=5337 deaths=1
+ERROR: Invalid polygon data, triangulation failed.
+   at: canvas_item_add_polygon (servers/rendering/renderer_canvas_cull.cpp:1727)
+TRAVERSE_PROGRESS 5 8930 boy=8926 deaths=1
+TRAVERSE_RESULT {"build":"0.3.0","chapters_reached":[1,2,3,4,5],"completed":true,"deaths":1,"encounters":[{"chapter":0,"id":"village_parcel","kind":"cache","time":4.59999999999999},{"chapter":0,"id":"orchard_gate","kind":"wheel","time":19.6166666666668},{"chapter":0,"id":"village_sill","kind":"cache","time":31.2666666666662},{"chapter":0,"id":"orchard_basket","kind":"cache","time":44.1166666666654},{"chapter":0,"id":"orchard_bar","kind":"relay","time":51.1499999999984},{"chapter":0,"id":"orchard_boughs","kind":"clear","time":66.2833333333309},{"chapter":0,"id":"orchard_shed_food","kind":"cache","time":75.0166666666637},{"chapter":0,"id":"orchard_shed_brace","kind":"brace","time":81.3999999999967},{"chapter":1,"id":"woods_pack","kind":"cache","time":90.4833333333295},{"chapter":1,"id":"forest_bridge","kind":"bridge","time":94.6666666666626},{"chapter":1,"id":"forest_latch","kind":"latch","time":106.633333333329},{"chapter":1,"id":"woods_tin","kind":"cache","time":120.599999999994},{"chapter":1,"id":"ridge_lunch","kind":"cache","time":136.650000000001},{"chapter":1,"id":"","kind":"fire","time":142.516666666672},{"chapter":1,"id":"woods_loading_roof","kind":"brace","time":148.10000000001},{"chapter":1,"id":"rail_fence","kind":"relay","time":158.766666666685},{"chapter":1,"id":"woods_keeper_tin","kind":"cache","time":162.816666666688},{"chapter":1,"id":"woods_culvert","kind":"clear","time":179.416666666702},{"chapter":2,"id":"shelter_door","kind":"repair","time":225.950000000072},{"chapter":2,"id":"shelter_roof","kind":"roof","time":231.650000000076},{"chapter":2,"id":"","kind":"fire","time":237.933333333415},{"chapter":2,"id":"camp_loaf","kind":"cache","time":240.81666666675},{"chapter":2,"id":"camp_sacks","kind":"clear","time":247.516666666756},{"chapter":2,"id":"freight_kitchen","kind":"cache","time":256.650000000095},{"chapter":2,"id":"camp_waiting_roof","kind":"brace","time":264.050000000089},{"chapter":2,"id":"camp_carriage","kind":"relay","time":274.833333333412},{"chapter":2,"id":"freight_bread","kind":"cache","time":281.383333333406},{"chapter":2,"id":"camp_station_passage","kind":"clear","time":295.016666666727},{"chapter":3,"id":"school_gate","kind":"wheel","time":314.200000000043},{"chapter":3,"id":"school_cupboard","kind":"cache","time":321.48333333337},{"chapter":3,"id":"school_drain","kind":"pump","time":327.016666666698},{"chapter":3,"kind":"recovery","reason":"They need a safer way through.","time":333.683333333359},{"chapter":3,"id":"","kind":"fire","time":341.950000000018},{"chapter":3,"id":"","kind":"fire","time":346.700000000013},{"chapter":3,"id":"school_blanket","kind":"cache","time":354.03333333334},{"chapter":3,"id":"school_kitchen_tin","kind":"cache","time":361.333333333333},{"chapter":3,"id":"school_shelf","kind":"relay","time":369.283333333326},{"chapter":3,"id":"school_library_awning","kind":"brace","time":379.699999999983},{"chapter":3,"id":"school_staff_flask","kind":"cache","time":391.01666666664},{"chapter":3,"id":"school_desks","kind":"clear","time":398.3333333333},{"chapter":4,"id":"ash_parcel","kind":"cache","time":414.366666666618},{"chapter":4,"id":"","kind":"fire","time":432.166666666602},{"chapter":4,"id":"ash_garden_tin","kind":"cache","time":451.049999999918},{"chapter":4,"id":"ash_wire","kind":"clear","time":463.999999999907},{"chapter":4,"id":"ash_branch","kind":"relay","time":478.683333333227},{"chapter":4,"id":"ash_awning","kind":"brace","time":490.816666666549},{"chapter":4,"id":"","kind":"end","time":495.999999999878}],"failure":"","health":100.0,"medicine_remaining":1,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.","rations_remaining":4,"simulated_seconds":495.999999999878}

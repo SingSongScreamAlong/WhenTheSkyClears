@@ -1,0 +1,183 @@
+{
+	"all_passed": true,
+	"build": "0.3.0",
+	"checks": [
+		{
+			"check": "journey_more_than_twice_previous_route",
+			"details": "56000",
+			"passed": true
+		},
+		{
+			"check": "chapter_1_native_slope_walk",
+			"details": "distance=319.73 grounded=125",
+			"passed": true
+		},
+		{
+			"check": "chapter_1_planted_slope_feet",
+			"details": "max vertical sole error=0.000",
+			"passed": true
+		},
+		{
+			"check": "chapter_1_slope_checkpoint_height",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "chapter_2_native_slope_walk",
+			"details": "distance=307.13 grounded=125",
+			"passed": true
+		},
+		{
+			"check": "chapter_2_planted_slope_feet",
+			"details": "max vertical sole error=0.000",
+			"passed": true
+		},
+		{
+			"check": "chapter_2_slope_checkpoint_height",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "chapter_3_native_slope_walk",
+			"details": "distance=334.64 grounded=125",
+			"passed": true
+		},
+		{
+			"check": "chapter_3_planted_slope_feet",
+			"details": "max vertical sole error=0.000",
+			"passed": true
+		},
+		{
+			"check": "chapter_3_slope_checkpoint_height",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "chapter_4_native_slope_walk",
+			"details": "distance=334.43 grounded=125",
+			"passed": true
+		},
+		{
+			"check": "chapter_4_planted_slope_feet",
+			"details": "max vertical sole error=0.000",
+			"passed": true
+		},
+		{
+			"check": "chapter_4_slope_checkpoint_height",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "chapter_5_native_slope_walk",
+			"details": "distance=311.14 grounded=125",
+			"passed": true
+		},
+		{
+			"check": "chapter_5_planted_slope_feet",
+			"details": "max vertical sole error=0.000",
+			"passed": true
+		},
+		{
+			"check": "chapter_5_slope_checkpoint_height",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "shared_lift_refuses_distant_companion",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "shared_lift_opens_physical_route",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "clearing_opens_its_gate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "brace_requires_real_salvage",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "brace_consumes_one_salvage",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "brace_permanently_stops_roof_hazard",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "patrol_warning_precedes_active_sweep",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "patrol_can_find_exposed_boy",
+			"details": "72.0",
+			"passed": true
+		},
+		{
+			"check": "patrol_cover_protects_both",
+			"details": "100",
+			"passed": true
+		},
+		{
+			"check": "leaving_boy_in_shell_area_still_dangerous",
+			"details": "35.0",
+			"passed": true
+		},
+		{
+			"check": "boy_still_detected_after_girl_leaves_searchlight_area",
+			"details": "66.0",
+			"passed": true
+		},
+		{
+			"check": "lane_stays_active_when_boy_is_ahead",
+			"details": "72.0",
+			"passed": true
+		},
+		{
+			"check": "exposed_wind_drains_stamina",
+			"details": "86.6666666666674",
+			"passed": true
+		},
+		{
+			"check": "wind_reduces_uncrouched_speed",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "crouching_steadies_both_in_wind",
+			"details": "89.25",
+			"passed": true
+		},
+		{
+			"check": "airborne_feet_do_not_count_as_wading",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "recovery_clears_mantle_and_jump_state",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "waiting_companion_stays_low_after_separation",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "continue_preserves_depleted_survival_resources",
+			"details": "health=14.0 warmth=11.0 food=9.0 stamina=23.0",
+			"passed": true
+		}
+	],
+	"method": "Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey.",
+	"route_units": 56000
+}

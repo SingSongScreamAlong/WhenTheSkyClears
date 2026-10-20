@@ -1,0 +1,26 @@
+{
+  "scope": "Fresh Git index checkout with original source bytes preserved; no pre-existing Godot import cache. Official local engine and template files supplied as external build dependencies.",
+  "godot": "4.6.stable",
+  "original_source_hashes_match_export_identity": true,
+  "stages": {
+    "import": {
+      "exit_code": 0,
+      "engine_errors": [],
+      "elapsed_seconds": 4.06
+    },
+    "smoke": {
+      "exit_code": 0,
+      "engine_errors": [],
+      "elapsed_seconds": 39.64,
+      "checks": 118
+    },
+    "export": {
+      "exit_code": 0,
+      "engine_errors": [],
+      "elapsed_seconds": 3.31,
+      "binary_bytes": 132177768,
+      "binary_sha256": "41dbbc0f55aa8364eac458bcc33cdc9db3e0840621faa93322171b696682e33c"
+    }
+  },
+  "all_passed": true
+}

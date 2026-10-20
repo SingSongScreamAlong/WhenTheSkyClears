@@ -1,0 +1,254 @@
+{
+  "id": "03",
+  "title": "Under a borrowed roof",
+  "subtitle": "THE DISPLACEMENT CAMP",
+  "epigraph": "The light came first. Then the earth remembered.",
+  "objective": "Open the buried shelter. Repair the roof. Bring him to the stove.",
+  "width": 5700,
+  "sky": "#65787e",
+  "fog": "#8c9a9c",
+  "cold": 0.5,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1590,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1730,
+      "y": 700,
+      "w": 1700,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3570,
+      "y": 700,
+      "w": 2130,
+      "h": 600,
+      "kind": "earth"
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1130,
+      "y": 640,
+      "w": 190,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 2310,
+      "y": 648,
+      "w": 180,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 3850,
+      "y": 640,
+      "w": 180,
+      "h": 27,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "camp",
+    "battlefield"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 450,
+      "y": 700,
+      "label": "KEEP LOW"
+    },
+    {
+      "kind": "washing",
+      "x": 1230,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 3260,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "barricade",
+      "x": 4460,
+      "y": 700,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 720,
+      "y": 700,
+      "label": "An abandoned tool roll",
+      "id": "camp_tools",
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 1910,
+      "y": 700,
+      "label": "Inside a torn rucksack",
+      "id": "camp_bag",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 2840,
+      "y": 700,
+      "label": "A medical tin",
+      "id": "camp_med",
+      "medicine": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "repair",
+      "x": 4670,
+      "y": 700,
+      "id": "shelter_door",
+      "label": "Clear and brace the shelter door · 2 salvage",
+      "hold_seconds": 3.5
+    },
+    {
+      "kind": "roof",
+      "x": 4990,
+      "y": 700,
+      "id": "shelter_roof",
+      "label": "Patch the leaking roof · 1 salvage",
+      "hold_seconds": 3.0
+    },
+    {
+      "kind": "fire",
+      "x": 5240,
+      "y": 700,
+      "label": "A roof for a little while",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 5400,
+      "y": 700,
+      "label": "A shared loaf",
+      "id": "camp_loaf",
+      "rations": 1,
+      "hold_seconds": 1.1
+    }
+  ],
+  "gates": [
+    {
+      "x": 4880,
+      "y": 700,
+      "h": 180,
+      "key": "shelter_door"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1030,
+      "w": 210,
+      "kind": "wall"
+    },
+    {
+      "x": 2000,
+      "w": 240,
+      "kind": "tent"
+    },
+    {
+      "x": 2790,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 3700,
+      "w": 240,
+      "kind": "tent"
+    },
+    {
+      "x": 4400,
+      "w": 250,
+      "kind": "wall"
+    },
+    {
+      "x": 800,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 1450,
+      "w": 190,
+      "kind": "wall"
+    },
+    {
+      "x": 3300,
+      "w": 210,
+      "kind": "wall"
+    }
+  ],
+  "danger": [
+    600,
+    4650
+  ],
+  "searchlight": true,
+  "memories": [
+    {
+      "x": 1200,
+      "y": 600,
+      "id": "cup",
+      "text": "A cup still warm. Whoever was here had not meant to leave."
+    },
+    {
+      "x": 3910,
+      "y": 600,
+      "id": "names",
+      "text": "Names scratched into a post. Too many to count."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1810,
+    3620,
+    5100
+  ],
+  "tutorials": [
+    {
+      "x": 450,
+      "text": "The light can find either of you. Keep both children low, behind solid cover."
+    },
+    {
+      "x": 1850,
+      "text": "A moving light sweeps the camp. Crouch behind walls and tents."
+    },
+    {
+      "x": 4500,
+      "text": "Search the camp for salvage. The shelter needs two pieces."
+    },
+    {
+      "x": 4880,
+      "text": "The shelter leaks. Salvage for the roof, or save it. Hold E at the damaged beam."
+    }
+  ],
+  "build": "0.2.0",
+  "bridges": [],
+  "pushables": [],
+  "water_zones": [],
+  "safe_zones": [
+    {
+      "x": 5070,
+      "w": 430,
+      "key": "shelter_door"
+    }
+  ]
+}

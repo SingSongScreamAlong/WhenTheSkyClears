@@ -1,0 +1,70 @@
+WorkerThreadPool: 24 threads, 7 max low-priority.
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Unrecognized output string "misc2" in mapping:
+030000000d0f00000202000000000000,Horipad O Nintendo Switch 2 Controller,a:b1,b:b0,back:b8,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b12,leftshoulder:b4,leftstick:b10,lefttrigger:b6,leftx:a0,lefty:a1,misc1:b13,misc2:b14,rightshoulder:b5,rightstick:b11,righttrigger:b7,rightx:a2,righty:a3,start:b9,x:b3,y:b2,platform:Windows,
+Unrecognized output string "misc2" in mapping:
+030000000d0f00009601000000000000,Horipad Steam,a:b0,b:b1,back:b10,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b12,leftshoulder:b6,leftstick:b13,lefttrigger:b8,leftx:a0,lefty:a1,misc2:b2,paddle1:b5,paddle2:b15,paddle3:b18,paddle4:b19,rightshoulder:b7,rightstick:b14,righttrigger:b9,rightx:a3,righty:a4,start:b11,x:b3,y:b4,platform:Windows,
+Unrecognized output string "misc2" in mapping:
+030000007e0500006920000000000000,Nintendo Switch 2 Pro Controller,a:b0,b:b1,back:b14,dpdown:b8,dpleft:b10,dpright:b9,dpup:b11,guide:b16,leftshoulder:b12,leftstick:b15,lefttrigger:b13,leftx:a0,lefty:a1~,misc1:b17,misc2:b20,paddle1:b18,paddle2:b19,rightshoulder:b4,rightstick:b7,righttrigger:b5,rightx:a2,righty:a3~,start:b6,x:b2,y:b3,platform:Windows,
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 3663110324
+EDITOR API HASH: 835956462
+SceneTreeFTI: traversal method DEFAULT
+MbedTLS: Some X509 certificates could not be parsed (1 certificates skipped).
+Loaded system CA certificates
+Loading resource: res://scenes/main.tscn
+Loading resource: res://scripts/game.gd
+Loading resource: res://assets/fonts/display.ttf
+Loading resource: res://.godot/imported/display.ttf-f9ed5b35e0954e39b36f83f60262bb67.fontdata
+Loading resource: res://assets/fonts/interface.ttf
+Loading resource: res://.godot/imported/interface.ttf-2ac09d333654ec273ca6b7d0dfbb964b.fontdata
+Loading resource: res://assets/environments/Sky_Painted_v001.png
+Loading resource: res://.godot/imported/Sky_Painted_v001.png-c658147abd150fa6f5d07808440a5560.ctex
+Loading resource: res://assets/environments/Distant_Hills_v001.png
+Loading resource: res://.godot/imported/Distant_Hills_v001.png-3ff756ed0f782f1d3c7de6a6d03ab45b.ctex
+Loading resource: res://assets/environments/Village_Warm_v001.png
+Loading resource: res://.godot/imported/Village_Warm_v001.png-3aa46587421247d076e00962bc1a805b.ctex
+Loading resource: res://assets/environments/Village_Empty_v001.png
+Loading resource: res://.godot/imported/Village_Empty_v001.png-32e1f67cea76533b886c5dcb205603b2.ctex
+Loading resource: res://assets/environments/Woods_v001.png
+Loading resource: res://.godot/imported/Woods_v001.png-970034f0d25e0902fd99ebc0e330b6d8.ctex
+Loading resource: res://assets/environments/Camp_v001.png
+Loading resource: res://.godot/imported/Camp_v001.png-fd41c73c9bebcdaacb45d26f596b4e69.ctex
+Loading resource: res://assets/environments/School_v001.png
+Loading resource: res://.godot/imported/School_v001.png-b9c62d4900226e3bde798d16cf111434.ctex
+Loading resource: res://assets/environments/Battlefield_v001.png
+Loading resource: res://.godot/imported/Battlefield_v001.png-db4a55d15c9adebbd5767629c4b2b35f.ctex
+Loading resource: res://assets/environments/Foreground_Tree_v001.png
+Loading resource: res://.godot/imported/Foreground_Tree_v001.png-aa23893e47ce1a89db4386ed031769b3.ctex
+Loading resource: res://assets/environments/Ground_Painted_v001.png
+Loading resource: res://.godot/imported/Ground_Painted_v001.png-45c62206e7fb04ece1f3caf85a4534b8.ctex
+Loading resource: res://assets/audio/step.wav
+Loading resource: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.sample
+Loading resource: res://assets/audio/collect.wav
+Loading resource: res://.godot/imported/collect.wav-70a75dd3409197e137d506421ae3ad3b.sample
+Loading resource: res://assets/audio/warning.wav
+Loading resource: res://.godot/imported/warning.wav-bbd467b4b8c964daf182674a45c0d6f0.sample
+Loading resource: res://assets/audio/blast.wav
+Loading resource: res://.godot/imported/blast.wav-5404912bd4783edeb004288cecf454e0.sample
+Loading resource: res://assets/audio/wheel.wav
+Loading resource: res://.godot/imported/wheel.wav-5d6af38fcc9bb550526623eb0d9e9f55.sample
+Loading resource: res://assets/audio/horizon.wav
+Loading resource: res://.godot/imported/horizon.wav-40e942cda94b2d88df55bc3cf30a47e4.sample
+WTSC_SMOKE_RESULT {"all_passed":true,"checks":[{"check":"chapter_1_geometry","details":"","passed":true},{"check":"chapter_1_ground_contact","details":"","passed":true},{"check":"chapter_1_native_movement","details":"","passed":true},{"check":"chapter_1_companion_follows","details":"","passed":true},{"check":"chapter_1_native_jump","details":"","passed":true},{"check":"chapter_1_jump_lands","details":"","passed":true},{"check":"chapter_1_cache_village_parcel","details":"","passed":true},{"check":"chapter_1_wheel_orchard_gate","details":"","passed":true},{"check":"chapter_1_shelter_rest","details":"","passed":true},{"check":"chapter_1_cache_village_sill","details":"","passed":true},{"check":"chapter_1_fall_recovery","details":"","passed":true},{"check":"chapter_1_checkpoint_respawn","details":"","passed":true},{"check":"chapter_2_geometry","details":"","passed":true},{"check":"chapter_2_ground_contact","details":"","passed":true},{"check":"chapter_2_native_movement","details":"","passed":true},{"check":"chapter_2_companion_follows","details":"","passed":true},{"check":"chapter_2_native_jump","details":"","passed":true},{"check":"chapter_2_jump_lands","details":"","passed":true},{"check":"chapter_2_cache_woods_pack","details":"","passed":true},{"check":"chapter_2_latch_forest_latch","details":"","passed":true},{"check":"chapter_2_shelter_rest","details":"","passed":true},{"check":"chapter_2_cache_woods_tin","details":"","passed":true},{"check":"companion_pressure_plate_opens_gate","details":"","passed":true},{"check":"unoccupied_plate_closes_gate","details":"","passed":true},{"check":"chapter_2_fall_recovery","details":"","passed":true},{"check":"chapter_2_checkpoint_respawn","details":"","passed":true},{"check":"chapter_3_geometry","details":"","passed":true},{"check":"chapter_3_ground_contact","details":"","passed":true},{"check":"chapter_3_native_movement","details":"","passed":true},{"check":"chapter_3_companion_follows","details":"","passed":true},{"check":"chapter_3_native_jump","details":"","passed":true},{"check":"chapter_3_jump_lands","details":"","passed":true},{"check":"chapter_3_cache_camp_tools","details":"","passed":true},{"check":"chapter_3_cache_camp_bag","details":"","passed":true},{"check":"chapter_3_cache_camp_med","details":"","passed":true},{"check":"chapter_3_repair_shelter_door","details":"","passed":true},{"check":"chapter_3_shelter_rest","details":"","passed":true},{"check":"chapter_3_cache_camp_loaf","details":"","passed":true},{"check":"chapter_3_both_in_cover","details":"","passed":true},{"check":"chapter_3_cover_blocks_blast","details":"","passed":true},{"check":"chapter_3_exposure_damages","details":"","passed":true},{"check":"chapter_3_fall_recovery","details":"","passed":true},{"check":"chapter_3_checkpoint_respawn","details":"","passed":true},{"check":"chapter_4_geometry","details":"","passed":true},{"check":"chapter_4_ground_contact","details":"","passed":true},{"check":"chapter_4_native_movement","details":"","passed":true},{"check":"chapter_4_companion_follows","details":"","passed":true},{"check":"chapter_4_native_jump","details":"","passed":true},{"check":"chapter_4_jump_lands","details":"","passed":true},{"check":"chapter_4_cache_school_food","details":"","passed":true},{"check":"chapter_4_wheel_school_gate","details":"","passed":true},{"check":"chapter_4_cache_school_cupboard","details":"","passed":true},{"check":"chapter_4_shelter_rest","details":"","passed":true},{"check":"chapter_4_cache_school_blanket","details":"","passed":true},{"check":"chapter_4_both_in_cover","details":"","passed":true},{"check":"chapter_4_cover_blocks_blast","details":"","passed":true},{"check":"chapter_4_exposure_damages","details":"","passed":true},{"check":"chapter_4_fall_recovery","details":"","passed":true},{"check":"chapter_4_checkpoint_respawn","details":"","passed":true},{"check":"chapter_5_geometry","details":"","passed":true},{"check":"chapter_5_ground_contact","details":"","passed":true},{"check":"chapter_5_native_movement","details":"","passed":true},{"check":"chapter_5_companion_follows","details":"","passed":true},{"check":"chapter_5_native_jump","details":"","passed":true},{"check":"chapter_5_jump_lands","details":"","passed":true},{"check":"chapter_5_cache_ash_parcel","details":"","passed":true},{"check":"chapter_5_shelter_rest","details":"","passed":true},{"check":"story_ending","details":"","passed":true},{"check":"chapter_5_fall_recovery","details":"","passed":true},{"check":"chapter_5_checkpoint_respawn","details":"","passed":true}],"engine":{"build":"official","hash":"89cea143987d564363e15d207438530651d943ac","hex":263680,"major":4,"minor":6,"patch":0,"status":"stable","string":"4.6-stable (official)","timestamp":0},"method":"Actual Godot runtime: native CharacterBody2D physics, Input action simulation, authored interactions, cover and damage, death recovery. Targeted interaction checks reposition actors; these are not a complete human playthrough."}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object/object.cpp:2641)
+Leaked instance: AudioStreamPlaybackWAV:9223372068446275060 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372068395943414 - Reference count: 1
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+ERROR: 1 resources still in use at exit.
+   at: clear (core/io/resource.cpp:805)
+Resource still in use: res://assets/audio/horizon.wav (AudioStreamWAV)
+Orphan StringName: Master (static: 0, total: 2)
+StringName: 1 unclaimed string names at exit.

@@ -1,0 +1,57 @@
+{
+	"all_passed": true,
+	"build": "0.3.0",
+	"checks": [
+		{
+			"check": "crate_moves_under_native_push",
+			"details": "119.7412109375",
+			"passed": true
+		},
+		{
+			"check": "winch_does_not_complete_instantly",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "release_cancels_winch",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "lowered_bridge_has_real_collision",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "crate_can_hold_gate_instead_of_child",
+			"details": "(2218.399, 674.3)",
+			"passed": true
+		},
+		{
+			"check": "flood_slows_wading_and_soaks_clothes",
+			"details": "0.2",
+			"passed": true
+		},
+		{
+			"check": "pump_removes_water_hazard",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unrepaired_shelter_still_leaks",
+			"details": "0.07215",
+			"passed": true
+		},
+		{
+			"check": "roof_patch_costs_one_salvage",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "patched_shelter_stays_dry",
+			"details": "",
+			"passed": true
+		}
+	],
+	"method": "Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."
+}

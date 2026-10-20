@@ -1,0 +1,77 @@
+WHEN THE SKY CLEARS — DEVELOPMENT BUILD 0.2.0
+19 October 2026
+
+PLAY
+PLAY.cmd now opens build/v0.2.0/When the Sky Clears.exe.
+The original executable, source snapshot and v0.1.0 ZIPs remain available.
+The revised game uses journey_v2.json; your previous journey_v1.json is preserved.
+
+THIS PASS
+The children now use a larger, authored side-view rig. Stride phase comes from
+actual travel. Feet lock to the world during stance; knees solve to the feet.
+Stops, breathing, crouch, running, landing compression, garment movement and
+ribbon overlap are authored separately. Work gestures distinguish a wheel/pump,
+overhead roof repair and resting at a stove. The prior runtime used generic
+projected motion over pasted body parts; that controller is preserved separately.
+Imported animation/model sources remain available as references for later craft.
+
+Walking has acceleration and a faster stop; running spends stamina. Buffered
+jumps and coyote time remain. A ledge pull-up catches reachable edges through
+native collision movement. The follower can use the same traversal mechanism.
+
+Painted foreground artwork replaces many plain blocks: rubble, wall cover,
+logs, supplies, carts, stoves, winches, tents and doorway forms. Ground has
+painted soil and roots. Near cover occludes the children during stealth.
+Atmosphere uses gradual haze; water animates down after pumping. Character and
+paint textures use mipmaps and 2D multisample antialiasing for cleaner edges.
+
+Kenney's CC0 Impact Sounds now provides five variants each for grass, concrete
+and wood footsteps. Actual foot contacts select the surface and trigger foley.
+The publisher archive and license are retained locally; the used clips and
+license are in assets/audio/foley. Source: https://kenney.nl/assets/impact-sounds
+
+REVISED ENCOUNTERS
+Village: a movable crate beside the old masonry. Hold E and push with A/D.
+Forest: a washed-out stream too wide to jump; lower the bridge at the winch.
+The logging gate can be held by the waiting boy or by a physically pushed crate.
+Camp: find salvage, clear/brace the shelter entrance, then choose whether to
+spend another piece patching the leaking roof. An open shelter can still be wet.
+School: the flooded yard slows movement and soaks clothes. Work the drainage
+pump to open the route; hold both children in cover when warning cues arrive.
+Ash: accumulated survival state, a last rest and the reunion at the doorway.
+
+SEARCHING AND WORK NOW TAKE TIME
+Hold E; the ring above the girl shows progress. Letting go cancels the action.
+The girl stops moving while working, and damage interrupts it. This makes the
+timing and position of a search, wheel, repair, pump or rest matter.
+Food, warmth, wet clothing, finite pack capacity, medicine and exhaustion remain.
+Sheltering only one child is insufficient. Low cover requires crouching.
+
+CONTROLS
+A/D move | Space jump | Shift run | S crouch | hold E work/search
+Hold E + A/D against a crate to push | Q wait/call | H medicine
+Tab pack/objective | Esc pause | R checkpoint | F11 fullscreen | M mute
+
+EVIDENCE
+evidence/v020/packaged_*/ contains results from the Windows executable.
+The continuous route uses actual held interactions, native movement, finite
+supplies, gates and recovery. It records encounter completions and any failure.
+The new encounter checks exercise native crate pushing, plate weight, interrupted
+winch work, bridge collision, flooded movement, pump operation and roof repair.
+
+WTSC_Movement_Study_v020.mp4 is a silent 12-second, 30 fps development motion
+study on an explicitly isolated flat route, using the actual controller/renderer.
+It demonstrates walk, stop, crouch, run, jump/land and low cover pose. It is not
+a campaign playthrough. All 360 frames decode. The sampled stance feet have
+zero world-X drift in that study; this does not establish final animation quality.
+
+The generated foreground kit, unchanged source pixels and exact ImageGen prompt
+are retained in assets/props/PROVENANCE_v020.txt. The actual output is 1254 square.
+The original environment paintings and all trailer production files remain intact.
+
+QUALITY BOUNDARY
+This is a substantial development iteration, not a final quality claim. It still
+needs human playtesting and more distinctive child acting, tighter costume and
+hand shapes, richer transitions, authored terrain/collision matching, deeper
+encounter variation, and a longer campaign. Grounded foot contact and technical
+checks do not by themselves make the animation expressive or the game AAA.

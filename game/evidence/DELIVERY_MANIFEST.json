@@ -1,0 +1,91 @@
+{
+  "title": "When the Sky Clears",
+  "build": "0.1.0",
+  "date": "2026-10-19",
+  "executable": {
+    "path": "build/When the Sky Clears.exe",
+    "bytes": 122740072,
+    "sha256": "870603da639ba5a7c3c0f6f6dae5ea49f1e1b77af5a40b0cee45fafa0f7aac45"
+  },
+  "validation": {
+    "runtime_checks": 73,
+    "survival_checks": 13,
+    "all_passed": true,
+    "continuous_journey": {
+      "chapters_reached": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "completed": true,
+      "deaths": 0,
+      "failure": "",
+      "health": 100.0,
+      "medicine_remaining": 2,
+      "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions use the live distance-gated game functions. This is automated traversal, not human artistic acceptance.",
+      "rations_remaining": 3,
+      "simulated_seconds": 143.83333333334
+    },
+    "graphics": [
+      {
+        "file": "evidence\\native_4k\\00_title.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "4ba9170e0bf4cac6cd2535bbff9e0e865c59504e1cf411ed553509f68d2cb435"
+      },
+      {
+        "file": "evidence\\native_4k\\01_chapter.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "d179d41fa647d8623f5b54967eeec5ecbaf9b8e1f5faf201af9ca7c7a3f45c24"
+      },
+      {
+        "file": "evidence\\native_4k\\02_chapter.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "bd6557f6959015fde375d6ccd0a949756e3d1afa23d18ce824cae7b268ab1101"
+      },
+      {
+        "file": "evidence\\native_4k\\03_chapter.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "d55d1aad9083e07929a11af5e7e01abd7e7fbd04361a52f687520e0c63a41058"
+      },
+      {
+        "file": "evidence\\native_4k\\04_chapter.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "1b7abc5b470c981bd5fcb4f209b0f3aa2174fbad711edf36325a6af6f747c860"
+      },
+      {
+        "file": "evidence\\native_4k\\05_chapter.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "f82cf7536c4ffb7a2e2dfeb0312df224577d9ac63650218f59ddf1176efee7bc"
+      }
+    ]
+  },
+  "assets": {
+    "environment_paintings": 10,
+    "copied_environment_source_bytes_verified": true,
+    "downloaded_animation_clips": 43,
+    "retargeted_clips": 13,
+    "final_stock_3d_children": false,
+    "vendor_sources_excluded_from_archives": true
+  },
+  "status": "Compact playable development build. Technical checks and automated navigation do not establish human playtest, full campaign length, final character/artistic approval, or AAA finish."
+}
