@@ -1,0 +1,132 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Complete_Trailer_Editable_v034.blend",
+  "world_scene": "WTSC_WORLD_CENTERED_v034",
+  "ending_scene": "WTSC_KNOCKOUT_ENDING_v034",
+  "native_master": "WTSC_MASTER_4K_103S_v034",
+  "output": [
+    3840,
+    2160,
+    24
+  ],
+  "frames": 2472,
+  "seconds": 103,
+  "native_world_camera": {
+    "lens_mm": 100.0,
+    "shift_x": -0.30000022053718567,
+    "shift_y": -0.26705533266067505,
+    "constant_y_z": [
+      -16,
+      3
+    ],
+    "root_driver": "pair_world_x+1.6891200542449951"
+  },
+  "center_samples": [
+    {
+      "frame": 1,
+      "pair_center": [
+        0.5000001639127731,
+        0.4999999403953552
+      ],
+      "camera": [
+        0.0,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1249,
+      "pair_center": [
+        0.4999999701976776,
+        0.4999999403953552
+      ],
+      "camera": [
+        42.764705657958984,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1681,
+      "pair_center": [
+        0.4999999701976776,
+        0.4999999403953552
+      ],
+      "camera": [
+        58.5384635925293,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1921,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "camera": [
+        67.0,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1968,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "camera": [
+        69.54582977294922,
+        -16.0,
+        3.0
+      ]
+    }
+  ],
+  "actual_picture_sections": [
+    {
+      "global": [
+        0,
+        70
+      ],
+      "source": "v030 cached world0\u201370",
+      "method": "Uniform2x centered finishing crop; no retime/interpolation",
+      "effective_pixels": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "global": [
+        70,
+        82
+      ],
+      "source": "new native v034 world camera",
+      "method": "Native4K off-axis projection matching cached crop; legacy terrain title disabled",
+      "effective_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "global": [
+        82,
+        103
+      ],
+      "source": "v033 rendered knockout ending",
+      "method": "Native4K text alpha. Clean cached world52\u201370 at2x crop fills82\u2013100; final card100\u2013103",
+      "effective_world_fill_pixels": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "boundary82_scope": "Exact pair size/center matches. Intentional cut to black as first glyph enters at82; world setting inside letters reuses52\u201370, not continuous landscape geography.",
+  "audio": "One suppliedWAV from0, single90\u2013100fade, silent100\u2013103; do not copy preview audio",
+  "last_S_clear": 100,
+  "silent_card": [
+    100,
+    103
+  ],
+  "held_pair": true,
+  "legacy_title_hidden": true
+}

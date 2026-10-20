@@ -1,0 +1,67 @@
+WHEN THE SKY CLEARS - PAINTED WORLD PASS v030
+
+MOVIE: WTSC_LOCAL_WORKSPACE\renders\world_v016\WTSC_Painted_World_4K_v030.mp4
+BLENDER EDITABLE: WTSC_LOCAL_WORKSPACE\shots\world\WTSC_Painted_World_Editable_v031.blend
+EXACT MOVIE RENDER SOURCE: WTSC_LOCAL_WORKSPACE\shots\world\WTSC_Painted_World_Trailer_v030.blend
+MOVING EXCERPTS: WTSC_LOCAL_WORKSPACE\renders\world_v016\WTSC_Readability_Excerpts_1080p_v030.mp4
+
+Native 3840 x 2160 UHD, 24 fps, 2400 frames, exactly 100 seconds.
+All 2400 output frames decoded successfully. Resolution, rate, duration,
+48 kHz stereo music, render-section joins, final 10-second audio fade and
+final two-second picture fade verified. The last frame is black.
+Representative actual movie frames are under renders/world_v016/decoded_review_v030.
+
+The complete route passes through warm village, abandoned village/woods,
+school, camp, battlefield and monumental title. Native scene geometry,
+materials, texture files, GP drawing, shape keys, drivers and camera keys
+remain editable. Packed image assets are also retained under sets/.
+The supplied music is referenced relatively under edit/.
+In the portable v031 file it is also packed. Edit the world in
+WTSC_WORLD_EDIT_v031. Select WTSC_MASTER_4K_100S_v031 for native picture+music
+export; its actual Scene strip and packed WAV were reopened and checked,
+including a non-silent native audio export and the final volume fade.
+v031 changes packaging/export setup; its sampled world/camera/GP and tree state is
+identical to the exact v030 movie render source.
+
+Full-film review of v027 found oversized low foreground crowns obscuring child
+heads and the school. The new1024x1536 high-crown oak asset fixes this with natural
+painted proportions. Frames301-1872 were rendered anew (1572 native UHD frames).
+Frames1-300 and1873-2400 reuse verified v027 native footage; old and new changed
+tree bounds are strictly off-camera on every reused frame. No frame scaling or
+interpolation is used. The full resulting100-second movie was decoded again.
+
+This continues the painterly direction Conrad liked. The children are near
+the same age/height, with the boy slightly taller, near-black painted detail
+and tiny off-white eye marks. They remain in one held pose as specifically
+requested for this world pass. Only their root travel moves. Gait and acting
+still need the separately planned 3D-motion-reference/vector workflow.
+
+Motion corrections after the v019 preview:
+- One opening oak/roots/fence/path surface replaces the split-depth tree.
+- A newly painted continuous countryside panorama stays fixed at real depth.
+  Only the sky area drifts with cloud wind; land does not follow the camera.
+- Far woods are smaller than the near row. Whole isolated foreground trees
+  replace cropped strips of the same forest painting.
+- Smoke origins stay at chimneys/fire emitters. Facades and roofs remain rigid.
+- Registered bakery/path paint remains on its owning mesh UVs.
+- Continuous painted earth and small native alpha feathers remove the opaque
+  lower strip edge and blend regional roots into the path.
+
+Most set/character base paintings are 1672 x 941. The new panorama is 1983 x 793,
+smoke 1024 x 1536, bakery detail 1356 x 1159, path detail 1908 x 824. Output is
+native UHD; this does not turn those into native UHD source paintings.
+Buildings are primarily 2.5D painted cards; the extruded title is actual 3D.
+
+Current direction is liked, but technical verification is not artistic approval.
+The exact older approved ink-and-wash reference remains unavailable. This is a
+world-animation development pass; no Arcane-level finish or complete character
+performance is claimed.
+
+Earlier v010 source/movie and v013 source/inspection files remain hash verified.
+The live editable v011 already differed from the older preservation baseline;
+its existing .blend1 preserves the original hash. Neither was restored or edited
+by this continuation. Intermediate versions remain available. The incomplete
+v019 render was stopped after motion feedback; use only the v030 final movie.
+
+See notes/world_v016/delivery_manifest_v030.json for source hashes, exact scope,
+asset provenance, motion diagnosis, prompt paths and verification receipts.

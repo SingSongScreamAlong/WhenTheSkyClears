@@ -1,0 +1,54 @@
+{
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Refinement_v047g.blend",
+    "bytes": 76096263,
+    "sha256": "0e3755aecaabc9ee31e2f0000b16e25de13b095d5e7f18c2983b4c8accb4ee54"
+  },
+  "movie4K": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\WTSC_Refinement_v047g_75_80_4K.mp4",
+    "bytes": 10697461,
+    "sha256": "478fb7d4e681db8c6ac291d028280b315863e9752388016d880e2ad8a3056703"
+  },
+  "view1080p": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\WTSC_Refinement_v047g_75_80_View_1080p.mp4",
+    "bytes": 2827296,
+    "sha256": "e0e3baffef6254a6dad01fae42476fb2c635fb797979d9dd32f65b5d218d5b11"
+  },
+  "actual_frames_decoded": 120,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "duration_seconds": 5,
+  "music75_80_original_correlation": 0.9991795528391697,
+  "head_consecutive_frames": [
+    1839,
+    1850
+  ],
+  "head_sheets": [
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Head_Turn_Actual4K_Consecutive_1.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Head_Turn_Actual4K_Consecutive_2.jpg"
+  ],
+  "actor_chronology_sheets": [
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Actor_Chronology_1.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Actor_Chronology_2.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Actor_Chronology_3.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Actor_Chronology_4.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Actor_Chronology_5.jpg"
+  ],
+  "whole_shot_chronology": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Whole_Shot_Chronology_Actual4K.jpg",
+  "before_after_head": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Head_Before_After_1844_Native4KPixels.jpg",
+  "before_after_ground": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\review_evidence\\Ground_Before_After_1901.jpg",
+  "method": "Actual native4K frames and decoded movie frames. Analysis-only crops/downsampled sheets; no synthetic motion or frame interpolation.",
+  "visual_inspection_complete": true,
+  "artistic_acceptance": false,
+  "full_trailer_propagated": false,
+  "visual_review": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\visual_review_v047g.json",
+  "review_scope": {
+    "first_review": "Actual native4K key crops, full1901 image, all40 chronological actor samples,12 consecutive turn frames and8 whole-shot samples from v047f.",
+    "followup": "Actual v047g1847/1848 native4K key crops, changed tail24 chronological samples, six turn frames1845..1850 and eight whole-shot samples. Unchanged prefix key images1842/1844/1846 match v047f exactly.",
+    "before_after": "Actual native4K head and lower-ground before/after comparisons.",
+    "limits": "Chronological decoded-frame review and full-file decode; no claim of continuous normal-speed artistic playback or full-trailer acceptance."
+  }
+}

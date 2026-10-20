@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-19T21:33:04.411184+00:00",
+  "inspected_actual_packaged_stills": [
+    "ShelterView.png",
+    "SearchActionView.png",
+    "DepositActionView.png",
+    "ReturnedView.png"
+  ],
+  "inspected_decoded_movie_samples": [
+    {
+      "file": "DecodedWalkFrame.png",
+      "movie_seconds": 8
+    },
+    {
+      "file": "DecodedSearchFrame.png",
+      "movie_seconds": 28.7
+    },
+    {
+      "file": "DecodedDepositFrame.png",
+      "movie_seconds": 52
+    }
+  ],
+  "observations": [
+    "Boy and girl retain their distinct established faces; girl now has separate slate skirt/tunic silhouette.",
+    "Walk sample shows independently bent legs and knee lift; numerical replay telemetry records world-space stance foot locking.",
+    "Search sample is visibly crouched with arms reaching into the crate; context/search bar is beside the target, clear of the head.",
+    "Deposit sample shows held cloth bundle and arm reach before pack inventory changes; returned still shows pack 0 and shelter 4/4/2.",
+    "Upper landing has a visible gap, stair debris and barricade; caption explicitly closes upper floor.",
+    "Top and bottom HUD are 49 px each at 1600x900; no old 132 px bottom band.",
+    "Primitive props/dressing, broad painted surfaces, rig deformation and action transitions remain visibly provisional."
+  ],
+  "limitations": "This is visual inspection of actual still samples plus full media decode and structured gameplay regression, not a human interactive playtest or a claim of final cinematic art."
+}

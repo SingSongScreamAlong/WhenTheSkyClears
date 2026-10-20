@@ -1,0 +1,450 @@
+{
+  "native": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_architecture_v049\\WTSC_School_Window_Depth_Proof_v049i.blend",
+  "native_sha256": "796a6cafff68acfbcc110e92a38d2a5b0c75ea3188b63e95ae059ea16cf640c8",
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\world_art_v048d\\WTSC_World_Art_Checkpoint_v048d.blend",
+  "source_sha256": "fe3270155538a44cb08ef3ee2c37f25461d292d5a9f10f4d2406e65822df3e5a",
+  "reference_frame": 1225,
+  "adjacent_frames": [
+    1201,
+    1249
+  ],
+  "source_image": "School_v001.png",
+  "source_dimensions": [
+    1672,
+    941
+  ],
+  "front_card_affine": {
+    "x_center": 65,
+    "width": 22,
+    "z_center": 3.29222369194,
+    "height": 12.3815793991,
+    "front_y": 10
+  },
+  "window_hole_pixel_polygon": [
+    [
+      895.0,
+      449.0
+    ],
+    [
+      895.7974108632659,
+      446.4638258137903
+    ],
+    [
+      898.1589994007816,
+      444.0251153792538
+    ],
+    [
+      901.9940110894444,
+      441.7775869707452
+    ],
+    [
+      907.1550685807583,
+      439.80761184457486
+    ],
+    [
+      913.4438353296865,
+      438.1908950400669
+    ],
+    [
+      920.6186375568487,
+      436.9895660773533
+    ],
+    [
+      928.4037516363306,
+      436.24979135475803
+    ],
+    [
+      936.5,
+      436.0
+    ],
+    [
+      944.5962483636694,
+      436.24979135475803
+    ],
+    [
+      952.3813624431513,
+      436.9895660773533
+    ],
+    [
+      959.5561646703135,
+      438.1908950400669
+    ],
+    [
+      965.8449314192417,
+      439.80761184457486
+    ],
+    [
+      971.0059889105556,
+      441.7775869707452
+    ],
+    [
+      974.8410005992184,
+      444.02511537925386
+    ],
+    [
+      977.2025891367341,
+      446.4638258137903
+    ],
+    [
+      978.0,
+      449.0
+    ],
+    [
+      978,
+      631
+    ],
+    [
+      895,
+      631
+    ]
+  ],
+  "window_recess_m": 0.35,
+  "room_back_m": 0.62,
+  "ruin_return_depth_m": 0,
+  "rear_foliage_depth_m": 0,
+  "rear_registration_error_4K_pixels": null,
+  "glass_contours_from_source": 22,
+  "bank_valid_sample_remaps": [
+    {
+      "material": "v048b | continuous path | fixed earth-only paint joins",
+      "node": "Image Texture.002"
+    },
+    {
+      "material": "v048b | continuous path | fixed earth-only paint joins",
+      "node": "Image Texture.003"
+    },
+    {
+      "material": "v048b | continuous path | fixed earth-only paint joins",
+      "node": "Image Texture.004"
+    },
+    {
+      "material": "v048b | peaceful original painted earth",
+      "node": "Image Texture"
+    },
+    {
+      "material": "v048b | transition original painted earth",
+      "node": "Image Texture"
+    },
+    {
+      "material": "v048b | war_zone original painted earth",
+      "node": "Image Texture"
+    }
+  ],
+  "created_objects": 32,
+  "all_new_world_fixed_without_actions": true,
+  "new_color_progression_applied": false,
+  "glass_boundary_method": "Source-painted surviving fragments traced to native extruded polygons; no generated texture or upscale claimed.",
+  "status": "PARTIAL WINDOW DEPTH PROOF; high-resolution facade and ruin reconstruction UNMET",
+  "limitations": [
+    "Original facade remains1672x941. Native contour fitting/extrusion does not supply missing painted surface detail.",
+    "Only one selected window gains depth. Failed outer-wall/rear-foliage split and geometric masonry overlays were rejected and removed.",
+    "World-fixed bank sampling fix also retained because sourcev048d produced stretched edge columns in adjacent cameras.",
+    "Existing v040 held children remain composition witnesses. New character-author rigs/FX and the color progression study were not integrated.",
+    "Four matched actual4K before/after stills, not a full-film or normal-speed validation.",
+    "Earlier reference-guided image generation failed: AbsolutePathBuf deserialized without a base path. No repeat calls this turn; no generated replacement facade used."
+  ],
+  "host": "5.2.2 LTS",
+  "source_unchanged": true,
+  "original_object_geometry_transform_parent_title_visibility_identical": true,
+  "original_object_count": 405,
+  "original_actions_identical": true,
+  "original_actions_count": 41,
+  "all_original_scene_ranges_fps_identical": true,
+  "camera_samples_identical": [
+    {
+      "frame": 241,
+      "camera": "v032 | Camera follows shared pair center",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          14.166666984558105
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 100.0,
+      "shift": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ]
+    },
+    {
+      "frame": 1201,
+      "camera": "v032 | Camera follows shared pair center",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          67.79999542236328
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 100.0,
+      "shift": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ]
+    },
+    {
+      "frame": 1225,
+      "camera": "v032 | Camera follows shared pair center",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.0941162109375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 100.0,
+      "shift": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ]
+    },
+    {
+      "frame": 1249,
+      "camera": "v032 | Camera follows shared pair center",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.38822937011719
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 100.0,
+      "shift": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ]
+    },
+    {
+      "frame": 1849,
+      "camera": "v032 | Camera follows shared pair center",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          111.4923095703125
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 100.0,
+      "shift": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ]
+    },
+    {
+      "frame": 2400,
+      "camera": "v032 | Camera follows shared pair center",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          160.75
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 100.0,
+      "shift": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ]
+    }
+  ],
+  "actual_4K_frames": [
+    1201,
+    1225,
+    1249,
+    1297
+  ],
+  "render_dimensions": [
+    3840,
+    2160,
+    100
+  ],
+  "samples": 32,
+  "new_objects_without_actions": 32,
+  "rear_parallax_samples": [],
+  "unpacked_images": [],
+  "normal_speed_review": false,
+  "removed_after_4K_QA": [
+    "v049 | attached wall fracture flake 0",
+    "v049 | attached wall fracture flake 1",
+    "v049 | attached wall fracture flake 2",
+    "v049 | attached wall fracture flake 3",
+    "v049 | attached wall fracture flake 4",
+    "v049 | attached wall fracture flake 5",
+    "v049 | attached wall fracture flake 6",
+    "v049 | attached wall fracture flake 7",
+    "v049 | grounded rubble block 0",
+    "v049 | grounded rubble block 1",
+    "v049 | grounded rubble block 2",
+    "v049 | left source-painted jamb block 0",
+    "v049 | left source-painted jamb block 1",
+    "v049 | left source-painted jamb block 2",
+    "v049 | left source-painted jamb block 3",
+    "v049 | left source-painted jamb block 4",
+    "v049 | left source-painted jamb block 5",
+    "v049 | left source-painted jamb block 6",
+    "v049 | right source-painted jamb block 0",
+    "v049 | right source-painted jamb block 1",
+    "v049 | right source-painted jamb block 2",
+    "v049 | right source-painted jamb block 3",
+    "v049 | right source-painted jamb block 4",
+    "v049 | right source-painted jamb block 5",
+    "v049 | right source-painted jamb block 6",
+    "v049 | source-painted arch voussoir 0",
+    "v049 | source-painted arch voussoir 1",
+    "v049 | source-painted arch voussoir 2",
+    "v049 | source-painted arch voussoir 3",
+    "v049 | source-painted arch voussoir 4",
+    "v049 | source-painted arch voussoir 5",
+    "v049 | source-painted arch voussoir 6",
+    "v049 | source-painted arch voussoir 7",
+    "v049 | source-painted arch voussoir 8"
+  ],
+  "cold_reopen_pass": true,
+  "protected_character_object_material_sets": 14,
+  "protected_character_material_nodes_unchanged": true,
+  "missing_audio": [],
+  "frame_handlers": 0,
+  "removed_failed_rear_split_and_return": [
+    "v049 | deep stone sill",
+    "v049 | right-side original foliage | rear depth layer",
+    "v049 | ruined wall broken outer cross-section |43cm"
+  ],
+  "protected_character_objects": [
+    "v016 | CHILDREN | held painterly near-age pair",
+    "v015 | Near-black painted fill | GP vector clipped",
+    "v014 | Ground contact | Held shoe 1",
+    "v014 | Ground contact | Held shoe 2",
+    "v014 | Ground contact | Held shoe 3",
+    "v014 | Ground contact | Held shoe 4",
+    "v039 shoe0 core",
+    "v039 shoe0 penumbra",
+    "v039 shoe1 core",
+    "v039 shoe1 penumbra",
+    "v039 shoe2 core",
+    "v039 shoe2 penumbra",
+    "v039 shoe3 core",
+    "v039 shoe3 penumbra"
+  ],
+  "review_board": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_architecture_v049\\WTSC_v049i_Window_Depth_Proof_Before_After_4K_Crops.jpg",
+  "review_board_sha256": "49007a98176d1fc8cd83e50025dd1e2329803dd221e8923b84e443b228799d55",
+  "review_board_dimensions": [
+    2304,
+    4311
+  ],
+  "visual_assessment": "PARTIAL: source-registered broken glass edges and timber/reveal depth survive adjacent still views; diagrammatic masonry and failed wall split removed. Original facade detail remains visibly soft at1:1, so high-resolution painted architecture gate is not met."
+}

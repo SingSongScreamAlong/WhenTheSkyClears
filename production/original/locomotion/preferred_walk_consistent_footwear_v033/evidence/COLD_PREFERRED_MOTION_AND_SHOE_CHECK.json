@@ -1,0 +1,46 @@
+{
+  "scope": "Cold native preservation/contact safeguards, not artistic acceptance",
+  "preferred_source": "v028",
+  "source_original_action_count": 24,
+  "original_actions_changed": [],
+  "original_GP_coat_drawing_hash_unchanged": true,
+  "preserved_visible_mesh_names": [
+    "V007_BOY | articulated drawn hand far",
+    "V007_BOY | drawn skin far",
+    "V007_BOY | drawn sleeve far",
+    "V007_BOY | drawn source gray cuff far",
+    "V024 continuous near trouser drawing",
+    "LOCO_BOY | PAINT body",
+    "PERF_BOY | original head",
+    "V007_BOY | articulated drawn hand near",
+    "V007_BOY | drawn skin near",
+    "V007_BOY | drawn sleeve near",
+    "V007_BOY | drawn source gray cuff near"
+  ],
+  "max_all_bone_world_matrix_change": 0.0,
+  "max_root_world_matrix_change": 0.0,
+  "max_preserved_visible_mesh_change_m": 0.0,
+  "max_near_shoe_vertex_change_m": 1.561181118175407e-07,
+  "max_far_upper72percent_trouser_change_m": 0.0,
+  "max_far_cuff_endpoint_fit_error_m": 2.0316498317227835e-07,
+  "contact_samples": 993,
+  "sample_interval_frames": 0.03125,
+  "max_support_sole_height_error_m": 0.00044349953532218933,
+  "max_swing_sole_clearance_change_m": 0.0001462369026252186,
+  "one_shared_shoe_mesh": true,
+  "same_UVs_and_material": true,
+  "perspective_scales": [
+    1.0,
+    0.9700000286102295
+  ],
+  "observation_limit": "Continuous playback not observed; matched source/candidate frames and actual movie will be reviewed.",
+  "support_sole_error_by_side_m": {
+    "near": 0.00044349953532218933,
+    "far": 8.719111792743206e-05
+  },
+  "preferred_v028_support_sole_error_by_side_m": {
+    "near": 0.00044350156072378577,
+    "far": 0.0002574545358410285
+  },
+  "contact_criterion": "Retained near shoe may preserve baseline subframe sole error, with at most20micrometre increase; corrected far shoe must remain below0.4mm. No unexplained threshold broadening."
+}

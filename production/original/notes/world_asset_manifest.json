@@ -1,0 +1,203 @@
+{
+  "project": "When the Sky Clears",
+  "scope": "worlds and sets first; translation-only held pair",
+  "master_resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "duration_seconds": 100,
+  "frames": 2400,
+  "native_project": "shots/world/WTSC_Living_World_Editable_v011.blend",
+  "source_scene": "WTSC_WORLD_FIRST_4K",
+  "master_scene": "WTSC_MASTER_4K_100S",
+  "areas": [
+    "village intact/abandoned",
+    "woods",
+    "school",
+    "camp",
+    "battlefield/crater",
+    "ruins/ash",
+    "monumental title terrain"
+  ],
+  "asset_generation": "built-in GPT imagegen; exact prompt set in imagegen_world_prompts.json",
+  "source_raster_note": "Generated rasters are approximately 1672x941 or 1536x1024. Native output is rendered at UHD; no claim of native 4K input paintings.",
+  "music": "user-supplied exact 100.000-second WAV; no public release permission established",
+  "character_animation": "None. One held native GP drawing and object translation only.",
+  "future_animation_direction": "Use actual rigged 3D motion aligned behind manipulable 2D vector outlines. The prior procedural mannequin gait is rejected.",
+  "assets": [
+    {
+      "path": "sets/painted_layers/Battlefield_v001.png",
+      "sha256": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+      "bytes": 1048816,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Camp_v001.png",
+      "sha256": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+      "bytes": 811684,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Distant_Hills_v001.png",
+      "sha256": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+      "bytes": 1187636,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Foreground_Tree_v001.png",
+      "sha256": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+      "bytes": 2804900,
+      "status": "provisional original project art",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Ground_Painted_v001.png",
+      "sha256": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+      "bytes": 3442906,
+      "status": "provisional original project art",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null
+    },
+    {
+      "path": "sets/painted_layers/School_v001.png",
+      "sha256": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+      "bytes": 1661947,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Sky_Painted_v001.png",
+      "sha256": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+      "bytes": 2142678,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null
+    },
+    {
+      "path": "sets/painted_layers/Village_Empty_v001.png",
+      "sha256": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+      "bytes": 1957443,
+      "status": "provisional original project art",
+      "size": [
+        1671,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Village_Warm_v001.png",
+      "sha256": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+      "bytes": 1972541,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "sets/painted_layers/Woods_v001.png",
+      "sha256": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+      "bytes": 2742035,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "characters/Pair_Static_Imagegen_v001.png",
+      "sha256": "76b8a6add8daea6ba50745ca10f48002759b60ff1c5ba8d20050852cd5413df5",
+      "bytes": 399048,
+      "status": "provisional original project art",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "characters/Pair_Static_Vector_Contours_v001.json",
+      "sha256": "24feb4b438edf21bb02b2f5c76139207e178030bb15e19089d55c8454f18b05c",
+      "bytes": 39178,
+      "status": "provisional original project art"
+    }
+  ],
+  "movie_render_source": "shots/world/WTSC_World_First_v006.blend",
+  "delivery_source_change": "v006 retains v005 packed source and startup camera; repairs the two battlefield materials to BLENDED after export QA. Camera, geography, character and edit timing unchanged.",
+  "review_movie": "renders/living_world/WTSC_Living_World_4K_v010.mp4",
+  "review_movie_sha256": "bd4da200c33b40a89e80312215d75d597f63cf28318493758ee7ef114037029a",
+  "native_project_sha256": "13ab34cf37953f6fa8ce12ce3a70c7202547b7f144770399e5d3bd7f5ac409e4",
+  "technical_verification": "notes/world_movie_verification_v006.json and notes/world_native_reopen_verification.json",
+  "current_stage": "Dimensional living environment v010; character performance deferred",
+  "latest_manifest": "notes/living_world/asset_manifest_v010.json"
+}

@@ -1,0 +1,188 @@
+{
+  "scope": "Separate ordinary walk candidate in response to drunk-stumbling feedback. No recovery or supporting clasp is claimed.",
+  "preserved": "Exact age-ten rest bones, packed image payloads, material slots, UV registrations and v046 source native.",
+  "changes": [
+    "Removed inherited pelvis reach-cap. Authored all foot and pelvis trajectories together within fixed leg reach.",
+    "One smooth rise/fall per half-step; no extra transfer dip-rebound-dip.",
+    "Reduced pelvis fore/aft range48.6mm to3mm and height range37-38mm to26mm.",
+    "Reduced foot roll to -18..+8 degrees and near/far swing knees to the same ordinary range.",
+    "Restrained reciprocal arm swing replaces girl held outward balancing pose.",
+    "Slightly shorter/slower0.78m,32frame stride; regular cadence112.5steps/min. Difference labelled in preview."
+  ],
+  "measured_old": {
+    "BOY": {
+      "hip_vertical_range_m": 0.03742480278015137,
+      "hip_fore_aft_range_m": 0.04860001802444458,
+      "hip_world_speed_min_max_m_s": [
+        0.629862675464317,
+        1.043427119052574
+      ],
+      "head_vertical_range_m": 0.037289559841156006,
+      "head_fore_aft_range_m": 0.0478102748747915,
+      "torso_lean_min_max_degrees": [
+        2.544542847276368,
+        5.800007229817268
+      ],
+      "head_lean_min_max_degrees": [
+        4.2530331052559855,
+        5.334975901210641
+      ],
+      "legs": {
+        "near": {
+          "knee_flex_min_max_degrees": [
+            9.36125897361334,
+            45.015960563162785
+          ],
+          "foot_angle_min_max_degrees": [
+            -41.790776809193005,
+            22.369525304474926
+          ]
+        },
+        "far": {
+          "knee_flex_min_max_degrees": [
+            9.383676500638568,
+            63.83024371935536
+          ],
+          "foot_angle_min_max_degrees": [
+            -45.527291385396296,
+            25.630341134588125
+          ]
+        }
+      }
+    },
+    "GIRL": {
+      "hip_vertical_range_m": 0.03804647922515869,
+      "hip_fore_aft_range_m": 0.04860001802444458,
+      "hip_world_speed_min_max_m_s": [
+        0.629862675464317,
+        1.043427119052574
+      ],
+      "head_vertical_range_m": 0.037834882736206055,
+      "head_fore_aft_range_m": 0.04778315406292677,
+      "torso_lean_min_max_degrees": [
+        0.5445410366775928,
+        3.800004487097585
+      ],
+      "head_lean_min_max_degrees": [
+        4.253031658852014,
+        5.334971931514659
+      ],
+      "legs": {
+        "near": {
+          "knee_flex_min_max_degrees": [
+            9.394263885945792,
+            44.74984212382856
+          ],
+          "foot_angle_min_max_degrees": [
+            -41.790776809193005,
+            22.369525304474926
+          ]
+        },
+        "far": {
+          "knee_flex_min_max_degrees": [
+            9.414077556233806,
+            63.95491684273233
+          ],
+          "foot_angle_min_max_degrees": [
+            -45.527291385396296,
+            25.630342083154005
+          ]
+        }
+      }
+    }
+  },
+  "measured_new": {
+    "BOY": {
+      "hip_vertical_range_m": 0.02599996328353882,
+      "hip_fore_aft_range_m": 0.003000000026077032,
+      "hip_world_speed_min_max_m_s": [
+        0.7136069145519285,
+        0.7488930854480713
+      ],
+      "head_vertical_range_m": 0.02602905035018921,
+      "head_fore_aft_range_m": 0.008844099473208189,
+      "torso_lean_min_max_degrees": [
+        1.4500031454610953,
+        2.149998417642619
+      ],
+      "head_lean_min_max_degrees": [
+        0.8500004592943842,
+        1.1499998552043582
+      ],
+      "legs": {
+        "near": {
+          "knee_flex_min_max_degrees": [
+            6.857474311662265,
+            43.4701437374413
+          ],
+          "foot_angle_min_max_degrees": [
+            -17.999856212228615,
+            8.00000134483791
+          ]
+        },
+        "far": {
+          "knee_flex_min_max_degrees": [
+            6.857474311662265,
+            43.4701437374413
+          ],
+          "foot_angle_min_max_degrees": [
+            -17.999856212228615,
+            8.00000134483791
+          ]
+        }
+      }
+    },
+    "GIRL": {
+      "hip_vertical_range_m": 0.026000022888183594,
+      "hip_fore_aft_range_m": 0.003000000026077032,
+      "hip_world_speed_min_max_m_s": [
+        0.7136069145519285,
+        0.7488930854480714
+      ],
+      "head_vertical_range_m": 0.0260353684425354,
+      "head_fore_aft_range_m": 0.00880390265956521,
+      "torso_lean_min_max_degrees": [
+        1.8500027410793256,
+        2.5499983023711987
+      ],
+      "head_lean_min_max_degrees": [
+        1.1500001702602853,
+        1.4499994872330038
+      ],
+      "legs": {
+        "near": {
+          "knee_flex_min_max_degrees": [
+            6.219648088579923,
+            43.6936488365212
+          ],
+          "foot_angle_min_max_degrees": [
+            -17.999856212228615,
+            7.999995248049384
+          ]
+        },
+        "far": {
+          "knee_flex_min_max_degrees": [
+            6.219648088579923,
+            43.6936488365212
+          ],
+          "foot_angle_min_max_degrees": [
+            -17.999856212228615,
+            7.999995248049384
+          ]
+        }
+      }
+    }
+  },
+  "no_random_cadence_diagnosis": true,
+  "no_whole_body_COM_claim": true,
+  "secondary_motion_deferred": true,
+  "visual_review": "Inspected native full-size key poses, all32 integer local-cycle poses on4contact sheets, and12decoded comparison frames across8.57seconds. Agent did not continuously play either movie. User normal-speed judgment remains essential.",
+  "candid_limitations": [
+    "Quieter kinematic curves and contact checks are not artistic approval of weight and intent.",
+    "Planar fixed profiles and rigid painted hands remain.",
+    "Girl older charcoal face, white eye and rigid braid remain stylistically behind full-colour boy.",
+    "Cloth/braid finishing deliberately deferred to prioritise stable baseline.",
+    "Fatigue, stumbling, helping/clasp and recovery-to-walking transition remain shot-specific work."
+  ],
+  "render_slot": "Blender exited; no further Blender render or metadata job remains active."
+}

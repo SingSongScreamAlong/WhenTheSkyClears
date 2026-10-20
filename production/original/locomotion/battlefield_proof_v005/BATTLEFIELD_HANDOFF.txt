@@ -1,0 +1,55 @@
+PARENT HANDOFF / BATTLEFIELD75-80s / ONE MOTION / v005
+
+NATIVE: native/WTSC_Battlefield_Weary_Stumble_5s_v005.blend
+APPEND: Collection > WTSC_BATTLEFIELD_WEARY_PAIR_v005
+Two original painted children, one cleaned weary stumble/recovery,3 native
+Actions only: boy, girl, root-distance.120frames /24fps /5.000seconds.
+Source v003 and all production files remain unchanged. No integration done.
+
+FAST CONFIGURE IN THE BATTLEFIELD PROOF COPY
+Run the embedded Text configure_battlefield.py, then:
+  configure_battlefield(start=1801, time_scale=116/95, lead_in_frames=3, root_motion=True)
+This maps to75.000-80.000s: frames1801-1920, boundary1921.
+Local standalone proof uses start1,3-frame lead-in and root_motion=False with
+a moving floor. The action starts at1804 and ends1920. HOLD extrapolation keeps
+the same initial pose during the lead-in. The scale116/95=1.221052632 fits the
+remaining116frame intervals exactly. First whole-frame boy toe catch is1825
+(76.0s); the girl reacts2source frames ahead. Blast onset around75.9s and peak
+near76.0s can motivate both; placement/light/FX remain the parent's decision.
+Place BATTLEFIELD_WEARY | CONTROLS at the desired starting floor/depth in the copy.
+XZ staging, metres, +X forward, +Z up, camera at negativeY. Source heights:
+boy1.45m, girl1.3699m; hip roots +/-0.40m, average remains centred.
+Use uniform scale only. Original paint is packed; no handler or add-on needed.
+
+ROUTE / NO-SKATING REQUIREMENT
+This is a variable-speed action, not a constant-speed loop. It travels exactly
+0.561667m locally over the5s and then stops. Native PERF | DISTANCE_CURVE drives
+TRAVEL when root_motion=True. Let the proof camera follow TRAVEL/mean pair root,
+or bake the same distance curve into your existing route. Hide the old held
+pair only in the proof copy to avoid doubled art. Do not add both routes.
+If root_motion=False, your external route must match that distance curve.
+Do not run the existing fast background/pair route unchanged behind these feet.
+At scaleS the total is0.561667*S metres; retiming scales time, not distance.
+
+LIGHT / FX INTERFACE
+Child paint currently uses emission to preserve the original charcoal values.
+Physical fire lights alone will not relight those pixels. Add a controlled
+material wash/light response in the production proof copy if needed. This
+motion asset does not modify the world's lighting, FX or compositing.
+
+ACTUAL VISUAL REVIEW
+The girl stays connected through the waist during the deep lean. Braid root
+stays attached and the tip has restrained gravity/lag. Rigid source shoes and
+traced limb fills remove the earlier sole/lower-leg breakup. Source face/body
+paint and near-age proportions are retained. The lurch, rescue step and weary
+settle read in the rendered phases. Foot-versus-visible-ground checks accompany
+the reel, and native root/retiming tests use the exact75-80s frame range.
+It still reads as painted cutout animation: cuffs/hand contours and some knee
+arcs need drawn correction poses for a cinematic finish. The pair shares the
+same event with a2-source-frame reaction offset; no helping interaction or new
+facial acting is provided. Do not infer cinematic acceptance from contact tests.
+
+PREVIEW RESOURCE LIMIT
+CPU Cycles only,2threads, one Blender process,960x540/24fps. No shared UI/GPU,
+main production writes, full-length render or catalogue expansion.
+

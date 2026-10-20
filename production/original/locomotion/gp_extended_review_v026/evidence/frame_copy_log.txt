@@ -1,0 +1,4 @@
+{"functions": {"new": [{"name": "frame_number", "type": "INT"}, {"name": "frame", "type": "POINTER"}], "remove": [{"name": "frame_number", "type": "INT"}], "copy": [{"name": "from_frame_number", "type": "INT"}, {"name": "to_frame_number", "type": "INT"}, {"name": "instance_drawing", "type": "BOOLEAN"}, {"name": "copy", "type": "POINTER"}], "move": [{"name": "from_frame_number", "type": "INT"}, {"name": "to_frame_number", "type": "INT"}, {"name": "moved", "type": "POINTER"}]}, "copy_doc": "GreasePencilFrames.copy(from_frame_number, to_frame_number, instance_drawing=False)\nCopy a Grease Pencil frame"}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

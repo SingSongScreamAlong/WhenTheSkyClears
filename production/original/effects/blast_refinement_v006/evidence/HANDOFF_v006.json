@@ -1,0 +1,237 @@
+{
+  "task_status": "Completed bounded five-second painted-impulse refinement v006, actual review media, fresh native Append test and private Library delivery.",
+  "artistic_status": "Review candidate. User preferred v003 paint over gas; this refines that direction. No artistic acceptance or full production integration claimed.",
+  "primary_review": "WTSC_Compare_LEFT-v003_RIGHT-Painted-Impulse-v006.mp4",
+  "changes": [
+    "All thirteen cold-smoke births compressed to ages0\u20135, rapid fan-out/upward impulse then deceleration, unequal lobe lifetimes and hanging drift.",
+    "Consecutive24fps ignition grows from small glint to larger hot gesture; hot emission/light envelope ends by age10.",
+    "FX-only HDR bloom extracted before alpha-over and added outside sprite alpha, with native scene occlusion; background excluded from Glare.",
+    "Three separately timed depth/shape/size/contrast variations and six sparse, independently timed tapered tracers.",
+    "Rough authored debris rise/apex/fall, three landing puffs, landed chips remain.",
+    "Separate persistent ground-gouge/rim collection per blast; no end fade."
+  ],
+  "native_assets": {
+    "path": "WTSC_LOCAL_WORKSPACE\\effects\\blast_refinement_v006\\native\\WTSC_Painted_Blast_Assets_v006.blend",
+    "bytes": 9490919,
+    "sha256": "c2edf88bc1972362528e7ac1f7a3dc635b3e915c0acf59009c1c7b47f1b1b8c4",
+    "collection": "FXv006 | APPEND ASSETS | painted blasts impacts tracers",
+    "node_tree": "FXv006 | HDR FX bloom over | append helper",
+    "objects": 133,
+    "packed_images": 4,
+    "no_cameras_or_lights": true
+  },
+  "native_proof": {
+    "path": "WTSC_LOCAL_WORKSPACE\\effects\\blast_refinement_v006\\native\\WTSC_Painted_Blast_Proof_v006.blend",
+    "sha256": "c6501238e0d1dd9769bc6b607401d604b02ce5d108192f9f4326b9dc109beedb",
+    "scene": "FX_PROOF_v006 | painted impulse depth tracers and ground",
+    "frames": [
+      1800,
+      1919
+    ],
+    "fps": 24,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "renderer": "BLENDER_EEVEE",
+    "samples": 32,
+    "static_fixture_frame": 1825,
+    "fixture_source": "read-only v038 project geometry / v003 matched held shot"
+  },
+  "sandbox": "WTSC_LOCAL_WORKSPACE\\effects\\blast_refinement_v006\\sandbox\\WTSC_Fresh_Append_Sandbox_v006.blend",
+  "guide": "WTSC_LOCAL_WORKSPACE\\effects\\blast_refinement_v006\\IMPORT_GUIDE.md",
+  "package": {
+    "file": "WTSC_Painted_Impulse_Assets_v006.zip",
+    "bytes": 65886365,
+    "sha256": "29cdd0219146c959feb5fcd6e473faa2254bf3bd92290d547f801d2cc625d316",
+    "files": 147,
+    "zip_crc_passed": true,
+    "contains_production_scene_or_background_plate": false,
+    "contains_simulation_cache": false,
+    "source_library_packed": true
+  },
+  "actual_media": [
+    {
+      "file": "WTSC_Painted_Impulse_75-80s_v006.mp4",
+      "bytes": 1561131,
+      "sha256": "6c49e1f910023786510eab0383817252efb58a11565ff806973fb87c93bb83b9",
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5.0,
+      "full_decode": true
+    },
+    {
+      "file": "WTSC_Compare_LEFT-v003_RIGHT-Painted-Impulse-v006.mp4",
+      "bytes": 3146936,
+      "sha256": "d0d119b998edae94193ad7f780abb010d1cbeca991106611cf1c0228c6e1432c",
+      "pixels": [
+        3840,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5.0,
+      "full_decode": true
+    },
+    {
+      "file": "WTSC_Ignition_24fps_LEFT-v003_RIGHT-v006.mp4",
+      "bytes": 689217,
+      "sha256": "cc526988b4dd7257d898afb2bf7e8f752dfa9d5d55bcacf81084e1cdae7aa802",
+      "pixels": [
+        1600,
+        480
+      ],
+      "frames": 36,
+      "fps": 24,
+      "seconds": 1.5,
+      "full_decode": true
+    }
+  ],
+  "tests": {
+    "native_factory_append": true,
+    "reversible_retime_and_scale": true,
+    "invalid_drivers": [],
+    "outside_driver_targets": [],
+    "all_dependencies_packed": true,
+    "persistent_impact_at_frame2300": true,
+    "post_smoke_render_frame2064": true,
+    "all120_actual_new_proof_pngs_decoded": true,
+    "all120_transparent_PNGs_decoded": true,
+    "full_mp4_decodes": true,
+    "transparent_outer_edge_alpha": 0,
+    "bloom": {
+      "frame": 1826,
+      "changed_pixels": 5708,
+      "max_added_channel_8bit": 14,
+      "sum_added_channels": 9773,
+      "added_pixels_outside_raw_fx_alpha": 2859,
+      "comparison": "Identical native scene/frame, only Bloom gain disabled for diagnostic. Outside-alpha support uses the matched factory Append RGBA render."
+    },
+    "child_mask": [
+      {
+        "frame": 1832,
+        "protected_pixels": 7334,
+        "max_channel_delta_8bit": 1,
+        "mean_absolute_channel_delta": 0.010862648850104536
+      },
+      {
+        "frame": 1848,
+        "protected_pixels": 7334,
+        "max_channel_delta_8bit": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      {
+        "frame": 1860,
+        "protected_pixels": 7334,
+        "max_channel_delta_8bit": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      {
+        "frame": 1884,
+        "protected_pixels": 7334,
+        "max_channel_delta_8bit": 0,
+        "mean_absolute_channel_delta": 0.0
+      },
+      {
+        "frame": 1919,
+        "protected_pixels": 7334,
+        "max_channel_delta_8bit": 0,
+        "mean_absolute_channel_delta": 0.0
+      }
+    ],
+    "protected_source_hashes_unchanged": {
+      "v003": true,
+      "production_v038": true
+    }
+  },
+  "resources": {
+    "threads": 2,
+    "new_bake": false,
+    "gas_used": false,
+    "approx_proof_render_elapsed_seconds_excluding_production_pause": 374.8474551,
+    "transparent_export_seconds": 35.965116,
+    "snapshot": {
+      "time_utc": "2026-10-17T17:53:20.4186733Z",
+      "sample_only_not_peak": true,
+      "process_id": 44148,
+      "process_working_set_bytes": 1756848128,
+      "gpu_util_memoryMiB_powerW": "85, 1268, 87.69",
+      "cpu_threads": 2,
+      "concurrent_production_blender_count": 1
+    },
+    "yield": "Own motion worker stopped after frame1894 when production began. Resumed final25 frames only after production exited. No production process stopped; no UI control. Subsequent frame loops detect and yield to other Blender workers.",
+    "running_effects_processes_at_handoff": 0
+  },
+  "library": [
+    {
+      "file_name": "Compare_Painted_Impulse_v006.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 368265,
+      "mime_type": "image/jpeg",
+      "status": "succeeded"
+    },
+    {
+      "file_name": "Ignition_Consecutive_24fps_v006.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 358799,
+      "mime_type": "image/jpeg",
+      "status": "succeeded"
+    },
+    {
+      "file_name": "persistence_2064.png",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 2448807,
+      "mime_type": "image/png",
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Painted_Impulse_75-80s_v006.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 1561131,
+      "mime_type": "video/mp4",
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Compare_LEFT-v003_RIGHT-Painted-Impulse-v006.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 3146936,
+      "mime_type": "video/mp4",
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Ignition_24fps_LEFT-v003_RIGHT-v006.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 689217,
+      "mime_type": "video/mp4",
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Painted_Impulse_Assets_v006.zip",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 65886365,
+      "mime_type": "application/zip",
+      "status": "succeeded"
+    }
+  ],
+  "remaining_limits": [
+    "Artistic review against preferred v003 still needed; no final acceptance claimed.",
+    "Proof uses a held camera/children/background at1825. Moving-camera live occlusion, production light receivers and character contact are production work.",
+    "The set has an opaque battlefield matte atY12. Far blast atY11.5 is in front of it; tracer atY14 is behind it. Deeper ruin threading needs scene layer separation.",
+    "2.5D layered painted forms with native motion/erosion, not a fluid simulation; repeated source forms may remain recognizable.",
+    "Only MID has a960\u00d7540 straight-alpha working sequence; native geometry provides all variants and final-resolution path.",
+    "Earlier v001 broad pack remains an unaccepted artistic prototype; gas v004 not preferred, hybrid v005 was built but not rendered/promoted.",
+    "Library uploads succeeded. Local Library version xattrs could not be written because the supplied helper calls os.setxattr, unavailable on this Windows Python. Full receipts and attempted metadata logs are preserved."
+  ],
+  "blockers": []
+}

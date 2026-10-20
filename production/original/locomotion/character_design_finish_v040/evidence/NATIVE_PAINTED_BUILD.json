@@ -1,0 +1,138 @@
+{
+  "scope": "ISOLATED PAINTED CHARACTER LOOK STUDY, responding to4/10 model feedback. Original preferred walk/coat cycle intact. New separated painted atlas, explicit extra UVs and a new fixed-profile head mesh. Not approved or production integrated. New illustration is not animation quality evidence.",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "source_sha256": "b566f189a848b364af3e0660ac7985db7f74d6c95bafd18914ead8ece09d5e84",
+  "atlas_sha256": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+  "atlas_unedited_and_packed": true,
+  "material_registrations": {
+    "V007_BOY | drawn sleeve near": {
+      "kind": "sleeve",
+      "original_material": "V038 COLOR | coat | V007 BOY drawn sleeve",
+      "paint_material": "V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | drawn source gray cuff near": {
+      "kind": "linen",
+      "original_material": "V038 COLOR | linen | V007 BOY drawn cuff",
+      "paint_material": "V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | drawn skin near": {
+      "kind": "skin",
+      "original_material": "V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+      "paint_material": "V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | articulated drawn hand near": {
+      "kind": "skin hand",
+      "original_material": "V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near",
+      "paint_material": "V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V024 continuous near trouser drawing": {
+      "kind": "trousers",
+      "original_material": "V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+      "paint_material": "V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | drawn sleeve far": {
+      "kind": "sleeve",
+      "original_material": "V038 COLOR | coat | V007 BOY drawn sleeve",
+      "paint_material": "V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | drawn source gray cuff far": {
+      "kind": "linen",
+      "original_material": "V038 COLOR | linen | V007 BOY drawn cuff",
+      "paint_material": "V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | drawn skin far": {
+      "kind": "skin",
+      "original_material": "V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+      "paint_material": "V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V007_BOY | articulated drawn hand far": {
+      "kind": "skin hand",
+      "original_material": "V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far",
+      "paint_material": "V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V024 continuous far trouser drawing": {
+      "kind": "trousers",
+      "original_material": "V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+      "paint_material": "V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V037 | coherent charcoal coat | five pose study": {
+      "kind": "coat",
+      "original_material": "V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch",
+      "paint_material": "V040 PAINT | coat | V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "LOCO_BOY | PAINT body": {
+      "kind": "linen collar",
+      "original_material": "V038 COLOR | linen | V024 | original coat pigments with posed fold value",
+      "paint_material": "V040 PAINT | linen collar | V038 COLOR | linen | V024 | original coat pigments with posed fold value",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true,
+      "collar_repair": "Inherited broad cream yoke becomes coat-colored shoulder; two small garment-UV-attached linen collar folds, no source raster edit.",
+      "UV_to_existing_F1_chest_affine_fit_error_m": 5.100501265786761e-08
+    },
+    "V033 | near | canonical painted shoe": {
+      "kind": "matching leather boot",
+      "original_material": "V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "paint_material": "V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "original_UV_layers_retained": true,
+      "geometry_and_actions_unchanged": true
+    },
+    "V033 | far | canonical painted shoe": {
+      "kind": "matching leather boot",
+      "same_mesh_and_material_as_near": true,
+      "geometry_and_actions_unchanged": true
+    }
+  },
+  "source_action_datablocks_unchanged": true,
+  "intentional_head_geometry_change": {
+    "source_preserved_hidden": "PERF_BOY | original head",
+    "new_head": "V040 | painted boy profile and neck",
+    "rest_painted_occupancy_bounds": [
+      [
+        -0.15164513830414017,
+        0.21809636521959863
+      ],
+      [
+        1.0904817719796676,
+        1.4517038714479074
+      ]
+    ],
+    "atlas_head_pixel_bounds": [
+      12,
+      23,
+      440,
+      482
+    ],
+    "same_original_head_bone_binding": true,
+    "fixed_profile_only": true
+  },
+  "original_mesh_rest_shape_and_original_UVs_retained_except_new_separate_head": true,
+  "lighting_world_timing_foot_paths_unchanged": true,
+  "shoe_geometry_and_new_material_shared": true,
+  "generated_source_limitations": [
+    "Exploratory asset design includes coat buttons/pocket and a new profile/hair painting; identity/design acceptance is pending.",
+    "Body outlines and hand contours are inherited; mapped painting alone does not finish the model."
+  ]
+}

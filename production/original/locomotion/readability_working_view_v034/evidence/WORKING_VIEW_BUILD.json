@@ -1,0 +1,122 @@
+{
+  "diagnostic_only": true,
+  "source_sha256": "e949e76b90397357f3f7378d02669caf276b2aec864a1c82e8594fe166ebd9b4",
+  "original_motion_actions_changed": [],
+  "original_mesh_vertex_or_shape_coordinates_changed": [],
+  "working_materials": {
+    "V007_BOY | articulated drawn hand far": [
+      0.64,
+      0.55,
+      0.43
+    ],
+    "V007_BOY | drawn skin far": [
+      0.52,
+      0.46,
+      0.37
+    ],
+    "V007_BOY | drawn sleeve far": [
+      0.32,
+      0.41,
+      0.44
+    ],
+    "V007_BOY | drawn source gray cuff far": [
+      0.82,
+      0.77,
+      0.58
+    ],
+    "V024 continuous near trouser drawing": [
+      0.24,
+      0.31,
+      0.35
+    ],
+    "V024 continuous far trouser drawing": [
+      0.42,
+      0.47,
+      0.49
+    ],
+    "LOCO_BOY | PAINT body": [
+      0.57,
+      0.6,
+      0.57
+    ],
+    "V007_BOY | articulated drawn hand near": [
+      0.76,
+      0.5,
+      0.32
+    ],
+    "V007_BOY | drawn skin near": [
+      0.62,
+      0.42,
+      0.29
+    ],
+    "V007_BOY | drawn sleeve near": [
+      0.46,
+      0.54,
+      0.57
+    ],
+    "V007_BOY | drawn source gray cuff near": [
+      0.82,
+      0.77,
+      0.58
+    ]
+  },
+  "original_materials": {
+    "V007_BOY | articulated drawn hand far": [
+      "V007 BOY drawn hand"
+    ],
+    "V007_BOY | drawn skin far": [
+      "V007 BOY drawn skin"
+    ],
+    "V007_BOY | drawn sleeve far": [
+      "V007 BOY drawn sleeve"
+    ],
+    "V007_BOY | drawn source gray cuff far": [
+      "V007 BOY drawn cuff"
+    ],
+    "V024 continuous near trouser drawing": [
+      "V022 | original trouser pigments | relocated rolled cuff"
+    ],
+    "V024 continuous far trouser drawing": [
+      "V022 | original trouser pigments | relocated rolled cuff"
+    ],
+    "LOCO_BOY | PAINT body": [
+      "V024 | original coat pigments with posed fold value"
+    ],
+    "V007_BOY | articulated drawn hand near": [
+      "V007 BOY drawn hand"
+    ],
+    "V007_BOY | drawn skin near": [
+      "V007 BOY drawn skin"
+    ],
+    "V007_BOY | drawn sleeve near": [
+      "V007 BOY drawn sleeve"
+    ],
+    "V007_BOY | drawn source gray cuff near": [
+      "V007 BOY drawn cuff"
+    ]
+  },
+  "working_hand_materials": {
+    "far": "V034 DIAGNOSTIC | V007_BOY | articulated drawn hand far hand",
+    "near": "V034 DIAGNOSTIC | V007_BOY | articulated drawn hand near hand"
+  },
+  "original_hand_opacity_value_nodes": {
+    "far": {
+      "Value": 1.0
+    },
+    "near": {
+      "Value": 1.0
+    }
+  },
+  "cloth_guide_indices_on_actual_outer_contour": {
+    "collar": 2,
+    "attach_back": 71,
+    "attach_front": 13,
+    "hem_back": 51,
+    "hem_front": 33,
+    "hem_low": 47
+  },
+  "cloth_guide_meaning": "Samples on the existing drawn upper attachment region and free hem; not newly invented physical cloth constraints. Same point indices tracked through31drawings.",
+  "anatomical_guides": "Actual source rig shoulder/elbow/wrist/hip/knee/ankle; near orange circles, far blue diamonds. Short continuation from wrist shows native hand-bone axis.",
+  "xray_hands": "Exact evaluated source hand vertex shapes projected forward at unchanged X/Z solely for diagnostic guided view. WORKING view retains actual depth/occlusion.",
+  "no_lighting_change": true
+}

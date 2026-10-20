@@ -1,0 +1,73 @@
+V018 BOY TRAVELLING WALK - IMPORT AND TIMING CONTRACT
+
+STATUS
+Isolated rig capability exercise, not final animation or trailer integration.
+Technical checks PASS; artistic acceptance UNPASSED. Stop for independent review.
+
+EDITABLE ASSETS
+native/WTSC_Boy_Travelling_Walk_v018.blend is the continuous native asset.
+native/WTSC_Boy_Travelling_Walk_Blocking_v018.blend retains the stepped keys.
+The boy uses the original fifteen bones and four two-bone IK chains. Stretch is
+disabled. All original boy base vertices, UVs, materials, skin weights, shape-key
+data, rest bones and packed painting match v017. There is no new head view.
+
+APPEND AND PLACE
+Append collection WTSC_BOY_TRAVELLING_WALK_v018, including its nested world-contact
+collection. Do not append just the armature or discard the contact goals.
+The continuous file includes fixed inspection and following matched-size cameras.
+Use V018 | EXERCISE_PLACEMENT | move whole study to translate the entire exercise.
+Translation was checked on a fresh append. Preserve scale1 and the existing XZ
+plane; rotation/scale changes are outside this acceptance test.
+V018 | WORLD_TRAVEL | +X metres is parent of the existing source rig. HIP is a
+separate relative body control. Native foot mode constraints operate in world
+space against the contact goals. Original native geometry/shape drivers remain.
+Playback needs no Python frame handler and no external linked asset.
+
+EXACT TIMING AND TRAVEL
+24fps. Frame1 is time0. One full translating gait cycle is24frames /1second.
+Frames1,25,49 are the same character-relative pose. Displacement is+0.44m/cycle.
+D(s)=0.44*(s-1)/24 metres along+X in the unchanged scene metre scale.
+The preview renders frames1..48; frame49 is the duplicate relative bookend at
+time2s and world displacement0.88m. TRAVEL_CURVE_v018.csv supplies1/16frame values.
+The MP4 is a two-cycle travelling study; replay resets world position and numbered
+ground markers. It is not a seamless fixed-world screen-position loop.
+
+Near contacts:1,25,49. Far contacts:13,37; previous far contact is-11.
+For contact C, phase q=s-C modulo24. Each flat landing ankle reference is
+L(C)=D(C)+0.11m. Same-foot landing references advance0.44m; alternate steps0.22m.
+q0 contact; q3 down/load; q6 passing; q9 up; q14 lift-off; q24 next contact.
+Stance lasts14frames; swing lasts10. Both feet support during the two-frame
+interval after each new contact. Peak authored sole clearance is0.055m.
+The down/passing/up schedule and amplitudes are our proposals, not source presets.
+
+ACTUAL SOLE CONTRACT - NO FLOOR FITTING OR BOOT REPAINT
+evidence/actual_sole_pivots.json contains the flat bone matrix, all boot vertices,
+actual active vertex IDs, fixed ground anchors and exact switch phases.
+Near rocker uses source vertices56,46,42; far uses61,46. The uneven source soles
+require a small forefoot pivot transition. Each active ground anchor stays fixed
+until its next support vertex takes over at the exact polygon-edge angle.
+Heel pitch eases-4deg to0 over q0..3; sole holds q3..9; forefoot roll eases0 to8deg
+over q9..14. Contact targets are native pivot empties with child bone-matrix goals.
+Ankle COPY_TRANSFORMS constraints select one contact or swing goal with CONSTANT
+mode keys. Their world matrices coincide at each mode change. Swing uses dense
+native location/quaternion keys at1/16frame; independent tests sample1/32frame.
+Arm/body overlap is restrained: chest1frame, head2frames, lower arm1.5frames.
+
+PRODUCTION MATCH REQUIREMENT - NOT APPLIED
+This asset's root moves+D while its planted goals remain on fixed ground.
+The matched camera follows+D, yielding centered character and ground moving-D.
+Any future production use must preserve that same relative0.44m/s travel. Do not
+keep an unrelated existing world pass and layer this D on top. In a screen-centered
+representation, subtract D from both character and world-contact positions, and
+move the visible ground by-D. The supplied following camera already demonstrates
+the equivalent view without changing native contact coordinates.
+If mapping source frame s to production frame F0+(s-1), keep24fps. A later approved
+retime must remap all body, goal, mode and travel keys together. No production
+start frame, recovery restart or variable-speed world curve is supplied/approved
+by this loop. The existing75-80s scene and trailer timing have not been edited.
+
+REVIEW LIMITS
+See V018_CHECKPOINT_REPORT.txt and evidence/ARTISTIC_ASSESSMENT_v018.json.
+Deep cloth compression and extreme folded/crossing arms remain failed capability
+areas inherited from v017; absence from this small walk is not a pass. Do not
+extend performance actions or paint new art before independent review.

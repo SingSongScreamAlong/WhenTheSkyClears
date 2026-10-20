@@ -1,0 +1,57 @@
+WHEN THE SKY CLEARS - FULL-COLOR COAT CONTINUITY ROUGH v039
+
+STATUS / VIEW
+This is an isolated motion-focused coat test, extending the reviewed full-color v038 boy through one complete cycle and its closing pose. It is a rough continuity candidate, not accepted final animation, a final character model, or production integration.
+
+previews/WTSC_v039_Full_Color_Coat_Normal_Speed_Rough.mp4
+30 fps, 188 actual decoded frames, 6.2667 seconds, 1280x840, silent.
+First 94 frames: original 480x720 close camera, centered without enlargement.
+Next 94 frames: original 1280x720 shot camera, shown at native pixels.
+Each section covers source F1-F94: three 31-frame cycles and a final closing pose. All 94 frames were rendered natively per camera; the movie does not recycle one rendered cycle or reset the root/floor at every stride. The coat itself repeats the single authored cycle. The two sections use the same timing, not different performance takes.
+
+previews/WTSC_v039_Coat_Cycle_Proof.png
+Labelled overview of actual native close frames F1,4,8,11,13,17,20,24,27,31,32. Tiles are reduced for the overview. Individual unscaled native PNGs remain locally in previews/CLOSE and previews/SHOT. Decoded movie inspection images remain in previews/DECODED.
+
+EDITABLE NATIVE
+native/WTSC_Full_Color_Coat_Continuity_Rough_v039.blend
+Blender 5.2.2 LTS, verified executable build d13f752e3b9c.
+Open the complete scene; its original base/foreground layers and compositor are required. The mesh and control retain their legacy names for dependency stability:
+  V037 | coherent charcoal coat | five pose study
+  V037 | garment review values | static pose selector
+Those labels do not describe the current animation: the coat now uses 124 quarter-frame shape samples including Basis, with an exact closing bookend at F32. READ_FIRST_v039 and scene V039_status document the current scope. Old static actions are preserved as unused datablocks; active coat actions begin V039.
+
+WHAT CHANGED
+Only the coat shape-key action and its compression-property action were replaced. The existing torso direction and hip loading drive continuous garment breakdowns at 0.25-source-frame intervals. Hat weights blend adjacent shapes linearly; Cycles modifiers repeat them over the same 31-frame period as the body.
+Compression follows the original hip drop with a smoothstep transition. A restrained damped follower of the actual pelvis-to-neck direction gives the lower coat a small lag, smoothly limited to 1.6 degrees (actual maximum about 1.491 degrees). The upper garment is not independently reposed. The five-pose source construction, original collar/front painting, UVs, color palette and source alpha remain.
+Original integer-frame coat vertical extents are retained through periodic interpolation of the original GP drawing extents. A small continuous hem response replaces static pose swaps. No independent fabric wobble clock, new lighting, outline, halo, bitmap repaint or design replacement was added.
+
+PRESERVATION / TECHNICAL RESULTS
+Cold native checks compare candidate with reference/PRESERVED_COLOR_v038.blend.
+187 body samples include all integer frames 1-94 and quarter-frame samples through the first cycle. Root, all bone world matrices and wrists match exactly. All other visible character geometry and cameras match at 13 sampled poses, including the three cycle bookends. Original action datablocks, other mesh rest/shape/UV/float attributes, material node defaults/ramps/links and packed image bytes match. Coat UVs match.
+373 quarter-frame coat samples across three cycles have zero local repeat/bookend error and no held quarter-frame intervals. Maximum quarter-frame local vertex movement is about 4.269 mm. The linear breakdowns are continuous in position, not claimed to be mathematically smooth in velocity; the maximum sampled local vertex velocity change at the cycle boundary is about 1.311 mm per source frame.
+The v038 rounded upper trouser-root correction, original head/hair profile, natural skin/hands, matching shoe geometry/material, live rigid leg contours and preferred v028/v036 body timing remain intact. Dark variants and approved source files remain separate and unchanged.
+These are technical preservation/continuity results. They do not establish animation appeal, convincing cloth volume, or final artistic acceptance.
+
+CANDID ARTISTIC ASSESSMENT
+The inspected native poses retain readable hands and a connected painted front without the earlier held coat-pose swaps. Hem and loading changes are deliberately small; the character identity and full-color separation survive at shot size. Native and decoded movie frames are reviewed for hand overlap, compression, hem continuity and material attachment. Continuous video-player playback observation is not claimed; the actual encoded movie is supplied for normal-speed human review.
+The coat still reads fitted and flat in profile. Its existing conspicuous brush pattern supplies surface detail more strongly than three-dimensional fabric volume. This pass does not solve those design/construction limits. The passing feet remain crowded. Face/eye/profile planes, arm and hand contours, emotional intention, fatigue, stumbling, load-bearing clasp/support and a genuine recovery-to-walking restart remain unfinished. This does not approach the requested Arcane-level finish yet.
+The next useful character decision is whether the moving color/coat direction holds up at normal speed. Further work should address specific visible construction/acting defects while preserving the movement direction the user preferred, rather than using more texture or lighting as a substitute for form.
+
+EXACT CLOCK / TRAVEL / INTEGRATION CONTRACT
+Source fps: 30. Period: 31 source frames. Authored coat cycle F1-F32; playback range F1-F94.
+Root object: V021 | CHILD_SUPPORT_TRAVEL.
+Rig: LOCO_BOY | RIG.
+Unwrapped root travel in +X metres:
+  D(F) = 0.9524437384576381 * (F - 1) / 31
+Stride = 0.9524437384576381 m; speed = 0.9217197468944885 m/s.
+Near contact F1, far contact F17. Near stance phase 0-18.5; far stance its own phase 0-19.25 with offset 16. The inherited near/far shoe drawings are baked, not general-purpose dynamic footwear rigs.
+reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv retains the original sampled curve and contact flags. v039 changes no travel or foot trajectories.
+For production 24 fps frame G and chosen origin G0:
+  F = 1 + (G - G0) * 30 / 24
+The period is 24.8 production frames. Use one mapping for body/root, coat, hands, live contours, shoe/cuff bakes and world/camera. Do not independently round the cycle, retime only the cloth, add travel twice, or loop the unwrapped root channel. The Cycles modifiers on coat keys and compression repeat local garment phase only.
+For a centered tracking shot, match world motion to the same unwrapped D(F). If integration uses stationary character root and scrolling world instead, apply the equal/opposite D(F) to world/camera consistently and remove the character translation exactly once. No production origin G0 or world integration was authored in this pass.
+Retain the complete rig/control hierarchy, live leg probe/node dependencies, packed materials/images, foreground identity collection, and original two-layer compositing. Appending a single coat mesh loses dependencies. New acting poses require unified foot-art/cuff/garment refits; this repeated walk is not the requested paired recovery sequence.
+
+DELIVERY / SCOPE
+Editable native, preserved v038 reference, travel CSV, build/verification/render/encoding scripts and evidence accompany the actual preview and proof board. Local raw render sequences are retained but omitted from the compact ZIP. All Blender work uses bounded two-thread jobs after a host-process gate.
+No production, other specialist files, dark source, full-trailer duration, music or title mask was modified. No installs, purchases or public sharing. Only the preview movie is uploaded privately to Library. Execution status and exact file hashes are in evidence/final_handoff.json and PACKAGE_RESULT.json.

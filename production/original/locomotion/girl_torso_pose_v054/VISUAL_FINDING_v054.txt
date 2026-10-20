@@ -1,0 +1,31 @@
+WHEN THE SKY CLEARS | v054 GIRL TORSO KEY-SHAPE STUDY
+
+This is a failed visual test, retained for an accurate design decision. The
+frozen v053 native is unchanged. No v054 native animation or inbetweens were
+authored because the key poses did not improve the girl clearly at shot size.
+
+The existing dress is one 65x17 painted mesh. Upper rows are chest-weighted;
+lower rows are pelvis-weighted. At v053 F4-6 and F20-22 the dark near sleeve
+overlaps the dress shoulder. The same dark painting across bodice and sleeve
+masks small changes to the silhouette, even when the underlying arm moves.
+
+Six actual Blender source/candidate key pairs were rendered at loading,
+passing and push-off, for each half-step. The first translation-only contour
+test was too subtle. The revised test narrowed loading shoulder/waist edges
+independently, lengthened them for passing/push-off, and shifted the sleeve
+cap to retain insertion. It retained dress collar rows0-2 and skirt rows43-64,
+all original painted pixels, UVs, face/hands, age-ten scale and existing feet.
+Maximum geometric dress displacement was16.16mm; no grid cells inverted.
+
+The doubled crop board and the 1280x720 shot-size board show the result. The
+revised loading shape is detectable at close range but remains barely visible
+at shot size. The passing/push-off shapes are still essentially the same
+outline. These are actual rendered static keys, not a normal-speed animation.
+No clean export or mesh statistic should be interpreted as artistic success.
+
+The next useful local approach is a visible, phase-specific painted shoulder
+and waist treatment tied to the arm insertion, using the existing outfit as
+the design source, then another small key-board test before interpolation.
+Larger mesh squash alone risks changing the child's proportions without
+making the acting readable. The exact ordinary-walk travel and v053 performance
+remain available as the current independent baseline.

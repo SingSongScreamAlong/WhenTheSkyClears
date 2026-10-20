@@ -1,0 +1,138 @@
+WHEN THE SKY CLEARS | v047 STEADY ORDINARY WALK CANDIDATE
+
+PURPOSE / STATUS
+Conrad described v046 as "drunk stumbling forward". This separate candidate
+establishes a quiet ordinary walk before fatigue, support acting or secondary
+cloth/braid polish. It does not replace production or the preserved v046.
+Age-ten rest bones, scale, painting, materials and UV registration are retained.
+The deferred girl outfit/cloth/braid script was NOT run; no new paint or braid
+embellishment enters this candidate. No world/effects/music/title work is done.
+
+WHAT WAS FOUND
+Read-only cold evaluation of v046 found 48.6 mm pelvis fore/aft travel relative
+to its linearly moving root. Pelvis world speed varied about .630-1.043 m/s.
+Independent record review found a dip-rebound-dip around boy F17-19.75 and girl
+F13.5-16.25, produced by reach-cap lowering of about 19.5-20 mm beyond the old
+inherited height curve. Its pelvis height range was about 37-38 mm.
+Foot rolls covered roughly -45 to +26 degrees, with different near/far swing
+knee ranges. Held girl arms read as balancing/bracing rather than ordinary gait.
+These are structural observations; hip projection is not whole-body COM.
+The old cadence was REGULAR, about116 steps/min, with16/15-frame half-steps.
+There is no diagnosis of random cadence or authored lateral three-dimensional
+sway. v047's even half-steps are a deliberate baseline design, not a claim that
+v046 had random timing. The cadence and speed changes are explicitly labelled.
+
+WHAT CHANGED
+An authored reachable pelvis/foot path replaces the inherited-motion reach cap.
+There is one smooth pelvis rise/fall per half-step, with no extra local dip.
+Pelvis fore/aft excursion is3 mm total; height range26 mm. Body lean is quiet:
+boy1.45-2.15 degrees, girl1.85-2.55 degrees. Head pitch varies only.3 degrees.
+Head vertical travel is about26 mm; its fore/aft excursion is about8.8 mm.
+Foot roll is limited to8 degrees toe-up at landing and18 degrees at toe-off.
+The foot comes through earlier after toe-off, with a smooth4.5 cm maximum sole
+clearance. Near/far legs use the same ordinary pattern; no hyperextended or
+backward knees. Source anatomy is preserved, not stretched to reach contacts.
+Reciprocal arms replace the held bracing pose. Girl arm ranges/means differ from
+the boy's and her gait leads2 source frames. No clasp/support intent is claimed.
+All continuous cached sleeves and legs were regenerated from the new actual
+bones. Existing painting, sleeve rolls, boot shapes and layering remain intact.
+
+EDITABLE NATIVE
+native/WTSC_Steady_Ordinary_Walk_v047.blend
+Blender5.2.2 LTS, executable build d13f752e3b9c; two-thread bounded rendering.
+Active scene: V047 | STEADY ORDINARY WALK | no stumble baseline
+Append only master collection: V047 | AGE10 PAIR | steady ordinary walk
+Shared travel root: V047 | shared travel | steady .73125mps
+Armatures retain their existing names:
+ V044 BOY | estimated joint centres
+ V044 GIRL | estimated joint centres
+Clothing collection retains its internal v046 name:
+ V046 | restored original painted wardrobe
+This is intentional: source painted parts are retained while their limb caches
+are rebuilt. Do not unhide superseded study clothing in the anatomy collection.
+Review camera, extended ground/grid and older snapshots are outside the append
+master. Used raster images are packed into the native. It opens independently.
+
+SCALE / PLACEMENT
+Metres, +X forward, +Z up; identity root scale/rotation. Boy/girl roots are -.4
+and+.4 m relative to shared root. Barefoot skull-vertex construction remains
+1.390/1.380 m; head measures.194/.193 m. Hair is not counted in those measures.
+The neutral outside-sole support is localZ0. Shoe lift is already in the drawing.
+Do not add it again. Preserve individual garment Y origins: they sort the paint.
+No front-view anatomical claim or newly observed skull/joint measurements are
+introduced. Definitions and estimated landmarks remain those in v044/v046.
+
+EXACT SOURCE CLOCK / TRAVEL CONTRACT
+Source F is30 fps; F1=time zero. Cycle32 source frames; half-step16 frames.
+Stride .780 m; step .390 m; speed .73125 m/s; cadence112.5 steps/min.
+Each foot stance18.8 source frames, swing13.2; double support2.8 per half-step.
+Girl phase lead2 source frames is baked in. Do not add that offset again.
+D(F) = .78 * (F - 1) / 32 metres.
+The native proof F1..F257 contains eight cycles plus the closing pose; root and
+camera curves extrapolate linearly beyond the end rather than stopping.
+
+At production24 fps, choosing entry frameG0:
+ F = 1 + (G - G0) * 30 / 24.
+Cycle25.6 production frames, half-step12.8; do not round either value.
+Native key retiming must affect armature, garment shape-key and travel Actions:
+ Gkey = G0 + (Fkey - 1) * 24 / 30.
+Preserve interpolation/cycle boundaries with that same mapping. Simply changing
+scene fps gives a different speed and contact relationship.
+evidence/TRAVEL_CURVE_v047.csv samples F1..257 at eighth-frame intervals.
+
+For travelling characters, retain native root+D and choose a fixed entry anchor.
+Do not add D twice. For centred characters/passing landscape, disable ONLY root
+X translation; retain bone and garment clocks; move the world-D on that clock.
+The review camera follows+D so the pair stays centred against fixed ground ticks.
+This is an ordinary walking baseline, NOT an authored recovery restart. Do not
+insert it directly over the old75-80 second stopped recovery curve and claim a
+matched transition. A shot-specific bridge and world-travel match remain needed.
+
+EDITING / CLOTHING DEPENDENCY
+Armatures, mesh painting, UVs, materials and Actions are editable native data.
+Torso, head, skin, hands and boots use native Armature modifiers. Sleeve/leg
+drawings use129 quarter-frame samples per32-frame cycle and native shape keys.
+Editing a rig pose requires regenerating those clothing caches. They do not
+automatically solve a newly edited pose. build_steady_walk.py contains both the
+pose authoring and the subsequent CACHE/clothing-regeneration section. When
+using a separately edited native as the source, run/adapt the latter section;
+rerunning the complete script would author its coded baseline poses again.
+Source v046 remains read-only. Save further edits as another isolated version.
+
+ACTUAL LONG NORMAL-SPEED REVIEWS
+WTSC_v046_vs_v047_Steady_Walk_NormalSpeed.mp4:
+ same elapsed time at30 fps,257 frames,8.5667 seconds. Side-by-side1920x640;
+ each character render is the same camera/scale, reduced equally to960x540.
+ The old and new speeds/cycle lengths differ intentionally and are labelled.
+WTSC_Steady_Walk_v047_NormalSpeed_8Cycles.mp4:
+ full-size1280x720 native image plus80-pixel label bar,30 fps,257 frames.
+Both versions have an identical extended fixed10 cm grid, stronger sole line
+and40 cm contact ticks. This review ground was added IN RAM to v046; the old
+native was not saved. Native render total514 timeline frames, not514 distinct
+local-cycle poses. No optical flow or generated/interpolated video frames.
+
+TECHNICAL CHECKS, SEPARATE FROM QUALITY
+Cold-open sample F1..129 at eighth frames:1025 samples per child over4 cycles.
+Maximum support-X error.368 mm; sole support-height error.122 mm; penetration
+.011 mm; joint gap.055 mm. Rest bone lengths unchanged; no backward knee.
+Cycle matrices close exactly. Root/camera travel agrees within.001 mm and
+continues past the proof range. Pelvis extrema show no extra transfer rebound.
+Additional257-sample actual-bone clothing check passes a.5 mm tolerance.
+Original packed image payloads, material slots and all UV registrations match
+v046 exactly. Rendering/checking do not save either native source.
+Both encoded MP4s are independently fully decoded and checked below20 MB each.
+Review uses native poses, all32 local-cycle integer poses and decoded comparison
+frames. Continuous player playback was not observed by the agent. Successful
+decode and contact values do not establish convincing weight or intent.
+
+CANDID ASSESSMENT / REMAINING WORK
+The extra authored pelvis hitch and large fore/aft lurch are structurally removed.
+The candidate is more upright and the held bracing arms are gone. Those changes
+address the reported unstable baseline while keeping the liked painted finish.
+Whether it reads as a purposeful natural walk remains a normal-speed artistic
+judgment; this is a comparison candidate, not a claim of final approval.
+It remains a planar fixed-profile animation. The girl's older charcoal face,
+white eye and rigid braid differ from the newer full-colour boy. Hands remain
+rigid painted poses. Cloth/braid finishing was explicitly deferred until the
+base walk reads stable. Fatigue, stumble, helping/clasp and recovery-to-walking
+acting are separate shot work. This is not the requested Arcane-level finish.

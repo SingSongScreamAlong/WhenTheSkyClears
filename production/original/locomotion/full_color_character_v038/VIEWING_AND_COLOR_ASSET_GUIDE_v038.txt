@@ -1,0 +1,53 @@
+WHEN THE SKY CLEARS — BOY FULL-COLOR CHARACTER STUDY v038
+Status: isolated readable color version for artistic review. Dark treatment and production remain separate. This is not final animation or a permanent replacement of the film's silhouette treatment.
+
+OPEN / VIEW
+previews/WTSC_v038_Full_Color_Boy_Reveal_and_Poses.png — private Library reveal board, actual native renders.
+previews/HERO_COLOR/0001.png — actual 960x1440 full-body color hero at F1.
+previews/WTSC_Boy_Full_Color_v038_Transparent.png — reusable RGBA character render at the same pose, with only stage/floor hidden.
+The board includes the dark reference hero, full-color F1/F4/F11/F20 key poses, original-camera 1280x720 shot views, F27 hand/hem check and actual dark before/after hip-overlap details. Hero and shot panels retain native pixels; enlarged overlap crops are explicitly labelled. No x-rays, diagnostic joint colors or generated/retouched character replacement image.
+
+EDITABLE NATIVES
+native/WTSC_Boy_Full_Color_Readability_v038.blend — main color character review scene.
+native/WTSC_Trouser_Root_Repair_Dark_v038.blend — same upper-root repair before color treatment.
+reference/PRESERVED_GARMENT_v037.blend — retained dark coat/art source.
+reference/PRESERVED_MOVEMENT_v036.blend — retained preferred-movement checkpoint.
+Open the complete scene for its original base/foreground compositing. Color material names begin V038 COLOR. All original packed images are retained. The dark source materials also remain in the color native; FULL_COLOR_BUILD.json records each original/color material assignment.
+
+FULL COLOR, WITH A COHERENT PALETTE
+Warm natural skin is shared across face, neck, forearms and hands. Hair is dark brown with retained painted strands. Coat and sleeves use a muted slate blue/teal fabric range; collar and cuffs use subdued linen tones. Trousers use an olive range, including their rolled fabric cuffs. Both shoes use one shared brown leather material and one shared original mesh.
+These are native material color ramps over the original painterly value detail and UVs. The packed source image bytes and alpha are not edited; there is no repeated new grain image or flat rainbow segmentation. Coat construction shading, the existing compression crease and broad cloth-local lower turn remain. No scene lighting, glow or character-following outline was added.
+The head/profile mesh, UVs, source alpha and hair silhouette stay fixed. A native UV-region mask separates existing skin and hair areas for color. The original eye opening is retained; a very small static dark iris is shaded within its original white patch for the color view. No head turn, facial mesh deformation, new expression or turnaround was authored. The mask and palette are editable in scripts/color_materials.py and the native shader nodes.
+
+REVIEWED TROUSER-ROOT REPAIR
+The independent v037 review identified a sharp exposed trouser-root wedge under the rear hem at F11/F20. Only the upper contour field on the two trouser drawings is changed: the hidden root is rounded into a cap, upper-hip width is tucked, and the factor blends back to the inherited contour before 30 percent down the drawing. The dark before/after crops demonstrate the geometry repair independently of color.
+No joint, pelvis, drawing centerline, foot path or garment-length change was used to conceal the defect. The lower 70 percent of each trouser, including knees/calves/cuffs, remains the v036 construction. Root edge movement is an intentional art change; do not claim every rendered trouser vertex is unchanged. Original rest vertices, pose-shape coordinates and UVs remain; the changed point attribute is disclosed in the evidence.
+
+PRESERVATION / TECHNICAL EVIDENCE
+Cold checks compare the final native with preserved v037. All original action data, original mesh rest/shape/UV data and original packed image bytes match. Bone/root/wrist world matrices match on frames1–94. At F1/F4/F11/F20/F27, head, hands, coat, sleeves, shoes, cameras and lower 70 percent of trouser rendered vertices match. Drawing centerlines differ only by floating-point noise below 0.00000009 m. Both shoes share their geometry and new material. Original head alpha-factor wiring is retained.
+These checks preserve the earlier preferred v028/v036 movement. They are technical safeguards, not a claim that the acting or model is finished. See COLD_COLOR_AND_ROOT_PRESERVATION.json for actual values and intentional exceptions.
+
+ANIMATION SCOPE — IMPORTANT
+This version inherits the v037 coat's FIVE STATIC samples: 1, 4, 11, 20, 27. The preferred body/limb actions remain available, but coat inbetweens and moving color/fabric registration are not authored. Review the marked poses only. No new full-color walking movie, recovery animation, paired acting or world integration was rendered in this pass.
+After the color/model direction is reviewed, the next bounded motion test can cover one 31-frame cycle plus its closing bookend, checking compression, hem response, arm passage and seam/material registration. The full trailer remains unchanged.
+
+CANDID ARTISTIC ASSESSMENT
+Color makes the hands, forearm joints and garment boundaries much easier to distinguish in the inspected stills. The larger retained fabric region keeps coat/collar/sleeves in one painted language, and the root cap removes the sharp hip projection without moving the poses. This is a usable color study, not just an anatomical overlay.
+The face/eye design, profile planes and arm/hand contours remain stylized and simple; color does not finish those forms. The coat can still feel fitted and flat in profile, the brush pattern is conspicuous, and passing feet still overlap. Motion quality and moving material continuity remain untested here. No final character-design, palette or studio-level animation approval is implied.
+
+CLOCK / IMPORT CONTRACT
+Original fps 30, period 31 frames. Travel+X metres: D(F)=0.9524437384576381*(F−1)/31.
+Root: V021 | CHILD_SUPPORT_TRAVEL. Rig: LOCO_BOY | RIG.
+reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv preserves the earlier three-cycle curve. No new travel or foot-contact contract is authored. For production 24 fps frame G, source F=1+(G−G0)*30/24. Character/root/drawings/live contours/shoe bakes/world must use one mapping, without independently rounding the 24.8 production-frame cycle.
+The inherited trouser/cuff drawings and shoe-art bakes still need a unified refit if new gait or acting poses are authored. Retain V036 live contour joint probes/node groups, original character controls, foreground identities/compositing, the new coat shape samples and color material dependencies. Appending one mesh is insufficient. Static coat samples are not ready for production playback or full-trailer integration.
+
+FILES / DELIVERY
+FULL_COLOR_BUILD.json — palette ranges/stops, material assignments and root factors.
+COLD_COLOR_AND_ROOT_PRESERVATION.json — source preservation and intentional upper-contour exception.
+STILL_RENDER_RECORD.json —14actual native stills: color hero, five close/shot pairs, two dark root checks, dark reference hero.
+TRANSPARENT_RENDER_RECORD.json —oneadditional direct native transparent hero render; no bitmap background editing.
+BOARD_RECORD.json —actual layout, dimensions and image size.
+PROTECTED_SOURCE_HASHES.json —original character/production checkpoints unchanged.
+LIBRARY_COLOR_BOARD_RECEIPT.json and metadata verification —confirmed private board save.
+One early shader-mask build failed because the installed Blender returns triangulation indices; that handling was corrected before the successful build/render. No color frames were produced by that failed attempt. Final native/actual renders and cold checks passed; no execution blocker remains.
+No installs, purchases, external sharing, production edits, new lighting, title/music edits or trailer-duration changes. All character Blender jobs exited.

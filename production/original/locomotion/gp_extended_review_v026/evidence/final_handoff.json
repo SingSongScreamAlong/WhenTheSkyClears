@@ -1,0 +1,239 @@
+{
+  "status": "REQUESTED_LONGER_REVIEW_COMPLETE_ART_OPEN",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\gp_extended_review_v026\\native\\WTSC_GP_Extended_Review_v026.blend",
+  "native_bytes": 2613248,
+  "native_sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+  "preview": {
+    "filename": "WTSC_v026_GP_Normal_Speed_9p3s_Close_9p3s_Shot.mp4",
+    "bytes": 3011180,
+    "sha256": "1fecf03dfbaf2e2c1cdbe2dbb037218d3ab644429e66dbde87159a77f49b0f08",
+    "frames_decoded": 558,
+    "fps": 30.0,
+    "duration_seconds": 18.6,
+    "dimensions": [
+      1280,
+      800
+    ],
+    "segments": [
+      {
+        "filename": "WTSC_v026_GP_CLOSE_9p3s_Normal_Speed.mp4",
+        "frames": 279,
+        "seconds": 9.3,
+        "bytes": 2214028
+      },
+      {
+        "filename": "WTSC_v026_GP_SHOT_9p3s_Normal_Speed.mp4",
+        "frames": 279,
+        "seconds": 9.3,
+        "bytes": 789760
+      }
+    ],
+    "cycles_per_segment": 9,
+    "native_period_frames": 31,
+    "duplicate_boundary_frames": false,
+    "holds_slowdown_optical_interpolation": false,
+    "segment_cut": "At9.3s, restart the same nine-cycle sequence in the second camera view. Within each segment, motion and travel are uninterrupted.",
+    "observation": "All558frames decoded; firstcycle, latejoin and shot boards inspected separately. This is frame review, not observed continuous playback."
+  },
+  "technical": {
+    "period_frames": 31,
+    "fps": 30,
+    "cycles": 9,
+    "frames_per_view": 279,
+    "seconds_per_view": 9.3,
+    "frames_encoded_per_cycle": 31,
+    "duplicate_boundary_frame_inserted": false,
+    "preserved_v025_frames_17_32_exact": true,
+    "newly_authored_opposite_half_frames": [
+      1,
+      16
+    ],
+    "opposite_half_shape_keys": [
+      1.0,
+      4.25,
+      6.0,
+      9.4,
+      11.3,
+      14.0,
+      17.0
+    ],
+    "opposite_half_reference_drawings": [
+      32,
+      20,
+      22,
+      25,
+      27,
+      29,
+      17
+    ],
+    "GP_frames": 280,
+    "unique_GP_drawings": 32,
+    "GP_Rcontact_bookend_error_m": 0.0,
+    "sampled_native_frames": 298,
+    "max_root_curve_error_m": 6.972770858482136e-07,
+    "max_sole_repeat_translation_error_m": 9.5367431640625e-07,
+    "minimum_sole_z_m": -4.0978193283081055e-08,
+    "unreachable_chains": [],
+    "source_sha256": "adc14d6af70e558036c847763328c2a4184a23760e978a15f56eaef76329e994",
+    "action_extensions": [
+      {
+        "object": "LOCO_BOY | RIG",
+        "action": "LOCO_BOY | RIGAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "V021 | CHILD_SUPPORT_TRAVEL",
+        "action": "V021 | CHILD_SUPPORT_TRAVELAction.001",
+        "travel_offset_x": true
+      },
+      {
+        "object": "BOY | HIP",
+        "action": "BOY | HIPAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | CHEST",
+        "action": "BOY | CHESTAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | HEAD_PROFILE",
+        "action": "BOY | HEAD_PROFILEAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | ANKLE_near",
+        "action": "BOY | ANKLE_nearAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | WRIST_near",
+        "action": "BOY | WRIST_nearAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | LEG_POLE_near",
+        "action": "BOY | LEG_POLE_nearAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | ARM_POLE_near",
+        "action": "BOY | ARM_POLE_nearAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | RELAXED_HAND_TORSO_ANCHOR_near",
+        "action": "BOY | RELAXED_HAND_TORSO_ANCHOR_nearAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | ANKLE_far",
+        "action": "BOY | ANKLE_farAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | WRIST_far",
+        "action": "BOY | WRIST_farAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | LEG_POLE_far",
+        "action": "BOY | LEG_POLE_farAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | ARM_POLE_far",
+        "action": "BOY | ARM_POLE_farAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "BOY | RELAXED_HAND_TORSO_ANCHOR_far",
+        "action": "BOY | RELAXED_HAND_TORSO_ANCHOR_farAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "V020 | SOURCE52 | exact FBX sampled poses",
+        "action": "V020 | SOURCE52 | exact FBX sampled posesAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "V020 | near | ACTUAL_SOLE_PIVOT",
+        "action": "V020 | near | ACTUAL_SOLE_PIVOTAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "V020 | near | SOLE_BONE_GOAL",
+        "action": "V020 | near | SOLE_BONE_GOALAction",
+        "travel_offset_x": true
+      },
+      {
+        "object": "V020 | far | ACTUAL_SOLE_PIVOT",
+        "action": "V020 | far | ACTUAL_SOLE_PIVOTAction",
+        "travel_offset_x": false
+      },
+      {
+        "object": "V020 | far | SOLE_BONE_GOAL",
+        "action": "V020 | far | SOLE_BONE_GOALAction",
+        "travel_offset_x": true
+      }
+    ],
+    "upper_loading_and_pigment_experiments_included": false,
+    "scope": "Technical continuity and source preservation only; artistic acceptance requires normal-speed review"
+  },
+  "actual_continuous_playback_observed": false,
+  "visual_review": "Full32frame native proof; decoded firstcycle/join, latecyclejoin and shot boards. Frame inspection, not real-time playback acceptance.",
+  "remaining_art": [
+    "Coat is a rough cleaner value study; painterly surface and final fold quality remain open.",
+    "Cadence/whole-body loading requires the requested uninterrupted viewing assessment.",
+    "Opposing half is newly completed for this review; originalv025half is exact.",
+    "This is a solo walk proof; paired recovery-to-walk integration remains separate."
+  ],
+  "experiments_excluded": [
+    "v025b upper-loading delay",
+    "v025b pigment/fill-carrier study"
+  ],
+  "preservation": {
+    "v046": {
+      "path": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v025_promising_source": {
+      "original_sha256": "adc14d6af70e558036c847763328c2a4184a23760e978a15f56eaef76329e994",
+      "copy_sha256": "adc14d6af70e558036c847763328c2a4184a23760e978a15f56eaef76329e994",
+      "unchanged": true
+    }
+  },
+  "coordination": "CPU-gated threads2. Last world message reported no further world render planned. Local thread messaging subsequently returned Transport closed; no concurrent Blender render was detected before launch.",
+  "private_preview": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v026_GP_Normal_Speed_9p3s_Close_9p3s_Shot.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v026_GP_Normal_Speed_9p3s_Close_9p3s_Shot.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 3011180,
+    "external_connectors_accessed": false
+  }
+}

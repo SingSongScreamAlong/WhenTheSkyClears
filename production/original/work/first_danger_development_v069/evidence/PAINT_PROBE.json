@@ -1,0 +1,1026 @@
+[
+  {
+    "object": "V046 BOY | tailored coat",
+    "uv_bounds": [
+      [
+        0.42392343282699585,
+        0.6502392292022705
+      ],
+      [
+        0.5414673089981079,
+        0.9840510487556458
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | seamless original painted bodice",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "UV Map.001",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | quiet upper cloth"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "Attribute",
+            "type": "ATTRIBUTE",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "UV Map.001",
+            "UV",
+            "Image Texture.001",
+            "Vector"
+          ],
+          [
+            "Attribute",
+            "Factor",
+            "Mix (Legacy)",
+            "Factor"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Mix (Legacy)",
+            "Color1"
+          ],
+          [
+            "Image Texture.001",
+            "Color",
+            "Mix (Legacy)",
+            "Color2"
+          ],
+          [
+            "Mix (Legacy)",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V046 GIRL | tailored knee-length dress",
+    "uv_bounds": [
+      [
+        0.5033493041992188,
+        0.6880382895469666
+      ],
+      [
+        0.2412327378988266,
+        0.6811902523040771
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | seamless original painted bodice",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "Pair_Painterly_Near_Age_v015.png",
+            "uv": null
+          },
+          {
+            "name": "UV Map.001",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | quiet upper cloth"
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "Pair_Painterly_Near_Age_v015.png",
+            "uv": null
+          },
+          {
+            "name": "Attribute",
+            "type": "ATTRIBUTE",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "UV Map.001",
+            "UV",
+            "Image Texture.001",
+            "Vector"
+          ],
+          [
+            "Attribute",
+            "Factor",
+            "Mix (Legacy)",
+            "Factor"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Mix (Legacy)",
+            "Color1"
+          ],
+          [
+            "Image Texture.001",
+            "Color",
+            "Mix (Legacy)",
+            "Color2"
+          ],
+          [
+            "Mix (Legacy)",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V046 BOY | painted continuous rolled sleeve far",
+    "uv_bounds": [
+      [
+        0.7472089529037476,
+        0.959330141544342
+      ],
+      [
+        0.5494418144226074,
+        0.9681020975112915
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas sleeve",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V046 GIRL | painted continuous rolled sleeve far",
+    "uv_bounds": [
+      [
+        0.7472089529037476,
+        0.959330141544342
+      ],
+      [
+        0.5494418144226074,
+        0.9681020975112915
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | original atlas sleeve",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "RGB to BW",
+            "Color"
+          ],
+          [
+            "RGB to BW",
+            "Val",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V046 BOY | painted forearm near",
+    "uv_bounds": [
+      [
+        0.11610845476388931,
+        0.20925040543079376
+      ],
+      [
+        0.24242424964904785,
+        0.4816586971282959
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas skin",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V046 BOY | painted rigid-axis trousers near",
+    "uv_bounds": [
+      [
+        0.4295055866241455,
+        0.5609250664710999
+      ],
+      [
+        0.024720892310142517,
+        0.5095694065093994
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas pants",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V046 GIRL | original painted stockings near",
+    "uv_bounds": [
+      [
+        0.533851683139801,
+        0.6090909242630005
+      ],
+      [
+        0.12433581054210663,
+        0.2412327378988266
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | retained original stocking painting",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V046 | original pigment registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "Pair_Painterly_Near_Age_v015.png",
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V044 BOY | boot near",
+    "uv_bounds": [
+      [
+        0.4282296597957611,
+        0.5119616985321045
+      ],
+      [
+        0.0382571741938591,
+        0.12327311187982559
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "nodes": [
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "Pair_Painterly_Near_Age_v015.png",
+            "uv": null
+          },
+          {
+            "name": "Hue/Saturation/Value",
+            "type": "HUE_SAT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "V038 shoes painterly palette",
+            "type": "VALTORGB",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V040 | separated painted part registration"
+          },
+          {
+            "name": "V040 original generated separated atlas | unedited",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "Image Texture",
+            "Color",
+            "Hue/Saturation/Value",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "RGB to BW",
+            "Color"
+          ],
+          [
+            "RGB to BW",
+            "Val",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "V038 shoes painterly palette",
+            "Factor"
+          ],
+          [
+            "UV Map",
+            "UV",
+            "V040 original generated separated atlas | unedited",
+            "Vector"
+          ],
+          [
+            "V040 original generated separated atlas | unedited",
+            "Color",
+            "Emission",
+            "Color"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V044 BOY | head",
+    "uv_bounds": [
+      [
+        0.009569376707077026,
+        0.3508772552013397
+      ],
+      [
+        0.6156299114227295,
+        0.9816589951515198
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "V040 | separated painted part registration"
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "object": "V044 GIRL | head",
+    "uv_bounds": [
+      [
+        0.5167464017868042,
+        0.6668660044670105
+      ],
+      [
+        0.5812965035438538,
+        0.9096705913543701
+      ]
+    ],
+    "materials": [
+      {
+        "name": "V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "nodes": [
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "Pair_Painterly_Near_Age_v015.png.001",
+            "uv": null
+          },
+          {
+            "name": "Hue/Saturation/Value",
+            "type": "HUE_SAT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null
+          }
+        ],
+        "links": [
+          [
+            "Image Texture",
+            "Color",
+            "Hue/Saturation/Value",
+            "Color"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ]
+  }
+]

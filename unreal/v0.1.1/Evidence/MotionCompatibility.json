@@ -1,0 +1,16 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\WTSC_Survival_Game_Assets\\Animations\\Quaternius_Universal_Animation_Library\\Files\\Universal Animation Library[Standard]\\Unreal-Godot\\UAL1_Standard.glb",
+  "skin_joint_counts": [
+    65
+  ],
+  "available_relevant_clips": [
+    "Crouch_Fwd_Loop",
+    "Crouch_Idle_Loop",
+    "Interact",
+    "PickUp_Table",
+    "Walk_Formal_Loop",
+    "Walk_Loop"
+  ],
+  "binding_result": "Not compatible directly: clips drive 3D skinned joint transforms, while established artwork is static plane cutouts without skin weights or a SkeletalMesh/AnimInstance. No clip imported, retargeted, or claimed in this pass.",
+  "implemented_motion": "Authored 2D pose keys, two-bone limb IK and world-space stance foot locking. Interpolated cutout motion; neither hand-drawn frame animation nor mocap."
+}

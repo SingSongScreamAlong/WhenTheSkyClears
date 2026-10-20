@@ -1,0 +1,75 @@
+WHEN THE SKY CLEARS | FIRST DANGER DEVELOPMENT v069
+Separate seven-second candidate | Full trailer remains untouched
+
+WATCH
+previews/WTSC_First_Danger_Before_After_ACTING_DETAIL_v069_24fps.mp4
+Left: previous v068e rough. Right: v069 development. The complete7seconds,
+normal24fps, same fixed crop on both sides. Same global38-45s camera/music.
+
+FULL CAMERA COMPOSITION
+previews/WTSC_First_Danger_Before_After_ROUGH_v069_24fps.mp4
+
+WITH INHERITED TITLE
+previews/WTSC_First_Danger_Before_After_ROUGH_TITLE_v069_24fps.mp4
+
+AFTER ONLY
+previews/WTSC_First_Danger_Rough_v069_24fps.mp4
+previews/WTSC_First_Danger_Rough_v069_Title_24fps.mp4
+The word Rough in these filenames retains the review naming convention;
+v069 is a developed candidate, not a final animation-quality claim.
+
+NATIVE
+native/WTSC_First_Danger_Development_v069c.blend
+Scene WTSC_FIRST_DANGER_DEVELOPMENT_WORLD_v069 | G913-1080 |24fps |3840x2160
+168 independently exposed body drawings per child; separate painted head
+layers, source atlas UV windows, and named editable contour vertex groups.
+New head atlas packed; original scene assets retained. Original hidden painted
+rigs remain for reference.
+
+DEVELOPMENT
+- Added a body drawing for every playback frame, including the notice,
+  turning, receiving and moving-off transitions; no optical-flow retiming.
+- New painted head angles replace the schematic oval faces. Concerned
+  expressions and downward glances use reference-led painted drawings.
+- Reused the actual project cloth, skin, stocking and leather pigments
+  on the new contour drawings. Quiet cloth samples avoid oversized buttons.
+- Brought the two children slightly closer and lowered the coupled grip,
+  letting the receiving elbows bend; preserved the planted-step holds.
+- Free hands relax after contact. The girl's attached braid is fuller.
+- Original camera, painted environment, title, supplied music and global
+  shot clocks retained. Full trailer sources have not been integrated or edited.
+
+ARTWORK / PROVENANCE
+textures/WTSC_Painted_Head_Angles_v069.png
+New12-head RGBA atlas generated with the built-in imagegen tool using the
+existing v040 boy painted parts atlas and v050 girl face study as references.
+It is a generated likeness study, not hand-painted art or accepted final
+character design. The original references are unchanged. The girl's braid
+remains a separate native2D drawing attached to the painted head layer.
+evidence/IMAGEGEN_PROMPT.txt contains the exact prompt and source references.
+evidence/HEAD_REGISTRATION.json records atlas-cell/neck registration. The
+generated image is copied into this project and packed without pixel edits.
+
+drawings/*.svg:336 editable body/contour exports. Painted heads remain in the
+separate atlas/native layers. Native meshes contain actual editable drawings;
+editing an exported SVG does not automatically change the Blender drawing.
+scripts/pose_spec.py: developed pose/contact specification.
+scripts/base_pose_spec.py: frozen prior contour construction retained for reuse.
+Both source modules are embedded as native Blender Text blocks.
+
+REVIEW BOUNDARY
+The head-angle transitions, hand anatomy, garment shapes and overall acting
+still require artistic review. Painted head studies do not establish likeness
+approval or Arcane-level quality. This is development of the same seven-second
+passage; no permission to integrate it into the full trailer is assumed.
+
+EVIDENCE
+evidence/BUILD.json: final native/hash, drawing and image provenance.
+evidence/COLD_VALIDATION.json: actual cold reopen, all168 frame readbacks,
+original-camera comparison, source-image preservation, planted soles and grip.
+evidence/MOVIE_BATCHES_v069c.json: actual fresh final-c movie render batches.
+evidence/DELIVERY.json: full decode,24fps timing, audio and encoded-color checks.
+evidence/REVIEW_QA.json: source/render hashes and before/after panel readback.
+renders/uhd_v069c/: actual native3840x2160 keys. Movie review panels1280x720.
+Earlier native A/B files and their key renders are development witnesses.
+Only native c is used for all delivered movie frames.

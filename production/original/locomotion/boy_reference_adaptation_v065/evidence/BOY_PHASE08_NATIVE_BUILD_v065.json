@@ -1,0 +1,471 @@
+{
+  "phase": 8,
+  "blender_version": "5.2.2 LTS",
+  "native_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\boy_reference_adaptation_v065\\native\\Boy_Phase08_Point_Authored_Redraw_v065.blend",
+  "render_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\boy_reference_adaptation_v065\\previews\\Boy_Phase08_Native_Redraw_v065.png",
+  "reference_A_frame": 6,
+  "source_photo_phase": 8,
+  "joint_guides": {
+    "hip": [
+      490,
+      375
+    ],
+    "trailing_knee": [
+      450,
+      505
+    ],
+    "trailing_ankle": [
+      415,
+      620
+    ],
+    "stance_knee": [
+      493,
+      508
+    ],
+    "stance_ankle": [
+      495,
+      635
+    ]
+  },
+  "part_count": 68,
+  "polygon_count": 45,
+  "detail_path_count": 23,
+  "total_individually_authored_points": 422,
+  "parts": [
+    {
+      "name": "trailing_pants_shadow",
+      "type": "MESH",
+      "points": 7,
+      "color": "#353c2c"
+    },
+    {
+      "name": "trailing_pants_main",
+      "type": "MESH",
+      "points": 7,
+      "color": "#646343"
+    },
+    {
+      "name": "trailing_pants_highlight",
+      "type": "MESH",
+      "points": 8,
+      "color": "#878061"
+    },
+    {
+      "name": "stance_pants_shadow",
+      "type": "MESH",
+      "points": 6,
+      "color": "#3e4430"
+    },
+    {
+      "name": "stance_pants_main",
+      "type": "MESH",
+      "points": 6,
+      "color": "#656448"
+    },
+    {
+      "name": "stance_pants_highlight",
+      "type": "MESH",
+      "points": 8,
+      "color": "#888063"
+    },
+    {
+      "name": "trailing_boot_leather",
+      "type": "MESH",
+      "points": 11,
+      "color": "#3a2922"
+    },
+    {
+      "name": "trailing_boot_toe",
+      "type": "MESH",
+      "points": 6,
+      "color": "#5b4030"
+    },
+    {
+      "name": "trailing_boot_heel",
+      "type": "MESH",
+      "points": 6,
+      "color": "#241b19"
+    },
+    {
+      "name": "trailing_boot_cuff",
+      "type": "MESH",
+      "points": 4,
+      "color": "#5b4633"
+    },
+    {
+      "name": "stance_boot_leather",
+      "type": "MESH",
+      "points": 11,
+      "color": "#3b2921"
+    },
+    {
+      "name": "stance_boot_toe",
+      "type": "MESH",
+      "points": 6,
+      "color": "#674633"
+    },
+    {
+      "name": "stance_boot_heel",
+      "type": "MESH",
+      "points": 6,
+      "color": "#251c19"
+    },
+    {
+      "name": "stance_boot_cuff",
+      "type": "MESH",
+      "points": 4,
+      "color": "#62503c"
+    },
+    {
+      "name": "far_sleeve",
+      "type": "MESH",
+      "points": 6,
+      "color": "#25383b"
+    },
+    {
+      "name": "far_cuff",
+      "type": "MESH",
+      "points": 4,
+      "color": "#c8b99a"
+    },
+    {
+      "name": "far_forearm",
+      "type": "MESH",
+      "points": 6,
+      "color": "#b77d5b"
+    },
+    {
+      "name": "far_hand",
+      "type": "MESH",
+      "points": 10,
+      "color": "#c78c69"
+    },
+    {
+      "name": "coat_base",
+      "type": "MESH",
+      "points": 15,
+      "color": "#2d4143"
+    },
+    {
+      "name": "coat_back_plane",
+      "type": "MESH",
+      "points": 8,
+      "color": "#42565a"
+    },
+    {
+      "name": "coat_front_plane",
+      "type": "MESH",
+      "points": 8,
+      "color": "#263a3c"
+    },
+    {
+      "name": "coat_waist_shadow",
+      "type": "MESH",
+      "points": 8,
+      "color": "#253438"
+    },
+    {
+      "name": "coat_hem_fold",
+      "type": "MESH",
+      "points": 9,
+      "color": "#385053"
+    },
+    {
+      "name": "neck",
+      "type": "MESH",
+      "points": 4,
+      "color": "#b87c5d"
+    },
+    {
+      "name": "cream_collar",
+      "type": "MESH",
+      "points": 6,
+      "color": "#d6cbb0"
+    },
+    {
+      "name": "near_sleeve_main",
+      "type": "MESH",
+      "points": 8,
+      "color": "#344b4d"
+    },
+    {
+      "name": "near_sleeve_shadow",
+      "type": "MESH",
+      "points": 5,
+      "color": "#26393a"
+    },
+    {
+      "name": "near_cream_cuff",
+      "type": "MESH",
+      "points": 4,
+      "color": "#d1c1a1"
+    },
+    {
+      "name": "near_forearm",
+      "type": "MESH",
+      "points": 6,
+      "color": "#d29a72"
+    },
+    {
+      "name": "near_hand",
+      "type": "MESH",
+      "points": 13,
+      "color": "#dba27a"
+    },
+    {
+      "name": "head_skin",
+      "type": "MESH",
+      "points": 14,
+      "color": "#c98c67"
+    },
+    {
+      "name": "face_light",
+      "type": "MESH",
+      "points": 10,
+      "color": "#e2a979"
+    },
+    {
+      "name": "face_shadow",
+      "type": "MESH",
+      "points": 6,
+      "color": "#a87255"
+    },
+    {
+      "name": "ear",
+      "type": "MESH",
+      "points": 6,
+      "color": "#a87255"
+    },
+    {
+      "name": "ear_inner",
+      "type": "MESH",
+      "points": 5,
+      "color": "#dc9d73"
+    },
+    {
+      "name": "hair_mass",
+      "type": "MESH",
+      "points": 29,
+      "color": "#342820"
+    },
+    {
+      "name": "hair_warm_plane",
+      "type": "MESH",
+      "points": 10,
+      "color": "#62432d"
+    },
+    {
+      "name": "hair_dark_temples",
+      "type": "MESH",
+      "points": 7,
+      "color": "#261f1b"
+    },
+    {
+      "name": "hair_forelock",
+      "type": "MESH",
+      "points": 10,
+      "color": "#3e2b20"
+    },
+    {
+      "name": "eye_white",
+      "type": "MESH",
+      "points": 5,
+      "color": "#d8d1b9"
+    },
+    {
+      "name": "eye_iris",
+      "type": "MESH",
+      "points": 5,
+      "color": "#2e443e"
+    },
+    {
+      "name": "coat_button_1",
+      "type": "MESH",
+      "points": 5,
+      "color": "#9a7240"
+    },
+    {
+      "name": "coat_button_2",
+      "type": "MESH",
+      "points": 5,
+      "color": "#9a7240"
+    },
+    {
+      "name": "coat_button_3",
+      "type": "MESH",
+      "points": 5,
+      "color": "#9a7240"
+    },
+    {
+      "name": "pocket_patch",
+      "type": "MESH",
+      "points": 5,
+      "color": "#364c4d"
+    },
+    {
+      "name": "hair_strand_1",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#9a6b43",
+      "width_pixels": 1.7
+    },
+    {
+      "name": "hair_strand_2",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#95633f",
+      "width_pixels": 1.3
+    },
+    {
+      "name": "hair_strand_3",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#8c5d3b",
+      "width_pixels": 1.3
+    },
+    {
+      "name": "hair_strand_4",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#765235",
+      "width_pixels": 1.3
+    },
+    {
+      "name": "eyebrow",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#442e24",
+      "width_pixels": 1.2
+    },
+    {
+      "name": "eyelid",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#554138",
+      "width_pixels": 0.8
+    },
+    {
+      "name": "nose_bridge",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#b77d5c",
+      "width_pixels": 0.8
+    },
+    {
+      "name": "mouth",
+      "type": "CURVE",
+      "points": 2,
+      "color": "#875a4c",
+      "width_pixels": 0.9
+    },
+    {
+      "name": "jaw",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#925d4b",
+      "width_pixels": 0.9
+    },
+    {
+      "name": "coat_front_seam",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#182d30",
+      "width_pixels": 1.1
+    },
+    {
+      "name": "coat_back_seam",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#183137",
+      "width_pixels": 1.0
+    },
+    {
+      "name": "coat_waist_fold",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#6b7770",
+      "width_pixels": 1.0
+    },
+    {
+      "name": "pocket_edge",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#1d3336",
+      "width_pixels": 1.0
+    },
+    {
+      "name": "coat_hem",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#1c3032",
+      "width_pixels": 1.1
+    },
+    {
+      "name": "trailing_pants_knee_fold",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#343929",
+      "width_pixels": 1.2
+    },
+    {
+      "name": "stance_pants_knee_fold",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#393e2c",
+      "width_pixels": 1.2
+    },
+    {
+      "name": "trailing_pants_cuff",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#c1af89",
+      "width_pixels": 2.8
+    },
+    {
+      "name": "stance_pants_cuff",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#c1af89",
+      "width_pixels": 2.8
+    },
+    {
+      "name": "trailing_boot_laces",
+      "type": "CURVE",
+      "points": 5,
+      "color": "#a68259",
+      "width_pixels": 1.1
+    },
+    {
+      "name": "stance_boot_laces",
+      "type": "CURVE",
+      "points": 5,
+      "color": "#a68259",
+      "width_pixels": 1.1
+    },
+    {
+      "name": "trailing_boot_sole",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#211919",
+      "width_pixels": 2.0
+    },
+    {
+      "name": "stance_boot_sole",
+      "type": "CURVE",
+      "points": 4,
+      "color": "#211919",
+      "width_pixels": 2.0
+    },
+    {
+      "name": "hand_finger_seam",
+      "type": "CURVE",
+      "points": 3,
+      "color": "#9c654c",
+      "width_pixels": 0.8
+    }
+  ],
+  "camera": "660x720 orthographic; ortho_scale=7.2; same frame coordinates as v053 A",
+  "actual_A_frame_sha256": "ca247499a443f8959714d0c5dc5a64a0150eaf66f2824d02413a0cb94179c5c5",
+  "actual_photo_crop_sha256": "569f0aefd0c659aa871c2c2cc523bf8bafe563646bb45eb68db5bbd67ac50bcc",
+  "method": "manual point-authored reference-based redraw; sampled palette; no puppet deformation, automatic trace, or generated inbetweens"
+}

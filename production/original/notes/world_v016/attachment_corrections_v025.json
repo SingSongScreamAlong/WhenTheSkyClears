@@ -1,0 +1,16 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v025.blend",
+  "verified_additional_findings": [
+    {
+      "finding": "Identical woods paintings at two depths projected at nearly the same size",
+      "old_far_over_near_ratio": 1.0690537084398977,
+      "new_ratio": 0.6841943734015346,
+      "correction": "Far row physically smaller; foreground transitions now use a separate whole-tree painting."
+    },
+    {
+      "finding": "Whole smoke cards had independent root translation drivers",
+      "correction": "Origins relocated to emitters; object location drivers removed, with upward billow/scale retained."
+    }
+  ],
+  "source_panorama": "New wide painting generating; v025 not the final background checkpoint."
+}

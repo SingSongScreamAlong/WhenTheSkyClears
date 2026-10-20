@@ -1,0 +1,1273 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\world_minimum_v058\\WTSC_World_Development_v058_Packed.blend",
+  "source_sha256": "13c2aee075315131eac6f85d9d726b766051a84edffa961f4ec38ecf7029a890",
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\procedural_cut_v064\\native\\WTSC_Procedural_Full_Trailer_v064.blend",
+  "native_sha256": "caac0a93ddf8f7ae03f5ca7b002a9c1ca14e0d2242d5861165471e88f3af4d35",
+  "world_scene": "WTSC_PROCEDURAL_COLOR_WORLD_v064",
+  "picture_scene": "WTSC_PROCEDURAL_FULL_CUT_v064",
+  "master_scene": "WTSC_PROCEDURAL_MASTER_106S_v064",
+  "checks": {
+    "world_geometry_uvs_transforms_visibility_actions_camera_exact": true,
+    "mask_and_credits_exact": true,
+    "original_packed_pixels_unchanged": true,
+    "original_pair_materials_retained": true,
+    "original_action_curves_exact": true
+  },
+  "all_checks_pass": true,
+  "unchanged_mask_and_credits_signature": true,
+  "mask_signature": "cfa90ff07555842e9600aaa24c422149dc6ab87b04d076ba5bf2f0b282071658",
+  "controller": "V064 | global procedural color loss | BOTH children",
+  "property": "charcoal_progress",
+  "driver_expression": "3*(min(max(((frame-1)/24-start)/max(end-start,0.001),0),1))**2-2*(min(max(((frame-1)/24-start)/max(end-start,0.001),0),1))**3",
+  "start_seconds": 0,
+  "finish_seconds": 96,
+  "palette_keyframes": 0,
+  "global_palette_samples": [
+    {
+      "frame": 1,
+      "seconds": 0.0,
+      "progress": 0.0,
+      "camera": [
+        0.0,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 433,
+      "seconds": 18.0,
+      "progress": 0.09228515625,
+      "camera": [
+        25.5,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 841,
+      "seconds": 35.0,
+      "progress": 0.3018414378166199,
+      "camera": [
+        45.400001525878906,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 937,
+      "seconds": 39.0,
+      "progress": 0.36102294921875,
+      "camera": [
+        51.37333297729492,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1056,
+      "seconds": 43.958333333333336,
+      "progress": 0.436998188495636,
+      "camera": [
+        58.77777862548828,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1057,
+      "seconds": 44.0,
+      "progress": 0.43764469027519226,
+      "camera": [
+        58.84000015258789,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1201,
+      "seconds": 50.0,
+      "progress": 0.5312319397926331,
+      "camera": [
+        67.79999542236328,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1609,
+      "seconds": 67.0,
+      "progress": 0.7813698053359985,
+      "camera": [
+        89.79999542236328,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 1921,
+      "seconds": 80.0,
+      "progress": 0.9259259104728699,
+      "camera": [
+        118.0,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 2161,
+      "seconds": 90.0,
+      "progress": 0.98876953125,
+      "camera": [
+        142.0,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 2305,
+      "seconds": 96.0,
+      "progress": 1.0,
+      "camera": [
+        153.2970733642578,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 2400,
+      "seconds": 99.95833333333333,
+      "progress": 1.0,
+      "camera": [
+        160.75,
+        -16.0,
+        3.0
+      ]
+    },
+    {
+      "frame": 2401,
+      "seconds": 100.0,
+      "progress": 1.0,
+      "camera": [
+        160.75,
+        -16.0,
+        3.0
+      ]
+    }
+  ],
+  "monotonic_samples": 13,
+  "color_material": {
+    "material": "V064 | ORIGINAL held pair / full painted color and original charcoal",
+    "mix_node": "V064 | full color to charcoal | shared time",
+    "factor_socket": 0,
+    "factor_default": 0.0,
+    "factor_meaning": "0 full painted color; 1 reviewed v063 neutral charcoal values retaining facial and cloth detail",
+    "object": "v015 | Near-black painted fill | GP vector clipped",
+    "original_material": "v039 | Charcoal pair | restrained source-connected rim",
+    "original_uv": "Registered original painted drawing",
+    "original_image": "Pair_Painterly_Near_Age_v015.png",
+    "original_charcoal_node": "Hue/Saturation/Value",
+    "original_lit_source": "v040 source-connected charcoal contour.002",
+    "original_internal_links_preserved": true,
+    "surface_render_method": "DITHERED",
+    "inputs": {
+      "palettes": "WTSC_LOCAL_WORKSPACE\\locomotion\\full_color_character_v038\\scripts\\color_materials.py",
+      "girl_registration": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\evidence\\FINISH_BUILD.json",
+      "girl_face_paint": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\textures\\WTSC_Girl_Face_Finish_Study_v050.png"
+    },
+    "palettes": {
+      "skin": {
+        "range": 0.055,
+        "stops": [
+          [
+            0,
+            "744b36"
+          ],
+          [
+            0.2,
+            "a97754"
+          ],
+          [
+            0.6,
+            "c99b73"
+          ],
+          [
+            1,
+            "dfba92"
+          ]
+        ]
+      },
+      "hair": {
+        "range": 0.09,
+        "stops": [
+          [
+            0,
+            "1a1513"
+          ],
+          [
+            0.25,
+            "473326"
+          ],
+          [
+            0.65,
+            "795b40"
+          ],
+          [
+            1,
+            "a48660"
+          ]
+        ]
+      },
+      "coat": {
+        "range": 0.065,
+        "stops": [
+          [
+            0,
+            "17292e"
+          ],
+          [
+            0.2,
+            "3f6267"
+          ],
+          [
+            0.55,
+            "6c8988"
+          ],
+          [
+            1,
+            "9ca99b"
+          ]
+        ]
+      },
+      "linen": {
+        "range": 0.055,
+        "stops": [
+          [
+            0,
+            "4d554f"
+          ],
+          [
+            0.25,
+            "8b9382"
+          ],
+          [
+            0.65,
+            "b8bba3"
+          ],
+          [
+            1,
+            "d8d3b7"
+          ]
+        ]
+      },
+      "trousers": {
+        "range": 0.085,
+        "stops": [
+          [
+            0,
+            "252d28"
+          ],
+          [
+            0.25,
+            "4d5747"
+          ],
+          [
+            0.65,
+            "777d62"
+          ],
+          [
+            1,
+            "a2a087"
+          ]
+        ]
+      },
+      "shoes": {
+        "range": 0.1,
+        "stops": [
+          [
+            0,
+            "201d1b"
+          ],
+          [
+            0.25,
+            "49372a"
+          ],
+          [
+            0.65,
+            "766049"
+          ],
+          [
+            1,
+            "a38c68"
+          ]
+        ]
+      }
+    },
+    "source_pixel_masks": {
+      "boy_trousers": [
+        [
+          [
+            573,
+            535
+          ],
+          [
+            657,
+            553
+          ],
+          [
+            628,
+            623
+          ],
+          [
+            575,
+            701
+          ],
+          [
+            557,
+            755
+          ],
+          [
+            538,
+            794
+          ],
+          [
+            470,
+            770
+          ],
+          [
+            486,
+            721
+          ],
+          [
+            536,
+            638
+          ],
+          [
+            559,
+            574
+          ]
+        ],
+        [
+          [
+            634,
+            537
+          ],
+          [
+            692,
+            536
+          ],
+          [
+            728,
+            599
+          ],
+          [
+            752,
+            668
+          ],
+          [
+            768,
+            741
+          ],
+          [
+            786,
+            779
+          ],
+          [
+            686,
+            805
+          ],
+          [
+            675,
+            771
+          ],
+          [
+            653,
+            717
+          ],
+          [
+            628,
+            657
+          ],
+          [
+            600,
+            607
+          ]
+        ]
+      ],
+      "boy_coat": [
+        [
+          [
+            609,
+            241
+          ],
+          [
+            669,
+            252
+          ],
+          [
+            704,
+            290
+          ],
+          [
+            720,
+            337
+          ],
+          [
+            746,
+            383
+          ],
+          [
+            780,
+            418
+          ],
+          [
+            804,
+            450
+          ],
+          [
+            775,
+            478
+          ],
+          [
+            741,
+            471
+          ],
+          [
+            718,
+            445
+          ],
+          [
+            739,
+            540
+          ],
+          [
+            691,
+            560
+          ],
+          [
+            537,
+            548
+          ],
+          [
+            552,
+            491
+          ],
+          [
+            535,
+            477
+          ],
+          [
+            484,
+            459
+          ],
+          [
+            509,
+            400
+          ],
+          [
+            548,
+            332
+          ],
+          [
+            579,
+            280
+          ]
+        ]
+      ],
+      "boy_hair": [
+        [
+          [
+            528,
+            35
+          ],
+          [
+            775,
+            35
+          ],
+          [
+            775,
+            239
+          ],
+          [
+            713,
+            257
+          ],
+          [
+            678,
+            277
+          ],
+          [
+            609,
+            259
+          ],
+          [
+            535,
+            241
+          ]
+        ]
+      ],
+      "skin": [
+        [
+          [
+            484,
+            460
+          ],
+          [
+            549,
+            486
+          ],
+          [
+            536,
+            514
+          ],
+          [
+            528,
+            560
+          ],
+          [
+            505,
+            586
+          ],
+          [
+            459,
+            578
+          ],
+          [
+            454,
+            533
+          ],
+          [
+            475,
+            503
+          ]
+        ],
+        [
+          [
+            730,
+            474
+          ],
+          [
+            786,
+            454
+          ],
+          [
+            818,
+            494
+          ],
+          [
+            835,
+            504
+          ],
+          [
+            842,
+            482
+          ],
+          [
+            854,
+            458
+          ],
+          [
+            868,
+            431
+          ],
+          [
+            898,
+            428
+          ],
+          [
+            937,
+            457
+          ],
+          [
+            925,
+            487
+          ],
+          [
+            890,
+            526
+          ],
+          [
+            866,
+            557
+          ],
+          [
+            844,
+            579
+          ],
+          [
+            809,
+            577
+          ],
+          [
+            793,
+            560
+          ],
+          [
+            788,
+            539
+          ],
+          [
+            772,
+            520
+          ],
+          [
+            752,
+            502
+          ]
+        ],
+        [
+          [
+            1100,
+            492
+          ],
+          [
+            1116,
+            509
+          ],
+          [
+            1152,
+            540
+          ],
+          [
+            1169,
+            557
+          ],
+          [
+            1173,
+            582
+          ],
+          [
+            1164,
+            600
+          ],
+          [
+            1141,
+            602
+          ],
+          [
+            1125,
+            582
+          ],
+          [
+            1124,
+            563
+          ],
+          [
+            1113,
+            541
+          ],
+          [
+            1100,
+            523
+          ]
+        ]
+      ],
+      "girl_cuff_protection": [
+        [
+          [
+            866,
+            431
+          ],
+          [
+            880,
+            415
+          ],
+          [
+            906,
+            422
+          ],
+          [
+            941,
+            451
+          ],
+          [
+            938,
+            463
+          ],
+          [
+            920,
+            479
+          ],
+          [
+            887,
+            454
+          ],
+          [
+            872,
+            445
+          ]
+        ]
+      ],
+      "boy_linen": [
+        [
+          [
+            607,
+            242
+          ],
+          [
+            634,
+            247
+          ],
+          [
+            670,
+            268
+          ],
+          [
+            682,
+            294
+          ],
+          [
+            671,
+            308
+          ],
+          [
+            645,
+            281
+          ],
+          [
+            610,
+            258
+          ]
+        ],
+        [
+          [
+            675,
+            264
+          ],
+          [
+            695,
+            280
+          ],
+          [
+            708,
+            295
+          ],
+          [
+            698,
+            303
+          ],
+          [
+            683,
+            286
+          ]
+        ],
+        [
+          [
+            500,
+            429
+          ],
+          [
+            548,
+            447
+          ],
+          [
+            563,
+            468
+          ],
+          [
+            552,
+            491
+          ],
+          [
+            487,
+            460
+          ]
+        ],
+        [
+          [
+            756,
+            443
+          ],
+          [
+            781,
+            429
+          ],
+          [
+            804,
+            451
+          ],
+          [
+            793,
+            470
+          ],
+          [
+            754,
+            500
+          ],
+          [
+            730,
+            478
+          ]
+        ]
+      ],
+      "boots": [
+        [
+          [
+            466,
+            801
+          ],
+          [
+            503,
+            807
+          ],
+          [
+            540,
+            827
+          ],
+          [
+            547,
+            851
+          ],
+          [
+            579,
+            876
+          ],
+          [
+            587,
+            905
+          ],
+          [
+            552,
+            918
+          ],
+          [
+            487,
+            899
+          ],
+          [
+            429,
+            869
+          ],
+          [
+            432,
+            842
+          ]
+        ],
+        [
+          [
+            723,
+            808
+          ],
+          [
+            768,
+            807
+          ],
+          [
+            785,
+            828
+          ],
+          [
+            821,
+            838
+          ],
+          [
+            850,
+            842
+          ],
+          [
+            869,
+            867
+          ],
+          [
+            859,
+            888
+          ],
+          [
+            820,
+            905
+          ],
+          [
+            716,
+            909
+          ],
+          [
+            709,
+            878
+          ]
+        ],
+        [
+          [
+            860,
+            832
+          ],
+          [
+            1009,
+            832
+          ],
+          [
+            1018,
+            919
+          ],
+          [
+            860,
+            919
+          ]
+        ],
+        [
+          [
+            1110,
+            829
+          ],
+          [
+            1270,
+            829
+          ],
+          [
+            1270,
+            919
+          ],
+          [
+            1110,
+            919
+          ]
+        ]
+      ]
+    },
+    "boy_face_polygon": [
+      [
+        737,
+        143
+      ],
+      [
+        739,
+        155
+      ],
+      [
+        734,
+        167
+      ],
+      [
+        733,
+        181
+      ],
+      [
+        744,
+        192
+      ],
+      [
+        744,
+        202
+      ],
+      [
+        738,
+        210
+      ],
+      [
+        738,
+        220
+      ],
+      [
+        732,
+        232
+      ],
+      [
+        723,
+        241
+      ],
+      [
+        708,
+        242
+      ],
+      [
+        691,
+        238
+      ],
+      [
+        681,
+        235
+      ],
+      [
+        674,
+        249
+      ],
+      [
+        669,
+        269
+      ],
+      [
+        650,
+        257
+      ],
+      [
+        627,
+        245
+      ],
+      [
+        638,
+        231
+      ],
+      [
+        639,
+        217
+      ],
+      [
+        646,
+        206
+      ],
+      [
+        650,
+        200
+      ],
+      [
+        641,
+        195
+      ],
+      [
+        639,
+        184
+      ],
+      [
+        641,
+        174
+      ],
+      [
+        647,
+        169
+      ],
+      [
+        655,
+        173
+      ],
+      [
+        660,
+        183
+      ],
+      [
+        665,
+        183
+      ],
+      [
+        673,
+        173
+      ],
+      [
+        682,
+        167
+      ],
+      [
+        691,
+        161
+      ],
+      [
+        705,
+        157
+      ],
+      [
+        719,
+        149
+      ]
+    ],
+    "authored_boy_profile": {
+      "native": "WTSC_LOCAL_WORKSPACE\\work\\color_arc_v063\\native\\WTSC_Shared_Color_To_Charcoal_v063.blend",
+      "source_material": "V044 preserved paint | V040 PAINT | complete fixed child profile",
+      "source_image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "source_emission": "Emission",
+      "source_branch": "Unlit ImageTexture Color; original source interpolation/projection retained",
+      "registration": "WTSC_LOCAL_WORKSPACE\\locomotion\\character_design_finish_v040\\evidence\\NATIVE_PAINTED_BUILD.json",
+      "source_uv": "Registered original painted drawing",
+      "original_uv_to_local_xz": [
+        [
+          2.8488838064046154,
+          6.539964580998259e-08,
+          -1.0836663880679742
+        ],
+        [
+          -5.116115348840114e-07,
+          1.6033490765926763,
+          -0.057931706519470216
+        ]
+      ],
+      "max_native_fit_residual_m": 6.364798599278743e-08,
+      "rest_occupancy": [
+        [
+          -0.15164513830414017,
+          0.21809636521959863
+        ],
+        [
+          1.0904817719796676,
+          1.4517038714479074
+        ]
+      ],
+      "atlas_head_pixel_bounds": [
+        12,
+        23,
+        440,
+        482
+      ],
+      "old_head_region": [
+        [
+          [
+            528,
+            35
+          ],
+          [
+            775,
+            35
+          ],
+          [
+            775,
+            239
+          ],
+          [
+            713,
+            257
+          ],
+          [
+            678,
+            277
+          ],
+          [
+            609,
+            259
+          ],
+          [
+            535,
+            241
+          ]
+        ]
+      ],
+      "jaw_neck_fallback_polygon": [
+        [
+          620,
+          232
+        ],
+        [
+          648,
+          239
+        ],
+        [
+          675,
+          245
+        ],
+        [
+          691,
+          235
+        ],
+        [
+          717,
+          232
+        ],
+        [
+          732,
+          230
+        ],
+        [
+          729,
+          246
+        ],
+        [
+          709,
+          251
+        ],
+        [
+          693,
+          251
+        ],
+        [
+          682,
+          263
+        ],
+        [
+          673,
+          274
+        ],
+        [
+          648,
+          267
+        ],
+        [
+          622,
+          251
+        ]
+      ],
+      "jaw_skin_row_bounds": [
+        [
+          360,
+          173,
+          361
+        ],
+        [
+          372,
+          159,
+          351
+        ],
+        [
+          384,
+          152,
+          346
+        ],
+        [
+          396,
+          141,
+          260
+        ],
+        [
+          408,
+          137,
+          249
+        ],
+        [
+          420,
+          132,
+          243
+        ],
+        [
+          432,
+          126,
+          236
+        ]
+      ],
+      "jaw_skin_source": "Existing authored atlas skin; uncovered pixels only",
+      "alpha_usage": "Atlas alpha selects interior COLOR only; original silhouette alpha path untouched",
+      "excluded": "No copied V060 light/flash or V063 color-arc drivers"
+    },
+    "limits": [
+      "Held original combined drawing only; no gait, pose, head-turn or topology changes.",
+      "Boy body uses existing v038 ramps; head reuses the actual unlit authored v040/v063 profile painting.",
+      "Exact source UV/atlas fit does not alter the held outline; any differing authored silhouette falls back to source palettes.",
+      "Body masks are authored in original source pixels and need native seam/hand/boot review.",
+      "Girl face is existing v050 registered artwork; original hair, braid and dark costume remain.",
+      "Original charcoal/luma protection/fire/rim control graph stays intact; only final Emission link changes.",
+      "Additive original light delta is retained over the new base; no new lighting or world grading.",
+      "No original material/data/UV/image pixels are edited; no new raster artwork is generated.",
+      "Final native uses the reviewed v063 neutral charcoal ramp, not the helper original oldLit endpoint; painted facial detail is preserved."
+    ],
+    "procedural_saturation_node": "V064 | continuous pigment saturation loss",
+    "saturation_method": "1 minus shared global progress, with detail-preserving charcoal values",
+    "charcoal_tones": [
+      [
+        0.0,
+        0.006
+      ],
+      [
+        0.06,
+        0.014
+      ],
+      [
+        0.22,
+        0.032
+      ],
+      [
+        0.5,
+        0.068
+      ],
+      [
+        1.0,
+        0.12
+      ]
+    ],
+    "root_refinement": "Original oldLit branch retained internally; final endpoint refined to reviewed v063 neutral charcoal, so natural painted facial features remain visible."
+  },
+  "arc": {
+    "controller": "V064 | global procedural color loss | BOTH children",
+    "property": "charcoal_progress",
+    "object_count": 1,
+    "material_count": 1,
+    "children": 2,
+    "endpoint": "Reviewed v063 neutral charcoal values retaining painted facial and cloth detail",
+    "skipped": []
+  },
+  "scope": "Full106-second cut with procedural color loss for BOTH ORIGINAL full-cut children. Preserved full-cut held drawings, route, layered painted sets, title and credits. Palette only; v063 first-danger acting remains a separate preserved branch, not stretched into a full gait.",
+  "inherited_world_reference": "WTSC_WORLD_FOREGROUND_v058d",
+  "mask_reference_v040_verified": true,
+  "mask_reference_source_sha256": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f"
+}

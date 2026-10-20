@@ -1,0 +1,278 @@
+{
+  "status": "LOCAL BOUNDED FACADE VISUAL GATE PASSED; isolated proof; not production adoption",
+  "accepted_native": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v057\\WTSC_Continuous_Facade_Source_Lighting_TEST_v057.blend",
+  "accepted_native_sha256": "87c897b5ccc178b1288f5d614eeaa34d642b8e8ac2c239bcd2ab50a79569361a",
+  "actual_4K_frames": [
+    1201,
+    1225,
+    1249
+  ],
+  "review_scope": "Continuous facade, porch and source-lighting material proof at the three specified still compositions.",
+  "visual_findings": [
+    "Purposeful painterly plaster, stone, timber and tile planes replace the previous photographic patch and texture-over-blur methods.",
+    "The spatial perRGB normalization removes the candidate warm lighting drift and retains the inherited muted facade colour/value hierarchy.",
+    "No abrupt rectangular patch edge or lower material cutoff is visible in the three full frames and inspected native joins.",
+    "Window/door/porch anchors measure0..1source-pixel candidate displacement;source geometry/camera remains unchanged.",
+    "The v056 enlarged pit is corrected: v057 retains original pit source cores and their rims;visible dark-pit native area and center match baseline at all3frames.",
+    "Original broken-window region,lower foliage/rubble witness regions and all pixels outside the projected edit envelope match baseline exactly.",
+    "The wider painted region remains spatially fixed as the camera translates;the original diagonal shadow direction/value hierarchy continues across the new surface."
+  ],
+  "technical_preservation": {
+    "source_sha256": "796a6cafff68acfbcc110e92a38d2a5b0c75ea3188b63e95ae059ea16cf640c8",
+    "source_unchanged": true,
+    "original_object_fingerprints_equal": true,
+    "original_object_count": 437,
+    "original_actions_equal": true,
+    "actions_count": 41,
+    "original_child_material_values_equal": true,
+    "child_object_material_sets": 14,
+    "scene_ranges_fps_equal": true,
+    "camera_samples_equal": true,
+    "cold_reopen_pass": true,
+    "unpacked_images": []
+  },
+  "source_candidate_library_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "source_candidate_version": 0,
+  "source_candidate_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "actual_candidate_artwork_dimensions": [
+    1536,
+    1024
+  ],
+  "original_source_crop_dimensions": [
+    624,
+    416
+  ],
+  "candidate_alpha": {
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": "0",
+    "path": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v056\\WTSC_Continuous_Facade_Painterly_Candidate.png",
+    "sha256": "ddca0933d4cf19052891b1a92541a624f6c41493055838e72bae78b1a609ba4b",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "transparent_fraction": 0.05573399861653646,
+    "partial_alpha_fraction": 0.9442660013834635,
+    "fully_opaque_fraction": 0.0,
+    "source_box": [
+      824,
+      324,
+      1448,
+      740
+    ]
+  },
+  "alpha_handling": "Candidate alpha not used for world silhouette;original opacity dependencies verified identical.",
+  "native_pit_measurements": [
+    {
+      "frame": 1201,
+      "source_center": [
+        1044.0833333333333,
+        497.91666666666663
+      ],
+      "before": {
+        "area_pixels": 150,
+        "center_native": [
+          3047.173333333333,
+          82.26
+        ]
+      },
+      "after": {
+        "area_pixels": 150,
+        "center_native": [
+          3047.173333333333,
+          82.26
+        ]
+      },
+      "center_delta": [
+        0.0,
+        0.0
+      ],
+      "area_ratio": 1.0
+    },
+    {
+      "frame": 1225,
+      "source_center": [
+        1044.0833333333333,
+        497.91666666666663
+      ],
+      "before": {
+        "area_pixels": 150,
+        "center_native": [
+          2516.173333333333,
+          82.26
+        ]
+      },
+      "after": {
+        "area_pixels": 150,
+        "center_native": [
+          2516.173333333333,
+          82.26
+        ]
+      },
+      "center_delta": [
+        0.0,
+        0.0
+      ],
+      "area_ratio": 1.0
+    },
+    {
+      "frame": 1249,
+      "source_center": [
+        1044.0833333333333,
+        497.91666666666663
+      ],
+      "before": {
+        "area_pixels": 148,
+        "center_native": [
+          1985.2837837837837,
+          82.27702702702703
+        ]
+      },
+      "after": {
+        "area_pixels": 148,
+        "center_native": [
+          1985.2837837837837,
+          82.27702702702703
+        ]
+      },
+      "center_delta": [
+        0.0,
+        0.0
+      ],
+      "area_ratio": 1.0
+    }
+  ],
+  "native_preservation_regions": [
+    {
+      "frame": 1201,
+      "outside_projected_edit_envelope_max_delta": 0,
+      "outside_projected_edit_envelope_changed_pixels": 0,
+      "protected_window_interior": {
+        "native_box": [
+          2129,
+          0,
+          2813,
+          925
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "protected_lower_left_foliage": {
+        "native_box": [
+          1956,
+          829,
+          3359,
+          1292
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "protected_lower_right_foliage": null,
+      "pit_core_41x41_max_delta": 0,
+      "pit_core_41x41_changed_pixels": 0
+    },
+    {
+      "frame": 1225,
+      "outside_projected_edit_envelope_max_delta": 0,
+      "outside_projected_edit_envelope_changed_pixels": 0,
+      "protected_window_interior": {
+        "native_box": [
+          1598,
+          0,
+          2283,
+          925
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "protected_lower_left_foliage": {
+        "native_box": [
+          1425,
+          829,
+          2828,
+          1292
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "protected_lower_right_foliage": null,
+      "pit_core_41x41_max_delta": 0,
+      "pit_core_41x41_changed_pixels": 0
+    },
+    {
+      "frame": 1249,
+      "outside_projected_edit_envelope_max_delta": 0,
+      "outside_projected_edit_envelope_changed_pixels": 0,
+      "protected_window_interior": {
+        "native_box": [
+          1067,
+          0,
+          1752,
+          925
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "protected_lower_left_foliage": {
+        "native_box": [
+          894,
+          829,
+          2297,
+          1292
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "protected_lower_right_foliage": {
+        "native_box": [
+          3572,
+          623,
+          3840,
+          1292
+        ],
+        "max_channel_delta": 0,
+        "changed_pixels": 0
+      },
+      "pit_core_41x41_max_delta": 0,
+      "pit_core_41x41_changed_pixels": 0
+    }
+  ],
+  "mean_plaster_colour_delta_channels_0_to_255": {
+    "1201": [
+      -0.2431488037109375,
+      -0.1873321533203125,
+      -0.200042724609375
+    ],
+    "1225": [
+      -0.24365234375,
+      -0.186126708984375,
+      -0.2013702392578125
+    ],
+    "1249": [
+      -0.2227020263671875,
+      -0.17382049560546875,
+      -0.1853179931640625
+    ]
+  },
+  "limitations": [
+    "Source candidate is1536x1024,not requested3456x2304;actual test renders are3840x2160.",
+    "Only the bounded facade material still gate is accepted;this does not claim whole-film/Arcane quality completion or normal-speed temporal verification.",
+    "Original window source/depth proof is retained;facade is a painted card with existing window geometry,not a newly rebuilt3Dschool.",
+    "Existing source children remain unchanged;the separate current character task is not integrated.",
+    "Approved colour progression proposal remains separate;no automatic production adoption."
+  ],
+  "render_coordination": "One Blender job at a time,threads2;all render jobs finished and slot released.",
+  "review_board": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v057\\WTSC_Continuous_Painterly_Facade_v057_4K_Before_After.jpg",
+  "review_board_sha256": "71199b48a58a2e0b7bf88a8caabbf749f5c067033980665e6f3a0266ba99e467",
+  "review_library": {
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "file_name": "WTSC_Continuous_Painterly_Facade_v057_4K_Before_After.jpg",
+    "fresh_process_native_metadata_verified": true
+  },
+  "delivery_native": "WTSC_LOCAL_WORKSPACE\\work\\world_facade_v057\\WTSC_Continuous_Painterly_Facade_Proof_v057.blend"
+}

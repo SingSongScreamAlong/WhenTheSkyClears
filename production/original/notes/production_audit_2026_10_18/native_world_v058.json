@@ -1,0 +1,531 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\work\\world_minimum_v058\\WTSC_World_Development_v058_Packed.blend",
+  "blender": "5.2.2 LTS",
+  "sha256": "13c2aee075315131eac6f85d9d726b766051a84edffa961f4ec38ecf7029a890",
+  "scenes": [
+    {
+      "name": "WTSC_FULL_FILM_KNOCKOUT_v040",
+      "frames": [
+        1,
+        2544
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v058\\WTSC_FULL_FILM_KNOCKOUT_v040\\frame_",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 7,
+      "types": {
+        "CAMERA": 1,
+        "FONT": 6
+      },
+      "camera": "v032 | Flat title camera",
+      "markers": [],
+      "strips": []
+    },
+    {
+      "name": "WTSC_MASTER_4K_100S_v031",
+      "frames": [
+        1,
+        2400
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v058\\WTSC_MASTER_4K_100S_v031\\frame_",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 0,
+      "types": {},
+      "camera": null,
+      "markers": [
+        {
+          "name": "VILLAGE | warm painted depth",
+          "frame": 1
+        },
+        {
+          "name": "ABANDONED VILLAGE",
+          "frame": 433
+        },
+        {
+          "name": "WOODS | two wind layers",
+          "frame": 673
+        },
+        {
+          "name": "SCHOOL",
+          "frame": 961
+        },
+        {
+          "name": "CAMP | wind and smoke",
+          "frame": 1249
+        },
+        {
+          "name": "BATTLEFIELD",
+          "frame": 1609
+        },
+        {
+          "name": "TITLE TERRAIN",
+          "frame": 1921
+        },
+        {
+          "name": "MUSIC FADE",
+          "frame": 2161
+        },
+        {
+          "name": "FINAL WIDE",
+          "frame": 2305
+        },
+        {
+          "name": "PICTURE FADE",
+          "frame": 2353
+        }
+      ],
+      "strips": [
+        {
+          "name": "PICTURE | editable painted world camera",
+          "type": "SCENE",
+          "start": 1,
+          "end_exclusive": 2401,
+          "scene": "WTSC_WORLD_FOREGROUND_v058d",
+          "sound": null,
+          "sound_packed": null
+        },
+        {
+          "name": "MUSIC | supplied 100s WAV",
+          "type": "SOUND",
+          "start": 1,
+          "end_exclusive": 2401,
+          "scene": null,
+          "sound": "WTSC_LOCAL_WORKSPACE\\shots\\world\\..\\..\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+          "sound_packed": true
+        }
+      ]
+    },
+    {
+      "name": "WTSC_MASTER_4K_106S_v040",
+      "frames": [
+        1,
+        2544
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v058\\WTSC_MASTER_4K_106S_v040\\frame_",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 0,
+      "types": {},
+      "camera": null,
+      "markers": [
+        {
+          "name": "Knockout begins |0s",
+          "frame": 1
+        },
+        {
+          "name": "Music fade |90s",
+          "frame": 2161
+        },
+        {
+          "name": "LastS clears / credits |100s",
+          "frame": 2401
+        },
+        {
+          "name": "Silent credits end |106s",
+          "frame": 2545
+        }
+      ],
+      "strips": [
+        {
+          "name": "MUSIC | original start + original 90\u2013100 fade",
+          "type": "SOUND",
+          "start": 1,
+          "end_exclusive": 2401,
+          "scene": null,
+          "sound": "WTSC_LOCAL_WORKSPACE\\shots\\world\\..\\..\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+          "sound_packed": true
+        },
+        {
+          "name": "PICTURE | native full-film knockout0\u2013100 + credits100\u2013106",
+          "type": "SCENE",
+          "start": 1,
+          "end_exclusive": 2545,
+          "scene": "WTSC_FULL_FILM_KNOCKOUT_v040",
+          "sound": null,
+          "sound_packed": null
+        }
+      ]
+    },
+    {
+      "name": "WTSC_WORLD_FOREGROUND_v058d",
+      "frames": [
+        1,
+        2400
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v058\\WTSC_WORLD_FOREGROUND_v058d\\frame_",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 430,
+      "types": {
+        "MESH": 416,
+        "CAMERA": 2,
+        "GREASEPENCIL": 1,
+        "LIGHT": 6,
+        "FONT": 1,
+        "EMPTY": 4
+      },
+      "camera": "v032 | Camera follows shared pair center",
+      "markers": [
+        {
+          "name": "VILLAGE | warm painted depth",
+          "frame": 1
+        },
+        {
+          "name": "ABANDONED VILLAGE",
+          "frame": 433
+        },
+        {
+          "name": "WOODS | two wind layers",
+          "frame": 673
+        },
+        {
+          "name": "SCHOOL",
+          "frame": 961
+        },
+        {
+          "name": "CAMP | wind and smoke",
+          "frame": 1249
+        },
+        {
+          "name": "BATTLEFIELD",
+          "frame": 1609
+        },
+        {
+          "name": "TITLE TERRAIN",
+          "frame": 1921
+        },
+        {
+          "name": "MUSIC FADE",
+          "frame": 2161
+        },
+        {
+          "name": "FINAL WIDE",
+          "frame": 2305
+        },
+        {
+          "name": "PICTURE FADE",
+          "frame": 2353
+        }
+      ],
+      "strips": []
+    }
+  ],
+  "images": [
+    {
+      "name": "Bakery_Detail_Repaint.png",
+      "source": "FILE",
+      "size": [
+        1356,
+        1159
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Bakery_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Battlefield_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Battlefield_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Camp_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Camp_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Countryside_Continuous_Panorama.png",
+      "source": "FILE",
+      "size": [
+        1983,
+        793
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v026\\Countryside_Continuous_Panorama.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Foreground_Bank_Paintover_v047.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+      "external_path_exists": true,
+      "users": 8
+    },
+    {
+      "name": "Foreground_Ground.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Foreground_Ground.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Ground_Painted_v001.png",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Ground_Painted_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "High_Crown_Oak.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v030\\High_Crown_Oak.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Painted_Smoke_Wisp_v016.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\Painted_Smoke_Wisp_v016.png",
+      "external_path_exists": true,
+      "users": 31
+    },
+    {
+      "name": "Painterly_Flame.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\v036\\Painterly_Flame.png",
+      "external_path_exists": true,
+      "users": 8
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 7
+    },
+    {
+      "name": "Path_Detail_Repaint.png",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Path_Detail_Repaint.png.001",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "School_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\School_v001.png",
+      "external_path_exists": true,
+      "users": 3
+    },
+    {
+      "name": "Village_Empty_v001.png",
+      "source": "FILE",
+      "size": [
+        1671,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Empty_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Village_Middle.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Village_Middle.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Woods_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Woods_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v056\\WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+      "external_path_exists": true,
+      "users": 1
+    }
+  ],
+  "unpacked_missing_images": [],
+  "libraries": [],
+  "sounds": [
+    {
+      "name": "When_The_Sky_Clears_Trailer_Music_100s.wav",
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\..\\..\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Arial Black",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Black.001",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Regular",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\arial.ttf"
+    },
+    {
+      "name": "Bfont Regular",
+      "packed": false,
+      "path": "<builtin>"
+    },
+    {
+      "name": "Impact Regular.001",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\impact.ttf"
+    }
+  ],
+  "actors": [
+    {
+      "name": "v016 | CHILDREN | held painterly near-age pair",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 3,
+        "keys": 410,
+        "key_range": [
+          1.0,
+          2400.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "layers": [
+        {
+          "name": "HELD | near-age painted children | native vector boundary",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": 41,
+  "driver_count": 912,
+  "drivers_with_missing_targets": [],
+  "invalid_drivers_after_samples": [],
+  "color_controller": null,
+  "color_samples": [],
+  "source_sha256_unchanged": true,
+  "inspection_limits": "Read-only native sample; auto-run source scripts disabled. No claim of all-frame render, playback quality, or artistic approval."
+}

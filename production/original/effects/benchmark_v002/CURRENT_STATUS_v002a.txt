@@ -1,0 +1,35 @@
+WHEN THE SKY CLEARS - FX BENCHMARK HANDOFF
+Updated 2026-10-17 15:25 UTC
+
+Motion proof complete: WTSC_Explosion_Motion_Proof_1080_v002a.mp4.
+1920x1080,24fps,96frames,4seconds,1,066,325bytes,opaqueH.264BT.709.
+All96 source PNGs and the entire encoded MP4 decoded successfully.
+Six actual decoded MP4 frames were visually inspected at native resolution:
+source1814,1817,1825,1845,1875,1890. The ignition crop edge is feathered.
+Foreground masking and fixed ground contact remain visible; smoke and dust
+retain fine edges. The late smoke has persistent painted lobe structure and
+core glow. That remains an artistic limitation, not an acceptance pass.
+
+4K still: previews/WTSC_Explosion_Benchmark_4K_v002.png,3840x2160.
+Native append pack: native/WTSC_Hero_Eruption_Collection_v002a.blend.
+Fresh append test: native/WTSC_FX_Append_Test_v002a.blend and its640x640RGBA
+preview.43objects,2packed original images,no invalid evaluated drivers.
+start_frame10,size1.2 and moved-origin anchoring passed in the fresh scene.
+See BENCHMARK_README.txt for import controls, alpha and placement instructions.
+
+Overnight state reconciled: the old owned CPU render was absent,22 partial
+frames remained separately preserved, and the prior pause/status write had
+not completed. Main production render was complete before new GPU work began.
+No duplicate old job was started. One isolated32sampleEevee GPU preview used
+two CPU threads and completed96frames in43.31seconds. No shared UI was used.
+The v038 production source SHA256 remains unchanged:
+f08c0d6f004b85693b124a1c84aac10617ca7742475979e2d80ca3d6961778ed
+
+This is ONE unaccepted detailed benchmark, not a finished reusable FX suite.
+V001 remains a rejected technical prototype. Do not integrate it as final art.
+Camera/children/environment are held at the actual source shot frame1825.
+Smoke uses original2.5D paint on animated meshes; debris is native3D geometry.
+Internal billows and much of their light are painted, not volumetric fluid flow.
+Held light-response/foreground maps must be re-evaluated for a moving camera.
+No DLSS/upscaling, cinematic acceptance or complete moving-trailer test claimed.
+No remaining technical blocker to reviewing the supplied motion proof.

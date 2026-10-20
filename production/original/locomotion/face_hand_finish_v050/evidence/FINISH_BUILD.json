@@ -1,0 +1,802 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\locomotion\\connected_model_fit_v049\\native\\WTSC_Connected_Model_Fit_v049.blend",
+  "source_sha256": "2f78c5cd86b96d437d97a165b8b61473bcd6c9d1ab284015c229bfb11c6f9a94",
+  "all_existing_actions_preserved": {
+    "BOY | ANKLE_farAction": "aecec00160b923085dd62d3db13d93e6e71b1e39b8fcd96a870238ae4ad8e86e",
+    "BOY | ANKLE_nearAction": "cf91bb06da7028727dcc358f978ce360e0d2494039b88eda743cbea392e2fe4a",
+    "BOY | RELAXED_HAND_TORSO_ANCHOR_farAction": "8178b6bafb3a3a7fd893b9b5a6b13134ee383fd01d2c6b976d64c9f07810133c",
+    "BOY | RELAXED_HAND_TORSO_ANCHOR_nearAction": "13842e7b45136360f94bbe052bec181b0f519427621e9180482e3071bc089470",
+    "LEAVES ORIGINAL | 30fps | Armature|A_Walk_F_RootMotion_Masc|BaseLayer": "feda11476d92b7c330aa2233faa194ff7702ec84d4866f614bdbb25bcde2fd7a",
+    "PERF_GIRL | original head and attached braid | head turn drawing exposure": "25dee60dde8b5f98486600b9647aaea333538f604121338e9b75b420a5f037b5",
+    "V007 girl passing back-view drawing | head turn drawing exposure": "8a23d095ff52b97c298028c4ed369fb5c1aa633de8092dd1d60fdd1f781c80d2",
+    "V007_BOY | articulated drawn hand far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | articulated drawn hand near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn breathing and hem120F": "f714ed46d64cc1dfe37699715c80cdf6dff9396201a3ae8ee6dc6b36bc97da7b",
+    "V007_BOY | drawn leg far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn leg near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn skin far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn skin near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn sleeve far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn sleeve near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn source gray cuff far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | drawn source gray cuff near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | redrawn support boot far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY | redrawn support boot near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_BOY__SUPPORTED_RECOVERY_120F": "7ef39c667c17199dc54678eeab9be3a4473858899374f82e9f7fc5007e2df569",
+    "V007_GIRL | articulated drawn hand far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | articulated drawn hand near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | braid turn followthrough": "ee786118012cfb1a52e6bf24d4df7f11daffafbd07c18ff56f6c1a30f5b98d5d",
+    "V007_GIRL | drawn breathing and hem120F": "f714ed46d64cc1dfe37699715c80cdf6dff9396201a3ae8ee6dc6b36bc97da7b",
+    "V007_GIRL | drawn leg far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn leg near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn skin far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn skin near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn sleeve far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn sleeve near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn source gray cuff far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | drawn source gray cuff near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | original-painted look toward boy | head turn drawing exposure": "c5b37217177c84c577fa384b632fd3bd08c4bf893467e32fd5fa182474e9bd54",
+    "V007_GIRL | redrawn support boot far | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL | redrawn support boot near | native drawings120F": "762dca2d31a13289e869fd9e340747e0c59b07a38fd48ee27eee286e05fbdfe1",
+    "V007_GIRL__SUPPORTED_RECOVERY_120F": "65a4e0201cf1fe585737439583195cb0a966abe108318def1ba6b141fa41e255",
+    "V007_ROOT__PRESERVED_DISTANCE_120F": "4013113fbebc5ca226b3c9529344780c529dc85164124395a9c9225aba5a67ae",
+    "V020 | far | ACTUAL_SOLE_PIVOTAction": "38595608951f09fd2c54a167d1a916001d951724b394d5d664cdb67ef55c90fd",
+    "V020 | far | SOLE_BONE_GOALAction": "10fd1c064d50ab0b99464dbef27dd07764215dfac3fe15ce70aa4d847a044352",
+    "V020 | near | ACTUAL_SOLE_PIVOTAction": "64c58be476f37b2b351302acbc7d50421ad513c385cb7585e0dd97dd47413895",
+    "V020 | near | SOLE_BONE_GOALAction": "ec897ad8b06dff14d5c98933841d34403caf2317846df2d1ba4f7ad2db20a8d8",
+    "V020 | SOURCE52 | exact FBX sampled posesAction": "c461d64a8bf9c057e2e06df3a71a122a9db130aa92ca04a4b8dc3fe44ff2d997",
+    "V021 | CHILD_SUPPORT_TRAVELAction.001": "34623df0297072a223127e7cdc6489fd87eee7371b3d89123a38d6166668e579",
+    "V024 continuous far trouser drawingAction": "0e40d194530d31a0a8057e642a6d48e2647d7783dafe99d035820ace048428f3",
+    "V024 continuous near trouser drawingAction": "0e40d194530d31a0a8057e642a6d48e2647d7783dafe99d035820ace048428f3",
+    "V024 | continuous shaped and shaded painted coatAction": "960afdf78455436273fb3bf733cd1271624c556bb61ca7e1a3c22362854f4ee4",
+    "V027 | authored loading | HIP": "39c21ead0d4b3c2107ec5192a5f3c4c4065f79ccabd3122844a740aa1ce5795e",
+    "V027 | authored loading | LEG_POLE_far": "3a858e522fca907c7b26616a87b3c022b87be846721eaebb8ac11eb70402b15e",
+    "V027 | authored loading | LEG_POLE_near": "751e3205af079a8dc3f20292a4c17446458d8ab6a83ac7e40523802b680653a1",
+    "V028 | upper-body succession | ARM_POLE_far": "0fd709dc6b1355ceedcd8fd71958a73db49b4275764e153a3ba9ec8f43ccd1f3",
+    "V028 | upper-body succession | ARM_POLE_near": "ef65abe0b2720411cde18789d3d427c46c26d89bf2be9505b80a32ad67c55ff7",
+    "V028 | upper-body succession | CHEST": "a4d7875f6aa9696c272e6c67746b6c17473c2aa2c5b46e37d1803493c12db113",
+    "V028 | upper-body succession | HEAD_PROFILE": "b1ee9642452b43431d291dd61cf459e6431a4b3081c55cfcd18654bc6aec92b7",
+    "V028 | upper-body succession | WRIST_far": "3d8db0c58091b0aa03ffc352dc09618b1a4af44452d30c82add7ebf8b639365f",
+    "V028 | upper-body succession | WRIST_near": "40f3ba01eb43a3017404a18bf950e68c2126008b705148aac147a19270433b3a",
+    "V033 | far | canonical painted shoeAction": "2b483b06bb166af62ec830da1258225b479f93d52cd924097c7e51a620effd81",
+    "V033 | near | canonical painted shoeAction": "a1e53fab3b092aabb2219d8cfcc4884c8d64130cde58315592df684810c71cbd",
+    "V035 | arm branch only | original leg curves retained": "29f2ab5e6bf863df89fb13e5c44aa8741ac4b85e9499a2327a173f566dc5ea12",
+    "V037 | garment review values | static pose selectorAction": "33737ad9d63f7a2ee2bccec36589e6dfd1f53bb238fb6172bae308e2d3b28354",
+    "V037 | one attached shoulder rib waist hem surfaceAction": "118b758a6ff9c5a2052835902ec69f07accdfb2aa51cfd190d41d2bc436b893b",
+    "V039 | existing loading to coat compression": "06a3cb507614e04d0b981d78ad929c32860b78c27c623a2379bca06938ca65f5",
+    "V039 | one cycle coat breakdowns | quarter-frame": "896ef97680d3cb1e92600641ed7bdb058bd9df8bdbb40197be92d27cd9446a3c",
+    "V041 | folded collar | original31frameclock": "fdb4f108e77c72f114cd445d071ab6ccaca1d3e4a4d9a3dc648f22a8ae88bfd2",
+    "V044 orthographic metric cameraAction": "7e5b2e058bba2836c05d63dcb0070aee84cde5537bfb4c33af9afbe425d73d5f",
+    "V046 BOY | painted continuous rolled sleeve farAction": "9fb7ae368baf433f0354e73ccb7241229561469e31821ca8c5cd60be8097f3db",
+    "V046 BOY | painted continuous rolled sleeve nearAction": "9fb7ae368baf433f0354e73ccb7241229561469e31821ca8c5cd60be8097f3db",
+    "V046 BOY | painted rigid-axis trousers farAction.001": "5536e16ac8c7f3605566a0b63a313b46304e462e7df1fa77afb6848be4a83acb",
+    "V046 BOY | painted rigid-axis trousers nearAction.001": "5536e16ac8c7f3605566a0b63a313b46304e462e7df1fa77afb6848be4a83acb",
+    "V046 GIRL | original painted stockings farAction.001": "5536e16ac8c7f3605566a0b63a313b46304e462e7df1fa77afb6848be4a83acb",
+    "V046 GIRL | original painted stockings nearAction.001": "5536e16ac8c7f3605566a0b63a313b46304e462e7df1fa77afb6848be4a83acb",
+    "V046 GIRL | painted continuous rolled sleeve farAction": "9fb7ae368baf433f0354e73ccb7241229561469e31821ca8c5cd60be8097f3db",
+    "V046 GIRL | painted continuous rolled sleeve nearAction": "9fb7ae368baf433f0354e73ccb7241229561469e31821ca8c5cd60be8097f3db",
+    "V048 BOY | steady ordinary walk |32frames": "be846da4b3545dd5c8c7e3756303598fa3b1a13bcf932548af8d7a4d97157c16",
+    "V048 GIRL | steady ordinary walk |32frames": "58d951f5905ddfd0ca8f4cb1f7dd57bb7eb4a591f9508bdab76c442c90056b6a",
+    "V048 | shared travel | steady .73125mpsAction": "9efe1ee6bb603acd2bd5d191ba6082b6c0f8d415046b3c3921768334db69ef1c"
+  },
+  "bones": {
+    "BOY": {
+      "pelvis": [
+        [
+          0.0,
+          0.0,
+          0.7519999742507935
+        ],
+        [
+          0.0,
+          0.0,
+          0.8519999980926514
+        ]
+      ],
+      "chest": [
+        [
+          0.0,
+          0.0,
+          0.8519999980926514
+        ],
+        [
+          0.0,
+          0.0,
+          1.1449999809265137
+        ]
+      ],
+      "head": [
+        [
+          0.0,
+          0.0,
+          1.2209999561309814
+        ],
+        [
+          0.0,
+          0.0,
+          1.4149999618530273
+        ]
+      ],
+      "upper_arm_near": [
+        [
+          0.0,
+          0.0,
+          1.1449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.9100000262260437
+        ]
+      ],
+      "forearm_near": [
+        [
+          0.0,
+          0.0,
+          0.9100000262260437
+        ],
+        [
+          0.0,
+          0.0,
+          0.7100000381469727
+        ]
+      ],
+      "hand_near": [
+        [
+          0.0,
+          0.0,
+          0.7100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.5800000429153442
+        ]
+      ],
+      "thigh_near": [
+        [
+          0.0,
+          0.0,
+          0.7519999742507935
+        ],
+        [
+          0.0,
+          0.0,
+          0.4169999957084656
+        ]
+      ],
+      "shin_near": [
+        [
+          0.0,
+          0.0,
+          0.4169999957084656
+        ],
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ]
+      ],
+      "foot_near": [
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ],
+        [
+          0.10499999672174454,
+          0.0,
+          0.02500000037252903
+        ]
+      ],
+      "upper_arm_far": [
+        [
+          0.0,
+          0.0,
+          1.1449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.9100000262260437
+        ]
+      ],
+      "forearm_far": [
+        [
+          0.0,
+          0.0,
+          0.9100000262260437
+        ],
+        [
+          0.0,
+          0.0,
+          0.7100000381469727
+        ]
+      ],
+      "hand_far": [
+        [
+          0.0,
+          0.0,
+          0.7100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.5800000429153442
+        ]
+      ],
+      "thigh_far": [
+        [
+          0.0,
+          0.0,
+          0.7519999742507935
+        ],
+        [
+          0.0,
+          0.0,
+          0.4169999957084656
+        ]
+      ],
+      "shin_far": [
+        [
+          0.0,
+          0.0,
+          0.4169999957084656
+        ],
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ]
+      ],
+      "foot_far": [
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ],
+        [
+          0.10499999672174454,
+          0.0,
+          0.02500000037252903
+        ]
+      ]
+    },
+    "GIRL": {
+      "pelvis": [
+        [
+          0.0,
+          0.0,
+          0.7459999918937683
+        ],
+        [
+          0.0,
+          0.0,
+          0.8460000157356262
+        ]
+      ],
+      "chest": [
+        [
+          0.0,
+          0.0,
+          0.8460000157356262
+        ],
+        [
+          0.0,
+          0.0,
+          1.1369999647140503
+        ]
+      ],
+      "head": [
+        [
+          0.0,
+          0.0,
+          1.2120000123977661
+        ],
+        [
+          0.0,
+          0.0,
+          1.4049999713897705
+        ]
+      ],
+      "upper_arm_near": [
+        [
+          0.0,
+          0.0,
+          1.1369999647140503
+        ],
+        [
+          0.0,
+          0.0,
+          0.9039999842643738
+        ]
+      ],
+      "forearm_near": [
+        [
+          0.0,
+          0.0,
+          0.9039999842643738
+        ],
+        [
+          0.0,
+          0.0,
+          0.7049999833106995
+        ]
+      ],
+      "hand_near": [
+        [
+          0.0,
+          0.0,
+          0.7049999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.574999988079071
+        ]
+      ],
+      "thigh_near": [
+        [
+          0.0,
+          0.0,
+          0.7459999918937683
+        ],
+        [
+          0.0,
+          0.0,
+          0.4129999876022339
+        ]
+      ],
+      "shin_near": [
+        [
+          0.0,
+          0.0,
+          0.4129999876022339
+        ],
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ]
+      ],
+      "foot_near": [
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ],
+        [
+          0.10499999672174454,
+          0.0,
+          0.02500000037252903
+        ]
+      ],
+      "upper_arm_far": [
+        [
+          0.0,
+          0.0,
+          1.1369999647140503
+        ],
+        [
+          0.0,
+          0.0,
+          0.9039999842643738
+        ]
+      ],
+      "forearm_far": [
+        [
+          0.0,
+          0.0,
+          0.9039999842643738
+        ],
+        [
+          0.0,
+          0.0,
+          0.7049999833106995
+        ]
+      ],
+      "hand_far": [
+        [
+          0.0,
+          0.0,
+          0.7049999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.574999988079071
+        ]
+      ],
+      "thigh_far": [
+        [
+          0.0,
+          0.0,
+          0.7459999918937683
+        ],
+        [
+          0.0,
+          0.0,
+          0.4129999876022339
+        ]
+      ],
+      "shin_far": [
+        [
+          0.0,
+          0.0,
+          0.4129999876022339
+        ],
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ]
+      ],
+      "foot_far": [
+        [
+          0.0,
+          0.0,
+          0.0949999988079071
+        ],
+        [
+          0.10499999672174454,
+          0.0,
+          0.02500000037252903
+        ]
+      ]
+    }
+  },
+  "head_geometry_hashes": {
+    "V044 BOY | head": "2ea19b4c4abe1067173dae0970af70efb6dd2bdcf3f1e1474e61760687f65011",
+    "V044 GIRL | head": "dbb15238e075a5590e9c5a1bad1d2b255d538bbba6f3c396de49b1c01b156d0f"
+  },
+  "head_geometry_unchanged": true,
+  "head_outer_alpha": "Original pair texture alpha connection unchanged. New generated alpha does not own silhouette.",
+  "face_registration": {
+    "gen_image_size": [
+      1167,
+      1347
+    ],
+    "gen_y": "665+(original_py-229)*4.2",
+    "gen_x": "4.2*original_px+piecewise edge shift",
+    "edge_shift": [
+      [
+        194,
+        -3514.2
+      ],
+      [
+        196,
+        -3494.2
+      ],
+      [
+        198,
+        -3498.2
+      ],
+      [
+        200,
+        -3501.2
+      ],
+      [
+        202,
+        -3501.0
+      ],
+      [
+        204,
+        -3503.0
+      ],
+      [
+        206,
+        -3493.0
+      ],
+      [
+        208,
+        -3495.8
+      ],
+      [
+        210,
+        -3504.8
+      ],
+      [
+        212,
+        -3504.8
+      ],
+      [
+        214,
+        -3498.6000000000004
+      ],
+      [
+        216,
+        -3499.8
+      ],
+      [
+        218,
+        -3493.8
+      ],
+      [
+        220,
+        -3495.2
+      ],
+      [
+        222,
+        -3489.4000000000005
+      ],
+      [
+        224,
+        -3488.0
+      ],
+      [
+        226,
+        -3494.8
+      ],
+      [
+        228,
+        -3495.0
+      ],
+      [
+        230,
+        -3495.0
+      ],
+      [
+        232,
+        -3493.8
+      ],
+      [
+        234,
+        -3496.6000000000004
+      ],
+      [
+        236,
+        -3496.2
+      ],
+      [
+        238,
+        -3496.8
+      ],
+      [
+        240,
+        -3492.6000000000004
+      ],
+      [
+        242,
+        -3492.8
+      ],
+      [
+        244,
+        -3492.0
+      ],
+      [
+        246,
+        -3494.0
+      ],
+      [
+        248,
+        -3494.8
+      ],
+      [
+        250,
+        -3491.2
+      ],
+      [
+        252,
+        -3493.2
+      ],
+      [
+        254,
+        -3495.4000000000005
+      ],
+      [
+        256,
+        -3496.4000000000005
+      ],
+      [
+        258,
+        -3494.0
+      ],
+      [
+        260,
+        -3495.6000000000004
+      ],
+      [
+        262,
+        -3498.4000000000005
+      ],
+      [
+        264,
+        -3497.2
+      ],
+      [
+        266,
+        -3495.0
+      ],
+      [
+        268,
+        -3496.0
+      ],
+      [
+        270,
+        -3494.8
+      ],
+      [
+        272,
+        -3495.6000000000004
+      ],
+      [
+        274,
+        -3492.2
+      ],
+      [
+        276,
+        -3485.4000000000005
+      ],
+      [
+        278,
+        -3495.6000000000004
+      ],
+      [
+        280,
+        -3502.6000000000004
+      ],
+      [
+        282,
+        -3503.4000000000005
+      ],
+      [
+        284,
+        -3504.2
+      ],
+      [
+        286,
+        -3504.0
+      ],
+      [
+        288,
+        -3503.8
+      ],
+      [
+        290,
+        -3503.6000000000004
+      ],
+      [
+        292,
+        -3503.4000000000005
+      ],
+      [
+        294,
+        -3503.2
+      ],
+      [
+        296,
+        -3507.2
+      ],
+      [
+        298,
+        -3506.0
+      ],
+      [
+        300,
+        -3509.0
+      ],
+      [
+        302,
+        -3505.8
+      ],
+      [
+        304,
+        -3494.8
+      ],
+      [
+        306,
+        -3495.6000000000004
+      ],
+      [
+        308,
+        -3502.6000000000004
+      ],
+      [
+        310,
+        -3503.2
+      ],
+      [
+        312,
+        -3503.6000000000004
+      ],
+      [
+        314,
+        -3505.0
+      ]
+    ],
+    "original_hair_protection_left_boundary": [
+      [
+        194,
+        1071
+      ],
+      [
+        200,
+        1055
+      ],
+      [
+        210,
+        1040
+      ],
+      [
+        220,
+        1024
+      ],
+      [
+        230,
+        992
+      ],
+      [
+        240,
+        990
+      ],
+      [
+        250,
+        1000
+      ],
+      [
+        258,
+        1005
+      ],
+      [
+        268,
+        986
+      ],
+      [
+        278,
+        979
+      ],
+      [
+        290,
+        972
+      ],
+      [
+        305,
+        980
+      ],
+      [
+        315,
+        997
+      ]
+    ],
+    "mask": "Generated warm skin only, within original-space face/ear/neck eligibility."
+  },
+  "hand_changes": [
+    {
+      "object": "V046 BOY | original painted hand near",
+      "developed_wrist_to_tip_target_m": 0.145,
+      "measured_developed_centreline_m": 0.14499999940914374,
+      "curl_degrees": 23.0,
+      "projected_centreline_m": 0.1426555445060911,
+      "wrist_and_proximal_palm_error_m": 0.0,
+      "source_paint_and_uvs_preserved": true
+    },
+    {
+      "object": "V046 BOY | original painted hand far",
+      "developed_wrist_to_tip_target_m": 0.145,
+      "measured_developed_centreline_m": 0.14499999959678808,
+      "curl_degrees": 19.0,
+      "projected_centreline_m": 0.14339599711024933,
+      "wrist_and_proximal_palm_error_m": 0.0,
+      "source_paint_and_uvs_preserved": true
+    },
+    {
+      "object": "V046 GIRL | original painted hand near",
+      "developed_wrist_to_tip_target_m": 0.144,
+      "measured_developed_centreline_m": 0.14399999951303097,
+      "curl_degrees": 21.0,
+      "projected_centreline_m": 0.14206516566134073,
+      "wrist_and_proximal_palm_error_m": 0.0,
+      "source_paint_and_uvs_preserved": true
+    },
+    {
+      "object": "V046 GIRL | original painted hand far",
+      "developed_wrist_to_tip_target_m": 0.144,
+      "measured_developed_centreline_m": 0.14399999968087518,
+      "curl_degrees": 17.0,
+      "projected_centreline_m": 0.14272910773413178,
+      "wrist_and_proximal_palm_error_m": 0.0,
+      "source_paint_and_uvs_preserved": true
+    }
+  ],
+  "source_unchanged": true
+}

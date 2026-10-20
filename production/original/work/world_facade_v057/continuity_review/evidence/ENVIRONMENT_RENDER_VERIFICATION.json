@@ -1,0 +1,5047 @@
+{
+  "status": "PASS: BOUNDED ENVIRONMENT CONTINUITY REVIEW AT PREVIEW RESOLUTION",
+  "purpose": "Environment continuity review only; existing character animation unchanged.",
+  "source_native": "WTSC_LOCAL_WORKSPACE\\work\\world_facade_v057\\WTSC_Continuous_Painterly_Facade_Proof_v057.blend",
+  "source_sha256": "87c897b5ccc178b1288f5d614eeaa34d642b8e8ac2c239bcd2ab50a79569361a",
+  "source_unchanged": true,
+  "source_scene": "WTSC_CONTINUOUS_FACADE_SOURCE_LIGHTING_v057_TEST",
+  "frame_start": 1201,
+  "frame_end": 1249,
+  "frame_count": 49,
+  "source_fps": 24,
+  "source_fps_base": 1,
+  "duration_seconds": 2.0416666666666665,
+  "camera_traversal_seconds": 2.0,
+  "render_dimensions": [
+    1280,
+    720
+  ],
+  "samples": 32,
+  "threads": 2,
+  "render_elapsed_seconds": null,
+  "metadata_only_recovery": true,
+  "source_objects_actions_children_timing_preserved": true,
+  "object_count": 437,
+  "action_count": 41,
+  "child_material_sets": 14,
+  "fixed_facade_and_window_signature_unchanged_all49frames": false,
+  "facade_window_distinct_exact_state_count": 49,
+  "fixed_window_object_count": 32,
+  "fixed_window_objects": [
+    "v049 | arch sash front and wood returns",
+    "v049 | registered glass fragment 0",
+    "v049 | registered glass fragment 1",
+    "v049 | registered glass fragment 10",
+    "v049 | registered glass fragment 11",
+    "v049 | registered glass fragment 12",
+    "v049 | registered glass fragment 13",
+    "v049 | registered glass fragment 14",
+    "v049 | registered glass fragment 15",
+    "v049 | registered glass fragment 16",
+    "v049 | registered glass fragment 17",
+    "v049 | registered glass fragment 18",
+    "v049 | registered glass fragment 19",
+    "v049 | registered glass fragment 2",
+    "v049 | registered glass fragment 20",
+    "v049 | registered glass fragment 21",
+    "v049 | registered glass fragment 3",
+    "v049 | registered glass fragment 4",
+    "v049 | registered glass fragment 5",
+    "v049 | registered glass fragment 6",
+    "v049 | registered glass fragment 7",
+    "v049 | registered glass fragment 8",
+    "v049 | registered glass fragment 9",
+    "v049 | stationary overcast opening key",
+    "v049 | thick timber mullion 0",
+    "v049 | thick timber mullion 1",
+    "v049 | thick timber mullion 2",
+    "v049 | thick timber mullion 3",
+    "v049 | thick timber mullion 4",
+    "v049 | thick timber mullion 5",
+    "v049 | window deep room backing",
+    "v049 | window masonry reveal |35cm recess"
+  ],
+  "new_character_motion_authored": false,
+  "native_saved_or_modified": false,
+  "rows": [
+    {
+      "frame": 1201,
+      "source_seconds": 50.0,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          67.79999542236328
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "df4e8b6a99e0335d8c4f201595768522864ca270f68f60ba2e08f248a67c6438",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            1017.1633148193359,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            1017.1633148193359,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1215.0935363769531,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1236.6864013671875,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            642.8946685791016,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        695.0760650634766,
+        -13.695745468139648,
+        948.7872314453125,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1201.png"
+    },
+    {
+      "frame": 1202,
+      "source_seconds": 50.041666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          67.85391998291016
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "742f3fea180da5f915b987527bdb5ea5aff0b060f984c606732f0f125e1bf869",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            1009.7889709472656,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            1009.7889709472656,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1207.7191925048828,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1229.3121337890625,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            635.5204010009766,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        687.7017974853516,
+        -13.695745468139648,
+        941.4129638671875,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1202.png"
+    },
+    {
+      "frame": 1203,
+      "source_seconds": 50.083333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          67.9078369140625
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "9c64a93bc2d72a9e90bae4554ba76a533c7648a70e31f4b72285864ab54b647e",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            1002.415771484375,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            1002.415771484375,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1200.3459930419922,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1221.9388580322266,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            628.1471252441406,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        680.3285217285156,
+        -13.695745468139648,
+        934.0396881103516,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1203.png"
+    },
+    {
+      "frame": 1204,
+      "source_seconds": 50.125,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          67.96176147460938
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "32719ea050419ad4359dd314c593b2b3578e0fed3ac4cb8da9fe799dda8e47a6",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            995.0414276123047,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            995.0414276123047,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1192.9716491699219,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1214.5645141601562,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            620.772819519043,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        672.9542541503906,
+        -13.695745468139648,
+        926.6653442382812,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1204.png"
+    },
+    {
+      "frame": 1205,
+      "source_seconds": 50.166666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.01567840576172
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "5041bd8308801a373d8d86cde487b562aa762dcf87e43ccd56bc9774c77f3dff",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            987.6681518554688,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            987.6681518554688,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1185.598373413086,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1207.1913146972656,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            613.3995819091797,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        665.5809783935547,
+        -13.695745468139648,
+        919.2921447753906,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1205.png"
+    },
+    {
+      "frame": 1206,
+      "source_seconds": 50.208333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.0696029663086
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "791d6be3d683c73831652e80595ddee72bbb1d52a3aa0ad8a67b5dc9305650b1",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            980.2938842773438,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            980.2938842773438,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1178.224105834961,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1199.8169708251953,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            606.025276184082,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        658.2067108154297,
+        -13.695745468139648,
+        911.9178009033203,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1206.png"
+    },
+    {
+      "frame": 1207,
+      "source_seconds": 50.25,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.12352752685547
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "4c904bbed726b3bda4d659e790b934ddd0b4df41adf3eff3f1955ae04d6467b9",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            972.9196166992188,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            972.9196166992188,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1170.849838256836,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1192.4427032470703,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            598.6509704589844,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        650.8323669433594,
+        -13.695745468139648,
+        904.5435333251953,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1207.png"
+    },
+    {
+      "frame": 1208,
+      "source_seconds": 50.291666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.17744445800781
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "a19f1ba4f79094e0c2f2c0c0306fd68688d153aba0ae53dcd863f4a61016c05b",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            965.5463409423828,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            965.5463409423828,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1163.4765625,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1185.0694274902344,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            591.2777328491211,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        643.4591674804688,
+        -13.695745468139648,
+        897.1702575683594,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1208.png"
+    },
+    {
+      "frame": 1209,
+      "source_seconds": 50.333333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.23136901855469
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "8ded9dbf2154cac1567a663c8f3fc6ea7acc6adb94791e0690c7433ed1a874d6",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            958.1719970703125,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            958.1719970703125,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1156.102294921875,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1177.6951599121094,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            583.9034271240234,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        636.0848236083984,
+        -13.695745468139648,
+        889.7959899902344,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1209.png"
+    },
+    {
+      "frame": 1210,
+      "source_seconds": 50.375,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.28528594970703
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "013914aa0047ed54dae3d76023b01bfd1fbee4e397753db4f5337da7b6ee9f1c",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            950.7987976074219,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            950.7987976074219,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1148.729019165039,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1170.3218841552734,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            576.5301895141602,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        628.7115859985352,
+        -13.695745468139648,
+        882.4227142333984,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1210.png"
+    },
+    {
+      "frame": 1211,
+      "source_seconds": 50.416666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.3392105102539
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "7c9cd6e0979bb6b599ace52db8c0ace611ffe6802fc94aace3cc978d5ac8f1f2",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            943.4244537353516,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            943.4244537353516,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1141.3546752929688,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1162.9476165771484,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            569.1558837890625,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        621.3372802734375,
+        -13.695745468139648,
+        875.0484466552734,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1211.png"
+    },
+    {
+      "frame": 1212,
+      "source_seconds": 50.458333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.39313507080078
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "45e133374a670f8e0e725ff364f4abb210bf7d1e767e0a20176eee09bfec72fe",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            936.0501861572266,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            936.0501861572266,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1133.9804077148438,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1155.5732727050781,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            561.7815780639648,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        613.9629745483398,
+        -13.695745468139648,
+        867.6741027832031,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1212.png"
+    },
+    {
+      "frame": 1213,
+      "source_seconds": 50.5,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.44705200195312
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "fa84512c45042075756d6b188088f787a73d02e28c45007dc8275c94fdb0125f",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            928.6769104003906,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            928.6769104003906,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1126.6071319580078,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1148.1999969482422,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            554.4083023071289,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        606.5897369384766,
+        -13.695745468139648,
+        860.3008270263672,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1213.png"
+    },
+    {
+      "frame": 1214,
+      "source_seconds": 50.541666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.5009765625
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "0f3c518956d20d3343c7c1220408ed42e37429827a07c368aa27ee105741f45f",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            921.3026428222656,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            921.3026428222656,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1119.2328643798828,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1140.8257293701172,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            547.0340347290039,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        599.2154312133789,
+        -13.695745468139648,
+        852.9265594482422,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1214.png"
+    },
+    {
+      "frame": 1215,
+      "source_seconds": 50.583333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.55490112304688
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "66667dbe556a983eef7f1752a143b5ef12165afe18392a13b4546fa14002f1ee",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            913.9282989501953,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            913.9282989501953,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1111.8585205078125,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1133.4514617919922,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            539.6597290039062,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        591.8411254882812,
+        -13.695745468139648,
+        845.5522918701172,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1215.png"
+    },
+    {
+      "frame": 1216,
+      "source_seconds": 50.625,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.60881805419922
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "ccd6f6105ad5620b8a83c8dd7601a192634fbf0e983f58ad25e423970f79b70d",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            906.5550994873047,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            906.5550994873047,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1104.4853210449219,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1126.0781860351562,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            532.2864532470703,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        584.467887878418,
+        -13.695745468139648,
+        838.1790161132812,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1216.png"
+    },
+    {
+      "frame": 1217,
+      "source_seconds": 50.666666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.6627426147461
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "808cb97bf564bd230abc9e04bec69d27d22e9b407c45ccb9f461344108fad02f",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            899.1807556152344,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            899.1807556152344,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1097.1109771728516,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1118.703842163086,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            524.9121856689453,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        577.0935821533203,
+        -13.695745468139648,
+        830.8046722412109,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1217.png"
+    },
+    {
+      "frame": 1218,
+      "source_seconds": 50.708333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.71665954589844
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "728db737fecfbe0bb214375ad096fa1fedef84eb5330dce7a96887dc67f28a75",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            891.8075561523438,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            891.8075561523438,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1089.737777709961,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1111.3306427001953,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            517.5389099121094,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        569.7203063964844,
+        -13.695745468139648,
+        823.4314727783203,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1218.png"
+    },
+    {
+      "frame": 1219,
+      "source_seconds": 50.75,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.77058410644531
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "5086b703c96b73cc9fad8d8a101efe449c9580baa188bfc8cc3eacec67b5fe6d",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            884.4332122802734,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            884.4332122802734,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1082.3634338378906,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1103.956298828125,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            510.1646041870117,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        562.3460388183594,
+        -13.695745468139648,
+        816.05712890625,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1219.png"
+    },
+    {
+      "frame": 1220,
+      "source_seconds": 50.791666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.82450866699219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "0942ae262ed998c566d8c8f9d8e7a4280491c605081bae62068f3eda119a9d17",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            877.0589447021484,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            877.0589447021484,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1074.9891662597656,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1096.58203125,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            502.79029846191406,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        554.9717330932617,
+        -13.695745468139648,
+        808.682861328125,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1220.png"
+    },
+    {
+      "frame": 1221,
+      "source_seconds": 50.833333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.87842559814453
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "a930244a2aae7180e5480cc6962a04b15ac318aedf8a6606ef24c649f7960875",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            869.6856689453125,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            869.6856689453125,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1067.6158905029297,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1089.208755493164,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            495.4170608520508,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        547.5984573364258,
+        -13.695745468139648,
+        801.3095855712891,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1221.png"
+    },
+    {
+      "frame": 1222,
+      "source_seconds": 50.875,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.9323501586914
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "b07bd98f9256894d4bc3ddd5e0e7a74bf196dc0b41a1d782e0c037c2a6cef647",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            862.3114013671875,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            862.3114013671875,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1060.2416229248047,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1081.834487915039,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            488.0427551269531,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        540.2241516113281,
+        -13.695745468139648,
+        793.9353179931641,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1222.png"
+    },
+    {
+      "frame": 1223,
+      "source_seconds": 50.916666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          68.98626708984375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "7778caf96da7d5233f7b37e3df31f18fca6452454205aeee58f674950483f4c2",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            854.9381256103516,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            854.9381256103516,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1052.8683471679688,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1074.4612121582031,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            480.66951751708984,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        532.8509140014648,
+        -13.695745468139648,
+        786.5620422363281,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1223.png"
+    },
+    {
+      "frame": 1224,
+      "source_seconds": 50.958333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.04019165039062
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "bc292744bfb268369ec8a9193500bcd6039a7def95096a3bdf5929a9ed3d81d7",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            847.5637817382812,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            847.5637817382812,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1045.4940032958984,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1067.0869445800781,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            473.2952117919922,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        525.4766082763672,
+        -13.695745468139648,
+        779.1877746582031,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1224.png"
+    },
+    {
+      "frame": 1225,
+      "source_seconds": 51.0,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.0941162109375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "e704968df5c75a91d22ddf8874a1c2087de54ec41bcdb122c777b56540c85e53",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            840.1895141601562,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            840.1895141601562,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1038.1197357177734,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1059.7126007080078,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            465.92090606689453,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        518.1023025512695,
+        -13.695745468139648,
+        771.8134307861328,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1225.png"
+    },
+    {
+      "frame": 1226,
+      "source_seconds": 51.041666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.14803314208984
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "198c432b2f58f055937319aac44f44cf69d9a7817c5f24db6f20ebb6a79fd3eb",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            832.8162384033203,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            832.8162384033203,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1030.7464599609375,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1052.3394012451172,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            458.54766845703125,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        510.72906494140625,
+        -13.695745468139648,
+        764.4402313232422,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1226.png"
+    },
+    {
+      "frame": 1227,
+      "source_seconds": 51.083333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.20195770263672
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "e62e4e0f74af26c4c7b5a3b7477d14b1087c7c0befc54c0f06f16f8b20ac7ec8",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            825.4419708251953,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            825.4419708251953,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1023.3721923828125,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1044.9650573730469,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            451.1733627319336,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        503.3547592163086,
+        -13.695745468139648,
+        757.0658874511719,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1227.png"
+    },
+    {
+      "frame": 1228,
+      "source_seconds": 51.125,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.25587463378906
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "752695a34f8e4c5ba366d690a292a781d8f08ccffbd3d0d264adea1bffda2862",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            818.0686950683594,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            818.0686950683594,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1015.9989166259766,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1037.591781616211,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            443.80008697509766,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        495.9815216064453,
+        -13.695745468139648,
+        749.6926116943359,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1228.png"
+    },
+    {
+      "frame": 1229,
+      "source_seconds": 51.166666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.30979919433594
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "5b703b7949d8ebc6c6fa47d2f8e31c24556ab3f4cc4cbcaf660a36af7a71595d",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            810.6944274902344,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            810.6944274902344,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1008.6246490478516,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1030.217514038086,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            436.42581939697266,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        488.60721588134766,
+        -13.695745468139648,
+        742.3183441162109,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1229.png"
+    },
+    {
+      "frame": 1230,
+      "source_seconds": 51.208333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.36372375488281
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "c5eaaf0bf46519d9bc98da974837fb4bb5ae2ed950162bbb90c929daa2d62f1e",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            803.3200836181641,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            803.3200836181641,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            1001.2503051757812,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1022.8432464599609,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            429.051513671875,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        481.23291015625,
+        -13.695745468139648,
+        734.9440765380859,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1230.png"
+    },
+    {
+      "frame": 1231,
+      "source_seconds": 51.25,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.41764068603516
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "ce8ed87da5aed2a5840776d5e0a2416b42a972d3bf40ec67e91f802a47facfad",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            795.9468841552734,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            795.9468841552734,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            993.8771057128906,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1015.469970703125,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            421.67823791503906,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        473.8596725463867,
+        -13.695745468139648,
+        727.57080078125,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1231.png"
+    },
+    {
+      "frame": 1232,
+      "source_seconds": 51.291666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.47156524658203
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "88dc8c6a2f4e8572b3870fa7db7a88ed661bae0899454a204d8d1f80139e8f7b",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            788.5725402832031,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            788.5725402832031,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            986.5027618408203,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1008.0956268310547,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            414.3039321899414,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        466.48536682128906,
+        -13.695745468139648,
+        720.1964569091797,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1232.png"
+    },
+    {
+      "frame": 1233,
+      "source_seconds": 51.333333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.52548217773438
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "bc6e377edf245712f31041353b805c0849ad4fc5b05a9f424329838ea863e777",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            781.1992645263672,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            781.1992645263672,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            979.1294860839844,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            1000.7224273681641,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            406.9306945800781,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        459.1120910644531,
+        -13.695745468139648,
+        712.8232574462891,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1233.png"
+    },
+    {
+      "frame": 1234,
+      "source_seconds": 51.375,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.57940673828125
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "fb95c654612348e99f53b9a18d01dfed9006a3131d1f1f9ccc11a6fafd5112e2",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            773.8249969482422,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            773.8249969482422,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            971.7552185058594,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            993.3480834960938,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            399.55638885498047,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        451.73778533935547,
+        -13.695745468139648,
+        705.4489135742188,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1234.png"
+    },
+    {
+      "frame": 1235,
+      "source_seconds": 51.416666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.63333129882812
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "6cf94144867833721c68cff3f6de19d17080d9d7f901b4c5faa4051d195075b3",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            766.4507293701172,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            766.4507293701172,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            964.3809509277344,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            985.9738159179688,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            392.1820831298828,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        444.36351776123047,
+        -13.695745468139648,
+        698.0746459960938,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1235.png"
+    },
+    {
+      "frame": 1236,
+      "source_seconds": 51.458333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.68724822998047
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "b3021240788ccf1016a96f03912b5b6b356fcfc3ef409bc4dc494bceb22f3ac7",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            759.0774536132812,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            759.0774536132812,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            957.0076751708984,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            978.6005401611328,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            384.80884552001953,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        436.99024200439453,
+        -13.695745468139648,
+        690.7013702392578,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1236.png"
+    },
+    {
+      "frame": 1237,
+      "source_seconds": 51.5,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.74117279052734
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "b7455da37efab4c14149e3b803fdb3285d36b131ac1ba1815f47c8e52c801156",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            751.7031860351562,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            751.7031860351562,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            949.6334075927734,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            971.2262725830078,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            377.4345397949219,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        429.6159362792969,
+        -13.695745468139648,
+        683.3271026611328,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1237.png"
+    },
+    {
+      "frame": 1238,
+      "source_seconds": 51.541666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.79508972167969
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "fef3890e374ded8b4f8e86a73137ec6b4350febff74a8f95e5503ab5b11c6291",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            744.3299102783203,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            744.3299102783203,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            942.2601318359375,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            963.8529968261719,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            370.0613021850586,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        422.2426986694336,
+        -13.695745468139648,
+        675.9538269042969,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1238.png"
+    },
+    {
+      "frame": 1239,
+      "source_seconds": 51.583333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.84901428222656
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "832a3973d66d890e01251e0dbe30c060956cf7450dee5e9d15efbc5907c3fe49",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            736.95556640625,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            736.95556640625,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            934.8857879638672,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            956.4787292480469,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            362.68699645996094,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        414.86839294433594,
+        -13.695745468139648,
+        668.5795593261719,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1239.png"
+    },
+    {
+      "frame": 1240,
+      "source_seconds": 51.625,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.90293884277344
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "12bc7dd94242a0902f35e4137ce3db53d187fcdd819b5bb6c1f960139fc5ccad",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            729.581298828125,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            729.581298828125,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            927.5115203857422,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            949.1043853759766,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            355.3126907348633,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        407.4940872192383,
+        -13.695745468139648,
+        661.2052154541016,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1240.png"
+    },
+    {
+      "frame": 1241,
+      "source_seconds": 51.666666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.95685577392578
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "d3172c92efeb8427b9cb35826b65cf795765a587f54b4c227adaf41f93dc8ae5",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            722.2080230712891,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            722.2080230712891,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            920.1382446289062,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            941.7311096191406,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            347.939453125,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        400.120849609375,
+        -13.695745468139648,
+        653.8319396972656,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1241.png"
+    },
+    {
+      "frame": 1242,
+      "source_seconds": 51.708333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.01078033447266
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "b7065cbcd75e3c5082b71bd8766602195713ed65f95c3376332f6a0c36d98595",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            714.8337554931641,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            714.8337554931641,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            912.7639770507812,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            934.3568420410156,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            340.56514739990234,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        392.74654388427734,
+        -13.695745468139648,
+        646.4576721191406,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1242.png"
+    },
+    {
+      "frame": 1243,
+      "source_seconds": 51.75,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.06470489501953
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "d2dcf7b1f7f723d47d70c96715aa4972eefd6421daf4864c981cce6c961e4743",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            707.4594116210938,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            707.4594116210938,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            905.3896331787109,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            926.9825744628906,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            333.1908416748047,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        385.3722381591797,
+        -13.695745468139648,
+        639.083366394043,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1243.png"
+    },
+    {
+      "frame": 1244,
+      "source_seconds": 51.791666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.11862182617188
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "9f8d65f8c3a4fde8ae14fcd1a5bd2d3e6bbcfc6cd3d4614ef446c9debe3fbe6a",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            700.0862121582031,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            700.0862121582031,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            898.0164337158203,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            919.6092987060547,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            325.81756591796875,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        377.9990005493164,
+        -13.695745468139648,
+        631.7101287841797,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1244.png"
+    },
+    {
+      "frame": 1245,
+      "source_seconds": 51.833333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.17254638671875
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "d193643bb6b7612c564df86f7d7ceb950c6b5369f59b51091f9b85196f02f3d5",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            692.7118682861328,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            692.7118682861328,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            890.64208984375,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            912.2350311279297,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            318.4432792663574,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        370.62469482421875,
+        -13.695745468139648,
+        624.335823059082,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1245.png"
+    },
+    {
+      "frame": 1246,
+      "source_seconds": 51.875,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.2264633178711
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "0becb7717387ba1ff2e54bf19793718f0b8d4e4dddc9e54a9c58151cb27ad5ff",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            685.3386688232422,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            685.3386688232422,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            883.2688903808594,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            904.8617553710938,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            311.0700225830078,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        363.2514190673828,
+        -13.695745468139648,
+        616.9625854492188,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1246.png"
+    },
+    {
+      "frame": 1247,
+      "source_seconds": 51.916666666666664,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.28038787841797
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "0ee13be2af8ef3930241419a5533fc13e7dccf24f9f87a429cd4ffc97d06ce55",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            677.9643249511719,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            677.9643249511719,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            875.8945465087891,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            897.4874114990234,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            303.6957359313965,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        355.8771514892578,
+        -13.695745468139648,
+        609.5882797241211,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1247.png"
+    },
+    {
+      "frame": 1248,
+      "source_seconds": 51.958333333333336,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.33431243896484
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "098f7bfe935e324aa7c3dc6a6d8f00d5b82ace73be4e73194dcea60136121302",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            670.5900573730469,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            670.5900573730469,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            868.5202789306641,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            890.1131439208984,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            296.3214302062988,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        348.50284576416016,
+        -13.695745468139648,
+        602.2139739990234,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1248.png"
+    },
+    {
+      "frame": 1249,
+      "source_seconds": 52.0,
+      "camera_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.38822937011719
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_lens": 100.0,
+      "camera_shifts": [
+        -0.30000022053718567,
+        -0.26705533266067505
+      ],
+      "fixed_facade_and_window_signature": "785db8c1eab46bc8f6d5dce165d79bfc3e9d3cf8e89056e271cad7183cbe9e08",
+      "anchors": {
+        "plaster_shadow": {
+          "projected_center": [
+            663.2167816162109,
+            94.2665147781372
+          ],
+          "patch_size": 64,
+          "source_pixel": [
+            1045.0,
+            535.0
+          ]
+        },
+        "exposed_stone": {
+          "projected_center": [
+            663.2167816162109,
+            175.23815631866455
+          ],
+          "patch_size": 56,
+          "source_pixel": [
+            1045.0,
+            580.0
+          ]
+        },
+        "porch_tiles": {
+          "projected_center": [
+            861.1470031738281,
+            54.68037128448486
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1155.0,
+            513.0
+          ]
+        },
+        "door_surround": {
+          "projected_center": [
+            882.7398681640625,
+            157.24443912506104
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            1167.0,
+            570.0
+          ]
+        },
+        "left_join": {
+          "projected_center": [
+            288.9481735229492,
+            139.25076484680176
+          ],
+          "patch_size": 48,
+          "source_pixel": [
+            837.0,
+            560.0
+          ]
+        }
+      },
+      "window_review_box": [
+        341.1295700073242,
+        -13.695745468139648,
+        594.8407363891602,
+        308.39155197143555
+      ],
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\frames\\Environment_Continuity_1249.png"
+    }
+  ],
+  "state_variation_diagnostics": {
+    "node/v057 | continuous painterly facade source lighting | TEST ONLY/Hue/Saturation/Value/input1/Saturation": {
+      "first_changed_frame": 1202,
+      "at1201": 0.5600000023841858,
+      "changed_value": 0.5596528053283691
+    },
+    "node/v057 | continuous painterly facade source lighting | TEST ONLY/Math.003/input1/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.18854588270187378,
+      "changed_value": 0.19401846826076508
+    },
+    "node/v057 | continuous painterly facade source lighting | TEST ONLY/Math.004/input1/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.16034333407878876,
+      "changed_value": 0.12398616224527359
+    },
+    "node/v057 | continuous painterly facade source lighting | TEST ONLY/v040 v036 | School debris | fixed emitter fire_beat/output0/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.9923467040061951,
+      "changed_value": 1.0211498737335205
+    },
+    "node/v057 | continuous painterly facade source lighting | TEST ONLY/v040 v036 | Camp hearth | fixed emitter fire_beat/output0/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.8439123034477234,
+      "changed_value": 0.6525588631629944
+    },
+    "node/v049 | registered original painted stone front/Hue/Saturation/Value/input1/Saturation": {
+      "first_changed_frame": 1202,
+      "at1201": 0.5600000023841858,
+      "changed_value": 0.5596528053283691
+    },
+    "node/v049 | registered original painted stone front/Math.003/input1/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.18854588270187378,
+      "changed_value": 0.19401846826076508
+    },
+    "node/v049 | registered original painted stone front/Math.004/input1/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.16034333407878876,
+      "changed_value": 0.12398616224527359
+    },
+    "node/v049 | registered original painted stone front/v040 v036 | School debris | fixed emitter fire_beat/output0/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.9923467040061951,
+      "changed_value": 1.0211498737335205
+    },
+    "node/v049 | registered original painted stone front/v040 v036 | Camp hearth | fixed emitter fire_beat/output0/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.8439123034477234,
+      "changed_value": 0.6525588631629944
+    },
+    "node/v049 | recessed room | source-painted shadow variation/Hue/Saturation/Value/input1/Saturation": {
+      "first_changed_frame": 1202,
+      "at1201": 0.5600000023841858,
+      "changed_value": 0.5596528053283691
+    },
+    "node/v049 | recessed room | source-painted shadow variation/Math.003/input1/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.18854588270187378,
+      "changed_value": 0.19401846826076508
+    },
+    "node/v049 | recessed room | source-painted shadow variation/Math.004/input1/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.16034333407878876,
+      "changed_value": 0.12398616224527359
+    },
+    "node/v049 | recessed room | source-painted shadow variation/v040 v036 | School debris | fixed emitter fire_beat/output0/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.9923467040061951,
+      "changed_value": 1.0211498737335205
+    },
+    "node/v049 | recessed room | source-painted shadow variation/v040 v036 | Camp hearth | fixed emitter fire_beat/output0/Value": {
+      "first_changed_frame": 1202,
+      "at1201": 0.8439123034477234,
+      "changed_value": 0.6525588631629944
+    }
+  },
+  "state_variation_classification": "Only inherited saturation and v040 emitter fire-beat node values vary. No object matrix, visibility or newly added facade-node default changes were detected. Rendered texture registration is verified separately in all49frames.",
+  "fixed_facade_geometry_visibility_and_material_coordinate_controls_all49frames": true
+}

@@ -1,0 +1,337 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend",
+  "source_sha256": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4",
+  "frames": 2544,
+  "fps": 24,
+  "total_seconds": 106,
+  "moving_world_seconds": 100,
+  "silent_credits_seconds": 6,
+  "native_center_and_coverage_samples": [
+    {
+      "frame": 1,
+      "pair_center": [
+        0.5000001639127731,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -0.4755099415779114,
+        3.492743968963623,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 433,
+      "pair_center": [
+        0.5000003278255463,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -0.8369044661521912,
+        3.1313493251800537,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 841,
+      "pair_center": [
+        0.4999999701976776,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -1.118933916091919,
+        2.8493199348449707,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 1201,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -1.4363940954208374,
+        2.5318596363067627,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 1609,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -1.7481855154037476,
+        2.2200682163238525,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 1921,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -2.147845506668091,
+        1.8204083442687988,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 2161,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -2.4879815578460693,
+        1.4802722930908203,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    },
+    {
+      "frame": 2400,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "panorama_opaque_coverage_bounds": [
+        -2.7537128925323486,
+        1.2145410776138306,
+        -0.4358140826225281,
+        2.3853437900543213
+      ]
+    }
+  ],
+  "coverage_proof": "Fixed opaque panorama, constant lens/Y/Z; cameraX follows piecewise-linear monotone route. Coverage at all route keys bounds every interpolated camera position. Ground extends-24..220 beyond route0..160.75.",
+  "persistent_set_alpha_audit": [
+    {
+      "material": "v016 | Woods | far silver canopy paint",
+      "objects": [
+        "v025 | Far woods continuation left",
+        "v025 | Far woods continuation right",
+        "v016 | Woods | far silver canopy"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    },
+    {
+      "material": "v016 | School | broken windows and plaster paint",
+      "objects": [
+        "v016 | School | broken windows and plaster"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    },
+    {
+      "material": "v016 | Camp | pinned canvas and ropes paint",
+      "objects": [
+        "v016 | Camp | pinned canvas and ropes"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    },
+    {
+      "material": "v016 | Woods | near rooted oaks paint",
+      "objects": [
+        "v016 | Woods | near rooted oaks"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    },
+    {
+      "material": "v016 | Battlefield | broken village line paint",
+      "objects": [
+        "v016 | Battlefield | broken village line"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    },
+    {
+      "material": "v016 | Ruins | distant ash street paint",
+      "objects": [
+        "v016 | Ruins | distant ash street"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    },
+    {
+      "material": "v016 | Village continues | abandoned paint",
+      "objects": [
+        "v016 | Village continues | abandoned"
+      ],
+      "animated_alpha_paths": [],
+      "static_image_alpha_and_edge_mask": true
+    }
+  ],
+  "building_visibility": "No animated material alpha, no hide switches; sets only enter/leave with spatial travel. Static source alpha and staticedge feather retained.",
+  "held_drawing_sha256": "933559b907808ac042380413a8d24dd116fd7b147481935469f1c06a7827ad1d",
+  "evaluated_fire_motion": [
+    {
+      "emitter": "v036 | School debris | fixed emitter",
+      "native_evaluated_motion": [
+        {
+          "frame": 1609,
+          "root_world": [
+            61.5,
+            9.920000076293945,
+            -0.6934806704521179
+          ],
+          "energy": 605.9302978515625,
+          "flame_geometry_signature": [
+            13.649264168416266,
+            409.3787630312145
+          ]
+        },
+        {
+          "frame": 1633,
+          "root_world": [
+            61.5,
+            9.920000076293945,
+            -0.6934806704521179
+          ],
+          "energy": 496.0649719238281,
+          "flame_geometry_signature": [
+            52.09599679854,
+            415.2431696988642
+          ]
+        }
+      ]
+    },
+    {
+      "emitter": "v036 | Camp hearth | fixed emitter",
+      "native_evaluated_motion": [
+        {
+          "frame": 1609,
+          "root_world": [
+            85.0,
+            9.920000076293945,
+            -0.6934806704521179
+          ],
+          "energy": 732.8028564453125,
+          "flame_geometry_signature": [
+            -14.196512500144308,
+            666.3199986442924
+          ]
+        },
+        {
+          "frame": 1633,
+          "root_world": [
+            85.0,
+            9.920000076293945,
+            -0.6934806704521179
+          ],
+          "energy": 934.4694213867188,
+          "flame_geometry_signature": [
+            -56.456079878960736,
+            663.4881147220731
+          ]
+        }
+      ]
+    },
+    {
+      "emitter": "v036 | Battlefield burn | fixed emitter",
+      "native_evaluated_motion": [
+        {
+          "frame": 1609,
+          "root_world": [
+            112.0,
+            11.850000381469727,
+            -0.9684967994689941
+          ],
+          "energy": 1307.189453125,
+          "flame_geometry_signature": [
+            -4.113445470575243,
+            968.1484843380749
+          ]
+        },
+        {
+          "frame": 1633,
+          "root_world": [
+            112.0,
+            11.850000381469727,
+            -0.9684967994689941
+          ],
+          "energy": 1263.329833984375,
+          "flame_geometry_signature": [
+            -17.286849800802884,
+            968.7030746042728
+          ]
+        }
+      ]
+    },
+    {
+      "emitter": "v036 | Distant ruin burn | fixed emitter",
+      "native_evaluated_motion": [
+        {
+          "frame": 1609,
+          "root_world": [
+            151.0,
+            24.0,
+            -2.6998157501220703
+          ],
+          "energy": 1748.7913818359375,
+          "flame_geometry_signature": [
+            31.64491135859862,
+            1290.2807944715023
+          ]
+        },
+        {
+          "frame": 1633,
+          "root_world": [
+            151.0,
+            24.0,
+            -2.6998157501220703
+          ],
+          "energy": 1453.8436279296875,
+          "flame_geometry_signature": [
+            125.02560181193985,
+            1286.5650983601809
+          ]
+        }
+      ]
+    }
+  ],
+  "exact_card_bodies": [
+    "WHEN THE",
+    "SKY CLEARS.",
+    "The Animated Series.",
+    "2027.",
+    "A Two Truck Productions project."
+  ],
+  "native_master_audio_volume": [
+    [
+      1,
+      1.0
+    ],
+    [
+      1969,
+      1.0
+    ],
+    [
+      2161,
+      1.0
+    ],
+    [
+      2281,
+      0.49790793657302856
+    ],
+    [
+      2400,
+      0.0
+    ]
+  ],
+  "music_packed": true,
+  "native_picture_no_cached_movie": true,
+  "gait_added": false,
+  "scope": "Native technical verification and actual frame review; not artistic approval."
+}

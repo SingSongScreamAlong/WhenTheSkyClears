@@ -1,0 +1,89 @@
+{
+  "blender": "5.2.2 LTS",
+  "solver": "Installed native FLUID/GAS (Mantaflow)",
+  "domain_object": "GasPilotv004 |40div gas domain4.2x2.8x4.0m",
+  "domain_metres": [
+    4.2,
+    2.8,
+    4.0
+  ],
+  "resolution_max": 40,
+  "cache_frames": [
+    1,
+    72
+  ],
+  "fps": 24,
+  "seconds": 3,
+  "cache_type": "MODULAR OPENVDB",
+  "noise_upres": false,
+  "adaptive_domain": false,
+  "threads": 2,
+  "cache_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\cache\\pilot_40r_72f",
+  "source_world_position": [
+    109.0999984741211,
+    10.0,
+    -0.7048802971839905
+  ],
+  "sources": [
+    {
+      "object": "GasPilotv004 | short smoke inflow0",
+      "source_local_position": [
+        0,
+        0,
+        0.22
+      ],
+      "radius": 0.31,
+      "velocity": [
+        0.12,
+        0,
+        1.55
+      ],
+      "emission_end_frame": 5
+    },
+    {
+      "object": "GasPilotv004 | short smoke inflow1",
+      "source_local_position": [
+        -0.25,
+        0.1,
+        0.23
+      ],
+      "radius": 0.24,
+      "velocity": [
+        -0.38,
+        0.12,
+        1.35
+      ],
+      "emission_end_frame": 4
+    },
+    {
+      "object": "GasPilotv004 | short smoke inflow2",
+      "source_local_position": [
+        0.23,
+        -0.11,
+        0.31
+      ],
+      "radius": 0.22,
+      "velocity": [
+        0.45,
+        -0.12,
+        1.6
+      ],
+      "emission_end_frame": 6
+    }
+  ],
+  "buoyancy": {
+    "density": 0,
+    "heat": 0.35
+  },
+  "vorticity": 1.1,
+  "timesteps": [
+    1,
+    2
+  ],
+  "hard_supervisor_limits": {
+    "wall_seconds": 120,
+    "cache_MiB": 128,
+    "rss_MiB": 2048
+  },
+  "note": "Pilot only. No production edit and no main lighting pass. v003 smoke cards are hidden only in this isolated copy."
+}

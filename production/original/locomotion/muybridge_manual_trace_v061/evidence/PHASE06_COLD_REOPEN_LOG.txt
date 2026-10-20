@@ -1,0 +1,20 @@
+2026-10-19T14:45:22.041682Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 0 new skill(s), total 0
+2026-10-19T14:45:22.041717Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 skill(s)
+2026-10-19T14:45:22.041738Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 accumulated skill(s)
+2026-10-19T14:45:22.046447Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: in-process executor registered ΓÇö load_skill() will use in-process handlers (issue #464)
+2026-10-19T14:45:22.046530Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: main-thread dispatcher attached ΓÇö tools/call will route through DccDispatcher::post
+2026-10-19T14:45:22.046643Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: readiness probe installed ΓÇö /mcp and /v1/call will share it (issue #714)
+2026-10-19T14:45:22.327977Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 73 new skill(s), total 73
+2026-10-19T14:45:22.619585Z  INFO ThreadId(01) opentelemetry: name="MeterProvider.GlobalSet" Global meter provider is set. Meters can now be created using global::meter() or global::meter_with_scope().
+2026-10-19T14:45:22.659556Z  INFO ThreadId(01) dcc_mcp_http::handler::rmcp_mount: rmcp MCP endpoint mounted at /mcp (legacy + 2026 stateless dispatcher)
+2026-10-19T14:45:22.660925Z  INFO ThreadId(01) dcc_mcp_http::server: MCP HTTP server dcc-mcp-blender v0.2.14 listening on http://127.0.0.1:50950/mcp server_name=dcc-mcp-blender server_version=0.2.14
+2026-10-19T14:45:22.662836Z  INFO tokio-rt-worker dcc_mcp_transport::discovery::file_registry: registering service dcc_type=blender instance_id=eeb7a015-4d49-4cf8-9a78-ea50a6d2cc49 host=127.0.0.1 port=50950
+2026-10-19T14:45:22.677322Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Registered in FileRegistry instance=eeb7a015-4d49-4cf8-9a78-ea50a6d2cc49
+2026-10-19T14:45:22.687519Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Gateway port held by healthy resident ΓÇö running as plain DCC instance port=9765 gateway_version=0.20.42 gateway_adapter_version=None gateway_adapter_dcc=Some("gateway") own_version=0.2.14 own_adapter_version=None own_adapter_dcc=Some("blender") resident_health=Healthy
+00:01.656  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\muybridge_manual_trace_v061\native\Muybridge_Phase06_Manual_Trace_v061.blend"
+PHASE06_COLD_REOPEN {"native_file": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_manual_trace_v061\\native\\Muybridge_Phase06_Manual_Trace_v061.blend", "blender_version": "5.2.2 LTS", "object_type": "GREASEPENCIL", "layer": "Phase 06 Visible Contours", "frame": 1, "stroke_count": 16, "observed_point_counts": [17, 6, 8, 7, 7, 9, 7, 7, 9, 11, 6, 17, 13, 20, 9, 3], "expected_point_counts": [17, 6, 8, 7, 7, 9, 7, 7, 9, 11, 6, 17, 13, 20, 9, 3], "total_points": 156, "max_coordinate_error_world_units": 1.1533152230940503e-07, "material": "Trace Cyan - Source Anatomy Study", "camera_type": "ORTHO", "source_photo_packed": false, "separate_strokes": true, "passes": true}
+2026-10-19T14:45:22.995871Z  INFO dcc-mcp-http-50950 dcc_mcp_http::server::spawn_impl: MCP HTTP server (dedicated) stopped
+2026-10-19T14:45:22.997017Z  INFO ThreadId(01) dcc_mcp_transport::discovery::file_registry: deregistered service dcc_type=blender instance_id=eeb7a015-4d49-4cf8-9a78-ea50a6d2cc49
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

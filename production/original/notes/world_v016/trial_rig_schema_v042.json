@@ -1,0 +1,973 @@
+[
+  {
+    "rig": "LOCO_BOY | RIG",
+    "bones": [
+      {
+        "name": "pelvis",
+        "parent": null,
+        "head": [
+          0.0,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          0.0,
+          0.0,
+          0.7054054141044617
+        ]
+      },
+      {
+        "name": "chest",
+        "parent": null,
+        "head": [
+          0.0,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          0.023854289203882217,
+          0.0,
+          1.0904817581176758
+        ]
+      },
+      {
+        "name": "head",
+        "parent": null,
+        "head": [
+          0.023854289203882217,
+          0.0,
+          1.0853701829910278
+        ],
+        "tail": [
+          0.025558166205883026,
+          0.0,
+          1.3324323892593384
+        ]
+      },
+      {
+        "name": "thigh_near",
+        "parent": null,
+        "head": [
+          0.0,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          0.12779083847999573,
+          0.0,
+          0.3441833257675171
+        ]
+      },
+      {
+        "name": "shin_near",
+        "parent": null,
+        "head": [
+          0.12779083847999573,
+          0.0,
+          0.3441833257675171
+        ],
+        "tail": [
+          0.19594594836235046,
+          0.0,
+          0.10564042627811432
+        ]
+      },
+      {
+        "name": "foot_near",
+        "parent": null,
+        "head": [
+          0.19594594836235046,
+          0.0,
+          0.10564042627811432
+        ],
+        "tail": [
+          0.29647472500801086,
+          0.0,
+          0.0613396018743515
+        ]
+      },
+      {
+        "name": "thigh_far",
+        "parent": null,
+        "head": [
+          -0.047708578407764435,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          -0.13631021976470947,
+          0.0,
+          0.3867802619934082
+        ]
+      },
+      {
+        "name": "shin_far",
+        "parent": null,
+        "head": [
+          -0.13631021976470947,
+          0.0,
+          0.3867802619934082
+        ],
+        "tail": [
+          -0.2436545193195343,
+          0.0,
+          0.1209753230214119
+        ]
+      },
+      {
+        "name": "foot_far",
+        "parent": null,
+        "head": [
+          -0.2436545193195343,
+          0.0,
+          0.1209753230214119
+        ],
+        "tail": [
+          -0.17379553616046906,
+          0.0,
+          0.059635721147060394
+        ]
+      },
+      {
+        "name": "upper_arm_near",
+        "parent": null,
+        "head": [
+          -0.057931844145059586,
+          0.0,
+          1.0240305662155151
+        ],
+        "tail": [
+          -0.19764982163906097,
+          0.0,
+          0.770152747631073
+        ]
+      },
+      {
+        "name": "forearm_near",
+        "parent": null,
+        "head": [
+          -0.19764982163906097,
+          0.0,
+          0.770152747631073
+        ],
+        "tail": [
+          -0.22831963002681732,
+          0.0,
+          0.6474735736846924
+        ]
+      },
+      {
+        "name": "upper_arm_far",
+        "parent": null,
+        "head": [
+          0.06474735587835312,
+          0.0,
+          0.9984723925590515
+        ],
+        "tail": [
+          0.2044653296470642,
+          0.0,
+          0.7531139850616455
+        ]
+      },
+      {
+        "name": "forearm_far",
+        "parent": null,
+        "head": [
+          0.2044653296470642,
+          0.0,
+          0.7531139850616455
+        ],
+        "tail": [
+          0.2998825013637543,
+          0.0,
+          0.6594007015228271
+        ]
+      },
+      {
+        "name": "hand_near",
+        "parent": null,
+        "head": [
+          -0.22831963002681732,
+          0.0,
+          0.6474735736846924
+        ],
+        "tail": [
+          -0.23831963539123535,
+          0.0,
+          0.5624735951423645
+        ]
+      },
+      {
+        "name": "hand_far",
+        "parent": null,
+        "head": [
+          0.2998825013637543,
+          0.0,
+          0.6594007015228271
+        ],
+        "tail": [
+          0.28988251090049744,
+          0.0,
+          0.5744007229804993
+        ]
+      }
+    ],
+    "meshes": [
+      {
+        "name": "LOCO_BOY | PAINT body",
+        "verts": 477,
+        "groups": [
+          "pelvis",
+          "chest",
+          "head",
+          "thigh_near",
+          "shin_near",
+          "foot_near",
+          "thigh_far",
+          "shin_far",
+          "foot_far",
+          "upper_arm_near",
+          "forearm_near",
+          "upper_arm_far",
+          "forearm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | PERF_BOY | original body paint, clean native boundary"
+        ]
+      },
+      {
+        "name": "LOCO_BOY | PAINT far_leg",
+        "verts": 9765,
+        "groups": [
+          "pelvis",
+          "chest",
+          "head",
+          "thigh_near",
+          "shin_near",
+          "foot_near",
+          "thigh_far",
+          "shin_far",
+          "foot_far",
+          "upper_arm_near",
+          "forearm_near",
+          "upper_arm_far",
+          "forearm_far",
+          "hand_near",
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | PERF_BOY | source limb RGB within traced native contour.003"
+        ]
+      },
+      {
+        "name": "LOCO_BOY | PAINT near_leg",
+        "verts": 10233,
+        "groups": [
+          "pelvis",
+          "chest",
+          "head",
+          "thigh_near",
+          "shin_near",
+          "foot_near",
+          "thigh_far",
+          "shin_far",
+          "foot_far",
+          "upper_arm_near",
+          "forearm_near",
+          "upper_arm_far",
+          "forearm_far",
+          "hand_near",
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | PERF_BOY | source limb RGB within traced native contour.004"
+        ]
+      },
+      {
+        "name": "PERF_BOY | original hand far",
+        "verts": 46,
+        "groups": [
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_BOY | original hand near",
+        "verts": 46,
+        "groups": [
+          "hand_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_BOY | original head",
+        "verts": 9,
+        "groups": [
+          "head"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_BOY | rigid original boot far",
+        "verts": 90,
+        "groups": [
+          "foot_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_BOY | rigid original boot near",
+        "verts": 76,
+        "groups": [
+          "foot_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_BOY | skin far",
+        "verts": 22,
+        "groups": [
+          "forearm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_BOY | skin near",
+        "verts": 22,
+        "groups": [
+          "forearm_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_BOY | sleeve far",
+        "verts": 22,
+        "groups": [
+          "upper_arm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_BOY | sleeve far | source gray cuff",
+        "verts": 22,
+        "groups": [
+          "upper_arm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_BOY | sleeve near",
+        "verts": 22,
+        "groups": [
+          "upper_arm_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_BOY | sleeve near | source gray cuff",
+        "verts": 22,
+        "groups": [
+          "upper_arm_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      }
+    ],
+    "action_paths": [
+      "pose.bones[\"chest\"].location",
+      "pose.bones[\"chest\"].rotation_quaternion",
+      "pose.bones[\"chest\"].scale",
+      "pose.bones[\"foot_far\"].location",
+      "pose.bones[\"foot_far\"].rotation_quaternion",
+      "pose.bones[\"foot_far\"].scale",
+      "pose.bones[\"foot_near\"].location",
+      "pose.bones[\"foot_near\"].rotation_quaternion",
+      "pose.bones[\"foot_near\"].scale",
+      "pose.bones[\"forearm_far\"].location",
+      "pose.bones[\"forearm_far\"].rotation_quaternion",
+      "pose.bones[\"forearm_far\"].scale",
+      "pose.bones[\"forearm_near\"].location",
+      "pose.bones[\"forearm_near\"].rotation_quaternion",
+      "pose.bones[\"forearm_near\"].scale",
+      "pose.bones[\"hand_far\"].location",
+      "pose.bones[\"hand_far\"].rotation_quaternion",
+      "pose.bones[\"hand_far\"].scale",
+      "pose.bones[\"hand_near\"].location",
+      "pose.bones[\"hand_near\"].rotation_quaternion",
+      "pose.bones[\"hand_near\"].scale",
+      "pose.bones[\"head\"].location",
+      "pose.bones[\"head\"].rotation_quaternion",
+      "pose.bones[\"head\"].scale",
+      "pose.bones[\"pelvis\"].location",
+      "pose.bones[\"pelvis\"].rotation_quaternion",
+      "pose.bones[\"pelvis\"].scale",
+      "pose.bones[\"shin_far\"].location",
+      "pose.bones[\"shin_far\"].rotation_quaternion",
+      "pose.bones[\"shin_far\"].scale",
+      "pose.bones[\"shin_near\"].location",
+      "pose.bones[\"shin_near\"].rotation_quaternion",
+      "pose.bones[\"shin_near\"].scale",
+      "pose.bones[\"thigh_far\"].location",
+      "pose.bones[\"thigh_far\"].rotation_quaternion",
+      "pose.bones[\"thigh_far\"].scale",
+      "pose.bones[\"thigh_near\"].location",
+      "pose.bones[\"thigh_near\"].rotation_quaternion",
+      "pose.bones[\"thigh_near\"].scale",
+      "pose.bones[\"upper_arm_far\"].location",
+      "pose.bones[\"upper_arm_far\"].rotation_quaternion",
+      "pose.bones[\"upper_arm_far\"].scale",
+      "pose.bones[\"upper_arm_near\"].location",
+      "pose.bones[\"upper_arm_near\"].rotation_quaternion",
+      "pose.bones[\"upper_arm_near\"].scale"
+    ]
+  },
+  {
+    "rig": "LOCO_GIRL | RIG",
+    "bones": [
+      {
+        "name": "pelvis",
+        "parent": null,
+        "head": [
+          0.0,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          0.0,
+          0.0,
+          0.7054054141044617
+        ]
+      },
+      {
+        "name": "chest",
+        "parent": null,
+        "head": [
+          0.0,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          -0.0017038778169080615,
+          0.0,
+          1.0086956024169922
+        ]
+      },
+      {
+        "name": "head",
+        "parent": null,
+        "head": [
+          -0.0017038778169080615,
+          0.0,
+          1.0086956024169922
+        ],
+        "tail": [
+          -0.017038777470588684,
+          0.0,
+          1.2489423751831055
+        ]
+      },
+      {
+        "name": "thigh_near",
+        "parent": null,
+        "head": [
+          0.046004701405763626,
+          0.0,
+          0.5690951943397522
+        ],
+        "tail": [
+          0.15164512395858765,
+          0.0,
+          0.3066979944705963
+        ]
+      },
+      {
+        "name": "shin_near",
+        "parent": null,
+        "head": [
+          0.15164512395858765,
+          0.0,
+          0.3066979944705963
+        ],
+        "tail": [
+          0.23343126475811005,
+          0.0,
+          0.10393654555082321
+        ]
+      },
+      {
+        "name": "foot_near",
+        "parent": null,
+        "head": [
+          0.23343126475811005,
+          0.0,
+          0.10393654555082321
+        ],
+        "tail": [
+          0.33055227994918823,
+          0.0,
+          0.049412455409765244
+        ]
+      },
+      {
+        "name": "thigh_far",
+        "parent": null,
+        "head": [
+          -0.05452409014105797,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          -0.10564042627811432,
+          0.0,
+          0.31351351737976074
+        ]
+      },
+      {
+        "name": "shin_far",
+        "parent": null,
+        "head": [
+          -0.10564042627811432,
+          0.0,
+          0.31351351737976074
+        ],
+        "tail": [
+          -0.1618683934211731,
+          0.0,
+          0.10904818028211594
+        ]
+      },
+      {
+        "name": "foot_far",
+        "parent": null,
+        "head": [
+          -0.1618683934211731,
+          0.0,
+          0.10904818028211594
+        ],
+        "tail": [
+          -0.1005287915468216,
+          0.0,
+          0.047708578407764435
+        ]
+      },
+      {
+        "name": "upper_arm_near",
+        "parent": null,
+        "head": [
+          -0.013631022535264492,
+          0.0,
+          0.9541715383529663
+        ],
+        "tail": [
+          -0.13801410794258118,
+          0.0,
+          0.7837837934494019
+        ]
+      },
+      {
+        "name": "forearm_near",
+        "parent": null,
+        "head": [
+          -0.13801410794258118,
+          0.0,
+          0.7837837934494019
+        ],
+        "tail": [
+          -0.2641010582447052,
+          0.0,
+          0.6542890667915344
+        ]
+      },
+      {
+        "name": "upper_arm_far",
+        "parent": null,
+        "head": [
+          0.08519388735294342,
+          0.0,
+          0.8945358395576477
+        ],
+        "tail": [
+          0.17720329761505127,
+          0.0,
+          0.7377790808677673
+        ]
+      },
+      {
+        "name": "forearm_far",
+        "parent": null,
+        "head": [
+          0.17720329761505127,
+          0.0,
+          0.7377790808677673
+        ],
+        "tail": [
+          0.21639247238636017,
+          0.0,
+          0.6031727194786072
+        ]
+      },
+      {
+        "name": "braid",
+        "parent": null,
+        "head": [
+          -0.10734429955482483,
+          0.0,
+          1.064923644065857
+        ],
+        "tail": [
+          -0.1806110441684723,
+          0.0,
+          0.9098707437515259
+        ]
+      },
+      {
+        "name": "skirt_front",
+        "parent": null,
+        "head": [
+          0.017038777470588684,
+          0.0,
+          0.7786721587181091
+        ],
+        "tail": [
+          0.19594594836235046,
+          0.0,
+          0.3697414696216583
+        ]
+      },
+      {
+        "name": "skirt_back",
+        "parent": null,
+        "head": [
+          0.017038777470588684,
+          0.0,
+          0.7786721587181091
+        ],
+        "tail": [
+          -0.2215041071176529,
+          0.0,
+          0.4123384356498718
+        ]
+      },
+      {
+        "name": "hand_near",
+        "parent": null,
+        "head": [
+          -0.2641010582447052,
+          0.0,
+          0.6542890667915344
+        ],
+        "tail": [
+          -0.27410104870796204,
+          0.0,
+          0.5692890882492065
+        ]
+      },
+      {
+        "name": "hand_far",
+        "parent": null,
+        "head": [
+          0.21639247238636017,
+          0.0,
+          0.6031727194786072
+        ],
+        "tail": [
+          0.20639246702194214,
+          0.0,
+          0.5181727409362793
+        ]
+      }
+    ],
+    "meshes": [
+      {
+        "name": "LOCO_GIRL | PAINT body",
+        "verts": 693,
+        "groups": [
+          "pelvis",
+          "chest",
+          "head",
+          "thigh_near",
+          "shin_near",
+          "foot_near",
+          "thigh_far",
+          "shin_far",
+          "foot_far",
+          "upper_arm_near",
+          "forearm_near",
+          "upper_arm_far",
+          "forearm_far",
+          "braid",
+          "skirt_front",
+          "skirt_back",
+          "hand_near",
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | PERF_GIRL | original body paint, clean native boundary"
+        ]
+      },
+      {
+        "name": "LOCO_GIRL | PAINT far_leg",
+        "verts": 3285,
+        "groups": [
+          "pelvis",
+          "chest",
+          "head",
+          "thigh_near",
+          "shin_near",
+          "foot_near",
+          "thigh_far",
+          "shin_far",
+          "foot_far",
+          "upper_arm_near",
+          "forearm_near",
+          "upper_arm_far",
+          "forearm_far",
+          "braid",
+          "skirt_front",
+          "skirt_back",
+          "hand_near",
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | PERF_GIRL | source limb RGB within traced native contour.003"
+        ]
+      },
+      {
+        "name": "LOCO_GIRL | PAINT near_leg",
+        "verts": 4581,
+        "groups": [
+          "pelvis",
+          "chest",
+          "head",
+          "thigh_near",
+          "shin_near",
+          "foot_near",
+          "thigh_far",
+          "shin_far",
+          "foot_far",
+          "upper_arm_near",
+          "forearm_near",
+          "upper_arm_far",
+          "forearm_far",
+          "braid",
+          "skirt_front",
+          "skirt_back",
+          "hand_near",
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | PERF_GIRL | source limb RGB within traced native contour.004"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | hidden thigh overlap far",
+        "verts": 22,
+        "groups": [
+          "thigh_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | hidden thigh overlap near",
+        "verts": 22,
+        "groups": [
+          "thigh_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | original hand far",
+        "verts": 37,
+        "groups": [
+          "hand_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | original hand near",
+        "verts": 37,
+        "groups": [
+          "hand_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | original head and attached braid",
+        "verts": 549,
+        "groups": [
+          "head",
+          "braid"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | rigid original boot far",
+        "verts": 108,
+        "groups": [
+          "foot_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | rigid original boot near",
+        "verts": 84,
+        "groups": [
+          "foot_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | skin far",
+        "verts": 22,
+        "groups": [
+          "forearm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | skin near",
+        "verts": 22,
+        "groups": [
+          "forearm_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | sleeve far",
+        "verts": 22,
+        "groups": [
+          "upper_arm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | sleeve far | source gray cuff",
+        "verts": 22,
+        "groups": [
+          "upper_arm_far"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | sleeve near",
+        "verts": 22,
+        "groups": [
+          "upper_arm_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      },
+      {
+        "name": "PERF_GIRL | sleeve near | source gray cuff",
+        "verts": 22,
+        "groups": [
+          "upper_arm_near"
+        ],
+        "materials": [
+          "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry"
+        ]
+      }
+    ],
+    "action_paths": [
+      "pose.bones[\"braid\"].location",
+      "pose.bones[\"braid\"].rotation_quaternion",
+      "pose.bones[\"braid\"].scale",
+      "pose.bones[\"chest\"].location",
+      "pose.bones[\"chest\"].rotation_quaternion",
+      "pose.bones[\"chest\"].scale",
+      "pose.bones[\"foot_far\"].location",
+      "pose.bones[\"foot_far\"].rotation_quaternion",
+      "pose.bones[\"foot_far\"].scale",
+      "pose.bones[\"foot_near\"].location",
+      "pose.bones[\"foot_near\"].rotation_quaternion",
+      "pose.bones[\"foot_near\"].scale",
+      "pose.bones[\"forearm_far\"].location",
+      "pose.bones[\"forearm_far\"].rotation_quaternion",
+      "pose.bones[\"forearm_far\"].scale",
+      "pose.bones[\"forearm_near\"].location",
+      "pose.bones[\"forearm_near\"].rotation_quaternion",
+      "pose.bones[\"forearm_near\"].scale",
+      "pose.bones[\"hand_far\"].location",
+      "pose.bones[\"hand_far\"].rotation_quaternion",
+      "pose.bones[\"hand_far\"].scale",
+      "pose.bones[\"hand_near\"].location",
+      "pose.bones[\"hand_near\"].rotation_quaternion",
+      "pose.bones[\"hand_near\"].scale",
+      "pose.bones[\"head\"].location",
+      "pose.bones[\"head\"].rotation_quaternion",
+      "pose.bones[\"head\"].scale",
+      "pose.bones[\"pelvis\"].location",
+      "pose.bones[\"pelvis\"].rotation_quaternion",
+      "pose.bones[\"pelvis\"].scale",
+      "pose.bones[\"shin_far\"].location",
+      "pose.bones[\"shin_far\"].rotation_quaternion",
+      "pose.bones[\"shin_far\"].scale",
+      "pose.bones[\"shin_near\"].location",
+      "pose.bones[\"shin_near\"].rotation_quaternion",
+      "pose.bones[\"shin_near\"].scale",
+      "pose.bones[\"skirt_back\"].location",
+      "pose.bones[\"skirt_back\"].rotation_quaternion",
+      "pose.bones[\"skirt_back\"].scale",
+      "pose.bones[\"skirt_front\"].location",
+      "pose.bones[\"skirt_front\"].rotation_quaternion",
+      "pose.bones[\"skirt_front\"].scale",
+      "pose.bones[\"thigh_far\"].location",
+      "pose.bones[\"thigh_far\"].rotation_quaternion",
+      "pose.bones[\"thigh_far\"].scale",
+      "pose.bones[\"thigh_near\"].location",
+      "pose.bones[\"thigh_near\"].rotation_quaternion",
+      "pose.bones[\"thigh_near\"].scale",
+      "pose.bones[\"upper_arm_far\"].location",
+      "pose.bones[\"upper_arm_far\"].rotation_quaternion",
+      "pose.bones[\"upper_arm_far\"].scale",
+      "pose.bones[\"upper_arm_near\"].location",
+      "pose.bones[\"upper_arm_near\"].rotation_quaternion",
+      "pose.bones[\"upper_arm_near\"].scale"
+    ]
+  }
+]

@@ -1,0 +1,6899 @@
+[
+  {
+    "name": "v020 | Walking path | continuous blended paint",
+    "location": [
+      0.0,
+      2.059999942779541,
+      0.0
+    ],
+    "dim": [
+      244.0,
+      0.0,
+      30.958799362182617
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        -24.0,
+        2.059999942779541,
+        -30.0
+      ],
+      [
+        220.0,
+        2.059999942779541,
+        -30.0
+      ],
+      [
+        220.0,
+        2.059999942779541,
+        0.9588000178337097
+      ],
+      [
+        -24.0,
+        2.059999942779541,
+        0.9588000178337097
+      ]
+    ],
+    "uv": {
+      "v048b fixed path registration peaceful": [
+        [
+          -5.070350170135498,
+          -8.04865550994873
+        ],
+        [
+          32.4588737487793,
+          -8.04865550994873
+        ],
+        [
+          32.4588737487793,
+          0.4166252315044403
+        ],
+        [
+          -5.070350170135498,
+          0.4166252315044403
+        ]
+      ],
+      "v048b fixed path registration transition": [
+        [
+          -13.319601058959961,
+          -8.04865550994873
+        ],
+        [
+          24.209625244140625,
+          -8.04865550994873
+        ],
+        [
+          24.209625244140625,
+          0.4166252315044403
+        ],
+        [
+          -13.319601058959961,
+          0.4166252315044403
+        ]
+      ],
+      "v048b fixed path registration war_zone": [
+        [
+          -20.03984260559082,
+          -8.04865550994873
+        ],
+        [
+          17.489383697509766,
+          -8.04865550994873
+        ],
+        [
+          17.489383697509766,
+          0.4166252315044403
+        ],
+        [
+          -20.03984260559082,
+          0.4166252315044403
+        ]
+      ]
+    },
+    "materials": [
+      {
+        "name": "v048b | continuous path | fixed earth-only paint joins",
+        "nodes": [
+          {
+            "name": "Geometry",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Separate XYZ",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Geometry",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Noise Texture",
+            "type": "TEX_NOISE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "W": "0.0",
+              "Scale": "8.0",
+              "Detail": "2.0",
+              "Roughness": "0.5",
+              "Lacunarity": "2.0",
+              "Offset": "0.0",
+              "Gain": "1.0",
+              "Distortion": "0.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.001",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.002",
+            "type": "MATH",
+            "operation": "ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.001",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.003",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.004",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.003",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.005",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.006",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.005",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Z": "0.0"
+            },
+            "links": {
+              "X": [
+                [
+                  "Math.004",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Math.006",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Ground_Painted_v001.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "1.0",
+              "Color2": "<bpy_float[4], NodeSocketColor.default_value>"
+            },
+            "links": {
+              "Color1": [
+                [
+                  "Image Texture",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.007",
+            "type": "MATH",
+            "operation": "ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.008",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.007",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.009",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.008",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.001",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Z": "0.0"
+            },
+            "links": {
+              "X": [
+                [
+                  "Math.009",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Map Range",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Path_Detail_Repaint.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.002",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.001",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.002",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix (Legacy).001",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Map Range.001",
+                  "Result"
+                ]
+              ],
+              "Color1": [
+                [
+                  "Mix (Legacy)",
+                  "Color"
+                ]
+              ],
+              "Color2": [
+                [
+                  "Image Texture.001",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.002",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.010",
+            "type": "MATH",
+            "operation": "MAXIMUM",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.002",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Hue/Saturation/Value",
+            "type": "HUE_SAT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Hue": "0.5",
+              "Saturation": "0.561511754989624",
+              "Value": "1.0",
+              "Factor": "1.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "Mix (Legacy).001",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "v048b | war_zone earth-only spatial join",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math.011",
+                  "Value"
+                ]
+              ],
+              "Shader": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Mix Shader",
+                  "Shader"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.003",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Image Texture.001",
+                  "Alpha"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.004",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.011",
+            "type": "MATH",
+            "operation": "MAXIMUM",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.004",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.001",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Vector Math",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.005",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.012",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.005",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.012",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Hue/Saturation/Value",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.001",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.006",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.001",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.013",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.006",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix.001",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.013",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Mix",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.002",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.007",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.002",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.014",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.007",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix.002",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.014",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Mix.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.003",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.008",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.003",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.015",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.008",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix.003",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.015",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Mix.002",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.002",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Noise Texture.001",
+            "type": "TEX_NOISE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "W": "0.0",
+              "Scale": "0.41999998688697815",
+              "Detail": "2.0",
+              "Roughness": "0.5",
+              "Lacunarity": "2.0",
+              "Offset": "0.0",
+              "Gain": "1.0",
+              "Distortion": "0.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.002",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.001",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.001",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.016",
+            "type": "MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture.001",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.017",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.016",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.018",
+            "type": "MATH",
+            "operation": "ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.017",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.019",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.018",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.002",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Z": "0.0"
+            },
+            "links": {
+              "X": [
+                [
+                  "Math.019",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.001",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.009",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture.001",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 restrained foreground value",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "A": [
+                [
+                  "Hue/Saturation/Value",
+                  "Color"
+                ]
+              ],
+              "B": [
+                [
+                  "Map Range.009",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.003",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v039 actual firelight world position",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "85.0",
+              "Y": "9.600000381469727",
+              "Z": "-0.13548064231872559"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.004",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.003",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.005",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.004",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.006",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.004",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 local receiver radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Map Range.010",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.006",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v039 local receiver radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.020",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.010",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v039 restrained foreground value",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.011",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.021",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.011",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 receiver strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v039 coherent fire beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.022",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v039 coherent fire beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.023",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.021",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 restrained local firelight | preserved ink",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.023",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v039 restrained foreground value",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.004",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 actual physical source position",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "61.5",
+              "Y": "9.600000381469727",
+              "Z": "-0.3514806628227234"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.007",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.004",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.008",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.007",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.009",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.007",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.012",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.009",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v040 v036 | School debris | fixed emitter receiver_radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | School debris | fixed emitter receiver_radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.024",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.012",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW.001",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v039 restrained local firelight | preserved ink",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.013",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW.001",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.025",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.013",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | School debris | fixed emitter receiver_strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 v036 | School debris | fixed emitter fire_beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.026",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v040 v036 | School debris | fixed emitter fire_beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.027",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.025",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 localized source-connected warmth",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.027",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v039 restrained local firelight | preserved ink",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.005",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 actual physical source position.001",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "112.0",
+              "Y": "11.530000686645508",
+              "Z": "-0.15849679708480835"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.010",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.005",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.011",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.010",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.012",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.010",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.014",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.012",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.028",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.014",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW.002",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v040 localized source-connected warmth",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.015",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW.002",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.029",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.015",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.030",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.031",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.029",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 localized source-connected warmth.001",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.031",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v040 localized source-connected warmth",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.006",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 actual physical source position.002",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "151.0",
+              "Y": "23.68000030517578",
+              "Z": "-1.619815707206726"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.013",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.006",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.014",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.013",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.015",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.013",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.016",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.015",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.032",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.016",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW.003",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v040 localized source-connected warmth.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.017",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW.003",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.033",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.017",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.034",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.035",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.033",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 localized source-connected warmth.002",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.035",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v040 localized source-connected warmth.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Image Texture.002",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Bank_Paintover_v047.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.003",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.002",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.018",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.002",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.019",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.002",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.036",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.019",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.020",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.002",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.037",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.020",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.021",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.002",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.038",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.021",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v048b | peaceful earth-only spatial join",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math.038",
+                  "Value"
+                ]
+              ],
+              "Color1": [
+                [
+                  "v040 localized source-connected warmth.002",
+                  "Result"
+                ]
+              ],
+              "Color2": [
+                [
+                  "Image Texture.002",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "UV Map.001",
+            "type": "UVMAP",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Image Texture.003",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Bank_Paintover_v047.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.004",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.003",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map.001",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.022",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.003",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.023",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.003",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.039",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.023",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.024",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.003",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.040",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.024",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.025",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.003",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.041",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.025",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v048b | transition earth-only spatial join",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math.041",
+                  "Value"
+                ]
+              ],
+              "Color1": [
+                [
+                  "v048b | peaceful earth-only spatial join",
+                  "Color"
+                ]
+              ],
+              "Color2": [
+                [
+                  "Image Texture.003",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "UV Map.002",
+            "type": "UVMAP",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Image Texture.004",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Bank_Paintover_v047.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.005",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.004",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map.002",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.026",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.004",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.027",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.004",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.042",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.027",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.028",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.004",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.043",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.028",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.029",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.004",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.044",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.029",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v048b | war_zone earth-only spatial join",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math.044",
+                  "Value"
+                ]
+              ],
+              "Color1": [
+                [
+                  "v048b | transition earth-only spatial join",
+                  "Color"
+                ]
+              ],
+              "Color2": [
+                [
+                  "Image Texture.004",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.005",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.045",
+            "type": "MATH",
+            "operation": "MULTIPLY_ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.16554054617881775"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.005",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.003",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "X": [
+                [
+                  "Math.045",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.005",
+                  "Y"
+                ]
+              ],
+              "Z": [
+                [
+                  "Separate XYZ.005",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.006",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map.001",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.046",
+            "type": "MATH",
+            "operation": "MULTIPLY_ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.16554054617881775"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.006",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.004",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "X": [
+                [
+                  "Math.046",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.006",
+                  "Y"
+                ]
+              ],
+              "Z": [
+                [
+                  "Separate XYZ.006",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.007",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map.002",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.047",
+            "type": "MATH",
+            "operation": "MULTIPLY_ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.16554054617881775"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.007",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.005",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "X": [
+                [
+                  "Math.047",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.007",
+                  "Y"
+                ]
+              ],
+              "Z": [
+                [
+                  "Separate XYZ.007",
+                  "Z"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v020 | Foreground bank | continuous blended paint",
+    "location": [
+      0.0,
+      -4.989999771118164,
+      0.0
+    ],
+    "dim": [
+      244.0,
+      0.0,
+      31.25
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        -24.0,
+        -4.989999771118164,
+        -30.0
+      ],
+      [
+        220.0,
+        -4.989999771118164,
+        -30.0
+      ],
+      [
+        220.0,
+        -4.989999771118164,
+        1.25
+      ],
+      [
+        -24.0,
+        -4.989999771118164,
+        1.25
+      ]
+    ],
+    "uv": {},
+    "materials": [
+      {
+        "name": "v039 | Foreground bank | stable paint variation",
+        "nodes": [
+          {
+            "name": "Geometry",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Separate XYZ",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Geometry",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Noise Texture",
+            "type": "TEX_NOISE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "W": "0.0",
+              "Scale": "8.0",
+              "Detail": "2.0",
+              "Roughness": "0.5",
+              "Lacunarity": "2.0",
+              "Offset": "0.0",
+              "Gain": "1.0",
+              "Distortion": "0.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.001",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.002",
+            "type": "MATH",
+            "operation": "ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.001",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.003",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.004",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.003",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.005",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.006",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.005",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Z": "0.0"
+            },
+            "links": {
+              "X": [
+                [
+                  "Math.004",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Math.006",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Ground_Painted_v001.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "1.0",
+              "Color2": "<bpy_float[4], NodeSocketColor.default_value>"
+            },
+            "links": {
+              "Color1": [
+                [
+                  "Image Texture",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.007",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.008",
+            "type": "MATH",
+            "operation": "ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.007",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.009",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.008",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "Z"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.001",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Z": "0.0"
+            },
+            "links": {
+              "X": [
+                [
+                  "Math.009",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Map Range",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Ground.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.002",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix (Legacy).001",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "1.0",
+              "Color2": "<bpy_float[4], NodeSocketColor.default_value>"
+            },
+            "links": {
+              "Color1": [
+                [
+                  "Image Texture.001",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.001",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.002",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.002",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.002",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.010",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.002",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix (Legacy).002",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "0.0"
+            },
+            "links": {
+              "Color1": [
+                [
+                  "Mix (Legacy)",
+                  "Color"
+                ]
+              ],
+              "Color2": [
+                [
+                  "Mix (Legacy).001",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.003",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.002",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Hue/Saturation/Value",
+            "type": "HUE_SAT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Hue": "0.5",
+              "Saturation": "0.561511754989624",
+              "Value": "1.0",
+              "Factor": "1.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "Mix (Legacy).002",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "v040 localized source-connected warmth.002",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Map Range.003",
+                  "Result"
+                ]
+              ],
+              "Shader": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Mix Shader",
+                  "Shader"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.001",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Vector Math",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.004",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.011",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.004",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.011",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Hue/Saturation/Value",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.001",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.005",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.001",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.012",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.005",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix.001",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.012",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Mix",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.002",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.006",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.002",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.013",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.006",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix.002",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.013",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Mix.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.003",
+            "type": "VECT_MATH",
+            "operation": "DISTANCE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.001",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.007",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.003",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.014",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.007",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix.003",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.014",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "Mix.002",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.002",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Noise Texture.001",
+            "type": "TEX_NOISE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "W": "0.0",
+              "Scale": "0.41999998688697815",
+              "Detail": "2.0",
+              "Roughness": "0.5",
+              "Lacunarity": "2.0",
+              "Offset": "0.0",
+              "Gain": "1.0",
+              "Distortion": "0.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.002",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.001",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ.001",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.015",
+            "type": "MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture.001",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.016",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.015",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.017",
+            "type": "MATH",
+            "operation": "ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.016",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.018",
+            "type": "MATH",
+            "operation": "PINGPONG",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.017",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ.002",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Z": "0.0"
+            },
+            "links": {
+              "X": [
+                [
+                  "Math.018",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.001",
+                  "Y"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.008",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture.001",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 restrained foreground value",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "A": [
+                [
+                  "Hue/Saturation/Value",
+                  "Color"
+                ]
+              ],
+              "B": [
+                [
+                  "Map Range.008",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.003",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v039 actual firelight world position",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "85.0",
+              "Y": "9.600000381469727",
+              "Z": "-0.13548064231872559"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.004",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.003",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.005",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.004",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.006",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.004",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 local receiver radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Map Range.009",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.006",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v039 local receiver radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.019",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.009",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v039 restrained foreground value",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.010",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.020",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.010",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 receiver strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v039 coherent fire beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.021",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v039 coherent fire beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.022",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.020",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v039 restrained local firelight | preserved ink",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.022",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v039 restrained foreground value",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.011",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Noise Texture.001",
+                  "Factor"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.023",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.011",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.004",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 actual physical source position",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "61.5",
+              "Y": "9.600000381469727",
+              "Z": "-0.3514806628227234"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.007",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.004",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.008",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.007",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.009",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.007",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.012",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.009",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v040 v036 | School debris | fixed emitter receiver_radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | School debris | fixed emitter receiver_radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.024",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.012",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW.001",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v039 restrained local firelight | preserved ink",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.013",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW.001",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.025",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.013",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | School debris | fixed emitter receiver_strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 v036 | School debris | fixed emitter fire_beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.026",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v040 v036 | School debris | fixed emitter fire_beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.027",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.025",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 localized source-connected warmth",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.027",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v039 restrained local firelight | preserved ink",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.005",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 actual physical source position.001",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "112.0",
+              "Y": "11.530000686645508",
+              "Z": "-0.15849679708480835"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.010",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.005",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.011",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.010",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.012",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.010",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.014",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.012",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.028",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.014",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW.002",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v040 localized source-connected warmth",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.015",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW.002",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.029",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.015",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.030",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.031",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.029",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 localized source-connected warmth.001",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.031",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v040 localized source-connected warmth",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Geometry.006",
+            "type": "NEW_GEOMETRY",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 actual physical source position.002",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "X": "151.0",
+              "Y": "23.68000030517578",
+              "Z": "-1.619815707206726"
+            },
+            "links": {}
+          },
+          {
+            "name": "Vector Math.013",
+            "type": "VECT_MATH",
+            "operation": "SUBTRACT",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Geometry.006",
+                  "Position"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.014",
+            "type": "VECT_MATH",
+            "operation": "NORMALIZE",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.013",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Vector Math.015",
+            "type": "VECT_MATH",
+            "operation": "LENGTH",
+            "image": null,
+            "inputs": {
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Scale": "1.0"
+            },
+            "links": {
+              "Vector": [
+                [
+                  "Vector Math.013",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.016",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Vector Math.015",
+                  "Value"
+                ]
+              ],
+              "From Max": [
+                [
+                  "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.032",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.016",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "RGB to BW.003",
+            "type": "RGBTOBW",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Color": [
+                [
+                  "v040 localized source-connected warmth.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.017",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "RGB to BW.003",
+                  "Val"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.033",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.017",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+            "type": "VALUE",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Math.034",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.035",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Math.033",
+                  "Value"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "v040 localized source-connected warmth.002",
+            "type": "MIX",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+              "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+              "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+            },
+            "links": {
+              "Factor": [
+                [
+                  "Math.035",
+                  "Value"
+                ]
+              ],
+              "A": [
+                [
+                  "v040 localized source-connected warmth.001",
+                  "Result"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v016 | Rooted grass 000",
+    "location": [
+      59.48927688598633,
+      -3.715147018432617,
+      0.6201195120811462
+    ],
+    "dim": [
+      0.09867550432682037,
+      0.0,
+      0.26332399249076843
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        59.431610107421875,
+        -3.715147018432617,
+        0.6201195120811462
+      ],
+      [
+        59.44389724731445,
+        -3.715147018432617,
+        0.6201195120811462
+      ],
+      [
+        59.4402961730957,
+        -3.715147018432617,
+        0.8044463396072388
+      ],
+      [
+        59.441993713378906,
+        -3.715147018432617,
+        0.8834434747695923
+      ],
+      [
+        59.49599075317383,
+        -3.715147018432617,
+        0.6201195120811462
+      ],
+      [
+        59.518558502197266,
+        -3.715147018432617,
+        0.6201195120811462
+      ],
+      [
+        59.498008728027344,
+        -3.715147018432617,
+        0.8044463396072388
+      ],
+      [
+        59.4918327331543,
+        -3.715147018432617,
+        0.8834434747695923
+      ],
+      [
+        59.51362228393555,
+        -3.715147018432617,
+        0.6201195120811462
+      ],
+      [
+        59.5302848815918,
+        -3.715147018432617,
+        0.6201195120811462
+      ],
+      [
+        59.491729736328125,
+        -3.715147018432617,
+        0.8044463396072388
+      ],
+      [
+        59.471580505371094,
+        -3.715147018432617,
+        0.8834434747695923
+      ]
+    ],
+    "uv": {},
+    "materials": [
+      {
+        "name": "v016 | Painted grass ink",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Texture Coordinate",
+            "type": "TEX_COORD",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v016 | Rooted grass 025",
+    "location": [
+      58.63070297241211,
+      -2.6942663192749023,
+      0.6299353837966919
+    ],
+    "dim": [
+      0.20451830327510834,
+      0.0,
+      0.1052025854587555
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        58.630897521972656,
+        -2.6942663192749023,
+        0.6299353837966919
+      ],
+      [
+        58.65573501586914,
+        -2.6942663192749023,
+        0.6299353837966919
+      ],
+      [
+        58.69021987915039,
+        -2.6942663192749023,
+        0.7035771608352661
+      ],
+      [
+        58.721492767333984,
+        -2.6942663192749023,
+        0.735137939453125
+      ],
+      [
+        58.603580474853516,
+        -2.6942663192749023,
+        0.6299353837966919
+      ],
+      [
+        58.61582946777344,
+        -2.6942663192749023,
+        0.6299353837966919
+      ],
+      [
+        58.63150405883789,
+        -2.6942663192749023,
+        0.7035771608352661
+      ],
+      [
+        58.646034240722656,
+        -2.6942663192749023,
+        0.735137939453125
+      ],
+      [
+        58.597259521484375,
+        -2.6942663192749023,
+        0.6299353837966919
+      ],
+      [
+        58.61616897583008,
+        -2.6942663192749023,
+        0.6299353837966919
+      ],
+      [
+        58.5528678894043,
+        -2.6942663192749023,
+        0.7035771608352661
+      ],
+      [
+        58.516971588134766,
+        -2.6942663192749023,
+        0.735137939453125
+      ]
+    ],
+    "uv": {},
+    "materials": [
+      {
+        "name": "v016 | Painted grass ink",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Texture Coordinate",
+            "type": "TEX_COORD",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v016 | Rooted grass 050",
+    "location": [
+      103.85247039794922,
+      -3.2431931495666504,
+      0.623253583908081
+    ],
+    "dim": [
+      0.1434360295534134,
+      0.0,
+      0.11717936396598816
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        103.82867431640625,
+        -3.2431931495666504,
+        0.623253583908081
+      ],
+      [
+        103.84069061279297,
+        -3.2431931495666504,
+        0.623253583908081
+      ],
+      [
+        103.80033874511719,
+        -3.2431931495666504,
+        0.7052791118621826
+      ],
+      [
+        103.77743530273438,
+        -3.2431931495666504,
+        0.7404329776763916
+      ],
+      [
+        103.83128356933594,
+        -3.2431931495666504,
+        0.623253583908081
+      ],
+      [
+        103.84760284423828,
+        -3.2431931495666504,
+        0.623253583908081
+      ],
+      [
+        103.8499755859375,
+        -3.2431931495666504,
+        0.7052791118621826
+      ],
+      [
+        103.85700225830078,
+        -3.2431931495666504,
+        0.7404329776763916
+      ],
+      [
+        103.784423828125,
+        -3.2431931495666504,
+        0.623253583908081
+      ],
+      [
+        103.81071472167969,
+        -3.2431931495666504,
+        0.623253583908081
+      ],
+      [
+        103.7471694946289,
+        -3.2431931495666504,
+        0.7052791118621826
+      ],
+      [
+        103.71356964111328,
+        -3.2431931495666504,
+        0.7404329776763916
+      ]
+    ],
+    "uv": {},
+    "materials": [
+      {
+        "name": "v016 | Painted grass ink",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Texture Coordinate",
+            "type": "TEX_COORD",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v016 | Rooted grass 075",
+    "location": [
+      84.20344543457031,
+      -3.878403663635254,
+      1.0246050357818604
+    ],
+    "dim": [
+      0.08544876426458359,
+      0.0,
+      0.23503972589969635
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        84.19954681396484,
+        -3.878403663635254,
+        1.0246050357818604
+      ],
+      [
+        84.22724914550781,
+        -3.878403663635254,
+        1.0246050357818604
+      ],
+      [
+        84.17491149902344,
+        -3.878403663635254,
+        1.189132809638977
+      ],
+      [
+        84.14925384521484,
+        -3.878403663635254,
+        1.2596447467803955
+      ],
+      [
+        84.21481323242188,
+        -3.878403663635254,
+        1.0246050357818604
+      ],
+      [
+        84.24146270751953,
+        -3.878403663635254,
+        1.0246050357818604
+      ],
+      [
+        84.18435668945312,
+        -3.878403663635254,
+        1.189132809638977
+      ],
+      [
+        84.1551742553711,
+        -3.878403663635254,
+        1.2596447467803955
+      ],
+      [
+        84.21247863769531,
+        -3.878403663635254,
+        1.0246050357818604
+      ],
+      [
+        84.23400115966797,
+        -3.878403663635254,
+        1.0246050357818604
+      ],
+      [
+        84.19751739501953,
+        -3.878403663635254,
+        1.189132809638977
+      ],
+      [
+        84.18037414550781,
+        -3.878403663635254,
+        1.2596447467803955
+      ]
+    ],
+    "uv": {},
+    "materials": [
+      {
+        "name": "v016 | Painted grass ink",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Texture Coordinate",
+            "type": "TEX_COORD",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v016 | Rooted grass 100",
+    "location": [
+      103.99397277832031,
+      -1.7157845497131348,
+      0.6347140073776245
+    ],
+    "dim": [
+      0.09345467388629913,
+      0.0,
+      0.12935827672481537
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        104.03404235839844,
+        -1.7157845497131348,
+        0.6347140073776245
+      ],
+      [
+        104.05146026611328,
+        -1.7157845497131348,
+        0.6347140073776245
+      ],
+      [
+        104.08789825439453,
+        -1.7157845497131348,
+        0.7252647876739502
+      ],
+      [
+        104.11798858642578,
+        -1.7157845497131348,
+        0.7640722990036011
+      ],
+      [
+        104.05388641357422,
+        -1.7157845497131348,
+        0.6347140073776245
+      ],
+      [
+        104.06876373291016,
+        -1.7157845497131348,
+        0.6347140073776245
+      ],
+      [
+        104.04644012451172,
+        -1.7157845497131348,
+        0.7252647876739502
+      ],
+      [
+        104.0365219116211,
+        -1.7157845497131348,
+        0.7640722990036011
+      ],
+      [
+        104.0541000366211,
+        -1.7157845497131348,
+        0.6347140073776245
+      ],
+      [
+        104.0716552734375,
+        -1.7157845497131348,
+        0.6347140073776245
+      ],
+      [
+        104.03987121582031,
+        -1.7157845497131348,
+        0.7252647876739502
+      ],
+      [
+        104.0245361328125,
+        -1.7157845497131348,
+        0.7640722990036011
+      ]
+    ],
+    "uv": {},
+    "materials": [
+      {
+        "name": "v016 | Painted grass ink",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Texture Coordinate",
+            "type": "TEX_COORD",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v048 | peaceful fixed foreground soil bank",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dim": [
+      5.834159851074219,
+      0.0,
+      0.7871347069740295
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        10.066986083984375,
+        -5.050000190734863,
+        0.5059741139411926
+      ],
+      [
+        15.901145935058594,
+        -5.050000190734863,
+        0.5059741139411926
+      ],
+      [
+        15.901145935058594,
+        -5.050000190734863,
+        1.2568820714950562
+      ],
+      [
+        15.779601097106934,
+        -5.050000190734863,
+        1.267962098121643
+      ],
+      [
+        15.658056259155273,
+        -5.050000190734863,
+        1.2576922178268433
+      ],
+      [
+        15.536511421203613,
+        -5.050000190734863,
+        1.2542824745178223
+      ],
+      [
+        15.414966583251953,
+        -5.050000190734863,
+        1.2735499143600464
+      ],
+      [
+        15.293420791625977,
+        -5.050000190734863,
+        1.2931088209152222
+      ],
+      [
+        15.171875953674316,
+        -5.050000190734863,
+        1.2842504978179932
+      ],
+      [
+        15.050331115722656,
+        -5.050000190734863,
+        1.2544854879379272
+      ],
+      [
+        14.928786277770996,
+        -5.050000190734863,
+        1.2376185655593872
+      ],
+      [
+        14.807241439819336,
+        -5.050000190734863,
+        1.2458220720291138
+      ]
+    ],
+    "uv": {
+      "v048b fixed soil paint registration peaceful": [
+        [
+          -0.23999997973442078,
+          -0.15000024437904358
+        ],
+        [
+          1.2399998903274536,
+          -0.15000024437904358
+        ],
+        [
+          1.2399998903274536,
+          0.18864703178405762
+        ],
+        [
+          1.2091666460037231,
+          0.1936439424753189
+        ],
+        [
+          1.1783334016799927,
+          0.18901239335536957
+        ],
+        [
+          1.1475000381469727,
+          0.18747466802597046
+        ],
+        [
+          1.1166667938232422,
+          0.19616396725177765
+        ],
+        [
+          1.085833191871643,
+          0.20498470962047577
+        ],
+        [
+          1.0549999475479126,
+          0.2009897530078888
+        ],
+        [
+          1.0241667032241821,
+          0.18756622076034546
+        ],
+        [
+          0.9933333396911621,
+          0.1799595057964325
+        ],
+        [
+          0.9625000953674316,
+          0.1836591511964798
+        ]
+      ]
+    },
+    "materials": [
+      {
+        "name": "v048b | peaceful original painted earth",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Bank_Paintover_v047.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "Mix (Legacy)",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.001",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math",
+                  "Value"
+                ]
+              ],
+              "Shader": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Mix Shader",
+                  "Shader"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Factor": "0.550000011920929",
+              "Color2": "<bpy_float[4], NodeSocketColor.default_value>"
+            },
+            "links": {
+              "Color1": [
+                [
+                  "Image Texture",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.001",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.001",
+            "type": "MATH",
+            "operation": "MULTIPLY_ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.16554054617881775"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.001",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "X": [
+                [
+                  "Math.001",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.001",
+                  "Y"
+                ]
+              ],
+              "Z": [
+                [
+                  "Separate XYZ.001",
+                  "Z"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v048 | transition fixed foreground soil bank",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dim": [
+      5.834163665771484,
+      0.0,
+      0.7870115637779236
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        63.700313568115234,
+        -5.050000190734863,
+        0.5059741139411926
+      ],
+      [
+        69.53447723388672,
+        -5.050000190734863,
+        0.5059741139411926
+      ],
+      [
+        69.53447723388672,
+        -5.050000190734863,
+        1.2580318450927734
+      ],
+      [
+        69.41293334960938,
+        -5.050000190734863,
+        1.2471717596054077
+      ],
+      [
+        69.2913818359375,
+        -5.050000190734863,
+        1.2458208799362183
+      ],
+      [
+        69.16983795166016,
+        -5.050000190734863,
+        1.2689507007598877
+      ],
+      [
+        69.04829406738281,
+        -5.050000190734863,
+        1.2929856777191162
+      ],
+      [
+        68.92675018310547,
+        -5.050000190734863,
+        1.2884635925292969
+      ],
+      [
+        68.80520629882812,
+        -5.050000190734863,
+        1.2624191045761108
+      ],
+      [
+        68.68366241455078,
+        -5.050000190734863,
+        1.2478723526000977
+      ],
+      [
+        68.5621109008789,
+        -5.050000190734863,
+        1.2560393810272217
+      ],
+      [
+        68.44056701660156,
+        -5.050000190734863,
+        1.2619348764419556
+      ]
+    ],
+    "uv": {
+      "v048b fixed soil paint registration transition": [
+        [
+          -0.24000023305416107,
+          -0.15000024437904358
+        ],
+        [
+          1.2400007247924805,
+          -0.15000024437904358
+        ],
+        [
+          1.2400007247924805,
+          0.18916556239128113
+        ],
+        [
+          1.2091675996780396,
+          0.18426784873008728
+        ],
+        [
+          1.1783326864242554,
+          0.18365861475467682
+        ],
+        [
+          1.1474995613098145,
+          0.19408978521823883
+        ],
+        [
+          1.116666555404663,
+          0.2049291729927063
+        ],
+        [
+          1.0858334302902222,
+          0.20288978517055511
+        ],
+        [
+          1.0550004243850708,
+          0.1911441534757614
+        ],
+        [
+          1.0241674184799194,
+          0.18458379805088043
+        ],
+        [
+          0.9933323860168457,
+          0.18826699256896973
+        ],
+        [
+          0.9624993205070496,
+          0.19092576205730438
+        ]
+      ]
+    },
+    "materials": [
+      {
+        "name": "v048b | transition original painted earth",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Bank_Paintover_v047.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "Image Texture",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.001",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math",
+                  "Value"
+                ]
+              ],
+              "Shader": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Mix Shader",
+                  "Shader"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.001",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.001",
+            "type": "MATH",
+            "operation": "MULTIPLY_ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.16554054617881775"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.001",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "X": [
+                [
+                  "Math.001",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.001",
+                  "Y"
+                ]
+              ],
+              "Z": [
+                [
+                  "Separate XYZ.001",
+                  "Z"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "v048 | war_zone fixed foreground soil bank",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dim": [
+      5.834159851074219,
+      0.0,
+      0.7888780236244202
+    ],
+    "hide": false,
+    "vertices": [
+      [
+        107.39263153076172,
+        -5.050000190734863,
+        0.5059741139411926
+      ],
+      [
+        113.22679138183594,
+        -5.050000190734863,
+        0.5059741139411926
+      ],
+      [
+        113.22679138183594,
+        -5.050000190734863,
+        1.2608107328414917
+      ],
+      [
+        113.1052474975586,
+        -5.050000190734863,
+        1.2614762783050537
+      ],
+      [
+        112.98369598388672,
+        -5.050000190734863,
+        1.250418782234192
+      ],
+      [
+        112.86215209960938,
+        -5.050000190734863,
+        1.2570173740386963
+      ],
+      [
+        112.74060821533203,
+        -5.050000190734863,
+        1.282233715057373
+      ],
+      [
+        112.61906433105469,
+        -5.050000190734863,
+        1.2948521375656128
+      ],
+      [
+        112.49752044677734,
+        -5.050000190734863,
+        1.276465654373169
+      ],
+      [
+        112.3759765625,
+        -5.050000190734863,
+        1.248727560043335
+      ],
+      [
+        112.25442504882812,
+        -5.050000190734863,
+        1.2424339056015015
+      ],
+      [
+        112.13288116455078,
+        -5.050000190734863,
+        1.2540632486343384
+      ]
+    ],
+    "uv": {
+      "v048b fixed soil paint registration war_zone": [
+        [
+          -0.23999926447868347,
+          -0.15000024437904358
+        ],
+        [
+          1.2400007247924805,
+          -0.15000024437904358
+        ],
+        [
+          1.2400007247924805,
+          0.1904187947511673
+        ],
+        [
+          1.2091675996780396,
+          0.19071894884109497
+        ],
+        [
+          1.1783326864242554,
+          0.18573220074176788
+        ],
+        [
+          1.1474995613098145,
+          0.18870805203914642
+        ],
+        [
+          1.116666555404663,
+          0.20008021593093872
+        ],
+        [
+          1.0858334302902222,
+          0.20577092468738556
+        ],
+        [
+          1.0550004243850708,
+          0.19747892022132874
+        ],
+        [
+          1.0241674184799194,
+          0.1849694848060608
+        ],
+        [
+          0.9933323860168457,
+          0.18213115632534027
+        ],
+        [
+          0.9624993205070496,
+          0.18737579882144928
+        ]
+      ]
+    },
+    "materials": [
+      {
+        "name": "v048b | war_zone original painted earth",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {}
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "operation": null,
+            "image": "Foreground_Bank_Paintover_v047.png",
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "Combine XYZ",
+                  "Vector"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Strength": "1.0",
+              "Weight": "0.0"
+            },
+            "links": {
+              "Color": [
+                [
+                  "Image Texture",
+                  "Color"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Map Range.001",
+            "type": "MAP_RANGE",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+              "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "operation": "MULTIPLY",
+            "image": null,
+            "inputs": {
+              "Value": "0.5"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Map Range.001",
+                  "Result"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Color": "<bpy_float[4], NodeSocketColor.default_value>",
+              "Weight": "0.0"
+            },
+            "links": {}
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Factor": [
+                [
+                  "Math",
+                  "Value"
+                ]
+              ],
+              "Shader": [
+                [
+                  "Emission",
+                  "Emission"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "operation": null,
+            "image": null,
+            "inputs": {
+              "Volume": null,
+              "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+              "Thickness": "0.0"
+            },
+            "links": {
+              "Surface": [
+                [
+                  "Mix Shader",
+                  "Shader"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Separate XYZ.001",
+            "type": "SEPXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "Vector": [
+                [
+                  "UV Map",
+                  "UV"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Math.001",
+            "type": "MATH",
+            "operation": "MULTIPLY_ADD",
+            "image": null,
+            "inputs": {
+              "Value": "0.16554054617881775"
+            },
+            "links": {
+              "Value": [
+                [
+                  "Separate XYZ.001",
+                  "X"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Combine XYZ",
+            "type": "COMBXYZ",
+            "operation": null,
+            "image": null,
+            "inputs": {},
+            "links": {
+              "X": [
+                [
+                  "Math.001",
+                  "Value"
+                ]
+              ],
+              "Y": [
+                [
+                  "Separate XYZ.001",
+                  "Y"
+                ]
+              ],
+              "Z": [
+                [
+                  "Separate XYZ.001",
+                  "Z"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

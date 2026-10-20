@@ -1,0 +1,86 @@
+{
+  "factory_empty_scene": true,
+  "append_source": "WTSC_Coherent_Append_v008b.blend",
+  "objects": 22,
+  "packed_images": [
+    "FXv002 original detailed eruption | packed",
+    "FXv003 | ORIGINAL four cold forms | packed straight alpha"
+  ],
+  "invalid_drivers": [],
+  "outside_driver_targets": [],
+  "continuous_native_geometry_evaluated": [
+    {
+      "frame": 1824,
+      "age": 0.0,
+      "top_local": 0.04870878905057907,
+      "anchor": [
+        109.13587188720703,
+        10.0,
+        -0.4315446615219116
+      ]
+    },
+    {
+      "frame": 1827,
+      "age": 3.0,
+      "top_local": 1.3888167142868042,
+      "anchor": [
+        109.13587188720703,
+        10.0,
+        -0.4315446615219116
+      ]
+    },
+    {
+      "frame": 1836,
+      "age": 12.0,
+      "top_local": 2.243739604949951,
+      "anchor": [
+        109.13587188720703,
+        10.0,
+        -0.4315446615219116
+      ]
+    },
+    {
+      "frame": 1848,
+      "age": 24.0,
+      "top_local": 2.117424488067627,
+      "anchor": [
+        109.13587188720703,
+        10.0,
+        -0.4315446615219116
+      ]
+    },
+    {
+      "frame": 1868,
+      "age": 44.0,
+      "top_local": 1.5408003330230713,
+      "anchor": [
+        109.13587188720703,
+        10.0,
+        -0.4315446615219116
+      ]
+    },
+    {
+      "frame": 1937,
+      "age": 113.0,
+      "top_local": 0.8726526498794556,
+      "anchor": [
+        109.13587188720703,
+        10.0,
+        -0.4315446615219116
+      ]
+    }
+  ],
+  "retime_test": {
+    "start": 2000,
+    "speed": 0.5,
+    "frame": 2024,
+    "expected_age": 12,
+    "top_error": 0.0,
+    "passed": true
+  },
+  "scale_test_passed": true,
+  "fixed_world_anchor": true,
+  "rgba_render": "Native_Append_RGBA_v008b.png",
+  "source_has_no_cameras_or_lights": true,
+  "no_production_scene_read": true
+}

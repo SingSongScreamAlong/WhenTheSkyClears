@@ -1,0 +1,18 @@
+2026-10-19T14:29:50.470716Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 0 new skill(s), total 0
+2026-10-19T14:29:50.482923Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 skill(s)
+2026-10-19T14:29:50.483178Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 accumulated skill(s)
+2026-10-19T14:29:50.487899Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: in-process executor registered — load_skill() will use in-process handlers (issue #464)
+2026-10-19T14:29:50.488223Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: main-thread dispatcher attached — tools/call will route through DccDispatcher::post
+2026-10-19T14:29:50.488517Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: readiness probe installed — /mcp and /v1/call will share it (issue #714)
+2026-10-19T14:29:50.749167Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 73 new skill(s), total 73
+2026-10-19T14:29:51.018666Z  INFO ThreadId(01) opentelemetry: name="MeterProvider.GlobalSet" Global meter provider is set. Meters can now be created using global::meter() or global::meter_with_scope().
+2026-10-19T14:29:51.052352Z  INFO ThreadId(01) dcc_mcp_http::handler::rmcp_mount: rmcp MCP endpoint mounted at /mcp (legacy + 2026 stateless dispatcher)
+2026-10-19T14:29:51.054053Z  INFO ThreadId(01) dcc_mcp_http::server: MCP HTTP server dcc-mcp-blender v0.2.14 listening on http://127.0.0.1:54649/mcp server_name=dcc-mcp-blender server_version=0.2.14
+2026-10-19T14:29:51.056206Z  INFO tokio-rt-worker dcc_mcp_transport::discovery::file_registry: registering service dcc_type=blender instance_id=356c7e1c-8f84-496a-88d8-47845d976455 host=127.0.0.1 port=54649
+2026-10-19T14:29:51.058994Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Registered in FileRegistry instance=356c7e1c-8f84-496a-88d8-47845d976455
+2026-10-19T14:29:51.070796Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Gateway port held by healthy resident — running as plain DCC instance port=9765 gateway_version=0.20.42 gateway_adapter_version=None gateway_adapter_dcc=Some("gateway") own_version=0.2.14 own_adapter_version=None own_adapter_dcc=Some("blender") resident_health=Healthy
+2026-10-19T14:29:53.030544Z  INFO dcc-mcp-http-54649 serve_inner: rmcp::service: Service initialized as server peer_info=None
+2026-10-19T14:29:53.031301Z  INFO dcc-mcp-http-54649 serve_inner: rmcp::service: input stream terminated
+2026-10-19T14:29:53.031587Z  INFO dcc-mcp-http-54649 serve_inner: rmcp::service: serve finished quit_reason=Closed
+2026-10-19T14:33:15.003898Z  INFO dcc-mcp-http-54649 dcc_mcp_http::server::spawn_impl: MCP HTTP server (dedicated) stopped
+2026-10-19T14:33:15.004713Z  INFO ThreadId(01) dcc_mcp_transport::discovery::file_registry: deregistered service dcc_type=blender instance_id=356c7e1c-8f84-496a-88d8-47845d976455

@@ -1,0 +1,1653 @@
+{
+  "captured_utc": "2026-10-18T23:52:26.742948+00:00",
+  "root": "WTSC_LOCAL_WORKSPACE",
+  "scope": "All regular project files except .git, __pycache__, and this audit output. Native and media checks are separate bounded samples.",
+  "files": 23623,
+  "bytes": 34814309471,
+  "folders": {
+    "characters": {
+      "files": 718,
+      "bytes": 346942377
+    },
+    "edit": {
+      "files": 1,
+      "bytes": 19200078
+    },
+    "effects": {
+      "files": 5418,
+      "bytes": 7525049606
+    },
+    "LIVING_WORLD_START_HERE.txt": {
+      "files": 1,
+      "bytes": 3243
+    },
+    "locomotion": {
+      "files": 13479,
+      "bytes": 7999509107
+    },
+    "notes": {
+      "files": 395,
+      "bytes": 55622301
+    },
+    "reference": {
+      "files": 2,
+      "bytes": 754672
+    },
+    "renders": {
+      "files": 1752,
+      "bytes": 12051761994
+    },
+    "scripts": {
+      "files": 228,
+      "bytes": 1105639
+    },
+    "sets": {
+      "files": 25,
+      "bytes": 52087503
+    },
+    "shots": {
+      "files": 85,
+      "bytes": 3389349330
+    },
+    "source": {
+      "files": 3,
+      "bytes": 4198045
+    },
+    "VILLAGE_STILL_REVIEW.txt": {
+      "files": 1,
+      "bytes": 1743
+    },
+    "WHEN_THE_SKY_CLEARS_ART_FRAME_CHECKPOINT_v045c.txt": {
+      "files": 1,
+      "bytes": 6194
+    },
+    "WHEN_THE_SKY_CLEARS_COLOR_ARC_v063.txt": {
+      "files": 1,
+      "bytes": 811
+    },
+    "WHEN_THE_SKY_CLEARS_CONTINUITY_RESTORED_v062.txt": {
+      "files": 1,
+      "bytes": 1390
+    },
+    "WHEN_THE_SKY_CLEARS_ENDING_v032.txt": {
+      "files": 1,
+      "bytes": 3404
+    },
+    "WHEN_THE_SKY_CLEARS_ENDING_v033.txt": {
+      "files": 1,
+      "bytes": 3349
+    },
+    "WHEN_THE_SKY_CLEARS_INTEGRATION_CHECKPOINT_v043.txt": {
+      "files": 1,
+      "bytes": 3320
+    },
+    "WHEN_THE_SKY_CLEARS_MATCHED_MOTION_v044.txt": {
+      "files": 1,
+      "bytes": 3615
+    },
+    "WHEN_THE_SKY_CLEARS_PRODUCTION_DEVELOPMENT_v061.txt": {
+      "files": 1,
+      "bytes": 476
+    },
+    "WHEN_THE_SKY_CLEARS_REFINEMENT_v047g.txt": {
+      "files": 1,
+      "bytes": 3727
+    },
+    "WHEN_THE_SKY_CLEARS_REFINEMENT_v048a.txt": {
+      "files": 1,
+      "bytes": 2061
+    },
+    "WHEN_THE_SKY_CLEARS_SUPPORTED_REVIEW_v046.txt": {
+      "files": 1,
+      "bytes": 4178
+    },
+    "WHEN_THE_SKY_CLEARS_TRAILER_v037.txt": {
+      "files": 1,
+      "bytes": 5276
+    },
+    "WHEN_THE_SKY_CLEARS_TRAILER_v040.txt": {
+      "files": 1,
+      "bytes": 4057
+    },
+    "WHEN_THE_SKY_CLEARS_WORLD_v030.txt": {
+      "files": 1,
+      "bytes": 4398
+    },
+    "work": {
+      "files": 1500,
+      "bytes": 3368674334
+    },
+    "WORLD_REVIEW_START_HERE.txt": {
+      "files": 1,
+      "bytes": 3243
+    }
+  },
+  "extensions": {
+    ".json": 1473,
+    ".png": 17456,
+    ".svg": 6,
+    ".md": 24,
+    ".txt": 244,
+    ".jpg": 398,
+    ".csv": 40,
+    ".log": 576,
+    ".blend": 304,
+    ".blend1": 98,
+    ".py": 1070,
+    ".zip": 52,
+    ".mp4": 220,
+    ".wav": 1,
+    ".tmp": 7,
+    ".vdb": 702,
+    ".uni": 672,
+    ".bphys": 272,
+    ".gif": 1,
+    ".jsonl": 4,
+    ".fbx": 2,
+    ".docx": 1
+  },
+  "json_files": 1473,
+  "json_parse_errors": [
+    {
+      "path": "effects/coherent_native_v008/evidence/library_prepared_attempt.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "path": "effects/painted_pose_v007/evidence/library_prepared_attempt.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "path": "locomotion/age10_proportion_candidate_v044/evidence/LIBRARY_STATIC_IMAGES_RESULT.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "path": "locomotion/connected_model_fit_v049/evidence/PREPARED_STATIC_RESULT.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "python_files": 1070,
+  "python_syntax_errors": [
+    {
+      "path": "scripts/verify_complete_trailer_v034.py",
+      "line": 25,
+      "error": "expected 'else' after 'if' expression"
+    }
+  ],
+  "scripts_with_absolute_windows_paths": 421,
+  "absolute_path_scripts": [
+    "characters/rig_capability_audit_v016/scripts/inspect_source.py",
+    "characters/rig_capability_audit_v016/scripts/process_previews.py",
+    "characters/rig_capability_audit_v016/scripts/write_reports.py",
+    "characters/rig_correctives_v017/scripts/package_checkpoint.py",
+    "effects/benchmark_v002/scripts/finish_benchmark.py",
+    "effects/benchmark_v003/scripts/finish_review_v003.py",
+    "effects/blast_refinement_v006/critique/inspect_existing_frames.py",
+    "effects/blast_refinement_v006/scripts/export_transparent.py",
+    "effects/blast_refinement_v006/scripts/finish_review.py",
+    "effects/blast_refinement_v006/scripts/record_library_xattrs.py",
+    "effects/blast_refinement_v006/scripts/render_refinement.py",
+    "effects/coherent_native_v008/scripts/finish_phase.py",
+    "effects/coherent_native_v008/scripts/record_library_xattrs.py",
+    "effects/coherent_native_v008/scripts/render_coherent.py",
+    "effects/compact_impact_v011/scripts/finish_media.py",
+    "effects/compact_impact_v011/scripts/record_library_xattrs.py",
+    "effects/compact_impact_v011/scripts/render_compact.py",
+    "effects/connected_wedge_v014/scripts/finish_preview.py",
+    "effects/connected_wedge_v014/scripts/record_library_xattrs.py",
+    "effects/connected_wedge_v014/scripts/render_rough.py",
+    "effects/connected_wedge_v014/scripts/write_handoff.py",
+    "effects/drawn_impact_v012/scripts/finish_media.py",
+    "effects/drawn_impact_v012/scripts/record_library_xattrs.py",
+    "effects/drawn_impact_v012/scripts/render_drawn.py",
+    "effects/drawn_impact_v012/scripts/render_rgba.py",
+    "effects/drawn_impact_v013/scripts/finish_media.py",
+    "effects/drawn_impact_v013/scripts/record_library_xattrs.py",
+    "effects/drawn_impact_v013/scripts/render_drawn.py",
+    "effects/drawn_impact_v013/scripts/render_rgba.py",
+    "effects/gas_pilot_v004/delivery/scripts/finish_gas_review.py",
+    "effects/gas_pilot_v004/delivery/scripts/supervise_bake.py",
+    "effects/gas_pilot_v004/delivery/scripts/supervise_gpu_render.py",
+    "effects/gas_pilot_v004/scripts/finish_gas_review.py",
+    "effects/gas_pilot_v004/scripts/supervise_bake.py",
+    "effects/gas_pilot_v004/scripts/supervise_gpu_render.py",
+    "effects/ground_impact_v009/scripts/finish_media.py",
+    "effects/ground_impact_v009/scripts/record_library_xattrs.py",
+    "effects/ground_impact_v009/scripts/render_ground.py",
+    "effects/ink_wash_v001/scripts/finish_media.py",
+    "effects/ink_wash_v001/scripts/inspect_project.py",
+    "effects/main_impact_v015/scripts/make_review_evidence.py",
+    "effects/main_impact_v015/scripts/make_review_evidence_v015c.py",
+    "effects/main_impact_v015/scripts/make_review_evidence_v015d.py",
+    "effects/main_impact_v015/scripts/trace_painted_assets.py",
+    "effects/painted_pose_v007/scripts/finish_single_review.py",
+    "effects/painted_pose_v007/scripts/record_library_xattrs.py",
+    "effects/painted_pose_v007/scripts/render_single_pose.py",
+    "effects/rupture_mass_v010/scripts/record_library_xattrs.py",
+    "effects/rupture_mass_v010/scripts/render_keys.py",
+    "effects/rupture_mass_v010/scripts/test_volume_retime.py",
+    "effects/squat_clods_v015/scripts/finish_preview.py",
+    "effects/squat_clods_v015/scripts/record_library_xattrs.py",
+    "effects/squat_clods_v015/scripts/render_rough.py",
+    "effects/squat_clods_v015/scripts/write_handoff.py",
+    "locomotion/age10_proportion_candidate_v044/scripts/package_static.py",
+    "locomotion/arm_proportion_layer_correction_v035/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/arm_proportion_layer_correction_v035/scripts/make_review_boards.py",
+    "locomotion/arm_proportion_layer_correction_v035/scripts/prepare_handoff.py",
+    "locomotion/balanced_load_and_arm_readability_v032/scripts/encode_construction.py",
+    "locomotion/balanced_load_and_arm_readability_v032/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/balanced_load_and_arm_readability_v032/scripts/make_review_boards.py",
+    "locomotion/battlefield_corrections_v006/scripts/finish_review.py",
+    "locomotion/battlefield_proof_v005/scripts/finish_review.py",
+    "locomotion/body_loading_overlap_v027/scripts/encode_comparison.py",
+    "locomotion/body_loading_overlap_v027/scripts/make_proof_boards.py",
+    "locomotion/character_design_finish_v040/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/character_design_finish_v040/scripts/make_look_comparison.py",
+    "locomotion/character_design_finish_v040/scripts/prepare_handoff.py",
+    "locomotion/coat_fluidity_v051/scripts/assemble_static_coat.py",
+    "locomotion/coat_fluidity_v051/scripts/encode_coat.py",
+    "locomotion/coherent_garment_four_pose_v037/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/coherent_garment_four_pose_v037/scripts/make_matched_boards.py",
+    "locomotion/coherent_garment_four_pose_v037/scripts/prepare_handoff.py",
+    "locomotion/connected_model_fit_v049/scripts/assemble_static_boards.py",
+    "locomotion/connected_model_fit_v049/scripts/encode_v049_motion.py",
+    "locomotion/continuous_coat_walk_v023/scripts/coat_board.py",
+    "locomotion/continuous_coat_walk_v023/scripts/encode_review.py",
+    "locomotion/continuous_coat_walk_v023/scripts/proof_board.py",
+    "locomotion/face_hand_finish_v050/scripts/assemble_static_finish.py",
+    "locomotion/first_pack_v001/evidence/library_helpers_20261017_01/library_file_transfer.py",
+    "locomotion/first_pack_v001/evidence/library_helpers_20261017_01/library_hosted_apps.py",
+    "locomotion/first_pack_v001/evidence/library_helpers_20261017_01/library_upload.py",
+    "locomotion/first_pack_v001/scripts/finish_delivery.py",
+    "locomotion/four_pose_silhouette_rebuild_v029/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/four_pose_silhouette_rebuild_v029/scripts/make_comparison_boards.py",
+    "locomotion/four_pose_volume_revision_v030/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/four_pose_volume_revision_v030/scripts/make_comparison_boards.py",
+    "locomotion/full_color_character_v038/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/full_color_character_v038/scripts/make_full_color_board.py",
+    "locomotion/full_color_character_v038/scripts/prepare_handoff.py",
+    "locomotion/full_color_coat_continuity_v039/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/full_color_coat_continuity_v039/scripts/make_coat_review.py",
+    "locomotion/full_color_coat_continuity_v039/scripts/prepare_handoff.py",
+    "locomotion/garment_continuity_v047/current_v046_continuation/scripts/build_current_garment.py",
+    "locomotion/garment_continuity_v047/current_v046_continuation/scripts/build_current_reach.py",
+    "locomotion/garment_continuity_v047/current_v046_continuation/scripts/package_current_review.py",
+    "locomotion/garment_continuity_v047/current_v046_continuation/scripts/render_current_sequences.py",
+    "locomotion/garment_continuity_v047/evidence/paired_reach_source_pose_probe.py",
+    "locomotion/garment_continuity_v047/scripts/build_candidate.py",
+    "locomotion/garment_continuity_v047/scripts/build_current_garment.py",
+    "locomotion/garment_continuity_v047/scripts/build_current_reach.py",
+    "locomotion/garment_continuity_v047/scripts/capture_input.py",
+    "locomotion/garment_continuity_v047/scripts/finalize_current_delivery.py",
+    "locomotion/garment_continuity_v047/scripts/inspect_source.py",
+    "locomotion/garment_continuity_v047/scripts/make_boards.py",
+    "locomotion/garment_continuity_v047/scripts/package_current_review.py",
+    "locomotion/garment_continuity_v047/scripts/render_baseline.py",
+    "locomotion/garment_continuity_v047/scripts/render_current_sequences.py",
+    "locomotion/garment_continuity_v047/scripts/render_sequences.py",
+    "locomotion/garment_continuity_v047/scripts/review_uv.py",
+    "locomotion/garment_continuity_v047/scripts/snapshot_final_v046.py",
+    "locomotion/gp_coat_transition_v025/scripts/encode_transition_review.py",
+    "locomotion/gp_coat_transition_v025/scripts/review_bare_arcs.py",
+    "locomotion/gp_extended_review_v026/scripts/encode_long_review.py",
+    "locomotion/gp_extended_review_v026/scripts/make_proof_board.py",
+    "locomotion/head_turn_patch_v008/scripts/finish_blocked_study.py",
+    "locomotion/leaves_child_pose_correction_v021/scripts/make_previews.py",
+    "locomotion/leaves_reference_child_study_v020/reference/library_helpers/library_file_transfer.py",
+    "locomotion/leaves_reference_child_study_v020/reference/library_helpers/library_hosted_apps.py",
+    "locomotion/leaves_reference_child_study_v020/reference/library_helpers/library_upload.py",
+    "locomotion/leaves_reference_child_study_v020/scripts/inspect_source.py",
+    "locomotion/leaves_reference_child_study_v020/scripts/make_comparison.py",
+    "locomotion/loading_walk_refinement_v024/scripts/coat_board.py",
+    "locomotion/loading_walk_refinement_v024/scripts/encode_review.py",
+    "locomotion/loading_walk_refinement_v024/scripts/export_travel_and_comparison.py",
+    "locomotion/loading_walk_refinement_v024/scripts/proof_board.py",
+    "locomotion/motion_refinement_unpainted_v012/evidence/library_helper_current/library_file_transfer.py",
+    "locomotion/neck_collar_connection_v041/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/neck_collar_connection_v041/scripts/make_comparison.py",
+    "locomotion/neck_collar_connection_v041/scripts/prepare_handoff.py",
+    "locomotion/painted_outfit_restoration_v046/scripts/encode_review.py",
+    "locomotion/painted_whole_pose_correctives_v022/scripts/first_review_board.py",
+    "locomotion/painted_whole_pose_correctives_v022/scripts/make_comparison.py",
+    "locomotion/performance_inbetweens_v015/scripts/encode_motion.py",
+    "locomotion/performance_inbetweens_v015/scripts/make_pose_sheet.py",
+    "locomotion/performance_v002/scripts/finish_review.py",
+    "locomotion/performance_v003/evidence/library_helpers_reconnect_20261017/library_file_transfer.py",
+    "locomotion/performance_v003/evidence/library_helpers_reconnect_20261017/library_hosted_apps.py",
+    "locomotion/performance_v003/evidence/library_helpers_reconnect_20261017/library_upload.py",
+    "locomotion/performance_v003/scripts/finish_review.py",
+    "locomotion/preferred_walk_consistent_footwear_v033/scripts/encode_matched_review.py",
+    "locomotion/preferred_walk_consistent_footwear_v033/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/preferred_walk_consistent_footwear_v033/scripts/make_review_boards.py",
+    "locomotion/readability_working_view_v034/scripts/analyze_and_make_boards.py",
+    "locomotion/readability_working_view_v034/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/recovery_walk_refinement_v009/evidence/library_helpers_20261017/library_file_transfer.py",
+    "locomotion/recovery_walk_refinement_v009/evidence/library_helpers_20261017/library_hosted_apps.py",
+    "locomotion/reference_walk_exercise_v018/reference/library_helpers/library_file_transfer.py",
+    "locomotion/reference_walk_exercise_v018/reference/library_helpers/library_hosted_apps.py",
+    "locomotion/reference_walk_exercise_v018/reference/library_helpers/library_upload.py",
+    "locomotion/reference_walk_exercise_v018/scripts/make_previews.py",
+    "locomotion/rigid_limb_continuity_v036/scripts/encode_matched_preview.py",
+    "locomotion/rigid_limb_continuity_v036/scripts/inspect_baseline_motion.py",
+    "locomotion/rigid_limb_continuity_v036/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/rigid_limb_continuity_v036/scripts/make_proof_board.py",
+    "locomotion/rigid_limb_continuity_v036/scripts/prepare_final_handoff.py",
+    "locomotion/rough_breakdowns_construction_v031/scripts/encode_construction.py",
+    "locomotion/rough_breakdowns_construction_v031/scripts/library_helper_current/library_file_transfer.py",
+    "locomotion/rough_breakdowns_construction_v031/scripts/make_boards.py",
+    "locomotion/scale_audit_v042_READ_ONLY/scripts/analyze_scale.py",
+    "locomotion/steady_walk_baseline_v047/scripts/encode_comparison.py",
+    "locomotion/stumble_polish_continuation_v010/evidence/library_helpers_current/library_file_transfer.py",
+    "locomotion/stumble_polish_continuation_v010/evidence/library_helpers_current/library_hosted_apps.py",
+    "locomotion/supported_recovery_v007/scripts/finish_review.py",
+    "locomotion/upper_body_pose_refinement_v028/scripts/encode_comparison.py",
+    "locomotion/upper_body_pose_refinement_v028/scripts/make_pose_boards.py",
+    "locomotion/walk_arm_readability_v019/scripts/make_comparison.py",
+    "locomotion/weight_loading_v048/scripts/assemble_review_boards.py",
+    "locomotion/whole_pose_blocking_v013/scripts/encode_blocking.py",
+    "locomotion/whole_pose_blocking_v013/scripts/make_pose_sheet.py",
+    "locomotion/whole_pose_blocking_v014/evidence/library_helpers_current/library_file_transfer.py",
+    "locomotion/whole_pose_blocking_v014/evidence/library_helpers_current/library_hosted_apps.py",
+    "locomotion/whole_pose_blocking_v014/evidence/library_helpers_current/library_upload.py",
+    "locomotion/whole_pose_blocking_v014/scripts/encode_blocking.py",
+    "locomotion/whole_pose_blocking_v014/scripts/make_pose_sheet.py",
+    "notes/improvement_v048/review_evidence/make_v048a_comparisons.py",
+    "scripts/add_native_5s_master_v043.py",
+    "scripts/anchor_environment_v025.py",
+    "scripts/assemble_living_world.py",
+    "scripts/assemble_living_world_v007.py",
+    "scripts/assemble_review_v047g.py",
+    "scripts/assemble_village_progress_v015.py",
+    "scripts/assemble_village_still.py",
+    "scripts/assemble_world_master.py",
+    "scripts/audit_camp_final_v039.py",
+    "scripts/audit_complete_native_v034.py",
+    "scripts/audit_corrected_world.py",
+    "scripts/audit_full_native_v037.py",
+    "scripts/audit_full_native_v040.py",
+    "scripts/audit_knockout_native_v032.py",
+    "scripts/audit_knockout_native_v033.py",
+    "scripts/audit_open_groundwork_v041.py",
+    "scripts/audit_portable_v029.py",
+    "scripts/audit_world_fades_v035.py",
+    "scripts/audit_world_motion_v026.py",
+    "scripts/audit_world_motion_v027.py",
+    "scripts/bind_and_animate_girl.py",
+    "scripts/blend_ground_painted_world_v020.py",
+    "scripts/build_art_study_v045.py",
+    "scripts/build_art_study_v045a.py",
+    "scripts/build_art_study_v045b.py",
+    "scripts/build_art_study_v045c.py",
+    "scripts/build_art_study_v045d.py",
+    "scripts/build_camp_benchmark_v039.py",
+    "scripts/build_combined_trial_v043.py",
+    "scripts/build_complete_master_v034.py",
+    "scripts/build_full_knockout_v037.py",
+    "scripts/build_knockout_ending_v032.py",
+    "scripts/build_motion_trial_v042.py",
+    "scripts/build_motion_trial_v044.py",
+    "scripts/build_motion_trial_v046.py",
+    "scripts/build_painted_world_v016.py",
+    "scripts/build_spatial_atmosphere_v036.py",
+    "scripts/build_world_first.py",
+    "scripts/check_benchmark_v039.py",
+    "scripts/cohere_world_motion_v023.py",
+    "scripts/compare_art_frames_v045b.py",
+    "scripts/compare_art_frames_v045c.py",
+    "scripts/compare_art_frames_v045d.py",
+    "scripts/configure_world_video.py",
+    "scripts/connect_benchmark_light_power_v039.py",
+    "scripts/continuous_panorama_v026.py",
+    "scripts/create_living_details.py",
+    "scripts/create_living_world_native_meshes.py",
+    "scripts/create_native_drawings.py",
+    "scripts/diagnose_layer_motion_v019.py",
+    "scripts/draft_village_contact_v014.py",
+    "scripts/enlarge_knockout_v033.py",
+    "scripts/export_combined_review_v043.py",
+    "scripts/export_complete_trailer_v034.py",
+    "scripts/export_full_knockout_v037.py",
+    "scripts/export_full_knockout_v040.py",
+    "scripts/export_motion_review_v044.py",
+    "scripts/export_supported_review_v046.py",
+    "scripts/expose_rooted_foreground_v039.py",
+    "scripts/feather_set_roots_v027.py",
+    "scripts/final_portable_notes_and_fade_v029.py",
+    "scripts/final_portable_notes_and_fade_v031.py",
+    "scripts/finalize_living_world_source.py",
+    "scripts/finalize_native_paths_v038.py",
+    "scripts/finalize_painted_world_v019.py",
+    "scripts/finalize_walk_proof.py",
+    "scripts/finish_full_delivery_v037.py",
+    "scripts/finish_living_details.py",
+    "scripts/finish_native_editable_v038.py",
+    "scripts/finish_painted_world_v018.py",
+    "scripts/finish_village_still_v013.py",
+    "scripts/finish_world_after_compositor_repair.py",
+    "scripts/fix_battlefield_transparency.py",
+    "scripts/foreground_readability_v030.py",
+    "scripts/freeze_checkpoint_v043.py",
+    "scripts/inspect_art_stage_v045.py",
+    "scripts/inspect_atmosphere_api_v036.py",
+    "scripts/inspect_benchmark_inputs_v039.py",
+    "scripts/inspect_current_gp_api.py",
+    "scripts/inspect_ending_api2_v032.py",
+    "scripts/inspect_ending_api_v032.py",
+    "scripts/inspect_integration_candidates_v041.py",
+    "scripts/inspect_living_world.py",
+    "scripts/inspect_native_walk.py",
+    "scripts/inspect_painted_world_v016.py",
+    "scripts/inspect_synty_reference.py",
+    "scripts/inspect_trial_rig_v042.py",
+    "scripts/inspect_village_lookdev.py",
+    "scripts/inspect_world_source.py",
+    "scripts/isolate_composite_v017.py",
+    "scripts/native_edit_master_v029.py",
+    "scripts/native_edit_master_v031.py",
+    "scripts/organize_living_assets.py",
+    "scripts/overscan_painted_world_v024.py",
+    "scripts/polish_world_layers.py",
+    "scripts/portable_painted_source_v028.py",
+    "scripts/prepare_dense_review_v043.py",
+    "scripts/prepare_dense_review_v044.py",
+    "scripts/prepare_improvement_v047.py",
+    "scripts/prepare_open_integration_v041.py",
+    "scripts/prepare_supported_evidence_v046.py",
+    "scripts/prepare_village_detail_references_v014.py",
+    "scripts/prepare_world_delivery_source.py",
+    "scripts/propagate_camp_language_v040.py",
+    "scripts/record_world_assets.py",
+    "scripts/refine_camp_paint_language_v039.py",
+    "scripts/refine_owned_art_v045b.py",
+    "scripts/refine_painted_world_v017.py",
+    "scripts/refine_world_geography.py",
+    "scripts/remove_environment_dissolves_v035.py",
+    "scripts/render_art_frames_v045.py",
+    "scripts/render_art_frames_v045a.py",
+    "scripts/render_art_frames_v045b.py",
+    "scripts/render_art_frames_v045c.py",
+    "scripts/render_art_frames_v045d.py",
+    "scripts/render_benchmark_check2_v039.py",
+    "scripts/render_benchmark_check3_v039.py",
+    "scripts/render_benchmark_check4_v039.py",
+    "scripts/render_benchmark_check_v039.py",
+    "scripts/render_camp_comparison_v039.py",
+    "scripts/render_combined_keys_v043.py",
+    "scripts/render_corrected_field_still.py",
+    "scripts/render_editable_asset_review.py",
+    "scripts/render_full_component_v037.py",
+    "scripts/render_full_proofs_v040.py",
+    "scripts/render_groundwork_checks_v041.py",
+    "scripts/render_knockout_checks_v032.py",
+    "scripts/render_knockout_preview_v032.py",
+    "scripts/render_knockout_preview_v033.py",
+    "scripts/render_living_world_movie.py",
+    "scripts/render_living_world_stills.py",
+    "scripts/render_motion_trial_keys_v042.py",
+    "scripts/render_native_combined_v043.py",
+    "scripts/render_painted_world_v019.py",
+    "scripts/render_painted_world_v022.py",
+    "scripts/render_painted_world_v023.py",
+    "scripts/render_painted_world_v024.py",
+    "scripts/render_painted_world_v026.py",
+    "scripts/render_painted_world_v027.py",
+    "scripts/render_readability_movie_v030.py",
+    "scripts/render_readability_preview_v030.py",
+    "scripts/render_supported_review_v046.py",
+    "scripts/render_village_inspection_v013.py",
+    "scripts/render_village_still.py",
+    "scripts/render_world_alpha_repair.py",
+    "scripts/render_world_movie.py",
+    "scripts/repair_ground_sort_v021.py",
+    "scripts/repair_path_alpha_v022.py",
+    "scripts/repair_village_plane_alignment.py",
+    "scripts/replace_readability_asset_v030.py",
+    "scripts/retain_reviewed_grass_placement_v040.py",
+    "scripts/review_media_v047f.py",
+    "scripts/review_media_v048.py",
+    "scripts/review_painted_world_v016.py",
+    "scripts/setup_living_world.py",
+    "scripts/test_battlefield_composite.py",
+    "scripts/test_living_foliage_render.py",
+    "scripts/trace_head_contours_v047.py",
+    "scripts/verify_ambient_motion_v030.py",
+    "scripts/verify_complete_trailer_v034.py",
+    "scripts/verify_editable_asset_transforms.py",
+    "scripts/verify_editable_v038.py",
+    "scripts/verify_field_entry.py",
+    "scripts/verify_full_knockout_v037.py",
+    "scripts/verify_full_knockout_v040.py",
+    "scripts/verify_knockout_preview_v032.py",
+    "scripts/verify_knockout_preview_v033.py",
+    "scripts/verify_painted_movie_v027.py",
+    "scripts/verify_painted_movie_v030.py",
+    "scripts/verify_render_v044.py",
+    "scripts/verify_village_source_v013.py",
+    "scripts/verify_world_movie.py",
+    "work/color_arc_v063/scripts/build_color_arc.py",
+    "work/color_arc_v063/scripts/inspect_arc_driver.py",
+    "work/color_arc_v063/scripts/inspect_color_sources.py",
+    "work/color_arc_v063/scripts/package_color_review.py",
+    "work/color_arc_v063/scripts/render_color_arc_review.py",
+    "work/color_progression_test_v049/scripts/color_still_study.py",
+    "work/color_progression_test_v049/scripts/finish_color_study.py",
+    "work/continuity_restore_v062/scripts/restore_continuity.py",
+    "work/production_look_v061/scripts/build_and_validate.py",
+    "work/production_look_v061/scripts/build_production_look.py",
+    "work/production_look_v061/scripts/camera_height_study.py",
+    "work/production_look_v061/scripts/diagnose_focus.py",
+    "work/production_look_v061/scripts/diagnose_transparency_focus.py",
+    "work/production_look_v061/scripts/fix_transparent_focus.py",
+    "work/production_look_v061/scripts/fix_validate_and_deliver.py",
+    "work/production_look_v061/scripts/inspect_depth.py",
+    "work/production_look_v061/scripts/package_production_review.py",
+    "work/production_look_v061/scripts/render_and_package.py",
+    "work/production_look_v061/scripts/render_production_sequence.py",
+    "work/production_review_v059/apply_contact.py",
+    "work/production_review_v059/encode_review.py",
+    "work/production_review_v059/final_package_check.py",
+    "work/production_review_v059/finish_integration.py",
+    "work/production_review_v059/inspect_motion.py",
+    "work/production_review_v059/inspect_scene.py",
+    "work/production_review_v059/inspect_title_clock.py",
+    "work/production_review_v059/integrate_pair.py",
+    "work/production_review_v059/make_inspection_board.py",
+    "work/production_review_v059/verify_delivery.py",
+    "work/production_review_v059/verify_render.py",
+    "work/trailer_development_v060/scripts/archive_pre_response.py",
+    "work/trailer_development_v060/scripts/build_steady_reach.py",
+    "work/trailer_development_v060/scripts/build_world_shot.py",
+    "work/trailer_development_v060/scripts/fix_event_interpolation.py",
+    "work/trailer_development_v060/scripts/inspect_interface.py",
+    "work/trailer_development_v060/scripts/inspect_output_api.py",
+    "work/trailer_development_v060/scripts/inspect_world.py",
+    "work/trailer_development_v060/scripts/package_world_review.py",
+    "work/trailer_development_v060/scripts/render_world_sequences.py",
+    "work/trailer_development_v060/scripts/snapshot_inputs.py",
+    "work/world_architecture_v049i/scripts/build_registered_school.py",
+    "work/world_architecture_v049i/scripts/build_registered_school_c.py",
+    "work/world_architecture_v049i/scripts/clean_and_verify_architecture_e.py",
+    "work/world_architecture_v049i/scripts/finalize_window_proof_i.py",
+    "work/world_architecture_v049i/scripts/finish_architecture_proof.py",
+    "work/world_architecture_v049i/scripts/make_window_review_board_i.py",
+    "work/world_architecture_v049i/scripts/refine_registered_school.py",
+    "work/world_architecture_v049i/scripts/trace_original_glass.py",
+    "work/world_architecture_v049i/scripts/verify_stored_child_material_values.py",
+    "work/world_art_v048d/scripts/build_world_art.py",
+    "work/world_art_v048d/scripts/clean_overdraw_v048d.py",
+    "work/world_art_v048d/scripts/finish_and_render.py",
+    "work/world_art_v048d/scripts/inspect_world.py",
+    "work/world_art_v048d/scripts/make_deliverables_v048d.py",
+    "work/world_art_v048d/scripts/refine_painted_surfaces.py",
+    "work/world_art_v048d/scripts/render_baseline.py",
+    "work/world_facade_v057/continuity_review/helpers_current/library_file_transfer.py",
+    "work/world_facade_v057/continuity_review/source/analyze_environment_review.py",
+    "work/world_facade_v057/continuity_review/source/encode_environment_review.py",
+    "work/world_facade_v057/continuity_review/source/finalize_analysis_witnesses.py",
+    "work/world_facade_v057/continuity_review/source/render_environment_review.py",
+    "work/world_facade_v057/source/compose_and_test_continuous.py",
+    "work/world_facade_v057/source/make_accepted_review.py",
+    "work/world_facade_v057/source/test_continuous_preservation.py",
+    "work/world_facade_v057/source/verify_native_regions.py",
+    "work/world_facade_v057/source/verify_opacity_graph.py",
+    "work/world_minimum_v058/scripts/audit_world.py",
+    "work/world_minimum_v058/scripts/build_ground_v058a.py",
+    "work/world_minimum_v058/scripts/encode_and_review.py",
+    "work/world_minimum_v058/scripts/inspect_foreground.py",
+    "work/world_minimum_v058/scripts/inspect_motion_images.py",
+    "work/world_minimum_v058/scripts/verify_and_render_motion.py",
+    "work/world_minimum_v058/scripts/verify_packaged_copy.py"
+  ],
+  "hashes_computed": 1086,
+  "hash_bytes": 9808818597,
+  "exact_duplicate_source_groups": 33,
+  "duplicate_bytes_beyond_one_copy": 448017285,
+  "git_commit_count": "0",
+  "git_commit_error": "",
+  "git_tracked_files": 0,
+  "gitignore_exists": false,
+  "audio": {
+    "frames": 4800000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "sample_width": 2,
+    "seconds": 100.0
+  },
+  "status_document_index": [
+    {
+      "path": "characters/rig_capability_audit_v016/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "characters/rig_capability_audit_v016/RIG_CAPABILITIES_AND_DEFECTS_v016.txt",
+      "status_terms": [
+        "rejected",
+        "remaining"
+      ]
+    },
+    {
+      "path": "characters/rig_correctives_v017/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "characters/rig_correctives_v017/V017_CHECKPOINT_REPORT.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "characters/rig_correctives_v017/V017_IMPORT_AND_CONTROL_GUIDE.txt",
+      "status_terms": [
+        "rejected",
+        "remaining"
+      ]
+    },
+    {
+      "path": "effects/benchmark_v002/BENCHMARK_README.txt",
+      "status_terms": [
+        "HELD",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/benchmark_v002/CURRENT_STATUS_v002a.txt",
+      "status_terms": [
+        "Held",
+        "held",
+        "rejected",
+        "remaining"
+      ]
+    },
+    {
+      "path": "effects/benchmark_v003/IMPORT_AND_REVIEW_v003.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/blast_refinement_v006/IMPORT_GUIDE.md",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/coherent_native_v008/IMPORT_AND_REVIEW.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/coherent_native_v008/STATUS_REJECTED.txt",
+      "status_terms": [
+        "REJECTED",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/compact_impact_v011/REVIEW_IMPORT.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/connected_wedge_v014/evidence/decision.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/connected_wedge_v014/ROUGH_NOTES.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/drawn_impact_v012/evidence/construction_decision.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/drawn_impact_v012/IMPORT_AND_REVIEW.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/drawn_impact_v013/evidence/construction_decision.txt",
+      "status_terms": [
+        "Remaining",
+        "held"
+      ]
+    },
+    {
+      "path": "effects/drawn_impact_v013/IMPORT_AND_REVIEW.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/gas_pilot_v004/delivery/TECHNIQUE_TEST_README.txt",
+      "status_terms": [
+        "deferred",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/gas_pilot_v004/evidence/bake_log.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/gas_pilot_v004/evidence/proof_bake_log.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/gas_pilot_v004/TECHNIQUE_TEST_README.txt",
+      "status_terms": [
+        "deferred",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/ground_impact_v009/evidence/construction_decision.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/ground_impact_v009/REVIEW_AND_IMPORT.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/ground_impact_v009/STATUS_PROTOTYPE_INCOMPLETE.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/ink_wash_v001/ARTISTIC_STATUS.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/ink_wash_v001/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "effects/ink_wash_v001/HANDOFF_STATUS.txt",
+      "status_terms": [
+        "Remaining"
+      ]
+    },
+    {
+      "path": "effects/ink_wash_v001/IMPORT_GUIDE.txt",
+      "status_terms": [
+        "deferred",
+        "held"
+      ]
+    },
+    {
+      "path": "effects/ink_wash_v001/INTEGRATION_NOTES_5S.txt",
+      "status_terms": [
+        "remaining"
+      ]
+    },
+    {
+      "path": "effects/painted_pose_v007/REVIEW_AND_IMPORT.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/rupture_mass_v010/evidence/construction_decision.txt",
+      "status_terms": [
+        "Rejected",
+        "held"
+      ]
+    },
+    {
+      "path": "effects/rupture_mass_v010/REVIEW_IMPORT_v010h.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "effects/rupture_mass_v010/STATUS_CURRENT_v010h.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/rupture_mass_v010/STATUS_PAUSED_FOR_NEW_REFERENCE.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/squat_clods_v015/evidence/decision.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "effects/squat_clods_v015/evidence/render_defer.txt",
+      "status_terms": [
+        "deferred"
+      ]
+    },
+    {
+      "path": "effects/squat_clods_v015/ROUGH_NOTES.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "LIVING_WORLD_START_HERE.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/age10_proportion_candidate_v044/STATIC_SCALE_GUIDE_v044.txt",
+      "status_terms": [
+        "Held",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/anatomy_scale_audit_v043_READ_ONLY/AGE10_AUDIT_FINDINGS_v043.txt",
+      "status_terms": [
+        "HELD",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/arm_proportion_layer_correction_v035/V035_VIEWING_IMPORT_AND_CANDID_ASSESSMENT.txt",
+      "status_terms": [
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/balanced_load_and_arm_readability_v032/V032_IMPORT_TIMING_AND_CANDID_ASSESSMENT.txt",
+      "status_terms": [
+        "REMAINING",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/battlefield_proof_v005/BATTLEFIELD_HANDOFF.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/body_loading_overlap_v027/V027_CANDID_ASSESSMENT.txt",
+      "status_terms": [
+        "deferred"
+      ]
+    },
+    {
+      "path": "locomotion/body_loading_overlap_v027/V027_VIEWING_AND_IMPORT_GUIDE.txt",
+      "status_terms": [
+        "rejected",
+        "remaining"
+      ]
+    },
+    {
+      "path": "locomotion/camp_proof_v004/CAMP_HANDOFF.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/character_design_finish_v040/VIEWING_IMPORT_AND_CANDID_ASSESSMENT_v040.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/coherent_garment_four_pose_v037/VIEWING_AND_NATIVE_GUIDE_v037.txt",
+      "status_terms": [
+        "Remaining",
+        "held",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/connected_model_fit_v049/MODEL_FIT_GUIDE_v049.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/continuous_coat_walk_v023/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/face_hand_finish_v050/IMPORT_TIMING_AND_ASSESSMENT_v050.txt",
+      "status_terms": [
+        "Remaining",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/first_pack_v001/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/first_pack_v001/HANDOFF_STATUS.txt",
+      "status_terms": [
+        "REMAINING",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/first_pack_v001/MOTION_STATUS.txt",
+      "status_terms": [
+        "NOT BUILT"
+      ]
+    },
+    {
+      "path": "locomotion/four_pose_volume_revision_v030/V030_POSE_GUIDE_AND_CANDID_CRITIQUE.txt",
+      "status_terms": [
+        "Remaining"
+      ]
+    },
+    {
+      "path": "locomotion/full_color_coat_continuity_v039/VIEWING_IMPORT_AND_ASSESSMENT_v039.txt",
+      "status_terms": [
+        "held",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/garment_continuity_v047/current_v046_continuation/README_v047b.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/girl_cloth_followthrough_v047/DEFERRED_NOT_BUILT.txt",
+      "status_terms": [
+        "Deferred"
+      ]
+    },
+    {
+      "path": "locomotion/gp_coat_transition_v025/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/gp_extended_review_v026/V026_VIEWING_AND_IMPORT_GUIDE.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/head_turn_patch_v008/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/head_turn_patch_v008/STATUS_REFERENCE_REQUIRED.txt",
+      "status_terms": [
+        "REJECTED"
+      ]
+    },
+    {
+      "path": "locomotion/leaves_child_pose_correction_v021/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/leaves_child_pose_correction_v021/V021_IMPORT_AND_REVIEW_GUIDE.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/leaves_child_pose_correction_v021/V021_RESOLVED_AND_REMAINING_REPORT.txt",
+      "status_terms": [
+        "REMAINING",
+        "rejected",
+        "unapproved"
+      ]
+    },
+    {
+      "path": "locomotion/leaves_reference_child_study_v020/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/leaves_reference_child_study_v020/V020_REFERENCE_TO_CHILD_REPORT.txt",
+      "status_terms": [
+        "remaining"
+      ]
+    },
+    {
+      "path": "locomotion/loading_walk_refinement_v024/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/loading_walk_refinement_v024/README_REVIEW_FIRST.txt",
+      "status_terms": [
+        "not integrated"
+      ]
+    },
+    {
+      "path": "locomotion/loading_walk_refinement_v024/V024_COAT_REPLACEMENT_ART_BRIEF.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/loading_walk_refinement_v024/V024_IMPORT_TIMING_AND_EDIT_GUIDE.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/loading_walk_refinement_v024/V024_VISUAL_ASSESSMENT.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/motion_rebuild_unpainted_v011/DIAGNOSIS_AND_TEST_GUIDE_v011.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/motion_rebuild_unpainted_v011/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/motion_refinement_unpainted_v012/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/motion_refinement_unpainted_v012/REFINEMENT_AND_TIMING_GUIDE_v012.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/neck_collar_connection_v041/VIEWING_IMPORT_AND_ASSESSMENT_v041.txt",
+      "status_terms": [
+        "not integrated",
+        "rejected",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/painted_outfit_restoration_v046/IMPORT_TIMING_GUIDE_v046.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/painted_whole_pose_correctives_v022/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/painted_whole_pose_correctives_v022/reference/V021_IMPORT_AND_REVIEW_GUIDE.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/painted_whole_pose_correctives_v022/V022_REVIEW_AND_EDIT_GUIDE.txt",
+      "status_terms": [
+        "UNAPPROVED",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/performance_inbetweens_v015/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/performance_v002/evidence/v001_artistic_audit.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/performance_v003/ARTISTIC_REVIEW.txt",
+      "status_terms": [
+        "REMAINING",
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/performance_v003/MOTION_STATUS.txt",
+      "status_terms": [
+        "Remaining"
+      ]
+    },
+    {
+      "path": "locomotion/preferred_walk_consistent_footwear_v033/V033_VIEWING_IMPORT_AND_CANDID_ASSESSMENT.txt",
+      "status_terms": [
+        "held",
+        "rejected",
+        "unapproved"
+      ]
+    },
+    {
+      "path": "locomotion/recovery_walk_refinement_v009/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/recovery_walk_refinement_v009/IMPORT_TIMING_GUIDE_v009.txt",
+      "status_terms": [
+        "REMAINING",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/reference_walk_exercise_v018/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/reference_walk_exercise_v018/V018_CHECKPOINT_REPORT.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/rigid_limb_continuity_v036/BOUNDED_ART_MODEL_REFINEMENT_PLAN.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/rough_breakdowns_construction_v031/V031_IMPORT_TIMING_AND_CANDID_ASSESSMENT.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/steady_walk_baseline_v047/IMPORT_TIMING_AND_ASSESSMENT_v047.txt",
+      "status_terms": [
+        "Held",
+        "REMAINING",
+        "deferred",
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/stumble_polish_continuation_v010/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/supported_recovery_v007/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/upper_body_pose_refinement_v028/README_REVIEW_FIRST.txt",
+      "status_terms": [
+        "remaining"
+      ]
+    },
+    {
+      "path": "locomotion/upper_body_pose_refinement_v028/V028_CANDID_ASSESSMENT.txt",
+      "status_terms": [
+        "deferred",
+        "remaining"
+      ]
+    },
+    {
+      "path": "locomotion/upper_body_pose_refinement_v028/V028_VIEWING_AND_IMPORT_GUIDE.txt",
+      "status_terms": [
+        "rejected",
+        "remaining"
+      ]
+    },
+    {
+      "path": "locomotion/walk_arm_readability_v019/V019_IMPORT_AND_CHANGE_GUIDE.txt",
+      "status_terms": [
+        "held",
+        "rejected",
+        "unapproved"
+      ]
+    },
+    {
+      "path": "locomotion/walk_arm_readability_v019/V019_WHOLE_WALK_DIAGNOSIS.txt",
+      "status_terms": [
+        "REJECTED",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/weight_loading_v048/IMPORT_TIMING_AND_ASSESSMENT_v048.txt",
+      "status_terms": [
+        "unapproved"
+      ]
+    },
+    {
+      "path": "locomotion/whole_pose_blocking_v013/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/whole_pose_blocking_v013/READ_ME_BLOCKING_REVIEW_v013.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "locomotion/whole_pose_blocking_v013/reference/REFERENCE_OBSERVATIONS.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "locomotion/whole_pose_blocking_v014/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "locomotion/whole_pose_blocking_v014/FOCUSED_CORRECTION_GUIDE_v014.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "notes/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "notes/PRODUCTION_STATUS.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "notes/PRODUCTION_STATUS_v006.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "notes/village_lookdev/reference_and_review_v013.txt",
+      "status_terms": [
+        "deferred"
+      ]
+    },
+    {
+      "path": "notes/WORLD_CONTINUE_BENCHMARK_v039.txt",
+      "status_terms": [
+        "REJECTED",
+        "held"
+      ]
+    },
+    {
+      "path": "notes/WORLD_CONTINUE_v016.txt",
+      "status_terms": [
+        "HELD",
+        "Held"
+      ]
+    },
+    {
+      "path": "notes/WORLD_CONTINUE_v030.txt",
+      "status_terms": [
+        "HELD",
+        "REJECTED",
+        "held"
+      ]
+    },
+    {
+      "path": "notes/WORLD_CONTINUE_v032.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "notes/WORLD_CONTINUE_v037.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "notes/WORLD_CONTINUE_v040.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "notes/WORLD_REVIEW_START_HERE_v006.txt",
+      "status_terms": [
+        "deferred",
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "notes/WORLD_STATUS.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "notes/WORLD_STATUS_v006.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "renders/village_lookdev/inspection_v013/READ_ME.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "source/handoff_extracted.txt",
+      "status_terms": [
+        "held",
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "VILLAGE_STILL_REVIEW.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_ART_FRAME_CHECKPOINT_v045c.txt",
+      "status_terms": [
+        "UNFINISHED",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_CONTINUITY_RESTORED_v062.txt",
+      "status_terms": [
+        "withdrawn"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_ENDING_v032.txt",
+      "status_terms": [
+        "held",
+        "remaining"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_ENDING_v033.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_INTEGRATION_CHECKPOINT_v043.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_PRODUCTION_DEVELOPMENT_v061.txt",
+      "status_terms": [
+        "WITHDRAWN"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_REFINEMENT_v047g.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_REFINEMENT_v048a.txt",
+      "status_terms": [
+        "REMAINING",
+        "held",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_SUPPORTED_REVIEW_v046.txt",
+      "status_terms": [
+        "unfinished"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_TRAILER_v037.txt",
+      "status_terms": [
+        "held",
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_TRAILER_v040.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "WHEN_THE_SKY_CLEARS_WORLD_v030.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "work/color_arc_v063/START_HERE_v063.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "work/continuity_restore_v062/PRODUCTION_METHOD_2D.txt",
+      "status_terms": [
+        "withdrawn"
+      ]
+    },
+    {
+      "path": "work/continuity_restore_v062/START_HERE_v062.txt",
+      "status_terms": [
+        "withdrawn"
+      ]
+    },
+    {
+      "path": "work/facade_reference_v051/PAINT_ASSET_BRIEF_v051.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "work/production_look_v061/evidence/FINAL_PRODUCTION_STATUS.txt",
+      "status_terms": [
+        "held",
+        "unapproved"
+      ]
+    },
+    {
+      "path": "work/production_look_v061/evidence/FULL_PRODUCTION_ANIMATION_AUDIT.txt",
+      "status_terms": [
+        "deferred",
+        "held",
+        "rejected",
+        "remaining",
+        "unapproved",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "work/production_look_v061/evidence/HEAD_ACTING_ASSET_GAPS.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "work/production_look_v061/evidence/SEQUENCE_VISUAL_REVIEW.txt",
+      "status_terms": [
+        "remaining"
+      ]
+    },
+    {
+      "path": "work/production_look_v061/START_HERE_v061.txt",
+      "status_terms": [
+        "WITHDRAWN"
+      ]
+    },
+    {
+      "path": "work/production_look_v061/VISUAL_DIRECTION_WITHDRAWN.txt",
+      "status_terms": [
+        "WITHDRAWN",
+        "withdrawn"
+      ]
+    },
+    {
+      "path": "work/production_review_v059/START_HERE_v059.txt",
+      "status_terms": [
+        "held"
+      ]
+    },
+    {
+      "path": "work/trailer_development_v060/evidence/FULL_PRODUCTION_ANIMATION_AUDIT.txt",
+      "status_terms": [
+        "deferred",
+        "held",
+        "rejected",
+        "remaining",
+        "unapproved",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "work/world_architecture_v049i/CHECKPOINT_v049i.txt",
+      "status_terms": [
+        "REJECTED"
+      ]
+    },
+    {
+      "path": "work/world_art_v048d/evidence/dcc_agent_workflows.md",
+      "status_terms": [
+        "remaining",
+        "unfinished"
+      ]
+    },
+    {
+      "path": "work/world_art_v048d/evidence/REUSE_AND_SCOPE.txt",
+      "status_terms": [
+        "rejected"
+      ]
+    },
+    {
+      "path": "work/world_art_v048d/WORLD_ART_CHECKPOINT_v048d.txt",
+      "status_terms": [
+        "REJECTED",
+        "REMAINING"
+      ]
+    },
+    {
+      "path": "work/world_facade_v057/continuity_review/REVIEW_NOTES.txt",
+      "status_terms": [
+        "Remaining"
+      ]
+    },
+    {
+      "path": "work/world_minimum_v058/START_HERE_v058.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    },
+    {
+      "path": "WORLD_REVIEW_START_HERE.txt",
+      "status_terms": [
+        "held",
+        "rejected"
+      ]
+    }
+  ],
+  "live_source_mutations": false
+}

@@ -1,0 +1,358 @@
+{
+  "scope": "Actual full-vs-isolated opaque hand-ID still comparison at unchanged depth, plus dark-pigment contrast. Estimates are raster-sensitive, especially at shot size; not an artistic score.",
+  "method": "Distinct near/far hand IDs rendered with all body/cloth present and one hand alone. A lower colored-pixel count in the full scene indicates occlusion. Original hand opacity nodes are1; hand geometry exists. Dark value uses matching final-dark pixels under the visible ID mask and adjacent non-paper pixels.",
+  "rows": [
+    {
+      "view": "CLOSE",
+      "frame": 1,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 432,
+      "isolated_hand_geometry_ID_pixels": 428,
+      "approx_visible_fraction": 1.0093457943925233,
+      "dark_hand_median_RGB_luma": 32.0,
+      "adjacent_dark_garment_median_luma": 22.666666666666668,
+      "dark_value_difference_against_adjacent_garment": 9.333333333333332,
+      "garment_fraction_of_adjacent_ring": 0.39330543933054396,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          173.24479579925537,
+          416.7542338371277,
+          194.650297164917,
+          446.60314321517944
+        ],
+        "width_pixels": 21.40550136566162,
+        "height_pixels": 29.848909378051758
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 1,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 414,
+      "isolated_hand_geometry_ID_pixels": 414,
+      "approx_visible_fraction": 1.0,
+      "dark_hand_median_RGB_luma": 33.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 0.12757201646090535,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          327.72345542907715,
+          417.42401361465454,
+          350.44032096862793,
+          446.97019815444946
+        ],
+        "width_pixels": 22.71686553955078,
+        "height_pixels": 29.546184539794922
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 11,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 435,
+      "isolated_hand_geometry_ID_pixels": 429,
+      "approx_visible_fraction": 1.013986013986014,
+      "dark_hand_median_RGB_luma": 31.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 1.0,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          245.5590534210205,
+          413.504319190979,
+          266.91776275634766,
+          443.7316560745239
+        ],
+        "width_pixels": 21.35870933532715,
+        "height_pixels": 30.227336883544922
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 11,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 416,
+      "isolated_hand_geometry_ID_pixels": 416,
+      "approx_visible_fraction": 1.0,
+      "dark_hand_median_RGB_luma": 32.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 0.0,
+      "garment_fraction_of_adjacent_ring": 0.1322314049586777,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          303.945837020874,
+          420.9400248527527,
+          326.3822937011719,
+          450.8291029930115
+        ],
+        "width_pixels": 22.43645668029785,
+        "height_pixels": 29.88907814025879
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 20,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 429,
+      "isolated_hand_geometry_ID_pixels": 426,
+      "approx_visible_fraction": 1.0070422535211268,
+      "dark_hand_median_RGB_luma": 33.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 0.13934426229508196,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          307.04898834228516,
+          409.15536403656006,
+          330.23820877075195,
+          438.0107831954956
+        ],
+        "width_pixels": 23.189220428466797,
+        "height_pixels": 28.855419158935547
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 20,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 0,
+      "isolated_hand_geometry_ID_pixels": 418,
+      "approx_visible_fraction": 0.0,
+      "dark_hand_median_RGB_luma": null,
+      "adjacent_dark_garment_median_luma": null,
+      "dark_value_difference_against_adjacent_garment": null,
+      "garment_fraction_of_adjacent_ring": 0.0,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          239.4678497314453,
+          438.1175136566162,
+          262.6623058319092,
+          467.5045680999756
+        ],
+        "width_pixels": 23.194456100463867,
+        "height_pixels": 29.387054443359375
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 27,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 433,
+      "isolated_hand_geometry_ID_pixels": 428,
+      "approx_visible_fraction": 1.0116822429906542,
+      "dark_hand_median_RGB_luma": 31.0,
+      "adjacent_dark_garment_median_luma": 30.666666666666668,
+      "dark_value_difference_against_adjacent_garment": 0.33333333333333215,
+      "garment_fraction_of_adjacent_ring": 1.0,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          235.27772426605225,
+          407.5364899635315,
+          258.01294326782227,
+          437.0465397834778
+        ],
+        "width_pixels": 22.73521900177002,
+        "height_pixels": 29.51004981994629
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 27,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 414,
+      "isolated_hand_geometry_ID_pixels": 414,
+      "approx_visible_fraction": 1.0,
+      "dark_hand_median_RGB_luma": 32.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 0.0,
+      "garment_fraction_of_adjacent_ring": 0.12448132780082988,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          302.3408889770508,
+          420.60670137405396,
+          324.3443012237549,
+          450.69486379623413
+        ],
+        "width_pixels": 22.0034122467041,
+        "height_pixels": 30.088162422180176
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 1,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 118,
+      "isolated_hand_geometry_ID_pixels": 117,
+      "approx_visible_fraction": 1.0085470085470085,
+      "dark_hand_median_RGB_luma": 32.83333333333333,
+      "adjacent_dark_garment_median_luma": 22.833333333333336,
+      "dark_value_difference_against_adjacent_garment": 9.999999999999993,
+      "garment_fraction_of_adjacent_ring": 0.3387096774193548,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          604.9940490722656,
+          387.95647144317627,
+          615.9302520751953,
+          403.1907534599304
+        ],
+        "width_pixels": 10.936203002929688,
+        "height_pixels": 15.23428201675415
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 1,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 110,
+      "isolated_hand_geometry_ID_pixels": 110,
+      "approx_visible_fraction": 1.0,
+      "dark_hand_median_RGB_luma": 34.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 2.0,
+      "garment_fraction_of_adjacent_ring": 0.12698412698412698,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          685.1815032958984,
+          386.8431615829468,
+          696.749267578125,
+          401.86009883880615
+        ],
+        "width_pixels": 11.567764282226562,
+        "height_pixels": 15.016937255859375
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 11,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 122,
+      "isolated_hand_geometry_ID_pixels": 118,
+      "approx_visible_fraction": 1.0338983050847457,
+      "dark_hand_median_RGB_luma": 31.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 1.0,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          641.8988800048828,
+          386.2973642349243,
+          652.8211975097656,
+          401.7248725891113
+        ],
+        "width_pixels": 10.922317504882812,
+        "height_pixels": 15.427508354187012
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 11,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 110,
+      "isolated_hand_geometry_ID_pixels": 110,
+      "approx_visible_fraction": 1.0,
+      "dark_hand_median_RGB_luma": 33.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 0.11904761904761904,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          673.0905914306641,
+          388.6310577392578,
+          684.5164489746094,
+          403.82229566574097
+        ],
+        "width_pixels": 11.425857543945312,
+        "height_pixels": 15.191237926483154
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 20,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 115,
+      "isolated_hand_geometry_ID_pixels": 114,
+      "approx_visible_fraction": 1.0087719298245614,
+      "dark_hand_median_RGB_luma": 33.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 0.13846153846153847,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          673.2897186279297,
+          384.0772032737732,
+          685.1278686523438,
+          398.80085706710815
+        ],
+        "width_pixels": 11.838150024414062,
+        "height_pixels": 14.723653793334961
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 20,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 0,
+      "isolated_hand_geometry_ID_pixels": 107,
+      "approx_visible_fraction": 0.0,
+      "dark_hand_median_RGB_luma": null,
+      "adjacent_dark_garment_median_luma": null,
+      "dark_value_difference_against_adjacent_garment": null,
+      "garment_fraction_of_adjacent_ring": 0.0,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          640.3145599365234,
+          397.3657464981079,
+          652.1166229248047,
+          412.3052215576172
+        ],
+        "width_pixels": 11.80206298828125,
+        "height_pixels": 14.939475059509277
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 27,
+      "hand": "near",
+      "full_scene_hand_ID_pixels": 119,
+      "isolated_hand_geometry_ID_pixels": 116,
+      "approx_visible_fraction": 1.0258620689655173,
+      "dark_hand_median_RGB_luma": 31.0,
+      "adjacent_dark_garment_median_luma": 30.666666666666668,
+      "dark_value_difference_against_adjacent_garment": 0.33333333333333215,
+      "garment_fraction_of_adjacent_ring": 1.0,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          636.6501998901367,
+          383.2507610321045,
+          648.2754516601562,
+          398.30859661102295
+        ],
+        "width_pixels": 11.625251770019531,
+        "height_pixels": 15.057835578918457
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 27,
+      "hand": "far",
+      "full_scene_hand_ID_pixels": 107,
+      "isolated_hand_geometry_ID_pixels": 107,
+      "approx_visible_fraction": 1.0,
+      "dark_hand_median_RGB_luma": 33.0,
+      "adjacent_dark_garment_median_luma": 32.0,
+      "dark_value_difference_against_adjacent_garment": 1.0,
+      "garment_fraction_of_adjacent_ring": 0.11811023622047244,
+      "projected_geometry_bbox": {
+        "bbox_pixels": [
+          672.2745513916016,
+          388.4615421295166,
+          683.4801483154297,
+          403.75403881073
+        ],
+        "width_pixels": 11.205596923828125,
+        "height_pixels": 15.292496681213379
+      }
+    }
+  ]
+}

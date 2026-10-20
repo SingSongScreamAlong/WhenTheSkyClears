@@ -1,0 +1,866 @@
+{
+  "blender": "5.2.2 LTS",
+  "binary": "WTSC_LOCAL_USER\\AppData\\Local\\Programs\\Blender\\blender-5.2.2-windows-x64\\blender.exe",
+  "sources": [
+    {
+      "file": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v038.blend",
+      "sha256": "f08c0d6f004b85693b124a1c84aac10617ca7742475979e2d80ca3d6961778ed",
+      "scenes": [
+        {
+          "name": "WTSC_FULL_FILM_KNOCKOUT_v037",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            2544
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": {
+            "name": "v032 | Flat title camera",
+            "location": [
+              0.0,
+              0.0,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "WTSC_MASTER_4K_100S_v031",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            2400
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": null
+        },
+        {
+          "name": "WTSC_MASTER_4K_106S_v038",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            2544
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": null
+        },
+        {
+          "name": "WTSC_WORLD_CORRECTED_v037",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            2400
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              0.0,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ],
+      "characters": [
+        {
+          "name": "v015 | Near-black painted fill | GP vector clipped",
+          "type": "MESH",
+          "parent": "v016 | CHILDREN | held painterly near-age pair",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "purpose": "Paint inside the editable GP silhouette. This mesh is a flat vector mask, not a modeled 3D child."
+          }
+        },
+        {
+          "name": "v016 | CHILDREN | held painterly near-age pair",
+          "type": "GREASEPENCIL",
+          "parent": null,
+          "location": [
+            -1.6891200542449951,
+            0.0,
+            0.7713720202445984
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "motion": "Object translation only. One held GP frame. No bone or limb animation.",
+            "design_status": "Provisional world-scale stand-ins, not final character models",
+            "performance": "One held drawing. Translation only. No gait, acting or limb keys.",
+            "design_approval": "Existing provisional pair; no redesign approval inferred",
+            "render_style": "Near-black painterly gray detail with small off-white eye marks. Native editable vector boundary.",
+            "style": "Near-black charcoal/gray paint, tiny off-white eye accents. Boy slightly taller.",
+            "proportions": "Near same age; boy 1.45m, girl approximately 1.37m in this drawing",
+            "painted_fill": "Registered bitmap fill clipped to matching vector polygon, parented to native GP boundary"
+          },
+          "layers": [
+            {
+              "name": "HELD | near-age painted children | native vector boundary",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.6985899209976196,
+              0.6985899209976196
+            ],
+            [
+              -0.36000001430511475,
+              -0.36000001430511475
+            ],
+            [
+              0.0,
+              1.4500000476837158
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "file": "WTSC_LOCAL_WORKSPACE\\shots\\WTSC_Girl_Walk_Proof_v002.blend",
+      "sha256": "5522ef1c54b6c5d2f50279b5069af710975fab800d9fda66af569b19027b2b98",
+      "scenes": [
+        {
+          "name": "00_TRAILER_MASTER_4K_100s",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            2400
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": null
+        },
+        {
+          "name": "01_GIRL_WALK_CLEAN",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            48
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": {
+            "name": "Clean side camera",
+            "location": [
+              0.0,
+              0.6399999856948853,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "02_GUIDE_COMPARISON",
+          "fps": 24,
+          "fps_base": 1.0,
+          "frames": [
+            1,
+            48
+          ],
+          "units": "METRIC",
+          "metres_per_unit": 1.0,
+          "camera": {
+            "name": "Comparison side camera",
+            "location": [
+              -0.7200000286102295,
+              0.6399999856948853,
+              10.0
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "forward": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ],
+      "characters": [
+        {
+          "name": "Girl_Walk_Rig",
+          "type": "ARMATURE",
+          "parent": null,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "design_status": "UNAPPROVED",
+            "walk_cycle_frames": "24",
+            "forward_speed_m_per_second": "0.72",
+            "reference_type": "authored kinematic guide",
+            "bound_imagegen_parts": "True"
+          },
+          "bones": [
+            "Bone",
+            "ROOT",
+            "body",
+            "head",
+            "braid",
+            "thigh_far",
+            "shin_far",
+            "shoe_far",
+            "upper_arm_far",
+            "forearm_far",
+            "thigh_near",
+            "shin_near",
+            "shoe_near",
+            "upper_arm_near",
+            "forearm_near"
+          ]
+        },
+        {
+          "name": "GP_Girl_braid",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.23000003397464752,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "braid",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.1444360613822937,
+              -0.05735432356595993
+            ],
+            [
+              1.049036979675293,
+              1.2778041362762451
+            ],
+            [
+              -0.02500000037252903,
+              -0.02500000037252903
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_dress",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.4050000309944153,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "dress",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.193072110414505,
+              0.19221889972686768
+            ],
+            [
+              0.49744731187820435,
+              1.0917022228240967
+            ],
+            [
+              0.009999999776482582,
+              0.009999999776482582
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_forearm_far",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.24000003933906555,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "forearm_far",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.11851277947425842,
+              -0.04813816398382187
+            ],
+            [
+              0.5900898575782776,
+              0.8575673699378967
+            ],
+            [
+              -0.039000000804662704,
+              -0.039000000804662704
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_forearm_near",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.24000003933906555,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "forearm_near",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              0.043294258415699005,
+              0.19233959913253784
+            ],
+            [
+              0.6210523843765259,
+              0.8584222793579102
+            ],
+            [
+              0.03099999949336052,
+              0.03099999949336052
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_head",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.29999998211860657,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "head",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.12700000405311584,
+              0.14180000126361847
+            ],
+            [
+              1.07319974899292,
+              1.3671997785568237
+            ],
+            [
+              0.0020000000949949026,
+              0.0020000000949949026
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_shin_far",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.3200000524520874,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "shin_far",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.15336927771568298,
+              0.0557539127767086
+            ],
+            [
+              0.09104375541210175,
+              0.4095202684402466
+            ],
+            [
+              -0.04399999976158142,
+              -0.04399999976158142
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_shin_near",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.3200000524520874,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "shin_near",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              0.10226307809352875,
+              0.24694117903709412
+            ],
+            [
+              0.08918459713459015,
+              0.45635756850242615
+            ],
+            [
+              -0.004000000189989805,
+              -0.004000000189989805
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_shoe_far",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.15000000596046448,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "shoe_far",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.18360000848770142,
+              -0.020400015637278557
+            ],
+            [
+              1.9776820181505173e-08,
+              0.10680003464221954
+            ],
+            [
+              -0.0430000014603138,
+              -0.0430000014603138
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_shoe_near",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.15000000596046448,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "shoe_near",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              0.17520000040531158,
+              0.33720001578330994
+            ],
+            [
+              6.21676443657293e-09,
+              0.1056000292301178
+            ],
+            [
+              -0.003000000026077032,
+              -0.003000000026077032
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_thigh_far",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.3199999928474426,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "thigh_far",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.06508325040340424,
+              0.10181531310081482
+            ],
+            [
+              0.359695702791214,
+              0.7351279854774475
+            ],
+            [
+              -0.04500000178813934,
+              -0.04500000178813934
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_thigh_near",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.3199999928474426,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "thigh_near",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.057215865701436996,
+              0.1510400027036667
+            ],
+            [
+              0.3737403452396393,
+              0.7429762482643127
+            ],
+            [
+              -0.004999999888241291,
+              -0.004999999888241291
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_upper_arm_far",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.22999998927116394,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "upper_arm_far",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.0724949762225151,
+              0.03049471601843834
+            ],
+            [
+              0.8406333923339844,
+              1.0853509902954102
+            ],
+            [
+              -0.03999999910593033,
+              -0.03999999910593033
+            ]
+          ]
+        },
+        {
+          "name": "GP_Girl_upper_arm_near",
+          "type": "GREASEPENCIL",
+          "parent": "Girl_Walk_Rig",
+          "location": [
+            0.0,
+            -0.22999998927116394,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "art_source": "GPT imagegen Girl_Parts_Imagegen_v001.png alpha outline",
+            "editable_drawing": "True"
+          },
+          "layers": [
+            {
+              "name": "upper_arm_near",
+              "frames": 1
+            }
+          ],
+          "bounds": [
+            [
+              -0.03942679986357689,
+              0.05794380232691765
+            ],
+            [
+              0.8350803852081299,
+              1.085087537765503
+            ],
+            [
+              0.029999999329447746,
+              0.029999999329447746
+            ]
+          ]
+        },
+        {
+          "name": "REFERENCE_Authored_Walk_Rig",
+          "type": "ARMATURE",
+          "parent": "REFERENCE_offset",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifiers": [],
+          "properties": {
+            "design_status": "UNAPPROVED",
+            "walk_cycle_frames": "24",
+            "forward_speed_m_per_second": "0.72",
+            "reference_type": "authored kinematic guide",
+            "bound_imagegen_parts": "True"
+          },
+          "bones": [
+            "Bone",
+            "ROOT",
+            "body",
+            "head",
+            "braid",
+            "thigh_far",
+            "shin_far",
+            "shoe_far",
+            "upper_arm_far",
+            "forearm_far",
+            "thigh_near",
+            "shin_near",
+            "shoe_near",
+            "upper_arm_near",
+            "forearm_near"
+          ]
+        }
+      ]
+    }
+  ],
+  "protected_hashes": {
+    "shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v038.blend": "f08c0d6f004b85693b124a1c84aac10617ca7742475979e2d80ca3d6961778ed",
+    "shots\\WTSC_Girl_Walk_Proof_v002.blend": "5522ef1c54b6c5d2f50279b5069af710975fab800d9fda66af569b19027b2b98",
+    "characters\\Pair_Painterly_Near_Age_v015.png": "e7968ec2efa29e176330a74f0557578702b3b5de0a9eb7855a069d1b0f8a5d04",
+    "characters\\Pair_Painterly_Near_Age_Vector_v015.json": "16e6e966ced5c6f68ac3153ad463913adb99dc752219f7bb884820216b1e3994",
+    "shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4"
+  }
+}

@@ -1,0 +1,153 @@
+WHEN THE SKY CLEARS - ISOLATED RECOVERY TO WALK v009
+2026-10-17. Motion refinement candidate, not approved final animation.
+All work is inside locomotion/recovery_walk_refinement_v009.
+
+START HERE
+WTSC_v009_Matched_Recovery_Walk_75_80.mp4 is the actual matched-world preview.
+WTSC_v046_vs_v009_Matched_Comparison_5s.mp4 has v046 LEFT and v009 RIGHT.
+WTSC_v009_Neutral_Recovery_Walk_5s.mp4 exposes the motion on a plain stage.
+All are 120 decoded frames, 24fps, exactly 5.0s, each below 2MB.
+Matched movie uses the original 75-80s source audio at the original clock.
+The comparison changes character performance and the prescribed camera travel;
+the retained v045c world, original FX event clock and shader light response stay.
+Preview render: EEVEE,960x540,16samples,two CPU threads,one render at a time.
+Comparison is1920x540. These are review previews, not final quality renders.
+
+APPEND / CLOCK
+Verified installed executable:
+WTSC_LOCAL_USER\AppData\Local\Programs\Blender\blender-5.2.2-windows-x64\blender.exe
+Actual version5.2.2LTS,buildd13f752e3b9c (queried, not inferred from folder).
+Append Collection WTSC_RECOVERY_WALK_PAIR_v009 from
+native/WTSC_Recovery_Walk_v009.blend. Packed original source paint is included.
+The collection contains no stage, camera or lights; the native opens on a
+separate neutral stage for convenient editing/review.
+Identify root by motion_revision == 'v009_recovery_walk'; names may get suffixes.
+Execute embedded Text configure_v009.py or scripts/configure_v009.py, then:
+configure_v009(start=1801,duration_scale=1,root_motion=True,root=controls)
+All performance/drawing/distance Actions use source frames1..120, with HOLD.
+Global1801..1920 =75.000..79.958333s; boundary1921 =80.000s.
+No old lead-in,116/95retime or v007configure pass should be added.
+duration_scale=2 doubles all clocks together. Native distance retiming tested.
+This is one shot, not a cyclic walk; no authored frame beyond120 is claimed.
+
+NEW ROOT / WORLD CONTRACT - v007 route IS SUPERSEDED
+Metres;scale1;XZartwork;+Xtravel;+Zup;identity control rotation.
+Exact source integration anchor=(107.6339569,0,0.7200737).
+Pair gap0.8m; actor roots are boy-0.4m,girl+0.4m from pair travel.
+Original height/rest skeletons retained: boy1.45m,girl1.369917744m.
+New total travel0.861666667m vs v046/v0070.561666667m: extra0.300000000m.
+Use evidence/travel_curve_v009.csv or native DISTANCE_CURVE.location.x.
+CSV includes every source/global frame, absolute shot time and delta vs v046.
+Do not add a second forward traveling route or replace this with constant speed.
+
+Let f=global_frame-1800, and D007(f) be the preserved v007 native distance.
+D009(f)=D007(f)+e(f), with:
+ e(f)=0                           f<=88
+ e(f)=.012*(f-88)^2/28            88<f<102
+ e(f)=.084+.012*(f-102)           f>=102
+The delivered native Action LINEARLY interpolates the integer-frame samples.
+For exact subframe matching, evaluate that Action or interpolate the CSV;
+the analytic quadratic alone differs slightly between integer samples.
+From local102 onward speed is0.012m/frame =0.288m/s at24fps.
+At source120 the route is still moving. HOLD is an asset default, not a
+direction to stop the film there. A following shot must match pose and velocity.
+
+Traveling integration: root_motion=True, ground/world remain in world space.
+For this centered side-scroller, camera world X must be original v046 evaluated
+camera X + e(f), with its original Y/Z, rotation, lens/ortho scale unchanged.
+Equivalently rebind its route follow to the new pair travel while retaining
+the original camera offset. The isolated matched copy contains an explicit
+camera Action with these evaluated matrices; the production camera is untouched.
+Do not leave the frozen old v005/v007 camera route in control of late tracking.
+
+In-place integration: root_motion=False; move all grounded scenery by -D009(f)
+with the same clock, including ground-fixed FX/craters and contact references.
+Move each world element once. Do not scroll the characters, camera or ground
+twice. Parent world/FX/light owners must apply their usual anchoring/occlusion.
+
+REPLACEMENT AND LIGHT
+Hide the complete old pair collection, including its exposure variants and
+old correction caps. Do not hide the new whole pair or show old source meshes.
+Rebind four external sole/contact planes to the new feet (or hide old planes
+and derive new contacts); old foot motion no longer matches this study.
+The delivered matched copy re-bakes all four from actual evaluated v009 soles
+at120 frames, retaining the source soft material and projected ground formula.
+Exact samples are in evidence/matched_contact_rebind.json; the implementation
+is in scripts/build_matched_copy.py. No old-route contact marks remain active.
+The new boots retain v007_role='support_boot'. Drawn limbs retain their v007
+role names for compatibility; revision is on the controls root.
+Preserve actual parent light binding on appended materials. The supplied
+matched review copy reuses exact v046 material slots by original object name;
+it therefore retains source paint and the parent's actual reflected-light setup.
+No new glow, rim light, world art, FX timing or crater work is introduced.
+
+ACTING / CONTACTS (source local; add1800 for global)
+1..72: retained v007 weary approach/stumble/catch; not a new early acting pass.
+39 onward: girl retains original right-profile head and attached source braid.
+XZnod and the arm gesture replace the literal look-back. No edge-on head card,
+polygonal passing disc, reflected profile or rejected v008 study is used.
+72..94: girl steadies earlier and shifts over the existing far support.
+82..86: girl's near heel rolls up;86..102 first swing,0.30m world advance.
+102: girl's near heel arrival(global1902,79.208333s);105: flat sole.
+106..110: far heel rolls;110 onward her second foot starts a distinct step.
+72..99: boy compresses, transfers forward onto his far supporting foot and
+rises earlier, maintaining the source thigh-brace intention before release.
+95..99: his near heel rolls;99..116 first swing,0.32m world advance.
+116: boy's near heel arrival(global1916,79.791667s);119: flat sole.
+103..114: light offered touch releases as the children resume their own motion.
+Girl's free arm lowers; late arm ribbons use softer elbow entry and boot collars
+are joined to the new foot orientations. Neither child is a copied walk cycle.
+
+Flat plant windows used for actual evaluated vertex tests:
+boyfar81..120;boynear81..95 and119..120;
+girlfar81..106;girlnear81..82 and105..120.
+Roll/airborne ranges deliberately excluded from flat-stance lock tests.
+Largest measured worldXZvertex drift2.3842e-7m; late sole floor minimum
+-0.0005101m (retained source half-millimetre sole offset); max clearance0.07614m.
+Hip projection approaches the supporting sole spans during toe roll, then moves
+over support during swing; girl's hip is about5mm behind the far-sole rear edge
+at local86 and enters that span on87. This is an animation staging diagnostic,
+not a physically simulated COM result or a perfect support-physics claim.
+At120 girlfar is airborne; boyfar is preparing the next push. The code's
+future event numbers128/124/142 describe possible continuation, NOT saved keys
+or a delivered later clip. Author the next performance from the actual end pose.
+
+EDITABILITY
+Native armatures/Actions/NLA plus27shape-key meshes,120 sampled pose drawings.
+Original image is packed. Head mesh/paint/hair/braid/rest proportions preserved.
+Edit neighboring POSE_### shape keys together. Bone-only edits do not regenerate
+the drawn leg/arm ribbons. scripts/build_refinement.py is the editable recipe:
+hip/support timing, step arcs, release timing and travel are explicit parameters.
+The inherited hidden Bezier curves are v007 SOURCE REFERENCES; they do not
+describe the revised late poses and do not drive the rendered drawings.
+Use actual shape keys or rebuild script for v009 motion edits.
+Rebuilding needs preserved v007 source; appending the portable packed native
+does not need the original source tree. Fresh empty-scene Append was tested.
+native/WTSC_v009_Matched_Review_Copy.blend is local review-only, not portable
+delivery. It contains the retained world; the ZIP excludes that large copy.
+
+ARTISTIC ASSESSMENT / REMAINING WORK
+The restart is now authored and the children have distinct timing. The girl's
+hair/braid stays coherent through1844/1845 and her first contact leads the boy.
+The added travel keeps the landscape moving as their gait resumes. These are
+useful gains at shot size, but not final-animation acceptance.
+The early stumble remains constructed; body/shoulder and wrist silhouettes
+still show the planar cutout method. First steps are cautious and low, rather
+than a fully flowing walk cycle. The right-profile choice sacrifices a literal
+eye contact/look-back for intact design. Contact remains a light fingertip cue;
+it does not carry either child's weight. A convincing load-bearing clasp and
+a richer torso/hand performance remain additional authored drawing work.
+No new drawings from the user were required to investigate or make this proof.
+Next: review this5s performance, then polish early stumble/hand/shoulder overlap
+and author the continuation before any full-trailer replacement.
+
+PRESERVATION / DELIVERY
+v046native/movie,v007native,v045cbase and rejected-v008status hashes preserved.
+No full-trailer duration, music, title mask or other specialist file was edited.
+No installs, purchases, external sharing or heavy/full-trailer renders.
+Private Library preview create succeeded; receipt in evidence.
+Writing local Library metadata failed because Python on Windows has no
+os.setxattr. The private Library file itself is saved; no duplicate upload was
+attempted. This is a local metadata limitation, not a preview-upload failure.
+See evidence/native_validation.json,preview_media_verification.json,
+contact_world_samples.json,protected_inputs.json and final_handoff.json.

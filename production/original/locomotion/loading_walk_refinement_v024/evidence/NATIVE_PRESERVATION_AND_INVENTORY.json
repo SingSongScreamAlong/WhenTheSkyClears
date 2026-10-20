@@ -1,0 +1,172 @@
+{
+  "Blender_version": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "body_vertex_count": 477,
+  "objects": [
+    {
+      "name": "V021 | CHILD_SUPPORT_TRAVEL",
+      "type": "EMPTY",
+      "parent": null,
+      "collections": [
+        "WTSC_CONTINUOUS_COAT_WALK_v024"
+      ]
+    },
+    {
+      "name": "BOY | HIP",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | CHEST",
+      "type": "EMPTY",
+      "parent": "BOY | HIP",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | HEAD_PROFILE",
+      "type": "EMPTY",
+      "parent": "BOY | CHEST",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | ANKLE_near",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | WRIST_near",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | LEG_POLE_near",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | ARM_POLE_near",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | RELAXED_HAND_TORSO_ANCHOR_near",
+      "type": "EMPTY",
+      "parent": "BOY | CHEST",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | ANKLE_far",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | WRIST_far",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | LEG_POLE_far",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | ARM_POLE_far",
+      "type": "EMPTY",
+      "parent": "LOCO_BOY | RIG",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "BOY | RELAXED_HAND_TORSO_ANCHOR_far",
+      "type": "EMPTY",
+      "parent": "BOY | CHEST",
+      "collections": [
+        "V016 | NATIVE WORLD TARGETS"
+      ]
+    },
+    {
+      "name": "V020 | near | SOLE_BONE_GOAL",
+      "type": "EMPTY",
+      "parent": "V020 | near | ACTUAL_SOLE_PIVOT",
+      "collections": [
+        "V020 | study stage and sole controls"
+      ]
+    },
+    {
+      "name": "V020 | far | SOLE_BONE_GOAL",
+      "type": "EMPTY",
+      "parent": "V020 | far | ACTUAL_SOLE_PIVOT",
+      "collections": [
+        "V020 | study stage and sole controls"
+      ]
+    }
+  ],
+  "camera": {
+    "V024 | CLOSE portrait": {
+      "type": "ORTHO",
+      "lens": 50.0,
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "ortho_scale": 1.100000023841858
+    },
+    "V020 | CHILD | SHOT": {
+      "type": "PERSP",
+      "lens": 100.0,
+      "shift_x": -0.30000022053718567,
+      "shift_y": -0.26705533266067505,
+      "ortho_scale": 6.0
+    }
+  },
+  "preservation_vs_v022_base": {
+    "original_rig_child_mesh_coordinates_topology_uv": true,
+    "original_rest_bones": true,
+    "packed_original_images": true,
+    "mesh_count": 14,
+    "packed_images": {
+      "Pair_Painterly_Near_Age_v015.png": {
+        "size": [
+          1672,
+          941
+        ],
+        "sha256": "e7968ec2efa29e176330a74f0557578702b3b5de0a9eb7855a069d1b0f8a5d04"
+      }
+    }
+  },
+  "metadata_save_geometry_signature_before": "600f54c941cb915ad817483092577c29fc00a9462c82a8a7c9c333e9a7577f46",
+  "metadata_save_geometry_signature_after": "600f54c941cb915ad817483092577c29fc00a9462c82a8a7c9c333e9a7577f46",
+  "metadata_save_geometry_unchanged": true,
+  "native_sha256": "eedcd9d14e4c3d5d96d19d982b363ac7789ceb3b6e8f4f6cf8e909876fc81f8e",
+  "native_bytes": 2207850,
+  "frame_handlers": 0
+}

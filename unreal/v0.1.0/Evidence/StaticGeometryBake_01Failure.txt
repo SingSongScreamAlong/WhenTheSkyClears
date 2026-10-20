@@ -1,0 +1,12 @@
+The first static-transform conversion deliberately rejected a skinned source:
+bench_vice_01 contains one skin with 11 joints (four visible mesh parts), no animations.
+Assertion: not g.get('skins') and not g.get('animations')
+
+Only barrel_stove had been converted before that failure. A follow-up shell check
+mistakenly printed "Seven complete static glTF derivatives verified" after checking
+only the one existing derivative; that line is not a valid seven-asset receipt.
+
+The repaired converter bakes the vice's default-pose skin using the glTF inverse-bind
+and joint-world matrices, retains all four mesh primitives/materials, drops skin-only
+attributes from the static derivative, and preserves the publisher source files.
+Use StaticGeometryBake.json and the later explicit seven-entry check for current status.

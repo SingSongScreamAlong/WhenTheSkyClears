@@ -1,0 +1,59 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v030.blend",
+  "source_sha256": "b68e097922883c9cb409da4d5a999a889be2ffc9768627824087f44745574bb6",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "frames": 2400,
+  "new_native_frames": 1572,
+  "reused_native_frames": 828,
+  "reuse_ranges_frames": [
+    [
+      1,
+      300
+    ],
+    [
+      1873,
+      2400
+    ]
+  ],
+  "reuse_proof": "notes/world_v016/readability_and_reuse_v030.json",
+  "reused_source_movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Painted_World_4K_v027.mp4",
+  "reused_source_movie_sha256": "6432e64594a0118adeb1e2749c90f4fa4626019609f6f5a30749ac480554f532",
+  "workers": [
+    {
+      "index": 1,
+      "start": 301,
+      "end": 693,
+      "pid": 16664,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_01.log"
+    },
+    {
+      "index": 2,
+      "start": 694,
+      "end": 1086,
+      "pid": 20748,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_02.log"
+    },
+    {
+      "index": 3,
+      "start": 1087,
+      "end": 1479,
+      "pid": 52500,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_03.log"
+    },
+    {
+      "index": 4,
+      "start": 1480,
+      "end": 1872,
+      "pid": 52176,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\native_parts_v030\\part_04.log"
+    }
+  ]
+}

@@ -1,0 +1,1462 @@
+{
+  "IK_chains": 8,
+  "static_tests": [
+    {
+      "frame": 1,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.5167146750001935,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 1.0568800239740412e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4133124395618775,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 1.3328009672437097e-07,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.5135341816006701,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 6.868905991674459e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.4126234509231858,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 1.2287812589884992e-07,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.4780876133363658,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 1.595769658816674e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.3907233114506408,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 5.960997874939627e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.5014358733146759,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 7.125283590766051e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.31953945149386637,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.1490938651903387e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 21,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.3448769333291106,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 2.7767145396410186e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4133123268961778,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 4.1803038253950915e-10,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.3452873706843934,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 3.928785463244065e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.41262343512365185,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 5.960804188709577e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.2847067068840944,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 1.3496051699093632e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.3907232733132644,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 1.228959310653832e-07,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.3130630219438619,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 1.1343946320264105e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.3195395637050897,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 3.068351540589914e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 41,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.38090116076004,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 3.9544776143733884e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.23391363510674276,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 1.7633542774559028e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.3863249951227146,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 3.0422486913914456e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.41262345318026183,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 4.214848808730532e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.3260791905284873,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 2.452610725272472e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.16400773192946907,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 1.4475851612461012e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.35364547407544483,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 1.5737354716911177e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.3195395866573806,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.4027563922714077e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 61,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.4557962563496028,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 1.9468856100345658e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4132393194200417,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 1.908289055006286e-07,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.45067885170091887,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 7.966374560936456e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.2542532969929627,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 2.6771265887634364e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.39642198428773123,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 2.976849618154116e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.373232824559577,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 4.887944855554758e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.418616891947819,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 2.1233820076029103e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.22217803450198575,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 5.79248281495113e-06,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 81,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.5137363246547281,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 5.6191802702484374e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4132393491232657,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 7.456262769024897e-09,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.5135341816006701,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 6.861859338828303e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.41262345995149036,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 6.664025787352373e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.49743537762281764,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 5.907145264433566e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.363783903926098,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 1.2122420674232418e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.5014358733146759,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 7.1274451900925404e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.31953945149386614,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.1490944626748886e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 101,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.5167146750001935,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 1.053860856524248e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4133124440685046,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 1.6049053391878599e-07,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.5135341816006701,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 6.861859338828303e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.41262345995149036,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 6.664025787352373e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.47808761333636585,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 1.5972404475826576e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.3907233114506406,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 5.960904397890021e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.5014358733146759,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 7.1274451900925404e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.31953945149386614,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.1490944626748886e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 121,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.37616062365349706,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 4.4106654312462e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4133123899889733,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 5.96051747334418e-08,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.43969893150712985,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 2.0537953484858146e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.41262345092318564,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 6.664054894298493e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.3422774396997905,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 1.0069315653205656e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.3907233114506406,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 5.960804709769105e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.40748268530377674,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 3.021680397600071e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.31953945149386614,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.149096315420447e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 141,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.343803274296304,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 2.9145589493449192e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4133123314028064,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 1.1920949671908499e-07,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.41795206927945144,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 2.3690673112544474e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.41262345092318564,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 1.490117775658897e-07,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.3176250091188303,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 3.461902793758462e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.3907233114506406,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 8.114903086910592e-10,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.3857292215365236,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 2.672942906514353e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.3195394748104873,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 1.7881607785315474e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 161,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.3512246283220766,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 1.9587926384932026e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.33604911402721194,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 4.532403404465241e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.34918018454543953,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 3.4635383647133725e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.4126234622085665,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 7.45060363264121e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.29072680318204974,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 1.2440756291508541e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.2999236355511525,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 2.90448622606341e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.31696227676454863,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 1.0632605031312488e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.31953957390610804,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 1.2288307811508821e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 181,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.44478973020478985,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 2.8429966796944593e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.22824896227046054,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 2.0849418944906035e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.44136901372429943,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 1.8921953377350248e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.4126234238382702,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 6.664327440126732e-08,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.38559955181023686,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 3.732071902714655e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.1847623703813108,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 1.0196886245026324e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.4092640803965724,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 2.8932737091157824e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.3195394631521769,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.528822746095341e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 201,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.3845069470760804,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 3.580839569298216e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.18083998548717067,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 2.546077025436334e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.37628603311703496,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 4.124364233009982e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.15160978933834232,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 3.5972649876432317e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.3235154077666898,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 2.7754347780656333e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.23177416893705435,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 9.308336555974377e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.34415722021083744,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 2.7578543228166683e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.08048172748879055,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 1.1372059627417742e-05,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    },
+    {
+      "frame": 221,
+      "bone_matrix_error": 0.0,
+      "boot_geometry_delta_m": 0,
+      "IK": [
+        {
+          "who": "BOY",
+          "chain": "shin_near",
+          "distance_m": 0.4366642044411405,
+          "min_reach_m": 0.0407126247882843,
+          "max_reach_m": 0.5368893444538116,
+          "endpoint_error_m": 1.4104057305676879e-05,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_near",
+          "distance_m": 0.4133122863365185,
+          "min_reach_m": 0.16332972049713135,
+          "max_reach_m": 0.41623932123184204,
+          "endpoint_error_m": 1.490122207939911e-07,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "shin_far",
+          "distance_m": 0.4308201505374665,
+          "min_reach_m": 0.05283306539058685,
+          "max_reach_m": 0.5204908400774002,
+          "endpoint_error_m": 8.07027204308143e-06,
+          "reachable": true
+        },
+        {
+          "who": "BOY",
+          "chain": "forearm_far",
+          "distance_m": 0.2560653239848183,
+          "min_reach_m": 0.14860978722572327,
+          "max_reach_m": 0.41609153151512146,
+          "endpoint_error_m": 2.392335592286319e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_near",
+          "distance_m": 0.37689992857901156,
+          "min_reach_m": 0.06422944366931915,
+          "max_reach_m": 0.5014990419149399,
+          "endpoint_error_m": 1.79673280690473e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_near",
+          "distance_m": 0.23115629245977617,
+          "min_reach_m": 0.030218064785003662,
+          "max_reach_m": 0.39169734716415405,
+          "endpoint_error_m": 9.489750127659939e-06,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "shin_far",
+          "distance_m": 0.39874119526955965,
+          "min_reach_m": 0.08207911252975464,
+          "max_reach_m": 0.5061906576156616,
+          "endpoint_error_m": 1.1409357019249364e-05,
+          "reachable": true
+        },
+        {
+          "who": "GIRL",
+          "chain": "forearm_far",
+          "distance_m": 0.3195395447603404,
+          "min_reach_m": 0.041569650173187256,
+          "max_reach_m": 0.32195982336997986,
+          "endpoint_error_m": 2.402756532885709e-07,
+          "reachable": true
+        }
+      ],
+      "additional_signed_polygon_flips": {
+        "LOCO_BOY | PAINT body": 0,
+        "V007_BOY | drawn leg far": 0,
+        "V007_BOY | drawn leg near": 0,
+        "LOCO_GIRL | PAINT body": 0,
+        "V007_GIRL | drawn leg far": 0,
+        "V007_GIRL | drawn leg near": 0
+      },
+      "finite_geometry": true
+    }
+  ],
+  "source_reuse": [
+    {
+      "mesh": "LOCO_BOY | PAINT body",
+      "base_UV_exact": true,
+      "body_weights_exact": true,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "PERF_BOY | original head",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | articulated drawn hand far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | articulated drawn hand near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn leg far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn leg near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn skin far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn skin near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn sleeve far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn sleeve near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn source gray cuff far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | drawn source gray cuff near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | redrawn support boot far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_BOY | redrawn support boot near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "LOCO_GIRL | PAINT body",
+      "base_UV_exact": true,
+      "body_weights_exact": true,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "PERF_GIRL | original head and attached braid",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | articulated drawn hand far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | articulated drawn hand near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn leg far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn leg near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn skin far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn skin near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn sleeve far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn sleeve near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn source gray cuff far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | drawn source gray cuff near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | redrawn support boot far",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    },
+    {
+      "mesh": "V007_GIRL | redrawn support boot near",
+      "base_UV_exact": true,
+      "body_weights_exact": null,
+      "materials_exact": true,
+      "base_vertex_count_exact": true
+    }
+  ],
+  "off_cache_HIP": {
+    "all16_response_m": {
+      "V007_BOY | drawn leg far": 0.03555468014913953,
+      "V007_BOY | drawn leg near": 0.030097149885136874,
+      "V007_BOY | drawn skin far": 0.019209414030291874,
+      "V007_BOY | drawn skin near": 0.01920976779859657,
+      "V007_BOY | drawn sleeve far": 0.019209516298030152,
+      "V007_BOY | drawn sleeve near": 0.019209721210637718,
+      "V007_BOY | drawn source gray cuff far": 0.01920940456102931,
+      "V007_BOY | drawn source gray cuff near": 0.019209721210637718,
+      "V007_GIRL | drawn leg far": 0.0351836644844887,
+      "V007_GIRL | drawn leg near": 0.02669157919819148,
+      "V007_GIRL | drawn skin far": 0.019209432590032965,
+      "V007_GIRL | drawn skin near": 0.019209656063058633,
+      "V007_GIRL | drawn sleeve far": 0.019209423499549773,
+      "V007_GIRL | drawn sleeve near": 0.019209730300980023,
+      "V007_GIRL | drawn source gray cuff far": 0.01920938600126114,
+      "V007_GIRL | drawn source gray cuff near": 0.019209730300980023
+    },
+    "boot_drift_m": 0.0,
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.4992396768920775,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 1.9127020455902975e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.4133124395618849,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.604904447016107e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5000154122197508,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 4.650797789332451e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.41262345092319164,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 2.980368867695315e-08,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "shin_near",
+        "distance_m": 0.46130398045956206,
+        "min_reach_m": 0.06422944366931915,
+        "max_reach_m": 0.5014990419149399,
+        "endpoint_error_m": 1.1780213800523574e-05,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "forearm_near",
+        "distance_m": 0.3907232637789248,
+        "min_reach_m": 0.030218064785003662,
+        "max_reach_m": 0.39169734716415405,
+        "endpoint_error_m": 1.604919761332133e-07,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "shin_far",
+        "distance_m": 0.4877676615961511,
+        "min_reach_m": 0.08207911252975464,
+        "max_reach_m": 0.5061906576156616,
+        "endpoint_error_m": 5.530338681037422e-06,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "forearm_far",
+        "distance_m": 0.3195395039562671,
+        "min_reach_m": 0.041569650173187256,
+        "max_reach_m": 0.32195982336997986,
+        "endpoint_error_m": 2.6656176182806905e-07,
+        "reachable": true
+      }
+    ],
+    "actions": 0
+  },
+  "off_cache_wrist": {
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.4992396768920775,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 1.9127020455902975e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.289784546162629,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 9.419877157992807e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5000154122197508,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 4.650797789332451e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.41262345092319164,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 2.980368867695315e-08,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "shin_near",
+        "distance_m": 0.46130398045956206,
+        "min_reach_m": 0.06422944366931915,
+        "max_reach_m": 0.5014990419149399,
+        "endpoint_error_m": 1.1780213800523574e-05,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "forearm_near",
+        "distance_m": 0.21095772045848168,
+        "min_reach_m": 0.030218064785003662,
+        "max_reach_m": 0.39169734716415405,
+        "endpoint_error_m": 2.048813483790984e-05,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "shin_far",
+        "distance_m": 0.4877676615961511,
+        "min_reach_m": 0.08207911252975464,
+        "max_reach_m": 0.5061906576156616,
+        "endpoint_error_m": 5.530338681037422e-06,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "forearm_far",
+        "distance_m": 0.3195395039562671,
+        "min_reach_m": 0.041569650173187256,
+        "max_reach_m": 0.32195982336997986,
+        "endpoint_error_m": 2.6656176182806905e-07,
+        "reachable": true
+      }
+    ],
+    "arm_response_m": {
+      "V007_BOY | drawn skin far": 0.019209414030291874,
+      "V007_BOY | drawn skin near": 0.14022261822982632,
+      "V007_BOY | drawn sleeve far": 0.019209516298030152,
+      "V007_BOY | drawn sleeve near": 0.13561110451635977,
+      "V007_BOY | drawn source gray cuff far": 0.01920940456102931,
+      "V007_BOY | drawn source gray cuff near": 0.13561110451635977,
+      "V007_GIRL | drawn skin far": 0.019209432590032965,
+      "V007_GIRL | drawn skin near": 0.20236424373161818,
+      "V007_GIRL | drawn sleeve far": 0.019209423499549773,
+      "V007_GIRL | drawn sleeve near": 0.2002801631007825,
+      "V007_GIRL | drawn source gray cuff far": 0.01920938600126114,
+      "V007_GIRL | drawn source gray cuff near": 0.2002801631007825
+    }
+  },
+  "v016_sources_unchanged": {
+    "characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Control_Asset_v016.blend": true,
+    "characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Capability_v016.blend": true,
+    "characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Live_Diagnostic_v016.blend": true
+  },
+  "gates": {
+    "eight_IK_chains": true,
+    "original_bone_poses_unchanged": true,
+    "boots_unchanged": true,
+    "UV_materials_base_topology_retained": true,
+    "body_weights_retained": true,
+    "all_static_IK_reachable": true,
+    "off_cache_all16_respond": true,
+    "off_cache_boots_fixed": true,
+    "finite_geometry": true,
+    "v016_immutable": true
+  }
+}

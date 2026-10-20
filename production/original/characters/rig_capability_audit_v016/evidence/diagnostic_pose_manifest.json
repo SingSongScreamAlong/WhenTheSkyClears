@@ -1,0 +1,1274 @@
+[
+  {
+    "frame": 1,
+    "test": "01_NEUTRAL",
+    "who": "BOY",
+    "label": "Neutral source identity",
+    "spec": {
+      "hip": [
+        0,
+        0.60323
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.22831964492797852,
+          5.860436580462647e-10,
+          0.6475309133529663
+        ],
+        "reach_fit_adjustment_m": 7.31996728969869e-05,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.2998825013637543,
+          -7.819079272941565e-10,
+          0.6594580411911011
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 1,
+    "test": "01_NEUTRAL",
+    "who": "GIRL",
+    "label": "Neutral source identity",
+    "spec": {
+      "hip": [
+        0,
+        0.60323
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.2641010582447052,
+          -3.25207673290695e-11,
+          0.6543463468551636
+        ],
+        "reach_fit_adjustment_m": 0.002025983055707719,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.21639245748519897,
+          2.666773399329081e-11,
+          0.6032299995422363
+        ],
+        "reach_fit_adjustment_m": 0.0005796248800703826,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 21,
+    "test": "02_SQUAT",
+    "who": "BOY",
+    "label": "Planted squat / fixed sole targets",
+    "spec": {
+      "hip": [
+        0.02,
+        0.43
+      ],
+      "pelvis": 0,
+      "chest": 10,
+      "head": -4,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.19715815782546997,
+          5.860517626743444e-10,
+          0.513275146484375
+        ],
+        "reach_fit_adjustment_m": 7.306523156781427e-05,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.3250904679298401,
+          -7.818986014207496e-10,
+          0.433299720287323
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 21,
+    "test": "02_SQUAT",
+    "who": "GIRL",
+    "label": "Planted squat / fixed sole targets",
+    "spec": {
+      "hip": [
+        0.02,
+        0.41
+      ],
+      "pelvis": 0,
+      "chest": 10,
+      "head": -4,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.23121243715286255,
+          -3.251426905492849e-11,
+          0.5062004327774048
+        ],
+        "reach_fit_adjustment_m": 0.0020259763219676913,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.23310500383377075,
+          2.6675561065614417e-11,
+          0.37242379784584045
+        ],
+        "reach_fit_adjustment_m": 0.0005797101925695859,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 41,
+    "test": "03_OFF_CACHE",
+    "who": "BOY",
+    "label": "New off-cache intermediate / opposed torso-head",
+    "spec": {
+      "hip": [
+        0.035,
+        0.472
+      ],
+      "pelvis": -4,
+      "chest": 18,
+      "head": -9,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        0.285,
+        0.735,
+        -25,
+        "Reach"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.2849999964237213,
+          0.0,
+          0.7350000143051147
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.3375806212425232,
+          -5.886621745609943e-10,
+          0.4328072667121887
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 41,
+    "test": "03_OFF_CACHE",
+    "who": "GIRL",
+    "label": "New off-cache intermediate / opposed torso-head",
+    "spec": {
+      "hip": [
+        0.035,
+        0.45199999999999996
+      ],
+      "pelvis": -4,
+      "chest": 18,
+      "head": -9,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        0.285,
+        0.735,
+        -25,
+        "Reach"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.2849999666213989,
+          0.0,
+          0.7350000143051147
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.24080145359039307,
+          1.6143915371191753e-10,
+          0.38513103127479553
+        ],
+        "reach_fit_adjustment_m": 0.0005797243544336492,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 61,
+    "test": "04_REACH",
+    "who": "BOY",
+    "label": "Deep elbow and shoulder / reaching hand",
+    "spec": {
+      "hip": [
+        0,
+        0.54
+      ],
+      "pelvis": 0,
+      "chest": -8,
+      "head": 6,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        0.37,
+        0.94,
+        12,
+        "Reach"
+      ],
+      "far_hand": [
+        -0.17,
+        0.76,
+        -30,
+        "Relax"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.297232985496521,
+          -1.0764700322264936e-15,
+          0.9413027167320251
+        ],
+        "reach_fit_adjustment_m": 0.07277867978800466,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          -0.17000001668930054,
+          0.0,
+          0.7599999904632568
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 61,
+    "test": "04_REACH",
+    "who": "GIRL",
+    "label": "Deep elbow and shoulder / reaching hand",
+    "spec": {
+      "hip": [
+        0,
+        0.52
+      ],
+      "pelvis": 0,
+      "chest": -8,
+      "head": 6,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        0.31,
+        0.84,
+        8,
+        "Reach"
+      ],
+      "far_hand": [
+        -0.17,
+        0.76,
+        -30,
+        "Relax"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.3100000023841858,
+          0.0,
+          0.8399999737739563
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          -0.17000001668930054,
+          0.0,
+          0.7599999904632568
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 81,
+    "test": "05_HEEL",
+    "who": "BOY",
+    "label": "Painted boot heel contact",
+    "spec": {
+      "hip": [
+        0,
+        0.60323
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        -0.1,
+        -12,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        0.13,
+        0.62,
+        -85,
+        "Relax"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.11633169651031494,
+          7.973745819303329e-17,
+          0.649389386177063
+        ],
+        "reach_fit_adjustment_m": 0.03241232391473475,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.2998825013637543,
+          -7.81902043112126e-10,
+          0.6594580411911011
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 81,
+    "test": "05_HEEL",
+    "who": "GIRL",
+    "label": "Painted boot heel contact",
+    "spec": {
+      "hip": [
+        0,
+        0.60323
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        -0.1,
+        -12,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        0.13,
+        0.62,
+        -85,
+        "Relax"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.12999999523162842,
+          0.0,
+          0.6200000047683716
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.21639245748519897,
+          2.667484462481884e-11,
+          0.6032299995422363
+        ],
+        "reach_fit_adjustment_m": 0.0005796248800703826,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 101,
+    "test": "06_FLAT",
+    "who": "BOY",
+    "label": "Painted boot flat contact",
+    "spec": {
+      "hip": [
+        0,
+        0.60323
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.22831964492797852,
+          5.860499308063538e-10,
+          0.6475309133529663
+        ],
+        "reach_fit_adjustment_m": 7.32058137775356e-05,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.2998825013637543,
+          -7.81902043112126e-10,
+          0.6594580411911011
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 101,
+    "test": "06_FLAT",
+    "who": "GIRL",
+    "label": "Painted boot flat contact",
+    "spec": {
+      "hip": [
+        0,
+        0.60323
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.2641010582447052,
+          -3.25136688406058e-11,
+          0.6543463468551636
+        ],
+        "reach_fit_adjustment_m": 0.002025983055707719,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.21639245748519897,
+          2.667484462481884e-11,
+          0.6032299995422363
+        ],
+        "reach_fit_adjustment_m": 0.0005796248800703826,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 121,
+    "test": "07_TOE",
+    "who": "BOY",
+    "label": "Painted boot toe roll",
+    "spec": {
+      "hip": [
+        0.05,
+        0.52
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        -0.1,
+        30,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.17831963300704956,
+          5.860428253789962e-10,
+          0.5643008947372437
+        ],
+        "reach_fit_adjustment_m": 7.307877661613684e-05,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.3498825132846832,
+          -7.819091485394836e-10,
+          0.5762280225753784
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 121,
+    "test": "07_TOE",
+    "who": "GIRL",
+    "label": "Painted boot toe roll",
+    "spec": {
+      "hip": [
+        0.05,
+        0.5
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        -0.1,
+        30,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.21410098671913147,
+          -3.2520774267963404e-11,
+          0.5511163473129272
+        ],
+        "reach_fit_adjustment_m": 0.002025983055707719,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.2663925290107727,
+          2.6667739197461238e-11,
+          0.5
+        ],
+        "reach_fit_adjustment_m": 0.0005795644018550325,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 141,
+    "test": "08_LIFT",
+    "who": "BOY",
+    "label": "Painted boot lift / reverse roll range",
+    "spec": {
+      "hip": [
+        0.04,
+        0.5
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        -0.1,
+        12,
+        0.055
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.1883196234703064,
+          5.860428253789962e-10,
+          0.54430091381073
+        ],
+        "reach_fit_adjustment_m": 7.307263417568521e-05,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.3398825228214264,
+          -7.819091485394836e-10,
+          0.5562280416488647
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 141,
+    "test": "08_LIFT",
+    "who": "GIRL",
+    "label": "Painted boot lift / reverse roll range",
+    "spec": {
+      "hip": [
+        0.04,
+        0.48
+      ],
+      "pelvis": 0,
+      "chest": 0,
+      "head": 0,
+      "near_foot": [
+        -0.1,
+        12,
+        0.055
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.2241009771823883,
+          -3.2520774267963404e-11,
+          0.5311163663864136
+        ],
+        "reach_fit_adjustment_m": 0.0020259926231915187,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.25639253854751587,
+          2.6667739197461238e-11,
+          0.47999998927116394
+        ],
+        "reach_fit_adjustment_m": 0.0005796309971120491,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 161,
+    "test": "09_BRACE",
+    "who": "BOY",
+    "label": "Actual painted palm / thigh contact",
+    "spec": {
+      "hip": [
+        0.015,
+        0.435
+      ],
+      "pelvis": 0,
+      "chest": 50,
+      "head": 7,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.1599923074245453,
+          0.0,
+          0.4444785416126251
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 1.0,
+        "BraceFollow": 1.0
+      },
+      "far": {
+        "position": [
+          0.2508338689804077,
+          -7.819011549337063e-10,
+          0.24141928553581238
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 161,
+    "test": "09_BRACE",
+    "who": "GIRL",
+    "label": "Actual painted palm / thigh contact",
+    "spec": {
+      "hip": [
+        0.015,
+        0.415
+      ],
+      "pelvis": 0,
+      "chest": 50,
+      "head": 7,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          0.19330018758773804,
+          -7.229223442095645e-09,
+          0.36251169443130493
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 1.0,
+        "BraceFollow": 1.0
+      },
+      "far": {
+        "position": [
+          0.154094398021698,
+          2.6676324343943847e-11,
+          0.2492336630821228
+        ],
+        "reach_fit_adjustment_m": 0.0005796789413275361,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 181,
+    "test": "10_ATTENTION",
+    "who": "BOY",
+    "label": "Supported profile attention tilt; yaw UNSOLVED",
+    "spec": {
+      "hip": [
+        0.005,
+        0.53
+      ],
+      "pelvis": 0,
+      "chest": -9,
+      "head": -15,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        -0.19,
+        0.72,
+        170,
+        "Reach"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.1899999976158142,
+          0.0,
+          0.7200000286102295
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.2923944294452667,
+          -7.81910203251357e-10,
+          0.6324477195739746
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 181,
+    "test": "10_ATTENTION",
+    "who": "GIRL",
+    "label": "Supported profile attention tilt; yaw UNSOLVED",
+    "spec": {
+      "hip": [
+        0.005,
+        0.51
+      ],
+      "pelvis": 0,
+      "chest": -9,
+      "head": -15,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        -0.19,
+        0.72,
+        170,
+        "Reach"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.1899999976158142,
+          0.0,
+          0.7200000286102295
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.21872836351394653,
+          2.6667236127653204e-11,
+          0.5438512563705444
+        ],
+        "reach_fit_adjustment_m": 0.0005796070342437656,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 201,
+    "test": "11_CROSSING",
+    "who": "BOY",
+    "label": "Near/far painted limb crossing and braid attachment",
+    "spec": {
+      "hip": [
+        0.0,
+        0.465
+      ],
+      "pelvis": 0,
+      "chest": 12,
+      "head": -12,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        -0.15,
+        0.89,
+        155,
+        "Reach"
+      ],
+      "far_hand": [
+        0.2,
+        0.77,
+        -15,
+        "Relax"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.1499999761581421,
+          0.0,
+          0.8899999856948853
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.24014544486999512,
+          -8.293526591396719e-15,
+          0.719744861125946
+        ],
+        "reach_fit_adjustment_m": 0.06432133986719324,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 201,
+    "test": "11_CROSSING",
+    "who": "GIRL",
+    "label": "Near/far painted limb crossing and braid attachment",
+    "spec": {
+      "hip": [
+        0.0,
+        0.445
+      ],
+      "pelvis": 0,
+      "chest": 12,
+      "head": -12,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        -0.15,
+        0.89,
+        155,
+        "Reach"
+      ],
+      "far_hand": [
+        0.2,
+        0.77,
+        -15,
+        "Relax"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.15000000596046448,
+          0.0,
+          0.8899999856948853
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.19999998807907104,
+          0.0,
+          0.7699999809265137
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 221,
+    "test": "12_CLEARANCE",
+    "who": "BOY",
+    "label": "Pair clearance / offer is a cue, not a grasp",
+    "spec": {
+      "hip": [
+        0,
+        0.52
+      ],
+      "pelvis": 0,
+      "chest": 12,
+      "head": 4,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "far_hand": [
+        0.37,
+        0.77,
+        10,
+        "Reach"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.2141195833683014,
+          5.860446017358356e-10,
+          0.6108031272888184
+        ],
+        "reach_fit_adjustment_m": 7.304843465153847e-05,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.3700000047683716,
+          0.0,
+          0.7699999809265137
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  },
+  {
+    "frame": 221,
+    "test": "12_CLEARANCE",
+    "who": "GIRL",
+    "label": "Pair clearance / offer is a cue, not a grasp",
+    "spec": {
+      "hip": [
+        0,
+        0.5
+      ],
+      "pelvis": 0,
+      "chest": -10,
+      "head": -15,
+      "near_foot": [
+        0.13,
+        0,
+        0
+      ],
+      "far_foot": [
+        -0.1,
+        0,
+        0
+      ],
+      "near_hand": [
+        -0.29,
+        0.76,
+        170,
+        "Reach"
+      ]
+    },
+    "actual_wrists": {
+      "near": {
+        "position": [
+          -0.28999999165534973,
+          0.0,
+          0.7599999904632568
+        ],
+        "reach_fit_adjustment_m": 0.0,
+        "Reach": 1.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      },
+      "far": {
+        "position": [
+          0.21310493350028992,
+          2.6667978589300922e-11,
+          0.5375761389732361
+        ],
+        "reach_fit_adjustment_m": 0.0005797648172941983,
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0
+      }
+    }
+  }
+]

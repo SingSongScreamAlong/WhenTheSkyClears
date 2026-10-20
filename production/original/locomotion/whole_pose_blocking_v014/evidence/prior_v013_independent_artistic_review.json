@@ -1,0 +1,58 @@
+{
+  "candidate": "locomotion/whole_pose_blocking_v013",
+  "decision": "VIABLE_WHOLE_POSE_FOUNDATION; FOCUSED_BLOCKING_CORRECTION_BEFORE_POLISH",
+  "acceptance_scope": "The sequence has a workable pose/story structure. This is not final movement approval, normal-speed verification, painted-character approval or permission to integrate.",
+  "method": {
+    "verification": "Independently verified SHA256 and byte size for native, both movies and both key-pose sheets against final_handoff.json. Independently decoded all 72 frames in each actual delivered movie.",
+    "visual_review": "Viewed both supplied key-pose sheets, all 72 consecutive decoded close frames and all 72 shot-size frames in chronological sheets. Also viewed independently extracted actual full-size encoded close frames 16, 22, 38, 43 and 49.",
+    "stage": "Judged staged support, silhouette and acting sequence as deliberately stepped whole-pose blocking. Did not treat held exposures or jumps as failed smooth animation.",
+    "limitation": "No continuous/full-speed playback. Existing supported CUA initialization previously failed twice with trusted Node process exited unexpectedly; kernel reset, rerun your request. Urgency, hold durations and transition flow remain provisional. This is image-based artistic assessment, not measured physical dynamics or reference-fidelity validation.",
+    "mutations": "No asset/source edits, native rendering, integration or production messages. Only diagnostic artifacts in task workspace."
+  },
+  "what_now_works": [
+    {
+      "frames": "10,13,16,19,22",
+      "finding": "Forward imbalance, separate catch-foot lift/placement, heel arrival and deep loaded crouch form distinct, readable story poses. The larger body-line change survives shot size. This is a stronger structural proposition than the preceding smooth offset studies."
+    },
+    {
+      "frames": "22,26,32,38,43,49,56,64",
+      "finding": "Brace, low gathering of feet/effort, leg-driven rise, brace release and settling are separately staged. The recovery no longer reads simply as an uninterrupted upright rise. Preserve these pose contrasts and their support order."
+    },
+    {
+      "frames": "17,22,27,34,43,54",
+      "finding": "The girl collects the trailing foot and visibly settles both heels by 27, removing the held-lunge problem. Her later inclination and low offered hand provide a plausible attending role without implying that she lifts him."
+    }
+  ],
+  "essential_blocking_corrections_only": [
+    {
+      "priority": 1,
+      "frames": "boy10-19; girl12-21",
+      "problem": "Bent elbows and upturned forearms create a broad shrug/question gesture. Both characters present similar raised bent-arm silhouettes during the catch, weakening the distinction between his involuntary balance response and her controlled concern.",
+      "correction": "Restage the boy's arms into a clear unequal counterbalance/reach that follows the forward fall. Give the girl one quieter, lower attending/available hand and an independently settled other arm. Preserve the body/foot story keys; do not redesign the whole sequence."
+    },
+    {
+      "priority": 2,
+      "frames": "22-43, release49",
+      "problem": "The thigh brace is understandable close up but the bent arm can merge into a sharp triangular torso/thigh outline, with proxy intersection making the exact support point ambiguous. At shot size its weight-bearing intention is less secure than the deep crouch itself.",
+      "correction": "Make the wrist/hand visibly meet the top of the loaded front thigh with clean silhouette separation, and preserve that clear contact through low gather and initial push. Stage the release only after that supporting purpose reads. This asks for a clear contact key, not final fingers, deformation or force simulation."
+    }
+  ],
+  "head_placeholder": "The single reflected profile at girl frame12 is an explicit attention shorthand. Do not count its abrupt switch as evidence that the whole-pose method failed, or claim a solved painted turn. Choose the intended glance/turn breakdown before smooth head animation; detailed painted turnaround and braid continuity remain outside this blocking review.",
+  "next_gate": "Review a focused corrected stepped version in both framings at normal speed before spline polish. Keep the accepted structural proposition intact. No recurring walking phase, walk extension, repaint or production mapping is justified by this review.",
+  "delivery": {
+    "preview": {
+      "filename": "WTSC_v013_Whole_Pose_Blocking_3s.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "bytes": 125230,
+      "receipt_status": "succeeded"
+    },
+    "key_sheets": {
+      "local_files": ["WTSC_v013_INSPECTION_Key_Poses.jpg", "WTSC_v013_SHOT_SIZE_Key_Poses.jpg"],
+      "status": "Library receipt/IDs unavailable at review time; not denied or an uncertain write outcome.",
+      "checks": "Recursive local candidate receipt inventory contains only library_preview_receipt.json. Exact title searches found no key-sheet entry; recent recursive Library listing confirms the preview but contains no whole-pose v013 key-sheet entry.",
+      "supported_next_step": "Upload the existing reviewed key sheets through the authorized delivery workflow, then retain the returned IDs/receipts. This read-only reviewer did not initiate an upload."
+    }
+  }
+}

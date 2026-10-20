@@ -1,0 +1,3031 @@
+{
+  "V007_BOY | articulated drawn hand far": {
+    "verts": 98,
+    "evaluated_verts": 98,
+    "world_bounds": [
+      [
+        0.20103292167186737,
+        0.2554754614830017
+      ],
+      [
+        0.021999994292855263,
+        0.022800004109740257
+      ],
+      [
+        0.5506935715675354,
+        0.6184036135673523
+      ]
+    ],
+    "local_bounds": [
+      [
+        0.2718358039855957,
+        0.3282276391983032
+      ],
+      [
+        -0.0020000028889626265,
+        -0.0011999948183074594
+      ],
+      [
+        0.597400963306427,
+        0.6647753715515137
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.024000000208616257
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "Source joint placement only",
+        "ARMATURE",
+        null
+      ]
+    ],
+    "shape_keys": [
+      "Basis",
+      "Reach",
+      "Brace"
+    ],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far"
+    ]
+  },
+  "V007_BOY | drawn skin far": {
+    "verts": 38,
+    "evaluated_verts": 365,
+    "world_bounds": [
+      [
+        0.0902397558093071,
+        0.22442211210727692
+      ],
+      [
+        0.02199999988079071,
+        0.02200000360608101
+      ],
+      [
+        0.6003784537315369,
+        0.7902196645736694
+      ]
+    ],
+    "local_bounds": [
+      [
+        0.18693479895591736,
+        0.3131615221500397
+      ],
+      [
+        0.02500000409781933,
+        0.025000005960464478
+      ],
+      [
+        0.6472489833831787,
+        0.7680028676986694
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V017 live corrective contour",
+        "NODES",
+        "V017 rounded painted arm | V007_BOY | drawn skin far"
+      ],
+      [
+        "V017 soft contour corners / original UV",
+        "SUBSURF",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V016_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DH",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_K",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DK",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_A",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DA",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_width",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_depth",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_t",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_sag",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_width",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far"
+    ]
+  },
+  "V007_BOY | drawn sleeve far": {
+    "verts": 38,
+    "evaluated_verts": 365,
+    "world_bounds": [
+      [
+        0.02906779944896698,
+        0.14338302612304688
+      ],
+      [
+        0.02500000037252903,
+        0.025000005960464478
+      ],
+      [
+        0.7460678815841675,
+        0.9899400472640991
+      ]
+    ],
+    "local_bounds": [
+      [
+        0.027700230479240417,
+        0.24629539251327515
+      ],
+      [
+        0.02500000037252903,
+        0.02500000223517418
+      ],
+      [
+        0.7316840887069702,
+        1.0160369873046875
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V017 live corrective contour",
+        "NODES",
+        "V017 rounded painted arm | V007_BOY | drawn sleeve far"
+      ],
+      [
+        "V017 soft contour corners / original UV",
+        "SUBSURF",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V016_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DH",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_K",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DK",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_A",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DA",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_width",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_depth",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_E",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_U",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_V",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DU",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DV",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_width",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | coat | V007 BOY drawn sleeve"
+    ]
+  },
+  "V007_BOY | drawn source gray cuff far": {
+    "verts": 8,
+    "evaluated_verts": 65,
+    "world_bounds": [
+      [
+        0.08052822202444077,
+        0.14338302612304688
+      ],
+      [
+        0.024000000208616257,
+        0.024000003933906555
+      ],
+      [
+        0.7460678815841675,
+        0.7906173467636108
+      ]
+    ],
+    "local_bounds": [
+      [
+        0.14349250495433807,
+        0.24629539251327515
+      ],
+      [
+        0.024000000208616257,
+        0.024000002071261406
+      ],
+      [
+        0.7316840887069702,
+        0.8133358359336853
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V017 live corrective contour",
+        "NODES",
+        "V017 rounded painted arm | V007_BOY | drawn source gray cuff far"
+      ],
+      [
+        "V017 soft contour corners / original UV",
+        "SUBSURF",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V016_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DH",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_K",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DK",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_A",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DA",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_width",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_depth",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_E",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_U",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_V",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DU",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DV",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_width",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | linen | V007 BOY drawn cuff"
+    ]
+  },
+  "V024 continuous near trouser drawing": {
+    "verts": 679,
+    "evaluated_verts": 679,
+    "world_bounds": [
+      [
+        -0.027836104854941368,
+        0.2553011476993561
+      ],
+      [
+        -0.013000001199543476,
+        -0.012999999336898327
+      ],
+      [
+        0.11345239728689194,
+        0.6309657692909241
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.07671160250902176,
+        0.2553011476993561
+      ],
+      [
+        -0.013000000268220901,
+        -0.012999999336898327
+      ],
+      [
+        0.11345239728689194,
+        0.6640139818191528
+      ]
+    ],
+    "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V036 | live rigid segment contours",
+        "NODES",
+        "V036 | rigid thigh shin drawing | V024 continuous near trouser drawing"
+      ]
+    ],
+    "shape_keys": [
+      "Basis",
+      "V024 pose sample 01",
+      "V024 pose sample 02",
+      "V024 pose sample 03",
+      "V024 pose sample 04",
+      "V024 pose sample 05",
+      "V024 pose sample 06",
+      "V024 pose sample 07",
+      "V024 pose sample 08",
+      "V024 pose sample 09",
+      "V024 pose sample 10",
+      "V024 pose sample 11",
+      "V024 pose sample 12",
+      "V024 pose sample 13",
+      "V024 pose sample 14",
+      "V024 pose sample 15",
+      "V024 pose sample 16",
+      "V024 pose sample 17",
+      "V024 pose sample 18",
+      "V024 pose sample 19",
+      "V024 pose sample 20",
+      "V024 pose sample 21",
+      "V024 pose sample 22",
+      "V024 pose sample 23",
+      "V024 pose sample 24",
+      "V024 pose sample 25",
+      "V024 pose sample 26",
+      "V024 pose sample 27",
+      "V024 pose sample 28",
+      "V024 pose sample 29",
+      "V024 pose sample 30"
+    ],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original v015 pigments, fixed anatomical mapping",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V022_EdgeAlpha",
+        "FLOAT_COLOR",
+        "POINT"
+      ],
+      [
+        "V036_t",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V036_row_base",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V036_width_scale",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V036_cuff_mix",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original v015 pigments, fixed anatomical mapping"
+    ],
+    "materials": [
+      "V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff"
+    ]
+  },
+  "V024 continuous far trouser drawing": {
+    "verts": 679,
+    "evaluated_verts": 679,
+    "world_bounds": [
+      [
+        -0.26204031705856323,
+        -0.0033960528671741486
+      ],
+      [
+        0.022999843582510948,
+        0.023000089451670647
+      ],
+      [
+        0.09941132366657257,
+        0.6418296098709106
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.26204031705856323,
+        0.02122030034661293
+      ],
+      [
+        0.022999843582510948,
+        0.023000089451670647
+      ],
+      [
+        0.09941132366657257,
+        0.6522988080978394
+      ]
+    ],
+    "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V036 | live rigid segment contours",
+        "NODES",
+        "V036 | rigid thigh shin drawing | V024 continuous far trouser drawing"
+      ]
+    ],
+    "shape_keys": [
+      "Basis",
+      "V024 pose sample 01",
+      "V024 pose sample 02",
+      "V024 pose sample 03",
+      "V024 pose sample 04",
+      "V024 pose sample 05",
+      "V024 pose sample 06",
+      "V024 pose sample 07",
+      "V024 pose sample 08",
+      "V024 pose sample 09",
+      "V024 pose sample 10",
+      "V024 pose sample 11",
+      "V024 pose sample 12",
+      "V024 pose sample 13",
+      "V024 pose sample 14",
+      "V024 pose sample 15",
+      "V024 pose sample 16",
+      "V024 pose sample 17",
+      "V024 pose sample 18",
+      "V024 pose sample 19",
+      "V024 pose sample 20",
+      "V024 pose sample 21",
+      "V024 pose sample 22",
+      "V024 pose sample 23",
+      "V024 pose sample 24",
+      "V024 pose sample 25",
+      "V024 pose sample 26",
+      "V024 pose sample 27",
+      "V024 pose sample 28",
+      "V024 pose sample 29",
+      "V024 pose sample 30"
+    ],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original v015 pigments, fixed anatomical mapping",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V022_EdgeAlpha",
+        "FLOAT_COLOR",
+        "POINT"
+      ],
+      [
+        "V036_t",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V036_row_base",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V036_width_scale",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V036_cuff_mix",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original v015 pigments, fixed anatomical mapping"
+    ],
+    "materials": [
+      "V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff"
+    ]
+  },
+  "LOCO_BOY | PAINT body": {
+    "verts": 477,
+    "evaluated_verts": 114,
+    "world_bounds": [
+      [
+        -0.0807899534702301,
+        0.09469078481197357
+      ],
+      [
+        -0.02500000037252903,
+        -0.02500000037252903
+      ],
+      [
+        0.998755156993866,
+        1.1220650672912598
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.17209166288375854,
+        0.16868390142917633
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.5861339569091797,
+        1.1296709775924683
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -0.02500000037252903
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V025 | keep original collar, GP replaces coat",
+        "NODES",
+        "V025 | original collar only | rest-coordinate mask"
+      ],
+      [
+        "Native planar armature deformation",
+        "ARMATURE",
+        null
+      ],
+      [
+        "V024 continuous coat contour, convexity and folded value planes",
+        "NODES",
+        "V024 | continuous shaped and shaded painted coat"
+      ]
+    ],
+    "shape_keys": [
+      "Basis",
+      "V017 compression / lifted cloth hem"
+    ],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "UNCHANGED original paint registration",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V022_loading_delta",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V022_passing_delta",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_00",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_00",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_01",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_01",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_02",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_02",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_03",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_03",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_04",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_04",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_05",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_05",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_06",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_06",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_07",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_07",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_08",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_08",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_09",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_09",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_10",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_10",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_11",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_11",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_12",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_12",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_13",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_13",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_14",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_14",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_15",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_15",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_16",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_16",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_17",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_17",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_18",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_18",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_19",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_19",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_20",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_20",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_21",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_21",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_22",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_22",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_23",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_23",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_24",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_24",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_25",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_25",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_26",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_26",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_27",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_27",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_28",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_28",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_29",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_29",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V024_coat_delta_30",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "V024_coat_shade_30",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "UNCHANGED original paint registration"
+    ],
+    "materials": [
+      "V038 COLOR | linen | V024 | original coat pigments with posed fold value"
+    ]
+  },
+  "PERF_BOY | original head": {
+    "verts": 9,
+    "evaluated_verts": 9,
+    "world_bounds": [
+      [
+        -0.16207440197467804,
+        0.28849291801452637
+      ],
+      [
+        -0.04500000178813934,
+        -0.04500000178813934
+      ],
+      [
+        1.0778011083602905,
+        1.5110257863998413
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.1806110441684723,
+        0.25558167695999146
+      ],
+      [
+        -0.04500000178813934,
+        -0.04500000178813934
+      ],
+      [
+        1.0887778997421265,
+        1.5045241117477417
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "Native planar attachment",
+        "ARMATURE",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original v015 paint source",
+        "FLOAT2",
+        "CORNER"
+      ]
+    ],
+    "UV_layers": [
+      "Original v015 paint source"
+    ],
+    "materials": [
+      "V038 COLOR | hair | LOCO | ORIGINAL v015 charcoal paint, packed"
+    ],
+    "evaluated_geometry": {
+      "vertices": [
+        [
+          -0.1464329957962036,
+          -0.04500000178813934,
+          1.5110257863998413
+        ],
+        [
+          0.28849291801452637,
+          -0.04500000178813934,
+          1.4778062105178833
+        ],
+        [
+          0.2595556378364563,
+          -0.04500000178813934,
+          1.098944902420044
+        ],
+        [
+          0.10757230222225189,
+          -0.04500000178813934,
+          1.1003004312515259
+        ],
+        [
+          0.06655047833919525,
+          -0.04500000178813934,
+          1.0778011083602905
+        ],
+        [
+          0.001991160213947296,
+          -0.04500000178813934,
+          1.082732081413269
+        ],
+        [
+          -0.050298355519771576,
+          -0.04500000178813934,
+          1.1140673160552979
+        ],
+        [
+          -0.11381956189870834,
+          -0.04500000178813934,
+          1.1325898170471191
+        ],
+        [
+          -0.16207440197467804,
+          -0.04500000178813934,
+          1.1943761110305786
+        ]
+      ],
+      "faces": [
+        [
+          8,
+          0,
+          1
+        ],
+        [
+          8,
+          1,
+          2
+        ],
+        [
+          7,
+          8,
+          2
+        ],
+        [
+          6,
+          7,
+          2
+        ],
+        [
+          6,
+          2,
+          3
+        ],
+        [
+          5,
+          6,
+          3
+        ],
+        [
+          5,
+          3,
+          4
+        ]
+      ],
+      "UVs": [
+        [
+          0.3199760913848877,
+          0.776833176612854
+        ],
+        [
+          0.3169856369495392,
+          0.9744952321052551
+        ],
+        [
+          0.470095694065094,
+          0.9744952321052551
+        ],
+        [
+          0.3199760913848877,
+          0.776833176612854
+        ],
+        [
+          0.470095694065094,
+          0.9744952321052551
+        ],
+        [
+          0.470095694065094,
+          0.7375133037567139
+        ],
+        [
+          0.3385167419910431,
+          0.7407013773918152
+        ],
+        [
+          0.3199760913848877,
+          0.776833176612854
+        ],
+        [
+          0.470095694065094,
+          0.7375133037567139
+        ],
+        [
+          0.3612440228462219,
+          0.7321997880935669
+        ],
+        [
+          0.3385167419910431,
+          0.7407013773918152
+        ],
+        [
+          0.470095694065094,
+          0.7375133037567139
+        ],
+        [
+          0.3612440228462219,
+          0.7321997880935669
+        ],
+        [
+          0.470095694065094,
+          0.7375133037567139
+        ],
+        [
+          0.4168660342693329,
+          0.7311370968818665
+        ],
+        [
+          0.380382776260376,
+          0.7151966094970703
+        ],
+        [
+          0.3612440228462219,
+          0.7321997880935669
+        ],
+        [
+          0.4168660342693329,
+          0.7311370968818665
+        ],
+        [
+          0.380382776260376,
+          0.7151966094970703
+        ],
+        [
+          0.4168660342693329,
+          0.7311370968818665
+        ],
+        [
+          0.4031100571155548,
+          0.7151966094970703
+        ]
+      ]
+    }
+  },
+  "V007_BOY | articulated drawn hand near": {
+    "verts": 98,
+    "evaluated_verts": 98,
+    "world_bounds": [
+      [
+        -0.15298068523406982,
+        -0.10137730836868286
+      ],
+      [
+        -0.0390000119805336,
+        -0.038200002163648605
+      ],
+      [
+        0.5515347719192505,
+        0.6199384927749634
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.2563663423061371,
+        -0.19997450709342957
+      ],
+      [
+        -1.773238111901776e-09,
+        0.0008000030065886676
+      ],
+      [
+        0.5854738354682922,
+        0.6528482437133789
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -0.039000000804662704
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "Source joint placement only",
+        "ARMATURE",
+        null
+      ]
+    ],
+    "shape_keys": [
+      "Basis",
+      "Reach",
+      "Brace"
+    ],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near"
+    ]
+  },
+  "V007_BOY | drawn skin near": {
+    "verts": 38,
+    "evaluated_verts": 365,
+    "world_bounds": [
+      [
+        -0.1560962051153183,
+        -0.10944920778274536
+      ],
+      [
+        -0.037000007927417755,
+        -0.03700000047683716
+      ],
+      [
+        0.6093418598175049,
+        0.8205933570861816
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.2455085813999176,
+        -0.17597012221813202
+      ],
+      [
+        -0.03700000047683716,
+        -0.03700000047683716
+      ],
+      [
+        0.6421309113502502,
+        0.7778328657150269
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V017 live corrective contour",
+        "NODES",
+        "V017 rounded painted arm | V007_BOY | drawn skin near"
+      ],
+      [
+        "V017 soft contour corners / original UV",
+        "SUBSURF",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V016_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DH",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_K",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DK",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_A",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DA",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_width",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_depth",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_t",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_sag",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_width",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near"
+    ]
+  },
+  "V007_BOY | drawn sleeve near": {
+    "verts": 38,
+    "evaluated_verts": 365,
+    "world_bounds": [
+      [
+        -0.16551394760608673,
+        -0.02646108902990818
+      ],
+      [
+        -0.037000007927417755,
+        -0.03700000047683716
+      ],
+      [
+        0.7885046601295471,
+        1.0164626836776733
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.23781228065490723,
+        -0.023549674078822136
+      ],
+      [
+        -0.03700000047683716,
+        -0.03699999675154686
+      ],
+      [
+        0.7457398772239685,
+        1.046365737915039
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V017 live corrective contour",
+        "NODES",
+        "V017 rounded painted arm | V007_BOY | drawn sleeve near"
+      ],
+      [
+        "V017 soft contour corners / original UV",
+        "SUBSURF",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V016_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DH",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_K",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DK",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_A",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DA",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_width",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_depth",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_E",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_U",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_V",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DU",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DV",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_width",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | coat | V007 BOY drawn sleeve"
+    ]
+  },
+  "V007_BOY | drawn source gray cuff near": {
+    "verts": 8,
+    "evaluated_verts": 65,
+    "world_bounds": [
+      [
+        -0.1647806167602539,
+        -0.10054336488246918
+      ],
+      [
+        -0.03800000622868538,
+        -0.03800000250339508
+      ],
+      [
+        0.7885046601295471,
+        0.8224605321884155
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.23781228065490723,
+        -0.1349204182624817
+      ],
+      [
+        -0.03799999877810478,
+        -0.037999995052814484
+      ],
+      [
+        0.7457398772239685,
+        0.8300600647926331
+      ]
+    ],
+    "parent": "LOCO_BOY | RIG",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [
+      [
+        "V017 live corrective contour",
+        "NODES",
+        "V017 rounded painted arm | V007_BOY | drawn source gray cuff near"
+      ],
+      [
+        "V017 soft contour corners / original UV",
+        "SUBSURF",
+        null
+      ]
+    ],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V016_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DH",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_K",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DK",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_A",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_DA",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_width",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V016_depth",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_H",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_E",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_U",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_V",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DU",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_DV",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V017_width",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | linen | V007 BOY drawn cuff"
+    ]
+  },
+  "V033 | near | canonical painted shoe": {
+    "verts": 76,
+    "evaluated_verts": 76,
+    "world_bounds": [
+      [
+        0.15333935618400574,
+        0.3905488848686218
+      ],
+      [
+        -0.014000030234456062,
+        -0.013999986462295055
+      ],
+      [
+        -4.284083843231201e-08,
+        0.1442294865846634
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.07380640506744385,
+        0.1677113175392151
+      ],
+      [
+        -0.014000030234456062,
+        -0.013999986462295055
+      ],
+      [
+        -0.10313599556684494,
+        0.04029151424765587
+      ]
+    ],
+    "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        0.9636582732200623,
+        0.0,
+        -0.26713797450065613,
+        0.20769158005714417
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.26713797450065613,
+        0.0,
+        0.9636582732200623,
+        0.10670984536409378
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+    ]
+  },
+  "V033 | far | canonical painted shoe": {
+    "verts": 76,
+    "evaluated_verts": 76,
+    "world_bounds": [
+      [
+        -0.3087839186191559,
+        -0.07617314159870148
+      ],
+      [
+        0.020999981090426445,
+        0.021000023931264877
+      ],
+      [
+        -5.587935447692871e-09,
+        0.15592937171459198
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.07380640506744385,
+        0.1677113175392151
+      ],
+      [
+        -0.014000030234456062,
+        -0.013999986462295055
+      ],
+      [
+        -0.10313599556684494,
+        0.04029151424765587
+      ]
+    ],
+    "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        0.9594829678535461,
+        0.0,
+        0.14245152473449707,
+        -0.22576256096363068
+      ],
+      [
+        0.0,
+        0.9700000286102295,
+        0.0,
+        0.034580010920763016
+      ],
+      [
+        -0.14245152473449707,
+        0.0,
+        0.9594829678535461,
+        0.11176417022943497
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [],
+    "shape_keys": [],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Original painting, registered to replacement drawing",
+        "FLOAT2",
+        "CORNER"
+      ]
+    ],
+    "UV_layers": [
+      "Original painting, registered to replacement drawing"
+    ],
+    "materials": [
+      "V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+    ]
+  },
+  "V037 | coherent charcoal coat | five pose study": {
+    "verts": 561,
+    "evaluated_verts": 561,
+    "world_bounds": [
+      [
+        -0.10570403933525085,
+        0.12957121431827545
+      ],
+      [
+        -0.020500000566244125,
+        -0.017000000923871994
+      ],
+      [
+        0.5807890892028809,
+        1.1090387105941772
+      ]
+    ],
+    "local_bounds": [
+      [
+        -0.10570403933525085,
+        0.12957121431827545
+      ],
+      [
+        -0.020500000566244125,
+        -0.017000000923871994
+      ],
+      [
+        0.5807890892028809,
+        1.1090387105941772
+      ]
+    ],
+    "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+    "parent_type": "OBJECT",
+    "parent_bone": "",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "constraints": [],
+    "modifiers": [],
+    "shape_keys": [
+      "Basis | F1 cycle contact",
+      "V039 coat breakdown F01.25",
+      "V039 coat breakdown F01.50",
+      "V039 coat breakdown F01.75",
+      "V039 coat breakdown F02.00",
+      "V039 coat breakdown F02.25",
+      "V039 coat breakdown F02.50",
+      "V039 coat breakdown F02.75",
+      "V039 coat breakdown F03.00",
+      "V039 coat breakdown F03.25",
+      "V039 coat breakdown F03.50",
+      "V039 coat breakdown F03.75",
+      "V039 coat breakdown F04.00",
+      "V039 coat breakdown F04.25",
+      "V039 coat breakdown F04.50",
+      "V039 coat breakdown F04.75",
+      "V039 coat breakdown F05.00",
+      "V039 coat breakdown F05.25",
+      "V039 coat breakdown F05.50",
+      "V039 coat breakdown F05.75",
+      "V039 coat breakdown F06.00",
+      "V039 coat breakdown F06.25",
+      "V039 coat breakdown F06.50",
+      "V039 coat breakdown F06.75",
+      "V039 coat breakdown F07.00",
+      "V039 coat breakdown F07.25",
+      "V039 coat breakdown F07.50",
+      "V039 coat breakdown F07.75",
+      "V039 coat breakdown F08.00",
+      "V039 coat breakdown F08.25",
+      "V039 coat breakdown F08.50",
+      "V039 coat breakdown F08.75",
+      "V039 coat breakdown F09.00",
+      "V039 coat breakdown F09.25",
+      "V039 coat breakdown F09.50",
+      "V039 coat breakdown F09.75",
+      "V039 coat breakdown F10.00",
+      "V039 coat breakdown F10.25",
+      "V039 coat breakdown F10.50",
+      "V039 coat breakdown F10.75",
+      "V039 coat breakdown F11.00",
+      "V039 coat breakdown F11.25",
+      "V039 coat breakdown F11.50",
+      "V039 coat breakdown F11.75",
+      "V039 coat breakdown F12.00",
+      "V039 coat breakdown F12.25",
+      "V039 coat breakdown F12.50",
+      "V039 coat breakdown F12.75",
+      "V039 coat breakdown F13.00",
+      "V039 coat breakdown F13.25",
+      "V039 coat breakdown F13.50",
+      "V039 coat breakdown F13.75",
+      "V039 coat breakdown F14.00",
+      "V039 coat breakdown F14.25",
+      "V039 coat breakdown F14.50",
+      "V039 coat breakdown F14.75",
+      "V039 coat breakdown F15.00",
+      "V039 coat breakdown F15.25",
+      "V039 coat breakdown F15.50",
+      "V039 coat breakdown F15.75",
+      "V039 coat breakdown F16.00",
+      "V039 coat breakdown F16.25",
+      "V039 coat breakdown F16.50",
+      "V039 coat breakdown F16.75",
+      "V039 coat breakdown F17.00",
+      "V039 coat breakdown F17.25",
+      "V039 coat breakdown F17.50",
+      "V039 coat breakdown F17.75",
+      "V039 coat breakdown F18.00",
+      "V039 coat breakdown F18.25",
+      "V039 coat breakdown F18.50",
+      "V039 coat breakdown F18.75",
+      "V039 coat breakdown F19.00",
+      "V039 coat breakdown F19.25",
+      "V039 coat breakdown F19.50",
+      "V039 coat breakdown F19.75",
+      "V039 coat breakdown F20.00",
+      "V039 coat breakdown F20.25",
+      "V039 coat breakdown F20.50",
+      "V039 coat breakdown F20.75",
+      "V039 coat breakdown F21.00",
+      "V039 coat breakdown F21.25",
+      "V039 coat breakdown F21.50",
+      "V039 coat breakdown F21.75",
+      "V039 coat breakdown F22.00",
+      "V039 coat breakdown F22.25",
+      "V039 coat breakdown F22.50",
+      "V039 coat breakdown F22.75",
+      "V039 coat breakdown F23.00",
+      "V039 coat breakdown F23.25",
+      "V039 coat breakdown F23.50",
+      "V039 coat breakdown F23.75",
+      "V039 coat breakdown F24.00",
+      "V039 coat breakdown F24.25",
+      "V039 coat breakdown F24.50",
+      "V039 coat breakdown F24.75",
+      "V039 coat breakdown F25.00",
+      "V039 coat breakdown F25.25",
+      "V039 coat breakdown F25.50",
+      "V039 coat breakdown F25.75",
+      "V039 coat breakdown F26.00",
+      "V039 coat breakdown F26.25",
+      "V039 coat breakdown F26.50",
+      "V039 coat breakdown F26.75",
+      "V039 coat breakdown F27.00",
+      "V039 coat breakdown F27.25",
+      "V039 coat breakdown F27.50",
+      "V039 coat breakdown F27.75",
+      "V039 coat breakdown F28.00",
+      "V039 coat breakdown F28.25",
+      "V039 coat breakdown F28.50",
+      "V039 coat breakdown F28.75",
+      "V039 coat breakdown F29.00",
+      "V039 coat breakdown F29.25",
+      "V039 coat breakdown F29.50",
+      "V039 coat breakdown F29.75",
+      "V039 coat breakdown F30.00",
+      "V039 coat breakdown F30.25",
+      "V039 coat breakdown F30.50",
+      "V039 coat breakdown F30.75",
+      "V039 coat breakdown F31.00",
+      "V039 coat breakdown F31.25",
+      "V039 coat breakdown F31.50",
+      "V039 coat breakdown F31.75"
+    ],
+    "attrs": [
+      [
+        ".select_vert",
+        "BOOLEAN",
+        "POINT"
+      ],
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        ".corner_vert",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".corner_edge",
+        "INT",
+        "CORNER"
+      ],
+      [
+        ".select_poly",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        "sharp_face",
+        "BOOLEAN",
+        "FACE"
+      ],
+      [
+        ".edge_verts",
+        "INT32_2D",
+        "EDGE"
+      ],
+      [
+        ".select_edge",
+        "BOOLEAN",
+        "EDGE"
+      ],
+      [
+        "Retained full fabric region | no repeating grain",
+        "FLOAT2",
+        "CORNER"
+      ],
+      [
+        "V037_s",
+        "FLOAT",
+        "POINT"
+      ],
+      [
+        "V037_t",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "UV_layers": [
+      "Retained full fabric region | no repeating grain"
+    ],
+    "materials": [
+      "V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch"
+    ]
+  }
+}

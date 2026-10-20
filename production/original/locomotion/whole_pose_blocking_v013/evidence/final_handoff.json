@@ -1,0 +1,209 @@
+{
+  "status": "BLOCKING_REVIEW_REQUIRED. v012 artistically rejected. v013 is not accepted final movement; stop here before curve polish, walking extension, repaint or production integration.",
+  "stage": "Authored, rendered and reviewed as blocking. Stopped for pose review; no curve polish authorized by this handoff.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\native\\WTSC_Whole_Pose_Blocking_v013.blend",
+    "bytes": 306553,
+    "sha256": "941d1575e65c211e5bb43a073a3707d9084b879704e80e2d38158326d5583e84",
+    "collection": "WTSC_WHOLE_POSE_BLOCKING_v013",
+    "frames": [
+      1,
+      72
+    ],
+    "fps": 24,
+    "duration_s": 3,
+    "armatures": 2,
+    "objects": 44,
+    "external_images": 0,
+    "interpolation": "CONSTANT",
+    "boy_key_count": 15,
+    "girl_key_count": 11
+  },
+  "previews": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Whole_Pose_Blocking_3s.mp4",
+      "bytes": 125230,
+      "sha256": "11222b2ba2a4e36ce742757e027da73464a6231cf40cb1a6ea079cbc420b2ebb",
+      "decoded_frames": 72,
+      "fps": 24,
+      "seconds": 3.0,
+      "size": [
+        960,
+        540
+      ],
+      "interpolation": "Stepped whole-pose blocking; intentional held exposures, no curve polish.",
+      "decoded_review_pages": [
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\evidence\\decoded_review\\INSPECTION_01_24.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\evidence\\decoded_review\\INSPECTION_25_48.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\evidence\\decoded_review\\INSPECTION_49_72.jpg"
+      ]
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Shot_Size_Blocking_3s.mp4",
+      "bytes": 92896,
+      "sha256": "d7c90862393c5a673f622eadc7003a8b607abba40075d474923567bf013479a6",
+      "decoded_frames": 72,
+      "fps": 24,
+      "seconds": 3.0,
+      "size": [
+        960,
+        540
+      ],
+      "interpolation": "Stepped whole-pose blocking; intentional held exposures, no curve polish.",
+      "decoded_review_pages": [
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\evidence\\decoded_review\\SHOT_SIZE_01_24.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\evidence\\decoded_review\\SHOT_SIZE_25_48.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\evidence\\decoded_review\\SHOT_SIZE_49_72.jpg"
+      ]
+    }
+  ],
+  "key_pose_sheets": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_INSPECTION_Key_Poses.jpg",
+      "bytes": 408190,
+      "sha256": "558782ef7901595497e7d5642b7bfb33f7af48774543742c06f96cf9e0e4a86e"
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_SHOT_SIZE_Key_Poses.jpg",
+      "bytes": 308163,
+      "sha256": "ff028e8bf912c0cdf68bca2dc6772cb90e575e0b564f130ff3b383751a9d16ee"
+    }
+  ],
+  "guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\READ_ME_BLOCKING_REVIEW_v013.txt",
+  "private_library": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v013_Whole_Pose_Blocking_3s.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v013_Whole_Pose_Blocking_3s.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 125230,
+    "external_connectors_accessed": false
+  },
+  "artistic_assessment": {
+    "status": "BLOCKING_REVIEW_REQUIRED. v012 artistically rejected. v013 is not accepted final movement; stop here before curve polish, walking extension, repaint or production integration.",
+    "authoring_method": "Retained v012 native armatures, proxy geometry and contact construction; removed every previous motion Action.15boy and11girl whole-pose keys, including the end hold, use CONSTANT exposure. Explicit body/head/feet/wrists/elbow choices and deliberate breakdowns replace recurring gait curves. No automatic hip-height clamping or generated walking phase.",
+    "review_method": "Both final3second movies fully decoded,72frames each at24fps. All actual decoded frames inspected sequentially in close and shot-size chronological sheets; close full-frame keys and both key-pose sheets also inspected. No continuous/full-speed playback or normal-speed artistic verification claimed.",
+    "observed_reference": "Actual downloaded Muybridge plate272 trip onto a bed and plate382 heavy lift were visually inspected. Reference record distinguishes observed torso/arm/support changes from general animation principles and new story choices. Adult photos inform staging only; no child mocap, direct timing or measured recovery claim.",
+    "performance_changes": [
+      "Boy's toe interruption10 leads a larger forward body line and unequal arms13, a distinct catch-leg breakdown16, heel19 and deep load22.",
+      "Near hand braces on front thigh; head checks footing while chest remains folded26. Trailing foot gathers32; he gathers effort low38, then leg/hips push43 while chest still hangs, followed by brace release49 and separate settling56/64.",
+      "Girl interrupts her stride8, brakes12 and loads17 on an independent key clock. She collects the trailing foot22 and places both heels flat by27 rather than freezing in an extended lunge.",
+      "Girl inclines toward him34, holds a low offered hand and follows his rise43/54. Her fixed left profile makes attending intent explicit after a single stepped profile substitution12. No clasp or helping force.",
+      "Recovered supported pause ends the3second study. No new continuation walk or repetitive gait is included."
+    ],
+    "candid_visual_judgment": {
+      "imbalance_catch": "The larger forward silhouette, unequal arms and catching foot are visible at shot size. This is a clearer pose proposition than another subtle offset pass, but graphic bent-arm shapes and stepped spacing still need acting review; convincing urgency is not certified.",
+      "recovery": "Brace, low gather, leg push and chest follow now form separate story poses. Effort is proposed through those contrasts, not inferred from foot-lock numbers. Hand/thigh proxy surfaces intersect and no load is simulated.",
+      "girl": "Feet are visibly collected and planted by27. Head direction and low offered hand establish a more explicit attending pose than v012's held extended stride. Some gestures remain graphic or question-like; emotional naturalness is unapproved.",
+      "pacing": "Entire movies were inspected as decoded chronological frames. Holds and abrupt jumps are deliberate blocking. No normal-speed playback was available; urgency, duration of effort and flow remain provisional.",
+      "head": "Single mirrored proxy profile at12 is a blocking cut, not an interpolated head turn. It is not a solution for painted hair/braid continuity and must not be transplanted into production."
+    },
+    "technical_separation": "Native binding, lengths, floor/contact holds, sparse constant channels, source hashes and fresh append pass separately. They do not establish convincing motion, smooth transitions, physical balance or artistic acceptance.",
+    "limitations": [
+      "Stepped3second blocking only; no polished curves, inbetweens, normal-speed artistic verification or approval.",
+      "Some arm gestures remain schematic. Simple proxy masses and hand/thigh overlap are not final silhouettes/contact deformation.",
+      "The girl's right-to-left profile cut is intentionally abrupt and does not validate painting, braid/hair or turnaround design.",
+      "No lateral balance, torso yaw, eye acting, clothing/hair dynamics or external helping load.",
+      "Historical adult references are not measured child trip/catch/recovery timing.",
+      "Local72frame stepped routes have no authorized production75..80s mapping or world-travel integration contract."
+    ],
+    "stop_for_review": true,
+    "review_request": "Judge the unlabeled short blocking movies and key-pose sheets for loss of balance, urgent catch, effortful recovery and girl's choice to settle/attend. Revise story poses if they fail; do not spline, extend walking or repaint based on technical passes."
+  },
+  "technical_integrity": {
+    "host": "5.2.2 LTS",
+    "cold_reopened": true,
+    "all72frames_checked": true,
+    "joint_target_error_m": 2.6051288269525034e-06,
+    "segment_length_error_m": 9.694126550663373e-07,
+    "bound_mesh_center_error_m": 9.329654721656488e-07,
+    "flat_sole_vertex_drift_m": 3.92694368196448e-07,
+    "flat_adjacent_pairs": 199,
+    "floor_min_z_m": -9.279431765207846e-07,
+    "girl_both_feet_flat27_through72": true,
+    "native_curve_structure": {
+      "BOY": {
+        "keys_per_channel": [
+          15
+        ],
+        "interpolation": [
+          "CONSTANT"
+        ],
+        "no_recurring_gait_channels": true
+      },
+      "GIRL": {
+        "keys_per_channel": [
+          11
+        ],
+        "interpolation": [
+          "CONSTANT"
+        ],
+        "no_recurring_gait_channels": true
+      }
+    },
+    "sources_preserved": {
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\native\\WTSC_Unpainted_Motion_Rebuild_v012.blend": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\scripts\\motion_design.py": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+      "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend": true
+    },
+    "scope": "Native binding/contact/stepped-exposure integrity only. Held blocking poses deliberately jump between keys; no continuous dynamics, smoothness or artistic acceptance test."
+  },
+  "fresh_append": {
+    "fresh_empty_scene_append": true,
+    "objects": 44,
+    "rigs": 2,
+    "camera_light_count": 0,
+    "sample_world_joint_error_m": 2.6051288269525034e-06,
+    "external_images": 0
+  },
+  "reference_sources": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\reference\\Muybridge_Plate272_Trip_Over_Bed_V0048664.jpg",
+      "bytes": 2639470,
+      "sha256": "ef8dccff9c1758d6a743ea24094b59a4c40da8040c89ba2e36c5e66d71e5a9fd",
+      "sha1_matches_Commons_original": true
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\reference\\Muybridge_Lifting_Trunk_V0048693.jpg",
+      "bytes": 2640378,
+      "sha256": "4fa57df9a573859166c99d82c358d408d993ca76e4216c5f93ce1c7c1f18cdcf",
+      "sha1_matches_Commons_original": true
+    }
+  ],
+  "reference_notes": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\reference\\REFERENCE_OBSERVATIONS.txt",
+  "sources_preserved": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\native\\WTSC_Unpainted_Motion_Rebuild_v012.blend": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\scripts\\motion_design.py": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend": true
+  },
+  "local_clock": "1..72 at24fps, boundary73=3s. Standalone stepped routes; no75..80s mapping. Do not integrate or mix with old DISTANCE_CURVE.",
+  "next_step": "Independent whole-pose blocking review. No spline polish, new walking, repaint or production integration before that review.",
+  "blocked_or_uncertain_actions": [],
+  "review_limit": {
+    "action": "Continuous/full-speed artistic verification",
+    "target": [
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Whole_Pose_Blocking_3s.mp4",
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Shot_Size_Blocking_3s.mp4"
+    ],
+    "state": "Unavailable to agent/reviewer, not denied or pending tool execution. All72decodedframes per view inspected; pacing remains provisional."
+  },
+  "ancillary_delivery_issue": {
+    "action": "Persist local Library identity metadata",
+    "target": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Whole_Pose_Blocking_3s.mp4",
+    "state": "Unavailable; Windows Python has no os.setxattr. Official helper invoked and failed; private upload succeeded and exact Library/file/version receipt is retained. No uncertain upload."
+  }
+}

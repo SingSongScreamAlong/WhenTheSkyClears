@@ -1,0 +1,991 @@
+{
+  "scope": "Read existing authored check records and retarget algorithm only. Hip projection is a proxy, not whole-body center of mass or a dynamic balance test. No Blender evaluation or playback.",
+  "cycle_frames": 31,
+  "fps": 30,
+  "cadence_steps_per_minute": 116.12903225806451,
+  "root_speed_m_s": 0.8295477722050396,
+  "source_contact_intervals_frames": [
+    16,
+    15
+  ],
+  "summaries": {
+    "BOY": {
+      "hip_z": {
+        "min": 0.7006259560585022,
+        "min_frame": 1.75,
+        "max": 0.7380507588386536,
+        "max_frame": 27.0
+      },
+      "extra_drop": {
+        "min": 0.099331855773932,
+        "min_frame": 22.0,
+        "max": 19.45617866516114,
+        "max_frame": 14.5
+      },
+      "chest_lean": {
+        "min": 2.544543160529652,
+        "min_frame": 29.75,
+        "max": 5.800006721600592,
+        "max_frame": 4.75
+      },
+      "hip_x_local": {
+        "min": -8.100010813588964,
+        "min_frame": 3.75,
+        "max": 40.50001218449562,
+        "max_frame": 16.5
+      },
+      "swing_limited_hip_samples": 30,
+      "total_samples": 249,
+      "hip_height_turns": [
+        {
+          "frame": 1.75,
+          "value": 0.7006259560585022,
+          "type": "min"
+        },
+        {
+          "frame": 10.25,
+          "value": 0.7352084517478943,
+          "type": "max"
+        },
+        {
+          "frame": 17.0,
+          "value": 0.7037595510482788,
+          "type": "min"
+        },
+        {
+          "frame": 18.25,
+          "value": 0.7098909616470337,
+          "type": "max"
+        },
+        {
+          "frame": 19.75,
+          "value": 0.706606924533844,
+          "type": "min"
+        },
+        {
+          "frame": 27.0,
+          "value": 0.7380507588386536,
+          "type": "max"
+        }
+      ],
+      "inherited_desired_height_turns": [
+        {
+          "frame": 3.75,
+          "value": 0.7068000144958496,
+          "type": "min"
+        },
+        {
+          "frame": 11.5,
+          "value": 0.7399999804496765,
+          "type": "max"
+        },
+        {
+          "frame": 19.75,
+          "value": 0.7068000144958496,
+          "type": "min"
+        },
+        {
+          "frame": 27.75,
+          "value": 0.7399999804496765,
+          "type": "max"
+        }
+      ]
+    },
+    "GIRL": {
+      "hip_z": {
+        "min": 0.6939802169799805,
+        "min_frame": 29.5,
+        "max": 0.7320266962051392,
+        "max_frame": 23.5
+      },
+      "extra_drop": {
+        "min": 0.10193681716919034,
+        "min_frame": 18.75,
+        "max": 19.952369689941406,
+        "max_frame": 11.0
+      },
+      "chest_lean": {
+        "min": 4.544543160529652,
+        "min_frame": 26.25,
+        "max": 7.800006721600592,
+        "max_frame": 1.25
+      },
+      "hip_x_local": {
+        "min": -8.10001738316435,
+        "min_frame": 31.25,
+        "max": 40.500088772708274,
+        "max_frame": 13.0
+      },
+      "swing_limited_hip_samples": 32,
+      "total_samples": 249,
+      "hip_height_turns": [
+        {
+          "frame": 6.75,
+          "value": 0.7292028665542603,
+          "type": "max"
+        },
+        {
+          "frame": 13.5,
+          "value": 0.6967282891273499,
+          "type": "min"
+        },
+        {
+          "frame": 15.0,
+          "value": 0.7032829523086548,
+          "type": "max"
+        },
+        {
+          "frame": 16.25,
+          "value": 0.7005873918533325,
+          "type": "min"
+        },
+        {
+          "frame": 23.5,
+          "value": 0.7320266962051392,
+          "type": "max"
+        },
+        {
+          "frame": 29.5,
+          "value": 0.6939802169799805,
+          "type": "min"
+        }
+      ],
+      "inherited_desired_height_turns": [
+        {
+          "frame": 8.0,
+          "value": 0.7339999804496765,
+          "type": "max"
+        },
+        {
+          "frame": 16.25,
+          "value": 0.7008000144958496,
+          "type": "min"
+        },
+        {
+          "frame": 24.25,
+          "value": 0.7339999804496765,
+          "type": "max"
+        },
+        {
+          "frame": 31.25,
+          "value": 0.7008000144958496,
+          "type": "min"
+        }
+      ]
+    }
+  },
+  "selected_integer_frames": [
+    {
+      "who": "BOY",
+      "frame": 1.0,
+      "hip_z_m": 0.704035222530365,
+      "hip_below_static_rest_mm": 47.96477746963501,
+      "hip_x_local_mm": -5.960464455334602e-06,
+      "chest_forward_lean_deg": 2.999997510121492,
+      "desired_hip_z_m": 0.7217787809371948,
+      "retarget_extra_drop_mm": 17.74355840682984,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -81.60439133644104,
+        "far": 197.45102524757385
+      },
+      "boot_pitch_deg": {
+        "near": 15.494030662449495,
+        "far": -8.444842777317438
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 4.0,
+      "hip_z_m": 0.7061371803283691,
+      "hip_below_static_rest_mm": 45.86281967163086,
+      "hip_x_local_mm": -7.986892203108886,
+      "chest_forward_lean_deg": 5.543076385430239,
+      "desired_hip_z_m": 0.7068955011367798,
+      "retarget_extra_drop_mm": 0.7583208084106507,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -138.97982239723206,
+        "far": 214.11192417144775
+      },
+      "boot_pitch_deg": {
+        "near": -0.04625062303255522,
+        "far": -25.11822478062273
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 8.0,
+      "hip_z_m": 0.7258721590042114,
+      "hip_below_static_rest_mm": 26.127840995788574,
+      "hip_x_local_mm": 13.033120639683426,
+      "chest_forward_lean_deg": 5.0924848165014875,
+      "desired_hip_z_m": 0.7260580368041992,
+      "retarget_extra_drop_mm": 0.18587779998779919,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": -7.353425025939941
+      },
+      "boot_pitch_deg": {
+        "near": -0.13434311293362786,
+        "far": -45.409017017258634
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 9.0,
+      "hip_z_m": 0.7316588759422302,
+      "hip_below_static_rest_mm": 20.341124057769775,
+      "hip_x_local_mm": 19.74220523670922,
+      "chest_forward_lean_deg": 4.509330109021288,
+      "desired_hip_z_m": 0.7320000238418579,
+      "retarget_extra_drop_mm": 0.34114789962769176,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 27.007266879081726
+      },
+      "boot_pitch_deg": {
+        "near": -0.19141471761843123,
+        "far": -45.0000074685661
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 11.0,
+      "hip_z_m": 0.7325378656387329,
+      "hip_below_static_rest_mm": 19.46213436126709,
+      "hip_x_local_mm": 28.57507851515717,
+      "chest_forward_lean_deg": 3.5723697902988145,
+      "desired_hip_z_m": 0.7395012683868408,
+      "retarget_extra_drop_mm": 6.963402748107916,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 75.1039981842041
+      },
+      "boot_pitch_deg": {
+        "near": -1.650925914180928,
+        "far": -29.303456913968194
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 12.0,
+      "hip_z_m": 0.7274328470230103,
+      "hip_below_static_rest_mm": 24.567152976989746,
+      "hip_x_local_mm": 31.739102358360693,
+      "chest_forward_lean_deg": 3.231823334799958,
+      "desired_hip_z_m": 0.7397127456665039,
+      "retarget_extra_drop_mm": 12.27989864349366,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 105.91962933540344
+      },
+      "boot_pitch_deg": {
+        "near": -3.2385519923405512,
+        "far": -15.528516240069239
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 13.0,
+      "hip_z_m": 0.7219056487083435,
+      "hip_below_static_rest_mm": 30.094351291656494,
+      "hip_x_local_mm": 34.7295127724947,
+      "chest_forward_lean_deg": 2.9663502745777808,
+      "desired_hip_z_m": 0.737807363986969,
+      "retarget_extra_drop_mm": 15.901715278625495,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 136.56164705753326
+      },
+      "boot_pitch_deg": {
+        "near": -5.4075729984048175,
+        "far": -0.22559146018953274
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 14.0,
+      "hip_z_m": 0.7161207795143127,
+      "hip_below_static_rest_mm": 35.879220485687256,
+      "hip_x_local_mm": 37.31571056279404,
+      "chest_forward_lean_deg": 2.8287490317484223,
+      "desired_hip_z_m": 0.7349999852180481,
+      "retarget_extra_drop_mm": 18.87920570373536,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 166.79945215582848
+      },
+      "boot_pitch_deg": {
+        "near": -8.104138030828123,
+        "far": 13.652658037556197
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 15.0,
+      "hip_z_m": 0.7114444375038147,
+      "hip_below_static_rest_mm": 40.5555624961853,
+      "hip_x_local_mm": 39.26719339204149,
+      "chest_forward_lean_deg": 2.834748662331477,
+      "desired_hip_z_m": 0.7303830690383911,
+      "retarget_extra_drop_mm": 18.938631534576423,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 166.8810322880745
+      },
+      "boot_pitch_deg": {
+        "near": -11.274360602741936,
+        "far": 23.15352760917617
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 16.0,
+      "hip_z_m": 0.7072139978408813,
+      "hip_below_static_rest_mm": 44.78600215911865,
+      "hip_x_local_mm": 40.35342167011663,
+      "chest_forward_lean_deg": 2.978139485920904,
+      "desired_hip_z_m": 0.7239532179832459,
+      "retarget_extra_drop_mm": 16.73922014236451,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 195.61879336833954
+      },
+      "boot_pitch_deg": {
+        "near": -14.864317492121998,
+        "far": 25.093238603711207
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 17.0,
+      "hip_z_m": 0.7037595510482788,
+      "hip_below_static_rest_mm": 48.24044895172119,
+      "hip_x_local_mm": 39.86063350112451,
+      "chest_forward_lean_deg": 3.199995065176608,
+      "desired_hip_z_m": 0.7181138105392456,
+      "retarget_extra_drop_mm": 14.354259490966804,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": 205.92480152845383,
+        "far": -29.079586267471313
+      },
+      "boot_pitch_deg": {
+        "near": -18.820177722045337,
+        "far": 18.754830995623088
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 20.0,
+      "hip_z_m": 0.7067402005195618,
+      "hip_below_static_rest_mm": 45.25979948043823,
+      "hip_x_local_mm": 23.030615895088257,
+      "chest_forward_lean_deg": 5.270269598442978,
+      "desired_hip_z_m": 0.7069136209487915,
+      "retarget_extra_drop_mm": 0.17342042922974255,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": false,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": -95.29814124107361
+      },
+      "boot_pitch_deg": {
+        "near": -39.60928076211446,
+        "far": -0.29842763614050305
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 24.0,
+      "hip_z_m": 0.7262044548988342,
+      "hip_below_static_rest_mm": 25.79554510116577,
+      "hip_x_local_mm": 8.760730223132839,
+      "chest_forward_lean_deg": 4.412749926506879,
+      "desired_hip_z_m": 0.7263605303764343,
+      "retarget_extra_drop_mm": 0.15607547760010387,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": -15.000954270362854
+      },
+      "boot_pitch_deg": {
+        "near": -31.400526900045584,
+        "far": -3.6972843668704183
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 25.0,
+      "hip_z_m": 0.7317748665809631,
+      "hip_below_static_rest_mm": 20.225133419036865,
+      "hip_x_local_mm": 6.011973304617668,
+      "chest_forward_lean_deg": 3.834734508345143,
+      "desired_hip_z_m": 0.7320000238418579,
+      "retarget_extra_drop_mm": 0.2251572608947816,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 9.901851415634155
+      },
+      "boot_pitch_deg": {
+        "near": -26.978523699296723,
+        "far": -4.062679034537696
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 27.0,
+      "hip_z_m": 0.7380507588386536,
+      "hip_below_static_rest_mm": 13.949241161346437,
+      "hip_x_local_mm": 1.2103138930174007,
+      "chest_forward_lean_deg": 3.1606878813968704,
+      "desired_hip_z_m": 0.739118546962738,
+      "retarget_extra_drop_mm": 1.0677881240844789,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 60.40343642234802
+      },
+      "boot_pitch_deg": {
+        "near": -14.135151993708568,
+        "far": -4.665340862345803
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 28.0,
+      "hip_z_m": 0.735584557056427,
+      "hip_below_static_rest_mm": 16.415442943572998,
+      "hip_x_local_mm": -1.0417128171009704,
+      "chest_forward_lean_deg": 2.826380148446355,
+      "desired_hip_z_m": 0.7398866124153137,
+      "retarget_extra_drop_mm": 4.302055358886725,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 85.80300211906433
+      },
+      "boot_pitch_deg": {
+        "near": -4.271992096530724,
+        "far": -5.032054841664535
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 29.0,
+      "hip_z_m": 0.7296971082687378,
+      "hip_below_static_rest_mm": 22.302891731262207,
+      "hip_x_local_mm": -2.4879443345007246,
+      "chest_forward_lean_deg": 2.6023069774807235,
+      "desired_hip_z_m": 0.7376569218635559,
+      "retarget_extra_drop_mm": 7.9598135948181215,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 112.00836300849915
+      },
+      "boot_pitch_deg": {
+        "near": 8.6775099439779,
+        "far": -5.528626668062988
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 30.0,
+      "hip_z_m": 0.7222760915756226,
+      "hip_below_static_rest_mm": 29.72390842437744,
+      "hip_x_local_mm": -2.419234397966985,
+      "chest_forward_lean_deg": 2.5555712436847546,
+      "desired_hip_z_m": 0.7339999980926514,
+      "retarget_extra_drop_mm": 11.723906517028816,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 139.7286355495453
+      },
+      "boot_pitch_deg": {
+        "near": 19.321410696213086,
+        "far": -6.219822949197369
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 31.0,
+      "hip_z_m": 0.7134486436843872,
+      "hip_below_static_rest_mm": 38.55135631561279,
+      "hip_x_local_mm": -0.9503815533367099,
+      "chest_forward_lean_deg": 2.7249828918613046,
+      "desired_hip_z_m": 0.7283982343673706,
+      "retarget_extra_drop_mm": 14.949590682983406,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 168.84911060333252
+      },
+      "boot_pitch_deg": {
+        "near": 21.930047232217504,
+        "far": -7.170307332079276
+      }
+    },
+    {
+      "who": "BOY",
+      "frame": 32.0,
+      "hip_z_m": 0.704035222530365,
+      "hip_below_static_rest_mm": 47.96477746963501,
+      "hip_x_local_mm": 2.8871471879909905e-07,
+      "chest_forward_lean_deg": 2.999997510121492,
+      "desired_hip_z_m": 0.7217787809371948,
+      "retarget_extra_drop_mm": 17.74355840682984,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -81.60439133644104,
+        "far": 197.45102524757385
+      },
+      "boot_pitch_deg": {
+        "near": 15.494030662449495,
+        "far": -8.444842777317438
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 1.0,
+      "hip_z_m": 0.7011005282402039,
+      "hip_below_static_rest_mm": 44.89947175979614,
+      "hip_x_local_mm": -7.127159833908103,
+      "chest_forward_lean_deg": 7.76877640868276,
+      "desired_hip_z_m": 0.7015690336227417,
+      "retarget_extra_drop_mm": 0.4685053825378427,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -123.72133135795593,
+        "far": 223.0878472328186
+      },
+      "boot_pitch_deg": {
+        "near": -0.06603597715946558,
+        "far": -29.967844532677713
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 4.0,
+      "hip_z_m": 0.7161314487457275,
+      "hip_below_static_rest_mm": 29.868551254272457,
+      "hip_x_local_mm": 9.477101823075152,
+      "chest_forward_lean_deg": 7.342235678118065,
+      "desired_hip_z_m": 0.71628160572052,
+      "retarget_extra_drop_mm": 0.15015697479248136,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": -24.16229248046875
+      },
+      "boot_pitch_deg": {
+        "near": -0.1180838116584162,
+        "far": -45.52728324020527
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 8.0,
+      "hip_z_m": 0.7239750027656555,
+      "hip_below_static_rest_mm": 22.02499723434448,
+      "hip_x_local_mm": 30.16438663757004,
+      "chest_forward_lean_deg": 5.396855322249944,
+      "desired_hip_z_m": 0.7339999804496765,
+      "retarget_extra_drop_mm": 10.024977684020996,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 91.23587608337402
+      },
+      "boot_pitch_deg": {
+        "near": -2.3686961196681957,
+        "far": -22.791529626660715
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 9.0,
+      "hip_z_m": 0.7185215353965759,
+      "hip_below_static_rest_mm": 27.47846460342407,
+      "hip_x_local_mm": 33.27040026024586,
+      "chest_forward_lean_deg": 5.08554930876258,
+      "desired_hip_z_m": 0.7329382429122925,
+      "retarget_extra_drop_mm": 14.416707515716553,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 121.9935417175293
+      },
+      "boot_pitch_deg": {
+        "near": -4.253744753481221,
+        "far": -7.883516296086714
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 11.0,
+      "hip_z_m": 0.7071159482002258,
+      "hip_below_static_rest_mm": 38.88405179977417,
+      "hip_x_local_mm": 38.3852252045721,
+      "chest_forward_lean_deg": 4.810895879142868,
+      "desired_hip_z_m": 0.7270683178901672,
+      "retarget_extra_drop_mm": 19.952369689941406,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 153.15473079681396
+      },
+      "boot_pitch_deg": {
+        "near": -9.633400785618003,
+        "far": 19.134810742950492
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 12.0,
+      "hip_z_m": 0.702631950378418,
+      "hip_below_static_rest_mm": 43.36804962158203,
+      "hip_x_local_mm": 39.93287538959539,
+      "chest_forward_lean_deg": 4.892963729454716,
+      "desired_hip_z_m": 0.7212445268630981,
+      "retarget_extra_drop_mm": 18.612576484680176,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 182.35403299331665
+      },
+      "boot_pitch_deg": {
+        "near": -13.020235958641557,
+        "far": 25.339746520404418
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 13.0,
+      "hip_z_m": 0.697955846786499,
+      "hip_below_static_rest_mm": 48.04415321350098,
+      "hip_x_local_mm": 40.500088772708274,
+      "chest_forward_lean_deg": 5.082938923196638,
+      "desired_hip_z_m": 0.7148094902038574,
+      "retarget_extra_drop_mm": 16.8536434173584,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near",
+      "hip_minus_support_x_mm": {
+        "near": 193.87108087539673
+      },
+      "boot_pitch_deg": {
+        "near": -16.799893392978284,
+        "far": 21.975791656034865
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 14.0,
+      "hip_z_m": 0.6986449956893921,
+      "hip_below_static_rest_mm": 47.35500431060791,
+      "hip_x_local_mm": 38.131117749540586,
+      "chest_forward_lean_deg": 5.395561586773457,
+      "desired_hip_z_m": 0.7095402607917786,
+      "retarget_extra_drop_mm": 10.895265102386475,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": 207.328200340271,
+        "far": -17.597317695617676
+      },
+      "boot_pitch_deg": {
+        "near": -21.89246387844673,
+        "far": 16.160358984264057
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 15.0,
+      "hip_z_m": 0.7032829523086548,
+      "hip_below_static_rest_mm": 42.717047691345215,
+      "hip_x_local_mm": 32.532826677087066,
+      "chest_forward_lean_deg": 6.1008507830216425,
+      "desired_hip_z_m": 0.7042176852226257,
+      "retarget_extra_drop_mm": 0.9347329139709482,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": 222.43207693099976,
+        "far": -47.76078462600708
+      },
+      "boot_pitch_deg": {
+        "near": -29.130381408919742,
+        "far": 7.897630521089298
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 16.0,
+      "hip_z_m": 0.7007220387458801,
+      "hip_below_static_rest_mm": 45.27796125411987,
+      "hip_x_local_mm": 25.968284708179635,
+      "chest_forward_lean_deg": 6.9255068105978275,
+      "desired_hip_z_m": 0.7009655365943909,
+      "retarget_extra_drop_mm": 0.24349784851074308,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": 243.51906776428223,
+        "far": -42.30046272277832
+      },
+      "boot_pitch_deg": {
+        "near": -36.669303459628004,
+        "far": 0.8736046952454571
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 17.0,
+      "hip_z_m": 0.7015514373779297,
+      "hip_below_static_rest_mm": 44.44856262207031,
+      "hip_x_local_mm": 20.69996494920262,
+      "chest_forward_lean_deg": 7.51007600519843,
+      "desired_hip_z_m": 0.7017081508636475,
+      "retarget_extra_drop_mm": 0.15671348571777433,
+      "reach_cap_binding_side": "near",
+      "reach_cap_binding_side_is_stance": false,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": -83.23001861572266
+      },
+      "boot_pitch_deg": {
+        "near": -41.25786671477134,
+        "far": -0.9777444759214162
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 20.0,
+      "hip_z_m": 0.7165937423706055,
+      "hip_below_static_rest_mm": 29.406257629394528,
+      "hip_x_local_mm": 10.254178493316669,
+      "chest_forward_lean_deg": 6.714855562850237,
+      "desired_hip_z_m": 0.7167274484634399,
+      "retarget_extra_drop_mm": 0.13370609283447354,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": -26.616454124450684
+      },
+      "boot_pitch_deg": {
+        "near": -33.87114530416642,
+        "far": -3.470243426834162
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 24.0,
+      "hip_z_m": 0.7314884066581726,
+      "hip_below_static_rest_mm": 14.511593341827389,
+      "hip_x_local_mm": 0.025308923198408273,
+      "chest_forward_lean_deg": 4.98344563929794,
+      "desired_hip_z_m": 0.7338941226005554,
+      "retarget_extra_drop_mm": 2.4057159423828134,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 73.760986328125
+      },
+      "boot_pitch_deg": {
+        "near": -9.83383849681639,
+        "far": -4.836502109941523
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 25.0,
+      "hip_z_m": 0.7266998291015625,
+      "hip_below_static_rest_mm": 19.300170898437496,
+      "hip_x_local_mm": -1.9073561002133088,
+      "chest_forward_lean_deg": 4.69690396739724,
+      "desired_hip_z_m": 0.7330680618286133,
+      "retarget_extra_drop_mm": 6.368232727050782,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 99.47997331619263
+      },
+      "boot_pitch_deg": {
+        "near": 2.135445615961106,
+        "far": -5.260050314264445
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 27.0,
+      "hip_z_m": 0.7116929292678833,
+      "hip_below_static_rest_mm": 34.3070707321167,
+      "hip_x_local_mm": -1.7496110432771994,
+      "chest_forward_lean_deg": 4.619159141988282,
+      "desired_hip_z_m": 0.7255796918869019,
+      "retarget_extra_drop_mm": 13.886762619018555,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 154.94084358215332
+      },
+      "boot_pitch_deg": {
+        "near": 22.00123691125226,
+        "far": -6.658602850623968
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 28.0,
+      "hip_z_m": 0.7023264765739441,
+      "hip_below_static_rest_mm": 43.67352342605591,
+      "hip_x_local_mm": -0.2808774079365861,
+      "chest_forward_lean_deg": 4.857188926691174,
+      "desired_hip_z_m": 0.718962384223938,
+      "retarget_extra_drop_mm": 16.635907649993896,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "far",
+      "hip_minus_support_x_mm": {
+        "far": 184.0612292289734
+      },
+      "boot_pitch_deg": {
+        "near": 19.154269069556356,
+        "far": -7.763032128971427
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 29.0,
+      "hip_z_m": 0.6944704055786133,
+      "hip_below_static_rest_mm": 51.52959442138672,
+      "hip_x_local_mm": -0.7060217556891235,
+      "chest_forward_lean_deg": 5.243328577708347,
+      "desired_hip_z_m": 0.7125396857261658,
+      "retarget_extra_drop_mm": 18.06928014755249,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -69.0985918045044,
+        "far": 182.03091621398926
+      },
+      "boot_pitch_deg": {
+        "near": 11.462502709817617,
+        "far": -9.69414206776048
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 30.0,
+      "hip_z_m": 0.6949281692504883,
+      "hip_below_static_rest_mm": 51.07183074951172,
+      "hip_x_local_mm": -4.600752475817371,
+      "chest_forward_lean_deg": 6.139845188489762,
+      "desired_hip_z_m": 0.7054804692268372,
+      "retarget_extra_drop_mm": 10.552299976348877,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -113.18516731262207,
+        "far": 205.7877779006958
+      },
+      "boot_pitch_deg": {
+        "near": 2.8950800771869085,
+        "far": -14.522934225133602
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 31.0,
+      "hip_z_m": 0.6978283524513245,
+      "hip_below_static_rest_mm": 48.17164754867554,
+      "hip_x_local_mm": -7.911357677146569,
+      "chest_forward_lean_deg": 7.153416812020006,
+      "desired_hip_z_m": 0.7010294923782349,
+      "retarget_extra_drop_mm": 3.2011399269104013,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -152.15706825256348,
+        "far": 201.60150527954102
+      },
+      "boot_pitch_deg": {
+        "near": -0.017966809758664007,
+        "far": -20.87582451189249
+      }
+    },
+    {
+      "who": "GIRL",
+      "frame": 32.0,
+      "hip_z_m": 0.7011005282402039,
+      "hip_below_static_rest_mm": 44.89947175979614,
+      "hip_x_local_mm": -7.127123782406541,
+      "chest_forward_lean_deg": 7.76877640868276,
+      "desired_hip_z_m": 0.7015690336227417,
+      "retarget_extra_drop_mm": 0.4685053825378427,
+      "reach_cap_binding_side": "far",
+      "reach_cap_binding_side_is_stance": true,
+      "stance": "near+far",
+      "hip_minus_support_x_mm": {
+        "near": -123.72136116027832,
+        "far": 223.08778762817383
+      },
+      "boot_pitch_deg": {
+        "near": -0.06603597715946558,
+        "far": -29.967844532677713
+      }
+    }
+  ]
+}

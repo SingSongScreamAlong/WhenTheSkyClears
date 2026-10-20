@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-19T21:42:12.543057+00:00",
+  "scope": "Objective-state UI consistency only; no art/layout/gameplay-system changes",
+  "build_and_package": "Succeeded; exit code 0",
+  "packaged_test_passed": true,
+  "regression_events": 11,
+  "all_original_ten_regressions_retained_and_passed": true,
+  "all_eleven_displayed_objectives_match_expected": true,
+  "game_seconds": 57.42802810668945,
+  "recorded_frames": 0,
+  "no_new_screenshots_video_or_library_uploads": true,
+  "prior_native_source_and_delivery_files_unchanged": 149,
+  "archive": "WTSC_LOCAL_WORKSPACE\\WTSC_Survival_Prototype_v0_1_1\\Deliverables\\WTSC_Shelter_Study_Win64_v0.1.1_ObjectiveFix.zip",
+  "archive_bytes": 354043505,
+  "archive_sha256": "7a9707ef5f04fefe2aee57e320820ce6ec28de87348b41c83f189b60a92dde0f",
+  "archive_crc_verified": true,
+  "runtime_file_count": 48,
+  "corrected_executable": "WTSC_LOCAL_WORKSPACE\\WTSC_Survival_Prototype_v0_1_1\\Saved\\Packaged\\Windows\\WTSC_Survival\\Binaries\\Win64\\WTSC_Survival.exe",
+  "receipt": "WTSC_LOCAL_WORKSPACE\\WTSC_Survival_Prototype_v0_1_1\\Evidence\\ObjectiveFix\\PackagedGameplayReplay.json",
+  "source_changes": [
+    "Source/WTSCSurvival/WTSC.cpp",
+    "Scripts/accept_packaged.ps1"
+  ],
+  "objective_observations": [
+    {
+      "event": "fresh_state",
+      "objective": "SEARCH  /  Reach the small shop to the east",
+      "passed": true
+    },
+    {
+      "event": "walked_to_cache",
+      "objective": "SEARCH  /  Hold E to search the crate",
+      "passed": true
+    },
+    {
+      "event": "search_pose_crouched_and_reaching",
+      "objective": "SEARCH  /  Searching the abandoned crate",
+      "passed": true
+    },
+    {
+      "event": "searched_finite_cache",
+      "objective": "RETURN  /  Take the supplies home to the shelter",
+      "passed": true
+    },
+    {
+      "event": "cache_cannot_duplicate_loot",
+      "objective": "RETURN  /  Take the supplies home to the shelter",
+      "passed": true
+    },
+    {
+      "event": "arrived_home_objective",
+      "objective": "UNPACK  /  Press E to put the supplies away",
+      "passed": true
+    },
+    {
+      "event": "deposit_pose_visible_before_commit",
+      "objective": "UNPACK  /  Putting supplies on the shelter shelves",
+      "passed": true
+    },
+    {
+      "event": "returned_and_deposited",
+      "objective": "SUPPLIES HOME  /  The first search is complete",
+      "passed": true
+    },
+    {
+      "event": "saved_checkpoint_readback",
+      "objective": "SUPPLIES HOME  /  The first search is complete",
+      "passed": true
+    },
+    {
+      "event": "food_and_water_consumption",
+      "objective": "SUPPLIES HOME  /  The first search is complete",
+      "passed": true
+    },
+    {
+      "event": "fresh_restart_restores_cache_and_storage",
+      "objective": "SEARCH  /  Reach the small shop to the east",
+      "passed": true
+    }
+  ]
+}

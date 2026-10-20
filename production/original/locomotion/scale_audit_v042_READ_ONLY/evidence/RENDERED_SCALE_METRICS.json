@@ -1,0 +1,940 @@
+{
+  "scope": "Read-only proportion and framing audit. No assets rescaled or native files saved.",
+  "alpha_note": "Bounds use alpha>=0.5 with0.1/0.9 sensitivity available. Head mask includes hair and neck, so it is not an anatomical head count. Diagnostic cutouts remove stage only in RAM.",
+  "versions": {
+    "v028": {
+      "actual_diagnostic_full_close": {
+        "file": "images\\v028_FULL_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            101,
+            57,
+            411,
+            688
+          ],
+          "0.5": [
+            102,
+            59,
+            410,
+            687
+          ],
+          "0.9": [
+            103,
+            62,
+            409,
+            686
+          ]
+        },
+        "width_at_0p5": 308,
+        "height_at_0p5": 628,
+        "alpha_weighted_area_pixels": 68041.68235294118,
+        "alpha_weighted_centroid_pixels": [
+          247.88958359953406,
+          368.34188870040384
+        ]
+      },
+      "actual_diagnostic_full_shot": {
+        "file": "images\\v028_FULL_SHOT_F1.png",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            570,
+            204,
+            727,
+            526
+          ],
+          "0.5": [
+            570,
+            206,
+            726,
+            525
+          ],
+          "0.9": [
+            571,
+            209,
+            725,
+            524
+          ]
+        },
+        "width_at_0p5": 156,
+        "height_at_0p5": 319,
+        "alpha_weighted_area_pixels": 17693.011764705883,
+        "alpha_weighted_centroid_pixels": [
+          643.4354232689187,
+          362.05747522340715
+        ]
+      },
+      "actual_diagnostic_head_hair_neck_only": {
+        "file": "images\\v028_HEAD_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            179,
+            57,
+            345,
+            217
+          ],
+          "0.5": [
+            180,
+            59,
+            344,
+            217
+          ],
+          "0.9": [
+            182,
+            62,
+            343,
+            216
+          ]
+        },
+        "width_at_0p5": 164,
+        "height_at_0p5": 158,
+        "alpha_weighted_area_pixels": 16583.682352941178,
+        "alpha_weighted_centroid_pixels": [
+          260.50517529752256,
+          134.36654433994767
+        ]
+      },
+      "head_hair_neck_height_over_full_height": 0.2515923566878981,
+      "head_alpha_area_over_full_alpha_area": 0.24372828212740877,
+      "full_character_fraction_of_native_close_height": 0.8722222222222222,
+      "full_character_fraction_of_native_shot_height": 0.44305555555555554,
+      "saved_active_camera": "V024 | CLOSE portrait",
+      "saved_render": [
+        360,
+        540,
+        100
+      ],
+      "hands": {
+        "V007_BOY | articulated drawn hand far": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707600457593799,
+          "drawn_width_along_hand_bone_scene_units": 0.05167355015873909,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              327.72344970703125,
+              350.4403076171875
+            ],
+            [
+              417.42401123046875,
+              446.9701843261719
+            ]
+          ]
+        },
+        "V007_BOY | articulated drawn hand near": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707598688080907,
+          "drawn_width_along_hand_bone_scene_units": 0.051673609763383865,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              173.2447967529297,
+              194.65029907226562
+            ],
+            [
+              416.7542419433594,
+              446.6031494140625
+            ]
+          ]
+        }
+      },
+      "boots": {},
+      "near_boot_rest_length_over_near_hand_drawn_length": null
+    },
+    "v036": {
+      "actual_diagnostic_full_close": {
+        "file": "images\\v036_FULL_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            105,
+            57,
+            411,
+            688
+          ],
+          "0.5": [
+            106,
+            59,
+            410,
+            687
+          ],
+          "0.9": [
+            107,
+            62,
+            409,
+            686
+          ]
+        },
+        "width_at_0p5": 304,
+        "height_at_0p5": 628,
+        "alpha_weighted_area_pixels": 64803.015686274506,
+        "alpha_weighted_centroid_pixels": [
+          247.6350048221552,
+          363.7360137379228
+        ]
+      },
+      "actual_diagnostic_full_shot": {
+        "file": "images\\v036_FULL_SHOT_F1.png",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            572,
+            204,
+            727,
+            526
+          ],
+          "0.5": [
+            572,
+            206,
+            726,
+            525
+          ],
+          "0.9": [
+            573,
+            209,
+            725,
+            524
+          ]
+        },
+        "width_at_0p5": 154,
+        "height_at_0p5": 319,
+        "alpha_weighted_area_pixels": 16842.458823529414,
+        "alpha_weighted_centroid_pixels": [
+          643.2793046145979,
+          359.73541635087975
+        ]
+      },
+      "actual_diagnostic_head_hair_neck_only": {
+        "file": "images\\v036_HEAD_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            179,
+            57,
+            345,
+            217
+          ],
+          "0.5": [
+            180,
+            59,
+            344,
+            217
+          ],
+          "0.9": [
+            182,
+            62,
+            343,
+            216
+          ]
+        },
+        "width_at_0p5": 164,
+        "height_at_0p5": 158,
+        "alpha_weighted_area_pixels": 16583.682352941178,
+        "alpha_weighted_centroid_pixels": [
+          260.50517529752256,
+          134.36654433994767
+        ]
+      },
+      "head_hair_neck_height_over_full_height": 0.2515923566878981,
+      "head_alpha_area_over_full_alpha_area": 0.2559091143724914,
+      "full_character_fraction_of_native_close_height": 0.8722222222222222,
+      "full_character_fraction_of_native_shot_height": 0.44305555555555554,
+      "saved_active_camera": "V024 | CLOSE portrait",
+      "saved_render": [
+        480,
+        720,
+        100
+      ],
+      "hands": {
+        "V007_BOY | articulated drawn hand far": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707600457593799,
+          "drawn_width_along_hand_bone_scene_units": 0.05400530435144901,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              327.72344970703125,
+              351.4801940917969
+            ],
+            [
+              417.42401123046875,
+              446.9701843261719
+            ]
+          ]
+        },
+        "V007_BOY | articulated drawn hand near": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707598688080907,
+          "drawn_width_along_hand_bone_scene_units": 0.05400528945028782,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              173.2447967529297,
+              195.76263427734375
+            ],
+            [
+              416.7542419433594,
+              446.6031494140625
+            ]
+          ]
+        }
+      },
+      "boots": {
+        "V033 | far | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              105.25792694091797,
+              206.76080322265625
+            ],
+            [
+              619.23095703125,
+              687.2728271484375
+            ]
+          ]
+        },
+        "V033 | near | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              306.9117126464844,
+              410.42132568359375
+            ],
+            [
+              624.3363647460938,
+              687.2728881835938
+            ]
+          ]
+        }
+      },
+      "near_boot_rest_length_over_near_hand_drawn_length": 3.6006585044484662
+    },
+    "v039": {
+      "actual_diagnostic_full_close": {
+        "file": "images\\v039_FULL_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            105,
+            57,
+            411,
+            688
+          ],
+          "0.5": [
+            106,
+            59,
+            410,
+            687
+          ],
+          "0.9": [
+            107,
+            62,
+            409,
+            686
+          ]
+        },
+        "width_at_0p5": 304,
+        "height_at_0p5": 628,
+        "alpha_weighted_area_pixels": 63441.99215686275,
+        "alpha_weighted_centroid_pixels": [
+          248.1740128453301,
+          363.89276880260167
+        ]
+      },
+      "actual_diagnostic_full_shot": {
+        "file": "images\\v039_FULL_SHOT_F1.png",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            572,
+            204,
+            727,
+            526
+          ],
+          "0.5": [
+            572,
+            206,
+            726,
+            525
+          ],
+          "0.9": [
+            573,
+            209,
+            725,
+            524
+          ]
+        },
+        "width_at_0p5": 154,
+        "height_at_0p5": 319,
+        "alpha_weighted_area_pixels": 16484.55294117647,
+        "alpha_weighted_centroid_pixels": [
+          643.5780184943196,
+          359.7861584499428
+        ]
+      },
+      "actual_diagnostic_head_hair_neck_only": {
+        "file": "images\\v039_HEAD_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            179,
+            57,
+            345,
+            217
+          ],
+          "0.5": [
+            180,
+            59,
+            344,
+            217
+          ],
+          "0.9": [
+            182,
+            62,
+            343,
+            216
+          ]
+        },
+        "width_at_0p5": 164,
+        "height_at_0p5": 158,
+        "alpha_weighted_area_pixels": 16583.682352941178,
+        "alpha_weighted_centroid_pixels": [
+          260.50517529752256,
+          134.36654433994767
+        ]
+      },
+      "head_hair_neck_height_over_full_height": 0.2515923566878981,
+      "head_alpha_area_over_full_alpha_area": 0.26139914257322483,
+      "full_character_fraction_of_native_close_height": 0.8722222222222222,
+      "full_character_fraction_of_native_shot_height": 0.44305555555555554,
+      "saved_active_camera": "V024 | CLOSE portrait",
+      "saved_render": [
+        480,
+        720,
+        100
+      ],
+      "hands": {
+        "V007_BOY | articulated drawn hand far": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707600457593799,
+          "drawn_width_along_hand_bone_scene_units": 0.05400530435144901,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              327.72344970703125,
+              351.4801940917969
+            ],
+            [
+              417.42401123046875,
+              446.9701843261719
+            ]
+          ]
+        },
+        "V007_BOY | articulated drawn hand near": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707598688080907,
+          "drawn_width_along_hand_bone_scene_units": 0.05400528945028782,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              173.2447967529297,
+              195.76263427734375
+            ],
+            [
+              416.7542419433594,
+              446.6031494140625
+            ]
+          ]
+        }
+      },
+      "boots": {
+        "V033 | far | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              105.25792694091797,
+              206.76080322265625
+            ],
+            [
+              619.23095703125,
+              687.2728271484375
+            ]
+          ]
+        },
+        "V033 | near | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              306.9117126464844,
+              410.42132568359375
+            ],
+            [
+              624.3363647460938,
+              687.2728881835938
+            ]
+          ]
+        }
+      },
+      "near_boot_rest_length_over_near_hand_drawn_length": 3.6006585044484662
+    },
+    "v040": {
+      "actual_diagnostic_full_close": {
+        "file": "images\\v040_FULL_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            105,
+            58,
+            411,
+            688
+          ],
+          "0.5": [
+            106,
+            58,
+            410,
+            687
+          ],
+          "0.9": [
+            107,
+            61,
+            409,
+            686
+          ]
+        },
+        "width_at_0p5": 304,
+        "height_at_0p5": 629,
+        "alpha_weighted_area_pixels": 62396.60392156863,
+        "alpha_weighted_centroid_pixels": [
+          247.66822829849835,
+          367.09296659810667
+        ]
+      },
+      "actual_diagnostic_full_shot": {
+        "file": "images\\v040_FULL_SHOT_F1.png",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            572,
+            204,
+            727,
+            526
+          ],
+          "0.5": [
+            572,
+            206,
+            726,
+            525
+          ],
+          "0.9": [
+            573,
+            208,
+            725,
+            524
+          ]
+        },
+        "width_at_0p5": 154,
+        "height_at_0p5": 319,
+        "alpha_weighted_area_pixels": 16220.658823529411,
+        "alpha_weighted_centroid_pixels": [
+          643.3376343118966,
+          361.34900494842213
+        ]
+      },
+      "actual_diagnostic_head_hair_neck_only": {
+        "file": "images\\v040_HEAD_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            182,
+            58,
+            345,
+            216
+          ],
+          "0.5": [
+            183,
+            58,
+            343,
+            215
+          ],
+          "0.9": [
+            184,
+            61,
+            338,
+            214
+          ]
+        },
+        "width_at_0p5": 160,
+        "height_at_0p5": 157,
+        "alpha_weighted_area_pixels": 15147.384313725492,
+        "alpha_weighted_centroid_pixels": [
+          259.6722757802227,
+          129.80335982424194
+        ]
+      },
+      "head_hair_neck_height_over_full_height": 0.24960254372019078,
+      "head_alpha_area_over_full_alpha_area": 0.24275975552716733,
+      "full_character_fraction_of_native_close_height": 0.8736111111111111,
+      "full_character_fraction_of_native_shot_height": 0.44305555555555554,
+      "saved_active_camera": "V024 | CLOSE portrait",
+      "saved_render": [
+        480,
+        720,
+        100
+      ],
+      "hands": {
+        "V007_BOY | articulated drawn hand far": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707600457593799,
+          "drawn_width_along_hand_bone_scene_units": 0.05400530435144901,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              327.72344970703125,
+              351.4801940917969
+            ],
+            [
+              417.42401123046875,
+              446.9701843261719
+            ]
+          ]
+        },
+        "V007_BOY | articulated drawn hand near": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707598688080907,
+          "drawn_width_along_hand_bone_scene_units": 0.05400528945028782,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              173.2447967529297,
+              195.76263427734375
+            ],
+            [
+              416.7542419433594,
+              446.6031494140625
+            ]
+          ]
+        }
+      },
+      "boots": {
+        "V033 | far | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              105.25792694091797,
+              206.76080322265625
+            ],
+            [
+              619.23095703125,
+              687.2728271484375
+            ]
+          ]
+        },
+        "V033 | near | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              306.9117126464844,
+              410.42132568359375
+            ],
+            [
+              624.3363647460938,
+              687.2728881835938
+            ]
+          ]
+        }
+      },
+      "near_boot_rest_length_over_near_hand_drawn_length": 3.6006585044484662
+    },
+    "v041": {
+      "actual_diagnostic_full_close": {
+        "file": "images\\v041_FULL_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            105,
+            58,
+            411,
+            688
+          ],
+          "0.5": [
+            106,
+            58,
+            410,
+            687
+          ],
+          "0.9": [
+            107,
+            61,
+            409,
+            686
+          ]
+        },
+        "width_at_0p5": 304,
+        "height_at_0p5": 629,
+        "alpha_weighted_area_pixels": 62099.643137254905,
+        "alpha_weighted_centroid_pixels": [
+          247.43174502155264,
+          367.7738614139994
+        ]
+      },
+      "actual_diagnostic_full_shot": {
+        "file": "images\\v041_FULL_SHOT_F1.png",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            572,
+            204,
+            727,
+            526
+          ],
+          "0.5": [
+            572,
+            206,
+            726,
+            525
+          ],
+          "0.9": [
+            573,
+            208,
+            725,
+            524
+          ]
+        },
+        "width_at_0p5": 154,
+        "height_at_0p5": 319,
+        "alpha_weighted_area_pixels": 16128.53725490196,
+        "alpha_weighted_centroid_pixels": [
+          643.2206788746388,
+          361.7654550684368
+        ]
+      },
+      "actual_diagnostic_head_hair_neck_only": {
+        "file": "images\\v041_HEAD_CLOSE_F1.png",
+        "size": [
+          480,
+          720
+        ],
+        "bbox_by_alpha_threshold": {
+          "0.1": [
+            182,
+            58,
+            345,
+            216
+          ],
+          "0.5": [
+            183,
+            58,
+            343,
+            215
+          ],
+          "0.9": [
+            184,
+            61,
+            338,
+            214
+          ]
+        },
+        "width_at_0p5": 160,
+        "height_at_0p5": 157,
+        "alpha_weighted_area_pixels": 15147.384313725492,
+        "alpha_weighted_centroid_pixels": [
+          259.6722757802227,
+          129.80335982424194
+        ]
+      },
+      "head_hair_neck_height_over_full_height": 0.24960254372019078,
+      "head_alpha_area_over_full_alpha_area": 0.24392063381501547,
+      "full_character_fraction_of_native_close_height": 0.8736111111111111,
+      "full_character_fraction_of_native_shot_height": 0.44305555555555554,
+      "saved_active_camera": "V024 | CLOSE portrait",
+      "saved_render": [
+        480,
+        720,
+        100
+      ],
+      "hands": {
+        "V007_BOY | articulated drawn hand far": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707600457593799,
+          "drawn_width_along_hand_bone_scene_units": 0.05400530435144901,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              327.72344970703125,
+              351.4801940917969
+            ],
+            [
+              417.42401123046875,
+              446.9701843261719
+            ]
+          ]
+        },
+        "V007_BOY | articulated drawn hand near": {
+          "drawn_length_along_hand_bone_scene_units": 0.06707598688080907,
+          "drawn_width_along_hand_bone_scene_units": 0.05400528945028782,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              173.2447967529297,
+              195.76263427734375
+            ],
+            [
+              416.7542419433594,
+              446.6031494140625
+            ]
+          ]
+        }
+      },
+      "boots": {
+        "V033 | far | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              105.25792694091797,
+              206.76080322265625
+            ],
+            [
+              619.23095703125,
+              687.2728271484375
+            ]
+          ]
+        },
+        "V033 | near | canonical painted shoe": {
+          "rest_length_scene_units": 0.24151772260665894,
+          "rest_height_scene_units": 0.1434275098145008,
+          "close_projected_geometry_bbox_pixels": [
+            [
+              306.9117126464844,
+              410.42132568359375
+            ],
+            [
+              624.3363647460938,
+              687.2728881835938
+            ]
+          ]
+        }
+      },
+      "near_boot_rest_length_over_near_hand_drawn_length": 3.6006585044484662
+    }
+  },
+  "camera_comparison": {
+    "V024 | CLOSE portrait": {
+      "baseline": {
+        "type": "ORTHO",
+        "lens": 50.0,
+        "ortho_scale": 1.100000023841858,
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0
+      },
+      "data_differences_from_v028": {
+        "v028": {},
+        "v036": {},
+        "v039": {},
+        "v040": {},
+        "v041": {}
+      },
+      "matrix_max_difference_at_F1": {
+        "v028": 0.0,
+        "v036": 0.0,
+        "v039": 0.0,
+        "v040": 0.0,
+        "v041": 0.0
+      }
+    },
+    "V020 | CHILD | SHOT": {
+      "baseline": {
+        "type": "PERSP",
+        "lens": 100.0,
+        "ortho_scale": 6.0,
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "sensor_fit": "HORIZONTAL",
+        "shift_x": -0.30000022053718567,
+        "shift_y": -0.26705533266067505,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0
+      },
+      "data_differences_from_v028": {
+        "v028": {},
+        "v036": {},
+        "v039": {},
+        "v040": {},
+        "v041": {}
+      },
+      "matrix_max_difference_at_F1": {
+        "v028": 0.0,
+        "v036": 0.0,
+        "v039": 0.0,
+        "v040": 0.0,
+        "v041": 0.0
+      }
+    }
+  },
+  "new_head_mapping": {
+    "source_head_paint_pixel_bbox": [
+      12,
+      23,
+      440,
+      482
+    ],
+    "mapped_rest_XZ_bbox": [
+      [
+        -0.15164513830414017,
+        0.21809636521959863
+      ],
+      [
+        1.0904817719796676,
+        1.4517038714479074
+      ]
+    ],
+    "scene_units_per_source_pixel_horizontal": 0.000863882017578829,
+    "scene_units_per_source_pixel_vertical": 0.0007869762515647925,
+    "horizontal_over_vertical_scale_ratio": 1.097723109002489,
+    "horizontal_relative_stretch_percent": 9.772310900248904,
+    "meaning": "v040 maps the new independent head+neck painting to an old axis-aligned occupied box with unequal X/Z scale. This is relative to the generated source, not a10percent enlargement over the earlier rendered head."
+  },
+  "v041_upper_coat_actual_change": {
+    "new_painting": false,
+    "new_collar_vertices": 36,
+    "maximum_upper_coat_shift_m": 0.04331014352371954,
+    "original_yoke_hidden_not_deleted": true
+  },
+  "scope_limit": "Review-camera comparisons do not establish the new design scale relative to the production environment. v040/v041 were not integrated into v046."
+}

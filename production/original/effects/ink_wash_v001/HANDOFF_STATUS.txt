@@ -1,0 +1,56 @@
+WTSC EFFECTS v001 - VERIFIED LOCAL DELIVERY
+
+Completed: nine reusable editable native Blender5.2.2 collections, a6-second
+960x540/24fps H264 reel (176,638bytes), a native factory-empty Append sandbox,
+a contact sheet, an actual v037 world integration frame, import instructions,
+and408 straight-alpha256px PNG frames across three complete working sequences.
+The ZIP is31,071,127bytes and passed ZIP CRC validation.
+
+Deliverables:
+WTSC_Ink_Wash_FX_Pack_v001.zip
+WTSC_FX_Reel_v001.mp4
+WTSC_FX_Contact_Sheet_v001.jpg
+native/WTSC_Ink_Wash_FX_Library_v001.blend
+native/WTSC_FX_Append_Sandbox_v001.blend
+IMPORT_GUIDE.txt
+evidence/delivery_validation.json
+evidence/native_validation.json
+evidence/integration_check.json
+
+Native coverage: three explosions; two incoming streak/impact directions;
+independent impact puff; smoke loop; ash/ember loop; burning debris/firelight loop.
+Tests passed: nine-collection Append;1851 valid animation drivers; independent
+Append copies with remapped material targets; Link loading; numeric loop seams;
+all408 PNG decodes/alpha bounds; full144-frame MP4 decode; source hashes unchanged.
+v037 source SHA256 remained f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4.
+
+Resource coordination: no shared UI use. Only the owned effects Eevee process
+was stopped after CPU-only coordination arrived. Remaining rendering used one
+sequential two-thread CPU process. Production workers were neither stopped nor
+modified. All authored files are under this effects subfolder, except temporary
+Library helper files under the permitted user Temp directory.
+
+Limits: first artistic pass for review; three complete low-cost256px working
+sequences, not full-resolution finals. Remaining six effects are fully native
+with512px transparent stills and a render recipe. Link overrides were not tested.
+The480x270 world integration uses CPU Cycles, whose GP support differs from Eevee.
+
+LIBRARY DELIVERY COMPLETE: three new private Library items confirmed succeeded.
+Reel: [PRIVATE_LIBRARY_REFERENCE_REMOVED]
+Pack: [PRIVATE_LIBRARY_REFERENCE_REMOVED]
+Contact sheet: [PRIVATE_LIBRARY_REFERENCE_REMOVED]
+The prepared helper failed before creating any upload session. After the parent
+continued the task, Library's available direct-create actions completed delivery.
+No duplicate files or upload retries after successful creates were made.
+See evidence/library_upload_receipt.json for returned identities and xattrs.
+Local xattr application failed because Windows Python lacks os.setxattr; the
+returned metadata is preserved in that receipt. Library writes succeeded.
+Concise integration guidance is in INTEGRATION_NOTES_5S.txt.
+
+Earlier history: the first call was denied before execution because automatic
+approval review could not establish disclosure authorization from the delegated
+request. The later trusted user authorization resolved that approval blocker.
+
+Earlier cross-chat status message to parent01a11891-101b-7258-912e-593e0317c0ce
+was also denied: review could not establish direct user authorization to send it.
+It was not retried. Results return through the automatic task-completion handoff.

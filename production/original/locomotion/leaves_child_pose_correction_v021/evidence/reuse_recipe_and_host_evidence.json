@@ -1,0 +1,17 @@
+{
+  "workflow": "reuse existing source and painted native control asset; bounded child pose correction",
+  "runtime": "Blender5.2.2LTS native bpy fallback, no DCC real-host acceptance claimed",
+  "source_fbx_sha256": "4e5d8bac507f1b9b43c5c20326a47f287c2e84d362a5613501add4eaccb9571b",
+  "local_base_sha256": "5edbd45e731e5a23031e201e56525049655b25f56410122c66ca5cbd57d6f1ac",
+  "stages": [
+    "solve_poses.py (optional existing numpy)",
+    "build_corrected.py",
+    "art_variant.py",
+    "final_native_check.py",
+    "make_previews.py",
+    "write_handoff.py",
+    "annotate_native.py"
+  ],
+  "asset_policy": "Reuse user-selected source and original packed painting; no acquisition/install/upload of source FBX",
+  "review_status": "Technical selected-pose tests pass; artistic quality remains unapproved; no continuous gait or integration"
+}

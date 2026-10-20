@@ -1,0 +1,206 @@
+{
+  "status": "V031_ROUGH_CONSTRUCTION_ACTION_DELIVERED_INDEPENDENT_NORMAL_SPEED_REVIEW_PENDING",
+  "artistic_acceptance": false,
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\native\\WTSC_Rough_Construction_v031.blend",
+  "native_bytes": 2754202,
+  "native_sha256": "e6eb02da647d5b2483b8ac575323b30dc94a903292381616d79e438682ef2a08",
+  "preview": {
+    "file": "previews\\WTSC_Rough_Construction_v031_Normal_Speed.mp4",
+    "bytes": 757407,
+    "sha256": "54a4d0d45d3147d62e468655960917465278a5f2aafac9764e6db6e0d78d956b",
+    "decoded_frames": 192,
+    "fps": 30.0,
+    "size": [
+      1280,
+      800
+    ],
+    "seconds": 6.4,
+    "layout": "3.2s close, then3.2s shot; each three uninterrupted authored32-frame cycles; no slow motion, holds or optical interpolation",
+    "selected_actual_encoded_frames": [
+      "previews\\DECODED_000.png",
+      "previews\\DECODED_003.png",
+      "previews\\DECODED_009.png",
+      "previews\\DECODED_012.png",
+      "previews\\DECODED_016.png",
+      "previews\\DECODED_019.png",
+      "previews\\DECODED_025.png",
+      "previews\\DECODED_028.png",
+      "previews\\DECODED_031.png",
+      "previews\\DECODED_032.png",
+      "previews\\DECODED_063.png",
+      "previews\\DECODED_064.png",
+      "previews\\DECODED_095.png",
+      "previews\\DECODED_096.png",
+      "previews\\DECODED_127.png",
+      "previews\\DECODED_159.png",
+      "previews\\DECODED_191.png"
+    ],
+    "observation_limit": "Decoded actual movie frames inspected. Continuous player playback was not observed through available tools; independent normal-speed review is required.",
+    "status": "CONSTRUCTION TEST, not approved/finished animation"
+  },
+  "private_Library": {
+    "movie": {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/WTSC_Rough_Construction_v031_Normal_Speed.mp4",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Rough_Construction_v031_Normal_Speed.mp4",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "mime_type": "video/mp4",
+      "library_artifact_type": "other",
+      "file_size_bytes": 757407,
+      "external_connectors_accessed": false
+    },
+    "board": {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/WTSC_v031_Construction_Pose_Board.png",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_v031_Construction_Pose_Board.png",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "mime_type": "image/png",
+      "library_artifact_type": "image",
+      "file_size_bytes": 1206466,
+      "external_connectors_accessed": false
+    }
+  },
+  "pose_board": "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\previews\\WTSC_v031_Construction_Pose_Board.png",
+  "complete_breakdown_boards": [
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\previews\\WTSC_v031_Breakdowns_F01_16.png",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\previews\\WTSC_v031_Breakdowns_F17_32.png"
+  ],
+  "guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\V031_IMPORT_TIMING_AND_CANDID_ASSESSMENT.txt",
+  "travel_CSV": "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\evidence\\TRAVEL_SOLE_AND_BODY_QUARTER_FRAME.csv",
+  "travel_contract": {
+    "period_frames": 32,
+    "fps": 30,
+    "stride_m": 0.8146774020162355,
+    "root": "D=.8146774020162355*(F-1)/32 metres+X, unwrapped linear",
+    "speed_mps": 0.7637600643902208,
+    "production24fps": "Bake all body drawings and head/boot transforms together from q=30*(N-N0)/24+q0; do not independently retime held GP and continuous boot curves. No production integration claimed."
+  },
+  "visual_review": {
+    "review_method": "Viewed actual Blender PNGs: all32 close drawings in two ordered boards, matched V030/V031 key board, individual F13/F20/F26 close frames, and selected actual1280x720 shot frames. This is frame/sequence inspection, not observed continuous playback.",
+    "status": "COHERENT_ENOUGH_FOR_SHORT_ROUGH_CONSTRUCTION_TEST_ONLY",
+    "proceed_to_short_construction_test": true,
+    "visible_findings": [
+      "Fuller V030 torso/thigh/calf family remains legible across both steps. Original head, collar and boot pigmentation is retained.",
+      "Contact/down/passing/up families now have intervening drawings. Second load was revised after first proof showed too little pelvis settle.",
+      "First passing has a clear raised-foot projection; the opposite passing shows the near thigh/calf and cuff without the old ribbon-leg contour.",
+      "Outer chest/shoulder is rounded; the full-width dark waist belt was replaced with a partial oblique seam. Body contour compresses at down and opens toward up.",
+      "F13 foreground hand clears the hem. Around passing and opposite loading the hand intentionally crosses the coat face; it remains a rough occlusion rather than a presentation pose.",
+      "Stable profile preserves head/hair silhouette throughout; there is no attempted head turnaround."
+    ],
+    "remaining_visual_issues": [
+      "Arm action is still restrained, with some near-hand/coat merging around F11-F12 and F25-F28; independent playback must judge whether the arc is sufficiently clear.",
+      "There is an asymmetry in loading height caused by the differently projected painted boots and deliberate body-height breakdowns. It may still read unevenly in motion.",
+      "The body shading is a clean, flat construction fill and remains visually different from the retained painted head/boots. This is not final ink-and-wash finish.",
+      "This is a boy-only walk construction study, not the completed two-child supported recovery scene, clasp, stumble or restart transition."
+    ],
+    "artistic_acceptance": false,
+    "next_gate": "Request independent normal-speed construction review through parent; do not promote technical checks into visual approval."
+  },
+  "cold_native_technical_safeguards": {
+    "scope": "Cold-reopened native transformation/contact checks, including between transform keys. Does not establish convincing motion.",
+    "sample_count": 2049,
+    "sample_interval_frames": 0.015625,
+    "native_transform_key_interval_frames": 0.0625,
+    "max_root_error_m": 4.453345903154826e-08,
+    "max_boot_vertex_error_against_analytic_m": 0.0001910879452618726,
+    "max_support_sole_height_error_m": 9.066984057426453e-05,
+    "max_active_contact_world_x_error_m": 2.1699315868595193e-06,
+    "max_head_neck_interpolation_error_m": 2.4494883990033856e-05,
+    "GP_sampling": "Body drawings are on ones; integer native-frame cuff/boot relation is exact. Production 24fps requires a unified resample from construction_motion.py, not independent retiming of boot curves and held drawings.",
+    "normal_speed_render": "F1..96 uninterrupted per view, three full32-frame periods,30fps"
+  },
+  "normal_speed_render": {
+    "views": {
+      "CLOSE": [
+        480,
+        720
+      ],
+      "SHOT": [
+        1280,
+        720
+      ]
+    },
+    "frames_per_view": 96,
+    "total_actual_renders": 192,
+    "fps": 30,
+    "seconds_per_view": 3.2,
+    "cycles_per_view": 3,
+    "threads": 2,
+    "elapsed_seconds": 59.77605438232422,
+    "status": "Construction test only; visual acceptance pending independent/human playback review"
+  },
+  "source_preservation": {
+    "v046": {
+      "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v026": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\gp_extended_review_v026\\native\\WTSC_GP_Extended_Review_v026.blend",
+      "sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+      "unchanged": true
+    },
+    "v027": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\body_loading_overlap_v027\\native\\WTSC_Body_Loading_Overlap_v027.blend",
+      "sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+      "unchanged": true
+    },
+    "v028": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\upper_body_pose_refinement_v028\\native\\WTSC_Upper_Body_Pose_Refinement_v028.blend",
+      "sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+      "unchanged": true
+    },
+    "v029": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_silhouette_rebuild_v029\\native\\WTSC_Four_Pose_Silhouette_Rebuild_v029.blend",
+      "sha256": "5a810378e997691493aacb99bb00ffcdd41db10bcca124f9d9164a425c4381ed",
+      "unchanged": true
+    },
+    "v030": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_volume_revision_v030\\native\\WTSC_Four_Pose_Volume_Revision_v030.blend",
+      "sha256": "134860e2f6b43503cd8a2305bd06275cf71a591962e64fa1043d7726bd7e57bb",
+      "unchanged": true
+    }
+  },
+  "observation_limit": "All32 actual close drawings, selected shot frames and decoded actual movie frames inspected. Continuous normal-speed playback not observed through available tools; independent/human review remains the artistic gate.",
+  "parent_review_request": "Please route an independent normal-speed construction review of v031 through the parent task. Focus on both load transfers, body volume stability, arm arcs and overlaps, F13 hand/hem gap, heel/toe projection and loop continuity. This is not a finished/approved cycle.",
+  "outstanding_scope": [
+    "Boy-only construction: no authored girl performance or paired supported recovery/stumble/restart transition in this checkpoint.",
+    "Rough clean body fills remain unlike final ink-and-wash painting.",
+    "Restrained arms and near-hand/coat merging around passing need playback judgment.",
+    "Asymmetric load heights may read unevenly; review before further production work."
+  ],
+  "coordination": "All Blender jobs used immediate host no-process gates and two threads. All own Blender jobs have exited. No other specialist or production files edited. Review requests through parent; no direct world message.",
+  "execution_blockers": []
+}

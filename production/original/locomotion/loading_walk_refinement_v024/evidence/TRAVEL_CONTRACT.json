@@ -1,0 +1,22 @@
+{
+  "units": "metres, seconds, radians",
+  "fps": 30,
+  "native_time": "q=frame-1",
+  "period_frames": 31,
+  "period_seconds": 1.0333333333333334,
+  "stride_m": 0.9524437384576381,
+  "speed_m_per_second": 0.9217197468944884,
+  "travel": "D(q)=stride*q/31, positive X, unwrapped; one metre is one Blender unit",
+  "native_frames_authored": [
+    1,
+    94
+  ],
+  "preview_frames": [
+    1,
+    93
+  ],
+  "placement": "Identity coordinates in this native. Root travel is separate from world-space sole goals. Transform every imported hierarchy and every world foot goal through one common static placement transform. Do not move only the travel empty.",
+  "centred_stage": "If characters are held centred, subtract D(q) from the common character placement AND from world geometry/ground placement as appropriate to the chosen coordinate system. Equivalent stationary character pose has foot x=A_x(q)-D(q); ground/landscape translates -D(q). Do not add a second root displacement.",
+  "cycle_extension": "After one period evaluate local pose at q mod31 and add n*stride to root and world sole goals. For centred/world scrolling use an unwrapped D. Native F94 is the third bookend; the movie ends at F93. Timeline wrapping93->1 resets world travel and ruler marks.",
+  "production_mapping": "No production mapping or recovery-to-walk seam is approved. Do not paste this straight onto75-80s. Choose the seam contact, then time offset q=30*(t-t0)+q0 and apply D(q)-D(q0) consistently. Any retiming must retime all controls, sole goals and cloth together."
+}

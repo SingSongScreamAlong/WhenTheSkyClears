@@ -1,0 +1,143 @@
+{
+  "native": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_architecture_v049\\WTSC_Registered_School_Depth_v049c.blend",
+  "native_sha256": "0e8cb9cfe3abf8443caf59deb8a2d954def000ef0d359fc590a3810ee5ccfd72",
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\world_art_v048d\\WTSC_World_Art_Checkpoint_v048d.blend",
+  "source_sha256": "fe3270155538a44cb08ef3ee2c37f25461d292d5a9f10f4d2406e65822df3e5a",
+  "reference_frame": 1225,
+  "adjacent_frames": [
+    1201,
+    1249
+  ],
+  "source_image": "School_v001.png",
+  "source_dimensions": [
+    1672,
+    941
+  ],
+  "front_card_affine": {
+    "x_center": 65,
+    "width": 22,
+    "z_center": 3.29222369194,
+    "height": 12.3815793991,
+    "front_y": 10
+  },
+  "window_hole_pixel_polygon": [
+    [
+      895.0,
+      449.0
+    ],
+    [
+      895.7974108632659,
+      446.4638258137903
+    ],
+    [
+      898.1589994007816,
+      444.0251153792538
+    ],
+    [
+      901.9940110894444,
+      441.7775869707452
+    ],
+    [
+      907.1550685807583,
+      439.80761184457486
+    ],
+    [
+      913.4438353296865,
+      438.1908950400669
+    ],
+    [
+      920.6186375568487,
+      436.9895660773533
+    ],
+    [
+      928.4037516363306,
+      436.24979135475803
+    ],
+    [
+      936.5,
+      436.0
+    ],
+    [
+      944.5962483636694,
+      436.24979135475803
+    ],
+    [
+      952.3813624431513,
+      436.9895660773533
+    ],
+    [
+      959.5561646703135,
+      438.1908950400669
+    ],
+    [
+      965.8449314192417,
+      439.80761184457486
+    ],
+    [
+      971.0059889105556,
+      441.7775869707452
+    ],
+    [
+      974.8410005992184,
+      444.02511537925386
+    ],
+    [
+      977.2025891367341,
+      446.4638258137903
+    ],
+    [
+      978.0,
+      449.0
+    ],
+    [
+      978,
+      631
+    ],
+    [
+      895,
+      631
+    ]
+  ],
+  "window_recess_m": 0.35,
+  "room_back_m": 0.62,
+  "ruin_return_depth_m": 0.43,
+  "rear_foliage_depth_m": 0.65,
+  "rear_registration_error_4K_pixels": 0.0020471813758848175,
+  "glass_contours_from_source": 22,
+  "bank_valid_sample_remaps": [
+    {
+      "material": "v048b | continuous path | fixed earth-only paint joins",
+      "node": "Image Texture.002"
+    },
+    {
+      "material": "v048b | continuous path | fixed earth-only paint joins",
+      "node": "Image Texture.003"
+    },
+    {
+      "material": "v048b | continuous path | fixed earth-only paint joins",
+      "node": "Image Texture.004"
+    },
+    {
+      "material": "v048b | peaceful original painted earth",
+      "node": "Image Texture"
+    },
+    {
+      "material": "v048b | transition original painted earth",
+      "node": "Image Texture"
+    },
+    {
+      "material": "v048b | war_zone original painted earth",
+      "node": "Image Texture"
+    }
+  ],
+  "created_objects": 69,
+  "all_new_world_fixed_without_actions": true,
+  "new_color_progression_applied": false,
+  "glass_boundary_method": "Source-painted surviving fragments traced to native extruded polygons; no generated texture or upscale claimed.",
+  "status": "TECHNICAL PREVIEW; visual acceptance pending",
+  "limitations": [
+    "Front plaster/stone painting remains original sub4K source; registered source-painted glass/wood with physical edges supply resolution-independent boundary detail, not a newly painted full4K facade.",
+    "One selected broken window and right wall/foliage separation only.",
+    "Static broad key lights only new diffuse geometry; inherited FX and child materials unchanged."
+  ]
+}

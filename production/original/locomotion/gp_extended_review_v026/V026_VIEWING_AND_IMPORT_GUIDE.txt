@@ -1,0 +1,77 @@
+WTSC v026 - EXTENDED GP WALK REVIEW
+Purpose: Conrad requested a longer view of the promisingv025 motion.
+Status: normal-speed viewing proof; artistic acceptance remains open.
+
+VIEWING
+WTSC_v026_GP_Normal_Speed_9p3s_Close_9p3s_Shot.mp4
+Private Library [PRIVATE_LIBRARY_REFERENCE_REMOVED], version0.
+Verified file_id [PRIVATE_LIBRARY_REFERENCE_REMOVED];3011180bytes,18.6seconds.
+First9.3seconds: close portrait. Next9.3seconds: original trailer-camera framing on the neutral stage.
+Each segment shows nine uninterrupted31frame cycles at30fps. The view cut restarts the same sequence.
+There are no held/slowed poses, optical interpolation, half-step resets or inserted duplicate bookends.
+Each cycle is labelled. The movie uses1280x800 with a720pixel-high image plus labels.
+Individual9.3second CLOSE and SHOT MP4s are also supplied.
+The trailer view retains the actual camera lens/shift/framing; it is not a battlefield composite.
+Decoded frames and join boards are inspected separately from actual continuous playback.
+The exposed tools do not allow me to observe a running player, so I do not claim a playback art pass.
+
+PRESERVED MOTION / NEW WORK
+The human-reviewed v025 half-step is preserved exactly atF17-32, in both source file and this GP layer.
+Its private short review remains [PRIVATE_LIBRARY_REFERENCE_REMOVED], version0.
+F1-16 complete the opposite half. Existing GP drawings are registered into a pelvis/chest anatomical space,
+then the chosen coat contours are retimed through new cloth extremes atF1,4.25,6,9.4,11.3,14,17.
+The source drawings used at those knots areF32,20,22,25,27,29,17 respectively.
+New samples are editable GP drawings on ones; no cutout-to-stroke conversion was used.
+The v024 body, feet, trousers, arm motion and original identity parts are retained for this viewing comparison.
+Separate v025b upper-loading and pigment experiments are NOT included here.
+Do not interpret this as final approval of the first-half drawings or the complete walk.
+
+EDITABLE NATIVE
+native/WTSC_GP_Extended_Review_v026.blend, verified Blender5.2.2LTS, hashd13f752e3b9c.
+Grease Pencil data typeGreasePencil; objecttypeGREASEPENCIL; currentframe.drawing API.
+Object V025 | COAT drawings | editable GP retains the source name for continuity.
+Layer 01 | new coat silhouette and painted planes contains the editable drawing sequence.
+F1-31 are one cycle; F32 is the preserved source contact bookend matchingF1.
+F33-280 use native instance_drawing copies of the corresponding cycle drawings.
+There are32 unique GP drawings,280 native keys; F280 is the ninth bookend and is not rendered into the movie.
+Editing a shared drawing changes its instances. Copy/unlink a drawing first when an individual cycle needs a variation.
+GP contours/fill planes are native editable strokes. The coat paint is still a rough value study.
+Original head, hair, collar, near arm and hand are preserved through a native foreground render layer/compositor.
+This avoids GP fills covering the existing transparent painted cards. Use the native Render result to judge the composite.
+The original painting is packed; no new raster painting, addon, installation or Python frame handler is required.
+
+TIMING / TRAVEL CONTRACT
+30fps. Native previewF1-279. Nine cycles,31frames each,9.3seconds per view.
+q=F-1. StrideS=.9524437384576381m. D(q)=S*q/31m, unwrapped positiveX.
+Speed=.9217197468944884m/s. One Blender unit=one metre; Z up; camera from negativeY.
+For a24fps production timeline, preserve seconds: nativeF=1+30*(filmF-filmF0)/24.
+Do not paste31native samples as31frames at24fps; GP exposures must be resampled for the chosen film seam.
+Near contact phaseF1; far contact phaseF17. Original child support/sole geometry is retained.
+Root and both world sole-goal X channels use Cycles REPEAT_OFFSET over the existing three-cycle action.
+Other native object channels repeat without spatial offset. Trouser/coat node drawing actions retain their own cycles.
+Every31 output samples advance world travel byS. Camera follows travel, while fixed ruler/ground cues pass continuously.
+V026_TRAVEL_TIMING.csv supplies every native output frame and the final bookend.
+For exact foot/support keys, the preserved v024 guide/quarter-frame curve remain authoritative; this file extends them periodically.
+World foot position at phaseq+31n equals the first-cycle position plusn*S.
+For centred characters, evaluate footX-D and scroll the ground/world by-D consistently.
+Transform all imported root hierarchies and world-space sole targets through one common placement transform.
+Moving only V021 | CHILD_SUPPORT_TRAVEL invalidates the separate world sole goals.
+No recovery-to-walk seam or placement into production75-80seconds is authored or approved by this viewing proof.
+
+TECHNICAL / ARTISTIC LIMITS
+298 sampled native frames cover first/last cycles and intermediate key phases.
+Root-curve error below.0000007m; translated-sole repeat error below.000001m; no unreachable sampled chains.
+The GP Rcontact bookend is exact; sourcev025F17-32point coordinates are unchanged.
+These facts establish repeat/contact continuity, not convincing weight, cadence or cloth painting.
+The coat remains cleaner/flatter than the original ink-and-wash surface. Long normal-speed review is now possible.
+The retained torso has pelvis/sternum minima together atF19.25; a separate8mm/one-frame upper-loading study
+was investigated but is intentionally outside this same-motion viewing comparison. If loading still reads rigid,
+that foundation needs visual assessment before further cloth embellishment.
+Full paired recovery, girl motion, support clasp, world composition, music and trailer timing are outside this solo viewing proof.
+
+REPRODUCTION
+scripts/build_full_cycle.py reads the included preservedv025source, completes the opposite half,
+extends native actions/drawing instances, verifies travel/contacts and renders a32frame proof.
+scripts/render_long_review.py renders279frames in each camera; use --threads2 and coordinate the render slot.
+scripts/encode_long_review.py makes the sequential18.6second review and two standalone segments.
+No production or other specialist files were modified. v024/v025 sources remain intact.

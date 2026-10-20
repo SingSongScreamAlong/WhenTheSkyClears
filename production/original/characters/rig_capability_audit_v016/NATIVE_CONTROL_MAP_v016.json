@@ -1,0 +1,684 @@
+{
+  "scope": "Source-independent control contract only. No imported FBX, motion adapter or retargeting compatibility claim.",
+  "collection": "WTSC_PAINTED_RIG_CAPABILITY_v016",
+  "axis": "metres; +X travel, +Z up, camera from-Y; in-plane rotation about worldY",
+  "travel": "V016 | WORLD_TRAVEL | diagnostic zero",
+  "characters": {
+    "BOY": {
+      "rig": "LOCO_BOY | RIG",
+      "bones": {
+        "pelvis": {
+          "length_m": 0.10223269462585449,
+          "rest_head": [
+            0.0,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            0.0,
+            0.0,
+            0.7054054141044617
+          ],
+          "parent": null
+        },
+        "chest": {
+          "length_m": 0.4878925383090973,
+          "rest_head": [
+            0.0,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            0.023854289203882217,
+            0.0,
+            1.0904817581176758
+          ],
+          "parent": "pelvis"
+        },
+        "head": {
+          "length_m": 0.2470681071281433,
+          "rest_head": [
+            0.023854289203882217,
+            0.0,
+            1.0853701829910278
+          ],
+          "rest_tail": [
+            0.025558166205883026,
+            0.0,
+            1.3324323892593384
+          ],
+          "parent": "chest"
+        },
+        "upper_arm_near": {
+          "length_m": 0.2897845208644867,
+          "rest_head": [
+            -0.057931844145059586,
+            0.0,
+            1.0240305662155151
+          ],
+          "rest_tail": [
+            -0.19764982163906097,
+            0.0,
+            0.770152747631073
+          ],
+          "parent": "chest"
+        },
+        "forearm_near": {
+          "length_m": 0.12645480036735535,
+          "rest_head": [
+            -0.19764982163906097,
+            0.0,
+            0.770152747631073
+          ],
+          "rest_tail": [
+            -0.22831963002681732,
+            0.0,
+            0.6474735736846924
+          ],
+          "parent": "upper_arm_near"
+        },
+        "upper_arm_far": {
+          "length_m": 0.28235065937042236,
+          "rest_head": [
+            0.06474735587835312,
+            0.0,
+            0.9984723925590515
+          ],
+          "rest_tail": [
+            0.2044653296470642,
+            0.0,
+            0.7531139850616455
+          ],
+          "parent": "chest"
+        },
+        "forearm_far": {
+          "length_m": 0.1337408721446991,
+          "rest_head": [
+            0.2044653296470642,
+            0.0,
+            0.7531139850616455
+          ],
+          "rest_tail": [
+            0.2998825013637543,
+            0.0,
+            0.6594007015228271
+          ],
+          "parent": "upper_arm_far"
+        },
+        "thigh_near": {
+          "length_m": 0.288800984621048,
+          "rest_head": [
+            0.0,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            0.12779083847999573,
+            0.0,
+            0.3441833257675171
+          ],
+          "parent": "pelvis"
+        },
+        "shin_near": {
+          "length_m": 0.24808835983276367,
+          "rest_head": [
+            0.12779083847999573,
+            0.0,
+            0.3441833257675171
+          ],
+          "rest_tail": [
+            0.19594594836235046,
+            0.0,
+            0.10564042627811432
+          ],
+          "parent": "thigh_near"
+        },
+        "thigh_far": {
+          "length_m": 0.23382888734340668,
+          "rest_head": [
+            -0.047708578407764435,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            -0.13631021976470947,
+            0.0,
+            0.3867802619934082
+          ],
+          "parent": "pelvis"
+        },
+        "shin_far": {
+          "length_m": 0.28666195273399353,
+          "rest_head": [
+            -0.13631021976470947,
+            0.0,
+            0.3867802619934082
+          ],
+          "rest_tail": [
+            -0.2436545193195343,
+            0.0,
+            0.1209753230214119
+          ],
+          "parent": "thigh_far"
+        },
+        "foot_near": {
+          "length_m": 0.10985717177391052,
+          "rest_head": [
+            0.19594594836235046,
+            0.0,
+            0.10564042627811432
+          ],
+          "rest_tail": [
+            0.29647472500801086,
+            0.0,
+            0.0613396018743515
+          ],
+          "parent": null
+        },
+        "foot_far": {
+          "length_m": 0.09296679496765137,
+          "rest_head": [
+            -0.2436545193195343,
+            0.0,
+            0.1209753230214119
+          ],
+          "rest_tail": [
+            -0.17379553616046906,
+            0.0,
+            0.059635721147060394
+          ],
+          "parent": null
+        },
+        "hand_near": {
+          "length_m": 0.08558619767427444,
+          "rest_head": [
+            -0.22831963002681732,
+            0.0,
+            0.6474735736846924
+          ],
+          "rest_tail": [
+            -0.23831963539123535,
+            0.0,
+            0.5624735951423645
+          ],
+          "parent": null
+        },
+        "hand_far": {
+          "length_m": 0.08558619022369385,
+          "rest_head": [
+            0.2998825013637543,
+            0.0,
+            0.6594007015228271
+          ],
+          "rest_tail": [
+            0.28988251090049744,
+            0.0,
+            0.5744007229804993
+          ],
+          "parent": null
+        }
+      },
+      "head_view": "Original right profile; no approved yaw or turnaround",
+      "head_source_uv_bbox_px": [
+        529.9999849796295,
+        23.999986588954926,
+        786.0000004768372,
+        267.99999046325684
+      ],
+      "neck_registration_source_px": [
+        650.0000000775888,
+        269.9999822583692
+      ]
+    },
+    "GIRL": {
+      "rig": "LOCO_GIRL | RIG",
+      "bones": {
+        "pelvis": {
+          "length_m": 0.10223269462585449,
+          "rest_head": [
+            0.0,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            0.0,
+            0.0,
+            0.7054054141044617
+          ],
+          "parent": null
+        },
+        "chest": {
+          "length_m": 0.40552645921707153,
+          "rest_head": [
+            0.0,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            -0.0017038778169080615,
+            0.0,
+            1.0086956024169922
+          ],
+          "parent": "pelvis"
+        },
+        "head": {
+          "length_m": 0.240735724568367,
+          "rest_head": [
+            -0.0017038778169080615,
+            0.0,
+            1.0086956024169922
+          ],
+          "rest_tail": [
+            -0.017038777470588684,
+            0.0,
+            1.2489423751831055
+          ],
+          "parent": "chest"
+        },
+        "braid": {
+          "length_m": 0.17149178683757782,
+          "rest_head": [
+            -0.10734429955482483,
+            0.0,
+            1.064923644065857
+          ],
+          "rest_tail": [
+            -0.1806110441684723,
+            0.0,
+            0.9098707437515259
+          ],
+          "parent": "head"
+        },
+        "upper_arm_near": {
+          "length_m": 0.21095770597457886,
+          "rest_head": [
+            -0.013631022535264492,
+            0.0,
+            0.9541715383529663
+          ],
+          "rest_tail": [
+            -0.13801410794258118,
+            0.0,
+            0.7837837934494019
+          ],
+          "parent": "chest"
+        },
+        "forearm_near": {
+          "length_m": 0.1807396411895752,
+          "rest_head": [
+            -0.13801410794258118,
+            0.0,
+            0.7837837934494019
+          ],
+          "rest_tail": [
+            -0.2641010582447052,
+            0.0,
+            0.6542890667915344
+          ],
+          "parent": "upper_arm_near"
+        },
+        "upper_arm_far": {
+          "length_m": 0.18176473677158356,
+          "rest_head": [
+            0.08519388735294342,
+            0.0,
+            0.8945358395576477
+          ],
+          "rest_tail": [
+            0.17720329761505127,
+            0.0,
+            0.7377790808677673
+          ],
+          "parent": "chest"
+        },
+        "forearm_far": {
+          "length_m": 0.1401950865983963,
+          "rest_head": [
+            0.17720329761505127,
+            0.0,
+            0.7377790808677673
+          ],
+          "rest_tail": [
+            0.21639247238636017,
+            0.0,
+            0.6031727194786072
+          ],
+          "parent": "upper_arm_far"
+        },
+        "thigh_near": {
+          "length_m": 0.2828642427921295,
+          "rest_head": [
+            0.046004701405763626,
+            0.0,
+            0.5690951943397522
+          ],
+          "rest_tail": [
+            0.15164512395858765,
+            0.0,
+            0.3066979944705963
+          ],
+          "parent": "pelvis"
+        },
+        "shin_near": {
+          "length_m": 0.21863479912281036,
+          "rest_head": [
+            0.15164512395858765,
+            0.0,
+            0.3066979944705963
+          ],
+          "rest_tail": [
+            0.23343126475811005,
+            0.0,
+            0.10393654555082321
+          ],
+          "parent": "thigh_near"
+        },
+        "thigh_far": {
+          "length_m": 0.29413488507270813,
+          "rest_head": [
+            -0.05452409014105797,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            -0.10564042627811432,
+            0.0,
+            0.31351351737976074
+          ],
+          "parent": "pelvis"
+        },
+        "shin_far": {
+          "length_m": 0.2120557725429535,
+          "rest_head": [
+            -0.10564042627811432,
+            0.0,
+            0.31351351737976074
+          ],
+          "rest_tail": [
+            -0.1618683934211731,
+            0.0,
+            0.10904818028211594
+          ],
+          "parent": "thigh_far"
+        },
+        "skirt_front": {
+          "length_m": 0.4463542103767395,
+          "rest_head": [
+            0.017038777470588684,
+            0.0,
+            0.7786721587181091
+          ],
+          "rest_tail": [
+            0.19594594836235046,
+            0.0,
+            0.3697414696216583
+          ],
+          "parent": "pelvis"
+        },
+        "skirt_back": {
+          "length_m": 0.4371533989906311,
+          "rest_head": [
+            0.017038777470588684,
+            0.0,
+            0.7786721587181091
+          ],
+          "rest_tail": [
+            -0.2215041071176529,
+            0.0,
+            0.4123384356498718
+          ],
+          "parent": "pelvis"
+        },
+        "foot_near": {
+          "length_m": 0.11137939244508743,
+          "rest_head": [
+            0.23343126475811005,
+            0.0,
+            0.10393654555082321
+          ],
+          "rest_tail": [
+            0.33055227994918823,
+            0.0,
+            0.049412455409765244
+          ],
+          "parent": null
+        },
+        "foot_far": {
+          "length_m": 0.08674729615449905,
+          "rest_head": [
+            -0.1618683934211731,
+            0.0,
+            0.10904818028211594
+          ],
+          "rest_tail": [
+            -0.1005287915468216,
+            0.0,
+            0.047708578407764435
+          ],
+          "parent": null
+        },
+        "hand_near": {
+          "length_m": 0.08558619022369385,
+          "rest_head": [
+            -0.2641010582447052,
+            0.0,
+            0.6542890667915344
+          ],
+          "rest_tail": [
+            -0.27410104870796204,
+            0.0,
+            0.5692890882492065
+          ],
+          "parent": null
+        },
+        "hand_far": {
+          "length_m": 0.08558619767427444,
+          "rest_head": [
+            0.21639247238636017,
+            0.0,
+            0.6031727194786072
+          ],
+          "rest_tail": [
+            0.20639246702194214,
+            0.0,
+            0.5181727409362793
+          ],
+          "parent": null
+        }
+      },
+      "head_view": "Original right profile; no approved yaw or turnaround",
+      "head_source_uv_bbox_px": [
+        863.9999837875366,
+        84.99997353553772,
+        1114.9999594688416,
+        393.9999901652336
+      ],
+      "neck_registration_source_px": [
+        1008.9999999846974,
+        315.00002920216525
+      ],
+      "braid_root_source_px": [
+        947.0000007440303,
+        281.9999854482453
+      ]
+    }
+  },
+  "controls": [
+    {
+      "object": "BOY | HIP",
+      "role": "HIP",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | CHEST",
+      "role": "CHEST",
+      "parent": "BOY | HIP",
+      "properties": {}
+    },
+    {
+      "object": "BOY | HEAD_PROFILE",
+      "role": "HEAD_PROFILE",
+      "parent": "BOY | CHEST",
+      "properties": {}
+    },
+    {
+      "object": "BOY | ANKLE_near",
+      "role": "ANKLE_near",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | WRIST_near",
+      "role": "WRIST_near",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0,
+        "TorsoFollow": 1.0
+      }
+    },
+    {
+      "object": "BOY | LEG_POLE_near",
+      "role": "LEG_POLE_near",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | ARM_POLE_near",
+      "role": "ARM_POLE_near",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | RELAXED_HAND_TORSO_ANCHOR_near",
+      "role": "RELAXED_HAND_TORSO_ANCHOR_near",
+      "parent": "BOY | CHEST",
+      "properties": {}
+    },
+    {
+      "object": "BOY | ANKLE_far",
+      "role": "ANKLE_far",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | WRIST_far",
+      "role": "WRIST_far",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0,
+        "TorsoFollow": 1.0
+      }
+    },
+    {
+      "object": "BOY | LEG_POLE_far",
+      "role": "LEG_POLE_far",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | ARM_POLE_far",
+      "role": "ARM_POLE_far",
+      "parent": "LOCO_BOY | RIG",
+      "properties": {}
+    },
+    {
+      "object": "BOY | RELAXED_HAND_TORSO_ANCHOR_far",
+      "role": "RELAXED_HAND_TORSO_ANCHOR_far",
+      "parent": "BOY | CHEST",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | HIP",
+      "role": "HIP",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | CHEST",
+      "role": "CHEST",
+      "parent": "GIRL | HIP",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | HEAD_PROFILE",
+      "role": "HEAD_PROFILE",
+      "parent": "GIRL | CHEST",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | ANKLE_near",
+      "role": "ANKLE_near",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | WRIST_near",
+      "role": "WRIST_near",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0,
+        "TorsoFollow": 1.0
+      }
+    },
+    {
+      "object": "GIRL | LEG_POLE_near",
+      "role": "LEG_POLE_near",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | ARM_POLE_near",
+      "role": "ARM_POLE_near",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | RELAXED_HAND_TORSO_ANCHOR_near",
+      "role": "RELAXED_HAND_TORSO_ANCHOR_near",
+      "parent": "GIRL | CHEST",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | ANKLE_far",
+      "role": "ANKLE_far",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | WRIST_far",
+      "role": "WRIST_far",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {
+        "Reach": 0.0,
+        "Brace": 0.0,
+        "BraceFollow": 0.0,
+        "TorsoFollow": 1.0
+      }
+    },
+    {
+      "object": "GIRL | LEG_POLE_far",
+      "role": "LEG_POLE_far",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | ARM_POLE_far",
+      "role": "ARM_POLE_far",
+      "parent": "LOCO_GIRL | RIG",
+      "properties": {}
+    },
+    {
+      "object": "GIRL | RELAXED_HAND_TORSO_ANCHOR_far",
+      "role": "RELAXED_HAND_TORSO_ANCHOR_far",
+      "parent": "GIRL | CHEST",
+      "properties": {}
+    }
+  ]
+}

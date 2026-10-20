@@ -1,0 +1,1776 @@
+{
+  "scope": "TECHNICAL TESTS ONLY; no final-art or performance approval",
+  "blender": "5.2.2 LTS",
+  "source_sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+  "structure": {
+    "armatures": 2,
+    "bones": {
+      "BOY": 15,
+      "GIRL": 18
+    },
+    "painted_meshes": 28,
+    "live_contour_meshes": 16,
+    "old_POSE_shape_keys": 0
+  },
+  "diagnostic_poses": [
+    {
+      "frame": 1,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.0568800239740412e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 1.3328009672437097e-07
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 6.868905991674459e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 1.2287812589884992e-07
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.595769658816674e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 5.960997874939627e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 7.125283590766051e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.1490938651903387e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": 7.450580596923828e-09
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -1.4901161193847656e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-09
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 7.450580596923828e-09
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 21,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 2.7767145396410186e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 4.1803038253950915e-10
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 3.928785463244065e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 5.960804188709577e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.3496051699093632e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 1.228959310653832e-07
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.1343946320264105e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 3.068351540589914e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 41,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 3.9544776143733884e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 1.7633542774559028e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 3.0422486913914456e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 4.214848808730532e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 2.452610725272472e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 1.4475851612461012e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.5737354716911177e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.4027563922714077e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 61,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.9468856100345658e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 1.908289055006286e-07
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 7.966374560936456e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 2.6771265887634364e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 2.976849618154116e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 4.887944855554758e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 2.1233820076029103e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 5.79248281495113e-06
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 81,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 5.6191802702484374e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 7.456262769024897e-09
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 6.861859338828303e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 6.664025787352373e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 5.907145264433566e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 1.2122420674232418e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 7.1274451900925404e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.1490944626748886e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.0489096641540527e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 9.313225746154785e-09
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 101,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.053860856524248e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 1.6049053391878599e-07
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 6.861859338828303e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 6.664025787352373e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.5972404475826576e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 5.960904397890021e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 7.1274451900925404e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.1490944626748886e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 121,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 4.4106654312462e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 5.96051747334418e-08
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 2.0537953484858146e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 6.664054894298493e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.0069315653205656e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 5.960804709769105e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 3.021680397600071e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.149096315420447e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -1.4901161193847656e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 0.0
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 141,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 2.9145589493449192e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 1.1920949671908499e-07
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 2.3690673112544474e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 1.490117775658897e-07
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 3.461902793758462e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 8.114903086910592e-10
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 2.672942906514353e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 1.7881607785315474e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": 0.054999977350234985
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 0.054999977350234985
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 161,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.9587926384932026e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 4.532403404465241e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 3.4635383647133725e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 7.45060363264121e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.2440756291508541e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 2.90448622606341e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.0632605031312488e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 1.2288307811508821e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 1.0,
+            "BraceFollow": 1.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 1.0,
+            "BraceFollow": 1.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 181,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 2.8429966796944593e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 2.0849418944906035e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 1.8921953377350248e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 6.664327440126732e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 3.732071902714655e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 1.0196886245026324e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 2.8932737091157824e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.528822746095341e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 201,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 3.580839569298216e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 2.546077025436334e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 4.124364233009982e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 3.5972649876432317e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 2.7754347780656333e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 9.308336555974377e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 2.7578543228166683e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 1.1372059627417742e-05
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 221,
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.4104057305676879e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 1.490122207939911e-07
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 8.07027204308143e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 2.392335592286319e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.79673280690473e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 9.489750127659939e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.1409357019249364e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.402756532885709e-07
+        }
+      ],
+      "soles": [
+        {
+          "who": "BOY",
+          "side": "far",
+          "lowest_world_z_m": -1.862645149230957e-08
+        },
+        {
+          "who": "BOY",
+          "side": "near",
+          "lowest_world_z_m": -2.2351741790771484e-08
+        },
+        {
+          "who": "GIRL",
+          "side": "far",
+          "lowest_world_z_m": 0.0
+        },
+        {
+          "who": "GIRL",
+          "side": "near",
+          "lowest_world_z_m": 1.4901161193847656e-08
+        }
+      ],
+      "hand_shapes": {
+        "BOY": {
+          "near": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        },
+        "GIRL": {
+          "near": {
+            "Reach": 1.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          },
+          "far": {
+            "Reach": 0.0,
+            "Brace": 0.0,
+            "BraceFollow": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "off_cache_native_hip_edit": {
+    "edit_m": [
+      0.012,
+      0,
+      -0.015
+    ],
+    "no_pose_api_or_handler_used": true,
+    "mesh_response_m": {
+      "V007_BOY | drawn leg far": 0.01941828019540448,
+      "V007_BOY | drawn leg near": 0.020147379855512872,
+      "V007_BOY | drawn skin far": 0.01920947008823065,
+      "V007_BOY | drawn skin near": 0.02572279670703415,
+      "V007_BOY | drawn sleeve far": 0.01920951667679854,
+      "V007_BOY | drawn sleeve near": 0.026824063665053636,
+      "V007_BOY | drawn source gray cuff far": 0.01920948864791758,
+      "V007_BOY | drawn source gray cuff near": 0.026824063665053636,
+      "V007_GIRL | drawn leg far": 0.020073828320377133,
+      "V007_GIRL | drawn leg near": 0.01935289990864502,
+      "V007_GIRL | drawn skin far": 0.019209860595413717,
+      "V007_GIRL | drawn skin near": 0.024720380014967132,
+      "V007_GIRL | drawn sleeve far": 0.019209814007679918,
+      "V007_GIRL | drawn sleeve near": 0.026090747370858713,
+      "V007_GIRL | drawn source gray cuff far": 0.019209814007679918,
+      "V007_GIRL | drawn source gray cuff near": 0.026090747370858713
+    },
+    "paint_body_response_m": {
+      "LOCO_BOY | PAINT body": 0.01920946061899572,
+      "LOCO_GIRL | PAINT body": 0.01920946061899572
+    },
+    "boot_drift_m": {
+      "V007_BOY | redrawn support boot far": 0.0,
+      "V007_BOY | redrawn support boot near": 0.0,
+      "V007_GIRL | redrawn support boot far": 0.0,
+      "V007_GIRL | redrawn support boot near": 0.0
+    },
+    "ik": [
+      {
+        "who": "BOY",
+        "bone": "shin_near",
+        "error_m": 1.106510304419651e-05
+      },
+      {
+        "who": "BOY",
+        "bone": "forearm_near",
+        "error_m": 3.099523326166866e-05
+      },
+      {
+        "who": "BOY",
+        "bone": "shin_far",
+        "error_m": 4.269197245101989e-05
+      },
+      {
+        "who": "BOY",
+        "bone": "forearm_far",
+        "error_m": 4.2148518958342706e-08
+      },
+      {
+        "who": "GIRL",
+        "bone": "shin_near",
+        "error_m": 4.3513115512287976e-05
+      },
+      {
+        "who": "GIRL",
+        "bone": "forearm_near",
+        "error_m": 1.7286032241039926e-05
+      },
+      {
+        "who": "GIRL",
+        "bone": "shin_far",
+        "error_m": 3.011133966489255e-05
+      },
+      {
+        "who": "GIRL",
+        "bone": "forearm_far",
+        "error_m": 2.2696923725416662e-07
+      }
+    ]
+  },
+  "native_brace_follow": [
+    {
+      "hip_delta_x_m": 0,
+      "hip_delta_z_m": 0,
+      "projected_palm_edge_gap_m": {
+        "BOY": 0.0005000493256375194,
+        "GIRL": 0.0005000378005206585
+      },
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.9617490484239438e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 4.600092589125307e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 3.461046826906378e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 9.424322304171708e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.2429837350218471e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 2.90313628520186e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.0625228032831264e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.528830428205504e-07
+        }
+      ],
+      "boot_drift_m": {
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_GIRL | redrawn support boot far": 0.0,
+        "V007_GIRL | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "hip_delta_x_m": -0.005,
+      "hip_delta_z_m": -0.012,
+      "projected_palm_edge_gap_m": {
+        "BOY": 0.0005000396631658077,
+        "GIRL": 0.0005000478122383356
+      },
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 3.182517573276863e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 5.744742048823337e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 4.960111768816018e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 8.429369814887851e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.4181686485743546e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 1.3008192571830442e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.2764695112575647e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.4027605874967956e-07
+        }
+      ],
+      "boot_drift_m": {
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_GIRL | redrawn support boot far": 0.0,
+        "V007_GIRL | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "hip_delta_x_m": 0.005,
+      "hip_delta_z_m": 0.009,
+      "projected_palm_edge_gap_m": {
+        "BOY": 0.0005000063683837652,
+        "GIRL": 0.0004999761004000902
+      },
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.1709790983589527e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 3.4914557950926847e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 2.241821760159094e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 9.424321955282644e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.0949930503662935e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 2.5626032223379257e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 8.732843284356572e-06
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.4027630648909665e-07
+        }
+      ],
+      "boot_drift_m": {
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_GIRL | redrawn support boot far": 0.0,
+        "V007_GIRL | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "hip_delta_x_m": 0,
+      "hip_delta_z_m": 0,
+      "projected_palm_edge_gap_m": {
+        "BOY": 0.0005000493256375194,
+        "GIRL": 0.0005000378005206585
+      },
+      "ik": [
+        {
+          "who": "BOY",
+          "bone": "shin_near",
+          "error_m": 1.9617490484239438e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_near",
+          "error_m": 4.600092589125307e-06
+        },
+        {
+          "who": "BOY",
+          "bone": "shin_far",
+          "error_m": 3.461046826906378e-05
+        },
+        {
+          "who": "BOY",
+          "bone": "forearm_far",
+          "error_m": 9.424322304171708e-08
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_near",
+          "error_m": 1.2429837350218471e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_near",
+          "error_m": 2.90313628520186e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "shin_far",
+          "error_m": 1.0625228032831264e-05
+        },
+        {
+          "who": "GIRL",
+          "bone": "forearm_far",
+          "error_m": 2.528830428205504e-07
+        }
+      ],
+      "boot_drift_m": {
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_GIRL | redrawn support boot far": 0.0,
+        "V007_GIRL | redrawn support boot near": 0.0
+      }
+    }
+  ],
+  "painted_boot_roll": [
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": -15,
+      "min_world_z_m": -1.1175870895385742e-08,
+      "rigid_edge_error_m": 6.930608372705122e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": -10,
+      "min_world_z_m": -1.0943040251731873e-08,
+      "rigid_edge_error_m": 6.807201395793439e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 0,
+      "min_world_z_m": -2.2351741790771484e-08,
+      "rigid_edge_error_m": 5.871603678524878e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 10,
+      "min_world_z_m": -5.960464477539063e-08,
+      "rigid_edge_error_m": 6.146732241078812e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 20,
+      "min_world_z_m": -2.9802322387695312e-08,
+      "rigid_edge_error_m": 7.362759837123249e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 30,
+      "min_world_z_m": -1.4901161193847656e-08,
+      "rigid_edge_error_m": 4.126396816210229e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 35,
+      "min_world_z_m": -1.4901161193847656e-08,
+      "rigid_edge_error_m": 8.098363771680966e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 20,
+      "min_world_z_m": -2.9802322387695312e-08,
+      "rigid_edge_error_m": 7.362759837123249e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": 0,
+      "min_world_z_m": -2.2351741790771484e-08,
+      "rigid_edge_error_m": 5.871603678524878e-08
+    },
+    {
+      "who": "BOY",
+      "side": "near",
+      "roll_degrees": -10,
+      "min_world_z_m": -1.0943040251731873e-08,
+      "rigid_edge_error_m": 6.807201395793439e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": -15,
+      "min_world_z_m": -2.9802322387695312e-08,
+      "rigid_edge_error_m": 9.147374563714394e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": -10,
+      "min_world_z_m": 0.0,
+      "rigid_edge_error_m": 9.572393122039488e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 0,
+      "min_world_z_m": -1.862645149230957e-08,
+      "rigid_edge_error_m": 6.15948846094394e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 10,
+      "min_world_z_m": -1.1175870895385742e-08,
+      "rigid_edge_error_m": 6.00366125572474e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 20,
+      "min_world_z_m": -7.916241884231567e-09,
+      "rigid_edge_error_m": 9.241992585031639e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 30,
+      "min_world_z_m": 1.862645149230957e-09,
+      "rigid_edge_error_m": 8.62634201691942e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 35,
+      "min_world_z_m": 7.450580596923828e-09,
+      "rigid_edge_error_m": 9.804005184554584e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 20,
+      "min_world_z_m": -7.916241884231567e-09,
+      "rigid_edge_error_m": 9.241992585031639e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": 0,
+      "min_world_z_m": -1.862645149230957e-08,
+      "rigid_edge_error_m": 6.15948846094394e-08
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "roll_degrees": -10,
+      "min_world_z_m": 0.0,
+      "rigid_edge_error_m": 9.572393122039488e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": -15,
+      "min_world_z_m": 9.313225746154785e-09,
+      "rigid_edge_error_m": 8.459055570592122e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": -10,
+      "min_world_z_m": 1.6763806343078613e-08,
+      "rigid_edge_error_m": 1.1169563363805368e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 0,
+      "min_world_z_m": 1.4901161193847656e-08,
+      "rigid_edge_error_m": 1.13695191701884e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 10,
+      "min_world_z_m": -1.4901161193847656e-08,
+      "rigid_edge_error_m": 9.119319989642563e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 20,
+      "min_world_z_m": -1.4901161193847656e-08,
+      "rigid_edge_error_m": 9.219155568118698e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 30,
+      "min_world_z_m": 0.0,
+      "rigid_edge_error_m": 8.992560386394607e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 35,
+      "min_world_z_m": 2.9802322387695312e-08,
+      "rigid_edge_error_m": 1.158801656592906e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 20,
+      "min_world_z_m": -1.4901161193847656e-08,
+      "rigid_edge_error_m": 9.219155568118698e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": 0,
+      "min_world_z_m": 1.4901161193847656e-08,
+      "rigid_edge_error_m": 1.13695191701884e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "roll_degrees": -10,
+      "min_world_z_m": 1.6763806343078613e-08,
+      "rigid_edge_error_m": 1.1169563363805368e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": -15,
+      "min_world_z_m": 3.725290298461914e-09,
+      "rigid_edge_error_m": 9.508560417596096e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": -10,
+      "min_world_z_m": 1.4901161193847656e-08,
+      "rigid_edge_error_m": 7.511054255903565e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 0,
+      "min_world_z_m": 0.0,
+      "rigid_edge_error_m": 7.850728948877173e-09
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 10,
+      "min_world_z_m": -9.313225746154785e-10,
+      "rigid_edge_error_m": 9.976797203138654e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 20,
+      "min_world_z_m": 5.587935447692871e-09,
+      "rigid_edge_error_m": 1.014661850512466e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 30,
+      "min_world_z_m": 1.862645149230957e-08,
+      "rigid_edge_error_m": 5.521853869462634e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 35,
+      "min_world_z_m": 1.6763806343078613e-08,
+      "rigid_edge_error_m": 7.295828812229829e-08
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 20,
+      "min_world_z_m": 5.587935447692871e-09,
+      "rigid_edge_error_m": 1.014661850512466e-07
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": 0,
+      "min_world_z_m": 0.0,
+      "rigid_edge_error_m": 7.850728948877173e-09
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "roll_degrees": -10,
+      "min_world_z_m": 1.4901161193847656e-08,
+      "rigid_edge_error_m": 7.511054255903565e-08
+    }
+  ],
+  "head_profile_attachment": [
+    {
+      "who": "BOY",
+      "in_plane_delta_degrees": 12,
+      "rigid_head_and_attached_braid_error_m": 1.3328003749250113e-07,
+      "head_mesh": "PERF_BOY | original head",
+      "yaw_test": "NOT SUPPORTED; deliberately no edge-on card or reflected view substitution"
+    },
+    {
+      "who": "GIRL",
+      "in_plane_delta_degrees": 12,
+      "rigid_head_and_attached_braid_error_m": 2.6656007498500226e-07,
+      "head_mesh": "PERF_GIRL | original head and attached braid",
+      "yaw_test": "NOT SUPPORTED; deliberately no edge-on card or reflected view substitution"
+    }
+  ],
+  "original_art_reuse": [],
+  "rest_bones_exact": {
+    "BOY": true,
+    "GIRL": true
+  },
+  "painting_packed_original_hash": [
+    {
+      "image": "Pair_Painterly_Near_Age_v015.png",
+      "packed": true,
+      "sha256": "e7968ec2efa29e176330a74f0557578702b3b5de0a9eb7855a069d1b0f8a5d04"
+    },
+    {
+      "image": "Pair_Painterly_Near_Age_v015.png.001",
+      "packed": true,
+      "sha256": "e7968ec2efa29e176330a74f0557578702b3b5de0a9eb7855a069d1b0f8a5d04"
+    }
+  ],
+  "fresh_collection_append": {
+    "objects": 151,
+    "painted_meshes": 28,
+    "armatures": 2,
+    "external_constraint_or_contour_targets": []
+  },
+  "source_hash_after": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+  "technical_gates": {
+    "16_live_contours": true,
+    "no_old_pose_clock": true,
+    "all12_native_IK_under0_1mm": true,
+    "all16_respond_to_new_native_hip_edit": true,
+    "new_edit_planted_boot_drift_under1micron": true,
+    "all_rolls_floor_under1micron": true,
+    "boots_rigid_under1micron": true,
+    "brace_projected_gap0_to2mm_in_test_range": true,
+    "head_and_braid_profile_rigid_under1micron": true,
+    "original_UVs_and_topology_exact": true,
+    "original_body_weights_exact": true,
+    "original_rest_bones_exact": true,
+    "self_contained_append": true,
+    "source_hash_unchanged": true
+  },
+  "art_readiness": "UNPASSED. Head turn drawings missing; cuffs, garment compression, hand style/contact and silhouettes require visual review. No performance acceptance inferred."
+}

@@ -1,0 +1,334 @@
+{
+  "rna": [
+    {
+      "id": "rna_type",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "type",
+      "type": "STRING",
+      "readonly": true
+    },
+    {
+      "id": "location",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "location_absolute",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "width",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "height",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "dimensions",
+      "type": "FLOAT",
+      "readonly": true
+    },
+    {
+      "id": "name",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "label",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "inputs",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "outputs",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "panel_states",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "internal_links",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "parent",
+      "type": "POINTER",
+      "readonly": false
+    },
+    {
+      "id": "warning_propagation",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "use_custom_color",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "color",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "color_tag",
+      "type": "ENUM",
+      "readonly": true
+    },
+    {
+      "id": "select",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "show_options",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "show_preview",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "hide",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "mute",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "show_texture",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "bl_idname",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "bl_label",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "bl_description",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "bl_icon",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "bl_static_type",
+      "type": "STRING",
+      "readonly": true
+    },
+    {
+      "id": "bl_width_default",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "bl_width_min",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "bl_width_max",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "bl_height_default",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "bl_height_min",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "bl_height_max",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "source",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "scene",
+      "type": "POINTER",
+      "readonly": false
+    },
+    {
+      "id": "image",
+      "type": "POINTER",
+      "readonly": false
+    },
+    {
+      "id": "matte_id",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "add",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "remove",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "layer_name",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "entries",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "frame_duration",
+      "type": "INT",
+      "readonly": false
+    },
+    {
+      "id": "frame_start",
+      "type": "INT",
+      "readonly": false
+    },
+    {
+      "id": "frame_offset",
+      "type": "INT",
+      "readonly": false
+    },
+    {
+      "id": "use_cyclic",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "use_auto_refresh",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "layer",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "has_layers",
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    {
+      "id": "view",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "has_views",
+      "type": "BOOLEAN",
+      "readonly": true
+    }
+  ],
+  "values": {
+    "source": "RENDER",
+    "scene": "<bpy_struct, Scene(\"WTSC_SHARED_COLOR_TO_CHARCOAL_v063\") at 0x000001D9B3C040A0>",
+    "layer_name": "ViewLayer.CryptoObject",
+    "matte_id": ""
+  },
+  "inputs": [
+    "Image"
+  ],
+  "outputs": [
+    "Image",
+    "Matte",
+    "Pick"
+  ],
+  "view_layer": "ViewLayer",
+  "pass_properties": [
+    "use_pass_cryptomatte_object",
+    "use_pass_cryptomatte_material",
+    "use_pass_cryptomatte_asset",
+    "pass_cryptomatte_depth",
+    "use_pass_cryptomatte_accurate"
+  ],
+  "alpha_over_inputs": [
+    {
+      "name": "Background",
+      "identifier": "Background",
+      "type": "RGBA",
+      "value": "<bpy_float[4], NodeSocketColor.default_value>"
+    },
+    {
+      "name": "Foreground",
+      "identifier": "Foreground",
+      "type": "RGBA",
+      "value": "<bpy_float[4], NodeSocketColor.default_value>"
+    },
+    {
+      "name": "Factor",
+      "identifier": "Fac",
+      "type": "VALUE",
+      "value": "1.0"
+    },
+    {
+      "name": "Type",
+      "identifier": "Type",
+      "type": "MENU",
+      "value": "Over"
+    },
+    {
+      "name": "Straight Alpha",
+      "identifier": "Straight Alpha",
+      "type": "BOOLEAN",
+      "value": "False"
+    }
+  ],
+  "alpha_over_outputs": [
+    "Image"
+  ],
+  "old_camera_drivers": [
+    {
+      "expression": "pair_world_x+1.6891200542449951",
+      "vars": [
+        {
+          "name": "pair_world_x",
+          "id": "v016 | CHILDREN | held painterly near-age pair",
+          "type": "TRANSFORMS",
+          "space": "WORLD_SPACE"
+        }
+      ]
+    }
+  ]
+}

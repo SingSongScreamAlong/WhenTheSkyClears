@@ -1,0 +1,54 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Full_Trailer_Editable_v040.blend",
+  "source_sha256": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "world_frames": 2400,
+  "credit_frames": 144,
+  "total_frames": 2544,
+  "total_seconds": 106,
+  "resource_plan": {
+    "maximum_parallel_blender": 4,
+    "threads_per_blender": 3,
+    "world_eevee_samples": 32,
+    "shared_UI": false
+  },
+  "fresh_native_world": true,
+  "cached_old_world_used": false,
+  "mask_reuse": "Unchanged native UHD glyph alpha from preserved v037; native geometry/font/animation signature compared against v038. All world pixels freshly rendered from v040.",
+  "benchmark_comparison": "notes/world_v016/camp_comparison_completed_v039.json",
+  "v001_pack_used": false,
+  "world_workers": [
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_01.log",
+      "start": 1,
+      "end": 600,
+      "pid": 44292
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_02.log",
+      "start": 601,
+      "end": 1200,
+      "pid": 27380
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_03.log",
+      "start": 1201,
+      "end": 1800,
+      "pid": 3832
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v040\\world_04.log",
+      "start": 1801,
+      "end": 2400,
+      "pid": 29192
+    }
+  ]
+}

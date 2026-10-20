@@ -1,0 +1,52 @@
+{
+  "status": "Completed review/fix cycle; v047g is the selected working checkpoint, still artistically unfinished.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Refinement_v047g.blend",
+    "bytes": 76096263,
+    "sha256": "0e3755aecaabc9ee31e2f0000b16e25de13b095d5e7f18c2983b4c8accb4ee54"
+  },
+  "movie4K": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\WTSC_Refinement_v047g_75_80_4K.mp4",
+    "bytes": 10697461,
+    "sha256": "478fb7d4e681db8c6ac291d028280b315863e9752388016d880e2ad8a3056703"
+  },
+  "view1080p": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\WTSC_Refinement_v047g_75_80_View_1080p.mp4",
+    "bytes": 2827296,
+    "sha256": "e0e3baffef6254a6dad01fae42476fb2c635fb797979d9dd32f65b5d218d5b11"
+  },
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "frames": 120,
+  "global_range": [
+    1801,
+    1920
+  ],
+  "seconds": 5,
+  "review": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\visual_review_v047g.json",
+  "cold_verification": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\cold_verification_v047g.json",
+  "assembly": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\assembly_v047g.json",
+  "media_qa": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\media_qa_v047g.json",
+  "prompts_and_reuse": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\reuse_and_prompts.json",
+  "imagegen_assets": [
+    "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Three_Quarter_Right_v047.png",
+    "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Three_Quarter_Left_v047.png",
+    "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Front_v047.png",
+    "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Left_Profile_v047.png",
+    "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png"
+  ],
+  "native_paint_resolution_limit": "Head and bank source paintings are below4K; the output frames/movie are natively3840x2160.",
+  "unchanged_inputs_checked": 35,
+  "owned_render_jobs_remaining": 0,
+  "artistic_acceptance": false,
+  "full_trailer_propagated": false,
+  "next_priorities": [
+    "Whole-body weight and shoulder/elbow acting",
+    "Main explosion and persistent ground interaction",
+    "Remaining paint transition tips",
+    "Other trailer environments"
+  ]
+}

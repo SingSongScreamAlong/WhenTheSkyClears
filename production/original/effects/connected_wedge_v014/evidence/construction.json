@@ -1,0 +1,179 @@
+{
+  "blender": "5.2.2 LTS",
+  "source": "v013 held proof read-only",
+  "camera_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      109.32307434082031
+    ],
+    [
+      0.0,
+      7.549790126404332e-08,
+      -1.0,
+      -16.0
+    ],
+    [
+      0.0,
+      1.0,
+      7.549790126404332e-08,
+      3.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "root": [
+    109.2294692993164,
+    10.0,
+    -0.5300195813179016
+  ],
+  "pixels_per_metre": 205.1282501220703,
+  "fps": 24,
+  "frames": [
+    1,
+    32
+  ],
+  "impact_frame": 7,
+  "connected_ages": [
+    0,
+    7
+  ],
+  "connected_scene_frames": [
+    7,
+    14
+  ],
+  "expanding_heights_metres": [
+    0.09,
+    0.34,
+    0.59,
+    0.77,
+    0.88,
+    0.96,
+    1.005,
+    1.025
+  ],
+  "visible_fragments_after_breakup": 2,
+  "flight": {
+    "upper": {
+      "launch_age": 7,
+      "center": [
+        -0.23916666666666667,
+        0.765
+      ],
+      "vx": -1.2,
+      "vz": 1.6,
+      "spin": -1.3,
+      "landing_seconds": 0.5012150103822887,
+      "landing_age": 19.02916024917493,
+      "landing_x": -0.7015673739456463,
+      "landing_angle": -0.6515795134969753
+    },
+    "shoulder": {
+      "launch_age": 8,
+      "center": [
+        0.15666666666666668,
+        0.5608333333333334
+      ],
+      "vx": 1.0,
+      "vz": 1.1,
+      "spin": 1.65,
+      "landing_seconds": 0.35215740489084063,
+      "landing_age": 16.451777717380175,
+      "landing_x": 0.4473948268963938,
+      "landing_angle": 0.581059718069887
+    }
+  },
+  "pieces": {
+    "body": [
+      "A",
+      "B",
+      "C",
+      "S1",
+      "S2",
+      "J",
+      "K"
+    ],
+    "upper": [
+      "J",
+      "S2",
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "shoulder": [
+      "S1",
+      "C",
+      "D",
+      "E",
+      "F",
+      "S2"
+    ]
+  },
+  "peak_nodes": {
+    "A": [
+      -0.16,
+      0
+    ],
+    "B": [
+      0.13,
+      0
+    ],
+    "C": [
+      0.25,
+      0.22
+    ],
+    "D": [
+      0.4,
+      0.49
+    ],
+    "E": [
+      0.23,
+      0.68
+    ],
+    "F": [
+      0.08,
+      0.865
+    ],
+    "G": [
+      -0.205,
+      1.025
+    ],
+    "H": [
+      -0.43,
+      0.87
+    ],
+    "I": [
+      -0.45,
+      0.65
+    ],
+    "J": [
+      -0.29,
+      0.54
+    ],
+    "K": [
+      -0.28,
+      0.27
+    ],
+    "S1": [
+      0.12,
+      0.47
+    ],
+    "S2": [
+      -0.14,
+      0.64
+    ]
+  },
+  "rough_materials": 2,
+  "smoke": false,
+  "opacity_animation": false,
+  "pigment": false,
+  "incidental_contact_puffs": false,
+  "criterion": "Read one compact rooted ejection and its causal breakup before incidental detail. Native correctness is not artistic acceptance.",
+  "native_sha256": "0db575f1f58c8ad9d3135105282781479621a2adf85505b7b6f9d457668cc9dd"
+}

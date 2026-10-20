@@ -1,0 +1,232 @@
+{
+  "cold_reopened": true,
+  "version": "5.2.2 LTS",
+  "frames": 144,
+  "evaluated_joint_target_error_m": 1.9921388258886206e-06,
+  "bound_proxy_mesh_center_error_m": 1.911075362309191e-06,
+  "native_segment_length_error_m": 1.231950970737028e-06,
+  "floor_min_z_m": -8.214974513975903e-07,
+  "adjacent_flat_stance_vertex_drift_m": 4.852338644407413e-07,
+  "flat_adjacent_pairs": 213,
+  "flat_definition": "State flat AND foot rotation angle below1e-7rad. Toe/heel roll is deliberately excluded; it changes vertices while contact pivot stays fixed.",
+  "support_and_mass_samples": {
+    "BOY_24": {
+      "com_proxy_x": 0.5642340779304504,
+      "support_x_ranges": [
+        [
+          0.4950000047683716,
+          0.4950000047683716
+        ],
+        [
+          0.7549999952316284,
+          0.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_24": {
+      "com_proxy_x": 1.4116251468658447,
+      "support_x_ranges": [
+        [
+          1.1649999618530273,
+          1.375
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_30": {
+      "com_proxy_x": 0.7709075212478638,
+      "support_x_ranges": [
+        [
+          0.5450000166893005,
+          0.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_30": {
+      "com_proxy_x": 1.529834508895874,
+      "support_x_ranges": [
+        [
+          1.1649999618530273,
+          1.375
+        ],
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_40": {
+      "com_proxy_x": 0.968759298324585,
+      "support_x_ranges": [
+        [
+          0.9050000309944153,
+          1.1150000095367432
+        ],
+        [
+          0.5450000166893005,
+          0.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_40": {
+      "com_proxy_x": 1.6067492961883545,
+      "support_x_ranges": [
+        [
+          1.375,
+          1.375
+        ],
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_44": {
+      "com_proxy_x": 0.9835259914398193,
+      "support_x_ranges": [
+        [
+          0.9050000309944153,
+          1.1150000095367432
+        ],
+        [
+          0.7549999952316284,
+          0.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_44": {
+      "com_proxy_x": 1.6187338829040527,
+      "support_x_ranges": [
+        [
+          1.375,
+          1.375
+        ],
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_56": {
+      "com_proxy_x": 1.0180593729019165,
+      "support_x_ranges": [
+        [
+          0.9050000309944153,
+          1.1150000095367432
+        ],
+        [
+          0.7549999952316284,
+          0.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_56": {
+      "com_proxy_x": 1.6375091075897217,
+      "support_x_ranges": [
+        [
+          1.375,
+          1.375
+        ],
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_60": {
+      "com_proxy_x": 1.0374367237091064,
+      "support_x_ranges": [
+        [
+          0.9050000309944153,
+          1.1150000095367432
+        ],
+        [
+          0.7549999952316284,
+          0.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_60": {
+      "com_proxy_x": 1.639654517173767,
+      "support_x_ranges": [
+        [
+          1.375,
+          1.375
+        ],
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_66": {
+      "com_proxy_x": 1.06843101978302,
+      "support_x_ranges": [
+        [
+          0.9050000309944153,
+          1.1150000095367432
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_66": {
+      "com_proxy_x": 1.6495990753173828,
+      "support_x_ranges": [
+        [
+          1.375,
+          1.375
+        ],
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "BOY_78": {
+      "com_proxy_x": 1.2212163209915161,
+      "support_x_ranges": [
+        [
+          1.1150000095367432,
+          1.1150000095367432
+        ],
+        [
+          1.2049999237060547,
+          1.2049999237060547
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    },
+    "GIRL_78": {
+      "com_proxy_x": 1.7583991289138794,
+      "support_x_ranges": [
+        [
+          1.5449999570846558,
+          1.7549999952316284
+        ]
+      ],
+      "interpretation": "Geometric authored mass proxy only; moving CoM may be outside static support during the intentional fall. No force/dynamics pass."
+    }
+  },
+  "protected_sources_preserved": {
+    "locomotion/stumble_polish_continuation_v010/native/WTSC_Stumble_Polish_Continuation_v010.blend": true,
+    "locomotion/stumble_polish_continuation_v010/native/WTSC_v010_Matched_Review_Copy.blend": true,
+    "locomotion/stumble_polish_continuation_v010/WTSC_v010_Matched_5s_Polish_PLUS_Separate_2s_Continuation.mp4": true,
+    "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+    "locomotion/motion_rebuild_unpainted_v011/native/WTSC_Unpainted_Motion_Rebuild_v011.blend": true,
+    "locomotion/motion_rebuild_unpainted_v011/WTSC_v011_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+    "locomotion/motion_rebuild_unpainted_v011/evidence/world_motion_samples.csv": true
+  },
+  "scope": "Technical integrity and authored support data only. Does not establish convincing motion or artistic acceptance."
+}

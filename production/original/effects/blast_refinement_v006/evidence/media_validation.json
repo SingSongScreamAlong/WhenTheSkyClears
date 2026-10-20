@@ -1,0 +1,161 @@
+{
+  "outputs": [
+    {
+      "file": "WTSC_Painted_Impulse_75-80s_v006.mp4",
+      "bytes": 1561131,
+      "sha256": "6c49e1f910023786510eab0383817252efb58a11565ff806973fb87c93bb83b9",
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5.0,
+      "full_decode": true
+    },
+    {
+      "file": "WTSC_Compare_LEFT-v003_RIGHT-Painted-Impulse-v006.mp4",
+      "bytes": 3146936,
+      "sha256": "d0d119b998edae94193ad7f780abb010d1cbeca991106611cf1c0228c6e1432c",
+      "pixels": [
+        3840,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5.0,
+      "full_decode": true
+    },
+    {
+      "file": "WTSC_Ignition_24fps_LEFT-v003_RIGHT-v006.mp4",
+      "bytes": 689217,
+      "sha256": "cc526988b4dd7257d898afb2bf7e8f752dfa9d5d55bcacf81084e1cdae7aa802",
+      "pixels": [
+        1600,
+        480
+      ],
+      "frames": 36,
+      "fps": 24,
+      "seconds": 1.5,
+      "full_decode": true
+    }
+  ],
+  "all120_new_proof_pngs_decoded": true,
+  "same_camera_exposure_Standard_view_and_24fps_as_v003": true,
+  "new_bake": false,
+  "gas_used": false,
+  "child_silhouette_checks": [
+    {
+      "frame": 1832,
+      "protected_pixels": 7334,
+      "max_channel_delta_8bit": 1,
+      "mean_absolute_channel_delta": 0.010862648850104536
+    },
+    {
+      "frame": 1848,
+      "protected_pixels": 7334,
+      "max_channel_delta_8bit": 0,
+      "mean_absolute_channel_delta": 0.0
+    },
+    {
+      "frame": 1860,
+      "protected_pixels": 7334,
+      "max_channel_delta_8bit": 0,
+      "mean_absolute_channel_delta": 0.0
+    },
+    {
+      "frame": 1884,
+      "protected_pixels": 7334,
+      "max_channel_delta_8bit": 0,
+      "mean_absolute_channel_delta": 0.0
+    },
+    {
+      "frame": 1919,
+      "protected_pixels": 7334,
+      "max_channel_delta_8bit": 0,
+      "mean_absolute_channel_delta": 0.0
+    }
+  ],
+  "bloom_ablation": {
+    "frame": 1826,
+    "changed_pixels": 5708,
+    "max_added_channel_8bit": 14,
+    "sum_added_channels": 9773,
+    "added_pixels_outside_raw_fx_alpha": 2859,
+    "comparison": "Identical native scene/frame, only Bloom gain disabled for diagnostic. Outside-alpha support uses the matched factory Append RGBA render."
+  },
+  "transparent_sequence": {
+    "all120_decoded": true,
+    "pixels": [
+      960,
+      540
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "outer_edge_alpha_max": 0,
+    "bounds": [
+      {
+        "frame": 1,
+        "bounds": [
+          466,
+          480,
+          492,
+          496
+        ]
+      },
+      {
+        "frame": 3,
+        "bounds": [
+          422,
+          406,
+          527,
+          496
+        ]
+      },
+      {
+        "frame": 9,
+        "bounds": [
+          311,
+          286,
+          642,
+          507
+        ]
+      },
+      {
+        "frame": 25,
+        "bounds": [
+          223,
+          172,
+          724,
+          523
+        ]
+      },
+      {
+        "frame": 72,
+        "bounds": [
+          206,
+          153,
+          754,
+          500
+        ]
+      },
+      {
+        "frame": 120,
+        "bounds": [
+          343,
+          153,
+          719,
+          500
+        ]
+      }
+    ],
+    "convention": "Straight RGBA PNG, no bloom/scene mask/ground scar"
+  },
+  "source_hashes_unchanged": {
+    "v003": true,
+    "production_v038": true
+  },
+  "native_library_sha256": "c2edf88bc1972362528e7ac1f7a3dc635b3e915c0acf59009c1c7b47f1b1b8c4",
+  "proof_native_sha256": "c6501238e0d1dd9769bc6b607401d604b02ce5d108192f9f4326b9dc109beedb",
+  "status": "Authored refinement candidate; artistic acceptance and moving production shot integration pending."
+}

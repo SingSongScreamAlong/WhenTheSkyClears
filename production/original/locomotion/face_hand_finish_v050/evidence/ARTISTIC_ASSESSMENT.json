@@ -1,0 +1,19 @@
+{
+  "status": "Separate v050 model-finish candidate, not final art acceptance. Frozen positively received v049 preserved.",
+  "concrete_fixes": [
+    "White triangular eye cue and charcoal facial mask replaced by a restrained registered painted face/neck.",
+    "Girl visible forearms/hands now match the painted exposed-skin language.",
+    "Hands have a soft continuous finger arc, grouped fingers and tucked thumb; measured developed length targets retained.",
+    "Horizontal neck registration stripe found in first proof corrected before final static and motion render."
+  ],
+  "review": "Nine existing walk poses, matched neutral/details, all32 decoded first-cycle poses,8 decoded upper-body phases,12 decoded comparisons spanning8cycles. Continuous player playback not observed.",
+  "remaining_visible_limits": [
+    "Original hair retains broader charcoal brush marks than the boy; this pass preserves its identity/painting.",
+    "Heads are fixed profiles; gaze/expression do not act. Hands retain one painted pose and have no finger articulation.",
+    "Clothing remains planar, and dress/braid do not follow steps.",
+    "Movement is exactly the preserved v049/v048 gait. Recovery restart and supporting clasp remain outstanding."
+  ],
+  "technical_tests": "All existing native Actions/rest bones, non-hand geometry, original UVs/packed payloads and original head alpha checked cold. Native hashes frozen;257actual timeline frames rendered and every movie frame decoded. These checks are not art acceptance.",
+  "technical_blockers": [],
+  "all_our_blender_jobs_exited": true
+}

@@ -1,0 +1,782 @@
+{
+  "model": "Coherent eight-pose support/pelvis/step retarget. Original native segment lengths and actual boot hulls; no post-fit hip projection.",
+  "method": "Bounded32variable sagittal least-squares bridge using numpy; native Blender IK remains final controller. Global alternating step distances, free per-pose pelvisX/Z, foot-rocker gains, and swing joint/pitch adaptation solved together.",
+  "variables": [
+    0.4754459528247262,
+    0.47699778563291184,
+    1.0,
+    0.6334952995825474,
+    -0.23562296013908338,
+    0.5897787668503744,
+    -0.1744960076028638,
+    0.5846327024069061,
+    0.053450004626504746,
+    0.6264700786466909,
+    0.09166794174273764,
+    0.6274346441806814,
+    0.30827508517166374,
+    0.5861138282500814,
+    0.31219152591628924,
+    0.5854529898809478,
+    0.5455600641930877,
+    0.6098387686231248,
+    0.5703490613891353,
+    0.61595606853227,
+    0.0333018469009519,
+    0.992884956066096,
+    0.25463444645407,
+    1.116857395245197,
+    -0.0019354685880196097,
+    0.9685627839995324,
+    0.09723158128134125,
+    0.828455884451345,
+    0.7853981633974483,
+    0.6432530975739823,
+    0.4556937476290749,
+    0.21075646788386035
+  ],
+  "steps_m": [
+    0.4754459528247262,
+    0.47699778563291184
+  ],
+  "cycle_stride_m": 0.9524437384576381,
+  "heel_toe_roll_gains": [
+    1.0,
+    0.6334952995825474
+  ],
+  "first_hip_x_origin_shift_m": 0.23562296013908338,
+  "max_leg_direction_error_deg": 7.329237772214213,
+  "min_swing_clearance_m": 0.021998896030996765,
+  "hip_heights_m": [
+    0.5897787668503744,
+    0.5846327024069061,
+    0.6264700786466909,
+    0.6274346441806814,
+    0.5861138282500814,
+    0.5854529898809478,
+    0.6098387686231248,
+    0.61595606853227
+  ],
+  "iterations": 230,
+  "cost": 0.007697639530979352,
+  "history": [
+    {
+      "iteration": 0,
+      "cost": 93.87992202384814,
+      "lambda": 0.004
+    },
+    {
+      "iteration": 10,
+      "cost": 0.025553658188234425,
+      "lambda": 250.0
+    },
+    {
+      "iteration": 20,
+      "cost": 0.024770010360200614,
+      "lambda": 51.2
+    },
+    {
+      "iteration": 30,
+      "cost": 0.007885021616133303,
+      "lambda": 0.06710886400000002
+    },
+    {
+      "iteration": 40,
+      "cost": 0.00776169559387654,
+      "lambda": 2.1474836480000006
+    },
+    {
+      "iteration": 50,
+      "cost": 0.007748918738799874,
+      "lambda": 0.43980465111040007
+    },
+    {
+      "iteration": 60,
+      "cost": 0.007742971492235893,
+      "lambda": 1.125899906842624
+    },
+    {
+      "iteration": 70,
+      "cost": 0.007737707761504525,
+      "lambda": 2.8823037615171176
+    },
+    {
+      "iteration": 80,
+      "cost": 0.007733537571199764,
+      "lambda": 0.5902958103587057
+    },
+    {
+      "iteration": 90,
+      "cost": 0.007729929392732082,
+      "lambda": 1.5111572745182866
+    },
+    {
+      "iteration": 100,
+      "cost": 0.007726473692100984,
+      "lambda": 3.868562622766814
+    },
+    {
+      "iteration": 110,
+      "cost": 0.007723715917879874,
+      "lambda": 0.7922816251426436
+    },
+    {
+      "iteration": 120,
+      "cost": 0.007721155742700034,
+      "lambda": 2.0282409603651677
+    },
+    {
+      "iteration": 130,
+      "cost": 0.007718262479789133,
+      "lambda": 5.19229685853483
+    },
+    {
+      "iteration": 140,
+      "cost": 0.007716129553163973,
+      "lambda": 1.0633823966279332
+    },
+    {
+      "iteration": 150,
+      "cost": 0.0077134886308516445,
+      "lambda": 2.722258935367509
+    },
+    {
+      "iteration": 160,
+      "cost": 0.007711083337585934,
+      "lambda": 0.5575186299632657
+    },
+    {
+      "iteration": 170,
+      "cost": 0.007709090676816779,
+      "lambda": 1.4272476927059603
+    },
+    {
+      "iteration": 180,
+      "cost": 0.007706776221299605,
+      "lambda": 3.653754093327258
+    },
+    {
+      "iteration": 190,
+      "cost": 0.007704778751307292,
+      "lambda": 0.7482888383134225
+    },
+    {
+      "iteration": 200,
+      "cost": 0.007702970799018663,
+      "lambda": 1.9156194260823618
+    },
+    {
+      "iteration": 210,
+      "cost": 0.007700922720756703,
+      "lambda": 4.903985730770846
+    },
+    {
+      "iteration": 220,
+      "cost": 0.007699241181577848,
+      "lambda": 1.0043362776618694
+    }
+  ],
+  "poses": [
+    {
+      "index": 1,
+      "name": "R_CONTACT",
+      "unwrapped_source_frame": 9.75,
+      "wrapped_source_frame": 9.75,
+      "source_seconds_from_first_key": 0.25833333333333336,
+      "seconds_from_study_contact": 0.0,
+      "study_frame_30fps": 1.0,
+      "basis": "Contact onset estimate: right ankle/toe world-forward position approaches a plateau; toe-up foot settles to flat by12. Heel is not a source joint.",
+      "hip_world_xz": [
+        0.0,
+        0.5897787668503744
+      ],
+      "root_travel_m": 0.0,
+      "feet": {
+        "near": {
+          "vertex": 61,
+          "pivot_flat_xz": [
+            -0.0679740384221077,
+            0.011245077475905418
+          ],
+          "anchor_xz": [
+            0.16673537934187938,
+            0.0
+          ],
+          "angle_rad": -0.27042190293393226,
+          "flat_x": 0.23562296013908338,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.20769157365691446,
+            0.10670984270253149
+          ],
+          "clearance_m": 0.0
+        },
+        "far": {
+          "vertex": 46,
+          "pivot_flat_xz": [
+            0.07620387524366379,
+            0.0001070164144039154
+          ],
+          "anchor_xz": [
+            -0.1651708842566816,
+            0.0
+          ],
+          "angle_rad": 0.1473903766132527,
+          "flat_x": -0.24137482549382847,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            -0.2269997606012145,
+            0.10244888210736368
+          ],
+          "clearance_m": 0.0
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          0.5943341999153303,
+          0.1863959915868569
+        ],
+        "far": [
+          -0.17833345213756216,
+          -0.5030461400937751
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          2.208971043887614,
+          0.22879839438888927
+        ],
+        "far": [
+          2.20057403840335,
+          5.872489423736571
+        ]
+      },
+      "pelvis_rad": -0.12735761918513436,
+      "source_foot_pitch_deg": {
+        "near": -15.494033726010732,
+        "far": 13.330559084413048
+      }
+    },
+    {
+      "index": 2,
+      "name": "R_LOADING",
+      "unwrapped_source_frame": 12.0,
+      "wrapped_source_frame": 12.0,
+      "source_seconds_from_first_key": 0.3333333333333333,
+      "seconds_from_study_contact": 0.075,
+      "study_frame_30fps": 3.25,
+      "basis": "Hip height minimum following right contact.",
+      "hip_world_xz": [
+        0.06112695253621958,
+        0.5846327024069061
+      ],
+      "root_travel_m": 0.06912898101708664,
+      "feet": {
+        "near": {
+          "vertex": 46,
+          "pivot_flat_xz": [
+            0.07535888999700546,
+            -2.0489096641540527e-08
+          ],
+          "anchor_xz": [
+            0.3109818501360888,
+            0.0
+          ],
+          "angle_rad": -0.0,
+          "flat_x": 0.23562296013908338,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.23562295455114793,
+            0.1031359639018774
+          ],
+          "clearance_m": 0.0
+        },
+        "far": {
+          "vertex": 44,
+          "pivot_flat_xz": [
+            0.09982137382030487,
+            0.0048875948414206505
+          ],
+          "anchor_xz": [
+            -0.1410744079766422,
+            0.0
+          ],
+          "angle_rad": 0.33414274970726837,
+          "flat_x": -0.24137482549382847,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            -0.2066857686615032,
+            0.11537663887082528
+          ],
+          "clearance_m": 0.0
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          0.6294733678883778,
+          0.018032189333817117
+        ],
+        "far": [
+          -0.25721529951640426,
+          -0.5963264443876358
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          6.765633615702725,
+          0.8595315898739286
+        ],
+        "far": [
+          2.3211789287587314,
+          7.329237772214213
+        ]
+      },
+      "pelvis_rad": -0.12470989858345419,
+      "source_foot_pitch_deg": {
+        "near": -0.0,
+        "far": 30.2211702687275
+      }
+    },
+    {
+      "index": 3,
+      "name": "R_PASSING",
+      "unwrapped_source_frame": 17.75,
+      "wrapped_source_frame": 17.75,
+      "source_seconds_from_first_key": 0.525,
+      "seconds_from_study_contact": 0.26666666666666666,
+      "study_frame_30fps": 9.0,
+      "basis": "Swing left knee passes the projected hip center; this is knee passing, not ankle crossing.",
+      "hip_world_xz": [
+        0.28907296476558814,
+        0.6264700786466909
+      ],
+      "root_travel_m": 0.24579193250519693,
+      "feet": {
+        "near": {
+          "vertex": 46,
+          "pivot_flat_xz": [
+            0.07535888999700546,
+            -2.0489096641540527e-08
+          ],
+          "anchor_xz": [
+            0.3109818501360888,
+            0.0
+          ],
+          "angle_rad": 0.0033409966540040915,
+          "flat_x": 0.23562296013908338,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.2359679514077597,
+            0.10338716163686557
+          ],
+          "clearance_m": 0.0
+        },
+        "far": {
+          "mode": "SWING",
+          "angle_rad": 0.7853981633974483,
+          "ankle_xz": [
+            0.014983328884658698,
+            0.22074941440338675
+          ],
+          "clearance_m": 0.06008039903646528
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          0.08755770044798411,
+          -0.3213556001270981
+        ],
+        "far": [
+          0.0333018469009519,
+          -0.959583109165144
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          1.1935800379573216,
+          -3.7040466502825735
+        ],
+        "far": [
+          0.584033808754088,
+          2.459135176733585
+        ]
+      },
+      "pelvis_rad": -0.15822391043779196,
+      "source_foot_pitch_deg": {
+        "near": 0.3021727355639529,
+        "far": 58.89390871850258
+      }
+    },
+    {
+      "index": 4,
+      "name": "R_UP",
+      "unwrapped_source_frame": 19.0,
+      "wrapped_source_frame": 19.0,
+      "source_seconds_from_first_key": 0.5666666666666667,
+      "seconds_from_study_contact": 0.30833333333333335,
+      "study_frame_30fps": 10.25,
+      "basis": "Hip height maximum during right support.",
+      "hip_world_xz": [
+        0.32729090188182103,
+        0.6274346441806814
+      ],
+      "root_travel_m": 0.284196921959134,
+      "feet": {
+        "near": {
+          "vertex": 46,
+          "pivot_flat_xz": [
+            0.07535888999700546,
+            -2.0489096641540527e-08
+          ],
+          "anchor_xz": [
+            0.3109818501360888,
+            0.0
+          ],
+          "angle_rad": 0.01525742511290233,
+          "flat_x": 0.23562296013908338,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.2372052539367663,
+            0.10427369777174632
+          ],
+          "clearance_m": 0.0
+        },
+        "far": {
+          "mode": "SWING",
+          "angle_rad": 0.6432530975739823,
+          "ankle_xz": [
+            0.121386414456148,
+            0.20728314792664018
+          ],
+          "clearance_m": 0.06002338075947547
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          -0.03157765187698369,
+          -0.33245607586015813
+        ],
+        "far": [
+          0.25463444645407,
+          -0.862222948791127
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          -0.2373877261118306,
+          -2.1037722393377423
+        ],
+        "far": [
+          -0.35530684983463257,
+          1.4183476429421165
+        ]
+      },
+      "pelvis_rad": -0.15397010017860366,
+      "source_foot_pitch_deg": {
+        "near": 1.3799408863527116,
+        "far": 43.78299773804003
+      }
+    },
+    {
+      "index": 5,
+      "name": "L_CONTACT",
+      "unwrapped_source_frame": 25.75,
+      "wrapped_source_frame": 25.75,
+      "source_seconds_from_first_key": 0.7916666666666666,
+      "seconds_from_study_contact": 0.5333333333333333,
+      "study_frame_30fps": 17.0,
+      "basis": "Contact onset estimate: left ankle/toe world-forward speed falls sharply; flat forefoot settles by28. Heel is not a source joint.",
+      "hip_world_xz": [
+        0.5438980453107471,
+        0.5861138282500814
+      ],
+      "root_travel_m": 0.49158386501039386,
+      "feet": {
+        "near": {
+          "vertex": 32,
+          "pivot_flat_xz": [
+            0.14295534789562225,
+            0.010657638311386108
+          ],
+          "anchor_xz": [
+            0.3797368441842922,
+            0.0
+          ],
+          "angle_rad": 0.32847401581298147,
+          "flat_x": 0.23562296013908338,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.2742579041375809,
+            0.13365127463162427
+          ],
+          "clearance_m": 0.0
+        },
+        "far": {
+          "vertex": 71,
+          "pivot_flat_xz": [
+            -0.07277902960777283,
+            0.01223687082529068
+          ],
+          "anchor_xz": [
+            0.6369722014202784,
+            0.0
+          ],
+          "angle_rad": -0.3273337311606145,
+          "flat_x": 0.7110689129638096,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.6801240961868815,
+            0.09927352719830343
+          ],
+          "clearance_m": 0.0
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          -0.3568830654997596,
+          -0.7480148538462367
+        ],
+        "far": [
+          0.530949838812647,
+          0.22927631068339482
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          -2.4679475465919616,
+          -2.527282166731882
+        ],
+        "far": [
+          -3.474940536354262,
+          -0.736200313094671
+        ]
+      },
+      "pelvis_rad": -0.127008593156179,
+      "source_foot_pitch_deg": {
+        "near": 29.70846792107089,
+        "far": -18.754841287773132
+      }
+    },
+    {
+      "index": 6,
+      "name": "L_LOADING",
+      "unwrapped_source_frame": 26.0,
+      "wrapped_source_frame": 26.0,
+      "source_seconds_from_first_key": 0.8,
+      "seconds_from_study_contact": 0.5416666666666666,
+      "study_frame_30fps": 17.25,
+      "basis": "Hip height minimum at early left loading; contact and load are nearly coincident in this clip.",
+      "hip_world_xz": [
+        0.5478144860553726,
+        0.5854529898809478
+      ],
+      "root_travel_m": 0.49926486290118127,
+      "feet": {
+        "near": {
+          "vertex": 30,
+          "pivot_flat_xz": [
+            0.15587879717350006,
+            0.01531512662768364
+          ],
+          "anchor_xz": [
+            0.3934739377143781,
+            0.0
+          ],
+          "angle_rad": 0.35379785963971594,
+          "flat_x": 0.23562296013908338,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.27767635456108947,
+            0.1363877441231334
+          ],
+          "clearance_m": 0.0
+        },
+        "far": {
+          "vertex": 71,
+          "pivot_flat_xz": [
+            -0.07277902960777283,
+            0.01223687082529068
+          ],
+          "anchor_xz": [
+            0.6369722014202784,
+            0.0
+          ],
+          "angle_rad": -0.307910489719175,
+          "flat_x": 0.7110689129638096,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.6820440491004841,
+            0.09841670473569318
+          ],
+          "clearance_m": 0.0
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          -0.338766035821473,
+          -0.7782287719644118
+        ],
+        "far": [
+          0.5341197366862045,
+          0.21986040307363613
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          -0.9129593112344212,
+          -3.6004380422166284
+        ],
+        "far": [
+          -2.7902875263346267,
+          -2.3663138297815935
+        ]
+      },
+      "pelvis_rad": -0.1264010057025254,
+      "source_foot_pitch_deg": {
+        "near": 31.998854879389977,
+        "far": -17.641971528715054
+      }
+    },
+    {
+      "index": 7,
+      "name": "L_PASSING",
+      "unwrapped_source_frame": 34.0,
+      "wrapped_source_frame": 3.0,
+      "source_seconds_from_first_key": 1.0666666666666667,
+      "seconds_from_study_contact": 0.8083333333333333,
+      "study_frame_30fps": 25.25,
+      "basis": "Next-cycle swing right knee passes projected hip center.",
+      "hip_world_xz": [
+        0.781183024332171,
+        0.6098387686231248
+      ],
+      "root_travel_m": 0.7450567954063781,
+      "feet": {
+        "near": {
+          "mode": "SWING",
+          "angle_rad": 0.4556937476290749,
+          "ankle_xz": [
+            0.575909664128358,
+            0.18089607350933604
+          ],
+          "clearance_m": 0.03343686847980551
+        },
+        "far": {
+          "vertex": 61,
+          "pivot_flat_xz": [
+            -0.010560080409049988,
+            3.725290298461914e-09
+          ],
+          "anchor_xz": [
+            0.7005088325547596,
+            0.0
+          ],
+          "angle_rad": -0.02490328301307204,
+          "flat_x": 0.7110689129638096,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.7087656823659375,
+            0.09259940358301484
+          ],
+          "clearance_m": 0.0
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          -0.0019354685880196097,
+          -0.9704982525875521
+        ],
+        "far": [
+          0.16437613111619126,
+          -0.22333619162600846
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          0.0,
+          0.0
+        ],
+        "far": [
+          -0.18328089691560312,
+          0.308569296354044
+        ]
+      },
+      "pelvis_rad": -0.14767821341852097,
+      "source_foot_pitch_deg": {
+        "near": 43.51554748274276,
+        "far": -1.426853012668864
+      }
+    },
+    {
+      "index": 8,
+      "name": "L_UP",
+      "unwrapped_source_frame": 36.0,
+      "wrapped_source_frame": 5.0,
+      "source_seconds_from_first_key": 1.1333333333333333,
+      "seconds_from_study_contact": 0.875,
+      "study_frame_30fps": 27.25,
+      "basis": "Next-cycle hip height maximum during left support.",
+      "hip_world_xz": [
+        0.8059720215282187,
+        0.61595606853227
+      ],
+      "root_travel_m": 0.8065047785326774,
+      "feet": {
+        "near": {
+          "mode": "SWING",
+          "angle_rad": 0.21075646788386035,
+          "ankle_xz": [
+            0.6683395675714296,
+            0.14385276328442323
+          ],
+          "clearance_m": 0.021998896030996765
+        },
+        "far": {
+          "vertex": 61,
+          "pivot_flat_xz": [
+            -0.010560080409049988,
+            3.725290298461914e-09
+          ],
+          "anchor_xz": [
+            0.7005088325547596,
+            0.0
+          ],
+          "angle_rad": -0.024068536729900225,
+          "flat_x": 0.7110689129638096,
+          "mode": "CONTACT_POLYGON_PIVOT",
+          "ankle_xz": [
+            0.7088429764882337,
+            0.09259247894743151
+          ],
+          "clearance_m": 0.0
+        }
+      },
+      "native_leg_angle_rad": {
+        "near": [
+          0.09723158128134125,
+          -0.7312243031700038
+        ],
+        "far": [
+          -0.009143969757666277,
+          -0.1674691631322622
+        ]
+      },
+      "leg_direction_residual_deg": {
+        "near": [
+          -4.138093454762986,
+          -6.6993710950904335
+        ],
+        "far": [
+          0.2893823192643282,
+          6.361438016948288
+        ]
+      },
+      "pelvis_rad": -0.1449885491663338,
+      "source_foot_pitch_deg": {
+        "near": 27.659670737391952,
+        "far": -1.3790255736788868
+      }
+    }
+  ],
+  "limitation": "These are eight poses only; source reference angles and proportions differ, so residuals and foot-pitch adaptations are explicit. No continuous animation or artistic approval."
+}

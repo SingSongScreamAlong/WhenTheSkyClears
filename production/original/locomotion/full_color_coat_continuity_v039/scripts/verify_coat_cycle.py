@@ -1,0 +1,39 @@
+import bpy,json,hashlib,math
+from pathlib import Path
+P=Path(__file__).resolve().parents[1]
+COAT='V037 | coherent charcoal coat | five pose study';CTRL='V037 | garment review values | static pose selector'
+def sha(x):return hashlib.sha256(repr(x).encode()).hexdigest()
+def ah(a):return sha([(fc.data_path,fc.array_index,fc.extrapolation,[(tuple(k.co),k.interpolation,tuple(k.handle_left),tuple(k.handle_right)) for k in fc.keyframe_points],[(m.type,getattr(m,'mode_before',None),getattr(m,'mode_after',None)) for m in fc.modifiers]) for l in a.layers for st in l.strips for bag in st.channelbags for fc in bag.fcurves])
+def mh(m):return sha(([tuple(v.co) for v in m.vertices],[[tuple(p.co) for p in k.data] for k in m.shape_keys.key_blocks] if m.shape_keys else [],[tuple(v.uv) for v in m.uv_layers.active.data] if m.uv_layers.active else [],[(a.name,a.data_type,[getattr(v,'value',None) for v in a.data]) for a in m.attributes if a.data_type=='FLOAT']))
+def mat_sig(m):
+ if not m.use_nodes:return str(m.diffuse_color)
+ return sha(([(n.name,n.bl_idname,[(s.name,tuple(s.default_value) if hasattr(s.default_value,'__len__') else s.default_value) for s in n.inputs if hasattr(s,'default_value') and not isinstance(s.default_value,bpy.types.ID)],[(e.position,tuple(e.color)) for e in n.color_ramp.elements] if n.type=='VALTORGB' else [],getattr(getattr(n,'image',None),'name',None)) for n in m.node_tree.nodes],[(l.from_node.name,l.from_socket.name,l.to_node.name,l.to_socket.name) for l in m.node_tree.links]))
+def load(f):
+ bpy.ops.wm.open_mainfile(filepath=str(f),load_ui=False,use_scripts=False);return bpy.context.scene,bpy.data.objects['LOCO_BOY | RIG']
+def frame(S,f):S.frame_set(int(f),subframe=f-int(f));bpy.context.view_layer.update();S.view_layers['V025 | original foreground'].update()
+def me(a,b):return max(abs(a[i][j]-b[i][j]) for i in range(4) for j in range(4))
+def pts(o,vl):
+ vl.update();e=o.evaluated_get(vl.depsgraph);return [e.matrix_world@v.co for v in e.data.vertices]
+S,R=load(P/'reference/PRESERVED_COLOR_v038.blend');T=R.parent;oldcoat=bpy.data.objects[COAT];coatmesh=oldcoat.data.name;coatUV=sha([tuple(v.uv) for v in oldcoat.data.uv_layers.active.data]);actions={a.name:ah(a) for a in bpy.data.actions};meshes={m.name:mh(m) for m in bpy.data.meshes if m!=oldcoat.data};mats={m.name:mat_sig(m) for m in bpy.data.materials};images={i.name:hashlib.sha256(bytes(i.packed_file.data)).hexdigest() for i in bpy.data.images if i.packed_file};active={o.name:o.animation_data.action.name if o.animation_data and o.animation_data.action else None for o in bpy.data.objects if o.name!=CTRL};fg={o.name for o in bpy.data.collections['V025 | retained foreground identity'].all_objects};names=[o.name for o in S.objects if o.type=='MESH' and not o.hide_render and o.name!=COAT and any(t in o.name for t in ['BOY','V024 continuous','V033 |'])];keyframes=[1,4,8,11,13,17,20,24,27,31,32,63,94];motion={};geometry={}
+samples=sorted(set([float(f) for f in range(1,95)]+[1+i/4 for i in range(125)]))
+for f in samples:
+ frame(S,f);motion[f]={'root':T.matrix_world.copy(),'bones':{b.name:(R.matrix_world@b.matrix).copy() for b in R.pose.bones},'wrists':{side:bpy.data.objects['BOY | WRIST_'+side].matrix_world.copy() for side in ['near','far']}}
+ if f in keyframes:geometry[f]={'meshes':{n:pts(bpy.data.objects[n],S.view_layers['V025 | original foreground'] if n in fg else bpy.context.view_layer) for n in names},'cameras':{n:bpy.data.objects[n].matrix_world.copy() for n in ['V024 | CLOSE portrait','V020 | CHILD | SHOT']}}
+S,R=load(P/'native/WTSC_Full_Color_Coat_Continuity_Rough_v039.blend');T=R.parent;coat=bpy.data.objects[COAT];errors={k:0. for k in ['root_matrix','all_bone_world_matrices','wrist_world_matrices','all_other_visible_mesh_vertices_m','camera_matrices']}
+for f in samples:
+ frame(S,f);src=motion[f];errors['root_matrix']=max(errors['root_matrix'],me(T.matrix_world,src['root']))
+ for b in R.pose.bones:errors['all_bone_world_matrices']=max(errors['all_bone_world_matrices'],me(R.matrix_world@b.matrix,src['bones'][b.name]))
+ for side in ['near','far']:errors['wrist_world_matrices']=max(errors['wrist_world_matrices'],me(bpy.data.objects['BOY | WRIST_'+side].matrix_world,src['wrists'][side]))
+ if f in geometry:
+  for n,V in geometry[f]['meshes'].items():errors['all_other_visible_mesh_vertices_m']=max(errors['all_other_visible_mesh_vertices_m'],max((a-b).length for a,b in zip(V,pts(bpy.data.objects[n],S.view_layers['V025 | original foreground'] if n in fg else bpy.context.view_layer))))
+  for n,M in geometry[f]['cameras'].items():errors['camera_matrices']=max(errors['camera_matrices'],me(M,bpy.data.objects[n].matrix_world))
+changedactions=[n for n,v in actions.items() if n not in bpy.data.actions or ah(bpy.data.actions[n])!=v];changedmeshes=[n for n,v in meshes.items() if mh(bpy.data.meshes[n])!=v];changedmats=[n for n,v in mats.items() if mat_sig(bpy.data.materials[n])!=v];changedimages=[n for n,v in images.items() if hashlib.sha256(bytes(bpy.data.images[n].packed_file.data)).hexdigest()!=v];changedactive=[n for n,v in active.items() if (bpy.data.objects[n].animation_data.action.name if bpy.data.objects[n].animation_data and bpy.data.objects[n].animation_data.action else None)!=v];uvok=coatUV==sha([tuple(v.uv) for v in coat.data.uv_layers.active.data]);local={};compression=[]
+for i in range(373):
+ f=1+i/4;frame(S,f);e=coat.evaluated_get(bpy.context.view_layer.depsgraph);local[f]=[v.co.copy() for v in e.data.vertices];compression.append(bpy.data.objects[CTRL]['compression'])
+def vd(a,b):return max((x-y).length for x,y in zip(a,b))
+looperr=max(vd(local[f],local[f+31]) for f in local if f+31 in local);maxstep=max(vd(local[f],local[f+.25]) for f in local if f+.25 in local);zero_steps=sum(vd(local[f],local[f+.25])<1e-9 for f in local if f+.25 in local);bookend=max(vd(local[1],local[f]) for f in [32,63,94]);h=.001;wrap={}
+for f in [1,31.999,32,32.001,62.999,63,63.001]:
+ frame(S,f);e=coat.evaluated_get(bpy.context.view_layer.depsgraph);wrap[f]=[v.co.copy() for v in e.data.vertices]
+left=[(b-a)/h for a,b in zip(wrap[31.999],wrap[32])];right=[(b-a)/h for a,b in zip(wrap[32],wrap[32.001])];velocityjump=vd(left,right)
+report={'scope':'Cold native technical preservation and coat continuity. Does not establish artistic quality.','blender':bpy.app.version_string,'build_hash':bpy.app.build_hash.decode(),'sampled_body_frames':len(samples),'sampled_range':[1,94],'all_noncoat_active_object_actions_changed':changedactive,'original_action_datablocks_mutated':changedactions,'other_mesh_rest_shape_UV_and_float_attributes_changed':changedmeshes,'material_node_defaults_ramps_links_images_changed':changedmats,'packed_image_bytes_changed':changedimages,'coat_UVs_unchanged':uvok,'preservation_errors':errors,'quarter_frame_coat_samples_three_cycles':len(local),'local_coat_bookend_error_m':bookend,'local_coat_repeat_error_m':looperr,'max_quarter_frame_local_vertex_step_m':maxstep,'held_quarter_frame_intervals':zero_steps,'cycle_boundary_max_local_vertex_velocity_change_m_per_source_frame':velocityjump,'compression_range':[min(compression),max(compression)],'intentional_changes':['Only coat shape-key breakdown action and compression custom-property action replaced.','Same full-color palette, UVs, image bytes and layer order.','Small settled hem lag and continuous loading compression.'],'artistic_limits':['Coat may still read fitted/flat; existing painting is pattern, not modeled fabric volume.','Existing crowded passing feet and paired acting remain outside this bounded coat pass.']}
+(P/'evidence/COLD_COAT_CONTINUITY_AND_PRESERVATION.json').write_text(json.dumps(report,indent=2));assert not(changedactions or changedmeshes or changedmats or changedimages or changedactive) and uvok and max(errors.values())<1e-7 and looperr<2e-6 and bookend<2e-6 and zero_steps==0;print('V039_COLD_CHECK_PASS',json.dumps(report),flush=True)

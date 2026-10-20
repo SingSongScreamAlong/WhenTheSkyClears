@@ -1,0 +1,182 @@
+{
+  "status": "FOCUSED_UPPER_BODY_COMPARISON_DELIVERED_ART_REVIEW_OPEN",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\upper_body_pose_refinement_v028\\native\\WTSC_Upper_Body_Pose_Refinement_v028.blend",
+  "native_bytes": 2493177,
+  "native_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+  "private_preview": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v028_vs_v027_Upper_Body_Comparison_27p9s.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v028_vs_v027_Upper_Body_Comparison_27p9s.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 5941342,
+    "external_connectors_accessed": false
+  },
+  "preview": {
+    "filename": "WTSC_v028_vs_v027_Upper_Body_Comparison_27p9s.mp4",
+    "bytes": 5941342,
+    "sha256": "d6c6063bcbb3593810e7739d5bdb9d104e7c87bf6a0e1fd339b74b8af66a3ef9",
+    "frames_decoded": 837,
+    "fps": 30.0,
+    "duration_seconds": 27.9,
+    "dimensions": [
+      1280,
+      800
+    ],
+    "candidate_only_segments": [
+      {
+        "filename": "WTSC_v028_CLOSE_9p3s_Normal_Speed.mp4",
+        "frames": 279,
+        "seconds": 9.3,
+        "bytes": 2213110
+      },
+      {
+        "filename": "WTSC_v028_SHOT_9p3s_Normal_Speed.mp4",
+        "frames": 279,
+        "seconds": 9.3,
+        "bytes": 797144
+      }
+    ],
+    "comparison_segments": [
+      {
+        "start_seconds": 0,
+        "seconds": 9.3,
+        "view": "matched close, baseline left / v028 right"
+      },
+      {
+        "start_seconds": 9.3,
+        "seconds": 9.3,
+        "view": "baseline shot framing"
+      },
+      {
+        "start_seconds": 18.6,
+        "seconds": 9.3,
+        "view": "v028 shot framing"
+      }
+    ],
+    "cycles_per_segment": 9,
+    "native_period_frames": 31,
+    "duplicate_boundary_frames": false,
+    "retiming_or_generated_inbetweens": false,
+    "blue_fill_artifact_frames": [],
+    "continuous_playback_observed": false,
+    "visual_review_status": "Inspected all32native pose frames, matched key/breakdown and shot boards, actual encoded first-cycle comparison, full-size encoded F4/F20/F26, late joins throughF278/279 and matched encoded shot frames. Hand/coat separation remains clearer at the inspected passing/front-swing poses; no new head/hair damage, color glitch or abrupt coat join seen. Frame review only; continuous normal-speed playback unobserved."
+  },
+  "changes": [
+    "Restrained trunk bend/release beneath preserved head, -1.6 to+.65degrees relative tov027",
+    "Individually authored near/far upper-arm and elbow-flex spacing",
+    "Forearm reversal delays1.5/1frames; hand delays.75/.5frames, relaxed wrist direction",
+    "Coat attachment/compression derived from changed body, <=5mm waist compression and small damped hem correction"
+  ],
+  "pose_review_before_long_render": {
+    "status": "POSE_CHANGE_WARRANTS_NORMAL_SPEED_COMPARISON_NOT_ART_ACCEPTANCE",
+    "actually_inspected": [
+      "MATCHED_KEY_AND_BREAKDOWN_POSES.jpg",
+      "MATCHED_SHOT_POSES.jpg",
+      "full native CLOSE F4, F11, F20, F27"
+    ],
+    "observed_improvements": [
+      "F11 and F27 foreground hand/forearm project beyond the coat profile more clearly than v027.",
+      "F20 shows a clearer elbow break and less merged hand/coat silhouette.",
+      "Trunk/waist bend is restrained beneath the preserved head, with no apparent new collar gap in these poses."
+    ],
+    "observed_remaining_weaknesses": [
+      "The painted shoulder/sleeve contour remains angular.",
+      "The broad coat front panel still has little local shape articulation.",
+      "Passing knees/boots retain the same tight overlap as v027.",
+      "Forearms remain narrow painted shapes; clearer separation is not equivalent to finished natural arm motion."
+    ],
+    "playback_uncertainties": [
+      "Whether staggered arm reversals feel relaxed or like forward reaching",
+      "Whether the repeated torso settle still reads as a nod",
+      "Whether coat release feels passive rather than a rigid panel"
+    ],
+    "continuous_playback_observed": false,
+    "production_integration": false
+  },
+  "technical_safeguards_not_art_acceptance": {
+    "first_cycle_samples": 125,
+    "later_contact_repeats": 9,
+    "max_preserved_mesh_errors_m": {
+      "PERF_BOY | original head": 2.6656007498500226e-07,
+      "V007_BOY | redrawn support boot near": 0.0,
+      "V007_BOY | redrawn support boot far": 0.0,
+      "V024 continuous near trouser drawing": 0.0,
+      "V024 continuous far trouser drawing": 0.0
+    },
+    "max_root_matrix_error": 0.0,
+    "max_head_world_control_matrix_error": 1.7881393432617188e-07,
+    "unreachable_samples": 0
+  },
+  "head_preservation": "HEAD_PROFILE is parented to CHEST. Its local keys compensate the changed parent so v027 world profile/head motion is preserved; actual deformed head checked in foreground view-layer depsgraph.",
+  "actual_continuous_playback_observed": false,
+  "visual_review": "Inspected all32native pose frames, matched key/breakdown and shot boards, actual encoded first-cycle comparison, full-size encoded F4/F20/F26, late joins throughF278/279 and matched encoded shot frames. Hand/coat separation remains clearer at the inspected passing/front-swing poses; no new head/hair damage, color glitch or abrupt coat join seen. Frame review only; continuous normal-speed playback unobserved.",
+  "remaining_art": [
+    "The painted shoulder/sleeve contour remains angular.",
+    "The broad coat front panel still has little local shape articulation.",
+    "Passing knees/boots retain the same tight overlap as v027.",
+    "Forearms remain narrow painted shapes; clearer separation is not equivalent to finished natural arm motion.",
+    "Whether staggered arm reversals feel relaxed or like forward reaching",
+    "Whether the repeated torso settle still reads as a nod",
+    "Whether coat release feels passive rather than a rigid panel",
+    "This remains a repeated solo walk. Differentiated paired fatigue, support contact and recovery restart in75-80seconds are unfinished."
+  ],
+  "integration_contract": {
+    "fps": 30,
+    "period_frames": 31,
+    "stride_m": 0.9524437384576381,
+    "root": "D=.9524437384576381*(F-1)/31m +X, unwrapped",
+    "nominal_speed_mps": 0.9217197468944884,
+    "near_contact_frame": 1,
+    "far_contact_frame": 17,
+    "foot_pelvis_root_trouser_curves_changed": false,
+    "production_24fps_mapping": "F_native=1+phase_q+30*(F_film-F_film_start)/24; resample GP/drawing exposures, transform root AND separate world sole goals consistently"
+  },
+  "guide": "V028_VIEWING_AND_IMPORT_GUIDE.txt",
+  "travel_curve": "V028_TRAVEL_AND_SUPPORT_QUARTER_FRAMES.csv",
+  "source_preservation": {
+    "v046": {
+      "path": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v027_preserved_baseline": {
+      "original_sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+      "copy_sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+      "unchanged": true
+    }
+  },
+  "render_coordination": "CPU-gated threads2, world task explicitly released slot. Small matched poses reviewed first. Long558frame render released immediately after Blender exit.",
+  "no_production_integration": true,
+  "blockers": [
+    {
+      "action": "Observe continuous normal-speed playback for artistic acceptance",
+      "target": "WTSC_v028_vs_v027_Upper_Body_Comparison_27p9s.mp4",
+      "reason": "No observable running player is exposed in this task. All837frames decoded, actual encoded poses/joins inspected.",
+      "status": "PENDING_CONRAD_VIEWING_FEEDBACK",
+      "denied": false
+    }
+  ]
+}

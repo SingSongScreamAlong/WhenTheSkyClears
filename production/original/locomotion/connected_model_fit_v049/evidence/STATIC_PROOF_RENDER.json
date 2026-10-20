@@ -1,0 +1,103 @@
+{
+  "source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\weight_loading_v048\\native\\WTSC_Connected_Weight_Loading_v048.blend": "eeefa9ea2059a613d796277d6dfebfabe84a89b1c31470b585e5475fcb35001b",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\connected_model_fit_v049\\native\\WTSC_Connected_Model_Fit_v049.blend": "2f78c5cd86b96d437d97a165b8b61473bcd6c9d1ab284015c229bfb11c6f9a94"
+  },
+  "views": [
+    {
+      "version": "BEFORE",
+      "view": "WALK_F01",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "BEFORE",
+      "view": "WALK_F05",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "BEFORE",
+      "view": "WALK_F09",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "BEFORE",
+      "view": "NEUTRAL_SIDE",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "BEFORE",
+      "view": "ARMS_WRISTS_HANDS_DETAIL",
+      "camera_width_m": 1.600000023841858,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "AFTER",
+      "view": "WALK_F01",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "AFTER",
+      "view": "WALK_F05",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "AFTER",
+      "view": "WALK_F09",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "AFTER",
+      "view": "NEUTRAL_SIDE",
+      "camera_width_m": 3.25,
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "version": "AFTER",
+      "view": "ARMS_WRISTS_HANDS_DETAIL",
+      "camera_width_m": 1.600000023841858,
+      "resolution": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "sources_unchanged": true,
+  "neutral_pose": "Actual rest bones, sleeve/leg cache regenerated to rest axes for each version; no anatomy rescale.",
+  "walk_pose": "Same v048 F5, same bone/root/camera Actions.",
+  "arm_detail": "Same neutral pose, bodies hidden only in RAM,1.6m camera width; no joint spreading or hand resizing for the review.",
+  "scope": "Static model construction proof, not additional motion polish or final model approval."
+}

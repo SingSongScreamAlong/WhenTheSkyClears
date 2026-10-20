@@ -1,0 +1,78 @@
+WHEN THE SKY CLEARS | FIRST-DANGER CONTINUATION | v067
+19 October 2026 | Seven-second candidate; full trailer remains separate
+
+WATCH
+previews/WTSC_First_Danger_Before_After_WORLD_v067_24fps.mp4
+Left: the v066 version just reviewed. Right: the new v067 refinement.
+Seven seconds at normal24fps, same global38-45s camera/music/color clock.
+
+previews/WTSC_First_Danger_Before_After_TITLE_v067_24fps.mp4
+The same comparison through the inherited final title treatment.
+
+STANDALONE AFTER
+previews/WTSC_First_Danger_Acting_v067_Unmasked_24fps.mp4
+previews/WTSC_First_Danger_Acting_v067_Title_24fps.mp4
+
+EDITABLE NATIVE
+native/WTSC_First_Danger_Acting_v067e.blend
+Scene: WTSC_FIRST_DANGER_ACTING_WORLD_v067
+G913-1080,24fps,3840x2160 native. Review panels are1280x720.
+
+CHANGES FROM v066
+- The near-arm solver now keeps a stable elbow bend during walking. The girl's
+  backward reach transitions continuously from natural walking FK into its final
+  bend, avoiding an elbow pop when the wrist crosses beneath the shoulder.
+- A short settling movement after the hands meet changes the linked wrists,
+  shoulders and chest; the boy's body response follows the girl's later.
+- The hand approach stays open longer, then the original native finger shapes
+  close. A small cupped-palm corrective groups the fingertips. The clasp is angled
+  rather than remaining a level bar between two arms.
+- The free arms bend into a closer guard during the recoil and relax back toward
+  their travel motion. Existing sleeves were refit to the actual changed joints.
+- Head pitch responds to the offered hand and lifts again after connection.
+- Two brief, offset blink events per child use native skin/ink eyelid drawings
+  sampled from the existing shared skin painting, with the original color clock.
+  A compression-only pilot was too weak at viewing size and is disabled in the
+  final native. No new face painting or alternate design was substituted.
+- The girl's attached braid has a restrained two-frame follow-through correction
+  based on the source head movement, retaining its original pigment and UVs.
+
+PRESERVED
+Both children's evaluated boots, pelvis matrices and the world camera match
+v066 exactly across335half-frame samples. The original planted-foot motion,
+per-child check travel and lower-body weight treatment are retained. All packed
+painting payloads match the source. New native shape keys and actions remain
+editable. v066 and the complete trailer sources are untouched.
+
+REVIEW
+Judge the full seven seconds at normal speed, especially the hand approach,
+contact settle, free-arm shapes and the following steps. The existing profile
+paintings are still the facial basis; a full head-turn drawing package has not
+been created in this pass. This is a refinement candidate for the user's visual
+review, not a claim of final animation quality or approval for full integration.
+
+EVIDENCE
+evidence/BUILD.json                Native source, hashes, authored changes and clocks.
+evidence/COLD_VALIDATION.json      Independent mechanical save/reopen checks.
+evidence/PRESERVED_MOTION.json     Exact v066 boots/pelvis/camera comparison.
+evidence/MOVIE_BATCHES_C.json      Native d cache, nonoverlapping render ranges.
+evidence/EARLY_BATCHES_E.json      Fresh stable-elbow renders G913-983.
+evidence/FINAL_FRAME_PROVENANCE.json
+                                  Native-source hashes and later pixel witnesses.
+evidence/DELIVERY.json             Actual normal-speed encoded outputs and decode.
+evidence/REVIEW_QA.json            Timestamp, audio and encoded-color readback.
+renders/uhd_C/                    Actual UHD keys, masked and unmasked.
+previews/Matched_Acting_Before_After.jpg
+previews/Actual_After_Chronology_1.jpg
+previews/Actual_After_Chronology_2.jpg
+
+The selected sources and guide are preserved under evidence/. No packages,
+external assets, installations, new music or changes to the full trailer were
+introduced. Technical validation supports but does not replace artistic review.
+
+RENDER PROVENANCE
+The final native e changes the early elbow path. G913-983 were freshly rendered
+from e. The later drawing endpoints agree with native d within0.000000282m;
+fresh native e world/title witnesses at G990/G1016 check against the unchanged
+native d pixel caches. Those later pixels are reused with source/frame hashes.
+The editable final native can render the complete passage directly.

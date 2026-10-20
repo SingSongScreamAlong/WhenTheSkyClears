@@ -1,0 +1,1285 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\work\\production_review_v059\\WTSC_Production_Benchmark_v059.blend",
+  "blender": "5.2.2 LTS",
+  "sha256": "989b9a1fb0eba82158419fe2a596b0729180ecadf297db12eea4f74520e4b3c6",
+  "scenes": [
+    {
+      "name": "WTSC_5S_REVIEW_MASTER_v059",
+      "frames": [
+        1,
+        120
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v059\\WTSC_Recovery_Benchmark_v059",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 0,
+      "types": {},
+      "camera": null,
+      "markers": [],
+      "strips": [
+        {
+          "name": "75-80s paired recovery | original clock1801-1920",
+          "type": "SCENE",
+          "start": 1,
+          "end_exclusive": 121,
+          "scene": "WTSC_RECOVERY_WORLD_v059",
+          "sound": null,
+          "sound_packed": null
+        },
+        {
+          "name": "Supplied music | original75-80 seconds",
+          "type": "SOUND",
+          "start": 1,
+          "end_exclusive": 121,
+          "scene": null,
+          "sound": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+          "sound_packed": true
+        }
+      ]
+    },
+    {
+      "name": "WTSC_OPEN_5S_REFINEMENT_MASTER_v048a",
+      "frames": [
+        1801,
+        1920
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//..\\..\\renders\\world_v016\\integration_v046\\REVIEW_ONLY_4K_NATIVE_DEFAULTS",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 0,
+      "types": {},
+      "camera": null,
+      "markers": [],
+      "strips": [
+        {
+          "name": "Native live open-frame battlefield |120frames",
+          "type": "SCENE",
+          "start": 1801,
+          "end_exclusive": 1921,
+          "scene": "WTSC_OPEN_BATTLEFIELD_REFINEMENT_v048a",
+          "sound": null,
+          "sound_packed": null
+        },
+        {
+          "name": "Supplied music | original75\u201380s",
+          "type": "SOUND",
+          "start": 1801,
+          "end_exclusive": 1921,
+          "scene": null,
+          "sound": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+          "sound_packed": true
+        }
+      ]
+    },
+    {
+      "name": "WTSC_OPEN_BATTLEFIELD_REFINEMENT_v048a",
+      "frames": [
+        1801,
+        1920
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//..\\..\\renders\\world_v016\\integration_v046\\REVIEW_ONLY_4K_NATIVE_DEFAULTS",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 825,
+      "types": {
+        "MESH": 536,
+        "CAMERA": 2,
+        "GREASEPENCIL": 5,
+        "LIGHT": 6,
+        "FONT": 1,
+        "EMPTY": 24,
+        "ARMATURE": 6,
+        "CURVE": 245
+      },
+      "camera": "v032 | Camera follows shared pair center",
+      "markers": [
+        {
+          "name": "VILLAGE | warm painted depth",
+          "frame": 1
+        },
+        {
+          "name": "ABANDONED VILLAGE",
+          "frame": 433
+        },
+        {
+          "name": "WOODS | two wind layers",
+          "frame": 673
+        },
+        {
+          "name": "SCHOOL",
+          "frame": 961
+        },
+        {
+          "name": "CAMP | wind and smoke",
+          "frame": 1249
+        },
+        {
+          "name": "BATTLEFIELD",
+          "frame": 1609
+        },
+        {
+          "name": "TITLE TERRAIN",
+          "frame": 1921
+        },
+        {
+          "name": "MUSIC FADE",
+          "frame": 2161
+        },
+        {
+          "name": "FINAL WIDE",
+          "frame": 2305
+        },
+        {
+          "name": "PICTURE FADE",
+          "frame": 2353
+        }
+      ],
+      "strips": []
+    },
+    {
+      "name": "WTSC_RECOVERY_WORLD_v059",
+      "frames": [
+        1801,
+        1920
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v059\\WTSC_RECOVERY_WORLD_v059",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 745,
+      "types": {
+        "MESH": 618,
+        "CAMERA": 3,
+        "EMPTY": 9,
+        "GREASEPENCIL": 9,
+        "LIGHT": 7,
+        "FONT": 1,
+        "ARMATURE": 2,
+        "CURVE": 96
+      },
+      "camera": "v059 | Independent camera | baked from reviewed recovery",
+      "markers": [
+        {
+          "name": "VILLAGE | warm painted depth",
+          "frame": 1
+        },
+        {
+          "name": "ABANDONED VILLAGE",
+          "frame": 433
+        },
+        {
+          "name": "WOODS | two wind layers",
+          "frame": 673
+        },
+        {
+          "name": "SCHOOL",
+          "frame": 961
+        },
+        {
+          "name": "CAMP | wind and smoke",
+          "frame": 1249
+        },
+        {
+          "name": "BATTLEFIELD",
+          "frame": 1609
+        },
+        {
+          "name": "TITLE TERRAIN",
+          "frame": 1921
+        },
+        {
+          "name": "MUSIC FADE",
+          "frame": 2161
+        },
+        {
+          "name": "FINAL WIDE",
+          "frame": 2305
+        },
+        {
+          "name": "PICTURE FADE",
+          "frame": 2353
+        }
+      ],
+      "strips": []
+    },
+    {
+      "name": "WTSC_TITLE_VISIBILITY_REVIEW_v059",
+      "frames": [
+        1801,
+        1920
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v059\\WTSC_TITLE_VISIBILITY_REVIEW_v059",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 7,
+      "types": {
+        "CAMERA": 1,
+        "FONT": 6
+      },
+      "camera": "v032 | Flat title camera",
+      "markers": [],
+      "strips": []
+    }
+  ],
+  "images": [
+    {
+      "name": "Bakery_Detail_Repaint.png",
+      "source": "FILE",
+      "size": [
+        1356,
+        1159
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Bakery_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Bakery_Detail_Repaint.png.001",
+      "source": "FILE",
+      "size": [
+        1356,
+        1159
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Bakery_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Battlefield_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Battlefield_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Battlefield_v001.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Battlefield_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Camp_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Camp_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Camp_v001.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Camp_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Countryside_Continuous_Panorama.png",
+      "source": "FILE",
+      "size": [
+        1983,
+        793
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v026\\Countryside_Continuous_Panorama.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Countryside_Continuous_Panorama.png.001",
+      "source": "FILE",
+      "size": [
+        1983,
+        793
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v026\\Countryside_Continuous_Panorama.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Foreground_Bank_Paintover_v047.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Foreground_Bank_Paintover_v047.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+      "external_path_exists": true,
+      "users": 8
+    },
+    {
+      "name": "Foreground_Ground.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Foreground_Ground.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Foreground_Ground.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Foreground_Ground.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "FXv002 original detailed eruption | packed",
+      "source": "FILE",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v002\\assets\\Hero_Explosion_Paint_v002.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "FXv002 original granular ground surge | packed",
+      "source": "FILE",
+      "size": [
+        2172,
+        724
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v002\\assets\\Ground_Dust_Paint_v002.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+      "source": "FILE",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v003\\assets\\Cold_Smoke_Atlas_4Forms_v003.png",
+      "external_path_exists": true,
+      "users": 13
+    },
+    {
+      "name": "FXv015 | original imagegen four painted soil stages | packed RGBA",
+      "source": "FILE",
+      "size": [
+        2172,
+        724
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\assets\\Painted_Soil_Rupture_4Stages_v015b.png",
+      "external_path_exists": true,
+      "users": 6
+    },
+    {
+      "name": "Girl_Front_v047.png",
+      "source": "FILE",
+      "size": [
+        1199,
+        1312
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Front_v047.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Girl_Left_Profile_v047.png",
+      "source": "FILE",
+      "size": [
+        1199,
+        1312
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Left_Profile_v047.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Girl_Three_Quarter_Left_v047.png",
+      "source": "FILE",
+      "size": [
+        1199,
+        1312
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Three_Quarter_Left_v047.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Girl_Three_Quarter_Right_v047.png",
+      "source": "FILE",
+      "size": [
+        1199,
+        1312
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Three_Quarter_Right_v047.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Ground_Painted_v001.png",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Ground_Painted_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Ground_Painted_v001.png.001",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Ground_Painted_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "High_Crown_Oak.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v030\\High_Crown_Oak.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "High_Crown_Oak.png.001",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v030\\High_Crown_Oak.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Painted_Smoke_Wisp_v016.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\Painted_Smoke_Wisp_v016.png",
+      "external_path_exists": true,
+      "users": 31
+    },
+    {
+      "name": "Painted_Smoke_Wisp_v016.png.001",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\Painted_Smoke_Wisp_v016.png",
+      "external_path_exists": true,
+      "users": 31
+    },
+    {
+      "name": "Painterly_Flame.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\v036\\Painterly_Flame.png",
+      "external_path_exists": true,
+      "users": 8
+    },
+    {
+      "name": "Painterly_Flame.png.001",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\v036\\Painterly_Flame.png",
+      "external_path_exists": true,
+      "users": 8
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 7
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\shots\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": false,
+      "users": 14
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.002",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\shots\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": false,
+      "users": 17
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.003",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\shots\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": false,
+      "users": 18
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.004",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 7
+    },
+    {
+      "name": "Path_Detail_Repaint.png",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Path_Detail_Repaint.png.001",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Path_Detail_Repaint.png.002",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Path_Detail_Repaint.png.003",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "School_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\School_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "School_v001.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\School_v001.png",
+      "external_path_exists": true,
+      "users": 3
+    },
+    {
+      "name": "Village_Empty_v001.png",
+      "source": "FILE",
+      "size": [
+        1671,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Empty_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Village_Empty_v001.png.001",
+      "source": "FILE",
+      "size": [
+        1671,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Empty_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Village_Middle.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Village_Middle.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Village_Middle.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Village_Middle.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Woods_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Woods_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Woods_v001.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Woods_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v056\\WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+      "external_path_exists": true,
+      "users": 1
+    }
+  ],
+  "unpacked_missing_images": [],
+  "libraries": [],
+  "sounds": [
+    {
+      "name": "When_The_Sky_Clears_Trailer_Music_100s.wav",
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Arial Black",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Black.001",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Black.002",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Regular",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\arial.ttf"
+    },
+    {
+      "name": "Bfont Regular",
+      "packed": false,
+      "path": "<builtin>"
+    },
+    {
+      "name": "Bfont Regular.001",
+      "packed": false,
+      "path": "<builtin>"
+    },
+    {
+      "name": "Impact Regular.001",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\impact.ttf"
+    }
+  ],
+  "actors": [
+    {
+      "name": "FXv015 | GP | Collapse original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FXv015 | GP | Ignition original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FXv015 | GP | MainFan original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FXv015 | GP | RisingTear original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LOCO_BOY | RIG",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_BOY | RIG.001",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_BOY | RIG.002",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_GIRL | RIG",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 18
+    },
+    {
+      "name": "LOCO_GIRL | RIG.001",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 18
+    },
+    {
+      "name": "LOCO_GIRL | RIG.002",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 18
+    },
+    {
+      "name": "v016 | CHILDREN | held painterly near-age pair",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 3,
+        "keys": 410,
+        "key_range": [
+          1.0,
+          2400.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "HELD | near-age painted children | native vector boundary",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v016 | CHILDREN | held painterly near-age pair.001",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 3,
+        "keys": 410,
+        "key_range": [
+          1.0,
+          2400.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "HELD | near-age painted children | native vector boundary",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v047 | GP contour | Girl_Front_v047",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-derived editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v047 | GP contour | Girl_Three_Quarter_Left_v047",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-derived editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v047 | GP contour | Girl_Three_Quarter_Right_v047",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-derived editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v047g | GP matching left profile contour",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Matching painted profile outline",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": 153,
+  "driver_count": 2526,
+  "drivers_with_missing_targets": [],
+  "invalid_drivers_after_samples": [],
+  "color_controller": null,
+  "color_samples": [],
+  "source_sha256_unchanged": true,
+  "inspection_limits": "Read-only native sample; auto-run source scripts disabled. No claim of all-frame render, playback quality, or artistic approval."
+}

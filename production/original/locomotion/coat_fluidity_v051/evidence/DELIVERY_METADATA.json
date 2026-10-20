@@ -1,0 +1,93 @@
+{
+  "version": "v051",
+  "native_candidate_sha256": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f",
+  "frozen_baseline_sha256": "1721ae5ce9146e9d0379419d153c64ef09a122074a972a8e4bd68fb1953d176e",
+  "source_and_production_unchanged": true,
+  "preview_names": {
+    "silhouette": "WTSC_v050_v051_Same_Pose_Coat_And_Silhouette.png",
+    "neutral": "WTSC_v050_v051_Same_Gait_Full_Pose_Proof.png",
+    "actual": "WTSC_Controlled_Fluid_Coat_v051_Actual_NormalSpeed.mp4",
+    "comparison": "WTSC_v050_vs_v051_Cloth_Only_Same_Gait.mp4",
+    "detail": "WTSC_v050_vs_v051_Coat_Detail_NormalSpeed.mp4"
+  },
+  "verified_private_library": {
+    "WTSC_v050_v051_Same_Pose_Coat_And_Silhouette.png": {
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    },
+    "WTSC_v050_v051_Same_Gait_Full_Pose_Proof.png": {
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    },
+    "WTSC_Controlled_Fluid_Coat_v051_Actual_NormalSpeed.mp4": {
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    },
+    "WTSC_v050_vs_v051_Cloth_Only_Same_Gait.mp4": {
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    },
+    "WTSC_v050_vs_v051_Coat_Detail_NormalSpeed.mp4": {
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    }
+  },
+  "movies": [
+    {
+      "file_name": "WTSC_Controlled_Fluid_Coat_v051_Actual_NormalSpeed.mp4",
+      "bytes": 3707000,
+      "sha256": "dedbd1cdf40af99de5ab0008817e218256aad6d24603d2c454de2e583009e934",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1280,
+        800
+      ],
+      "under_20_MB": true,
+      "same_v050_gait": true
+    },
+    {
+      "file_name": "WTSC_v050_vs_v051_Cloth_Only_Same_Gait.mp4",
+      "bytes": 4981797,
+      "sha256": "86604986ea64856e3646cf01ce451ba3df71c63564ef2b8ba8defec2407f6e21",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true,
+      "same_v050_gait": true
+    },
+    {
+      "file_name": "WTSC_v050_vs_v051_Coat_Detail_NormalSpeed.mp4",
+      "bytes": 1958232,
+      "sha256": "c494fa7b78186ca8f43bb200fa0927f323e8cc55dc352f3a1ca83a43de112f58",
+      "decoded_frames": 129,
+      "fps": 30,
+      "duration_seconds": 4.3,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true,
+      "same_v050_gait": true
+    }
+  ],
+  "review": {
+    "status": "cloth-only candidate, not artistic acceptance",
+    "frozen_gait_and_body_timing": true,
+    "visual_assessment": "Neutral hem and waist contour are softer; actual coat movement is subtle at full shot size. No new visible contact or anchor issue in the decoded review boards. The paired walk still reads mechanically regular, and this cloth test does not solve that.",
+    "separate_body_timing_findings": "Near and far upper arms are exact opposing pendulums, near/far elbow flex shares effectively identical timing, and the torso counterrotation is small. Rework body performance separately after evaluating the cloth A/B.",
+    "remaining_scene_work": "Fixed face/hand expression, girl dress and braid dynamics, recovery-to-walking step and supportive clasp are outside v051.",
+    "continuous_player_observed_by_agent": false,
+    "technical_checks_are_not_artistic_approval": true
+  }
+}

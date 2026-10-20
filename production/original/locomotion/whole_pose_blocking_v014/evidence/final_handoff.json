@@ -1,0 +1,349 @@
+{
+  "status": "Focused stepped v014 correction ready for independent blocking review. Viable v013 foundation retained; no finished-motion acceptance, normal-speed verification, repaint or integration approval.",
+  "stage": "Requested arm/brace keys corrected, rendered and frame-reviewed. Stops for focused blocking review before polish.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\native\\WTSC_Whole_Pose_Blocking_v014.blend",
+    "bytes": 304886,
+    "sha256": "b02c80095c0fd5a7b0f23c6ea3f909f4bb9e905c67f6763dc85459bdf469e3e4",
+    "collection": "WTSC_WHOLE_POSE_BLOCKING_v014",
+    "frames": [
+      1,
+      72
+    ],
+    "fps": 24,
+    "seconds": 3,
+    "armatures": 2,
+    "objects": 44,
+    "interpolation": "CONSTANT",
+    "boy_key_count": 15,
+    "girl_key_count": 11
+  },
+  "previews": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\WTSC_v014_Whole_Pose_Blocking_3s.mp4",
+      "bytes": 122502,
+      "sha256": "5d0cd37d136f429e2ea38a24d8a293cac926001aba8d65e2ae1e1bf05649e2ff",
+      "decoded_frames": 72,
+      "fps": 24,
+      "seconds": 3.0,
+      "size": [
+        960,
+        540
+      ],
+      "interpolation": "Stepped whole-pose blocking; intentional held exposures, no curve polish.",
+      "decoded_review_pages": [
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\decoded_review\\INSPECTION_01_24.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\decoded_review\\INSPECTION_25_48.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\decoded_review\\INSPECTION_49_72.jpg"
+      ]
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\WTSC_v014_Shot_Size_Blocking_3s.mp4",
+      "bytes": 92504,
+      "sha256": "cd754014e035f535e5393208b3fdfb99ce4700a2ce60b0ac4d39310b67c65d6a",
+      "decoded_frames": 72,
+      "fps": 24,
+      "seconds": 3.0,
+      "size": [
+        960,
+        540
+      ],
+      "interpolation": "Stepped whole-pose blocking; intentional held exposures, no curve polish.",
+      "decoded_review_pages": [
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\decoded_review\\SHOT_SIZE_01_24.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\decoded_review\\SHOT_SIZE_25_48.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\decoded_review\\SHOT_SIZE_49_72.jpg"
+      ]
+    }
+  ],
+  "key_pose_sheets": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\WTSC_v014_INSPECTION_Key_Poses.jpg",
+      "bytes": 404880,
+      "sha256": "63eac1b9e9e7f891c6f934b324a3a1fc6654efbff6999a49c33140a67b61510a"
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\WTSC_v014_SHOT_SIZE_Key_Poses.jpg",
+      "bytes": 306825,
+      "sha256": "92a0e123cbfe319e2f9b92d43c62930321ab737ff9f8b83a270469951441aa98"
+    }
+  ],
+  "private_library_key_sheets": {
+    "route": "Ordered direct create batch after known preflight discovery failure; no earlier write began",
+    "results": [
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v014_INSPECTION_Key_Poses.jpg",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v014_INSPECTION_Key_Poses.jpg",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "image/jpeg",
+        "library_artifact_type": "image",
+        "file_size_bytes": 404880
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v014_SHOT_SIZE_Key_Poses.jpg",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v014_SHOT_SIZE_Key_Poses.jpg",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "image/jpeg",
+        "library_artifact_type": "image",
+        "file_size_bytes": 306825
+      }
+    ]
+  },
+  "guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\FOCUSED_CORRECTION_GUIDE_v014.txt",
+  "artistic_assessment": {
+    "status": "Focused stepped v014 correction ready for independent blocking review. Viable v013 foundation retained; no finished-motion acceptance, normal-speed verification, repaint or integration approval.",
+    "review_method": "Both final3second movies decoded72frames each. All actual decoded close and shot-size frames inspected sequentially; full-frame close brace22/43 and key-pose sheet also inspected. No continuous/full-speed playback observed; pacing provisional.",
+    "changed_keys": {
+      "boy10_13_16_19": "Leading arm extends forward/down following the fall; trailing arm sweeps low/back. The paired raised bent forearms are removed.",
+      "girl12_17": "One lower available hand; other arm settles beside hip. Quieter concern/attendance rather than a matching shrug.",
+      "boy22_26_32_38_43": "Existing hand rests along the thigh top surface; wrist/palm contact no longer stabs into the thigh. Near-camera elbow placement reduces torso/thigh merging. Contact remains through held48 and original49 releases it."
+    },
+    "preserved": "Native all72frame comparison finds zero world-matrix error outside allowed arm bones; roots, feet, body/spine/head, original profile placeholder, meshes, UVs, material assignments, cameras,15/11key clocks, low gather, push and release49 exactly preserved.",
+    "visual_assessment": {
+      "balance_versus_attendance": "The boy's longer forward/down reach and low trailing arm visibly differ from the girl's low available hand and relaxed other arm. Their early poses no longer share the broad raised-forearm question gesture. Hand proximity remains an offered/light cue; no clasp or helping load is depicted.",
+      "brace": "The hand now forms an explicit short pad along the loaded thigh rather than an inward triangular point. Contact is clearer in the inspected close keys. It remains small at shot size and needs independent judgment of whether the supporting intention reads unmistakably; no artistic pass is inferred from the surface measurements.",
+      "retained_structure": "The readable forward imbalance, catch-foot placement, heel->deep-load order, low gathering of feet/effort, leg push and independently settled/attending girl remain the same pose proposition.",
+      "timing": "All motion is deliberately stepped. Holds/jumps are blocking, not failed spline animation. Urgency, transitions and flow remain provisional without continuous playback."
+    },
+    "technical_separation": "About0.45mm proxy hand/thigh gap with no mesh intersection at all maintained brace keys; release49 clears by73mm. Fixed lengths, binding and sole locks pass. These are native/surface integrity checks, not load, physical dynamics, appeal or naturalism tests.",
+    "remaining_limits": [
+      "Independent focused blocking review still required before polish.",
+      "No continuous/full-speed artistic verification; pacing provisional.",
+      "Proxy hand has no authored fingers, palm deformation or force simulation; readability at shot size remains the artistic question.",
+      "Brace elbow uses3D depth toward camera; adaptation to the eventual painted silhouette has not been validated.",
+      "Painted left profile, turn breakdown, hair and braid continuity remain unresolved; unchanged abrupt proxy profile substitution is not a painted turnaround solution.",
+      "No production timing/world-travel mapping, new walking, repaint or integration."
+    ],
+    "stop_for_review": true
+  },
+  "focused_preservation_and_contact": {
+    "source": "v013 viable whole-pose blocking foundation",
+    "all72frames_compared": true,
+    "allowed_change_windows": {
+      "BOY10_to21": "Both arms only",
+      "BOY22_to48": "Near upper-arm/forearm/hand brace only",
+      "GIRL12_to21": "Both arms only"
+    },
+    "max_world_matrix_element_error_outside_allowed_bones": 0,
+    "root_routes_exactly_preserved": true,
+    "mesh_UV_material_assignments_exactly_preserved": true,
+    "cameras_exactly_preserved": true,
+    "pose_clocks_and_exposures": "Unchanged15boy/11girl keys at24fps for72frames, CONSTANT interpolation.",
+    "changed_allowed_bone_samples": 213,
+    "brace_surface_samples": [
+      {
+        "frame": 22,
+        "min_hand_vertex_to_thigh_surface_m": 0.000448826263891533,
+        "min_signed_hand_vertex_distance_m": 0.0004356155257170258,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          0.8647274971008301,
+          -0.05199990049004555,
+          0.4399561285972595
+        ],
+        "hand_axis_to_thigh_axis_degrees": 0.02197866290670597,
+        "loaded_front_foot_flat": true,
+        "purpose": "Maintained brace"
+      },
+      {
+        "frame": 26,
+        "min_hand_vertex_to_thigh_surface_m": 0.0004487728583626449,
+        "min_signed_hand_vertex_distance_m": 0.000435560087904463,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          0.8867992162704468,
+          -0.051999934017658234,
+          0.4391820430755615
+        ],
+        "hand_axis_to_thigh_axis_degrees": 0.017132015451589565,
+        "loaded_front_foot_flat": true,
+        "purpose": "Maintained brace"
+      },
+      {
+        "frame": 32,
+        "min_hand_vertex_to_thigh_surface_m": 0.0004489574348554015,
+        "min_signed_hand_vertex_distance_m": 0.0004356970295305018,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          0.9291722774505615,
+          -0.051999904215335846,
+          0.4334660768508911
+        ],
+        "hand_axis_to_thigh_axis_degrees": 0.008566044899188715,
+        "loaded_front_foot_flat": true,
+        "purpose": "Maintained brace"
+      },
+      {
+        "frame": 38,
+        "min_hand_vertex_to_thigh_surface_m": 0.00044903650996275246,
+        "min_signed_hand_vertex_distance_m": 0.00043579696845874594,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          0.9791216850280762,
+          -0.05199996754527092,
+          0.4207687973976135
+        ],
+        "hand_axis_to_thigh_axis_degrees": 0.01713202425898049,
+        "loaded_front_foot_flat": true,
+        "purpose": "Maintained brace"
+      },
+      {
+        "frame": 43,
+        "min_hand_vertex_to_thigh_surface_m": 0.00044883094960823655,
+        "min_signed_hand_vertex_distance_m": 0.0004355806976743537,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          0.9970265626907349,
+          -0.051999956369400024,
+          0.4384816288948059
+        ],
+        "hand_axis_to_thigh_axis_degrees": 0.02422831550003947,
+        "loaded_front_foot_flat": true,
+        "purpose": "Maintained brace"
+      },
+      {
+        "frame": 48,
+        "min_hand_vertex_to_thigh_surface_m": 0.00044883094960823655,
+        "min_signed_hand_vertex_distance_m": 0.0004355806976743537,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          0.9970265626907349,
+          -0.051999956369400024,
+          0.4384816288948059
+        ],
+        "hand_axis_to_thigh_axis_degrees": 0.02422831550003947,
+        "loaded_front_foot_flat": true,
+        "purpose": "Maintained brace"
+      },
+      {
+        "frame": 49,
+        "min_hand_vertex_to_thigh_surface_m": 0.073263019323349,
+        "min_signed_hand_vertex_distance_m": 0.07091938005760312,
+        "intersecting_face_pairs": 0,
+        "palm_center_world": [
+          1.0030337572097778,
+          -0.05200003460049629,
+          0.5675169825553894
+        ],
+        "hand_axis_to_thigh_axis_degrees": 15.560961388768321,
+        "loaded_front_foot_flat": true,
+        "purpose": "Unchanged v013 release key"
+      }
+    ],
+    "scope": "Pose scope and proxy geometric contact only. Does not certify perceived weight, forces, final finger deformation or normal-speed artistic quality."
+  },
+  "technical_integrity": {
+    "host": "5.2.2 LTS",
+    "cold_reopened": true,
+    "all72frames_checked": true,
+    "joint_target_error_m": 2.09339107683878e-06,
+    "segment_length_error_m": 9.694126550663373e-07,
+    "bound_mesh_center_error_m": 9.329654721656488e-07,
+    "flat_sole_vertex_drift_m": 3.92694368196448e-07,
+    "flat_adjacent_pairs": 199,
+    "floor_min_z_m": -9.279431765207846e-07,
+    "girl_both_feet_flat27_through72": true,
+    "native_curve_structure": {
+      "BOY": {
+        "keys_per_channel": [
+          15
+        ],
+        "interpolation": [
+          "CONSTANT"
+        ],
+        "no_recurring_gait_channels": true
+      },
+      "GIRL": {
+        "keys_per_channel": [
+          11
+        ],
+        "interpolation": [
+          "CONSTANT"
+        ],
+        "no_recurring_gait_channels": true
+      }
+    },
+    "sources_preserved": {
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\native\\WTSC_Whole_Pose_Blocking_v013.blend": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\scripts\\motion_design.py": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+      "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\scripts\\story_poses.py": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Whole_Pose_Blocking_3s.mp4": true,
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_INSPECTION_Key_Poses.jpg": true
+    },
+    "scope": "Native binding/contact/stepped-exposure integrity only. Held blocking poses deliberately jump between keys; no continuous dynamics, smoothness or artistic acceptance test."
+  },
+  "fresh_append": {
+    "fresh_empty_scene_append": true,
+    "objects": 44,
+    "rigs": 2,
+    "camera_light_count": 0,
+    "sample_world_joint_error_m": 1.9159439993435657e-06,
+    "external_images": 0
+  },
+  "sources_preserved": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\native\\WTSC_Whole_Pose_Blocking_v013.blend": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\scripts\\motion_design.py": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\scripts\\story_poses.py": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_Whole_Pose_Blocking_3s.mp4": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v013\\WTSC_v013_INSPECTION_Key_Poses.jpg": true
+  },
+  "local_clock": "Unchanged1..72 at24fps, boundary73=3s. Standalone stepped blocking; no production75..80s mapping.",
+  "remaining_limits": [
+    "Independent focused blocking review still required before polish.",
+    "No continuous/full-speed artistic verification; pacing provisional.",
+    "Proxy hand has no authored fingers, palm deformation or force simulation; readability at shot size remains the artistic question.",
+    "Brace elbow uses3D depth toward camera; adaptation to the eventual painted silhouette has not been validated.",
+    "Painted left profile, turn breakdown, hair and braid continuity remain unresolved; unchanged abrupt proxy profile substitution is not a painted turnaround solution.",
+    "No production timing/world-travel mapping, new walking, repaint or integration."
+  ],
+  "blocked_or_uncertain_actions": [],
+  "delivery_recovery": "Prepared helper failed during tool discovery before any write; ordered direct image creates succeeded. No uncertain upload or duplicate prepared file.",
+  "ancillary_metadata_limit": [
+    {
+      "action": "Persist local Library identity metadata",
+      "target": "WTSC_LOCAL_WORKSPACE/locomotion/whole_pose_blocking_v014/WTSC_v014_INSPECTION_Key_Poses.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "exit_code": 1,
+      "local_metadata_persisted": false,
+      "reason": "Windows Python has no os.setxattr; current official helper could not write local identity. Library upload succeeded and exact receipt is retained.",
+      "upload_state": "confirmed succeeded; not uncertain"
+    },
+    {
+      "action": "Persist local Library identity metadata",
+      "target": "WTSC_LOCAL_WORKSPACE/locomotion/whole_pose_blocking_v014/WTSC_v014_SHOT_SIZE_Key_Poses.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "exit_code": 1,
+      "local_metadata_persisted": false,
+      "reason": "Windows Python has no os.setxattr; current official helper could not write local identity. Library upload succeeded and exact receipt is retained.",
+      "upload_state": "confirmed succeeded; not uncertain"
+    }
+  ]
+}

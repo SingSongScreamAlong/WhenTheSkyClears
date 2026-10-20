@@ -1,0 +1,59 @@
+WTSC v021 IMPORT AND REVIEW GUIDE — BOUNDED POSE CHECKPOINT
+Status: mechanics proof plus separate one-pose art study. Artistic acceptance remains OPEN.
+This supersedes inherited v020 notes inside these copies. Do not integrate automatically.
+
+FILES AND REVIEW
+native/WTSC_Child_Coherent_Support_Eight_Poses_v021.blend
+  Collection WTSC_CHILD_SUPPORT_POSES_v021.
+native/WTSC_Child_Passing_Whole_Pose_Art_Study_v021.blend
+  Collection WTSC_CHILD_PASSING_ART_VARIANT_v021.
+These are independent alternatives. Do not append both into production as one rig.
+Open with Blender 5.2.2 LTS. Packed original painting, native IK/constraints/drivers and editable geometry are retained. No frame handlers or external scripts are required for playback.
+The source FBX 52-bone rig/action remains in the native file for inspection. Source/child skeleton preview collections are hidden for normal painted review. Toggle their viewport visibility and painted meshes deliberately when inspecting skeletons.
+
+TIMING — EXACT SELECTED PHASES, NOT IN-BETWEENS
+Study FPS30, frame1 right contact, frame32 duplicate contact one cycle later.
+Source FPS30, original keys2..33, period31 frames=1.033333333s.
+Study frame = source unwrapped frame -8.75.
+R_CONTACT    source   9.75 (wrapped  9.75) -> study  1.00, +0.000000000s
+R_LOADING    source  12.00 (wrapped 12.00) -> study  3.25, +0.075000000s
+R_PASSING    source  17.75 (wrapped 17.75) -> study  9.00, +0.266666667s
+R_UP         source  19.00 (wrapped 19.00) -> study 10.25, +0.308333333s
+L_CONTACT    source  25.75 (wrapped 25.75) -> study 17.00, +0.533333333s
+L_LOADING    source  26.00 (wrapped 26.00) -> study 17.25, +0.541666667s
+L_PASSING    source  34.00 (wrapped  3.00) -> study 25.25, +0.808333333s
+L_UP         source  36.00 (wrapped  5.00) -> study 27.25, +0.875000000s
+
+All child pose, support-mode and travel keys use CONSTANT interpolation. Exact fractional frames matter: use scene.frame_set(int(f), subframe=f-int(f)) for scripts. Integer-only timeline scrubbing omits some selected poses.
+The MP4 holds each of these eight phases for0.5s, then the art comparison for1s. Its5s duration is a review presentation, not the gait timing. It does not show a continuous walk.
+
+TRAVEL AND SUPPORT CONTRACT
+Units metres; +X travel, +Z up, depthY. Native child near leg maps sourceR; far maps sourceL. Source -Y was mapped to child+X.
+Alternating flat step distances: 0.475445952825m and 0.476997785633m.
+Cycle stride S=0.952443738458m, versus v0201.021383492060m.
+The nominal reference envelope is D(source_f)=S*(source_f-9.75)/31,
+equivalently D(study_f)=S*(study_f-1)/31, nominal speed 0.921719746894m/s.
+The native V021 | CHILD_SUPPORT_TRAVEL has sampled CONSTANT keys on that envelope.
+Do not interpret those held keys as a finished continuous root curve.
+
+HIP is independently authored: hip_world = (D,0,0) + HIP_local.
+Use the CSV for exact per-pose root, hip, ankle, boot pitch and active polygon contact anchor; full JSON contains rocker anchors and original hull coordinates.
+Do not restore the adult stride, scale the child bones, clamp HIP onto the feet after posing, or move only the travel empty: boot goals and source/preview staging have independent world transforms.
+The contact COPY_TRANSFORMS constraint uses V020 | side | SOLE_BONE_GOAL under ACTUAL_SOLE_PIVOT; the swing constraint uses SWING_BONE_GOAL. The V020 names are retained ABI names.
+Native pivot active_vertex is inspection metadata; the keyed goal matrices are the controlling transforms.
+For a future scene transfer, append the chosen whole collection into a disposable scene. Apply one common rigid placement transform to all its independent top-level roots/controls, including foot targets, without double-transforming descendants. Check the actual painted sole polygon against the destination ground at every selected phase.
+This version supplies exact sampled placements and a nominal envelope only. Continuous heel/toe roll transitions, take-off/landing arcs, velocity, easing and world matching must be authored and reviewed before any production replacement.
+No frame mapping into production75–80s is authorized by this checkpoint. Full-trailer duration/music/title/FX are untouched.
+
+ONE-POSE ART VARIANT
+L_PASSING: source34(wrapped3), study25.25.
+V021 | PASSING ART CORRECTIVE | amount is1 only for that selected pose and0 at the other seven. Its held interval until the next key is a pose-study convenience, not a valid animation blend.
+Two additive Geometry Nodes offsets on LOCO_BOY | PAINT body and V007_BOY | drawn leg near. Original base vertex coordinates, topology, UVs, weights, materials and painted image are unchanged. Hip/boot collar rows and head are untouched.
+Mute the two V021 one-pose painted contour offset modifiers or set amount0 with the action disabled to compare the unchanged base.
+The art file is a separate study; preserve the mechanics file as the clean baseline.
+
+REBUILD / EVIDENCE
+The editable blend files are self-contained. Rebuilding uses scripts/build_corrected.py then art_variant.py with the local reference/BASE_EIGHTPOSE_SOURCE_v020_COPY.blend and JSON inputs. The optional solve_poses.py uses existing numpy, no SciPy or installs.
+build_corrected.py also renders48 small frames; do not run it during a heavy world/FX render. Use one Blender job, threads2. make_previews.py uses the included reference/V020_COMPARISON stills to rebuild the mechanics board; the final boards/movie and their current render inputs are included.
+Evidence: coherent_pose_solution.json, authored_native_poses.json, fresh_base_pose_check.json, final_native_variants_check.json, art_variant_definition_and_check.json, source_preservation_final.json.
+Read V021_RESOLVED_AND_REMAINING_REPORT.txt before interpreting any numeric PASS.

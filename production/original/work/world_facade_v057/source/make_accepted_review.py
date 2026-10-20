@@ -1,0 +1,33 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import json,hashlib
+O=Path(__file__).parent;V=O.parent/'facade_continuous_v056';B=Path(r'WTSC_LOCAL_WORKSPACE\work\world_architecture_v049i\native_4k_after')
+T=json.loads((O/'CONTINUOUS_FACADE_TECHNICAL_v057.json').read_text());P=json.loads((O/'PIT_REGISTRATION_METRICS.json').read_text());R=json.loads((O/'NATIVE_PRESERVATION_REGIONS.json').read_text());A=json.loads((O/'OPACITY_GRAPH_VERIFICATION.json').read_text());M=json.loads((O/'NATIVE_IMAGE_METRICS.json').read_text())
+assert T['cold_reopen_pass'] and T['source_unchanged'] and A['opacity_control_dependencies_equal']
+assert all(p['area_ratio']==1 and p['center_delta']==[0,0] for p in P['native_visible_measurements'])
+q={'status':'LOCAL BOUNDED FACADE VISUAL GATE PASSED; isolated proof; not production adoption','accepted_native':T['native_test'],'accepted_native_sha256':T['native_sha256'],'actual_4K_frames':[1201,1225,1249],'review_scope':'Continuous facade, porch and source-lighting material proof at the three specified still compositions.','visual_findings':['Purposeful painterly plaster, stone, timber and tile planes replace the previous photographic patch and texture-over-blur methods.','The spatial perRGB normalization removes the candidate warm lighting drift and retains the inherited muted facade colour/value hierarchy.','No abrupt rectangular patch edge or lower material cutoff is visible in the three full frames and inspected native joins.','Window/door/porch anchors measure0..1source-pixel candidate displacement;source geometry/camera remains unchanged.','The v056 enlarged pit is corrected: v057 retains original pit source cores and their rims;visible dark-pit native area and center match baseline at all3frames.','Original broken-window region,lower foliage/rubble witness regions and all pixels outside the projected edit envelope match baseline exactly.','The wider painted region remains spatially fixed as the camera translates;the original diagonal shadow direction/value hierarchy continues across the new surface.'],'technical_preservation':{k:T[k] for k in ['source_sha256','source_unchanged','original_object_fingerprints_equal','original_object_count','original_actions_equal','actions_count','original_child_material_values_equal','child_object_material_sets','scene_ranges_fps_equal','camera_samples_equal','cold_reopen_pass','unpacked_images']},'source_candidate_library_id':'[PRIVATE_LIBRARY_REFERENCE_REMOVED]','source_candidate_version':0,'source_candidate_file_id':'[PRIVATE_LIBRARY_REFERENCE_REMOVED]','actual_candidate_artwork_dimensions':[1536,1024],'original_source_crop_dimensions':[624,416],'candidate_alpha':json.loads((V/'CANDIDATE_IDENTITY_ALPHA.json').read_text()),'alpha_handling':'Candidate alpha not used for world silhouette;original opacity dependencies verified identical.','native_pit_measurements':P['native_visible_measurements'],'native_preservation_regions':R,'mean_plaster_colour_delta_channels_0_to_255':{f:[M[f]['plaster_mean_rgb_after'][i]-M[f]['plaster_mean_rgb_before'][i] for i in range(3)] for f in M},'limitations':['Source candidate is1536x1024,not requested3456x2304;actual test renders are3840x2160.','Only the bounded facade material still gate is accepted;this does not claim whole-film/Arcane quality completion or normal-speed temporal verification.','Original window source/depth proof is retained;facade is a painted card with existing window geometry,not a newly rebuilt3Dschool.','Existing source children remain unchanged;the separate current character task is not integrated.','Approved colour progression proposal remains separate;no automatic production adoption.'],'render_coordination':'One Blender job at a time,threads2;all render jobs finished and slot released.'}
+W=2304;CW=1104;G=32;X=32;H=5073;im=Image.new('RGB',(W,H),'#192124');d=ImageDraw.Draw(im)
+def text(x,y,s,n=25,c='#ecf0e8',bold=False):d.text((x,y),s,font=ImageFont.truetype('C:/Windows/Fonts/seguisb.ttf' if bold else 'C:/Windows/Fonts/segoeui.ttf',n),fill=c)
+text(X,24,'WHEN THE SKY CLEARS / CONTINUOUS PAINTERLY FACADE v057',35,bold=True)
+text(X,78,'LOCAL BOUNDED FACADE GATE PASSED / isolated proof for review',29,'#b9d8b1',True)
+text(X,125,'Source lighting retained; original pits, window and lower foliage protected; production unchanged.',25)
+text(X,167,'BEFORE / preserved v049i',26,bold=True);text(X+CW+G,167,'AFTER / v057 painterly material proof',26,bold=True)
+y=212
+for f in [1201,1225,1249]:
+ text(X,y,f'FRAME {f} / {(f-1)/24:.3f} s / actual 3840 x 2160 stills',24,'#b7c3bf');y+=36
+ for col,p in enumerate([B/f'WTSC_v049i_School_{f}_4K.png',O/'native_4k_after'/f'WTSC_ContinuousFacade_v057_{f}_4K.png']):im.paste(Image.open(p).convert('RGB').resize((CW,621),Image.Resampling.LANCZOS),(X+col*(CW+G),y))
+ y+=645
+for title,box in [('NATIVE PIXELS / frame1225 / plaster, damage and diagonal shadow',(2240,0,2920,1120)),('NATIVE PIXELS / frame1225 / porch, tile, timber and door',(2920,0,3760,1180))]:
+ text(X,y,title,27,'#b9d8b1',True);y+=50;w=box[2]-box[0];h=box[3]-box[1]
+ for col,p in enumerate([B/'WTSC_v049i_School_1225_4K.png',O/'native_4k_after/WTSC_ContinuousFacade_v057_1225_4K.png']):im.paste(Image.open(p).convert('RGB').crop(box),(X+col*(CW+G)+(CW-w)//2,y))
+ y+=h+24
+text(X,y,'Artwork input: 1536 x 1024 native candidate. Render output: 3840 x 2160. Crops above are unscaled.',24);y+=40
+text(X,y,'Visible pit: 0px center shift and 1.000 area ratio at all three frames. Original opacity graph verified.',24);y+=40
+text(X,y,'437 original objects / 41 Actions / 14 child material sets / camera samples and timing preserved.',24);y+=40
+text(X,y,'Protected regions and pixels outside the edit envelope: zero changed output pixels in all three frames.',24);y+=40
+text(X,y,'This passes the specified facade still gate; full-film review, character integration and adoption remain separate.',24,'#b7c3bf')
+assert y+40<=H,(y,H)
+out=O/'WTSC_Continuous_Painterly_Facade_v057_4K_Before_After.jpg';im.save(out,quality=95,subsampling=0);im.resize((1152,H//2),Image.Resampling.LANCZOS).save(O/'ACCEPTED_REVIEW_LAYOUT_QA.jpg',quality=93)
+q['review_board']=str(out);q['review_board_sha256']=hashlib.sha256(out.read_bytes()).hexdigest();(O/'FACADE_VISUAL_ACCEPTANCE_v057.json').write_text(json.dumps(q,indent=2))
+T['status']=q['status'];T['visual_acceptance_report']=str(O/'FACADE_VISUAL_ACCEPTANCE_v057.json');(O/'CONTINUOUS_FACADE_TECHNICAL_v057.json').write_text(json.dumps(T,indent=2))
+print(json.dumps({'status':q['status'],'board':str(out),'bytes':out.stat().st_size,'dimensions':[W,H],'last_content_y':y}))

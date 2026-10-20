@@ -1,0 +1,83 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Knockout_Ending_Editable_v033.blend",
+  "prior_v032_sha256": "b71b3ec247a60e5d022121444c95ce47f3c1cbd7d1668233327e87e8da1df352",
+  "change": "Only ending typography enlarged; no world rerender or timing/audio/crop changes",
+  "straight_cap_height_fraction": 0.995,
+  "curved_letter_overshoot": "Round glyph overshoots may crop at top/bottom for edge-filling intent",
+  "scroll_font": "Arial Black, native uniform proportions",
+  "card_font": "Impact, native uniform proportions",
+  "card_full_ink_height_fraction": 0.99,
+  "card_line_gap_fraction": 0.015,
+  "card_metrics": {
+    "top": {
+      "bounds": [
+        0.0,
+        2.6135549545288086,
+        0.0,
+        0.5275334119796753
+      ],
+      "scale": 5.999491218973396,
+      "height": 3.1649320728871366,
+      "ink_width_fraction": 0.98,
+      "ink_height_fraction": 0.35165911920968185,
+      "ink_top_fraction_from_top": 0.004999999999999992
+    },
+    "main": {
+      "bounds": [
+        0.015966113656759262,
+        3.0648419857025146,
+        -0.011078527197241783,
+        0.5386119484901428
+      ],
+      "scale": 5.1428790997250164,
+      "height": 2.8269916587305524,
+      "ink_width_fraction": 0.98,
+      "ink_height_fraction": 0.3141101843033947,
+      "ink_top_fraction_from_top": 0.3716591192096818
+    },
+    "year": {
+      "bounds": [
+        0.017595307901501656,
+        1.283154010772705,
+        -0.010101010091602802,
+        0.5376344323158264
+      ],
+      "scale": 4.834589955952783,
+      "height": 2.648076268382311,
+      "ink_width_fraction": 0.3824035870981095,
+      "ink_height_fraction": 0.29423069648692346,
+      "ink_top_fraction_from_top": 0.7007693035130765
+    }
+  },
+  "output": [
+    3840,
+    2160,
+    24
+  ],
+  "preview_global_seconds": [
+    82,
+    103
+  ],
+  "last_S_clear_boundary_seconds": 100,
+  "solid_card_seconds": [
+    100,
+    103
+  ],
+  "music_fade_global_seconds": [
+    90,
+    100
+  ],
+  "clean_cached_world_seconds": [
+    52,
+    70
+  ],
+  "cached_world_crop": {
+    "scale": 2,
+    "effective_detail_pixels": [
+      1920,
+      1080
+    ],
+    "centered_pair": true
+  },
+  "native_world_camera": "Shared root horizontal follow as v032; held poses unchanged"
+}

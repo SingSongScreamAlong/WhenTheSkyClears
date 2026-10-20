@@ -1,0 +1,222 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Combined_Trial_v043.blend",
+  "source_sha256": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+  "source_preserved": true,
+  "comparison_copy": "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_corrections_v006\\native\\WTSC_v006_Integrated_Comparison_Copy.blend",
+  "root_anchor": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      107.63395690917969
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.7200736999511719
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "new_foot_world_matrix_max_error_v043": 2.384185791015625e-07,
+  "camera": "Original v043 camera and driver retained, following original hidden travel with identical route.",
+  "physical_light": "Original v043 point light, clock, gain .025 and protected-eye material response copied into local comparison only.",
+  "old_characters_hidden": [
+    "LOCO_PAIR | TRAVEL",
+    "LOCO_BOY | PAINT body",
+    "LOCO_BOY | PAINT far_leg",
+    "LOCO_BOY | PAINT near_leg",
+    "PERF_BOY | original hand far",
+    "PERF_BOY | original hand near",
+    "PERF_BOY | original head",
+    "PERF_BOY | rigid original boot far",
+    "PERF_BOY | rigid original boot near",
+    "PERF_BOY | skin far",
+    "PERF_BOY | skin near",
+    "PERF_BOY | sleeve far",
+    "PERF_BOY | sleeve far | source gray cuff",
+    "PERF_BOY | sleeve near",
+    "PERF_BOY | sleeve near | source gray cuff",
+    "v043 rounded knee | LOCO_BOY | RIG far",
+    "v043 rounded knee | LOCO_BOY | RIG near",
+    "v043 rounded wrist | LOCO_BOY | RIG far",
+    "v043 rounded wrist | LOCO_BOY | RIG near",
+    "LOCO_GIRL | PAINT body",
+    "LOCO_GIRL | PAINT far_leg",
+    "LOCO_GIRL | PAINT near_leg",
+    "PERF_GIRL | hidden thigh overlap far",
+    "PERF_GIRL | hidden thigh overlap near",
+    "PERF_GIRL | original hand far",
+    "PERF_GIRL | original hand near",
+    "PERF_GIRL | original head and attached braid",
+    "PERF_GIRL | rigid original boot far",
+    "PERF_GIRL | rigid original boot near",
+    "PERF_GIRL | skin far",
+    "PERF_GIRL | skin near",
+    "PERF_GIRL | sleeve far",
+    "PERF_GIRL | sleeve far | source gray cuff",
+    "PERF_GIRL | sleeve near",
+    "PERF_GIRL | sleeve near | source gray cuff",
+    "v043 rounded wrist | LOCO_GIRL | RIG far",
+    "v043 rounded wrist | LOCO_GIRL | RIG near"
+  ],
+  "materials": [
+    "V006 BOY drawn skin",
+    "LOCO v003 | original paint sampled on native overlap geometry",
+    "PERF_BOY | source limb RGB within traced native contour.003",
+    "PERF_GIRL | source limb RGB within traced native contour.004",
+    "PERF_GIRL | source limb RGB within traced native contour.003",
+    "V006 GIRL drawn hand",
+    "V006 GIRL drawn skin",
+    "V006 GIRL drawn sleeve",
+    "PERF_BOY | original body paint, clean native boundary",
+    "V006 BOY drawn hand",
+    "V006 BOY drawn pants",
+    "V006 BOY drawn sleeve",
+    "PERF_GIRL | original body paint, clean native boundary",
+    "PERF_BOY | source limb RGB within traced native contour.004",
+    "V006 GIRL drawn cuff",
+    "LOCO | ORIGINAL v015 charcoal paint, packed",
+    "V006 BOY drawn cuff"
+  ],
+  "samples": [
+    {
+      "frame": 1801,
+      "camera": [
+        109.3619613647461,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ]
+    },
+    {
+      "frame": 1837,
+      "camera": [
+        109.74828338623047,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        108.02027893066406,
+        0.0,
+        0.7200736999511719
+      ]
+    },
+    {
+      "frame": 1847,
+      "camera": [
+        109.82154846191406,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        108.09354400634766,
+        0.0,
+        0.7200736999511719
+      ]
+    },
+    {
+      "frame": 1858,
+      "camera": [
+        109.87409973144531,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        108.1460952758789,
+        0.0,
+        0.7200736999511719
+      ]
+    },
+    {
+      "frame": 1881,
+      "camera": [
+        109.92362976074219,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ]
+    },
+    {
+      "frame": 1901,
+      "camera": [
+        109.92362976074219,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ]
+    },
+    {
+      "frame": 1920,
+      "camera": [
+        109.92362976074219,
+        -16.0,
+        3.0
+      ],
+      "root": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ]
+    }
+  ],
+  "render_difference": "CPU Cycles two-sample 960x540 proof; original was EEVEE4K. Native geometry/camera/FX clocks retained. Compare performance, not renderer appearance."
+}

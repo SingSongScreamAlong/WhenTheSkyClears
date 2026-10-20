@@ -1,0 +1,177 @@
+{
+  "selected_phase": "L_PASSING",
+  "source_frame": 34.0,
+  "study_frame": 25.25,
+  "selection_reason": "The near swing knee/calf is exposed under the rigid coat at L_PASSING; chosen as the harder visible near-leg passing silhouette.",
+  "changed_meshes": [
+    "LOCO_BOY | PAINT body",
+    "V007_BOY | drawn leg near"
+  ],
+  "native_method": "Two additive post-deformation Geometry Nodes offsets, driven by one pose amount. Original mesh vertices,UVs,weights,materials and rig remain. No new paint or topology.",
+  "body_intent": "Local waist/side compression up to9mm, modest torso countercurve4mm, rear hem lift16mm/tuck8mm, quieter front hem. No head/shoulder redesign.",
+  "knee_intent": "Round rows11..21 around the existing joint with a blended quadratic center and6mm outer cap; add4mm posterior calf fullness on rows22..29. Hip/boot collar rows and depth plane remain unchanged.",
+  "base_art_identity_retained": true,
+  "poses": [
+    {
+      "phase": "R_CONTACT",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "R_LOADING",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "R_PASSING",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "R_UP",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "L_CONTACT",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "L_LOADING",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "L_PASSING",
+      "amount": 1.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.018292410133409272,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0038167361830624942,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    },
+    {
+      "phase": "L_UP",
+      "amount": 0.0,
+      "mesh_delta_m": {
+        "LOCO_BOY | PAINT body": 0.0,
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | articulated drawn hand far": 0.0,
+        "V007_BOY | articulated drawn hand near": 0.0,
+        "V007_BOY | drawn leg far": 0.0,
+        "V007_BOY | drawn leg near": 0.0,
+        "V007_BOY | drawn skin far": 0.0,
+        "V007_BOY | drawn skin near": 0.0,
+        "V007_BOY | drawn sleeve far": 0.0,
+        "V007_BOY | drawn sleeve near": 0.0,
+        "V007_BOY | drawn source gray cuff far": 0.0,
+        "V007_BOY | drawn source gray cuff near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      }
+    }
+  ],
+  "scope": "Only one passing pose is authored. Other selected poses amount0; no claim of valid intermediate blends or finished cloth."
+}

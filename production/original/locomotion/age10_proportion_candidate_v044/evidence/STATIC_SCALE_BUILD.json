@@ -1,0 +1,575 @@
+{
+  "stage": "STAGE1 STATIC ANATOMY AND GLOBAL SCALE CANDIDATE. No animation retarget performed.",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "sources": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\neck_collar_connection_v041\\native\\WTSC_Neck_Collar_Connection_Candidate_v041.blend": "c9806d2d905168f9e1ff2adbc20842ac298e37def9f37223d228639f414b931c",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de"
+  },
+  "girl_source_available": true,
+  "retained_girl_braid": true,
+  "original_pixel_images_edited": false,
+  "candidate_measurements": {
+    "BOY": {
+      "stature_barefoot_m": 1.39,
+      "vertical_head_m": 0.194,
+      "shoe_lift_m": 0.025,
+      "surface_shoulder_breadth_m": 0.3,
+      "estimated_hip_joint_z_m": 0.752,
+      "estimated_knee_joint_z_m": 0.417,
+      "estimated_ankle_joint_z_m": 0.095,
+      "estimated_shoulder_joint_z_m": 1.145,
+      "upper_arm_joint_length_m": 0.235,
+      "forearm_joint_length_m": 0.2,
+      "drawn_hand_length_m": 0.145,
+      "bare_foot_length_m": 0.202,
+      "shoe_outer_length_m": 0.223,
+      "skull_crown_source_px": [
+        225,
+        95
+      ],
+      "chin_source_px": [
+        328,
+        403
+      ],
+      "neck_source_x_px": 178.0,
+      "head_image_size": [
+        1254,
+        1254
+      ],
+      "x": -0.66,
+      "estimated_rest_bone_lengths_m": {
+        "pelvis": 0.10000002216547482,
+        "chest": 0.2929999779906281,
+        "head": 0.1940000017088713,
+        "upper_arm_near": 0.23499995198655146,
+        "forearm_near": 0.19999998845159975,
+        "hand_near": 0.12999999704269258,
+        "thigh_near": 0.33499998304381257,
+        "shin_near": 0.32200000104178556,
+        "foot_near": 0.12619429262205278,
+        "upper_arm_far": 0.23499995198655146,
+        "forearm_far": 0.19999998845159975,
+        "hand_far": 0.12999999704269258,
+        "thigh_far": 0.33499998304381257,
+        "shin_far": 0.32200000104178556,
+        "foot_far": 0.12619429262205278
+      },
+      "head_mapping_scene_units_per_source_pixel": 0.0006298701298701299,
+      "uniform_head_mapping": true,
+      "standing_skull_crown_world_z_m": 1.4149999999999998,
+      "chin_world_z_m": 1.2209999999999999,
+      "foot_measure_is_inside_shoe": true,
+      "static_visibility_pose_girl_arms_degrees": [
+        0,
+        0
+      ]
+    },
+    "GIRL": {
+      "stature_barefoot_m": 1.38,
+      "vertical_head_m": 0.193,
+      "shoe_lift_m": 0.025,
+      "surface_shoulder_breadth_m": 0.298,
+      "estimated_hip_joint_z_m": 0.746,
+      "estimated_knee_joint_z_m": 0.413,
+      "estimated_ankle_joint_z_m": 0.095,
+      "estimated_shoulder_joint_z_m": 1.137,
+      "upper_arm_joint_length_m": 0.233,
+      "forearm_joint_length_m": 0.199,
+      "drawn_hand_length_m": 0.144,
+      "bare_foot_length_m": 0.2,
+      "shoe_outer_length_m": 0.221,
+      "skull_crown_source_px": [
+        985,
+        137
+      ],
+      "chin_source_px": [
+        1064,
+        280
+      ],
+      "neck_source_x_px": 1008.0,
+      "head_image_size": [
+        1672,
+        941
+      ],
+      "x": 0.36,
+      "estimated_rest_bone_lengths_m": {
+        "pelvis": 0.10000002216547482,
+        "chest": 0.2909999433555089,
+        "head": 0.1929999584953975,
+        "upper_arm_near": 0.2329999802480943,
+        "forearm_near": 0.1990000047450089,
+        "hand_near": 0.12999999704269258,
+        "thigh_near": 0.3330000040251929,
+        "shin_near": 0.3179999938348554,
+        "foot_near": 0.12619429262205278,
+        "upper_arm_far": 0.2329999802480943,
+        "forearm_far": 0.1990000047450089,
+        "hand_far": 0.12999999704269258,
+        "thigh_far": 0.3330000040251929,
+        "shin_far": 0.3179999938348554,
+        "foot_far": 0.12619429262205278
+      },
+      "head_mapping_scene_units_per_source_pixel": 0.0013496503496503497,
+      "uniform_head_mapping": true,
+      "standing_skull_crown_world_z_m": 1.4049999999999998,
+      "chin_world_z_m": 1.2119999999999997,
+      "foot_measure_is_inside_shoe": true,
+      "static_visibility_pose_girl_arms_degrees": [
+        24,
+        -18
+      ]
+    }
+  },
+  "source_snapshot": {
+    "BOY": {
+      "rig": "LOCO_BOY | RIG",
+      "height_basis_m": 1.45,
+      "parts": [
+        "V007_BOY | articulated drawn hand far",
+        "V007_BOY | articulated drawn hand near",
+        "V007_BOY | drawn skin far",
+        "V007_BOY | drawn skin near",
+        "V007_BOY | drawn sleeve far",
+        "V007_BOY | drawn sleeve near",
+        "V007_BOY | drawn source gray cuff far",
+        "V007_BOY | drawn source gray cuff near",
+        "V024 continuous far trouser drawing",
+        "V024 continuous near trouser drawing",
+        "V033 | far | canonical painted shoe",
+        "V033 | near | canonical painted shoe",
+        "V037 | coherent charcoal coat | five pose study",
+        "V040 | painted boy profile and neck",
+        "V041 | folded linen collar | neck attached"
+      ],
+      "bones_F1": {
+        "pelvis": {
+          "head": [
+            0.0,
+            0.0,
+            0.5897787809371948
+          ],
+          "tail": [
+            -0.01298495288938284,
+            -7.888751873963429e-09,
+            0.6911835074424744
+          ]
+        },
+        "chest": {
+          "head": [
+            -3.6670826375484467e-09,
+            -1.5543122344752192e-15,
+            0.5954053997993469
+          ],
+          "tail": [
+            0.025534292683005333,
+            -5.759718223197208e-12,
+            1.0826292037963867
+          ]
+        },
+        "head": {
+          "head": [
+            0.025516634806990623,
+            2.168404344971009e-18,
+            1.0775175094604492
+          ],
+          "tail": [
+            0.04603130370378494,
+            -1.4299046321997189e-11,
+            1.3237323760986328
+          ]
+        },
+        "upper_arm_near": {
+          "head": [
+            -0.056480471044778824,
+            2.9930058431659745e-11,
+            1.0164604187011719
+          ],
+          "tail": [
+            -0.13497042655944824,
+            0.0013057026080787182,
+            0.8130848407745361
+          ]
+        },
+        "forearm_near": {
+          "head": [
+            -0.13497039675712585,
+            0.001305703422985971,
+            0.8130848407745361
+          ],
+          "tail": [
+            -0.13541437685489655,
+            6.984919309616089e-10,
+            0.6148504614830017
+          ]
+        },
+        "upper_arm_far": {
+          "head": [
+            0.06610988825559616,
+            -2.484948358194572e-11,
+            0.9904794692993164
+          ],
+          "tail": [
+            0.10859261453151703,
+            0.001338818809017539,
+            0.7766631841659546
+          ]
+        },
+        "forearm_far": {
+          "head": [
+            0.10859262943267822,
+            0.0013388205552473664,
+            0.776663064956665
+          ],
+          "tail": [
+            0.21326658129692078,
+            2.0954757928848267e-09,
+            0.6084911227226257
+          ]
+        },
+        "thigh_near": {
+          "head": [
+            0.0,
+            0.0,
+            0.5897787809371948
+          ],
+          "tail": [
+            0.1617155373096466,
+            2.631358686500107e-09,
+            0.3505004942417145
+          ]
+        },
+        "shin_near": {
+          "head": [
+            0.1617155224084854,
+            2.631352913340379e-09,
+            0.3505004644393921
+          ],
+          "tail": [
+            0.20769166946411133,
+            -6.661338147750939e-15,
+            0.10670952498912811
+          ]
+        },
+        "thigh_far": {
+          "head": [
+            -0.047322191298007965,
+            2.5591134766855816e-10,
+            0.5837191939353943
+          ],
+          "tail": [
+            -0.08881818503141403,
+            1.5414449716644185e-09,
+            0.3536018133163452
+          ]
+        },
+        "shin_far": {
+          "head": [
+            -0.08881819993257523,
+            1.5414447496198136e-09,
+            0.3536018431186676
+          ],
+          "tail": [
+            -0.22700181603431702,
+            -1.199040866595169e-14,
+            0.10244372487068176
+          ]
+        },
+        "foot_near": {
+          "head": [
+            0.20769158005714417,
+            0.0,
+            0.10670984536409378
+          ],
+          "tail": [
+            0.31204432249069214,
+            -1.3487104766340963e-08,
+            0.07237164676189423
+          ]
+        },
+        "foot_far": {
+          "head": [
+            -0.22699975967407227,
+            0.0,
+            0.10244888067245483
+          ],
+          "tail": [
+            -0.1466153860092163,
+            1.9832464559499385e-09,
+            0.05574585124850273
+          ]
+        },
+        "hand_near": {
+          "head": [
+            -0.13541436195373535,
+            2.9930058431659745e-11,
+            0.6148504018783569
+          ],
+          "tail": [
+            -0.12753303349018097,
+            -1.748691857983431e-08,
+            0.5296279191970825
+          ]
+        },
+        "hand_far": {
+          "head": [
+            0.2132665365934372,
+            -2.484948358194572e-11,
+            0.6084911823272705
+          ],
+          "tail": [
+            0.26008114218711853,
+            -7.321605988153124e-09,
+            0.5368435382843018
+          ]
+        }
+      }
+    },
+    "GIRL": {
+      "rig": "LOCO_GIRL | RIG",
+      "height_basis_m": 1.3699177438307872,
+      "parts": [
+        "LOCO_GIRL | PAINT body",
+        "PERF_GIRL | original head and attached braid",
+        "V007_GIRL | redrawn support boot near",
+        "V007_GIRL | drawn leg near",
+        "V007_GIRL | drawn sleeve near",
+        "V007_GIRL | drawn source gray cuff near",
+        "V007_GIRL | drawn skin near",
+        "V007_GIRL | articulated drawn hand near",
+        "V007_GIRL | redrawn support boot far",
+        "V007_GIRL | drawn leg far",
+        "V007_GIRL | drawn sleeve far",
+        "V007_GIRL | drawn source gray cuff far",
+        "V007_GIRL | drawn skin far",
+        "V007_GIRL | articulated drawn hand far"
+      ],
+      "bones_F1": {
+        "pelvis": {
+          "head": [
+            0.4000000059604645,
+            0.0,
+            0.5379999876022339
+          ],
+          "tail": [
+            0.4000000059604645,
+            0.0,
+            0.6402326822280884
+          ]
+        },
+        "chest": {
+          "head": [
+            0.4000000059604645,
+            3.3881317890172014e-21,
+            0.5379999876022339
+          ],
+          "tail": [
+            0.4565885066986084,
+            -1.7247155092992017e-11,
+            0.9395586848258972
+          ]
+        },
+        "head": {
+          "head": [
+            0.45658841729164124,
+            -5.551115123125783e-17,
+            0.9395589828491211
+          ],
+          "tail": [
+            0.4901813864707947,
+            2.343268357130057e-10,
+            1.1779392957687378
+          ]
+        },
+        "thigh_near": {
+          "head": [
+            0.41200006008148193,
+            0.0,
+            0.5379998683929443
+          ],
+          "tail": [
+            0.41846609115600586,
+            -8.821841035455691e-10,
+            0.2552095353603363
+          ]
+        },
+        "shin_near": {
+          "head": [
+            0.41846609115600586,
+            -8.881784197001252e-15,
+            0.25520965456962585
+          ],
+          "tail": [
+            0.26653337478637695,
+            3.185796515481343e-09,
+            0.0979912281036377
+          ]
+        },
+        "foot_near": {
+          "head": [
+            0.2665333151817322,
+            -1.7763568394002505e-15,
+            0.09799123555421829
+          ],
+          "tail": [
+            0.3428797721862793,
+            3.995880071272495e-09,
+            0.016895048320293427
+          ]
+        },
+        "thigh_far": {
+          "head": [
+            0.3879999816417694,
+            1.7763568394002505e-15,
+            0.5379998683929443
+          ],
+          "tail": [
+            0.5736228227615356,
+            3.5969296430238273e-09,
+            0.3098342716693878
+          ]
+        },
+        "shin_far": {
+          "head": [
+            0.5736226439476013,
+            0.0,
+            0.3098343014717102
+          ],
+          "tail": [
+            0.5231999754905701,
+            1.632223467495919e-09,
+            0.10386048257350922
+          ]
+        },
+        "foot_far": {
+          "head": [
+            0.5232000350952148,
+            2.220446049250313e-16,
+            0.1038605198264122
+          ],
+          "tail": [
+            0.5894216895103455,
+            2.2271112037897112e-11,
+            0.04782678931951523
+          ]
+        },
+        "upper_arm_near": {
+          "head": [
+            0.436949759721756,
+            -2.842170943040401e-14,
+            0.8873145580291748
+          ],
+          "tail": [
+            0.4708974361419678,
+            2.090827955214536e-09,
+            0.6791062355041504
+          ]
+        },
+        "forearm_near": {
+          "head": [
+            0.47089749574661255,
+            -7.450580596923828e-09,
+            0.6791062951087952
+          ],
+          "tail": [
+            0.5381860733032227,
+            7.3621837515247535e-09,
+            0.5113592147827148
+          ]
+        },
+        "upper_arm_far": {
+          "head": [
+            0.5261792540550232,
+            -1.4099832412739488e-14,
+            0.8140964508056641
+          ],
+          "tail": [
+            0.5509098768234253,
+            -1.99070537831858e-09,
+            0.634022057056427
+          ]
+        },
+        "forearm_far": {
+          "head": [
+            0.5509099364280701,
+            -2.3283064365386963e-10,
+            0.6340219974517822
+          ],
+          "tail": [
+            0.6063410043716431,
+            1.2622822231911357e-10,
+            0.5052506327629089
+          ]
+        },
+        "braid": {
+          "head": [
+            0.3645099699497223,
+            8.881784197001252e-15,
+            1.0159986019134521
+          ],
+          "tail": [
+            0.2843938171863556,
+            1.7318919909303787e-10,
+            0.8643714189529419
+          ]
+        },
+        "skirt_front": {
+          "head": [
+            0.4150000214576721,
+            2.6645352591003757e-15,
+            0.7080000042915344
+          ],
+          "tail": [
+            0.5858583450317383,
+            -2.5290148447654204e-11,
+            0.2956414520740509
+          ]
+        },
+        "skirt_back": {
+          "head": [
+            0.41499999165534973,
+            -2.930988785010413e-14,
+            0.7080000042915344
+          ],
+          "tail": [
+            0.1693231463432312,
+            6.196808399749898e-09,
+            0.3464115858078003
+          ]
+        },
+        "hand_near": {
+          "head": [
+            0.5381860733032227,
+            -0.03700000047683716,
+            0.5113592743873596
+          ],
+          "tail": [
+            0.4525998830795288,
+            -0.03700000047683716,
+            0.5113593339920044
+          ]
+        },
+        "hand_far": {
+          "head": [
+            0.6063410043716431,
+            -0.03700000047683716,
+            0.5052506923675537
+          ],
+          "tail": [
+            0.6346143484115601,
+            -0.03700000047683716,
+            0.4244694709777832
+          ]
+        }
+      }
+    }
+  },
+  "caveats": [
+    "Barefoot stature excludes shoes/hair. Chin-to-skull-vertex head landmarks under hair are estimated in existing paintings. Internal joints are estimated and are not asserted as surface anthropometry. No official orthographic front artwork exists; front view is a construction diagram only.",
+    "Preferred v028/v041 31-frame cycle remains in separate retained reference scene. Do not claim its foot contacts/travel are already validated on this static candidate."
+  ],
+  "sources_unchanged": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\neck_collar_connection_v041\\native\\WTSC_Neck_Collar_Connection_Candidate_v041.blend": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend": true
+  }
+}

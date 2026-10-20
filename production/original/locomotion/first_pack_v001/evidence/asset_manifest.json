@@ -1,0 +1,70 @@
+{
+  "blender": "5.2.2 LTS",
+  "fps": 24,
+  "units": "metres",
+  "plane": "XZ",
+  "source": "Pair_Painterly_Near_Age_v015.png",
+  "packed": true,
+  "characters": [
+    {
+      "character": "BOY",
+      "height_m": 1.45,
+      "rig": "LOCO_BOY | RIG",
+      "native_bones": 13,
+      "cutout_parts": 8
+    },
+    {
+      "character": "GIRL",
+      "height_m": 1.3699177438307872,
+      "rig": "LOCO_GIRL | RIG",
+      "native_bones": 16,
+      "cutout_parts": 9
+    }
+  ],
+  "clips": [
+    {
+      "id": "WALK",
+      "frames": 32,
+      "speed": 0.4,
+      "lift": 0.08,
+      "stance": 0.62,
+      "kind": "loop",
+      "note": "Neutral walk, restrained counter-swing and double support."
+    },
+    {
+      "id": "TRUDGE",
+      "frames": 44,
+      "speed": 0.24,
+      "lift": 0.045,
+      "stance": 0.7,
+      "kind": "loop",
+      "note": "Weary small steps, delayed head and dropped shoulders."
+    },
+    {
+      "id": "CAUTION_CROUCH",
+      "frames": 48,
+      "speed": 0,
+      "kind": "transition",
+      "note": "Stand, lower defensively, hold, return. Feet remain planted."
+    },
+    {
+      "id": "CARE_REACH",
+      "frames": 64,
+      "speed": 0,
+      "kind": "transition",
+      "note": "Pair turns attention toward each other, reaching hands meet, then release."
+    }
+  ],
+  "actions": [
+    "LOCO_BOY__WALK__v001",
+    "LOCO_BOY__TRUDGE__v001",
+    "LOCO_BOY__CAUTION_CROUCH__v001",
+    "LOCO_BOY__CARE_REACH__v001",
+    "LOCO_GIRL__WALK__v001",
+    "LOCO_GIRL__TRUDGE__v001",
+    "LOCO_GIRL__CAUTION_CROUCH__v001",
+    "LOCO_GIRL__CARE_REACH__v001"
+  ],
+  "render": "Cycles CPU,2threads,1sample",
+  "bounded_pack": "walk,trudge,caution crouch,care reach; remaining motions planned"
+}

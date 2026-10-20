@@ -1,0 +1,46 @@
+WHEN THE SKY CLEARS | MUYBRIDGE MANUAL SOURCE-ANATOMY TRACE | 2026-10-19
+
+Source and method
+The approved source is Animal Locomotion, Plate 2 (1887), phase 6, original
+crop x=1581..1891 and y=32..620 (310x588 pixels). The original source SHA-256
+matched the recorded PHOTO_SOURCE.json. The study uses only the adult source
+pose: no child proportions, invented inbetween, or walk-cycle timing. Every
+trace vertex in reference/phase06_manual_contours.json was placed by visual
+inspection of the source pixels. The only formula maps those listed pixel
+coordinates into Blender camera space; it does not generate anatomy.
+
+Technical validation
+Blender 5.2.2 LTS called the temporary native_curve_author.py operator once
+per contour. The saved file contains 16 separate Grease Pencil strokes and
+156 point positions on layer Phase 06 Visible Contours, frame 1. Cold reopen
+matched every specified point within 1.2e-7 Blender units. The native render
+is transparent PNG; the contact sheet's center panel composites that actual
+render on paper, and the right panel recolors only its alpha cyan over the
+source crop at the same two-times pixel scale. The screenshot/contact sheet
+is 1.14 MB and was saved privately as Library file
+[PRIVATE_LIBRARY_REFERENCE_REMOVED].
+
+Visual review
+- The stride, rear-leg extension, forward shin and both complete feet read at
+  the reference crop size. Leading heel near (230,538) and trailing toe near
+  (86,539) line up with the observed ground band; the raised leading toe is
+  retained. The crop does not cut the head or either foot.
+- The torso and forward arm are too diagrammatic. Several contour segments
+  cross at the shoulder/waist because the photograph's arm obscures the
+  underlying body; these should be broken or redrawn from a clearer source.
+- The head/face is low contrast in this plate and the trace resolves it as a
+  polygonal profile. The fist is a wedge. Knee and thigh contours have long
+  straight runs where the photo shows soft mass and joint changes.
+- These defects would be conspicuous at character shot size. This is an
+  editable registration/anatomy study, not approved character line art or an
+  animation improvement. No second phase and no 120-frame batch was made.
+
+Assets
+- native/Muybridge_Phase06_Manual_Trace_v061.blend
+- previews/Phase06_Source_Native_Overlay_Contact_v061.png
+- previews/phase06_native_trace_rgba.png
+- reference/phase06_source_crop.png and phase06_manual_contours.json
+- evidence/PHASE06_NATIVE_BUILD_v061.json, PHASE06_COLD_REOPEN_v061.json,
+  PHASE06_CONTACT_SHEET_v061.json
+
+Production/world/trailer/music/title/source files were untouched.

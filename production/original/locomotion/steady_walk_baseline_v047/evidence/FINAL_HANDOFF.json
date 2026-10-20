@@ -1,0 +1,60 @@
+{
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\steady_walk_baseline_v047\\native\\WTSC_Steady_Ordinary_Walk_v047.blend",
+  "native_bytes": 13404390,
+  "native_sha256": "29a4d9f794187602af43f7349f2b01c1019f39cba9f1d1278b966b78d1770103",
+  "archive": "WTSC_LOCAL_WORKSPACE\\locomotion\\steady_walk_baseline_v047\\WTSC_Steady_Ordinary_Walk_v047.zip",
+  "archive_bytes": 26445297,
+  "archive_sha256": "cfef61d609bc2e69b68dfe00efea775275ef174e190dd45f6d1f65cbf72ff903",
+  "archive_file_count": 37,
+  "all_archive_crcs_pass": true,
+  "all_eight_source_hashes_unchanged": true,
+  "movies": [
+    {
+      "file_name": "WTSC_Steady_Walk_v047_NormalSpeed_8Cycles.mp4",
+      "bytes": 3590694,
+      "sha256": "0837ab907f7f0563a8f1c8457ad358130cab9fb97ed301c171576ba914067195",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1280,
+        800
+      ],
+      "under_20_MB": true
+    },
+    {
+      "file_name": "WTSC_v046_vs_v047_Steady_Walk_NormalSpeed.mp4",
+      "bytes": 5210201,
+      "sha256": "8b4b607cde60be1f0ca1d2bb43dada06f6d2ef475e6228e87d6f98e7336ee73e",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true
+    }
+  ],
+  "library_comparison": [
+    {
+      "file_name": "WTSC_v046_vs_v047_Steady_Walk_NormalSpeed.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "local_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\steady_walk_baseline_v047\\previews\\WTSC_v046_vs_v047_Steady_Walk_NormalSpeed.mp4",
+      "metadata_verified": true
+    }
+  ],
+  "exact_travel_contract": {
+    "fps": 30,
+    "period_frames": 32,
+    "stride_m": 0.78,
+    "speed_m_s": 0.73125,
+    "distance_formula": "D(F)=.78*(F-1)/32",
+    "24fps_clock": "F=1+(G-G0)*30/24",
+    "24fps_cycle_frames": 25.6
+  },
+  "technical_blockers": [],
+  "artistic_status": "Unapproved ordinary-walk candidate. Extra pelvis hitch structurally removed; normal-speed artistic judgment remains essential. Girl finishing and recovery acting remain open.",
+  "render_status": "Blender exited; slot free."
+}

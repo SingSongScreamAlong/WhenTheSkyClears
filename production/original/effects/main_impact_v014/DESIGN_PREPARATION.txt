@@ -1,0 +1,30 @@
+WHEN THE SKY CLEARS - MAIN GROUND IMPACT v014
+Prepared design and native builder; this file does not establish a native build.
+
+The retained v003 rises as a detached soft cloud; v013 is a compact puff that
+is too small at shot scale. This candidate instead draws an asymmetric fan of
+ripped soil, separating diagonal inner folds from near/far dust traveling along
+the ground. Its widest solid fan is about3.2m, max height1.8m; the later thin
+ground dust reaches4.6m. World placement and event start remain the existing
+v003 origin and frame1824. Ten distinct chips have their own flight, landing
+and settling times. Six landings receive brief dust brush exposures. Broken
+ground marks remain after the airborne shapes finish.
+
+The visible forms are editable native filled contour meshes. Eight hidden real
+Grease Pencil contour guides are available for editing the main silhouette
+sources. Every onset/expansion contour is an independently authored drawing;
+the effect does not scale a complete smoke painting or simulate a fluid volume.
+The original project-owned imagegen v003 smoke atlas is reused only as pigment
+variation inside the contour geometry. No external assets or installs.
+
+scripts/build_main_impact.py expects Blender5.2.2 with v047g opened from disk.
+It saves a new context copy and a clean append collection only in this folder.
+The context disables old FX rendered geometry while retaining the existing
+physical v043 light and the original reflected-light receivers. Append asset
+has no light to avoid double lighting; reusing it needs explicit receiver/light
+integration. Original v047g is checked for unchanged SHA256 after saving.
+
+Review keys to render in native4K: 1823,1824,1825,1826,1828,1830,1833,1837,
+1842,1850,1860,1873,1892,1920. Judge separation, attack strength, child occlusion,
+whether near ground dust looks cut out, and whether scar/landings actually read
+through the painted terrain mask. Do not integrate on technical build success.

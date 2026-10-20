@@ -1,0 +1,138 @@
+[
+  {
+    "start": 7,
+    "frame": 20,
+    "age": 13.0,
+    "strip_time": 20.0,
+    "evaluated_strip": 20.0,
+    "location": [
+      -1.4221572875976562,
+      -0.18224334716796875,
+      0.4446522295475006
+    ],
+    "drivers": [
+      [
+        "animation_data.nla_tracks[\"NlaTrack\"].strips[\"RETIME using root start_frame and speed\"].strip_time",
+        "max(1,min(120,t+7))",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ]
+    ]
+  },
+  {
+    "start": 107,
+    "frame": 120,
+    "age": 13.0,
+    "strip_time": 20.0,
+    "evaluated_strip": 20.0,
+    "location": [
+      -0.5222702026367188,
+      -0.10138893127441406,
+      2.442582130432129
+    ],
+    "drivers": [
+      [
+        "animation_data.nla_tracks[\"NlaTrack\"].strips[\"RETIME using root start_frame and speed\"].strip_time",
+        "max(1,min(120,t+7))",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ]
+    ]
+  },
+  {
+    "start": 7,
+    "frame": 20,
+    "age": 13.0,
+    "strip_time": 20.0,
+    "evaluated_strip": 20.0,
+    "location": [
+      -0.5222702026367188,
+      -0.10138893127441406,
+      2.442582130432129
+    ],
+    "drivers": [
+      [
+        "animation_data.nla_tracks[\"NlaTrack\"].strips[\"RETIME using root start_frame and speed\"].strip_time",
+        "max(1,min(120,t+7))",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ]
+    ]
+  },
+  {
+    "start": 107,
+    "frame": 120,
+    "age": 13.0,
+    "strip_time": 20.0,
+    "evaluated_strip": 20.0,
+    "location": [
+      -0.5222702026367188,
+      -0.10138893127441406,
+      2.442582130432129
+    ],
+    "drivers": [
+      [
+        "animation_data.nla_tracks[\"NlaTrack\"].strips[\"RETIME using root start_frame and speed\"].strip_time",
+        "max(1,min(120,t+7))",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ],
+      [
+        "scale",
+        "1 if t>=0 else .0001",
+        true
+      ]
+    ]
+  }
+]

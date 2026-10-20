@@ -1,0 +1,21 @@
+* text=auto eol=lf
+*.gd text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.godot text eol=lf
+*.tscn text eol=lf
+*.cfg text eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.ogg binary
+*.wav binary
+*.mp4 binary
+*.ttf binary
+*.docx binary
+# Keep third-party notices and historical evidence byte-for-byte.
+*.txt -text
+game/character_sources/** -text
+game/evidence/** -text
+# Preserve the existing build-identity hashes, including authored line endings.
+game/** -text

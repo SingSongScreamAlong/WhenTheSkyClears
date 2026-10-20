@@ -1,0 +1,103 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Combined_Trial_v043.blend",
+  "source_sha256": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+  "master_scene": "WTSC_OPEN_5S_MASTER_v043",
+  "world_scene": "WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043",
+  "global_seconds": [
+    75,
+    80
+  ],
+  "global_frames": [
+    1801,
+    1920
+  ],
+  "decoded_frames": 120,
+  "fps": 24,
+  "master": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4",
+  "master_pixels": [
+    3840,
+    2160
+  ],
+  "master_bytes": 9214367,
+  "master_sha256": "4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9",
+  "view": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_View_v043.mp4",
+  "view_pixels": [
+    1920,
+    1080
+  ],
+  "view_bytes": 2754222,
+  "view_sha256": "2aa700ec302fe82fa298f78e0d5835f5bd4cc9479debb9b8db7817a650ecb639",
+  "before_after": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Open_Before_v040_After_v043_Different_Routes.mp4",
+  "comparison_pixels": [
+    3840,
+    1080
+  ],
+  "comparison_sha256": "b4a38444f27638e762d2dbd653aec95ec4386d620f6cf96692011f090c35e961",
+  "comparison_limit": "Different local route/camera: original04010.76m vs0430.562m. Disclosed in actual comparison pixels.",
+  "dense_decode_frames": 40,
+  "dense_decode_fps": 8,
+  "dense_review_directory": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense",
+  "cold_native_master_export": true,
+  "audio": "Native packed original75\u201380segment through actualScene+Sound strips",
+  "artistic_status": "Moving export ready for dense visual review; technical decode is not cinematic acceptance.",
+  "status": "PRESERVED INTEGRATION CHECKPOINT - awaiting corrected performance handoff",
+  "visual_review": {
+    "checkpoint": "v043 open-frame integration checkpoint; NOT approved cinematic performance",
+    "actual_review": "All40actual8fps decoded actor samples inspected through five chronological native-pixel crop sheets, plus actual1080shot keys1801/1825/1830/1843/1852/1881/1920 and nativeScene+Soundmaster1830check. No real-time playback claim; Codexmoviepreview request returnedqueued.",
+    "what_works": [
+      "Near-age charcoal identities retained, boy slightlytaller",
+      "Floor projection corrected for newrig depth; no new detachedwaist/shoe noticed ininspected motion samples",
+      "Live single-scene eruption behindcharacters, short hotphase followedbycold evolving/thinning smoke",
+      "Foreground repeating lowerplantstrip reduced withnativebank edge",
+      "NativepackedScene+Sound5sexport fromcoldreopenedsource,120frames4K24fps,original75\u201380audioalignmentcorrelation>.999"
+    ],
+    "weakest_art_issue": "At76.5\u201377.4s the foldedknee/boot andrigidhand/cuff shapes, combinedwithparallelcrouch/reach, stillread asconstructedcutout performance. Localroundoverlaps/wristcurl/timingoffsetdidnotresolve thefundamentaldrawnpose/acting problem.",
+    "settle": "Subdegree localchest/head/braid movement was added, but after78.3s the resultstillreads largelyheld andneeds strongerlivingweight/settle correction.",
+    "fx_limits": "Fourunderlying2.5Dsmoke forms; no evolvingvolumetricselfshadow. Latecoreheat isoff; coldplume texture reuse/dissipation remainartist-reviewitems.",
+    "route_assessment": "0.562m localreaction route isabout19times smallerthan original04010.76m; camera stopsnear78.3s. Works asreaction/stop butwouldcreate suddennearfreeze if droppedintoongoingjourney. Stagefuturedeceleration/continuation separately. Existingcomparisonexplicitlylabels differentroutes/cameras.",
+    "foot_scope": "Bootcontacts useevaluatedgeometry andsourcegroundray. No blanketpixel-perfectscreen-ground/skatingapproval isclaimed.",
+    "decision": "Keep v043 fixed asintegration checkpoint. DoNOTpropagate tofullfilm. Await parent-sealed correctedmotion handoff; nexttest mustkeep thiscamera,travel,world,lighting,FXandframing fixed.",
+    "next_test_staging": "notes/world_v016/frozen_staging_v043.json",
+    "upload_status": "Localreviewonly. No alternatetransfer orLibraryuploadworkaround attempted."
+  },
+  "native_media_qa": {
+    "master": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4",
+    "source_sha256": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+    "native_cold_export": true,
+    "metadata": [
+      "Duration: 00:00:05.01, start: 0.000000, bitrate: 14704 kb/s",
+      "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3840x2160 [SAR 1:1 DAR 16:9], 14544 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+      "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 190 kb/s (default)"
+    ],
+    "decoded_frames": 120,
+    "duration_seconds": 5,
+    "native_audio_75_80_correlation": 0.9993334357820423,
+    "native_audio_rms_ratio": 0.9968862382290631,
+    "analysis_only_actor_sheets": [
+      "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense\\Actor_Chronology_01.jpg",
+      "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense\\Actor_Chronology_02.jpg",
+      "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense\\Actor_Chronology_03.jpg",
+      "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense\\Actor_Chronology_04.jpg",
+      "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense\\Actor_Chronology_05.jpg"
+    ],
+    "sheet_method": "Actual8fps decoded frames, chronological crops with approximate source time labels; no synthetic frames or altered art. Whole movie retained.",
+    "art_review_pending": true
+  },
+  "preserved_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Combined_Trial_v043.blend": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4": "4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_View_v043.mp4": "2aa700ec302fe82fa298f78e0d5835f5bd4cc9479debb9b8db7817a650ecb639",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Open_Before_v040_After_v043_Different_Routes.mp4": "b4a38444f27638e762d2dbd653aec95ec4386d620f6cf96692011f090c35e961",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_proof_v005\\native\\WTSC_Battlefield_Weary_Stumble_5s_v005.blend": "1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4",
+    "WTSC_LOCAL_WORKSPACE\\shots\\integration\\v042\\imports\\WTSC_Battlefield_Weary_Stumble_5s_v005.blend": "1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4",
+    "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v003\\native\\WTSC_Evolving_Eruption_Collection_v003.blend": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+    "WTSC_LOCAL_WORKSPACE\\shots\\integration\\v043\\imports\\WTSC_Evolving_Eruption_Collection_v003.blend": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Full_Trailer_Editable_v040.blend": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v040.mp4": "a8b4edc357498ba3e2ffb585624a862d88ee852f4bb97caca617a14a19ad8569"
+  },
+  "staging_snapshot": "notes/world_v016/frozen_staging_v043.json",
+  "full_v040_changed": false,
+  "full_trailer_render_started": false,
+  "title_scope_changed": false,
+  "new_upload_attempted": false
+}

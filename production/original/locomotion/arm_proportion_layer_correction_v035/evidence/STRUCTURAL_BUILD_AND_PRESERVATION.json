@@ -1,0 +1,2390 @@
+{
+  "scope": "Native technical safeguards; static artistic review remains open. No cycle render.",
+  "blender_version": "5.2.2 LTS",
+  "blender_build_hash": "d13f752e3b9c",
+  "source_sha256": "e949e76b90397357f3f7378d02669caf276b2aec864a1c82e8594fe166ebd9b4",
+  "rest_changes": {
+    "near": {
+      "original_upper_m": 0.28978450277570666,
+      "original_fore_m": 0.12645480008359505,
+      "new_upper_m": 0.218,
+      "new_fore_m": 0.19823930285930172,
+      "total_reach_m": 0.4162393028593017,
+      "rest_elbow": [
+        -0.1696484237909317,
+        0.0,
+        0.8368316888809204
+      ]
+    },
+    "far": {
+      "original_upper_m": 0.28235059210546487,
+      "original_fore_m": 0.1337408514938239,
+      "new_upper_m": 0.218,
+      "new_fore_m": 0.19809144359928874,
+      "total_reach_m": 0.41609144359928874,
+      "rest_elbow": [
+        0.16603417694568634,
+        0.0,
+        0.8054310083389282
+      ]
+    }
+  },
+  "material_changes": {
+    "V007_BOY | articulated drawn hand near": {
+      "original": "V007 BOY drawn hand",
+      "candidate": "V035 | local charcoal separation | articulated drawn hand near",
+      "linear_neutral_add": 0.01
+    },
+    "V007_BOY | drawn skin near": {
+      "original": "V007 BOY drawn skin",
+      "candidate": "V035 | local charcoal separation | drawn skin near",
+      "linear_neutral_add": 0.007
+    },
+    "V007_BOY | articulated drawn hand far": {
+      "original": "V007 BOY drawn hand",
+      "candidate": "V035 | local charcoal separation | articulated drawn hand far",
+      "linear_neutral_add": 0.01
+    },
+    "V007_BOY | drawn skin far": {
+      "original": "V007 BOY drawn skin",
+      "candidate": "V035 | local charcoal separation | drawn skin far",
+      "linear_neutral_add": 0.007
+    }
+  },
+  "depth_changes": {
+    "V007_BOY | drawn skin far": {
+      "old_range": [
+        0.02500000037252903,
+        0.02500000037252903
+      ],
+      "candidate_y_m": 0.022
+    },
+    "V007_BOY | articulated drawn hand far": {
+      "rest_mesh_y_shift_m": -0.002,
+      "no_collection_promotion": true
+    }
+  },
+  "branches": [
+    {
+      "frame": 1.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013059041768392864,
+          "wrist_endpoint_error_m": 1.192100858858351e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013390402683605895,
+          "wrist_endpoint_error_m": 5.963667176735659e-08
+        }
+      }
+    },
+    {
+      "frame": 1.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012777758092985478,
+          "wrist_endpoint_error_m": 1.2733147856202598e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013278778603838368,
+          "wrist_endpoint_error_m": 2.983230150730994e-08
+        }
+      }
+    },
+    {
+      "frame": 1.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001252136833513591,
+          "wrist_endpoint_error_m": 4.474617187413059e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013150717324118826,
+          "wrist_endpoint_error_m": 1.2289397276440874e-07
+        }
+      }
+    },
+    {
+      "frame": 1.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012289273185535857,
+          "wrist_endpoint_error_m": 4.470907678330192e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013019111056442774,
+          "wrist_endpoint_error_m": 1.341550380156202e-07
+        }
+      }
+    },
+    {
+      "frame": 2.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012080802989321445,
+          "wrist_endpoint_error_m": 1.4059274133529856e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012896864456767056,
+          "wrist_endpoint_error_m": 2.9803945905435716e-08
+        }
+      }
+    },
+    {
+      "frame": 2.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011895474087366036,
+          "wrist_endpoint_error_m": 2.984470195609987e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001280352350387643,
+          "wrist_endpoint_error_m": 1.192263569845086e-07
+        }
+      }
+    },
+    {
+      "frame": 2.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001173258269857778,
+          "wrist_endpoint_error_m": 1.34116525596704e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012750768735307772,
+          "wrist_endpoint_error_m": 1.2018783204306492e-07
+        }
+      }
+    },
+    {
+      "frame": 2.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011570975188038698,
+          "wrist_endpoint_error_m": 7.45058067078765e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001273923046427962,
+          "wrist_endpoint_error_m": 2.3888519027648814e-07
+        }
+      }
+    },
+    {
+      "frame": 3.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011390718657949825,
+          "wrist_endpoint_error_m": 5.287704936773851e-11
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012769835563572413,
+          "wrist_endpoint_error_m": 1.0754681155873601e-07
+        }
+      }
+    },
+    {
+      "frame": 3.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011193640157613845,
+          "wrist_endpoint_error_m": 5.960720534289464e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012823736780484731,
+          "wrist_endpoint_error_m": 5.961564974897351e-08
+        }
+      }
+    },
+    {
+      "frame": 3.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010980998358404007,
+          "wrist_endpoint_error_m": 8.940839226667324e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012874915115897775,
+          "wrist_endpoint_error_m": 1.3700993574425777e-09
+        }
+      }
+    },
+    {
+      "frame": 3.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010754497424329313,
+          "wrist_endpoint_error_m": 1.1922018498373246e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012914631791357347,
+          "wrist_endpoint_error_m": 6.143991367530238e-08
+        }
+      }
+    },
+    {
+      "frame": 4.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001051592504580728,
+          "wrist_endpoint_error_m": 7.450615795717916e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012934269396279,
+          "wrist_endpoint_error_m": 9.541585881238917e-08
+        }
+      }
+    },
+    {
+      "frame": 4.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010266568870801465,
+          "wrist_endpoint_error_m": 7.45184736445008e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012944837436879124,
+          "wrist_endpoint_error_m": 1.8128410255072205e-07
+        }
+      }
+    },
+    {
+      "frame": 4.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001000816237315091,
+          "wrist_endpoint_error_m": 7.451272978448188e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012964072714612585,
+          "wrist_endpoint_error_m": 7.450607313755503e-08
+        }
+      }
+    },
+    {
+      "frame": 4.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009724840990979252,
+          "wrist_endpoint_error_m": 6.146008017942693e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012993060649242711,
+          "wrist_endpoint_error_m": 8.430315433938486e-08
+        }
+      }
+    },
+    {
+      "frame": 5.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009460608894160034,
+          "wrist_endpoint_error_m": 1.543422643551172e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013032437972713435,
+          "wrist_endpoint_error_m": 6.664001895463114e-08
+        }
+      }
+    },
+    {
+      "frame": 5.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009271122491847196,
+          "wrist_endpoint_error_m": 1.4901175094035102e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001309767801486211,
+          "wrist_endpoint_error_m": 1.8849659261588313e-07
+        }
+      }
+    },
+    {
+      "frame": 5.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009154017328233425,
+          "wrist_endpoint_error_m": 6.671302312994278e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001320060972904052,
+          "wrist_endpoint_error_m": 6.14615027475632e-08
+        }
+      }
+    },
+    {
+      "frame": 5.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009107340596797805,
+          "wrist_endpoint_error_m": 1.0434172904708065e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001333726211089382,
+          "wrist_endpoint_error_m": 5.960494916347886e-08
+        }
+      }
+    },
+    {
+      "frame": 6.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009129284358990697,
+          "wrist_endpoint_error_m": 5.964105510716952e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001350354954888146,
+          "wrist_endpoint_error_m": 3.0046331919290535e-08
+        }
+      }
+    },
+    {
+      "frame": 6.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009235098900022389,
+          "wrist_endpoint_error_m": 1.6391348671037674e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013695403836335809,
+          "wrist_endpoint_error_m": 6.664002089523506e-08
+        }
+      }
+    },
+    {
+      "frame": 6.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009432164654909727,
+          "wrist_endpoint_error_m": 1.1183608734517728e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013908613090215095,
+          "wrist_endpoint_error_m": 8.429690171062646e-08
+        }
+      }
+    },
+    {
+      "frame": 6.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0009706451605646197,
+          "wrist_endpoint_error_m": 7.028869364795839e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014139279615272427,
+          "wrist_endpoint_error_m": 5.962179645725687e-08
+        }
+      }
+    },
+    {
+      "frame": 7.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010043627374451965,
+          "wrist_endpoint_error_m": 1.0135862801513665e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001438324194912981,
+          "wrist_endpoint_error_m": 2.3132824577544022e-07
+        }
+      }
+    },
+    {
+      "frame": 7.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001043000175950071,
+          "wrist_endpoint_error_m": 9.688438979063985e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014679254477369342,
+          "wrist_endpoint_error_m": 1.88506790661898e-07
+        }
+      }
+    },
+    {
+      "frame": 7.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001085130019245283,
+          "wrist_endpoint_error_m": 1.2732523119291154e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015060710844088676,
+          "wrist_endpoint_error_m": 6.664218706026013e-08
+        }
+      }
+    },
+    {
+      "frame": 7.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011293438535879055,
+          "wrist_endpoint_error_m": 1.8629068204540107e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015514835307487433,
+          "wrist_endpoint_error_m": 3.013777529915151e-07
+        }
+      }
+    },
+    {
+      "frame": 8.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011742531890591942,
+          "wrist_endpoint_error_m": 7.477402997280441e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016028925962184586,
+          "wrist_endpoint_error_m": 1.5340774327250553e-08
+        }
+      }
+    },
+    {
+      "frame": 8.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012184569198889221,
+          "wrist_endpoint_error_m": 5.2163137294570394e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016548091072824704,
+          "wrist_endpoint_error_m": 1.332954792838943e-07
+        }
+      }
+    },
+    {
+      "frame": 8.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012605940259453382,
+          "wrist_endpoint_error_m": 8.430533442946282e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017022649797777479,
+          "wrist_endpoint_error_m": 6.24233669610034e-10
+        }
+      }
+    },
+    {
+      "frame": 8.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012992457825335955,
+          "wrist_endpoint_error_m": 2.0712368687172856e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001744888018034828,
+          "wrist_endpoint_error_m": 6.145287841082851e-08
+        }
+      }
+    },
+    {
+      "frame": 9.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013330744746426883,
+          "wrist_endpoint_error_m": 6.67086910146871e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017823065901172313,
+          "wrist_endpoint_error_m": 4.472844421509419e-08
+        }
+      }
+    },
+    {
+      "frame": 9.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013563326821873062,
+          "wrist_endpoint_error_m": 3.959104999846559e-09
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018141472764632578,
+          "wrist_endpoint_error_m": 2.9809431744944884e-08
+        }
+      }
+    },
+    {
+      "frame": 9.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001363358784464424,
+          "wrist_endpoint_error_m": 1.3683095258246745e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001840025305101648,
+          "wrist_endpoint_error_m": 4.472588684349873e-08
+        }
+      }
+    },
+    {
+      "frame": 9.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013586931021215324,
+          "wrist_endpoint_error_m": 1.2732049311887704e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001859576320075632,
+          "wrist_endpoint_error_m": 1.0745501016268921e-07
+        }
+      }
+    },
+    {
+      "frame": 10.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013479122482379258,
+          "wrist_endpoint_error_m": 9.114411245309927e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018723926549897877,
+          "wrist_endpoint_error_m": 3.071954905068647e-07
+        }
+      }
+    },
+    {
+      "frame": 10.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013312423924598006,
+          "wrist_endpoint_error_m": 6.525518802348233e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018781081421754093,
+          "wrist_endpoint_error_m": 2.384341776654093e-07
+        }
+      }
+    },
+    {
+      "frame": 10.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013089352230449777,
+          "wrist_endpoint_error_m": 1.7126757610934856e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.00187633629309344,
+          "wrist_endpoint_error_m": 5.961496928579648e-08
+        }
+      }
+    },
+    {
+      "frame": 10.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012856127035643541,
+          "wrist_endpoint_error_m": 2.450254122999644e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018670074811441043,
+          "wrist_endpoint_error_m": 1.4901187755966224e-07
+        }
+      }
+    },
+    {
+      "frame": 11.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012658127920886723,
+          "wrist_endpoint_error_m": 4.207047132164774e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018506028932521298,
+          "wrist_endpoint_error_m": 7.451344951819821e-08
+        }
+      }
+    },
+    {
+      "frame": 11.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012497313742343456,
+          "wrist_endpoint_error_m": 7.457272119735248e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018312306302557912,
+          "wrist_endpoint_error_m": 1.3330847413119515e-07
+        }
+      }
+    },
+    {
+      "frame": 11.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012375648951761702,
+          "wrist_endpoint_error_m": 1.3677825163445557e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018133164021453272,
+          "wrist_endpoint_error_m": 2.995439293889307e-08
+        }
+      }
+    },
+    {
+      "frame": 11.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012294693269651311,
+          "wrist_endpoint_error_m": 1.1453622757328482e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017975954192968615,
+          "wrist_endpoint_error_m": 6.664558561092356e-08
+        }
+      }
+    },
+    {
+      "frame": 12.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012256146082144587,
+          "wrist_endpoint_error_m": 1.2500055525044127e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001784761736723157,
+          "wrist_endpoint_error_m": 1.5841051259755737e-07
+        }
+      }
+    },
+    {
+      "frame": 12.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012262070026912892,
+          "wrist_endpoint_error_m": 3.750305971736363e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017717252972915857,
+          "wrist_endpoint_error_m": 1.2014021544743414e-07
+        }
+      }
+    },
+    {
+      "frame": 12.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012313749719164446,
+          "wrist_endpoint_error_m": 2.983294306008508e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017551174634665588,
+          "wrist_endpoint_error_m": 2.9852430082105345e-08
+        }
+      }
+    },
+    {
+      "frame": 12.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012413200812903904,
+          "wrist_endpoint_error_m": 8.974701881755264e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017352965839583414,
+          "wrist_endpoint_error_m": 1.4061169604024502e-07
+        }
+      }
+    },
+    {
+      "frame": 13.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012562026772338349,
+          "wrist_endpoint_error_m": 1.4466530286481944e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017125887485914433,
+          "wrist_endpoint_error_m": 1.2013976118957923e-07
+        }
+      }
+    },
+    {
+      "frame": 13.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012705161495756975,
+          "wrist_endpoint_error_m": 8.980138402275334e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016873564702912618,
+          "wrist_endpoint_error_m": 7.451278973509322e-08
+        }
+      }
+    },
+    {
+      "frame": 13.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.00127865452145097,
+          "wrist_endpoint_error_m": 1.3336921710578486e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016599336774172292,
+          "wrist_endpoint_error_m": 2.982349551742862e-08
+        }
+      }
+    },
+    {
+      "frame": 13.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012806387738344663,
+          "wrist_endpoint_error_m": 2.982127861957305e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016306828410459701,
+          "wrist_endpoint_error_m": 1.3328047869685612e-07
+        }
+      }
+    },
+    {
+      "frame": 14.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001276463142766805,
+          "wrist_endpoint_error_m": 3.725883998426466e-09
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015999325872555175,
+          "wrist_endpoint_error_m": 1.2289802073050418e-07
+        }
+      }
+    },
+    {
+      "frame": 14.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001266139453838243,
+          "wrist_endpoint_error_m": 6.008034207682032e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001568050227016733,
+          "wrist_endpoint_error_m": 1.3734544459577297e-09
+        }
+      }
+    },
+    {
+      "frame": 14.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012496555332203083,
+          "wrist_endpoint_error_m": 1.192839660530148e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015353829159689496,
+          "wrist_endpoint_error_m": 5.962756892886304e-08
+        }
+      }
+    },
+    {
+      "frame": 14.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012310590340010032,
+          "wrist_endpoint_error_m": 1.794339603188603e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015022621787745129,
+          "wrist_endpoint_error_m": 2.4029632705911747e-07
+        }
+      }
+    },
+    {
+      "frame": 15.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012146338916395017,
+          "wrist_endpoint_error_m": 6.146058064556937e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014690864120734237,
+          "wrist_endpoint_error_m": 5.960816327448477e-08
+        }
+      }
+    },
+    {
+      "frame": 15.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012007600741378703,
+          "wrist_endpoint_error_m": 1.2742912127265616e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014374781944175433,
+          "wrist_endpoint_error_m": 4.4725245141638024e-08
+        }
+      }
+    },
+    {
+      "frame": 15.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011898608589194443,
+          "wrist_endpoint_error_m": 1.2013744270598574e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014092486640102599,
+          "wrist_endpoint_error_m": 8.429599120077583e-08
+        }
+      }
+    },
+    {
+      "frame": 15.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011823075390344727,
+          "wrist_endpoint_error_m": 5.961480925643777e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013849644517486242,
+          "wrist_endpoint_error_m": 6.153467743551435e-08
+        }
+      }
+    },
+    {
+      "frame": 16.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011784625188899296,
+          "wrist_endpoint_error_m": 8.437036062677581e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001365180182635578,
+          "wrist_endpoint_error_m": 1.794337553482653e-07
+        }
+      }
+    },
+    {
+      "frame": 16.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001178750711849419,
+          "wrist_endpoint_error_m": 1.2302530946931304e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013475288351787102,
+          "wrist_endpoint_error_m": 1.201564724544491e-07
+        }
+      }
+    },
+    {
+      "frame": 16.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011835601932261958,
+          "wrist_endpoint_error_m": 6.01819567388872e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013293190829445287,
+          "wrist_endpoint_error_m": 1.46787406863706e-07
+        }
+      }
+    },
+    {
+      "frame": 16.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011932675451203736,
+          "wrist_endpoint_error_m": 6.066504826703314e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001310703223512882,
+          "wrist_endpoint_error_m": 2.2429278259757597e-08
+        }
+      }
+    },
+    {
+      "frame": 17.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001208251448293674,
+          "wrist_endpoint_error_m": 7.457544233063394e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012918596033914564,
+          "wrist_endpoint_error_m": 1.862650845933404e-07
+        }
+      }
+    },
+    {
+      "frame": 17.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012288957550756036,
+          "wrist_endpoint_error_m": 2.980232241213296e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012729050607444411,
+          "wrist_endpoint_error_m": 1.7943515757392682e-07
+        }
+      }
+    },
+    {
+      "frame": 17.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012532688869806498,
+          "wrist_endpoint_error_m": 1.491155770611735e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012539960722802858,
+          "wrist_endpoint_error_m": 1.88502586340161e-07
+        }
+      }
+    },
+    {
+      "frame": 17.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012779678643043068,
+          "wrist_endpoint_error_m": 1.7946110341122703e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012352901867098613,
+          "wrist_endpoint_error_m": 7.920412971185789e-08
+        }
+      }
+    },
+    {
+      "frame": 18.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013013758302906906,
+          "wrist_endpoint_error_m": 1.505325707773868e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001216934332094002,
+          "wrist_endpoint_error_m": 6.667158505481887e-08
+        }
+      }
+    },
+    {
+      "frame": 18.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013228302336849248,
+          "wrist_endpoint_error_m": 1.2308772392891938e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011990713821685333,
+          "wrist_endpoint_error_m": 7.454106084558141e-08
+        }
+      }
+    },
+    {
+      "frame": 18.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013416590579081785,
+          "wrist_endpoint_error_m": 2.457567885745154e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011818799195429347,
+          "wrist_endpoint_error_m": 2.3946436027806153e-07
+        }
+      }
+    },
+    {
+      "frame": 18.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001357190882267406,
+          "wrist_endpoint_error_m": 1.2013910313585606e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001165472991240219,
+          "wrist_endpoint_error_m": 1.8022526719262805e-07
+        }
+      }
+    },
+    {
+      "frame": 19.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013710733424654425,
+          "wrist_endpoint_error_m": 1.5137347085622928e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011500304183379403,
+          "wrist_endpoint_error_m": 1.137724732303999e-07
+        }
+      }
+    },
+    {
+      "frame": 19.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013852468439711871,
+          "wrist_endpoint_error_m": 1.0749472487085537e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001135687072476517,
+          "wrist_endpoint_error_m": 1.788144021836616e-07
+        }
+      }
+    },
+    {
+      "frame": 19.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001399554569466432,
+          "wrist_endpoint_error_m": 6.666915954763367e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001122600053391101,
+          "wrist_endpoint_error_m": 2.108912325117519e-07
+        }
+      }
+    },
+    {
+      "frame": 19.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014138033266790366,
+          "wrist_endpoint_error_m": 1.500110946560911e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011109341282048212,
+          "wrist_endpoint_error_m": 2.033617626519419e-07
+        }
+      }
+    },
+    {
+      "frame": 20.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014278366083086173,
+          "wrist_endpoint_error_m": 5.960991344199856e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010987056214036787,
+          "wrist_endpoint_error_m": 7.45151860514022e-08
+        }
+      }
+    },
+    {
+      "frame": 20.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014433895144555303,
+          "wrist_endpoint_error_m": 1.4954997744637089e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010875725316103393,
+          "wrist_endpoint_error_m": 1.2025251462515597e-07
+        }
+      }
+    },
+    {
+      "frame": 20.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014621480429907357,
+          "wrist_endpoint_error_m": 1.3335054003779703e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001081056923758258,
+          "wrist_endpoint_error_m": 6.010165683158522e-08
+        }
+      }
+    },
+    {
+      "frame": 20.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014837906680979721,
+          "wrist_endpoint_error_m": 1.2031033852684627e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001079250250488773,
+          "wrist_endpoint_error_m": 1.634159497813768e-07
+        }
+      }
+    },
+    {
+      "frame": 21.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015080460587528451,
+          "wrist_endpoint_error_m": 8.431676747734764e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001084339117478828,
+          "wrist_endpoint_error_m": 1.1379981958518692e-07
+        }
+      }
+    },
+    {
+      "frame": 21.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015359777865999761,
+          "wrist_endpoint_error_m": 3.0234076522416996e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0010979359832448585,
+          "wrist_endpoint_error_m": 2.4028374289471063e-07
+        }
+      }
+    },
+    {
+      "frame": 21.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015686169457013537,
+          "wrist_endpoint_error_m": 2.402743534444487e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011191680059004841,
+          "wrist_endpoint_error_m": 6.146034211120337e-08
+        }
+      }
+    },
+    {
+      "frame": 21.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016036674208722169,
+          "wrist_endpoint_error_m": 1.5853151966017868e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011471181135259238,
+          "wrist_endpoint_error_m": 1.2013726817002636e-07
+        }
+      }
+    },
+    {
+      "frame": 22.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016388978204567458,
+          "wrist_endpoint_error_m": 4.4754081625390386e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0011809373937130213,
+          "wrist_endpoint_error_m": 1.2489578719183682e-07
+        }
+      }
+    },
+    {
+      "frame": 22.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016740710645114238,
+          "wrist_endpoint_error_m": 2.986520078848841e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012149847850369592,
+          "wrist_endpoint_error_m": 1.7897076532587707e-07
+        }
+      }
+    },
+    {
+      "frame": 22.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017089245693823563,
+          "wrist_endpoint_error_m": 1.192095937738906e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012436216360222488,
+          "wrist_endpoint_error_m": 1.206569825263855e-07
+        }
+      }
+    },
+    {
+      "frame": 22.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017432305383403596,
+          "wrist_endpoint_error_m": 4.4844528664321334e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012659313137976815,
+          "wrist_endpoint_error_m": 7.92206609849052e-08
+        }
+      }
+    },
+    {
+      "frame": 23.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017767131230015034,
+          "wrist_endpoint_error_m": 1.2242264132889146e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012810205766502515,
+          "wrist_endpoint_error_m": 1.1934772077943705e-07
+        }
+      }
+    },
+    {
+      "frame": 23.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018091432900757608,
+          "wrist_endpoint_error_m": 1.3328004447543055e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0012927126296031347,
+          "wrist_endpoint_error_m": 1.2606413281450179e-07
+        }
+      }
+    },
+    {
+      "frame": 23.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018402777345040387,
+          "wrist_endpoint_error_m": 1.1945199988603768e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013048575257538226,
+          "wrist_endpoint_error_m": 2.402789974566876e-07
+        }
+      }
+    },
+    {
+      "frame": 23.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018698490937065343,
+          "wrist_endpoint_error_m": 1.3017416035056434e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013165919750947374,
+          "wrist_endpoint_error_m": 1.9992014864104355e-07
+        }
+      }
+    },
+    {
+      "frame": 24.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018976435764004734,
+          "wrist_endpoint_error_m": 2.6331940504564233e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001327025735006641,
+          "wrist_endpoint_error_m": 3.769837804702634e-07
+        }
+      }
+    },
+    {
+      "frame": 24.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001923413359416919,
+          "wrist_endpoint_error_m": 3.7700375747004333e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013353478342645177,
+          "wrist_endpoint_error_m": 1.2014013437482402e-07
+        }
+      }
+    },
+    {
+      "frame": 24.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0019469138435991137,
+          "wrist_endpoint_error_m": 2.414455677053284e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013406275666260658,
+          "wrist_endpoint_error_m": 2.1087213738885017e-07
+        }
+      }
+    },
+    {
+      "frame": 24.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001967895376768429,
+          "wrist_endpoint_error_m": 1.0751309091383046e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013456939377316968,
+          "wrist_endpoint_error_m": 1.490186862287582e-08
+        }
+      }
+    },
+    {
+      "frame": 25.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001986141842144777,
+          "wrist_endpoint_error_m": 1.2295921408453033e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001353775336304668,
+          "wrist_endpoint_error_m": 1.8022973032378683e-07
+        }
+      }
+    },
+    {
+      "frame": 25.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020013970877870023,
+          "wrist_endpoint_error_m": 1.202320139547501e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013647368323996282,
+          "wrist_endpoint_error_m": 6.38711614461483e-08
+        }
+      }
+    },
+    {
+      "frame": 25.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020134230557241842,
+          "wrist_endpoint_error_m": 1.3330044630634512e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013784771009057188,
+          "wrist_endpoint_error_m": 4.470458992381743e-08
+        }
+      }
+    },
+    {
+      "frame": 25.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020219838976987324,
+          "wrist_endpoint_error_m": 5.968984219319909e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013948609860992413,
+          "wrist_endpoint_error_m": 2.130891643974253e-09
+        }
+      }
+    },
+    {
+      "frame": 26.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.002026834033465645,
+          "wrist_endpoint_error_m": 1.2290047912931727e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014137523146920186,
+          "wrist_endpoint_error_m": 8.940723682079962e-08
+        }
+      }
+    },
+    {
+      "frame": 26.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020300896399200667,
+          "wrist_endpoint_error_m": 9.39724781646096e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014350200271678183,
+          "wrist_endpoint_error_m": 2.1490796627870726e-07
+        }
+      }
+    },
+    {
+      "frame": 26.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020335961548754097,
+          "wrist_endpoint_error_m": 1.0901364790659243e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014585412560627008,
+          "wrist_endpoint_error_m": 7.450998569250001e-08
+        }
+      }
+    },
+    {
+      "frame": 26.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020330381670511126,
+          "wrist_endpoint_error_m": 1.2334053305777908e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014841871842923714,
+          "wrist_endpoint_error_m": 3.687798974205677e-10
+        }
+      }
+    },
+    {
+      "frame": 27.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020252428091471846,
+          "wrist_endpoint_error_m": 1.8088963073781055e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001511810288467072,
+          "wrist_endpoint_error_m": 1.4918721170913004e-08
+        }
+      }
+    },
+    {
+      "frame": 27.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0020112459378055516,
+          "wrist_endpoint_error_m": 1.2059877072594153e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015378921410854098,
+          "wrist_endpoint_error_m": 1.9371510770026432e-07
+        }
+      }
+    },
+    {
+      "frame": 27.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.00199210107522851,
+          "wrist_endpoint_error_m": 1.794573690731099e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015585317118241334,
+          "wrist_endpoint_error_m": 1.884881828550996e-07
+        }
+      }
+    },
+    {
+      "frame": 27.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001966482604899249,
+          "wrist_endpoint_error_m": 8.979566129416294e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015730383097698744,
+          "wrist_endpoint_error_m": 1.5037478807871035e-08
+        }
+      }
+    },
+    {
+      "frame": 28.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001933314203989148,
+          "wrist_endpoint_error_m": 1.0442080690567636e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015807193532695345,
+          "wrist_endpoint_error_m": 5.962056364505482e-08
+        }
+      }
+    },
+    {
+      "frame": 28.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018940083574937071,
+          "wrist_endpoint_error_m": 1.378358528725804e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015818969502928695,
+          "wrist_endpoint_error_m": 1.4058248263583358e-07
+        }
+      }
+    },
+    {
+      "frame": 28.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018500047082592864,
+          "wrist_endpoint_error_m": 2.40787863678324e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015778199530450461,
+          "wrist_endpoint_error_m": 5.960635629990596e-08
+        }
+      }
+    },
+    {
+      "frame": 28.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0018027026257891848,
+          "wrist_endpoint_error_m": 1.5066772651843266e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015692811404540562,
+          "wrist_endpoint_error_m": 7.450817333599044e-08
+        }
+      }
+    },
+    {
+      "frame": 29.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017535510162628358,
+          "wrist_endpoint_error_m": 5.962873143424538e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015570403827119747,
+          "wrist_endpoint_error_m": 6.145323287526196e-08
+        }
+      }
+    },
+    {
+      "frame": 29.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0017059130163583607,
+          "wrist_endpoint_error_m": 1.2137234869173907e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015419133494732535,
+          "wrist_endpoint_error_m": 1.8848866352112374e-07
+        }
+      }
+    },
+    {
+      "frame": 29.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016633743324930136,
+          "wrist_endpoint_error_m": 1.6744412927130404e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015246406481824717,
+          "wrist_endpoint_error_m": 1.9371860872193637e-07
+        }
+      }
+    },
+    {
+      "frame": 29.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0016237942312699644,
+          "wrist_endpoint_error_m": 1.4679847982548536e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015060220438503434,
+          "wrist_endpoint_error_m": 7.456122009652874e-08
+        }
+      }
+    },
+    {
+      "frame": 30.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015843450041385075,
+          "wrist_endpoint_error_m": 1.202830529601686e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014868370979749072,
+          "wrist_endpoint_error_m": 9.555052450191722e-08
+        }
+      }
+    },
+    {
+      "frame": 30.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.00154596889340864,
+          "wrist_endpoint_error_m": 1.2023585422303263e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014671853174219984,
+          "wrist_endpoint_error_m": 1.4676444085210894e-07
+        }
+      }
+    },
+    {
+      "frame": 30.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0015095814230955927,
+          "wrist_endpoint_error_m": 7.456025829781298e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014468594407846445,
+          "wrist_endpoint_error_m": 1.8128616404255984e-07
+        }
+      }
+    },
+    {
+      "frame": 30.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001474237845717184,
+          "wrist_endpoint_error_m": 1.2129150258693517e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014260682648106655,
+          "wrist_endpoint_error_m": 8.42937338380572e-08
+        }
+      }
+    },
+    {
+      "frame": 31.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014386920170217927,
+          "wrist_endpoint_error_m": 1.2489542623343282e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0014050821944453162,
+          "wrist_endpoint_error_m": 6.667344148235324e-08
+        }
+      }
+    },
+    {
+      "frame": 31.25,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001403497948115723,
+          "wrist_endpoint_error_m": 7.921160972093196e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013847924581182718,
+          "wrist_endpoint_error_m": 6.675601528901391e-08
+        }
+      }
+    },
+    {
+      "frame": 31.5,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013692525447210613,
+          "wrist_endpoint_error_m": 2.980296907122525e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.001366501343131098,
+          "wrist_endpoint_error_m": 1.3328082399069874e-07
+        }
+      }
+    },
+    {
+      "frame": 31.75,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013365307250796533,
+          "wrist_endpoint_error_m": 1.7953070803316605e-07
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013509869264667909,
+          "wrist_endpoint_error_m": 8.429374943796782e-08
+        }
+      }
+    },
+    {
+      "frame": 32.0,
+      "arms": {
+        "near": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013059043944793518,
+          "wrist_endpoint_error_m": 7.45112584424156e-08
+        },
+        "far": {
+          "pole_angle": 0,
+          "analytic_elbow_error_m": 0.0013390437205774597,
+          "wrist_endpoint_error_m": 1.5060801714363948e-08
+        }
+      }
+    }
+  ],
+  "leg_contour_refit": [
+    {
+      "side": "near",
+      "frame": 1,
+      "max_contour_vertex_move_m": 0.03437797471878895,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 2,
+      "max_contour_vertex_move_m": 0.03607669303047359,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 3,
+      "max_contour_vertex_move_m": 0.03839856986574078,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 4,
+      "max_contour_vertex_move_m": 0.03846453436928236,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 5,
+      "max_contour_vertex_move_m": 0.036773348446678004,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 6,
+      "max_contour_vertex_move_m": 0.03388759600908222,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 7,
+      "max_contour_vertex_move_m": 0.03134577445538569,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 8,
+      "max_contour_vertex_move_m": 0.0283976847852812,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 9,
+      "max_contour_vertex_move_m": 0.024946666250096363,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 10,
+      "max_contour_vertex_move_m": 0.021264080812124646,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 11,
+      "max_contour_vertex_move_m": 0.01739278901119214,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 12,
+      "max_contour_vertex_move_m": 0.014342210450859148,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 13,
+      "max_contour_vertex_move_m": 0.011845506990742393,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 14,
+      "max_contour_vertex_move_m": 0.010113937343136668,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 15,
+      "max_contour_vertex_move_m": 0.013713370833887756,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 16,
+      "max_contour_vertex_move_m": 0.01640629960837414,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 17,
+      "max_contour_vertex_move_m": 0.018695924700690685,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 18,
+      "max_contour_vertex_move_m": 0.016808974374614746,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 19,
+      "max_contour_vertex_move_m": 0.016540825804167842,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 20,
+      "max_contour_vertex_move_m": 0.019065115426898864,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 21,
+      "max_contour_vertex_move_m": 0.021609292677855614,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 22,
+      "max_contour_vertex_move_m": 0.024585387980058375,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 23,
+      "max_contour_vertex_move_m": 0.02701905250312173,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 24,
+      "max_contour_vertex_move_m": 0.029054614490092338,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 25,
+      "max_contour_vertex_move_m": 0.030731947671030668,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 26,
+      "max_contour_vertex_move_m": 0.02977608916222778,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 27,
+      "max_contour_vertex_move_m": 0.025782552179026568,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 28,
+      "max_contour_vertex_move_m": 0.02756869825902582,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 29,
+      "max_contour_vertex_move_m": 0.0316555253868846,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 30,
+      "max_contour_vertex_move_m": 0.03370595268992266,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "near",
+      "frame": 31,
+      "max_contour_vertex_move_m": 0.03557971472956913,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 1,
+      "max_contour_vertex_move_m": 0.014284243935359818,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 2,
+      "max_contour_vertex_move_m": 0.015275466417915553,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 3,
+      "max_contour_vertex_move_m": 0.016721049844793483,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 4,
+      "max_contour_vertex_move_m": 0.017910582052688227,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 5,
+      "max_contour_vertex_move_m": 0.018686152652631155,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 6,
+      "max_contour_vertex_move_m": 0.019264724200829496,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 7,
+      "max_contour_vertex_move_m": 0.02184934619231617,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 8,
+      "max_contour_vertex_move_m": 0.026831289265191207,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 9,
+      "max_contour_vertex_move_m": 0.030609852702927414,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 10,
+      "max_contour_vertex_move_m": 0.033795096740898006,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 11,
+      "max_contour_vertex_move_m": 0.03603602326100904,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 12,
+      "max_contour_vertex_move_m": 0.037320884190895236,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 13,
+      "max_contour_vertex_move_m": 0.04059018080877684,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 14,
+      "max_contour_vertex_move_m": 0.04114723448704059,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 15,
+      "max_contour_vertex_move_m": 0.037652869987946036,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 16,
+      "max_contour_vertex_move_m": 0.030614573830531636,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 17,
+      "max_contour_vertex_move_m": 0.0294693642410482,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 18,
+      "max_contour_vertex_move_m": 0.0330750021729091,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 19,
+      "max_contour_vertex_move_m": 0.03516544033168961,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 20,
+      "max_contour_vertex_move_m": 0.03629567840515226,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 21,
+      "max_contour_vertex_move_m": 0.036218846036429456,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 22,
+      "max_contour_vertex_move_m": 0.03481636975029789,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 23,
+      "max_contour_vertex_move_m": 0.03172317429616756,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 24,
+      "max_contour_vertex_move_m": 0.027522856512794545,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 25,
+      "max_contour_vertex_move_m": 0.023102845328600727,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 26,
+      "max_contour_vertex_move_m": 0.01888935233830441,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 27,
+      "max_contour_vertex_move_m": 0.01589726821044351,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 28,
+      "max_contour_vertex_move_m": 0.014456995266403502,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 29,
+      "max_contour_vertex_move_m": 0.014456597511687938,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 30,
+      "max_contour_vertex_move_m": 0.01440727065196224,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    },
+    {
+      "side": "far",
+      "frame": 31,
+      "max_contour_vertex_move_m": 0.014368804999600278,
+      "cuff_ring_change_m": 0.0,
+      "knee_rounding_region_m": 0.018
+    }
+  ],
+  "preservation_errors": {
+    "root_matrix": 0.0,
+    "protected_mesh_m": 0.0,
+    "hand_xz_m": 5.960464477539063e-08,
+    "hand_matrix": 0.0,
+    "non_arm_bone_matrix": 0.0,
+    "shoulder_head_m": 0.0
+  },
+  "original_actions_changed": [],
+  "leg_cause": "Bones are straight fixed-length IK segments. V024/V027 trouser shape samples use cubic Hermite centerlines with averaged tangent at knee; smooth bending propagates through thigh/shin drawing. Candidate changes only trouser drawing shape coordinates, not skeleton or animation."
+}

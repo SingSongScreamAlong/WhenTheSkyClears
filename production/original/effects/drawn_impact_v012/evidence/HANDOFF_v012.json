@@ -1,0 +1,50 @@
+{
+  "status": "v012 isolated compact impact review candidate delivered; artistic acceptance pending; no production integration",
+  "parent_thread": "01a11891-101b-7258-912e-593e0317c0ce",
+  "library_directory": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "library": {
+    "review_video": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "native_rgba_source_zip": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "actual_onset_keys": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "actual_landings": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "shot_context": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]"
+  },
+  "native_asset": "native/WTSC_Drawn_Impact_Append_v012.blend",
+  "native_asset_sha256": "282fc921de1c501a042e2bedba7ad8080ccd76971523bc5d6f2894a286e6b30c",
+  "review_movie_bytes": 342345,
+  "review_movie_sha256": "f55e25d75547b4b6e1e2cc4f405bd3124877aac2fc1d002a58283a6130ef8442",
+  "source_zip_bytes": 75013049,
+  "source_zip_sha256": "e8c3618f2ac2414cb2234ad65c5e3f38773e7fc44b8ce69285c9d56f9c3decad",
+  "construction": "Separate native contour exposures expand outward and split, not the same fully formed painting fading. Seven differently sized irregular debris pieces, measured uneven foreground-edge contacts, four brief contact drawing events, terrain-following broken marks. Cache-free; no plume.",
+  "technical_checks": {
+    "blender": "5.2.2 LTS",
+    "fps": 24,
+    "frames": [1, 72],
+    "seconds": 3,
+    "pixels": [1920, 1080],
+    "native_objects": 48,
+    "packed_images": 1,
+    "external_caches": 0,
+    "valid_drivers": 127,
+    "sampled_ages": 10,
+    "append_and_offset100_geometry_error": 0,
+    "scale1_7_max_error_metres": 0.000009918212890758227,
+    "appended_baseline_vs_offset100_actual_render": "pixel-identical",
+    "source_vs_appended_rgba_effect_area_mean_8bit_error": 0.19575958702064897,
+    "source_vs_appended_rgba_max_8bit_error": 39,
+    "all_72_rgba_files_opened": true,
+    "mp4_fully_decoded": true,
+    "zip_crc": "passed",
+    "production_v038_and_previous_v011_hashes_preserved": true,
+    "continuous_speed_playback_observed": false
+  },
+  "remaining_artistic_limits": [
+    "Onset remains angular/star-like and more graphic than the painted scenery.",
+    "Contact puffs are subtle at full shot size; perceived grounded weight and impact force need independent review.",
+    "Terrain is authored to this measured held shot; placement on new terrain needs editing.",
+    "No verified tutorial motion was accessible; no claim of reproducing it.",
+    "This is one compact refinement candidate, not acceptance of the earlier broad effects pack."
+  ],
+  "upload_notes": "Canonical helper stopped before reservation: Library prepare_uploads is not available. Direct ordered Library create batches then confirmed all five uploads succeeded. Full receipts are retained. Windows apply-xattrs helper failed with os.setxattr unavailable, so local Library metadata was not applied; uploaded Library files succeeded.",
+  "blocked_or_pending_actions": "No production integration authorized or attempted. No rendering or upload action remains pending. Artistic review remains pending."
+}

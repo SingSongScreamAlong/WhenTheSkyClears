@@ -1,0 +1,113 @@
+{
+  "status": "TWO_POSE_PAINTED_CORRECTIVE_COMPLETE_PARTIAL_VISUAL_GAIN",
+  "artistic_approval": "OPEN",
+  "scope": [
+    "L_LOADING source26/study17.25",
+    "L_PASSING source34/study25.25"
+  ],
+  "native": "native/WTSC_Painted_Whole_Pose_Correctives_v022.blend",
+  "preview": "previews/WTSC_v022_Whole_Painted_Pose_Comparison_8s.mp4",
+  "preview_bytes": 250875,
+  "private_library_result": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v022_Whole_Painted_Pose_Comparison_8s.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v022_Whole_Painted_Pose_Comparison_8s.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 250875,
+    "external_connectors_accessed": false
+  },
+  "visual_gains": [
+    "Continuous curved trouser shapes with original pigment",
+    "Rolled cuffs at hem with flare/bow and visible ankles retained",
+    "Quieter coat hem and closed waist overlap"
+  ],
+  "visual_limits": [
+    "Flat coat/torso representation remains",
+    "Smooth tubular leg tendency and reused paint distortion",
+    "Two pose drawings only; temporal popping/blending untested"
+  ],
+  "support_preservation": {
+    "support_bone_world_matrix_max_delta": 0.0,
+    "boot_vertices_max_delta_m": 0.0,
+    "other_six_selected_poses_original_mesh_max_delta_m": 0.0,
+    "head_arms_hands_original_mesh_max_delta_m": 0.0,
+    "base_vertex_and_UV_data_unchanged": true,
+    "packed_paint_image_bytes_unchanged": true,
+    "all_chains_reachable": true,
+    "replacement_drawing_visibility": {
+      "R_CONTACT": [],
+      "R_LOADING": [],
+      "R_PASSING": [],
+      "R_UP": [],
+      "L_CONTACT": [],
+      "L_LOADING": [
+        "V022 | L_LOADING | near painted trouser replacement",
+        "V022 | L_LOADING | far painted trouser replacement",
+        "V022 | loading | waist compression ink crease",
+        "V022 | loading | wash fold edge"
+      ],
+      "L_PASSING": [
+        "V022 | L_PASSING | near painted trouser replacement",
+        "V022 | L_PASSING | far painted trouser replacement",
+        "V022 | passing | waist compression ink crease",
+        "V022 | passing | wash fold edge"
+      ],
+      "L_UP": []
+    },
+    "actual_boot_minimum_z_by_phase": {
+      "R_CONTACT": {
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 9.313225746154785e-09
+      },
+      "R_LOADING": {
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0
+      },
+      "R_PASSING": {
+        "V007_BOY | redrawn support boot far": 0.060080386698246,
+        "V007_BOY | redrawn support boot near": 1.4901161193847656e-08
+      },
+      "R_UP": {
+        "V007_BOY | redrawn support boot far": 0.06002340465784073,
+        "V007_BOY | redrawn support boot near": 3.725290298461914e-09
+      },
+      "L_CONTACT": {
+        "V007_BOY | redrawn support boot far": -2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 2.9802322387695312e-08
+      },
+      "L_LOADING": {
+        "V007_BOY | redrawn support boot far": -4.470348358154297e-08,
+        "V007_BOY | redrawn support boot near": 1.4901161193847656e-08
+      },
+      "L_PASSING": {
+        "V007_BOY | redrawn support boot far": -1.4901161193847656e-08,
+        "V007_BOY | redrawn support boot near": 0.03343687951564789
+      },
+      "L_UP": {
+        "V007_BOY | redrawn support boot far": -2.2351741790771484e-08,
+        "V007_BOY | redrawn support boot near": 0.02199885994195938
+      }
+    },
+    "scope": "Selected native pose/asset preservation, not visual acceptance or an in-between/cloth simulation pass",
+    "status": "PASS"
+  },
+  "continuous_cycle": "NOT_STARTED",
+  "production_integration": "NOT_STARTED",
+  "render_blockers": [],
+  "coordination_completion_notice": "failed path error; delivery unconfirmed; no render pending",
+  "native_sha256": "fbb1563d2a21ae99209256f9abad0222c5d5f4167a0bdc93b23993945f2d7884",
+  "package": "WTSC_Whole_Painted_Pose_Correctives_v022.zip"
+}

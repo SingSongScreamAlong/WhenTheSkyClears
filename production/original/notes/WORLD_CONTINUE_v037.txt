@@ -1,0 +1,96 @@
+COMPLETED v037 FULL106s CHECKPOINT EXPORT. The v039 benchmark and full updated-film work remain active; see WORLD_CONTINUE_BENCHMARK_v039.txt. No v037 render jobs remain.
+
+ACTIVE CONFIRMED FINAL SCOPE:106seconds total. Entire0â€“100 moving world ONLY
+through enormous scrolling WHEN THE SKY CLEARS lettering on black. Final S
+clears100, then6seconds silent credits. No unmasked intro; no52â€“70loop/cache.
+
+Exact credits bodies, ordered:
+WHEN THE
+SKY CLEARS.
+The Animated Series.
+2027.
+A Two Truck Productions project.
+
+Source shots/world/WTSC_Full_Knockout_Trailer_Editable_v037.blend
+Scenes WTSC_WORLD_CORRECTED_v037, WTSC_FULL_FILM_KNOCKOUT_v037,
+WTSC_MASTER_4K_106S_v037. Opens106s native Scene+Sound master. All4K24fps.
+FINAL EDITABLE companion prepared:shots/world/WTSC_Full_Knockout_Trailer_Editable_v038.blend
+Master WTSC_MASTER_4K_106S_v038. Samevisualworld/picture scenes037unchanged.
+Only native soundfade end corrected to exact100s boundaryframe2401 (instead
+oflastpictureframe2400), fonts packedforlocaleditableuse, defaultnativeexport
+paths versioned038 toavoid oldmovieoverwrites. Record final_editable_v038.json.
+Immutable rendering source037SHAf4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4.
+Original100sWAV starts0, one90â€“100fade, silence100â€“106.2544finalframes.
+
+CORRECTIONS DONE + VERIFIED:
+Actual native alpha audit found7regional materials with Math.001 factor keys:
+VillageEmpty,near/farWoods,School,Camp,Battlefield,Ruins. Removed7setfadecurves
+and15smoke regiongatecurves in preservedv035. Kept original imagealpha, smoke
+ageopacity and lightflicker. High-crown trees already had static alpha.
+Actual v035 review exposed physical overlaps: School/Camp coplanarY10, warm/
+abandonedvillageY12. Spaced WHOLEpaintings alongroute throughX156, slightdepth
+offsets12.06/10.06 at overlaps. No stretchedart. Remapped route0â€“160.75 over100s,
+shared pair root only; same held near-age GP drawing/parentedpaint. Ground now
+extendsX-24..220. Opaque panorama covers all piecewise-linear camera routekeys.
+Static3.5%edgefeather on regionalpaintings blends rectangularedges spatially,
+no timeline/visibility input. Full4Kunmasked world_edge_2161.png actuallyviewed.
+
+4anchored fires:Schooldebris,Camphearth,Battlefield,DistantRuins. GenuineGPT
+imagegen flame1024x1536RGBA, copiedunchanged tosets/fx/v036/Painterly_Flame.png.
+Prompt notes/world_v016/flame_imagegen_prompt_v036.txt.2pinnedflames,4rooted
+smoke wisps,10embers + physical point light perfire; paintedlocalfirelight uses
+sameflicker. Existing15smokewisps anchored/moved withsets. v036initialfires
+wereFLOATING; corrected ALLroots/hearthstones/lightmaskvectors/oldsmokebases
+in v037 to paintedground perspective. Full4Kunmasked world_grounded_1609.png
+actuallyviewed:campfiremeetssoil, no suspendedhearth. DoNOTusev036floatingchecks.
+Proofs renders/world_v016/full_knockout_checks_v037/...
+Native audit notes/world_v016/full_native_audit_v037.json PASSED:7materialalpha
+paths0,4fixedrootmotion/lightchecked,heldGPsha,coverageallroutekeys,center.5/.5,
+exactcardbodies,total106s. FontsImpact/ArialBlack/ArialinstalledfsType8 verified
+stdlib; rights https://learn.microsoft.com/en-us/typography/fonts/font-faq
+allows renderedvideo pixels. Source retainedlocal; nofontredistribution.
+
+ACTIVE FULL RENDER CONTROLLER:exec session41925
+Python scripts/export_full_knockout_v037.py
+4ownedWorldBlender PIDs42896,54320,848,10448,frames1â€“600/601â€“1200/1201â€“1800/1801â€“2400.
+NativeEevee32samples,3CPUthreads each, no sharedUI. Effects separatechat owns
+standalonePACK; no dependencies on unfinishedpackassets here. Resourceplan/PIDs:
+notes/world_v016/full_render_workers_v037.json
+LIVE progress notes/world_v016/full_render_status_v037.json
+Logs renders/world_v016/full_parts_v037/world_01..04.log
+Controller next renders nativeFontAlpha4K in4lighterworkers sequentialphase,
+then multiplies freshWorld with raw nativeAlpha. Split-compositor proof at1609
+matched native scene exactly (meanpixelerror0), notapproximateFFmpegdrawtext.
+Mask H264LOSSLESS supported/tested12frames; noframeinterpolation. No old cached
+fading-world footage infinal. All100sWORLDframes freshnative4K; rasterpaintsource
+resolutionstillmostly1672x941. Flame1536high. Textnative4K.
+NativeWorldcomponent adds sameFogGlow asfullcompositor, thenmaskcontainsglow.
+Component worker now resolvesABSOLUTE outputpaths; earlier2relativeproofs were
+moved fromC:/renders toproject. Allcontrolleroutpathsabsolute. Donotrerenderproofs.
+
+Expected outputs:
+renders/world_v016/WTSC_Full_Knockout_Trailer_4K_v037.mp4
+renders/world_v016/WTSC_Full_Knockout_Trailer_View_v037.mp4 under20,000,000bytes,
+720p1100kbpsH264+128kbpsAAC. Masterhighqualityretainedseparately.
+Controller verifies2400world,2400mask,144heldcreditframes,2544movieframes,
+106sfull decode andcreatesnotes/world_v016/full_completed_v037.json.
+NEXT: finish independent fullmovieQC, actualdecodedframevisualreview, under20MB
+copyverify, native/sourcepreservationchecks, userguide/manifest, openincodex.
+Independent verifier scripts/verify_full_knockout_v037.py is PREPARED; runafter
+controller has full_completed_v037.json including viewing_copy. Mustcheck all
+2544frames,106s24fps,stereo/alignment90â€“100fade/silence100â€“106,blackoutsideglyphs,
+blockjoins601/1201/1801,creditcut2401,creditsactualreadabilityandpriorhashes.
+Controller scriptwaspatchedwhilealreadyrunning toassertcombine dup/drop0;
+loadedliveprocesswon'thavepatch, soverifier independentlycheckscombine.log.
+Source037immutableunchanged; source038onlyauthoring/pack/audio/pathcompanion.
+DoNOTclaimcompleteonlaunch. DoNOTstophealthyproductionrenderforunrelatedpackwork.
+
+Supersededv034103sassemblycontrollerPID21216wasstoppedonclarification BEFORE
+finalassembly. Its4shortworldjobs/prefixfinishedascomponents; sources/components
+preserved, notrequestedfinal. v032/v033endingonlypreviews alsopreserved.
+No further approvalgate. Directuserrequestedautomaticdeliverywhenready.
+Guidingchat readsfiles/status; doNOTtool-messageotherchats without directhuman
+authorization. Parent willretrieve under20MBcopy anduploadLibrary itself.
+
+Finalreplymemorycitation requiredfrom earlierquickpass:
+MEMORY.md:18-18 priorpainterlypreference;rollout01a14089-1f81-7f73-853c-ef8fe1a3627e.

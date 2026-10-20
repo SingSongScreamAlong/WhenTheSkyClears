@@ -1,0 +1,5966 @@
+{
+  "scope": "Technical safeguards, not artistic acceptance",
+  "native_version": "5.2.2 LTS",
+  "source_sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+  "changed_control_names": [
+    "CHEST",
+    "HEAD_PROFILE",
+    "WRIST_near",
+    "WRIST_far",
+    "ARM_POLE_near",
+    "ARM_POLE_far"
+  ],
+  "head_choice": "v027 head control, mesh and world motion preserved exactly; trunk pivots beneath neck",
+  "root_feet_pelvis_trousers_actions_changed": false,
+  "quarter_frame_samples": [
+    {
+      "frame": 1.0,
+      "trunk_delta_degrees": 0.0,
+      "arms": {
+        "near": {
+          "upper_degrees": -18.0,
+          "forearm_degrees": 4.8150002864119035,
+          "hand_degrees": 5.283622726577359,
+          "wrist_world": [
+            -0.13541436195373535,
+            2.9930058431659745e-11,
+            0.6148504018783569
+          ],
+          "elbow_world": [
+            -0.1460288166999817,
+            2.9930058431659745e-11,
+            0.7408589124679565
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.0,
+          "forearm_degrees": 36.12662337662338,
+          "hand_degrees": 33.16058745941558,
+          "wrist_world": [
+            0.2132665365934372,
+            -2.484948358194572e-11,
+            0.6084911823272705
+          ],
+          "elbow_world": [
+            0.13441669940948486,
+            -2.484948358194572e-11,
+            0.716515839099884
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 3.725290298461914e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 1.25,
+      "trunk_delta_degrees": -0.07406849474295979,
+      "arms": {
+        "near": {
+          "upper_degrees": -18.51918302825977,
+          "forearm_degrees": 3.79797754680826,
+          "hand_degrees": 4.052730922717155,
+          "wrist_world": [
+            -0.1313256323337555,
+            8.319516603405575e-11,
+            0.6138744354248047
+          ],
+          "elbow_world": [
+            -0.13970182836055756,
+            8.319516603405575e-11,
+            0.7400515079498291
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.228515625,
+          "forearm_degrees": 36.168517273741884,
+          "hand_degrees": 33.11382343242695,
+          "wrist_world": [
+            0.22321361303329468,
+            -5.989989754207059e-11,
+            0.6069837808609009
+          ],
+          "elbow_world": [
+            0.14428481459617615,
+            -5.989989754207059e-11,
+            0.7149507403373718
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.2013700229374393e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 1.5,
+      "trunk_delta_degrees": -0.17032446769165743,
+      "arms": {
+        "near": {
+          "upper_degrees": -19.052796871730703,
+          "forearm_degrees": 2.8108920214800808,
+          "hand_degrees": 2.891644761129765,
+          "wrist_world": [
+            -0.1270618885755539,
+            -1.4138967774357525e-10,
+            0.6129935383796692
+          ],
+          "elbow_world": [
+            -0.13326318562030792,
+            -1.4138967774357525e-10,
+            0.7392961978912354
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.47544642857143,
+          "forearm_degrees": 36.20122260551948,
+          "hand_degrees": 33.12662337662338,
+          "wrist_world": [
+            0.2333810031414032,
+            1.217971973277443e-10,
+            0.6053950190544128
+          ],
+          "elbow_world": [
+            0.15439057350158691,
+            1.217971973277443e-10,
+            0.7133169174194336
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 7.450580596923828e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 1.75,
+      "trunk_delta_degrees": -0.2847223965763196,
+      "arms": {
+        "near": {
+          "upper_degrees": -19.59237513870989,
+          "forearm_degrees": 1.8610829013989125,
+          "hand_degrees": 1.8150002864119035,
+          "wrist_world": [
+            -0.12257728725671768,
+            -2.2414332889741928e-10,
+            0.6122440099716187
+          ],
+          "elbow_world": [
+            -0.1266840696334839,
+            -2.2414332889741928e-10,
+            0.738632082939148
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.725725446428571,
+          "forearm_degrees": 36.23137872869318,
+          "hand_degrees": 33.168517273741884,
+          "wrist_world": [
+            0.2436995506286621,
+            1.9887162749920861e-10,
+            0.6037850975990295
+          ],
+          "elbow_world": [
+            0.16465234756469727,
+            1.9887162749920861e-10,
+            0.7116653919219971
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 2.0,
+      "trunk_delta_degrees": -0.4132167591271728,
+      "arms": {
+        "near": {
+          "upper_degrees": -20.129451437494453,
+          "forearm_degrees": 0.9558893775363019,
+          "hand_degrees": 0.7979775468082604,
+          "wrist_world": [
+            -0.11782639473676682,
+            -3.3921454534180384e-10,
+            0.6116592884063721
+          ],
+          "elbow_world": [
+            -0.11993599683046341,
+            -3.3921454534180384e-10,
+            0.7380964756011963
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.964285714285715,
+          "forearm_degrees": 36.265625,
+          "hand_degrees": 33.20122260551948,
+          "wrist_world": [
+            0.2541007399559021,
+            3.110817159424073e-10,
+            0.6022130250930786
+          ],
+          "elbow_world": [
+            0.17498907446861267,
+            3.110817159424073e-10,
+            0.7100460529327393
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 2.25,
+      "trunk_delta_degrees": -0.5517620330744439,
+      "arms": {
+        "near": {
+          "upper_degrees": -20.6555593763815,
+          "forearm_degrees": 0.10265064086378929,
+          "hand_degrees": -0.18910797851991923,
+          "wrist_world": [
+            -0.1127648800611496,
+            -3.990412167365065e-11,
+            0.6110997200012207
+          ],
+          "elbow_world": [
+            -0.11299143731594086,
+            -3.990412167365065e-11,
+            0.7375543117523193
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.176060267857142,
+          "forearm_degrees": 36.321533203125,
+          "hand_degrees": 33.23137872869318,
+          "wrist_world": [
+            0.2645367383956909,
+            3.8235838106803754e-11,
+            0.6005805730819702
+          ],
+          "elbow_world": [
+            0.18531987071037292,
+            3.8235838106803754e-11,
+            0.708336353302002
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.2013700229374393e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 2.5,
+      "trunk_delta_degrees": -0.6963126961483596,
+      "arms": {
+        "near": {
+          "upper_degrees": -21.162232563668145,
+          "forearm_degrees": -0.6912941176470611,
+          "hand_degrees": -1.1389170986010875,
+          "wrist_world": [
+            -0.1073489636182785,
+            -1.2048892439331382e-10,
+            0.6104246377944946
+          ],
+          "elbow_world": [
+            -0.10582327842712402,
+            -1.2048892439331382e-10,
+            0.7368702292442322
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.34598214285714,
+          "forearm_degrees": 36.40318080357143,
+          "hand_degrees": 33.265625,
+          "wrist_world": [
+            0.27493467926979065,
+            1.1904512098315223e-10,
+            0.598771333694458
+          ],
+          "elbow_world": [
+            0.19556434452533722,
+            1.1904512098315223e-10,
+            0.7064141035079956
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 2.75,
+      "trunk_delta_degrees": -0.8428232260791463,
+      "arms": {
+        "near": {
+          "upper_degrees": -21.641004607651496,
+          "forearm_degrees": -1.4550261655146706,
+          "hand_degrees": -2.0441106224636982,
+          "wrist_world": [
+            -0.10161608457565308,
+            -4.5517006830309015e-10,
+            0.6096696853637695
+          ],
+          "elbow_world": [
+            -0.09840510785579681,
+            -4.5517006830309015e-10,
+            0.7360837459564209
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.458984375,
+          "forearm_degrees": 36.49696568080357,
+          "hand_degrees": 33.321533203125,
+          "wrist_world": [
+            0.28518885374069214,
+            4.696970590245542e-10,
+            0.5968201160430908
+          ],
+          "elbow_world": [
+            0.205642431974411,
+            4.696970590245542e-10,
+            0.7043328285217285
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.4901161193847656e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 7.450580596923828e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 3.0,
+      "trunk_delta_degrees": -0.9872481005970306,
+      "arms": {
+        "near": {
+          "upper_degrees": -22.083409116628662,
+          "forearm_degrees": -2.214992950162074,
+          "hand_degrees": -2.8973493591362107,
+          "wrist_world": [
+            -0.09559836983680725,
+            -6.353827186611483e-11,
+            0.6088747978210449
+          ],
+          "elbow_world": [
+            -0.09071098268032074,
+            -6.353827186611483e-11,
+            0.7352350950241089
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.5,
+          "forearm_degrees": 36.589285714285715,
+          "hand_degrees": 33.40318080357143,
+          "wrist_world": [
+            0.2951938509941101,
+            6.837259924896699e-11,
+            0.5947638750076294
+          ],
+          "elbow_world": [
+            0.21547427773475647,
+            6.837259924896699e-11,
+            0.7021483182907104
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 3.25,
+      "trunk_delta_degrees": -1.1255417974322395,
+      "arms": {
+        "near": {
+          "upper_degrees": -22.480979698896753,
+          "forearm_degrees": -2.9599045504745973,
+          "hand_degrees": -3.6912941176470615,
+          "wrist_world": [
+            -0.08924500644207001,
+            8.68330407577389e-11,
+            0.6080816388130188
+          ],
+          "elbow_world": [
+            -0.08271524310112,
+            8.68330407577389e-11,
+            0.7343677282333374
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.48746004971591,
+          "forearm_degrees": 36.66653878348214,
+          "hand_degrees": 33.49696568080357,
+          "wrist_world": [
+            0.3050037920475006,
+            -9.769489384137131e-11,
+            0.592687726020813
+          ],
+          "elbow_world": [
+            0.2251395285129547,
+            -9.769489384137131e-11,
+            0.6999645233154297
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 3.5,
+      "trunk_delta_degrees": -1.253658794315,
+      "arms": {
+        "near": {
+          "upper_degrees": -22.82524996275288,
+          "forearm_degrees": -3.678471045337588,
+          "hand_degrees": -4.455026165514671,
+          "wrist_world": [
+            -0.08250558376312256,
+            -7.726927431228603e-11,
+            0.607331395149231
+          ],
+          "elbow_world": [
+            -0.07439257949590683,
+            -7.726927431228603e-11,
+            0.7335256934165955
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.450580018939394,
+          "forearm_degrees": 36.71512276785714,
+          "hand_degrees": 33.589285714285715,
+          "wrist_world": [
+            0.3147240877151489,
+            8.953077168527557e-11,
+            0.5906929969787598
+          ],
+          "elbow_world": [
+            0.23476889729499817,
+            8.953077168527557e-11,
+            0.6979020833969116
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1944189326376765e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 3.75,
+      "trunk_delta_degrees": -1.3675535689755376,
+      "arms": {
+        "near": {
+          "upper_degrees": -23.107753516494164,
+          "forearm_degrees": -4.3594025136364,
+          "hand_degrees": -5.214992950162074,
+          "wrist_world": [
+            -0.07532985508441925,
+            -2.5087834587544933e-10,
+            0.606666088104248
+          ],
+          "elbow_world": [
+            -0.06571770459413528,
+            -2.5087834587544933e-10,
+            0.7327550649642944
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.390469637784093,
+          "forearm_degrees": 36.72143554687501,
+          "hand_degrees": 33.66653878348214,
+          "wrist_world": [
+            0.3243272602558136,
+            2.0717191850927463e-10,
+            0.5888471007347107
+          ],
+          "elbow_world": [
+            0.24436023831367493,
+            2.0717191850927463e-10,
+            0.6960473656654358
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 4.0,
+      "trunk_delta_degrees": -1.46318059914408,
+      "arms": {
+        "near": {
+          "upper_degrees": -23.320023968417704,
+          "forearm_degrees": -4.991409034256382,
+          "hand_degrees": -5.959904550474597,
+          "wrist_world": [
+            -0.06777865439653397,
+            -1.1260523069545059e-10,
+            0.6061064004898071
+          ],
+          "elbow_world": [
+            -0.05677627772092819,
+            -1.1260523069545059e-10,
+            0.7320816516876221
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.308238636363638,
+          "forearm_degrees": 36.671875,
+          "hand_degrees": 33.71512276785714,
+          "wrist_world": [
+            0.33367466926574707,
+            2.485090189185968e-10,
+            0.5871963500976562
+          ],
+          "elbow_world": [
+            0.2538004219532013,
+            2.485090189185968e-10,
+            0.6944657564163208
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.2013700229374393e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 4.25,
+      "trunk_delta_degrees": -1.5364943625508531,
+      "arms": {
+        "near": {
+          "upper_degrees": -23.45359492682061,
+          "forearm_degrees": -5.563200686082869,
+          "hand_degrees": -6.678471045337588,
+          "wrist_world": [
+            -0.0599777027964592,
+            -4.426466138074403e-10,
+            0.6056624054908752
+          ],
+          "elbow_world": [
+            -0.04771871119737625,
+            -4.426466138074403e-10,
+            0.7315216064453125
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.204996744791666,
+          "forearm_degrees": 36.58633700284091,
+          "hand_degrees": 33.721435546875,
+          "wrist_world": [
+            0.34262558817863464,
+            5.687095239181872e-10,
+            0.5858242511749268
+          ],
+          "elbow_world": [
+            0.2629115581512451,
+            5.687095239181872e-10,
+            0.6932127475738525
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.4901161193847656e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.2351741790771484e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 4.5,
+      "trunk_delta_degrees": -1.5834493369260845,
+      "arms": {
+        "near": {
+          "upper_degrees": -23.5,
+          "forearm_degrees": -6.063487548001206,
+          "hand_degrees": -7.3594025136364,
+          "wrist_world": [
+            -0.051974307745695114,
+            3.1973743097601925e-11,
+            0.6053647994995117
+          ],
+          "elbow_world": [
+            -0.038616836071014404,
+            3.1973743097601925e-11,
+            0.7311121225357056
+          ]
+        },
+        "far": {
+          "upper_degrees": 15.08185369318182,
+          "forearm_degrees": 36.49550189393939,
+          "hand_degrees": 33.671875,
+          "wrist_world": [
+            0.3511376678943634,
+            8.311225319079796e-11,
+            0.5848495960235596
+          ],
+          "elbow_world": [
+            0.27159398794174194,
+            8.311225319079796e-11,
+            0.6923643350601196
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 4.75,
+      "trunk_delta_degrees": -1.6,
+      "arms": {
+        "near": {
+          "upper_degrees": -23.420134241835843,
+          "forearm_degrees": -6.480979698896753,
+          "hand_degrees": -7.991409034256382,
+          "wrist_world": [
+            -0.043672677129507065,
+            2.1024101903854842e-10,
+            0.6051812171936035
+          ],
+          "elbow_world": [
+            -0.029399298131465912,
+            2.1024101903854842e-10,
+            0.7308278679847717
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.939919211647728,
+          "forearm_degrees": 36.40194424715909,
+          "hand_degrees": 33.58633700284091,
+          "wrist_world": [
+            0.3591160178184509,
+            -1.7843754251956057e-11,
+            0.5843492150306702
+          ],
+          "elbow_world": [
+            0.27974802255630493,
+            -1.7843754251956057e-11,
+            0.6919937133789062
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 5.0,
+      "trunk_delta_degrees": -1.5923701851412093,
+      "arms": {
+        "near": {
+          "upper_degrees": -23.188798772459705,
+          "forearm_degrees": -6.712988700178162,
+          "hand_degrees": -8.563200686082869,
+          "wrist_world": [
+            -0.034534040838479996,
+            -1.795802256898682e-10,
+            0.604954719543457
+          ],
+          "elbow_world": [
+            -0.01975199580192566,
+            -1.795802256898682e-10,
+            0.7305425405502319
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.780303030303033,
+          "forearm_degrees": 36.30823863636364,
+          "hand_degrees": 33.49550189393939,
+          "wrist_world": [
+            0.36675459146499634,
+            2.381006503071603e-10,
+            0.5842041969299316
+          ],
+          "elbow_world": [
+            0.2875627279281616,
+            2.381006503071603e-10,
+            0.691978394985199
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.384185791015625e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 5.25,
+      "trunk_delta_degrees": -1.5711659232598127,
+      "arms": {
+        "near": {
+          "upper_degrees": -22.81838629954608,
+          "forearm_degrees": -6.675037377115245,
+          "hand_degrees": -9.063487548001206,
+          "wrist_world": [
+            -0.024150192737579346,
+            -4.367509687241977e-10,
+            0.6045551300048828
+          ],
+          "elbow_world": [
+            -0.009451337158679962,
+            -4.367509687241977e-10,
+            0.7301527261734009
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.604114879261365,
+          "forearm_degrees": 36.241059855234944,
+          "hand_degrees": 33.40194424715909,
+          "wrist_world": [
+            0.3743710517883301,
+            4.4329187542935244e-10,
+            0.5842581391334534
+          ],
+          "elbow_world": [
+            0.29530560970306396,
+            4.4329187542935244e-10,
+            0.6921250820159912
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 5.5,
+      "trunk_delta_degrees": -1.5389149883982753,
+      "arms": {
+        "near": {
+          "upper_degrees": -22.321289530769462,
+          "forearm_degrees": -6.383152704385047,
+          "hand_degrees": -9.480979698896753,
+          "wrist_world": [
+            -0.012596378102898598,
+            2.306035917776228e-11,
+            0.6039909720420837
+          ],
+          "elbow_world": [
+            0.0014624521136283875,
+            2.306035917776228e-11,
+            0.7296618223190308
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.412464488636365,
+          "forearm_degrees": 36.22159824614951,
+          "hand_degrees": 33.30823863636364,
+          "wrist_world": [
+            0.38202232122421265,
+            -3.091910755204097e-11,
+            0.5845070481300354
+          ],
+          "elbow_world": [
+            0.3029935359954834,
+            -3.091910755204097e-11,
+            0.6924008131027222
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 5.75,
+      "trunk_delta_degrees": -1.4981451545990612,
+      "arms": {
+        "near": {
+          "upper_degrees": -21.709901173804344,
+          "forearm_degrees": -5.85336165666461,
+          "hand_degrees": -9.712988700178162,
+          "wrist_world": [
+            5.359947681427002e-05,
+            -2.0306584191942534e-10,
+            0.6033053994178772
+          ],
+          "elbow_world": [
+            0.012949816882610321,
+            -2.0306584191942534e-10,
+            0.7291008830070496
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.206461588541666,
+          "forearm_degrees": 36.244201706012866,
+          "hand_degrees": 33.241059855234944,
+          "wrist_world": [
+            0.38971495628356934,
+            2.7517249590047754e-10,
+            0.5849354267120361
+          ],
+          "elbow_world": [
+            0.31064361333847046,
+            2.7517249590047754e-10,
+            0.6927980184555054
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 6.0,
+      "trunk_delta_degrees": -1.4513841959046343,
+      "arms": {
+        "near": {
+          "upper_degrees": -20.996613936325225,
+          "forearm_degrees": -5.101691208630996,
+          "hand_degrees": -9.675037377115245,
+          "wrist_world": [
+            0.013726492412388325,
+            -6.999070767399473e-11,
+            0.6025475859642029
+          ],
+          "elbow_world": [
+            0.02497132122516632,
+            -6.999070767399473e-11,
+            0.7285014390945435
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.98721590909091,
+          "forearm_degrees": 36.30321813173053,
+          "hand_degrees": 33.22159824614951,
+          "wrist_world": [
+            0.39745521545410156,
+            9.618081331375095e-11,
+            0.5855268836021423
+          ],
+          "elbow_world": [
+            0.31827279925346375,
+            9.618081331375095e-11,
+            0.6933079957962036
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 6.25,
+      "trunk_delta_degrees": -1.401159886357459,
+      "arms": {
+        "near": {
+          "upper_degrees": -20.193820526006608,
+          "forearm_degrees": -4.113529780544109,
+          "hand_degrees": -9.383152704385047,
+          "wrist_world": [
+            0.028416035696864128,
+            -1.5662156294116159e-10,
+            0.6017390489578247
+          ],
+          "elbow_world": [
+            0.03748701512813568,
+            -1.5662156294116159e-10,
+            0.7278680801391602
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.755837180397727,
+          "forearm_degrees": 36.392995420208024,
+          "hand_degrees": 33.244201706012866,
+          "wrist_world": [
+            0.40524929761886597,
+            3.661698166901317e-10,
+            0.58623868227005
+          ],
+          "elbow_world": [
+            0.32589808106422424,
+            3.661698166901317e-10,
+            0.6938955783843994
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 6.5,
+      "trunk_delta_degrees": -1.35,
+      "arms": {
+        "near": {
+          "upper_degrees": -19.313913650522977,
+          "forearm_degrees": -2.888171858915456,
+          "hand_degrees": -8.85336165666461,
+          "wrist_world": [
+            0.044084787368774414,
+            -2.6752086657033658e-11,
+            0.6009111404418945
+          ],
+          "elbow_world": [
+            0.05045643448829651,
+            -2.6752086657033658e-11,
+            0.7272052764892578
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.513435132575758,
+          "forearm_degrees": 36.50788146835086,
+          "hand_degrees": 33.30321813173053,
+          "wrist_world": [
+            0.41310352087020874,
+            3.6545773351992494e-11,
+            0.5870283246040344
+          ],
+          "elbow_world": [
+            0.33353662490844727,
+            3.6545773351992494e-11,
+            0.6945258975028992
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 7.450580596923828e-09,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 6.75,
+      "trunk_delta_degrees": -1.2867928881914072,
+      "arms": {
+        "near": {
+          "upper_degrees": -18.369286017548827,
+          "forearm_degrees": -1.4625035177994725,
+          "hand_degrees": -8.101691208630996,
+          "wrist_world": [
+            0.06040899455547333,
+            -3.1207966766366724e-11,
+            0.6002546548843384
+          ],
+          "elbow_world": [
+            0.06363646686077118,
+            -3.1207966766366724e-11,
+            0.7266682386398315
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.261119495738637,
+          "forearm_degrees": 36.642224173064584,
+          "hand_degrees": 33.392995420208024,
+          "wrist_world": [
+            0.420829713344574,
+            1.9980267440544708e-10,
+            0.5880308151245117
+          ],
+          "elbow_world": [
+            0.3410109877586365,
+            1.9980267440544708e-10,
+            0.6953415274620056
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 7.0,
+      "trunk_delta_degrees": -1.2010256785577003,
+      "arms": {
+        "near": {
+          "upper_degrees": -17.372330334758654,
+          "forearm_degrees": 0.12658916874941895,
+          "hand_degrees": -7.11352978054411,
+          "wrist_world": [
+            0.07707520574331284,
+            -2.3062218801328527e-11,
+            0.5999460220336914
+          ],
+          "elbow_world": [
+            0.07679581642150879,
+            -2.3062218801328527e-11,
+            0.7264004945755005
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.0,
+          "forearm_degrees": 36.7903714312547,
+          "hand_degrees": 33.50788146835086,
+          "wrist_world": [
+            0.4282517433166504,
+            2.977462720821222e-11,
+            0.5893702507019043
+          ],
+          "elbow_world": [
+            0.34815579652786255,
+            2.977462720821222e-11,
+            0.6964741945266724
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 3.608224830031759e-16,
+      "unreachable": []
+    },
+    {
+      "frame": 7.25,
+      "trunk_delta_degrees": -1.0961243095416502,
+      "arms": {
+        "near": {
+          "upper_degrees": -16.335439309826963,
+          "forearm_degrees": 1.842220126676775,
+          "hand_degrees": -5.888171858915456,
+          "wrist_world": [
+            0.09397443383932114,
+            -3.013839733334578e-10,
+            0.5999953746795654
+          ],
+          "elbow_world": [
+            0.08990925550460815,
+            -3.013839733334578e-10,
+            0.7263848185539246
+          ]
+        },
+        "far": {
+          "upper_degrees": 12.659100773358585,
+          "forearm_degrees": 36.94667113982673,
+          "hand_degrees": 33.642224173064584,
+          "wrist_world": [
+            0.4350482225418091,
+            2.567192847191535e-10,
+            0.5909072756767273
+          ],
+          "elbow_world": [
+            0.35466039180755615,
+            2.567192847191535e-10,
+            0.6977923512458801
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 7.5,
+      "trunk_delta_degrees": -0.9755147195860259,
+      "arms": {
+        "near": {
+          "upper_degrees": -15.271005650428238,
+          "forearm_degrees": 3.6475032819281665,
+          "hand_degrees": -4.4625035177994725,
+          "wrist_world": [
+            0.11099433153867722,
+            5.4509820268666687e-11,
+            0.6004016399383545
+          ],
+          "elbow_world": [
+            0.10294953733682632,
+            5.4509820268666687e-11,
+            0.7266002893447876
+          ]
+        },
+        "far": {
+          "upper_degrees": 12.176741372053872,
+          "forearm_degrees": 37.1054711956862,
+          "hand_degrees": 33.7903714312547,
+          "wrist_world": [
+            0.44093993306159973,
+            -7.192376555442692e-11,
+            0.5925232768058777
+          ],
+          "elbow_world": [
+            0.3602561950683594,
+            -7.192376555442692e-11,
+            0.6991851329803467
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 7.75,
+      "trunk_delta_degrees": -0.8426228471335975,
+      "arms": {
+        "near": {
+          "upper_degrees": -14.191422064236981,
+          "forearm_degrees": 5.505552560449146,
+          "hand_degrees": -2.873410831250581,
+          "wrist_world": [
+            0.12802091240882874,
+            -4.447379131633511e-10,
+            0.6011489629745483
+          ],
+          "elbow_world": [
+            0.1158885657787323,
+            -4.447379131633511e-10,
+            0.7270203828811646
+          ]
+        },
+        "far": {
+          "upper_degrees": 11.567974668560607,
+          "forearm_degrees": 37.26111949573864,
+          "hand_degrees": 33.946671139826734,
+          "wrist_world": [
+            0.4460161328315735,
+            5.664622104717409e-10,
+            0.5941868424415588
+          ],
+          "elbow_world": [
+            0.36504292488098145,
+            5.664622104717409e-10,
+            0.7006291151046753
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 8.0,
+      "trunk_delta_degrees": -0.7008746306271351,
+      "arms": {
+        "near": {
+          "upper_degrees": -13.10908125892768,
+          "forearm_degrees": 7.379481888185288,
+          "hand_degrees": -1.157779873323225,
+          "wrist_world": [
+            0.1449386030435562,
+            -1.5773926609341515e-10,
+            0.602209746837616
+          ],
+          "elbow_world": [
+            0.12869669497013092,
+            -1.5773926609341515e-10,
+            0.7276171445846558
+          ]
+        },
+        "far": {
+          "upper_degrees": 10.847853535353535,
+          "forearm_degrees": 37.40796393688956,
+          "hand_degrees": 34.1054711956862,
+          "wrist_world": [
+            0.45036599040031433,
+            1.9550877583540682e-10,
+            0.5958706140518188
+          ],
+          "elbow_world": [
+            0.3691202402114868,
+            1.9550877583540682e-10,
+            0.7021050453186035
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 8.25,
+      "trunk_delta_degrees": -0.5536960085094079,
+      "arms": {
+        "near": {
+          "upper_degrees": -12.036375942174839,
+          "forearm_degrees": 9.232405191082172,
+          "hand_degrees": 0.6475032819281665,
+          "wrist_world": [
+            0.1616312563419342,
+            -6.236271499204804e-10,
+            0.603540301322937
+          ],
+          "elbow_world": [
+            0.1413429081439972,
+            -6.236271499204804e-10,
+            0.7283569574356079
+          ]
+        },
+        "far": {
+          "upper_degrees": 10.031430844907408,
+          "forearm_degrees": 37.46826681392959,
+          "hand_degrees": 34.26111949573864,
+          "wrist_world": [
+            0.4539458155632019,
+            7.483236252880943e-10,
+            0.5974438190460205
+          ],
+          "elbow_world": [
+            0.37258830666542053,
+            7.483236252880943e-10,
+            0.7035926580429077
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 8.5,
+      "trunk_delta_degrees": -0.40451291922318683,
+      "arms": {
+        "near": {
+          "upper_degrees": -10.985698821652946,
+          "forearm_degrees": 11.027436395085342,
+          "hand_degrees": 2.5055525604491464,
+          "wrist_world": [
+            0.1779838651418686,
+            -2.365808104975997e-10,
+            0.605083703994751
+          ],
+          "elbow_world": [
+            0.15379571914672852,
+            -2.365808104975997e-10,
+            0.7292035818099976
+          ]
+        },
+        "far": {
+          "upper_degrees": 9.13375946969697,
+          "forearm_degrees": 37.373585849890084,
+          "hand_degrees": 34.40796393688956,
+          "wrist_world": [
+            0.45673027634620667,
+            2.7498767152245307e-10,
+            0.5987889766693115
+          ],
+          "elbow_world": [
+            0.3755483031272888,
+            2.7498767152245307e-10,
+            0.7050721049308777
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 8.75,
+      "trunk_delta_degrees": -0.25675130121124096,
+      "arms": {
+        "near": {
+          "upper_degrees": -9.969442605036507,
+          "forearm_degrees": 12.727689426140376,
+          "hand_degrees": 4.379481888185289,
+          "wrist_world": [
+            0.1938830316066742,
+            -2.3447516150909564e-10,
+            0.6067689061164856
+          ],
+          "elbow_world": [
+            0.16602280735969543,
+            -2.3447516150909564e-10,
+            0.7301164865493774
+          ]
+        },
+        "far": {
+          "upper_degrees": 8.16989228219697,
+          "forearm_degrees": 37.13221208403769,
+          "hand_degrees": 34.46826681392959,
+          "wrist_world": [
+            0.45883601903915405,
+            3.2674835059864904e-10,
+            0.5998970866203308
+          ],
+          "elbow_world": [
+            0.37810251116752625,
+            3.2674835059864904e-10,
+            0.7065212726593018
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 9.0,
+      "trunk_delta_degrees": -0.11383709291634032,
+      "arms": {
+        "near": {
+          "upper_degrees": -9.0,
+          "forearm_degrees": 14.296278210192842,
+          "hand_degrees": 6.232405191082172,
+          "wrist_world": [
+            0.20921756327152252,
+            -2.3214505318058798e-10,
+            0.608513355255127
+          ],
+          "elbow_world": [
+            0.17799131572246552,
+            -2.3214505318058798e-10,
+            0.7310521006584167
+          ]
+        },
+        "far": {
+          "upper_degrees": 7.154882154882155,
+          "forearm_degrees": 36.752436555639036,
+          "hand_degrees": 34.373585849890084,
+          "wrist_world": [
+            0.460379421710968,
+            2.5214902388270843e-10,
+            0.6007589101791382
+          ],
+          "elbow_world": [
+            0.3803544044494629,
+            2.5214902388270843e-10,
+            0.7079159021377563
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 9.25,
+      "trunk_delta_degrees": 0.020803767218745203,
+      "arms": {
+        "near": {
+          "upper_degrees": -8.012346930873093,
+          "forearm_degrees": 15.696316673188301,
+          "hand_degrees": 8.027436395085342,
+          "wrist_world": [
+            0.22426702082157135,
+            -1.7626627935030115e-10,
+            0.6101963520050049
+          ],
+          "elbow_world": [
+            0.19005611538887024,
+            -1.7626627935030115e-10,
+            0.7319355607032776
+          ]
+        },
+        "far": {
+          "upper_degrees": 6.1037819602272725,
+          "forearm_degrees": 36.242550303960755,
+          "hand_degrees": 34.13221208403769,
+          "wrist_world": [
+            0.4614768922328949,
+            1.8533889700744766e-10,
+            0.6013890504837036
+          ],
+          "elbow_world": [
+            0.38240864872932434,
+            1.8533889700744766e-10,
+            0.7092539072036743
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 9.5,
+      "trunk_delta_degrees": 0.14374534075124562,
+      "arms": {
+        "near": {
+          "upper_degrees": -6.942345444464186,
+          "forearm_degrees": 16.89091874107232,
+          "hand_degrees": 9.727689426140376,
+          "wrist_world": [
+            0.23931236565113068,
+            -4.3839498697906265e-10,
+            0.6117178797721863
+          ],
+          "elbow_world": [
+            0.2025708556175232,
+            -4.3839498697906265e-10,
+            0.7327173948287964
+          ]
+        },
+        "far": {
+          "upper_degrees": 5.031644570707071,
+          "forearm_degrees": 35.610844368269476,
+          "hand_degrees": 33.752436555639036,
+          "wrist_world": [
+            0.46224504709243774,
+            4.471913117587434e-10,
+            0.6018010377883911
+          ],
+          "elbow_world": [
+            0.3843708336353302,
+            4.471913117587434e-10,
+            0.7105311155319214
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 9.75,
+      "trunk_delta_degrees": 0.25156168923839123,
+      "arms": {
+        "near": {
+          "upper_degrees": -5.803717432165908,
+          "forearm_degrees": 17.946818931696246,
+          "hand_degrees": 11.296278210192842,
+          "wrist_world": [
+            0.2544650733470917,
+            -1.617261047304197e-10,
+            0.6130856275558472
+          ],
+          "elbow_world": [
+            0.21550002694129944,
+            -1.617261047304197e-10,
+            0.7333875298500061
+          ]
+        },
+        "far": {
+          "upper_degrees": 3.953522858796297,
+          "forearm_degrees": 34.86560978783183,
+          "hand_degrees": 33.242550303960755,
+          "wrist_world": [
+            0.46280092000961304,
+            1.604136962152225e-10,
+            0.6019787788391113
+          ],
+          "elbow_world": [
+            0.3863475024700165,
+            1.604136962152225e-10,
+            0.7117124795913696
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.388837865275353e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 10.0,
+      "trunk_delta_degrees": 0.34082687423741204,
+      "arms": {
+        "near": {
+          "upper_degrees": -4.610184785370882,
+          "forearm_degrees": 18.949111764445618,
+          "hand_degrees": 12.6963166731883,
+          "wrist_world": [
+            0.2698708176612854,
+            -2.2608777350274778e-10,
+            0.6143316030502319
+          ],
+          "elbow_world": [
+            0.22880737483501434,
+            -2.2608777350274778e-10,
+            0.7339334487915039
+          ]
+        },
+        "far": {
+          "upper_degrees": 2.8844696969696972,
+          "forearm_degrees": 34.01513760191446,
+          "hand_degrees": 32.610844368269476,
+          "wrist_world": [
+            0.46326225996017456,
+            2.1868856725504315e-10,
+            0.6019021272659302
+          ],
+          "elbow_world": [
+            0.38844603300094604,
+            2.1868856725504315e-10,
+            0.7127585411071777
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 10.25,
+      "trunk_delta_degrees": 0.40811495730553826,
+      "arms": {
+        "near": {
+          "upper_degrees": -3.375469395471735,
+          "forearm_degrees": 19.888451167567293,
+          "hand_degrees": 13.89091874107232,
+          "wrist_world": [
+            0.2854733467102051,
+            5.2578372211620206e-11,
+            0.6155726909637451
+          ],
+          "elbow_world": [
+            0.2424546778202057,
+            5.2578372211620206e-11,
+            0.7344853281974792
+          ]
+        },
+        "far": {
+          "upper_degrees": 1.8395379577020206,
+          "forearm_degrees": 33.067718849783994,
+          "hand_degrees": 31.86560978783183,
+          "wrist_world": [
+            0.4637465476989746,
+            -4.9757337139411106e-11,
+            0.6016939878463745
+          ],
+          "elbow_world": [
+            0.3907735347747803,
+            -4.9757337139411106e-11,
+            0.7137723565101624
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 10.5,
+      "trunk_delta_degrees": 0.45,
+      "arms": {
+        "near": {
+          "upper_degrees": -2.1132931538610933,
+          "forearm_degrees": 20.75549106930814,
+          "hand_degrees": 14.946818931696242,
+          "wrist_world": [
+            0.30121633410453796,
+            -5.895846311165798e-11,
+            0.6169261932373047
+          ],
+          "elbow_world": [
+            0.25640320777893066,
+            -5.895846311165798e-11,
+            0.7351742386817932
+          ]
+        },
+        "far": {
+          "upper_degrees": 0.8337805134680135,
+          "forearm_degrees": 32.03164457070707,
+          "hand_degrees": 31.015137601914464,
+          "wrist_world": [
+            0.4643721282482147,
+            5.470097985682543e-11,
+            0.6014779210090637
+          ],
+          "elbow_world": [
+            0.39343762397766113,
+            5.470097985682543e-11,
+            0.7148574590682983
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.6656007498500226e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 10.75,
+      "trunk_delta_degrees": 0.47749787064512583,
+      "arms": {
+        "near": {
+          "upper_degrees": -0.8373779519315796,
+          "forearm_degrees": 21.618302181259843,
+          "hand_degrees": 15.949111764445618,
+          "wrist_world": [
+            0.3171086609363556,
+            -3.085600941421518e-10,
+            0.6184177398681641
+          ],
+          "elbow_world": [
+            0.27052000164985657,
+            -3.085600941421518e-10,
+            0.7359775304794312
+          ]
+        },
+        "far": {
+          "upper_degrees": -0.1177497632575757,
+          "forearm_degrees": 30.92117831354789,
+          "hand_degrees": 30.067718849783994,
+          "wrist_world": [
+            0.465180903673172,
+            2.8135627161418597e-10,
+            0.6012535095214844
+          ],
+          "elbow_world": [
+            0.3964570462703705,
+            2.8135627161418597e-10,
+            0.7159864902496338
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.384185791015625e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 11.0,
+      "trunk_delta_degrees": 0.5037614023519068,
+      "arms": {
+        "near": {
+          "upper_degrees": 0.43855431892417873,
+          "forearm_degrees": 22.544069092535366,
+          "hand_degrees": 16.888451167567293,
+          "wrist_world": [
+            0.3331359922885895,
+            -2.175966351547487e-11,
+            0.6200725436210632
+          ],
+          "elbow_world": [
+            0.28465399146080017,
+            -2.175966351547487e-11,
+            0.7368642687797546
+          ]
+        },
+        "far": {
+          "upper_degrees": -1.0,
+          "forearm_degrees": 29.759070915148534,
+          "hand_degrees": 29.031644570707073,
+          "wrist_world": [
+            0.4662157893180847,
+            1.951839384561893e-11,
+            0.6010252237319946
+          ],
+          "elbow_world": [
+            0.39983296394348145,
+            1.951839384561893e-11,
+            0.7171283960342407
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 11.25,
+      "trunk_delta_degrees": 0.5285701038575668,
+      "arms": {
+        "near": {
+          "upper_degrees": 1.7007817673135568,
+          "forearm_degrees": 23.522116547663423,
+          "hand_degrees": 17.75549106930814,
+          "wrist_world": [
+            0.34920644760131836,
+            -2.1762316948503724e-10,
+            0.621852695941925
+          ],
+          "elbow_world": [
+            0.29873794317245483,
+            -2.1762316948503724e-10,
+            0.737799882888794
+          ]
+        },
+        "far": {
+          "upper_degrees": -1.8629169079642522,
+          "forearm_degrees": 28.566344346742458,
+          "hand_degrees": 27.92117831354789,
+          "wrist_world": [
+            0.46727675199508667,
+            1.9220294800170734e-10,
+            0.6007803678512573
+          ],
+          "elbow_world": [
+            0.40332508087158203,
+            1.9220294800170734e-10,
+            0.7182401418685913
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 11.5,
+      "trunk_delta_degrees": 0.5517034838993295,
+      "arms": {
+        "near": {
+          "upper_degrees": 2.935582501843928,
+          "forearm_degrees": 24.541769291172734,
+          "hand_degrees": 18.618302181259843,
+          "wrist_world": [
+            0.3652288019657135,
+            -1.4820278337879245e-10,
+            0.6237131953239441
+          ],
+          "elbow_world": [
+            0.31270498037338257,
+            -1.4820278337879245e-10,
+            0.7387439012527466
+          ]
+        },
+        "far": {
+          "upper_degrees": -2.7605610860295036,
+          "forearm_degrees": 27.364020579563086,
+          "hand_degrees": 26.759070915148534,
+          "wrist_world": [
+            0.4681459367275238,
+            1.287092377122434e-10,
+            0.6005198955535889
+          ],
+          "elbow_world": [
+            0.40667298436164856,
+            1.287092377122434e-10,
+            0.7192957401275635
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 11.75,
+      "trunk_delta_degrees": 0.5729410512144192,
+      "arms": {
+        "near": {
+          "upper_degrees": 4.129234631122667,
+          "forearm_degrees": 25.592352067592042,
+          "hand_degrees": 19.544069092535366,
+          "wrist_world": [
+            0.38111311197280884,
+            -5.407037317883834e-11,
+            0.6256113648414612
+          ],
+          "elbow_world": [
+            0.32648903131484985,
+            -5.407037317883834e-11,
+            0.7396597266197205
+          ]
+        },
+        "far": {
+          "upper_degrees": -3.684050493232277,
+          "forearm_degrees": 26.173121584843877,
+          "hand_degrees": 25.566344346742454,
+          "wrist_world": [
+            0.4689182937145233,
+            4.647701667970239e-11,
+            0.6002478003501892
+          ],
+          "elbow_world": [
+            0.40992721915245056,
+            4.647701667970239e-11,
+            0.7202755808830261
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 12.0,
+      "trunk_delta_degrees": 0.5920623145400595,
+      "arms": {
+        "near": {
+          "upper_degrees": 5.2680162637571515,
+          "forearm_degrees": 26.663189621450076,
+          "hand_degrees": 20.52211654766342,
+          "wrist_world": [
+            0.3967705965042114,
+            -2.0677309864325366e-10,
+            0.6275033354759216
+          ],
+          "elbow_world": [
+            0.3400246500968933,
+            -2.0677309864325366e-10,
+            0.7405109405517578
+          ]
+        },
+        "far": {
+          "upper_degrees": -4.624503088609092,
+          "forearm_degrees": 25.01466933381827,
+          "hand_degrees": 24.364020579563086,
+          "wrist_world": [
+            0.46969014406204224,
+            1.7440790478495671e-10,
+            0.5999672412872314
+          ],
+          "elbow_world": [
+            0.4131377935409546,
+            1.7440790478495671e-10,
+            0.7211631536483765
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 12.25,
+      "trunk_delta_degrees": 0.608846782613474,
+      "arms": {
+        "near": {
+          "upper_degrees": 6.338205508354751,
+          "forearm_degrees": 27.74360669727555,
+          "hand_degrees": 21.541769291172734,
+          "wrist_world": [
+            0.4121140241622925,
+            -4.4859649328543583e-10,
+            0.6293305158615112
+          ],
+          "elbow_world": [
+            0.3532473146915436,
+            -4.4859649328543583e-10,
+            0.7412480115890503
+          ]
+        },
+        "far": {
+          "upper_degrees": -5.573036831196472,
+          "forearm_degrees": 23.844686214039978,
+          "hand_degrees": 23.173121584843873,
+          "wrist_world": [
+            0.47042080760002136,
+            4.019061194959761e-10,
+            0.5996054410934448
+          ],
+          "elbow_world": [
+            0.4163548946380615,
+            4.019061194959761e-10,
+            0.7219308018684387
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 12.5,
+      "trunk_delta_degrees": 0.6230739641718871,
+      "arms": {
+        "near": {
+          "upper_degrees": 7.326080473522842,
+          "forearm_degrees": 28.8229280395972,
+          "hand_degrees": 22.592352067592042,
+          "wrist_world": [
+            0.42705854773521423,
+            1.6207690745062564e-10,
+            0.6310286521911621
+          ],
+          "elbow_world": [
+            0.3660941421985626,
+            1.6207690745062564e-10,
+            0.7418174743652344
+          ]
+        },
+        "far": {
+          "upper_degrees": -6.520769680030936,
+          "forearm_degrees": 22.61508072538851,
+          "hand_degrees": 22.01466933381827,
+          "wrist_world": [
+            0.4710571765899658,
+            -1.3372578044901218e-10,
+            0.5990909934043884
+          ],
+          "elbow_world": [
+            0.41962867975234985,
+            -1.3372578044901218e-10,
+            0.7225484251976013
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 12.75,
+      "trunk_delta_degrees": 0.6345233679525223,
+      "arms": {
+        "near": {
+          "upper_degrees": 8.217919267868801,
+          "forearm_degrees": 29.890478392943752,
+          "hand_degrees": 23.663189621450076,
+          "wrist_world": [
+            0.44152045249938965,
+            -4.679285847686288e-10,
+            0.6325871348381042
+          ],
+          "elbow_world": [
+            0.3785024881362915,
+            -4.679285847686288e-10,
+            0.7422208786010742
+          ]
+        },
+        "far": {
+          "upper_degrees": -7.458819594149008,
+          "forearm_degrees": 21.340704007586055,
+          "hand_degrees": 20.844686214039974,
+          "wrist_world": [
+            0.47167858481407166,
+            3.8131436896904347e-10,
+            0.5984694957733154
+          ],
+          "elbow_world": [
+            0.423008531332016,
+            3.8131436896904347e-10,
+            0.7230401635169983
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 13.0,
+      "trunk_delta_degrees": 0.6429745026926035,
+      "arms": {
+        "near": {
+          "upper_degrees": 9.0,
+          "forearm_degrees": 30.935582501843932,
+          "hand_degrees": 24.74360669727555,
+          "wrist_world": [
+            0.4554186463356018,
+            -5.760726340398037e-10,
+            0.6340185403823853
+          ],
+          "elbow_world": [
+            0.39041152596473694,
+            -5.760726340398037e-10,
+            0.7424846291542053
+          ]
+        },
+        "far": {
+          "upper_degrees": -8.378304532587208,
+          "forearm_degrees": 20.03640720035478,
+          "hand_degrees": 19.615080725388513,
+          "wrist_world": [
+            0.4723658561706543,
+            4.663827102291407e-10,
+            0.597808837890625
+          ],
+          "elbow_world": [
+            0.4265439510345459,
+            4.663827102291407e-10,
+            0.7234550714492798
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.2013700229374393e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 13.25,
+      "trunk_delta_degrees": 0.6482068771293549,
+      "arms": {
+        "near": {
+          "upper_degrees": 9.72987500761424,
+          "forearm_degrees": 31.918575375481662,
+          "hand_degrees": 25.822928039597198,
+          "wrist_world": [
+            0.46897459030151367,
+            -1.7945672725616646e-10,
+            0.6353182196617126
+          ],
+          "elbow_world": [
+            0.40211623907089233,
+            -1.7945672725616646e-10,
+            0.7426530718803406
+          ]
+        },
+        "far": {
+          "upper_degrees": -9.270342454382057,
+          "forearm_degrees": 18.71704144341687,
+          "hand_degrees": 18.340704007586055,
+          "wrist_world": [
+            0.4732004702091217,
+            1.4400079739740335e-10,
+            0.5971295833587646
+          ],
+          "elbow_world": [
+            0.43028372526168823,
+            1.4400079739740335e-10,
+            0.7237975597381592
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 2.9802322387695312e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 13.5,
+      "trunk_delta_degrees": 0.65,
+      "arms": {
+        "near": {
+          "upper_degrees": 10.46959132704682,
+          "forearm_degrees": 32.80232099057402,
+          "hand_degrees": 26.890478392943756,
+          "wrist_world": [
+            0.4824378490447998,
+            1.300232144174629e-11,
+            0.6364995241165161
+          ],
+          "elbow_world": [
+            0.4139319360256195,
+            1.300232144174629e-11,
+            0.7427904605865479
+          ]
+        },
+        "far": {
+          "upper_degrees": -10.126051318570077,
+          "forearm_degrees": 17.397457876494492,
+          "hand_degrees": 17.03640720035478,
+          "wrist_world": [
+            0.4742644727230072,
+            -4.055838997985006e-11,
+            0.5964456796646118
+          ],
+          "elbow_world": [
+            0.43427616357803345,
+            -4.055838997985006e-11,
+            0.7240684032440186
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 13.75,
+      "trunk_delta_degrees": 0.6445213549558393,
+      "arms": {
+        "near": {
+          "upper_degrees": 11.21216911486136,
+          "forearm_degrees": 33.579937542949466,
+          "hand_degrees": 27.93558250184393,
+          "wrist_world": [
+            0.49577468633651733,
+            -1.0102635394915183e-10,
+            0.6375530958175659
+          ],
+          "elbow_world": [
+            0.4258325695991516,
+            -1.0102635394915183e-10,
+            0.7429044842720032
+          ]
+        },
+        "far": {
+          "upper_degrees": -10.936549084187792,
+          "forearm_degrees": 16.092507639309822,
+          "hand_degrees": 15.717041443416871,
+          "wrist_world": [
+            0.47564616799354553,
+            1.1010907463582242e-10,
+            0.5957691669464111
+          ],
+          "elbow_world": [
+            0.4385746717453003,
+            1.1010907463582242e-10,
+            0.724269449710846
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 14.0,
+      "trunk_delta_degrees": 0.6287507485967565,
+      "arms": {
+        "near": {
+          "upper_degrees": 11.95062852762149,
+          "forearm_degrees": 34.24454322843648,
+          "hand_degrees": 28.91857537548166,
+          "wrist_world": [
+            0.5089510083198547,
+            5.938860514476119e-13,
+            0.6384686231613159
+          ],
+          "elbow_world": [
+            0.4377915859222412,
+            5.938860514476119e-13,
+            0.7430016398429871
+          ]
+        },
+        "far": {
+          "upper_degrees": -11.69295371027172,
+          "forearm_degrees": 14.817041871585047,
+          "hand_degrees": 14.397457876494492,
+          "wrist_world": [
+            0.47743260860443115,
+            -4.74280337225963e-13,
+            0.5951060652732849
+          ],
+          "elbow_world": [
+            0.44323059916496277,
+            -4.74280337225963e-13,
+            0.7243996858596802
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.457562461863554e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 14.25,
+      "trunk_delta_degrees": 0.6036861740828511,
+      "arms": {
+        "near": {
+          "upper_degrees": 12.677989721890828,
+          "forearm_degrees": 34.78925624286351,
+          "hand_degrees": 29.80232099057402,
+          "wrist_world": [
+            0.5219408273696899,
+            -3.206402365840688e-10,
+            0.6392227411270142
+          ],
+          "elbow_world": [
+            0.4497908353805542,
+            -3.206402365840688e-10,
+            0.7430745363235474
+          ]
+        },
+        "far": {
+          "upper_degrees": -12.386383155858383,
+          "forearm_degrees": 13.585911713042321,
+          "hand_degrees": 13.092507639309822,
+          "wrist_world": [
+            0.4797164499759674,
+            2.563599887928092e-10,
+            0.5944336652755737
+          ],
+          "elbow_world": [
+            0.448300302028656,
+            2.563599887928092e-10,
+            0.7244322896003723
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.7881393432617188e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 14.5,
+      "trunk_delta_degrees": 0.5703256245742222,
+      "arms": {
+        "near": {
+          "upper_degrees": 13.387272854232997,
+          "forearm_degrees": 35.20719478205902,
+          "hand_degrees": 30.579937542949466,
+          "wrist_world": [
+            0.534702479839325,
+            2.9219515695899645e-11,
+            0.6397908926010132
+          ],
+          "elbow_world": [
+            0.4617968797683716,
+            2.9219515695899645e-11,
+            0.74311363697052
+          ]
+        },
+        "far": {
+          "upper_degrees": -13.007955379984304,
+          "forearm_degrees": 12.413968303403838,
+          "hand_degrees": 11.817041871585046,
+          "wrist_world": [
+            0.4825754165649414,
+            -2.3454189979066342e-11,
+            0.5937286019325256
+          ],
+          "elbow_world": [
+            0.4538246989250183,
+            -2.3454189979066342e-11,
+            0.7243425846099854
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 14.75,
+      "trunk_delta_degrees": 0.5296670932309694,
+      "arms": {
+        "near": {
+          "upper_degrees": 14.071498081211622,
+          "forearm_degrees": 35.5627512709419,
+          "hand_degrees": 31.24454322843648,
+          "wrist_world": [
+            0.5473017692565918,
+            1.6358750465350624e-10,
+            0.6402572393417358
+          ],
+          "elbow_world": [
+            0.4737563729286194,
+            1.6358750465350624e-10,
+            0.7431255578994751
+          ]
+        },
+        "far": {
+          "upper_degrees": -13.548788341686,
+          "forearm_degrees": 11.316062782391764,
+          "hand_degrees": 10.585911713042321,
+          "wrist_world": [
+            0.48606809973716736,
+            -1.3207533677839223e-10,
+            0.5929889678955078
+          ],
+          "elbow_world": [
+            0.459825336933136,
+            -1.3207533677839223e-10,
+            0.7241299152374268
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 15.0,
+      "trunk_delta_degrees": 0.4827085732131918,
+      "arms": {
+        "near": {
+          "upper_degrees": 14.723685559390326,
+          "forearm_degrees": 35.92481283306854,
+          "hand_degrees": 31.78925624286351,
+          "wrist_world": [
+            0.5598102807998657,
+            -4.692256583282983e-10,
+            0.6407135128974915
+          ],
+          "elbow_world": [
+            0.4856163263320923,
+            -4.692256583282983e-10,
+            0.7431150674819946
+          ]
+        },
+        "far": {
+          "upper_degrees": -14.0,
+          "forearm_degrees": 10.30704628972828,
+          "hand_degrees": 9.413968303403838,
+          "wrist_world": [
+            0.49025267362594604,
+            4.148190957398157e-10,
+            0.5922101736068726
+          ],
+          "elbow_world": [
+            0.4663233160972595,
+            4.148190957398157e-10,
+            0.7237928509712219
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 15.25,
+      "trunk_delta_degrees": 0.43044805768098887,
+      "arms": {
+        "near": {
+          "upper_degrees": 15.336855445332734,
+          "forearm_degrees": 36.29323971222366,
+          "hand_degrees": 32.20719478205902,
+          "wrist_world": [
+            0.5721757411956787,
+            1.394877546800899e-10,
+            0.6410509943962097
+          ],
+          "elbow_world": [
+            0.4973248243331909,
+            1.394877546800899e-10,
+            0.7429733276367188
+          ]
+        },
+        "far": {
+          "upper_degrees": -14.402183794823818,
+          "forearm_degrees": 9.374131983257822,
+          "hand_degrees": 8.316062782391764,
+          "wrist_world": [
+            0.4948877692222595,
+            -1.1446146114257871e-10,
+            0.5913240909576416
+          ],
+          "elbow_world": [
+            0.47310400009155273,
+            -1.1446146114257871e-10,
+            0.7232789993286133
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.457562461863554e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 15.5,
+      "trunk_delta_degrees": 0.3738835397944598,
+      "arms": {
+        "near": {
+          "upper_degrees": 15.90402789560246,
+          "forearm_degrees": 36.66789215219195,
+          "hand_degrees": 32.5627512709419,
+          "wrist_world": [
+            0.5843451023101807,
+            -9.246892140879481e-11,
+            0.6411709785461426
+          ],
+          "elbow_world": [
+            0.5088293552398682,
+            -9.246892140879481e-11,
+            0.7426016926765442
+          ]
+        },
+        "far": {
+          "upper_degrees": -14.800493025720295,
+          "forearm_degrees": 8.502221379426501,
+          "hand_degrees": 7.30704628972828,
+          "wrist_world": [
+            0.49970486760139465,
+            7.65796315249645e-11,
+            0.5902882814407349
+          ],
+          "elbow_world": [
+            0.4799315929412842,
+            7.65796315249645e-11,
+            0.7225593328475952
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 15.75,
+      "trunk_delta_degrees": 0.3140130127137039,
+      "arms": {
+        "near": {
+          "upper_degrees": 16.41822306676314,
+          "forearm_degrees": 37.04863039675815,
+          "hand_degrees": 32.92481283306854,
+          "wrist_world": [
+            0.5962668657302856,
+            6.333360919041908e-11,
+            0.6410937309265137
+          ],
+          "elbow_world": [
+            0.5200787782669067,
+            6.333360919041908e-11,
+            0.7420203685760498
+          ]
+        },
+        "far": {
+          "upper_degrees": -15.19288544122392,
+          "forearm_degrees": 7.702698155859006,
+          "hand_degrees": 6.374131983257823,
+          "wrist_world": [
+            0.5047232508659363,
+            -5.2985105886138584e-11,
+            0.5891355276107788
+          ],
+          "elbow_world": [
+            0.48679760098457336,
+            -5.2985105886138584e-11,
+            0.721669614315033
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 16.0,
+      "trunk_delta_degrees": 0.25183446959882083,
+      "arms": {
+        "near": {
+          "upper_degrees": 16.872461115378385,
+          "forearm_degrees": 37.43531468970695,
+          "hand_degrees": 33.29323971222366,
+          "wrist_world": [
+            0.6078894138336182,
+            -2.1984136733266268e-10,
+            0.6408382058143616
+          ],
+          "elbow_world": [
+            0.5310218930244446,
+            -2.1984136733266268e-10,
+            0.741248369216919
+          ]
+        },
+        "far": {
+          "upper_degrees": -15.577318789869182,
+          "forearm_degrees": 6.9869459901800335,
+          "hand_degrees": 5.502221379426501,
+          "wrist_world": [
+            0.5099610090255737,
+            1.8601598039680312e-10,
+            0.587897002696991
+          ],
+          "elbow_world": [
+            0.4936923682689667,
+            1.8601598039680312e-10,
+            0.7206447124481201
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 16.25,
+      "trunk_delta_degrees": 0.18834590360990933,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.259762198011828,
+          "forearm_degrees": 37.82780527482307,
+          "hand_degrees": 33.66789215219195,
+          "wrist_world": [
+            0.6191609501838684,
+            -7.893352638177475e-11,
+            0.6404238343238831
+          ],
+          "elbow_world": [
+            0.5416074395179749,
+            -7.893352638177475e-11,
+            0.7403051257133484
+          ]
+        },
+        "far": {
+          "upper_degrees": -15.951750820190579,
+          "forearm_degrees": 6.31687307915327,
+          "hand_degrees": 4.7026981558590055,
+          "wrist_world": [
+            0.5153218507766724,
+            6.75203504219013e-11,
+            0.586591362953186
+          ],
+          "elbow_world": [
+            0.5006067156791687,
+            6.75203504219013e-11,
+            0.7195202112197876
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.9802322387695312e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 16.5,
+      "trunk_delta_degrees": 0.1245453079070694,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.57314647122709,
+          "forearm_degrees": 38.22596239589122,
+          "hand_degrees": 34.04863039675815,
+          "wrist_world": [
+            0.6300302743911743,
+            6.600097551823225e-11,
+            0.6398705244064331
+          ],
+          "elbow_world": [
+            0.5517845153808594,
+            6.600097551823225e-11,
+            0.7392104864120483
+          ]
+        },
+        "far": {
+          "upper_degrees": -16.3141392807226,
+          "forearm_degrees": 5.649827759877086,
+          "hand_degrees": 3.9869459901800326,
+          "wrist_world": [
+            0.5206977128982544,
+            -4.4002742422000196e-11,
+            0.5852397680282593
+          ],
+          "elbow_world": [
+            0.5075311660766602,
+            -4.4002742422000196e-11,
+            0.7183309197425842
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 16.75,
+      "trunk_delta_degrees": 0.061430675650399884,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.80563409158779,
+          "forearm_degrees": 38.62964629669612,
+          "hand_degrees": 34.43531468970695,
+          "wrist_world": [
+            0.640304446220398,
+            -8.265194084700056e-13,
+            0.639197826385498
+          ],
+          "elbow_world": [
+            0.561360776424408,
+            -8.265194084700056e-13,
+            0.7379840016365051
+          ]
+        },
+        "far": {
+          "upper_degrees": -16.662441919999743,
+          "forearm_degrees": 4.99035392047821,
+          "hand_degrees": 3.3168730791532703,
+          "wrist_world": [
+            0.5259488821029663,
+            7.287365155761449e-13,
+            0.583877444267273
+          ],
+          "elbow_world": [
+            0.5143150091171265,
+            7.287365155761449e-13,
+            0.717111349105835
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1102230246251565e-15,
+      "unreachable": []
+    },
+    {
+      "frame": 17.0,
+      "trunk_delta_degrees": 0.0,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.95024521565755,
+          "forearm_degrees": 39.038717221022466,
+          "hand_degrees": 34.82780527482307,
+          "wrist_world": [
+            0.6498191356658936,
+            -2.704299839617619e-10,
+            0.6384279131889343
+          ],
+          "elbow_world": [
+            0.570172131061554,
+            -2.704299839617619e-10,
+            0.7366479635238647
+          ]
+        },
+        "far": {
+          "upper_degrees": -16.994616486556495,
+          "forearm_degrees": 4.342995449083354,
+          "hand_degrees": 2.649827759877086,
+          "wrist_world": [
+            0.5309638381004333,
+            2.3781956959290085e-10,
+            0.5825403928756714
+          ],
+          "elbow_world": [
+            0.5208360552787781,
+            2.3781956959290085e-10,
+            0.715897262096405
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.228781230931777e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 17.25,
+      "trunk_delta_degrees": -0.06868206021924661,
+      "arms": {
+        "near": {
+          "upper_degrees": 18.0,
+          "forearm_degrees": 39.45303541265499,
+          "hand_degrees": 35.22596239589122,
+          "wrist_world": [
+            0.6587905883789062,
+            -1.1520842613244042e-10,
+            0.6375722289085388
+          ],
+          "elbow_world": [
+            0.578435480594635,
+            -1.1520842613244042e-10,
+            0.7352137565612793
+          ]
+        },
+        "far": {
+          "upper_degrees": -17.30862072892735,
+          "forearm_degrees": 3.7122962338192416,
+          "hand_degrees": 1.99035392047821,
+          "wrist_world": [
+            0.5360037088394165,
+            1.0212437839829391e-10,
+            0.5812106132507324
+          ],
+          "elbow_world": [
+            0.5273444652557373,
+            1.0212437839829391e-10,
+            0.7146708369255066
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 17.5,
+      "trunk_delta_degrees": -0.15242330047086522,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.988757804098675,
+          "forearm_degrees": 39.872461115378385,
+          "hand_degrees": 35.62964629669612,
+          "wrist_world": [
+            0.6675991415977478,
+            -2.5346585941221633e-11,
+            0.636705756187439
+          ],
+          "elbow_world": [
+            0.586531400680542,
+            -2.5346585941221633e-11,
+            0.733756422996521
+          ]
+        },
+        "far": {
+          "upper_degrees": -17.60241239564681,
+          "forearm_degrees": 3.1028001628125885,
+          "hand_degrees": 1.3429954490833538,
+          "wrist_world": [
+            0.5412986278533936,
+            2.2720048065139054e-11,
+            0.5798735022544861
+          ],
+          "elbow_world": [
+            0.5340595245361328,
+            2.2720048065139054e-11,
+            0.7134183049201965
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 17.75,
+      "trunk_delta_degrees": -0.248534409027369,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.956222309631276,
+          "forearm_degrees": 40.27676185501748,
+          "hand_degrees": 36.038717221022466,
+          "wrist_world": [
+            0.6763762831687927,
+            -2.4236856965842435e-10,
+            0.6358922123908997
+          ],
+          "elbow_world": [
+            0.59462571144104,
+            -2.4236856965842435e-10,
+            0.7323684692382812
+          ]
+        },
+        "far": {
+          "upper_degrees": -17.87394923524935,
+          "forearm_degrees": 2.5190511241901063,
+          "hand_degrees": 0.7122962338192416,
+          "wrist_world": [
+            0.5468454957008362,
+            2.0051868498960346e-10,
+            0.5785663723945618
+          ],
+          "elbow_world": [
+            0.5409673452377319,
+            2.0051868498960346e-10,
+            0.7121779918670654
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 18.0,
+      "trunk_delta_degrees": -0.3543260741612714,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.904180156452632,
+          "forearm_degrees": 40.63905415298111,
+          "hand_degrees": 36.45303541265499,
+          "wrist_world": [
+            0.6850608587265015,
+            -7.742542718069956e-11,
+            0.6351262331008911
+          ],
+          "elbow_world": [
+            0.6027019023895264,
+            -7.742542718069956e-11,
+            0.7310836315155029
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.12118899626947,
+          "forearm_degrees": 1.9655930060785278,
+          "hand_degrees": 0.10280016281258852,
+          "wrist_world": [
+            0.5526415109634399,
+            7.231838738963603e-11,
+            0.577326238155365
+          ],
+          "elbow_world": [
+            0.5480542778968811,
+            7.231838738963603e-11,
+            0.7109884023666382
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 18.25,
+      "trunk_delta_degrees": -0.4671089841450854,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.834417984417595,
+          "forearm_degrees": 40.94922174642995,
+          "hand_degrees": 36.872461115378385,
+          "wrist_world": [
+            0.6936212778091431,
+            3.759344224807393e-11,
+            0.6342929601669312
+          ],
+          "elbow_world": [
+            0.610744059085846,
+            3.759344224807393e-11,
+            0.7298030853271484
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.342089427241667,
+          "forearm_degrees": 1.4469696966045653,
+          "hand_degrees": -0.4809488758098936,
+          "wrist_world": [
+            0.5586843490600586,
+            -3.600873071940569e-11,
+            0.5760563611984253
+          ],
+          "elbow_world": [
+            0.555307149887085,
+            -3.600873071940569e-11,
+            0.7097545862197876
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 18.5,
+      "trunk_delta_degrees": -0.5841938272513243,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.748722433381005,
+          "forearm_degrees": 41.197148372524694,
+          "hand_degrees": 37.27676185501748,
+          "wrist_world": [
+            0.7020254731178284,
+            -6.575222311067108e-11,
+            0.6332811117172241
+          ],
+          "elbow_world": [
+            0.6187357902526855,
+            -6.575222311067108e-11,
+            0.7284317016601562
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.534608276700435,
+          "forearm_degrees": 0.9677250838949264,
+          "hand_degrees": -1.034406993921472,
+          "wrist_world": [
+            0.564971387386322,
+            6.488518056180226e-11,
+            0.5746643543243408
+          ],
+          "elbow_world": [
+            0.5627126097679138,
+            6.488518056180226e-11,
+            0.7083861827850342
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 18.75,
+      "trunk_delta_degrees": -0.7028912917525015,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.6488801431977,
+          "forearm_degrees": 41.37271776842605,
+          "hand_degrees": 37.63905415298111,
+          "wrist_world": [
+            0.7102409601211548,
+            -3.3725766623859954e-10,
+            0.6321167945861816
+          ],
+          "elbow_world": [
+            0.6266600489616394,
+            -3.3725766623859954e-10,
+            0.7270117402076721
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.696703293180256,
+          "forearm_degrees": 0.5324030560763475,
+          "hand_degrees": -1.5530303033954347,
+          "wrist_world": [
+            0.5714995861053467,
+            3.4067557108663493e-10,
+            0.5731944441795349
+          ],
+          "elbow_world": [
+            0.5702568292617798,
+            3.4067557108663493e-10,
+            0.7069295644760132
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 19.0,
+      "trunk_delta_degrees": -0.82051206592113,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.53667775372253,
+          "forearm_degrees": 41.50665287421464,
+          "hand_degrees": 37.94922174642995,
+          "wrist_world": [
+            0.7183035016059875,
+            -1.303853136569444e-10,
+            0.6308875679969788
+          ],
+          "elbow_world": [
+            0.634501039981842,
+            -1.303853136569444e-10,
+            0.7255868911743164
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.826332225215634,
+          "forearm_degrees": 0.14554750127554072,
+          "hand_degrees": -2.0322749161050737,
+          "wrist_world": [
+            0.5782669186592102,
+            8.513262317322301e-11,
+            0.5716924667358398
+          ],
+          "elbow_world": [
+            0.5779271721839905,
+            8.513262317322301e-11,
+            0.7054328918457031
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 19.25,
+      "trunk_delta_degrees": -0.9343668380297234,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.413901904810327,
+          "forearm_degrees": 41.63552095216521,
+          "hand_degrees": 38.1971483725247,
+          "wrist_world": [
+            0.7262572050094604,
+            -5.5492693773473434e-11,
+            0.6296905279159546
+          ],
+          "elbow_world": [
+            0.6422419548034668,
+            -5.5492693773473434e-11,
+            0.7242011427879333
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.921452821341052,
+          "forearm_degrees": -0.18829769238078597,
+          "hand_degrees": -2.4675969439236525,
+          "wrist_world": [
+            0.585270881652832,
+            5.980060890919958e-11,
+            0.5702049136161804
+          ],
+          "elbow_world": [
+            0.5857104063034058,
+            5.980060890919958e-11,
+            0.7039450407028198
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 19.5,
+      "trunk_delta_degrees": -1.0417662963507945,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.282339236315952,
+          "forearm_degrees": 41.75797222272969,
+          "hand_degrees": 38.37271776842605,
+          "wrist_world": [
+            0.7340837121009827,
+            8.087128189337989e-12,
+            0.6285706758499146
+          ],
+          "elbow_world": [
+            0.6498666405677795,
+            8.087128189337989e-12,
+            0.7229015231132507
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.980022830091013,
+          "forearm_degrees": -0.46458863676589957,
+          "hand_degrees": -2.8544524987244593,
+          "wrist_world": [
+            0.5925097465515137,
+            -8.369444026712358e-12,
+            0.5687812566757202
+          ],
+          "elbow_world": [
+            0.5935941934585571,
+            -8.369444026712358e-12,
+            0.7025177478790283
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 19.75,
+      "trunk_delta_degrees": -1.140021129156857,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.143776388094224,
+          "forearm_degrees": 41.87265690635999,
+          "hand_degrees": 38.50665287421464,
+          "wrist_world": [
+            0.7417643070220947,
+            -1.7449805489455628e-11,
+            0.627573549747467
+          ],
+          "elbow_world": [
+            0.6573585867881775,
+            -1.7449805489455628e-11,
+            0.7217355966567993
+          ]
+        },
+        "far": {
+          "upper_degrees": -19.0,
+          "forearm_degrees": -0.6787814437530884,
+          "hand_degrees": -3.188297692380786,
+          "wrist_world": [
+            0.5999814867973328,
+            1.9744671175825346e-11,
+            0.5674721002578735
+          ],
+          "elbow_world": [
+            0.6015658974647522,
+            1.9744671175825346e-11,
+            0.7012035846710205
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 20.0,
+      "trunk_delta_degrees": -1.2264420247204237,
+      "arms": {
+        "near": {
+          "upper_degrees": 17.0,
+          "forearm_degrees": 41.97822522350805,
+          "hand_degrees": 38.63552095216521,
+          "wrist_world": [
+            0.7492808699607849,
+            -2.55209187116634e-10,
+            0.6267356872558594
+          ],
+          "elbow_world": [
+            0.6647018194198608,
+            -2.55209187116634e-10,
+            0.7207420468330383
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.944024577967333,
+          "forearm_degrees": -0.8263322252156335,
+          "hand_degrees": -3.4645886367658996,
+          "wrist_world": [
+            0.6078497171401978,
+            2.1468564426196934e-10,
+            0.5662631392478943
+          ],
+          "elbow_world": [
+            0.6097784638404846,
+            2.1468564426196934e-10,
+            0.6999900937080383
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 20.25,
+      "trunk_delta_degrees": -1.2983396713140083,
+      "arms": {
+        "near": {
+          "upper_degrees": 16.81847425046158,
+          "forearm_degrees": 42.07332739462575,
+          "hand_degrees": 38.75797222272969,
+          "wrist_world": [
+            0.7564490437507629,
+            -2.2170140723254406e-10,
+            0.6260359883308411
+          ],
+          "elbow_world": [
+            0.6717140674591064,
+            -2.2170140723254406e-10,
+            0.7199018597602844
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.785567504367144,
+          "forearm_degrees": -0.8526019191568182,
+          "hand_degrees": -3.678781443753089,
+          "wrist_world": [
+            0.6163444519042969,
+            2.636719731441417e-10,
+            0.5651504993438721
+          ],
+          "elbow_world": [
+            0.6183345317840576,
+            2.636719731441417e-10,
+            0.6988765597343445
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 20.5,
+      "trunk_delta_degrees": -1.3530247572101235,
+      "arms": {
+        "near": {
+          "upper_degrees": 16.568064033316425,
+          "forearm_degrees": 42.15661364016502,
+          "hand_degrees": 38.87265690635999,
+          "wrist_world": [
+            0.7630906105041504,
+            -4.939760822608719e-10,
+            0.6254644393920898
+          ],
+          "elbow_world": [
+            0.6782192587852478,
+            -4.939760822608719e-10,
+            0.7192070484161377
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.538832567946162,
+          "forearm_degrees": -0.7142834859202943,
+          "hand_degrees": -3.826332225215634,
+          "wrist_world": [
+            0.6254809498786926,
+            5.990932194777088e-10,
+            0.5642057061195374
+          ],
+          "elbow_world": [
+            0.6271482110023499,
+            5.990932194777088e-10,
+            0.6979361772537231
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 20.75,
+      "trunk_delta_degrees": -1.3878079706812831,
+      "arms": {
+        "near": {
+          "upper_degrees": 16.252657061533093,
+          "forearm_degrees": 42.22673418057778,
+          "hand_degrees": 38.97822522350805,
+          "wrist_world": [
+            0.7690739631652832,
+            -1.798052262635963e-10,
+            0.625062108039856
+          ],
+          "elbow_world": [
+            0.6840879917144775,
+            -1.798052262635963e-10,
+            0.7187007665634155
+          ]
+        },
+        "far": {
+          "upper_degrees": -18.218023557451104,
+          "forearm_degrees": -0.4238310708898929,
+          "hand_degrees": -3.8526019191568186,
+          "wrist_world": [
+            0.6350218057632446,
+            1.183817627259387e-10,
+            0.5635042190551758
+          ],
+          "elbow_world": [
+            0.6360111236572266,
+            1.183817627259387e-10,
+            0.6972414255142212
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.4901161193847656e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 21.0,
+      "trunk_delta_degrees": -1.4,
+      "arms": {
+        "near": {
+          "upper_degrees": 15.876141048080152,
+          "forearm_degrees": 42.28233923631595,
+          "hand_degrees": 39.07332739462575,
+          "wrist_world": [
+            0.7742421627044678,
+            -1.2318777942166292e-10,
+            0.6248160004615784
+          ],
+          "elbow_world": [
+            0.6891653537750244,
+            -1.2318777942166292e-10,
+            0.718372106552124
+          ]
+        },
+        "far": {
+          "upper_degrees": -17.837344261628697,
+          "forearm_degrees": 0.041618682185731615,
+          "hand_degrees": -3.7142834859202947,
+          "wrist_world": [
+            0.6447865962982178,
+            1.5353907034665326e-10,
+            0.5630685687065125
+          ],
+          "elbow_world": [
+            0.6446894407272339,
+            1.5353907034665326e-10,
+            0.6968094110488892
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 4.6629367034256575e-15,
+      "unreachable": []
+    },
+    {
+      "frame": 21.25,
+      "trunk_delta_degrees": -1.3917515653189005,
+      "arms": {
+        "near": {
+          "upper_degrees": 15.442403705926187,
+          "forearm_degrees": 42.3468162383752,
+          "hand_degrees": 39.15661364016502,
+          "wrist_world": [
+            0.7786848545074463,
+            1.4742600196182565e-10,
+            0.624699592590332
+          ],
+          "elbow_world": [
+            0.6935027837753296,
+            1.4742600196182565e-10,
+            0.7181599140167236
+          ]
+        },
+        "far": {
+          "upper_degrees": -17.41099846922566,
+          "forearm_degrees": 0.6940984360831095,
+          "hand_degrees": -3.4238310708898934,
+          "wrist_world": [
+            0.6547713279724121,
+            -1.8422841030485415e-10,
+            0.5628594756126404
+          ],
+          "elbow_world": [
+            0.6531512141227722,
+            -1.8422841030485415e-10,
+            0.6965905427932739
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 21.5,
+      "trunk_delta_degrees": -1.3691605645760376,
+      "arms": {
+        "near": {
+          "upper_degrees": 14.955332748039746,
+          "forearm_degrees": 42.442650203466926,
+          "hand_degrees": 39.22673418057778,
+          "wrist_world": [
+            0.782589316368103,
+            -1.7661122564405218e-10,
+            0.6247185468673706
+          ],
+          "elbow_world": [
+            0.6972510814666748,
+            -1.7661122564405218e-10,
+            0.7180362939834595
+          ]
+        },
+        "far": {
+          "upper_degrees": -16.953189968988717,
+          "forearm_degrees": 1.5049080052061754,
+          "hand_degrees": -2.9583813178142684,
+          "wrist_world": [
+            0.6649705171585083,
+            2.20226226144149e-10,
+            0.5628520250320435
+          ],
+          "elbow_world": [
+            0.6614581346511841,
+            2.20226226144149e-10,
+            0.696546733379364
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 21.75,
+      "trunk_delta_degrees": -1.3354584527220628,
+      "arms": {
+        "near": {
+          "upper_degrees": 14.418815887389409,
+          "forearm_degrees": 42.53281526919005,
+          "hand_degrees": 39.28233923631595,
+          "wrist_world": [
+            0.7859967350959778,
+            1.6064302665874663e-11,
+            0.6248148679733276
+          ],
+          "elbow_world": [
+            0.7005117535591125,
+            1.6064302665874663e-11,
+            0.7179981470108032
+          ]
+        },
+        "far": {
+          "upper_degrees": -16.478122549664587,
+          "forearm_degrees": 2.4453472039588715,
+          "hand_degrees": -2.3059015639168905,
+          "wrist_world": [
+            0.6753302216529846,
+            -1.9920662341910145e-11,
+            0.563051700592041
+          ],
+          "elbow_world": [
+            0.6696239709854126,
+            -1.9920662341910145e-11,
+            0.6966707706451416
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 22.0,
+      "trunk_delta_degrees": -1.2938766847076302,
+      "arms": {
+        "near": {
+          "upper_degrees": 13.83674083694374,
+          "forearm_degrees": 42.581686288552675,
+          "hand_degrees": 39.3468162383752,
+          "wrist_world": [
+            0.7889516353607178,
+            -8.436248921661615e-11,
+            0.624932050704956
+          ],
+          "elbow_world": [
+            0.7033872008323669,
+            -8.436248921661615e-11,
+            0.7180424332618713
+          ]
+        },
+        "far": {
+          "upper_degrees": -16.0,
+          "forearm_degrees": 3.4867158467451382,
+          "hand_degrees": -1.4950919947938246,
+          "wrist_world": [
+            0.6857959628105164,
+            1.0369120839737178e-10,
+            0.563460111618042
+          ],
+          "elbow_world": [
+            0.6776622533798218,
+            1.0369120839737178e-10,
+            0.6969534158706665
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 22.25,
+      "trunk_delta_degrees": -1.2476467154833917,
+      "arms": {
+        "near": {
+          "upper_degrees": 13.21299530967131,
+          "forearm_degrees": 42.58866093369399,
+          "hand_degrees": 39.442650203466926,
+          "wrist_world": [
+            0.791555643081665,
+            -1.5851997492433156e-10,
+            0.625042200088501
+          ],
+          "elbow_world": [
+            0.7059798836708069,
+            -1.5851997492433156e-10,
+            0.7181421518325806
+          ]
+        },
+        "far": {
+          "upper_degrees": -15.45393525610412,
+          "forearm_degrees": 4.600313747968912,
+          "hand_degrees": -0.5546527960411289,
+          "wrist_world": [
+            0.6966881155967712,
+            1.9289489450180497e-10,
+            0.5639442801475525
+          ],
+          "elbow_world": [
+            0.6859614849090576,
+            1.9289489450180497e-10,
+            0.6972543001174927
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 22.5,
+      "trunk_delta_degrees": -1.2,
+      "arms": {
+        "near": {
+          "upper_degrees": 12.551467018540686,
+          "forearm_degrees": 42.553136876753186,
+          "hand_degrees": 39.53281526919005,
+          "wrist_world": [
+            0.7939100861549377,
+            -3.12757958420562e-10,
+            0.6251166462898254
+          ],
+          "elbow_world": [
+            0.7083920240402222,
+            -3.12757958420562e-10,
+            0.7182696461677551
+          ]
+        },
+        "far": {
+          "upper_degrees": -14.774497325007104,
+          "forearm_degrees": 5.757440722034134,
+          "hand_degrees": 0.48671584674513824,
+          "wrist_world": [
+            0.7083324790000916,
+            3.7632530425213417e-10,
+            0.5643794536590576
+          ],
+          "elbow_world": [
+            0.6949159502983093,
+            3.7632530425213417e-10,
+            0.6974456310272217
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 22.75,
+      "trunk_delta_degrees": -1.1387938054038322,
+      "arms": {
+        "near": {
+          "upper_degrees": 11.856043676520443,
+          "forearm_degrees": 42.47451178986947,
+          "hand_degrees": 39.581686288552675,
+          "wrist_world": [
+            0.7958688735961914,
+            -1.7137612162709814e-10,
+            0.6252748370170593
+          ],
+          "elbow_world": [
+            0.7104787230491638,
+            -1.7137612162709814e-10,
+            0.7185450792312622
+          ]
+        },
+        "far": {
+          "upper_degrees": -13.975074101837132,
+          "forearm_degrees": 6.92939658334474,
+          "hand_degrees": 1.6003137479689116,
+          "wrist_world": [
+            0.7204437851905823,
+            2.0338095096938957e-10,
+            0.5649290084838867
+          ],
+          "elbow_world": [
+            0.7043084502220154,
+            2.0338095096938957e-10,
+            0.6976929903030396
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 23.0,
+      "trunk_delta_degrees": -1.052410346525788,
+      "arms": {
+        "near": {
+          "upper_degrees": 11.130612996579135,
+          "forearm_degrees": 42.352183345182034,
+          "hand_degrees": 39.58866093369399,
+          "wrist_world": [
+            0.797269344329834,
+            -2.414712874099223e-10,
+            0.6256289482116699
+          ],
+          "elbow_world": [
+            0.7120785117149353,
+            -2.414712874099223e-10,
+            0.7190812826156616
+          ]
+        },
+        "far": {
+          "upper_degrees": -13.069053481722394,
+          "forearm_degrees": 8.087481146304675,
+          "hand_degrees": 2.757440722034133,
+          "wrist_world": [
+            0.7327213287353516,
+            2.810039423373212e-10,
+            0.5657508373260498
+          ],
+          "elbow_world": [
+            0.7139059901237488,
+            2.810039423373212e-10,
+            0.6981616020202637
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 23.25,
+      "trunk_delta_degrees": -0.9448684998433021,
+      "arms": {
+        "near": {
+          "upper_degrees": 10.379062691685343,
+          "forearm_degrees": 42.185549214830075,
+          "hand_degrees": 39.553136876753186,
+          "wrist_world": [
+            0.7981904745101929,
+            -1.5955892163077579e-10,
+            0.6261411905288696
+          ],
+          "elbow_world": [
+            0.7132717967033386,
+            -1.5955892163077579e-10,
+            0.7198408842086792
+          ]
+        },
+        "far": {
+          "upper_degrees": -12.069823359791078,
+          "forearm_degrees": 9.28208507795543,
+          "hand_degrees": 3.9293965833447406,
+          "wrist_world": [
+            0.7452799081802368,
+            1.8117984890153593e-10,
+            0.566846489906311
+          ],
+          "elbow_world": [
+            0.7237081527709961,
+            1.8117984890153593e-10,
+            0.6988362073898315
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 8.881784197001252e-16,
+      "unreachable": []
+    },
+    {
+      "frame": 23.5,
+      "trunk_delta_degrees": -0.8201871418338108,
+      "arms": {
+        "near": {
+          "upper_degrees": 9.605280474807632,
+          "forearm_degrees": 41.9740070709528,
+          "hand_degrees": 39.474511789869474,
+          "wrist_world": [
+            0.7987102270126343,
+            -3.8968400728478514e-10,
+            0.6267743110656738
+          ],
+          "elbow_world": [
+            0.7141380906105042,
+            -3.8968400728478514e-10,
+            0.7207869291305542
+          ]
+        },
+        "far": {
+          "upper_degrees": -10.990771631171375,
+          "forearm_degrees": 10.564142974417509,
+          "hand_degrees": 5.087481146304675,
+          "wrist_world": [
+            0.7582318782806396,
+            4.300807765478254e-10,
+            0.5682251453399658
+          ],
+          "elbow_world": [
+            0.7337123155593872,
+            4.300807765478254e-10,
+            0.6996991634368896
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 23.75,
+      "trunk_delta_degrees": -0.6823851489747492,
+      "arms": {
+        "near": {
+          "upper_degrees": 8.81315405891457,
+          "forearm_degrees": 41.71695458568941,
+          "hand_degrees": 39.352183345182034,
+          "wrist_world": [
+            0.7989071607589722,
+            -7.087851139342405e-11,
+            0.6274900436401367
+          ],
+          "elbow_world": [
+            0.7147576212882996,
+            -7.087851139342405e-11,
+            0.7218811511993408
+          ]
+        },
+        "far": {
+          "upper_degrees": -9.845286190991473,
+          "forearm_degrees": 11.905770543713398,
+          "hand_degrees": 6.282085077955429,
+          "wrist_world": [
+            0.7715060710906982,
+            7.579849248262605e-11,
+            0.569866955280304
+          ],
+          "elbow_world": [
+            0.7439149618148804,
+            7.579849248262605e-11,
+            0.7007308006286621
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 7.450580596923828e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 24.0,
+      "trunk_delta_degrees": -0.535481397743553,
+      "arms": {
+        "near": {
+          "upper_degrees": 8.006571156974724,
+          "forearm_degrees": 41.41378943117909,
+          "hand_degrees": 39.185549214830075,
+          "wrist_world": [
+            0.7988601922988892,
+            -5.216577170230607e-10,
+            0.6282514333724976
+          ],
+          "elbow_world": [
+            0.7152113318443298,
+            -5.216577170230607e-10,
+            0.7230864763259888
+          ]
+        },
+        "far": {
+          "upper_degrees": -8.646754934379551,
+          "forearm_degrees": 13.279083493865565,
+          "hand_degrees": 7.56414297441751,
+          "wrist_world": [
+            0.7850309610366821,
+            5.393731017377945e-10,
+            0.5717440843582153
+          ],
+          "elbow_world": [
+            0.7543114423751831,
+            5.393731017377945e-10,
+            0.7019091248512268
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 24.25,
+      "trunk_delta_degrees": -0.3834947646176575,
+      "arms": {
+        "near": {
+          "upper_degrees": 7.189419481956663,
+          "forearm_degrees": 41.06390927956106,
+          "hand_degrees": 38.9740070709528,
+          "wrist_world": [
+            0.7986487150192261,
+            -2.96717650449807e-10,
+            0.6290210485458374
+          ],
+          "elbow_world": [
+            0.7155805230140686,
+            -2.96717650449807e-10,
+            0.7243651151657104
+          ]
+        },
+        "far": {
+          "upper_degrees": -7.408565756463809,
+          "forearm_degrees": 14.656197532896481,
+          "hand_degrees": 8.905770543713396,
+          "wrist_world": [
+            0.7987352013587952,
+            2.966467627096847e-10,
+            0.5738191604614258
+          ],
+          "elbow_world": [
+            0.7648962736129761,
+            2.966467627096847e-10,
+            0.703208327293396
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 24.5,
+      "trunk_delta_degrees": -0.2304441260744985,
+      "arms": {
+        "near": {
+          "upper_degrees": 6.365586746828958,
+          "forearm_degrees": 40.66671180297449,
+          "hand_degrees": 38.71695458568941,
+          "wrist_world": [
+            0.7983515858650208,
+            -7.134751123238914e-10,
+            0.6297625303268433
+          ],
+          "elbow_world": [
+            0.7159463167190552,
+            -7.134751123238914e-10,
+            0.7256801724433899
+          ]
+        },
+        "far": {
+          "upper_degrees": -6.144106552372432,
+          "forearm_degrees": 16.009228368828623,
+          "hand_degrees": 10.279083493865565,
+          "wrist_world": [
+            0.8125462532043457,
+            6.892299508898247e-10,
+            0.5760448575019836
+          ],
+          "elbow_world": [
+            0.7756615877151489,
+            6.892299508898247e-10,
+            0.7045989036560059
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 24.75,
+      "trunk_delta_degrees": -0.0803483585915114,
+      "arms": {
+        "near": {
+          "upper_degrees": 5.538960664560175,
+          "forearm_degrees": 40.2215946735586,
+          "hand_degrees": 38.41378943117909,
+          "wrist_world": [
+            0.7980479001998901,
+            -1.5523954344232038e-10,
+            0.6304394006729126
+          ],
+          "elbow_world": [
+            0.7163903117179871,
+            -1.5523954344232038e-10,
+            0.7269943356513977
+          ]
+        },
+        "far": {
+          "upper_degrees": -4.866765217233603,
+          "forearm_degrees": 17.371143237922947,
+          "hand_degrees": 11.65619753289648,
+          "wrist_world": [
+            0.8265293836593628,
+            1.4520168400977695e-10,
+            0.5784059762954712
+          ],
+          "elbow_world": [
+            0.7865996956825256,
+            1.4520168400977695e-10,
+            0.7060470581054688
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 25.0,
+      "trunk_delta_degrees": 0.06277366135386825,
+      "arms": {
+        "near": {
+          "upper_degrees": 4.713428948118885,
+          "forearm_degrees": 39.72795556345258,
+          "hand_degrees": 38.06390927956106,
+          "wrist_world": [
+            0.7978168725967407,
+            4.1102232728462695e-11,
+            0.6310156583786011
+          ],
+          "elbow_world": [
+            0.7169941663742065,
+            4.1102232728462695e-11,
+            0.7282705307006836
+          ]
+        },
+        "far": {
+          "upper_degrees": -3.5899296461755186,
+          "forearm_degrees": 18.78317527946423,
+          "hand_degrees": 13.009228368828623,
+          "wrist_world": [
+            0.8407644033432007,
+            -4.465030428724148e-11,
+            0.5808959603309631
+          ],
+          "elbow_world": [
+            0.7977014780044556,
+            -4.465030428724148e-11,
+            0.7075142860412598
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 25.25,
+      "trunk_delta_degrees": 0.19490305728420493,
+      "arms": {
+        "near": {
+          "upper_degrees": 3.8928793104736523,
+          "forearm_degrees": 39.185192144795636,
+          "hand_degrees": 37.66671180297449,
+          "wrist_world": [
+            0.7977376580238342,
+            -1.22284349313162e-10,
+            0.6314806342124939
+          ],
+          "elbow_world": [
+            0.7178398370742798,
+            -1.22284349313162e-10,
+            0.7294967174530029
+          ]
+        },
+        "far": {
+          "upper_degrees": -2.3269877343263548,
+          "forearm_degrees": 20.229839056010633,
+          "hand_degrees": 14.371143237922947,
+          "wrist_world": [
+            0.85520339012146,
+            9.416396828942908e-11,
+            0.583491325378418
+          ],
+          "elbow_world": [
+            0.808957576751709,
+            9.416396828942908e-11,
+            0.7089821100234985
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 3.725290298461914e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 25.5,
+      "trunk_delta_degrees": 0.3120209527220631,
+      "arms": {
+        "near": {
+          "upper_degrees": 3.0811994645930505,
+          "forearm_degrees": 38.59270208972695,
+          "hand_degrees": 37.2215946735586,
+          "wrist_world": [
+            0.7978895902633667,
+            -2.2862962911762708e-10,
+            0.6318240165710449
+          ],
+          "elbow_world": [
+            0.7190096378326416,
+            -2.2862962911762708e-10,
+            0.7306610941886902
+          ]
+        },
+        "far": {
+          "upper_degrees": -1.0913273768143132,
+          "forearm_degrees": 21.695649130120344,
+          "hand_degrees": 15.783175279464228,
+          "wrist_world": [
+            0.8698000311851501,
+            1.9809372198142938e-10,
+            0.5861611366271973
+          ],
+          "elbow_world": [
+            0.8203592300415039,
+            1.9809372198142938e-10,
+            0.7104278802871704
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 25.75,
+      "trunk_delta_degrees": 0.4101084711900072,
+      "arms": {
+        "near": {
+          "upper_degrees": 2.2822771234456436,
+          "forearm_degrees": 37.94988307038574,
+          "hand_degrees": 36.72795556345258,
+          "wrist_world": [
+            0.7983508110046387,
+            -7.159153825320175e-11,
+            0.6320130825042725
+          ],
+          "elbow_world": [
+            0.7205846309661865,
+            -7.159153825320175e-11,
+            0.7317288517951965
+          ]
+        },
+        "far": {
+          "upper_degrees": 0.103663531232431,
+          "forearm_degrees": 23.16512006435156,
+          "hand_degrees": 17.229839056010633,
+          "wrist_world": [
+            0.8845075368881226,
+            3.5415975707664415e-11,
+            0.5888435244560242
+          ],
+          "elbow_world": [
+            0.8318962454795837,
+            3.5415975707664415e-11,
+            0.7118015289306641
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 26.0,
+      "trunk_delta_degrees": 0.4851467362106018,
+      "arms": {
+        "near": {
+          "upper_degrees": 1.5000000000000002,
+          "forearm_degrees": 37.256132758911185,
+          "hand_degrees": 36.18519214479564,
+          "wrist_world": [
+            0.7992007732391357,
+            -1.575743702186827e-11,
+            0.6320135593414307
+          ],
+          "elbow_world": [
+            0.7226476669311523,
+            -1.575743702186827e-11,
+            0.732663631439209
+          ]
+        },
+        "far": {
+          "upper_degrees": 1.2445970946856821,
+          "forearm_degrees": 24.622766421262448,
+          "hand_degrees": 18.695649130120344,
+          "wrist_world": [
+            0.8992828726768494,
+            1.3243232899196045e-11,
+            0.5914669036865234
+          ],
+          "elbow_world": [
+            0.8435608148574829,
+            1.3243232899196045e-11,
+            0.7130467891693115
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.6656007498500226e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 26.25,
+      "trunk_delta_degrees": 0.5331168713064112,
+      "arms": {
+        "near": {
+          "upper_degrees": 0.695362776257162,
+          "forearm_degrees": 36.5108488274425,
+          "hand_degrees": 35.59270208972695,
+          "wrist_world": [
+            0.8000630736351013,
+            -3.5575400958443026e-10,
+            0.6318970322608948
+          ],
+          "elbow_world": [
+            0.7248256206512451,
+            -3.5575400958443026e-10,
+            0.7335343360900879
+          ]
+        },
+        "far": {
+          "upper_degrees": 2.3180854184172537,
+          "forearm_degrees": 26.0531027634112,
+          "hand_degrees": 20.16512006435156,
+          "wrist_world": [
+            0.9138594269752502,
+            2.787373665213977e-10,
+            0.594121515750885
+          ],
+          "elbow_world": [
+            0.8551198840141296,
+            2.787373665213977e-10,
+            0.7142726182937622
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 26.5,
+      "trunk_delta_degrees": 0.55,
+      "arms": {
+        "near": {
+          "upper_degrees": -0.16596696820765314,
+          "forearm_degrees": 35.71342894811889,
+          "hand_degrees": 34.94988307038574,
+          "wrist_world": [
+            0.8005593419075012,
+            -1.0603246058948912e-10,
+            0.6317490339279175
+          ],
+          "elbow_world": [
+            0.7267436981201172,
+            -1.0603246058948912e-10,
+            0.7344235777854919
+          ]
+        },
+        "far": {
+          "upper_degrees": 3.310740607298952,
+          "forearm_degrees": 27.440643653355995,
+          "hand_degrees": 21.622766421262448,
+          "wrist_world": [
+            0.9279499053955078,
+            9.071321471765259e-11,
+            0.5969029068946838
+          ],
+          "elbow_world": [
+            0.8663181662559509,
+            9.071321471765259e-11,
+            0.7155964374542236
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 26.75,
+      "trunk_delta_degrees": 0.5491294818754927,
+      "arms": {
+        "near": {
+          "upper_degrees": -1.0730921740646062,
+          "forearm_degrees": 34.7961846506976,
+          "hand_degrees": 34.256132758911185,
+          "wrist_world": [
+            0.8006228804588318,
+            -5.281584058991484e-10,
+            0.6314970254898071
+          ],
+          "elbow_world": [
+            0.7284603118896484,
+            -5.281584058991484e-10,
+            0.7353400588035583
+          ]
+        },
+        "far": {
+          "upper_degrees": 4.209174766202592,
+          "forearm_degrees": 28.76990365365503,
+          "hand_degrees": 23.0531027634112,
+          "wrist_world": [
+            0.9414536356925964,
+            4.461273572786695e-10,
+            0.5997273325920105
+          ],
+          "elbow_world": [
+            0.8770850300788879,
+            4.461273572786695e-10,
+            0.7169591784477234
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 27.0,
+      "trunk_delta_degrees": 0.5465819542947203,
+      "arms": {
+        "near": {
+          "upper_degrees": -2.0151157819838588,
+          "forearm_degrees": 33.71190575227608,
+          "hand_degrees": 33.5108488274425,
+          "wrist_world": [
+            0.8002156615257263,
+            -4.4812006882999356e-10,
+            0.6311022043228149
+          ],
+          "elbow_world": [
+            0.7300310730934143,
+            -4.4812006882999356e-10,
+            0.7362921833992004
+          ]
+        },
+        "far": {
+          "upper_degrees": 5.0,
+          "forearm_degrees": 30.02539732686647,
+          "hand_degrees": 24.440643653355995,
+          "wrist_world": [
+            0.9542679786682129,
+            3.7438133149159114e-10,
+            0.6025033593177795
+          ],
+          "elbow_world": [
+            0.8873462080955505,
+            3.7438133149159114e-10,
+            0.7182967066764832
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 27.25,
+      "trunk_delta_degrees": 0.5424534574468085,
+      "arms": {
+        "near": {
+          "upper_degrees": -2.9811407326355712,
+          "forearm_degrees": 32.49070735600378,
+          "hand_degrees": 32.71342894811889,
+          "wrist_world": [
+            0.7994568347930908,
+            -7.645551969304165e-10,
+            0.6306020021438599
+          ],
+          "elbow_world": [
+            0.7315300107002258,
+            -7.645551969304165e-10,
+            0.7372639179229736
+          ]
+        },
+        "far": {
+          "upper_degrees": 5.72724214039621,
+          "forearm_degrees": 31.1916392355485,
+          "hand_degrees": 25.76990365365503,
+          "wrist_world": [
+            0.9666007161140442,
+            6.297969923352298e-10,
+            0.6051769256591797
+          ],
+          "elbow_world": [
+            0.8973360061645508,
+            6.297969923352298e-10,
+            0.7195842266082764
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.6656007498500226e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 27.5,
+      "trunk_delta_degrees": 0.5368400315208827,
+      "arms": {
+        "near": {
+          "upper_degrees": -3.960269966689906,
+          "forearm_degrees": 31.162704565030147,
+          "hand_degrees": 31.796184650697597,
+          "wrist_world": [
+            0.798468291759491,
+            -1.1482313710953207e-10,
+            0.6300272345542908
+          ],
+          "elbow_world": [
+            0.733031690120697,
+            -1.1482313710953207e-10,
+            0.7382347583770752
+          ]
+        },
+        "far": {
+          "upper_degrees": 6.441263409286665,
+          "forearm_degrees": 32.25314394225931,
+          "hand_degrees": 27.025397326866468,
+          "wrist_world": [
+            0.978691041469574,
+            1.1997308702049736e-10,
+            0.6077089905738831
+          ],
+          "elbow_world": [
+            0.9073187708854675,
+            1.1997308702049736e-10,
+            0.7208134531974792
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1926748300777466e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 27.75,
+      "trunk_delta_degrees": 0.5298377167060677,
+      "arms": {
+        "near": {
+          "upper_degrees": -4.941606424817024,
+          "forearm_degrees": 29.7151194515371,
+          "hand_degrees": 30.711905752276085,
+          "wrist_world": [
+            0.7972916960716248,
+            -1.9728904621096888e-10,
+            0.6293543577194214
+          ],
+          "elbow_world": [
+            0.7346096038818359,
+            -1.9728904621096888e-10,
+            0.7391804456710815
+          ]
+        },
+        "far": {
+          "upper_degrees": 7.1381804968287526,
+          "forearm_degrees": 33.19442600955708,
+          "hand_degrees": 28.1916392355485,
+          "wrist_world": [
+            0.9905128479003906,
+            1.5754406113011044e-10,
+            0.6100374460220337
+          ],
+          "elbow_world": [
+            0.9172921180725098,
+            1.5754406113011044e-10,
+            0.7219541668891907
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 28.0,
+      "trunk_delta_degrees": 0.5215425531914893,
+      "arms": {
+        "near": {
+          "upper_degrees": -5.914253047687087,
+          "forearm_degrees": 28.13984698528072,
+          "hand_degrees": 29.49070735600378,
+          "wrist_world": [
+            0.7959775328636169,
+            -2.709700797076664e-10,
+            0.6285648345947266
+          ],
+          "elbow_world": [
+            0.7363382577896118,
+            -2.709700797076664e-10,
+            0.7400725483894348
+          ]
+        },
+        "far": {
+          "upper_degrees": 7.814110093179861,
+          "forearm_degrees": 34.0,
+          "hand_degrees": 29.25314394225931,
+          "wrist_world": [
+            1.0020413398742676,
+            2.1350078649451376e-10,
+            0.6121000051498413
+          ],
+          "elbow_world": [
+            0.9272544384002686,
+            2.1350078649451376e-10,
+            0.7229762077331543
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 28.25,
+      "trunk_delta_degrees": 0.5120505811662727,
+      "arms": {
+        "near": {
+          "upper_degrees": -6.867312775970253,
+          "forearm_degrees": 26.474011615771747,
+          "hand_degrees": 28.162704565030143,
+          "wrist_world": [
+            0.79466313123703,
+            -5.91643262159991e-11,
+            0.6276912689208984
+          ],
+          "elbow_world": [
+            0.7382906079292297,
+            -5.91643262159991e-11,
+            0.7408856153488159
+          ]
+        },
+        "far": {
+          "upper_degrees": 8.465168888497377,
+          "forearm_degrees": 34.67084565602121,
+          "hand_degrees": 30.194426009557077,
+          "wrist_world": [
+            1.013283610343933,
+            4.604754771930786e-11,
+            0.6138612031936646
+          ],
+          "elbow_world": [
+            0.9372036457061768,
+            4.604754771930786e-11,
+            0.7238541841506958
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 28.5,
+      "trunk_delta_degrees": 0.501457840819543,
+      "arms": {
+        "near": {
+          "upper_degrees": -7.789888550336686,
+          "forearm_degrees": 24.754737792520878,
+          "hand_degrees": 26.715119451537095,
+          "wrist_world": [
+            0.7934907674789429,
+            1.81249598663058e-11,
+            0.6267579793930054
+          ],
+          "elbow_world": [
+            0.7405397295951843,
+            1.81249598663058e-11,
+            0.7415926456451416
+          ]
+        },
+        "far": {
+          "upper_degrees": 9.08747357293869,
+          "forearm_degrees": 35.22446653428666,
+          "hand_degrees": 31.0,
+          "wrist_world": [
+            1.024277687072754,
+            -1.3961672096218791e-11,
+            0.6153112053871155
+          ],
+          "elbow_world": [
+            0.9471384882926941,
+            -1.3961672096218791e-11,
+            0.7245639562606812
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 2.6656007498500226e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 28.75,
+      "trunk_delta_degrees": 0.4898603723404255,
+      "arms": {
+        "near": {
+          "upper_degrees": -8.671083311456547,
+          "forearm_degrees": 23.01914996503885,
+          "hand_degrees": 25.13984698528072,
+          "wrist_world": [
+            0.7926064133644104,
+            -1.5895451621616985e-11,
+            0.6257765889167786
+          ],
+          "elbow_world": [
+            0.743157684803009,
+            -1.5895451621616985e-11,
+            0.7421623468399048
+          ]
+        },
+        "far": {
+          "upper_degrees": 9.677140836661186,
+          "forearm_degrees": 35.67016291870375,
+          "hand_degrees": 31.670845656021207,
+          "wrist_world": [
+            1.0350439548492432,
+            1.1868443727802713e-11,
+            0.6164318323135376
+          ],
+          "elbow_world": [
+            0.9570572376251221,
+            1.1868443727802713e-11,
+            0.725081205368042
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 29.0,
+      "trunk_delta_degrees": 0.4773542159180457,
+      "arms": {
+        "near": {
+          "upper_degrees": -9.5,
+          "forearm_degrees": 21.304372582836365,
+          "hand_degrees": 23.474011615771747,
+          "wrist_world": [
+            0.7921600937843323,
+            5.1551735102961516e-11,
+            0.6247488260269165
+          ],
+          "elbow_world": [
+            0.7462162375450134,
+            5.1551735102961516e-11,
+            0.7425621747970581
+          ]
+        },
+        "far": {
+          "upper_degrees": 10.230287369822253,
+          "forearm_degrees": 36.01723509317986,
+          "hand_degrees": 32.22446653428666,
+          "wrist_world": [
+            1.045602560043335,
+            -3.9108435240242656e-11,
+            0.6172061562538147
+          ],
+          "elbow_world": [
+            0.9669590592384338,
+            -3.9108435240242656e-11,
+            0.7253811359405518
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 7.450580596923828e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 29.25,
+      "trunk_delta_degrees": 0.4640354117415288,
+      "arms": {
+        "near": {
+          "upper_degrees": -10.29985634818724,
+          "forearm_degrees": 19.647530095424145,
+          "hand_degrees": 21.754737792520878,
+          "wrist_world": [
+            0.7921346426010132,
+            1.9621443358985857e-11,
+            0.623725414276123
+          ],
+          "elbow_world": [
+            0.7496163845062256,
+            1.9621443358985857e-11,
+            0.7428178787231445
+          ]
+        },
+        "far": {
+          "upper_degrees": 10.74302986257928,
+          "forearm_degrees": 36.274983341622374,
+          "hand_degrees": 32.67016291870375,
+          "wrist_world": [
+            1.0559722185134888,
+            -1.5086841498312964e-11,
+            0.6176496148109436
+          ],
+          "elbow_world": [
+            0.9768429398536682,
+            -1.5086841498312964e-11,
+            0.725469708442688
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 29.5,
+      "trunk_delta_degrees": 0.45,
+      "arms": {
+        "near": {
+          "upper_degrees": -11.098124353418498,
+          "forearm_degrees": 18.085746952312913,
+          "hand_degrees": 20.01914996503885,
+          "wrist_world": [
+            0.7924953699111938,
+            3.346586896491033e-12,
+            0.6227728128433228
+          ],
+          "elbow_world": [
+            0.7532387375831604,
+            3.346586896491033e-12,
+            0.742979884147644
+          ]
+        },
+        "far": {
+          "upper_degrees": 11.211485005089656,
+          "forearm_degrees": 36.45270794793869,
+          "hand_degrees": 33.01723509317986,
+          "wrist_world": [
+            1.0661710500717163,
+            -2.522780595537455e-12,
+            0.6177912950515747
+          ],
+          "elbow_world": [
+            0.9867076873779297,
+            -2.522780595537455e-12,
+            0.7253654599189758
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 29.75,
+      "trunk_delta_degrees": 0.43131338361611077,
+      "arms": {
+        "near": {
+          "upper_degrees": -11.890288354133997,
+          "forearm_degrees": 16.584018277381322,
+          "hand_degrees": 18.304372582836365,
+          "wrist_world": [
+            0.7932895421981812,
+            -1.0616355017312173e-10,
+            0.6218808889389038
+          ],
+          "elbow_world": [
+            0.7571966648101807,
+            -1.0616355017312173e-10,
+            0.743075430393219
+          ]
+        },
+        "far": {
+          "upper_degrees": 11.631769487510766,
+          "forearm_degrees": 36.55970919603619,
+          "hand_degrees": 33.274983341622374,
+          "wrist_world": [
+            1.0762884616851807,
+            8.012681490532358e-11,
+            0.6176587343215942
+          ],
+          "elbow_world": [
+            0.9966242909431458,
+            8.012681490532358e-11,
+            0.7250843048095703
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 5.960464477539063e-08,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 30.0,
+      "trunk_delta_degrees": 0.4045374207059823,
+      "arms": {
+        "near": {
+          "upper_degrees": -12.671832688773952,
+          "forearm_degrees": 15.096601189745392,
+          "hand_degrees": 16.647530095424145,
+          "wrist_world": [
+            0.794486939907074,
+            -1.151595485637813e-11,
+            0.6210376620292664
+          ],
+          "elbow_world": [
+            0.7615521550178528,
+            -1.151595485637813e-11,
+            0.74312824010849
+          ]
+        },
+        "far": {
+          "upper_degrees": 12.000000000000002,
+          "forearm_degrees": 36.60528736982225,
+          "hand_degrees": 33.45270794793869,
+          "wrist_world": [
+            1.0863630771636963,
+            -1.6010262560151034e-11,
+            0.6172821521759033
+          ],
+          "elbow_world": [
+            1.0066134929656982,
+            -1.6010262560151034e-11,
+            0.7246443033218384
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 7.450580596923828e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 30.25,
+      "trunk_delta_degrees": 0.3705128342489453,
+      "arms": {
+        "near": {
+          "upper_degrees": -13.43824169577858,
+          "forearm_degrees": 13.644513131771907,
+          "hand_degrees": 15.085746952312912,
+          "wrist_world": [
+            0.796100378036499,
+            -2.1794566151811523e-10,
+            0.6202462315559387
+          ],
+          "elbow_world": [
+            0.7662700414657593,
+            -2.1794566151811523e-10,
+            0.7431322336196899
+          ]
+        },
+        "far": {
+          "upper_degrees": 12.323508522727273,
+          "forearm_degrees": 36.59874275320428,
+          "hand_degrees": 33.55970919603619,
+          "wrist_world": [
+            1.0963919162750244,
+            1.6651940937251197e-10,
+            0.6166827082633972
+          ],
+          "elbow_world": [
+            1.01665461063385,
+            1.6651940937251197e-10,
+            0.7240539789199829
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 7.450580596923828e-09,
+      "unreachable": []
+    },
+    {
+      "frame": 30.5,
+      "trunk_delta_degrees": 0.33008034722433,
+      "arms": {
+        "near": {
+          "upper_degrees": -14.184999713588097,
+          "forearm_degrees": 12.248771545827633,
+          "hand_degrees": 13.584018277381322,
+          "wrist_world": [
+            0.7981434464454651,
+            -5.50660628206856e-11,
+            0.6195080280303955
+          ],
+          "elbow_world": [
+            0.7713152170181274,
+            -5.50660628206856e-11,
+            0.743084192276001
+          ]
+        },
+        "far": {
+          "upper_degrees": 12.615665584415584,
+          "forearm_degrees": 36.549375630089656,
+          "hand_degrees": 33.60528736982225,
+          "wrist_world": [
+            1.1064012050628662,
+            4.237168255150081e-11,
+            0.6158937811851501
+          ],
+          "elbow_world": [
+            1.0267565250396729,
+            4.237168255150081e-11,
+            0.7233337163925171
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 30.75,
+      "trunk_delta_degrees": 0.2840806826114669,
+      "arms": {
+        "near": {
+          "upper_degrees": -14.907591080642721,
+          "forearm_degrees": 10.896279082729313,
+          "hand_degrees": 12.096601189745392,
+          "wrist_world": [
+            0.8005549311637878,
+            -1.9727562639015872e-10,
+            0.6188322305679321
+          ],
+          "elbow_world": [
+            0.7766509652137756,
+            -1.9727562639015872e-10,
+            0.7430071830749512
+          ]
+        },
+        "far": {
+          "upper_degrees": 12.88164569805195,
+          "forearm_degrees": 36.466486284385766,
+          "hand_degrees": 33.59874275320428,
+          "wrist_world": [
+            1.1163759231567383,
+            1.5404764963644624e-10,
+            0.6149686574935913
+          ],
+          "elbow_world": [
+            1.0368866920471191,
+            1.5404764963644624e-10,
+            0.7225236892700195
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 31.0,
+      "trunk_delta_degrees": 0.23335456338968652,
+      "arms": {
+        "near": {
+          "upper_degrees": -15.601500135382663,
+          "forearm_degrees": 9.56968412811365,
+          "hand_degrees": 10.644513131771907,
+          "wrist_world": [
+            0.8032644987106323,
+            9.834314612655604e-11,
+            0.6182268857955933
+          ],
+          "elbow_world": [
+            0.7822417616844177,
+            9.834314612655604e-11,
+            0.7429219484329224
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.126623376623376,
+          "forearm_degrees": 36.359375,
+          "hand_degrees": 33.549375630089656,
+          "wrist_world": [
+            1.1263024806976318,
+            -1.0103815006878847e-10,
+            0.6139606833457947
+          ],
+          "elbow_world": [
+            1.0470144748687744,
+            -1.0103815006878847e-10,
+            0.7216641306877136
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 31.25,
+      "trunk_delta_degrees": 0.17874271253831917,
+      "arms": {
+        "near": {
+          "upper_degrees": -16.262211216248147,
+          "forearm_degrees": 8.28362272657736,
+          "hand_degrees": 9.248771545827633,
+          "wrist_world": [
+            0.8062695264816284,
+            -3.054760611131968e-11,
+            0.6175709962844849
+          ],
+          "elbow_world": [
+            0.7880507707595825,
+            -3.054760611131968e-11,
+            0.7427064776420593
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.355773133116882,
+          "forearm_degrees": 36.24855735085227,
+          "hand_degrees": 33.466486284385766,
+          "wrist_world": [
+            1.1361870765686035,
+            2.4486766780906777e-11,
+            0.6127969622612
+          ],
+          "elbow_world": [
+            1.0571075677871704,
+            2.4486766780906777e-11,
+            0.7206535339355469
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.6858739404357614e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 31.5,
+      "trunk_delta_degrees": 0.12108585303669525,
+      "arms": {
+        "near": {
+          "upper_degrees": -16.885208661679386,
+          "forearm_degrees": 7.052730922717155,
+          "hand_degrees": 7.896279082729313,
+          "wrist_world": [
+            0.8095672726631165,
+            1.5291522215132858e-10,
+            0.616760790348053
+          ],
+          "elbow_world": [
+            0.7940407991409302,
+            1.5291522215132858e-10,
+            0.7422587871551514
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.574269480519483,
+          "forearm_degrees": 36.16058745941558,
+          "hand_degrees": 33.359375,
+          "wrist_world": [
+            1.1460480690002441,
+            -1.2420148243208473e-10,
+            0.6114335060119629
+          ],
+          "elbow_world": [
+            1.0671342611312866,
+            -1.2420148243208473e-10,
+            0.7194113731384277
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.3328003749250113e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 1.1920928955078125e-07,
+      "unreachable": []
+    },
+    {
+      "frame": 31.75,
+      "trunk_delta_degrees": 0.06122470786414544,
+      "arms": {
+        "near": {
+          "upper_degrees": -17.4659768101166,
+          "forearm_degrees": 5.891644761129765,
+          "hand_degrees": 6.56968412811365,
+          "wrist_world": [
+            0.8131551742553711,
+            -3.118453550943201e-10,
+            0.615839958190918
+          ],
+          "elbow_world": [
+            0.8001748919487,
+            -3.118453550943201e-10,
+            0.7416267991065979
+          ]
+        },
+        "far": {
+          "upper_degrees": 13.787286931818182,
+          "forearm_degrees": 36.11382343242695,
+          "hand_degrees": 33.24855735085227,
+          "wrist_world": [
+            1.155888319015503,
+            2.5524218849604097e-10,
+            0.6099657416343689
+          ],
+          "elbow_world": [
+            1.0770626068115234,
+            2.5524218849604097e-10,
+            0.7180079817771912
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 1.1920928955078125e-07,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 5.960464477539063e-08,
+      "unreachable": []
+    },
+    {
+      "frame": 32.0,
+      "trunk_delta_degrees": 0.0,
+      "arms": {
+        "near": {
+          "upper_degrees": -18.0,
+          "forearm_degrees": 4.8150002864119035,
+          "hand_degrees": 5.283622726577359,
+          "wrist_world": [
+            0.8170293569564819,
+            2.9928337585971576e-11,
+            0.6148504018783569
+          ],
+          "elbow_world": [
+            0.8064149022102356,
+            2.9928337585971576e-11,
+            0.7408589124679565
+          ]
+        },
+        "far": {
+          "upper_degrees": 14.0,
+          "forearm_degrees": 36.12662337662338,
+          "hand_degrees": 33.16058745941558,
+          "wrist_world": [
+            1.165710210800171,
+            -2.4851197488739984e-11,
+            0.6084911823272705
+          ],
+          "elbow_world": [
+            1.0868604183197021,
+            -2.4851197488739984e-11,
+            0.716515839099884
+          ]
+        }
+      },
+      "preserved_mesh_errors_m": {
+        "PERF_BOY | original head": 0.0,
+        "V007_BOY | redrawn support boot near": 0.0,
+        "V007_BOY | redrawn support boot far": 0.0,
+        "V024 continuous near trouser drawing": 0.0,
+        "V024 continuous far trouser drawing": 0.0
+      },
+      "root_matrix_error": 0.0,
+      "head_control_matrix_error": 4.440892098500626e-16,
+      "unreachable": []
+    }
+  ],
+  "late_cycles": [
+    {
+      "frame": 32.0,
+      "unreachable": []
+    },
+    {
+      "frame": 63.0,
+      "unreachable": []
+    },
+    {
+      "frame": 94.0,
+      "unreachable": []
+    },
+    {
+      "frame": 125.0,
+      "unreachable": []
+    },
+    {
+      "frame": 156.0,
+      "unreachable": []
+    },
+    {
+      "frame": 187.0,
+      "unreachable": []
+    },
+    {
+      "frame": 218.0,
+      "unreachable": []
+    },
+    {
+      "frame": 249.0,
+      "unreachable": []
+    },
+    {
+      "frame": 280.0,
+      "unreachable": []
+    }
+  ],
+  "coat_derivation": [
+    {
+      "frame": 1,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": 0.2757944535310538
+    },
+    {
+      "frame": 2,
+      "compression_from_trunk_bend": 0.25826047445448297,
+      "extra_passive_hem_lag_degrees": 0.5516459694591692
+    },
+    {
+      "frame": 3,
+      "compression_from_trunk_bend": 0.6170300628731441,
+      "extra_passive_hem_lag_degrees": 0.8775930792582036
+    },
+    {
+      "frame": 4,
+      "compression_from_trunk_bend": 0.91448787446505,
+      "extra_passive_hem_lag_degrees": 1.0395966650337225
+    },
+    {
+      "frame": 5,
+      "compression_from_trunk_bend": 0.9952313657132558,
+      "extra_passive_hem_lag_degrees": 0.8709680646994538
+    },
+    {
+      "frame": 6,
+      "compression_from_trunk_bend": 0.9071151224403964,
+      "extra_passive_hem_lag_degrees": 0.5013467568624881
+    },
+    {
+      "frame": 7,
+      "compression_from_trunk_bend": 0.7506410490985626,
+      "extra_passive_hem_lag_degrees": 0.11561717027036336
+    },
+    {
+      "frame": 8,
+      "compression_from_trunk_bend": 0.4380466441419594,
+      "extra_passive_hem_lag_degrees": -0.3665371388850526
+    },
+    {
+      "frame": 9,
+      "compression_from_trunk_bend": 0.0711481830727127,
+      "extra_passive_hem_lag_degrees": -0.790675201821586
+    },
+    {
+      "frame": 10,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.9873794499608155
+    },
+    {
+      "frame": 11,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.8760128430151974
+    },
+    {
+      "frame": 12,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.6946216367612841
+    },
+    {
+      "frame": 13,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.5111460529268255
+    },
+    {
+      "frame": 14,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.31999128459083087
+    },
+    {
+      "frame": 15,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.07844731235821502
+    },
+    {
+      "frame": 16,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": 0.16460644721847265
+    },
+    {
+      "frame": 17,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": 0.35490665384091824
+    },
+    {
+      "frame": 18,
+      "compression_from_trunk_bend": 0.22145379635079462,
+      "extra_passive_hem_lag_degrees": 0.5637020693540321
+    },
+    {
+      "frame": 19,
+      "compression_from_trunk_bend": 0.5128200412007062,
+      "extra_passive_hem_lag_degrees": 0.7962348258389511
+    },
+    {
+      "frame": 20,
+      "compression_from_trunk_bend": 0.7665262654502648,
+      "extra_passive_hem_lag_degrees": 0.9153274499767685
+    },
+    {
+      "frame": 21,
+      "compression_from_trunk_bend": 0.875,
+      "extra_passive_hem_lag_degrees": 0.807607712140209
+    },
+    {
+      "frame": 22,
+      "compression_from_trunk_bend": 0.8086729279422689,
+      "extra_passive_hem_lag_degrees": 0.4863753278236955
+    },
+    {
+      "frame": 23,
+      "compression_from_trunk_bend": 0.6577564665786175,
+      "extra_passive_hem_lag_degrees": 0.11850675547680567
+    },
+    {
+      "frame": 24,
+      "compression_from_trunk_bend": 0.3346758735897206,
+      "extra_passive_hem_lag_degrees": -0.37259223608846576
+    },
+    {
+      "frame": 25,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.8024332352477045
+    },
+    {
+      "frame": 26,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.9707441580343437
+    },
+    {
+      "frame": 27,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.7828862244427667
+    },
+    {
+      "frame": 28,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.5318473638420639
+    },
+    {
+      "frame": 29,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.31146298136244904
+    },
+    {
+      "frame": 30,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": -0.1253686793347023
+    },
+    {
+      "frame": 31,
+      "compression_from_trunk_bend": 0,
+      "extra_passive_hem_lag_degrees": 0.08090423758661164
+    }
+  ],
+  "max_preserved_mesh_error_m": 2.6656007498500226e-07,
+  "max_root_matrix_error": 0.0,
+  "max_head_control_matrix_error": 1.7881393432617188e-07,
+  "unreachable_samples": []
+}

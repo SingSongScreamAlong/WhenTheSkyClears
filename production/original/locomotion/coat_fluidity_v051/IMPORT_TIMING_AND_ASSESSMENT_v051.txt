@@ -1,0 +1,110 @@
+WHEN THE SKY CLEARS | v051 CONTROLLED FLUID COAT | CLOTH-ONLY A/B
+
+BASELINE AND SCOPE
+Frozen source: v050 face/hand finish. No existing rig, root/camera, body/arm,
+leg/foot or garment-cache timing Action is changed. Age-ten rest anatomy,
+face/hand improvements, girl, boots and production remain untouched.
+This isolates the boy's cloth contribution before further body timing work.
+It does not claim that fluid cloth solves robotic movement.
+
+ACTUAL CAUSES OBSERVED
+The old coat is a1105vertex65x17grid with only chest/pelvis skinning. Its lower
+rows are entirely pelvis-weighted; the final17vertices all have Z=.691m.
+There was no separate fabric drawing/shape Action. Those construction facts
+support the squared rigid-slab diagnosis. How much they cause the perceived
+robotic movement is an artistic judgment, not proved by mesh statistics.
+Native bone samples also show pelvis tilt about-.25..+.25degrees, chest lean
+1.4..2.75degrees, exactly opposite12degree upper-arm pendulums, and matching
+near/far elbow-flex timing at9..13degrees. These remain unchanged in this test.
+Their regular timing is a separate likely contributor to the robotic rhythm.
+
+EDITABLE NATIVE
+native/WTSC_Controlled_Fluid_Coat_v051.blend (all original images packed)
+Scene: V051 | BOY COAT FLUIDITY | exact v050 gait
+Append master: V051 | AGE10 PAIR | controlled fluid coat
+Root retains V048 | shared travel | steady .73125mps
+Rigs retain V044 BOY/GIRL | estimated joint centres names.
+
+CONSTRUCTION CHANGES
+The boy coat has a gentler front/waist outline and less rear flare. Contour
+changes reach about13mm front/15mm rear. Final hem corners rise14mm rear and
+11mm front, with a shallow rounded middle, replacing the level cut edge.
+The original collar/upper attachment rows0..7 stay exactly fixed.
+The original chest/pelvis weight field is retained. New continuous native
+shape keys distribute flex smoothly from below the upper chest toward the hem;
+there is no new rigid waist hinge or detached panel seam.
+Boy sleeves keep their exact pose-cache Action/timing. Cap bulk reduces by up
+to3mm, with roughly1mm inner elbow compression. First4/last3rows stay fixed,
+retaining shoulder/cuff overlap. No new artwork, UV registration, material,
+texture payload, skeleton, silhouette-scale or outfit design is substituted.
+
+WEIGHTED FABRIC RESPONSE
+Coat shape keys:
+  Basis | V051 soft coat, anchored collar
+  V051 | hem inertia X | metres
+  V051 | hem settling Z | metres
+The last two values are metre offsets distributed smoothly by row and panel
+position. Their native Action repeats every32source frames with quarter-frame
+linear samples. They are editable shape keys/curves, not a viewport-only effect.
+Driver: the ACTUAL unchanged hip acceleration sampled at120Hz, followed by a
+damped mass/spring response at3.2Hz, damping ratio.90. Fourteen warmup cycles
+produce a periodic state without an initial pop. It is a controlled authored
+2.5D response; no full3D cloth simulation, collisions or runtime physics is claimed.
+Maximum rear-hem key offsets: X=-.00983336..+.00983336m;
+Z=-.00371931..+.00597647m. Front-panel offsets are75percent of the rear;
+waist response is smaller and upper anchors have zero displacement.
+F1/F33 response state seam error is zero at authored sample precision.
+The motion is derived from existing support-driven acceleration, rather than
+an added arbitrary sine wave. The delivered curve is for THIS walk: regenerate
+it from changed movement if authoring starts, stops, fatigue or recovery.
+
+PROOFS
+Same-pose painted F5 and coat-only matte F5 use identical bones/camera.
+The matte proof zeroes new hem keys ONLY IN RAM to isolate contour changes.
+Neutral proof uses actual rest bones and rest garment drawings regenerated IN
+RAM; all hem inertia is zeroed. No native is saved while rendering these proofs.
+The full-shot A/B uses257actual timeline frames,30fps,8.566667seconds.
+The coat-camera A/B uses129actual timeline frames,30fps,4.3seconds.
+LEFT=v050 frozen coat; RIGHT=v051 cloth-only candidate. Both have identical
+body motion, camera scale, phase and travel; no video interpolation or PNG loop.
+Each movie is under20MB. All encoded frames are decoded; all32 first-cycle
+integer poses and selected decoded full/detail phases are inspected. Continuous
+player playback has not been observed by the agent. Technical passes do not
+establish artistic approval, natural performance or full-trailer readiness.
+
+EXACT INTEGRATION / TRAVEL (UNCHANGED)
+30sourcefps;32frame cycle; .78m stride; .73125m/s.
+D(F)=.78*(F-1)/32. Girl's2frame phase lead is already baked.
+Child roots remainX=-.4/+ .4m relative to the shared travelling root.
+Local outer sole baselineZ=0; proof camera followsD.
+At24productionfps:F=1+(G-G0)*30/24. Cycle25.6frames; do not round.
+Retime BOTH rigs, root/camera and ALL garment shape-key Actions together,
+including the new coat Action and the original sleeve/leg drawing Actions.
+Travelling pair retains root+D. Centred pair disables ONLY rootX and passes
+world-D with a stationary camera. Do not apply travel twice.
+TRAVEL_CURVE_v051.csv retains the original eighth-frame curve throughF257.
+HEM_RESPONSE_v051.csv contains the separate quarter-frame garment key values.
+Do not append proof metric grids/camera into production unless needed for review.
+No full-trailer duration, music, title-mask, world, recovery or clasp edit is made.
+
+EDITING AND VALIDATION
+build_fluid_coat.py reads frozen v050. Duplicate/version this delivered candidate
+before changing parameters. Both packed natives, rebuild scripts, response data,
+same-pose proofs and evidence are included. Raw native-frame PNG folders remain
+in the project and are excluded from the ZIP. Render/encode scripts need them
+and the retained baseline frame manifests for exact repeated comparisons.
+Cold reopen verifies all pre-existing Actions, rest bones, original painting/UVs,
+weights, materials and non-coat geometry.129quarter-frame samples show zero
+baseline change in actual bones, every boot vertex, collar and sleeve anchors.
+No coat cells invert. This proves no new contact/anchor error, not convincing acting.
+
+CANDID LIMITS / NEXT PERFORMANCE WORK
+The contour is less square and the hem now trails/settles relative to the pelvis.
+The amplitude is restrained and may read subtly at full shot size. Painted folds
+remain the original painting; this is controlled planar deformation, not full
+cloth volume, new fold drawings or collision simulation. Body/arm timing still
+has the observed pendulum regularity. Fixed facial expression, single hand pose,
+rigid girl dress/braid and the recovery/clasp transition remain outstanding.
+Judge this cloth-only A/B first; a separate body-performance pass should address
+connected chest/pelvis/shoulder/elbow timing without hiding weak gait under cloth.
+No final artistic or Arcane-level quality acceptance is claimed.

@@ -1,0 +1,199 @@
+{
+  "task_status": "Completed bounded gas/particle feasibility test and actual matched five-second review media.",
+  "technical_conclusion": "Native GAS/OpenVDB and sparse Newtonian particle simulation work in installed Blender5.2.2 within small measured resource limits.",
+  "artistic_conclusion": "Not accepted. Coarse gas is soft and fog-like with less painted detail than v003. Keep v003 as the existing integration candidate; do not substitute this gas test as approved final art.",
+  "actual_media": [
+    {
+      "file": "WTSC_Gas_Particles_75-80s_v004.mp4",
+      "bytes": 957504,
+      "sha256": "1c812a8d1e348a8c1492448ed50cf7b2455e4e7401a7542cedce36754909fa3c",
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "full_decode": true
+    },
+    {
+      "file": "WTSC_Compare_LEFT-v003_RIGHT-Gas-v004.mp4",
+      "bytes": 2540582,
+      "sha256": "cd702baf23c7f8c2849aeb626e1f655383696fc8dce33764c09273f803702c9f",
+      "pixels": [
+        3840,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "full_decode": true
+    }
+  ],
+  "native_portable": {
+    "native": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\delivery\\native\\WTSC_Gas_Particles_Proof_48r_120f_v004.blend",
+    "sha256": "942f7661f332e195dd6e65f62e8ede1e4c916c2311768760fdfaab7d3ecb14c5",
+    "cache_relative": "//../cache/proof_48r_120f",
+    "cache_resolves_to": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\delivery\\native\\../cache/proof_48r_120f",
+    "density_at_frame60": {
+      "max": 0.1954345703125,
+      "sum": 1026.604870378971
+    },
+    "particle_frame12": [
+      {
+        "emitter": "GasParticlesv004 | anchored debris emitter",
+        "alive": 12,
+        "baked": true
+      },
+      {
+        "emitter": "GasParticlesv004 | anchored embers emitter",
+        "alive": 6,
+        "baked": true
+      }
+    ],
+    "all_images_packed": true,
+    "note": "Portable scene only, with local preview shading lights and transparent test collider. Not approved production integration."
+  },
+  "native_portable_absolute_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\delivery\\native\\WTSC_Gas_Particles_Proof_48r_120f_v004.blend",
+  "original_render_scene_absolute_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\native\\WTSC_Gas_Particles_Proof_48r_120f_v004.blend",
+  "source_archive": {
+    "file": "WTSC_Gas_Particles_Technique_Source_v004.zip",
+    "bytes": 65036185,
+    "sha256": "84c92e186e4fad7fd59c442f5eb4f15d73c2cc9a5454e9eaceaeb8c1363e1eb9",
+    "members": 365,
+    "crc_test": "passed",
+    "cache_included": true,
+    "native_relative_cache_loading": "validated at density60 and particles12",
+    "excluded": "Pilot40cache, partialCPUframes, rawGPUimages, production source files, backup blends and unrelated private files."
+  },
+  "measured_cost": {
+    "pilot40": {
+      "bake_seconds": 5.564383200020529,
+      "cache_MiB": 23.52924156188965,
+      "peak_RSS_MiB": 321.37109375
+    },
+    "proof48": {
+      "bake_seconds": 9.497882099996787,
+      "cache_MiB": 61.357683181762695,
+      "peak_RSS_MiB": 326.8671875
+    },
+    "particles": {
+      "bake_seconds": 0.4595640000188723,
+      "point_cache_KiB": 41.9755859375
+    },
+    "render": {
+      "total_render_calls_seconds": 61.445939900004305,
+      "final_frames": 120,
+      "measured_main_pass_peak_RSS_MiB": 1029.33203125,
+      "GPU_device_total_peak_MiB": 1801,
+      "GPU_device_total_baseline_MiB": 282,
+      "GPU_attribution": "Device total; not exclusive per-process"
+    },
+    "limits_reached": false,
+    "no_upres_noise_bake": true,
+    "no_production_worker_interrupted": true,
+    "artistic_status": "Coarse technique proof, not accepted production art."
+  },
+  "library": [
+    {
+      "file_name": "WTSC_Gas_Particles_75-80s_v004.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "status": "succeeded",
+      "local_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\WTSC_Gas_Particles_75-80s_v004.mp4"
+    },
+    {
+      "file_name": "WTSC_Compare_LEFT-v003_RIGHT-Gas-v004.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "status": "succeeded",
+      "local_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\WTSC_Compare_LEFT-v003_RIGHT-Gas-v004.mp4"
+    },
+    {
+      "file_name": "WTSC_Gas_Particles_Technique_Source_v004.zip",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "status": "succeeded",
+      "local_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\WTSC_Gas_Particles_Technique_Source_v004.zip"
+    },
+    {
+      "file_name": "WTSC_Gas_Particles_frame1883_1080_v004.png",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "status": "succeeded",
+      "local_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\previews\\WTSC_Gas_Particles_frame1883_1080_v004.png"
+    },
+    {
+      "file_name": "Compare_LEFT-v003_RIGHT-Gas_v004_frame1883.png",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "status": "succeeded",
+      "local_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\previews\\Compare_LEFT-v003_RIGHT-Gas_v004_frame1883.png"
+    }
+  ],
+  "timing": {
+    "fps": 24,
+    "review_production_frames": [
+      1800,
+      1919
+    ],
+    "production_ignition": 1824,
+    "cache_local_ignition": 1,
+    "gas_cache_range": [
+      1,
+      120
+    ],
+    "mapping": "production = local +1823",
+    "review_local_frames": [
+      -23,
+      96
+    ],
+    "all120_review_frames": "Actual fresh1080p GPU renders; negative pre-roll manually stepped because Scene.frame_start clamps to0."
+  },
+  "particle_method": "12native NEWTON debris particles and6native NEWTON embers, short births/lives, disk caches, transparent isolated test collider. Actual18live particles verified at local12 in portable copy.",
+  "physical_domain": {
+    "metres": [
+      4.2,
+      2.8,
+      4.0
+    ],
+    "grid": [
+      48,
+      32,
+      46
+    ],
+    "source_world_metres": [
+      109.1,
+      10,
+      -0.7048803
+    ],
+    "noise_upres_bake": false,
+    "material_finish": "Mild16percent3D density noise wash, not simulated fine detail. Native volume emission and blackbody zero."
+  },
+  "ownership": "No main production edits. Preview-only local shading lights and test collider remain in the separate proof. Production owns lighting/contact/live occlusion and actual integration.",
+  "preservation": {
+    "v003_collection_sha256_unchanged": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+    "v001": "Rejected and excluded",
+    "owned_render_jobs": "Finished; CPU preview was stopped only by verified owned PID50160;27partial CPU frames preserved and excluded from final."
+  },
+  "tests_actually_completed": [
+    "Native solver/flow RNA and actual bake execution",
+    "72frame40division and120frame48division supervised caches; no caps hit",
+    "Native particle baking and position samples",
+    "Relative portable gas cache read at60 and18live particles at12",
+    "All120new PNGs loaded; both120frame MP4s fully decoded",
+    "Representative native-size GPU/exported frames inspected",
+    "ZIP CRC check passed",
+    "Protected v003 source hash unchanged"
+  ],
+  "remaining_limits": [
+    "No cinematic artistic acceptance",
+    "Coarse smooth/foggy volume lacks fine painterly billows; broad late cloud and small-domain edges require review",
+    "Held original camera/children/scenery; no current production stumble, moving camera, live occlusion/contact or4K validation",
+    "Native test uses local cache timeline and is not a tested direct global-timeline Append asset",
+    "No real-time full-video playback audit",
+    "No transparent animation export in this revision"
+  ],
+  "delivery_notes": "Extract entire source archive, preserve native blend basename and matching blendcache folder. Gas path is relative. All image dependencies are packed. Library saves succeeded; unsupported Windows xattrs are retained in receipt JSON rather than local filesystem metadata.",
+  "remaining_blockers": "No technical blocker to reviewing this feasibility evidence. Artistic quality and production cache/timeline integration remain unaccepted."
+}

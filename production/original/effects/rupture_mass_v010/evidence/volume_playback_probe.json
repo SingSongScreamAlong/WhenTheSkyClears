@@ -1,0 +1,161 @@
+{
+  "reconciled_cache_files": 120,
+  "cache_bytes": 41799036,
+  "native_density_frame20": {
+    "max": 0.64697265625,
+    "sum": 520.890781223774,
+    "count": 49920
+  },
+  "volume_properties": {
+    "filepath": {
+      "animatable": false,
+      "description": "Volume file used by this Volume data-block"
+    },
+    "frame_start": {
+      "animatable": false,
+      "description": "Global starting frame of the sequence, assuming first has a #1"
+    },
+    "frame_duration": {
+      "animatable": false,
+      "description": "Number of frames of the sequence to use"
+    },
+    "frame_offset": {
+      "animatable": true,
+      "description": "Offset the number of the frame to use in the animation"
+    }
+  },
+  "volume_offset_driver": "created",
+  "volume_bbox_at_origin": [
+    [
+      -0.046875,
+      -0.046875,
+      -0.046875
+    ],
+    [
+      -0.046875,
+      -0.046875,
+      2.953125
+    ],
+    [
+      -0.046875,
+      2.953125,
+      2.953125
+    ],
+    [
+      -0.046875,
+      2.953125,
+      -0.046875
+    ],
+    [
+      5.953125,
+      -0.046875,
+      -0.046875
+    ],
+    [
+      5.953125,
+      -0.046875,
+      2.953125
+    ],
+    [
+      5.953125,
+      2.953125,
+      2.953125
+    ],
+    [
+      5.953125,
+      2.953125,
+      -0.046875
+    ]
+  ],
+  "domain_world_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      109.27357482910156
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      11.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.5041317939758301
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "domain_bbox_world": [
+    [
+      106.27357482910156,
+      10.300000190734863,
+      -0.895868182182312
+    ],
+    [
+      106.27357482910156,
+      10.300000190734863,
+      1.9041317701339722
+    ],
+    [
+      106.27357482910156,
+      12.699999809265137,
+      1.9041317701339722
+    ],
+    [
+      106.27357482910156,
+      12.699999809265137,
+      -0.895868182182312
+    ],
+    [
+      112.27357482910156,
+      10.300000190734863,
+      -0.895868182182312
+    ],
+    [
+      112.27357482910156,
+      10.300000190734863,
+      1.9041317701339722
+    ],
+    [
+      112.27357482910156,
+      12.699999809265137,
+      1.9041317701339722
+    ],
+    [
+      112.27357482910156,
+      12.699999809265137,
+      -0.895868182182312
+    ]
+  ],
+  "grids": [
+    {
+      "name": "density",
+      "type": "FLOAT"
+    },
+    {
+      "name": "flame",
+      "type": "FLOAT"
+    },
+    {
+      "name": "shadow",
+      "type": "FLOAT"
+    },
+    {
+      "name": "temperature",
+      "type": "FLOAT"
+    },
+    {
+      "name": "velocity",
+      "type": "VECTOR_FLOAT"
+    }
+  ],
+  "source": "Completed actual Mantaflow bake retained after non-animatable native-domain offset was detected; no rebake."
+}

@@ -1,0 +1,45 @@
+{
+  "sample_count": 1561,
+  "sampling": "1/32 frame plus either side of native contact mode changes",
+  "all_reachable": true,
+  "max_IK_endpoint_error_m": 3.1329385766444685e-05,
+  "minimum_reach_margin_m": 0.0024991475979954103,
+  "max_fixed_contact_error_m": 1.194999734487045e-07,
+  "minimum_sole_height_m": -2.9802322387695312e-08,
+  "max_swing_clearance_error_m": 6.871372461319039e-05,
+  "max_goal_error_m": 7.162643315050224e-05,
+  "max_bone_length_change_m": 5.714746155738304e-07,
+  "IK_planes": {
+    "forearm_near": [
+      0.0
+    ],
+    "forearm_far": [
+      0.0
+    ],
+    "shin_near": [
+      3.14159274
+    ],
+    "shin_far": [
+      0.0
+    ]
+  },
+  "no_IK_branch_switches": true,
+  "all_mesh_values_finite": true,
+  "art_identity": true,
+  "loop": [
+    {
+      "frame": 25,
+      "world_displacement_m": 0.44,
+      "relative_mesh_error_m": 2.497889789080651e-07
+    },
+    {
+      "frame": 49,
+      "world_displacement_m": 0.88,
+      "relative_mesh_error_m": 3.9340194411409155e-07
+    }
+  ],
+  "stretch_disabled": true,
+  "frame_handlers": 0,
+  "technical_status": "PASS",
+  "visual_status": "UNPASSED; technical results are not artistic approval"
+}

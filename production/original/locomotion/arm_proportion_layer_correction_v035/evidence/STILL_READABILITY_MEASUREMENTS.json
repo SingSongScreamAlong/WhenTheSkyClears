@@ -1,0 +1,108 @@
+{
+  "scope": "Raster overlap and charcoal values; not an artistic rating",
+  "far_F20_masks": {
+    "SOURCE": {
+      "FULL": 0,
+      "NO_FAR_TROUSER": 0,
+      "NO_NEAR_TROUSER": 0,
+      "NO_COAT": 0,
+      "NO_COAT_OR_NEAR_TROUSER": 0,
+      "ISOLATED": 405
+    },
+    "ALL": {
+      "FULL": 0,
+      "NO_FAR_TROUSER": 0,
+      "NO_NEAR_TROUSER": 388,
+      "NO_COAT": 0,
+      "NO_COAT_OR_NEAR_TROUSER": 389,
+      "ISOLATED": 405
+    }
+  },
+  "near_hand_values": [
+    {
+      "view": "CLOSE",
+      "frame": 11,
+      "SOURCE": {
+        "hand_median_RGB_luma": 31.0,
+        "adjacent_garment_median_RGB_luma": 32.0,
+        "garment_ring_fraction": 1.0
+      },
+      "ALL": {
+        "hand_median_RGB_luma": 42.0,
+        "adjacent_garment_median_RGB_luma": 32.0,
+        "garment_ring_fraction": 1.0
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 20,
+      "SOURCE": {
+        "hand_median_RGB_luma": 33.0,
+        "adjacent_garment_median_RGB_luma": 32.0,
+        "garment_ring_fraction": 0.13934426229508196
+      },
+      "ALL": {
+        "hand_median_RGB_luma": 44.0,
+        "adjacent_garment_median_RGB_luma": 40.0,
+        "garment_ring_fraction": 0.13114754098360656
+      }
+    },
+    {
+      "view": "CLOSE",
+      "frame": 27,
+      "SOURCE": {
+        "hand_median_RGB_luma": 31.0,
+        "adjacent_garment_median_RGB_luma": 30.666666666666668,
+        "garment_ring_fraction": 1.0
+      },
+      "ALL": {
+        "hand_median_RGB_luma": 42.0,
+        "adjacent_garment_median_RGB_luma": 31.666666666666668,
+        "garment_ring_fraction": 1.0
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 11,
+      "SOURCE": {
+        "hand_median_RGB_luma": 31.0,
+        "adjacent_garment_median_RGB_luma": 32.0,
+        "garment_ring_fraction": 1.0
+      },
+      "ALL": {
+        "hand_median_RGB_luma": 41.0,
+        "adjacent_garment_median_RGB_luma": 32.333333333333336,
+        "garment_ring_fraction": 1.0
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 20,
+      "SOURCE": {
+        "hand_median_RGB_luma": 33.0,
+        "adjacent_garment_median_RGB_luma": 32.0,
+        "garment_ring_fraction": 0.13846153846153847
+      },
+      "ALL": {
+        "hand_median_RGB_luma": 44.0,
+        "adjacent_garment_median_RGB_luma": 40.0,
+        "garment_ring_fraction": 0.12307692307692308
+      }
+    },
+    {
+      "view": "SHOT",
+      "frame": 27,
+      "SOURCE": {
+        "hand_median_RGB_luma": 31.0,
+        "adjacent_garment_median_RGB_luma": 30.666666666666668,
+        "garment_ring_fraction": 1.0
+      },
+      "ALL": {
+        "hand_median_RGB_luma": 41.0,
+        "adjacent_garment_median_RGB_luma": 31.333333333333332,
+        "garment_ring_fraction": 1.0
+      }
+    }
+  ],
+  "far_hand_interpretation": "Compare each ablation against isolated count. Removing far trousers alone can still leave other independent occluders. Near-side coat/leg overlap is intentionally retained; no global front-layer hand override."
+}

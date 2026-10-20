@@ -1,0 +1,32 @@
+{
+  "native": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_minimum_v058\\WTSC_World_Foreground_Development_v058d.blend",
+  "sha256": "501d899e17a491b0704843f37898e9c0a394b97d9a598019fcb6ff9cfd273b48",
+  "source_paint": "Foreground_Bank_Paintover_v047.png",
+  "image_dimensions": [
+    1672,
+    941
+  ],
+  "source_v_max": 0.245,
+  "all_characters_in_source_excluded_by_texture_coordinate_limit": true,
+  "new_failed_meshes_removed": true,
+  "unused_study_nodes_removed": [
+    "v058a | earth-only source band excludes painted children",
+    "v058b | MULTIPLY_ADD",
+    "v058b | FRACT",
+    "v058b | ADD",
+    "v058b | FRACT.001",
+    "Combine XYZ.008",
+    "Image Texture.007",
+    "Combine XYZ.009",
+    "Image Texture.008",
+    "v058b | MULTIPLY",
+    "v058b | COSINE",
+    "v058b | MULTIPLY_ADD.001",
+    "v058b | world-fixed overlapping brush panels",
+    "v058b | preserve upper path alpha color registration",
+    "v058b | foreground color only"
+  ],
+  "mapping": "fixed world geometry position; overlapping UV samples with zero weight at each discontinuity; no mirrored U",
+  "new_raster_files": 0,
+  "source_file_changes": 0
+}

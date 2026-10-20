@@ -1,0 +1,108 @@
+{
+  "status": "PRESERVED COMPARISON CHECKPOINT. Parent artistic review does not accept cinematic performance.",
+  "source": {
+    "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Drawn_Trial_v044.blend",
+    "bytes": 64318469,
+    "sha256": "6d661eaa07198d44c40db1abf936c9ffd42d1db8c4c12e4ca18149a2b0379593"
+  },
+  "world_scene": "WTSC_OPEN_BATTLEFIELD_DRAWN_TRIAL_v044",
+  "master_scene": "WTSC_OPEN_5S_MASTER_v044",
+  "master": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\WTSC_Drawn_Open_75_80_4K_v044.mp4",
+    "bytes": 9195154,
+    "sha256": "33397c2a362ae914fcf534e7b68b28002c59f4ae61bf3a5c9e7d6dddd928d39d"
+  },
+  "view": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\WTSC_Drawn_Open_75_80_View_v044.mp4",
+    "bytes": 2738759,
+    "sha256": "236d540111aafa88bfcb0b01c9da798d677bdbd640e907c554a6f6d818a88900"
+  },
+  "matched_comparison": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\WTSC_v043_vs_v044_Matched_EEVEE_75_80.mp4",
+    "bytes": 5286923,
+    "sha256": "2e89a1486388b12ca890995307fb853bc0d0e83bea17e5765b8e4f56e27e036a"
+  },
+  "reference_v043": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4",
+    "bytes": 9214367,
+    "sha256": "4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9"
+  },
+  "frames": [
+    1801,
+    1920
+  ],
+  "frame_count": 120,
+  "fps": 24,
+  "seconds": 5,
+  "native_master_resolution": [
+    3840,
+    2160
+  ],
+  "view_resolution": [
+    1920,
+    1080
+  ],
+  "comparison_resolution": [
+    3840,
+    1080
+  ],
+  "comparison_method": "Actual corresponding source frames, same EEVEE renderer/camera/travel/world/light/FX. Only performance and its associated material binding changed.",
+  "dense_directory": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\decoded_dense",
+  "native_crop_directories": {
+    "v043": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\native_actor_crops_v043",
+    "v044": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\native_actor_crops_v044"
+  },
+  "crop_native_pixels": [
+    1400,
+    480,
+    1440,
+    1200
+  ],
+  "preserved_inputs": {
+    "shots/world/WTSC_Open_Battlefield_Combined_Trial_v043.blend": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+    "shots/world/WTSC_Painted_World_Full_Trailer_Editable_v040.blend": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f",
+    "renders/world_v016/integration_v043/WTSC_Combined_Open_75_80_4K_v043.mp4": "4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9",
+    "renders/world_v016/WTSC_Full_Knockout_Trailer_4K_v040.mp4": "a8b4edc357498ba3e2ffb585624a862d88ee852f4bb97caca617a14a19ad8569",
+    "locomotion/battlefield_corrections_v006/native/WTSC_Battlefield_Drawn_Corrections_v006.blend": "d74339ba11bd0d8d5dcd09f30ea8e1ff42d5b329f706410b0565d145100f8189"
+  },
+  "library": "Local only; no upload attempted or bypass.",
+  "fresh_open": {
+    "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Drawn_Trial_v044.blend",
+    "source_sha256": "6d661eaa07198d44c40db1abf936c9ffd42d1db8c4c12e4ca18149a2b0379593",
+    "fresh_open_verified": true,
+    "frozen_staging_max_error": 0,
+    "original_engine": "BLENDER_EEVEE",
+    "frame_count": 120,
+    "fps": 24,
+    "resolution": [
+      3840,
+      2160
+    ],
+    "native_scene_strip": "WTSC_OPEN_BATTLEFIELD_DRAWN_TRIAL_v044",
+    "audio_native_packed_original_range": [
+      75,
+      80
+    ],
+    "single_new_pair_visible": true,
+    "all6_old_caps_hidden": true,
+    "four_existing_contacts_retained": true,
+    "new_motion_clock": [
+      1801,
+      1920
+    ],
+    "old_retime_applied": false,
+    "render_status": "Native4K120frame export completed; source bytes preserved."
+  },
+  "frozen_staging_comparison": "WTSC_LOCAL_WORKSPACE\\notes\\world_v016\\frozen_staging_comparison_v044.json",
+  "media_qa": "WTSC_LOCAL_WORKSPACE\\notes\\world_v016\\media_qa_v044.json",
+  "visual_review": "WTSC_LOCAL_WORKSPACE\\notes\\world_v016\\visual_review_v044.json",
+  "pending_next_revision": "WTSC_LOCAL_WORKSPACE\\notes\\world_v016\\pending_isolated_revision_after_v044.txt",
+  "artistic_acceptance": false,
+  "full_v040_and_v043_preserved_byte_for_byte": true,
+  "sealed_v006_preserved": true,
+  "specialist_sources_modified": false,
+  "next_production_changes_started": false,
+  "full_trailer_render_started": false,
+  "title_or_credits_changed": false,
+  "library_upload_attempted": false
+}

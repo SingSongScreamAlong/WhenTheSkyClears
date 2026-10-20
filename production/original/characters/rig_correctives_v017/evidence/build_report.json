@@ -1,0 +1,113 @@
+{
+  "baseline": "WTSC_LOCAL_WORKSPACE\\characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Capability_v016.blend",
+  "baseline_sha256": "2ac224b52393fb083067843ead3018ba4fc6371ee71faeba614f686b2a70b094",
+  "IK_chains": 8,
+  "limb_cuff_surfaces": 16,
+  "arm_correctives": [
+    {
+      "mesh": "V007_BOY | drawn skin far",
+      "method": "bowed tapered forearm",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_BOY | drawn skin near",
+      "method": "bowed tapered forearm",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_BOY | drawn sleeve far",
+      "method": "shared rounded elbow path",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_BOY | drawn sleeve near",
+      "method": "shared rounded elbow path",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_BOY | drawn source gray cuff far",
+      "method": "shared rounded elbow path",
+      "source_rows": 4,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_BOY | drawn source gray cuff near",
+      "method": "shared rounded elbow path",
+      "source_rows": 4,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_GIRL | drawn skin far",
+      "method": "bowed tapered forearm",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_GIRL | drawn skin near",
+      "method": "bowed tapered forearm",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_GIRL | drawn sleeve far",
+      "method": "shared rounded elbow path",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_GIRL | drawn sleeve near",
+      "method": "shared rounded elbow path",
+      "source_rows": 19,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_GIRL | drawn source gray cuff far",
+      "method": "shared rounded elbow path",
+      "source_rows": 4,
+      "subdivision": 2
+    },
+    {
+      "mesh": "V007_GIRL | drawn source gray cuff near",
+      "method": "shared rounded elbow path",
+      "source_rows": 4,
+      "subdivision": 2
+    }
+  ],
+  "compression_correctives": [
+    {
+      "mesh": "LOCO_BOY | PAINT body",
+      "method": "native distance-driven hem corrective",
+      "max_front_lift_m": 0.021
+    },
+    {
+      "mesh": "V007_BOY | drawn leg far",
+      "method": "bend-driven asymmetric knee width",
+      "brace_station_unchanged": true
+    },
+    {
+      "mesh": "V007_BOY | drawn leg near",
+      "method": "bend-driven asymmetric knee width",
+      "brace_station_unchanged": true
+    },
+    {
+      "mesh": "LOCO_GIRL | PAINT body",
+      "method": "native distance-driven hem corrective",
+      "max_front_lift_m": 0.018
+    },
+    {
+      "mesh": "V007_GIRL | drawn leg far",
+      "method": "retained source skin contour; compression handled in skirt"
+    },
+    {
+      "mesh": "V007_GIRL | drawn leg near",
+      "method": "retained source skin contour; compression handled in skirt"
+    }
+  ],
+  "head_views": "Original v015 right-profile paint retained. Required girl attention turn remains missing matching registered art.",
+  "source_interface": "Original v016 controller ABI and8nativeIKchains retained.",
+  "baseline_unchanged": true
+}

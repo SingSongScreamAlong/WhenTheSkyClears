@@ -1,0 +1,231 @@
+{
+  "scope": "Whole active action-channel comparison plus dense numerical checks across three cycles; not an artistic rating",
+  "sample_interval_frames": 0.125,
+  "samples": 745,
+  "source_frames": [
+    1,
+    94
+  ],
+  "fps": 30,
+  "preferred_source_sha256": "e949e76b90397357f3f7378d02669caf276b2aec864a1c82e8594fe166ebd9b4",
+  "active_object_action_count": 22,
+  "changed_active_channels": [
+    {
+      "object": "LOCO_BOY | RIG",
+      "path": "pose.bones[\"forearm_near\"].constraints[\"V016 fixed-length ARM\"].pole_angle",
+      "index": 0
+    },
+    {
+      "object": "LOCO_BOY | RIG",
+      "path": "pose.bones[\"forearm_far\"].constraints[\"V016 fixed-length ARM\"].pole_angle",
+      "index": 0
+    }
+  ],
+  "unexpected_channel_changes": [],
+  "exact_control_action_preservation": true,
+  "allowed_rig_change": "v035 copied/renamed the rig Action and refit only forearm IK pole-angle channels for the intentionally changed upper/forearm rest split. This is not an unchanged whole arm skeleton claim.",
+  "original_GP_coat_drawing_hash_unchanged": true,
+  "errors": {
+    "root_matrix": 0.0,
+    "all_control_world_matrices": 0.0,
+    "non_arm_bone_world_matrices": 0.0,
+    "shoulder_path_m": 0.0,
+    "head_vertex_m": 0.0,
+    "hand_bone_world_matrices": 0.0,
+    "sole_min_z_change_m": 0.0,
+    "arm_IK_wrist_endpoint_m": 5.092726140322807e-07
+  },
+  "wrap_and_selected_checks": [
+    {
+      "frame": 1.0,
+      "root_world_x_m": 0.0,
+      "near_wrist_world": [
+        -0.13541436195373535,
+        2.9930058431659745e-11,
+        0.6148504018783569
+      ],
+      "far_wrist_world": [
+        0.2132665365934372,
+        -2.484948358194572e-11,
+        0.6084911823272705
+      ]
+    },
+    {
+      "frame": 11.0,
+      "root_world_x_m": 0.30723991990089417,
+      "near_wrist_world": [
+        0.3331359922885895,
+        -2.175966351547487e-11,
+        0.6200725436210632
+      ],
+      "far_wrist_world": [
+        0.4662157893180847,
+        1.951839384561893e-11,
+        0.6010252237319946
+      ]
+    },
+    {
+      "frame": 20.0,
+      "root_world_x_m": 0.5837558507919312,
+      "near_wrist_world": [
+        0.7492808699607849,
+        -2.55209187116634e-10,
+        0.6267356872558594
+      ],
+      "far_wrist_world": [
+        0.6078497171401978,
+        2.1468564426196934e-10,
+        0.5662631392478943
+      ]
+    },
+    {
+      "frame": 27.0,
+      "root_world_x_m": 0.7988237738609314,
+      "near_wrist_world": [
+        0.8002156615257263,
+        -4.4812006882999356e-10,
+        0.6311022043228149
+      ],
+      "far_wrist_world": [
+        0.9542679786682129,
+        3.7438133149159114e-10,
+        0.6025033593177795
+      ]
+    },
+    {
+      "frame": 31.0,
+      "root_world_x_m": 0.9217197299003601,
+      "near_wrist_world": [
+        0.8032644987106323,
+        9.834314612655604e-11,
+        0.6182268857955933
+      ],
+      "far_wrist_world": [
+        1.1263024806976318,
+        -1.0103815006878847e-10,
+        0.6139606833457947
+      ]
+    },
+    {
+      "frame": 31.5,
+      "root_world_x_m": 0.9370817542076111,
+      "near_wrist_world": [
+        0.8095672726631165,
+        1.5291522215132858e-10,
+        0.616760790348053
+      ],
+      "far_wrist_world": [
+        1.1460480690002441,
+        -1.2420148243208473e-10,
+        0.6114335060119629
+      ]
+    },
+    {
+      "frame": 32.0,
+      "root_world_x_m": 0.9524437189102173,
+      "near_wrist_world": [
+        0.8170293569564819,
+        2.9928337585971576e-11,
+        0.6148504018783569
+      ],
+      "far_wrist_world": [
+        1.165710210800171,
+        -2.4851197488739984e-11,
+        0.6084911823272705
+      ]
+    },
+    {
+      "frame": 62.0,
+      "root_world_x_m": 1.8741635084152222,
+      "near_wrist_world": [
+        1.7557082176208496,
+        9.834314612655604e-11,
+        0.6182268857955933
+      ],
+      "far_wrist_world": [
+        2.0787463188171387,
+        -1.0103815006878847e-10,
+        0.6139606833457947
+      ]
+    },
+    {
+      "frame": 62.5,
+      "root_world_x_m": 1.8895255327224731,
+      "near_wrist_world": [
+        1.7620110511779785,
+        1.5291522215132858e-10,
+        0.616760790348053
+      ],
+      "far_wrist_world": [
+        2.098491907119751,
+        -1.2420148243208473e-10,
+        0.6114335060119629
+      ]
+    },
+    {
+      "frame": 63.0,
+      "root_world_x_m": 1.9048874378204346,
+      "near_wrist_world": [
+        1.7694730758666992,
+        2.9928337585971576e-11,
+        0.6148504018783569
+      ],
+      "far_wrist_world": [
+        2.1181540489196777,
+        -2.4851197488739984e-11,
+        0.6084911823272705
+      ]
+    },
+    {
+      "frame": 93.0,
+      "root_world_x_m": 2.8266072273254395,
+      "near_wrist_world": [
+        2.7081520557403564,
+        9.834314612655604e-11,
+        0.6182268857955933
+      ],
+      "far_wrist_world": [
+        3.0311899185180664,
+        -1.0103815006878847e-10,
+        0.6139606833457947
+      ]
+    },
+    {
+      "frame": 93.5,
+      "root_world_x_m": 2.8419692516326904,
+      "near_wrist_world": [
+        2.7144546508789062,
+        1.5291522215132858e-10,
+        0.616760790348053
+      ],
+      "far_wrist_world": [
+        3.0509355068206787,
+        -1.2420148243208473e-10,
+        0.6114335060119629
+      ]
+    },
+    {
+      "frame": 94.0,
+      "root_world_x_m": 2.8573312759399414,
+      "near_wrist_world": [
+        2.721916913986206,
+        2.9928337585971576e-11,
+        0.6148504018783569
+      ],
+      "far_wrist_world": [
+        3.0705976486206055,
+        -2.4851197488739984e-11,
+        0.6084911823272705
+      ]
+    }
+  ],
+  "hand_geometry_exception": "v035 far-hand depth offset2mm and v036 thumb clearance up to3.64mm/local values are intentional shape changes; wrist paths, hand matrices, scale and timing match preferred source.",
+  "shoe_geometry_exception": "Only non-support upper-canvas vertices move up to a few millimetres; one shared design retained, sole geometry and shoe object trajectories unchanged.",
+  "images": [
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png",
+      "packed": true
+    }
+  ],
+  "observation_limit": "Dense samples are finite numerical checks. Exact action-channel equality establishes preservation of the authored controls; limb shape/rig refits are separately disclosed. Actual normal-speed visual review remains necessary."
+}

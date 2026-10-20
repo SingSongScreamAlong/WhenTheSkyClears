@@ -1,0 +1,24 @@
+WHEN THE SKY CLEARS | ISOLATED PHASE-6 SOURCE TRACE GUIDE
+
+Open native/Muybridge_Phase06_Manual_Trace_v061.blend in Blender 5.2.2 LTS.
+Object "Phase 06 Manual GP Contours" contains the editable Grease Pencil
+strokes on layer "Phase 06 Visible Contours", frame 1. The camera is a
+registered orthographic 620x1176 view. The trace is object-local at Z=0.
+The source crop is reference/phase06_source_crop.png, kept as a separate
+companion file; the full original Plate 2 reference remains in
+locomotion/three_way_walk_test_v057/reference and is unchanged.
+
+For every hand-chosen source pixel (x,y), the build uses only this registration:
+Blender X=(x-155)*0.01, Y=(294-y)*0.01, Z=0. The camera's vertical orthographic
+scale is 5.88, making one source pixel exactly two output pixels. The point
+lists are in reference/phase06_manual_contours.json; there is no image
+segmentation, skeleton generator, automatic tracing or synthesized pose.
+scripts/build_manual_trace_phase06.py calls the v060 temporary native stroke
+operator separately for each listed contour. It is not a real pointer/pen
+brush gesture and makes no change to installed DCC-CUA.
+
+previews/Phase06_Source_Native_Overlay_Contact_v061.png compares original
+source crop, native GP render, and registered cyan overlay. The native source
+image is not embedded in the .blend, so retain the companion crop for visual
+comparison. The file is a study only; do not import it into production as
+approved boy/girl animation. No timing or integration travel curve is implied.

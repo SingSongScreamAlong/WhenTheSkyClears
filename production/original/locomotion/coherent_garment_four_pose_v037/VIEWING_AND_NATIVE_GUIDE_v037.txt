@@ -1,0 +1,49 @@
+WHEN THE SKY CLEARS — v037 CONNECTED GARMENT / FOUR-POSE ART STUDY
+Status: actual still comparison, awaiting review. This is not a new animation cycle or production integration.
+
+OPEN FIRST
+previews/WTSC_v037_Four_Pose_Garment_Comparison.png
+The board compares F1 CONTACT, F4 LOADED DOWN, F11 PASSING and F20 LOADED RECOVERY. F27 is an additional hand/hem overlap check.
+A: unchanged v036 source.
+B: connected garment construction with restrained charcoal values and no fabric painting.
+C: exactly the same construction with the retained fabric painting.
+Each row includes actual 480x720 close renders and original-camera 1280x720 shot renders. Images are pasted at native pixel dimensions. F27 adds a clearly labelled 4x nearest-neighbor detail. No character image generation, retouching, hand x-rays or new scene lighting is involved. Download/zoom the large board to inspect actual shot pixels.
+
+EDITABLE NATIVES
+native/WTSC_Connected_Garment_Construction_v037.blend
+native/WTSC_Connected_Garment_Retained_Fabric_v037.blend
+Both are complete review scenes with original packed images and base/foreground compositing. Review only timeline markers 1, 4, 11, 20, 27. Body animation remains for matched pose evaluation, but the new coat has only five CONSTANT held shape samples. Its inbetweens and moving fabric continuity are NOT authored. Playing the timeline between those markers is not a valid coat-animation preview.
+
+WHAT CHANGED
+The old separate rounded lower value panels and triangular side-flap drawing are hidden in this isolated copy. A single connected 561-vertex, 512-quad surface now links shoulder, ribcage, waist and hem. The side flare is moderated, the front seam/opening runs continuously from the collar region, and the hem has softened corners plus a small front opening. The original collar/shoulder painting, head/profile/hair, arms/hands, trousers and footwear remain separate retained source assets.
+The garment follows the unchanged pelvis and neck positions in each selected pose. Its vertical min/max extent is fitted to the exact original coat extent for that pose, preserving garment length. One restrained waist fold derives from existing hip drop: compression is near zero in the contact/passing/up samples and strongest in F4/F20. It is not separately clocked flapping.
+Broad smooth garment-local value turns describe the surface. The lower-front value adjustment stays in fixed cloth coordinates in every pose; it does not follow the hand and is not a glow, lighting effect or isolated hand halo.
+
+RETAINED PAINTING
+The painted variant reuses the larger original coat/fabric region of Pair_Painterly_Near_Age_v015.png, including its existing seam/placket language. A structured UV map follows the new garment rows and front seam. It does not tile a small grain patch, transfer the old silhouette as an image card, generate a new texture or replace construction with noise. A small number of perimeter UV points are pulled into opaque existing fabric to avoid empty source pixels. The original packed image bytes remain unchanged.
+The native control V037 | garment review values | static pose selector has property painted: 0 for construction and 1 for retained fabric. Both saved variants share the same geometry. Its compression property is keyed only at the static review poses.
+
+PRESERVATION
+All original v036 actions, original mesh coordinates/shape samples/UVs and original packed painting bytes remain unchanged. Cold checks cover all original rig bones, root and wrists on frames1–94 and the protected visible character meshes/cameras at the five review poses. All reported coordinate/matrix errors are zero. New actions belong only to the new garment shape samples and its review compression property. Original source files are hash-checked separately.
+The original GP coat data remains in the native, hidden for comparison. The external v036 checkpoint remains unchanged. The v028/v033 preferred timing and v036 limb/footwear work are retained. No movement, sole path, hand gesture, body pose or head turn was authored in this pass.
+
+F27 HAND / HEM CHECK
+The actual near-hand mesh remains in its original foreground layer and at the same path, scale and gesture. Separate opaque full/isolated hand-ID renders are technical diagnostics only. Their edge counts are raster-sensitive and can exceed a 1.0 ratio because of antialiasing/background differences; do not interpret that ratio as a visibility score. The clean artwork and enlarged actual-pixel inset are the artistic evidence.
+The retained fabric initially reduced local hand separation. The broad lower-coat value turn was adjusted before final delivery; hand materials and painting were not changed. The final pixel measurements are in HAND_HEM_READABILITY_AND_BOARDS.json. The hand remains small at shot size, and clear identification in a moving shot is not established by these stills.
+
+CANDID ARTISTIC ASSESSMENT
+The inspected stills read as one attached garment more consistently than the previous smooth chest / triangular side flap / rounded lower-panel combination. The original fabric painting connects the coat visually to the collar and sleeves. This is a direction for review, not a declaration of final art or studio-level animation.
+Remaining issues: the coat can still feel fitted and graphic in profile; the inherited triangular upper-trouser edge below the hem is visible at F20; passing feet remain congested; small hands still compete with dark clothing and trouser texture. No new leg/foot contour correction is concealed in this coat pass. Moving material registration, hem response, cloth volume through the full cycle and independent paired acting remain untested or unfinished.
+
+TIMING / INTEGRATION LIMIT
+Original source fps 30, 31-frame cycle. D(F)=0.9524437384576381*(F−1)/31 metres, +X. Root V021 | CHILD_SUPPORT_TRAVEL. No new travel curve is authored. The unchanged v036 curve is included for context as reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv.
+At production 24 fps, source F=1+(G−G0)*30/24; all body/cloth/shoe/world clocks must share that mapping. This static coat study is not ready for a full-cycle retime or production append. Complete and inspect the missing garment poses/inbetweens after the construction direction is reviewed. Stage, cameras, floor ruler and review controls are not production artwork.
+
+EVIDENCE
+GARMENT_STUDY_BUILD.json — exact pose anchors, preserved garment extents, new geometry/UV method and packed source image.
+COLD_PRESERVATION_AND_SCOPE.json — unchanged original actions/meshes/paint and cold pose checks.
+STILL_RENDER_RECORD.json —20actual final native stills: two variants, two cameras, five poses. Earlier bounded iterations are retained locally where relevant.
+HAND_HEM_READABILITY_AND_BOARDS.json — hand diagnostics, actual-pixel values and board metadata.
+PROTECTED_SOURCE_HASHES.json — original checkpoints and production hashes.
+LIBRARY_BOARD_RECEIPT.json and metadata readback — confirmed private board delivery.
+No movie, full-trailer render, world integration, title/music/duration edit, install or external sharing was performed. All Blender jobs exited.

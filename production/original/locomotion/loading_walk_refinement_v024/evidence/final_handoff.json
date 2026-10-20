@@ -1,0 +1,123 @@
+{
+  "status": "TECHNICAL_PASS_ART_NOT_PASSED",
+  "scope": "Isolated boy continuous walking/loading/cloth study from v021/v022; v024 follows preserved v023. No production integration.",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\loading_walk_refinement_v024\\native\\WTSC_Continuous_Coat_Walk_v024.blend",
+  "native_sha256": "eedcd9d14e4c3d5d96d19d982b363ac7789ceb3b6e8f4f6cf8e909876fc81f8e",
+  "guide": "V024_IMPORT_TIMING_AND_EDIT_GUIDE.txt",
+  "travel": "V024_TRAVEL_AND_SUPPORT_QUARTER_FRAMES.csv",
+  "preview": {
+    "movie": "WTSC_LOCAL_WORKSPACE\\locomotion\\loading_walk_refinement_v024\\previews\\WTSC_v024_Normal_Speed_Walk_Close_and_Shot_3p1s.mp4",
+    "bytes": 611212,
+    "sha256": "752d889031369e267369d6cae53edd9161a9bafc7e1a7d43cf44de61653a6f58",
+    "fps": 30.0,
+    "frames_decoded": 93,
+    "duration_seconds": 3.1,
+    "dimensions": [
+      1328,
+      608
+    ],
+    "normal_speed": true,
+    "holds_or_retiming": false,
+    "source_period_frames": 31,
+    "cycles": 3,
+    "visual_inspection": "First-cycle31decoded frames plus loop boundary and shot-size boards. This is frame inspection, not observed real-time playback."
+  },
+  "private_preview": {
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]"
+  },
+  "technical": {
+    "fresh_native_samples": 373,
+    "sample_rate_per_frame": 4,
+    "max_actual_sole_anchor_error_m": 2.4191451214334697e-07,
+    "minimum_actual_sole_z_m": -4.0978193283081055e-08,
+    "unreachable_native_chains": [],
+    "loop_mesh_translation_error_m": 7.251217997429632e-07,
+    "motion_model_transition_checks": [
+      {
+        "q": 0,
+        "max_ankle_position_jump_over_2e_minus5_frames_m": 2.748446057531245e-07
+      },
+      {
+        "q": 4.25,
+        "max_ankle_position_jump_over_2e_minus5_frames_m": 5.632323754408889e-07
+      },
+      {
+        "q": 16,
+        "max_ankle_position_jump_over_2e_minus5_frames_m": 2.449118848880122e-07
+      },
+      {
+        "q": 18.5,
+        "max_ankle_position_jump_over_2e_minus5_frames_m": 4.675762758797855e-07
+      },
+      {
+        "q": 31,
+        "max_ankle_position_jump_over_2e_minus5_frames_m": 2.748446055767361e-07
+      }
+    ],
+    "drawing_swaps": 0,
+    "frame_handlers": 0,
+    "status": "PASS",
+    "scope": "Contact, reach, loop and absence of hard drawing switches; not continuous-playback artistic acceptance"
+  },
+  "observed": "Small native proof, matched coat poses, same-clock comparison, first-cycle31decoded close frames,22boundary frames,9shot frames. Frame inspection only.",
+  "actual_normal_speed_playback_observed": false,
+  "artistic_pass": false,
+  "visual_open_items": [
+    "Coat remains a flat painted representation with stretched baked folds; new pose-specific painting is unresolved.",
+    "Convincing loading/cadence at normal speed remains unverified without observable continuous playback.",
+    "Paired recovery-to-walk transition and production world matching are outside this solo test."
+  ],
+  "blockers": [
+    {
+      "action": "Built-in imagegen coat-only repaint",
+      "target": "v023 loading native render with original v015 design reference",
+      "reason": "AbsolutePathBuf deserialized without a base path at line1column173",
+      "status": "Failed before generation, not approval-denied; no image returned",
+      "completed": "Native pose-specific coat/cloth alternatives and continuous walking/loading refinements; matched proof and encoded movie."
+    },
+    {
+      "action": "Observe actual normal-speed playback",
+      "target": "WTSC_v024_Normal_Speed_Walk_Close_and_Shot_3p1s.mp4",
+      "reason": "Available file/DCC tools can render, decode and inspect frames but expose no observable running player",
+      "status": "Unavailable/unobserved; no playback pass claimed",
+      "completed": "93frame30fps movie, allframes decoded and selected temporal boards inspected; private upload verified."
+    }
+  ],
+  "preservation": {
+    "v046": {
+      "path": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "expected": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "actual": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "expected": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "actual": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "expected": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "actual": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v023_preserved_copy": {
+      "actual": "5d95d9fc97d62057379510a656dca90bb13883e23b95a0217332a2cfdeac966b",
+      "current_v023": "5d95d9fc97d62057379510a656dca90bb13883e23b95a0217332a2cfdeac966b"
+    },
+    "v021": {
+      "path": "locomotion\\leaves_child_pose_correction_v021\\native\\WTSC_Child_Coherent_Support_Eight_Poses_v021.blend",
+      "actual": "4f7fc0d5d9f8fd94a69d4eed23edb69ede5de7519b9cbbd0630fe1db11471ada",
+      "expected": "4f7fc0d5d9f8fd94a69d4eed23edb69ede5de7519b9cbbd0630fe1db11471ada",
+      "unchanged": true
+    },
+    "v022_preserved_copy": {
+      "actual": "fbb1563d2a21ae99209256f9abad0222c5d5f4167a0bdc93b23993945f2d7884",
+      "unchanged": true
+    }
+  },
+  "preview_open_in_codex": "Queued, not observed playback"
+}

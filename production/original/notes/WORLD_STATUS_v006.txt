@@ -1,0 +1,35 @@
+When the Sky Clears world and sets pass
+16 October 2026
+
+Current scope follows Conrad's latest direction: build the world and feeling of the trailer first. The children remain held silhouettes translated through the scenery, with no limb animation. The rejected segmented walk is not used.
+
+Native working source
+shots/world/WTSC_World_First_v006.blend
+WTSC_WORLD_FIRST_4K contains the editable sets, native Grease Pencil outline, contact ground and camera route.
+WTSC_MASTER_4K_100S contains a native Scene strip of that world plus the supplied music and final volume fade.
+3840 x 2160 UHD, 24 fps, frames 1 through 2400 inclusive: exactly 100 seconds.
+
+World route
+Warm village and bakery -> abandoned village edge -> woods -> shattered school -> displacement camp -> battlefield and crater -> ruins and ash -> WHEN THE SKY CLEARS as physical lettering in the landscape.
+Foreground trees provide depth and occlusion. The same camera tracks laterally, then widens and holds on the title. The held pair moves through the route without walking, running or crouching animation.
+
+Art and edit
+Ten set textures were made with built-in GPT imagegen: warm village, abandoned village, sky, woods, school, camp, battlefield, distant hills, ground and a complete foreground oak.
+The pair is a separate imagegen design, converted to a manipulable native Grease Pencil vector outline.
+Generated source paintings are around 1672 x 941 or 1536 x 1024; the native scene renders at UHD. Their files are preserved unchanged and packed in Blender. The two battlefield materials use alpha blending to remove the black overlap artifacts discovered in the v004 export.
+The supplied 48 kHz stereo WAV is exactly 100.000 seconds. Its master volume fades from 90 to 100 seconds. The final picture fades over the last two seconds.
+
+Review status
+This is a provisional world and atmosphere pass. It is not a finished trailer or approved environment package. Camera geography, set transitions, painterly depth, palette, silhouette visibility and title scale are the review targets.
+No character performance or source-motion retargeting acceptance is claimed.
+The primary 47-page story PDF mentioned inside the handoff was not provided. The complete supplied handoff DOCX and embedded style reference were read and preserved in source/.
+
+Later animation
+Conrad specified the method used on the leaves project: a real animated 3D reference aligned behind the drawn silhouette, with editable vector outlines following its gait. This instruction replaces the rejected procedural cutout approach.
+A local Synty Base Locomotion source archive was found in Downloads; one forward root-motion FBX was inspected at 30 fps, action frames 2 through 33. It is preserved only as a future animation reference and is absent from this world file. Entitlement and public-sharing rights were not re-verified, and no new purchase or account action occurred.
+
+Evidence
+notes/world_asset_manifest.json records source files, sizes and hashes.
+notes/imagegen_world_prompts.json records the exact imagegen prompts.
+notes/world_render_workers.json records the original native render. notes/world_render_workers_v006.json records the corrected native frames 1081-2400. Frames 1-1080 are retained from the original native render; native camera projection confirms neither repaired plane can enter before frame 1143. The retained prefix was encoded again at high quality, with no scaling or interpolation.
+The corrected movie is renders/world/WTSC_World_Atmosphere_4K_v006.mp4. It passed complete decoding: 2400 frames, 3840 x 2160, 24 fps, exactly 100 seconds, audible supplied music with a 90-100 second fade, and a fully black last frame. Render-section boundaries passed adjacent-frame checks. See notes/world_movie_verification_v006.json and renders/world/decoded_review_v006/. Artistic approval remains pending.

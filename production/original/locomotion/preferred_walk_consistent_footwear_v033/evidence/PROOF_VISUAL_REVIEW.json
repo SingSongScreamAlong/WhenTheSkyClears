@@ -1,0 +1,25 @@
+{
+  "status": "V028_PREFERRED_MOVEMENT_RESTORED_CONSISTENT_SHOE_PROOF_READY_FOR_MATCHED_REVIEW",
+  "proceed_to_matched_normal_speed_review": true,
+  "user_feedback_basis": "Conrad preferred V028 ('This feels better') and rejected V031 ('This doesn’t feel as good. Also 2 different shoes'). V031/V032 are not the movement baseline.",
+  "actually_inspected": [
+    "All32 actual close frames as shoe/sole/cuff boards F1–16 and F17–32",
+    "Actual full close frames F1,F17,F27 before and after cuff correction",
+    "Actual flat old-pair and shared-pair native renders in the shoe design board",
+    "Matched actual V028/V033 upper-body crop comparison for F1–32"
+  ],
+  "visible_findings": [
+    "The original two shoe profiles differed in shaft, toe and outsole contour. The new pair visually shares those details, with only uniform3% far perspective scale.",
+    "The initial far cuff wedge gap is closed by using the canonical near shoe's actual cuff-to-shoe attachment offset, not merely its ankle-bone origin.",
+    "Heel, toe, sole and cuff remain coherent across the32 inspected source-rate frames. Pitch differences correspond to gait phases and do not swap shoe design.",
+    "V028 upper-body rendered crop is pixel-identical in all32 matched frames; native action, bone, head/arm mesh and coat checks also preserve it."
+  ],
+  "remaining_caveats": [
+    "Passing shoe/leg overlap remains tight, inherited from the preferred V028 movement. No V031/V032 gait or whole-body redraw is introduced to conceal it.",
+    "The retained canonical shoe is a graphic polygonal ink silhouette. Design consistency is corrected; final shoe painting/edge refinement is not claimed.",
+    "The far shoe needs a small new rocker/clearance placement and a local lower-cuff drawing refit. Its gait bones and all original actions remain unchanged.",
+    "V028's movement is positively received directionally, not approved final animation. Continuous player playback is not observed through available tools; actual consecutive/decoded frames are the available review evidence.",
+    "No girl acting, paired recovery/clasp/stumble/restart, production integration, duration/music/title change is included."
+  ],
+  "artistic_acceptance": false
+}

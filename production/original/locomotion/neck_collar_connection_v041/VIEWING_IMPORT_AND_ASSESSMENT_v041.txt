@@ -1,0 +1,64 @@
+WHEN THE SKY CLEARS - NECK / COLLAR CONNECTION CANDIDATE v041
+
+STATUS / DIRECTION
+The user liked the v040 painted character and asked to continue development. This pass preserves that face, hair, painting, costume direction and preferred walk. It addresses the neck/collar/shoulder join locally. It is a construction candidate, not final character or animation approval, and does not replace production.
+
+VIEW
+previews/WTSC_v041_Neck_Collar_Matched_Proof.png
+Actual matched native heroes, followed by F1/F11/F20/F27 detail-camera pairs. Hero panels retain their original 960x1440 pixels; detail panels are direct 640x480 renders from the same added review camera in each source. They are not enlarged screen crops or generated comparison pictures.
+
+previews/WTSC_v041_vs_v040_Neck_Collar_Normal_Speed.mp4
+30 fps, 189 decoded frames, 6.3 seconds, 1280x840, silent.
+First 63 frames: matched close views, native 480x720 each.
+Next 63: matched shot comparisons reduced to 640x360 each, labelled 50 percent.
+Last 63: candidate at the original 1280x720 shot size.
+Each section covers native F1-F63, two 31-frame cycles and the closing pose. Both cameras render the unwrapped native root, not one rendered cycle recycled with floor resets. The repeated section ranges are comparison views of the same movement, not separate acting takes. Source v040 comparison frames are reused from their existing native sequence.
+
+EDITABLE NATIVE
+native/WTSC_Neck_Collar_Connection_Candidate_v041.blend
+reference/PRESERVED_PAINTED_WALK_v040.blend is the exact liked source, retained separately.
+Blender executable verified as 5.2.2 LTS, build d13f752e3b9c.
+Open the complete scene for its existing base/foreground layers and compositing. Original camera objects, rig controls, native walk, live contours, matching shoe artwork and all packed paintings remain. READ_FIRST_v041 and scene V041_status record the current scope. Some object labels retain legacy version/static-pose words for dependency stability; the garment is continuously animated.
+
+WHAT CHANGED
+The inherited broad shirt/yoke patch, LOCO_BOY | PAINT body, is hidden intact in the candidate. It is not deleted or repainted. The existing single connected coat surface now reaches the actual painted neck cut rather than relying on that separate yoke to fill the join.
+Only coat shape coordinates in rows 0-5 of its 33-row mesh change. Rows 6-32, including lower shoulders, torso, waist and hem, retain their previous pose data exactly. The original coat shape-key Action, compression Action, time mapping and materials remain unchanged. The revised upper samples use the same quarter-frame breakdowns and 31-frame cycle as the existing garment.
+
+V041 | folded linen collar | neck attached is a new connected 36-vertex mesh with a stand and folded front leaf. Its inner edge follows the actual existing painted neck boundary; its lower edge and the upper coat share the same edge positions in three dimensions. It bridges the original head and coat depth layers. The collar uses the existing packed linen painting and two restrained material planes, not new lighting or a new bitmap. It has its own quarter-frame shape breakdowns on F1-F32 with Cycles repeat and an exact local closing bookend. The source head, face, hair and all their motion are unchanged.
+
+The original yoke concealed an armhole and duplicate collar sampled from the upper coat painting. Those are corrected by local native UV registration in the existing V040 painted UV layer. The original first UV layer is retained. Painted rows 12-32 and front-placket columns 13-16 from row 6 onward retain their exact UVs; the liked buttons, pocket and lower costume painting remain. No source PNG pixels were modified and no new ImageGen call or painting was made in this pass.
+
+INITIAL PROOF LIMITS / REPAIRS
+The first proof exposed the atlas armhole. One automatic neck-edge endpoint also reached the jaw instead of the neck cut, creating an overly high front point. The trace now stops at the actual neck-cut maximum and is checked for monotonic progression. The front placket was preserved after an overly broad first texture correction. A depth-separated edge then produced about 0.89 pixel of shot-view parallax; its actual meeting positions were aligned, reducing the measured residual to about 0.000115 pixel. The skin overlap was reduced after detail review. Logs and the first rejected native remain locally; the compact delivery contains only the final candidate and the liked source.
+
+TECHNICAL PRESERVATION - SEPARATE FROM ARTISTIC QUALITY
+Cold native comparison with v040 covers 187 body samples through F1-F94, including quarter-frame samples through the first cycle. All original action datablocks and active object actions match. Root, all bone world matrices, wrists and original cameras match exactly. All other visible geometry, including the liked painted head, hands, legs and shoes, matches exactly at 13 selected poses across three cycles. Other original mesh rest/shape/all-UV/float data, original material nodes/ramps/links and original packed image bytes match.
+Coat rows 6-32 match exactly in pose data and sampled rendered geometry. The original first coat UV, lower painted UVs and specified front placket UVs match. Only the upper coat geometry/painted registration, original-yoke visibility, and new collar are intentional changes.
+The collar-to-coat edge is sampled at 249 eighth-frame times through one cycle. Maximum XYZ difference is about 0.000000358 m; maximum projected 1280x720 shot difference is about 0.000115 pixel. The collar local bookend repeats exactly at F32/F63/F94. No coat quad collapses in the sampled projected-area check. These are bounded construction checks, not proof of final appeal or convincing animation.
+The character remains a side-view 2.5D painted puppet. The local spatial collar join does not create a complete watertight 3D costume, a head turnaround, facial rig or general-purpose character model. Do not rotate the fixed head card edge-on. The rejected v008 girl head study is not used.
+
+CANDID ARTISTIC ASSESSMENT
+The collar follows the painted neck edge and the coat carries the upper join without the separate flat yoke. Detail renders make the stand/front fold and the source-to-candidate construction change visible. The face, hair and movement direction the user liked remain intact. The corrected upper fabric avoids the exposed armhole and duplicate-collar samples while retaining the front placket and buttons.
+The fold is still simple, and the upper coat/shoulder remains stylized and fitted. This pass does not finish the underlying body and hand contours, fixed expression, crowded passing feet or purposeful acting. A small painted/folded edge remains at detail size; technical edge alignment must not be read as finished tailoring. Actual native and decoded movie frames are inspected, but continuous video-player playback observation is not claimed. The supplied normal-speed movie enables human/independent judgment.
+Paired intentions, fatigue, stumbling, load-bearing hand support/clasp, and a genuine recovery-to-walking restart remain unfinished. The original 75-80 second supported scene is not integrated or replaced. Arcane-level animation quality is still the development target, not a claimed outcome.
+
+EXACT CLOCK / TRAVEL / IMPORT CONTRACT
+Source fps 30. Period 31 source frames. Authored collar cycle F1-F32. Preview F1-F63. The native retains the source F1-F94 review range and supports the same repeating local phase.
+Root: V021 | CHILD_SUPPORT_TRAVEL. Rig: LOCO_BOY | RIG.
+Unwrapped +X travel in metres:
+  D(F) = 0.9524437384576381 * (F - 1) / 31
+Stride = 0.9524437384576381 m. Speed = 0.9217197468944885 m/s.
+Near contact F1; far contact F17. Near stance phase 0-18.5; far stance its own phase 0-19.25 with offset 16.
+reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv retains the unchanged sampled travel/contact contract.
+For production 24 fps frame G from chosen origin G0:
+  F = 1 + (G - G0) * 30 / 24
+The period is 24.8 production frames. Use the same fractional mapping for body/root, coat, collar, hands, shoe/cuff bakes, live contours and world/camera. Do not independently round cycles, loop the unwrapped root, retime just the collar or add translation twice. For a stationary tracked actor, apply equal/opposite D(F) to world/camera and remove actor translation exactly once.
+No production origin G0, new foot trajectory or world integration is authored. New acting poses require coherent reauthoring/refits of the collar, coat, cuff/shoe artwork and body performance. This local repeated-walk proof does not replace the supported-recovery performance.
+
+IMPORT / RESTORE
+Keep the complete original rig/root/control hierarchy, updated coat mesh and shape data, new collar mesh/materials/Action, original foreground identity and new V041 collar collection, layer exclusions, original packed images and two-layer compositor. The new collar renders in the identity foreground layer. Appending one mesh is insufficient.
+The review detail camera is created by scripts/render_connection_proof.py at matching parameters in the candidate/source; the original saved native cameras are preserved. To restore the liked v040 look, use the preserved full source scene. Toggling only the old yoke is not a complete rollback because upper coat coordinates/painted registration also changed.
+
+DELIVERY / REBUILD
+The compact package includes final native, exact source reference, guide/travel CSV, actual movie, matched proof board, selected native images, scripts and evidence. Raw sequences and the first rejected native remains locally and are omitted from the ZIP. The encoder reads the existing v040 CLOSE/SHOT sequence in the sibling project folder; the included preserved native can regenerate those camera frames if needed.
+The actual comparison MP4 is saved privately to Library with metadata/version readback. There is no public sharing, install, purchase, new lighting, production or other specialist write, music/title change, or full-trailer timing change. Blender jobs use two threads after a host-process gate and are exited when complete.

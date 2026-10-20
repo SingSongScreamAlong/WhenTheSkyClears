@@ -1,0 +1,168 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Frame_Integration_Groundwork_v041.blend",
+  "source_sha256": "8145922a7fc0c32ddb05d7789729482c053cf2b7363f4e63c96eda83e7d2b1df",
+  "native_reopen_pass": true,
+  "frames": [
+    1801,
+    1920
+  ],
+  "duration_seconds": 5,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "compositor_uses_live_renderlayers_only": true,
+  "held_plates_or_masks": false,
+  "specialist_collections_imported": false,
+  "invalid_receiver_drivers": [],
+  "live_camera_projection_samples": [
+    {
+      "frame": 1801,
+      "camera": [
+        107.15384674072266,
+        -16.0,
+        3.0
+      ],
+      "receivers": [
+        {
+          "receiver": "v020 | Walking path | continuous blended paint",
+          "live_projected_world_hit": [
+            108.50567626953125,
+            2.059999465942383,
+            0.42653322219848633
+          ],
+          "screen_error": [
+            3.5762786865234375e-07,
+            -2.9802322387695312e-08
+          ]
+        },
+        {
+          "receiver": "v020 | Foreground bank | continuous blended paint",
+          "live_projected_world_hit": [
+            107.97796630859375,
+            -4.989999771118164,
+            1.4311256408691406
+          ],
+          "screen_error": [
+            -2.384185791015625e-07,
+            -2.9802322387695312e-08
+          ]
+        }
+      ],
+      "event_power": 0.0
+    },
+    {
+      "frame": 1825,
+      "camera": [
+        109.32307434082031,
+        -16.0,
+        3.0
+      ],
+      "receivers": [
+        {
+          "receiver": "v020 | Walking path | continuous blended paint",
+          "live_projected_world_hit": [
+            109.16812133789062,
+            2.059999465942383,
+            0.42653322219848633
+          ],
+          "screen_error": [
+            -1.7881393432617188e-07,
+            -2.9802322387695312e-08
+          ]
+        },
+        {
+          "receiver": "v020 | Foreground bank | continuous blended paint",
+          "live_projected_world_hit": [
+            109.22860717773438,
+            -4.989999771118164,
+            1.4311256408691406
+          ],
+          "screen_error": [
+            -8.344650268554688e-07,
+            -2.9802322387695312e-08
+          ]
+        }
+      ],
+      "event_power": 0.0
+    },
+    {
+      "frame": 1861,
+      "camera": [
+        112.57691955566406,
+        -16.0,
+        3.0
+      ],
+      "receivers": [
+        {
+          "receiver": "v020 | Walking path | continuous blended paint",
+          "live_projected_world_hit": [
+            110.16179656982422,
+            2.059999465942383,
+            0.42653322219848633
+          ],
+          "screen_error": [
+            -5.960464477539063e-08,
+            -2.9802322387695312e-08
+          ]
+        },
+        {
+          "receiver": "v020 | Foreground bank | continuous blended paint",
+          "live_projected_world_hit": [
+            111.10457611083984,
+            -4.989999771118164,
+            1.4311256408691406
+          ],
+          "screen_error": [
+            -2.980232238769531e-07,
+            -2.9802322387695312e-08
+          ]
+        }
+      ],
+      "event_power": 0.0
+    },
+    {
+      "frame": 1920,
+      "camera": [
+        117.90961456298828,
+        -16.0,
+        3.0
+      ],
+      "receivers": [
+        {
+          "receiver": "v020 | Walking path | continuous blended paint",
+          "live_projected_world_hit": [
+            111.79032135009766,
+            2.059999465942383,
+            0.42653322219848633
+          ],
+          "screen_error": [
+            1.6391277313232422e-07,
+            -2.9802322387695312e-08
+          ]
+        },
+        {
+          "receiver": "v020 | Foreground bank | continuous blended paint",
+          "live_projected_world_hit": [
+            114.1790771484375,
+            -4.989999771118164,
+            1.4311256408691406
+          ],
+          "screen_error": [
+            -1.0132789611816406e-06,
+            -2.9802322387695312e-08
+          ]
+        }
+      ],
+      "event_power": 0.0
+    }
+  ],
+  "production_v040_preserved_sha256": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f",
+  "current_blockers": [
+    "Replacement FX must pass smoke-evolution/hot-phase review and sealed handoff",
+    "Motion library requires coordinating-parent sealed current snapshot",
+    "Actual foreground frames await free GPU; FX v003 worker currently owns GPU render"
+  ],
+  "scope": "Groundwork structural checks only; not an integrated artistic proof."
+}

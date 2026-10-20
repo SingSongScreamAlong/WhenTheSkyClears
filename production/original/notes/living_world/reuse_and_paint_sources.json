@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-16",
+  "contract": "dcc-mcp-production-reuse/v1",
+  "guide": "notes/dcc_agent_workflows.md",
+  "checker_passed": true,
+  "scope": "Rebuild the scrolling world as dimensional painterly sets with environmental movement; preserve GP heroes and UHD route.",
+  "host": {
+    "version": "Blender 5.2.2 LTS",
+    "adapter": "0.2.14",
+    "instance": "dda6f921-e18c-49ca-98c6-23dc0ee2dbd2",
+    "pid": 39896
+  },
+  "investigation": [
+    {
+      "source": "Current file and live MCP",
+      "result": "Owned WTSC_World_First_v006.blend; 447 objects, 443 meshes, zero curves; near set layers are predominantly cards. Source preserved."
+    },
+    {
+      "source": "Native asset_library search via real MCP",
+      "query": "village",
+      "result": "Registered User Library unavailable: no WTSC_LOCAL_USER/Documents/Blender/Assets directory. No library asset selected."
+    },
+    {
+      "source": "Downloads bounded file inventory",
+      "result": "Available Synty city and racer archives do not match rural period village/woods/war sets; existing motion archive retained for later character work. Not imported."
+    },
+    {
+      "source": "DCC-MCP marketplace",
+      "query": "blender painterly environment trees",
+      "candidates": [
+        "dcc-ai-hunyuan3d 0.1.0",
+        "dcc-ai-openai-image 0.1.0",
+        "dcc-ai-tripo3d 0.1.0",
+        "dcc-asset-ambientcg 0.2.0",
+        "dcc-asset-blender-extensions 0.1.0"
+      ],
+      "result": "Cloud 3D providers require other credentials/services; OpenAI API provider is redundant with requested built-in imagegen. Generic photographic materials do not supply this painterly set. No installation."
+    },
+    {
+      "source": "Official Blender Extensions",
+      "url": "https://extensions.blender.org/add-ons/sapling-tree-gen/versions/",
+      "result": "Search finds candidate; full page fetch returns 402. Exact obtainable version, licence and current callable interface not established, so not installed or claimed validated."
+    },
+    {
+      "source": "Blender official documentation",
+      "url": "https://docs.blender.org/manual/en/4.2/render/shader_nodes/converter/shader_to_rgb.html",
+      "result": "Native EEVEE Shader to RGB supports a light-responsive painted material. Will validate on actual native renders."
+    }
+  ],
+  "selected": "Native mesh data tools for authored original geometry; exposed scripting interface only for UV, custom painted light-responsive shader, modifiers and coordinated ambient motion that are not provided as a single typed assembly operation.",
+  "rights": "Original authored numeric geometry and built-in GPT imagegen paint sources for this project; no third-party model asset added. Receiving source music does not establish public-release clearance.",
+  "imagegen": [
+    {
+      "path": "sets/surface_paint/Architecture_Paint_Atlas_v001.png",
+      "prompt": "Use case: stylized-concept. Asset type: one square 2x2 material paint atlas for an original painterly 3D film set, When the Sky Clears. Create a production texture atlas, straight-on FLAT material swatches with no perspective, no objects, no scene, no text, no labels, no gutters. Exact equal quadrant layout: TOP LEFT = warm ivory lime plaster, age stains, broad visible gouache brushwork, scattered subtle cracks, no large stones; TOP RIGHT = muted burnt-sienna old clay roof tile surface with short horizontal overlapping handmade tile rows; BOTTOM LEFT = weathered pale warm limestone masonry in irregular small blocks with recessed gray mortar and chipped edges; BOTTOM RIGHT = dark desaturated brown weathered oak boards with longitudinal grain. Each quadrant fills its whole 50 percent by 50 percent area edge to edge and can be repeated as a small tiling material. Hand painted film texture, controlled large brush marks, broken color and warm/cool variation, tactile matte materials. Neutral diffuse lighting without directional cast shadows, no glossy CGI, no photographic grain, no excessive tiny detail. Match an old European village with shutters and tiled roofs, suitable for a somber painterly war and displacement trailer. Maximum available resolution, ideally 4096 square. Opaque background."
+    },
+    {
+      "path": "sets/surface_paint/Oak_Foliage_Cluster_v001.png",
+      "prompt": "Use case: stylized-concept. Asset type: a single reusable painted oak foliage cluster cutout to place on the three-dimensional branches of a Blender animated film set. A loose airy irregular cluster of roughly twenty to thirty small broad oak leaves and a few thin twigs, spread naturally, with many clear gaps between individual leaves. Original hand-painted gouache and oil-brush visual language, broad confident brush marks, rich olive greens, warm yellow-green tips and muted cool green undersides, no photorealistic veins, no glossy game graphics. Soft neutral diffuse illumination, moderate local value variation; no hard cast shadow. The whole cluster must fit comfortably inside the image with transparent margins on all sides, with absolutely no cropped leaves. All space around and between leaves is genuinely transparent alpha. No fog, no sky, no background, no trunk, no pot, no text, no border. Make this a detailed usable canopy texture rather than a whole tree or circular bush. Maximum available resolution. Designed to be color-tinted in Blender as village warmth becomes forest gray."
+    }
+  ],
+  "status": "Production work underway; not final artistic approval."
+}

@@ -1,0 +1,43 @@
+{
+  "editable": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v038.blend",
+  "immutable_render_source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend",
+  "immutable_render_source_sha256": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4",
+  "native_export_scene": "WTSC_MASTER_4K_106S_v038",
+  "world_scene_unchanged": "WTSC_WORLD_CORRECTED_v037",
+  "picture_scene_unchanged": "WTSC_FULL_FILM_KNOCKOUT_v037",
+  "world_or_typography_change": false,
+  "only_changes": "Native audio fade ends at exact100s frame2401 instead of previous last-picture-frame2400; pack installed editable-embedding fonts for local authoring; clear current note. Movie mux already uses exact90\u2013100.",
+  "sound_frames": [
+    1,
+    2401
+  ],
+  "fade_keys": [
+    [
+      1,
+      1
+    ],
+    [
+      2161,
+      1
+    ],
+    [
+      2401,
+      0
+    ]
+  ],
+  "duration_seconds": 106,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "frames": 2544,
+  "font_scope": "Local authoring companion only; delivered MP4 contains pixels, no font files. WindowsfsType8 inspected for selected fonts.",
+  "editable_sha256": "f08c0d6f004b85693b124a1c84aac10617ca7742475979e2d80ca3d6961778ed",
+  "native_output_paths": {
+    "world": "//../../renders/world_v016/WTSC_Corrected_World_Native_v038.mp4",
+    "picture": "//../../renders/world_v016/WTSC_Full_Knockout_Picture_Native_v038.mp4",
+    "master": "//..\\..\\renders\\world_v016\\WTSC_Full_Knockout_Native_Edit_v038.mp4"
+  },
+  "path_scope": "Versioned default exports avoid overwriting earlier world/movie files."
+}

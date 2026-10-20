@@ -1,0 +1,62 @@
+WHEN THE SKY CLEARS — CURRENT PRODUCTION STATUS
+18 October 2026, 22:47 UTC
+Project: WTSC_LOCAL_WORKSPACE
+
+Current work and scope
+v061 is a five-second physical ink-wash forest / character-integration study at production frames937–1056 (39–44seconds). Its frozen character basis remains the v060 paired reach on the v047 ordinary gait. The full106-second trailer still needs continuous character acting and shot/world conform.
+
+The third v061 native passes all27 recorded cold checks across477quarter-frame samples: source actor mesh/UV/attributes/shapes/weights, rig rest data, actions, raw material slots and image pixels remain exact. The stage is flat with identity parent inverse; four boot support checks pass. Only the specified camera height/vertical shift/aperture changes are allowed.
+Native: native/WTSC_Physical_Ink_Wash_Forest_v061.blend
+SHA256: 2fec6adb94e31a9a01dfb87a4df454cf9bdc896bebf019834b86e6e6c38c9b15
+Evidence: evidence/FLAT_STAGE_NATIVE_VALIDATION.json.
+The sequence render is running under the main controller; this status does not claim a completed movie encode or artistic finish.
+
+Latest external character work
+The newest completed character native found in the22:45–22:47UTC read-only scan is:
+locomotion/connected_model_fit_v049/native/WTSC_Connected_Model_Fit_v049.blend
+Modified22:41:56.1556575UTC;14,416,809bytes.
+SHA256:2f78c5cd86b96d437d97a165b8b61473bcd6c9d1ab284015c229bfb11c6f9a94.
+MODEL_FIT_GUIDE_v049.txt updated22:45:30UTC identifies a targeted static model-fit candidate: softened torso/sleeve contours, connected forearm/wrist taper and grouped painted fingers, retaining v048 gait and all age-ten rest bones. Original paint/UVs/boots/head geometry remain. Six matched static proofs exist; a cold-validator script exists but no completed cold report was found in this scan.
+Observed directly in AFTER_NEUTRAL_SIDE.png and AFTER_ARMS_WRISTS_HANDS_DETAIL.png: wrist joins are coherent in those views; the girl remains charcoal/white-eye against the painted boy. These views do not establish turn construction or finger articulation.
+
+v048 remains the latest separately reviewed motion checkpoint:
+locomotion/weight_loading_v048/native/WTSC_Connected_Weight_Loading_v048.blend
+Modified22:27:32.9891272UTC;SHA256 eeefa9ea2059a613d796277d6dfebfabe84a89b1c31470b585e5475fcb35001b.
+Its guide updated22:45:29UTC labels it unapproved. Both normal-speed movies fully decode257frames at30fps,8.5667seconds, without interpolation; the22:33:23 decode record matches their present hashes. Technical loading/contact and paint/cache records pass. Model feedback led to v049; v048 was preserved.
+Clock remains32source frames/.78m/.73125mps at30fps; girl+2frames already baked. At24fps:F=1+(G-G0)*30/24; cycle25.6frames. v049 retains this clock and the root name V048 | shared travel | steady .73125mps. Integrating either into the owned v061 requires deliberate gesture/cache and selector updates rather than relabelling the frozen source.
+
+Performance standard for the full ink-wash production
+Face and gaze: consistent age-ten designs for both children through profile/quarter/front/back turns; registered skull, fringe, eye, jaw and braid root; intentional eye direction, blinks and restrained lid/brow tension. Attention should lead the hand/body decision and remain readable at the actual wide shot scale.
+
+Body: stable support and convincing loading, purposeful pelvis/chest/shoulder counteraction, independent clavicle/shoulder response, coherent volume through multiple axes, and distinct decisions for each child. Complete play, skip, backwards teasing, jump/land, wall balance, interrupted skip, fear, protective fold, run, crater scramble, exhaustion, toe catch, help-up and stop bridges. Preserve segment lengths while solving each new terrain/contact.
+
+Hands: designed relaxed, open, receptive, gripping, releasing, shielding and supporting poses; grouped fingers plus a readable thumb/index overlap and palm volume. Reassuring touch and load-bearing help require different choreography. Weight must pass through wrist, shoulder, pelvis and planted feet; a painted overlap or nearest-point distance alone does not establish that action.
+
+Hair and ribbon: anchored roots and coherent silhouettes through head turns, with delayed response to actual acceleration/impact and a shaped recovery. The braid must retain volume and avoid body penetration; ribbon detail should reinforce the gesture.
+
+Cloth: connected neck/armhole/cuff construction, intentional silhouette folds at shoulder/elbow/hip/knee, usable undersides and quarter-view forms. Coat/dress follow body acceleration with restrained lag and settling while retaining paint registration and foot/hand readability. Regenerate native clothing caches after pose edits.
+
+Full-film conform
+Retain the approved100seconds plus6silent credit seconds, supplied music fade90–100, exact card wording and continuous-looking lateral journey. Develop the protective fold50–58seconds and independent stumble/help-up71–80seconds as central paired performances. Reuse their drawing/control construction for the first-danger reach, wall/title contacts and transitions; finish the playful opening and its later survival-gap echo with matching mechanics.
+
+Author one story-driven travel curve and place the deeper environment around it. The old held-world route covers160.75m/100seconds; a constant current walk would cover73.125m. Neither is the final mixed walk/run/stop/obstacle route. Preserve one root clock, terrain-aware contacts and visible acting inside the actual title-mask composition.
+
+Evidence of complete frame decoding and invariant preservation supports review; normal-speed perceived weight, character intent, coherent turn/hand anatomy, hair/cloth behavior and full106-second pacing determine the production finish.
+
+Further breakdown: evidence/FULL_PRODUCTION_ANIMATION_AUDIT.txt.
+This status used read-only inventories, hashes, guides/records and the specified existing static images. No new Blender job, native edit or render was started for this status.
+
+
+Diagnosis update — 18 October 2026,22:53UTC
+The prior120-frame review is retained as PRE-FOCUS-FIX evidence. The main controller's actual4K diagnostics, DIAGNOSTIC_No_DOF_Head_Hands.jpg and DIAGNOSTIC_Dithered_DOF_Head_Hands.jpg, restore sharp heads/hands. The softness was an EEVEE BLENDED-transparent alpha/depth interaction with native depth of field; source raster quality was not the cause.
+TRANSPARENT_FOCUS_FIX.json records copied V061 object material overrides changed to DITHERED. Original data materials, geometry, UVs, raster pixels and Actions remain untouched; native DOF stays enabled at f5.6. The fix record identifies native SHA256 8ae4dc3ea23b697b3573afaa2ffc83cb7522933228f4aaaaca71fd5181096fb6, replacing the pre-fix2fec6a...9b15 state. Previous delivery is archived under reference/pre_focus_correction.
+The replacement120-frame sequence is rerendering. Updated decoded-frame sharpness, DITHERED edge stability/temporal noise, contact and occlusion will be reviewed after the replacement movie is complete. Earlier continuity observations apply to the preserved pre-fix sequence; this note does not claim completed temporal verification or a final delivery hash.
+
+
+Corrected sequence review — 18 October 2026,22:56UTC
+The completed DITHERED replacement was inspected after the22:55:16 package-complete notice: all120frames on the four replaced Chronological_Review sheets, decoded045/097/120 and the replaced native4K head/hand and foot crops.
+Heads/hair and joined hands are now sharply resolved, including the decoded viewing frames. The earlier softness finding applies only to the archived pre-fix sequence and is resolved by the transparency-depth correction. Fine matte grain is visible on the girl in the4K crop; no conspicuous edge-density jump, missing part, detached wrist/boot, sleeve compositing hole or layering inversion is visible across the sheets. Contact remains joined through1056 and the foreground trunk passes continuously without masking the interaction.
+The clearer4K grip still reads as a compact, relatively block-shaped overlap with limited distinct thumb/finger articulation; it is a reassuring-touch study, not demonstrated load-bearing support. Tight passing-boot silhouettes, fixed profile gaze/upright body phrasing, rigid hair/cloth response and the girl/boy finish mismatch remain production limitations.
+Corrected native SHA256:8ae4dc3ea23b697b3573afaa2ffc83cb7522933228f4aaaaca71fd5181096fb6.
+Corrected Preview.mp4 SHA256:733cf7982d5f2fa3238c8a78655cb616fe1781e54c1a19ca7d4260473aaa61ba;730,007bytes. Completed package records120decoded frames at24fps with contiguous timing and supplied-music correlation.99615; native preservation checks27/27pass.
+These are full-frame-sheet and selected decoded/crop observations. Continuous real-time playback was not watched; fine temporal dither shimmer, perceived pacing and emotional weight remain outside this stills review. No Blender job, native edit or render was started for this inspection.

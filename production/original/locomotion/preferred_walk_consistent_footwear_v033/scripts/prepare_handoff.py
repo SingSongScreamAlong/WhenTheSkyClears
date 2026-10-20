@@ -1,0 +1,29 @@
+from pathlib import Path
+import hashlib,json,zipfile
+from PIL import Image
+P=Path(__file__).resolve().parents[1];ROOT=P.parents[1];OLD=P.parent/'rough_breakdowns_construction_v031'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+prior=json.loads((OLD/'evidence/PROTECTED_SOURCE_HASHES.json').read_text());checks={}
+for name,r in prior.items():
+    path=ROOT/r['path'];actual=sha(path);checks[name]={'path':str(path),'sha256':actual,'unchanged':actual==r['sha256']};assert checks[name]['unchanged']
+v31=json.loads((OLD/'evidence/final_handoff.json').read_text());v31path=Path(v31['native']);checks['v031']={'path':str(v31path),'sha256':sha(v31path),'unchanged':sha(v31path)==v31['native_sha256']};assert checks['v031']['unchanged']
+assert sha(P/'reference/PREFERRED_MOVEMENT_v028.blend')==checks['v028']['sha256']
+(P/'evidence/PROTECTED_SOURCE_HASHES.json').write_text(json.dumps(checks,indent=2));native=P/'native/WTSC_Preferred_Walk_Consistent_Shoes_v033.blend';movies=json.loads((P/'evidence/MATCHED_ENCODE_AND_DECODE_CHECK.json').read_text());cold=json.loads((P/'evidence/COLD_PREFERRED_MOTION_AND_SHOE_CHECK.json').read_text());visual=json.loads((P/'evidence/PROOF_VISUAL_REVIEW.json').read_text());visibility=json.loads((P/'evidence/FINAL_NATIVE_VISIBILITY_CHECK.json').read_text());crop=json.loads((P/'evidence/RENDERED_UPPER_BODY_REFERENCE_COMPARISON.json').read_text());anchors=json.loads((P/'evidence/LATER_CYCLE_CONTACT_ANCHOR_CHECK.json').read_text())
+assert not cold['original_actions_changed'] and cold['max_all_bone_world_matrix_change']==cold['max_preserved_visible_mesh_change_m']==cold['max_root_world_matrix_change']==0 and crop['maximum_RGB_channel_difference']==0 and anchors['max_horizontal_active_contact_anchor_error_m']<.0004
+receipts={}
+for tag in ['MATCHED','CANDIDATE','BOARD']:
+    r=json.loads((P/f'evidence/LIBRARY_{tag}_RECEIPT.json').read_text())['structuredContent'];meta=json.loads((P/f'evidence/LIBRARY_{tag}_RECEIPT_METADATA_VERIFIED.json').read_text());assert r['status']=='succeeded' and meta['readback']['user.library-file-id']==r['library_file_id'];file=P/'previews'/r['file_name'];assert file.stat().st_size==r['file_size_bytes'];receipts[tag]=r
+for tag,m in movies.items():assert m['decoded_frames']==558 and m['bytes']<20_000_000 and sha(P/m['file'])==m['sha256']
+for board in (P/'previews').glob('WTSC*.png'):Image.open(board).verify()
+handoff={'status':'V033_PREFERRED_V028_MOVEMENT_RESTORED_CONSISTENT_SHOE_REVIEW_DELIVERED','artistic_acceptance':False,'user_feedback_basis':{'v028':'This feels better','v031':'This doesn’t feel as good. Also 2 different shoes','v032':'Preserved and superseded as a movement direction; no upload or improvement claim'},'native':str(native),'native_bytes':native.stat().st_size,'native_sha256':sha(native),'private_Library':receipts,'movies':movies,'design_board':str(P/'previews/WTSC_v033_Consistent_Shoe_Design_Board.png'),'full_cycle_shoe_boards':[str(p) for p in (P/'previews').glob('WTSC_v033_Shoe_Joins*.png')],'guide':str(P/'V033_VIEWING_IMPORT_AND_CANDID_ASSESSMENT.txt'),'shoe_build':json.loads((P/'evidence/CONSISTENT_FOOTWEAR_BUILD.json').read_text()),'preferred_motion_preservation':cold,'matched_actual_render_upper_body_comparison':crop,'later_cycle_contacts':anchors,'final_native_visibility':visibility,'actual_render':json.loads((P/'evidence/NORMAL_SPEED_RENDER_RECORD.json').read_text()),'visual_review':visual,'source_preservation':checks,'remaining_caveats':visual['remaining_caveats'],'observation_limit':'Consecutive actual source-rate frames, flat actual shoe renders and selected fully decoded movie frames inspected. Continuous normal-speed playback not observed through available tools; user feedback remains pending.','production_integration':False,'travel_contract':'Preferred V028 retained:31frames30fps; stride.9524437384576381m; D=stride*(F-1)/31 metres+X unwrapped. Far art-shoe rocker/cuff fit must travel with the corrected visible shoe pair; see guide and CSV.','coordination':'All Blender jobs used two threads and host no-process gates; all exited. No production/other-specialist files edited. Private Library previews only.','execution_blockers':[]}
+(P/'evidence/final_handoff.json').write_text(json.dumps(handoff,indent=2))
+files=[]
+for folder in ['native','reference','scripts','evidence']:
+    files.extend(p for p in (P/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ['.blend1','.pyc'] and p.name not in ['PACKAGE_RESULT.json','PACKAGE_MANIFEST.json'])
+files.extend(p for p in (P/'previews').iterdir() if p.is_file() and (p.name.startswith('WTSC') or p.name in ['DECODED_MATCHED_000.png','DECODED_MATCHED_016.png','DECODED_MATCHED_026.png','DECODED_MATCHED_279.png','DECODED_CANDIDATE_557.png']));files.extend(P.glob('*.txt'));manifest=[{'path':p.relative_to(P).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(set(files))];mf=P/'evidence/PACKAGE_MANIFEST.json';mf.write_text(json.dumps(manifest,indent=2));dest=P/'WTSC_Preferred_Walk_Consistent_Shoes_v033.zip'
+with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
+    for p in sorted(set(files+[mf])):archive.write(p,'preferred_walk_consistent_footwear_v033/'+p.relative_to(P).as_posix())
+with zipfile.ZipFile(dest) as archive:
+    assert archive.testzip() is None
+    for r in manifest:assert hashlib.sha256(archive.read('preferred_walk_consistent_footwear_v033/'+r['path'])).hexdigest()==r['sha256']
+result={'package':str(dest),'bytes':dest.stat().st_size,'sha256':sha(dest),'files':len(files)+1,'CRC_and_hashes':'PASS','primary_Library_preview_id':receipts['MATCHED']['library_file_id'],'primary_Library_preview_version':receipts['MATCHED']['current_version_number'],'status':handoff['status']};(P/'evidence/PACKAGE_RESULT.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

@@ -1,0 +1,434 @@
+{
+  "source_sha256": "1ff32f144b64eb7f6ea22d92dca54c65c431b43a8b86d86e667370328314a9f7",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "root_repairs": {
+    "near": {
+      "field": "V036_width_scale",
+      "root_factors_by_row": [
+        0.0,
+        0.010360534982316039,
+        0.03956513954135652,
+        0.08494198240533943,
+        0.14393703716640233,
+        0.21403030125947822,
+        0.29266210904010204,
+        0.37716953896114797,
+        0.4647329148484969,
+        0.5523324012756348,
+        0.6367146930371822,
+        0.7143697987213525,
+        0.7815179183813444,
+        0.8341064153056599,
+        0.8678168818873583,
+        0.8828079788773149,
+        0.8957475994513031,
+        0.9084862812392833,
+        0.9208984375,
+        0.9328584814921982,
+        0.9442408264746228,
+        0.9549198857060186,
+        0.9647700724451304,
+        0.973665799950703,
+        0.9814814814814815,
+        0.9880915302962106,
+        0.9933703596536351,
+        0.9971923828125,
+        0.99943201303155,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rows_from_30percent_down_unchanged": true
+    },
+    "far": {
+      "field": "V036_width_scale",
+      "root_factors_by_row": [
+        0.0,
+        0.010360534982316039,
+        0.03956513954135652,
+        0.08494198240533943,
+        0.14393703716640233,
+        0.21403030125947822,
+        0.29266210904010204,
+        0.37716953896114797,
+        0.4647329148484969,
+        0.5523324012756348,
+        0.6367146930371822,
+        0.7143697987213525,
+        0.7815179183813444,
+        0.8341064153056599,
+        0.8678168818873583,
+        0.8828079788773149,
+        0.8957475994513031,
+        0.9084862812392833,
+        0.9208984375,
+        0.9328584814921982,
+        0.9442408264746228,
+        0.9549198857060186,
+        0.9647700724451304,
+        0.973665799950703,
+        0.9814814814814815,
+        0.9880915302962106,
+        0.9933703596536351,
+        0.9971923828125,
+        0.99943201303155,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rows_from_30percent_down_unchanged": true
+    }
+  },
+  "materials": {
+    "V007_BOY | articulated drawn hand far": {
+      "role": "skin",
+      "original_material": "V036 | restrained charcoal separation | articulated drawn hand far",
+      "color_material": "V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far",
+      "shared_palette": "skin"
+    },
+    "V007_BOY | drawn skin far": {
+      "role": "skin",
+      "original_material": "V036 | restrained charcoal separation | drawn skin far",
+      "color_material": "V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+      "shared_palette": "skin"
+    },
+    "V007_BOY | drawn sleeve far": {
+      "role": "coat",
+      "original_material": "V007 BOY drawn sleeve",
+      "color_material": "V038 COLOR | coat | V007 BOY drawn sleeve",
+      "shared_palette": "coat"
+    },
+    "V007_BOY | drawn source gray cuff far": {
+      "role": "linen",
+      "original_material": "V007 BOY drawn cuff",
+      "color_material": "V038 COLOR | linen | V007 BOY drawn cuff",
+      "shared_palette": "linen"
+    },
+    "V024 continuous near trouser drawing": {
+      "role": "trousers",
+      "original_material": "V022 | original trouser pigments | relocated rolled cuff",
+      "color_material": "V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+      "shared_palette": "trousers"
+    },
+    "V024 continuous far trouser drawing": {
+      "role": "trousers",
+      "original_material": "V022 | original trouser pigments | relocated rolled cuff",
+      "color_material": "V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+      "shared_palette": "trousers"
+    },
+    "LOCO_BOY | PAINT body": {
+      "role": "linen",
+      "original_material": "V024 | original coat pigments with posed fold value",
+      "color_material": "V038 COLOR | linen | V024 | original coat pigments with posed fold value",
+      "shared_palette": "linen"
+    },
+    "PERF_BOY | original head": {
+      "role": "hair",
+      "original_material": "LOCO | ORIGINAL v015 charcoal paint, packed",
+      "color_material": "V038 COLOR | hair | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "shared_palette": "hair"
+    },
+    "V007_BOY | articulated drawn hand near": {
+      "role": "skin",
+      "original_material": "V036 | restrained charcoal separation | articulated drawn hand near",
+      "color_material": "V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near",
+      "shared_palette": "skin"
+    },
+    "V007_BOY | drawn skin near": {
+      "role": "skin",
+      "original_material": "V036 | restrained charcoal separation | drawn skin near",
+      "color_material": "V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+      "shared_palette": "skin"
+    },
+    "V007_BOY | drawn sleeve near": {
+      "role": "coat",
+      "original_material": "V007 BOY drawn sleeve",
+      "color_material": "V038 COLOR | coat | V007 BOY drawn sleeve",
+      "shared_palette": "coat"
+    },
+    "V007_BOY | drawn source gray cuff near": {
+      "role": "linen",
+      "original_material": "V007 BOY drawn cuff",
+      "color_material": "V038 COLOR | linen | V007 BOY drawn cuff",
+      "shared_palette": "linen"
+    },
+    "V033 | near | canonical painted shoe": {
+      "role": "shoes",
+      "original_material": "LOCO | ORIGINAL v015 charcoal paint, packed",
+      "color_material": "V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "shared_palette": "shoes"
+    },
+    "V033 | far | canonical painted shoe": {
+      "role": "shoes",
+      "original_material": "LOCO | ORIGINAL v015 charcoal paint, packed",
+      "color_material": "V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "shared_palette": "shoes"
+    },
+    "V037 | coherent charcoal coat | five pose study": {
+      "role": "coat",
+      "original_material": "V037 | retained fabric on connected garment | flat-paint switch",
+      "color_material": "V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch",
+      "shared_palette": "coat"
+    }
+  },
+  "palette": {
+    "skin": {
+      "range": 0.055,
+      "stops": [
+        [
+          0,
+          "744b36"
+        ],
+        [
+          0.2,
+          "a97754"
+        ],
+        [
+          0.6,
+          "c99b73"
+        ],
+        [
+          1,
+          "dfba92"
+        ]
+      ]
+    },
+    "hair": {
+      "range": 0.09,
+      "stops": [
+        [
+          0,
+          "1a1513"
+        ],
+        [
+          0.25,
+          "473326"
+        ],
+        [
+          0.65,
+          "795b40"
+        ],
+        [
+          1,
+          "a48660"
+        ]
+      ]
+    },
+    "coat": {
+      "range": 0.065,
+      "stops": [
+        [
+          0,
+          "17292e"
+        ],
+        [
+          0.2,
+          "3f6267"
+        ],
+        [
+          0.55,
+          "6c8988"
+        ],
+        [
+          1,
+          "9ca99b"
+        ]
+      ]
+    },
+    "linen": {
+      "range": 0.055,
+      "stops": [
+        [
+          0,
+          "4d554f"
+        ],
+        [
+          0.25,
+          "8b9382"
+        ],
+        [
+          0.65,
+          "b8bba3"
+        ],
+        [
+          1,
+          "d8d3b7"
+        ]
+      ]
+    },
+    "trousers": {
+      "range": 0.085,
+      "stops": [
+        [
+          0,
+          "252d28"
+        ],
+        [
+          0.25,
+          "4d5747"
+        ],
+        [
+          0.65,
+          "777d62"
+        ],
+        [
+          1,
+          "a2a087"
+        ]
+      ]
+    },
+    "shoes": {
+      "range": 0.1,
+      "stops": [
+        [
+          0,
+          "201d1b"
+        ],
+        [
+          0.25,
+          "49372a"
+        ],
+        [
+          0.65,
+          "766049"
+        ],
+        [
+          1,
+          "a38c68"
+        ]
+      ]
+    }
+  },
+  "scope": "Isolated full-color character art study with five retained static coat poses. Original dark sources and production preserved."
+}

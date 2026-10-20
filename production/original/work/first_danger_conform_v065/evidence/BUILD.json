@@ -1,0 +1,1117 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\color_arc_v063\\native\\WTSC_Shared_Color_To_Charcoal_v063.blend",
+  "source_sha256": "d1d4393c3afc77bf71fb8989bd001da56866baaa7f682216a5f05e54e9523687",
+  "scope": "38-45 seconds, with developed first-danger core39-44. New camera route is provided for full timeline; old downstream exports require rerender. No full-trailer assembly or new story acting is claimed.",
+  "range": [
+    913,
+    1080
+  ],
+  "core_range": [
+    937,
+    1056
+  ],
+  "seconds": [
+    38,
+    45
+  ],
+  "fps": 24,
+  "frames": 168,
+  "world_scene": "WTSC_FIRST_DANGER_WORLD_v065",
+  "title_scene": "WTSC_FIRST_DANGER_TITLE_v065",
+  "unmasked_edit": "WTSC_FIRST_DANGER_UNMASKED_EDIT_v065",
+  "review_master": "WTSC_FIRST_DANGER_REVIEW_MASTER_v065",
+  "camera_route": {
+    "start_frame": 913,
+    "core_start_frame": 937,
+    "core_end_frame": 1056,
+    "end_frame": 1080,
+    "core_speed_mps": 0.73125,
+    "entrance_speed_mps": 1.493316650390625,
+    "exit_speed_mps": 1.493316650390625,
+    "downstream_offset_m": -4.540761566162104,
+    "new_route_samples": [
+      [
+        912,
+        49.817779541015625
+      ],
+      [
+        913,
+        49.880001068115234
+      ],
+      [
+        936,
+        50.96176166542702
+      ],
+      [
+        937,
+        50.99228439331055
+      ],
+      [
+        981,
+        52.33290939331055
+      ],
+      [
+        1056,
+        54.61806564331055
+      ],
+      [
+        1057,
+        54.64858837119407
+      ],
+      [
+        1080,
+        55.730348968505865
+      ],
+      [
+        1081,
+        55.792570495605474
+      ],
+      [
+        2400,
+        156.20924224853516
+      ]
+    ],
+    "old_route_samples": [
+      [
+        912,
+        49.817779541015625
+      ],
+      [
+        913,
+        49.880001068115234
+      ],
+      [
+        936,
+        51.31111145019531
+      ],
+      [
+        937,
+        51.37333297729492
+      ],
+      [
+        981,
+        54.11111068725586
+      ],
+      [
+        1056,
+        58.77777862548828
+      ],
+      [
+        1057,
+        58.84000015258789
+      ],
+      [
+        1080,
+        60.27111053466797
+      ],
+      [
+        1081,
+        60.33333206176758
+      ],
+      [
+        2400,
+        160.75000381469727
+      ]
+    ]
+  },
+  "title_method": "Original font geometry/wording/scroll unchanged. Native visible-object Cryptomatte reveals existing children above the letter mask, retaining actual foreground illustration occlusions. No new raster artwork or 3D set replacement.",
+  "matte_objects": [
+    "V044 BOY | boot far",
+    "V044 BOY | boot near",
+    "V044 BOY | collar",
+    "V044 BOY | head",
+    "V044 GIRL | boot far",
+    "V044 GIRL | boot near",
+    "V044 GIRL | head",
+    "V044 GIRL | neck overlap drawn bridge",
+    "V046 BOY | original painted hand far",
+    "V046 BOY | painted continuous rolled sleeve far",
+    "V046 BOY | painted forearm far",
+    "V046 BOY | painted forearm near",
+    "V046 BOY | painted rigid-axis trousers far",
+    "V046 BOY | painted rigid-axis trousers near",
+    "V046 BOY | tailored coat",
+    "V046 GIRL | original painted hand far",
+    "V046 GIRL | original painted stockings far",
+    "V046 GIRL | original painted stockings near",
+    "V046 GIRL | painted continuous rolled sleeve far",
+    "V046 GIRL | painted forearm far",
+    "V046 GIRL | painted forearm near",
+    "V046 GIRL | tailored knee-length dress",
+    "V060 BOY | reach sleeve near",
+    "V060 BOY | retained paint hand fold near",
+    "V060 GIRL | reach sleeve near",
+    "V060 GIRL | retained paint hand fold near",
+    "V060 contact core | V044 BOY | boot far",
+    "V060 contact core | V044 BOY | boot near",
+    "V060 contact core | V044 GIRL | boot far",
+    "V060 contact core | V044 GIRL | boot near",
+    "V060 contact penumbra | V044 BOY | boot far",
+    "V060 contact penumbra | V044 BOY | boot near",
+    "V060 contact penumbra | V044 GIRL | boot far",
+    "V060 contact penumbra | V044 GIRL | boot near"
+  ],
+  "global_color": "Same absolute-time smoothstep0-96s as v064 full cut, inherited reviewed v063 charcoal values; original alpha/UVs retained.",
+  "contacts": {
+    "method": "Evaluated-geometry-driven native painted contact core and penumbra; no physical-shadow claim.",
+    "collection": "V060 | evaluated boot contact paint | no physical shadow claim",
+    "objects": [
+      "V060 contact core | V044 BOY | boot far",
+      "V060 contact penumbra | V044 BOY | boot far",
+      "V060 contact core | V044 BOY | boot near",
+      "V060 contact penumbra | V044 BOY | boot near",
+      "V060 contact core | V044 GIRL | boot far",
+      "V060 contact penumbra | V044 GIRL | boot far",
+      "V060 contact core | V044 GIRL | boot near",
+      "V060 contact penumbra | V044 GIRL | boot near"
+    ],
+    "range": [
+      913.0,
+      1080.0
+    ],
+    "quarter_production_samples_per_boot": 669,
+    "core_height_m": 0.006,
+    "penumbra_height_m": 0.018,
+    "opacity_clearance_thresholds_m": {
+      "core_full_below": 0.0005,
+      "core_zero_at": 0.003,
+      "penumbra_full_below": 0.002,
+      "penumbra_zero_at": 0.045
+    },
+    "support_measurement": "Smooth weighted six-millimetre lower envelope; world floor clearance includes each evaluated vertex Y.",
+    "foot_geometry_or_animation_edited": false,
+    "endpoint_evaluated_boot_vertex_change_m": 0.0,
+    "object_origins": "At each animated world contact centre for transparent sorting; quads stay in camera-facing XZ.",
+    "per_boot": {
+      "V044 BOY | boot far": {
+        "sample_count": 669,
+        "sole_clearance_m": {
+          "minimum": -1.0213116858448501e-05,
+          "maximum": 0.044983902712609325
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.65004919477453e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.02297855266853573,
+          "maximum": 0.10780285503774538
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.18202341507939773
+        },
+        "geometric_stance_samples_below_half_mm": 391,
+        "maximum_stance_floor_error_m": 0.00045810057714179564,
+        "visible_swing_samples_at_or_above_3mm": 249,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 913.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 48.44201801226542,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.03933951078502643,
+            "lower_support_span_m": 0.04923248291015625,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.03737253524577511,
+            "penumbra_width_m": 0.0740602520792296
+          },
+          {
+            "frame": 925.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 49.08308428210774,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.037436471856966955,
+            "lower_support_span_m": 0.018939971923828125,
+            "lower_support_count": 5,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.035564648264118606,
+            "penumbra_width_m": 0.07192884847980299
+          },
+          {
+            "frame": 937.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 49.188546456602104,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.049045590063997904,
+            "lower_support_span_m": 0.06317520141601562,
+            "lower_support_count": 12,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.046593310560798004,
+            "penumbra_width_m": 0.08493106087167765
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": 0.0017422826488275867,
+            "support_x": 49.842840805211836,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.0624513058187,
+            "lower_support_span_m": 0.06923294067382812,
+            "lower_support_count": 6,
+            "core_opacity": 0.09167464513070811,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.059328740527764996,
+            "penumbra_width_m": 0.10005498831220545
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 49.924461832939286,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10729145380395151,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 16,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10192688111375393,
+            "penumbra_width_m": 0.1501664282604257
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.01299391104772285,
+            "support_x": 50.54318470305813,
+            "support_y": -0.3250000178813935,
+            "effective_support_span_m": 0.042234289494148966,
+            "lower_support_span_m": 0.0189361572265625,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1051658952070183,
+            "core_width_m": 0.04012257501944152,
+            "penumbra_width_m": 0.08235200755000709
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 50.70280871304111,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10883031086607352,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338879532276984,
+            "penumbra_width_m": 0.15188994817000234
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.02863053395345405,
+            "support_x": 51.1842569628397,
+            "support_y": -0.3250000178813934,
+            "effective_support_span_m": 0.024215272499663147,
+            "lower_support_span_m": 0.022365570068359375,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.01578773870945117,
+            "core_width_m": 0.023004508874679988,
+            "penumbra_width_m": 0.07460346012232147
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 51.482805649924416,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10882764438466949,
+            "lower_support_span_m": 0.10398101806640625,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338626216543602,
+            "penumbra_width_m": 0.15188696171082983
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.04148707701757148,
+            "support_x": 51.80011801985457,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.03181965150077171,
+            "lower_support_span_m": 0.022396087646484375,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 5.3763888104259174e-05,
+            "core_width_m": 0.030228668925733126,
+            "penumbra_width_m": 0.09020473631645658
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 52.26280655813962,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10882906170685366,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338760862151097,
+            "penumbra_width_m": 0.1518885491116761
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.04332009865834907,
+            "support_x": 52.46408296271774,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.11274085796641983,
+            "lower_support_span_m": 0.1037139892578125,
+            "lower_support_count": 14,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 2.9831346247542283e-06,
+            "core_width_m": 0.10710381506809884,
+            "penumbra_width_m": 0.18116784112636589
+          },
+          {
+            "frame": 1057.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 53.04280325261513,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10882781371371347,
+            "lower_support_span_m": 0.10398101806640625,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1033864230280278,
+            "penumbra_width_m": 0.1518871513593591
+          },
+          {
+            "frame": 1069.0,
+            "clearance_m": 0.020006695528771434,
+            "support_x": 53.16906828563059,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.05071301423664116,
+            "lower_support_span_m": 0.0473175048828125,
+            "lower_support_count": 9,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05780649627373554,
+            "core_width_m": 0.0481773635248091,
+            "penumbra_width_m": 0.09722932690749778
+          },
+          {
+            "frame": 1080.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 53.82234541387875,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10911132592578254,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10365575962949342,
+            "penumbra_width_m": 0.15220468503687645
+          }
+        ]
+      },
+      "V044 BOY | boot near": {
+        "sample_count": 669,
+        "sole_clearance_m": {
+          "minimum": -1.0219873959993464e-05,
+          "maximum": 0.04498389595550778
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.6545010464081677e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.022980942545891798,
+          "maximum": 0.10780170704062889
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.1820220729021643
+        },
+        "geometric_stance_samples_below_half_mm": 431,
+        "maximum_stance_floor_error_m": 0.00045773619217159833,
+        "visible_swing_samples_at_or_above_3mm": 213,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 913.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 48.72464984551907,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10662363115354868,
+            "lower_support_span_m": 0.09878921508789062,
+            "lower_support_count": 10,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10129244959587125,
+            "penumbra_width_m": 0.14941846689197452
+          },
+          {
+            "frame": 925.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 48.82164443716513,
+            "support_y": -0.40500003099441534,
+            "effective_support_span_m": 0.04734662355876737,
+            "lower_support_span_m": 0.0598907470703125,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.044979292380829,
+            "penumbra_width_m": 0.08302821838581946
+          },
+          {
+            "frame": 937.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 49.4644280604347,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.06357917901735116,
+            "lower_support_span_m": 0.0692291259765625,
+            "lower_support_count": 6,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.0604002200664836,
+            "penumbra_width_m": 0.10120868049943331
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 49.56136187262612,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.051435212698107566,
+            "lower_support_span_m": 0.0484619140625,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.04886345206320219,
+            "penumbra_width_m": 0.08760743822188047
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": 0.006372126279299284,
+            "support_x": 50.2014592856703,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.05584628399452863,
+            "lower_support_span_m": 0.06922149658203125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1414516355602367,
+            "core_width_m": 0.053053969794802196,
+            "penumbra_width_m": 0.09390972327342245
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 50.31280624931623,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882916258126873,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1033877044522053,
+            "penumbra_width_m": 0.15188866209102098
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.020711871324007536,
+            "support_x": 50.86944864059363,
+            "support_y": -0.40500003099441534,
+            "effective_support_span_m": 0.02904506386472567,
+            "lower_support_span_m": 0.01894378662109375,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05341033543689945,
+            "core_width_m": 0.027592810671489384,
+            "penumbra_width_m": 0.07354350140141845
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 51.0928068994551,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882909873545374,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338764379868105,
+            "penumbra_width_m": 0.15188859058370818
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.03585413330597165,
+            "support_x": 51.493259031793166,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.029190177955859594,
+            "lower_support_span_m": 0.022388458251953125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.002034886054802528,
+            "core_width_m": 0.027730669058066613,
+            "penumbra_width_m": 0.08501473261908415
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 51.87280762260724,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882916258126873,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1033877044522053,
+            "penumbra_width_m": 0.15188866209102098
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.04463371866745236,
+            "support_x": 52.10903086426872,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.03998205439872154,
+            "lower_support_span_m": 0.022411346435546875,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 7.027041261182259e-09,
+            "core_width_m": 0.03798295167878546,
+            "penumbra_width_m": 0.09977495892659985
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 52.65280126155469,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10883053822956865,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338901131809021,
+            "penumbra_width_m": 0.1518902028171169
+          },
+          {
+            "frame": 1057.0,
+            "clearance_m": 0.03373703592819455,
+            "support_x": 52.82255093194352,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.04063060061040425,
+            "lower_support_span_m": 0.045810699462890625,
+            "lower_support_count": 10,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.004328914881941124,
+            "core_width_m": 0.038599070579884036,
+            "penumbra_width_m": 0.0965919170276151
+          },
+          {
+            "frame": 1069.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 53.432801373275694,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882915906252631,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338770110939999,
+            "penumbra_width_m": 0.1518886581500295
+          },
+          {
+            "frame": 1080.0,
+            "clearance_m": 9.172958614911408e-08,
+            "support_x": 53.51306203444032,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.03840519983641416,
+            "lower_support_span_m": 0.049221038818359375,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.03648493984459345,
+            "penumbra_width_m": 0.07301382381709551
+          }
+        ]
+      },
+      "V044 GIRL | boot far": {
+        "sample_count": 669,
+        "sole_clearance_m": {
+          "minimum": -1.0213116858448501e-05,
+          "maximum": 0.044983902712609325
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.65004919477453e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.022780395258384017,
+          "maximum": 0.10682967246687196
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.18087608404847327
+        },
+        "geometric_stance_samples_below_half_mm": 394,
+        "maximum_stance_floor_error_m": 0.0004583389957208972,
+        "visible_swing_samples_at_or_above_3mm": 249,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 913.0,
+            "clearance_m": 0.007159450789238964,
+            "support_x": 49.20881312107409,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.041979890452028386,
+            "lower_support_span_m": 0.048831939697265625,
+            "lower_support_count": 9,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1383160690109118,
+            "core_width_m": 0.039880895929426965,
+            "penumbra_width_m": 0.07871455270688482
+          },
+          {
+            "frame": 925.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 49.892997583980346,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10785236147844653,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1024597434045242,
+            "penumbra_width_m": 0.15079464485586014
+          },
+          {
+            "frame": 937.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 49.971156350044325,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.03939603788310632,
+            "lower_support_span_m": 0.048828125,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.037426235988951,
+            "penumbra_width_m": 0.07412356242907908
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": -2.4969295520094192e-08,
+            "support_x": 50.613974521515146,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_m": 0.03632097266838137,
+            "lower_support_span_m": 0.018772125244140625,
+            "lower_support_count": 5,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.0345049240349623,
+            "penumbra_width_m": 0.07067948938858715
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 50.71809975940103,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.048369790440898515,
+            "lower_support_span_m": 0.06261825561523438,
+            "lower_support_count": 12,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.045951300918853584,
+            "penumbra_width_m": 0.08417416529380634
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.0017422784021339233,
+            "support_x": 51.37408572485717,
+            "support_y": -0.32500004768371576,
+            "effective_support_span_m": 0.06094568206375043,
+            "lower_support_span_m": 0.06862258911132812,
+            "lower_support_count": 6,
+            "core_opacity": 0.09167557087828158,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.057898397960562904,
+            "penumbra_width_m": 0.0983686891798127
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 51.45462178765539,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10634517372509147,
+            "lower_support_span_m": 0.10305404663085938,
+            "lower_support_count": 16,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1010279150388369,
+            "penumbra_width_m": 0.14910659457210246
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.01299391104772285,
+            "support_x": 52.074133455444255,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.04094990151903866,
+            "lower_support_span_m": 0.018772125244140625,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1051658952070183,
+            "core_width_m": 0.03890240644308673,
+            "penumbra_width_m": 0.08091349301788356
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 52.23299463928914,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10785334038370124,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246067336451618,
+            "penumbra_width_m": 0.1507957412297454
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.02863053395345405,
+            "support_x": 52.71497202065349,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.02406763399744809,
+            "lower_support_span_m": 0.02216339111328125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.01578773870945117,
+            "core_width_m": 0.022864252297575684,
+            "penumbra_width_m": 0.0744381049998406
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 53.01299531264497,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10785367209625644,
+            "lower_support_span_m": 0.10305404663085938,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246098849144362,
+            "penumbra_width_m": 0.15079611274780724
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.041486357515140515,
+            "support_x": 53.33085879769213,
+            "support_y": -0.3250000474762697,
+            "effective_support_span_m": 0.03222085503926363,
+            "lower_support_span_m": 0.022190093994140625,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 5.380667882761514e-05,
+            "core_width_m": 0.030609812287300444,
+            "penumbra_width_m": 0.09065391165279292
+          },
+          {
+            "frame": 1057.0,
+            "clearance_m": -2.072260185670416e-08,
+            "support_x": 53.792992681310736,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.1078534350061502,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246076325584269,
+            "penumbra_width_m": 0.15079584720688824
+          },
+          {
+            "frame": 1069.0,
+            "clearance_m": 0.04332009865834907,
+            "support_x": 53.99436201623573,
+            "support_y": -0.3250000178813934,
+            "effective_support_span_m": 0.11170516160116745,
+            "lower_support_span_m": 0.102783203125,
+            "lower_support_count": 14,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 2.9831346247542283e-06,
+            "core_width_m": 0.10611990352110907,
+            "penumbra_width_m": 0.1800078611972832
+          },
+          {
+            "frame": 1080.0,
+            "clearance_m": -2.4969295520094192e-08,
+            "support_x": 54.57299039534054,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_m": 0.10785239130053241,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10245977173550579,
+            "penumbra_width_m": 0.15079467825659632
+          }
+        ]
+      },
+      "V044 GIRL | boot near": {
+        "sample_count": 669,
+        "sole_clearance_m": {
+          "minimum": -1.0219873959993464e-05,
+          "maximum": 0.04498389595550778
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.6545010464081677e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.022779648129795944,
+          "maximum": 0.10683025387369417
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.18087680459855648
+        },
+        "geometric_stance_samples_below_half_mm": 426,
+        "maximum_stance_floor_error_m": 0.0004580342153954753,
+        "visible_swing_samples_at_or_above_3mm": 218,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 913.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 49.502995592501634,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10785345290639624,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246078026107643,
+            "penumbra_width_m": 0.1507958672551638
+          },
+          {
+            "frame": 925.0,
+            "clearance_m": 0.00023237103027584638,
+            "support_x": 49.58273313165802,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.03837293684669633,
+            "lower_support_span_m": 0.04882049560546875,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.03645429000436151,
+            "penumbra_width_m": 0.07297968224650876
+          },
+          {
+            "frame": 937.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 50.25540026118435,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10596030241143742,
+            "lower_support_span_m": 0.09790420532226562,
+            "lower_support_count": 10,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10066228729086554,
+            "penumbra_width_m": 0.1486755387008099
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 50.350732267416454,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.04722156884369089,
+            "lower_support_span_m": 0.059383392333984375,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.044860490401506345,
+            "penumbra_width_m": 0.0828881571049338
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 50.99568836545746,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.06208938336081846,
+            "lower_support_span_m": 0.06862258911132812,
+            "lower_support_count": 6,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.058984914192777536,
+            "penumbra_width_m": 0.09954010936411668
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 51.09116698863877,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.051364079518589595,
+            "lower_support_span_m": 0.04802703857421875,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.048795875542660114,
+            "penumbra_width_m": 0.08752776906082035
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.006372126279299284,
+            "support_x": 51.73260851672694,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.054316396689276104,
+            "lower_support_span_m": 0.06861114501953125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1414516355602367,
+            "core_width_m": 0.0516005768548123,
+            "penumbra_width_m": 0.09219624949153962
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 51.842996786209625,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.1078531238410929,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246046764903825,
+            "penumbra_width_m": 0.15079549870202408
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.020711871324007536,
+            "support_x": 52.4002179934753,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.028332683743954902,
+            "lower_support_span_m": 0.01877593994140625,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05341033543689945,
+            "core_width_m": 0.026916049556757155,
+            "penumbra_width_m": 0.07274563566615519
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 52.62299713823787,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10785237938012135,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10245976041111528,
+            "penumbra_width_m": 0.15079466490573593
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.03585413330597165,
+            "support_x": 53.02399061807331,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.02949225747485034,
+            "lower_support_span_m": 0.022186279296875,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.002034886054802528,
+            "core_width_m": 0.02801764460110782,
+            "penumbra_width_m": 0.08535306168035381
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 53.402990531218606,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10785312813466935,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246047172793588,
+            "penumbra_width_m": 0.15079550351082968
+          },
+          {
+            "frame": 1057.0,
+            "clearance_m": 0.04463342064422848,
+            "support_x": 53.639806941626944,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.040523593508692,
+            "lower_support_span_m": 0.02220916748046875,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 7.049873754976162e-09,
+            "core_width_m": 0.0384974138332574,
+            "penumbra_width_m": 0.10038147470639569
+          },
+          {
+            "frame": 1069.0,
+            "clearance_m": -2.7479703401667166e-08,
+            "support_x": 54.18299088213436,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10785237938012135,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10245976041111528,
+            "penumbra_width_m": 0.15079466490573593
+          },
+          {
+            "frame": 1080.0,
+            "clearance_m": 0.01651576393646481,
+            "support_x": 54.30037445475609,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.048255536334390337,
+            "lower_support_span_m": 0.05938720703125,
+            "lower_support_count": 10,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.08104833257722611,
+            "core_width_m": 0.04584275951767082,
+            "penumbra_width_m": 0.09167692411974672
+          }
+        ]
+      }
+    },
+    "limits": "These are painted grounding cues, not physically simulated shadows. A geometric contact threshold is not a gait-phase label. Inspect actual full-shot and native-pixel foot crops for darkness, intersection and sorting."
+  },
+  "checks": {
+    "world_and_actor_meshes_uvs_unchanged_except_regenerated_contact_quads": true,
+    "packed_original_pixels_unchanged": true,
+    "existing_non_camera_non_palette_non_contact_actions_unchanged": true,
+    "source_native_unchanged": true,
+    "matched_world_title_edit_master_view": true
+  },
+  "artistic_acceptance": false,
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\native\\WTSC_First_Danger_Conformed_v065f.blend",
+  "native_sha256": "d73f23c9b5e2d28a65454fbcdf363c1d837c90e88dfbf33d9dec39df1bdbe78f",
+  "previous_draft": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\native\\WTSC_First_Danger_Conformed_v065.blend",
+  "previous_draft_sha256": "3007c425ba0af2455ed1ec26dbd9ac287875a4c1fde41d3674777f9e8e668234",
+  "clock_correction": {
+    "explicit_scene_clock": "WTSC_FIRST_DANGER_WORLD_v065.frame_current_final",
+    "driver": "3*(min(max(((global_frame-1)/24-start)/max(end-start,0.001),0),1))**2-2*(min(max(((global_frame-1)/24-start)/max(end-start,0.001),0),1))**3",
+    "controller_linked_to_all_delivery_scenes": true
+  },
+  "previous_clock_draft": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\native\\WTSC_First_Danger_Conformed_v065b.blend",
+  "render_owner": "WTSC_FIRST_DANGER_WORLD_v065",
+  "title_geometry_scene": "WTSC_FIRST_DANGER_TITLE_v065",
+  "render_graph_correction": "Animated world owns the compositor; only the static glyph geometry is cross-scene. This avoids the observed cross-scene render dependency freeze. Unmasked branch is an editable native File Output.",
+  "unmasked_edit_note": "Old source edit retained as a reference Scene strip. For an unmasked render, use world with Compositing disabled, or the live unmasked File Output.",
+  "previous_world_graph_draft": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\native\\WTSC_First_Danger_Conformed_v065c.blend",
+  "self_layer_binding": "World Render Layers explicitly references the world; a None binding changed with the font render context and was rejected.",
+  "world_render_native": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\native\\WTSC_First_Danger_Conformed_v065d.blend",
+  "world_render_native_sha256": "77af195c2cdf816a968a473afa55617baf15642ff4fd2b62b6a92e905a0aac79",
+  "drawing_reveal_refinement": "Mix inherited masked world to the same unmasked world using the visible actor matte. This preserves the original RGB instead of double-compositing translucent paint.",
+  "cache_contract": "The in-flight v065d world/matte/glyph renders are unchanged inputs. v065e changes only the final drawing-reveal composite; final compositing may reuse those freshly rendered native pixels, with direct native e agreement checked.",
+  "previous_reveal_native": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\native\\WTSC_First_Danger_Conformed_v065e.blend",
+  "foreground_occlusion_scene": "V065 | actual foreground oak alpha",
+  "foreground_object": "v030 | High crown foreground oak 1",
+  "foreground_occlusion_correction": "Exact existing near-oak rendered alpha multiplies down the visible-child reveal. No tree or character artwork changed."
+}

@@ -1,0 +1,31 @@
+WHEN THE SKY CLEARS — ONE COMPACT LOW-SMOKE TEST v011
+
+This is one isolated response to the user's correction that the previous effect looked like a smoke grenade. It is a review test, not an accepted final effect or a completed pack. No production integration.
+
+What changed
+-The broad sustained smoke body and large masonry-like crust pieces are removed.
+-The event is a small original painted flash exposed for3frames(0.125s at24fps), followed by9 small irregular falling chips.
+-Residual native dust uses4percent of v010's density gain before an additional rapid decay and height mask. It is fully cut off above0.30m and after age22(under1s). This coefficient is not a measurement of smoke volume or screen opacity.
+-A small ragged charcoal ground nick and small debris remain; there is no raised ring or large 3D crater.
+-The flash's first flat graphic was replaced with the existing original project painting, without changing the test's timing or adding a plume.
+
+The3s muted MP4 contains72 actual Blender frames at1920x1080 and24fps. Impact begins atframe7; flash is gone byframe10. Debris arcs end in roughly0.6–0.8s; the preview then shows the residual mark/debris. The actual-frame sheet is derived from that full render.
+
+Import
+Keep native/ and cache/ beside each other. Append Collection
+FXv011 | COMPACT IMPACT | brief flash small debris low dust
+from native/WTSC_Compact_Impact_Append_v011.blend.
+The independent append-test file contains only the imported collection, without a camera or lights. It verifies mesh equality and actual cached fluid_data_0020.vdb loading at a100-frame offset.
+
+Controls on FXv011 | fixed impact anchor and controls:
+start_frame(default7),speed(default1),size(default1),intensity(default1),dust_density(default0.04). Move the root to place the effect. X is horizontal,Z is up,camera looks+Y, metric scale1unit=1m. Current proof anchor is approximately(109.22947,10,-0.43154), using the original held camera and child/foreground masks. This is not a moving-camera integration test.
+
+The falling pieces use authored gravity arcs and one small rebound in the shot's X/Z plane; they are not a new Bullet simulation. Dust reuses only30 existing VDB frames(3.67MB), with no new bake. When appending into a scene saved elsewhere, point the Volume file path to the extracted cache/data/fluid_data_0001.vdb. Keep its configured sequence window and existing frame_offset/visibility drivers: the long window permits timing offsets, while visibility and density still end at age22. Both original paint images are packed in the append file.
+
+Preview alpha
+The review MP4 is RGB with a held background and no alpha. No finished RGBA sequence is supplied in this single correction test. A future native RGBA render should use transparent film, bypass the held-background review compositor, straight alpha and24fps.
+
+Candid limits
+The painted onset is a very brief fixed exposure, not a fully redrawn evolving explosion. Residual dust is deliberately faint and nearly imperceptible at this shot size. The ground mark is restrained and shallow. Judge the smaller event's timing from the muted clip; artistic acceptance remains pending. No claim is made to reproduce unseen Dong Chang tutorial motion or timing.
+
+Earlier effects and all production files remain unchanged. All writes are under effects/compact_impact_v011. No purchases, installations, shared UI control, new simulation cache or production lighting edit.

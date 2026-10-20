@@ -1,0 +1,79 @@
+WHEN THE SKY CLEARS | FIRST DANGER | ROUGH ACTING v068
+19 October 2026 | Separate seven-second candidate. Full trailer untouched.
+
+WATCH FIRST
+previews/WTSC_First_Danger_Before_After_ACTING_DETAIL_v068e_24fps.mp4
+Full seven seconds with the same fixed crop on both panels, for easier acting
+review. The crop does not follow, stabilize or reposition either performance.
+
+FULL CAMERA COMPOSITION
+previews/WTSC_First_Danger_Before_After_ROUGH_v068e_24fps.mp4
+Left: the previous painted v067 passage. Right: new rough replacement drawings.
+The full seven seconds, global38-45s,168 frames at24fps, normal speed.
+No optical-flow interpolation, slow motion, playback retiming or changed excerpt.
+New character drawings are exposed on twos, while the existing camera and
+painted environment continue at24fps. Review panels are1280x720 each.
+
+WITH THE INHERITED TITLE TREATMENT
+previews/WTSC_First_Danger_Before_After_ROUGH_TITLE_v068e_24fps.mp4
+
+AFTER ONLY
+previews/WTSC_First_Danger_Rough_v068e_24fps.mp4
+previews/WTSC_First_Danger_Rough_v068e_Title_24fps.mp4
+
+EDITABLE NATIVE
+native/WTSC_First_Danger_Rough_Acting_v068e.blend
+Scene: WTSC_FIRST_DANGER_ROUGH_WORLD_v068
+G913-1080,24fps. Native resolution3840x2160.
+V068 drawing collection:84 new drawings per child, each with named contour,
+costume, hair, face, hand and limb vertex groups; constant exposure keys.
+The old painted rig is retained hidden for reference inside this candidate.
+No original source file has been overwritten.
+
+EDITABLE VECTOR DRAWING EXPORTS
+drawings/BOY_0913.svg through BOY_1079.svg
+drawings/GIRL_0913.svg through GIRL_1079.svg
+168 editable SVG copies with named path layers, for drawing/paint-over work.
+scripts/pose_spec.py contains the shot-specific whole-body keys, contour
+landmarks, hand variants, turning facial features and foot contact schedules.
+The same authoring source is embedded as a native Blender Text block. Native
+drawings contain the actual editable contour geometry; SVG edits are separate
+and would need importing to replace the corresponding native drawing.
+
+ACTING CHANGE
+- Girl notices first; her lifted gaze leads a compressed checked step.
+- Her feet hold while her shoulders open and her head turns back toward him.
+- She searches with an open palm, leaving a beat for his delayed response.
+- Boy looks down toward the offer, reaches, receives and closes his hand.
+- Their bodies settle after contact. The clasp stays coupled as they move off.
+- She looks ahead first; they continue with shorter, quicker linked steps.
+- New whole-body contours, head angles, brows, open/search/grip hand drawings,
+  sleeve shapes, dress shapes and braid positions replace the visible old rig.
+
+STYLE AND REVIEW BOUNDARY
+This is a rough acting/drawing pass in the existing layered2D scene, using
+muted ink/wash color studies and the established hair/costume identities.
+Its simplified faces, contour cleanup, likeness and painted finish are
+provisional. It does not establish final animation quality or Arcane parity.
+The original packed paintings are preserved; they remain the design/paint
+references. This pass does not reuse the old visible character deformation.
+
+Review the timing and decisions at normal speed before assessing painted
+finish: notice, check, look back, search, receive, settle, continue. No further
+trailer shots or full-film integration are included in this delivery.
+
+EVIDENCE
+evidence/BUILD.json                Final native source/hash and drawing records.
+evidence/ACTING_KEYS.json          Explicit acting keys and new contact schedule.
+evidence/COLD_VALIDATION.json      Independent reopen and all168 frame readbacks.
+evidence/MOVIE_BATCHES_E.json      Actual fresh final-e movie render ranges.
+evidence/DELIVERY_E.json           Decode, timing, color and source-audio checks.
+renders/uhd_E/                    Actual3840x2160 final-e native review keys.
+previews/Actual_Rough_Chronology.jpg
+previews/Full_Frame_Before_After_Chronology.jpg
+
+Earlier native A-D files, unsuffixed movies and key renders are development
+witnesses. The final candidate is native e and the five e movies named above.
+The final e corrects head-pitch direction relative to the turn, so the gaze
+leads into hand contact. All168 final movie frames were freshly rendered from
+native e. No pixels from earlier candidates are used in those final-e frames.

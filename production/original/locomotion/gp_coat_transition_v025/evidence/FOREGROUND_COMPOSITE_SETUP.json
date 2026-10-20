@@ -1,0 +1,15 @@
+{
+  "foreground_objects": [
+    "LOCO_BOY | PAINT body",
+    "PERF_BOY | original head",
+    "V007_BOY | articulated drawn hand near",
+    "V007_BOY | drawn skin near",
+    "V007_BOY | drawn sleeve near",
+    "V007_BOY | drawn source gray cuff near"
+  ],
+  "base_layer": "V025 | coat and lower body",
+  "foreground_layer": "V025 | original foreground",
+  "native_compositor": "V025 | GP under original foreground | native composite",
+  "texture_wash_disabled": true,
+  "reason": "Review authored contour/volume without misregistered raster wash; preserve original foreground alpha/painting through a separate native layer"
+}

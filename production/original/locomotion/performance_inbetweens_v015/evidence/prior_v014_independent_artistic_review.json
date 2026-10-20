@@ -1,0 +1,34 @@
+{
+  "candidate": "locomotion/whole_pose_blocking_v014",
+  "verdict": "READY_FOR_CONTROLLED_BREAKDOWNS_AND_INBETWEENS",
+  "scope": "Focused blocking-stage recommendation only. No finished-motion, normal-speed, repaint, walking-extension or production-integration acceptance.",
+  "findings": [
+    "Boy frames10-19 now use a forward/down leading reach and low trailing arm. The unequal silhouette supports the forward balance loss instead of the previous broad shrug.",
+    "Girl frames12-21 has one lower available hand and a quieter other arm. Her reaction is visibly distinct from his instability, while the preserved both-heels-down wait remains useful.",
+    "At22-43/held48 the short hand pad rests along the loaded thigh with a clearer forearm/contact relationship. It reads close up and is sufficient to carry the support intention at current shot size in conjunction with the crouch and push. Release49 is visibly separate.",
+    "Preserve the catch/compression, low gather and leg-push staging. No further wholesale blocking redesign is warranted by this focused review."
+  ],
+  "next_work": "Author controlled breakdowns between the existing keys while protecting front-foot support, palm/thigh contact22-48 and release49. Keep the girl independently timed. Check that near-touching hands around16 retain their intended reach/offer relationship and do not become an accidental load-bearing clasp. Review transitions at normal speed before further polish.",
+  "unresolved_profile": "The single proxy profile substitution remains shorthand. Its turn breakdown and eventual painted head/hair/braid continuity remain explicitly unresolved; this recommendation does not validate that turn.",
+  "method": "Independently verified native, both movies and both key-sheet hashes/bytes. Both actual movies fully decoded72frames each at24fps. Viewed all changed windows1-48 in supplied decoded chronological close/shot sheets, both key sheets, independently extracted12 focused close keys and full-size keys22,43,49 and shot-size43. Deliberate held exposures/jumps judged as stepped blocking, not failed smooth motion.",
+  "limitations": "No continuous/full-speed playback. Urgency, pacing and transition flow remain provisional. Proxy surface checks do not validate actual forces, final painted silhouette or physical palm deformation.",
+  "delivery": {
+    "movie": {
+      "name": "WTSC_v014_Whole_Pose_Blocking_3s.mp4",
+      "bytes": 122502,
+      "sha256": "5d0cd37d136f429e2ea38a24d8a293cac926001aba8d65e2ae1e1bf05649e2ff",
+      "library_id": null,
+      "state": "No movie receipt or recent Library entry found.",
+      "requested_action": "Ask author to save the existing private-project preview, without edits or rendering.",
+      "target_thread": "01a14b8b-c452-7392-929f-d1215b05803a",
+      "target_title": "Refine character movement",
+      "message_tool": "mcp__codex_app__send_message_to_thread",
+      "error": "invalid turn/start params: AbsolutePathBuf deserialized without a base path",
+      "outcome": "Backend request failed, not an automatic approval denial. Subsequent supported read confirms author remains idle and last turn unchanged; upload was not started. No retry or alternate upload attempted.",
+      "supported_next_step": "Parent can send the existing-preview save request through its supported author-thread messaging route and collect the confirmed movie receipt."
+    },
+    "close_keys_library": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "shot_keys_library": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]"
+  },
+  "asset_or_production_changes": false
+}

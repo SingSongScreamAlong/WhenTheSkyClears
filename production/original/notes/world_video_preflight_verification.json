@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "metadata": [
+    "Duration: 00:00:01.00, start: 0.000000, bitrate: 51718 kb/s",
+    "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3840x2160 [SAR 1:1 DAR 16:9], 51803 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+    "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 2 kb/s (default)",
+    "Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))",
+    "Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))",
+    "Stream #0:0(und): Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 3840x2160 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 24 fps, 24 tbn (default)",
+    "Stream #0:1(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)"
+  ],
+  "progress": "frame=24\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=1000000\nout_time_ms=1000000\nout_time=00:00:01.000000\ndup_frames=0\ndrop_frames=0\nspeed=5.04x\nprogress=end\n"
+}

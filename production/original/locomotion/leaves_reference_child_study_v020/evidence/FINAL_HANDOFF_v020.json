@@ -1,0 +1,171 @@
+{
+  "checkpoint": "v020",
+  "status": "REFERENCE-TO-CHILD MATCH PARTIAL; FINISHED WALK NOT APPROVED",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\leaves_reference_child_study_v020\\native\\WTSC_Leaves_Reference_Child_Eight_Poses_v020.blend",
+  "report": "WTSC_LOCAL_WORKSPACE\\locomotion\\leaves_reference_child_study_v020\\V020_REFERENCE_TO_CHILD_REPORT.txt",
+  "guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\leaves_reference_child_study_v020\\V020_IMPORT_AND_SOURCE_TIME_GUIDE.txt",
+  "phase_source": {
+    "source_key_range": [
+      2.0,
+      33.0
+    ],
+    "source_fps": 30,
+    "period_frames": 31.0,
+    "period_seconds": 1.0333333333333334,
+    "source_root_stride_m": 1.5,
+    "root_direction": "-worldY mapped to child+X; worldZ retained",
+    "phase_definition_limit": "No source heel or skin sole exists. Contact onset is inferred from stationary-foot onset, foot pitch and subsequent flat forefoot. It is not an exact measured heel event.",
+    "contact_windows_source_frames": {
+      "R": [
+        9.75,
+        11.0
+      ],
+      "L": [
+        25.75,
+        27.0
+      ]
+    },
+    "phases": [
+      {
+        "index": 1,
+        "name": "R_CONTACT",
+        "unwrapped_source_frame": 9.75,
+        "wrapped_source_frame": 9.75,
+        "source_seconds_from_first_key": 0.25833333333333336,
+        "seconds_from_study_contact": 0.0,
+        "study_frame_30fps": 1.0,
+        "basis": "Contact onset estimate: right ankle/toe world-forward position approaches a plateau; toe-up foot settles to flat by12. Heel is not a source joint."
+      },
+      {
+        "index": 2,
+        "name": "R_LOADING",
+        "unwrapped_source_frame": 12.0,
+        "wrapped_source_frame": 12.0,
+        "source_seconds_from_first_key": 0.3333333333333333,
+        "seconds_from_study_contact": 0.075,
+        "study_frame_30fps": 3.25,
+        "basis": "Hip height minimum following right contact."
+      },
+      {
+        "index": 3,
+        "name": "R_PASSING",
+        "unwrapped_source_frame": 17.75,
+        "wrapped_source_frame": 17.75,
+        "source_seconds_from_first_key": 0.525,
+        "seconds_from_study_contact": 0.26666666666666666,
+        "study_frame_30fps": 9.0,
+        "basis": "Swing left knee passes the projected hip center; this is knee passing, not ankle crossing."
+      },
+      {
+        "index": 4,
+        "name": "R_UP",
+        "unwrapped_source_frame": 19.0,
+        "wrapped_source_frame": 19.0,
+        "source_seconds_from_first_key": 0.5666666666666667,
+        "seconds_from_study_contact": 0.30833333333333335,
+        "study_frame_30fps": 10.25,
+        "basis": "Hip height maximum during right support."
+      },
+      {
+        "index": 5,
+        "name": "L_CONTACT",
+        "unwrapped_source_frame": 25.75,
+        "wrapped_source_frame": 25.75,
+        "source_seconds_from_first_key": 0.7916666666666666,
+        "seconds_from_study_contact": 0.5333333333333333,
+        "study_frame_30fps": 17.0,
+        "basis": "Contact onset estimate: left ankle/toe world-forward speed falls sharply; flat forefoot settles by28. Heel is not a source joint."
+      },
+      {
+        "index": 6,
+        "name": "L_LOADING",
+        "unwrapped_source_frame": 26.0,
+        "wrapped_source_frame": 26.0,
+        "source_seconds_from_first_key": 0.8,
+        "seconds_from_study_contact": 0.5416666666666666,
+        "study_frame_30fps": 17.25,
+        "basis": "Hip height minimum at early left loading; contact and load are nearly coincident in this clip."
+      },
+      {
+        "index": 7,
+        "name": "L_PASSING",
+        "unwrapped_source_frame": 34.0,
+        "wrapped_source_frame": 3.0,
+        "source_seconds_from_first_key": 1.0666666666666667,
+        "seconds_from_study_contact": 0.8083333333333333,
+        "study_frame_30fps": 25.25,
+        "basis": "Next-cycle swing right knee passes projected hip center."
+      },
+      {
+        "index": 8,
+        "name": "L_UP",
+        "unwrapped_source_frame": 36.0,
+        "wrapped_source_frame": 5.0,
+        "source_seconds_from_first_key": 1.1333333333333333,
+        "seconds_from_study_contact": 0.875,
+        "study_frame_30fps": 27.25,
+        "basis": "Next-cycle hip height maximum during left support."
+      }
+    ],
+    "adult_reference_status": "User-supplied Animation Base Locomotion v3; not Mixamo; adult gait is reference only, not approved child acting."
+  },
+  "derived_child_stride_m": 1.0213834920602545,
+  "fresh_check_summary": {
+    "pose_count_unique": 8,
+    "duplicate_bookend_checked": true,
+    "child_rest_proportions_unchanged": true,
+    "all_four_IK_chains_reachable": true,
+    "source_copied_pose_max_error_m": 3.03925246810483e-07,
+    "max_native_IK_endpoint_error_m": 2.135924877460986e-05,
+    "source_arm_direction_max_residual_deg": 0.0,
+    "source_leg_direction_max_residual_deg": 18.16581358828145,
+    "contacts_checked_at_poses_only": true,
+    "continuous_contacts_or_inbetweens_validated": false,
+    "no_stretch": true,
+    "artistic_status": "NOT APPROVED; matching and painted deformation limits both remain",
+    "source_import_warning": "FBX Short custom-property type unsupported; no skeleton/action import failure observed.52bones and original source action retained."
+  },
+  "comparison_preview": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\leaves_reference_child_study_v020\\previews\\WTSC_v020_Leaves_Source_Child_Eight_Pose_Comparison_4s.mp4",
+    "bytes": 181677,
+    "sha256": "5c4ceb56c997a43cb5feace29a4aa36f70e326b848386c136db8ef0c854ae2e3",
+    "dimensions": [
+      1920,
+      960
+    ],
+    "fps": 30,
+    "frames": 120,
+    "duration_seconds": 4,
+    "unique_pose_slides": 8,
+    "actual_encoded_slides_decoded": 8,
+    "presentation": "Equal0.5second holds per pose for comparison. Native study keys retain nonuniform actual source phase times. This is not normal-speed gait playback.",
+    "inspection": "Decoded each unique encoded slide and inspected pose/render sheets."
+  },
+  "library_files": [
+    {
+      "file_name": "WTSC_v020_Leaves_Source_Child_Eight_Pose_Comparison_4s.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "current_version_number": 0,
+      "file_size_bytes": 181677
+    },
+    {
+      "file_name": "WTSC_v020_All_Eight_Source_Child_Poses.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "current_version_number": 0,
+      "file_size_bytes": 410270
+    },
+    {
+      "file_name": "WTSC_v020_All_Eight_At_Shot_Size.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "current_version_number": 0,
+      "file_size_bytes": 345708
+    }
+  ],
+  "sources_unchanged": true,
+  "stop_for_review": true,
+  "remaining_blockers": "Matching remains partial (pelvis accommodation, shin direction, grazing swing boot); painted torso/knee/cloth deformation remains unpassed. No execution denial/pending/uncertain operation.",
+  "world_branch_integration": false
+}

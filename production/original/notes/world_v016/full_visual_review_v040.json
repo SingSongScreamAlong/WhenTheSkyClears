@@ -1,0 +1,20 @@
+{
+  "decoded_frames_inspected": true,
+  "human_artistic_approval_inferred": false,
+  "movie": "renders/world_v016/WTSC_Full_Knockout_Trailer_4K_v040.mp4",
+  "movie_sha256": "a8b4edc357498ba3e2ffb585624a862d88ee852f4bb97caca617a14a19ad8569",
+  "actual_review_method": "Inspected all11 actual UHD decoded master samples. Images were displayed by the review tool at2048x1152; dimensions and native-frame pixel comparisons were checked at3840x2160. The separate moving benchmark was reviewed via chronological decoded samples and120frame full decode. No claim of complete human playback or artistic approval.",
+  "inspected_samples": ["01_Start.png", "02_Village.png", "03_Village_Empty.png", "04_Woods.png", "05_School.png", "06_Camp.png", "07_Battlefield.png", "08_Ruins.png", "09_Last_S.png", "10_Credits_Start.png", "11_Credits_Last.png"],
+  "observations": [
+    "Village warmth and established charcoal near-age children remain recognizable. Boy slightly taller; established held pose preserved.",
+    "Woods keep near/far separation and school/camp/battlefield retain clearer gray forms after broad orange wash removal.",
+    "Camp treatment in final movie agrees with reviewed native scene; flames use restrained gold palette and grounded bases in inspected visible regions.",
+    "Soft sole contacts and foreground treatment remain subtle; repeated foreground plant forms are still visible.",
+    "World remains confined to huge scrolling glyphs; initial frame black, finalS fragment atleftedge onlastmovingframe, full exactcreditcard at100seconds, stable finalcard atlastframe.",
+    "Exact title/supporting/year/production wording, punctuation and case visible in decoded card. No newly introduced rectangular set edge noticed in inspected samples."
+  ],
+  "technical_qa": "full_verification_v040.json passed:2544frame full decode, native-frame agreement, maskblack, blockjoins, exactcard, originalmusic bytehash/samplealignment,90–100fade,silent100–106,preservedolderfilehashes.",
+  "remaining_visual_limits": ["Visible foreground repetition", "Most original painting textures1672x941", "Layered2.5Dpaint plus props/effects", "Intentionally held characters", "No Arcane-level finish or human artistic approval inferred"],
+  "v001_effects_pack_used": false,
+  "untested_character_motion_imported": false
+}

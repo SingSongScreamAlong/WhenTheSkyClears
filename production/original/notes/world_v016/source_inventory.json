@@ -1,0 +1,713 @@
+{
+  "scene": "WTSC_VILLAGE_PROGRESS_v015",
+  "objects": [
+    {
+      "name": "v015 | Rear countryside",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        40.0,
+        3.0
+      ],
+      "rot": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v012 | Painted material | Rear countryside",
+          "nodes": [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Separate XYZ",
+              "SEPXYZ"
+            ],
+            [
+              "Distance wash",
+              "MIX_RGB"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v015 | Painted village",
+      "type": "MESH",
+      "loc": [
+        2.0160000324249268,
+        12.0,
+        3.0
+      ],
+      "rot": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v012 | Painted material | Painted village",
+          "nodes": [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Separate XYZ",
+              "SEPXYZ"
+            ],
+            [
+              "Bakery newly painted detail",
+              "TEX_IMAGE"
+            ],
+            [
+              "Vector Math",
+              "VECT_MATH"
+            ],
+            [
+              "Vector Math.001",
+              "VECT_MATH"
+            ],
+            [
+              "Separate XYZ.001",
+              "SEPXYZ"
+            ],
+            [
+              "Math",
+              "MATH"
+            ],
+            [
+              "Math.001",
+              "MATH"
+            ],
+            [
+              "Math.002",
+              "MATH"
+            ],
+            [
+              "Math.003",
+              "MATH"
+            ],
+            [
+              "Math.004",
+              "MATH"
+            ],
+            [
+              "Map Range",
+              "MAP_RANGE"
+            ],
+            [
+              "Math.005",
+              "MATH"
+            ],
+            [
+              "Mix (Legacy)",
+              "MIX_RGB"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v015 | Walking path",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        2.0,
+        3.0
+      ],
+      "rot": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v012 | Painted material | Walking path",
+          "nodes": [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Separate XYZ",
+              "SEPXYZ"
+            ],
+            [
+              "Color Ramp",
+              "VALTORGB"
+            ],
+            [
+              "Mix (Legacy)",
+              "MIX_RGB"
+            ],
+            [
+              "Math",
+              "MATH"
+            ],
+            [
+              "Math.001",
+              "MATH"
+            ],
+            [
+              "Path newly painted detail",
+              "TEX_IMAGE"
+            ],
+            [
+              "Vector Math",
+              "VECT_MATH"
+            ],
+            [
+              "Vector Math.001",
+              "VECT_MATH"
+            ],
+            [
+              "Separate XYZ.001",
+              "SEPXYZ"
+            ],
+            [
+              "Math.002",
+              "MATH"
+            ],
+            [
+              "Math.003",
+              "MATH"
+            ],
+            [
+              "Math.004",
+              "MATH"
+            ],
+            [
+              "Math.005",
+              "MATH"
+            ],
+            [
+              "Math.006",
+              "MATH"
+            ],
+            [
+              "Map Range",
+              "MAP_RANGE"
+            ],
+            [
+              "Math.007",
+              "MATH"
+            ],
+            [
+              "Mix (Legacy).001",
+              "MIX_RGB"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v015 | CHILDREN | held editable GP black silhouettes",
+      "type": "GREASEPENCIL",
+      "loc": [
+        -1.6891200542449951,
+        0.0,
+        0.7713720202445984
+      ],
+      "rot": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": null,
+      "materials": [
+        {
+          "name": "v012 | Pure black ink | 0",
+          "nodes": [
+            [
+              "Principled BSDF",
+              "BSDF_PRINCIPLED"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        },
+        {
+          "name": "v012 | Pure black ink | 1",
+          "nodes": [
+            [
+              "Principled BSDF",
+              "BSDF_PRINCIPLED"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v015 | Near-black painted fill | GP vector clipped",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 2565,
+      "materials": [
+        {
+          "name": "v015 | Subtle charcoal painting and soft white eyes",
+          "nodes": [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Hue/Saturation/Value",
+              "HUE_SAT"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v015 | Oak frame and near bank",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        -5.0,
+        3.0
+      ],
+      "rot": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v012 | Painted material | Oak frame and near bank",
+          "nodes": [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Separate XYZ",
+              "SEPXYZ"
+            ],
+            [
+              "Color Ramp",
+              "VALTORGB"
+            ],
+            [
+              "Mix (Legacy)",
+              "MIX_RGB"
+            ],
+            [
+              "Math",
+              "MATH"
+            ],
+            [
+              "Math.001",
+              "MATH"
+            ],
+            [
+              "Math.002",
+              "MATH"
+            ],
+            [
+              "Math.003",
+              "MATH"
+            ],
+            [
+              "Math.004",
+              "MATH"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v015 | Review camera",
+      "type": "CAMERA",
+      "loc": [
+        0.0,
+        -16.0,
+        3.0
+      ],
+      "rot": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": null,
+      "materials": []
+    },
+    {
+      "name": "v014 | Ground contact | Held shoe 1",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v014 | Soft painted contact | ground only",
+          "nodes": [
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Vector Math",
+              "VECT_MATH"
+            ],
+            [
+              "Color Ramp",
+              "VALTORGB"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v014 | Ground contact | Held shoe 2",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v014 | Soft painted contact | ground only",
+          "nodes": [
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Vector Math",
+              "VECT_MATH"
+            ],
+            [
+              "Color Ramp",
+              "VALTORGB"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v014 | Ground contact | Held shoe 3",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v014 | Soft painted contact | ground only",
+          "nodes": [
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Vector Math",
+              "VECT_MATH"
+            ],
+            [
+              "Color Ramp",
+              "VALTORGB"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "v014 | Ground contact | Held shoe 4",
+      "type": "MESH",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4,
+      "materials": [
+        {
+          "name": "v014 | Soft painted contact | ground only",
+          "nodes": [
+            [
+              "Texture Coordinate",
+              "TEX_COORD"
+            ],
+            [
+              "Vector Math",
+              "VECT_MATH"
+            ],
+            [
+              "Color Ramp",
+              "VALTORGB"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Transparent BSDF",
+              "BSDF_TRANSPARENT"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Material Output",
+              "OUTPUT_MATERIAL"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "render": "BLENDER_EEVEE",
+  "world": "v012 | black outside plate",
+  "compositor": null,
+  "samples": 64
+}

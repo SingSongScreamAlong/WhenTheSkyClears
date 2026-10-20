@@ -1,0 +1,308 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\locomotion\\garment_continuity_v047\\current_v046_continuation\\reference\\PRESERVED_FINAL_v046_INPUT.blend",
+  "source_sha256": "e993540280bc60ff5fcc1dafe316f7c8457c5c8750a1110b8f6e307a865d005d",
+  "candidate": "WTSC_LOCAL_WORKSPACE\\locomotion\\garment_continuity_v047\\current_v046_continuation\\native\\WTSC_Age10_Paired_Reach_v047b.blend",
+  "candidate_sha256": "458f42e0f3fb88af04493747653d9b321864c465bbd15f4cbaf2a5c9423b8f76",
+  "read_only_native_open": true,
+  "no_native_save_or_render": true,
+  "frames": [
+    1,
+    94
+  ],
+  "quarter_frame_samples": 373,
+  "checks": {
+    "all_original_scene_objects_retained": true,
+    "only_expected_new_near_arm_objects": true,
+    "original_object_transforms_exact": true,
+    "original_mesh_topology_rest_UV_attributes_materials_and_nonbody_shapes_exact": true,
+    "only_original_selected_sleeve_hand_visibility_may_change": true,
+    "original_object_actions_except_selected_arm_channels_exact": true,
+    "original_material_graphs_and_properties_exact": true,
+    "all_packed_image_pixels_and_settings_exact": true,
+    "age10_rest_bones_exact": true,
+    "nonselected_rig_action_curves_exact": true,
+    "camera_projection_data_exact": true,
+    "source_clock_range_exact": true,
+    "new_selected_drawings_retain_original_topology_UV_materials": true,
+    "upper_493_body_vertices_unchanged_within_2um": true,
+    "boots_world_m_within_20um_or_matrix_tolerance": true,
+    "root_matrix_max_abs_within_20um_or_matrix_tolerance": true,
+    "camera_matrix_max_abs_within_20um_or_matrix_tolerance": true,
+    "rig_matrix_max_abs_within_20um_or_matrix_tolerance": true,
+    "nonselected_bone_matrix_max_abs_within_20um_or_matrix_tolerance": true,
+    "both_lower_garments_have_measured_changes": true,
+    "native_files_unchanged_by_validation": true
+  },
+  "all_checks_pass": true,
+  "maxima": {
+    "body_upper_world_m": 0.0,
+    "body_lower_world_change_m": 0.013001493204815242,
+    "boots_world_m": 0.0,
+    "root_matrix_max_abs": 0.0,
+    "camera_matrix_max_abs": 0.0,
+    "rig_matrix_max_abs": 0.0,
+    "nonselected_bone_matrix_max_abs": 0.0
+  },
+  "per_body_world_changes": {
+    "BOY": {
+      "upper_m": 0.0,
+      "lower_m": 0.00973797934324637
+    },
+    "GIRL": {
+      "upper_m": 0.0,
+      "lower_m": 0.013001493204815242
+    }
+  },
+  "tolerances_m": {
+    "upper_body": 2e-06,
+    "boots_roots_camera_nonselected": 2e-05
+  },
+  "missing_original_objects": [],
+  "unexpected_new_objects": [],
+  "changed_protected_data": {
+    "transforms": [],
+    "raw_mesh_data": [],
+    "visibility": [],
+    "object_actions": [],
+    "source_materials": []
+  },
+  "new_drawing_topology_UV_material_checks": {
+    "V047 BOY | reach sleeve near": true,
+    "V047 GIRL | reach sleeve near": true,
+    "V047 BOY | retained paint hand fold near": true,
+    "V047 GIRL | retained paint hand fold near": true
+  },
+  "body_material_signatures": {
+    "V046 BOY | tailored coat": {
+      "vertices": 1105,
+      "edges": 2128,
+      "polygons": 1024,
+      "loops": 4096,
+      "faces": "9537633a17cd6948dad5ef4db5f73aecdb9a4344a40cadd36076e1467dd9aef5",
+      "edge_indices": "29e00ee69ae22d7cd79c2cd064a9edafeb4fd4b51819d66e43067993501fb914",
+      "polygon_materials": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "uv_layers": [
+        [
+          "V046 | original pigment registration",
+          "283b374265fa12749cfbbb963d3994b9c7b4d6d93fbee4020812856e90f6d5ac"
+        ],
+        [
+          "V046 | quiet upper cloth",
+          "5ce8abc527759694e755d06b50e22241a339c6850c725ec9b99832efb9f71f42"
+        ]
+      ],
+      "materials": [
+        "V046 BOY | seamless original painted bodice"
+      ],
+      "coordinates": "189399f07c03400949242cba5cead6e340fead6605de69065f8f7759996bfdcf",
+      "attributes": {
+        ".select_vert": {
+          "domain": "POINT",
+          "type": "BOOLEAN",
+          "count": 1105,
+          "data": "bea29c34a72c1bbb5cd2aa068dcecdef9a46dbeea29c9ac1f92f476ee0d5032a"
+        },
+        "position": {
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR",
+          "count": 1105,
+          "data": "189399f07c03400949242cba5cead6e340fead6605de69065f8f7759996bfdcf"
+        },
+        ".corner_vert": {
+          "domain": "CORNER",
+          "type": "INT",
+          "count": 4096,
+          "data": "85a88053d8177039d4efc283ecae86eff38d677888bb0d16f3b22680f1d29362"
+        },
+        ".corner_edge": {
+          "domain": "CORNER",
+          "type": "INT",
+          "count": 4096,
+          "data": "972071605d0f8cc0719698c3682509f81804b109f3cc4bed50cb8563e5c19953"
+        },
+        ".select_poly": {
+          "domain": "FACE",
+          "type": "BOOLEAN",
+          "count": 1024,
+          "data": "b33dd739a3b1d1e659a638b318bdcfbaed8eb8cca224dbf0a76e9e1a81db57bc"
+        },
+        "sharp_face": {
+          "domain": "FACE",
+          "type": "BOOLEAN",
+          "count": 1024,
+          "data": "b33dd739a3b1d1e659a638b318bdcfbaed8eb8cca224dbf0a76e9e1a81db57bc"
+        },
+        ".edge_verts": {
+          "domain": "EDGE",
+          "type": "INT32_2D",
+          "count": 2128,
+          "data": "29e00ee69ae22d7cd79c2cd064a9edafeb4fd4b51819d66e43067993501fb914"
+        },
+        ".select_edge": {
+          "domain": "EDGE",
+          "type": "BOOLEAN",
+          "count": 2128,
+          "data": "a94a3edf85ebbb1c2997e49d28e984ece74c2c928e18d3fe747edea0c918ca7c"
+        },
+        "V046 | original pigment registration": {
+          "domain": "CORNER",
+          "type": "FLOAT2",
+          "count": 4096,
+          "data": "283b374265fa12749cfbbb963d3994b9c7b4d6d93fbee4020812856e90f6d5ac"
+        },
+        "V046 | quiet upper cloth": {
+          "domain": "CORNER",
+          "type": "FLOAT2",
+          "count": 4096,
+          "data": "5ce8abc527759694e755d06b50e22241a339c6850c725ec9b99832efb9f71f42"
+        },
+        "V046 upper textile blend": {
+          "domain": "POINT",
+          "type": "FLOAT",
+          "count": 1105,
+          "data": "d9640f9ca563a4e33210239af00f3e2ad90bdf42c7c41b2ca933af8017a2b126"
+        }
+      }
+    },
+    "V046 GIRL | tailored knee-length dress": {
+      "vertices": 1105,
+      "edges": 2128,
+      "polygons": 1024,
+      "loops": 4096,
+      "faces": "9537633a17cd6948dad5ef4db5f73aecdb9a4344a40cadd36076e1467dd9aef5",
+      "edge_indices": "29e00ee69ae22d7cd79c2cd064a9edafeb4fd4b51819d66e43067993501fb914",
+      "polygon_materials": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "uv_layers": [
+        [
+          "V046 | original pigment registration",
+          "0ec544906b55f6cfd0de6acdee48f16a9e45ae3c2e9e6a887a2d994eb99f94b1"
+        ],
+        [
+          "V046 | quiet upper cloth",
+          "45f8099f3a10caf2962f2e78cc4fca058bc740ddb1f6131cce9921c522f47e5a"
+        ]
+      ],
+      "materials": [
+        "V046 GIRL | seamless original painted bodice"
+      ],
+      "coordinates": "d2b5cfd3fef393839252be15c585409c9df15a463e205b84c416283efdc522df",
+      "attributes": {
+        ".select_vert": {
+          "domain": "POINT",
+          "type": "BOOLEAN",
+          "count": 1105,
+          "data": "bea29c34a72c1bbb5cd2aa068dcecdef9a46dbeea29c9ac1f92f476ee0d5032a"
+        },
+        "position": {
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR",
+          "count": 1105,
+          "data": "d2b5cfd3fef393839252be15c585409c9df15a463e205b84c416283efdc522df"
+        },
+        ".corner_vert": {
+          "domain": "CORNER",
+          "type": "INT",
+          "count": 4096,
+          "data": "85a88053d8177039d4efc283ecae86eff38d677888bb0d16f3b22680f1d29362"
+        },
+        ".corner_edge": {
+          "domain": "CORNER",
+          "type": "INT",
+          "count": 4096,
+          "data": "972071605d0f8cc0719698c3682509f81804b109f3cc4bed50cb8563e5c19953"
+        },
+        ".select_poly": {
+          "domain": "FACE",
+          "type": "BOOLEAN",
+          "count": 1024,
+          "data": "b33dd739a3b1d1e659a638b318bdcfbaed8eb8cca224dbf0a76e9e1a81db57bc"
+        },
+        "sharp_face": {
+          "domain": "FACE",
+          "type": "BOOLEAN",
+          "count": 1024,
+          "data": "b33dd739a3b1d1e659a638b318bdcfbaed8eb8cca224dbf0a76e9e1a81db57bc"
+        },
+        ".edge_verts": {
+          "domain": "EDGE",
+          "type": "INT32_2D",
+          "count": 2128,
+          "data": "29e00ee69ae22d7cd79c2cd064a9edafeb4fd4b51819d66e43067993501fb914"
+        },
+        ".select_edge": {
+          "domain": "EDGE",
+          "type": "BOOLEAN",
+          "count": 2128,
+          "data": "a94a3edf85ebbb1c2997e49d28e984ece74c2c928e18d3fe747edea0c918ca7c"
+        },
+        "V046 | original pigment registration": {
+          "domain": "CORNER",
+          "type": "FLOAT2",
+          "count": 4096,
+          "data": "0ec544906b55f6cfd0de6acdee48f16a9e45ae3c2e9e6a887a2d994eb99f94b1"
+        },
+        "V046 | quiet upper cloth": {
+          "domain": "CORNER",
+          "type": "FLOAT2",
+          "count": 4096,
+          "data": "45f8099f3a10caf2962f2e78cc4fca058bc740ddb1f6131cce9921c522f47e5a"
+        },
+        "V046 upper textile blend": {
+          "domain": "POINT",
+          "type": "FLOAT",
+          "count": 1105,
+          "data": "6bceb8676f2de208151e7d1ff1cbc4d6c752fdbd8b40b90294a9f130dc50c360"
+        }
+      }
+    }
+  },
+  "packed_image_pixel_signatures": {
+    "Pair_Painterly_Near_Age_v015.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "channels": 4,
+      "alpha_mode": "STRAIGHT",
+      "colorspace": "sRGB",
+      "pixel_sha256": "9e275c2e6d25719dad08d7a41be058ab6038e8de41784cf87f9eee57126ac403"
+    },
+    "Pair_Painterly_Near_Age_v015.png.001": {
+      "size": [
+        1672,
+        941
+      ],
+      "channels": 4,
+      "alpha_mode": "STRAIGHT",
+      "colorspace": "sRGB",
+      "pixel_sha256": "9e275c2e6d25719dad08d7a41be058ab6038e8de41784cf87f9eee57126ac403"
+    },
+    "WTSC_Boy_Painted_Parts_Atlas_v040.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "channels": 4,
+      "alpha_mode": "STRAIGHT",
+      "colorspace": "sRGB",
+      "pixel_sha256": "4a54fe0d9169891bc14b47eb7fb853a1392f139948c30919c829ea00fa0ba146"
+    }
+  },
+  "nonselected_action_curve_hashes": {
+    "source": {
+      "BOY": "b185dfbf2b805e93265d7a4c4fd3cf0aa97a60ff892a1463c5f1576968c961aa",
+      "GIRL": "25001f3bd0c1de15d7f05a246f954522f6798099b95f33f808f609c3c9bdbf16"
+    },
+    "candidate": {
+      "BOY": "b185dfbf2b805e93265d7a4c4fd3cf0aa97a60ff892a1463c5f1576968c961aa",
+      "GIRL": "25001f3bd0c1de15d7f05a246f954522f6798099b95f33f808f609c3c9bdbf16"
+    }
+  },
+  "allowed_changes": [
+    "Two lower-garment native shape-key actions; upper 493 vertices pinned.",
+    "Only upper_arm_near, forearm_near and hand_near pose channels on each child.",
+    "New selected sleeve drawing cache and native hand-fold copies.",
+    "Original selected hand/sleeve objects may be hidden, while their source geometry remains intact."
+  ],
+  "quality_limit": "Cold geometry and data preservation checks do not approve hand anatomy, perceived weight, cloth appeal or final artistic quality."
+}

@@ -1,0 +1,51 @@
+{
+  "reviewer": "visual_review subagent",
+  "candidate": "v048a",
+  "decision": "KEEP the bounded sleeve-crown and new-head charcoal changes as the latest reviewed refinement; the shot and trailer remain unfinished.",
+  "method": "Dense temporal sample inspection of decoded actual4K movie imagery. Actor crops sample every third frame and are displayed in chronological sheets; the 12 head-turn crops retain native4K pixels and are consecutive. This is not continuous-speed playback observation or full-frame-by-frame artistic review.",
+  "evidence_viewed": [
+    "renders/refinement_v048a/review_evidence/Actor_Chronology_1.jpg",
+    "renders/refinement_v048a/review_evidence/Actor_Chronology_3.jpg",
+    "renders/refinement_v048a/review_evidence/Actor_Chronology_5.jpg",
+    "renders/refinement_v048a/review_evidence/Head_Turn_Actual4K_Consecutive_1.jpg",
+    "renders/refinement_v048a/review_evidence/Head_Turn_Actual4K_Consecutive_2.jpg"
+  ],
+  "actor_frames_sampled": [1801, 1804, 1807, 1810, 1813, 1816, 1819, 1822, 1849, 1852, 1855, 1858, 1861, 1864, 1867, 1870, 1897, 1900, 1903, 1906, 1909, 1912, 1915, 1918],
+  "head_frames_consecutive": [1839, 1840, 1841, 1842, 1843, 1844, 1845, 1846, 1847, 1848, 1849, 1850],
+  "retained_improvements": [
+    "Rounded shoulder crowns remain visually attached to the clothing across the inspected leaning, recovery and late-offer poses. No newly exposed circular joint cap, conspicuous crown gap or alternating sleeve brightness flash was observed in these samples.",
+    "The new girl turn drawings now share the boy and hand charcoal range. White eyes remain distinct, and the final left profile maintains a consistent value family from frame1848 into the late offered-touch sequence.",
+    "The small cuff mouth reduction is compatible with the sampled poses. It is an incremental improvement, not a resolution of all sleeve anatomy or deformation."
+  ],
+  "remaining_art_issues": [
+    {
+      "issue": "Visible replacement-drawing changes through the head turn",
+      "frames": [1842, 1844, 1846, 1848],
+      "assessment": "The original right profile, quarter, front, left quarter and final profile have noticeably different hairline/silhouette drawings. Their on-twos replacement sequence remains quick and stepped. The color compression reduces the old brightness discontinuity but does not remove those authored shape changes. No extra overlapping or missing head was seen in the consecutive crops."
+    },
+    {
+      "issue": "Frontal face contrast is very restrained",
+      "frames": [1842, 1843, 1844, 1845],
+      "assessment": "The white eyes dominate the front and right-quarter charcoal faces while mouth/nose planes are very subtle. This is compatible with the requested dark silhouette direction, but should be judged at intended playback speed before any further darkening. Do not reduce the whole-asset gain again merely to remove the remaining fine hair-strand style difference."
+    },
+    {
+      "issue": "Body and limb construction still feels mechanical",
+      "frames": [1816, 1819, 1849, 1855, 1867, 1918],
+      "assessment": "Sleeve cuffs still form angular wedges, exposed forearms remain straight thin facets, and the boy trouser/cuff bands show planar joins. Existing body weight/catch and recovery retain a posed cutout read. These limitations predate the bounded v048a contour/material edits and are not grounds to reverse the improved crowns."
+    },
+    {
+      "issue": "Late contact is a light offer",
+      "frames": [1900, 1903, 1906, 1909, 1912, 1915, 1918],
+      "assessment": "Hands approach and read as near fingertip contact or a light offered touch. The sampled silhouettes do not establish a firm supportive clasp or transferred body weight. Preserve this description when reporting the shot."
+    },
+    {
+      "issue": "Main smoke remains insufficiently connected to damage",
+      "frames": [1858, 1867, 1897, 1906, 1918],
+      "assessment": "The preserved detailed smoke cloud still lifts into a discrete hanging mass and dissipates without a strong persistent visible ground scar. This pass did not repair the principal impact design."
+    }
+  ],
+  "technical_status_source": "Parent agent reported completed native4K movie, 120 decoded frames, five seconds at24fps, and original-audio correlation0.999333. Those checks are separate from this visual assessment.",
+  "artistic_acceptance": false,
+  "full_trailer_propagated": false,
+  "mutations": "Only this review note was added. No native scenes, render jobs or source images were altered."
+}

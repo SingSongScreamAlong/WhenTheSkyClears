@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-17",
+  "guide": "../ink_wash_v001/evidence/dcc_agent_workflows.md",
+  "contract": "dcc-mcp-production-reuse/v1",
+  "guide_shape_check": "passed again before this revision",
+  "existing_assets_reused": ["Original v002 hot launch image for a short phase only", "Original v002 dust paint", "Refined native debris", "Existing isolated held-shot camera, background and foreground/receiver maps"],
+  "new_asset": "One original built-in imagegen atlas with four different cold-smoke forms. Generated alpha preserved byte-for-byte; cropping, color, edge feather and flow occur in editable Blender mesh/material nodes.",
+  "discovery": {"available_skills": "DCC-MCP native Blender and imagegen workflows inspected", "tool_catalog": "No DCC marketplace tool is callable in the current deferred tool catalog; CLI not on PATH. Existing verified background process workflow reused under explicit user instruction.", "official_market_query": "site:extensions.blender.org smoke explosion effects", "plausible_candidate": "BFDS fire simulations7.2.0, https://extensions.blender.org/add-ons/bfds/", "rejection": "Engineering FDS workflow and a new install, rather than a ready painterly film asset. User prohibits new software; not installed or called. No rights/compatibility acceptance claimed.", "selected_approach": "Minimal native revision of the existing benchmark, preserving existing sources and no third-party stock dependency."},
+  "ownership": "Production owns lighting/contact/live occlusion. This new collection has no lights; proof modulates only the pre-existing held receiver map.",
+  "compute": "No fluid simulation or cache bake. One-thread960x540 CPU key check completed in6.62seconds. Full1080p key/motion render deferred whenever a competing Blender worker is detected. Expected GPU motion cost roughly1minute for120frames plus a matched legacy reference.",
+  "first_gpu_deferral": {"action": "Six-key GPU render", "target": "native/WTSC_Evolution_Proof_v003.blend", "reason": "Production build_battlefield_proof.py worker35364 active", "outcome": "No GPU render started; CPU-only independent checks continued."}
+}

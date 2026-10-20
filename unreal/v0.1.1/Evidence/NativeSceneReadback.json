@@ -1,0 +1,311 @@
+{
+  "utc": "2026-10-19T21:26:40.156550+00:00",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "level": "/Game/Maps/ShelterDawn",
+  "stage_scale": [
+    1.0,
+    -1.0,
+    1.0
+  ],
+  "map_reopened_and_saved": true,
+  "stage_components": 299,
+  "prop_meshes": {
+    "barrel_stove": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/StaticMeshes/barrel_stove_static.barrel_stove_static",
+    "bench_vice_01": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/StaticMeshes/bench_vice_01_static.bench_vice_01_static",
+    "medical_box": "/Game/WTSC/Props/medical_box/medical_box_static/StaticMeshes/medical_box_static.medical_box_static",
+    "plastic_bottle_gallon": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/StaticMeshes/plastic_bottle_gallon_static.plastic_bottle_gallon_static",
+    "russian_food_cans_01": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/StaticMeshes/russian_food_cans_01_static.russian_food_cans_01_static",
+    "vintage_day_bed": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/StaticMeshes/vintage_day_bed_static.vintage_day_bed_static",
+    "wooden_table_02": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/StaticMeshes/wooden_table_02_static.wooden_table_02_static"
+  },
+  "assets": [
+    {
+      "path": "/Game/Maps/ShelterDawn.ShelterDawn",
+      "class": "World"
+    },
+    {
+      "path": "/Game/WTSC/EstablishedArt/boy_atlas.boy_atlas",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/EstablishedArt/girl_profile.girl_profile",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/EstablishedArt/Village_Empty_v001.Village_Empty_v001",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Backdrop.M_Backdrop",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyArm.M_BoyArm",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyBoot.M_BoyBoot",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyCoat.M_BoyCoat",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyForearm.M_BoyForearm",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyHand.M_BoyHand",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyHead.M_BoyHead",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyLeg.M_BoyLeg",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyShin.M_BoyShin",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoySleeve.M_BoySleeve",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_BoyThigh.M_BoyThigh",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Brick.M_Brick",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Bundle.M_Bundle",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Cloth.M_Cloth",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Dark.M_Dark",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_DarkWood.M_DarkWood",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_FadedBlue.M_FadedBlue",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_GirlBlouse.M_GirlBlouse",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_GirlDress.M_GirlDress",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_GirlProfile.M_GirlProfile",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_GirlSleeve.M_GirlSleeve",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Lamp.M_Lamp",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Metal.M_Metal",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Ochre.M_Ochre",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_OldWood.M_OldWood",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Plaster.M_Plaster",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Road.M_Road",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_ShopPlaster.M_ShopPlaster",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Sky.M_Sky",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Stain.M_Stain",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Stone.M_Stone",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_WarmPlaster.M_WarmPlaster",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Materials/M_Wood.M_Wood",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/Materials/barrel_stove.barrel_stove",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/StaticMeshes/barrel_stove_static.barrel_stove_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/Textures/barrel_stove_diff.barrel_stove_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/Textures/barrel_stove_metal-barrel_stove_rough.barrel_stove_metal-barrel_stove_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/Textures/barrel_stove_nor_gl.barrel_stove_nor_gl",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/Materials/bench_vice_01.bench_vice_01",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/StaticMeshes/bench_vice_01_static.bench_vice_01_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/Textures/bench_vice_01_diff.bench_vice_01_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/Textures/bench_vice_01_metal-bench_vice_01_rough.bench_vice_01_metal-bench_vice_01_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/Textures/bench_vice_01_nor_gl.bench_vice_01_nor_gl",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/medical_box/medical_box_static/Materials/medical_box.medical_box",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/medical_box/medical_box_static/StaticMeshes/medical_box_static.medical_box_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/medical_box/medical_box_static/Textures/medical_box_diff.medical_box_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/medical_box/medical_box_static/Textures/medical_box_metal-medical_box_rough.medical_box_metal-medical_box_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/medical_box/medical_box_static/Textures/medical_box_nor_gl.medical_box_nor_gl",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/Materials/plastic_bottle_gallon.plastic_bottle_gallon",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/StaticMeshes/plastic_bottle_gallon_static.plastic_bottle_gallon_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/Textures/plastic_bottle_gallon_diff.plastic_bottle_gallon_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/Textures/plastic_bottle_gallon_nor_gl.plastic_bottle_gallon_nor_gl",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/Textures/plastic_bottle_gallon_rough.plastic_bottle_gallon_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/Materials/russian_food_cans_01.russian_food_cans_01",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/StaticMeshes/russian_food_cans_01_static.russian_food_cans_01_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/Textures/russian_food_cans_01_diff.russian_food_cans_01_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/Textures/russian_food_cans_01_metallic-russian_food_cans_01_rough.russian_food_cans_01_metallic-russian_food_cans_01_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/Textures/russian_food_cans_01_nor_gl.russian_food_cans_01_nor_gl",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/Materials/vintage_day_bed.vintage_day_bed",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/StaticMeshes/vintage_day_bed_static.vintage_day_bed_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/Textures/vintage_day_bed_diff.vintage_day_bed_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/Textures/vintage_day_bed_metal-vintage_day_bed_rough.vintage_day_bed_metal-vintage_day_bed_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/Textures/vintage_day_bed_nor_gl.vintage_day_bed_nor_gl",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/Materials/wooden_table_02.wooden_table_02",
+      "class": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/StaticMeshes/wooden_table_02_static.wooden_table_02_static",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/Textures/wooden_table_02_diff.wooden_table_02_diff",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/Textures/wooden_table_02_metal-wooden_table_02_rough.wooden_table_02_metal-wooden_table_02_rough",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/Textures/wooden_table_02_nor_gl.wooden_table_02_nor_gl",
+      "class": "Texture2D"
+    }
+  ]
+}

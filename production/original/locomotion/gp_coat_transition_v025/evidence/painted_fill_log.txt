@@ -1,0 +1,3 @@
+00:00.735  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\native\WTSC_GP_Coat_Transition_Pigment_Study_v025b.blend"
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\add_painted_fill_carrier.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  source=coat.data.materials[0];m=bpy.data.materials.new('V025b | original grain on drawn coat fill');m.use_nodes=True;n=m.node_tree.nodes;n.clear();l=m.node_tree.links

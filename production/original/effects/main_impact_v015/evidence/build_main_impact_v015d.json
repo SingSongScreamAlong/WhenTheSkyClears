@@ -1,0 +1,718 @@
+{
+  "native_context": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\native\\WTSC_Painted_Main_Impact_Context_v015d.blend",
+  "native_append": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\native\\WTSC_Painted_Main_Impact_Append_v015d.blend",
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Refinement_v047g.blend",
+  "source_sha256": "0e3755aecaabc9ee31e2f0000b16e25de13b095d5e7f18c2983b4c8accb4ee54",
+  "source_unchanged": true,
+  "blender": "5.2.2 LTS",
+  "scene": "WTSC_MAIN_GROUND_IMPACT_CANDIDATE_v015d",
+  "collection": "FXv015d | PAINTED SOIL RUPTURE | separated native planes",
+  "root": "FXv015d | fixed origin and evolving mass controls",
+  "origin": [
+    109.0999984741211,
+    10.0,
+    -0.7048802971839905
+  ],
+  "impact_start": 1824,
+  "native_resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "range": [
+    1801,
+    1920
+  ],
+  "original_image_RGBA_preserved": true,
+  "texture_pixels": [
+    2172,
+    724
+  ],
+  "texture_claim": "Original2172x724atlas; native output is3840x2160, no texture4Kclaim.",
+  "texture_sha256": "042872d81d0c9432650ec720660c4d5d1d96e0d6a8c4721fbf4daa39324d3b0e",
+  "texture_source": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\assets\\Painted_Soil_Rupture_4Stages_v015b.png",
+  "drawings": [
+    {
+      "stage": "Ignition",
+      "age_exposure": [
+        0,
+        5
+      ],
+      "objects": [
+        "FXv015 | Ignition original island 00",
+        "FXv015 | Ignition original island 01",
+        "FXv015 | Ignition original island 02",
+        "FXv015 | Ignition original island 03",
+        "FXv015 | Ignition original island 04",
+        "FXv015 | Ignition original island 05",
+        "FXv015 | Ignition original island 06"
+      ],
+      "height_m": 0.43,
+      "scale_m_per_original_pixel": 0.0016796875,
+      "opacity_expression": "I*(1-(min(1,max(0,(t-(3))/(2)))*min(1,max(0,(t-(3))/(2)))*(3-2*min(1,max(0,(t-(3))/(2))))))",
+      "upper_height_expression": ".43",
+      "native_y": 0.045
+    },
+    {
+      "stage": "RisingTear",
+      "age_exposure": [
+        1,
+        10
+      ],
+      "objects": [
+        "FXv015 | RisingTear original island 00",
+        "FXv015 | RisingTear original island 01",
+        "FXv015 | RisingTear original island 02",
+        "FXv015 | RisingTear original island 03",
+        "FXv015 | RisingTear original island 04",
+        "FXv015 | RisingTear original island 05",
+        "FXv015 | RisingTear original island 06"
+      ],
+      "height_m": 1.05,
+      "scale_m_per_original_pixel": 0.0025240384615384617,
+      "opacity_expression": "I*(min(1,max(0,(t-(1))/(2)))*min(1,max(0,(t-(1))/(2)))*(3-2*min(1,max(0,(t-(1))/(2)))))*(1-(min(1,max(0,(t-(6))/(4)))*min(1,max(0,(t-(6))/(4)))*(3-2*min(1,max(0,(t-(6))/(4))))))",
+      "upper_height_expression": "(0.43+(0.6200000000000001)*(min(1,max(0,(t-(1))/(3)))*min(1,max(0,(t-(1))/(3)))*(3-2*min(1,max(0,(t-(1))/(3))))))",
+      "native_y": 0.015
+    },
+    {
+      "stage": "MainFan",
+      "age_exposure": [
+        5,
+        22
+      ],
+      "objects": [
+        "FXv015 | MainFan original island 00",
+        "FXv015 | MainFan original island 01",
+        "FXv015 | MainFan original island 02",
+        "FXv015 | MainFan original island 03",
+        "FXv015 | MainFan original island 04",
+        "FXv015 | MainFan original island 05",
+        "FXv015 | MainFan original island 06",
+        "FXv015 | MainFan original island 07",
+        "FXv015 | MainFan original island 08",
+        "FXv015 | MainFan original island 09",
+        "FXv015 | MainFan original island 10",
+        "FXv015 | MainFan original island 11",
+        "FXv015 | MainFan original island 12",
+        "FXv015 | MainFan original island 13",
+        "FXv015 | MainFan original island 14",
+        "FXv015 | MainFan original island 15",
+        "FXv015 | MainFan original island 16",
+        "FXv015 | MainFan original island 17",
+        "FXv015 | MainFan original island 18",
+        "FXv015 | MainFan original island 19",
+        "FXv015 | MainFan original island 20",
+        "FXv015 | MainFan original island 21",
+        "FXv015 | MainFan original island 22",
+        "FXv015 | MainFan original island 23",
+        "FXv015 | MainFan original island 24",
+        "FXv015 | MainFan original island 25",
+        "FXv015 | MainFan original island 26",
+        "FXv015 | MainFan original island 27",
+        "FXv015 | MainFan original island 28",
+        "FXv015 | MainFan original island 29",
+        "FXv015 | MainFan original island 30",
+        "FXv015 | MainFan original island 31",
+        "FXv015 | MainFan original island 32",
+        "FXv015 | MainFan original island 33",
+        "FXv015 | MainFan original island 34",
+        "FXv015 | MainFan original island 35",
+        "FXv015 | MainFan original island 36",
+        "FXv015 | MainFan original island 37",
+        "FXv015 | MainFan original island 38",
+        "FXv015 | MainFan original island 39"
+      ],
+      "height_m": 1.75,
+      "scale_m_per_original_pixel": 0.0029560810810810812,
+      "opacity_expression": "I*(min(1,max(0,(t-(5))/(3)))*min(1,max(0,(t-(5))/(3)))*(3-2*min(1,max(0,(t-(5))/(3)))))*(1-(min(1,max(0,(t-(14))/(8)))*min(1,max(0,(t-(14))/(8)))*(3-2*min(1,max(0,(t-(14))/(8))))))",
+      "upper_height_expression": "(0.95+(0.8)*(min(1,max(0,(t-(5))/(4)))*min(1,max(0,(t-(5))/(4)))*(3-2*min(1,max(0,(t-(5))/(4))))))-.4*(min(1,max(0,(t-(9))/(9)))*min(1,max(0,(t-(9))/(9)))*(3-2*min(1,max(0,(t-(9))/(9)))))",
+      "native_y": -0.02
+    },
+    {
+      "stage": "Collapse",
+      "age_exposure": [
+        14,
+        48
+      ],
+      "objects": [
+        "FXv015 | Collapse original island 00",
+        "FXv015 | Collapse original island 01",
+        "FXv015 | Collapse original island 02",
+        "FXv015 | Collapse original island 03",
+        "FXv015 | Collapse original island 04",
+        "FXv015 | Collapse original island 05",
+        "FXv015 | Collapse original island 06",
+        "FXv015 | Collapse original island 07",
+        "FXv015 | Collapse original island 08"
+      ],
+      "height_m": 1.08,
+      "scale_m_per_original_pixel": 0.0031213872832369944,
+      "opacity_expression": "I*(min(1,max(0,(t-(14))/(6)))*min(1,max(0,(t-(14))/(6)))*(3-2*min(1,max(0,(t-(14))/(6)))))*(1-(min(1,max(0,(t-(31))/(17)))*min(1,max(0,(t-(31))/(17)))*(3-2*min(1,max(0,(t-(31))/(17))))))",
+      "upper_height_expression": "1.35-.27*(min(1,max(0,(t-(14))/(10)))*min(1,max(0,(t-(14))/(10)))*(3-2*min(1,max(0,(t-(14))/(10)))))-.38*(min(1,max(0,(t-(24))/(18)))*min(1,max(0,(t-(24))/(18)))*(3-2*min(1,max(0,(t-(24))/(18)))))",
+      "native_y": -0.055
+    }
+  ],
+  "debris": [
+    {
+      "name": "FXv015 | painted airborne clod 00",
+      "birth_age": 3,
+      "landing_age": 18.135485152000335,
+      "landing_x": -1.7320577026424293,
+      "final_floor_error_m": 5.089387383749866e-09,
+      "original_painted_fragment_pixel_bounds": [
+        1016,
+        250,
+        1032,
+        270
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 01",
+      "birth_age": 3,
+      "landing_age": 20.23640898427834,
+      "landing_x": -1.3639184132097724,
+      "final_floor_error_m": 5.089387383749866e-09,
+      "original_painted_fragment_pixel_bounds": [
+        1328,
+        250,
+        1344,
+        277
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 02",
+      "birth_age": 4,
+      "landing_age": 20.93877357563753,
+      "landing_x": -0.6393788924465481,
+      "final_floor_error_m": 3.5052669378199397e-09,
+      "original_painted_fragment_pixel_bounds": [
+        1360,
+        179,
+        1372,
+        196
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 03",
+      "birth_age": 3,
+      "landing_age": 19.18454794007053,
+      "landing_x": -0.15340081176269857,
+      "final_floor_error_m": 5.895804539024496e-09,
+      "original_painted_fragment_pixel_bounds": [
+        1327,
+        105,
+        1344,
+        120
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 04",
+      "birth_age": 4,
+      "landing_age": 20.819063737226045,
+      "landing_x": 0.5400081885027672,
+      "final_floor_error_m": 2.7230531995936502e-09,
+      "original_painted_fragment_pixel_bounds": [
+        973,
+        312,
+        985,
+        325
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 05",
+      "birth_age": 5,
+      "landing_age": 22.620174055380133,
+      "landing_x": 1.026814458119506,
+      "final_floor_error_m": 8.793029360187887e-10,
+      "original_painted_fragment_pixel_bounds": [
+        1174,
+        186,
+        1183,
+        201
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 06",
+      "birth_age": 4,
+      "landing_age": 18.65155333465895,
+      "landing_x": 1.5132761067118723,
+      "final_floor_error_m": 5.173313472051078e-09,
+      "original_painted_fragment_pixel_bounds": [
+        1340,
+        475,
+        1354,
+        492
+      ]
+    },
+    {
+      "name": "FXv015 | painted airborne clod 07",
+      "birth_age": 5,
+      "landing_age": 18.69073521300001,
+      "landing_x": 1.8959816685112707,
+      "final_floor_error_m": 5.852103218684235e-09,
+      "original_painted_fragment_pixel_bounds": [
+        1305,
+        429,
+        1312,
+        446
+      ]
+    }
+  ],
+  "object_count": 79,
+  "original_light_unchanged": true,
+  "old_geometry_disabled_only_in_context_copy": [
+    "FXv003 | brief torn ignition core",
+    "FXv003 | broad low asymmetric dust sheets",
+    "FXv003 | rolling smoke 00 | born 00",
+    "FXv003 | rolling smoke 01 | born 01",
+    "FXv003 | rolling smoke 02 | born 03",
+    "FXv003 | rolling smoke 03 | born 05",
+    "FXv003 | rolling smoke 04 | born 08",
+    "FXv003 | rolling smoke 05 | born 12",
+    "FXv003 | rolling smoke 06 | born 16",
+    "FXv003 | rolling smoke 07 | born 20",
+    "FXv003 | rolling smoke 08 | born 25",
+    "FXv003 | rolling smoke 09 | born 30",
+    "FXv003 | rolling smoke 10 | born 36",
+    "FXv003 | rolling smoke 11 | born 42",
+    "FXv003 | rolling smoke 12 | born 48",
+    "FXv003 | short hot launch jet | gone after hot_frames",
+    "FXv003 | weighted debris 00",
+    "FXv003 | weighted debris 01",
+    "FXv003 | weighted debris 02",
+    "FXv003 | weighted debris 03",
+    "FXv003 | weighted debris 04",
+    "FXv003 | weighted debris 05",
+    "FXv003 | weighted debris 06",
+    "FXv003 | weighted debris 07",
+    "FXv003 | weighted debris 08",
+    "FXv003 | weighted debris 09",
+    "FXv003 | weighted debris 10",
+    "FXv003 | weighted debris 11",
+    "FXv003 | weighted debris 12",
+    "FXv003 | weighted debris 13",
+    "FXv003 | weighted debris 14",
+    "FXv003 | weighted debris 15",
+    "FXv003 | weighted debris 16",
+    "FXv003 | weighted debris 17",
+    "FXv003 | weighted debris 18",
+    "FXv003 | weighted debris 19",
+    "FXv003 | weighted debris 20",
+    "FXv003 | weighted debris 21",
+    "FXv003 | weighted debris 22",
+    "FXv003 | weighted debris 23",
+    "FXv003 | weighted debris 24",
+    "FXv003 | weighted debris 25",
+    "FXv003 | weighted debris 26",
+    "FXv003 | weighted debris 27",
+    "FXv003 | weighted debris 28",
+    "FXv003 | weighted debris 29",
+    "FXv003 | weighted debris 30",
+    "FXv003 | weighted debris 31",
+    "FXv003 | weighted debris 32",
+    "FXv003 | weighted debris 33",
+    "FXv003 | weighted debris 34",
+    "FXv003 | weighted debris 35",
+    "FXv003 | weighted debris 36",
+    "FXv003 | weighted debris 37"
+  ],
+  "rendered": false,
+  "scar_revision": "Three native irregular painted patches; original stage geometry and RGBA unchanged.",
+  "artistic_acceptance": false,
+  "limits": [
+    "Four source paintings remain; overlapping native deformation must be judged in actual consecutive frames.",
+    "Painted depth, not simulated volumetric smoke or excavated physical ground.",
+    "Native fragment support follows approximate prior painted terrain mask.",
+    "No new light/camera/body changes and no full-trailer propagation."
+  ],
+  "parent_v015b": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\native\\WTSC_Painted_Main_Impact_Context_v015b.blend",
+  "parent_v015b_sha256": "a4039d8d424b7e0f737a5cae0adc45fc07d422ed9841b8d4c4312c7d4cc6e65a",
+  "native_mass_changed_objects": [
+    "FXv015 | Ignition original island 00",
+    "FXv015 | Ignition original island 01",
+    "FXv015 | Ignition original island 02",
+    "FXv015 | Ignition original island 03",
+    "FXv015 | Ignition original island 04",
+    "FXv015 | Ignition original island 05",
+    "FXv015 | Ignition original island 06",
+    "FXv015 | RisingTear original island 00",
+    "FXv015 | RisingTear original island 01",
+    "FXv015 | RisingTear original island 02",
+    "FXv015 | RisingTear original island 03",
+    "FXv015 | RisingTear original island 04",
+    "FXv015 | RisingTear original island 05",
+    "FXv015 | RisingTear original island 06",
+    "FXv015 | MainFan original island 00",
+    "FXv015 | MainFan original island 01",
+    "FXv015 | MainFan original island 02",
+    "FXv015 | MainFan original island 03",
+    "FXv015 | MainFan original island 04",
+    "FXv015 | MainFan original island 05",
+    "FXv015 | MainFan original island 06",
+    "FXv015 | MainFan original island 07",
+    "FXv015 | MainFan original island 08",
+    "FXv015 | MainFan original island 09",
+    "FXv015 | MainFan original island 10",
+    "FXv015 | MainFan original island 11",
+    "FXv015 | MainFan original island 12",
+    "FXv015 | MainFan original island 13",
+    "FXv015 | MainFan original island 14",
+    "FXv015 | MainFan original island 15",
+    "FXv015 | MainFan original island 16",
+    "FXv015 | MainFan original island 17",
+    "FXv015 | MainFan original island 18",
+    "FXv015 | MainFan original island 19",
+    "FXv015 | MainFan original island 20",
+    "FXv015 | MainFan original island 21",
+    "FXv015 | MainFan original island 22",
+    "FXv015 | MainFan original island 23",
+    "FXv015 | MainFan original island 24",
+    "FXv015 | MainFan original island 25",
+    "FXv015 | MainFan original island 26",
+    "FXv015 | MainFan original island 27",
+    "FXv015 | MainFan original island 28",
+    "FXv015 | MainFan original island 29",
+    "FXv015 | MainFan original island 30",
+    "FXv015 | MainFan original island 31",
+    "FXv015 | MainFan original island 32",
+    "FXv015 | MainFan original island 33",
+    "FXv015 | MainFan original island 34",
+    "FXv015 | MainFan original island 35",
+    "FXv015 | MainFan original island 36",
+    "FXv015 | MainFan original island 37",
+    "FXv015 | MainFan original island 38",
+    "FXv015 | MainFan original island 39",
+    "FXv015 | Collapse original island 00",
+    "FXv015 | Collapse original island 01",
+    "FXv015 | Collapse original island 02",
+    "FXv015 | Collapse original island 03",
+    "FXv015 | Collapse original island 04",
+    "FXv015 | Collapse original island 05",
+    "FXv015 | Collapse original island 06",
+    "FXv015 | Collapse original island 07",
+    "FXv015 | Collapse original island 08"
+  ],
+  "native_motion_revision": "v015c overlapping own-stage opacity envelopes; nonuniform fixed-base upper mass; charcoal values0.60 instead0.78",
+  "parent_v015b_unchanged": true,
+  "parent_v015c": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\native\\WTSC_Painted_Main_Impact_Context_v015c.blend",
+  "parent_v015c_sha256": "8ef82ac47f02a5746161159806a0344a08c33adff0cfb5b3b1aeb9d911426858",
+  "parent_v015c_unchanged": true,
+  "native_render_fix": "Stage planes separated inY; zero-alpha entry frame not drawn; same original RGBA, mass deformation, opacity curves, values, light, debris and scar.",
+  "depth_fix_objects": [
+    {
+      "object": "FXv015 | Ignition original island 00",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | Ignition original island 01",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | Ignition original island 02",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | Ignition original island 03",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | Ignition original island 04",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | Ignition original island 05",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | Ignition original island 06",
+      "native_y": 0.045,
+      "zero_opacity_entry_hidden": false
+    },
+    {
+      "object": "FXv015 | RisingTear original island 00",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | RisingTear original island 01",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | RisingTear original island 02",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | RisingTear original island 03",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | RisingTear original island 04",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | RisingTear original island 05",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | RisingTear original island 06",
+      "native_y": 0.015,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 00",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 01",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 02",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 03",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 04",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 05",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 06",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 07",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 08",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 09",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 10",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 11",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 12",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 13",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 14",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 15",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 16",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 17",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 18",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 19",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 20",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 21",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 22",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 23",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 24",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 25",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 26",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 27",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 28",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 29",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 30",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 31",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 32",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 33",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 34",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 35",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 36",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 37",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 38",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | MainFan original island 39",
+      "native_y": -0.02,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 00",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 01",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 02",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 03",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 04",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 05",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 06",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 07",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    },
+    {
+      "object": "FXv015 | Collapse original island 08",
+      "native_y": -0.055,
+      "zero_opacity_entry_hidden": true
+    }
+  ]
+}

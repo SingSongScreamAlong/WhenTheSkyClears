@@ -1,0 +1,51 @@
+{
+  "status": "Actual4K review assembled and120frames fully decoded.",
+  "prefix": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047f\\WTSC_Refinement_v047f_75_80_4K.mp4",
+    "bytes": 9538417,
+    "sha256": "621cd2d0b406048fbf1d24e6fc97a86efa266d7814deb035dab5428bcfacb5d7"
+  },
+  "prefix_native_frames": [
+    1801,
+    1847
+  ],
+  "prefix_frame_count": 47,
+  "new_native_tail": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\WTSC_Refinement_v047g_Tail_1848_1920_4K.mp4",
+    "bytes": 6005025,
+    "sha256": "a2f883d0b463737002e38e42249be906a07a635b856fae07691591ce7cb573ef"
+  },
+  "tail_frames": [
+    1848,
+    1920
+  ],
+  "tail_frame_count": 73,
+  "output": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\refinement_v047g\\WTSC_Refinement_v047g_75_80_4K.mp4",
+    "bytes": 10697461,
+    "sha256": "478fb7d4e681db8c6ac291d028280b315863e9752388016d880e2ad8a3056703"
+  },
+  "frames": 120,
+  "fps": 24,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "native_unchanged_prefix_key_audits": [
+    {
+      "frame": 1842,
+      "native_head_image_max_channel_difference": 0
+    },
+    {
+      "frame": 1844,
+      "native_head_image_max_channel_difference": 0
+    },
+    {
+      "frame": 1846,
+      "native_head_image_max_channel_difference": 0
+    }
+  ],
+  "method": "First47 unchanged nativeF4K frames plus73 newly rendered nativeG4K frames, decoded and encoded as one review movie. Original75-80second WAV segment remuxed as AAC. No scaling, frame interpolation or invented frames.",
+  "native_current_file": "shots/world/WTSC_Open_Battlefield_Refinement_v047g.blend",
+  "artistic_acceptance": false
+}

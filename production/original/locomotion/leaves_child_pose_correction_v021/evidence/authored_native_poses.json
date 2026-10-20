@@ -1,0 +1,803 @@
+[
+  {
+    "phase": "R_CONTACT",
+    "study_frame": 1.0,
+    "source_frame": 9.75,
+    "hip_world": [
+      0.0,
+      0.0,
+      0.5897787809371948
+    ],
+    "hip_local": [
+      0.0,
+      0.0,
+      0.5897787809371948
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 9.313225746154785e-09,
+        "active_contact_error_m": 1.7572159193561605e-08
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 0.0,
+        "active_contact_error_m": 1.4901161193847656e-08
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.208859698806852
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 0.22899729976775132
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.196330783991521
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 5.875964785411425
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.5258244846700757,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 3.227916214232813e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.41517388566217844,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.4901751036797056e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5137169930547357,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 5.578450258901058e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.3957062400100276,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 1.2289868538138883e-07,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "R_LOADING",
+    "study_frame": 3.25,
+    "source_frame": 12.0,
+    "hip_world": [
+      0.0611269511282444,
+      0.0,
+      0.5846326947212219
+    ],
+    "hip_local": [
+      -0.008002031594514847,
+      0.0,
+      0.5846326947212219
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 0.0,
+        "active_contact_error_m": 2.9802322387695312e-08
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 0.0,
+        "active_contact_error_m": 1.4901161193847656e-08
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 6.763352353889591
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 0.8620734466710701
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.314606821971105
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 7.334491064738765
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.5121405442890672,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 6.854586788939406e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.4155666857158791,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.192428598347789e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5131043827617067,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 8.585720120503394e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.3955739331017855,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 8.432672691746307e-08,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "R_PASSING",
+    "study_frame": 9.0,
+    "source_frame": 17.75,
+    "hip_world": [
+      0.2890729606151581,
+      0.0,
+      0.6264700889587402
+    ],
+    "hip_local": [
+      0.043281033635139465,
+      0.0,
+      0.6264700889587402
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 1.4901161193847656e-08,
+        "active_contact_error_m": 3.332000937312528e-08
+      },
+      {
+        "side": "far",
+        "mode": "SWING",
+        "actual_sole_min_z_m": 0.060080386698246,
+        "active_contact_error_m": null
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 1.193373960157507
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 3.703907426513072
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.5794596421663947
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 2.462037949309711
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.5257717112307229,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 2.3395297628801576e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.4128788875564419,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 3.7253029148968236e-08,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.4583498769360894,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 1.5578813052340114e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.40938755334196303,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 7.45135270197336e-08,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "R_UP",
+    "study_frame": 10.25,
+    "source_frame": 19.0,
+    "hip_world": [
+      0.3272908926010132,
+      0.0,
+      0.6274346709251404
+    ],
+    "hip_local": [
+      0.043093979358673096,
+      0.0,
+      0.6274346709251404
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 3.725290298461914e-09,
+        "active_contact_error_m": 3.003425057343598e-08
+      },
+      {
+        "side": "far",
+        "mode": "SWING",
+        "actual_sole_min_z_m": 0.06002340465784073,
+        "active_contact_error_m": null
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.23738826720439132
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 2.1036611252103152
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.35990873414460894
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 1.4210640791119944
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.53086049161882,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 1.1780402288468106e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.41053498980924774,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 6.144079850163574e-08,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.44230920503460913,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 1.7791718142689036e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.4117723805760322,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 6.144090514615777e-08,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "L_CONTACT",
+    "study_frame": 17.0,
+    "source_frame": 25.75,
+    "hip_world": [
+      0.5438980460166931,
+      0.0,
+      0.5861138105392456
+    ],
+    "hip_local": [
+      0.052314192056655884,
+      0.0,
+      0.5861138105392456
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 2.9802322387695312e-08,
+        "active_contact_error_m": 2.9802322387695312e-08
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": -2.9802322387695312e-08,
+        "active_contact_error_m": 6.664001874625056e-08
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.4679932339357276
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 2.527239148570064
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 3.481103240692671
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 0.7311491256482393
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.5267145076118027,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 1.0536712127723524e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.39184515587599145,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.1388328148811407e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5146422051010755,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 8.117731529336401e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.4112397958553366,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 6.641550031136805e-10,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "L_LOADING",
+    "study_frame": 17.25,
+    "source_frame": 26.0,
+    "hip_world": [
+      0.5478144884109497,
+      0.0,
+      0.5854529738426208
+    ],
+    "hip_local": [
+      0.04854962229728699,
+      0.0,
+      0.5854529738426208
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 1.4901161193847656e-08,
+        "active_contact_error_m": 6.143906154658885e-08
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": -4.470348358154297e-08,
+        "active_contact_error_m": 4.470348358154297e-08
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.9132169960416264
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 3.600054400183028
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.7924611570137716
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 2.3646334753298053
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.5240555359929874,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 6.795975119466414e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.39139254502232074,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.7951691357793985e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5141451435849876,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 3.1214998563703677e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.4111016243546942,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 7.004406908086853e-08,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "L_PASSING",
+    "study_frame": 25.25,
+    "source_frame": 34.0,
+    "hip_world": [
+      0.7811830043792725,
+      0.0,
+      0.6098387837409973
+    ],
+    "hip_local": [
+      0.03612619638442993,
+      0.0,
+      0.6098387837409973
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "SWING",
+        "actual_sole_min_z_m": 0.03343687951564789,
+        "active_contact_error_m": null
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": -1.4901161193847656e-08,
+        "active_contact_error_m": 1.4901161193847656e-08
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.0
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 0.0
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.19077408040869226
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 0.3146577970783489
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.47553022555727054,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 1.6189005841302235e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.4108485085644965,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.1373253004019429e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5108427707478512,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 1.1896619933606268e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.40522568686918964,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 1.2288486197824968e-07,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "L_UP",
+    "study_frame": 27.25,
+    "source_frame": 36.0,
+    "hip_world": [
+      0.8059720396995544,
+      0.0,
+      0.6159560680389404
+    ],
+    "hip_local": [
+      -0.0005327463150024414,
+      0.0,
+      0.6159560680389404
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "SWING",
+        "actual_sole_min_z_m": 0.02199885994195938,
+        "active_contact_error_m": null
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": -2.2351741790771484e-08,
+        "active_contact_error_m": 1.2128666487410446e-07
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 4.1411330216081526
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 6.695945216970736
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 0.28939100634776765
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 6.36152805614951
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.49175626921936183,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 1.2258874771277588e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.4128385782116352,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 8.429372365829126e-08,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5188776526314383,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 3.7932163659804644e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.40107839191258954,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 9.543944393054467e-08,
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "phase": "CYCLE_BOOKEND",
+    "study_frame": 32,
+    "source_frame": 40.75,
+    "hip_world": [
+      0.9524437189102173,
+      0.0,
+      0.5897787809371948
+    ],
+    "hip_local": [
+      0.0,
+      0.0,
+      0.5897787809371948
+    ],
+    "foot": [
+      {
+        "side": "near",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 9.313225746154785e-09,
+        "active_contact_error_m": 9.313225746154785e-09
+      },
+      {
+        "side": "far",
+        "mode": "CONTACT_POLYGON_PIVOT",
+        "actual_sole_min_z_m": 0.0,
+        "active_contact_error_m": 0.0
+      }
+    ],
+    "leg_residuals": [
+      {
+        "side": "near",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.208859698806852
+      },
+      {
+        "side": "near",
+        "bone": "shin",
+        "source_angle_residual_deg": 0.22899729976775132
+      },
+      {
+        "side": "far",
+        "bone": "thigh",
+        "source_angle_residual_deg": 2.196330783991521
+      },
+      {
+        "side": "far",
+        "bone": "shin",
+        "source_angle_residual_deg": 5.875931488239222
+      }
+    ],
+    "IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.5258244740430782,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 3.2791020102300326e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.41517388902699476,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.7943743494232895e-07,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.5137169712998175,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 5.573113971283324e-06,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.395706230595745,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 1.788280650392189e-07,
+        "reachable": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "scope": "Bounded native garment construction/art study; static poses only",
+  "source_sha256": "8cd6c869cc7bb390c094fd9ac82b5d659dec8b7a967bd67533f18110ee3960f3",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "frames": [
+    1,
+    4,
+    11,
+    20,
+    27
+  ],
+  "main_review_frames": [
+    1,
+    4,
+    11,
+    20
+  ],
+  "extra_overlap_frame": 27,
+  "original_actions_changed": [],
+  "vertices": 561,
+  "quads": 512,
+  "connected_surface": true,
+  "records": [
+    {
+      "frame": 1,
+      "hip": [
+        0.0,
+        0.0,
+        0.5897787809371948
+      ],
+      "neck": [
+        0.025534292683005333,
+        -5.759718223197208e-12,
+        1.0826292037963867
+      ],
+      "compression_from_existing_hip_drop": 0,
+      "old_vertical_extent_m": [
+        0.5807890892028809,
+        1.1090387105941772
+      ],
+      "new_vertical_extent_m": [
+        0.5807890892028809,
+        1.1090387105941772
+      ],
+      "new_horizontal_extent_m": [
+        -0.1066497191786766,
+        0.12957121431827545
+      ]
+    },
+    {
+      "frame": 4,
+      "hip": [
+        -0.008874349296092987,
+        0.0,
+        0.5748955011367798
+      ],
+      "neck": [
+        0.05063766986131668,
+        1.3996666325954976e-10,
+        1.0606578588485718
+      ],
+      "compression_from_existing_hip_drop": 0.9922186533610027,
+      "old_vertical_extent_m": [
+        0.5660326480865479,
+        1.0879446268081665
+      ],
+      "new_vertical_extent_m": [
+        0.5660326480865479,
+        1.0879446268081665
+      ],
+      "new_horizontal_extent_m": [
+        -0.11065445095300674,
+        0.1449730098247528
+      ]
+    },
+    {
+      "frame": 11,
+      "hip": [
+        0.03175008296966553,
+        0.0,
+        0.6075012683868408
+      ],
+      "neck": [
+        0.05786770582199097,
+        5.2959255904261315e-12,
+        1.0919866561889648
+      ],
+      "compression_from_existing_hip_drop": 0,
+      "old_vertical_extent_m": [
+        0.6008845567703247,
+        1.118598222732544
+      ],
+      "new_vertical_extent_m": [
+        0.6008845567703247,
+        1.118598222732544
+      ],
+      "new_horizontal_extent_m": [
+        -0.0748794674873352,
+        0.16204172372817993
+      ]
+    },
+    {
+      "frame": 20,
+      "hip": [
+        0.025589585304260254,
+        0.0,
+        0.5749136209487915
+      ],
+      "neck": [
+        0.08079278469085693,
+        5.124672908252137e-11,
+        1.060732364654541
+      ],
+      "compression_from_existing_hip_drop": 0.9910106658935547,
+      "old_vertical_extent_m": [
+        0.5663242936134338,
+        1.0879279375076294
+      ],
+      "new_vertical_extent_m": [
+        0.5663242936134338,
+        1.0879279375076294
+      ],
+      "new_horizontal_extent_m": [
+        -0.07633595168590546,
+        0.17636066675186157
+      ]
+    },
+    {
+      "frame": 27,
+      "hip": [
+        0.0013447999954223633,
+        0.0,
+        0.607118546962738
+      ],
+      "neck": [
+        0.023597002029418945,
+        8.801445683381814e-11,
+        1.0918360948562622
+      ],
+      "compression_from_existing_hip_drop": 0,
+      "old_vertical_extent_m": [
+        0.5999414920806885,
+        1.118302822113037
+      ],
+      "new_vertical_extent_m": [
+        0.5999414920806885,
+        1.118302822113037
+      ],
+      "new_horizontal_extent_m": [
+        -0.10535919666290283,
+        0.1288861334323883
+      ]
+    }
+  ],
+  "original_paint_image": "Pair_Painterly_Near_Age_v015.png",
+  "original_image_packed": true,
+  "UV_reference_rows_t_y_left_seam_right": [
+    [
+      0,
+      258,
+      620,
+      657,
+      674
+    ],
+    [
+      0.12,
+      294,
+      578,
+      685,
+      699
+    ],
+    [
+      0.28,
+      350,
+      576,
+      681,
+      708
+    ],
+    [
+      0.46,
+      405,
+      572,
+      679,
+      716
+    ],
+    [
+      0.64,
+      455,
+      560,
+      675,
+      724
+    ],
+    [
+      0.8,
+      495,
+      552,
+      670,
+      730
+    ],
+    [
+      1,
+      535,
+      546,
+      666,
+      734
+    ]
+  ],
+  "UV_points_pulled_into_opaque_fabric": 16,
+  "source_UV_alpha_min_before_clamp": 0.0,
+  "texture_repeated_or_new_raster": false,
+  "construction": "One continuous garment surface follows existing pelvis/neck pose. Reduced triangular side flare; continuous front opening/placket mapping; one compression crease derived from existing hip drop; no separate rounded panel overlays.",
+  "vertical_extent_max_error_m": 0.0
+}

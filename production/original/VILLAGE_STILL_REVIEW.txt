@@ -1,0 +1,39 @@
+WHEN THE SKY CLEARS — ONE VILLAGE FRAME FOR REVIEW
+16 October 2026 | v013 | STILL APPROVAL PENDING
+
+Preview:
+renders/village_lookdev/Village_Still_v013_4K.png
+
+Editable Blender source:
+shots/world/WTSC_Village_Still_Review_v013.blend
+Active scene: WTSC_VILLAGE_STILL_v013. Frame 1 only.
+
+Comparison:
+Previous village: renders/living_world/decoded_review_v010/01_Village.png
+Handoff atmosphere reference: source/image1.png (PROVISIONAL for this review).
+Detailed diagnosis/reference limits: notes/village_lookdev/reference_and_review_v013.txt
+
+The new still uses four independently placed painted depth planes and the
+existing editable native Grease Pencil pair, recolored pure black without
+lighting or shading. Character proportions/held pose remain provisional.
+There is no gait, acting or scrolling animation in this scene.
+
+Output is a native 3840 x 2160 Blender composite. GPT imagegen painting sources
+are 1672 x 941 and resampled by Blender; this is not native 4K source painting.
+All three paintings are packed; external workspace copies are retained under
+sets/village_lookdev/v012/. Exact built-in imagegen prompts are in
+notes/village_lookdev/imagegen_prompts_v012.json.
+
+Review order:
+1. Conrad reviews this ONE still for look, depth and silhouette readability.
+2. After still approval: ONE FIVE-second scrolling test.
+3. After scrolling approval: consider a new full 100-second render.
+
+No new five-second or 100-second animation has been rendered. Existing v010
+and v011 scenes and the previous 100-second movie are unchanged by SHA-256.
+
+Verification:
+notes/village_lookdev/native_reopen_v013.json
+notes/village_lookdev/media_verification_v013.json
+
+This is a provisional art-direction candidate, not an Arcane-quality claim.

@@ -1,0 +1,59 @@
+WHEN THE SKY CLEARS - OPEN INTEGRATION CHECKPOINT v043
+Status: preserved local5s integration checkpoint, NOT cinematic acceptance.
+Global75–80s /frames1801–1920 /120frames /24fps /3840x2160.
+
+4K MOVIE
+WTSC_LOCAL_WORKSPACE\renders\world_v016\integration_v043\WTSC_Combined_Open_75_80_4K_v043.mp4
+Bytes 9214367
+SHA256 4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9
+
+1080 VIEW
+WTSC_LOCAL_WORKSPACE\renders\world_v016\integration_v043\WTSC_Combined_Open_75_80_View_v043.mp4
+
+BEFORE / AFTER
+WTSC_LOCAL_WORKSPACE\renders\world_v016\integration_v043\WTSC_Open_Before_v040_After_v043_Different_Routes.mp4
+Actualpixels label v040original10.76m held route versus v043local0.562m
+performance+FX. Same75–80globaltime, DIFFERENT camera/route; not a perfectly
+matchedcameraA/B. Nootherdifferent-route comparison should be made for nexttest.
+
+EDITABLE NATIVE
+WTSC_LOCAL_WORKSPACE\shots\world\WTSC_Open_Battlefield_Combined_Trial_v043.blend
+SHA256 afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f
+Master WTSC_OPEN_5S_MASTER_v043, world WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043.
+NativeScene+packedSound strips give a direct5s4Kexport. Originalmusic75–80;
+no additionalexplosion sound design. All usedpaint ispacked; no heldplates/maps.
+Cold native reopening/export verified. Native render script:
+scripts/render_native_combined_v043.py (choose new outputpath for a rerender).
+
+IMPORTED SEALED SNAPSHOTS
+Motionv005 SHA1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4.
+FXv003 SHAd089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868.
+Ownedsnapshots under shots/integration/v042/imports andv043/imports.
+Specialist files preserved. Rejectedv001 andfailedv002a collections excluded.
+
+WHAT WAS INSPECTED
+40actualdecoded8fpsactor phases, actualshotkeys includingcatch/deeplean/recovery,
+hot/coldFXandnative master output. Allmoviefilesdecoded120frames.
+Originalmusic samplealignment correlation 0.999333.
+This does not establish humanartisticacceptance or perfectcontact at everypixel.
+
+WEAKEST ART ISSUE
+76.5–77.4s foldedknee/bootandrigidhand/cuff contours plus parallelcrouch/reach
+stillread asconstructedcutoutanimation. The post78.3settle stillreads largely
+held despite subtle localbreathing. Parent has sent exactcorrectionranges to
+the locomotionspecialist. Fourunderlying2.5Dsmoke forms and no volumetricselfshadow
+remainFXlimitations. Do NOT propagate thischeckpoint into thefullfilm.
+
+LOCKED NEXT TEST
+Await parent-sealed correctedmotion. Clonev043 andkeep camera,0.562mtravel,
+world,lighting,FX,framingfixed socharacterperformance changes canbeisolated.
+Full120frame numericstaging snapshot: notes/world_v016/frozen_staging_v043.json.
+Do notautomaticallystack currentownedposecorrections on an alreadycorrectedsource.
+Fullv040 andits unsettledtitle/cut timing remainunchanged. No full-lengthrender,
+newdifferent-route comparison, uploadortransferworkaround isauthorized.
+
+RECORDS
+notes/world_v016/integration_checkpoint_v043.json
+notes/world_v016/combined_visual_review_v043.json
+notes/world_v016/combined_media_qa_v043.json
+notes/world_v016/combined_trial_build_v043.json

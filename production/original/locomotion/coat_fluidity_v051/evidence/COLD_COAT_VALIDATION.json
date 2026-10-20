@@ -1,0 +1,24 @@
+{
+  "source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\native\\WTSC_Face_Hand_Finish_v050.blend": "1721ae5ce9146e9d0379419d153c64ef09a122074a972a8e4bd68fb1953d176e",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\coat_fluidity_v051\\native\\WTSC_Controlled_Fluid_Coat_v051.blend": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f"
+  },
+  "sources_unchanged": true,
+  "all_existing_actions_bones_and_non_coat_geometry_exactly_preserved": true,
+  "face_hand_improvements_preserved": true,
+  "all_original_uvs_materials_vertex_weights_packed_payloads_preserved": true,
+  "new_actions": [
+    "V051 BOY coat | damped support-driven hem response |32frames"
+  ],
+  "quarter_frame_samples": 129,
+  "maximum_baseline_differences_m": {
+    "bones": 0.0,
+    "boots": 0.0,
+    "coat_anchor": 0.0,
+    "sleeve_anchors": 0.0
+  },
+  "minimum_coat_cell_area_m2": 1.6060296914588434e-07,
+  "coat_cell_inversions": 0,
+  "contact_scope": "Every sampled actual boot vertex matches v050. No new contact error introduced; underlying support motion and its earlier numerical validation are unchanged.",
+  "artistic_scope": "Fabric/control integrity only. Robotic body rhythm is intentionally unchanged and needs separate performance work after this cloth-only A/B."
+}

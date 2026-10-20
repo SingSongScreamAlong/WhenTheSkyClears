@@ -1,0 +1,61 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Full_Trailer_Editable_v040.blend",
+  "benchmark": "v039 actual64\u201369s moving comparison reviewed before propagation",
+  "changes": {
+    "regional_paint": [
+      {
+        "object": "v016 | School | broken windows and plaster",
+        "old_broad_washes_bypassed": [
+          "Mix.001",
+          "Mix"
+        ]
+      },
+      {
+        "object": "v016 | Battlefield | broken village line",
+        "old_broad_washes_bypassed": [
+          "Mix.002",
+          "Mix.001",
+          "Mix"
+        ]
+      },
+      {
+        "object": "v016 | Ruins | distant ash street",
+        "old_broad_washes_bypassed": [
+          "Mix.001",
+          "Mix"
+        ]
+      }
+    ],
+    "fire_assemblies": [
+      {
+        "root": "v036 | School debris | fixed emitter",
+        "power_watts": 248,
+        "radius": 2.8,
+        "smoke_reset_opacity": 0
+      },
+      {
+        "root": "v036 | Battlefield burn | fixed emitter",
+        "power_watts": 660,
+        "radius": 3.6,
+        "smoke_reset_opacity": 0
+      },
+      {
+        "root": "v036 | Distant ruin burn | fixed emitter",
+        "power_watts": 720,
+        "radius": 5,
+        "smoke_reset_opacity": 0
+      }
+    ],
+    "measured_contacts": "Same8soft core/penumbra contacts introduced in039, now travel throughout100s",
+    "grass_roots_placed_at_bank_edge": 11,
+    "character_material": "Same charcoal design/topology/UV/root/pose. Added bounded physically sourced contours for other3fires only.",
+    "foreground": "Same039stable paint/UV treatment throughout route; no repeated bank photograph contribution.",
+    "glow": "Same039 restrained medium FogGlow throughout.",
+    "mask_credits_audio_timing": "Unchanged106s/24fps/4K, originalsingleWAV0\u2013100,fading90\u2013100,silent6scredits.",
+    "other_regions_grass_staging_preserved": 94
+  },
+  "excluded": "All rejected effects/ink_wash_v001 assets and all untested new character motion.",
+  "scope": "Native2.5Dpaint refinement, not artistic acceptance or Arcane-level finish.",
+  "regional_visual_check": "Regional UHD proof inspection retained the reviewed camp grass adjustment only; broad additional grass raises were reverted before render freeze. Existing original wind retained throughout.",
+  "source_sha256": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f"
+}

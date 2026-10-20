@@ -1,0 +1,56 @@
+WHEN THE SKY CLEARS - EDGE-FILLING KNOCKOUT ENDING v033
+
+COMPLETED focused new version of the ending, preserving v032.
+Native source: shots/world/WTSC_Knockout_Ending_Editable_v033.blend
+UHD preview: renders/world_v016/WTSC_Knockout_Ending_4K_v033.mp4
+Small viewing copy: renders/world_v016/WTSC_Knockout_Ending_View_v033.mp4
+UHD movie28,621,075bytes, SHA256
+58d0c802e00b147a0074533af0cad61a7f51babaab1c2def348a8665c05ab2ef
+
+Only ending typography changed. Scrolling Arial Black capital ink is99.5% of
+the frame height (2150 of2160 rendered pixels). Straight capitals have about
+5px top/bottom margins; round-letter overshoot may reach/crop at frame edges.
+The huge text naturally enters/leaves cropped at the left/right frame edges.
+All glyph proportions are preserved with uniform native Font scaling.
+
+The final solid white card uses the heavy condensed Impact face, allowing
+WHEN THE and SKY CLEARS to each span98% frame width. The three-row composition,
+including2027, occupies99% frame height, with1.5%-height gaps and0.5%-height
+outer margins. The word lines remain complete/readable without stretching.
+
+Unchanged timing:
+Preview covers global82.000-103.000,504 frames/21s at3840x2160/24fps.
+82.000: start WHEN THE SKY CLEARS entering from the right.
+99.958333: final knockout frame, with the last fragment of the final S.
+100.000: final S's trailing ink edge clears the left edge; cut to full card.
+100.000-103.000: solid white WHEN THE / SKY CLEARS / 2027 held silently.
+The original music stays at global0-100 in the native master, with its existing
+90-100 fade. Preview uses original global82-100 audio, then3 seconds silence.
+
+The moving picture appears ONLY through true native animated Font alpha.
+Black fills the rest of the frame. The clean v030 world cache52-70 seconds
+maps to global82-100. No loop/retime/interpolation. This excludes legacy title
+letters baked into the later world cache. Uniform2x crop centers the pair in
+both axes, preserving their spacing; effective world detail1920x1080 inside
+UHD output, while typography/mask is native4K. No new world render was needed.
+The painterly pair remains held; no walk cycle/acting added.
+
+Blender scenes:
+WTSC_KNOCKOUT_ENDING_v033: opens by default; native Font/mask/compositor.
+WTSC_MASTER_4K_103S_v033: full103s editable native world/ending/music timeline.
+WTSC_WORLD_CENTERED_v033: world with shared-pair horizontal camera follow.
+Only the21s ending preview is exported, not a new full103s movie.
+
+World art, Font and supplied WAV assets are packed. Keep the linked cached
+renders/world_v016/WTSC_Painted_World_4K_v030.mp4 with this project: movies
+cannot be packed by Blender. It is referenced relatively from the source.
+Previous v030/v031 world and v032 ending files are preserved byte-for-byte.
+
+Verification records:
+notes/world_v016/knockout_layout_v033.json - native dimensions and proportions
+notes/world_v016/knockout_native_audit_v033.json - pair center/master readback
+notes/world_v016/ending_verification_v033.json - complete movie decode and QC
+All504frames decoded successfully; native outside-mask pixels black0, encoded
+far-outside maximum3. Actual native master frame equals ending scene frame.
+Actual card white-ink bbox[38,10,3801,2149] in3840x2160. Audio fade aligns with
+the source and decoded silent-card RMS is0. Prior versions hashchecked unchanged.

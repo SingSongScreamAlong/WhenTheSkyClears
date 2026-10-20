@@ -1,0 +1,4262 @@
+{
+  "build": [
+    {
+      "object": "V024 continuous near trouser drawing",
+      "node_count": 153,
+      "knee_transition_radius_m": 0.022,
+      "knee_width_reduction_fraction": 0.085,
+      "cuff_retained_from_t": 0.92
+    },
+    {
+      "object": "V024 continuous far trouser drawing",
+      "node_count": 153,
+      "knee_transition_radius_m": 0.022,
+      "knee_width_reduction_fraction": 0.085,
+      "cuff_retained_from_t": 0.92
+    }
+  ],
+  "scope": "Native preservation and live-axis tests, not artistic acceptance",
+  "blender_version": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "samples": [
+    {
+      "frame": 1.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 1.4763989426985433e-08,
+          "shin_axis_max_center_deviation_m": 2.367359864341731e-08,
+          "thigh_length_m": 0.2888010105265627,
+          "shin_length_m": 0.2480883488562677
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1924482542276566e-08,
+          "shin_axis_max_center_deviation_m": 1.6832093432857237e-08,
+          "thigh_length_m": 0.2338288144425043,
+          "shin_length_m": 0.28666201921556683
+        }
+      }
+    },
+    {
+      "frame": 1.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.902354281950902e-08,
+          "shin_axis_max_center_deviation_m": 1.9120364180269772e-08,
+          "thigh_length_m": 0.2888010137513526,
+          "shin_length_m": 0.24808839273108763
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.518838291020009e-08,
+          "shin_axis_max_center_deviation_m": 1.7192295452551397e-08,
+          "thigh_length_m": 0.233828785566298,
+          "shin_length_m": 0.28666199647359947
+        }
+      }
+    },
+    {
+      "frame": 1.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.8484023568706692e-08,
+          "shin_axis_max_center_deviation_m": 2.8419704346355277e-08,
+          "thigh_length_m": 0.2888010008521929,
+          "shin_length_m": 0.24808843777902298
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.0927670559370352e-08,
+          "shin_axis_max_center_deviation_m": 1.6995985680882694e-08,
+          "thigh_length_m": 0.23382877834724589,
+          "shin_length_m": 0.2866619737316303
+        }
+      }
+    },
+    {
+      "frame": 1.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.8149082794225782e-08,
+          "shin_axis_max_center_deviation_m": 3.3950935501052645e-09,
+          "thigh_length_m": 0.28880093635638604,
+          "shin_length_m": 0.2480882782342151
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.3595338812505423e-08,
+          "shin_axis_max_center_deviation_m": 2.457912886378387e-08,
+          "thigh_length_m": 0.23382874598597497,
+          "shin_length_m": 0.28666194124309985
+        }
+      }
+    },
+    {
+      "frame": 1.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.204131545332497e-08,
+          "shin_axis_max_center_deviation_m": 1.596154826820884e-08,
+          "thigh_length_m": 0.2888009879530327,
+          "shin_length_m": 0.2480883683301192
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2780641458367146e-08,
+          "shin_axis_max_center_deviation_m": 1.951447136715681e-08,
+          "thigh_length_m": 0.2338287848194995,
+          "shin_length_m": 0.28666194124309985
+        }
+      }
+    },
+    {
+      "frame": 1.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.876284158141741e-08,
+          "shin_axis_max_center_deviation_m": 2.0916109368564426e-08,
+          "thigh_length_m": 0.2888010395496701,
+          "shin_length_m": 0.2480884107971877
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.4510531091165302e-08,
+          "shin_axis_max_center_deviation_m": 3.2891620670821956e-08,
+          "thigh_length_m": 0.2338288326145978,
+          "shin_length_m": 0.28666189251029717
+        }
+      }
+    },
+    {
+      "frame": 1.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.61084527550205e-08,
+          "shin_axis_max_center_deviation_m": 1.3305968731039195e-08,
+          "thigh_length_m": 0.2888008718605648,
+          "shin_length_m": 0.24808833712503112
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1558015591872355e-08,
+          "shin_axis_max_center_deviation_m": 2.3124091109040237e-08,
+          "thigh_length_m": 0.23382872607134447,
+          "shin_length_m": 0.28666179504466704
+        }
+      }
+    },
+    {
+      "frame": 1.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.3114617767126075e-08,
+          "shin_axis_max_center_deviation_m": 2.8332166527828338e-08,
+          "thigh_length_m": 0.28880088798452147,
+          "shin_length_m": 0.24808834134827637
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.4362880953343218e-08,
+          "shin_axis_max_center_deviation_m": 2.8903829620489205e-08,
+          "thigh_length_m": 0.23382880174693127,
+          "shin_length_m": 0.28666190875456565
+        }
+      }
+    },
+    {
+      "frame": 2.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.536790301325252e-08,
+          "shin_axis_max_center_deviation_m": 2.397677900264717e-08,
+          "thigh_length_m": 0.28880089120931274,
+          "shin_length_m": 0.24808822122038385
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.0124741298264726e-08,
+          "shin_axis_max_center_deviation_m": 2.1247812483866697e-08,
+          "thigh_length_m": 0.23382874349664626,
+          "shin_length_m": 0.2866618340309231
+        }
+      }
+    },
+    {
+      "frame": 2.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.160925322376527e-08,
+          "shin_axis_max_center_deviation_m": 1.925726514370488e-08,
+          "thigh_length_m": 0.28880100085219296,
+          "shin_length_m": 0.24808826802803638
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1942423850241379e-08,
+          "shin_axis_max_center_deviation_m": 2.41078367713361e-08,
+          "thigh_length_m": 0.23382865338292885,
+          "shin_length_m": 0.2866618372797775
+        }
+      }
+    },
+    {
+      "frame": 2.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.2621552692014263e-08,
+          "shin_axis_max_center_deviation_m": 2.984156354914299e-08,
+          "thigh_length_m": 0.28880096860429133,
+          "shin_length_m": 0.248088310788403
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1904134149326894e-08,
+          "shin_axis_max_center_deviation_m": 1.3538322339542185e-08,
+          "thigh_length_m": 0.23382880622772184,
+          "shin_length_m": 0.28666201271786207
+        }
+      }
+    },
+    {
+      "frame": 2.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.8370485678773202e-08,
+          "shin_axis_max_center_deviation_m": 1.73951252268831e-08,
+          "thigh_length_m": 0.288800849287024,
+          "shin_length_m": 0.24808827723705973
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.203617868867642e-08,
+          "shin_axis_max_center_deviation_m": 2.255245277847661e-08,
+          "thigh_length_m": 0.23382874250091476,
+          "shin_length_m": 0.2866619379942466
+        }
+      }
+    },
+    {
+      "frame": 2.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.4504851968693658e-08,
+          "shin_axis_max_center_deviation_m": 2.195196040840417e-08,
+          "thigh_length_m": 0.28880096860429133,
+          "shin_length_m": 0.2480883296463675
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 9.843874041939382e-09,
+          "shin_axis_max_center_deviation_m": 1.9881756976675807e-08,
+          "thigh_length_m": 0.23382877087926068,
+          "shin_length_m": 0.2866619217499798
+        }
+      }
+    },
+    {
+      "frame": 2.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.111978694877912e-08,
+          "shin_axis_max_center_deviation_m": 1.694554090131906e-08,
+          "thigh_length_m": 0.28880102342572195,
+          "shin_length_m": 0.24808843128285313
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.9653938496045786e-08,
+          "shin_axis_max_center_deviation_m": 2.461657751101025e-08,
+          "thigh_length_m": 0.2338288092149155,
+          "shin_length_m": 0.28666202246441913
+        }
+      }
+    },
+    {
+      "frame": 2.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.413017026710663e-08,
+          "shin_axis_max_center_deviation_m": 2.7557086969045113e-08,
+          "thigh_length_m": 0.28880094603075807,
+          "shin_length_m": 0.24808841256420472
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1398129935347016e-08,
+          "shin_axis_max_center_deviation_m": 4.493259426032644e-09,
+          "thigh_length_m": 0.2338287447413106,
+          "shin_length_m": 0.2866619347453933
+        }
+      }
+    },
+    {
+      "frame": 2.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.8510228918027105e-08,
+          "shin_axis_max_center_deviation_m": 2.8253679830872885e-08,
+          "thigh_length_m": 0.2888008686357734,
+          "shin_length_m": 0.24808834477049804
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.3729830956406207e-08,
+          "shin_axis_max_center_deviation_m": 2.1274575406763105e-08,
+          "thigh_length_m": 0.2338287059077794,
+          "shin_length_m": 0.28666185027519486
+        }
+      }
+    },
+    {
+      "frame": 3.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.163149693856712e-08,
+          "shin_axis_max_center_deviation_m": 2.1694345027826696e-08,
+          "thigh_length_m": 0.28880099762740297,
+          "shin_length_m": 0.24808839088917503
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1520745967223831e-08,
+          "shin_axis_max_center_deviation_m": 2.7180284587029656e-08,
+          "thigh_length_m": 0.23382876241554384,
+          "shin_length_m": 0.2866619217499798
+        }
+      }
+    },
+    {
+      "frame": 3.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.077622071280277e-08,
+          "shin_axis_max_center_deviation_m": 1.085557891804175e-08,
+          "thigh_length_m": 0.28880094603075807,
+          "shin_length_m": 0.2480884042881861
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.071269695851029e-08,
+          "shin_axis_max_center_deviation_m": 3.280939769173584e-08,
+          "thigh_length_m": 0.23382866060198484,
+          "shin_length_m": 0.28666203870868023
+        }
+      }
+    },
+    {
+      "frame": 3.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.106997739547688e-08,
+          "shin_axis_max_center_deviation_m": 1.7741980357355916e-08,
+          "thigh_length_m": 0.28880090733326835,
+          "shin_length_m": 0.2480882523301702
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.3964955590396354e-08,
+          "shin_axis_max_center_deviation_m": 3.0690175613461433e-08,
+          "thigh_length_m": 0.23382876639846945,
+          "shin_length_m": 0.2866619217499798
+        }
+      }
+    },
+    {
+      "frame": 3.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.175731039368704e-08,
+          "shin_axis_max_center_deviation_m": 2.4787232214997625e-08,
+          "thigh_length_m": 0.28880101697614247,
+          "shin_length_m": 0.24808843469957456
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 9.597784025759898e-09,
+          "shin_axis_max_center_deviation_m": 2.0934646802580825e-08,
+          "thigh_length_m": 0.23382881294890753,
+          "shin_length_m": 0.2866619737316303
+        }
+      }
+    },
+    {
+      "frame": 3.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.344253161988379e-08,
+          "shin_axis_max_center_deviation_m": 2.0667475047697046e-08,
+          "thigh_length_m": 0.288800965379501,
+          "shin_length_m": 0.248088366922371
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.4199990929466227e-08,
+          "shin_axis_max_center_deviation_m": 2.1430588498952936e-08,
+          "thigh_length_m": 0.23382869794192607,
+          "shin_length_m": 0.28666188276373566
+        }
+      }
+    },
+    {
+      "frame": 3.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7147171424178125e-08,
+          "shin_axis_max_center_deviation_m": 1.0848619246472121e-08,
+          "thigh_length_m": 0.2888009395811768,
+          "shin_length_m": 0.24808834422242934
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1594706420684193e-08,
+          "shin_axis_max_center_deviation_m": 3.519973853805778e-08,
+          "thigh_length_m": 0.23382868698887727,
+          "shin_length_m": 0.2866619672339245
+        }
+      }
+    },
+    {
+      "frame": 3.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.84416619800815e-08,
+          "shin_axis_max_center_deviation_m": 2.5456090214070463e-08,
+          "thigh_length_m": 0.2888009911778229,
+          "shin_length_m": 0.24808838305281922
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.107341636184513e-08,
+          "shin_axis_max_center_deviation_m": 2.1806082624207272e-08,
+          "thigh_length_m": 0.23382874324771338,
+          "shin_length_m": 0.2866619542385125
+        }
+      }
+    },
+    {
+      "frame": 3.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.508473438822845e-08,
+          "shin_axis_max_center_deviation_m": 1.809952420973939e-08,
+          "thigh_length_m": 0.288800965379501,
+          "shin_length_m": 0.24808834920820483
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2108654006669686e-08,
+          "shin_axis_max_center_deviation_m": 3.057590724946375e-08,
+          "thigh_length_m": 0.23382868649101138,
+          "shin_length_m": 0.2866619282476866
+        }
+      }
+    },
+    {
+      "frame": 4.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7959338137361312e-08,
+          "shin_axis_max_center_deviation_m": 3.253499463260986e-08,
+          "thigh_length_m": 0.28880100407698295,
+          "shin_length_m": 0.2480884057527573
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.3907909206063861e-08,
+          "shin_axis_max_center_deviation_m": 2.7756420199275776e-08,
+          "thigh_length_m": 0.2338287340371969,
+          "shin_length_m": 0.28666199322474684
+        }
+      }
+    },
+    {
+      "frame": 4.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.241917315401635e-08,
+          "shin_axis_max_center_deviation_m": 2.177669313777852e-08,
+          "thigh_length_m": 0.2888010750223531,
+          "shin_length_m": 0.24808844927563023
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.789704079334597e-08,
+          "shin_axis_max_center_deviation_m": 3.3582192101211653e-08,
+          "thigh_length_m": 0.2338286775294256,
+          "shin_length_m": 0.28666202571327143
+        }
+      }
+    },
+    {
+      "frame": 4.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.0434825664258456e-08,
+          "shin_axis_max_center_deviation_m": 1.9897991789873848e-08,
+          "thigh_length_m": 0.28880110727024283,
+          "shin_length_m": 0.2480884469293839
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.4211061198261124e-08,
+          "shin_axis_max_center_deviation_m": 3.4622987655764084e-08,
+          "thigh_length_m": 0.23382875917941673,
+          "shin_length_m": 0.2866619217499798
+        }
+      }
+    },
+    {
+      "frame": 4.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.020959521548003e-08,
+          "shin_axis_max_center_deviation_m": 3.467489561961976e-08,
+          "thigh_length_m": 0.28880095248033916,
+          "shin_length_m": 0.24808839648508257
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.089152868250989e-08,
+          "shin_axis_max_center_deviation_m": 3.860081321357501e-08,
+          "thigh_length_m": 0.2338286496489343,
+          "shin_length_m": 0.2866619542385125
+        }
+      }
+    },
+    {
+      "frame": 4.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.260211667265585e-08,
+          "shin_axis_max_center_deviation_m": 2.8706669233590426e-08,
+          "thigh_length_m": 0.28880100407698295,
+          "shin_length_m": 0.2480883824076013
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 8.474410745624272e-09,
+          "shin_axis_max_center_deviation_m": 3.3031870777058833e-08,
+          "thigh_length_m": 0.2338287026716515,
+          "shin_length_m": 0.2866619607362186
+        }
+      }
+    },
+    {
+      "frame": 4.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.123929843175234e-08,
+          "shin_axis_max_center_deviation_m": 3.436883542674597e-08,
+          "thigh_length_m": 0.28880094280596746,
+          "shin_length_m": 0.24808837419573687
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.5695287314787955e-09,
+          "shin_axis_max_center_deviation_m": 2.8875034216562098e-08,
+          "thigh_length_m": 0.23382872507561292,
+          "shin_length_m": 0.28666200622015714
+        }
+      }
+    },
+    {
+      "frame": 4.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.229594691815225e-08,
+          "shin_axis_max_center_deviation_m": 2.892173865429387e-08,
+          "thigh_length_m": 0.28880091700764127,
+          "shin_length_m": 0.2480882972388226
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2941295190677598e-08,
+          "shin_axis_max_center_deviation_m": 2.80937656022116e-08,
+          "thigh_length_m": 0.23382867031037013,
+          "shin_length_m": 0.28666200622015714
+        }
+      }
+    },
+    {
+      "frame": 4.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.188448689355047e-08,
+          "shin_axis_max_center_deviation_m": 2.856683518395664e-08,
+          "thigh_length_m": 0.2888010750223531,
+          "shin_length_m": 0.24808840657394368
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.0945040083274675e-08,
+          "shin_axis_max_center_deviation_m": 3.544778078316861e-08,
+          "thigh_length_m": 0.23382866595404345,
+          "shin_length_m": 0.2866619152522728
+        }
+      }
+    },
+    {
+      "frame": 5.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.927852036789252e-08,
+          "shin_axis_max_center_deviation_m": 3.134155189420358e-08,
+          "thigh_length_m": 0.28880092023243215,
+          "shin_length_m": 0.24808829958507037
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.099531481185967e-08,
+          "shin_axis_max_center_deviation_m": 1.4906197013778236e-08,
+          "thigh_length_m": 0.23382858953161362,
+          "shin_length_m": 0.2866619607362186
+        }
+      }
+    },
+    {
+      "frame": 5.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.159609197755245e-08,
+          "shin_axis_max_center_deviation_m": 2.0488747813468924e-08,
+          "thigh_length_m": 0.2888009395811768,
+          "shin_length_m": 0.24808835871050605
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.995394554526298e-09,
+          "shin_axis_max_center_deviation_m": 2.50052468978555e-08,
+          "thigh_length_m": 0.23382863720228533,
+          "shin_length_m": 0.2866620971880126
+        }
+      }
+    },
+    {
+      "frame": 5.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.9040735325831016e-08,
+          "shin_axis_max_center_deviation_m": 3.143123141999997e-08,
+          "thigh_length_m": 0.28880102020093223,
+          "shin_length_m": 0.24808838076522846
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.0763953696981121e-08,
+          "shin_axis_max_center_deviation_m": 4.457260876410744e-08,
+          "thigh_length_m": 0.23382862027484164,
+          "shin_length_m": 0.28666188926144337
+        }
+      }
+    },
+    {
+      "frame": 5.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.880162892857572e-08,
+          "shin_axis_max_center_deviation_m": 2.2245771117609118e-08,
+          "thigh_length_m": 0.28880089120931274,
+          "shin_length_m": 0.24808832257829702
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.0698660826718013e-08,
+          "shin_axis_max_center_deviation_m": 2.5552965082705084e-08,
+          "thigh_length_m": 0.23382861753657858,
+          "shin_length_m": 0.28666200622015714
+        }
+      }
+    },
+    {
+      "frame": 5.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.2052426657433613e-08,
+          "shin_axis_max_center_deviation_m": 1.9708745155144304e-08,
+          "thigh_length_m": 0.2888009782786622,
+          "shin_length_m": 0.24808837513423568
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1940680169592185e-08,
+          "shin_axis_max_center_deviation_m": 4.1157848288049086e-08,
+          "thigh_length_m": 0.2338286588594541,
+          "shin_length_m": 0.2866619737316303
+        }
+      }
+    },
+    {
+      "frame": 5.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.494035653385952e-08,
+          "shin_axis_max_center_deviation_m": 2.8220566468411264e-08,
+          "thigh_length_m": 0.28880091378285033,
+          "shin_length_m": 0.24808830662381345
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2206435454013025e-08,
+          "shin_axis_max_center_deviation_m": 3.79804121147232e-08,
+          "thigh_length_m": 0.23382856911910369,
+          "shin_length_m": 0.28666190875456565
+        }
+      }
+    },
+    {
+      "frame": 5.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.4496637558955203e-08,
+          "shin_axis_max_center_deviation_m": 2.9515836807250174e-08,
+          "thigh_length_m": 0.28880101697614247,
+          "shin_length_m": 0.24808829723882264
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.0238875559804609e-08,
+          "shin_axis_max_center_deviation_m": 2.1497060759955786e-08,
+          "thigh_length_m": 0.23382866806997357,
+          "shin_length_m": 0.2866619217499798
+        }
+      }
+    },
+    {
+      "frame": 5.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7187176378114416e-08,
+          "shin_axis_max_center_deviation_m": 3.491081385568841e-08,
+          "thigh_length_m": 0.2888009847282426,
+          "shin_length_m": 0.24808832445529505
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1468551110714837e-08,
+          "shin_axis_max_center_deviation_m": 2.7687179333916163e-08,
+          "thigh_length_m": 0.23382856762550533,
+          "shin_length_m": 0.28666189575915096
+        }
+      }
+    },
+    {
+      "frame": 6.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.8781613185233954e-08,
+          "shin_axis_max_center_deviation_m": 2.5923053768407835e-08,
+          "thigh_length_m": 0.28880092023243215,
+          "shin_length_m": 0.24808841361268374
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 8.477084920040104e-09,
+          "shin_axis_max_center_deviation_m": 3.02920032177765e-08,
+          "thigh_length_m": 0.23382846220233056,
+          "shin_length_m": 0.2866618697683198
+        }
+      }
+    },
+    {
+      "frame": 6.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.9549686387661846e-08,
+          "shin_axis_max_center_deviation_m": 3.581718081388274e-08,
+          "thigh_length_m": 0.2888009944026129,
+          "shin_length_m": 0.24808842956716043
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2948219614202527e-08,
+          "shin_axis_max_center_deviation_m": 1.5416463679891892e-08,
+          "thigh_length_m": 0.23382865618342477,
+          "shin_length_m": 0.28666195748736556
+        }
+      }
+    },
+    {
+      "frame": 6.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.451402896882618e-08,
+          "shin_axis_max_center_deviation_m": 1.6139911674402043e-08,
+          "thigh_length_m": 0.2888010395496702,
+          "shin_length_m": 0.24808846804560003
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.155572358055808e-08,
+          "shin_axis_max_center_deviation_m": 2.0434792920143273e-08,
+          "thigh_length_m": 0.23382866757210768,
+          "shin_length_m": 0.2866620679483479
+        }
+      }
+    },
+    {
+      "frame": 6.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.111858188681528e-08,
+          "shin_axis_max_center_deviation_m": 2.1406448862915388e-08,
+          "thigh_length_m": 0.2888009782786622,
+          "shin_length_m": 0.24808834604077104
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 7.719257345946082e-09,
+          "shin_axis_max_center_deviation_m": 2.727689869008973e-08,
+          "thigh_length_m": 0.2338286715550349,
+          "shin_length_m": 0.286661980229336
+        }
+      }
+    },
+    {
+      "frame": 6.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.122515595572079e-08,
+          "shin_axis_max_center_deviation_m": 3.2561826433346716e-08,
+          "thigh_length_m": 0.28880101697614247,
+          "shin_length_m": 0.24808841455118238
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 8.465676744557406e-09,
+          "shin_axis_max_center_deviation_m": 2.9497034343341004e-08,
+          "thigh_length_m": 0.23382858302823795,
+          "shin_length_m": 0.2866618827637357
+        }
+      }
+    },
+    {
+      "frame": 6.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.335455804656665e-08,
+          "shin_axis_max_center_deviation_m": 2.3055552910164405e-08,
+          "thigh_length_m": 0.28880097182908165,
+          "shin_length_m": 0.2480882887923306
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1398068203556864e-08,
+          "shin_axis_max_center_deviation_m": 1.760893298918192e-08,
+          "thigh_length_m": 0.2338285938568251,
+          "shin_length_m": 0.2866619282476866
+        }
+      }
+    },
+    {
+      "frame": 6.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.498585152152299e-08,
+          "shin_axis_max_center_deviation_m": 2.8385722832734205e-08,
+          "thigh_length_m": 0.28880102342572195,
+          "shin_length_m": 0.24808849713905037
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1338809298190407e-08,
+          "shin_axis_max_center_deviation_m": 3.1188426630090834e-08,
+          "thigh_length_m": 0.23382854936004133,
+          "shin_length_m": 0.2866619022568584
+        }
+      }
+    },
+    {
+      "frame": 6.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.859801166795094e-08,
+          "shin_axis_max_center_deviation_m": 2.4639072710219103e-08,
+          "thigh_length_m": 0.2888009299068046,
+          "shin_length_m": 0.248088397658206
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.4150695768188817e-08,
+          "shin_axis_max_center_deviation_m": 3.368421571829134e-08,
+          "thigh_length_m": 0.23382862174510222,
+          "shin_length_m": 0.2866619055057121
+        }
+      }
+    },
+    {
+      "frame": 7.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.511438201780899e-08,
+          "shin_axis_max_center_deviation_m": 2.213449998445217e-08,
+          "thigh_length_m": 0.2888010427744597,
+          "shin_length_m": 0.24808845959911377
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1952124244375674e-08,
+          "shin_axis_max_center_deviation_m": 3.544148536414233e-08,
+          "thigh_length_m": 0.2338286346040473,
+          "shin_length_m": 0.28666200622015714
+        }
+      }
+    },
+    {
+      "frame": 7.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5999820553513704e-08,
+          "shin_axis_max_center_deviation_m": 1.7822430189808503e-08,
+          "thigh_length_m": 0.28880109759587624,
+          "shin_length_m": 0.24808840704319302
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.557211036636109e-08,
+          "shin_axis_max_center_deviation_m": 2.7410130300000412e-08,
+          "thigh_length_m": 0.23382859269724446,
+          "shin_length_m": 0.2866618697683198
+        }
+      }
+    },
+    {
+      "frame": 7.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.8729054742256437e-08,
+          "shin_axis_max_center_deviation_m": 2.98159601463327e-08,
+          "thigh_length_m": 0.2888009879530328,
+          "shin_length_m": 0.24808840892019038
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.6008884894685483e-08,
+          "shin_axis_max_center_deviation_m": 2.105090555051246e-08,
+          "thigh_length_m": 0.23382859171974474,
+          "shin_length_m": 0.2866619185011263
+        }
+      }
+    },
+    {
+      "frame": 7.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5011653499545695e-08,
+          "shin_axis_max_center_deviation_m": 2.3152154493149117e-08,
+          "thigh_length_m": 0.2888009782786622,
+          "shin_length_m": 0.24808830943931062
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.1411418713813354e-08,
+          "shin_axis_max_center_deviation_m": 2.22114248313774e-08,
+          "thigh_length_m": 0.2338285390293183,
+          "shin_length_m": 0.28666186327061166
+        }
+      }
+    },
+    {
+      "frame": 7.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.277155197728683e-08,
+          "shin_axis_max_center_deviation_m": 3.217002934412293e-08,
+          "thigh_length_m": 0.28880103310009103,
+          "shin_length_m": 0.24808830005431992
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.5600273762926237e-08,
+          "shin_axis_max_center_deviation_m": 3.549591019533335e-08,
+          "thigh_length_m": 0.23382862534685156,
+          "shin_length_m": 0.2866620257132715
+        }
+      }
+    },
+    {
+      "frame": 7.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5916448130032705e-08,
+          "shin_axis_max_center_deviation_m": 2.4272743201694386e-08,
+          "thigh_length_m": 0.2888009911778229,
+          "shin_length_m": 0.24808835261026335
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2649647963639717e-08,
+          "shin_axis_max_center_deviation_m": 2.8323158272005992e-08,
+          "thigh_length_m": 0.233828570068161,
+          "shin_length_m": 0.2866618340309231
+        }
+      }
+    },
+    {
+      "frame": 7.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.794287109757475e-08,
+          "shin_axis_max_center_deviation_m": 1.6909503159129126e-08,
+          "thigh_length_m": 0.2888009815034524,
+          "shin_length_m": 0.24808844270614047
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2699560183592988e-08,
+          "shin_axis_max_center_deviation_m": 3.503321092811796e-08,
+          "thigh_length_m": 0.23382854792867613,
+          "shin_length_m": 0.2866618275332142
+        }
+      }
+    },
+    {
+      "frame": 7.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.422908074770763e-08,
+          "shin_axis_max_center_deviation_m": 2.384128600866278e-08,
+          "thigh_length_m": 0.2888009766662671,
+          "shin_length_m": 0.24808838264222602
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.126058767530029e-08,
+          "shin_axis_max_center_deviation_m": 2.781371254806683e-08,
+          "thigh_length_m": 0.23382861286908468,
+          "shin_length_m": 0.2866617658049716
+        }
+      }
+    },
+    {
+      "frame": 8.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5838474035241767e-08,
+          "shin_axis_max_center_deviation_m": 3.153114149340721e-08,
+          "thigh_length_m": 0.28880091700764127,
+          "shin_length_m": 0.24808832257829702
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2518042376353252e-08,
+          "shin_axis_max_center_deviation_m": 3.138767173814033e-08,
+          "thigh_length_m": 0.2338284580949332,
+          "shin_length_m": 0.28666178854695723
+        }
+      }
+    },
+    {
+      "frame": 8.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.153197376044317e-08,
+          "shin_axis_max_center_deviation_m": 1.0916316900235892e-08,
+          "thigh_length_m": 0.28880104922403865,
+          "shin_length_m": 0.24808846710710156
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.518487385201294e-08,
+          "shin_axis_max_center_deviation_m": 2.462555875044378e-08,
+          "thigh_length_m": 0.23382860981965528,
+          "shin_length_m": 0.28666192499883325
+        }
+      }
+    },
+    {
+      "frame": 8.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.194185920265106e-08,
+          "shin_axis_max_center_deviation_m": 2.9790552362339156e-08,
+          "thigh_length_m": 0.28880113951812897,
+          "shin_length_m": 0.24808858348088297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2865913791365278e-08,
+          "shin_axis_max_center_deviation_m": 3.757431624056216e-08,
+          "thigh_length_m": 0.23382858467741938,
+          "shin_length_m": 0.28666186002175753
+        }
+      }
+    },
+    {
+      "frame": 8.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.878340090218028e-08,
+          "shin_axis_max_center_deviation_m": 2.458909679229472e-08,
+          "thigh_length_m": 0.28880099923979796,
+          "shin_length_m": 0.24808843519815196
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2831293704341787e-08,
+          "shin_axis_max_center_deviation_m": 1.6579184473439896e-08,
+          "thigh_length_m": 0.23382853538867185,
+          "shin_length_m": 0.2866618015423768
+        }
+      }
+    },
+    {
+      "frame": 8.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.6443722386232326e-08,
+          "shin_axis_max_center_deviation_m": 3.8374302030472745e-08,
+          "thigh_length_m": 0.2888009944026129,
+          "shin_length_m": 0.2480882625143535
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.645283231536186e-08,
+          "shin_axis_max_center_deviation_m": 2.8726760011568468e-08,
+          "thigh_length_m": 0.2338285077570967,
+          "shin_length_m": 0.28666178854695723
+        }
+      }
+    },
+    {
+      "frame": 8.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.014808986752734e-08,
+          "shin_axis_max_center_deviation_m": 3.013431548962802e-08,
+          "thigh_length_m": 0.28880089443410395,
+          "shin_length_m": 0.248088328209291
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.2000232582131808e-08,
+          "shin_axis_max_center_deviation_m": 2.0064363914261033e-08,
+          "thigh_length_m": 0.23382849257217564,
+          "shin_length_m": 0.2866616878324357
+        }
+      }
+    },
+    {
+      "frame": 8.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.811684579523108e-08,
+          "shin_axis_max_center_deviation_m": 1.6351253305176567e-08,
+          "thigh_length_m": 0.2888009573175249,
+          "shin_length_m": 0.24808843519815196
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.631410469113944e-08,
+          "shin_axis_max_center_deviation_m": 1.8715453646005458e-08,
+          "thigh_length_m": 0.2338285373801366,
+          "shin_length_m": 0.28666173331641753
+        }
+      }
+    },
+    {
+      "frame": 8.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.3406715236599236e-08,
+          "shin_axis_max_center_deviation_m": 1.8343388659863566e-08,
+          "thigh_length_m": 0.28880094925554867,
+          "shin_length_m": 0.24808835073326554
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.3882425424908392e-08,
+          "shin_axis_max_center_deviation_m": 2.516809983794911e-08,
+          "thigh_length_m": 0.2338285455949285,
+          "shin_length_m": 0.2866618697683198
+        }
+      }
+    },
+    {
+      "frame": 9.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.585712549140109e-08,
+          "shin_axis_max_center_deviation_m": 2.887609224141123e-08,
+          "thigh_length_m": 0.28880096215471057,
+          "shin_length_m": 0.2480883338402848
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.00174258977817e-08,
+          "shin_axis_max_center_deviation_m": 1.5181675766612432e-08,
+          "thigh_length_m": 0.23382848012551832,
+          "shin_length_m": 0.28666173006756196
+        }
+      }
+    },
+    {
+      "frame": 9.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.081067717438062e-08,
+          "shin_axis_max_center_deviation_m": 2.2518378177664825e-08,
+          "thigh_length_m": 0.2888009065270706,
+          "shin_length_m": 0.24808823248237627
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.810105272922282e-08,
+          "shin_axis_max_center_deviation_m": 1.789008864634856e-08,
+          "thigh_length_m": 0.2338284393004776,
+          "shin_length_m": 0.28666176255611636
+        }
+      }
+    },
+    {
+      "frame": 9.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.304493337190502e-08,
+          "shin_axis_max_center_deviation_m": 2.9623145835562053e-08,
+          "thigh_length_m": 0.28880104922403865,
+          "shin_length_m": 0.24808843895214622
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.8626574454219124e-08,
+          "shin_axis_max_center_deviation_m": 3.581321738321465e-08,
+          "thigh_length_m": 0.23382852742281268,
+          "shin_length_m": 0.28666170407671576
+        }
+      }
+    },
+    {
+      "frame": 9.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.380696109405199e-08,
+          "shin_axis_max_center_deviation_m": 2.5241176284132054e-08,
+          "thigh_length_m": 0.28880100407698295,
+          "shin_length_m": 0.24808845021412873
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.0815969515254426e-08,
+          "shin_axis_max_center_deviation_m": 2.2418239638247508e-08,
+          "thigh_length_m": 0.23382855878838155,
+          "shin_length_m": 0.28666173006756196
+        }
+      }
+    },
+    {
+      "frame": 9.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.619923931173679e-08,
+          "shin_axis_max_center_deviation_m": 2.279582432220609e-08,
+          "thigh_length_m": 0.2888008879845215,
+          "shin_length_m": 0.24808826814534882
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.4792818260027892e-08,
+          "shin_axis_max_center_deviation_m": 3.083142958252678e-08,
+          "thigh_length_m": 0.2338284338239472,
+          "shin_length_m": 0.2866617755515371
+        }
+      }
+    },
+    {
+      "frame": 9.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.4400541786055992e-08,
+          "shin_axis_max_center_deviation_m": 3.6847847781618897e-08,
+          "thigh_length_m": 0.28880095892992014,
+          "shin_length_m": 0.24808841267418505
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.526382926110237e-08,
+          "shin_axis_max_center_deviation_m": 2.789211569211956e-08,
+          "thigh_length_m": 0.23382848659778022,
+          "shin_length_m": 0.2866617203209949
+        }
+      }
+    },
+    {
+      "frame": 9.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7207045646602596e-08,
+          "shin_axis_max_center_deviation_m": 2.4626839907462234e-08,
+          "thigh_length_m": 0.2888010137513526,
+          "shin_length_m": 0.2480884896310635
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.865913955862768e-08,
+          "shin_axis_max_center_deviation_m": 3.434830309420073e-08,
+          "thigh_length_m": 0.23382855430758626,
+          "shin_length_m": 0.28666168458357955
+        }
+      }
+    },
+    {
+      "frame": 9.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.472136759818653e-08,
+          "shin_axis_max_center_deviation_m": 1.0984621154473126e-08,
+          "thigh_length_m": 0.28880094079047325,
+          "shin_length_m": 0.2480883882732186
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.505431505691441e-08,
+          "shin_axis_max_center_deviation_m": 2.7999799072793818e-08,
+          "thigh_length_m": 0.23382851447829095,
+          "shin_length_m": 0.28666170407671576
+        }
+      }
+    },
+    {
+      "frame": 10.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.2679916109298407e-08,
+          "shin_axis_max_center_deviation_m": 2.8114234239140696e-08,
+          "thigh_length_m": 0.2888008924186094,
+          "shin_length_m": 0.24808823060537757
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.464881039733507e-08,
+          "shin_axis_max_center_deviation_m": 3.850707588707675e-08,
+          "thigh_length_m": 0.233828414905023,
+          "shin_length_m": 0.2866617917958122
+        }
+      }
+    },
+    {
+      "frame": 10.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.8630023818416534e-08,
+          "shin_axis_max_center_deviation_m": 2.5036365038532462e-08,
+          "thigh_length_m": 0.2888009436121651,
+          "shin_length_m": 0.2480883582412566
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.3004929475176845e-08,
+          "shin_axis_max_center_deviation_m": 3.252278271773015e-08,
+          "thigh_length_m": 0.23382854136306602,
+          "shin_length_m": 0.28666187626602785
+        }
+      }
+    },
+    {
+      "frame": 10.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.363046856808184e-08,
+          "shin_axis_max_center_deviation_m": 2.5418972342370028e-08,
+          "thigh_length_m": 0.2888009299068046,
+          "shin_length_m": 0.24808837325723807
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.7146657388072858e-08,
+          "shin_axis_max_center_deviation_m": 1.650411983062166e-08,
+          "thigh_length_m": 0.2338284915764431,
+          "shin_length_m": 0.2866618080400864
+        }
+      }
+    },
+    {
+      "frame": 10.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7269827918745135e-08,
+          "shin_axis_max_center_deviation_m": 2.9574974163665106e-08,
+          "thigh_length_m": 0.28880096840274194,
+          "shin_length_m": 0.2480883901502161
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.3181780930834845e-08,
+          "shin_axis_max_center_deviation_m": 2.2977719259847777e-08,
+          "thigh_length_m": 0.2338284975508384,
+          "shin_length_m": 0.2866618892614434
+        }
+      }
+    },
+    {
+      "frame": 10.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.123274051815116e-08,
+          "shin_axis_max_center_deviation_m": 2.5161938596779542e-08,
+          "thigh_length_m": 0.28880105869685746,
+          "shin_length_m": 0.24808840516619562
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.824295733421271e-08,
+          "shin_axis_max_center_deviation_m": 2.9624601166303912e-08,
+          "thigh_length_m": 0.23382855132038935,
+          "shin_length_m": 0.2866618502751949
+        }
+      }
+    },
+    {
+      "frame": 10.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.2817872154611086e-08,
+          "shin_axis_max_center_deviation_m": 2.4548652553878178e-08,
+          "thigh_length_m": 0.2888010538596734,
+          "shin_length_m": 0.24808843144415757
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.580331825916354e-08,
+          "shin_axis_max_center_deviation_m": 4.2905698099703305e-08,
+          "thigh_length_m": 0.23382856127771223,
+          "shin_length_m": 0.28666196723392456
+        }
+      }
+    },
+    {
+      "frame": 10.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.293964964336374e-08,
+          "shin_axis_max_center_deviation_m": 2.8888613950606294e-08,
+          "thigh_length_m": 0.2888010048831804,
+          "shin_length_m": 0.24808843707514908
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.4693544017725346e-08,
+          "shin_axis_max_center_deviation_m": 2.8689744100168414e-08,
+          "thigh_length_m": 0.233828479627652,
+          "shin_length_m": 0.2866617528095504
+        }
+      }
+    },
+    {
+      "frame": 10.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.0953986438411765e-08,
+          "shin_axis_max_center_deviation_m": 2.3891618148586156e-08,
+          "thigh_length_m": 0.28880093424011716,
+          "shin_length_m": 0.24808836199525203
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.22460074496433e-08,
+          "shin_axis_max_center_deviation_m": 2.1086090136402033e-08,
+          "thigh_length_m": 0.23382849555937332,
+          "shin_length_m": 0.2866618112889411
+        }
+      }
+    },
+    {
+      "frame": 11.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.3818072051307636e-08,
+          "shin_axis_max_center_deviation_m": 2.156579380886264e-08,
+          "thigh_length_m": 0.28880101385212725,
+          "shin_length_m": 0.24808836387224975
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.799974891422496e-08,
+          "shin_axis_max_center_deviation_m": 3.9453994538202354e-08,
+          "thigh_length_m": 0.233828479627652,
+          "shin_length_m": 0.2866617917958122
+        }
+      }
+    },
+    {
+      "frame": 11.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.584029841892793e-08,
+          "shin_axis_max_center_deviation_m": 2.5240650373918888e-08,
+          "thigh_length_m": 0.2888008711551417,
+          "shin_length_m": 0.24808823248237624
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.375313414660304e-08,
+          "shin_axis_max_center_deviation_m": 1.0735125128813296e-08,
+          "thigh_length_m": 0.23382852941427748,
+          "shin_length_m": 0.2866616813347234
+        }
+      }
+    },
+    {
+      "frame": 11.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.002196488991837e-08,
+          "shin_axis_max_center_deviation_m": 2.6533841421732874e-08,
+          "thigh_length_m": 0.2888009470385051,
+          "shin_length_m": 0.24808842393616873
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.657442172067954e-08,
+          "shin_axis_max_center_deviation_m": 2.0749376624548206e-08,
+          "thigh_length_m": 0.23382849954230348,
+          "shin_length_m": 0.28666175930726107
+        }
+      }
+    },
+    {
+      "frame": 11.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 1.940673179928587e-08,
+          "shin_axis_max_center_deviation_m": 1.9618506182982426e-08,
+          "thigh_length_m": 0.2888010664817004,
+          "shin_length_m": 0.24808839015021608
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.553835272472017e-08,
+          "shin_axis_max_center_deviation_m": 3.087259079922297e-08,
+          "thigh_length_m": 0.23382855928624768,
+          "shin_length_m": 0.286661798293522
+        }
+      }
+    },
+    {
+      "frame": 11.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.09528149473763e-08,
+          "shin_axis_max_center_deviation_m": 2.6944303844720074e-08,
+          "thigh_length_m": 0.28880095041445775,
+          "shin_length_m": 0.2480883038083162
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.902377615401005e-08,
+          "shin_axis_max_center_deviation_m": 2.5040012198721296e-08,
+          "thigh_length_m": 0.233828479627652,
+          "shin_length_m": 0.28666173331641753
+        }
+      }
+    },
+    {
+      "frame": 11.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.396156292881614e-08,
+          "shin_axis_max_center_deviation_m": 1.9771513554373614e-08,
+          "thigh_length_m": 0.28880091136425706,
+          "shin_length_m": 0.24808839015021608
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.0124634616170044e-08,
+          "shin_axis_max_center_deviation_m": 2.3499192241330168e-08,
+          "thigh_length_m": 0.2338284517471371,
+          "shin_length_m": 0.28666195423851254
+        }
+      }
+    },
+    {
+      "frame": 11.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.154344760284357e-08,
+          "shin_axis_max_center_deviation_m": 1.940646489736743e-08,
+          "thigh_length_m": 0.2888011278251214,
+          "shin_length_m": 0.24808848024607957
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.1578362432263084e-08,
+          "shin_axis_max_center_deviation_m": 2.987059443417602e-08,
+          "thigh_length_m": 0.23382855530331856,
+          "shin_length_m": 0.286661895759151
+        }
+      }
+    },
+    {
+      "frame": 11.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 1.9349159313989404e-08,
+          "shin_axis_max_center_deviation_m": 2.998484334523384e-08,
+          "thigh_length_m": 0.2888009797080095,
+          "shin_length_m": 0.24808840892019035
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.915356654101314e-08,
+          "shin_axis_max_center_deviation_m": 2.4685590542649747e-08,
+          "thigh_length_m": 0.2338285712350347,
+          "shin_length_m": 0.2866618795148818
+        }
+      }
+    },
+    {
+      "frame": 12.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.067544433461045e-08,
+          "shin_axis_max_center_deviation_m": 2.0440629407121236e-08,
+          "thigh_length_m": 0.2888009845928266,
+          "shin_length_m": 0.24808831882430096
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.131864447955668e-08,
+          "shin_axis_max_center_deviation_m": 2.6816471856270124e-08,
+          "thigh_length_m": 0.23382845971299884,
+          "shin_length_m": 0.2866618275332142
+        }
+      }
+    },
+    {
+      "frame": 12.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5388366216750027e-08,
+          "shin_axis_max_center_deviation_m": 2.228012528409905e-08,
+          "thigh_length_m": 0.2888009613201701,
+          "shin_length_m": 0.24808834134827637
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.1722160550529844e-08,
+          "shin_axis_max_center_deviation_m": 2.678882398038191e-08,
+          "thigh_length_m": 0.23382849555937332,
+          "shin_length_m": 0.2866618730171739
+        }
+      }
+    },
+    {
+      "frame": 12.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.2586868240757445e-08,
+          "shin_axis_max_center_deviation_m": 3.2202979798690425e-08,
+          "thigh_length_m": 0.2888009511450743,
+          "shin_length_m": 0.24808834510227207
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.130856418674878e-08,
+          "shin_axis_max_center_deviation_m": 2.383974628628581e-08,
+          "thigh_length_m": 0.233828479627652,
+          "shin_length_m": 0.2866618892614434
+        }
+      }
+    },
+    {
+      "frame": 12.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.6999072532882306e-08,
+          "shin_axis_max_center_deviation_m": 1.6918422115007002e-08,
+          "thigh_length_m": 0.28880100683568993,
+          "shin_length_m": 0.24808835261026332
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.0039714416929265e-08,
+          "shin_axis_max_center_deviation_m": 3.074191459096078e-08,
+          "thigh_length_m": 0.233828523439883,
+          "shin_length_m": 0.28666192824768666
+        }
+      }
+    },
+    {
+      "frame": 12.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7332205282458564e-08,
+          "shin_axis_max_center_deviation_m": 1.937005165936496e-08,
+          "thigh_length_m": 0.2888010095188159,
+          "shin_length_m": 0.24808834510227207
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.794478124487993e-08,
+          "shin_axis_max_center_deviation_m": 2.624024547777973e-08,
+          "thigh_length_m": 0.23382855132038935,
+          "shin_length_m": 0.2866619509896594
+        }
+      }
+    },
+    {
+      "frame": 12.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.6378993452931005e-08,
+          "shin_axis_max_center_deviation_m": 2.395814034796449e-08,
+          "thigh_length_m": 0.2888009840732071,
+          "shin_length_m": 0.248088322578297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.031104932623116e-08,
+          "shin_axis_max_center_deviation_m": 2.4698461552242018e-08,
+          "thigh_length_m": 0.2338284517471371,
+          "shin_length_m": 0.2866619055057121
+        }
+      }
+    },
+    {
+      "frame": 12.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.382569142851121e-08,
+          "shin_axis_max_center_deviation_m": 3.187306159841247e-08,
+          "thigh_length_m": 0.28880106575108405,
+          "shin_length_m": 0.24808846147611072
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.674682724365604e-08,
+          "shin_axis_max_center_deviation_m": 2.6583726200659105e-08,
+          "thigh_length_m": 0.23382854335453074,
+          "shin_length_m": 0.2866621654138853
+        }
+      }
+    },
+    {
+      "frame": 12.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.151563686030434e-08,
+          "shin_axis_max_center_deviation_m": 1.8963146697068152e-08,
+          "thigh_length_m": 0.2888009270851127,
+          "shin_length_m": 0.24808833384028478
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.6234263455301517e-08,
+          "shin_axis_max_center_deviation_m": 3.277692169590639e-08,
+          "thigh_length_m": 0.2338284756447215,
+          "shin_length_m": 0.28666206145064427
+        }
+      }
+    },
+    {
+      "frame": 13.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.827343549096336e-08,
+          "shin_axis_max_center_deviation_m": 2.3756382383344587e-08,
+          "thigh_length_m": 0.28880106262706945,
+          "shin_length_m": 0.24808851403201992
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.085842986828757e-08,
+          "shin_axis_max_center_deviation_m": 2.021023860840492e-08,
+          "thigh_length_m": 0.23382867080823608,
+          "shin_length_m": 0.2866622368885916
+        }
+      }
+    },
+    {
+      "frame": 13.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.3219436173101735e-08,
+          "shin_axis_max_center_deviation_m": 1.8980691294483932e-08,
+          "thigh_length_m": 0.2888009782786622,
+          "shin_length_m": 0.2480883488562677
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.4564155238153766e-08,
+          "shin_axis_max_center_deviation_m": 3.967667316427349e-08,
+          "thigh_length_m": 0.2338285951326069,
+          "shin_length_m": 0.2866620858170323
+        }
+      }
+    },
+    {
+      "frame": 13.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5034719247452273e-08,
+          "shin_axis_max_center_deviation_m": 2.4172631718084535e-08,
+          "thigh_length_m": 0.28880101042578804,
+          "shin_length_m": 0.24808836387224972
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.945623861045825e-08,
+          "shin_axis_max_center_deviation_m": 3.619645029630542e-08,
+          "thigh_length_m": 0.23382854733746006,
+          "shin_length_m": 0.2866622255176168
+        }
+      }
+    },
+    {
+      "frame": 13.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.94562018133511e-08,
+          "shin_axis_max_center_deviation_m": 1.9707855656257447e-08,
+          "thigh_length_m": 0.2888009879530327,
+          "shin_length_m": 0.24808832633229297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.8361421884677954e-08,
+          "shin_axis_max_center_deviation_m": 2.6773112087861566e-08,
+          "thigh_length_m": 0.2338284636959296,
+          "shin_length_m": 0.2866620468308105
+        }
+      }
+    },
+    {
+      "frame": 13.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.1697023542952536e-08,
+          "shin_axis_max_center_deviation_m": 2.1638235937364813e-08,
+          "thigh_length_m": 0.2888009115658065,
+          "shin_length_m": 0.24808833384028478
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.8901113545149444e-08,
+          "shin_axis_max_center_deviation_m": 2.8350306445091843e-08,
+          "thigh_length_m": 0.23382860309846373,
+          "shin_length_m": 0.2866621767848625
+        }
+      }
+    },
+    {
+      "frame": 13.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.3207298248708983e-08,
+          "shin_axis_max_center_deviation_m": 1.481781292626639e-08,
+          "thigh_length_m": 0.2888009732399274,
+          "shin_length_m": 0.2480883601182543
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.5797433880327346e-08,
+          "shin_axis_max_center_deviation_m": 3.843718956420919e-08,
+          "thigh_length_m": 0.23382868673994434,
+          "shin_length_m": 0.28666220277566584
+        }
+      }
+    },
+    {
+      "frame": 13.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.4626767421283716e-08,
+          "shin_axis_max_center_deviation_m": 2.91531887813011e-08,
+          "thigh_length_m": 0.28880097082133466,
+          "shin_length_m": 0.2480883488562677
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.0043793157056186e-08,
+          "shin_axis_max_center_deviation_m": 4.7205643084230116e-08,
+          "thigh_length_m": 0.2338285433545307,
+          "shin_length_m": 0.2866622003390281
+        }
+      }
+    },
+    {
+      "frame": 13.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.488988740323423e-08,
+          "shin_axis_max_center_deviation_m": 3.27757010407205e-08,
+          "thigh_length_m": 0.28880110364235534,
+          "shin_length_m": 0.24808846898409842
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.968896371066542e-08,
+          "shin_axis_max_center_deviation_m": 2.9773261798288615e-08,
+          "thigh_length_m": 0.23382871462043123,
+          "shin_length_m": 0.2866623189220394
+        }
+      }
+    },
+    {
+      "frame": 14.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.611392935882305e-08,
+          "shin_axis_max_center_deviation_m": 1.9086687294003823e-08,
+          "thigh_length_m": 0.2888009988366992,
+          "shin_length_m": 0.248088322578297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.0397788761247705e-08,
+          "shin_axis_max_center_deviation_m": 3.659206843433996e-08,
+          "thigh_length_m": 0.23382869072287124,
+          "shin_length_m": 0.28666235059831496
+        }
+      }
+    },
+    {
+      "frame": 14.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.524572863185859e-08,
+          "shin_axis_max_center_deviation_m": 3.341308134720641e-08,
+          "thigh_length_m": 0.28880097102288405,
+          "shin_length_m": 0.24808836387224972
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.8062793527833903e-08,
+          "shin_axis_max_center_deviation_m": 2.3631931372999313e-08,
+          "thigh_length_m": 0.23382867080823605,
+          "shin_length_m": 0.2866622904946097
+        }
+      }
+    },
+    {
+      "frame": 14.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.1633639044419587e-08,
+          "shin_axis_max_center_deviation_m": 2.8321299244248513e-08,
+          "thigh_length_m": 0.288801075022353,
+          "shin_length_m": 0.24808837513423565
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.0715033163614815e-08,
+          "shin_axis_max_center_deviation_m": 3.946136141171186e-08,
+          "thigh_length_m": 0.2338286668253088,
+          "shin_length_m": 0.2866623243029454
+        }
+      }
+    },
+    {
+      "frame": 14.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.043676998094964e-08,
+          "shin_axis_max_center_deviation_m": 2.5726279304549973e-08,
+          "thigh_length_m": 0.2888009544958332,
+          "shin_length_m": 0.24808833008628892
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.8042010908675274e-08,
+          "shin_axis_max_center_deviation_m": 4.669136551625354e-08,
+          "thigh_length_m": 0.23382872258628398,
+          "shin_length_m": 0.2866623602940973
+        }
+      }
+    },
+    {
+      "frame": 14.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.1860990377598516e-08,
+          "shin_axis_max_center_deviation_m": 2.2031049076623904e-08,
+          "thigh_length_m": 0.28880096054231535,
+          "shin_length_m": 0.24808834510227207
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.689521886312891e-08,
+          "shin_axis_max_center_deviation_m": 3.716019594868754e-08,
+          "thigh_length_m": 0.23382885003989165,
+          "shin_length_m": 0.28666242514415147
+        }
+      }
+    },
+    {
+      "frame": 14.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5797648434665982e-08,
+          "shin_axis_max_center_deviation_m": 1.3353103759839844e-08,
+          "thigh_length_m": 0.28880101737924113,
+          "shin_length_m": 0.24808839390421103
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.668639405069353e-08,
+          "shin_axis_max_center_deviation_m": 4.0880965894365565e-08,
+          "thigh_length_m": 0.233828770381395,
+          "shin_length_m": 0.28666236860816696
+        }
+      }
+    },
+    {
+      "frame": 14.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.9053746798749907e-08,
+          "shin_axis_max_center_deviation_m": 2.6141982215236648e-08,
+          "thigh_length_m": 0.28880097706936586,
+          "shin_length_m": 0.24808822497438138
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.287194626966027e-08,
+          "shin_axis_max_center_deviation_m": 3.286285451572025e-08,
+          "thigh_length_m": 0.23382879826187192,
+          "shin_length_m": 0.2866623922432207
+        }
+      }
+    },
+    {
+      "frame": 14.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.6856959696312246e-08,
+          "shin_axis_max_center_deviation_m": 2.794567032946743e-08,
+          "thigh_length_m": 0.2888009831158475,
+          "shin_length_m": 0.2480882587603565
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.329713518177589e-08,
+          "shin_axis_max_center_deviation_m": 6.618777465804404e-08,
+          "thigh_length_m": 0.23382874648384072,
+          "shin_length_m": 0.2866622414572867
+        }
+      }
+    },
+    {
+      "frame": 15.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.181544608240259e-08,
+          "shin_axis_max_center_deviation_m": 2.4213231341488834e-08,
+          "thigh_length_m": 0.28880105406122275,
+          "shin_length_m": 0.24808838639622105
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.42324568783294e-08,
+          "shin_axis_max_center_deviation_m": 3.6605089238090295e-08,
+          "thigh_length_m": 0.2338288619886638,
+          "shin_length_m": 0.286662332120488
+        }
+      }
+    },
+    {
+      "frame": 15.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.0089783362289154e-08,
+          "shin_axis_max_center_deviation_m": 2.2972624147349828e-08,
+          "thigh_length_m": 0.288800836387857,
+          "shin_length_m": 0.24808822872837882
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.3703963876689606e-08,
+          "shin_axis_max_center_deviation_m": 6.08995487866278e-08,
+          "thigh_length_m": 0.23382879029602172,
+          "shin_length_m": 0.2866622474473535
+        }
+      }
+    },
+    {
+      "frame": 15.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5876112473242405e-08,
+          "shin_axis_max_center_deviation_m": 1.5160952955882846e-08,
+          "thigh_length_m": 0.28880086460478405,
+          "shin_length_m": 0.2480882587603565
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.065030352287139e-08,
+          "shin_axis_max_center_deviation_m": 5.459919260650565e-08,
+          "thigh_length_m": 0.23382881021064672,
+          "shin_length_m": 0.28666216074366235
+        }
+      }
+    },
+    {
+      "frame": 15.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.147240391755114e-08,
+          "shin_axis_max_center_deviation_m": 2.2924092208148848e-08,
+          "thigh_length_m": 0.2888010073017728,
+          "shin_length_m": 0.2480884201821742
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.0249791735454676e-08,
+          "shin_axis_max_center_deviation_m": 5.3943866312906465e-08,
+          "thigh_length_m": 0.23382890580082313,
+          "shin_length_m": 0.2866623723249891
+        }
+      }
+    },
+    {
+      "frame": 15.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.893841044796219e-08,
+          "shin_axis_max_center_deviation_m": 3.544315701071359e-08,
+          "thigh_length_m": 0.2888009935964154,
+          "shin_length_m": 0.2480883713802404
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.639938961515813e-08,
+          "shin_axis_max_center_deviation_m": 5.448627592442597e-08,
+          "thigh_length_m": 0.2338289137666694,
+          "shin_length_m": 0.2866622027756658
+        }
+      }
+    },
+    {
+      "frame": 15.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.1894505364743756e-08,
+          "shin_axis_max_center_deviation_m": 2.360041689042435e-08,
+          "thigh_length_m": 0.2888009436121651,
+          "shin_length_m": 0.248088273776344
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.739633587214283e-08,
+          "shin_axis_max_center_deviation_m": 3.927825163902065e-08,
+          "thigh_length_m": 0.2338288978349766,
+          "shin_length_m": 0.28666221739549164
+        }
+      }
+    },
+    {
+      "frame": 15.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5624888375928234e-08,
+          "shin_axis_max_center_deviation_m": 2.398562203046449e-08,
+          "thigh_length_m": 0.28880104277445967,
+          "shin_length_m": 0.24808832633229297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.016803589268688e-08,
+          "shin_axis_max_center_deviation_m": 4.770170636029934e-08,
+          "thigh_length_m": 0.23382894563005177,
+          "shin_length_m": 0.28666208744145805
+        }
+      }
+    },
+    {
+      "frame": 15.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.36199540098237e-08,
+          "shin_axis_max_center_deviation_m": 3.686162720334283e-08,
+          "thigh_length_m": 0.2888009871468352,
+          "shin_length_m": 0.2480883488562677
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.088459686433813e-08,
+          "shin_axis_max_center_deviation_m": 5.392665566354544e-08,
+          "thigh_length_m": 0.23382888588620626,
+          "shin_length_m": 0.28666221739549164
+        }
+      }
+    },
+    {
+      "frame": 16.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.125634163017511e-08,
+          "shin_axis_max_center_deviation_m": 3.149697417558809e-08,
+          "thigh_length_m": 0.2888008904031149,
+          "shin_length_m": 0.248088285038334
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.68867737595036e-08,
+          "shin_axis_max_center_deviation_m": 4.21752953288081e-08,
+          "thigh_length_m": 0.23382887991182086,
+          "shin_length_m": 0.28666213617422753
+        }
+      }
+    },
+    {
+      "frame": 16.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.5257050008755556e-08,
+          "shin_axis_max_center_deviation_m": 2.8505600833086337e-08,
+          "thigh_length_m": 0.28880099762740297,
+          "shin_length_m": 0.24808841267418502
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.1482155019827136e-08,
+          "shin_axis_max_center_deviation_m": 4.362346862692619e-08,
+          "thigh_length_m": 0.2338289595702802,
+          "shin_length_m": 0.28666214348414226
+        }
+      }
+    },
+    {
+      "frame": 16.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.098208409504923e-08,
+          "shin_axis_max_center_deviation_m": 3.216868219839075e-08,
+          "thigh_length_m": 0.28880099198402037,
+          "shin_length_m": 0.24808836387224972
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.040421792076378e-08,
+          "shin_axis_max_center_deviation_m": 4.331755749127696e-08,
+          "thigh_length_m": 0.23382891974105394,
+          "shin_length_m": 0.28666218084592565
+        }
+      }
+    },
+    {
+      "frame": 16.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.943757910035215e-08,
+          "shin_axis_max_center_deviation_m": 1.8589431892814397e-08,
+          "thigh_length_m": 0.2888009573175249,
+          "shin_length_m": 0.2480882587603565
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.6774592828339214e-08,
+          "shin_axis_max_center_deviation_m": 6.029984340408446e-08,
+          "thigh_length_m": 0.2338287982618719,
+          "shin_length_m": 0.28666214592078043
+        }
+      }
+    },
+    {
+      "frame": 16.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.746169122721631e-08,
+          "shin_axis_max_center_deviation_m": 2.753109731081205e-08,
+          "thigh_length_m": 0.28880100246458795,
+          "shin_length_m": 0.24808841642817964
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.450661694015391e-08,
+          "shin_axis_max_center_deviation_m": 4.9438280706197394e-08,
+          "thigh_length_m": 0.23382899541657803,
+          "shin_length_m": 0.28666219302911483
+        }
+      }
+    },
+    {
+      "frame": 16.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.850298532546609e-08,
+          "shin_axis_max_center_deviation_m": 2.8376478607137992e-08,
+          "thigh_length_m": 0.28880085896139884,
+          "shin_length_m": 0.248088285038334
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.9502759472859024e-08,
+          "shin_axis_max_center_deviation_m": 3.690762861309986e-08,
+          "thigh_length_m": 0.2338290213055675,
+          "shin_length_m": 0.2866621101834182
+        }
+      }
+    },
+    {
+      "frame": 16.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.959922302725452e-08,
+          "shin_axis_max_center_deviation_m": 1.71287373407487e-08,
+          "thigh_length_m": 0.2888009105580593,
+          "shin_length_m": 0.24808828128433738
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.8584820770437263e-08,
+          "shin_axis_max_center_deviation_m": 1.679284807777891e-08,
+          "thigh_length_m": 0.23382901931410688,
+          "shin_length_m": 0.28666213779865307
+        }
+      }
+    },
+    {
+      "frame": 16.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.986191714510299e-08,
+          "shin_axis_max_center_deviation_m": 3.05686530375495e-08,
+          "thigh_length_m": 0.28880090088368615,
+          "shin_length_m": 0.24808834510227207
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.659838330757172e-08,
+          "shin_axis_max_center_deviation_m": 1.2157506884422269e-08,
+          "thigh_length_m": 0.2338289695275857,
+          "shin_length_m": 0.2866621207421848
+        }
+      }
+    },
+    {
+      "frame": 17.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.723729152111076e-08,
+          "shin_axis_max_center_deviation_m": 1.8379839528935205e-08,
+          "thigh_length_m": 0.28880096054231535,
+          "shin_length_m": 0.24808837888823085
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.779614122695197e-08,
+          "shin_axis_max_center_deviation_m": 3.489867328837628e-08,
+          "thigh_length_m": 0.23382901931410688,
+          "shin_length_m": 0.28666225638169024
+        }
+      }
+    },
+    {
+      "frame": 17.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.8363816377056286e-08,
+          "shin_axis_max_center_deviation_m": 3.33133975849451e-08,
+          "thigh_length_m": 0.2888010081079703,
+          "shin_length_m": 0.24808835261026332
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.104321310478658e-08,
+          "shin_axis_max_center_deviation_m": 4.727695068851251e-08,
+          "thigh_length_m": 0.2338290471945541,
+          "shin_length_m": 0.28666221739549164
+        }
+      }
+    },
+    {
+      "frame": 17.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 2.7146259369241534e-08,
+          "shin_axis_max_center_deviation_m": 2.661536380098251e-08,
+          "thigh_length_m": 0.28880102342572195,
+          "shin_length_m": 0.248088322578297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.854059897454612e-08,
+          "shin_axis_max_center_deviation_m": 3.4884716873748743e-08,
+          "thigh_length_m": 0.23382904122017284,
+          "shin_length_m": 0.28666217272379924
+        }
+      }
+    },
+    {
+      "frame": 17.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.277189410334381e-08,
+          "shin_axis_max_center_deviation_m": 3.753859739047992e-08,
+          "thigh_length_m": 0.2888009879530327,
+          "shin_length_m": 0.24808836387224975
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.743625455184414e-08,
+          "shin_axis_max_center_deviation_m": 4.278110960268534e-08,
+          "thigh_length_m": 0.2338290790579183,
+          "shin_length_m": 0.28666225719390265
+        }
+      }
+    },
+    {
+      "frame": 17.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.532339160244356e-08,
+          "shin_axis_max_center_deviation_m": 3.040400376405015e-08,
+          "thigh_length_m": 0.28880096134851296,
+          "shin_length_m": 0.24808835636425886
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.6635274511413525e-08,
+          "shin_axis_max_center_deviation_m": 4.696730457216873e-08,
+          "thigh_length_m": 0.23382896753612464,
+          "shin_length_m": 0.28666224013744146
+        }
+      }
+    },
+    {
+      "frame": 17.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.485196034263508e-08,
+          "shin_axis_max_center_deviation_m": 3.027214590647528e-08,
+          "thigh_length_m": 0.2888010226195245,
+          "shin_length_m": 0.24808843895214622
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.007323512677405e-08,
+          "shin_axis_max_center_deviation_m": 4.445054190760572e-08,
+          "thigh_length_m": 0.23382900537388202,
+          "shin_length_m": 0.28666229293124657
+        }
+      }
+    },
+    {
+      "frame": 17.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.1531498488409964e-08,
+          "shin_axis_max_center_deviation_m": 2.682518425396915e-08,
+          "thigh_length_m": 0.28880102665051166,
+          "shin_length_m": 0.24808842769016318
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.1703304923998e-08,
+          "shin_axis_max_center_deviation_m": 4.312290028478843e-08,
+          "thigh_length_m": 0.2338288619886638,
+          "shin_length_m": 0.2866622986167327
+        }
+      }
+    },
+    {
+      "frame": 17.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.619349671763289e-08,
+          "shin_axis_max_center_deviation_m": 3.042504519265521e-08,
+          "thigh_length_m": 0.28880098472824256,
+          "shin_length_m": 0.2480883713802404
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.664679657253737e-08,
+          "shin_axis_max_center_deviation_m": 5.2933202504415015e-08,
+          "thigh_length_m": 0.23382894164712922,
+          "shin_length_m": 0.28666227871753075
+        }
+      }
+    },
+    {
+      "frame": 18.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.993832609173866e-08,
+          "shin_axis_max_center_deviation_m": 3.4825209082168105e-08,
+          "thigh_length_m": 0.2888010282629065,
+          "shin_length_m": 0.24808839765820595
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.826370475359542e-08,
+          "shin_axis_max_center_deviation_m": 6.837875612136102e-08,
+          "thigh_length_m": 0.2338290113482642,
+          "shin_length_m": 0.28666227059540716
+        }
+      }
+    },
+    {
+      "frame": 18.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.932888627117064e-08,
+          "shin_axis_max_center_deviation_m": 3.163810671991664e-08,
+          "thigh_length_m": 0.28880098875923027,
+          "shin_length_m": 0.24808835636425886
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.248790681020879e-08,
+          "shin_axis_max_center_deviation_m": 3.000435443341696e-08,
+          "thigh_length_m": 0.23382885003989162,
+          "shin_length_m": 0.28666227018930096
+        }
+      }
+    },
+    {
+      "frame": 18.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.5491877679691376e-08,
+          "shin_axis_max_center_deviation_m": 1.9926404383050903e-08,
+          "thigh_length_m": 0.28880096860429133,
+          "shin_length_m": 0.2480883488562677
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.677833154013175e-08,
+          "shin_axis_max_center_deviation_m": 4.436384257698009e-08,
+          "thigh_length_m": 0.2338288619886638,
+          "shin_length_m": 0.286662222674873
+        }
+      }
+    },
+    {
+      "frame": 18.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.162530951975583e-08,
+          "shin_axis_max_center_deviation_m": 2.722478160328892e-08,
+          "thigh_length_m": 0.2888010298753013,
+          "shin_length_m": 0.24808837888823085
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.666437585829507e-08,
+          "shin_axis_max_center_deviation_m": 5.206937739831703e-08,
+          "thigh_length_m": 0.2338288619886638,
+          "shin_length_m": 0.2866622178015979
+        }
+      }
+    },
+    {
+      "frame": 18.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.034998959439443e-08,
+          "shin_axis_max_center_deviation_m": 3.1929055308821895e-08,
+          "thigh_length_m": 0.28880100246458795,
+          "shin_length_m": 0.24808839765820598
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 7.770998808804867e-08,
+          "shin_axis_max_center_deviation_m": 4.312130985799594e-08,
+          "thigh_length_m": 0.2338290332543309,
+          "shin_length_m": 0.2866623266380555
+        }
+      }
+    },
+    {
+      "frame": 18.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.5923758863611315e-08,
+          "shin_axis_max_center_deviation_m": 2.6453329773049878e-08,
+          "thigh_length_m": 0.28880096537950095,
+          "shin_length_m": 0.24808837513423568
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.925804938108581e-08,
+          "shin_axis_max_center_deviation_m": 4.9665241329399826e-08,
+          "thigh_length_m": 0.2338288978349766,
+          "shin_length_m": 0.2866623601418075
+        }
+      }
+    },
+    {
+      "frame": 18.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.434534790370484e-08,
+          "shin_axis_max_center_deviation_m": 2.7343032469686366e-08,
+          "thigh_length_m": 0.28880098875923027,
+          "shin_length_m": 0.24808833759428062
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.765221408989419e-08,
+          "shin_axis_max_center_deviation_m": 4.846700111204656e-08,
+          "thigh_length_m": 0.23382884605696744,
+          "shin_length_m": 0.28666224440155685
+        }
+      }
+    },
+    {
+      "frame": 18.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.652708138137988e-08,
+          "shin_axis_max_center_deviation_m": 1.9858552134459567e-08,
+          "thigh_length_m": 0.2888010089141678,
+          "shin_length_m": 0.24808837513423568
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.4951612673622155e-08,
+          "shin_axis_max_center_deviation_m": 5.2551253513527134e-08,
+          "thigh_length_m": 0.23382885402281575,
+          "shin_length_m": 0.2866623353693367
+        }
+      }
+    },
+    {
+      "frame": 19.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.883905226746644e-08,
+          "shin_axis_max_center_deviation_m": 2.2070661435911524e-08,
+          "thigh_length_m": 0.28880107663474763,
+          "shin_length_m": 0.24808836011825436
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.6071399050877674e-08,
+          "shin_axis_max_center_deviation_m": 4.366999442524327e-08,
+          "thigh_length_m": 0.23382881419357152,
+          "shin_length_m": 0.2866623000381042
+        }
+      }
+    },
+    {
+      "frame": 19.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.2465558087007525e-08,
+          "shin_axis_max_center_deviation_m": 2.2380768248636674e-08,
+          "thigh_length_m": 0.28880100327078545,
+          "shin_length_m": 0.24808832633229302
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.140098536062974e-08,
+          "shin_axis_max_center_deviation_m": 4.786231747443523e-08,
+          "thigh_length_m": 0.23382868673994434,
+          "shin_length_m": 0.2866621981054435
+        }
+      }
+    },
+    {
+      "frame": 19.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.164931376818694e-08,
+          "shin_axis_max_center_deviation_m": 2.1798291447761254e-08,
+          "thigh_length_m": 0.2888010387434728,
+          "shin_length_m": 0.24808840892019038
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 7.074891249843122e-08,
+          "shin_axis_max_center_deviation_m": 4.183957665283422e-08,
+          "thigh_length_m": 0.2338288978349766,
+          "shin_length_m": 0.28666231008923115
+        }
+      }
+    },
+    {
+      "frame": 19.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.620636002777273e-08,
+          "shin_axis_max_center_deviation_m": 1.8998910118521897e-08,
+          "thigh_length_m": 0.2888009186200367,
+          "shin_length_m": 0.24808825876035653
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.496511768692236e-08,
+          "shin_axis_max_center_deviation_m": 4.863846204612124e-08,
+          "thigh_length_m": 0.23382881419357152,
+          "shin_length_m": 0.28666214439788157
+        }
+      }
+    },
+    {
+      "frame": 19.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.67009772298885e-08,
+          "shin_axis_max_center_deviation_m": 1.921404017050311e-08,
+          "thigh_length_m": 0.28880094280596746,
+          "shin_length_m": 0.24808832257829702
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.643837280626708e-08,
+          "shin_axis_max_center_deviation_m": 4.721297778774508e-08,
+          "thigh_length_m": 0.2338288341081945,
+          "shin_length_m": 0.2866622511023095
+        }
+      }
+    },
+    {
+      "frame": 19.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.941434693437598e-08,
+          "shin_axis_max_center_deviation_m": 2.5321142885099645e-08,
+          "thigh_length_m": 0.28880083396926315,
+          "shin_length_m": 0.24808828503833402
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.814464333078484e-08,
+          "shin_axis_max_center_deviation_m": 3.2726628825658196e-08,
+          "thigh_length_m": 0.2338287106375047,
+          "shin_length_m": 0.2866621014521301
+        }
+      }
+    },
+    {
+      "frame": 19.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.777285338479426e-08,
+          "shin_axis_max_center_deviation_m": 5.705069743093288e-08,
+          "thigh_length_m": 0.288800975053872,
+          "shin_length_m": 0.24808828503833402
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.335282177580477e-08,
+          "shin_axis_max_center_deviation_m": 4.78482258500796e-08,
+          "thigh_length_m": 0.23382880622772184,
+          "shin_length_m": 0.28666231054610053
+        }
+      }
+    },
+    {
+      "frame": 19.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.1425161487777416e-08,
+          "shin_axis_max_center_deviation_m": 2.2587179135182296e-08,
+          "thigh_length_m": 0.28880083396926315,
+          "shin_length_m": 0.2480882399903709
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.7830863699914994e-08,
+          "shin_axis_max_center_deviation_m": 5.550361486864186e-08,
+          "thigh_length_m": 0.23382883809111887,
+          "shin_length_m": 0.28666220998405223
+        }
+      }
+    },
+    {
+      "frame": 20.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.761459829561141e-08,
+          "shin_axis_max_center_deviation_m": 1.7653019213856733e-08,
+          "thigh_length_m": 0.28880101818543863,
+          "shin_length_m": 0.24808834697926993
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.267406425452399e-08,
+          "shin_axis_max_center_deviation_m": 4.494963595453915e-08,
+          "thigh_length_m": 0.2338288420740432,
+          "shin_length_m": 0.28666228775339303
+        }
+      }
+    },
+    {
+      "frame": 20.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.852966510995997e-08,
+          "shin_axis_max_center_deviation_m": 2.9163278021785152e-08,
+          "thigh_length_m": 0.288801037131078,
+          "shin_length_m": 0.24808840516619562
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.8953104850337036e-08,
+          "shin_axis_max_center_deviation_m": 6.808694618798653e-08,
+          "thigh_length_m": 0.23382890978374632,
+          "shin_length_m": 0.2866623526034637
+        }
+      }
+    },
+    {
+      "frame": 20.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.664436864702922e-08,
+          "shin_axis_max_center_deviation_m": 3.153379252056221e-08,
+          "thigh_length_m": 0.2888009315192,
+          "shin_length_m": 0.2480883338402848
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.2235698858744615e-08,
+          "shin_axis_max_center_deviation_m": 3.283819845594514e-08,
+          "thigh_length_m": 0.2338287863130965,
+          "shin_length_m": 0.286662164608018
+        }
+      }
+    },
+    {
+      "frame": 20.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.7750601639195044e-08,
+          "shin_axis_max_center_deviation_m": 3.4315687715219424e-08,
+          "thigh_length_m": 0.28880080655853113,
+          "shin_length_m": 0.24808827753034074
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.47556143691823e-08,
+          "shin_axis_max_center_deviation_m": 5.185633357236966e-08,
+          "thigh_length_m": 0.23382880622772184,
+          "shin_length_m": 0.2866621897041195
+        }
+      }
+    },
+    {
+      "frame": 20.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.0075559888463426e-08,
+          "shin_axis_max_center_deviation_m": 3.359514262929544e-08,
+          "thigh_length_m": 0.28880113709953764,
+          "shin_length_m": 0.24808847649208596
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.472503369982326e-08,
+          "shin_axis_max_center_deviation_m": 5.271174321348375e-08,
+          "thigh_length_m": 0.23382883809111887,
+          "shin_length_m": 0.28666236391953076
+        }
+      }
+    },
+    {
+      "frame": 20.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.004442296944581e-08,
+          "shin_axis_max_center_deviation_m": 4.956972252735587e-08,
+          "thigh_length_m": 0.28880107582855036,
+          "shin_length_m": 0.2480884539681228
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.617747570645389e-08,
+          "shin_axis_max_center_deviation_m": 4.6234907448781227e-08,
+          "thigh_length_m": 0.2338288819032827,
+          "shin_length_m": 0.28666238638403096
+        }
+      }
+    },
+    {
+      "frame": 20.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.042520205042404e-08,
+          "shin_axis_max_center_deviation_m": 4.514887835443819e-08,
+          "thigh_length_m": 0.28880089483720284,
+          "shin_length_m": 0.2480882625143535
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 9.411880094686862e-08,
+          "shin_axis_max_center_deviation_m": 3.44185054849001e-08,
+          "thigh_length_m": 0.23382872656921028,
+          "shin_length_m": 0.2866622573969557
+        }
+      }
+    },
+    {
+      "frame": 20.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.951635298940597e-08,
+          "shin_axis_max_center_deviation_m": 2.2068348840588388e-08,
+          "thigh_length_m": 0.2888011145260175,
+          "shin_length_m": 0.24808844646013464
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.3645123699426e-08,
+          "shin_axis_max_center_deviation_m": 3.299249643038363e-08,
+          "thigh_length_m": 0.2338288858862063,
+          "shin_length_m": 0.2866624302331669
+        }
+      }
+    },
+    {
+      "frame": 21.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.413232900528827e-08,
+          "shin_axis_max_center_deviation_m": 2.4897398179485778e-08,
+          "thigh_length_m": 0.28880104882094,
+          "shin_length_m": 0.24808841079718774
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.416943352444506e-08,
+          "shin_axis_max_center_deviation_m": 4.961773074785645e-08,
+          "thigh_length_m": 0.2338288261423455,
+          "shin_length_m": 0.2866622631078242
+        }
+      }
+    },
+    {
+      "frame": 21.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.2451127687446926e-08,
+          "shin_axis_max_center_deviation_m": 2.7420439249421985e-08,
+          "thigh_length_m": 0.2888009625578094,
+          "shin_length_m": 0.24808835636425888
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 9.034060432932521e-08,
+          "shin_axis_max_center_deviation_m": 4.2906251991838865e-08,
+          "thigh_length_m": 0.23382869868872483,
+          "shin_length_m": 0.28666229567246315
+        }
+      }
+    },
+    {
+      "frame": 21.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.312466199012497e-08,
+          "shin_axis_max_center_deviation_m": 3.430956990897229e-08,
+          "thigh_length_m": 0.2888009774724647,
+          "shin_length_m": 0.24808829817732173
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.397883217129561e-08,
+          "shin_axis_max_center_deviation_m": 4.739682290653329e-08,
+          "thigh_length_m": 0.2338288022447969,
+          "shin_length_m": 0.2866623415116914
+        }
+      }
+    },
+    {
+      "frame": 21.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.183169719736998e-08,
+          "shin_axis_max_center_deviation_m": 2.532822112060528e-08,
+          "thigh_length_m": 0.288800924868069,
+          "shin_length_m": 0.24808828691533233
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.693714835082593e-08,
+          "shin_axis_max_center_deviation_m": 4.4034861467024575e-08,
+          "thigh_length_m": 0.23382870665457814,
+          "shin_length_m": 0.2866621798306599
+        }
+      }
+    },
+    {
+      "frame": 21.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.114981718810984e-08,
+          "shin_axis_max_center_deviation_m": 3.2414529714715e-08,
+          "thigh_length_m": 0.2888010304799494,
+          "shin_length_m": 0.24808836574924747
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.996310146338652e-08,
+          "shin_axis_max_center_deviation_m": 4.385406859045134e-08,
+          "thigh_length_m": 0.2338287863130965,
+          "shin_length_m": 0.2866623205972271
+        }
+      }
+    },
+    {
+      "frame": 21.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.1962632197864007e-08,
+          "shin_axis_max_center_deviation_m": 1.632323795920271e-08,
+          "thigh_length_m": 0.2888009865421871,
+          "shin_length_m": 0.2480884520911258
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.181915584294082e-08,
+          "shin_axis_max_center_deviation_m": 4.885952141825372e-08,
+          "thigh_length_m": 0.2338288261423455,
+          "shin_length_m": 0.2866623441006177
+        }
+      }
+    },
+    {
+      "frame": 21.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.470645409545391e-08,
+          "shin_axis_max_center_deviation_m": 4.264604224734306e-08,
+          "thigh_length_m": 0.2888009526818886,
+          "shin_length_m": 0.24808836199525208
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.723480529225851e-08,
+          "shin_axis_max_center_deviation_m": 3.508975140490756e-08,
+          "thigh_length_m": 0.23382879029602172,
+          "shin_length_m": 0.28666228115416786
+        }
+      }
+    },
+    {
+      "frame": 21.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.0148988797277574e-08,
+          "shin_axis_max_center_deviation_m": 3.254794108877789e-08,
+          "thigh_length_m": 0.28880098946465316,
+          "shin_length_m": 0.24808839953520345
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.58230178100169e-08,
+          "shin_axis_max_center_deviation_m": 4.627518611334819e-08,
+          "thigh_length_m": 0.23382879826187192,
+          "shin_length_m": 0.2866624607545664
+        }
+      }
+    },
+    {
+      "frame": 22.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.1033607707912255e-08,
+          "shin_axis_max_center_deviation_m": 3.311325862982116e-08,
+          "thigh_length_m": 0.28880089141086224,
+          "shin_length_m": 0.24808829442332533
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.383771614209423e-08,
+          "shin_axis_max_center_deviation_m": 3.5618563485312125e-08,
+          "thigh_length_m": 0.2338288022447969,
+          "shin_length_m": 0.2866623002411573
+        }
+      }
+    },
+    {
+      "frame": 22.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.214590569893746e-08,
+          "shin_axis_max_center_deviation_m": 2.2255448083570213e-08,
+          "thigh_length_m": 0.2888009993405727,
+          "shin_length_m": 0.24808847649208599
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.0009741740512866e-08,
+          "shin_axis_max_center_deviation_m": 4.9637462575273826e-08,
+          "thigh_length_m": 0.2338288022447969,
+          "shin_length_m": 0.28666229211903427
+        }
+      }
+    },
+    {
+      "frame": 22.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.136278111627584e-08,
+          "shin_axis_max_center_deviation_m": 4.4137176662911394e-08,
+          "thigh_length_m": 0.2888010306814988,
+          "shin_length_m": 0.24808845021412876
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.2801216362627266e-08,
+          "shin_axis_max_center_deviation_m": 4.128674936649152e-08,
+          "thigh_length_m": 0.23382877436432048,
+          "shin_length_m": 0.286662423291293
+        }
+      }
+    },
+    {
+      "frame": 22.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.4959673835980076e-08,
+          "shin_axis_max_center_deviation_m": 3.6662794151178344e-08,
+          "thigh_length_m": 0.28880106690999274,
+          "shin_length_m": 0.24808835073326557
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.583332513483475e-08,
+          "shin_axis_max_center_deviation_m": 3.263622603913769e-08,
+          "thigh_length_m": 0.23382883012527003,
+          "shin_length_m": 0.2866622478534598
+        }
+      }
+    },
+    {
+      "frame": 22.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.8656274968747886e-08,
+          "shin_axis_max_center_deviation_m": 2.4087040076357197e-08,
+          "thigh_length_m": 0.2888009316199748,
+          "shin_length_m": 0.2480883563642589
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.6668026215300164e-08,
+          "shin_axis_max_center_deviation_m": 4.477590831050608e-08,
+          "thigh_length_m": 0.23382876639846945,
+          "shin_length_m": 0.2866622368885916
+        }
+      }
+    },
+    {
+      "frame": 22.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.8540516675389736e-08,
+          "shin_axis_max_center_deviation_m": 3.920226518514042e-08,
+          "thigh_length_m": 0.2888009338370184,
+          "shin_length_m": 0.2480882887923306
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.8126199645007745e-08,
+          "shin_axis_max_center_deviation_m": 3.867754796141663e-08,
+          "thigh_length_m": 0.2338288022447969,
+          "shin_length_m": 0.28666245862251033
+        }
+      }
+    },
+    {
+      "frame": 22.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.659897309790092e-08,
+          "shin_axis_max_center_deviation_m": 1.998435157750854e-08,
+          "thigh_length_m": 0.2888010055886032,
+          "shin_length_m": 0.248088435198152
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.390273602884805e-08,
+          "shin_axis_max_center_deviation_m": 4.591435281985555e-08,
+          "thigh_length_m": 0.23382884008258104,
+          "shin_length_m": 0.28666234958304976
+        }
+      }
+    },
+    {
+      "frame": 22.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.753633125364162e-08,
+          "shin_axis_max_center_deviation_m": 5.3473458117603926e-08,
+          "thigh_length_m": 0.28880100760409694,
+          "shin_length_m": 0.2480883788882309
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.092655576064201e-08,
+          "shin_axis_max_center_deviation_m": 4.5585200093000874e-08,
+          "thigh_length_m": 0.23382877436432048,
+          "shin_length_m": 0.2866622831846987
+        }
+      }
+    },
+    {
+      "frame": 23.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.7435281750251e-08,
+          "shin_axis_max_center_deviation_m": 3.832287629615757e-08,
+          "thigh_length_m": 0.28880092568056515,
+          "shin_length_m": 0.24808832070129905
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.831856376676219e-08,
+          "shin_axis_max_center_deviation_m": 5.2547361120363024e-08,
+          "thigh_length_m": 0.23382874449237775,
+          "shin_length_m": 0.2866623136426598
+        }
+      }
+    },
+    {
+      "frame": 23.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.420975480056541e-08,
+          "shin_axis_max_center_deviation_m": 1.861092404952299e-08,
+          "thigh_length_m": 0.28880097956039036,
+          "shin_length_m": 0.2480883695032428
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.945510803509528e-08,
+          "shin_axis_max_center_deviation_m": 4.153150059618011e-08,
+          "thigh_length_m": 0.2338288261423455,
+          "shin_length_m": 0.2866622433862913
+        }
+      }
+    },
+    {
+      "frame": 23.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.9601027358402636e-08,
+          "shin_axis_max_center_deviation_m": 1.512896677653514e-08,
+          "thigh_length_m": 0.2888011318435103,
+          "shin_length_m": 0.2480885177860131
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 7.250519780040541e-08,
+          "shin_axis_max_center_deviation_m": 4.7853837177520137e-08,
+          "thigh_length_m": 0.2338288241508832,
+          "shin_length_m": 0.286662219426023
+        }
+      }
+    },
+    {
+      "frame": 23.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.810960144038542e-08,
+          "shin_axis_max_center_deviation_m": 3.313367103114054e-08,
+          "thigh_length_m": 0.28880101316344087,
+          "shin_length_m": 0.2480883563642589
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.118516562400128e-08,
+          "shin_axis_max_center_deviation_m": 4.048966957906189e-08,
+          "thigh_length_m": 0.2338287763557832,
+          "shin_length_m": 0.28666223770080407
+        }
+      }
+    },
+    {
+      "frame": 23.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.086145848047188e-08,
+          "shin_axis_max_center_deviation_m": 3.067254413996985e-08,
+          "thigh_length_m": 0.2888009321128261,
+          "shin_length_m": 0.2480883432252743
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.35450914383526e-08,
+          "shin_axis_max_center_deviation_m": 5.025924504596742e-08,
+          "thigh_length_m": 0.233828770381395,
+          "shin_length_m": 0.28666206673002853
+        }
+      }
+    },
+    {
+      "frame": 23.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.516148779219639e-08,
+          "shin_axis_max_center_deviation_m": 3.6847473448136586e-08,
+          "thigh_length_m": 0.28880090998805236,
+          "shin_length_m": 0.24808835261026338
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.593872253657665e-08,
+          "shin_axis_max_center_deviation_m": 3.1294373323614707e-08,
+          "thigh_length_m": 0.2338287962704094,
+          "shin_length_m": 0.28666228359080487
+        }
+      }
+    },
+    {
+      "frame": 23.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.008496155183892e-08,
+          "shin_axis_max_center_deviation_m": 3.270405862724275e-08,
+          "thigh_length_m": 0.288801081723868,
+          "shin_length_m": 0.24808845209112582
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.6148050351158324e-08,
+          "shin_axis_max_center_deviation_m": 5.013361696609682e-08,
+          "thigh_length_m": 0.2338288161850339,
+          "shin_length_m": 0.2866623311052227
+        }
+      }
+    },
+    {
+      "frame": 23.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.702984873903573e-08,
+          "shin_axis_max_center_deviation_m": 2.6607659840809217e-08,
+          "thigh_length_m": 0.2888009648882244,
+          "shin_length_m": 0.24808828128433744
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.358513415790645e-08,
+          "shin_axis_max_center_deviation_m": 4.5216803329453525e-08,
+          "thigh_length_m": 0.2338287325435996,
+          "shin_length_m": 0.2866621926230085
+        }
+      }
+    },
+    {
+      "frame": 24.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.194258100215246e-08,
+          "shin_axis_max_center_deviation_m": 4.084401384536588e-08,
+          "thigh_length_m": 0.288801026247413,
+          "shin_length_m": 0.248088435198152
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.956325966223266e-08,
+          "shin_axis_max_center_deviation_m": 3.8165500641626047e-08,
+          "thigh_length_m": 0.23382881220210913,
+          "shin_length_m": 0.2866624358805778
+        }
+      }
+    },
+    {
+      "frame": 24.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.224603336647972e-08,
+          "shin_axis_max_center_deviation_m": 2.4828898266770036e-08,
+          "thigh_length_m": 0.2888010093424602,
+          "shin_length_m": 0.24808843144415763
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 7.931913817698629e-08,
+          "shin_axis_max_center_deviation_m": 4.472855659898167e-08,
+          "thigh_length_m": 0.2338289217325154,
+          "shin_length_m": 0.286662296586202
+        }
+      }
+    },
+    {
+      "frame": 24.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.978925385531247e-08,
+          "shin_axis_max_center_deviation_m": 2.8285503041057235e-08,
+          "thigh_length_m": 0.2888009916816963,
+          "shin_length_m": 0.24808839015021614
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.39014250143791e-08,
+          "shin_axis_max_center_deviation_m": 3.591961770210348e-08,
+          "thigh_length_m": 0.2338289535958967,
+          "shin_length_m": 0.2866623441006177
+        }
+      }
+    },
+    {
+      "frame": 24.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.796555644500793e-08,
+          "shin_axis_max_center_deviation_m": 1.9361515371695546e-08,
+          "thigh_length_m": 0.2888009172091907,
+          "shin_length_m": 0.24808827002234726
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.212004001052407e-08,
+          "shin_axis_max_center_deviation_m": 5.824175596411066e-08,
+          "thigh_length_m": 0.2338288420740432,
+          "shin_length_m": 0.28666216094671554
+        }
+      }
+    },
+    {
+      "frame": 24.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.732753887155055e-08,
+          "shin_axis_max_center_deviation_m": 3.502117829676595e-08,
+          "thigh_length_m": 0.28880095288343804,
+          "shin_length_m": 0.24808839015021614
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.346019322637081e-08,
+          "shin_axis_max_center_deviation_m": 4.4879748856315013e-08,
+          "thigh_length_m": 0.23382885402281575,
+          "shin_length_m": 0.2866622929312466
+        }
+      }
+    },
+    {
+      "frame": 24.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.614472066359204e-08,
+          "shin_axis_max_center_deviation_m": 2.0651002645271908e-08,
+          "thigh_length_m": 0.28880090148833454,
+          "shin_length_m": 0.24808827753034077
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.081648512326608e-08,
+          "shin_axis_max_center_deviation_m": 2.9360292793833567e-08,
+          "thigh_length_m": 0.23382872656921028,
+          "shin_length_m": 0.28666229780452046
+        }
+      }
+    },
+    {
+      "frame": 24.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.397967029041873e-08,
+          "shin_axis_max_center_deviation_m": 1.915342946341368e-08,
+          "thigh_length_m": 0.28880095389118504,
+          "shin_length_m": 0.24808831882430102
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.522240893827435e-08,
+          "shin_axis_max_center_deviation_m": 4.477658359424434e-08,
+          "thigh_length_m": 0.23382885402281575,
+          "shin_length_m": 0.2866621938413274
+        }
+      }
+    },
+    {
+      "frame": 24.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.709057703621169e-08,
+          "shin_axis_max_center_deviation_m": 4.215349846188751e-08,
+          "thigh_length_m": 0.2888009218448276,
+          "shin_length_m": 0.24808830756231254
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.855417642969483e-08,
+          "shin_axis_max_center_deviation_m": 4.561967815064888e-08,
+          "thigh_length_m": 0.23382882016795858,
+          "shin_length_m": 0.2866623262319494
+        }
+      }
+    },
+    {
+      "frame": 25.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.648220514477654e-08,
+          "shin_axis_max_center_deviation_m": 4.5403501204751664e-08,
+          "thigh_length_m": 0.2888010271543851,
+          "shin_length_m": 0.2480884427061405
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.0880054425147846e-08,
+          "shin_axis_max_center_deviation_m": 4.062738628497845e-08,
+          "thigh_length_m": 0.23382891575813095,
+          "shin_length_m": 0.28666240907758367
+        }
+      }
+    },
+    {
+      "frame": 25.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.9937571307839546e-08,
+          "shin_axis_max_center_deviation_m": 3.024996274705615e-08,
+          "thigh_length_m": 0.28880093857342976,
+          "shin_length_m": 0.24808835261026338
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.30880522568117e-08,
+          "shin_axis_max_center_deviation_m": 3.562960266613547e-08,
+          "thigh_length_m": 0.2338288221594209,
+          "shin_length_m": 0.2866623262319494
+        }
+      }
+    },
+    {
+      "frame": 25.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.884923962044885e-08,
+          "shin_axis_max_center_deviation_m": 4.4786610173551146e-08,
+          "thigh_length_m": 0.2888009172091907,
+          "shin_length_m": 0.24808833759428067
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.98991300299747e-08,
+          "shin_axis_max_center_deviation_m": 1.4032035922698583e-08,
+          "thigh_length_m": 0.23382880722345306,
+          "shin_length_m": 0.28666214348414226
+        }
+      }
+    },
+    {
+      "frame": 25.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.486901963156647e-08,
+          "shin_axis_max_center_deviation_m": 3.5069190677941185e-08,
+          "thigh_length_m": 0.28880100327078545,
+          "shin_length_m": 0.2480883638722498
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.855728089305763e-08,
+          "shin_axis_max_center_deviation_m": 3.910835129159912e-08,
+          "thigh_length_m": 0.23382884008258104,
+          "shin_length_m": 0.2866622052123035
+        }
+      }
+    },
+    {
+      "frame": 25.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.475586187359092e-08,
+          "shin_axis_max_center_deviation_m": 3.184696899623445e-08,
+          "thigh_length_m": 0.2888011320608056,
+          "shin_length_m": 0.2480884689840985
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.451887694135692e-08,
+          "shin_axis_max_center_deviation_m": 4.350278438021421e-08,
+          "thigh_length_m": 0.23382885103562268,
+          "shin_length_m": 0.2866622019634532
+        }
+      }
+    },
+    {
+      "frame": 25.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.787645006255556e-08,
+          "shin_axis_max_center_deviation_m": 2.9160183055019683e-08,
+          "thigh_length_m": 0.28880104055741695,
+          "shin_length_m": 0.2480883601182544
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.8416606085350626e-08,
+          "shin_axis_max_center_deviation_m": 5.1089112930248095e-08,
+          "thigh_length_m": 0.23382887991182089,
+          "shin_length_m": 0.2866621670383106
+        }
+      }
+    },
+    {
+      "frame": 25.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.8885530292381226e-08,
+          "shin_axis_max_center_deviation_m": 3.618965114902833e-08,
+          "thigh_length_m": 0.2888011653164353,
+          "shin_length_m": 0.24808846523010467
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.5922349583812276e-08,
+          "shin_axis_max_center_deviation_m": 3.6576224077516877e-08,
+          "thigh_length_m": 0.23382877934297722,
+          "shin_length_m": 0.2866621499818441
+        }
+      }
+    },
+    {
+      "frame": 25.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.4707753637637323e-08,
+          "shin_axis_max_center_deviation_m": 5.6315628742179354e-08,
+          "thigh_length_m": 0.28880098815458216,
+          "shin_length_m": 0.24808837138024045
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.5428369661674e-08,
+          "shin_axis_max_center_deviation_m": 3.9343601922082316e-08,
+          "thigh_length_m": 0.2338288560142778,
+          "shin_length_m": 0.2866622100855788
+        }
+      }
+    },
+    {
+      "frame": 26.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.5580929889075844e-08,
+          "shin_axis_max_center_deviation_m": 3.374771790206364e-08,
+          "thigh_length_m": 0.28880097041823594,
+          "shin_length_m": 0.24808834885626777
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.440964559328864e-08,
+          "shin_axis_max_center_deviation_m": 4.5710886948278234e-08,
+          "thigh_length_m": 0.23382882116368975,
+          "shin_length_m": 0.2866621694749486
+        }
+      }
+    },
+    {
+      "frame": 26.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.3299655826485844e-08,
+          "shin_axis_max_center_deviation_m": 4.1673038432520134e-08,
+          "thigh_length_m": 0.28880100125529173,
+          "shin_length_m": 0.24808838264222605
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.908193565904153e-08,
+          "shin_axis_max_center_deviation_m": 3.685362973254566e-08,
+          "thigh_length_m": 0.2338288261423455,
+          "shin_length_m": 0.28666216054060917
+        }
+      }
+    },
+    {
+      "frame": 26.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.846839344924087e-08,
+          "shin_axis_max_center_deviation_m": 3.080253425525258e-08,
+          "thigh_length_m": 0.2888009919840204,
+          "shin_length_m": 0.24808848400007324
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.220212155496032e-08,
+          "shin_axis_max_center_deviation_m": 4.95749856246274e-08,
+          "thigh_length_m": 0.2338289526001661,
+          "shin_length_m": 0.2866623359784959
+        }
+      }
+    },
+    {
+      "frame": 26.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.350296439579897e-08,
+          "shin_axis_max_center_deviation_m": 2.5913005247638033e-08,
+          "thigh_length_m": 0.2888009637671058,
+          "shin_length_m": 0.2480883751342357
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.083937881263958e-08,
+          "shin_axis_max_center_deviation_m": 4.51148506290249e-08,
+          "thigh_length_m": 0.23382882713807665,
+          "shin_length_m": 0.2866620590140053
+        }
+      }
+    },
+    {
+      "frame": 26.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.610604490704624e-08,
+          "shin_axis_max_center_deviation_m": 3.154350356185683e-08,
+          "thigh_length_m": 0.2888009895654278,
+          "shin_length_m": 0.24808843895214627
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.4345400219497815e-08,
+          "shin_axis_max_center_deviation_m": 4.164580612430184e-08,
+          "thigh_length_m": 0.23382878332590254,
+          "shin_length_m": 0.2866621467329932
+        }
+      }
+    },
+    {
+      "frame": 26.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.884629002548918e-08,
+          "shin_axis_max_center_deviation_m": 4.437478455565673e-08,
+          "thigh_length_m": 0.2888009677980938,
+          "shin_length_m": 0.24808836011825436
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.389892358958048e-08,
+          "shin_axis_max_center_deviation_m": 4.270623159665666e-08,
+          "thigh_length_m": 0.23382886398012576,
+          "shin_length_m": 0.28666216135282185
+        }
+      }
+    },
+    {
+      "frame": 26.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.0424154771555335e-08,
+          "shin_axis_max_center_deviation_m": 1.877055645797365e-08,
+          "thigh_length_m": 0.28880103934812085,
+          "shin_length_m": 0.24808846147611074
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.697384873016681e-08,
+          "shin_axis_max_center_deviation_m": 4.923399793416731e-08,
+          "thigh_length_m": 0.2338288420740432,
+          "shin_length_m": 0.2866622076489412
+        }
+      }
+    },
+    {
+      "frame": 26.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.9883282785998335e-08,
+          "shin_axis_max_center_deviation_m": 3.227841360057475e-08,
+          "thigh_length_m": 0.2888010171776918,
+          "shin_length_m": 0.24808845772211682
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.551520495297155e-08,
+          "shin_axis_max_center_deviation_m": 3.15900436846528e-08,
+          "thigh_length_m": 0.23382893417914924,
+          "shin_length_m": 0.2866622100855788
+        }
+      }
+    },
+    {
+      "frame": 27.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.898035143350189e-08,
+          "shin_axis_max_center_deviation_m": 3.288369248507011e-08,
+          "thigh_length_m": 0.28880094744160395,
+          "shin_length_m": 0.24808834510227212
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.542959824582321e-08,
+          "shin_axis_max_center_deviation_m": 3.55613958000797e-08,
+          "thigh_length_m": 0.23382883858898443,
+          "shin_length_m": 0.2866621142444823
+        }
+      }
+    },
+    {
+      "frame": 27.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.113119507697079e-08,
+          "shin_axis_max_center_deviation_m": 3.0364423497225233e-08,
+          "thigh_length_m": 0.2888010075033222,
+          "shin_length_m": 0.2480884314441576
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.837859075652961e-08,
+          "shin_axis_max_center_deviation_m": 3.943710099472341e-08,
+          "thigh_length_m": 0.23382883261459783,
+          "shin_length_m": 0.2866621475452059
+        }
+      }
+    },
+    {
+      "frame": 27.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.0680448774997406e-08,
+          "shin_axis_max_center_deviation_m": 3.295318961363949e-08,
+          "thigh_length_m": 0.28880109255714354,
+          "shin_length_m": 0.24808845021412876
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.430221626621506e-08,
+          "shin_axis_max_center_deviation_m": 5.582215105252208e-08,
+          "thigh_length_m": 0.23382891824745783,
+          "shin_length_m": 0.2866622320153167
+        }
+      }
+    },
+    {
+      "frame": 27.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.156600164807886e-08,
+          "shin_axis_max_center_deviation_m": 3.668989200116833e-08,
+          "thigh_length_m": 0.288800965379501,
+          "shin_length_m": 0.24808840141220084
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.8927208636429764e-08,
+          "shin_axis_max_center_deviation_m": 3.614550112574752e-08,
+          "thigh_length_m": 0.2338288052319906,
+          "shin_length_m": 0.2866621256154615
+        }
+      }
+    },
+    {
+      "frame": 27.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.361406611149512e-08,
+          "shin_axis_max_center_deviation_m": 3.759825913314319e-08,
+          "thigh_length_m": 0.2888009899685266,
+          "shin_length_m": 0.24808841267418508
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.203498073017008e-08,
+          "shin_axis_max_center_deviation_m": 4.244280185607724e-08,
+          "thigh_length_m": 0.23382886323332752,
+          "shin_length_m": 0.286662180033713
+        }
+      }
+    },
+    {
+      "frame": 27.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.755661705744331e-08,
+          "shin_axis_max_center_deviation_m": 3.2817809161995897e-08,
+          "thigh_length_m": 0.28880099803050174,
+          "shin_length_m": 0.24808836387224978
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.215738429311124e-08,
+          "shin_axis_max_center_deviation_m": 2.926116442019659e-08,
+          "thigh_length_m": 0.23382874349664626,
+          "shin_length_m": 0.2866619899758942
+        }
+      }
+    },
+    {
+      "frame": 27.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.5489928866958023e-08,
+          "shin_axis_max_center_deviation_m": 3.25183986359272e-08,
+          "thigh_length_m": 0.28880116289784413,
+          "shin_length_m": 0.248088529047992
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.3002551820553795e-08,
+          "shin_axis_max_center_deviation_m": 3.816338372002085e-08,
+          "thigh_length_m": 0.2338288759288972,
+          "shin_length_m": 0.2866621914046896
+        }
+      }
+    },
+    {
+      "frame": 27.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.5162149793027935e-08,
+          "shin_axis_max_center_deviation_m": 4.6537644757114684e-08,
+          "thigh_length_m": 0.28880094925554867,
+          "shin_length_m": 0.24808834134827643
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.914918415133003e-08,
+          "shin_axis_max_center_deviation_m": 3.6124182560828037e-08,
+          "thigh_length_m": 0.2338287853173652,
+          "shin_length_m": 0.2866620500796625
+        }
+      }
+    },
+    {
+      "frame": 28.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 3.782118510949535e-08,
+          "shin_axis_max_center_deviation_m": 4.049480986238055e-08,
+          "thigh_length_m": 0.2888010637355908,
+          "shin_length_m": 0.24808844270614047
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.614811650608759e-08,
+          "shin_axis_max_center_deviation_m": 4.149760578453942e-08,
+          "thigh_length_m": 0.2338288580057398,
+          "shin_length_m": 0.2866622352641666
+        }
+      }
+    },
+    {
+      "frame": 28.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.781298995663287e-08,
+          "shin_axis_max_center_deviation_m": 3.374598985972722e-08,
+          "thigh_length_m": 0.28880091136425706,
+          "shin_length_m": 0.24808836762624514
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.998876366130208e-08,
+          "shin_axis_max_center_deviation_m": 5.475838733783765e-08,
+          "thigh_length_m": 0.233828850164358,
+          "shin_length_m": 0.28666202571327143
+        }
+      }
+    },
+    {
+      "frame": 28.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.165453837796235e-08,
+          "shin_axis_max_center_deviation_m": 5.883463809031666e-08,
+          "thigh_length_m": 0.2888009927902179,
+          "shin_length_m": 0.24808840892019038
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.3879148491266526e-08,
+          "shin_axis_max_center_deviation_m": 3.5050515345938336e-08,
+          "thigh_length_m": 0.23382882987633724,
+          "shin_length_m": 0.2866619233744065
+        }
+      }
+    },
+    {
+      "frame": 28.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.4017260999173385e-08,
+          "shin_axis_max_center_deviation_m": 3.269953966278357e-08,
+          "thigh_length_m": 0.28880104922403865,
+          "shin_length_m": 0.24808834885626777
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.252449359749943e-08,
+          "shin_axis_max_center_deviation_m": 4.470381689574264e-08,
+          "thigh_length_m": 0.23382884456337086,
+          "shin_length_m": 0.28666215079405677
+        }
+      }
+    },
+    {
+      "frame": 28.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.7930924938524086e-08,
+          "shin_axis_max_center_deviation_m": 4.26758972841275e-08,
+          "thigh_length_m": 0.2888009895654278,
+          "shin_length_m": 0.24808833384028484
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.502389796319123e-08,
+          "shin_axis_max_center_deviation_m": 2.772633550279416e-08,
+          "thigh_length_m": 0.2338288857617399,
+          "shin_length_m": 0.28666198835146783
+        }
+      }
+    },
+    {
+      "frame": 28.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.089165522720624e-08,
+          "shin_axis_max_center_deviation_m": 4.078999611295725e-08,
+          "thigh_length_m": 0.2888008912093128,
+          "shin_length_m": 0.2480882887923306
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.5091316512805845e-08,
+          "shin_axis_max_center_deviation_m": 3.777536866907119e-08,
+          "thigh_length_m": 0.2338288195456266,
+          "shin_length_m": 0.2866619737316303
+        }
+      }
+    },
+    {
+      "frame": 28.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.020522865100592e-08,
+          "shin_axis_max_center_deviation_m": 4.345288499076153e-08,
+          "thigh_length_m": 0.28880097344147687,
+          "shin_length_m": 0.24808837138024045
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.078660139481026e-08,
+          "shin_axis_max_center_deviation_m": 3.477386241805616e-08,
+          "thigh_length_m": 0.23382874026051886,
+          "shin_length_m": 0.2866620403331063
+        }
+      }
+    },
+    {
+      "frame": 28.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.9718643644895e-08,
+          "shin_axis_max_center_deviation_m": 3.549911190032084e-08,
+          "thigh_length_m": 0.2888009847282426,
+          "shin_length_m": 0.24808842393616878
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 3.4573747892389554e-08,
+          "shin_axis_max_center_deviation_m": 3.469679033732602e-08,
+          "thigh_length_m": 0.23382881967009297,
+          "shin_length_m": 0.28666201921556683
+        }
+      }
+    },
+    {
+      "frame": 29.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 4.6801228365608533e-08,
+          "shin_axis_max_center_deviation_m": 4.069605825725122e-08,
+          "thigh_length_m": 0.28880102342572195,
+          "shin_length_m": 0.2480884164281797
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.619548204586871e-08,
+          "shin_axis_max_center_deviation_m": 5.9314802421943105e-08,
+          "thigh_length_m": 0.23382887539991515,
+          "shin_length_m": 0.2866620646994961
+        }
+      }
+    },
+    {
+      "frame": 29.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.122782425216735e-08,
+          "shin_axis_max_center_deviation_m": 5.0186419537251037e-08,
+          "thigh_length_m": 0.28880097182908165,
+          "shin_length_m": 0.248088318824301
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.168109994482822e-08,
+          "shin_axis_max_center_deviation_m": 5.042171998661971e-08,
+          "thigh_length_m": 0.23382878500619914,
+          "shin_length_m": 0.28666194286752644
+        }
+      }
+    },
+    {
+      "frame": 29.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.18891640987479e-08,
+          "shin_axis_max_center_deviation_m": 6.071046775570677e-08,
+          "thigh_length_m": 0.2888009041084773,
+          "shin_length_m": 0.24808833759428064
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.9239110041897516e-08,
+          "shin_axis_max_center_deviation_m": 2.84646640538805e-08,
+          "thigh_length_m": 0.2338287716882924,
+          "shin_length_m": 0.2866620143422883
+        }
+      }
+    },
+    {
+      "frame": 29.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 7.170247888862397e-08,
+          "shin_axis_max_center_deviation_m": 3.916502817203548e-08,
+          "thigh_length_m": 0.28880095892992014,
+          "shin_length_m": 0.2480884333211548
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.3986591468873425e-08,
+          "shin_axis_max_center_deviation_m": 4.1618389429257574e-08,
+          "thigh_length_m": 0.23382879586589356,
+          "shin_length_m": 0.28666199484917315
+        }
+      }
+    },
+    {
+      "frame": 29.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.278734736015647e-08,
+          "shin_axis_max_center_deviation_m": 4.233305522261993e-08,
+          "thigh_length_m": 0.2888010621231962,
+          "shin_length_m": 0.24808836762624514
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.507409177933798e-08,
+          "shin_axis_max_center_deviation_m": 5.524030878029919e-08,
+          "thigh_length_m": 0.23382892787804094,
+          "shin_length_m": 0.28666216216503454
+        }
+      }
+    },
+    {
+      "frame": 29.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.632694228173713e-08,
+          "shin_axis_max_center_deviation_m": 7.000871437877455e-08,
+          "thigh_length_m": 0.28880096860429133,
+          "shin_length_m": 0.24808835730275774
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.635540275780357e-08,
+          "shin_axis_max_center_deviation_m": 3.8334997883748194e-08,
+          "thigh_length_m": 0.23382883943302207,
+          "shin_length_m": 0.28666207769490315
+        }
+      }
+    },
+    {
+      "frame": 29.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.735416879110633e-08,
+          "shin_axis_max_center_deviation_m": 8.741587794524988e-08,
+          "thigh_length_m": 0.28880106534798544,
+          "shin_length_m": 0.24808840422769693
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.041144587298917e-08,
+          "shin_axis_max_center_deviation_m": 3.50886307151262e-08,
+          "thigh_length_m": 0.2338288921425856,
+          "shin_length_m": 0.2866621264276743
+        }
+      }
+    },
+    {
+      "frame": 29.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.179414993867646e-08,
+          "shin_axis_max_center_deviation_m": 8.246979496037211e-08,
+          "thigh_length_m": 0.2888009299068046,
+          "shin_length_m": 0.248088328209291
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 2.3363541287065983e-08,
+          "shin_axis_max_center_deviation_m": 4.219793648597149e-08,
+          "thigh_length_m": 0.2338289255528359,
+          "shin_length_m": 0.28666207444605146
+        }
+      }
+    },
+    {
+      "frame": 30.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 7.527945188639898e-08,
+          "shin_axis_max_center_deviation_m": 5.9194982070866485e-08,
+          "thigh_length_m": 0.2888008396126488,
+          "shin_length_m": 0.24808835730275774
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.435842601109572e-08,
+          "shin_axis_max_center_deviation_m": 4.309992258486193e-08,
+          "thigh_length_m": 0.23382885963741618,
+          "shin_length_m": 0.2866620517040885
+        }
+      }
+    },
+    {
+      "frame": 30.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 7.27198273140585e-08,
+          "shin_axis_max_center_deviation_m": 9.523234926827866e-08,
+          "thigh_length_m": 0.28880084283744056,
+          "shin_length_m": 0.24808833243253636
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.9666169869741286e-08,
+          "shin_axis_max_center_deviation_m": 4.711764655411201e-08,
+          "thigh_length_m": 0.233828789331407,
+          "shin_length_m": 0.28666198672704146
+        }
+      }
+    },
+    {
+      "frame": 30.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.20661987621491e-08,
+          "shin_axis_max_center_deviation_m": 8.805817026223988e-08,
+          "thigh_length_m": 0.2888009395811768,
+          "shin_length_m": 0.24808833360566007
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 6.0387890206671e-08,
+          "shin_axis_max_center_deviation_m": 2.851845080782236e-08,
+          "thigh_length_m": 0.23382879546137772,
+          "shin_length_m": 0.2866620175911406
+        }
+      }
+    },
+    {
+      "frame": 30.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.70010028463714e-08,
+          "shin_axis_max_center_deviation_m": 4.1203337376165704e-08,
+          "thigh_length_m": 0.28880097182908165,
+          "shin_length_m": 0.24808836035287904
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.160015227367232e-08,
+          "shin_axis_max_center_deviation_m": 2.8568493800050365e-08,
+          "thigh_length_m": 0.23382880112459925,
+          "shin_length_m": 0.2866619022568584
+        }
+      }
+    },
+    {
+      "frame": 30.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.222306894245066e-08,
+          "shin_axis_max_center_deviation_m": 1.0341007530136297e-07,
+          "thigh_length_m": 0.28880095892992014,
+          "shin_length_m": 0.2480883817623834
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.9090591151746285e-08,
+          "shin_axis_max_center_deviation_m": 3.768367169694883e-08,
+          "thigh_length_m": 0.2338287485686535,
+          "shin_length_m": 0.286661920125553
+        }
+      }
+    },
+    {
+      "frame": 30.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.355933269295643e-08,
+          "shin_axis_max_center_deviation_m": 7.697321343714976e-08,
+          "thigh_length_m": 0.2888009782786622,
+          "shin_length_m": 0.24808832925043828
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.478838226067681e-08,
+          "shin_axis_max_center_deviation_m": 3.0278849553525136e-08,
+          "thigh_length_m": 0.23382880075120002,
+          "shin_length_m": 0.2866620289621237
+        }
+      }
+    },
+    {
+      "frame": 30.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.1925809676908034e-08,
+          "shin_axis_max_center_deviation_m": 6.314323856355929e-08,
+          "thigh_length_m": 0.288801116944609,
+          "shin_length_m": 0.24808837055905394
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.266113724214039e-08,
+          "shin_axis_max_center_deviation_m": 2.6030663810105472e-08,
+          "thigh_length_m": 0.23382895334696405,
+          "shin_length_m": 0.28666208094375484
+        }
+      }
+    },
+    {
+      "frame": 30.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 1.000307552784701e-07,
+          "shin_axis_max_center_deviation_m": 3.095602178119375e-08,
+          "thigh_length_m": 0.2888009782786622,
+          "shin_length_m": 0.24808840289326908
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.7094266486422716e-08,
+          "shin_axis_max_center_deviation_m": 3.2140390609476556e-08,
+          "thigh_length_m": 0.23382881836319583,
+          "shin_length_m": 0.2866619834781888
+        }
+      }
+    },
+    {
+      "frame": 31.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.991530637522051e-08,
+          "shin_axis_max_center_deviation_m": 7.152326367329067e-08,
+          "thigh_length_m": 0.2888008944341039,
+          "shin_length_m": 0.2480884061046943
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 1.6334285515808288e-08,
+          "shin_axis_max_center_deviation_m": 2.9424577139124766e-08,
+          "thigh_length_m": 0.2338288115797771,
+          "shin_length_m": 0.28666199322474684
+        }
+      }
+    },
+    {
+      "frame": 31.125,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 9.280337854728655e-08,
+          "shin_axis_max_center_deviation_m": 1.0597479460234803e-07,
+          "thigh_length_m": 0.28880095248033916,
+          "shin_length_m": 0.24808844868906862
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.18162085957571e-08,
+          "shin_axis_max_center_deviation_m": 4.1619377470570214e-08,
+          "thigh_length_m": 0.23382885688554242,
+          "shin_length_m": 0.28666202246441913
+        }
+      }
+    },
+    {
+      "frame": 31.25,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 7.556811157911964e-08,
+          "shin_axis_max_center_deviation_m": 7.682101680231298e-08,
+          "thigh_length_m": 0.2888009073332683,
+          "shin_length_m": 0.24808832468991973
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.468655260640505e-08,
+          "shin_axis_max_center_deviation_m": 4.8398959976985926e-08,
+          "thigh_length_m": 0.2338287744887869,
+          "shin_length_m": 0.28666199322474684
+        }
+      }
+    },
+    {
+      "frame": 31.375,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 5.6657814302870425e-08,
+          "shin_axis_max_center_deviation_m": 9.354277002030346e-08,
+          "thigh_length_m": 0.2888008654109819,
+          "shin_length_m": 0.24808824773299012
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.54047336430348e-08,
+          "shin_axis_max_center_deviation_m": 4.896611329556927e-08,
+          "thigh_length_m": 0.233828742003049,
+          "shin_length_m": 0.2866619249988332
+        }
+      }
+    },
+    {
+      "frame": 31.5,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 8.452851252681011e-08,
+          "shin_axis_max_center_deviation_m": 9.137306160385366e-08,
+          "thigh_length_m": 0.28880098472824256,
+          "shin_length_m": 0.24808829465795004
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.3941749574522014e-08,
+          "shin_axis_max_center_deviation_m": 3.409886744523003e-08,
+          "thigh_length_m": 0.2338287846950331,
+          "shin_length_m": 0.2866618860125896
+        }
+      }
+    },
+    {
+      "frame": 31.625,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.595315589857705e-08,
+          "shin_axis_max_center_deviation_m": 9.783213469002665e-08,
+          "thigh_length_m": 0.28880089765889505,
+          "shin_length_m": 0.248088322578297
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.137552998927618e-08,
+          "shin_axis_max_center_deviation_m": 4.678076825602765e-08,
+          "thigh_length_m": 0.23382869619939559,
+          "shin_length_m": 0.2866619217499798
+        }
+      }
+    },
+    {
+      "frame": 31.75,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 7.319518405050456e-08,
+          "shin_axis_max_center_deviation_m": 6.954340831483523e-08,
+          "thigh_length_m": 0.2888009911778228,
+          "shin_length_m": 0.24808844129839258
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.0487569455582104e-08,
+          "shin_axis_max_center_deviation_m": 4.8035502057444604e-08,
+          "thigh_length_m": 0.23382886447799123,
+          "shin_length_m": 0.28666206145064427
+        }
+      }
+    },
+    {
+      "frame": 31.875,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 8.144714950980975e-08,
+          "shin_axis_max_center_deviation_m": 9.579670791781502e-08,
+          "thigh_length_m": 0.2888009331315953,
+          "shin_length_m": 0.24808836387224972
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 4.467717298245748e-08,
+          "shin_axis_max_center_deviation_m": 4.570113404644453e-08,
+          "thigh_length_m": 0.23382875893048385,
+          "shin_length_m": 0.28666189575915096
+        }
+      }
+    },
+    {
+      "frame": 32.0,
+      "legs": {
+        "near": {
+          "thigh_axis_max_center_deviation_m": 6.420896879108522e-08,
+          "shin_axis_max_center_deviation_m": 9.899606173404757e-08,
+          "thigh_length_m": 0.2888009750538719,
+          "shin_length_m": 0.24808836668774625
+        },
+        "far": {
+          "thigh_axis_max_center_deviation_m": 5.1827743458221174e-08,
+          "shin_axis_max_center_deviation_m": 2.6628986277945893e-08,
+          "thigh_length_m": 0.23382877735151453,
+          "shin_length_m": 0.2866620094690096
+        }
+      }
+    }
+  ],
+  "max_original_bone_world_matrix_change": 0.0,
+  "max_head_shoe_hand_mesh_change_m": 0.0,
+  "max_cuff_ring_change_m": 0.0,
+  "original_actions_changed": [],
+  "max_thigh_center_axis_deviation_m": 1.000307552784701e-07,
+  "max_shin_center_axis_deviation_m": 1.0597479460234803e-07
+}

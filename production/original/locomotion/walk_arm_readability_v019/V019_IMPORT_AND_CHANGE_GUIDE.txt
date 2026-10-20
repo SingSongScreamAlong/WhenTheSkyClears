@@ -1,0 +1,37 @@
+V019 NATIVE IMPORT / CHANGE CONTRACT
+
+Purpose: bounded wrist/coat occlusion diagnostic following broad artistic rejection
+of v018. This file is not approved animation and does not rescue the walk.
+
+Open native/WTSC_Boy_Arm_Readability_v019.blend, or append the complete collection
+WTSC_BOY_ARM_READABILITY_v019. Retain its nested world-contact goals and native
+drivers. The original v018 internal controller/camera names remain intentionally
+unchanged. Move the whole study with V018 | EXERCISE_PLACEMENT | move whole study.
+Do not independently move the rig or planted goals. Playback needs no Python.
+
+Only the two WRIST controls' location/quaternion channels and the far wrist
+FrontLayer property change. All body, head, pole, rig, foot goal, travel and timing
+channels are copied unchanged. The near FrontLayer remains0; its depth is already
+in front of the torso. Far FrontLayer is1 during forward phase q0..7 andq18..24,
+and0 behind the torso for rear phaseq7..18, with CONSTANT switch keys. The existing
+v017 depth driver puts it behind the near arm when in front of the body.
+
+Wrist proposal, not a tutorial preset: near upper-arm arc -28cos(theta)+12sin²(theta)
+degrees, far24cos(theta). Native limb lengths remain unchanged. Forearm direction
+uses the same arc delayed1.5frames plus30deg near /27deg far. Hand aim flexes8deg
+toward vertical relative to the forearm. Source native poles and IK planes are
+retained. The broader near forward arc is a silhouette accommodation and may read
+as held out; its naturalness is unapproved.
+
+Timing/travel remain exactly v018:24fps,24frames per gait cycle,0.44m per cycle,
+D(s)=0.44*(s-1)/24m along+X. Frames1/25/49 are relative cycle bookends; render1..48.
+Cadence120steps/min and0.22m per step remain provisional. All heel/sole/forefoot
+goals and switch phases are frozen; the original integration contract is copied
+under reference/V018_FROZEN_IMPORT_AND_TIMING_GUIDE.txt. No production mapping,
+retime, recovery restart or integration has been authored or approved here.
+
+Review the before/after movie at normal speed and actual shot size. The technical
+regression only verifies preservation of the working gait. The whole walk remains
+artistically rejected; knee/calf strips, stiff torso/coat, loading asymmetry and
+cadence/stride fit remain unresolved. Deep cloth/folded arm failures are not waived.
+Stop for independent review before another correction phase or additional acting.

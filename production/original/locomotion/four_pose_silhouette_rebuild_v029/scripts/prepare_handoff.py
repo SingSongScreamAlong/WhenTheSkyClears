@@ -1,0 +1,30 @@
+from pathlib import Path
+import hashlib,json,zipfile
+from PIL import Image
+P=Path(__file__).resolve().parents[1];ROOT=P.parents[1]
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+targets={'v046':('shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend','f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661'),'v007':('locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend','77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de'),'v045c':('shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend','5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4'),'v026':('locomotion/gp_extended_review_v026/native/WTSC_GP_Extended_Review_v026.blend','208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959'),'v027':('locomotion/body_loading_overlap_v027/native/WTSC_Body_Loading_Overlap_v027.blend','f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139'),'v028':('locomotion/upper_body_pose_refinement_v028/native/WTSC_Upper_Body_Pose_Refinement_v028.blend','c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4')}
+checks={}
+for name,(path,expected) in targets.items():
+    actual=sha(ROOT/path);checks[name]={'path':path,'sha256':actual,'unchanged':actual==expected};assert actual==expected
+assert sha(P/'reference/PRESERVED_BASELINE_v028.blend')==checks['v028']['sha256']
+(P/'evidence/PROTECTED_SOURCE_HASHES.json').write_text(json.dumps(checks,indent=2))
+board=P/'previews/WTSC_v029_Four_Pose_Review_Board.png';im=Image.open(board);im.verify();receipt=json.loads((P/'evidence/LIBRARY_BOARD_RECEIPT.json').read_text())['structuredContent'];assert receipt['status']=='succeeded' and receipt['file_size_bytes']==board.stat().st_size
+native=P/'native/WTSC_Four_Pose_Silhouette_Rebuild_v029.blend';anatomy=json.loads((P/'evidence/FOUR_POSE_ANATOMY_AND_SCOPE.json').read_text())
+handoff={'status':'FOUR_POSE_COMPARISON_DELIVERED_FOUNDATION_NOT_PASSED','native':str(native),'native_bytes':native.stat().st_size,'native_sha256':sha(native),'primary_board':{'path':str(board),'bytes':board.stat().st_size,'sha256':sha(board),'dimensions':[1920,2220],'content':'Actual Blender-rendered v028/v029 contact,down,passing,up close and shot comparisons'},'private_preview':receipt,'actual_Blender_renders':json.loads((P/'evidence/RENDER_RECORD.json').read_text()),'anatomical_guide_only':anatomy,
+    'observed_useful_changes':['Passing support leg is straighter under the pelvis, with a separately bent swing knee and readable negative space.','Smaller original painted boots and narrower cuff bands reduce the earlier passing congestion.','Separate thigh/knee/calf/shin contours and fuller cloth volumes replace bowed ribbon drawings.','Pose-specific arm gestures and less abrupt cuff/skin/hand proportions.'],
+    'candid_not_passed':['Trunk/pelvis mass still reads too planar/columnar, without enough whole-body attitude difference at shot size.','Some knee/calf transitions remain graphic/angular.','Coat panels are still flat; new body is structural value block-in and lacks original painterly finish.','Front arm gesture is posed/reaching; rear arm merges with coat in places.','Boot scaling and clearer anatomy are changes to assess, not evidence of artistic acceptance.'],
+    'next_drawing_priority':'Resolve torso/pelvis mass and soften the four leg silhouettes before generating inbetweens or a cycle.','full_cycle_or_inbetweens_generated':False,'motion_playback_or_animation_pass_claimed':False,'production_integration':False,'travel_contract':'None authored. Root/stage frozen. Frames1,4,11,13 select independent poses; timing/intermediate playback undefined.',
+    'head_choice':'Original source profile artwork/UVs/materials retained as translated native shape samples. No turnaround or v008 patch.','critique_and_native_guide':'V029_POSE_GUIDE_AND_CANDID_CRITIQUE.txt','source_preservation':checks,
+    'coordination':'Messaging failed, so all short threads2 Blender jobs used immediate host no-Blender-process gates. All Blender jobs exited. No heavy render or full-trailer job.',
+    'blockers':[{'action':'Request independent read-only critique of the actual four-pose comparison board','target_thread_id':'01a14565-35ea-72b8-8731-2181768cf013','reason':'Thread routing returned no rollout found after an explicit local-host request; earlier coordination returned AbsolutePathBuf without a base path.','status':'FAILED_NOT_DELIVERED','denied':False,'completed_independent_work':'Four editable poses, eight valid Blender renders, comparison boards, own candid critique and private Library board are complete.'}]}
+(P/'evidence/final_handoff.json').write_text(json.dumps(handoff,indent=2))
+files=[p for folder in ['native','reference','scripts','evidence','previews'] for p in (P/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ['.blend1','.pyc'] and p.name not in ['PACKAGE_RESULT.json','PACKAGE_MANIFEST.json']]
+files.extend(p for p in P.iterdir() if p.is_file() and p.suffix=='.txt');manifest=[{'path':p.relative_to(P).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(set(files))];mf=P/'evidence/PACKAGE_MANIFEST.json';mf.write_text(json.dumps(manifest,indent=2));z=P/'WTSC_Four_Pose_Silhouette_Rebuild_v029.zip'
+with zipfile.ZipFile(z,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
+    for p in sorted(set(files+[mf])):archive.write(p,'four_pose_silhouette_rebuild_v029/'+p.relative_to(P).as_posix())
+with zipfile.ZipFile(z) as archive:
+    assert archive.testzip() is None
+    for r in manifest:assert hashlib.sha256(archive.read('four_pose_silhouette_rebuild_v029/'+r['path'])).hexdigest()==r['sha256']
+result={'package':str(z),'bytes':z.stat().st_size,'sha256':sha(z),'files':len(files)+1,'CRC_and_hashes':'PASS','private_library_id':receipt['library_file_id'],'version':receipt['current_version_number'],'four_pose_artistic_gate':'NOT_PASSED; no cycle generated'}
+(P/'evidence/PACKAGE_RESULT.json').write_text(json.dumps(result,indent=2));print(json.dumps(result),flush=True)

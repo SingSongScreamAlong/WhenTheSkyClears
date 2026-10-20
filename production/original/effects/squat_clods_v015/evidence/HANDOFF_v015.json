@@ -1,0 +1,417 @@
+{
+  "status": "Next requested silhouette test delivered before polish. Material/silhouette and normal-speed force remain for independent review. No acceptance or production integration.",
+  "review_followed": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\fx-review-connected-v014\\independent_artistic_review.json",
+  "parent_thread": "01a11891-101b-7258-912e-593e0317c0ce",
+  "library": {
+    "rough_video": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "native_rough": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "actual_keys": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "actual_shot_context": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]"
+  },
+  "construction": {
+    "blender": "5.2.2 LTS",
+    "source": "v014 native rough read-only",
+    "camera_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        109.32307434082031
+      ],
+      [
+        0.0,
+        7.549790126404332e-08,
+        -1.0,
+        -16.0
+      ],
+      [
+        0.0,
+        1.0,
+        7.549790126404332e-08,
+        3.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "root": [
+      109.2294692993164,
+      10.0,
+      -0.5300195813179016
+    ],
+    "pixels_per_metre": 205.1282501220703,
+    "fps": 24,
+    "frames": [
+      1,
+      32
+    ],
+    "impact_frame": 7,
+    "primary_fragments": 2,
+    "fixed_primary_contours": {
+      "A": [
+        [
+          -0.245,
+          -0.055
+        ],
+        [
+          -0.225,
+          -0.09
+        ],
+        [
+          -0.14,
+          -0.105
+        ],
+        [
+          -0.095,
+          -0.145
+        ],
+        [
+          -0.015,
+          -0.13
+        ],
+        [
+          0.045,
+          -0.15
+        ],
+        [
+          0.12,
+          -0.105
+        ],
+        [
+          0.19,
+          -0.09
+        ],
+        [
+          0.205,
+          -0.04
+        ],
+        [
+          0.24,
+          -0.015
+        ],
+        [
+          0.215,
+          0.055
+        ],
+        [
+          0.175,
+          0.07
+        ],
+        [
+          0.16,
+          0.12
+        ],
+        [
+          0.09,
+          0.125
+        ],
+        [
+          0.045,
+          0.155
+        ],
+        [
+          -0.025,
+          0.14
+        ],
+        [
+          -0.075,
+          0.165
+        ],
+        [
+          -0.145,
+          0.125
+        ],
+        [
+          -0.2,
+          0.11
+        ],
+        [
+          -0.195,
+          0.055
+        ],
+        [
+          -0.24,
+          0.03
+        ]
+      ],
+      "B": [
+        [
+          -0.19,
+          -0.035
+        ],
+        [
+          -0.16,
+          -0.085
+        ],
+        [
+          -0.105,
+          -0.095
+        ],
+        [
+          -0.055,
+          -0.12
+        ],
+        [
+          0.015,
+          -0.1
+        ],
+        [
+          0.065,
+          -0.125
+        ],
+        [
+          0.12,
+          -0.09
+        ],
+        [
+          0.175,
+          -0.055
+        ],
+        [
+          0.165,
+          -0.01
+        ],
+        [
+          0.205,
+          0.025
+        ],
+        [
+          0.17,
+          0.07
+        ],
+        [
+          0.115,
+          0.085
+        ],
+        [
+          0.075,
+          0.125
+        ],
+        [
+          0.015,
+          0.105
+        ],
+        [
+          -0.04,
+          0.13
+        ],
+        [
+          -0.085,
+          0.105
+        ],
+        [
+          -0.145,
+          0.11
+        ],
+        [
+          -0.165,
+          0.065
+        ],
+        [
+          -0.195,
+          0.025
+        ]
+      ]
+    },
+    "flight": {
+      "A": {
+        "landing_seconds": 0.6629052759933994,
+        "landing_age": 16.909726623841586,
+        "landing_x": -0.768595213522482,
+        "landing_angle": -0.4934694845943895,
+        "launch_age": 1,
+        "apex_age": 9.228571428571428,
+        "area_metres2": 0.1083875,
+        "max_area_error_metres2": 1.6653345369377348e-16
+      },
+      "B": {
+        "landing_seconds": 0.5436260341282532,
+        "landing_age": 14.047024819078075,
+        "landing_x": 0.7224463129905705,
+        "landing_angle": 0.4436260341282532,
+        "launch_age": 1,
+        "apex_age": 7.857142857142857,
+        "area_metres2": 0.073075,
+        "max_area_error_metres2": 1.249000902703301e-16
+      }
+    },
+    "overlap_to_gap_progression": [
+      {
+        "age": 1,
+        "scene_frame": 8,
+        "A_bottom_minus_root_top": -0.19628007816818094,
+        "B_bottom_minus_root_top": -0.18189133774893862
+      },
+      {
+        "age": 2,
+        "scene_frame": 9,
+        "A_bottom_minus_root_top": -0.04711902600104109,
+        "B_bottom_minus_root_top": -0.06548851643434901
+      },
+      {
+        "age": 3,
+        "scene_frame": 10,
+        "A_bottom_minus_root_top": 0.19767644096787895,
+        "B_bottom_minus_root_top": 0.12332286611116833
+      },
+      {
+        "age": 4,
+        "scene_frame": 11,
+        "A_bottom_minus_root_top": 0.3882772632667666,
+        "B_bottom_minus_root_top": 0.27753922973108086
+      },
+      {
+        "age": 5,
+        "scene_frame": 12,
+        "A_bottom_minus_root_top": 0.523375257491004,
+        "B_bottom_minus_root_top": 0.3781697729645614
+      },
+      {
+        "age": 6,
+        "scene_frame": 13,
+        "A_bottom_minus_root_top": 0.6144409547613365,
+        "B_bottom_minus_root_top": 0.43488544428754816
+      }
+    ],
+    "root_states": {
+      "A": {
+        "0": [
+          -0.03,
+          -0.095,
+          1.3,
+          0.75
+        ],
+        "1": [
+          -0.05,
+          -0.025,
+          1.3,
+          0.9
+        ],
+        "2": [
+          -0.11,
+          0.015,
+          1.28,
+          0.9
+        ],
+        "3": [
+          -0.15,
+          -0.04,
+          1.4,
+          0.75
+        ],
+        "4": [
+          -0.18,
+          -0.065,
+          1.5,
+          0.6
+        ],
+        "5": [
+          -0.2,
+          -0.08,
+          1.6,
+          0.55
+        ],
+        "8": [
+          -0.21,
+          -0.09,
+          1.65,
+          0.55
+        ]
+      },
+      "B": {
+        "0": [
+          0.1,
+          -0.065,
+          1.4,
+          0.75
+        ],
+        "1": [
+          0.13,
+          -0.025,
+          1.4,
+          0.9
+        ],
+        "2": [
+          0.19,
+          0.015,
+          1.4,
+          0.9
+        ],
+        "3": [
+          0.23,
+          -0.025,
+          1.5,
+          0.75
+        ],
+        "4": [
+          0.26,
+          -0.05,
+          1.6,
+          0.55
+        ],
+        "5": [
+          0.28,
+          -0.065,
+          1.65,
+          0.5
+        ],
+        "8": [
+          0.29,
+          -0.07,
+          1.7,
+          0.5
+        ]
+      }
+    },
+    "materials": 2,
+    "material_layout": "One flat tone per primary clod; matching flat root lobes. No broad light-front/dark-side faces.",
+    "smoke": false,
+    "opacity_animation": false,
+    "contour_rounding": false,
+    "pigment": false,
+    "contact_puffs": false,
+    "landing_support": "Flat rough bank level at impact anchor; detailed terrain/contact work deferred.",
+    "native_sha256": "a91d97496098c9bf24f925221daedd421b352773a70837cbbaae15f691921d7f",
+    "status": "Silhouette construction test for review before polish. No artistic acceptance."
+  },
+  "preview": {
+    "frames": 32,
+    "fps": 24,
+    "duration_seconds": 1.3333333333333333,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "impact_frame": 7,
+    "fixed_size_primary_clods": true,
+    "first_rising_gaps_scene_frame": 10,
+    "video_bytes": 345610,
+    "video_sha256": "7dc0f1f24348d685a0ef32500d6e16dd48150304f02391a7618cf7a066f7b787",
+    "full_decode": true,
+    "continuous_speed_playback_observed": false,
+    "status": "One requested fixed-size squat-clod silhouette rough for review before polish. No artistic acceptance or production integration."
+  },
+  "delta_from_v014": "Two fixed-size squat irregular clods appear early from below the bank, overlap broad matching-tone partly buried soil lobes, then separate during the rise. No intact growing face or clean diagonal section cut. Each primary has one flat tone, with no light-front/dark-side plate facets.",
+  "preliminary_correction": "Full-shot keys exposed narrow root stems in an initial attempt. Replaced with broad partly buried clod lobes before delivery. Primary contours, area and flight paths unchanged. Corrected full-shot10 and final key sequence inspected.",
+  "render_reconciliation": "Initial refresh deferred at guard for other Blender14988. Job cleared on read-only inspection. Final render completed into fresh motion_final folder; delivered video and key sheets use only that corrected sequence. No other process interrupted.",
+  "actual_checks": "32 corrected native frames rendered; every source PNG verified; MP4 fully decoded. Stable primary areas verified in construction. Actual key sheet and whole shot inspected. Continuous-speed playback not observed.",
+  "deferred": [
+    "Pigment and finished style",
+    "Smoke or incidental contact puffs",
+    "Opacity/rounding remedy",
+    "Reusable-pack work or RGBA export",
+    "New-construction Append/control generalization"
+  ],
+  "source_protection": {
+    "writes": "Only effects/squat_clods_v015",
+    "v014_native_sha256": "0db575f1f58c8ad9d3135105282781479621a2adf85505b7b6f9d457668cc9dd",
+    "v014_unchanged": true,
+    "shared_UI_control": false,
+    "production_integration": false
+  },
+  "execution_blocker": null,
+  "upload_notes": "All four private Library uploads succeeded. Canonical helper prepare_uploads was unavailable before reservation, then direct ordered create batches succeeded. Local metadata stamping for these four uploaded paths failed because Windows Python lacks os.setxattr; full receipts and errors retained. No upload or render outcome is uncertain."
+}

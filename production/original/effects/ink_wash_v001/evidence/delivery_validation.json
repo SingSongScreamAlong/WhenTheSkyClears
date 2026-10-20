@@ -1,0 +1,84 @@
+{
+  "reel": {
+    "filename": "WTSC_FX_Reel_v001.mp4",
+    "bytes": 176638,
+    "decoded_frames": 144,
+    "fps": 24,
+    "seconds": 6,
+    "pixels": [
+      960,
+      540
+    ],
+    "sound": false,
+    "under20MB": true,
+    "resource_handoff": "Uses first144 complete frames; own Eevee process stopped when parent asked for CPU-only. Subsequent rendering sequential two-thread CPU only."
+  },
+  "sequences": [
+    {
+      "collection": "FX01_Explosion_Tall_Charcoal",
+      "count": 144,
+      "all_png_decoded": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "max_outer_edge_alpha": 0,
+      "nonempty_frames": 139,
+      "sample_frame": 32,
+      "sample_alpha_bounds": [
+        55,
+        79,
+        193,
+        193
+      ],
+      "last_frame_alpha_max": 0
+    },
+    {
+      "collection": "FX06_Impact_Dry_Dust",
+      "count": 72,
+      "all_png_decoded": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "max_outer_edge_alpha": 0,
+      "nonempty_frames": 64,
+      "sample_frame": 16,
+      "sample_alpha_bounds": [
+        105,
+        177,
+        149,
+        191
+      ],
+      "last_frame_alpha_max": 0
+    },
+    {
+      "collection": "FX09_Burning_Debris_Loop",
+      "count": 192,
+      "all_png_decoded": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "max_outer_edge_alpha": 0,
+      "nonempty_frames": 192,
+      "sample_frame": 48,
+      "sample_alpha_bounds": [
+        99,
+        96,
+        156,
+        200
+      ],
+      "last_frame_alpha_max": 255
+    }
+  ],
+  "total_png_frames": 408,
+  "source_hashes_unchanged": {
+    "shots\\world\\WTSC_World_Atmosphere_v036.blend": true,
+    "scripts\\build_spatial_atmosphere_v036.py": true,
+    "sets\\fx\\Painted_Smoke_Wisp_v016.png": true,
+    "sets\\fx\\v036\\Painterly_Flame.png": true
+  },
+  "tested": "Append nine collections; independent Append timing/materials; Link dependency load; loop numeric seam; actual world read-only render; all RGBA PNG decode, alpha bounds, complete H264 decode.",
+  "limitations": [
+    "Three complete256px CPU working sequences; remaining six effects native plus512px transparent stills",
+    "Artistic first pass; no production placement approval",
+    "Link hierarchy overrides not tested; linked animation is shared",
+    "World integration uses low-resolution CPU Cycles; GP rendering can differ from production Eevee",
+    "No live production scene mutation or shared UI control"
+  ]
+}

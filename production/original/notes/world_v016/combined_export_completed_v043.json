@@ -1,0 +1,43 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Combined_Trial_v043.blend",
+  "source_sha256": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+  "master_scene": "WTSC_OPEN_5S_MASTER_v043",
+  "world_scene": "WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043",
+  "global_seconds": [
+    75,
+    80
+  ],
+  "global_frames": [
+    1801,
+    1920
+  ],
+  "decoded_frames": 120,
+  "fps": 24,
+  "master": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4",
+  "master_pixels": [
+    3840,
+    2160
+  ],
+  "master_bytes": 9214367,
+  "master_sha256": "4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9",
+  "view": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_View_v043.mp4",
+  "view_pixels": [
+    1920,
+    1080
+  ],
+  "view_bytes": 2754222,
+  "view_sha256": "2aa700ec302fe82fa298f78e0d5835f5bd4cc9479debb9b8db7817a650ecb639",
+  "before_after": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Open_Before_v040_After_v043_Different_Routes.mp4",
+  "comparison_pixels": [
+    3840,
+    1080
+  ],
+  "comparison_sha256": "b4a38444f27638e762d2dbd653aec95ec4386d620f6cf96692011f090c35e961",
+  "comparison_limit": "Different local route/camera: original04010.76m vs0430.562m. Disclosed in actual comparison pixels.",
+  "dense_decode_frames": 40,
+  "dense_decode_fps": 8,
+  "dense_review_directory": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\decoded_dense",
+  "cold_native_master_export": true,
+  "audio": "Native packed original75\u201380segment through actualScene+Sound strips",
+  "artistic_status": "Moving export ready for dense visual review; technical decode is not cinematic acceptance."
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-19",
+  "scope": "Continue v066: hand receiving, contact settle, free-arm posing, native blinks and braid lag; same original paintings.",
+  "guide": {
+    "source": "https://raw.githubusercontent.com/dcc-mcp/dcc-mcp-core/main/crates/dcc-mcp-gateway/src/gateway/native_resources/agent_workflows.md",
+    "contract": "dcc-mcp-production-reuse/v1",
+    "shape_check": "passed",
+    "substantive_rules_read": true
+  },
+  "discovery": [
+    {
+      "source": "Installed DCC-MCP skill 0.19.113 and native MCP search",
+      "query": "blender scene inspect animation",
+      "result": "Native search inventory timed out. No ready owned live instance or marketplace provider established; no live call or installation attempted."
+    },
+    {
+      "source": "Project assets",
+      "query": "v065f current shot; v053 authored body beats; native limbs and painted head/hand/wardrobe",
+      "result": "Reuse packed paintings, unchanged UV registration, current age-ten rigs, camera, title reveal, color clock and supplied audio. Retain mature project limb construction, contact and native compositor interfaces. Primary missing capability is bespoke paired posing and timing."
+    },
+    {
+      "source": "Official Blender Extensions",
+      "query": "2d cutout animation rigging",
+      "candidates": [
+        "Gp Select",
+        "Frame By Plane",
+        "Import Meshed Alpha"
+      ],
+      "urls": [
+        "https://extensions.blender.org/add-ons/gp-select/",
+        "https://extensions.blender.org/add-ons/frame-by-plane/",
+        "https://extensions.blender.org/add-ons/import-meshed-alpha/"
+      ],
+      "decision": "Existing scene already has painted meshes, rigs, alpha, layers and compositor. Stroke selection, importing planes and alpha meshing do not author the missing performance. No package selected; package rights/version/5.2.2 compatibility remain unvalidated; nothing acquired or installed."
+    },
+    {
+      "source": "Official Blender Python API",
+      "query": "PoseBone matrix shape_key_add",
+      "url": "https://docs.blender.org/api/5.2/bpy.types.PoseBone.html",
+      "decision": "Use native bone matrices, editable Actions and native shape-key drawings, with actual host build/render/readback."
+    },
+    {
+      "source": "Existing head_turn_v047 package",
+      "query": "Girl turn drawings",
+      "decision": "Inspected existing generated charcoal quarter-head drawing. Its eye and paint treatment differs from the current painted profile; not selected for an automatic head swap."
+    }
+  ],
+  "fallback": "Minimal project-local native Blender authoring using installed 5.2.2 in background, not a claim of live MCP qualification. New candidate only, preserve source hashes, save/reopen, render actual keys and motion, inspect chronological frames, fully decode matched normal-speed movies.",
+  "rights_cost": "Only existing project artwork and supplied audio reused. No asset acquisition, paid content, account change or external publication. Native Blender authoring introduces no third-party asset or package redistribution.",
+  "continuation": "Same active session and host. Reuse existing project limb solver, drawing caches and successful native 5.2.2 interfaces. Earlier live MCP inventory timed out. No new package fills the bespoke performance gap; no installation or asset acquisition."
+}

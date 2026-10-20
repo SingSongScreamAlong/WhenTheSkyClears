@@ -1,0 +1,55 @@
+{
+  "purpose": "New original ink-and-wash albedo candidates for native WTSC v061 scene materials. These are material swatches, not finished trailer frames.",
+  "generated_with": "image_gen.imagegen",
+  "pixel_edits": "None. Original generated PNG bytes copied unchanged to PC.",
+  "assets": [
+    {
+      "name": "Ink_Wash_Bark_v061.png",
+      "local_source": "/workspace/generated_images/exec-54e0479e-a9e9-4482-abe7-ed3bece3dd79.png",
+      "sha256": "f6f7b9d7839779cb96b060f31d3f3cabf3dd81e77a4c240dd5508967b049d29f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_role": "sRGB albedo",
+      "notes": "Second generation, repainted from first bark result to broaden wash shapes and reduce photographic detail. Still naturalistic bark; assess at native trunk scale. No independent normal/roughness/displacement information.",
+      "seam_mean_abs_rgb_8bit": [
+        10.63025,
+        12.76396
+      ],
+      "interior_adjacent_mean_abs_rgb_8bit": [
+        8.58455,
+        6.95564
+      ],
+      "wrap_seam_to_interior_ratio": [
+        1.2383,
+        1.8351
+      ]
+    },
+    {
+      "name": "Ink_Wash_Earth_v061.png",
+      "local_source": "/workspace/generated_images/exec-6b178f98-fcb5-4fd6-a3b4-fbd67c7566df.png",
+      "sha256": "41064ef9349424cd3684baf7d151ff66f6bc2c4070a338db38ee8523f4fd2d45",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_role": "sRGB albedo",
+      "notes": "Broad umber, ochre-gray and muted olive wash shapes with sparse stone marks. No plants, shoes or footprints. No independent normal/roughness/displacement information.",
+      "seam_mean_abs_rgb_8bit": [
+        9.90218,
+        8.52259
+      ],
+      "interior_adjacent_mean_abs_rgb_8bit": [
+        6.3253,
+        7.75435
+      ],
+      "wrap_seam_to_interior_ratio": [
+        1.5655,
+        1.0991
+      ]
+    }
+  ],
+  "tiling_limit": "Requested seamless generation. These measurements compare opposite-edge pixel differences against average one-pixel differences within each image; they do not prove seamless visual repetition. Inspect UV repeats in actual native scene. Hide bark wrap seam on unseen trunk side.",
+  "rendering_guidance": "Treat these as authored painted color. Keep roughness high and bump weak or absent; aggressive albedo-derived relief restores a game-texture appearance. Use real meshes/lights and selective native ink marks for depth, with artwork doing pigment rather than physical displacement."
+}

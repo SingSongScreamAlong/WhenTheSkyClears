@@ -1,0 +1,73 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+  "source_sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+  "source_preserved": true,
+  "patch": {
+    "already_applied": false,
+    "target": "V007 girl passing back-view drawing",
+    "old_mesh_data": "V007 girl passing back-view drawing",
+    "new_mesh_data": "V008 | authored quarter-face drawings44+45",
+    "source_frames": [
+      44,
+      45
+    ],
+    "global_frames": [
+      1844.0,
+      1845.0
+    ],
+    "head_rest_error": 0.0,
+    "head_pose_error": 0,
+    "scope": "Only the existing girl passing-head mesh, its weights and two-pose drawing clock. All original object exposures/rig/body/root/foot/hand/FX actions untouched.",
+    "materials": "Hair reuses actual target original-head material, face copies its physical-light response with native silhouette alpha; eye marks use measured original warm-white color."
+  },
+  "engine": "BLENDER_EEVEE",
+  "original_settings": {
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "view": "Standard",
+    "look": "None"
+  },
+  "native4K_crop_pixels": [
+    2000,
+    600,
+    2600,
+    1200
+  ],
+  "actual_rendered_frames": [
+    1843,
+    1844,
+    1845,
+    1846
+  ],
+  "whole_movie_rerendered": false,
+  "all120_frame_unchanged_errors": {
+    "all_rig_bone_matrices": 0,
+    "camera": 0,
+    "root_travel": 0
+  },
+  "only_existing_object_with_changed_mesh_data": [
+    "V007 girl passing back-view drawing"
+  ],
+  "visibility": [
+    {
+      "frame": 1843,
+      "visible_head": "PERF_GIRL | original head and attached braid.002"
+    },
+    {
+      "frame": 1844,
+      "visible_head": "V007 girl passing back-view drawing"
+    },
+    {
+      "frame": 1845,
+      "visible_head": "V007 girl passing back-view drawing"
+    },
+    {
+      "frame": 1846,
+      "visible_head": "V007_GIRL | original-painted look toward boy"
+    }
+  ],
+  "comparison_copy": "WTSC_LOCAL_WORKSPACE\\locomotion\\head_turn_patch_v008\\native\\WTSC_Head_Patch_v008_Critical_Comparison_Copy.blend"
+}

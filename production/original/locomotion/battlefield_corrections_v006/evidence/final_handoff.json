@@ -1,0 +1,79 @@
+{
+  "status": "Completed specialist v006 candidate; parent artistic/integration review pending. No cinematic acceptance.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_corrections_v006\\native\\WTSC_Battlefield_Drawn_Corrections_v006.blend",
+    "sha256": "d74339ba11bd0d8d5dcd09f30ea8e1ff42d5b329f706410b0565d145100f8189",
+    "bytes": 4140274,
+    "collection": "WTSC_BATTLEFIELD_DRAWN_PAIR_v006",
+    "controls_property": "motion_revision == v006_drawn_pose_corrections"
+  },
+  "reels": [
+    {
+      "path": "WTSC_v006_Neutral_5s.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 630333,
+      "sha256": "5a6d8e5479270a4c92726ce6f67af927f25426f5d9afbfcde0c70dda89bc4da1"
+    },
+    {
+      "path": "WTSC_v006_Integrated_5s.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 2461947,
+      "sha256": "74cc765c9ea24c3d2508f2da63c0de2e1fc997f9a1320152e2980bc67bbc0886"
+    },
+    {
+      "path": "WTSC_v043_vs_v006_Matched_Framing.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 3353775,
+      "sha256": "9897e084dab372413851d188847dd844492c4e7fb5922dfd6d54e73893fb5db2"
+    }
+  ],
+  "guide": "IMPORT_HANDOFF_v006.txt",
+  "exact_clock": "Full120sample drawing/body/root actions1..120. configure_v006(start=1801,duration_scale=1,root_motion=True,root=controls). Last1920,boundary1921. Former3frame lead and116/95retime already baked.",
+  "preserved_contract": {
+    "root_total_m": 0.561666667,
+    "pair_gap_m": 0.8,
+    "anchor_xyz": [
+      107.6339569,
+      0,
+      0.7200737
+    ],
+    "global_frames": [
+      1801,
+      1920
+    ],
+    "fps": 24,
+    "unit_scale": 1,
+    "plane": "XZ",
+    "protected_lower_body_matrix_max_error_v005": 3.5762786865234375e-07,
+    "foot_world_matrix_max_error_v043": 2.384185791015625e-07,
+    "boot_sole_vertices_unchanged": true
+  },
+  "verification": {
+    "fresh_append": true,
+    "native_actions": 29,
+    "shape_key_datablocks": 26,
+    "native_bezier_guides": 96,
+    "packed_source_paint": [
+      "Pair_Painterly_Near_Age_v015.png"
+    ],
+    "retime2_distance_error": 0.0,
+    "in_place_control": true,
+    "actual_rendered_contact_patch_matches": 308,
+    "max_contact_patch_vs_ground_error_px": 1,
+    "production_and_v005_hashes_unchanged": true
+  },
+  "artistic_review": "Rounded leg silhouettes now avoid the source angular/hollow lifted-knee shapes; original painting/design retained. Hands visibly open/relax with followthrough; subtle balance/breath/cloth continues after route stop. Deep boy boot overlap and small fingers still merit final-scale review. No cinematic acceptance.",
+  "preview_settings": "CPU Cycles2samples,2threads,960x540,24fps,transparent_max_bounces64. Original v043EEVEE4K appearance differs; geometry/camera/FX clocks retained.",
+  "remaining": "Final-size motion review, especially deeply folded boy boot overlap and small fingers. No new crawl/fall/get-up/run clips.",
+  "library": {
+    "status": "Pending, not retried in v006. No confirmed saved file or Library ID.",
+    "reason": "Latest official helper returned Library prepare_uploads is not available on v005 batch; source authorization remains valid. No protocol bypass."
+  },
+  "comparison_world_copy": "native/WTSC_v006_Integrated_Comparison_Copy.blend, local review only, excluded from portable motionZIP"
+}

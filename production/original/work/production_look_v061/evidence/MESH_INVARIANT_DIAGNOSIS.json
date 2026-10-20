@@ -1,0 +1,2881 @@
+{
+  "target": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\native\\WTSC_Physical_Ink_Wash_Forest_v061.blend",
+  "reference": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.blend",
+  "sidecar": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.invariants.json",
+  "hashes_before": {
+    "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\native\\WTSC_Physical_Ink_Wash_Forest_v061.blend": "fe5f6c85a1b2e8e527011e0207bab8dff90d168f6354a53afd1f0eb28961d417",
+    "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.blend": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+    "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.invariants.json": "28d2683dde3dd4f49c4e4f86d372ba48b5cd80868adb6e6f58565453fe40ed53"
+  },
+  "native_opened": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\native\\WTSC_Physical_Ink_Wash_Forest_v061.blend",
+  "native_save_or_render": false,
+  "scene": "WTSC_INK_WASH_DEPTH_v061",
+  "snapshot_frame": 937,
+  "mesh_count": 60,
+  "python_equal_count": 1,
+  "canonical_json_equal_count": 60,
+  "field_difference_mesh_counts": {
+    "uv": 59,
+    "shapes": 12
+  },
+  "canonical_value_difference_mesh_counts": {},
+  "attribute_difference_mesh_counts": {},
+  "meshes": {
+    "V044 BOY | boot far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | boot near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | coat": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Retained full fabric region | no repeating grain",
+              "bf3dd74d3f4af1d36751a9726da369b03fd83e7e408b73b23d71ec51f544ad16"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "f4da83b06ad2c11a24a390d860b0e311903abf354c3f1f15229f0ea7853edba2"
+            ]
+          ],
+          "actual": [
+            [
+              "Retained full fabric region | no repeating grain",
+              "bf3dd74d3f4af1d36751a9726da369b03fd83e7e408b73b23d71ec51f544ad16"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "f4da83b06ad2c11a24a390d860b0e311903abf354c3f1f15229f0ea7853edba2"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | collar": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V041 | original painted linen region",
+              "43e68751d85ac5e7727bde300f6e9de942aeb282b73b56fb2e4be4e7ffef8fd3"
+            ]
+          ],
+          "actual": [
+            [
+              "V041 | original painted linen region",
+              "43e68751d85ac5e7727bde300f6e9de942aeb282b73b56fb2e4be4e7ffef8fd3"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | cuff far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "6aaef866ee0ae40a7ce4533aa6425d3400f777965ea14432b003137eab517efd"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "dec9d813698ba48d9ece09bd4c47661105ac7b3a06999407ccf6474081f4ca48"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "6aaef866ee0ae40a7ce4533aa6425d3400f777965ea14432b003137eab517efd"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "dec9d813698ba48d9ece09bd4c47661105ac7b3a06999407ccf6474081f4ca48"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | cuff near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "3e11ad7c4ed1c93354100537fe6907e321feadad90ca8e92dc8e080ef7211731"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "a9dedaf5e5601de2e916d4bd7ec239ef76a4566f87ad2456b92ac7ba9dc824e5"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "3e11ad7c4ed1c93354100537fe6907e321feadad90ca8e92dc8e080ef7211731"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "a9dedaf5e5601de2e916d4bd7ec239ef76a4566f87ad2456b92ac7ba9dc824e5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | forearm far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "8985b5e4d0aa5b5768524bd196865f00d7fd25594c414d475ce5fbf5d336426e"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "16aba381652782ce2c63591a1fefabbab65e257296a8330e83bd795a7d33a960"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "8985b5e4d0aa5b5768524bd196865f00d7fd25594c414d475ce5fbf5d336426e"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "16aba381652782ce2c63591a1fefabbab65e257296a8330e83bd795a7d33a960"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | forearm near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "bb51bdfba3ec4b78cbd3921d2b106714223098e93ee3d4fe60af3ceeedbe824d"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "9f298795359d021825af24bfcfb996217699f6cebc39a8e171b6b9e8668c8eab"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "bb51bdfba3ec4b78cbd3921d2b106714223098e93ee3d4fe60af3ceeedbe824d"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "9f298795359d021825af24bfcfb996217699f6cebc39a8e171b6b9e8668c8eab"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | hand far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "53dca32655c54e322f66715077a060e9efaabf5cd3e0dc7e7b1e0feb98b1d82c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "6bb935dd74ade4d0e4da5901b971c807ce8dddc88747937469b90126ff8beb5e"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "53dca32655c54e322f66715077a060e9efaabf5cd3e0dc7e7b1e0feb98b1d82c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "6bb935dd74ade4d0e4da5901b971c807ce8dddc88747937469b90126ff8beb5e"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | hand near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "53dca32655c54e322f66715077a060e9efaabf5cd3e0dc7e7b1e0feb98b1d82c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "8dfbf5e0faab6996d33d9a7b63c3474d1cef13d005104ce6001dae96c14484f9"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "53dca32655c54e322f66715077a060e9efaabf5cd3e0dc7e7b1e0feb98b1d82c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "8dfbf5e0faab6996d33d9a7b63c3474d1cef13d005104ce6001dae96c14484f9"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | head": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V040 | separated painted part registration",
+              "af9985358ea42c45365607cef89a05931c5812308bf0acbaff48a96dd5b9337b"
+            ]
+          ],
+          "actual": [
+            [
+              "V040 | separated painted part registration",
+              "af9985358ea42c45365607cef89a05931c5812308bf0acbaff48a96dd5b9337b"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | leg far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original v015 pigments, fixed anatomical mapping",
+              "08d05f2e07d4397e7ea457dc74e14c432fbff81e5dde47dd446ae2926af4f88d"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "66d3ad0c25408be196ddbc4728b549c309a6d98eee7b795511a64e2f3bdc7081"
+            ]
+          ],
+          "actual": [
+            [
+              "Original v015 pigments, fixed anatomical mapping",
+              "08d05f2e07d4397e7ea457dc74e14c432fbff81e5dde47dd446ae2926af4f88d"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "66d3ad0c25408be196ddbc4728b549c309a6d98eee7b795511a64e2f3bdc7081"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | leg near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original v015 pigments, fixed anatomical mapping",
+              "a97d80691faac249ff41fe63d37c2115c0db35dfd465f7556c982798fda0b2ab"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "66d3ad0c25408be196ddbc4728b549c309a6d98eee7b795511a64e2f3bdc7081"
+            ]
+          ],
+          "actual": [
+            [
+              "Original v015 pigments, fixed anatomical mapping",
+              "a97d80691faac249ff41fe63d37c2115c0db35dfd465f7556c982798fda0b2ab"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "66d3ad0c25408be196ddbc4728b549c309a6d98eee7b795511a64e2f3bdc7081"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | upper far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "c94f6414fb417f637dc9292914267ddfb1011323181f467d35410350bf8e099b"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "a5cd498c0725bc1d743da6bd2f1afebe23c92b9258a386be963caaf4312b95c6"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "c94f6414fb417f637dc9292914267ddfb1011323181f467d35410350bf8e099b"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "a5cd498c0725bc1d743da6bd2f1afebe23c92b9258a386be963caaf4312b95c6"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 BOY | upper near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "1efef3044f027cd11588a8fb1f6be68bd2cac9efdd2d7fc03d55f8c4a7a71035"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1ff20e801e044ed3059770bd2d96e969f56d3e7ae1dae5c7cbf52c5f6440eaac"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "1efef3044f027cd11588a8fb1f6be68bd2cac9efdd2d7fc03d55f8c4a7a71035"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1ff20e801e044ed3059770bd2d96e969f56d3e7ae1dae5c7cbf52c5f6440eaac"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | boot far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | boot near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "50cf38028202315267b1def3023b130f621d9f716df01b95514ae6d638013fea"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "1511464ab99de756a2a69a460d79231f8b10fbe8c4d6e91448b76ede97a05817"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | cuff far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "43f70a038b00b3a5a41271583584fed8f6e2b1d51b7f8e55dcdfeb844c9985d4"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "43f70a038b00b3a5a41271583584fed8f6e2b1d51b7f8e55dcdfeb844c9985d4"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | cuff near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "43f70a038b00b3a5a41271583584fed8f6e2b1d51b7f8e55dcdfeb844c9985d4"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "43f70a038b00b3a5a41271583584fed8f6e2b1d51b7f8e55dcdfeb844c9985d4"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | dress": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "UNCHANGED original paint registration",
+              "094737db2b06d76921f12586be17c56a1b435193aa71501b48bdcdd8bf5db7ac"
+            ]
+          ],
+          "actual": [
+            [
+              "UNCHANGED original paint registration",
+              "094737db2b06d76921f12586be17c56a1b435193aa71501b48bdcdd8bf5db7ac"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | forearm far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "4cb9df509ace2d0efdf7f5a00d88af0e162c4103ca6ba002588eae1d6be61e8a"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "4cb9df509ace2d0efdf7f5a00d88af0e162c4103ca6ba002588eae1d6be61e8a"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | forearm near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "4cb9df509ace2d0efdf7f5a00d88af0e162c4103ca6ba002588eae1d6be61e8a"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "4cb9df509ace2d0efdf7f5a00d88af0e162c4103ca6ba002588eae1d6be61e8a"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | hand far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "8141a050b7c6febbb6f43dca832640281520e9f7052f1e93ae4ace482326b8f2"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "8141a050b7c6febbb6f43dca832640281520e9f7052f1e93ae4ace482326b8f2"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | hand near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "8141a050b7c6febbb6f43dca832640281520e9f7052f1e93ae4ace482326b8f2"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "8141a050b7c6febbb6f43dca832640281520e9f7052f1e93ae4ace482326b8f2"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | head": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original v015 paint source",
+              "d86413f08c05cbaf306c787c0effae3e7bbd36c310e02c8ec1cdb32cceeea8d6"
+            ]
+          ],
+          "actual": [
+            [
+              "Original v015 paint source",
+              "d86413f08c05cbaf306c787c0effae3e7bbd36c310e02c8ec1cdb32cceeea8d6"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | leg far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "64a3716a5fb5059e7e043bc89161f8d6a32f4429022722e5f37dac2cc4d2ada2"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "64a3716a5fb5059e7e043bc89161f8d6a32f4429022722e5f37dac2cc4d2ada2"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | leg near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "64a3716a5fb5059e7e043bc89161f8d6a32f4429022722e5f37dac2cc4d2ada2"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "64a3716a5fb5059e7e043bc89161f8d6a32f4429022722e5f37dac2cc4d2ada2"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | neck overlap drawn bridge": {
+      "missing": false,
+      "python_equal": true,
+      "canonical_json_equal": true,
+      "field_differences": {},
+      "attribute_differences": {}
+    },
+    "V044 GIRL | upper far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "98d8efd595a80eb384bfe7d401af1eaa545e50360e162278adea65efd6e6d3f1"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "98d8efd595a80eb384bfe7d401af1eaa545e50360e162278adea65efd6e6d3f1"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V044 GIRL | upper near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "98d8efd595a80eb384bfe7d401af1eaa545e50360e162278adea65efd6e6d3f1"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "98d8efd595a80eb384bfe7d401af1eaa545e50360e162278adea65efd6e6d3f1"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 BOY | boot shaft overlap far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 BOY | boot shaft overlap near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 BOY | wrist paint overlap far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "0b2af6e82415ca4d810608ac50fd5a6dd3ebdd4280d1ef8e32cd76015fc16a59"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "34905fc21700e07aa3856da732a9a978720181cb7b66e318bc1f020798a1cb4b"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "0b2af6e82415ca4d810608ac50fd5a6dd3ebdd4280d1ef8e32cd76015fc16a59"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "34905fc21700e07aa3856da732a9a978720181cb7b66e318bc1f020798a1cb4b"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 BOY | wrist paint overlap near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "6061e1694e35c2fcfe83f4a669a9e6b9d17997239284bdd639cae1572eeca445"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "ed2e3a637b3a0a434441ba918a6ec08e7e378852160c5d2622de6b177f934293"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "6061e1694e35c2fcfe83f4a669a9e6b9d17997239284bdd639cae1572eeca445"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "ed2e3a637b3a0a434441ba918a6ec08e7e378852160c5d2622de6b177f934293"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 GIRL | boot shaft overlap far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 GIRL | boot shaft overlap near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "cea0f86bd3341bb6afb917cc7db63a8c1d4e0bcc43ecc70fcd66046954af3c3c"
+            ],
+            [
+              "V040 | separated painted part registration",
+              "0ddc67defb12850376525ce59ab52e7c55272c4d3ffdc95126ceefcdc41a67ca"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 GIRL | wrist paint overlap far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "208e09f4e1f9cc96843e2331eaccf2f25b679c05a91ec53cf54a37587306778c"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "208e09f4e1f9cc96843e2331eaccf2f25b679c05a91ec53cf54a37587306778c"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V045 GIRL | wrist paint overlap near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "Original painting, registered to replacement drawing",
+              "208e09f4e1f9cc96843e2331eaccf2f25b679c05a91ec53cf54a37587306778c"
+            ]
+          ],
+          "actual": [
+            [
+              "Original painting, registered to replacement drawing",
+              "208e09f4e1f9cc96843e2331eaccf2f25b679c05a91ec53cf54a37587306778c"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | original painted hand far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | original painted hand near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | painted continuous rolled sleeve far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | painted continuous rolled sleeve near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | painted forearm far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | painted forearm near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | painted rigid-axis trousers far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "e0487bfa746a5478bb745321d77e1af183509c14dcdf5f7b2733f53f8a82bbcf"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "e0487bfa746a5478bb745321d77e1af183509c14dcdf5f7b2733f53f8a82bbcf"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | painted rigid-axis trousers near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "e0487bfa746a5478bb745321d77e1af183509c14dcdf5f7b2733f53f8a82bbcf"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "e0487bfa746a5478bb745321d77e1af183509c14dcdf5f7b2733f53f8a82bbcf"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 BOY | tailored coat": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "283b374265fa12749cfbbb963d3994b9c7b4d6d93fbee4020812856e90f6d5ac"
+            ],
+            [
+              "V046 | quiet upper cloth",
+              "5ce8abc527759694e755d06b50e22241a339c6850c725ec9b99832efb9f71f42"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "283b374265fa12749cfbbb963d3994b9c7b4d6d93fbee4020812856e90f6d5ac"
+            ],
+            [
+              "V046 | quiet upper cloth",
+              "5ce8abc527759694e755d06b50e22241a339c6850c725ec9b99832efb9f71f42"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | original painted hand far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | original painted hand near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | original painted stockings far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "b9d21f7c098f4d0f7655eb2d7f699e47a1bf0f35762b28b29b33b33dce4157be"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "b9d21f7c098f4d0f7655eb2d7f699e47a1bf0f35762b28b29b33b33dce4157be"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | original painted stockings near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "ed8bcd6dec6ed94566b8d025acfce0d5825b2ccd840b38573cea8286feadb3f1"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "ed8bcd6dec6ed94566b8d025acfce0d5825b2ccd840b38573cea8286feadb3f1"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | painted continuous rolled sleeve far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | painted continuous rolled sleeve near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 128,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | painted forearm far": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | painted forearm near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "685598b864bb1d32af3bb93892135cd37f2c20d2c2c1f879f976ccd06efa49f6"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V046 GIRL | tailored knee-length dress": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": "[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "0ec544906b55f6cfd0de6acdee48f16a9e45ae3c2e9e6a887a2d994eb99f94b1"
+            ],
+            [
+              "V046 | quiet upper cloth",
+              "45f8099f3a10caf2962f2e78cc4fca058bc740ddb1f6131cce9921c522f47e5a"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "0ec544906b55f6cfd0de6acdee48f16a9e45ae3c2e9e6a887a2d994eb99f94b1"
+            ],
+            [
+              "V046 | quiet upper cloth",
+              "45f8099f3a10caf2962f2e78cc4fca058bc740ddb1f6131cce9921c522f47e5a"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V060 BOY | reach sleeve near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 601,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V060 BOY | retained paint hand fold near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 2,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V060 GIRL | reach sleeve near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 601,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[4]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[5]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[6]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[7]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "38b378beda05945c64a80ade0d86ae7b3d418f373d755ac4789b41ffbb495b23"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    },
+    "V060 GIRL | retained paint hand fold near": {
+      "missing": false,
+      "python_equal": false,
+      "canonical_json_equal": true,
+      "field_differences": {
+        "shapes": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 4,
+            "samples": [
+              {
+                "path": ".keys[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[1]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[2]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              },
+              {
+                "path": ".keys[3]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          }
+        },
+        "uv": {
+          "python_equal": false,
+          "canonical_json_equal": true,
+          "type_differences": {
+            "count": 1,
+            "samples": [
+              {
+                "path": "[0]",
+                "source_type": "list",
+                "actual_type": "tuple"
+              }
+            ]
+          },
+          "source": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ],
+          "actual": [
+            [
+              "V046 | original pigment registration",
+              "221dc7b58b9fd2326aefb7de51beea8cc6ea81ec8688dd101ef58cb5dcd4dde5"
+            ]
+          ]
+        }
+      },
+      "attribute_differences": {}
+    }
+  },
+  "hashes_after": {
+    "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\native\\WTSC_Physical_Ink_Wash_Forest_v061.blend": "fe5f6c85a1b2e8e527011e0207bab8dff90d168f6354a53afd1f0eb28961d417",
+    "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.blend": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+    "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.invariants.json": "28d2683dde3dd4f49c4e4f86d372ba48b5cd80868adb6e6f58565453fe40ed53"
+  },
+  "all_input_files_unchanged": true
+}

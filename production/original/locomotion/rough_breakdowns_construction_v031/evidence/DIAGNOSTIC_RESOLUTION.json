@@ -1,0 +1,10 @@
+{
+  "superseded_report": "PRE_RENDER_CHECK_DIAGNOSTIC_SUPERSEDED.json",
+  "initial_stop": "Cold check assertion stopped before any normal-speed frames rendered.",
+  "causes": [
+    "Quarter-frame linear boot keys differed from the continuous polygon-rocker evaluator by up to1.262mm between keys; native transform sampling was increased to1/16 frame.",
+    "Head object is excluded from base view layer. Reading its base-layer location returned stale evaluation and a false56mm error. The corrected check updates and evaluates the actual foreground layer used to render the head."
+  ],
+  "verification": "Cold-reopened final native sampled2049times, at1/64frame including between the new1/16frame keys. Max boot vertex error0.1911mm, support sole height error0.09067mm, active contact horizontal error0.00217mm, head/neck error0.02450mm.",
+  "result": "PASS numerical safeguards only; no artistic acceptance inferred."
+}

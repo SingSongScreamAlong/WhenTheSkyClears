@@ -1,0 +1,6 @@
+"""Copy only the parent-sealed candidate into this integration's own imports."""
+import json,hashlib,shutil
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];p=R/'locomotion/battlefield_proof_v005/native/WTSC_Battlefield_Weary_Stumble_5s_v005.blend';reel=R/'locomotion/battlefield_proof_v005/WTSC_BATTLEFIELD_WEARY_STUMBLE_Reel_v005.mp4';sha='1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4';reel_sha='eb70c3402de425efd8f7226ab00a445353292561a83efd2b6a89ac8cbd705d84';assert hashlib.sha256(p.read_bytes()).hexdigest()==sha and hashlib.sha256(reel.read_bytes()).hexdigest()==reel_sha
+folder=R/'shots/integration/v042/imports';folder.mkdir(parents=True,exist_ok=True);copy=folder/p.name;assert not copy.exists();shutil.copyfile(p,copy);assert hashlib.sha256(copy.read_bytes()).hexdigest()==sha and hashlib.sha256(p.read_bytes()).hexdigest()==sha
+report={'sealed_source':str(p),'source_sha256':sha,'snapshot':str(copy),'snapshot_sha256':sha,'reference_reel':str(reel),'reference_reel_sha256':reel_sha,'authority':'Coordinating parent sealed current bytes for actual-shot trial; no cinematic acceptance.','specialist_sources_written':False,'fx_handoff':'PENDING. No v001/v002a imports.'};(R/'notes/world_v016/motion_snapshot_v042.json').write_text(json.dumps(report,indent=2));print('SEALED_MOTION_SNAPSHOT_COPIED',json.dumps(report),flush=True)

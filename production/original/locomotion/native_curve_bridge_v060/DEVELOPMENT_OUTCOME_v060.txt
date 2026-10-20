@@ -1,0 +1,29 @@
+WHEN THE SKY CLEARS | NATIVE CURVE AUTHORING CHECKPOINT | 2026-10-19
+
+Technical result
+Blender 5.2.2 LTS ran a temporary project-owned operator that authors one
+Grease Pencil stroke per explicit point list. In a separate clean scratch,
+curve A used 9 positions and curve B used 7. Blender editor Undo removed B;
+calling the operator again restored it. After save and cold reopen, the native
+file contained exactly two editable strokes [9,7]; all positions matched
+their specified coordinates within 1e-5 and their endpoints remained 4.99
+units apart. The exact-window screenshot is 343461 bytes and is saved in the
+user's private Library as [PRIVATE_LIBRARY_REFERENCE_REMOVED].
+
+Provider result
+This is native Blender data authoring, not a held-button brush gesture or a
+DCC-CUA driver upgrade. The installed DCC-CUA 1.9.4 driver rejects a path
+with more than two points. Its official update check reported 1.11.2, but
+that release has no documented multi-point drag feature. It was not installed.
+The installed provider is compiled, its exposed task/tool APIs lack separate
+button-down/move/up events, and no local supported configuration changes the
+path limit. Real pointer delivery needs an upstream supported driver feature
+and a verified update before this can be called freehand brush input.
+
+Artistic result
+The arcs only prove contour storage and separation. They are not the boy or
+girl, not paint/charcoal design, and do not raise the earlier 4/10 character-
+look evaluation. The native route is usable for manually specified contours,
+but actual character frames still need shot-size drawing and visual review.
+Production shots, source animation, world assets, music, titles and timing were
+untouched. The temporary operator was not installed persistently.

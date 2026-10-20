@@ -1,0 +1,80 @@
+{
+  "source_native_sha256": "2fec6adb94e31a9a01dfb87a4df454cf9bdc896bebf019834b86e6e6c38c9b15",
+  "fixed_native_sha256": "8ae4dc3ea23b697b3573afaa2ffc83cb7522933228f4aaaaca71fd5181096fb6",
+  "diagnosis": "EEVEE blended transparent illustration objects blur under native DOF; DITHERED restores correct alpha depth and sharpness. Verified with original DOF, noDOF and DITHERED+DOF4K renders.",
+  "changes": {
+    "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V041 | linen broad fold": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V041 | linen turned leaf": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | subtle head edge | V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V044 girl | quiet original charcoal neck bridge": {
+      "old": "DITHERED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V046 BOY | seamless original painted bodice": {
+      "old": "DITHERED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas skin": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas hand": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | seamless original painted bodice": {
+      "old": "DITHERED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | original atlas skin": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | original atlas hand": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas pants": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas sleeve": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | retained original stocking painting": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    },
+    "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | original atlas sleeve": {
+      "old": "BLENDED",
+      "new": "DITHERED"
+    }
+  },
+  "source_raster_UVs_geometry_actions_untouched": true,
+  "original_data_materials_untouched": true,
+  "camera_DOF_retained": true,
+  "camera_fstop": 5.599999904632568,
+  "archived_previous_delivery": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\pre_focus_correction"
+}

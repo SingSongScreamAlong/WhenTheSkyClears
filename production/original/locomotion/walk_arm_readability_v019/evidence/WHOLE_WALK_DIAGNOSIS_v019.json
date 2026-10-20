@@ -1,0 +1,29 @@
+{
+  "overall_artistic_status": "REJECTED; latest user rating of v018 was2/10. V019 is an occlusion diagnostic, not an accepted walk.",
+  "local_change": "Near hand now separates from the coat at all integer frames10..16 in the critical-frame crop board. The change is visible at original shot framing. Far arm ordering is deliberate; its rear hand still legitimately occludes behind the coat.",
+  "what_did_not_change": "Every non-wrist animation channel, body/head pose, foot goal, travel curve and cadence is copied from v018 unchanged. Source proportions/painting/UV/geometry/materials/modifiers are retained.",
+  "observations": [
+    "The widened near arc provides a clean hand outline, but the hand can look held out or gestural during the forward half. This is a design accommodation for the long coat and short source arm, not proof of natural arm swing.",
+    "Whole-body weight transfer still reads weak. A planted boot is clear, but the upper body remains an upright column rather than resolving and recovering the load.",
+    "The torso and coat retain nearly the same long triangular shape across the poses; little independent chest or cloth settling is visible.",
+    "At passing frames7/19, the knee contour and diagonal calf bands still resemble articulated strips. Their folded silhouettes remain a major visible defect.",
+    "The far-foot loading sits10-12mm lower in the retained hip path. That asymmetry remains provisional and can suggest an unintended limp or uneven gait.",
+    "At shot size, the local arm change is modest. It does not materially change the appeal or acting quality of the whole walk."
+  ],
+  "cadence_and_stride": "Frozen proposal:120steps/min,0.22m per step,0.44m/s. These numbers have not been validated as the right rhythm for this child or emotional state. Normal-speed independent viewing is still required; no cadence acceptance is claimed.",
+  "representation_can_do": [
+    "Preserve the existing charcoal painting and profile design while placing readable limbs in a controlled side view.",
+    "Maintain fixed boot contacts and unchanged child proportions; expose editable wrist arcs and intentional front/back ordering.",
+    "Support further pose-specific deformation using the existing meshes and drawings, if that work is independently judged at shot size."
+  ],
+  "representation_limits_as_currently_authored": [
+    "The body has a single main chest segment and no separately authored lumbar/cloth articulation in this walk. Its motion largely inherits the hip translation; a small chest rotation phase offset does not supply convincing body mass.",
+    "Generated knee/limb strips and the existing scalar compression corrections do not produce convincing painted folds through every passing/load pose.",
+    "A wrist path or depth switch cannot supply absent torso compression, pelvis/chest counter-motion or well-designed knee silhouettes.",
+    "One painted profile does not provide a registered turnaround. No new head view or rejected v008 patch was used."
+  ],
+  "diagnostic_conclusion": "The current asset can produce a technically controlled profile walk and clearer hand silhouettes. As currently posed/deformed it cannot deliver the required natural, appealing finished performance. Further arm polishing or tighter contact tolerances will not address the dominant visible failures.",
+  "next_gate_not_started": "A whole-body weight/pose and knee/cloth deformation decision is needed on this same isolated child before extending performance. Existing art and mesh correctives remain feasible material to investigate; no request for user-supplied drawings is a prerequisite. No new workstream or corrective phase was started here.",
+  "review_method": "Viewed before/after actual-art close renders, every critical frame10..16, matched shot-size examples, and twelve chronological decoded samples of the final encoded movie. No normal-speed video observation claimed.",
+  "stop": "Stop here for independent review. Preserve the working rig and all sources. No production integration, additional acting or new painting."
+}

@@ -1,0 +1,110 @@
+{
+  "native": "native/WTSC_Locomotion_Library_v001.blend",
+  "preview": "WTSC_Locomotion_First_Pack_Reel_v001.mp4",
+  "movies": [
+    {
+      "file": "WTSC_Walk_Preview_v001.mp4",
+      "bytes": 420004,
+      "decoded_frames": 96,
+      "fps": 24,
+      "seconds": 4.0,
+      "under_20MB": true,
+      "sha256": "07de7f525018ec5d5d1c5cedaf092be974f31e521e7f7b2f91476b1bb1a3d8c5"
+    },
+    {
+      "file": "WTSC_Trudge_Preview_v001.mp4",
+      "bytes": 337524,
+      "decoded_frames": 88,
+      "fps": 24,
+      "seconds": 3.6666666666666665,
+      "under_20MB": true,
+      "sha256": "0b00e6a6eebd14db2c617ab2f22aaa6df3c0afff0efdfe0762c4265e4065d6e1"
+    },
+    {
+      "file": "WTSC_Caution_Crouch_Preview_v001.mp4",
+      "bytes": 191961,
+      "decoded_frames": 48,
+      "fps": 24,
+      "seconds": 2.0,
+      "under_20MB": true,
+      "sha256": "3ee849c2bf11c9e87c0a223e8c44dfe32338d4dd8f6ac339b52b44b503de754a"
+    },
+    {
+      "file": "WTSC_Care_Reach_Preview_v001.mp4",
+      "bytes": 202421,
+      "decoded_frames": 64,
+      "fps": 24,
+      "seconds": 2.6666666666666665,
+      "under_20MB": true,
+      "sha256": "781935bc54b870efaedd67ade0650719ac87f3b812458c42815a6a250b4bb3e6"
+    },
+    {
+      "file": "WTSC_Locomotion_First_Pack_Reel_v001.mp4",
+      "bytes": 756741,
+      "decoded_frames": 184,
+      "fps": 24,
+      "seconds": 7.666666666666667,
+      "under_20MB": true,
+      "sha256": "9a1880d0555d640035dd1b04d7f98e28dd10e3f160c581ffefc703809ccca5f5"
+    },
+    {
+      "file": "WTSC_Acting_Blocking_Studies_v001.mp4",
+      "bytes": 393606,
+      "decoded_frames": 112,
+      "fps": 24,
+      "seconds": 4.666666666666667,
+      "under_20MB": true,
+      "sha256": "a05a1a74ca8f2b13c074ff591ff1d6cfa864d3be73a94e0b7b6df6fcb7cebf31"
+    },
+    {
+      "file": "WTSC_Walk_Knockout_Readability_v001.mp4",
+      "bytes": 846807,
+      "decoded_frames": 96,
+      "fps": 24,
+      "seconds": 4.0,
+      "under_20MB": true,
+      "sha256": "c45abe58f477819006ecd238fc074dc5e9ed790aef1f7eb7664dd5d6e03cd62c"
+    }
+  ],
+  "contact_validation": "evidence/append_validation.json",
+  "visible_support": "evidence/visible_support_samples.json",
+  "source_preservation": {
+    "shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v038.blend": true,
+    "shots\\WTSC_Girl_Walk_Proof_v002.blend": true,
+    "characters\\Pair_Painterly_Near_Age_v015.png": true,
+    "characters\\Pair_Painterly_Near_Age_Vector_v015.json": true,
+    "shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend": true
+  },
+  "readability_mean_glyph_coverage_range": [
+    0.0,
+    0.6488464506172839
+  ],
+  "completed_tested": [
+    "Two native editable planar character rigs using current packed v015 paint",
+    "Neutral walk and weary trudge loops, planted shoes and native NLA retiming",
+    "Fresh append, root placement/scale, in-place and root-motion controls",
+    "Actual CPU Blender previews and copied-production-lettering readability reel"
+  ],
+  "blocking_not_completed": [
+    "Protective crouch and paired reaching; native keys/contact checked, but sleeve/underarm artwork missing at large bends. Labelled separately."
+  ],
+  "planned_not_completed": [
+    "skip/frolic",
+    "run",
+    "crawl",
+    "stumble/recovery",
+    "fall/get-up",
+    "helping lift from the ground",
+    "walk-to-crouch and walk-to-care contact-matched production transitions"
+  ],
+  "limits": [
+    "First motion pack, not artistic or production acceptance",
+    "Visible art is native skinned/rigid flat 2D painted meshes; exact source GP outline retained hidden, not newly drawn frame-by-frame GP animation",
+    "Single profile source lacks hidden-surface redraws; extreme bends need dedicated artwork",
+    "Current crouch/reach are bounded first acting studies, not finished narrative performances",
+    "CARE_REACH authored for 0.66m hip spacing; retain that spacing for the hand-contact study",
+    "Readability study accelerates copied production glyphs over neutral stage; no final trailer/world integration",
+    "Regeneration scripts assume original project workspace; imported native library is self-contained"
+  ],
+  "resources": "One sequential Blender process at a time; Cycles CPU only, two threads, no shared UI/GPU, no production scene writes"
+}

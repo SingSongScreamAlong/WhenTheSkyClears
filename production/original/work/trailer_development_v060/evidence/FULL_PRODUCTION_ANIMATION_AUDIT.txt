@@ -1,0 +1,168 @@
+WHEN THE SKY CLEARS — FULL PRODUCTION ANIMATION AUDIT
+Read-only source review: 18 October 2026, updated through 22:34 UTC.
+Project root: WTSC_LOCAL_WORKSPACE
+All paths below are relative to that root.
+
+The production problem
+The existing world, a stable ordinary gait and a five-second reach integration are useful foundations. They do not yet deliver the trailer's performance. The emotional progression must be visible in the children's choices: play without vigilance, delayed recognition, a protective decision, shared fear, unequal exhaustion, accepting help, and finally continuing together. New ink-wash lighting and spatial depth should support those decisions. Surface treatment alone cannot supply them.
+
+The current integration's steady v047 foundation is deliberately planar and restrained; the new v048 source candidate retains that drawing construction. Its own artistic assessment records fixed-profile heads, rigid painted hands, a charcoal/white-eye girl face inconsistent with the painted boy, rigid braid, deferred cloth, and no completed fatigue/helping/stop transitions. The v060 first-danger study changes the near arms and briefly pitches the heads while protecting the gait. It is an integration study at 39–44 seconds, not a complete fear reaction, turn, load-bearing clasp or full-film conform. The delivered v040 full trailer and v058 world still contain the inherited held pair outside such separate studies.
+
+Evidence and current baselines
+1. Current age-ten walking source:
+   locomotion/steady_walk_baseline_v047/native/WTSC_Steady_Ordinary_Walk_v047.blend
+   SHA256 29a4d9f794187602af43f7349f2b01c1019f39cba9f1d1278b966b78d1770103
+   Last native modification 2026-10-18T21:49:46.5127935Z; 13,404,390 bytes.
+   Scene: V047 | STEADY ORDINARY WALK | no stumble baseline
+   Append: V047 | AGE10 PAIR | steady ordinary walk
+   Root: V047 | shared travel | steady .73125mps
+   Rigs: V044 BOY | estimated joint centres / V044 GIRL | estimated joint centres
+   Source guide: locomotion/steady_walk_baseline_v047/IMPORT_TIMING_AND_ASSESSMENT_v047.txt
+   Review: previews/WTSC_Steady_Walk_v047_NormalSpeed_8Cycles.mp4 and WTSC_v046_vs_v047_Steady_Walk_NormalSpeed.mp4.
+   Technical contacts pass, but the guide labels the result an unapproved ordinary-walk candidate. Normal-speed weight and intent remain artistic questions.
+
+2. Latest completed world foundation:
+   work/world_minimum_v058/WTSC_World_Development_v058_Packed.blend
+   SHA256 13c2aee075315131eac6f85d9d726b766051a84edffa961f4ec38ecf7029a890
+   Native modified 2026-10-18T12:56:38.2605982Z.
+   Scene: WTSC_WORLD_FOREGROUND_v058d. Its inherited 106-second master/title scenes remain.
+   START_HERE_v058.txt explicitly says the whole-film minimum is not attained: held characters and incomplete acting remain.
+
+3. Current bounded integration:
+   work/trailer_development_v060/native/WTSC_First_Danger_Trailer_Development_v060.blend
+   Scene WTSC_FIRST_DANGER_WORLD_v060; production G937–1056, 24fps, 39–44 seconds.
+   Cold report evidence/WORLD_NATIVE_VALIDATION.json passes 21 checks across 477 quarter-frame samples. At the 22:16:30 save, SHA256 was e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685.
+   Maximum boot-vertex error against the affine-staged source is 11.31 micrometres; the largest protected-bone world-matrix component difference is 2.185e-5 (a matrix comparison, not a measured whole-body position error). Boy/girl head-pitch changes measure 1.40/2.50 degrees. Those values establish preserved motion and bounded edits, not finished acting.
+   scripts/paired_reach_steady.py reaches from source F25–51 and sustains a profile hand fold through F151. Its own limits state no body/head turn and no load-bearing support. Measured nearest opaque hand-paint grid distance is about 2.04mm after contact; wrist separation is intentionally about 130mm because wrists are not the contact points.
+   Gesture coverage ends at F151 (G1057). Do not extrapolate this contact cache across the remaining film.
+
+4. Newest completed external ordinary-weight candidate:
+   locomotion/weight_loading_v048/native/WTSC_Connected_Weight_Loading_v048.blend
+   SHA256 eeefa9ea2059a613d796277d6dfebfabe84a89b1c31470b585e5475fcb35001b
+   Native modified 2026-10-18T22:27:32.989Z; 14,400,698 bytes; hash independently stable.
+   Scene: V048 | CONNECTED WEIGHT LOADING | ordinary walk
+   Append: V048 | AGE10 PAIR | connected weight loading
+   Root: V048 | shared travel | steady .73125mps; original V044 rig names retained.
+   This is a substantive built revision, not metadata or a plan. It preserves32frames/.78m/.73125mps/30fps/girl+2 and the age-ten rest anatomy. Actual loading knees are about19–28 degrees; minimum full-cycle flexion14.27/14.02 degrees instead of v0476.86/6.22. Maximum sampled knee rates7.28/7.39 degrees per source frame instead of12.01/12.80; hip excursion26 to21.5mm; heel-to-forefoot loading4.5frames, toeoff-26degrees, swing clearance40mm instead of45mm.
+   COLD_CONTACT_VALIDATION.json passes8checks across1,025samples/child: maximum support-X4.83micrometres, penetration6.02micrometres, support-height error.112mm, joint gap.0388mm. PAINT_AND_CLOTHING_VALIDATION.json preserves original UVs/material slots/packed image payloads; maximum garment registration error32.76micrometres.
+   LONG_RENDER_RECORD.json completed22:30:18.045UTC:257actual frames/version,1280x720,30fps, matched old/current camera/grid/ground; log ends completion marker and Blender quit. Two encoded movies subsequently appeared at22:33:19–20UTC: previews/WTSC_Weight_Loading_v048_NormalSpeed_8Cycles.mp4 (3,612,712bytes) and previews/WTSC_v047_vs_v048_Weight_Loading_NormalSpeed.mp4 (4,910,253bytes). Their continuous playback and final encoded validation were not inspected in this audit.
+   Eight actual pose stills retain the painted identities and restrained upright bodies; F9 passing shoes still crowd. Normal-speed weight and pacing have not yet been assessed by this audit from the newly encoded movies. Treat this as the newest source candidate, not artistic approval. The v060/v061 look reference remains a valid immutable earlier integration; rebase its acting to v048 deliberately after its actual review, preserving the new root/collection names.
+
+Film contract and timing
+The original story source is source/handoff_extracted.txt, section 3. The later delivery contract in WHEN_THE_SKY_CLEARS_TRAILER_v040.txt establishes 3840x2160, 24fps, 2400 story frames plus 144 silent credit frames = 2544 frames / 106 seconds. Source-song cue timings have not been inferred here.
+
+Time zero is F1. Section ranges below are inclusive, with the next section beginning on the next frame. Subdivisions are working acting allocations inside the existing story sections; they are not a new cut or a claim that those motions already exist. Maintain the continuous-looking lateral journey.
+
+0–18s, F1–432: BEFORE
+0–4, F1–96 — establish two independent, comfortable walkers. Use v047 as a starting pose/footfall reference. Their attention is on each other and the path, shoulders open, hands free. Different glance and arm phrasing should distinguish them; the existing +2-frame girl gait phase is already baked and should not be added again.
+4–8, F97–192 — the boy chooses to skip ahead. Anticipation compresses over a planted foot, then a clear push, airborne accent and asymmetric landing. The girl notices and lengthens her next step rather than instantly copying his hop. Old PLAYFUL_SKIP supplies step-hop reference, not a current age-ten transition.
+8–12, F193–288 — boy looks back and briefly walks backward to tease; girl catches up. This needs a true alternate facing/quarter-view head and torso, deliberate backwards foot placement and a passing-depth plan. Spinning the current profile card will collapse its drawing and expose incorrect far-side construction.
+12–18, F289–432 — brief chase into the puddle leap. Make the playful hand invitation precede takeoff, not appear at landing. Separate their takeoff/landing timing; show ankle compression and body recovery, then resume travel without a root-speed kink. Missing assets: age-ten run/chase, jump anticipation, flight, landing and walk/run bridges.
+
+18–35s, F433–840: SOMETHING CHANGES
+18–24, F433–576 — continue play through the occluded environmental change. Let the children remain unaware for a few steps while the audience sees the empty village. Do not make every background change trigger a character flinch.
+24–29, F577–696 — boy climbs/hops onto the low wall. Solve actual top contact, toe clearance and hip height against its geometry; allow a small, purposeful correction after landing. The girl chooses the safer route or follows with a different balance pose.
+29–35, F697–840 — balanced travel on the wall. Arms have distinct counterweight functions, wrists/fingers relax and correct, chest counter-rotates against pelvis, gaze attends to the next placement. Use fixed foot contacts and visible top thickness. No completed balance sequence was found; this is custom performance and set-contact work.
+
+35–50s, F841–1200: PLAY BECOMES CAUTION
+35–39, F841–936 — playful jump lands among bricks; boy begins the next skip and aborts it. The arrested impulse needs a believable braking step, held balance and a head/eye decision. An unchanged cyclic gait cannot communicate that moment.
+39–44, F937–1056 — first flash / girl notices, raises shoulders and offers her hand. Reuse the v060 staging, copied near-arm drawings, contact-space logic and tested 30-to-24fps mapping. Develop attention before the reach: eye direction, a readable head turn, thorax/shoulder rise, then hand offer; boy receives with his own delay. Existing small nods are only a placeholder. Replace the fixed painted grip with designed contact/curl shapes and a clear overlap silhouette.
+44–50, F1057–1200 — offered touch becomes a sustained reassuring grip; both move lower and more purposefully. Author a connected walking/urgent-travel bridge. A held contact target must allow elbow breathing and torso compensation without turning the arms into rigid rods. The selected-arm v060 cache ends here; extend it deliberately, with new feet/root decisions if pace changes.
+
+50–67s, F1201–1608: THE WORLD BEHIND THEM
+50–54, F1201–1296 — light precedes impact. Their responses differ: boy instinctively ducks; girl recognizes, plants and commits to cover him. Shoulder/head timing should propagate through chest, pelvis and loaded feet. Preserve a moment of contact with the ground rather than lowering both rigs uniformly.
+54–58, F1297–1392 — protective fold, hold a breath, then choose to run. This is the principal paired acting asset to build next after stable locomotion: clear arching girl silhouette over the boy, far-arm support/cover, visible boy response, uncluttered hand/head negative space, compressed legs and an asymmetric rise. v001 CAUTION_CROUCH offers only a simple lower/hold/rise prototype. The attempted camp_v004 has no delivered native.
+58–62, F1393–1488 — urgent run through posts/canvas. Establish a real run with flight, different cadence/stride, head stabilization and purposeful forward inclination. Retain paired intention without identical leg phase or an impossible rigid clasp. No completed current-age10 run was found.
+62–67, F1489–1608 — crater descent and scramble. Set geometry must supply actual contact normals, hand supports, usable steps and the crest. Downhill braking, a slip/catch and uphill push require distinct poses; a sheared flat walk is not sufficient. Girl first establishes support, then helps the boy negotiate the exit. Hands change from reassuring grip to a useful forearm/palm support where appropriate.
+
+67–80s, F1609–1920: KEEP GOING
+67–71, F1609–1704 — exhausted running loses amplitude and becomes uneven for a reason: shorter push, longer recovery, guarded chest, small gaze checks. Avoid restoring the old baseline's accidental pelvis lurch across every step. Fatigue is a shot-specific departure from stable gait.
+71–76, F1705–1824 — boy catches a foot; girl brakes and turns. Author the caught toe, mass continuing, rescue foot plant and thigh/ground brace. Do not give both children the same stumble. The girl's body should anticipate the support before the boy starts rising.
+76–80, F1825–1920 — help him up, move past the school window, then duck on the next distant flash without looking back. This repeats the danger response with learned anticipation. Old v007/v009 provide useful offered-touch/rise/restart timing, but their touch is explicitly light and their route nearly stops; they do not supply a load-bearing age-ten rescue. Design palm/forearm contacts, girl's planted support leg, boy's active push and the release/restart as one action. Keep the effort small within the landscape.
+
+80–90s, F1921–2160: TITLE TERRAIN
+80–85, F1921–2040 — wall-like forms resolve into title geometry. They step over a low base, briefly pass behind a projecting edge, then reappear before the contact is lost to the audience. One purposeful obstacle is more readable than a sequence of buoyant hops.
+85–90, F2041–2160 — use the gap crossing to echo the earlier puddle: invitation becomes reassurance, landing now costs effort. Include toe clearance, grounded takeoff/landing, grip adjustment and a breath before continuing. This needs real letter-base contact geometry, not just the visible title-alpha mask.
+
+90–96s, F2161–2304: SMALL AGAIN
+Urgent travel decelerates to walking while still connected. Reuse v047 only after solving an authored speed/stride transition and paired hand height. Gaze moves to the route ahead; shoulders release slightly without triumph. Camera widening preserves the emotional scale and title reading. Keep the ten-second music fade on its existing 90–100s span.
+
+96–100s, F2305–2400: QUIET
+96–98, F2305–2352 — camera stops; children take their final few steps, then settle. Choose the last support foot, stop root travel on that contact, let pelvis/chest/head and cloth finish at different times. Do not freeze a moving cycle or slide it to a stop.
+98–100, F2353–2400 — hold silhouettes and title together through the picture fade. A small shared hand adjustment or breath can complete the relationship; no large new gesture is needed.
+
+100–106s, F2401–2544: SILENT CREDITS
+Retain exact existing wording: WHEN THE SKY CLEARS. / The Animated Series. / 2027. / A Two Truck Productions project. No additional acting or repeated song fragment belongs here.
+
+Reusable performance library: exact supported sources
+These are native source studies, not current age-ten finished performances. Their guides/scripts were reviewed without opening their natives in Blender during this audit.
+
+- locomotion/first_pack_v001/native/WTSC_Locomotion_Library_v001.blend
+  Collection WTSC_LOCO_PAIR_v001; embedded configure_clip.py, configure('WALK'/'TRUDGE'/'CAUTION_CROUCH'/'CARE_REACH', ...).
+  WALK: 32 frames at24fps/.533333m/.40mps; TRUDGE: 44frames/.44m/.24mps. CAUTION_CROUCH: 48-frame stationary lower/hold/rise. CARE_REACH: 64-frame stationary reach/release.
+  Use crouch/reach as pose-reference starting points. The guide marks them unfinished; underarm/sleeve surfaces fail at larger bends. Ordinary walk is superseded.
+
+- locomotion/performance_v003/native/WTSC_Performance_Library_v003.blend
+  Collection WTSC_PERFORMANCE_PAIR_v003; embedded configure_performance.py and loco_pack='WTSC_PERFORMANCE_v003'.
+  PLAYFUL_SKIP: 40-frame cycle at24fps, 1m stride/.60mps, girl4frames ahead; genuine saved step-hop with unequal arms and head/braid lag. No finished walk-to-skip transition, torso turn or facial animation.
+  WEARY_STUMBLE_RECOVER: finite96frames/4s, total.561667m, stopped from local64; useful toe catch18–32, rescue21–33, lean29–41, settle56–76. Events are largely shared by both characters, so re-author their narrative independence.
+
+- locomotion/battlefield_corrections_v006/native/WTSC_Battlefield_Drawn_Corrections_v006.blend
+  Collection WTSC_BATTLEFIELD_DRAWN_PAIR_v006; configure_v006(start=1801,...).
+  Local1–120 maps75–80s. POSE_001..120 include open/curl/relax hand/finger/thumb drawings. Reusable drawing/choreography reference; lower body superseded.
+
+- locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend
+  Collection WTSC_BATTLEFIELD_DRAWN_PAIR_v007; configure_v007(start=1801,duration_scale=1,root_motion=True,...).
+  Finite120frames at24fps; .561666667m route stops around78.333s. Boy hand-to-thigh37–49; girl offer43–78; boy meets80–101; boy prepares81–89 then rises about10cm through120. Fingertip touch, not load-bearing.
+  33 actions / 27 shape-key meshes, neighboring POSE drawings must change coherently. Useful staging reference for rescue, not a drop-in finished recovery.
+
+- locomotion/recovery_walk_refinement_v009/native/WTSC_Recovery_Walk_v009.blend
+  Collection WTSC_RECOVERY_WALK_PAIR_v009; configure_v009(start=1801,...).
+  Local1–120 at24fps; .861666667m route, restart.288mps from102; girl heel102/flat105, boy116/flat119, touch releases103–114. Right-facing head retained. Useful restart reference.
+
+- locomotion/whole_pose_blocking_v014/native/WTSC_Whole_Pose_Blocking_v014.blend
+  Collection WTSC_WHOLE_POSE_BLOCKING_v014; scripts/story_poses.py.
+  Plain proxy geometry,72frames24fps, CONSTANT exposures,15boy/11girl key poses. Independent girl brake/attend12–17, settled heels27, offer34–54; boy catch19, deep load/thigh brace22–43, unload49, pause64–72.
+  Useful explicit performance thumbnails. It is neither current art nor production timing.
+
+All v001/v003/v006/v007/v009 families use the old boy1.45m/girl1.3699m basis. Current rest proportions are both age ten, boy1.390m/girl1.380m barefoot skull construction. Re-solve contacts and segment lengths rather than scaling old posed meshes or copying their clocks.
+
+Do not count these as usable completed acting:
+- locomotion/camp_proof_v004/SUPERSEDED.txt overrides its stale handoff: placement failed before save; no delivered camp native.
+- locomotion/head_turn_patch_v008/STATUS_REFERENCE_REQUIRED.txt rejects the hairline/braid turn study.
+- locomotion/stumble_polish_continuation_v010 is explicitly artistically rejected by the later v012 guide; v010a retains it for traceability.
+- locomotion/performance_inbetweens_v015/evidence/STATUS_PAUSED_FOR_CHARACTER_RIG_AUDIT.json: no native built.
+- v012 is an unpainted diagnostic, not a direct trailer replacement.
+
+Performance assets to create or finish
+A. Coherent acting model for both children. Register profile, three-quarter, front/back and opposing-profile head/neck/shoulder designs to the actual age-ten rig; preserve skull, cheek, fringe, ear and braid-root placement through the turn. characters/head_turn_v047 contains Girl_Front_v047.png, Girl_Left_Profile_v047.png, Girl_Three_Quarter_Left_v047.png, Girl_Three_Quarter_Right_v047.png, matching EditableOutline.svg files, contours.json and provenance.json. The provenance says native registration/review remain pending and eye/pupil rendering differs. These are useful source views, not a completed age-ten head action. A corresponding boy turnaround and body/garment turn set are still required.
+B. Gaze and facial intention. Provide editable pupil/eye-direction, lids/blinks and restrained brow/cheek tension that remain readable at actual shot scale. Tie gaze to a target or chosen drawing; do not approximate a look-back with a neck nod. Keep the girl and boy within one painted design language. Express much of the emotion through silhouette, head orientation and timing so it survives the title mask and wide staging.
+C. Shoulders, thorax and pelvis. Current rigs have exactly15 bones each: pelvis/chest/head plus near/far upper_arm, forearm, hand, thigh, shin and foot. There are no clavicle, spine subdivision, eye, finger or braid bones in that source. Add independent shoulder/scapula and limited chest/pelvis twist through controls and corrective drawings or an editable volume-based posing proxy. Keep the final drawn appearance. Resolve quarter-view armholes, sleeve undersides, neck/collar and dress side surfaces before large bends.
+D. Hands as performances. Build relaxed walk, open invitation, receptive palm, contact onset, thumb wrap, tightened grip, loose sustained grip, release, shield, thigh brace, ground palm and forearm-support shapes. Design both visible and occluded sides. Animate fingers as grouped masses with distinct thumb/index overlap; retain volume and knuckles through the curl. A closed shape or nearest-point distance alone does not establish a clasp.
+E. Body mechanics library. Finish ordinary support/loading, walk-to-stop/idle, acceleration/deceleration, skip, backwards steps, child run, jump/landing, wall balance, duck/hunker/rise, downhill/uphill, toe catch/rescue step, help-up and exhausted restart. Make the two children make different choices; avoid applying one event identically with a small phase offset.
+F. Secondary performance. After body timing is stable, braid/ribbon, coat hem and dress follow the measured acceleration/turn/impact, with delayed recovery and purposeful holds. Preserve silhouette and contact readability. Current v047 explicitly deferred this work. Cyclic noise is not a substitute for the change of direction or weight that causes motion.
+
+Conform and native implementation
+The old world camera route in scripts/build_spatial_atmosphere_v036.py is (seconds,metres):
+(0,0),(18,25.5),(35,45.4),(50,67.8),(67,89.8),(80,118),(90,142),(100,160.75).
+School is aroundX65, camp87, battlefield115 in that layout. The story places camp50–67 and shattered school67–80. Physical order and event timings therefore need explicit conform with the new performance and environment, not merely character replacement at those old coordinates.
+
+At steady speed the current gait would travel73.125m in100seconds, versus160.75m in the held-world route. The whole trailer will include running, slowing, stops and obstacles, so neither number is a new final route. Author a single piecewise travel curve from the story's contacts and speeds, then place/re-space the sets and choose camera offsets from it. Applying the old route on top of the character root doubles travel; scaling the cycle to that route without new steps causes sliding.
+
+Source v047: F at30fps; D(F)=.78*(F-1)/32, girl phase+2 already baked.
+Production mapping for entryG0: F=1+(G-G0)*30/24; Gkey=G0+(Fkey-1)*24/30.
+Period25.6 production frames, half-step12.8. Retiming must include key handles, rig actions, shared root and every garment cache; changing only scene fps is insufficient.
+Current mesh parts use both Armature modifiers and cached drawings. Source sleeves/legs have129 quarter-frame poses per32-frame cycle; they do not automatically follow an edited bone pose. Regenerate the relevant cache section in locomotion/steady_walk_baseline_v047/scripts/build_steady_walk.py or the owned gesture builder after pose changes. Re-running that entire source script would replace new acting with its coded baseline.
+Preserve current object depth origins, UV registrations and painted materials while authoring new rest/pose drawings. The v046 sorting/feather corrections are already in the v047 source. A new quarter-view pose also needs deliberate near/far occlusion rather than relying on old Y order.
+Use shared hand contact targets with independent elbow/shoulder responses, and terrain-aware foot/hand targets for wall, crater and title bases. Contact targets should support deliberate sliding/release when the action demands it. Do not constrain both wrists and both feet rigidly while asking the pelvis to move.
+Original title geometry/actions and106-second audio/credit contract are preserved in the current native. The delivered v040 treatment masks the entire moving world inside huge scrolling glyphs, while the original story also calls for physical title terrain at80–100. These are distinct requirements. Retain the title treatment and build real obstacle/contact geometry where needed; frame the decisive reach, protective fold and recovery so glyph edges do not erase them. Inspect the actual masked output throughout, not only an unmasked close crop.
+
+Production sequence
+First consolidate the latest stable ordinary-weight solution and the shared character acting model, keeping the current age-ten dimensions and liked paint. Complete the entire100-second action/root/camera layout in the new spatial environment using explicit key poses and the beat ranges above. This exposes missing travel bridges and contact geometry before surface work hides them.
+
+Develop the protective fold at50–58s and the independent stumble/help-up at71–80s as the two central paired performances. They require the broadest new shoulder, quarter-view, hand and body construction and establish whether the system can act beyond a planar walk. Use their solved controls/drawings to finish the simpler first-danger reach, wall balance and title support. Build the playful opening and its puddle echo with the same mechanical and drawing consistency.
+
+Then finish gaze/fingers, face/neck turns, cloth/braid and event-driven overlap across the conformed timeline. Review full normal-speed sequences and continuous joins for intention, weight, contact, silhouette and pauses. Frame sampling and numeric checks remain useful for catching defects, but do not certify emotional performance. Final ink-wash lighting, spatial atmosphere and edit should be judged with those performances in place.
+
+Audit limits
+This document was produced from current directory timestamps/hashes, native build/validation records, guides and authoring scripts. No Blender process, native save or render was started for this audit. Old-bank internal contents were not freshly evaluated in Blender. The new v048 native and actual evaluated records are identified separately from its earlier pure-data plan; its completed long frames are not represented as observed continuous playback. No running, load-bearing rescue, complete current-character turnaround or fully conformed100-second animated trailer was found in the inspected evidence.

@@ -1,0 +1,93 @@
+WHEN THE SKY CLEARS - SPECIALIST DRAWN CORRECTIONS v006
+Review candidate, not cinematic acceptance. All production and v005 files preserved.
+
+IMPORT
+Blender 5.2.2 LTS. Append Collection WTSC_BATTLEFIELD_DRAWN_PAIR_v006 from
+native/WTSC_Battlefield_Drawn_Corrections_v006.blend. This is the portable asset.
+Find its controls by custom property motion_revision == v006_drawn_pose_corrections.
+The existing object name is BATTLEFIELD_WEARY | CONTROLS; names may gain .001
+when appended beside v005, so use the property or explicitly pass the root.
+The original source painting is packed; no external bitmap or live handler.
+
+Run embedded Text configure_v006.py in the Text Editor, then call:
+configure_v006(start=1801, duration_scale=1.0, root_motion=True, root=controls)
+Or run scripts/configure_v006.py through runpy and call its configure_v006.
+Hide the replaced v005 pair and all parent-added knee/wrist caps in the target.
+Keep the parent-owned light/FX and sole contact geometry, since the foot route
+is unchanged. Rebind the target's reflected-light materials to its actual light.
+Retarget a camera's TRAVEL driver variable to the new pair TRAVEL object, or
+retain the old hidden TRAVEL as the comparison copy does. Do not render both pairs.
+
+TIMING AND STAGING
+24fps, metres, +X travel, +Z up, XZ planar artwork viewed from negative Y.
+Full source action range is NOW 1..120, with the former lead-in already baked.
+At global start1801 the last sample is1920; playback boundary1921 (75..80s).
+Do not apply the old116/95 retime or add another3frame lead-in to v006.
+duration_scale=2 doubles elapsed source time on EVERY body/drawing/distance NLA.
+Use the helper; changing only the armature strips desynchronizes pose drawings.
+HOLD extrapolation is intentional. This is a one-shot recovery, not a loop.
+
+Root distance is exactly the sealed v005 sampled curve, ending0.561666667m.
+At frames1801/1804:0m;1825:0.202051m;1844:0.445259m;
+1881 and1920:0.561666667m. The route stops near78.333s; upper-body and
+cloth/hand balance continue. Variable speed is encoded in the native distance
+Action; do not drive it at a constant speed or reuse the old fast trailer path.
+Pair spacing0.8m, roots +/-0.4m; average pair anchor remains centered.
+Original height basis boy1.45m, girl1.369918m, uniform character scale1.
+Matched v043 anchor: (107.6339569,0,0.7200737), identity rotation, scale1.
+The standalone neutral proof uses root_motion=False and moving ground.
+For in-place, set root_motion=False through the helper and drive traveling ground
+by minus the native DISTANCE_CURVE.location.x, preserving its variable speed.
+
+CONTACT AND EDITING CONTRACT
+Pelvis/thigh/shin/foot matrices are unchanged from v005 at all120 samples.
+The world-space foot matrices match v043 within2.4e-7 at the same anchor.
+Boot sole vertices remain unchanged. Only the upper boot opening receives
+localized deformation, up to18mm, to join the curved lower leg.
+Toe catch timing is unchanged: first whole-frame boy catch1825 (76.000s).
+Girl is about0.1s ahead of the boy as in v005. Consult source v005 contact
+evidence for the original contact/roll phases; no contact has been invented.
+
+V006 visible legs/sleeves/forearms/cuffs/hands are authored planar replacement
+drawings on native Mesh Shape Keys. Their rig-local outlines are baked once
+per frame, not produced by another sharp knee rotation. Foot placement uses
+the original foot bones. BOY/GIRL native body Actions remain editable.
+Each drawing has Basis + POSE_001..POSE_120, linear one-hot weights on a native
+NLA strip. Edit a selected POSE key in Edit Mode at its source frame; neighboring
+samples must be adjusted to keep motion smooth. Rebuilding the script replaces
+these edits, so work in a new copy. The hidden collection V006 | EDITABLE BEZIER
+CORRECTION POSES | hidden holds96 editable closed Bezier leg/arm guides at
+frames1,25,37,47,58,81,101,120; they are reference drawings, not live generators.
+Hands contain palm/four individually curved fingers/opposed thumb, with staged
+open/curl/relax silhouettes and wrist/arm lag. Body mesh breathing and hem sway
+use separate native keys. No new Grease Pencil correction layer is claimed.
+The hidden original source GP and original painted meshes remain available.
+
+REVIEW FILES
+WTSC_v006_Neutral_5s.mp4: actual Blender120frame neutral performance.
+WTSC_v006_Integrated_5s.mp4: actual Blender120frame v043-camera comparison.
+WTSC_v043_vs_v006_Matched_Framing.mp4: same-time before/after.
+Integrated proof uses CPU Cycles2samples at960x540 and64transparent bounces;
+v043 original was EEVEE4K. The higher ray depth avoids black smoke-depth artifacts.
+Camera, geometry, physical light source/clock, and FX clocks were retained.
+Renderer appearance differs; compare silhouette and motion, not smoke grain.
+native/WTSC_v006_Integrated_Comparison_Copy.blend is a local reproducible world
+review copy, not a portable motion asset or authorized production replacement.
+native/WTSC_v006_Fresh_Append_Test.blend confirms clean append and retiming.
+
+ARTISTIC LIMITS
+Localized knee/ankle drawings remove the previously hollow/angular bend reads;
+rolled cuffs, face, hair, braid, body painting and near-age proportions remain.
+Hands now open and settle; recovery has small chest/head/arm/cloth continuation.
+The performance still uses the source planar silhouette style and restrained
+existing lower-body route. It needs the parent's actual motion review, especially
+the deeply folded boy boot overlap and the small hand gestures at final size.
+No new run/crawl/fall/get-up clip and no cinematic acceptance is claimed.
+The v006 proof is the open battlefield. Final knockout-letter/mask readability
+still needs the parent's integration review at the intended trailer size.
+
+PRIVATE LIBRARY
+Private project upload is authorized, but the freshly retrieved official helper
+previously returned 'Library prepare_uploads is not available'. No saved Library
+file or ID has been confirmed. These local deliverables are complete; no repeated
+upload attempt or direct protocol bypass is represented as a successful save.

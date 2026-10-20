@@ -1,0 +1,57 @@
+{
+  "MATCHED": {
+    "file": "previews\\WTSC_v033_vs_v028_Preferred_Movement_18p6s.mp4",
+    "bytes": 4678518,
+    "sha256": "cc5106ae8700f831b9863bfc273d695d26b331eb30e0fdb9ebca89f35b466830",
+    "decoded_frames": 558,
+    "fps": 30.0,
+    "size": [
+      1280,
+      840
+    ],
+    "seconds": 18.6,
+    "layout": "9.3s close then9.3s shot; nine31-frame cycles per view",
+    "baseline": "Actual unchanged V028 source renders matched to V033 native frames1..279; no retiming, holds, phase alignment, interpolation or frame recycling",
+    "selected_actual_encoded_frames": [
+      "previews\\DECODED_MATCHED_000.png",
+      "previews\\DECODED_MATCHED_003.png",
+      "previews\\DECODED_MATCHED_010.png",
+      "previews\\DECODED_MATCHED_016.png",
+      "previews\\DECODED_MATCHED_019.png",
+      "previews\\DECODED_MATCHED_026.png",
+      "previews\\DECODED_MATCHED_030.png",
+      "previews\\DECODED_MATCHED_031.png",
+      "previews\\DECODED_MATCHED_061.png",
+      "previews\\DECODED_MATCHED_092.png",
+      "previews\\DECODED_MATCHED_185.png",
+      "previews\\DECODED_MATCHED_278.png",
+      "previews\\DECODED_MATCHED_279.png",
+      "previews\\DECODED_MATCHED_309.png",
+      "previews\\DECODED_MATCHED_557.png"
+    ],
+    "observation_limit": "Decoded actual movie frames inspected; continuous player playback not observed through available tools. New footwear/user review remains pending."
+  },
+  "CANDIDATE": {
+    "file": "previews\\WTSC_v033_Consistent_Shoes_Normal_Speed_18p6s.mp4",
+    "bytes": 2974019,
+    "sha256": "fcdf7b36b1c6d413a0be7ee948f0e59385d8c6ec2047291b540c248d9297b8bb",
+    "decoded_frames": 558,
+    "fps": 30.0,
+    "size": [
+      1280,
+      800
+    ],
+    "seconds": 18.6,
+    "layout": "9.3s close then9.3s shot; nine31-frame cycles per view",
+    "baseline": "Actual unchanged V028 source renders matched to V033 native frames1..279; no retiming, holds, phase alignment, interpolation or frame recycling",
+    "selected_actual_encoded_frames": [
+      "previews\\DECODED_CANDIDATE_000.png",
+      "previews\\DECODED_CANDIDATE_016.png",
+      "previews\\DECODED_CANDIDATE_026.png",
+      "previews\\DECODED_CANDIDATE_278.png",
+      "previews\\DECODED_CANDIDATE_279.png",
+      "previews\\DECODED_CANDIDATE_557.png"
+    ],
+    "observation_limit": "Decoded actual movie frames inspected; continuous player playback not observed through available tools. New footwear/user review remains pending."
+  }
+}

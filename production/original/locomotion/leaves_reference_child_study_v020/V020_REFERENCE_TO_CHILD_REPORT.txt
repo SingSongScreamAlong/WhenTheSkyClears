@@ -1,0 +1,74 @@
+V020 LEAVES REFERENCE-TO-CHILD EIGHT-POSE STUDY
+
+REFERENCE-TO-CHILD MATCH PARTIAL; FINISHED WALK NOT APPROVED
+
+OUTCOME
+The source-based poses give clearer contact-to-support leg staging than the constructed v018 sequence. The child skeleton partially carries the source weight pattern, but does not establish an accepted match. Leg proportion/boot transfer errors remain before the painted representation is judged. The painted knee/calf strips and rigid coat/torso are independent visible limitations.
+
+ACTUAL SOURCE / PHASES
+User-supplied Animation Base Locomotion v3,52bones,30fps,keys2..33,period31frames /1.033333s,root travel1.50m. Not Mixamo.
+1 R_CONTACT    src  9.75 wrapped 9.75 | source t 0.258s | study + 0.000s | scene f 1.00
+2 R_LOADING    src 12.00 wrapped12.00 | source t 0.333s | study + 0.075s | scene f 3.25
+3 R_PASSING    src 17.75 wrapped17.75 | source t 0.525s | study + 0.267s | scene f 9.00
+4 R_UP         src 19.00 wrapped19.00 | source t 0.567s | study + 0.308s | scene f10.25
+5 L_CONTACT    src 25.75 wrapped25.75 | source t 0.792s | study + 0.533s | scene f17.00
+6 L_LOADING    src 26.00 wrapped26.00 | source t 0.800s | study + 0.542s | scene f17.25
+7 L_PASSING    src 34.00 wrapped 3.00 | source t 1.067s | study + 0.808s | scene f25.25
+8 L_UP         src 36.00 wrapped 5.00 | source t 1.133s | study + 0.875s | scene f27.25
+
+No source heel or skin sole exists. Contact onset is inferred from stationary-foot onset, foot pitch and subsequent flat forefoot. It is not an exact measured heel event. Windows: R9.75..11, L25.75..27. Loading is defined by low pelvis, passing by swing knee crossing projected hip center, up by high pelvis. The second contact/loading are only0.25source frames apart; they were not spread artificially.
+
+SOURCE-DERIVED CHILD PROPOSAL
+Mean unchanged child leg length / source mean leg length =0.680922328. Derived stride1.021383492m per1.033333s cycle; nominal speed0.988m/s and116.13steps/min. These are study values, not approved child acting. Native sourceR maps childnear and sourceL maps childfar; projected directions retain the original profile. Child pelvis/chest/head are independent native controls. All original child bone lengths, paint, UVs and mesh shapes remain.
+
+WHY THIS IS NOT AN ART-ONLY FAILURE
+At the second landing/loading, fixed child legs and actual boot targets require28.89/26.36mm pelvis accommodation. A source-like leg direction then differs by up to18.2deg. An alternative side assignment also required23.31mm accommodation at the first landing and disturbed its loading; the natural side-view assignment was retained. At L_UP, using the source toe-joint height produces zero drawn swing clearance. There is no skin sole in the FBX, so this mapping is not accepted. Source arm directions match the native arms within the measured angular precision; source multi-spine/lateral motion is collapsed in the child representation.
+
+NEEDED MATCHING / DEFORMATION DECISIONS - NOT AUTHORED
+Proportion / pelvis / stance fit
+Evidence: L_CONTACT25.75 and L_LOADING26: reach-preserving pelvis accommodation28.89/26.36mm; near-shin direction differs about18.2deg from source. Both side assignments were measured.
+Needed: Resolve source-to-child foot placement and root/pelvis matching against the unequal native thigh/shin ratios. Preserve original lengths; do not stretch or silently call the resulting IK a source match.
+
+Swing sole transfer
+Evidence: L_UP36 (wrapped5): the source Toes_R point lies below the virtual flat-foot plane. The current actual-boot mapping clamps swing clearance to0; the boot grazes ground during a swing phase.
+Needed: Use actual child boot hull/ankle/foot orientation to define a swing target. Source toe-joint height cannot be treated as a skin sole. This pose remains a matching failure.
+
+Torso / waist
+Evidence: Source pelvis pitch about-7..-9deg counterposes chest about2.7..3.8deg. Child skeleton carries separate pelvis/chest axes, but the painted torso remains a long rigid wedge.
+Needed: A localized waist/side-compression corrective that preserves the source painting and gives the pelvis/chest relationship a visible shape. Source multi-spine curvature is currently collapsed into one child chest segment.
+
+Knee and calf
+Evidence: Passing17.75/34 and up19/36 still show strip-like knee/shin contours and diagonal calf bands in the painted child.
+Needed: A continuous outer knee contour and controlled inner fold through the matched poses, with stable boot collar anchors. The fixed painted band placement remains an art/deformation decision; bone reach does not repair it.
+
+Coat / cloth
+Evidence: Contact/loading12/26 do not produce a convincing side-specific cloth compression; the current average-distance hem driver leaves the coat largely unchanged. Deep cloth capability remains unpassed.
+Needed: Pose-specific loaded-side hem/waist compression and folds that maintain overlap with the upper thigh, without triangular gaps. No new drawing or modifier was added in this test.
+
+Cuff / hand readability
+Evidence: Actual source arm directions are matched on the child skeleton. The original short forearm/long coat can still bury hands or expose a constructed cuff.
+Needed: Evaluate the arm/coat silhouette within the source-matched pose; avoid solving it by reintroducing an unrelated wide wrist arc. Existing near/far depth order is retained deliberately.
+
+VERIFICATION LIMITS
+- The adult asset is reference, not approved child acting. No claim of child appeal or natural timing is made from eight poses.
+- Eight unique source-time poses plus a duplicate bookend. CONSTANT keys only; no authored child in-betweens or continuous-contact proof.
+- Contact onsets9.75/25.75 are estimates within stated windows, using world foot motion and settling. The low-pelvis/loading phases12/26 are measured minima. Second contact and loading are nearly coincident.
+- One swing boot grazes the ground after sole-aware clamping. The leg match differs up to18.2deg. It would be misleading to blame all remaining defects on painting.
+- The comparison MP4 uses equal0.5second display holds; actual source times are labeled. It is not normal-speed gait playback.
+- Source and child are shown at native metre sizes with the same cameras, not height-normalized. Adult source is taller; child proportions are unchanged.
+Fresh native verification checks the eight poses and duplicate bookend, original rest proportions, four reachable non-stretch IKchains, copied52bone source poses, and actual drawn sole positions. This supports the posing contract, not visual approval. The source original action and all eight sampled source poses are retained. FBX import warned that Short custom properties are unsupported; no skeleton/action loss was observed.
+
+DELIVERED COMPARISON
+1920x960,30fps,120frames,4seconds,181677bytes. Three columns: source skeleton, native child skeleton, painted child. Two rows: close and original v046 camera size. Equal display holds with actual source time labels. All unique encoded slides were decoded and inspected.
+
+PRIVATE LIBRARY
+WTSC_v020_Leaves_Source_Child_Eight_Pose_Comparison_4s.mp4 | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | version0
+WTSC_v020_All_Eight_Source_Child_Poses.jpg | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | version0
+WTSC_v020_All_Eight_At_Shot_Size.jpg | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | version0
+All saves succeeded. Exact receipts retained.
+
+SOURCE / RESOURCE SAFETY
+Leaves FBX, productionv046/v045c/v007, v017 control asset and previous v018/v019 natives remain unchanged. Work authored only in this v020 folder. Small640x360EEVEE renders,32samples,two threads, one job at a time. No resource contention observed. The parallel world/art branch was not read into or integrated with this character study. No installs, purchases or external sharing.
+
+STOP
+Stop for review. No further matching, corrective art, finished walk, broad in-between pass, trailer integration or world-branch integration is started.

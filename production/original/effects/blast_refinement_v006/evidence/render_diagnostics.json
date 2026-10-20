@@ -1,0 +1,35 @@
+{
+  "mode": "diagnostics",
+  "renderer": "BLENDER_EEVEE",
+  "samples": 32,
+  "view_layers": [
+    "MID",
+    "NEAR",
+    "FAR",
+    "TRACER_MID",
+    "TRACER_FAR"
+  ],
+  "pixels": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "range": [
+    1800,
+    1919
+  ],
+  "this_session_seconds": 7.320778799999971,
+  "records": [
+    {
+      "frame": 2064,
+      "seconds": 4.374761200044304
+    },
+    {
+      "frame": 1826,
+      "seconds": 2.9044064999907278
+    }
+  ],
+  "threads": 2,
+  "new_bake": false,
+  "resumption": "Complete PNGs reused; partial run yielded to production at frame1894. All delivered motion frames are actual renders of this native source."
+}

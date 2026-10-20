@@ -1,0 +1,22 @@
+WHEN THE SKY CLEARS — SINGLE DRAWN BLAST v007b — REVIEW CANDIDATE
+
+This is one four-second silent24fps test, not an accepted replacement or an expanded pack.
+Native proof: native/WTSC_Single_Drawn_Blast_Proof_v007b.blend (local; held camera/background from the earlier read-only actual-project fixture).
+Append source: native/WTSC_Single_Drawn_Blast_Assets_v007b.blend
+Collection: FXv007 | ONE DRAWN BLAST | editable cels and contact
+Scene: FX_PROOF_v007 | distinct painted poses | one blast
+Blender5.2.2 LTS, Eevee32samples,1920x1080, frames1818–1913, ignition1824.
+
+There are twelve genuinely different new painted blast drawings and six new dust drawings. Every cel uses a fixed physical canvas and registered ground baseline. Only exposure weights change; no cel scale, rotation or position is animated. Intervals blend adjacent drawn poses. This limited cel count can still produce a dissolve impression rather than continuous rolling mass; judge the actual silent video and consecutive frames, not only the pose atlas.
+
+The material retains preferred v003 saturation0.15/value0.90/tint[0.72,0.77,0.83], with the new drawings' grain. New silhouettes are not identical art to v003. Do not claim the liked style is fully preserved without user review. No screen shake, audio emphasis, extra explosions, tracers or camera changes.
+
+Initial impulse keys are age0,1.5,3,5,7.5,10; later shape keys13.5,18,24,32,44,60. Heat is restricted to the first3 drawings, with selective HDR only in bright ignition pixels. Local light wash is zero atage0, peaks with visible ignition, then ends byage8. This is a small receiver preview, not a production lighting rig. Bloom is FX-only and restrained. Native seven chunky debris pieces follow independent rise/apex/fall arcs and remain at their landing positions; four short landing puffs accompany them. Some left-side contact may be obscured by the character/foreground holdout.
+
+Six distinct front-dust drawings spread laterally, roll lower and settle; their keys are ages2,5,10,18,31,50. The blast poses also carry source dirt behind them. A shallow gouge remains independently after the smoke. The emitter is fixed at worldX/Y/Z saved in evidence/build_single_pose.json and projected nearUV(0.79,0.323), on visible rubble above the foreground path. This deliberate local test placement differs slightly from v006's partly hidden contact.
+
+X is screen-horizontal, Z up, camera looks along+Y. Metric scale length1. Move the root empty to place the whole effect. Custom properties: start_frame, speed, size, intensity, bloom_gain. age=(frame-start_frame)*speed. Images are packed, straight alpha; native editable collections/materials/cel exposures are retained, while the paintings themselves are raster originals.
+
+The original generated PNG bytes and prompt set are preserved under assets and evidence. Built-in ImageGen was used; no CLI image API or new software was installed. First oversize/hot layout files remain as v007 and pose_*.png. Corrected source is v007b and final_pose_*.png. All production and v003/v006 sources remain untouched. This pass has no simulation cache and no full production integration.
+
+Required assessment: whether the new changing silhouette, sharper attack and connected dust/landings improve force at actual shot size with audio muted. Heavy rolling resistance, art continuity and final style match remain subject to review. Do not promote this merely because native validation passes.

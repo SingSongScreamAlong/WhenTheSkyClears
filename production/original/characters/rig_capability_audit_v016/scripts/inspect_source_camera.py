@@ -1,0 +1,8 @@
+import bpy,json,hashlib
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];R=P.parents[1]
+src=R/'shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend';before=hashlib.sha256(src.read_bytes()).hexdigest()
+bpy.ops.wm.open_mainfile(filepath=str(src),load_ui=False,use_scripts=False)
+S=bpy.data.scenes['WTSC_OPEN_SUPPORTED_RECOVERY_TRIAL_v046'];bpy.context.window.scene=S;S.frame_set(1844);bpy.context.view_layer.update();c=S.camera;dg=bpy.context.evaluated_depsgraph_get();M=c.evaluated_get(dg).matrix_world.copy();root=next(o for o in S.objects if o.get('motion_revision')=='v007_drawn_pose_corrections');rs=[o for o in root.children_recursive if o.type=='ARMATURE'];from mathutils import Vector,Matrix;center=sum((o.evaluated_get(dg).matrix_world.translation for o in rs),Vector())/len(rs);relative=Matrix.Translation(-center)@M
+d={'source':str(src),'source_sha256':before,'type':c.data.type,'ortho_scale':c.data.ortho_scale,'lens':c.data.lens,'shift_x':c.data.shift_x,'shift_y':c.data.shift_y,'resolution':[S.render.resolution_x,S.render.resolution_y],'matrix_world':[list(row) for row in M],'relative_to_pair_root':[list(row) for row in relative],'pair_root_center':list(center),'scene':S.name,'root_scale':list(root.scale),'root_matrix':[list(row) for row in root.matrix_world],'rig_matrices':{o.name:[list(row) for row in o.matrix_world] for o in rs},'sensor_width':c.data.sensor_width,'sensor_fit':c.data.sensor_fit,'frame':1844,'name':c.name,'source_hash_unchanged':before==hashlib.sha256(src.read_bytes()).hexdigest()}
+(P/'evidence/actual_v046_camera.json').write_text(json.dumps(d,indent=2));print('ACTUAL_CAMERA',json.dumps(d))

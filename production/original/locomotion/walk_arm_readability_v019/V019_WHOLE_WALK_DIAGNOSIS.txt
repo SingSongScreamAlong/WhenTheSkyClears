@@ -1,0 +1,54 @@
+V019 BOUNDED ARM DIAGNOSTIC AND WHOLE-WALK DIAGNOSIS
+
+REJECTED; latest user rating of v018 was2/10. V019 is an occlusion diagnostic, not an accepted walk.
+
+LOCAL RESULT
+Near hand now separates from the coat at all integer frames10..16 in the critical-frame crop board. The change is visible at original shot framing. Far arm ordering is deliberate; its rear hand still legitimately occludes behind the coat.
+Every non-wrist animation channel, body/head pose, foot goal, travel curve and cadence is copied from v018 unchanged. Source proportions/painting/UV/geometry/materials/modifiers are retained.
+
+WHOLE-BODY ARTISTIC ASSESSMENT
+- The widened near arc provides a clean hand outline, but the hand can look held out or gestural during the forward half. This is a design accommodation for the long coat and short source arm, not proof of natural arm swing.
+- Whole-body weight transfer still reads weak. A planted boot is clear, but the upper body remains an upright column rather than resolving and recovering the load.
+- The torso and coat retain nearly the same long triangular shape across the poses; little independent chest or cloth settling is visible.
+- At passing frames7/19, the knee contour and diagonal calf bands still resemble articulated strips. Their folded silhouettes remain a major visible defect.
+- The far-foot loading sits10-12mm lower in the retained hip path. That asymmetry remains provisional and can suggest an unintended limp or uneven gait.
+- At shot size, the local arm change is modest. It does not materially change the appeal or acting quality of the whole walk.
+
+CADENCE / STRIDE
+Frozen proposal:120steps/min,0.22m per step,0.44m/s. These numbers have not been validated as the right rhythm for this child or emotional state. Normal-speed independent viewing is still required; no cadence acceptance is claimed.
+
+WHAT THE CURRENT REPRESENTATION CAN DO
+- Preserve the existing charcoal painting and profile design while placing readable limbs in a controlled side view.
+- Maintain fixed boot contacts and unchanged child proportions; expose editable wrist arcs and intentional front/back ordering.
+- Support further pose-specific deformation using the existing meshes and drawings, if that work is independently judged at shot size.
+
+LIMITS OF THE CURRENT AUTHORING
+- The body has a single main chest segment and no separately authored lumbar/cloth articulation in this walk. Its motion largely inherits the hip translation; a small chest rotation phase offset does not supply convincing body mass.
+- Generated knee/limb strips and the existing scalar compression corrections do not produce convincing painted folds through every passing/load pose.
+- A wrist path or depth switch cannot supply absent torso compression, pelvis/chest counter-motion or well-designed knee silhouettes.
+- One painted profile does not provide a registered turnaround. No new head view or rejected v008 patch was used.
+
+CONCLUSION
+The current asset can produce a technically controlled profile walk and clearer hand silhouettes. As currently posed/deformed it cannot deliver the required natural, appealing finished performance. Further arm polishing or tighter contact tolerances will not address the dominant visible failures.
+
+A whole-body weight/pose and knee/cloth deformation decision is needed on this same isolated child before extending performance. Existing art and mesh correctives remain feasible material to investigate; no request for user-supplied drawings is a prerequisite. No new workstream or corrective phase was started here.
+
+REVIEW METHOD
+Viewed before/after actual-art close renders, every critical frame10..16, matched shot-size examples, and twelve chronological decoded samples of the final encoded movie. No normal-speed video observation claimed.
+
+BOUNDED REGRESSION
+Only193quarter-frame samples were used to guard the frozen gait. Body/lower-bone matrices, boot vertices and travel have zero measured delta from v018; all non-wrist action channels are identical. Four nativeIKchains remain reachable. This regression prevents damage; it is not an animation quality pass.
+
+DELIVERED PROOF
+1920x1160 comparison movie,24fps,48frames,2seconds,512658bytes. Top row close whole-body view; bottom row original camera size. Reuses the exact v018 before frames and renders v019 after with the same camera/shading. Both show the same translating cycle, not a new performance. Critical-window board contains before/after frames10/13/16 and matched views; all10..16 are also retained in evidence.
+
+PRIVATE LIBRARY
+WTSC_v019_Arm_Comparison_Whole_Body_and_Shot_Size_2s.mp4 | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | version0
+WTSC_v019_Arm_Window_Before_After.jpg | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | [PRIVATE_LIBRARY_REFERENCE_REMOVED] | version0
+Both saves succeeded. Local returned version-xattr writeback failed on Windows because Python has no os.setxattr; this did not undo the Library saves.
+
+SOURCE SAFETY
+The v018 native and v017 control asset hashes are unchanged. Only the isolated v019 folder was authored. No installs, external sharing, heavy renders or source/production changes.
+
+STOP
+Stop here for independent review. Preserve the working rig and all sources. No production integration, additional acting or new painting.

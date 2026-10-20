@@ -1,0 +1,61 @@
+{
+  "scope": "Cold source preservation and side-view garment construction continuity. Technical results do not establish artistic acceptance.",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "body_samples": 187,
+  "body_range": [
+    1,
+    94
+  ],
+  "visible_geometry_camera_frames": [
+    1,
+    4,
+    8,
+    11,
+    13,
+    17,
+    20,
+    24,
+    27,
+    31,
+    32,
+    63,
+    94
+  ],
+  "original_action_datablocks_changed": [],
+  "original_active_object_actions_changed": [],
+  "other_original_mesh_rest_shape_all_UV_float_data_changed": [],
+  "original_material_nodes_ramps_links_changed": [],
+  "original_packed_image_bytes_changed": [],
+  "preservation_errors": {
+    "root_matrix": 0.0,
+    "all_bone_world_matrices": 0.0,
+    "wrists": 0.0,
+    "all_other_visible_mesh_vertices_m": 0.0,
+    "coat_rows6_through32_rendered_vertices_m": 0.0,
+    "camera_matrices": 0.0
+  },
+  "coat_pose_rows6_through32_error_m": 0.0,
+  "original_coat_first_UV_retained": true,
+  "painted_UV_rows12_through32_retained": true,
+  "front_placket_UV_cols13_through16_from_row6_error": 0.0,
+  "new_collar_eighth_frame_join_samples": 249,
+  "collar_to_coat_top_max_XZ_gap_m": 3.577054704474748e-07,
+  "collar_to_coat_top_max_XYZ_gap_m": 3.577054704474748e-07,
+  "collar_to_coat_top_max_projected_shot_gap_pixels": 0.00011483759478370948,
+  "minimum_projected_coat_quad_area_m2": 2.872570876788494e-05,
+  "collar_local_bookend_max_error_m": 0.0,
+  "same_shoe_mesh_material": true,
+  "source_yoke_preserved_hidden": true,
+  "intentional_changes": [
+    "New36-vertex folded collar on the existing31-frame clock.",
+    "Only coat shape coordinates in rows0..5 change; original coat Action and lower rows remain.",
+    "Original yoke hidden intact; upper painted UVs corrected around exposed armhole/duplicate collar, with original UV0/lower/front placket preserved."
+  ],
+  "layer_depth_disclosure": "Collar inner edge meets the original head depth and its lower edge meets the coat depth. The shared boundary aligns inXYZ; this local connection does not turn the fixed-profile character into a general3Drig.",
+  "remaining": [
+    "Fixed profile/expression",
+    "Simple body/hand contours and crowded passing feet",
+    "Paired acting/support/recovery restart unfinished"
+  ]
+}

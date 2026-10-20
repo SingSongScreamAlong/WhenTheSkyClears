@@ -1,0 +1,40 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v027.blend",
+  "source_sha256": "729d4de4d664738e4fabee541ae71ef313ee0910ebaa7cdf5d8be37bed03ce6e",
+  "mode": "motion excerpts",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "frames": 288,
+  "timeline_ranges_frames": [
+    [
+      1,
+      192
+    ],
+    [
+      721,
+      816
+    ]
+  ],
+  "native_scene_render": true,
+  "workers": [
+    {
+      "index": 1,
+      "start": 1,
+      "end": 192,
+      "pid": 45020,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v027\\part_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v027\\part_01.log"
+    },
+    {
+      "index": 2,
+      "start": 721,
+      "end": 816,
+      "pid": 45648,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v027\\part_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v027\\part_02.log"
+    }
+  ]
+}

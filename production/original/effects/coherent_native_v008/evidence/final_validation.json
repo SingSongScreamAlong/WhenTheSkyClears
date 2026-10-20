@@ -1,0 +1,240 @@
+{
+  "child_occlusion": [
+    {
+      "frame": 1824,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1825,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1827,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1832,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1836,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1848,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1868,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1908,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1937,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    }
+  ],
+  "protected_sources_unchanged": {
+    "v003_assets": true,
+    "v006_proof": true,
+    "v007b_assets": true,
+    "production_v038": true
+  },
+  "silhouette_to_final_geometry_identical": true,
+  "geometry_sha256": "7511604983810bb19e8f2ba3b2316778f0172d835493018a99758c1be8cb2edd",
+  "fresh_append_test": {
+    "factory_empty_scene": true,
+    "append_source": "WTSC_Coherent_Append_v008b.blend",
+    "objects": 22,
+    "packed_images": [
+      "FXv002 original detailed eruption | packed",
+      "FXv003 | ORIGINAL four cold forms | packed straight alpha"
+    ],
+    "invalid_drivers": [],
+    "outside_driver_targets": [],
+    "continuous_native_geometry_evaluated": [
+      {
+        "frame": 1824,
+        "age": 0.0,
+        "top_local": 0.04870878905057907,
+        "anchor": [
+          109.13587188720703,
+          10.0,
+          -0.4315446615219116
+        ]
+      },
+      {
+        "frame": 1827,
+        "age": 3.0,
+        "top_local": 1.3888167142868042,
+        "anchor": [
+          109.13587188720703,
+          10.0,
+          -0.4315446615219116
+        ]
+      },
+      {
+        "frame": 1836,
+        "age": 12.0,
+        "top_local": 2.243739604949951,
+        "anchor": [
+          109.13587188720703,
+          10.0,
+          -0.4315446615219116
+        ]
+      },
+      {
+        "frame": 1848,
+        "age": 24.0,
+        "top_local": 2.117424488067627,
+        "anchor": [
+          109.13587188720703,
+          10.0,
+          -0.4315446615219116
+        ]
+      },
+      {
+        "frame": 1868,
+        "age": 44.0,
+        "top_local": 1.5408003330230713,
+        "anchor": [
+          109.13587188720703,
+          10.0,
+          -0.4315446615219116
+        ]
+      },
+      {
+        "frame": 1937,
+        "age": 113.0,
+        "top_local": 0.8726526498794556,
+        "anchor": [
+          109.13587188720703,
+          10.0,
+          -0.4315446615219116
+        ]
+      }
+    ],
+    "retime_test": {
+      "start": 2000,
+      "speed": 0.5,
+      "frame": 2024,
+      "expected_age": 12,
+      "top_error": 0.0,
+      "passed": true
+    },
+    "scale_test_passed": true,
+    "fixed_world_anchor": true,
+    "rgba_render": "Native_Append_RGBA_v008b.png",
+    "source_has_no_cameras_or_lights": true,
+    "no_production_scene_read": true
+  },
+  "aftermath_actual_frame": 2064,
+  "append_rgba": {
+    "pixels": [
+      960,
+      540
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "convention": "StraightRGBA PNG"
+  },
+  "silhouette_media": {
+    "phase": "silhouette",
+    "video": "WTSC_Coherent_Silhouette_v008_MUTED.mp4",
+    "bytes": 572303,
+    "sha256": "7109b9be6dac2e2ccacf763999b2dd216137d3ad63141213e33e656f4c96e27f",
+    "fps": 24,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "frames": 120,
+    "seconds": 5,
+    "audio": false,
+    "camera_shake": false,
+    "all120_native_pngs_decoded": true,
+    "full_video_decode": true,
+    "review_frames": [
+      1824,
+      1825,
+      1826,
+      1827,
+      1829,
+      1832,
+      1836,
+      1842,
+      1848,
+      1856,
+      1868,
+      1884,
+      1908,
+      1937
+    ],
+    "decoded_frames": [
+      1825,
+      1827,
+      1836,
+      1848,
+      1868,
+      1908,
+      1937
+    ],
+    "pose_dissolves": false
+  },
+  "painted_media": {
+    "phase": "painted_final",
+    "video": "WTSC_Coherent_Painted_v008b_MUTED.mp4",
+    "bytes": 820195,
+    "sha256": "00e55545e9aa13a8c6f9e935ec4dfc8740193eb62a46822928ae4757827fc997",
+    "fps": 24,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "frames": 120,
+    "seconds": 5,
+    "audio": false,
+    "camera_shake": false,
+    "all120_native_pngs_decoded": true,
+    "full_video_decode": true,
+    "review_frames": [
+      1824,
+      1825,
+      1826,
+      1827,
+      1829,
+      1832,
+      1836,
+      1842,
+      1848,
+      1856,
+      1868,
+      1884,
+      1908,
+      1937
+    ],
+    "decoded_frames": [
+      1825,
+      1827,
+      1836,
+      1848,
+      1868,
+      1908,
+      1937
+    ],
+    "pose_dissolves": false
+  },
+  "no_source_or_production_mutation": true
+}

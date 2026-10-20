@@ -1,0 +1,47 @@
+Use case: precise-object-edit
+Asset type: registered painterly school-facade texture patch for Blender.
+
+INPUT ROLES
+1. School_v001_SOURCE_UNMODIFIED_1672x941.png
+   Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED],version0.
+   This is the original style,architecture,material and lighting reference.
+2. School_Facade_REQUIRED_REGION_NATIVE_84x163_v051.png
+   Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED],version0.
+   This is the actual repaint target and exact framing/registration guide.
+3. School_Facade_REQUIRED_REGION_Context_and_Brief_v051.png
+   Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED],version0.
+   Instruction board only. Its labels,arrows,borders and inspection enlargement
+   are not artwork and must not appear in the output.
+
+PRIMARY REQUEST
+Repaint only the target crop as genuinely higher-resolution painterly lime
+plaster and irregular exposed masonry. Preserve its exact framing,all four edge
+joins,the small impact pit's coarse placement,the torn-plaster/exposed-stone
+composition and the diagonal porch shadow. Match the original school's subdued
+hand-painted material language and value structure. Paint convincing chipped
+plaster lips,uneven individual stone planes,recessed mortar,subtle mineral
+variation and varied material-specific brush marks. The result must belong in
+the original painting,not read as a pasted procedural texture or flat vector art.
+
+OUTPUT
+Portrait texture only,with84:163 width:height framing. Preferred2048x3974
+lossless PNG,or the highest native supported resolution at the same framing.
+If the image system requires multiples of16 and an edge below3840,1344x2608
+preserves the exact84:163 aspect and still exceeds the453x880 native4K footprint
+by almost3x per axis. Do not enlarge a smaller result to claim native detail.
+Keep a blend margin equivalent to6original source pixels inside each edge.
+No captions,frames,arrows,crop marks,watermark,people,windows,doors or new objects
+inside this material crop. The original full building is context only; do not
+redesign its proportions or repaint the whole building as the deliverable.
+
+AVOID
+Upscaled or sharpened source pixels,generic noise,regular stone cells,black
+drafting outlines,crisp polygon facets,uniform brush density,new lighting
+directions,altered border values,ornament or conspicuous new damage.
+
+VERIFICATION AFTER RETURN
+Check actual output dimensions and new painted detail; preserve original file.
+Integrate only into a separate diagnostic copy of v049i at source half-open box
+x[1004,1088),y[475,638),existing Paint UV u[.6004784689,.6507177033],
+v[.3219978746,.4952178533]. Judge native4K crop/fullframe1225 first; if coherent
+and visibly better,render adjacent1201and1249. Color proposal remains isolated.

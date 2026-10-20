@@ -1,0 +1,690 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\native\\WTSC_Face_Hand_Finish_v050.blend",
+  "blender": "5.2.2 LTS",
+  "sha256": "1721ae5ce9146e9d0379419d153c64ef09a122074a972a8e4bd68fb1953d176e",
+  "scenes": [
+    {
+      "name": "REFERENCE | liked v041 boy and original source pair | preserved",
+      "frames": [
+        1,
+        94
+      ],
+      "fps": 30.0,
+      "output": [
+        480,
+        720,
+        100
+      ],
+      "output_path": "WTSC_LOCAL_WORKSPACE\\characters\\rig_correctives_v017\\previews\\AFTER\\0221.png",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 460,
+      "types": {
+        "ARMATURE": 4,
+        "MESH": 124,
+        "EMPTY": 172,
+        "CURVE": 151,
+        "CAMERA": 7,
+        "GREASEPENCIL": 2
+      },
+      "camera": "V024 | CLOSE portrait",
+      "markers": [
+        {
+          "name": "CONTACT / CYCLE START",
+          "frame": 1
+        },
+        {
+          "name": "LOADED DOWN",
+          "frame": 4
+        },
+        {
+          "name": "PASSING / ARM CROSS",
+          "frame": 11
+        },
+        {
+          "name": "FAR CONTACT",
+          "frame": 17
+        },
+        {
+          "name": "LOADED DOWN / FAR HAND BEHIND LEG",
+          "frame": 20
+        },
+        {
+          "name": "HAND HEM CHECK",
+          "frame": 27
+        },
+        {
+          "name": "EXACT LOCAL COAT BOOKEND",
+          "frame": 32
+        },
+        {
+          "name": "SECOND CYCLE BOOKEND",
+          "frame": 63
+        },
+        {
+          "name": "THIRD CYCLE BOOKEND",
+          "frame": 94
+        }
+      ],
+      "strips": []
+    },
+    {
+      "name": "V050 | FACE FINISH AND RELAXED HANDS | v049 gait",
+      "frames": [
+        1,
+        257
+      ],
+      "fps": 30.0,
+      "output": [
+        1280,
+        720,
+        100
+      ],
+      "output_path": "//",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 702,
+      "types": {
+        "CAMERA": 1,
+        "MESH": 673,
+        "FONT": 17,
+        "EMPTY": 9,
+        "ARMATURE": 2
+      },
+      "camera": "V044 orthographic metric camera",
+      "markers": [],
+      "strips": []
+    }
+  ],
+  "images": [
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 50
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 24
+    },
+    {
+      "name": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "source": "FILE",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\character_design_finish_v040\\textures\\WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "external_path_exists": true,
+      "users": 35
+    },
+    {
+      "name": "WTSC_Girl_Face_Finish_Study_v050.png",
+      "source": "FILE",
+      "size": [
+        1167,
+        1347
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\textures\\WTSC_Girl_Face_Finish_Study_v050.png",
+      "external_path_exists": true,
+      "users": 1
+    }
+  ],
+  "unpacked_missing_images": [],
+  "libraries": [],
+  "sounds": [],
+  "fonts": [
+    {
+      "name": "Bfont Regular",
+      "packed": false,
+      "path": "<builtin>"
+    }
+  ],
+  "actors": [
+    {
+      "name": "LOCO_BOY | RIG",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 4,
+        "keys": 1492,
+        "key_range": [
+          1.0,
+          94.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_BOY | RIG.001",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_GIRL | RIG",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 18
+    },
+    {
+      "name": "V020 | SOURCE52 | exact FBX sampled poses",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 523,
+        "keys": 4707,
+        "key_range": [
+          1.0,
+          32.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 52
+    },
+    {
+      "name": "V025 | bare torso diagnostic | optional",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Pelvis ribcage sternum | no coat",
+          "drawing_frames": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V025 | COAT drawings | editable GP",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "01 | new coat silhouette and painted planes",
+          "drawing_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V044 BOY | estimated joint centres",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 150,
+        "keys": 19350,
+        "key_range": [
+          1.0,
+          33.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 15
+    },
+    {
+      "name": "V044 GIRL | estimated joint centres",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 150,
+        "keys": 19350,
+        "key_range": [
+          1.0,
+          33.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 15
+    }
+  ],
+  "actions": 76,
+  "driver_count": 82,
+  "drivers_with_missing_targets": [
+    {
+      "owner": "Key.053",
+      "path": "key_blocks[\"Reach\"].value",
+      "is_valid_after_sample_evaluation": true,
+      "expression": "max(0,reach)/max(1,max(0,reach)+max(0,brace))",
+      "missing_targets": [
+        {
+          "name": "reach",
+          "id_type": "OBJECT",
+          "path": "[\"Reach\"]"
+        },
+        {
+          "name": "brace",
+          "id_type": "OBJECT",
+          "path": "[\"Brace\"]"
+        }
+      ]
+    },
+    {
+      "owner": "Key.053",
+      "path": "key_blocks[\"Brace\"].value",
+      "is_valid_after_sample_evaluation": true,
+      "expression": "max(0,brace)/max(1,max(0,reach)+max(0,brace))",
+      "missing_targets": [
+        {
+          "name": "reach",
+          "id_type": "OBJECT",
+          "path": "[\"Reach\"]"
+        },
+        {
+          "name": "brace",
+          "id_type": "OBJECT",
+          "path": "[\"Brace\"]"
+        }
+      ]
+    }
+  ],
+  "invalid_drivers_after_samples": [],
+  "color_controller": null,
+  "color_samples": [],
+  "source_sha256_unchanged": true,
+  "inspection_limits": "Read-only native sample; auto-run source scripts disabled. No claim of all-frame render, playback quality, or artistic approval."
+}

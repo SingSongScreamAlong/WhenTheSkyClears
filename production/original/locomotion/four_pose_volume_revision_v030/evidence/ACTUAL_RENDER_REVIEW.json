@@ -1,0 +1,54 @@
+{
+  "status": "ACTUAL_FOUR_POSE_COMPARISON_FOR_INDEPENDENT_REVIEW_NOT_A_PASS",
+  "inspected": [
+    "four individual480x720close renders",
+    "matched close comparison",
+    "matched shot-camera comparison"
+  ],
+  "contact_upper_body_scanline": {
+    "y": 270,
+    "threshold": "maxRGB<100",
+    "width_pixels": {
+      "v029": 78,
+      "v030": 112
+    },
+    "scope": "Pixel-size preservation/readability check only, not artistic acceptance"
+  },
+  "loaded_mass_drop_from_contact_mm": {
+    "pelvis": 26,
+    "waist": 35,
+    "ribcage": 33,
+    "neck": 37
+  },
+  "rise_from_passing_to_up_mm": {
+    "pelvis": 26,
+    "waist": 26,
+    "ribcage": 30,
+    "neck": 30
+  },
+  "passing_sole_clearance_m": {
+    "v029": 0.09500000000000001,
+    "v030": 0.095
+  },
+  "passing_ankle_projection_x_m": {
+    "v029": -0.015,
+    "v030": 0.065
+  },
+  "observed_improvements": [
+    "Shoulder/ribcage envelope is visibly fuller around the unchanged head.",
+    "Contact/down differ through whole-body mass, not just head/knee.",
+    "Knee edges are softer; useful passing leg separation retained.",
+    "Passing boot projects clear of support ankle more clearly without increasing minimum sole clearance.",
+    "Up combines forefoot roll, extended support and pelvis/ribcage rise.",
+    "Rear contact hand separates from hem; front gestures hang more calmly."
+  ],
+  "remaining_art": [
+    "Coat/ribcage still reads as broad armor-like graphic planes.",
+    "Pelvis value bridge may still look like a patch rather than mass.",
+    "Passing/up hands partly merge with hem or thigh.",
+    "The loaded-down may overstate crouching/fatigue; four static drawings cannot settle this.",
+    "Body surface is a structural value block-in against retained painted head/collar/boots."
+  ],
+  "no_cycle_or_animation_pass": true,
+  "independent_review_routing": "Through parent, as requested; no direct cross-thread review message attempted."
+}

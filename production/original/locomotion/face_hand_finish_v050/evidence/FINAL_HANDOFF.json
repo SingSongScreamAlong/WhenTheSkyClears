@@ -1,0 +1,95 @@
+{
+  "model_version": "v050 face/hand finish",
+  "motion_version": "v049 exactly preserved (v048 gait)",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\native\\WTSC_Face_Hand_Finish_v050.blend",
+  "native_sha256": "1721ae5ce9146e9d0379419d153c64ef09a122074a972a8e4bd68fb1953d176e",
+  "frozen_v049_native_sha256": "2f78c5cd86b96d437d97a165b8b61473bcd6c9d1ab284015c229bfb11c6f9a94",
+  "static_library_files": [
+    {
+      "file_name": "WTSC_v049_v050_Face_And_Hands_Before_After.png",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "local_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\previews\\WTSC_v049_v050_Face_And_Hands_Before_After.png",
+      "metadata_verified": true
+    },
+    {
+      "file_name": "WTSC_v049_v050_Finish_Neutral_And_Walk.png",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "local_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\previews\\WTSC_v049_v050_Finish_Neutral_And_Walk.png",
+      "metadata_verified": true
+    }
+  ],
+  "actual_motion_library_files": [
+    {
+      "file_name": "WTSC_Face_Hand_Finish_v050_Actual_NormalSpeed.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "local_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\previews\\WTSC_Face_Hand_Finish_v050_Actual_NormalSpeed.mp4",
+      "metadata_verified": true
+    },
+    {
+      "file_name": "WTSC_v049_vs_v050_Face_Hand_Finish_SameMotion.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "local_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\previews\\WTSC_v049_vs_v050_Face_Hand_Finish_SameMotion.mp4",
+      "metadata_verified": true
+    }
+  ],
+  "movies": [
+    {
+      "file_name": "WTSC_Face_Hand_Finish_v050_Actual_NormalSpeed.mp4",
+      "bytes": 3696020,
+      "sha256": "bec80900640ddd2470000941be7a0529da00032e1cb9bbdb96b34f4ac3ca376b",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1280,
+        800
+      ],
+      "under_20_MB": true,
+      "model_version": "v050 face/hand finish",
+      "motion_version": "v049 unchanged"
+    },
+    {
+      "file_name": "WTSC_v049_vs_v050_Face_Hand_Finish_SameMotion.mp4",
+      "bytes": 4921190,
+      "sha256": "641b134c1551b0aac4efad91e3cab88498e7bedcc70cb89bf3a9b1f94ad630bf",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true,
+      "model_version": "v049 left, v050 right",
+      "motion_version": "v049 unchanged"
+    }
+  ],
+  "import_guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\IMPORT_TIMING_AND_ASSESSMENT_v050.txt",
+  "travel_curve": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\TRAVEL_CURVE_v050.csv",
+  "archive": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\WTSC_Face_Hand_Finish_v050_Review.zip",
+  "archive_bytes": 45058504,
+  "archive_sha256": "04ceba6070649e8fc7da7e90ad630ee961ac6a0c654561ae5c89f1064a0b00c3",
+  "archive_files": 40,
+  "all_archive_crcs_pass": true,
+  "older_sources_and_frozen_v049_deliveries_unchanged": true,
+  "remaining_visible_limits": [
+    "Original hair retains broader charcoal brush marks than the boy; this pass preserves its identity/painting.",
+    "Heads are fixed profiles; gaze/expression do not act. Hands retain one painted pose and have no finger articulation.",
+    "Clothing remains planar, and dress/braid do not follow steps.",
+    "Movement is exactly the preserved v049/v048 gait. Recovery restart and supporting clasp remain outstanding."
+  ],
+  "technical_blockers": [],
+  "artistic_acceptance": false,
+  "image_generation": "Built-in tool; actual unedited study and exact prompt saved in candidate folder; only registered exposed skin used natively.",
+  "archive_library_file": {
+    "file_name": "WTSC_Face_Hand_Finish_v050_Review.zip",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "local_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\WTSC_Face_Hand_Finish_v050_Review.zip",
+    "metadata_verified": true
+  }
+}

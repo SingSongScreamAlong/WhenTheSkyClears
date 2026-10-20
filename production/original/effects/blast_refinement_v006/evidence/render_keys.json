@@ -1,0 +1,50 @@
+{
+  "mode": "keys",
+  "renderer": "BLENDER_EEVEE",
+  "samples": 32,
+  "view_layers": [
+    "MID",
+    "NEAR",
+    "FAR",
+    "TRACER_MID",
+    "TRACER_FAR"
+  ],
+  "pixels": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "range": [
+    1800,
+    1919
+  ],
+  "render_seconds": 18.597992299997713,
+  "records": [
+    {
+      "frame": 1824,
+      "seconds": 4.263095700007398
+    },
+    {
+      "frame": 1826,
+      "seconds": 2.8782420000061393
+    },
+    {
+      "frame": 1832,
+      "seconds": 2.8786160000017844
+    },
+    {
+      "frame": 1848,
+      "seconds": 2.829486000002362
+    },
+    {
+      "frame": 1884,
+      "seconds": 2.8550310000428
+    },
+    {
+      "frame": 1919,
+      "seconds": 2.8521312000229955
+    }
+  ],
+  "threads": 2,
+  "new_bake": false
+}

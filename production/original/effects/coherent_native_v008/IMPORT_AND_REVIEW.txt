@@ -1,0 +1,29 @@
+WHEN THE SKY CLEARS — ONE COHERENT NATIVE BLAST v008b
+
+One fixed world-ground blast at24fps. The silhouette study was rendered first; the original v003 paint/palette was then applied to exactly the same vertex-key geometry. This is a small reviewed effect proof, not a full trailer integration or a set of variants.
+
+APPEND
+Open native/WTSC_Coherent_Append_v008b.blend → Collection → FXv008 | ONE COHERENT NATIVE BLAST.
+The22objects include three tracked masses, connected low dust, eight independently tumbling chunks, four landing puffs, a compact ignition and persistent ground profile. Two original project paint images are packed. The source collection contains no camera or lights. The optional compositor helper is NodeTree FXv008 | FX-only restrained bloom over.
+
+Select FXv008 | fixed world impact and controls. Move this root to a ground point; it remains fixed while its mesh outlines evolve. Custom properties start_frame, speed, size, intensity and painted control timing, playback rate, uniform scale, effect strength and study/paint mode. age=(frame-start_frame)*speed. The study uses start1824. Source geometry contains per-frame absolute shape keys for ages0–132; native interpolation keeps the same vertex IDs, rather than blending raster poses. Each mass changes outline and advects its pigment coordinates. Do not replace these keys with object-scale growth.
+
+For programmatic property edits, call root.update_tag(refresh={'OBJECT'}) and update the view layer/depsgraph after setting custom properties. This was required by the fresh import control test. Retiming to start2000/speed0.5/frame2024 reproduced age12 geometry exactly; size1.2 was also verified. Ordinary property editing remains native and editable.
+
+X is screen-horizontal, Z is up; the camera looks along+Y, so positiveY is farther away. Project metric scale length is1. The default world contact is recorded in evidence/build_coherent.json; it projects nearUV(0.78,0.323) in the held test camera. Move the root for another placement. Keep ground contact aligned with visible terrain. The appended collection remains in project world coordinates rather than near the origin.
+
+MOTION
+The compact impulse arrives immediately, with most expansion in the firstfewframes. Left/right masses travel differently, lose upward/outward momentum and roll down; the low connected body and dust then spread and settle. Chunks have independent ascent/apex/descent and stop at ground contact; short puffs accompany several landings. The shallow gouge and landed debris have no end fade. Only late residual smoke/dust dissipates. No chimney is continuously sourced. There are no generated-pose crossfades, camera shake or audio emphasis.
+
+PAINT AND LIGHT
+The preferred v003 cold charcoal texture uses saturation0.15/value0.90/tint[0.72,0.77,0.83]. Pigment fills the changing native outline; its source alpha does not drive the cloud silhouette. The brief hot detail uses the original painted ignition alpha within the compact native flash. Small local receiver color and FX-only bloom follow the same short impulse, then decay rapidly. The backdrop is excluded from the Glare node. These are preview lighting cues; live production receivers remain production work.
+
+PROOFS
+WTSC_Coherent_Silhouette_v008_MUTED.mp4: actual120frames at1920x1080/24fps/5seconds, no audio.
+WTSC_Coherent_Painted_v008b_MUTED.mp4: the same native motion and camera with existing paint, also120frames/5seconds/no audio.
+The native proof files stay local. Factory-scene import testing is saved separately as native/WTSC_Coherent_Append_Test_v008b.blend with a960x540 straight-alpha PNG preview. No final transparent animation sequence was rendered in this narrowed proof pass; use native Append for editing and final resolution.
+
+REVIEW LIMITS
+The actual shot uses the existing held background/camera/children at frame1825. The native foreground mask protects the children. Moving-camera live occlusion, full terrain receiver lighting and final character/contact integration were not performed. The blast's outer contour and low dust remain stylized, and texture can stretch during strong deformation. This proof establishes continuous force/settling motion, not user artistic acceptance. No linked video motion was invented: the inaccessible shockwave clip was not observed.
+
+All previous versions and production sources are preserved. This pass uses no new software, generated image atlas, gas bake or simulation cache. The native geometry is the reusable deliverable; the media are small review files.

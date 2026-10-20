@@ -1,0 +1,650 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\effects\\ink_wash_v001\\native\\WTSC_Ink_Wash_FX_Library_v001.blend",
+  "method": "bpy.data.libraries.load(link=False) into factory-empty scene; all nine collections linked into sandbox scene",
+  "collection_count": 9,
+  "objects": 289,
+  "materials": 259,
+  "drivers": 1851,
+  "invalid_drivers": [],
+  "packed_images": [
+    "WTSC original flame paint | PACKED",
+    "WTSC original smoke ink | PACKED"
+  ],
+  "samples": [
+    {
+      "frame": 1,
+      "roots": [
+        {
+          "name": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+          "age": -3.0,
+          "location": [
+            -3.200000047683716,
+            0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+          "age": -34.0,
+          "location": [
+            0.30000001192092896,
+            0.15000000596046448,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX03_Explosion_Distant_Muted | CONTROLS",
+          "age": -71.0,
+          "location": [
+            3.200000047683716,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX04_Incoming_Left_To_Right | CONTROLS",
+          "age": -47.0,
+          "location": [
+            -1.399999976158142,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX05_Incoming_Right_To_Left | CONTROLS",
+          "age": -104.0,
+          "location": [
+            2.299999952316284,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX06_Impact_Dry_Dust | CONTROLS",
+          "age": -123.0,
+          "location": [
+            -4.800000190734863,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX07_Smoke_Roll_Loop | CONTROLS",
+          "age": 0.0,
+          "location": [
+            -5.300000190734863,
+            0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX08_Ash_Embers_Loop | CONTROLS",
+          "age": 0.0,
+          "location": [
+            0.0,
+            -0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX09_Burning_Debris_Loop | CONTROLS",
+          "age": 0.0,
+          "location": [
+            5.199999809265137,
+            -0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "roots": [
+        {
+          "name": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+          "age": 12.0,
+          "location": [
+            -3.200000047683716,
+            0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+          "age": -19.0,
+          "location": [
+            0.30000001192092896,
+            0.15000000596046448,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX03_Explosion_Distant_Muted | CONTROLS",
+          "age": -56.0,
+          "location": [
+            3.200000047683716,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX04_Incoming_Left_To_Right | CONTROLS",
+          "age": -32.0,
+          "location": [
+            -1.399999976158142,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX05_Incoming_Right_To_Left | CONTROLS",
+          "age": -89.0,
+          "location": [
+            2.299999952316284,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX06_Impact_Dry_Dust | CONTROLS",
+          "age": -108.0,
+          "location": [
+            -4.800000190734863,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX07_Smoke_Roll_Loop | CONTROLS",
+          "age": 15.0,
+          "location": [
+            -5.300000190734863,
+            0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX08_Ash_Embers_Loop | CONTROLS",
+          "age": 15.0,
+          "location": [
+            0.0,
+            -0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX09_Burning_Debris_Loop | CONTROLS",
+          "age": 15.0,
+          "location": [
+            5.199999809265137,
+            -0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        }
+      ]
+    },
+    {
+      "frame": 32,
+      "roots": [
+        {
+          "name": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+          "age": 28.0,
+          "location": [
+            -3.200000047683716,
+            0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+          "age": -3.0,
+          "location": [
+            0.30000001192092896,
+            0.15000000596046448,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX03_Explosion_Distant_Muted | CONTROLS",
+          "age": -40.0,
+          "location": [
+            3.200000047683716,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX04_Incoming_Left_To_Right | CONTROLS",
+          "age": -16.0,
+          "location": [
+            -1.399999976158142,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX05_Incoming_Right_To_Left | CONTROLS",
+          "age": -73.0,
+          "location": [
+            2.299999952316284,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX06_Impact_Dry_Dust | CONTROLS",
+          "age": -92.0,
+          "location": [
+            -4.800000190734863,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX07_Smoke_Roll_Loop | CONTROLS",
+          "age": 31.0,
+          "location": [
+            -5.300000190734863,
+            0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX08_Ash_Embers_Loop | CONTROLS",
+          "age": 31.0,
+          "location": [
+            0.0,
+            -0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX09_Burning_Debris_Loop | CONTROLS",
+          "age": 31.0,
+          "location": [
+            5.199999809265137,
+            -0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        }
+      ]
+    },
+    {
+      "frame": 80,
+      "roots": [
+        {
+          "name": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+          "age": 76.0,
+          "location": [
+            -3.200000047683716,
+            0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+          "age": 45.0,
+          "location": [
+            0.30000001192092896,
+            0.15000000596046448,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX03_Explosion_Distant_Muted | CONTROLS",
+          "age": 8.0,
+          "location": [
+            3.200000047683716,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX04_Incoming_Left_To_Right | CONTROLS",
+          "age": 32.0,
+          "location": [
+            -1.399999976158142,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX05_Incoming_Right_To_Left | CONTROLS",
+          "age": -25.0,
+          "location": [
+            2.299999952316284,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX06_Impact_Dry_Dust | CONTROLS",
+          "age": -44.0,
+          "location": [
+            -4.800000190734863,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX07_Smoke_Roll_Loop | CONTROLS",
+          "age": 79.0,
+          "location": [
+            -5.300000190734863,
+            0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX08_Ash_Embers_Loop | CONTROLS",
+          "age": 79.0,
+          "location": [
+            0.0,
+            -0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX09_Burning_Debris_Loop | CONTROLS",
+          "age": 79.0,
+          "location": [
+            5.199999809265137,
+            -0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        }
+      ]
+    },
+    {
+      "frame": 145,
+      "roots": [
+        {
+          "name": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+          "age": 141.0,
+          "location": [
+            -3.200000047683716,
+            0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+          "age": 110.0,
+          "location": [
+            0.30000001192092896,
+            0.15000000596046448,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX03_Explosion_Distant_Muted | CONTROLS",
+          "age": 73.0,
+          "location": [
+            3.200000047683716,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX04_Incoming_Left_To_Right | CONTROLS",
+          "age": 97.0,
+          "location": [
+            -1.399999976158142,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX05_Incoming_Right_To_Left | CONTROLS",
+          "age": 40.0,
+          "location": [
+            2.299999952316284,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX06_Impact_Dry_Dust | CONTROLS",
+          "age": 21.0,
+          "location": [
+            -4.800000190734863,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX07_Smoke_Roll_Loop | CONTROLS",
+          "age": 144.0,
+          "location": [
+            -5.300000190734863,
+            0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX08_Ash_Embers_Loop | CONTROLS",
+          "age": 144.0,
+          "location": [
+            0.0,
+            -0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX09_Burning_Debris_Loop | CONTROLS",
+          "age": 144.0,
+          "location": [
+            5.199999809265137,
+            -0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        }
+      ]
+    },
+    {
+      "frame": 192,
+      "roots": [
+        {
+          "name": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+          "age": 188.0,
+          "location": [
+            -3.200000047683716,
+            0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+          "age": 157.0,
+          "location": [
+            0.30000001192092896,
+            0.15000000596046448,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX03_Explosion_Distant_Muted | CONTROLS",
+          "age": 120.0,
+          "location": [
+            3.200000047683716,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX04_Incoming_Left_To_Right | CONTROLS",
+          "age": 144.0,
+          "location": [
+            -1.399999976158142,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX05_Incoming_Right_To_Left | CONTROLS",
+          "age": 87.0,
+          "location": [
+            2.299999952316284,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX06_Impact_Dry_Dust | CONTROLS",
+          "age": 68.0,
+          "location": [
+            -4.800000190734863,
+            -0.20000000298023224,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX07_Smoke_Roll_Loop | CONTROLS",
+          "age": 191.0,
+          "location": [
+            -5.300000190734863,
+            0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX08_Ash_Embers_Loop | CONTROLS",
+          "age": 191.0,
+          "location": [
+            0.0,
+            -0.30000001192092896,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        },
+        {
+          "name": "FX09_Burning_Debris_Loop | CONTROLS",
+          "age": 191.0,
+          "location": [
+            5.199999809265137,
+            -0.10000000149011612,
+            0.20000000298023224
+          ],
+          "drivers": 1,
+          "driver_valid": true
+        }
+      ]
+    }
+  ],
+  "cpu_threads": 2,
+  "render_engine": "Eevee 32 samples low-resolution GPU check",
+  "resolution": [
+    960,
+    540
+  ],
+  "fps": 24,
+  "range": [
+    1,
+    192
+  ]
+}

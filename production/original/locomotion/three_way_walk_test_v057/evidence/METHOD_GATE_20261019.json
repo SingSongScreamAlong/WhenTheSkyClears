@@ -1,0 +1,31 @@
+{
+  "status": "three_way_test_incomplete",
+  "method_gate": "native_single_pose_editability_passed_visual_quality_failed",
+  "A": {
+    "status": "complete_baseline",
+    "frames": 120,
+    "fps": 24,
+    "duration_s": 5.0,
+    "movie": "previews/A_v053_Current_Walk_5s_24fps.mp4"
+  },
+  "B": {
+    "algorithmic_svg_pilot": "rejected_not_genuine_traditional_drawing",
+    "native_pose_proof": "native/WTSC_B_Stroke_Pose_Proof_v057.fla",
+    "frame_count": 1,
+    "native_editable_shape_layers": 11,
+    "native_cold_reopen_job": "job_ff632b1204b0f29323b973c8",
+    "native_stage_export_job": "job_88b84458bc239e32deceb958",
+    "preview_still": "previews/B_Native_Stroke_Pose_Proof_f00000.png",
+    "visual_gate": "failed: flat vector finish, crude hair/face, stiff limbs; no motion test possible from one pose",
+    "remaining_drawings_to_complete_120": 119
+  },
+  "C": {
+    "status": "source_verified_no_animated_pass",
+    "source": "reference/Muybridge_Animal_Locomotion_Plate_2_1887.jpg",
+    "observed_side_photographs": 12,
+    "continuous_footage_frames": 0,
+    "required_adapted_drawn_inbetweens": "unmade"
+  },
+  "technical_vs_artistic": "Adobe Animate 24.0.15.5 stored and reopened manually specified paths, which proves editability only; it does not establish convincing walk mechanics or acceptable painted character design.",
+  "production_files_changed": false
+}

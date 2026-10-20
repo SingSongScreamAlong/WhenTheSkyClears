@@ -1,0 +1,1159 @@
+{
+  "source_v062": "WTSC_LOCAL_WORKSPACE\\work\\continuity_restore_v062\\native\\WTSC_Painted_Continuity_Restored_v062.blend",
+  "source_v050": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\native\\WTSC_Face_Hand_Finish_v050.blend",
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\color_arc_v063\\native\\WTSC_Shared_Color_To_Charcoal_v063.blend",
+  "native_sha256": "d1d4393c3afc77bf71fb8989bd001da56866baaa7f682216a5f05e54e9523687",
+  "checks": {
+    "meshes": true,
+    "rig_rest": true,
+    "transforms": true,
+    "actions": true,
+    "drivers": true,
+    "modifiers": true,
+    "materials": true,
+    "boots": true,
+    "camera": true,
+    "stage_world_matrix": true,
+    "original_source_images_unchanged": true,
+    "root_inverse_unchanged": true,
+    "established_world_objects_camera_visibility_material_data_exact": true,
+    "no_v061_set_objects": true
+  },
+  "all_checks_pass": true,
+  "girl_color_source_assignments": [
+    {
+      "object": "V044 GIRL | head",
+      "kind": "head",
+      "material": "V050 GIRL | registered face paint, original hair braid and alpha"
+    },
+    {
+      "object": "V046 GIRL | original painted hand far",
+      "kind": "hand",
+      "material": "V050 GIRL | original painted hand in matching skin finish"
+    },
+    {
+      "object": "V046 GIRL | original painted hand near",
+      "kind": "hand",
+      "material": "V050 GIRL | original painted hand in matching skin finish"
+    },
+    {
+      "object": "V046 GIRL | painted forearm far",
+      "kind": "skin",
+      "material": "V050 GIRL | original painted skin in matching skin finish"
+    },
+    {
+      "object": "V046 GIRL | painted forearm near",
+      "kind": "skin",
+      "material": "V050 GIRL | original painted skin in matching skin finish"
+    },
+    {
+      "object": "V060 GIRL | retained paint hand fold near",
+      "kind": "hand",
+      "material": "V050 GIRL | original painted hand in matching skin finish"
+    }
+  ],
+  "local_paint_response": {
+    "objects": [
+      {
+        "name": "V044 GIRL | head",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | original painted hand far",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted forearm far",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted forearm near",
+        "kind": "girl"
+      },
+      {
+        "name": "V060 GIRL | retained paint hand fold near",
+        "kind": "girl"
+      }
+    ],
+    "materials": [
+      {
+        "source": "V050 GIRL | registered face paint, original hair braid and alpha",
+        "copy": "V063 | girl light | V050 GIRL | registered face paint, original hair braid and alpha",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V050 GIRL | original painted hand in matching skin finish",
+        "copy": "V063 | girl light | V050 GIRL | original painted hand in matching skin finish",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V050 GIRL | original painted skin in matching skin finish",
+        "copy": "V063 | girl light | V050 GIRL | original painted skin in matching skin finish",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      }
+    ],
+    "skipped": [],
+    "limits": [
+      "Paint response only; original UV/alpha/pixels/Strength/geometry/timing preserved. No occlusion, rim or new shadows.",
+      "Named near receivers only; 14m falloff and world-height mask exclude sky.",
+      "Pre-attenuation flash: actors .20EV/world .12EV; settle 4% saturation/.10EV value."
+    ]
+  },
+  "arc": {
+    "controller": "V063 | shared color to charcoal | both children",
+    "property": "charcoal_progress",
+    "fps": 24,
+    "schedule": [
+      {
+        "seconds": 0,
+        "frame": 1,
+        "progress": 0.0
+      },
+      {
+        "seconds": 18,
+        "frame": 433,
+        "progress": 0.08
+      },
+      {
+        "seconds": 35,
+        "frame": 841,
+        "progress": 0.28
+      },
+      {
+        "seconds": 50,
+        "frame": 1201,
+        "progress": 0.48
+      },
+      {
+        "seconds": 67,
+        "frame": 1609,
+        "progress": 0.72
+      },
+      {
+        "seconds": 80,
+        "frame": 1921,
+        "progress": 0.88
+      },
+      {
+        "seconds": 90,
+        "frame": 2161,
+        "progress": 0.96
+      },
+      {
+        "seconds": 96,
+        "frame": 2305,
+        "progress": 1.0
+      },
+      {
+        "seconds": 100,
+        "frame": 2401,
+        "progress": 1.0
+      }
+    ],
+    "curve_verification": {
+      "samples": 1001,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "minimum_sample_step": 0.0,
+      "monotonic": true,
+      "interpolation": "BEZIER / AUTO_CLAMPED",
+      "extrapolation": "CONSTANT"
+    },
+    "tonal_ramp": [
+      [
+        0.0,
+        0.006
+      ],
+      [
+        0.06,
+        0.014
+      ],
+      [
+        0.22,
+        0.032
+      ],
+      [
+        0.5,
+        0.068
+      ],
+      [
+        1.0,
+        0.12
+      ]
+    ],
+    "ramp_interpolation": "EASE",
+    "objects": [
+      {
+        "name": "V044 BOY | boot far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | boot near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | coat",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | coat | V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | coat | V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | collar",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen broad fold"
+          },
+          {
+            "slot": 1,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen turned leaf"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | cuff far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | cuff near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | forearm far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | forearm near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | hand far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | hand near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | head",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | leg far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | leg near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | upper far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V044 BOY | upper near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | boot far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | boot near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | cuff far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn cuff",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn cuff"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | cuff near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn cuff",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn cuff"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | dress",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | PERF_GIRL | original body paint, clean native boundary",
+            "copy": "V063 | shared color arc | V044 preserved paint | PERF_GIRL | original body paint, clean native boundary"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | forearm far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn skin",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | forearm near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn skin",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | hand far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn hand",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn hand"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | hand near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn hand",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn hand"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | head",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V063 | girl light | V050 GIRL | registered face paint, original hair braid and alpha",
+            "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | registered face paint, original hair braid and alpha"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | leg far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn skin",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | leg near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn skin",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | neck overlap drawn bridge",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V060 | girl light | V044 girl | quiet original charcoal neck bridge",
+            "copy": "V063 | shared color arc | V060 | girl light | V044 girl | quiet original charcoal neck bridge"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | upper far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn sleeve",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V044 GIRL | upper near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn sleeve",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V045 BOY | boot shaft overlap far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V045 BOY | boot shaft overlap near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V045 BOY | wrist paint overlap far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far"
+          }
+        ]
+      },
+      {
+        "name": "V045 BOY | wrist paint overlap near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near"
+          }
+        ]
+      },
+      {
+        "name": "V045 GIRL | boot shaft overlap far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V045 GIRL | boot shaft overlap near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+            "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+          }
+        ]
+      },
+      {
+        "name": "V045 GIRL | wrist paint overlap far",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn skin",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin"
+          }
+        ]
+      },
+      {
+        "name": "V045 GIRL | wrist paint overlap near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V044 preserved paint | V007 GIRL drawn skin",
+            "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | original painted hand far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | original painted hand near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V046 BOY | original atlas hand",
+            "copy": "V063 | shared color arc | V046 BOY | original atlas hand"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | painted continuous rolled sleeve far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | painted continuous rolled sleeve near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V046 BOY | original atlas sleeve",
+            "copy": "V063 | shared color arc | V046 BOY | original atlas sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | painted forearm far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | painted forearm near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | painted rigid-axis trousers far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | painted rigid-axis trousers near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants"
+          }
+        ]
+      },
+      {
+        "name": "V046 BOY | tailored coat",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V060 | boy light | V046 BOY | seamless original painted bodice",
+            "copy": "V063 | shared color arc | V060 | boy light | V046 BOY | seamless original painted bodice"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | original painted hand far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V063 | girl light | V050 GIRL | original painted hand in matching skin finish",
+            "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | original painted hand in matching skin finish"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | original painted hand near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V050 GIRL | original painted hand in matching skin finish",
+            "copy": "V063 | shared color arc | V050 GIRL | original painted hand in matching skin finish"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | original painted stockings far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | original painted stockings near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | painted continuous rolled sleeve far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | painted continuous rolled sleeve near",
+        "currently_hidden": true,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V046 GIRL | original atlas sleeve",
+            "copy": "V063 | shared color arc | V046 GIRL | original atlas sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | painted forearm far",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V063 | girl light | V050 GIRL | original painted skin in matching skin finish",
+            "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | original painted skin in matching skin finish"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | painted forearm near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V063 | girl light | V050 GIRL | original painted skin in matching skin finish",
+            "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | original painted skin in matching skin finish"
+          }
+        ]
+      },
+      {
+        "name": "V046 GIRL | tailored knee-length dress",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V060 | girl light | V046 GIRL | seamless original painted bodice",
+            "copy": "V063 | shared color arc | V060 | girl light | V046 GIRL | seamless original painted bodice"
+          }
+        ]
+      },
+      {
+        "name": "V060 BOY | reach sleeve near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V060 BOY | retained paint hand fold near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand"
+          }
+        ]
+      },
+      {
+        "name": "V060 GIRL | reach sleeve near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve",
+            "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve"
+          }
+        ]
+      },
+      {
+        "name": "V060 GIRL | retained paint hand fold near",
+        "currently_hidden": false,
+        "slots": [
+          {
+            "slot": 0,
+            "source": "V063 | girl light | V050 GIRL | original painted hand in matching skin finish",
+            "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | original painted hand in matching skin finish"
+          }
+        ]
+      }
+    ],
+    "materials": [
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | coat | V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | coat | V038 COLOR | coat | V037 | retained fabric on connected garment | flat-paint switch",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | linen | V038 COLOR | linen | V007 BOY drawn cuff",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin far",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin | V038 COLOR | skin | V036 | restrained charcoal separation | drawn skin near",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand far",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | skin hand | V038 COLOR | skin | V036 | restrained charcoal separation | articulated drawn hand near",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | trousers | V038 COLOR | trousers | V022 | original trouser pigments | relocated rolled cuff",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | sleeve | V038 COLOR | coat | V007 BOY drawn sleeve",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V007 GIRL drawn cuff",
+        "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn cuff",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | PERF_GIRL | original body paint, clean native boundary",
+        "copy": "V063 | shared color arc | V044 preserved paint | PERF_GIRL | original body paint, clean native boundary",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V007 GIRL drawn skin",
+        "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn skin",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V007 GIRL drawn hand",
+        "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn hand",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V063 | girl light | V050 GIRL | registered face paint, original hair braid and alpha",
+        "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | registered face paint, original hair braid and alpha",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V060 | girl light | V044 girl | quiet original charcoal neck bridge",
+        "copy": "V063 | shared color arc | V060 | girl light | V044 girl | quiet original charcoal neck bridge",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V007 GIRL drawn sleeve",
+        "copy": "V063 | shared color arc | V044 preserved paint | V007 GIRL drawn sleeve",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V063 | shared color arc | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V046 BOY | original atlas hand",
+        "copy": "V063 | shared color arc | V046 BOY | original atlas hand",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V046 BOY | original atlas sleeve",
+        "copy": "V063 | shared color arc | V046 BOY | original atlas sleeve",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V060 | boy light | V046 BOY | seamless original painted bodice",
+        "copy": "V063 | shared color arc | V060 | boy light | V046 BOY | seamless original painted bodice",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V063 | girl light | V050 GIRL | original painted hand in matching skin finish",
+        "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | original painted hand in matching skin finish",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V050 GIRL | original painted hand in matching skin finish",
+        "copy": "V063 | shared color arc | V050 GIRL | original painted hand in matching skin finish",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve",
+        "copy": "V063 | shared color arc | V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V046 GIRL | original atlas sleeve",
+        "copy": "V063 | shared color arc | V046 GIRL | original atlas sleeve",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V063 | girl light | V050 GIRL | original painted skin in matching skin finish",
+        "copy": "V063 | shared color arc | V063 | girl light | V050 GIRL | original painted skin in matching skin finish",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      },
+      {
+        "source": "V060 | girl light | V046 GIRL | seamless original painted bodice",
+        "copy": "V063 | shared color arc | V060 | girl light | V046 GIRL | seamless original painted bodice",
+        "emission_channels": [
+          "Emission"
+        ],
+        "surface_render_method": "DITHERED"
+      }
+    ],
+    "skipped": [],
+    "object_count": 60,
+    "material_count": 35,
+    "limits": [
+      "Only supplied actor meshes are eligible; caller must include every boot, limb and gesture mesh.",
+      "Hidden supplied meshes are included for later visibility; world materials are not traversed.",
+      "Full-color endpoint is the existing painted material: no outfit palette or source image changes.",
+      "Neutral charcoal is a tonal treatment of the same paint, not newly drawn expressions or anatomy.",
+      "Alpha paths, UVs, packed pixels, geometry, poses and original Emission Strength remain unchanged.",
+      "DITHERED copies retain the diagnosed DOF fix; native sequence must be reviewed for dither stability.",
+      "Surface Emission inside shader node groups is not rewritten; skipped slots require caller review.",
+      "No native open, save or render is performed by this helper."
+    ]
+  },
+  "dark_costume_note": "Original dark dress/hair/stockings retained as costume colors. Full-color opening restores authored exposed-skin pigment; no invented bright outfit recolor.",
+  "full_cut_status": "The existing full v040 movie is preserved, not silently replaced or declared conformed."
+}

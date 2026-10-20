@@ -1,0 +1,170 @@
+{
+  "source_native": "WTSC_LOCAL_WORKSPACE\\work\\trailer_development_v060\\native\\WTSC_First_Danger_Trailer_Development_v060.blend",
+  "source_sha256": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\continuity_restore_v062\\native\\WTSC_Painted_Continuity_Restored_v062.blend",
+  "native_sha256": "bc6036961f0b557fcf9e33dd04f3a2b8118dc2726534cf0d6016cc0ca3ad3514",
+  "checks": {
+    "meshes": true,
+    "rig_rest": true,
+    "transforms": true,
+    "actions": true,
+    "drivers": true,
+    "modifiers": true,
+    "materials": true,
+    "images": true,
+    "boots": true,
+    "camera": true,
+    "stage_world_matrix": true,
+    "actor_root_inverse_unchanged": true,
+    "world_objects_visibility_transforms_data_materials_exact": true,
+    "no_v061_objects": true
+  },
+  "all_checks_pass": true,
+  "only_material_render_mode_changes": [
+    {
+      "object": "V044 BOY | boot far",
+      "slot": 0,
+      "source": "V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+    },
+    {
+      "object": "V044 BOY | boot near",
+      "slot": 0,
+      "source": "V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+    },
+    {
+      "object": "V044 BOY | collar",
+      "slot": 0,
+      "source": "V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen broad fold"
+    },
+    {
+      "object": "V044 BOY | collar",
+      "slot": 1,
+      "source": "V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V041 | linen turned leaf"
+    },
+    {
+      "object": "V044 BOY | head",
+      "slot": 0,
+      "source": "V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile"
+    },
+    {
+      "object": "V046 BOY | original painted hand far",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas hand",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand"
+    },
+    {
+      "object": "V046 BOY | painted continuous rolled sleeve far",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas sleeve",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve"
+    },
+    {
+      "object": "V046 BOY | painted forearm far",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas skin",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin"
+    },
+    {
+      "object": "V046 BOY | painted forearm near",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas skin",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas skin"
+    },
+    {
+      "object": "V046 BOY | painted rigid-axis trousers far",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas pants",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants"
+    },
+    {
+      "object": "V046 BOY | painted rigid-axis trousers near",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas pants",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas pants"
+    },
+    {
+      "object": "V060 BOY | reach sleeve near",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas sleeve",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas sleeve"
+    },
+    {
+      "object": "V060 BOY | retained paint hand fold near",
+      "slot": 0,
+      "source": "V060 | boy light | V046 BOY | original atlas hand",
+      "copy": "V062 | original paint | correct alpha depth | V060 | boy light | V046 BOY | original atlas hand"
+    },
+    {
+      "object": "V044 GIRL | boot far",
+      "slot": 0,
+      "source": "V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+    },
+    {
+      "object": "V044 GIRL | boot near",
+      "slot": 0,
+      "source": "V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed"
+    },
+    {
+      "object": "V044 GIRL | head",
+      "slot": 0,
+      "source": "V060 | subtle head edge | V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+      "copy": "V062 | original paint | correct alpha depth | V060 | subtle head edge | V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001"
+    },
+    {
+      "object": "V046 GIRL | original painted hand far",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | original atlas hand",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas hand"
+    },
+    {
+      "object": "V046 GIRL | original painted stockings far",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | retained original stocking painting",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting"
+    },
+    {
+      "object": "V046 GIRL | original painted stockings near",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | retained original stocking painting",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | retained original stocking painting"
+    },
+    {
+      "object": "V046 GIRL | painted continuous rolled sleeve far",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | original atlas sleeve",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve"
+    },
+    {
+      "object": "V046 GIRL | painted forearm far",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | original atlas skin",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas skin"
+    },
+    {
+      "object": "V046 GIRL | painted forearm near",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | original atlas skin",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas skin"
+    },
+    {
+      "object": "V060 GIRL | reach sleeve near",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | original atlas sleeve",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas sleeve"
+    },
+    {
+      "object": "V060 GIRL | retained paint hand fold near",
+      "slot": 0,
+      "source": "V060 | girl light | V046 GIRL | original atlas hand",
+      "copy": "V062 | original paint | correct alpha depth | V060 | girl light | V046 GIRL | original atlas hand"
+    }
+  ],
+  "intent": "Visual continuity restoration, not a new art direction. Current character colours pending clarification; sourcev060pair retained exactly."
+}

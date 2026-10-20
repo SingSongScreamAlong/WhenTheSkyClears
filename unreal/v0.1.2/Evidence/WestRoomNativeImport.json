@@ -1,0 +1,176 @@
+{
+  "utc": "2026-10-20T01:02:53.821833+00:00",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "level_saved": true,
+  "room_mesh": "/Game/WTSC/ArtStudy/Architecture/WestRoom_Assembly/StaticMeshes/WestRoom_Assembly.WestRoom_Assembly",
+  "room_material_slots": 20,
+  "room_bounds_min": [
+    -1003.0,
+    -196.5,
+    -23.0
+  ],
+  "room_bounds_max": [
+    -76.0999984741211,
+    313.0,
+    329.0
+  ],
+  "source_geometry_stats": {
+    "parts": 748,
+    "vertices": 75207,
+    "triangles": 34535,
+    "material_slots": 20
+  },
+  "original_prop_keys": [
+    "barrel_stove",
+    "bench_vice_01",
+    "medical_box",
+    "plastic_bottle_gallon",
+    "russian_food_cans_01",
+    "vintage_day_bed",
+    "wooden_table_02"
+  ],
+  "prop_references": {
+    "barrel_stove": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/StaticMeshes/barrel_stove_static.barrel_stove_static",
+    "bench_vice_01": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/StaticMeshes/bench_vice_01_static.bench_vice_01_static",
+    "medical_box": "/Game/WTSC/Props/medical_box/medical_box_static/StaticMeshes/medical_box_static.medical_box_static",
+    "plastic_bottle_gallon": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/StaticMeshes/plastic_bottle_gallon_static.plastic_bottle_gallon_static",
+    "russian_food_cans_01": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/StaticMeshes/russian_food_cans_01_static.russian_food_cans_01_static",
+    "vintage_day_bed": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/StaticMeshes/vintage_day_bed_static.vintage_day_bed_static",
+    "wooden_table_02": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/StaticMeshes/wooden_table_02_static.wooden_table_02_static",
+    "WestRoomAssembly": "/Game/WTSC/ArtStudy/Architecture/WestRoom_Assembly/StaticMeshes/WestRoom_Assembly.WestRoom_Assembly"
+  },
+  "room_prop_materials": [
+    {
+      "prop": "barrel_stove",
+      "diffuse": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/Textures/barrel_stove_diff.barrel_stove_diff",
+      "normal": "/Game/WTSC/Props/barrel_stove/barrel_stove_static/Textures/barrel_stove_nor_gl.barrel_stove_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_barrel_stove.M_RoomProp_barrel_stove",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    },
+    {
+      "prop": "bench_vice_01",
+      "diffuse": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/Textures/bench_vice_01_diff.bench_vice_01_diff",
+      "normal": "/Game/WTSC/Props/bench_vice_01/bench_vice_01_static/Textures/bench_vice_01_nor_gl.bench_vice_01_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_bench_vice_01.M_RoomProp_bench_vice_01",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    },
+    {
+      "prop": "medical_box",
+      "diffuse": "/Game/WTSC/Props/medical_box/medical_box_static/Textures/medical_box_diff.medical_box_diff",
+      "normal": "/Game/WTSC/Props/medical_box/medical_box_static/Textures/medical_box_nor_gl.medical_box_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_medical_box.M_RoomProp_medical_box",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    },
+    {
+      "prop": "plastic_bottle_gallon",
+      "diffuse": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/Textures/plastic_bottle_gallon_diff.plastic_bottle_gallon_diff",
+      "normal": "/Game/WTSC/Props/plastic_bottle_gallon/plastic_bottle_gallon_static/Textures/plastic_bottle_gallon_nor_gl.plastic_bottle_gallon_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_plastic_bottle_gallon.M_RoomProp_plastic_bottle_gallon",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    },
+    {
+      "prop": "russian_food_cans_01",
+      "diffuse": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/Textures/russian_food_cans_01_diff.russian_food_cans_01_diff",
+      "normal": "/Game/WTSC/Props/russian_food_cans_01/russian_food_cans_01_static/Textures/russian_food_cans_01_nor_gl.russian_food_cans_01_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_russian_food_cans_01.M_RoomProp_russian_food_cans_01",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    },
+    {
+      "prop": "vintage_day_bed",
+      "diffuse": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/Textures/vintage_day_bed_diff.vintage_day_bed_diff",
+      "normal": "/Game/WTSC/Props/vintage_day_bed/vintage_day_bed_static/Textures/vintage_day_bed_nor_gl.vintage_day_bed_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_vintage_day_bed.M_RoomProp_vintage_day_bed",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    },
+    {
+      "prop": "wooden_table_02",
+      "diffuse": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/Textures/wooden_table_02_diff.wooden_table_02_diff",
+      "normal": "/Game/WTSC/Props/wooden_table_02/wooden_table_02_static/Textures/wooden_table_02_nor_gl.wooden_table_02_nor_gl",
+      "source_texture_pixels_unchanged": true,
+      "material": "/Game/WTSC/ArtStudy/Materials/M_RoomProp_wooden_table_02.M_RoomProp_wooden_table_02",
+      "scope": "Room placements only; shop/storage originals retain their publisher materials"
+    }
+  ],
+  "surface_provenance": "Code-authored SVG marks and matching rasterization; no imagegen, no photo edits, no global noise overlay",
+  "failures": [],
+  "imports": [
+    {
+      "source": "SourceAssets\\AuthoredWestRoom\\WestRoom_Cloth.png",
+      "sha256": "e267e01229193103f4715b32e0e5a39e56fe3aa24087565d761167ed40525550",
+      "native_paths": [
+        "/Game/WTSC/ArtStudy/Surfaces/WestRoom_Cloth.WestRoom_Cloth"
+      ]
+    },
+    {
+      "source": "SourceAssets\\AuthoredWestRoom\\WestRoom_Note.png",
+      "sha256": "46e1fe22ef59daf195b7d8fb1ab85a878ab13a4783332197cbe128efb39d30f6",
+      "native_paths": [
+        "/Game/WTSC/ArtStudy/Surfaces/WestRoom_Note.WestRoom_Note"
+      ]
+    },
+    {
+      "source": "SourceAssets\\AuthoredWestRoom\\WestRoom_Plaster.png",
+      "sha256": "f23b5b4018c912210afaa897ac8d3b5d6a71f3d8b9afa5b9ae7098da7406e726",
+      "native_paths": [
+        "/Game/WTSC/ArtStudy/Surfaces/WestRoom_Plaster.WestRoom_Plaster"
+      ]
+    },
+    {
+      "source": "SourceAssets\\AuthoredWestRoom\\WestRoom_Rug.png",
+      "sha256": "31975f57056ba6b8b705d1c1d05d0409b7afaac44560b80bcf83138b4d3e1fc3",
+      "native_paths": [
+        "/Game/WTSC/ArtStudy/Surfaces/WestRoom_Rug.WestRoom_Rug"
+      ]
+    },
+    {
+      "source": "SourceAssets\\AuthoredWestRoom\\WestRoom_Timber.png",
+      "sha256": "0620a39ee1ac4668df62330f85ac6d6d59b7ba7980bd3b83e744311353dfdc42",
+      "native_paths": [
+        "/Game/WTSC/ArtStudy/Surfaces/WestRoom_Timber.WestRoom_Timber"
+      ]
+    },
+    {
+      "source": "SourceAssets\\AuthoredWestRoom\\WestRoom_Assembly.gltf",
+      "sha256": "87267ca2b0f5c39a2fe81a1b4edf70c881b7344aae3f4fcb8e9d2b7966953920",
+      "native_paths": [
+        "/Game/WTSC/ArtStudy/Architecture/WestRoom_Assembly/StaticMeshes/WestRoom_Assembly.WestRoom_Assembly"
+      ]
+    }
+  ],
+  "materials": [
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_LimePlaster.M_WestRoom_LimePlaster",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_PlasterBreak.M_WestRoom_PlasterBreak",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Mortar.M_WestRoom_Mortar",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_BrickA.M_WestRoom_BrickA",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_BrickB.M_WestRoom_BrickB",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_BrickC.M_WestRoom_BrickC",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Timber.M_WestRoom_Timber",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_TimberEdge.M_WestRoom_TimberEdge",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_EndGrain.M_WestRoom_EndGrain",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_FloorOak.M_WestRoom_FloorOak",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_FloorEdge.M_WestRoom_FloorEdge",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_SashPaint.M_WestRoom_SashPaint",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_SashWear.M_WestRoom_SashWear",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Iron.M_WestRoom_Iron",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_IronEdge.M_WestRoom_IronEdge",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Ceramic.M_WestRoom_Ceramic",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Cloth.M_WestRoom_Cloth",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Rug.M_WestRoom_Rug",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_Paper.M_WestRoom_Paper",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_GlassDim.M_WestRoom_GlassDim",
+    "/Game/WTSC/ArtStudy/Materials/M_WestRoom_LampInner.M_WestRoom_LampInner",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_barrel_stove.M_RoomProp_barrel_stove",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_bench_vice_01.M_RoomProp_bench_vice_01",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_medical_box.M_RoomProp_medical_box",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_plastic_bottle_gallon.M_RoomProp_plastic_bottle_gallon",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_russian_food_cans_01.M_RoomProp_russian_food_cans_01",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_vintage_day_bed.M_RoomProp_vintage_day_bed",
+    "/Game/WTSC/ArtStudy/Materials/M_RoomProp_wooden_table_02.M_RoomProp_wooden_table_02"
+  ]
+}

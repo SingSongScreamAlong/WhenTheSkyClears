@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-17",
+  "authorization": "User requested continued work, review, fixes, execution and repetition across the trailer, preserving the established painterly direction and minimum4K output.",
+  "production_reuse_contract": "dcc-mcp-production-reuse/v1",
+  "guide": "notes/dcc_agent_workflows.md",
+  "guide_checker": "passed",
+  "discovery": [
+    {
+      "source": "Existing original native project assets and installed providers",
+      "query": "Blender scene inspect grease pencil / get scene information",
+      "instance": "dda6f921-e18c-49ca-98c6-23dc0ee2dbd2",
+      "verified_call": "blender.dda6f921.blender_render__get_render_status",
+      "result": "Live read-only call succeeded. Bridge owns WTSC_WORLD_FIRST_4K at3840x2160/24fps; retained v046 revision is a separate saved file. Shared bridge left untouched. Exact v046/v047 native files opened and edited in isolated Blender background workers.",
+      "selected_reuse": "Existing native rig Actions/NLA, head materials/light response, original paint, native mesh/Grease Pencil/Bezier interfaces and existing world. Three real GP contour objects and native editable head contour meshes are newly verified in the saved candidate."
+    },
+    {
+      "source": "Blender official extension marketplace",
+      "query": "site:extensions.blender.org grease pencil image plane frame by plane",
+      "candidate": "Frame By Plane7.2.1",
+      "url": "https://extensions.blender.org/add-ons/frame-by-plane/versions/",
+      "reported_host": "Blender5.2LTS",
+      "reported_license": "GPL3 or later",
+      "decision": "Not installed or runtime-validated. Existing native image, GP and rig interfaces already provide import/editability. An add-on cannot supply the missing original character turn drawings or resolve this shot's artistic flaws."
+    }
+  ],
+  "asset_rights": "All newly used paintings are built-in GPT imagegen outputs for this original project. User-supplied music retained. No external character/art assets acquired or publication performed.",
+  "image_provider": "Built-in GPT imagegen; no CLI/API fallback",
+  "asset_outputs": [
+    "characters/head_turn_v047/Girl_Three_Quarter_Right_v047.png",
+    "characters/head_turn_v047/Girl_Front_v047.png",
+    "characters/head_turn_v047/Girl_Three_Quarter_Left_v047.png",
+    "characters/head_turn_v047/Girl_Left_Profile_v047.png",
+    "sets/refinement_v047/Foreground_Bank_Paintover_v047.png"
+  ],
+  "prompt_set": [
+    {
+      "output": "Girl_Three_Quarter_Right_v047.png",
+      "reference": "characters/Pair_Painterly_Near_Age_v015.png",
+      "prompt": "Use case: identity-preserve. Asset type: a single animation replacement head drawing on genuine transparent alpha, for the GIRL on the RIGHT in the reference. The boy is reference context only and must not be included. Draw just her complete head, small neck, full attached braid and small fabric bow, isolated with generous transparent margins, no torso, no text or sheet layout. This is the first intermediate in her turn from right-facing profile to facing left toward the boy: a three-quarter view with her nose pointing toward image RIGHT, about 35 degrees off frontal toward the viewer. Preserve this exact girl's age, skull size, cheeks, little nose, jaw proportions, large swept fringe and loose wavy wisps. The braid root attaches naturally at the rear of the skull, over the back of the neck, braid and bow visible behind the image LEFT edge of the head. Do NOT give her a cropped cap or helmet haircut. Match the source's black charcoal painted silhouette with restrained textured grayscale strokes, especially abundant sweeping hair strokes. Face stays nearly black, subtle charcoal brushwork, small flat warm white eye marks, no glowing eyes or illumination halo. Same dark source painting, same softness and fine irregular wisps at edges; no outline stroke, no 3D shading, no glossy render. A real anatomically credible three-quarter DRAWING, never a circle with a texture. High resolution portrait canvas, entire braid and neck included. Preserve a truly transparent background. Only this one head drawing."
+    },
+    {
+      "output": "Girl_Three_Quarter_Left_v047.png",
+      "references": ["characters/Pair_Painterly_Near_Age_v015.png", "characters/head_turn_v047/Girl_Three_Quarter_Right_v047.png"],
+      "prompt": "Use case: identity-preserve. Asset type: single isolated replacement head animation drawing with genuine transparent alpha. Reference1 establishes the exact GIRL on the RIGHT; reference2 is her newly painted first three-quarter head turn drawing. Make the corresponding second turn drawing: the SAME girl, complete head, tiny neck, fully attached braid and fabric bow, now her nose pointing toward image LEFT about35 degrees off frontal, looking toward the boy on her left. This is a coherent three-quarter anatomical drawing, not a stretched or horizontally squashed card. Preserve the exact reference2 swept wavy hair mass, wispy fringe, skull size, age and cheek/jaw scale. Rear of skull and naturally attached braid now lie on the image RIGHT; braid root must connect to back of head, bow near lower third of braid. Same charcoal black painted silhouette and fine subtle grey hair strokes as reference1 and2. Skin nearly black with subdued charcoal brushwork, eyes two SMALL flat warm-white triangular marks, no pupil or iris detailing, no glow; keep both much less conspicuous than the hair. Serious gentle attentive expression. Entire head and braid visible with generous TRANSPARENT margins. No shoulders/torso, no background, no labels, no eye illumination halo, no heavy outline. Match reference2 framing and resolution as closely as possible. Keep hair full and sweeping; no helmet/cropped cap. This one left-facing three-quarter head only."
+    },
+    {
+      "output": "Girl_Front_v047.png",
+      "references": ["characters/Pair_Painterly_Near_Age_v015.png", "characters/head_turn_v047/Girl_Three_Quarter_Right_v047.png", "characters/head_turn_v047/Girl_Three_Quarter_Left_v047.png"],
+      "prompt": "Use case: identity-preserve. Asset type: ONE isolated front-view head drawing for an animation turn. Reference1 exact charcoal girl on right, reference2 right three-quarter, reference3 left three-quarter. Make the SAME girl's head FRONT ON, midway through this turn, gaze straight ahead. Complete head and short neck, full swept wavy fringe, small fabric bow and ONE naturally attached braid peeking beside image RIGHT of neck. Preserve exact young age, skull/cheeks/jaw scale and proportions, dark charcoal face, loose painterly sweeping grey hair strokes and wisps. Match references2+3 resolution and framing, generous transparent margin. Facial rendering more restrained than reference2/3: just two SMALL flat warm-white triangular eye marks with no pupils or irises, each about one-third the width of the corresponding eye in reference2; no eyelash detail or eye glow, nose and mouth almost disappear in subtle black charcoal paint. Face stays nearly black. No torso, no other character, no labels, no disc/circular mask, no helmet/cap hair, no glossy 3D. Entire naturally attached braid visible with small faded fabric bow, wispy edges; genuine transparent alpha background."
+    },
+    {
+      "output": "Foreground_Bank_Paintover_v047.png",
+      "reference": "renders/refinement_v047b/Full_1901_4K.png",
+      "prompt": "Use case: precise-object-edit. Asset type: production foreground ground paintover for a painterly 2.5D Blender set. Edit ONLY the very nearest DARK FOREGROUND BANK in the BOTTOM QUARTER of this exact frame, approximately y=75 percent through bottom. Preserve all upper scene pixels/composition: children, boots and pale walking path, smoke, middle ground ruins, trees and distant sky. The current foreground has obvious repeated identical leafy clumps in a row. Replace that repeated pattern with bespoke varied sparse war-torn ground painting: extensive quiet charcoal earth, broken wiry roots, subtle scattered flat small stones and weathered soil brushwork, a FEW asymmetrical low tufts of narrow grass and sparse small leaves. Group some texture toward far left and far right and leave calmer uneven earth through the center, avoid equally spaced islands. Keep the existing dark cool desaturated grayscale/brown values and painterly brushwork, lower contrast than children's detailed hair, no new bright patches, no repetitive leaf borders, no decorative garden. Same terrain elevation and lens perspective. Leave the pale walking strip above this bank and children's foot contacts exactly intact. Entire frame stays original scale and composition; create a high-detail 3840x2160 4K landscape paintover. No added objects, no text, no labels, no watermarks, no vignette or full-frame blur. Only improve the nearest dark bottom bank."
+    }
+  ],
+  "resolution_disclosure": "Measured head outputs1199x1312; bank output1672x941. New Blender output is natively3840x2160. Generation did not return4K source textures.",
+  "matching_profile_prompt": "Use case: identity-preserve. Asset type: ONE matching LEFT SIDE PROFILE head replacement for an animation, transparent alpha. Reference1 original girl on RIGHT establishes identity, age and side-on staging. Reference2 is her LEFT three-quarter turn drawing. Continue rotating this SAME girl to a TRUE LEFT SIDE PROFILE, nose pointing exactly image LEFT, so only ONE SMALL WARM-WHITE TRIANGULAR EYE FLECK is visible. This must match reference2 skull size, cheek/jaw proportions, full swept fringe, abundant fine sweeping charcoal hair strokes and wispy edge texture. Natural young girl approximately10-11, no redesign. Complete head, short neck ending just below jaw, ONE naturally attached braid with a small faded cloth bow on image RIGHT behind her neck; entire braid visible. Preserve the rear skull-to-braid root, no detached braid, no cropped cap, no helmet outline and no straight diagonal cut across forehead. Forehead and fringe form an irregular naturally sweeping profile with wisps near temple. Face and neck nearly black with faint subtle charcoal brushwork, mouth/nose barely marked, a single small flat white eye triangle without pupils/iris or glow. Profile attitude gently attentive, not grinning or looking up. Same scale/framing as reference2 on a high-resolution portrait canvas with generous genuine transparent margins. No torso, no labels, no boy, no backdrop, no glossy3D. Make exactly this single true-left-profile painting.",
+  "remaining_gaps": "Further acting/weight, smoother facial continuity, remaining lower-path paint transition tips, additional environments and FX refinement still require review. Technical checks do not establish cinematic acceptance."
+}

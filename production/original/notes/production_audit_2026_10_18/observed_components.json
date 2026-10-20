@@ -1,0 +1,53 @@
+{
+  "status": "Observed component map for audit only; no asset promotion or approval.",
+  "production_method": "Layered 2D/2.5D painted artwork; Blender assembly, rigging, camera and compositing.",
+  "picture_contract": {
+    "picture_seconds": 100,
+    "credit_seconds": 6,
+    "fps": 24,
+    "frames": 2544,
+    "music_fade_seconds": [
+      90,
+      100
+    ],
+    "credits_start_frame": 2401
+  },
+  "full_cut": {
+    "path": "shots/world/WTSC_Painted_World_Full_Trailer_Editable_v040.blend",
+    "status": "Complete technical review cut with held pair"
+  },
+  "world": {
+    "path": "work/world_minimum_v058/WTSC_World_Development_v058_Packed.blend",
+    "status": "v058d packed foreground/world development; not rendered as the newer full cut"
+  },
+  "recovery": {
+    "path": "work/production_review_v059/WTSC_Production_Benchmark_v059.blend",
+    "global_frames": [
+      1801,
+      1920
+    ],
+    "status": "75-80s bounded candidate with older character construction; reassuring hand contact"
+  },
+  "current_shot_palette": {
+    "path": "work/color_arc_v063/native/WTSC_Shared_Color_To_Charcoal_v063.blend",
+    "global_frames": [
+      937,
+      1056
+    ],
+    "status": "39-44s layered painted first-danger action plus global shared color controller; palette movie is held-pose comparison"
+  },
+  "character_finish": {
+    "path": "locomotion/face_hand_finish_v050/native/WTSC_Face_Hand_Finish_v050.blend",
+    "source_fps": 30,
+    "status": "Face/hand finish candidate, retains v049 gait"
+  },
+  "boy_coat": {
+    "path": "locomotion/coat_fluidity_v051/native/WTSC_Controlled_Fluid_Coat_v051.blend",
+    "status": "Separate v051 native; preview rendering observed during audit"
+  },
+  "impact": {
+    "path": "effects/main_impact_v015/native/WTSC_Painted_Main_Impact_Append_v015d.blend",
+    "status": "Append asset; final artistic selection not inferred"
+  },
+  "withdrawn": "work/production_look_v061; forest redesign is historical experiment only"
+}

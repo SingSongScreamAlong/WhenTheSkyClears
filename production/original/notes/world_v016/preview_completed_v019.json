@@ -1,0 +1,45 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v019.blend",
+  "source_sha256": "83b5afac07bbe26f984d0cb9d5f7afad5b7c3fee45c2c17c2cdb212b2dce8b3a",
+  "mode": "motion excerpts",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "frames": 288,
+  "timeline_ranges_frames": [
+    [
+      1,
+      192
+    ],
+    [
+      721,
+      816
+    ]
+  ],
+  "native_scene_render": true,
+  "workers": [
+    {
+      "index": 1,
+      "start": 1,
+      "end": 192,
+      "pid": 25256,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v019\\part_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v019\\part_01.log"
+    },
+    {
+      "index": 2,
+      "start": 721,
+      "end": 816,
+      "pid": 40296,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v019\\part_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\preview_parts_v019\\part_02.log"
+    }
+  ],
+  "final": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Motion_Excerpts_1080p_v019.mp4",
+  "bytes": 20309702,
+  "full_decode_frames": 288,
+  "full_decode_ok": true,
+  "sha256": "271f75c5a0c916a3e120e710ab8e59488722da75777b179bb84d632befc77302"
+}

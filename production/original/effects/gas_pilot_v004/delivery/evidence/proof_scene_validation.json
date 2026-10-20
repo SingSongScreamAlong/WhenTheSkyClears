@@ -1,0 +1,151 @@
+{
+  "proof_local_frames": [
+    -23,
+    96
+  ],
+  "production_frames": [
+    1800,
+    1919
+  ],
+  "production_ignition": 1824,
+  "local_ignition": 1,
+  "fps": 24,
+  "all120_frames_will_be_actual_renders": true,
+  "first_output": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\previews\\proof_frames\\-0023.png",
+  "last_output": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\previews\\proof_frames\\0096.png",
+  "native_sha256": "ad8f9281492a7452d2c54270ff60a2d2fd7f67709541dfab5dbaf93719c19f4c",
+  "v003_source_sha256_unchanged": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+  "density_states": [
+    {
+      "local_frame": 6,
+      "production_frame": 1829,
+      "grid_resolution": [
+        48,
+        32,
+        46
+      ],
+      "density_max": 1.0,
+      "density_sum": 863.7922893166542,
+      "cells": 70656,
+      "positive_cells": 1984,
+      "dense_bbox": {
+        "minimum_cell": [
+          10,
+          8,
+          1
+        ],
+        "maximum_cell": [
+          29,
+          23,
+          10
+        ]
+      },
+      "outer_boundary_mass_fraction": 0.0
+    },
+    {
+      "local_frame": 24,
+      "production_frame": 1847,
+      "grid_resolution": [
+        48,
+        32,
+        46
+      ],
+      "density_max": 0.7900390625,
+      "density_sum": 808.4137759208679,
+      "cells": 70656,
+      "positive_cells": 5160,
+      "dense_bbox": {
+        "minimum_cell": [
+          9,
+          4,
+          1
+        ],
+        "maximum_cell": [
+          32,
+          26,
+          19
+        ]
+      },
+      "outer_boundary_mass_fraction": 0.0
+    },
+    {
+      "local_frame": 60,
+      "production_frame": 1883,
+      "grid_resolution": [
+        48,
+        32,
+        46
+      ],
+      "density_max": 0.1954345703125,
+      "density_sum": 1026.604870378971,
+      "cells": 70656,
+      "positive_cells": 20544,
+      "dense_bbox": {
+        "minimum_cell": [
+          1,
+          1,
+          1
+        ],
+        "maximum_cell": [
+          39,
+          30,
+          33
+        ]
+      },
+      "outer_boundary_mass_fraction": 0.0
+    },
+    {
+      "local_frame": 96,
+      "production_frame": 1919,
+      "grid_resolution": [
+        48,
+        32,
+        46
+      ],
+      "density_max": 0.0936279296875,
+      "density_sum": 1320.5914902091026,
+      "cells": 70656,
+      "positive_cells": 51451,
+      "dense_bbox": {
+        "minimum_cell": [
+          1,
+          1,
+          1
+        ],
+        "maximum_cell": [
+          46,
+          30,
+          42
+        ]
+      },
+      "outer_boundary_mass_fraction": 0.0
+    },
+    {
+      "local_frame": 108,
+      "production_frame": 1931,
+      "grid_resolution": [
+        48,
+        32,
+        46
+      ],
+      "density_max": 0.0750732421875,
+      "density_sum": 1320.661028623581,
+      "cells": 70656,
+      "positive_cells": 57416,
+      "dense_bbox": {
+        "minimum_cell": [
+          1,
+          1,
+          1
+        ],
+        "maximum_cell": [
+          46,
+          30,
+          44
+        ]
+      },
+      "outer_boundary_mass_fraction": 0.0
+    }
+  ],
+  "status": "Native technique proof; visual acceptance pending."
+}

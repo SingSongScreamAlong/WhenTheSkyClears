@@ -1,0 +1,172 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\native\\WTSC_Painted_Main_Impact_Append_v015d.blend",
+  "blender": "5.2.2 LTS",
+  "sha256": "5f23bb9db232ebd3a2ade21bff14cd3635d1243a77fc2cedb90fafed095f8729",
+  "scenes": [
+    {
+      "name": "Empty",
+      "frames": [
+        1,
+        250
+      ],
+      "fps": 24.0,
+      "output": [
+        1920,
+        1080,
+        100
+      ],
+      "output_path": "//",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "AgX",
+      "objects": 0,
+      "types": {},
+      "camera": null,
+      "markers": [],
+      "strips": []
+    }
+  ],
+  "images": [
+    {
+      "name": "FXv015 | original imagegen four painted soil stages | packed RGBA",
+      "source": "FILE",
+      "size": [
+        2172,
+        724
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\effects\\main_impact_v015\\assets\\Painted_Soil_Rupture_4Stages_v015b.png",
+      "external_path_exists": true,
+      "users": 6
+    }
+  ],
+  "unpacked_missing_images": [],
+  "libraries": [],
+  "sounds": [],
+  "fonts": [],
+  "actors": [
+    {
+      "name": "FXv015 | GP | Collapse original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FXv015 | GP | Ignition original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FXv015 | GP | MainFan original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FXv015 | GP | RisingTear original island 00",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Original alpha-traced editable contour",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": 0,
+  "driver_count": 292,
+  "drivers_with_missing_targets": [],
+  "invalid_drivers_after_samples": [],
+  "color_controller": null,
+  "color_samples": [],
+  "source_sha256_unchanged": true,
+  "inspection_limits": "Read-only native sample; auto-run source scripts disabled. No claim of all-frame render, playback quality, or artistic approval."
+}

@@ -1,0 +1,1443 @@
+{
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "build_options": {
+    "alembic": true,
+    "audaspace": true,
+    "bullet": true,
+    "codec_avi": false,
+    "codec_ffmpeg": true,
+    "codec_sndfile": true,
+    "compositor_cpu": true,
+    "coreaudio": false,
+    "cycles": true,
+    "cycles_osl": true,
+    "experimental_features": false,
+    "fluid": true,
+    "freestyle": true,
+    "haru": true,
+    "image_cineon": true,
+    "image_dds": true,
+    "image_hdr": true,
+    "image_openexr": true,
+    "image_openjpeg": true,
+    "image_tiff": true,
+    "image_webp": true,
+    "input_ndof": true,
+    "international": true,
+    "io_fbx": true,
+    "io_gpencil": true,
+    "io_ply": true,
+    "io_stl": true,
+    "io_wavefront_obj": true,
+    "jack": false,
+    "libmv": true,
+    "mod_oceansim": true,
+    "mod_remesh": true,
+    "n_fields": 44,
+    "n_sequence_fields": 44,
+    "n_unnamed_fields": 0,
+    "openal": true,
+    "opencolorio": true,
+    "openmp": false,
+    "opensubdiv": true,
+    "openvdb": true,
+    "potrace": true,
+    "pugixml": true,
+    "pulseaudio": false,
+    "sdl": false,
+    "usd": true,
+    "wasapi": true,
+    "xr_openxr": true
+  },
+  "fluid_ops": [
+    "bake_all",
+    "bake_data",
+    "bake_guides",
+    "bake_mesh",
+    "bake_noise",
+    "bake_particles",
+    "free_all",
+    "free_data",
+    "free_guides",
+    "free_mesh",
+    "free_noise",
+    "free_particles",
+    "pause_bake",
+    "preset_add"
+  ],
+  "domain": {
+    "effector_weights": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "effector_group": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "fluid_group": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "force_collection": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "density_grid": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": []
+    },
+    "velocity_grid": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": []
+    },
+    "flame_grid": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": []
+    },
+    "color_grid": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": []
+    },
+    "heat_grid": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": []
+    },
+    "temperature_grid": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": []
+    },
+    "start_point": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "cell_size": {
+      "type": "FLOAT",
+      "readonly": true,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "domain_resolution": {
+      "type": "INT",
+      "readonly": true,
+      "min": -2147483648,
+      "max": 2147483647,
+      "default": "0",
+      "current": [
+        0,
+        0,
+        0
+      ]
+    },
+    "additional_res": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 512,
+      "default": "0",
+      "current": 0
+    },
+    "adapt_margin": {
+      "type": "INT",
+      "readonly": false,
+      "min": 2,
+      "max": 24,
+      "default": "4",
+      "current": 4
+    },
+    "adapt_threshold": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1.0,
+      "default": "0.0020000000949949026",
+      "current": 0.0020000000949949026
+    },
+    "use_adaptive_domain": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "resolution_max": {
+      "type": "INT",
+      "readonly": false,
+      "min": 6,
+      "max": 10000,
+      "default": "32",
+      "current": 32
+    },
+    "use_collision_border_front": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_collision_border_back": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_collision_border_right": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_collision_border_left": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_collision_border_top": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_collision_border_bottom": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "gravity": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -1000.0999755859375,
+      "max": 1000.0999755859375,
+      "default": "0.0",
+      "current": [
+        0.0,
+        0.0,
+        -9.8100004196167
+      ]
+    },
+    "domain_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "GAS",
+        "LIQUID"
+      ]
+    },
+    "delete_in_obstacle": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "alpha": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -5.0,
+      "max": 5.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "beta": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -5.0,
+      "max": 5.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "dissolve_speed": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 10000,
+      "default": "5",
+      "current": 5
+    },
+    "vorticity": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 4.0,
+      "default": "0.0",
+      "current": 0.0
+    },
+    "highres_sampling": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "FULLSAMPLE",
+        "LINEAR",
+        "NEAREST"
+      ]
+    },
+    "use_dissolve_smoke": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_dissolve_smoke_log": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "burning_rate": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.009999999776482582,
+      "max": 4.0,
+      "default": "0.75",
+      "current": 0.75
+    },
+    "flame_smoke": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 8.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "flame_vorticity": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 2.0,
+      "default": "0.5",
+      "current": 0.5
+    },
+    "flame_ignition": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.5,
+      "max": 5.0,
+      "default": "1.5",
+      "current": 1.5
+    },
+    "flame_max_temp": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 1.0,
+      "max": 10.0,
+      "default": "3.0",
+      "current": 3.0
+    },
+    "flame_smoke_color": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": [
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071
+      ]
+    },
+    "noise_strength": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "noise_pos_scale": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 9.999999747378752e-05,
+      "max": 10.0,
+      "default": "2.0",
+      "current": 2.0
+    },
+    "noise_time_anim": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 9.999999747378752e-05,
+      "max": 10.0,
+      "default": "0.10000000149011612",
+      "current": 0.10000000149011612
+    },
+    "noise_scale": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 100,
+      "default": "2",
+      "current": 2
+    },
+    "use_noise": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "simulation_method": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "FLIP",
+        "APIC"
+      ]
+    },
+    "flip_ratio": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1.0,
+      "default": "0.9700000286102295",
+      "current": 0.9700000286102295
+    },
+    "particle_randomness": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "0.10000000149011612",
+      "current": 0.10000000149011612
+    },
+    "particle_number": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 5,
+      "default": "2",
+      "current": 2
+    },
+    "particle_min": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 1000,
+      "default": "8",
+      "current": 8
+    },
+    "particle_max": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 1000,
+      "default": "16",
+      "current": 16
+    },
+    "particle_radius": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "particle_band_width": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "3.0",
+      "current": 3.0
+    },
+    "use_flip_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_fractions": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "fractions_threshold": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0010000000474974513,
+      "max": 1.0,
+      "default": "0.05000000074505806",
+      "current": 0.05000000074505806
+    },
+    "fractions_distance": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -5.0,
+      "max": 5.0,
+      "default": "0.5",
+      "current": 0.5
+    },
+    "sys_particle_maximum": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 2147483647,
+      "default": "0",
+      "current": 0
+    },
+    "use_viscosity": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "viscosity_value": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "0.05000000074505806",
+      "current": 0.05000000074505806
+    },
+    "use_diffusion": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "surface_tension": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 100.0,
+      "default": "0.0",
+      "current": 0.0
+    },
+    "viscosity_base": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "viscosity_exponent": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 10,
+      "default": "6",
+      "current": 6
+    },
+    "mesh_concave_upper": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "3.5",
+      "current": 3.5
+    },
+    "mesh_concave_lower": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "0.4000000059604645",
+      "current": 0.4000000059604645
+    },
+    "mesh_smoothen_pos": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 100,
+      "default": "1",
+      "current": 1
+    },
+    "mesh_smoothen_neg": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 100,
+      "default": "1",
+      "current": 1
+    },
+    "mesh_scale": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 100,
+      "default": "2",
+      "current": 2
+    },
+    "mesh_generator": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "IMPROVED",
+        "UNION"
+      ]
+    },
+    "use_mesh": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "use_speed_vectors": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "mesh_particle_radius": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "2.0",
+      "current": 2.0
+    },
+    "sndparticle_potential_min_wavecrest": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "2.0",
+      "current": 2.0
+    },
+    "sndparticle_potential_max_wavecrest": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "8.0",
+      "current": 8.0
+    },
+    "sndparticle_potential_min_trappedair": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "5.0",
+      "current": 5.0
+    },
+    "sndparticle_potential_max_trappedair": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "20.0",
+      "current": 20.0
+    },
+    "sndparticle_potential_min_energy": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "sndparticle_potential_max_energy": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "5.0",
+      "current": 5.0
+    },
+    "sndparticle_sampling_wavecrest": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 10000,
+      "default": "200",
+      "current": 200
+    },
+    "sndparticle_sampling_trappedair": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 10000,
+      "default": "40",
+      "current": 40
+    },
+    "sndparticle_bubble_buoyancy": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 100.0,
+      "default": "0.5",
+      "current": 0.5
+    },
+    "sndparticle_bubble_drag": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 100.0,
+      "default": "0.6000000238418579",
+      "current": 0.6000000238418579
+    },
+    "sndparticle_life_min": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10000.0,
+      "default": "10.0",
+      "current": 10.0
+    },
+    "sndparticle_life_max": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10000.0,
+      "default": "25.0",
+      "current": 25.0
+    },
+    "sndparticle_boundary": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "DELETE",
+        "PUSHOUT"
+      ]
+    },
+    "sndparticle_combined_export": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "OFF",
+        "SPRAY_FOAM",
+        "SPRAY_BUBBLES",
+        "FOAM_BUBBLES",
+        "SPRAY_FOAM_BUBBLES"
+      ]
+    },
+    "sndparticle_potential_radius": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 4,
+      "default": "2",
+      "current": 2
+    },
+    "sndparticle_update_radius": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 4,
+      "default": "2",
+      "current": 2
+    },
+    "particle_scale": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 100,
+      "default": "1",
+      "current": 1
+    },
+    "use_spray_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_bubble_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_foam_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "use_tracer_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "guide_alpha": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 1.0,
+      "max": 100.0,
+      "default": "2.0",
+      "current": 2.0
+    },
+    "guide_beta": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 50,
+      "default": "5",
+      "current": 5
+    },
+    "guide_vel_factor": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 100.0,
+      "default": "2.0",
+      "current": 2.0
+    },
+    "guide_source": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "DOMAIN",
+        "EFFECTOR"
+      ]
+    },
+    "guide_parent": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "use_guide": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "cache_frame_start": {
+      "type": "INT",
+      "readonly": false,
+      "min": -1048574,
+      "max": 1048574,
+      "default": "1",
+      "current": 1
+    },
+    "cache_frame_end": {
+      "type": "INT",
+      "readonly": false,
+      "min": -1048574,
+      "max": 1048574,
+      "default": "250",
+      "current": 250
+    },
+    "cache_frame_offset": {
+      "type": "INT",
+      "readonly": false,
+      "min": -1048574,
+      "max": 1048574,
+      "default": "0",
+      "current": 0
+    },
+    "cache_frame_pause_data": {
+      "type": "INT",
+      "readonly": false,
+      "min": -2147483648,
+      "max": 2147483647,
+      "default": "0",
+      "current": 0
+    },
+    "cache_frame_pause_noise": {
+      "type": "INT",
+      "readonly": false,
+      "min": -2147483648,
+      "max": 2147483647,
+      "default": "0",
+      "current": 0
+    },
+    "cache_frame_pause_mesh": {
+      "type": "INT",
+      "readonly": false,
+      "min": -2147483648,
+      "max": 2147483647,
+      "default": "0",
+      "current": 0
+    },
+    "cache_frame_pause_particles": {
+      "type": "INT",
+      "readonly": false,
+      "min": -2147483648,
+      "max": 2147483647,
+      "default": "0",
+      "current": 0
+    },
+    "cache_frame_pause_guide": {
+      "type": "INT",
+      "readonly": false,
+      "min": -2147483648,
+      "max": 2147483647,
+      "default": "0",
+      "current": 0
+    },
+    "cache_mesh_format": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "UNI",
+        "OPENVDB",
+        "RAW"
+      ]
+    },
+    "cache_data_format": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "UNI",
+        "OPENVDB",
+        "RAW"
+      ]
+    },
+    "cache_particle_format": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "UNI",
+        "OPENVDB",
+        "RAW"
+      ]
+    },
+    "cache_noise_format": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "UNI",
+        "OPENVDB",
+        "RAW"
+      ]
+    },
+    "cache_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "REPLAY",
+        "MODULAR",
+        "ALL"
+      ]
+    },
+    "cache_resumable": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "cache_directory": {
+      "type": "STRING",
+      "readonly": false
+    },
+    "is_cache_baking_data": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "has_cache_baked_data": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "is_cache_baking_noise": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "has_cache_baked_noise": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "is_cache_baking_mesh": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "has_cache_baked_mesh": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "is_cache_baking_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "has_cache_baked_particles": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "is_cache_baking_guide": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "has_cache_baked_guide": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "is_cache_baking_any": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "has_cache_baked_any": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "export_manta_script": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "openvdb_cache_compress_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "ZIP",
+        "BLOSC",
+        "NONE"
+      ]
+    },
+    "openvdb_data_depth": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "NONE"
+      ]
+    },
+    "time_scale": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 9.999999747378752e-05,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "use_adaptive_timesteps": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "cfl_condition": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "2.0",
+      "current": 2.0
+    },
+    "timesteps_min": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 100,
+      "default": "1",
+      "current": 1
+    },
+    "timesteps_max": {
+      "type": "INT",
+      "readonly": false,
+      "min": 1,
+      "max": 100,
+      "default": "4",
+      "current": 4
+    },
+    "use_slice": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "slice_axis": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "AUTO",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "slice_per_voxel": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 100.0,
+      "default": "5.0",
+      "current": 5.0
+    },
+    "slice_depth": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1.0,
+      "default": "0.5",
+      "current": 0.5
+    },
+    "display_thickness": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0010000000474974513,
+      "max": 1000.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "display_interpolation": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "LINEAR",
+        "CUBIC",
+        "CLOSEST"
+      ]
+    },
+    "show_gridlines": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "show_velocity": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "vector_display_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "NEEDLE",
+        "STREAMLINE",
+        "MAC"
+      ]
+    },
+    "vector_field": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "FLUID_VELOCITY",
+        "GUIDE_VELOCITY",
+        "FORCE"
+      ]
+    },
+    "vector_scale_with_magnitude": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "vector_show_mac_x": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "vector_show_mac_y": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "vector_show_mac_z": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "vector_scale": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1000.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "use_color_ramp": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "color_ramp_field": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "NONE"
+      ]
+    },
+    "color_ramp_field_scale": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0010000000474974513,
+      "max": 100000.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "color_ramp": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "clipping": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1.0,
+      "default": "9.999999974752427e-07",
+      "current": 9.999999974752427e-07
+    },
+    "gridlines_color_field": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "NONE",
+        "FLAGS",
+        "RANGE"
+      ]
+    },
+    "gridlines_lower_bound": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": 0.0
+    },
+    "gridlines_upper_bound": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -3.4028234663852886e+38,
+      "max": 3.4028234663852886e+38,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "gridlines_range_color": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "gridlines_cell_filter": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "NONE",
+        "FLUID",
+        "OBSTACLE",
+        "EMPTY",
+        "INFLOW",
+        "OUTFLOW"
+      ]
+    },
+    "velocity_scale": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 3.4028234663852886e+38,
+      "default": "1.0",
+      "current": 1.0
+    }
+  },
+  "flow": {
+    "density": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "smoke_color": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 3.4028234663852886e+38,
+      "default": "0.0",
+      "current": [
+        0.699999988079071,
+        0.699999988079071,
+        0.699999988079071
+      ]
+    },
+    "fuel_amount": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "temperature": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -10.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "particle_system": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "flow_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "SMOKE",
+        "BOTH",
+        "FIRE",
+        "LIQUID"
+      ]
+    },
+    "flow_behavior": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "INFLOW",
+        "OUTFLOW",
+        "GEOMETRY"
+      ]
+    },
+    "flow_source": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "NONE"
+      ]
+    },
+    "use_absolute": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "use_initial_velocity": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "velocity_factor": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -100.0,
+      "max": 100.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "velocity_normal": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -100.0,
+      "max": 100.0,
+      "default": "0.0",
+      "current": 0.0
+    },
+    "velocity_random": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "0.0",
+      "current": 0.0
+    },
+    "velocity_coord": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": -1000.0999755859375,
+      "max": 1000.0999755859375,
+      "default": "0.0",
+      "current": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "volume_density": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 1.0,
+      "default": "0.0",
+      "current": 0.0
+    },
+    "surface_distance": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "use_plane_init": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "particle_size": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.10000000149011612,
+      "max": 3.4028234663852886e+38,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "use_particle_size": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "use_inflow": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": true
+    },
+    "subframes": {
+      "type": "INT",
+      "readonly": false,
+      "min": 0,
+      "max": 200,
+      "default": "0",
+      "current": 0
+    },
+    "density_vertex_group": {
+      "type": "STRING",
+      "readonly": false
+    },
+    "use_texture": {
+      "type": "BOOLEAN",
+      "readonly": false,
+      "current": false
+    },
+    "texture_map_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "enum": [
+        "AUTO",
+        "UV"
+      ]
+    },
+    "uv_layer": {
+      "type": "STRING",
+      "readonly": false
+    },
+    "noise_texture": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "texture_size": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.009999999776482582,
+      "max": 10.0,
+      "default": "1.0",
+      "current": 1.0
+    },
+    "texture_offset": {
+      "type": "FLOAT",
+      "readonly": false,
+      "min": 0.0,
+      "max": 200.0,
+      "default": "0.0",
+      "current": 0.0
+    }
+  },
+  "python": "3.13.13 (main, May  8 2026, 12:37:03) [MSC v.1944 64 bit (AMD64)]",
+  "note": "Constructed actual native GAS domain/flow modifiers. No bake performed by this probe; installed solver execution still requires pilot."
+}

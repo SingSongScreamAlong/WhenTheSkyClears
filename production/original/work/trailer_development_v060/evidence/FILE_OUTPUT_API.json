@@ -1,0 +1,102 @@
+{
+  "node_properties": [
+    "rna_type",
+    "type",
+    "location",
+    "location_absolute",
+    "width",
+    "height",
+    "dimensions",
+    "name",
+    "label",
+    "inputs",
+    "outputs",
+    "panel_states",
+    "internal_links",
+    "parent",
+    "warning_propagation",
+    "use_custom_color",
+    "color",
+    "color_tag",
+    "select",
+    "show_options",
+    "show_preview",
+    "hide",
+    "mute",
+    "show_texture",
+    "bl_idname",
+    "bl_label",
+    "bl_description",
+    "bl_icon",
+    "bl_static_type",
+    "bl_width_default",
+    "bl_width_min",
+    "bl_width_max",
+    "bl_height_default",
+    "bl_height_min",
+    "bl_height_max",
+    "file_output_items",
+    "active_item_index",
+    "directory",
+    "file_name",
+    "format",
+    "save_as_render",
+    "use_file_extension"
+  ],
+  "node_inputs": [
+    [
+      "",
+      "__extend__"
+    ]
+  ],
+  "file_output_items": {
+    "type": "<class 'bpy_prop_collection'>",
+    "properties": [
+      "rna_type"
+    ],
+    "value": "<bpy_collection[0], NodeCompositorFileOutputItems>",
+    "items": []
+  },
+  "format": {
+    "type": "<class 'bpy.types.ImageFormatSettings'>",
+    "properties": [
+      "rna_type",
+      "media_type",
+      "file_format",
+      "color_mode",
+      "color_depth",
+      "quality",
+      "compression",
+      "use_preview",
+      "exr_codec",
+      "use_exr_interleave",
+      "use_jpeg2k_ycc",
+      "use_jpeg2k_cinema_preset",
+      "use_jpeg2k_cinema_48",
+      "jpeg2k_codec",
+      "tiff_codec",
+      "use_cineon_log",
+      "cineon_black",
+      "cineon_white",
+      "cineon_gamma",
+      "views_format",
+      "stereo_3d_format",
+      "color_management",
+      "view_settings",
+      "display_settings",
+      "linear_colorspace_settings",
+      "has_linear_colorspace"
+    ],
+    "value": "<bpy_struct, ImageFormatSettings at 0x00000197D2F46820>"
+  },
+  "directory": {
+    "type": "<class 'str'>",
+    "properties": [],
+    "value": "/tmp\\"
+  },
+  "file_name": {
+    "type": "<class 'str'>",
+    "properties": [],
+    "value": "{blend_name}"
+  }
+}

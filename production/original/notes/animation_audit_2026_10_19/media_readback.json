@@ -1,0 +1,86 @@
+{
+  "full_v040": {
+    "path": "renders/world_v016/WTSC_Full_Knockout_Trailer_View_v040.mp4",
+    "sha256": "2c6c48fa129c14b6915dd9134946152274436375f76686a9cf097b4df0b6e3e7",
+    "expected_frames": 2544,
+    "decoded_frames": 2544,
+    "returncode": 0,
+    "stderr": "",
+    "passed": true
+  },
+  "walk_v053": {
+    "path": "locomotion/authored_walk_beats_v053/previews/WTSC_Authored_Walk_Beats_v053_Full_Size_NormalSpeed.mp4",
+    "sha256": "7d8b33cd12ba7d2bbb77cfbfda2eeb6d4e09e0d1e72f288bd31d0c309429940c",
+    "expected_frames": 257,
+    "decoded_frames": 257,
+    "returncode": 0,
+    "stderr": "",
+    "passed": true
+  },
+  "girl_v056": {
+    "path": "locomotion/girl_yoke_drape_v056/previews/WTSC_Girl_Yoke_v056_FullShot_NormalSpeed.mp4",
+    "sha256": "23b99a00ce7ea8cf6f3019c71c43d064e163dc6a28115e10f20fb56f40e5b1a0",
+    "expected_frames": 65,
+    "decoded_frames": 65,
+    "returncode": 0,
+    "stderr": "",
+    "passed": true
+  },
+  "danger_v065f": {
+    "path": "work/first_danger_conform_v065/previews/WTSC_First_Danger_Title_v065f_View.mp4",
+    "sha256": "2af475ea42b468632785421b28797166cb6b6c45d82e1f71247c2523e8f99826",
+    "expected_frames": 168,
+    "decoded_frames": 168,
+    "returncode": 0,
+    "stderr": "",
+    "passed": true
+  },
+  "recovery_v059": {
+    "path": "work/production_review_v059/WTSC_Recovery_Benchmark_v059_720p.mp4",
+    "sha256": "8afc4b20ef804b229cbe17efa3f58a74780a5cbc60fbf7539f77b3be84c08eb7",
+    "expected_frames": 120,
+    "decoded_frames": 120,
+    "returncode": 0,
+    "stderr": "",
+    "passed": true
+  },
+  "v064_delivery": {
+    "documented_movies": {
+      "work/procedural_cut_v064/previews/WTSC_Procedural_Full_Knockout_v064.mp4": false,
+      "work/procedural_cut_v064/previews/WTSC_Procedural_Unmasked_World_v064.mp4": false
+    },
+    "render_status": {
+      "phase": "complete",
+      "native_sha256": "caac0a93ddf8f7ae03f5ca7b002a9c1ca14e0d2242d5861165471e88f3af4d35",
+      "done": 2400,
+      "total": 2400,
+      "workers": [
+        {
+          "start": 1,
+          "end": 600,
+          "frames": 600,
+          "proof_complete": true
+        },
+        {
+          "start": 601,
+          "end": 1200,
+          "frames": 600,
+          "proof_complete": true
+        },
+        {
+          "start": 1201,
+          "end": 1800,
+          "frames": 600,
+          "proof_complete": true
+        },
+        {
+          "start": 1801,
+          "end": 2400,
+          "frames": 600,
+          "proof_complete": true
+        }
+      ],
+      "numeric_precision_policy": "Native RNA tolerance1.1e-4 measured in FLOAT_DRIVER_PRECISION.json; valid same-native frames retained"
+    }
+  }
+}

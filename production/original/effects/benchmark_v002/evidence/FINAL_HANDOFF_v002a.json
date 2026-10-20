@@ -1,0 +1,16 @@
+{
+  "updated_utc": "2026-10-17 15:29 UTC",
+  "technical_status": "Complete motion proof, native append sandbox and private Library saves",
+  "artistic_status": "Unaccepted one-shot benchmark. V001 remains rejected.",
+  "deliverables": [
+    {"kind": "motion", "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]", "local": "WTSC_Explosion_Motion_Proof_1080_v002a.mp4", "pixels": [1920,1080], "fps": 24, "frames": 96, "seconds": 4, "bytes": 1066325},
+    {"kind": "native benchmark ZIP", "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]", "local": "WTSC_Eruption_Benchmark_Assets_v002a.zip", "bytes": 15058193},
+    {"kind": "existing actual4K still", "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]", "local": "previews/WTSC_Explosion_Benchmark_4K_v002.png", "pixels": [3840,2160]},
+    {"kind": "existing unscaled detail crop", "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]", "local": "previews/WTSC_Explosion_Benchmark_4K_1to1_Detail_v002.png"}
+  ],
+  "tests": ["All96 source PNGs fully decoded", "Full encoded MP4 decoded and96 frames confirmed", "Six actual exported frames visually inspected", "Fresh native append and640px RGBA render", "43 native objects,2packed dependencies and no invalid evaluated drivers", "Timing offset, size1.2 and fixed moved anchor verified", "ZIP CRC check passed", "Production v038 SHA256 unchanged"],
+  "limits": ["Held camera/characters/scene at source1825", "Original2.5D paint deformed by native meshes; no volumetric smoke simulation", "Late main lobe structure and core glow persist too much", "Held occlusion/light receiver maps require re-evaluation for moving camera", "No real-time playback audit, cinematic acceptance or full moving-trailer integration claimed"],
+  "overnight_resolution": "Old owned render absent,22partial CPU frames preserved separately, uncertain prior status write absent. No duplicate old job. New bounded GPU job started only after production render complete and competing render absent.",
+  "metadata_note": "Private Library saves succeeded. Windows Python lacks os.setxattr, so helper metadata application failed; returned IDs/xattrs are preserved in motion_library_receipt_v002a.json. No re-upload is needed.",
+  "remaining_blockers": "No technical blocker to reviewing the proof. Artistic review/revision remains before treating this as a finished reusable cinematic effects pack."
+}

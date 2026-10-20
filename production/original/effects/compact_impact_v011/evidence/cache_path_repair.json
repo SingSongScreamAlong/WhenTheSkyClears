@@ -1,0 +1,13 @@
+{
+  "old_path": "//..\\cache\\data\\fluid_data_0001.vdb",
+  "correct_path": "//../cache/data/fluid_data_0001.vdb",
+  "actual_loaded_frame20": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\cache\\data\\fluid_data_0020.vdb",
+  "playback_window": 100000,
+  "actual_cache_files": 30,
+  "visibility_age_range": [
+    0,
+    22
+  ],
+  "reason": "Correct the new-folder relative path, and keep a long playback window so native frame_offset works after the original30-frame global interval. Visibility and density still end at age22.",
+  "artistic_parameters_changed": false
+}

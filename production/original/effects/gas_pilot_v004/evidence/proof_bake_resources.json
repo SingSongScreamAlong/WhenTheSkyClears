@@ -1,0 +1,50 @@
+{
+  "owned_pid": 31236,
+  "exit_code": 0,
+  "terminated_for_limit": null,
+  "wall_seconds": 11.627389699977357,
+  "peak_rss_bytes": 342745088,
+  "peak_private_bytes": 384798720,
+  "peak_cache_bytes": 64338194,
+  "cpu_threads_requested": 2,
+  "priority": "BELOW_NORMAL",
+  "samples": [
+    {
+      "seconds": 0.01,
+      "rss_bytes": 2129920,
+      "private_bytes": 17100800,
+      "cache_bytes": 0
+    },
+    {
+      "seconds": 2.01,
+      "rss_bytes": 327643136,
+      "private_bytes": 371109888,
+      "cache_bytes": 239074
+    },
+    {
+      "seconds": 4.04,
+      "rss_bytes": 326832128,
+      "private_bytes": 367980544,
+      "cache_bytes": 5740834
+    },
+    {
+      "seconds": 6.09,
+      "rss_bytes": 328105984,
+      "private_bytes": 367980544,
+      "cache_bytes": 16455890
+    },
+    {
+      "seconds": 8.17,
+      "rss_bytes": 329605120,
+      "private_bytes": 381648896,
+      "cache_bytes": 34810823
+    },
+    {
+      "seconds": 10.29,
+      "rss_bytes": 329965568,
+      "private_bytes": 381714432,
+      "cache_bytes": 57136260
+    }
+  ],
+  "bake_result_exists": true
+}

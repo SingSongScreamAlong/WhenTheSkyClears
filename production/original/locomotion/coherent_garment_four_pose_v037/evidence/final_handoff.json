@@ -1,0 +1,109 @@
+{
+  "status": "Completed bounded static garment construction/fabric review candidate; user/independent artistic judgment pending",
+  "source": "Preserved v036; preferred v028/v033 movement and v036 limb/hand/footwear work retained",
+  "primary_review_frames": [
+    1,
+    4,
+    11,
+    20
+  ],
+  "extra_overlap_frame": 27,
+  "no_coat_inbetweens_or_animation_cycle_authored": true,
+  "native_files": {
+    "WTSC_Connected_Garment_Construction_v037.blend": {
+      "file": "native\\WTSC_Connected_Garment_Construction_v037.blend",
+      "bytes": 2658178,
+      "sha256": "94925e149d22f4d8a27b72ae97619fad587d373b0717b02d91af9fafde268822"
+    },
+    "WTSC_Connected_Garment_Retained_Fabric_v037.blend": {
+      "file": "native\\WTSC_Connected_Garment_Retained_Fabric_v037.blend",
+      "bytes": 2658194,
+      "sha256": "1ff32f144b64eb7f6ea22d92dca54c65c431b43a8b86d86e667370328314a9f7"
+    }
+  },
+  "guide": "VIEWING_AND_NATIVE_GUIDE_v037.txt",
+  "private_board": {
+    "file": "previews\\WTSC_v037_Four_Pose_Garment_Comparison.png",
+    "dimensions": [
+      3840,
+      8420
+    ],
+    "bytes": 5872516,
+    "sha256": "30dc152e46c90ad138bdeb617cf1b72a26789b32161daba31c077812bb028628",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "confirmed_status": "succeeded",
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download",
+    "real_local_metadata_readback_verified": true
+  },
+  "art_changes": [
+    "One connected shoulder/ribcage/waist/hem surface replaces separate chest/side-flap/lower-panel shapes in the isolated copy",
+    "Original coat vertical extent retained exactly at each requested pose; softened hem corners and restrained front opening",
+    "One compression crease derived from existing hip drop, plus broad garment-local value turns",
+    "Larger retained original fabric/placket painting mapped with native UVs after construction; no repeated grain patch, generated raster or original silhouette card"
+  ],
+  "preservation": {
+    "original_actions_changed": [],
+    "original_mesh_shape_UV_data_changed": [],
+    "original_packed_paint_bytes_changed": [],
+    "errors": {
+      "all_bone_world_matrices": 0.0,
+      "root_matrix": 0.0,
+      "wrist_world_matrices": 0.0,
+      "original_visible_mesh_vertices_m": 0.0,
+      "camera_world_matrices": 0.0
+    },
+    "whole_integer_frame_bone_root_wrist_check": [
+      1,
+      94
+    ],
+    "protected_mesh_camera_frames": [
+      1,
+      4,
+      11,
+      20,
+      27
+    ],
+    "garment_vertical_extent_max_error_m": 0.0,
+    "all_protected_source_files_unchanged": true
+  },
+  "F27_hand": {
+    "full_ID_pixels": 452,
+    "isolated_ID_pixels": 429,
+    "ratio_limit": "Antialias/background-sensitive raw counts; ratio above1 is not a visibility score. No hand occlusion was introduced; inspect the clean actual-pixel inset.",
+    "values": {
+      "SOURCE": {
+        "near_hand_median_RGB_luma": 51.0,
+        "adjacent_dark_garment_trouser_median_RGB_luma": 32.0,
+        "ring_dark_fraction": 1.0
+      },
+      "CONSTRUCTION": {
+        "near_hand_median_RGB_luma": 51.0,
+        "adjacent_dark_garment_trouser_median_RGB_luma": 29.666666666666668,
+        "ring_dark_fraction": 1.0
+      },
+      "PAINTED": {
+        "near_hand_median_RGB_luma": 51.0,
+        "adjacent_dark_garment_trouser_median_RGB_luma": 33.0,
+        "ring_dark_fraction": 1.0
+      }
+    }
+  },
+  "candid_assessment": [
+    "The inspected stills read more consistently as one attached garment; retained fabric connects coat to collar/sleeves. This is a review direction, not final art approval.",
+    "The coat can still feel fitted/graphic in profile and requires moving registration/cloth response review after missing poses are authored.",
+    "The inherited triangular upper-trouser edge remains visible below the hem at F20. It was not silently masked or changed as a new limb edit.",
+    "Passing-foot congestion and small dark hands remain limitations. Paired acting/support/recovery transition remain unfinished."
+  ],
+  "actual_render_scope": "20 final actual stills: construction/painted x close/shot x5poses, plus2F27hand diagnostic masks. Earlier bounded first/value iterations retained locally. No movie, trailer/world render or production integration.",
+  "integration": {
+    "fps": 30,
+    "period_frames": 31,
+    "unchanged_D_F": "0.9524437384576381*(F-1)/31 metres +X",
+    "production24fps_map": "F=1+(G-G0)*30/24; no independent retiming",
+    "readiness": "STATIC coat samples only. Do not append for a full cycle or production scene before completing and reviewing garment inbetweens. See guide."
+  },
+  "next": "Independent review of the actual matched board; then refine construction/leg-root exposure as warranted before extending the coat through the preferred cycle.",
+  "blockers": [],
+  "render_status": "All Blender jobs exited. No character render active."
+}

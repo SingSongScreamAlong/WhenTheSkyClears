@@ -1,0 +1,1148 @@
+{
+  "V007_BOY | articulated drawn hand far": {
+    "materials": [
+      {
+        "name": "V036 | restrained charcoal separation | articulated drawn hand far",
+        "slot_link": "OBJECT",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "Value",
+            "VALUE"
+          ],
+          [
+            "V035 modest local charcoal lift",
+            "MIX_RGB"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.28839096426963806,
+        0.29766255617141724
+      ],
+      [
+        0.3955289125442505,
+        0.4240170121192932
+      ]
+    ],
+    "vertices": 98,
+    "collections": [
+      "WTSC_CONTINUOUS_COAT_WALK_v024"
+    ]
+  },
+  "V007_BOY | drawn skin far": {
+    "materials": [
+      {
+        "name": "V036 | restrained charcoal separation | drawn skin far",
+        "slot_link": "OBJECT",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "V035 modest local charcoal lift",
+            "MIX_RGB"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.29425838589668274,
+        0.30263158679008484
+      ],
+      [
+        0.44527098536491394,
+        0.47502657771110535
+      ]
+    ],
+    "vertices": 38,
+    "collections": [
+      "WTSC_CONTINUOUS_COAT_WALK_v024"
+    ]
+  },
+  "V007_BOY | drawn sleeve far": {
+    "materials": [
+      {
+        "name": "V007 BOY drawn sleeve",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.35047847032546997,
+        0.38397130370140076
+      ],
+      [
+        0.5451647043228149,
+        0.6493092179298401
+      ]
+    ],
+    "vertices": 38,
+    "collections": [
+      "WTSC_CONTINUOUS_COAT_WALK_v024"
+    ]
+  },
+  "V007_BOY | drawn source gray cuff far": {
+    "materials": [
+      {
+        "name": "V007 BOY drawn cuff",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.2930622100830078,
+        0.32775118947029114
+      ],
+      [
+        0.4941551685333252,
+        0.5207226276397705
+      ]
+    ],
+    "vertices": 8,
+    "collections": [
+      "WTSC_CONTINUOUS_COAT_WALK_v024"
+    ]
+  },
+  "V024 continuous near trouser drawing": {
+    "materials": [
+      {
+        "name": "V022 | original trouser pigments | relocated rolled cuff",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "Value",
+            "VALUE"
+          ],
+          [
+            "Texture Coordinate",
+            "TEX_COORD"
+          ],
+          [
+            "Separate XYZ",
+            "SEPXYZ"
+          ],
+          [
+            "Math",
+            "MATH"
+          ],
+          [
+            "Math.001",
+            "MATH"
+          ],
+          [
+            "Texture Coordinate.001",
+            "TEX_COORD"
+          ],
+          [
+            "Separate XYZ.001",
+            "SEPXYZ"
+          ],
+          [
+            "Math.002",
+            "MATH"
+          ],
+          [
+            "Math.003",
+            "MATH"
+          ],
+          [
+            "Math.004",
+            "MATH"
+          ],
+          [
+            "Math.005",
+            "MATH"
+          ],
+          [
+            "Value.001",
+            "VALUE"
+          ],
+          [
+            "Color Attribute",
+            "VERTEX_COLOR"
+          ],
+          [
+            "Math.006",
+            "MATH"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.3621821403503418,
+        0.46695539355278015
+      ],
+      [
+        0.1129518523812294,
+        0.42828428745269775
+      ]
+    ],
+    "vertices": 679,
+    "collections": [
+      "V024 | continuous painted representation"
+    ]
+  },
+  "V024 continuous far trouser drawing": {
+    "materials": [
+      {
+        "name": "V022 | original trouser pigments | relocated rolled cuff",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "Value",
+            "VALUE"
+          ],
+          [
+            "Texture Coordinate",
+            "TEX_COORD"
+          ],
+          [
+            "Separate XYZ",
+            "SEPXYZ"
+          ],
+          [
+            "Math",
+            "MATH"
+          ],
+          [
+            "Math.001",
+            "MATH"
+          ],
+          [
+            "Texture Coordinate.001",
+            "TEX_COORD"
+          ],
+          [
+            "Separate XYZ.001",
+            "SEPXYZ"
+          ],
+          [
+            "Math.002",
+            "MATH"
+          ],
+          [
+            "Math.003",
+            "MATH"
+          ],
+          [
+            "Math.004",
+            "MATH"
+          ],
+          [
+            "Math.005",
+            "MATH"
+          ],
+          [
+            "Value.001",
+            "VALUE"
+          ],
+          [
+            "Color Attribute",
+            "VERTEX_COLOR"
+          ],
+          [
+            "Math.006",
+            "MATH"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.2738024890422821,
+        0.38241860270500183
+      ],
+      [
+        0.10850559920072556,
+        0.4259917736053467
+      ]
+    ],
+    "vertices": 679,
+    "collections": [
+      "V024 | continuous painted representation"
+    ]
+  },
+  "LOCO_BOY | PAINT body": {
+    "materials": [
+      {
+        "name": "V024 | original coat pigments with posed fold value",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "Texture Coordinate",
+            "TEX_COORD"
+          ],
+          [
+            "Separate XYZ",
+            "SEPXYZ"
+          ],
+          [
+            "Math",
+            "MATH"
+          ],
+          [
+            "Math.001",
+            "MATH"
+          ],
+          [
+            "Attribute",
+            "ATTRIBUTE"
+          ],
+          [
+            "Mix (Legacy)",
+            "MIX_RGB"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.3199760615825653,
+        0.4395933151245117
+      ],
+      [
+        0.40170031785964966,
+        0.7407013773918152
+      ]
+    ],
+    "vertices": 477,
+    "collections": [
+      "V025 | retained foreground identity"
+    ]
+  },
+  "PERF_BOY | original head": {
+    "materials": [
+      {
+        "name": "LOCO | ORIGINAL v015 charcoal paint, packed",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.3169856369495392,
+        0.470095694065094
+      ],
+      [
+        0.7151966094970703,
+        0.9744952321052551
+      ]
+    ],
+    "vertices": 9,
+    "collections": [
+      "V025 | retained foreground identity"
+    ]
+  },
+  "V007_BOY | articulated drawn hand near": {
+    "materials": [
+      {
+        "name": "V036 | restrained charcoal separation | articulated drawn hand near",
+        "slot_link": "OBJECT",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "Value",
+            "VALUE"
+          ],
+          [
+            "V035 modest local charcoal lift",
+            "MIX_RGB"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.28839096426963806,
+        0.29766255617141724
+      ],
+      [
+        0.3955289125442505,
+        0.4240170121192932
+      ]
+    ],
+    "vertices": 98,
+    "collections": [
+      "V025 | retained foreground identity"
+    ]
+  },
+  "V007_BOY | drawn skin near": {
+    "materials": [
+      {
+        "name": "V036 | restrained charcoal separation | drawn skin near",
+        "slot_link": "OBJECT",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ],
+          [
+            "V035 modest local charcoal lift",
+            "MIX_RGB"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.29425838589668274,
+        0.30263158679008484
+      ],
+      [
+        0.44527098536491394,
+        0.47502657771110535
+      ]
+    ],
+    "vertices": 38,
+    "collections": [
+      "V025 | retained foreground identity"
+    ]
+  },
+  "V007_BOY | drawn sleeve near": {
+    "materials": [
+      {
+        "name": "V007 BOY drawn sleeve",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.35047847032546997,
+        0.38397130370140076
+      ],
+      [
+        0.5451647043228149,
+        0.6493092179298401
+      ]
+    ],
+    "vertices": 38,
+    "collections": [
+      "V025 | retained foreground identity"
+    ]
+  },
+  "V007_BOY | drawn source gray cuff near": {
+    "materials": [
+      {
+        "name": "V007 BOY drawn cuff",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.2930622100830078,
+        0.32775118947029114
+      ],
+      [
+        0.4941551685333252,
+        0.5207226276397705
+      ]
+    ],
+    "vertices": 8,
+    "collections": [
+      "V025 | retained foreground identity"
+    ]
+  },
+  "V033 | near | canonical painted shoe": {
+    "materials": [
+      {
+        "name": "LOCO | ORIGINAL v015 charcoal paint, packed",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.4282296597957611,
+        0.5119616985321045
+      ],
+      [
+        0.0382571741938591,
+        0.12327311187982559
+      ]
+    ],
+    "vertices": 76,
+    "collections": [
+      "V033 | consistent original shoe pair"
+    ]
+  },
+  "V033 | far | canonical painted shoe": {
+    "materials": [
+      {
+        "name": "LOCO | ORIGINAL v015 charcoal paint, packed",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Image Texture",
+            "TEX_IMAGE"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "HUE_SAT"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF_TRANSPARENT"
+          ],
+          [
+            "Mix Shader",
+            "MIX_SHADER"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "Image Texture",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.4282296597957611,
+        0.5119616985321045
+      ],
+      [
+        0.0382571741938591,
+        0.12327311187982559
+      ]
+    ],
+    "vertices": 76,
+    "collections": [
+      "V033 | consistent original shoe pair"
+    ]
+  },
+  "V037 | coherent charcoal coat | five pose study": {
+    "materials": [
+      {
+        "name": "V037 | retained fabric on connected garment | flat-paint switch",
+        "slot_link": "DATA",
+        "nodes": [
+          [
+            "Attribute",
+            "ATTRIBUTE"
+          ],
+          [
+            "Attribute.001",
+            "ATTRIBUTE"
+          ],
+          [
+            "Math",
+            "MATH"
+          ],
+          [
+            "Math.001",
+            "MATH"
+          ],
+          [
+            "Math.002",
+            "MATH"
+          ],
+          [
+            "Math.003",
+            "MATH"
+          ],
+          [
+            "V037 existing compression",
+            "VALUE"
+          ],
+          [
+            "Math.004",
+            "MATH"
+          ],
+          [
+            "Math.005",
+            "MATH"
+          ],
+          [
+            "Math.006",
+            "MATH"
+          ],
+          [
+            "Math.007",
+            "MATH"
+          ],
+          [
+            "Math.008",
+            "MATH"
+          ],
+          [
+            "Math.009",
+            "MATH"
+          ],
+          [
+            "Math.010",
+            "MATH"
+          ],
+          [
+            "Math.011",
+            "MATH"
+          ],
+          [
+            "Math.012",
+            "MATH"
+          ],
+          [
+            "Math.013",
+            "MATH"
+          ],
+          [
+            "Math.014",
+            "MATH"
+          ],
+          [
+            "Math.015",
+            "MATH"
+          ],
+          [
+            "Math.016",
+            "MATH"
+          ],
+          [
+            "Math.017",
+            "MATH"
+          ],
+          [
+            "Math.018",
+            "MATH"
+          ],
+          [
+            "Math.019",
+            "MATH"
+          ],
+          [
+            "Math.020",
+            "MATH"
+          ],
+          [
+            "Math.021",
+            "MATH"
+          ],
+          [
+            "Math.022",
+            "MATH"
+          ],
+          [
+            "Math.023",
+            "MATH"
+          ],
+          [
+            "Math.024",
+            "MATH"
+          ],
+          [
+            "Math.025",
+            "MATH"
+          ],
+          [
+            "Math.026",
+            "MATH"
+          ],
+          [
+            "Math.027",
+            "MATH"
+          ],
+          [
+            "Math.028",
+            "MATH"
+          ],
+          [
+            "Math.029",
+            "MATH"
+          ],
+          [
+            "Math.030",
+            "MATH"
+          ],
+          [
+            "Math.031",
+            "MATH"
+          ],
+          [
+            "Math.032",
+            "MATH"
+          ],
+          [
+            "Math.033",
+            "MATH"
+          ],
+          [
+            "Math.034",
+            "MATH"
+          ],
+          [
+            "Math.035",
+            "MATH"
+          ],
+          [
+            "Math.036",
+            "MATH"
+          ],
+          [
+            "Math.037",
+            "MATH"
+          ],
+          [
+            "V037 original full fabric painting",
+            "TEX_IMAGE"
+          ],
+          [
+            "Mix (Legacy)",
+            "MIX_RGB"
+          ],
+          [
+            "V037 CONSTRUCTION0 PAINT1",
+            "MIX_RGB"
+          ],
+          [
+            "Mix (Legacy).001",
+            "MIX_RGB"
+          ],
+          [
+            "Emission",
+            "EMISSION"
+          ],
+          [
+            "Material Output",
+            "OUTPUT_MATERIAL"
+          ]
+        ],
+        "image_nodes": [
+          [
+            "V037 original full fabric painting",
+            "Pair_Painterly_Near_Age_v015.png",
+            [
+              1672,
+              941
+            ]
+          ]
+        ]
+      }
+    ],
+    "UV_range": [
+      [
+        0.3265550136566162,
+        0.43696171045303345
+      ],
+      [
+        0.43145591020584106,
+        0.7258235812187195
+      ]
+    ],
+    "vertices": 561,
+    "collections": [
+      "V037 | connected coat | FIVE STATIC REVIEW POSES"
+    ]
+  }
+}

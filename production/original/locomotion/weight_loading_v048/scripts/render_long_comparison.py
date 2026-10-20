@@ -1,0 +1,14 @@
+import bpy,hashlib,json,shutil,time
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];ROOT=P.parents[1];BASE=ROOT/'locomotion/steady_walk_baseline_v047';old=BASE/'native/WTSC_Steady_Ordinary_Walk_v047.blend';new=P/'native/WTSC_Connected_Weight_Loading_v048.blend';oldsha=hashlib.sha256(old.read_bytes()).hexdigest();newsha=hashlib.sha256(new.read_bytes()).hexdigest();assert oldsha=='29a4d9f794187602af43f7349f2b01c1019f39cba9f1d1278b966b78d1770103';assert json.loads((P/'evidence/COLD_CONTACT_VALIDATION.json').read_text())['native_sha256']==newsha
+prior=json.loads((BASE/'evidence/LONG_RENDER_RECORD.json').read_text());assert prior['source_hashes'][str(old)]==oldsha;priorframes={r['frame']:r for r in prior['records'] if r['version']=='V047'};records=[]
+for f in range(1,258):
+ file=BASE/'previews/frames_V047'/('FRAME_%04d.png'%f);assert hashlib.sha256(file.read_bytes()).hexdigest()==priorframes[f]['sha256'];records.append({'version':'V047','frame':f,'file':str(file),'sha256':priorframes[f]['sha256'],'method':'read-only verified frozen same-camera native render'})
+bpy.ops.wm.open_mainfile(filepath=str(new),load_ui=False,use_scripts=False);S=bpy.data.scenes['V048 | CONNECTED WEIGHT LOADING | ordinary walk'];bpy.context.window.scene=S;S.render.resolution_x=1280;S.render.resolution_y=720;S.render.resolution_percentage=100;S.render.threads_mode='FIXED';S.render.threads=2;S.render.image_settings.file_format='PNG';S.render.image_settings.color_mode='RGB';S.render.dither_intensity=0;folder=P/'previews/frames_V048';folder.mkdir(exist_ok=True);begin=time.time()
+for f in range(1,258):
+ target=folder/('FRAME_%04d.png'%f)
+ if f in [1,3,5,9,17,19,21,25]:shutil.copyfile(P/'previews'/('LOADING_%04d.png'%f),target);method='same-native same-camera final proof still'
+ else:S.frame_set(f);S.render.filepath=str(target);bpy.ops.render.render(write_still=True,scene=S.name);method='actual native timeline render'
+ records.append({'version':'V048','frame':f,'file':str(target),'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'method':method})
+assert hashlib.sha256(old.read_bytes()).hexdigest()==oldsha;assert hashlib.sha256(new.read_bytes()).hexdigest()==newsha
+(P/'evidence/LONG_RENDER_RECORD.json').write_text(json.dumps({'source_hashes':{str(old):oldsha,str(new):newsha},'fps':30,'timeline_range':[1,257],'native_frames_per_version':257,'duration_each_seconds':257/30,'resolution_per_native_frame':[1280,720],'threads':2,'elapsed_render_seconds':time.time()-begin,'same_speed_cadence_and_phase_as_v047':True,'same_camera_grid_and_ground':True,'speed_m_s':.73125,'period_source_frames':32,'ground':'Identical fixed10cm grid, sole baseline and40cm ticks. Both follow their identical root travel with3.25m ortho width andcameraZ.80m.','records':records},indent=2));print('V048_LONG_COMPARISON_RENDER_COMPLETE_SOURCE_V047_UNCHANGED',flush=True)

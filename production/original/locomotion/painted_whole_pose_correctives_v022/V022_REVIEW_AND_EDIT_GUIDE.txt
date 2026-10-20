@@ -1,0 +1,41 @@
+WTSC v022 WHOLE PAINTED POSE CORRECTIVES — REVIEW / EDIT GUIDE
+Status: bounded two-pose visual study; partial visual improvement, artistically UNAPPROVED.
+No finished cycle or production integration.
+
+START HERE
+native/WTSC_Painted_Whole_Pose_Correctives_v022.blend
+Collection WTSC_PAINTED_WHOLE_POSE_CORRECTIVES_v022
+Subcollection V022 | editable pose replacement drawings
+Controller V022 | WHOLE POSE ART | two selected poses
+Use Blender5.2.2LTS. Packed original v015 painting and native drivers/IK are retained. No addon, handler or external image is needed to open and inspect this file.
+
+SELECTED POSES
+L_LOADING: source26.0, study17.25 at30fps.
+L_PASSING: source34.0(wrapped3.0), study25.25 at30fps.
+Use exact fractional frames: scene.frame_set(17,subframe=.25) or(25,subframe=.25).
+Other six v021 selected poses and the frame32 duplicate bookend are retained. All art switches use CONSTANT keys; their intervening holds are a study convenience, not valid animation.
+The8s movie holds loading3s, passing3s and enlarged passing detail2s. It contains no normal-speed motion or in-betweens.
+
+ART EDITING
+Two additive Geometry Nodes modifiers on LOCO_BOY | PAINT body:
+V022 loading coat compression and hem
+V022 passing coat compression and hem
+Their V022_loading_delta and V022_passing_delta point attributes preserve the original base coordinates/UVs. One amount driver per modifier controls its pose.
+Four new editable trouser meshes: loading/passing times near/far. These are static pose-specific replacement drawings, parented to V021 | CHILD_SUPPORT_TRAVEL. They are not a new general leg rig.
+Each has97rows and7cross-section points, continuous curved fabric contours, an anatomically placed knee, bowed/flared original rolled cuffs and the original boot-collar endpoint. Original v015 pigment is remapped through editable UVs; no new raster painting is claimed.
+A60mm hidden waist overlap closes the coat-to-trouser seam. It changes the drawing overlap, not the skeleton length.
+Four small tapered ink/wash crease ribbon meshes use the original coat pigments and sit behind the near sleeve. Their contribution is subtle.
+The original V007_BOY | drawn leg near/far meshes are retained intact and hidden by native visibility drivers only while either selected art amount is active. Pose drawings use inverse visibility drivers.
+To compare live: temporarily detach/mute the controller action, set both loading and passing to0, update the view layer. Restore its action to return to the authored switches. Enabling both amounts simultaneously is unsupported.
+The code in scripts/build_painted_proof.py reproduces this native study from the included byte-identical reference/BASE_COHERENT_SUPPORT_v021_COPY.blend. It also renders eight960x540stills; avoid launching it during world/FX rendering.
+
+SUPPORT / IMPORT CONTRACT
+The v021 support solve is unchanged: cycle stride0.952443738458m,31/30s reference period, original child bones and rigid boots.
+Read reference/V021_IMPORT_AND_REVIEW_GUIDE.txt and V021_PHASE_TRAVEL_AND_SUPPORT_KEYS.csv for exact root, free pelvis, ankle and painted-sole anchor placements.
+These two pose drawings are evaluated only at their selected frames. Keep all independent controls/foot targets under one common placement transform if testing transfer in a disposable scene; moving only the boy travel empty will invalidate world foot targets.
+There is no mapping or replacement authorization into the production75–80s shot in this checkpoint.
+Head, profile/hair, hands, arms, source52skeleton/action, camera timing and the world are retained. No rejected v008 head work is used.
+Review camera V022 | whole painted pose close is orthographic2.9m. SHOT uses the retained actual v046100mm lens/shift, on a neutral stage. Stills are960x540; the film background is not rendered here.
+
+QUALITY / LIMITS
+Read V022_VISUAL_ASSESSMENT.txt. The trouser/cuff result is a useful local improvement; the coat remains a flat painted representation. Technical preservation checks do not establish animation quality, cloth dynamics, convincing weight transfer at speed or temporal consistency.

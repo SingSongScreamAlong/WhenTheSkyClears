@@ -1,0 +1,4129 @@
+{
+  "status": "OWNED V060 REFINED IN-MEMORY PROFILE REACH REHEARSAL; render review required",
+  "selected_arms": {
+    "BOY": "near; forward response toward girl",
+    "GIRL": "near; fresh backward offer toward boy"
+  },
+  "source_f25_arm_geometry": {
+    "BOY": {
+      "source_f25_wrist_x_minus_shoulder_x_m": 0.04063018411397934,
+      "source_f25_signed_elbow_side_m": -0.017121946439146996,
+      "source_ik_branch": -1.0
+    },
+    "GIRL": {
+      "source_f25_wrist_x_minus_shoulder_x_m": -0.0065037524327635765,
+      "source_f25_signed_elbow_side_m": -0.021505974233150482,
+      "source_ik_branch": -1.0
+    }
+  },
+  "girl_terminal_goal_ik_branch": 1.0,
+  "girl_approach_path": "F25..51 shortest-angle2D FK blend of native upper/forearm directions toward branch+1 IK goal. Segment lengths fixed; wrist arcs freely, reaches goal exactly at51. No upper-arm depth or3D rotation trick.",
+  "girl_max_wrist_departure_from_linear_interpolation_m": 0.055556733407425715,
+  "girl_authored_wrist_path_key_samples": [
+    {
+      "frame": 1.0,
+      "offer": 0.0,
+      "authored_fk_wrist_world": [
+        0.3635857403278351,
+        0.0,
+        0.6822665929794312
+      ],
+      "terminal_goal_wrist_world": [
+        0.07686050236225128,
+        0.0,
+        0.8738905191421509
+      ],
+      "distance_to_terminal_goal_m": 0.3448638588573784
+    },
+    {
+      "frame": 25.0,
+      "offer": 0.0,
+      "authored_fk_wrist_world": [
+        0.9867621064186096,
+        0.0,
+        0.6972396969795227
+      ],
+      "terminal_goal_wrist_world": [
+        0.6585135459899902,
+        0.0,
+        0.8850207924842834
+      ],
+      "distance_to_terminal_goal_m": 0.3781651150492058
+    },
+    {
+      "frame": 29.0,
+      "offer": 0.028527335554400436,
+      "authored_fk_wrist_world": [
+        1.0343477725982666,
+        0.0,
+        0.6822300553321838
+      ],
+      "terminal_goal_wrist_world": [
+        0.7547048926353455,
+        0.0,
+        0.8771798610687256
+      ],
+      "distance_to_terminal_goal_m": 0.3408893744771016
+    },
+    {
+      "frame": 33.0,
+      "offer": 0.17340483122493558,
+      "authored_fk_wrist_world": [
+        1.0812079906463623,
+        0.0,
+        0.6918747425079346
+      ],
+      "terminal_goal_wrist_world": [
+        0.8568604588508606,
+        0.0,
+        0.8738905191421509
+      ],
+      "distance_to_terminal_goal_m": 0.2888971448611655
+    },
+    {
+      "frame": 40.0,
+      "offer": 0.6419710982970321,
+      "authored_fk_wrist_world": [
+        1.1239153146743774,
+        0.0,
+        0.7730434536933899
+      ],
+      "terminal_goal_wrist_world": [
+        1.025407075881958,
+        0.0,
+        0.8854683041572571
+      ],
+      "distance_to_terminal_goal_m": 0.14947648707811456
+    },
+    {
+      "frame": 45.0,
+      "offer": 0.9157188527658753,
+      "authored_fk_wrist_world": [
+        1.164665699005127,
+        0.0,
+        0.842597246170044
+      ],
+      "terminal_goal_wrist_world": [
+        1.1447049379348755,
+        0.0,
+        0.8771798610687256
+      ],
+      "distance_to_terminal_goal_m": 0.03992980458305952
+    },
+    {
+      "frame": 51.0,
+      "offer": 1.0,
+      "authored_fk_wrist_world": [
+        1.2972289323806763,
+        0.0,
+        0.8771276473999023
+      ],
+      "terminal_goal_wrist_world": [
+        1.2972289323806763,
+        0.0,
+        0.8771276473999023
+      ],
+      "distance_to_terminal_goal_m": 0.0
+    },
+    {
+      "frame": 55.0,
+      "offer": 1.0,
+      "authored_fk_wrist_world": [
+        1.392362356185913,
+        0.0,
+        0.8849999904632568
+      ],
+      "terminal_goal_wrist_world": [
+        1.392362356185913,
+        0.0,
+        0.8849999904632568
+      ],
+      "distance_to_terminal_goal_m": 0.0
+    },
+    {
+      "frame": 94.0,
+      "offer": 1.0,
+      "authored_fk_wrist_world": [
+        2.339947462081909,
+        0.0,
+        0.8752242922782898
+      ],
+      "terminal_goal_wrist_world": [
+        2.339947462081909,
+        0.0,
+        0.8752242922782898
+      ],
+      "distance_to_terminal_goal_m": 0.0
+    },
+    {
+      "frame": 150.0,
+      "offer": 1.0,
+      "authored_fk_wrist_world": [
+        3.7091763019561768,
+        0.0,
+        0.8836870789527893
+      ],
+      "terminal_goal_wrist_world": [
+        3.7091763019561768,
+        0.0,
+        0.8836870789527893
+      ],
+      "distance_to_terminal_goal_m": 0.0
+    },
+    {
+      "frame": 151.0,
+      "offer": 1.0,
+      "authored_fk_wrist_world": [
+        3.7323620319366455,
+        0.0,
+        0.8849999904632568
+      ],
+      "terminal_goal_wrist_world": [
+        3.7323620319366455,
+        0.0,
+        0.8849999904632568
+      ],
+      "distance_to_terminal_goal_m": 0.0
+    }
+  ],
+  "valid_authored_range": [
+    1,
+    151
+  ],
+  "fps": 30,
+  "source_walk_period_frames": 32,
+  "source_scene_range_retained": [
+    1,
+    257
+  ],
+  "source_clock_retained": {
+    "BOY": {
+      "stride_m": 0.78,
+      "period_frames": 32.0,
+      "fps": 30,
+      "phase_girl_frames": 2.0,
+      "source_distance_formula": "D(F)=.78*(F-1)/32 metres",
+      "source_clock": "F=1+(G-G0)*30/24"
+    },
+    "GIRL": {
+      "stride_m": 0.78,
+      "period_frames": 32.0,
+      "fps": 30,
+      "phase_girl_frames": 2.0,
+      "source_distance_formula": "D(F)=.78*(F-1)/32 metres",
+      "source_clock": "F=1+(G-G0)*30/24"
+    }
+  },
+  "girl_source_phase_already_baked_frames": 2,
+  "output_clock": "F=1+(G-G0)*30/24; outputG0..G0+119 evaluatesF1..149.75",
+  "quarter_samples": 601,
+  "timing": {
+    "girl_offer": [
+      25,
+      51
+    ],
+    "boy_response": [
+      29,
+      55
+    ],
+    "paired_hold": [
+      55,
+      151
+    ]
+  },
+  "wrist_horizontal_gap_m": 0.13,
+  "vertical_wrist_stagger_m": 0.01,
+  "contact_center_height_at_f55_m": 0.88,
+  "source_mean_shoulder_bob_gain": 0.5,
+  "hand_pitch_z_over_x": 0.075,
+  "fold_projected_paint_length_approx_m": 0.09,
+  "minimum_elbow_reach_margin_m": 6.714472884361555e-07,
+  "hand_paint": {
+    "BOY": {
+      "source_painted_span_m": 0.145,
+      "source_fingertip_row": 1188,
+      "opaque_grid_samples": 438,
+      "original_atlas": "WTSC_Boy_Painted_Parts_Atlas_v040.png"
+    },
+    "GIRL": {
+      "source_painted_span_m": 0.144,
+      "source_fingertip_row": 1188,
+      "opaque_grid_samples": 438,
+      "original_atlas": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "chirality": "Native 180 degree grid pronation during offer; original opaque wrist envelope fitted over first20mm, distal thumb opposed."
+    }
+  },
+  "checks": {
+    "protected_nonselected_bone_matrix_max_abs_error": 0.0,
+    "root_world_matrix_max_abs_error": 0.0,
+    "camera_world_matrix_max_abs_error": 0.0,
+    "actual_four_boot_world_vertex_max_error_m": 0.0,
+    "selected_elbow_wrist_joint_max_gap_m": 1.2489448945403256e-07,
+    "selected_wrist_target_max_error_m": 0.0
+  },
+  "protected_nonarm_actions_identical": true,
+  "age10_rest_bones_exact": true,
+  "selected_sleeve_hand_topology_UV_materials_exact": true,
+  "new_raster_paint_generated": false,
+  "other_arm_unchanged": true,
+  "selected_sleeve_drawing_count_each": 601,
+  "paint_contact_samples": [
+    {
+      "frame": 55.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.327362298965454,
+        0.0,
+        0.8799999952316284
+      ]
+    },
+    {
+      "frame": 55.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.3331289291381836,
+        0.0,
+        0.8802014589309692
+      ]
+    },
+    {
+      "frame": 55.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.3388898372650146,
+        0.0,
+        0.880347490310669
+      ]
+    },
+    {
+      "frame": 55.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.3446481227874756,
+        0.0,
+        0.8804367184638977
+      ]
+    },
+    {
+      "frame": 56.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.3504071235656738,
+        0.0,
+        0.8804683089256287
+      ]
+    },
+    {
+      "frame": 56.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.3561699390411377,
+        0.0,
+        0.8804420232772827
+      ]
+    },
+    {
+      "frame": 56.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.3619399070739746,
+        0.0,
+        0.8803579807281494
+      ]
+    },
+    {
+      "frame": 56.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.367720127105713,
+        0.0,
+        0.8802171349525452
+      ]
+    },
+    {
+      "frame": 57.0,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.3735134601593018,
+        0.0,
+        0.8800207376480103
+      ]
+    },
+    {
+      "frame": 57.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.3793230056762695,
+        0.0,
+        0.8797707557678223
+      ]
+    },
+    {
+      "frame": 57.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.3851513862609863,
+        0.0,
+        0.879469633102417
+      ]
+    },
+    {
+      "frame": 57.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.3910012245178223,
+        0.0,
+        0.8791201114654541
+      ]
+    },
+    {
+      "frame": 58.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.3968746662139893,
+        0.0,
+        0.8787257075309753
+      ]
+    },
+    {
+      "frame": 58.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.4027740955352783,
+        0.0,
+        0.8782901763916016
+      ]
+    },
+    {
+      "frame": 58.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.4087011814117432,
+        0.0,
+        0.8778177499771118
+      ]
+    },
+    {
+      "frame": 58.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.414657711982727,
+        0.0,
+        0.8773130178451538
+      ]
+    },
+    {
+      "frame": 59.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.4206448793411255,
+        0.0,
+        0.8767807483673096
+      ]
+    },
+    {
+      "frame": 59.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.426663875579834,
+        0.0,
+        0.8762260675430298
+      ]
+    },
+    {
+      "frame": 59.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.4327151775360107,
+        0.0,
+        0.875654399394989
+      ]
+    },
+    {
+      "frame": 59.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.438799262046814,
+        0.0,
+        0.8750712275505066
+      ]
+    },
+    {
+      "frame": 60.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.4449163675308228,
+        0.0,
+        0.8744821548461914
+      ]
+    },
+    {
+      "frame": 60.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.451066255569458,
+        0.0,
+        0.8738927841186523
+      ]
+    },
+    {
+      "frame": 60.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.4572482109069824,
+        0.0,
+        0.8733088970184326
+      ]
+    },
+    {
+      "frame": 60.75,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.4634613990783691,
+        0.0,
+        0.8727360963821411
+      ]
+    },
+    {
+      "frame": 61.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.4697048664093018,
+        0.0,
+        0.8721798658370972
+      ]
+    },
+    {
+      "frame": 61.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.4759769439697266,
+        0.0,
+        0.8716455698013306
+      ]
+    },
+    {
+      "frame": 61.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.482276201248169,
+        0.0,
+        0.871138334274292
+      ]
+    },
+    {
+      "frame": 61.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.4886003732681274,
+        0.0,
+        0.870663046836853
+      ]
+    },
+    {
+      "frame": 62.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.4949473142623901,
+        0.0,
+        0.8702242374420166
+      ]
+    },
+    {
+      "frame": 62.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.501314640045166,
+        0.0,
+        0.8698261976242065
+      ]
+    },
+    {
+      "frame": 62.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.507699728012085,
+        0.0,
+        0.8694727420806885
+      ]
+    },
+    {
+      "frame": 62.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.5140997171401978,
+        0.0,
+        0.8691672086715698
+      ]
+    },
+    {
+      "frame": 63.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.5205116271972656,
+        0.0,
+        0.8689125776290894
+      ]
+    },
+    {
+      "frame": 63.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.5269324779510498,
+        0.0,
+        0.8687112331390381
+      ]
+    },
+    {
+      "frame": 63.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.5333592891693115,
+        0.0,
+        0.8685653209686279
+      ]
+    },
+    {
+      "frame": 63.75,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.5397884845733643,
+        0.0,
+        0.8684760332107544
+      ]
+    },
+    {
+      "frame": 64.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.5462169647216797,
+        0.0,
+        0.8684442043304443
+      ]
+    },
+    {
+      "frame": 64.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.5526416301727295,
+        0.0,
+        0.868470311164856
+      ]
+    },
+    {
+      "frame": 64.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.5590591430664062,
+        0.0,
+        0.8685540556907654
+      ]
+    },
+    {
+      "frame": 64.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.5654664039611816,
+        0.0,
+        0.868694543838501
+      ]
+    },
+    {
+      "frame": 65.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.571860432624817,
+        0.0,
+        0.8688905239105225
+      ]
+    },
+    {
+      "frame": 65.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.5782383680343628,
+        0.0,
+        0.8691401481628418
+      ]
+    },
+    {
+      "frame": 65.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.5845975875854492,
+        0.0,
+        0.8694408535957336
+      ]
+    },
+    {
+      "frame": 65.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.590935230255127,
+        0.0,
+        0.8697899580001831
+      ]
+    },
+    {
+      "frame": 66.0,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.5972492694854736,
+        0.0,
+        0.8701838254928589
+      ]
+    },
+    {
+      "frame": 66.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.6035372018814087,
+        0.0,
+        0.8706189393997192
+      ]
+    },
+    {
+      "frame": 66.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.6097975969314575,
+        0.0,
+        0.8710910677909851
+      ]
+    },
+    {
+      "frame": 66.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.6160286664962769,
+        0.0,
+        0.8715956211090088
+      ]
+    },
+    {
+      "frame": 67.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.6222288608551025,
+        0.0,
+        0.8721276521682739
+      ]
+    },
+    {
+      "frame": 67.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.6283974647521973,
+        0.0,
+        0.8726822137832642
+      ]
+    },
+    {
+      "frame": 67.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.6345336437225342,
+        0.0,
+        0.8732538223266602
+      ]
+    },
+    {
+      "frame": 67.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.640636920928955,
+        0.0,
+        0.8738369941711426
+      ]
+    },
+    {
+      "frame": 68.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.64670729637146,
+        0.0,
+        0.8744262456893921
+      ]
+    },
+    {
+      "frame": 68.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.652745008468628,
+        0.0,
+        0.8750157356262207
+      ]
+    },
+    {
+      "frame": 68.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.6587506532669067,
+        0.0,
+        0.8755998611450195
+      ]
+    },
+    {
+      "frame": 68.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.6647248268127441,
+        0.0,
+        0.8761730790138245
+      ]
+    },
+    {
+      "frame": 69.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.6706689596176147,
+        0.0,
+        0.8767297267913818
+      ]
+    },
+    {
+      "frame": 69.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.6765843629837036,
+        0.0,
+        0.8772643804550171
+      ]
+    },
+    {
+      "frame": 69.5,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.6824727058410645,
+        0.0,
+        0.8777720928192139
+      ]
+    },
+    {
+      "frame": 69.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.6883360147476196,
+        0.0,
+        0.878247857093811
+      ]
+    },
+    {
+      "frame": 70.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.6941766738891602,
+        0.0,
+        0.8786870837211609
+      ]
+    },
+    {
+      "frame": 70.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.6999969482421875,
+        0.0,
+        0.8790855407714844
+      ]
+    },
+    {
+      "frame": 70.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.7057993412017822,
+        0.0,
+        0.8794393539428711
+      ]
+    },
+    {
+      "frame": 70.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.711586833000183,
+        0.0,
+        0.8797451853752136
+      ]
+    },
+    {
+      "frame": 71.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.717362403869629,
+        0.0,
+        0.8799999952316284
+      ]
+    },
+    {
+      "frame": 71.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.7231290340423584,
+        0.0,
+        0.8802014589309692
+      ]
+    },
+    {
+      "frame": 71.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.7288899421691895,
+        0.0,
+        0.880347490310669
+      ]
+    },
+    {
+      "frame": 71.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.7346482276916504,
+        0.0,
+        0.8804367184638977
+      ]
+    },
+    {
+      "frame": 72.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.740407109260559,
+        0.0,
+        0.8804683089256287
+      ]
+    },
+    {
+      "frame": 72.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.7461700439453125,
+        0.0,
+        0.8804420232772827
+      ]
+    },
+    {
+      "frame": 72.5,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.7519400119781494,
+        0.0,
+        0.8803579807281494
+      ]
+    },
+    {
+      "frame": 72.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.7577201128005981,
+        0.0,
+        0.8802171349525452
+      ]
+    },
+    {
+      "frame": 73.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.763513445854187,
+        0.0,
+        0.8800207376480103
+      ]
+    },
+    {
+      "frame": 73.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.7693229913711548,
+        0.0,
+        0.8797707557678223
+      ]
+    },
+    {
+      "frame": 73.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.7751513719558716,
+        0.0,
+        0.879469633102417
+      ]
+    },
+    {
+      "frame": 73.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.781001091003418,
+        0.0,
+        0.8791201114654541
+      ]
+    },
+    {
+      "frame": 74.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.7868746519088745,
+        0.0,
+        0.8787257075309753
+      ]
+    },
+    {
+      "frame": 74.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.7927740812301636,
+        0.0,
+        0.8782901763916016
+      ]
+    },
+    {
+      "frame": 74.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.7987011671066284,
+        0.0,
+        0.8778177499771118
+      ]
+    },
+    {
+      "frame": 74.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8046576976776123,
+        0.0,
+        0.8773130178451538
+      ]
+    },
+    {
+      "frame": 75.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.8106448650360107,
+        0.0,
+        0.8767807483673096
+      ]
+    },
+    {
+      "frame": 75.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8166637420654297,
+        0.0,
+        0.8762260675430298
+      ]
+    },
+    {
+      "frame": 75.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.822715163230896,
+        0.0,
+        0.875654399394989
+      ]
+    },
+    {
+      "frame": 75.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.8287992477416992,
+        0.0,
+        0.8750712275505066
+      ]
+    },
+    {
+      "frame": 76.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.834916353225708,
+        0.0,
+        0.8744821548461914
+      ]
+    },
+    {
+      "frame": 76.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.8410663604736328,
+        0.0,
+        0.8738927841186523
+      ]
+    },
+    {
+      "frame": 76.5,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.8472483158111572,
+        0.0,
+        0.8733088970184326
+      ]
+    },
+    {
+      "frame": 76.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.853461503982544,
+        0.0,
+        0.8727360963821411
+      ]
+    },
+    {
+      "frame": 77.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8597049713134766,
+        0.0,
+        0.8721798658370972
+      ]
+    },
+    {
+      "frame": 77.25,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8659770488739014,
+        0.0,
+        0.8716455698013306
+      ]
+    },
+    {
+      "frame": 77.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8722761869430542,
+        0.0,
+        0.871138334274292
+      ]
+    },
+    {
+      "frame": 77.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8786004781723022,
+        0.0,
+        0.870663046836853
+      ]
+    },
+    {
+      "frame": 78.0,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.8849472999572754,
+        0.0,
+        0.8702242374420166
+      ]
+    },
+    {
+      "frame": 78.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.8913147449493408,
+        0.0,
+        0.8698261976242065
+      ]
+    },
+    {
+      "frame": 78.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.8976997137069702,
+        0.0,
+        0.8694727420806885
+      ]
+    },
+    {
+      "frame": 78.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.9040998220443726,
+        0.0,
+        0.8691672086715698
+      ]
+    },
+    {
+      "frame": 79.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.9105117321014404,
+        0.0,
+        0.8689125776290894
+      ]
+    },
+    {
+      "frame": 79.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.9169325828552246,
+        0.0,
+        0.8687112331390381
+      ]
+    },
+    {
+      "frame": 79.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.9233592748641968,
+        0.0,
+        0.8685653209686279
+      ]
+    },
+    {
+      "frame": 79.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.9297884702682495,
+        0.0,
+        0.8684759736061096
+      ]
+    },
+    {
+      "frame": 80.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.9362168312072754,
+        0.0,
+        0.8684442043304443
+      ]
+    },
+    {
+      "frame": 80.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.9426414966583252,
+        0.0,
+        0.868470311164856
+      ]
+    },
+    {
+      "frame": 80.5,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.949059009552002,
+        0.0,
+        0.8685540556907654
+      ]
+    },
+    {
+      "frame": 80.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.9554662704467773,
+        0.0,
+        0.868694543838501
+      ]
+    },
+    {
+      "frame": 81.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.9618604183197021,
+        0.0,
+        0.8688905239105225
+      ]
+    },
+    {
+      "frame": 81.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.968238353729248,
+        0.0,
+        0.8691401481628418
+      ]
+    },
+    {
+      "frame": 81.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.974597454071045,
+        0.0,
+        0.8694408535957336
+      ]
+    },
+    {
+      "frame": 81.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        1.9809350967407227,
+        0.0,
+        0.8697898983955383
+      ]
+    },
+    {
+      "frame": 82.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        1.9872491359710693,
+        0.0,
+        0.8701838254928589
+      ]
+    },
+    {
+      "frame": 82.25,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        1.993537187576294,
+        0.0,
+        0.8706189393997192
+      ]
+    },
+    {
+      "frame": 82.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        1.9997975826263428,
+        0.0,
+        0.8710910677909851
+      ]
+    },
+    {
+      "frame": 82.75,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.006028652191162,
+        0.0,
+        0.8715956211090088
+      ]
+    },
+    {
+      "frame": 83.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.0122289657592773,
+        0.0,
+        0.8721276521682739
+      ]
+    },
+    {
+      "frame": 83.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.018397569656372,
+        0.0,
+        0.8726822137832642
+      ]
+    },
+    {
+      "frame": 83.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.024533748626709,
+        0.0,
+        0.8732538223266602
+      ]
+    },
+    {
+      "frame": 83.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.03063702583313,
+        0.0,
+        0.8738369941711426
+      ]
+    },
+    {
+      "frame": 84.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.0367074012756348,
+        0.0,
+        0.8744262456893921
+      ]
+    },
+    {
+      "frame": 84.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.0427451133728027,
+        0.0,
+        0.8750157356262207
+      ]
+    },
+    {
+      "frame": 84.5,
+      "wrist_gap_m": 0.1303840489962481,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.048750638961792,
+        0.0,
+        0.8755998611450195
+      ]
+    },
+    {
+      "frame": 84.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.054724931716919,
+        0.0,
+        0.8761730790138245
+      ]
+    },
+    {
+      "frame": 85.0,
+      "wrist_gap_m": 0.13038404442031615,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.0606689453125,
+        0.0,
+        0.8767297267913818
+      ]
+    },
+    {
+      "frame": 85.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.066584348678589,
+        0.0,
+        0.8772643804550171
+      ]
+    },
+    {
+      "frame": 85.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.07247257232666,
+        0.0,
+        0.8777720928192139
+      ]
+    },
+    {
+      "frame": 85.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.078336000442505,
+        0.0,
+        0.878247857093811
+      ]
+    },
+    {
+      "frame": 86.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.084176540374756,
+        0.0,
+        0.8786870837211609
+      ]
+    },
+    {
+      "frame": 86.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.089996814727783,
+        0.0,
+        0.8790855407714844
+      ]
+    },
+    {
+      "frame": 86.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.095799207687378,
+        0.0,
+        0.8794393539428711
+      ]
+    },
+    {
+      "frame": 86.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.1015868186950684,
+        0.0,
+        0.8797451853752136
+      ]
+    },
+    {
+      "frame": 87.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.1073622703552246,
+        0.0,
+        0.8799999952316284
+      ]
+    },
+    {
+      "frame": 87.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.113128900527954,
+        0.0,
+        0.8802014589309692
+      ]
+    },
+    {
+      "frame": 87.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.1188900470733643,
+        0.0,
+        0.880347490310669
+      ]
+    },
+    {
+      "frame": 87.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.124648332595825,
+        0.0,
+        0.8804367184638977
+      ]
+    },
+    {
+      "frame": 88.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.1304073333740234,
+        0.0,
+        0.8804683089256287
+      ]
+    },
+    {
+      "frame": 88.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.1361701488494873,
+        0.0,
+        0.8804420232772827
+      ]
+    },
+    {
+      "frame": 88.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.141940116882324,
+        0.0,
+        0.8803579807281494
+      ]
+    },
+    {
+      "frame": 88.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.1477203369140625,
+        0.0,
+        0.8802171349525452
+      ]
+    },
+    {
+      "frame": 89.0,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.1535134315490723,
+        0.0,
+        0.8800207376480103
+      ]
+    },
+    {
+      "frame": 89.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.15932297706604,
+        0.0,
+        0.8797707557678223
+      ]
+    },
+    {
+      "frame": 89.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.165151357650757,
+        0.0,
+        0.8794695734977722
+      ]
+    },
+    {
+      "frame": 89.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.1710011959075928,
+        0.0,
+        0.8791201114654541
+      ]
+    },
+    {
+      "frame": 90.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.1768746376037598,
+        0.0,
+        0.8787257075309753
+      ]
+    },
+    {
+      "frame": 90.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.182774066925049,
+        0.0,
+        0.8782901763916016
+      ]
+    },
+    {
+      "frame": 90.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.1887011528015137,
+        0.0,
+        0.8778177499771118
+      ]
+    },
+    {
+      "frame": 90.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.194657802581787,
+        0.0,
+        0.8773130178451538
+      ]
+    },
+    {
+      "frame": 91.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.2006449699401855,
+        0.0,
+        0.8767807483673096
+      ]
+    },
+    {
+      "frame": 91.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.2066638469696045,
+        0.0,
+        0.8762260675430298
+      ]
+    },
+    {
+      "frame": 91.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.2127151489257812,
+        0.0,
+        0.875654399394989
+      ]
+    },
+    {
+      "frame": 91.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.218799352645874,
+        0.0,
+        0.8750712275505066
+      ]
+    },
+    {
+      "frame": 92.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.224916458129883,
+        0.0,
+        0.8744821548461914
+      ]
+    },
+    {
+      "frame": 92.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.2310662269592285,
+        0.0,
+        0.8738927841186523
+      ]
+    },
+    {
+      "frame": 92.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.237248182296753,
+        0.0,
+        0.8733088970184326
+      ]
+    },
+    {
+      "frame": 92.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.2434613704681396,
+        0.0,
+        0.8727360963821411
+      ]
+    },
+    {
+      "frame": 93.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.2497048377990723,
+        0.0,
+        0.8721798658370972
+      ]
+    },
+    {
+      "frame": 93.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.255976915359497,
+        0.0,
+        0.8716455698013306
+      ]
+    },
+    {
+      "frame": 93.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.2622761726379395,
+        0.0,
+        0.871138334274292
+      ]
+    },
+    {
+      "frame": 93.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.2686004638671875,
+        0.0,
+        0.870663046836853
+      ]
+    },
+    {
+      "frame": 94.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.27494740486145,
+        0.0,
+        0.8702242374420166
+      ]
+    },
+    {
+      "frame": 94.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.2813148498535156,
+        0.0,
+        0.8698261976242065
+      ]
+    },
+    {
+      "frame": 94.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.2876996994018555,
+        0.0,
+        0.8694727420806885
+      ]
+    },
+    {
+      "frame": 94.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.294099807739258,
+        0.0,
+        0.8691672086715698
+      ]
+    },
+    {
+      "frame": 95.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.3005118370056152,
+        0.0,
+        0.8689125776290894
+      ]
+    },
+    {
+      "frame": 95.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.3069326877593994,
+        0.0,
+        0.8687112331390381
+      ]
+    },
+    {
+      "frame": 95.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.313359260559082,
+        0.0,
+        0.8685653209686279
+      ]
+    },
+    {
+      "frame": 95.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.3197884559631348,
+        0.0,
+        0.8684760332107544
+      ]
+    },
+    {
+      "frame": 96.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.32621693611145,
+        0.0,
+        0.8684442043304443
+      ]
+    },
+    {
+      "frame": 96.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.3326416015625,
+        0.0,
+        0.868470311164856
+      ]
+    },
+    {
+      "frame": 96.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.3390591144561768,
+        0.0,
+        0.8685540556907654
+      ]
+    },
+    {
+      "frame": 96.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.345466375350952,
+        0.0,
+        0.868694543838501
+      ]
+    },
+    {
+      "frame": 97.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.351860523223877,
+        0.0,
+        0.8688905239105225
+      ]
+    },
+    {
+      "frame": 97.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.358238458633423,
+        0.0,
+        0.8691401481628418
+      ]
+    },
+    {
+      "frame": 97.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.3645975589752197,
+        0.0,
+        0.8694408535957336
+      ]
+    },
+    {
+      "frame": 97.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.3709352016448975,
+        0.0,
+        0.8697898983955383
+      ]
+    },
+    {
+      "frame": 98.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.377249240875244,
+        0.0,
+        0.8701838254928589
+      ]
+    },
+    {
+      "frame": 98.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.3835372924804688,
+        0.0,
+        0.8706189393997192
+      ]
+    },
+    {
+      "frame": 98.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.3897976875305176,
+        0.0,
+        0.8710910677909851
+      ]
+    },
+    {
+      "frame": 98.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.396028518676758,
+        0.0,
+        0.8715956211090088
+      ]
+    },
+    {
+      "frame": 99.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.402228832244873,
+        0.0,
+        0.8721276521682739
+      ]
+    },
+    {
+      "frame": 99.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.4083971977233887,
+        0.0,
+        0.8726822137832642
+      ]
+    },
+    {
+      "frame": 99.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.4145336151123047,
+        0.0,
+        0.8732538223266602
+      ]
+    },
+    {
+      "frame": 99.75,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.4206366539001465,
+        0.0,
+        0.8738369941711426
+      ]
+    },
+    {
+      "frame": 100.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.4267072677612305,
+        0.0,
+        0.8744262456893921
+      ]
+    },
+    {
+      "frame": 100.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.4327449798583984,
+        0.0,
+        0.8750157356262207
+      ]
+    },
+    {
+      "frame": 100.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.438750743865967,
+        0.0,
+        0.8755998611450195
+      ]
+    },
+    {
+      "frame": 100.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.4447250366210938,
+        0.0,
+        0.8761730790138245
+      ]
+    },
+    {
+      "frame": 101.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.450669050216675,
+        0.0,
+        0.8767297267913818
+      ]
+    },
+    {
+      "frame": 101.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.4565844535827637,
+        0.0,
+        0.8772643804550171
+      ]
+    },
+    {
+      "frame": 101.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.462472915649414,
+        0.0,
+        0.8777720928192139
+      ]
+    },
+    {
+      "frame": 101.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.4683361053466797,
+        0.0,
+        0.878247857093811
+      ]
+    },
+    {
+      "frame": 102.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.4741766452789307,
+        0.0,
+        0.8786870837211609
+      ]
+    },
+    {
+      "frame": 102.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.479996681213379,
+        0.0,
+        0.8790855407714844
+      ]
+    },
+    {
+      "frame": 102.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.4857993125915527,
+        0.0,
+        0.8794393539428711
+      ]
+    },
+    {
+      "frame": 102.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.491586685180664,
+        0.0,
+        0.8797451853752136
+      ]
+    },
+    {
+      "frame": 103.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.4973621368408203,
+        0.0,
+        0.8799999952316284
+      ]
+    },
+    {
+      "frame": 103.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.503129005432129,
+        0.0,
+        0.8802014589309692
+      ]
+    },
+    {
+      "frame": 103.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.508889675140381,
+        0.0,
+        0.880347490310669
+      ]
+    },
+    {
+      "frame": 103.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.514647960662842,
+        0.0,
+        0.8804367184638977
+      ]
+    },
+    {
+      "frame": 104.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.520407199859619,
+        0.0,
+        0.8804683089256287
+      ]
+    },
+    {
+      "frame": 104.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.526169776916504,
+        0.0,
+        0.8804420232772827
+      ]
+    },
+    {
+      "frame": 104.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.53193998336792,
+        0.0,
+        0.8803579807281494
+      ]
+    },
+    {
+      "frame": 104.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.537720203399658,
+        0.0,
+        0.8802171349525452
+      ]
+    },
+    {
+      "frame": 105.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.543513298034668,
+        0.0,
+        0.8800207376480103
+      ]
+    },
+    {
+      "frame": 105.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.5493228435516357,
+        0.0,
+        0.8797707557678223
+      ]
+    },
+    {
+      "frame": 105.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.5551512241363525,
+        0.0,
+        0.8794695734977722
+      ]
+    },
+    {
+      "frame": 105.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.5610008239746094,
+        0.0,
+        0.8791201114654541
+      ]
+    },
+    {
+      "frame": 106.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.5668745040893555,
+        0.0,
+        0.8787257075309753
+      ]
+    },
+    {
+      "frame": 106.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.5727739334106445,
+        0.0,
+        0.8782901763916016
+      ]
+    },
+    {
+      "frame": 106.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.5787010192871094,
+        0.0,
+        0.8778177499771118
+      ]
+    },
+    {
+      "frame": 106.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.584657907485962,
+        0.0,
+        0.8773130178451538
+      ]
+    },
+    {
+      "frame": 107.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.5906448364257812,
+        0.0,
+        0.8767807483673096
+      ]
+    },
+    {
+      "frame": 107.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.5966639518737793,
+        0.0,
+        0.8762260675430298
+      ]
+    },
+    {
+      "frame": 107.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.602715253829956,
+        0.0,
+        0.875654399394989
+      ]
+    },
+    {
+      "frame": 107.75,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        2.608799457550049,
+        0.0,
+        0.8750711679458618
+      ]
+    },
+    {
+      "frame": 108.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.6149163246154785,
+        0.0,
+        0.8744821548461914
+      ]
+    },
+    {
+      "frame": 108.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.6210663318634033,
+        0.0,
+        0.8738927841186523
+      ]
+    },
+    {
+      "frame": 108.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.6272482872009277,
+        0.0,
+        0.8733088970184326
+      ]
+    },
+    {
+      "frame": 108.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.6334614753723145,
+        0.0,
+        0.8727360963821411
+      ]
+    },
+    {
+      "frame": 109.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.639704704284668,
+        0.0,
+        0.8721798658370972
+      ]
+    },
+    {
+      "frame": 109.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.645977020263672,
+        0.0,
+        0.8716455698013306
+      ]
+    },
+    {
+      "frame": 109.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.652276039123535,
+        0.0,
+        0.871138334274292
+      ]
+    },
+    {
+      "frame": 109.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.658600330352783,
+        0.0,
+        0.870663046836853
+      ]
+    },
+    {
+      "frame": 110.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.664947271347046,
+        0.0,
+        0.8702242374420166
+      ]
+    },
+    {
+      "frame": 110.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.6713147163391113,
+        0.0,
+        0.8698261976242065
+      ]
+    },
+    {
+      "frame": 110.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.677699565887451,
+        0.0,
+        0.8694727420806885
+      ]
+    },
+    {
+      "frame": 110.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.6840996742248535,
+        0.0,
+        0.8691672086715698
+      ]
+    },
+    {
+      "frame": 111.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.690511703491211,
+        0.0,
+        0.8689125776290894
+      ]
+    },
+    {
+      "frame": 111.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.696932554244995,
+        0.0,
+        0.8687112331390381
+      ]
+    },
+    {
+      "frame": 111.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.7033591270446777,
+        0.0,
+        0.8685653209686279
+      ]
+    },
+    {
+      "frame": 111.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.7097883224487305,
+        0.0,
+        0.8684760332107544
+      ]
+    },
+    {
+      "frame": 112.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.716216802597046,
+        0.0,
+        0.8684442043304443
+      ]
+    },
+    {
+      "frame": 112.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.7226414680480957,
+        0.0,
+        0.868470311164856
+      ]
+    },
+    {
+      "frame": 112.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.7290587425231934,
+        0.0,
+        0.8685540556907654
+      ]
+    },
+    {
+      "frame": 112.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.735466241836548,
+        0.0,
+        0.868694543838501
+      ]
+    },
+    {
+      "frame": 113.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.7418603897094727,
+        0.0,
+        0.8688905239105225
+      ]
+    },
+    {
+      "frame": 113.25,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        2.7482385635375977,
+        0.0,
+        0.8691401481628418
+      ]
+    },
+    {
+      "frame": 113.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.7545976638793945,
+        0.0,
+        0.8694408535957336
+      ]
+    },
+    {
+      "frame": 113.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.7609353065490723,
+        0.0,
+        0.8697898983955383
+      ]
+    },
+    {
+      "frame": 114.0,
+      "wrist_gap_m": 0.13038393214252106,
+      "closest_opaque_paint_grid_distance_m": 0.002035028653274545,
+      "contact_center": [
+        2.76724910736084,
+        0.0,
+        0.8701838850975037
+      ]
+    },
+    {
+      "frame": 114.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.7735373973846436,
+        0.0,
+        0.8706189393997192
+      ]
+    },
+    {
+      "frame": 114.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.7797975540161133,
+        0.0,
+        0.8710910677909851
+      ]
+    },
+    {
+      "frame": 114.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.7860286235809326,
+        0.0,
+        0.8715956211090088
+      ]
+    },
+    {
+      "frame": 115.0,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        2.7922286987304688,
+        0.0,
+        0.8721276521682739
+      ]
+    },
+    {
+      "frame": 115.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.7983975410461426,
+        0.0,
+        0.8726822137832642
+      ]
+    },
+    {
+      "frame": 115.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.8045334815979004,
+        0.0,
+        0.8732538223266602
+      ]
+    },
+    {
+      "frame": 115.75,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.8106369972229004,
+        0.0,
+        0.8738369941711426
+      ]
+    },
+    {
+      "frame": 116.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.816707134246826,
+        0.0,
+        0.8744262456893921
+      ]
+    },
+    {
+      "frame": 116.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.822744846343994,
+        0.0,
+        0.8750157356262207
+      ]
+    },
+    {
+      "frame": 116.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.8287506103515625,
+        0.0,
+        0.8755998611450195
+      ]
+    },
+    {
+      "frame": 116.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.8347249031066895,
+        0.0,
+        0.8761730790138245
+      ]
+    },
+    {
+      "frame": 117.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.8406689167022705,
+        0.0,
+        0.8767297267913818
+      ]
+    },
+    {
+      "frame": 117.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.8465843200683594,
+        0.0,
+        0.8772643804550171
+      ]
+    },
+    {
+      "frame": 117.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.8524727821350098,
+        0.0,
+        0.8777720928192139
+      ]
+    },
+    {
+      "frame": 117.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.8583359718322754,
+        0.0,
+        0.878247857093811
+      ]
+    },
+    {
+      "frame": 118.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.8641765117645264,
+        0.0,
+        0.8786870837211609
+      ]
+    },
+    {
+      "frame": 118.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.8699965476989746,
+        0.0,
+        0.8790855407714844
+      ]
+    },
+    {
+      "frame": 118.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.8757991790771484,
+        0.0,
+        0.8794393539428711
+      ]
+    },
+    {
+      "frame": 118.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.8815865516662598,
+        0.0,
+        0.8797451853752136
+      ]
+    },
+    {
+      "frame": 119.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.887362003326416,
+        0.0,
+        0.8799999952316284
+      ]
+    },
+    {
+      "frame": 119.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.8931288719177246,
+        0.0,
+        0.8802014589309692
+      ]
+    },
+    {
+      "frame": 119.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.8988900184631348,
+        0.0,
+        0.880347490310669
+      ]
+    },
+    {
+      "frame": 119.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.9046483039855957,
+        0.0,
+        0.8804367184638977
+      ]
+    },
+    {
+      "frame": 120.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.910407066345215,
+        0.0,
+        0.8804683089256287
+      ]
+    },
+    {
+      "frame": 120.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.916170120239258,
+        0.0,
+        0.8804420232772827
+      ]
+    },
+    {
+      "frame": 120.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.9219398498535156,
+        0.0,
+        0.8803579807281494
+      ]
+    },
+    {
+      "frame": 120.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.927720069885254,
+        0.0,
+        0.8802171349525452
+      ]
+    },
+    {
+      "frame": 121.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.9335134029388428,
+        0.0,
+        0.8800207376480103
+      ]
+    },
+    {
+      "frame": 121.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.9393229484558105,
+        0.0,
+        0.8797707557678223
+      ]
+    },
+    {
+      "frame": 121.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.9451513290405273,
+        0.0,
+        0.8794695734977722
+      ]
+    },
+    {
+      "frame": 121.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.9510011672973633,
+        0.0,
+        0.8791201114654541
+      ]
+    },
+    {
+      "frame": 122.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.9568746089935303,
+        0.0,
+        0.8787257075309753
+      ]
+    },
+    {
+      "frame": 122.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.9627740383148193,
+        0.0,
+        0.8782901763916016
+      ]
+    },
+    {
+      "frame": 122.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        2.968701124191284,
+        0.0,
+        0.8778177499771118
+      ]
+    },
+    {
+      "frame": 122.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.9746577739715576,
+        0.0,
+        0.8773130178451538
+      ]
+    },
+    {
+      "frame": 123.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        2.980644702911377,
+        0.0,
+        0.8767807483673096
+      ]
+    },
+    {
+      "frame": 123.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        2.986663818359375,
+        0.0,
+        0.8762260675430298
+      ]
+    },
+    {
+      "frame": 123.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        2.9927151203155518,
+        0.0,
+        0.875654399394989
+      ]
+    },
+    {
+      "frame": 123.75,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        2.9987993240356445,
+        0.0,
+        0.8750711679458618
+      ]
+    },
+    {
+      "frame": 124.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.004916191101074,
+        0.0,
+        0.8744821548461914
+      ]
+    },
+    {
+      "frame": 124.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.011066198348999,
+        0.0,
+        0.8738927841186523
+      ]
+    },
+    {
+      "frame": 124.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.0172481536865234,
+        0.0,
+        0.8733088970184326
+      ]
+    },
+    {
+      "frame": 124.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.02346134185791,
+        0.0,
+        0.8727360963821411
+      ]
+    },
+    {
+      "frame": 125.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.0297045707702637,
+        0.0,
+        0.8721798658370972
+      ]
+    },
+    {
+      "frame": 125.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.0359768867492676,
+        0.0,
+        0.8716455698013306
+      ]
+    },
+    {
+      "frame": 125.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.042275905609131,
+        0.0,
+        0.871138334274292
+      ]
+    },
+    {
+      "frame": 125.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.048600196838379,
+        0.0,
+        0.870663046836853
+      ]
+    },
+    {
+      "frame": 126.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.0549473762512207,
+        0.0,
+        0.8702242374420166
+      ]
+    },
+    {
+      "frame": 126.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.061314582824707,
+        0.0,
+        0.8698261976242065
+      ]
+    },
+    {
+      "frame": 126.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.067699909210205,
+        0.0,
+        0.8694727420806885
+      ]
+    },
+    {
+      "frame": 126.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.0740997791290283,
+        0.0,
+        0.8691672086715698
+      ]
+    },
+    {
+      "frame": 127.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.0805118083953857,
+        0.0,
+        0.8689125776290894
+      ]
+    },
+    {
+      "frame": 127.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.08693265914917,
+        0.0,
+        0.8687112331390381
+      ]
+    },
+    {
+      "frame": 127.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.0933592319488525,
+        0.0,
+        0.8685653209686279
+      ]
+    },
+    {
+      "frame": 127.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.0997884273529053,
+        0.0,
+        0.8684760332107544
+      ]
+    },
+    {
+      "frame": 128.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.1062169075012207,
+        0.0,
+        0.8684442043304443
+      ]
+    },
+    {
+      "frame": 128.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.1126413345336914,
+        0.0,
+        0.868470311164856
+      ]
+    },
+    {
+      "frame": 128.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.1190590858459473,
+        0.0,
+        0.8685540556907654
+      ]
+    },
+    {
+      "frame": 128.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.1254663467407227,
+        0.0,
+        0.868694543838501
+      ]
+    },
+    {
+      "frame": 129.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.1318602561950684,
+        0.0,
+        0.8688905239105225
+      ]
+    },
+    {
+      "frame": 129.25,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        3.1382384300231934,
+        0.0,
+        0.8691401481628418
+      ]
+    },
+    {
+      "frame": 129.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.1445975303649902,
+        0.0,
+        0.8694408535957336
+      ]
+    },
+    {
+      "frame": 129.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.150935173034668,
+        0.0,
+        0.8697898983955383
+      ]
+    },
+    {
+      "frame": 130.0,
+      "wrist_gap_m": 0.13038393214252106,
+      "closest_opaque_paint_grid_distance_m": 0.002035028653274545,
+      "contact_center": [
+        3.1572489738464355,
+        0.0,
+        0.8701838850975037
+      ]
+    },
+    {
+      "frame": 130.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.1635372638702393,
+        0.0,
+        0.8706189393997192
+      ]
+    },
+    {
+      "frame": 130.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.169797420501709,
+        0.0,
+        0.8710910677909851
+      ]
+    },
+    {
+      "frame": 130.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.1760284900665283,
+        0.0,
+        0.8715956211090088
+      ]
+    },
+    {
+      "frame": 131.0,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        3.1822285652160645,
+        0.0,
+        0.8721276521682739
+      ]
+    },
+    {
+      "frame": 131.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.1883974075317383,
+        0.0,
+        0.8726822137832642
+      ]
+    },
+    {
+      "frame": 131.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.194533348083496,
+        0.0,
+        0.8732538223266602
+      ]
+    },
+    {
+      "frame": 131.75,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.200636863708496,
+        0.0,
+        0.8738369941711426
+      ]
+    },
+    {
+      "frame": 132.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.206707000732422,
+        0.0,
+        0.8744262456893921
+      ]
+    },
+    {
+      "frame": 132.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.212745189666748,
+        0.0,
+        0.8750157356262207
+      ]
+    },
+    {
+      "frame": 132.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.2187507152557373,
+        0.0,
+        0.8755998611450195
+      ]
+    },
+    {
+      "frame": 132.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.224724769592285,
+        0.0,
+        0.8761730790138245
+      ]
+    },
+    {
+      "frame": 133.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.2306690216064453,
+        0.0,
+        0.8767297267913818
+      ]
+    },
+    {
+      "frame": 133.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.236584424972534,
+        0.0,
+        0.8772643804550171
+      ]
+    },
+    {
+      "frame": 133.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.2424726486206055,
+        0.0,
+        0.8777720928192139
+      ]
+    },
+    {
+      "frame": 133.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.24833607673645,
+        0.0,
+        0.878247857093811
+      ]
+    },
+    {
+      "frame": 134.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.254176616668701,
+        0.0,
+        0.8786870837211609
+      ]
+    },
+    {
+      "frame": 134.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.2599968910217285,
+        0.0,
+        0.8790855407714844
+      ]
+    },
+    {
+      "frame": 134.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.265799045562744,
+        0.0,
+        0.8794393539428711
+      ]
+    },
+    {
+      "frame": 134.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.2715866565704346,
+        0.0,
+        0.8797451853752136
+      ]
+    },
+    {
+      "frame": 135.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.27736234664917,
+        0.0,
+        0.8799999952316284
+      ]
+    },
+    {
+      "frame": 135.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.2831287384033203,
+        0.0,
+        0.8802014589309692
+      ]
+    },
+    {
+      "frame": 135.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.2888898849487305,
+        0.0,
+        0.880347490310669
+      ]
+    },
+    {
+      "frame": 135.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.2946481704711914,
+        0.0,
+        0.8804367184638977
+      ]
+    },
+    {
+      "frame": 136.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.3004069328308105,
+        0.0,
+        0.8804683089256287
+      ]
+    },
+    {
+      "frame": 136.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.3061699867248535,
+        0.0,
+        0.8804420232772827
+      ]
+    },
+    {
+      "frame": 136.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.3119397163391113,
+        0.0,
+        0.8803579807281494
+      ]
+    },
+    {
+      "frame": 136.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.3177199363708496,
+        0.0,
+        0.8802171349525452
+      ]
+    },
+    {
+      "frame": 137.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.3235132694244385,
+        0.0,
+        0.8800207376480103
+      ]
+    },
+    {
+      "frame": 137.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.3293228149414062,
+        0.0,
+        0.8797707557678223
+      ]
+    },
+    {
+      "frame": 137.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.335151195526123,
+        0.0,
+        0.8794695734977722
+      ]
+    },
+    {
+      "frame": 137.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.341001033782959,
+        0.0,
+        0.8791201114654541
+      ]
+    },
+    {
+      "frame": 138.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.346874475479126,
+        0.0,
+        0.8787257075309753
+      ]
+    },
+    {
+      "frame": 138.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.352773904800415,
+        0.0,
+        0.8782901763916016
+      ]
+    },
+    {
+      "frame": 138.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.35870099067688,
+        0.0,
+        0.8778177499771118
+      ]
+    },
+    {
+      "frame": 138.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.3646578788757324,
+        0.0,
+        0.8773130178451538
+      ]
+    },
+    {
+      "frame": 139.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.370645046234131,
+        0.0,
+        0.8767807483673096
+      ]
+    },
+    {
+      "frame": 139.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.3766636848449707,
+        0.0,
+        0.8762260675430298
+      ]
+    },
+    {
+      "frame": 139.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.3827152252197266,
+        0.0,
+        0.875654399394989
+      ]
+    },
+    {
+      "frame": 139.75,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        3.3887991905212402,
+        0.0,
+        0.8750711679458618
+      ]
+    },
+    {
+      "frame": 140.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.394916534423828,
+        0.0,
+        0.8744821548461914
+      ]
+    },
+    {
+      "frame": 140.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.401066303253174,
+        0.0,
+        0.8738927841186523
+      ]
+    },
+    {
+      "frame": 140.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.407248020172119,
+        0.0,
+        0.8733088970184326
+      ]
+    },
+    {
+      "frame": 140.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.413461446762085,
+        0.0,
+        0.8727360963821411
+      ]
+    },
+    {
+      "frame": 141.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.4197049140930176,
+        0.0,
+        0.8721798658370972
+      ]
+    },
+    {
+      "frame": 141.25,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.4259769916534424,
+        0.0,
+        0.8716455698013306
+      ]
+    },
+    {
+      "frame": 141.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.4322762489318848,
+        0.0,
+        0.871138334274292
+      ]
+    },
+    {
+      "frame": 141.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.4386003017425537,
+        0.0,
+        0.870663046836853
+      ]
+    },
+    {
+      "frame": 142.0,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.4449472427368164,
+        0.0,
+        0.8702242374420166
+      ]
+    },
+    {
+      "frame": 142.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.4513144493103027,
+        0.0,
+        0.8698261976242065
+      ]
+    },
+    {
+      "frame": 142.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.457699775695801,
+        0.0,
+        0.8694727420806885
+      ]
+    },
+    {
+      "frame": 142.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.464099645614624,
+        0.0,
+        0.8691672086715698
+      ]
+    },
+    {
+      "frame": 143.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.4705116748809814,
+        0.0,
+        0.8689125776290894
+      ]
+    },
+    {
+      "frame": 143.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.4769325256347656,
+        0.0,
+        0.8687112331390381
+      ]
+    },
+    {
+      "frame": 143.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.4833590984344482,
+        0.0,
+        0.8685653209686279
+      ]
+    },
+    {
+      "frame": 143.75,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.489788293838501,
+        0.0,
+        0.8684760332107544
+      ]
+    },
+    {
+      "frame": 144.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.4962167739868164,
+        0.0,
+        0.8684442043304443
+      ]
+    },
+    {
+      "frame": 144.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.502641201019287,
+        0.0,
+        0.868470311164856
+      ]
+    },
+    {
+      "frame": 144.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.509058952331543,
+        0.0,
+        0.8685540556907654
+      ]
+    },
+    {
+      "frame": 144.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.5154662132263184,
+        0.0,
+        0.868694543838501
+      ]
+    },
+    {
+      "frame": 145.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.521860122680664,
+        0.0,
+        0.8688905239105225
+      ]
+    },
+    {
+      "frame": 145.25,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        3.528238296508789,
+        0.0,
+        0.8691401481628418
+      ]
+    },
+    {
+      "frame": 145.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.534597396850586,
+        0.0,
+        0.8694408535957336
+      ]
+    },
+    {
+      "frame": 145.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.5409352779388428,
+        0.0,
+        0.8697898983955383
+      ]
+    },
+    {
+      "frame": 146.0,
+      "wrist_gap_m": 0.13038393214252106,
+      "closest_opaque_paint_grid_distance_m": 0.002035028653274545,
+      "contact_center": [
+        3.5472493171691895,
+        0.0,
+        0.8701838850975037
+      ]
+    },
+    {
+      "frame": 146.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.553537368774414,
+        0.0,
+        0.8706189393997192
+      ]
+    },
+    {
+      "frame": 146.5,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.559797525405884,
+        0.0,
+        0.8710910677909851
+      ]
+    },
+    {
+      "frame": 146.75,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.566028594970703,
+        0.0,
+        0.8715956211090088
+      ]
+    },
+    {
+      "frame": 147.0,
+      "wrist_gap_m": 0.13038391841471242,
+      "closest_opaque_paint_grid_distance_m": 0.002035015630581995,
+      "contact_center": [
+        3.5722289085388184,
+        0.0,
+        0.8721276521682739
+      ]
+    },
+    {
+      "frame": 147.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.578397274017334,
+        0.0,
+        0.8726822137832642
+      ]
+    },
+    {
+      "frame": 147.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.58453369140625,
+        0.0,
+        0.8732538223266602
+      ]
+    },
+    {
+      "frame": 147.75,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.590636730194092,
+        0.0,
+        0.8738369941711426
+      ]
+    },
+    {
+      "frame": 148.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.596707344055176,
+        0.0,
+        0.8744262456893921
+      ]
+    },
+    {
+      "frame": 148.25,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.6027450561523438,
+        0.0,
+        0.8750157356262207
+      ]
+    },
+    {
+      "frame": 148.5,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.608750581741333,
+        0.0,
+        0.8755998611450195
+      ]
+    },
+    {
+      "frame": 148.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.614724636077881,
+        0.0,
+        0.8761730790138245
+      ]
+    },
+    {
+      "frame": 149.0,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.620668888092041,
+        0.0,
+        0.8767297267913818
+      ]
+    },
+    {
+      "frame": 149.25,
+      "wrist_gap_m": 0.1303841632828865,
+      "closest_opaque_paint_grid_distance_m": 0.0020350647984693593,
+      "contact_center": [
+        3.62658429145813,
+        0.0,
+        0.8772643804550171
+      ]
+    },
+    {
+      "frame": 149.5,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.632472515106201,
+        0.0,
+        0.8777720928192139
+      ]
+    },
+    {
+      "frame": 149.75,
+      "wrist_gap_m": 0.130383927566585,
+      "closest_opaque_paint_grid_distance_m": 0.0020350243106405036,
+      "contact_center": [
+        3.638336181640625,
+        0.0,
+        0.878247857093811
+      ]
+    },
+    {
+      "frame": 150.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.6441762447357178,
+        0.0,
+        0.8786870837211609
+      ]
+    },
+    {
+      "frame": 150.25,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.649996757507324,
+        0.0,
+        0.8790855407714844
+      ]
+    },
+    {
+      "frame": 150.5,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.65579891204834,
+        0.0,
+        0.8794393539428711
+      ]
+    },
+    {
+      "frame": 150.75,
+      "wrist_gap_m": 0.1303839229906488,
+      "closest_opaque_paint_grid_distance_m": 0.0020350199697429833,
+      "contact_center": [
+        3.6615867614746094,
+        0.0,
+        0.8797451853752136
+      ]
+    },
+    {
+      "frame": 151.0,
+      "wrist_gap_m": 0.13038415870695858,
+      "closest_opaque_paint_grid_distance_m": 0.0020350604576582017,
+      "contact_center": [
+        3.6673619747161865,
+        0.0,
+        0.8799999952316284
+      ]
+    }
+  ],
+  "paint_contact_max_nearest_grid_distance_m": 0.0020350647984693593,
+  "limits": [
+    "Fixed profile heads and original age-ten painting retained; no body/head turn.",
+    "Walking reassurance only: no load-bearing support or recovery acting claimed.",
+    "Hand fold retains the source paint and is a profile grip rehearsal; visual review must approve silhouette and finger overlap.",
+    "Quarter-frame sleeve drawings and selected arm gesture cover only native1..151; source scene range is retained but no gesture attachment is approved after151."
+  ]
+}

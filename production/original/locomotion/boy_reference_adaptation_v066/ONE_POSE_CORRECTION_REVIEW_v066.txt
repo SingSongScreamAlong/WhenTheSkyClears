@@ -1,0 +1,28 @@
+WHEN THE SKY CLEARS — ONE-POSE BOY CORRECTION v066
+2026-10-19. Isolated phase-8 support-pose study. Earlier poses, world work, and production assets were not edited.
+
+Visual decision: improvement over v065, still below the established v049/v053 painted character standard. Do not author the next pose or any inbetweens from this study yet.
+
+Actual deliverables
+- native/Boy_Phase08_Manual_Painted_Contour_Correction_v066.blend: Blender 5.2.2 LTS, one 660x720 transparent-camera pose. The body contains 67 individually editable filled mesh shapes (521 manual contour points) and 27 editable curves (98 manual stroke points). The phase-8 hip/knee/ankle guides from v065 remain explicit and unaltered. The approved painted A006 head is a separate packed front-facing raster plane, identified by name and custom metadata. It is retained art, not a newly painted/head-turned drawing. The A frame and adult source photo are also packed for comparison.
+- previews/Boy_Phase08_Native_Correction_v066.png: actual native render, not a diagnostic redraw.
+- previews/Boy_Phase08_A_Before_After_Matched_v066.png: the actual v053 A boy, v065 before, and v066 after at identical 660x720 framing. The photo anatomy source is Muybridge phase 8; v053 is the preferred painted design reference.
+- scripts/pose8_spec_v066.py lists every revised/new body fill and stroke coordinate. The broad, low-amplitude material wash only changes color within those authored shapes; it does not generate contours or deform a puppet.
+- evidence/PHASE08_COLD_OPEN_v066.json and Phase08_Cold_Open_Render_v066.png: cold-open validation. 67 fills, 27 curves, all point counts, packed images, transparent film, and orthographic camera pass. The cold-open render is pixel-identical to the first native render (RGBA difference bounding box: none).
+
+What improved
+- The jacket has a manually redrawn hem/shoulder/waist silhouette and distinct torso fold planes rather than the earlier rigid rectangular panel. Sleeves, cream cuffs, wrists, palms and several fingers are separate shape/stroke elements. The far arm now hangs in front of the torso as it does in the approved character pose.
+- The support trouser has a knee-cap and under-knee compression mark, the trailing shin carries crease/wash directions, and both boot shafts have revised cuffs, insteps, soles, and toe/heel accents. The trailing shoe has more believable projected length. The major joint axes remain near the age-ten length guide.
+- The retained v053 head keeps the hair, face profile and boy identity far better than v065's angular vector head; no flat head is rotated edge-on. The dark-safe matte removes most of the earlier pale fringe, though it is still a composited retained-art edge.
+
+Remaining visual gaps at shot size
+- The coat is still broad flat color planes without the v053 painting's layered cloth texture or soft edge behavior. The neck/collar junction is visibly mixed media, and torso compression over the planted leg is weak.
+- The near hand fingers are readable but stiff; the far hand is a simplified fan and both wrist transitions still feel jointed. A further local manual contour correction can shorten/curve the far fingers and soften the wrist, but finished hands require direct paint and edge refinement.
+- Both legs preserve the reference stance but remain too narrow and straight in their outer contour. A local redraw can add calf/knee volume without moving the axes. The boot soles and insteps need a painted leather treatment, including weight at the planted heel and a more convincing lifted trailing toe. A few more hard highlight polygons alone will not match A.
+- One pose cannot demonstrate weight transfer, ease, heel rollover through time, root travel, recovery-to-walking transition, or sliding. No timing/integration contract is claimed.
+
+Next gate
+Paint and retouch this one phase-8 body at the existing matched camera, using the native v066 contours as editable underdrawing and the v049/v053 raster as the visual target. Keep the retained hair/face consistent, settle the pelvis/coat over the support boot, paint the hand/boot volumes and soften edges. Recheck against the matched board at shot size. Only after that single pose credibly belongs to the same film should phase 6 be revised and inbetweens/time spacing begin.
+
+Dependencies
+Local Blender/Python only; no metered Remote Desktop Commander calls, installs, purchases, or external sharing. The private Library upload of the review proof is authorized.

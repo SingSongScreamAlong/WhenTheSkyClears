@@ -1,0 +1,33 @@
+{
+  "phase": "complete",
+  "native_sha256": "caac0a93ddf8f7ae03f5ca7b002a9c1ca14e0d2242d5861165471e88f3af4d35",
+  "done": 2400,
+  "total": 2400,
+  "workers": [
+    {
+      "start": 1,
+      "end": 600,
+      "frames": 600,
+      "proof_complete": true
+    },
+    {
+      "start": 601,
+      "end": 1200,
+      "frames": 600,
+      "proof_complete": true
+    },
+    {
+      "start": 1201,
+      "end": 1800,
+      "frames": 600,
+      "proof_complete": true
+    },
+    {
+      "start": 1801,
+      "end": 2400,
+      "frames": 600,
+      "proof_complete": true
+    }
+  ],
+  "numeric_precision_policy": "Native RNA tolerance1.1e-4 measured in FLOAT_DRIVER_PRECISION.json; valid same-native frames retained"
+}

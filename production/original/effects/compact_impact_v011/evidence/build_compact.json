@@ -1,0 +1,101 @@
+{
+  "blender": "5.2.2 LTS",
+  "fps": 24,
+  "frames": [
+    1,
+    72
+  ],
+  "impact_frame": 7,
+  "flash_age_range": [
+    0,
+    3
+  ],
+  "small_debris": [
+    {
+      "name": "FXv011 | small falling debris 00",
+      "radius": 0.0399591579217007,
+      "birth_age": 0,
+      "apex_age": 7.800000000000001,
+      "landing_age": 15.600000000000001,
+      "final_x": -0.903982304715216
+    },
+    {
+      "name": "FXv011 | small falling debris 01",
+      "radius": 0.03908785285282109,
+      "birth_age": 1,
+      "apex_age": 7.5,
+      "landing_age": 14.0,
+      "final_x": -0.4924872103670324
+    },
+    {
+      "name": "FXv011 | small falling debris 02",
+      "radius": 0.04044373405277871,
+      "birth_age": 0,
+      "apex_age": 9.0,
+      "landing_age": 18.0,
+      "final_x": -0.2625693036159853
+    },
+    {
+      "name": "FXv011 | small falling debris 03",
+      "radius": 0.027954495108681615,
+      "birth_age": 1,
+      "apex_age": 8.6,
+      "landing_age": 16.2,
+      "final_x": 0.26237447673195197
+    },
+    {
+      "name": "FXv011 | small falling debris 04",
+      "radius": 0.04046457071888017,
+      "birth_age": 0,
+      "apex_age": 8.2,
+      "landing_age": 16.4,
+      "final_x": 0.6619236488812741
+    },
+    {
+      "name": "FXv011 | small falling debris 05",
+      "radius": 0.03365826536809979,
+      "birth_age": 1,
+      "apex_age": 7.7,
+      "landing_age": 14.4,
+      "final_x": 0.8902162069641572
+    },
+    {
+      "name": "FXv011 | small falling debris 06",
+      "radius": 0.03363246684388506,
+      "birth_age": 0,
+      "apex_age": 5.6,
+      "landing_age": 11.2,
+      "final_x": -0.8756990971253855
+    },
+    {
+      "name": "FXv011 | small falling debris 07",
+      "radius": 0.03812734218294046,
+      "birth_age": 1,
+      "apex_age": 6.4,
+      "landing_age": 11.8,
+      "final_x": 0.5757215954187942
+    },
+    {
+      "name": "FXv011 | small falling debris 08",
+      "radius": 0.040155108798507366,
+      "birth_age": 0,
+      "apex_age": 6.300000000000001,
+      "landing_age": 12.600000000000001,
+      "final_x": 0.08478633836025712
+    }
+  ],
+  "dust_gain_fraction_of_v010": 0.04,
+  "dust_full_strength_below_metres": 0.1,
+  "dust_zero_above_metres": 0.3,
+  "dust_zero_after_age": 22,
+  "dust_cache_frames": 30,
+  "dust_cache_bytes": 3669296,
+  "new_simulation": false,
+  "root": [
+    109.2294692993164,
+    10.0,
+    -0.4315446615219116
+  ],
+  "changes": "Simplified visible event once in direct response to the amount-of-smoke correction. Large block fractures and raised crater ring are removed.",
+  "pending": "Actual shot-size key review."
+}

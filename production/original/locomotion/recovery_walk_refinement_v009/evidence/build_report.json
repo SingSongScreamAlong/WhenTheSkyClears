@@ -1,0 +1,37 @@
+{
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009\\native\\WTSC_Recovery_Walk_v009.blend",
+  "fps": 24,
+  "frames": 120,
+  "total_travel_m": 0.8616666674613953,
+  "extra_travel_m": 0.3,
+  "travel_formula": "D009(f)=D007(f)+e(f). e=0 for f<=88; .012*(f-88)^2/28 for88<f<102; .084+.012*(f-102) thereafter. Native distance Action linearly interpolates integer samples.",
+  "steps": {
+    "GIRL_near": {
+      "toeoff": 86,
+      "heel_strike": 102,
+      "delta_m": 0.3,
+      "clearance_m": 0.07
+    },
+    "GIRL_far": {
+      "toeoff": 110,
+      "heel_strike": 128,
+      "delta_m": 0.53,
+      "clearance_m": 0.062
+    },
+    "BOY_near": {
+      "toeoff": 99,
+      "heel_strike": 116,
+      "delta_m": 0.32,
+      "clearance_m": 0.078
+    },
+    "BOY_far": {
+      "toeoff": 124,
+      "heel_strike": 142,
+      "delta_m": 0.53,
+      "clearance_m": 0.07
+    }
+  },
+  "head_choice": "Hold original painted right profile and attached braid; XZ nod only. Removes disc and avoids rejected v008/head art. Girl attends through lowered gaze, counterbalance and offered/releasing arm. No literal look back claimed.",
+  "hands": "Light steadying cue, feet carry weight; no load-bearing clasp claim. Release103..114.",
+  "limits": "Source early stumble retained; native planar limbs still have cutout limits. End boundary is moving with second girl step airborne and boy trailing heel preparing. Continuation must preserve state/velocity."
+}

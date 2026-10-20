@@ -1,0 +1,119 @@
+WHEN THE SKY CLEARS | FIRST-DANGER PASS v065f
+19 October 2026 | Rendered shot candidate
+
+ACTUAL RESULT
+previews/WTSC_First_Danger_Title_v065f_View.mp4
+Small 720p viewing copy, downsampled from the actual UHD movie.
+
+previews/WTSC_First_Danger_Title_v065f_4K.mp4
+Actual 3840x2160 / 24fps / 168 frames / seven seconds.
+
+previews/WTSC_First_Danger_Unmasked_v065_4K.mp4
+The same actual UHD world without the title mask, with original audio.
+
+previews/WTSC_First_Danger_World_and_Title_v065f_Review.mp4
+Labeled side-by-side comparison, normal 24fps timing, original supplied music.
+
+previews/Title_Visibility_Before_After_v065.jpg
+Matched native keys: inherited mask versus the new readable drawing reveal.
+
+EDITABLE NATIVE
+native/WTSC_First_Danger_Conformed_v065f.blend
+Main editable/render scene: WTSC_FIRST_DANGER_WORLD_v065
+Scene/Sound review master: WTSC_FIRST_DANGER_REVIEW_MASTER_v065
+Global frames 913-1080 / 38-45 seconds. The developed core remains G937-1056,
+39-44 seconds, with one second of neighboring movement on each side.
+Native source settings remain UHD. All source painting images are packed.
+
+COLOR
+World, compositor and native edit/master use Standard/None, exposure0/gamma1.
+The shared palette follows the current full-cut absolute 0-96-second smoothstep,
+with no shot reset. Driver time is an explicit world-scene dependency. The world
+owns the compositor, avoiding the stale cross-scene driver state caught in the
+first pilot. Every movie-frame record checks both controller and actor-material
+values against global time after the actual world render.
+The title reveal mixes to the ORIGINAL painted world pixels via the visible
+drawing matte, avoiding alpha-over brightening of translucent paint.
+
+CAMERA CONTINUITY
+The route matches the old route through G913, eases over one second into the
+actual .73125m/s walk, tracks that pace through the core, and eases back over
+the outgoing second. A persistent -4.540762m offset then carries through
+the rest of the supplied full camera action. The core step error is below
+0.000003052m/frame in the independent cold check.
+This is a continuous NEW route. Old downstream movie pixels must be rerendered
+with it; do not cut this directly into an unchanged v040/v064 export.
+The root travel, original gait, baked girl phase lead and body/foot actions were
+not edited. Existing evaluated boot positions match source exactly across
+65 representative integer/fractional samples. Contact marks were regenerated
+from those boots to cover the two neighboring handles.
+
+TITLE VISIBILITY AND THE ARTWORK
+The original title font geometry, wording and scroll remain. The world stays
+inside those letters; a native visible-object Cryptomatte reveals the children
+in front of the letter mask. It follows the ACTUALLY VISIBLE drawing contribution,
+and the exact rendered alpha of the nearer oak suppresses the reveal where it
+occludes a child. The girl naturally passes behind that tree in the outgoing
+handle; the tree is not shown in the shape of her silhouette.
+At the worst sampled movie frame, the inherited mask retained only
+26.69% of the visible opaque drawing pixels. The new reveal retains their
+original color within one RGB code value in every rendered frame check.
+Geometry, original mesh UVs, packed artwork and rest bones are preserved.
+The existing layered 2D/2.5D paintings remain the visible art; no volumetric forest,
+3D character replacement, new costume or new raster painting was introduced.
+To inspect the raw world, disable Compositing on the main world scene or use
+its live unmasked File Output. The inherited helper edit's older name is historical.
+
+ACTUAL RENDER / COMPOSITE PROVENANCE
+The world/glyph/visible-drawing passes were freshly rendered at UHD from the
+frozen v065d native. v065f adds the precise foreground-occlusion pass and the
+final drawing-reveal operation. The oak alpha was also rendered natively at UHD.
+Blender then composited those unchanged native UHD pixel caches using the same
+color-exact reveal graph as the editable v065f scene. No image scaling or frame
+interpolation was used for the UHD movies. A separate fresh live-v065f UHD key
+at G1069 agrees with the cache composite within 7 RGB code values (mean error
+0.002360/255). The cache inputs and each result are hashed.
+The 720p clip and labeled side-by-side copy are viewing derivatives.
+
+NATIVE AND MEDIA READBACK
+All independent cold preservation checks pass. Direct native and native
+Scene-strip master renders at G937 and G1056 agree within one RGB code value.
+All four movies fully decode all168frames with contiguous24fps timestamps.
+The soundtrack is the actual supplied WAV excerpt38-45s; decoded comparison
+correlation is 0.997063. No new SFX or unrelated music source was added.
+All earlier sources, including the concurrent v064 full-cut work, are preserved.
+
+SCOPE
+This is the first-danger color/camera/title pass, with the existing gesture.
+It is not a new full-film export or new story acting/gaze/cloth production pass.
+The new title layering is a reviewable composition candidate, not an assertion
+of final artistic acceptance. Agents inspected actual native keys and decoded
+chronological frames; continuous native-player artistic playback is not claimed.
+
+REPRODUCTION
+The scripts are project-local and resolve the original project root. For a new
+revision, duplicate/version the candidate folder before changing it. The build
+and small correction scripts retain the exact construction history. Render jobs
+take explicit frame ranges, freeze native source hashes and verify actual clock,
+material, output and completion records. Never replay a partial range without
+checking its completed-frame/hash record.
+The raw UHD caches remain in renders/ for the verified final composite; the
+editable native contains the live graph and can render directly without caches.
+
+RECORDS
+evidence/BUILD.json
+evidence/COLD_NATIVE_VALIDATION.json
+evidence/RENDER_MOVIE_COMPLETE.json
+evidence/FINAL_COMPOSITE_COMPLETE.json
+evidence/NATIVE_EDIT_RENDER.json
+evidence/NATIVE_EDIT_PIXEL_AGREEMENT.json
+evidence/LIVE_NATIVE_WITNESS.json
+evidence/LIVE_NATIVE_CACHE_AGREEMENT.json
+evidence/DELIVERY.json
+
+Native SHA256: d73f23c9b5e2d28a65454fbcdf363c1d837c90e88dfbf33d9dec39df1bdbe78f
+Original v063 SHA256: d1d4393c3afc77bf71fb8989bd001da56866baaa7f682216a5f05e54e9523687
+Render recovery: two long world workers hit an access violation in the Blender
+GPU/Grease Pencil volume draw path. All87completed UHD frames were hash/PNG
+verified; the remaining81used six new nonoverlapping batches of at most16frames.
+No uncertain mutation was replayed. See evidence/RENDER_RECOVERY.json.

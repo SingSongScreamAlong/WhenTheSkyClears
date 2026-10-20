@@ -1,0 +1,139 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Village_Still_Review_v013.blend",
+  "blender": "5.2.2 LTS",
+  "scene": "WTSC_VILLAGE_STILL_v013",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "frames": [
+    1,
+    1
+  ],
+  "objects": [
+    {
+      "name": "v013 | Rear countryside",
+      "type": "MESH",
+      "location": [
+        0.0,
+        40.0,
+        3.0
+      ],
+      "dimensions": [
+        40.31999969482422,
+        22.68000030517578,
+        0.0
+      ]
+    },
+    {
+      "name": "v013 | Painted village",
+      "type": "MESH",
+      "location": [
+        2.0160000324249268,
+        12.0,
+        3.0
+      ],
+      "dimensions": [
+        20.15999984741211,
+        11.34000015258789,
+        0.0
+      ]
+    },
+    {
+      "name": "v013 | Walking path",
+      "type": "MESH",
+      "location": [
+        0.0,
+        2.0,
+        3.0
+      ],
+      "dimensions": [
+        12.960000038146973,
+        7.289999961853027,
+        0.0
+      ]
+    },
+    {
+      "name": "v013 | CHILDREN | held editable GP black silhouettes",
+      "type": "GREASEPENCIL",
+      "location": [
+        -1.6891200542449951,
+        0.0,
+        0.8463720083236694
+      ],
+      "dimensions": [
+        1.2246239185333252,
+        0.001999974250793457,
+        1.402000069618225
+      ]
+    },
+    {
+      "name": "v013 | Oak frame and near bank",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -5.0,
+        3.0
+      ],
+      "dimensions": [
+        7.920000076293945,
+        4.454999923706055,
+        0.0
+      ]
+    },
+    {
+      "name": "v013 | Review camera",
+      "type": "CAMERA",
+      "location": [
+        0.0,
+        -16.0,
+        3.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Foreground_Ground.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true
+    },
+    {
+      "name": "Rear_Countryside.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true
+    },
+    {
+      "name": "Village_Middle.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true
+    }
+  ],
+  "native_camera": "Perspective, 50mm, side-on",
+  "painted_planes": 4,
+  "independent_depths_y": [
+    -5,
+    2,
+    12,
+    40
+  ],
+  "pure_black_light_independent_gp": true,
+  "pose_changes": false,
+  "animation": "None; one frame only",
+  "reference_status": "Exact approved ink-and-wash image unavailable; inspected handoff image1 is provisional atmosphere reference",
+  "art_approval": "Pending still review",
+  "scrolling_test": "Not started; after still approval only"
+}

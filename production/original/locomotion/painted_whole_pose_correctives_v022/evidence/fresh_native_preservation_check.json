@@ -1,0 +1,65 @@
+{
+  "support_bone_world_matrix_max_delta": 0.0,
+  "boot_vertices_max_delta_m": 0.0,
+  "other_six_selected_poses_original_mesh_max_delta_m": 0.0,
+  "head_arms_hands_original_mesh_max_delta_m": 0.0,
+  "base_vertex_and_UV_data_unchanged": true,
+  "packed_paint_image_bytes_unchanged": true,
+  "all_chains_reachable": true,
+  "replacement_drawing_visibility": {
+    "R_CONTACT": [],
+    "R_LOADING": [],
+    "R_PASSING": [],
+    "R_UP": [],
+    "L_CONTACT": [],
+    "L_LOADING": [
+      "V022 | L_LOADING | near painted trouser replacement",
+      "V022 | L_LOADING | far painted trouser replacement",
+      "V022 | loading | waist compression ink crease",
+      "V022 | loading | wash fold edge"
+    ],
+    "L_PASSING": [
+      "V022 | L_PASSING | near painted trouser replacement",
+      "V022 | L_PASSING | far painted trouser replacement",
+      "V022 | passing | waist compression ink crease",
+      "V022 | passing | wash fold edge"
+    ],
+    "L_UP": []
+  },
+  "actual_boot_minimum_z_by_phase": {
+    "R_CONTACT": {
+      "V007_BOY | redrawn support boot far": 0.0,
+      "V007_BOY | redrawn support boot near": 9.313225746154785e-09
+    },
+    "R_LOADING": {
+      "V007_BOY | redrawn support boot far": 0.0,
+      "V007_BOY | redrawn support boot near": 0.0
+    },
+    "R_PASSING": {
+      "V007_BOY | redrawn support boot far": 0.060080386698246,
+      "V007_BOY | redrawn support boot near": 1.4901161193847656e-08
+    },
+    "R_UP": {
+      "V007_BOY | redrawn support boot far": 0.06002340465784073,
+      "V007_BOY | redrawn support boot near": 3.725290298461914e-09
+    },
+    "L_CONTACT": {
+      "V007_BOY | redrawn support boot far": -2.9802322387695312e-08,
+      "V007_BOY | redrawn support boot near": 2.9802322387695312e-08
+    },
+    "L_LOADING": {
+      "V007_BOY | redrawn support boot far": -4.470348358154297e-08,
+      "V007_BOY | redrawn support boot near": 1.4901161193847656e-08
+    },
+    "L_PASSING": {
+      "V007_BOY | redrawn support boot far": -1.4901161193847656e-08,
+      "V007_BOY | redrawn support boot near": 0.03343687951564789
+    },
+    "L_UP": {
+      "V007_BOY | redrawn support boot far": -2.2351741790771484e-08,
+      "V007_BOY | redrawn support boot near": 0.02199885994195938
+    }
+  },
+  "scope": "Selected native pose/asset preservation, not visual acceptance or an in-between/cloth simulation pass",
+  "status": "PASS"
+}

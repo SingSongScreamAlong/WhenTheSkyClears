@@ -1,0 +1,93 @@
+WHEN THE SKY CLEARS - v007 SUPPORTED RECOVERY CANDIDATE
+Separate five-second specialist study. No production/full-trailer integration.
+
+APPEND AND CLOCK
+Blender5.2.2LTS,24fps,metres,uniform scale1,XZ artwork,+X travel,+Z up.
+Append Collection WTSC_BATTLEFIELD_DRAWN_PAIR_v007 from
+native/WTSC_Supported_Recovery_v007.blend. Source painting is packed.
+Find controls by motion_revision == 'v007_drawn_pose_corrections'; the existing
+object name BATTLEFIELD_WEARY | CONTROLS may receive an appended name suffix.
+Run embedded Text configure_v007.py, then:
+configure_v007(start=1801,duration_scale=1,root_motion=True,root=controls)
+All body, drawing, braid, head-exposure and distance Actions use1..120.
+Frames1801..1920 are75..80s, boundary1921. The former3frame lead-in and116/95
+retime are already baked. Do not add them again. duration_scale=2 doubles the
+whole performance, including the girl's head-drawing exposures. Use the helper
+instead of retiming armature strips alone. Native source and keys remain editable.
+This one-shot recovery uses HOLD; it is not a loop. End pose is the offered-hand
+recovery, so a later motion must deliberately transition from that pose.
+
+STAGING AND CONTACT
+Root route and foot matrices retain the v005/v006/v044 comparison contract:
+total0.561666667m; start1801/1804:0m;1825:.202051m;1844:.445259m;
+1881/1920:.561666667m. Route stops near78.333s. Keep this variable native
+DISTANCE_CURVE; do not combine it with another traveling route.
+Default pair gap0.8m, roots +/-0.4m. Keep that gap for the authored helping touch;
+changing it requires editing/re-solving both support-arm poses.
+Original height basis boy1.45m,girl1.369918m. Hips/torso now shift and rise;
+foot placements stay fixed. Boy is temporarily lower while recovering.
+Matched v044 anchor=(107.6339569,0,0.7200737),identity rotation,scale1.
+For in-place use root_motion=False; traveling ground must follow minus the
+native DISTANCE_CURVE.location.x with the same clock. No fixed-speed substitute.
+
+TARGET INTEGRATION COPY
+Hide old v006 pair collection and old knee/wrist caps; do not render both pairs.
+The v044 frozen camera can retain the original hidden v005TRAVEL because the
+new route matches it. A new camera may target the appended TRAVEL explicitly.
+Retain the parent-owned light/FX and material-response binding. Rebind newly
+appended materials to that actual light using the parent's existing method.
+The v007 collection contains no camera/light/stage. Source GP remains hidden.
+New shoe objects are identified by v007_role == 'support_boot',with near/far
+in their names. Existing code searching only for 'boot collar' must be updated.
+The four existing sole planes remain aligned with the original sole points.
+The evidence reports also expose any difference in the4mm near-floor diagnostic
+slice centroid; that is separate from actual floor height and sole-edge positions.
+Do not hide the v007 head variants individually: their native exposure Actions
+control visibility. Hide/replace the entire collection for later integration.
+
+ACTING TIMELINE (LOCAL SOURCE FRAMES)
+28..72: localized upper-boot drawings and projected shin/knee paths prevent the
+deep folded boy leg from running back through the supporting leg. Original
+shoe geometry/UVs outside that section; original heel/toe/sole points protected.
+37..49: boy brings near hand onto his own supporting thigh as he establishes
+the front foot. Girl stabilizes sooner and lowers the other balancing arm.
+Recovery front-foot contact is girl42(flat46),boy45(flat48). Trailing near foot
+returns girl61,boy63. Contact/roll ranges for all four feet are in
+evidence/contact_frames.json; add1800 for this clip's global frame numbers.
+44..45: two-frame drawn back-of-head passing pose;46..120: source-painted
+left-facing profile and braid lag as girl checks boy and extends a hand.
+43..78: girl's near hand reaches back;80..101: boy's far hand meets it.
+81..89: after travel stops, boy sinks/prepares and shifts forward over support.
+89..120: boy rises approximately10cm from the prepared hip pose; thigh brace
+releases101..115 while their light steadying touch remains. Girl counters and
+keeps attention on him. The weight stays principally on his feet/thigh brace.
+
+EDITABILITY AND LIMITS
+33native Actions,27shape-key meshes,96closed Bezier leg/arm pose guides.
+Visible limbs are native planar drawings, not volume/generic3D characters.
+Mesh keys POSE_001..POSE_120 are linear sampled drawings. Edit neighboring
+samples together; changing only a bone will not regenerate those outlines.
+Girl's head turn uses object hide_render Actions plus a braid shape-key Action.
+All are handled by configure_v007 and tested when retimed. Her left profile is
+the original painted profile reflected locally, with corrected downwards gaze;
+the quick passing pose is a localized charcoal drawing. It is not a newly drawn
+three-quarter turnaround. A polished turn needs additional purpose-drawn views.
+The paired touch is projected2D fingertip contact, without a physics/grip
+constraint. A load-bearing clasp needs new hand/forearm overlap drawings and
+more articulated torso/shoulder construction. A new recovery step would require
+relaxing the fixed foot-path contract. These remain artistic limits, not accepted
+cinematic results. No new run/crawl/fall/get-up or mask integration is claimed.
+
+PROOFS
+WTSC_v007_Integrated_5s.mp4: actual EEVEE120frames,960x540.
+WTSC_v044_vs_v007_Matched_Framing.mp4: same actual time/camera/EEVEE/world/
+route/light/FX, v044 reference downsampled to960x540, side-by-side with v007.
+WTSC_v007_Neutral_5s.mp4: actual editable asset on moving-ground test stage.
+Detailed critical-pose and full shot-size contact sheets accompany the reels.
+native/WTSC_v007_Integrated_Comparison_Copy.blend is local review-only and
+excluded from portableZIP. native/WTSC_v007_Fresh_Append_Test.blend verifies
+clean append/retiming. Rebuild scripts require the preserved project v005 and
+v003 source art; appending the packed portable native asset does not.
+All production files, v005 and v006 remain preserved. Private Library save is
+unconfirmed: previously the official helper reported prepare_uploads unavailable;
+no retry or protocol bypass was attempted here.

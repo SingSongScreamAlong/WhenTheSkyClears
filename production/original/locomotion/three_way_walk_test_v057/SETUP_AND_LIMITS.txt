@@ -1,0 +1,50 @@
+WHEN THE SKY CLEARS | THREE-METHOD WALK TEST | v057 | 2026-10-19
+
+STATUS: METHOD GATE ONLY. THE THREE-WAY ANIMATION TEST IS NOT COMPLETE.
+
+The controlled test calls for 120 frames at 24 fps (five seconds), a 660x720
+boy panel, unchanged camera/scale/background, and matched travel/cadence.
+Current source boy is v053. Nothing in this folder replaces production art.
+
+A / CURRENT WALK -- COMPLETE BASELINE
+The existing v053 studio render was sampled from its native 30 fps frames at
+source F=round(1+1.25k), k=0..119, and cropped to the boy's 660x720 panel.
+This is a 120-frame, 24 fps, five-second baseline, not a new animation.
+See evidence/A_BASELINE.json and evidence/A_TIME_MAPPING.csv.
+
+B / TRADITIONAL FRAME-BY-FRAME -- NOT COMPLETE
+The earlier algorithmic SVG pilot is REJECTED. Its 18 SVG and 17 PNG files
+remain as failure evidence in native/B_svg_frames and previews/frames_B_drawn.
+Its formula-generated contours do not meet the requested independently drawn
+120-frame method. Do not use or present those files as lane B.
+
+An isolated Adobe Animate 24.0.15.5 FLA now tests native editable strokes:
+native/WTSC_B_Stroke_Pose_Proof_v057.fla. It holds ONE hand-specified boy
+pose on ONE frame, with eleven persistent shape layers. Head/face and ten
+additional path contours were explicitly specified point by point; no pose
+formula, interpolation, rigging, imagegen or traced v053 pixel cutout made
+those contours. The static inputs are in
+native/B_Pose_Proof_Authored_Strokes.json and the per-stroke native receipts
+in evidence/B_NATIVE_STROKE_DISPATCH_LOG.json. The FLA was saved, closed,
+reopened and checked. A shot-size PNG is
+previews/B_Native_Stroke_Pose_Proof_f00000.png.
+
+VISUAL GATE: This proof is far below the v053 character design. Smooth flat
+fills erase painterly ink, the hair/face silhouette is crude, and arms and
+boots are stiff. One pose cannot prove contacts, weight transfer or timing.
+Scaling this exact method to 120 frames would multiply poor artwork; it is
+not a valid B preview. Freehand screen drag is unverified and previously
+failed in this Animate bridge; native paths accept fixed numeric points but
+do not provide live drawing feedback or pressure/brush finish. A skilled
+illustrator with direct pen/brush access is required for this quality bar.
+
+C / PHOTO-REFERENCE ROTOSCOPE -- REFERENCE READY; NO ANIMATED PASS
+The approved reference is Muybridge's 1887 Animal Locomotion Plate 2. The
+top row has twelve side-profile still photographs of an adult, not a
+continuous 120-frame filmed clip and not a child. Source URL, SHA, exact
+crops and limits are in reference/PHOTO_SOURCE.json; the original plate
+and twelve-phase review board are under reference/. Any C pass would need
+individually drawn boy-adapted poses/inbetweens. No C drawing is claimed.
+
+No new full-trailer duration, music, title mask, supported-recovery source,
+v053 baseline source, world source, or another specialist's file was changed.

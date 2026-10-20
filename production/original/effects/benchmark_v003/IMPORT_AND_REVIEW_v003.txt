@@ -1,0 +1,79 @@
+WHEN THE SKY CLEARS — EVOLVING ERUPTION v003
+Separate integration-proof candidate. V001 remains rejected.
+
+Review the five-second actual render:
+WTSC_Evolving_Eruption_75-80s_v003.mp4
+1920 x 1080, 24 fps, frames 1800–1919, ignition 1824, no audio.
+
+Compare with the previous version:
+WTSC_Compare_LEFT-v002a_RIGHT-v003_matched-ages.mp4
+Left is v002a; right is v003. Each panel retains its native 1920 x 1080
+framing. The four-second overlap compares identical event ages -18 to 77:
+old frames 1795–1890 against new frames 1806–1901. No frozen, interpolated
+or synthesized comparison frames are used. Camera and children are held at
+the original project shot frame 1825 in both views. This is an effects test,
+not the new production stumble/performance or moving-camera integration.
+
+WHAT CHANGED
+The old full painted plume is now only a short launch jet. Thirteen cold
+smoke elements use four different original forms, separate births, rise,
+roll, unequal mesh curl, shader advection, evolving erosion and lifetimes.
+Earlier elements die while later elements change the contour and interior.
+The flash, launch jet and held preview light response are exactly zero from
+age 14 onward (frame 1838 here). Smoke and dust continue independently.
+The ground-origin empty stays fixed. Native debris retains its trajectories.
+
+APPEND
+Blender 5.2.2 LTS was used. Choose File > Append, then:
+native/WTSC_Evolving_Eruption_Collection_v003.blend
+Collection > FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS
+
+Select FXv003 | fixed ground origin and controls. Its default position is
+[109.1, 10.0, -0.7048803] metres in the original world. Move this empty to
+place the contact point; retain all children. X is horizontal, Z is up,
+camera faces positive Y, and painted elements lie primarily in the XZ plane.
+The smoke cards have small Y depth offsets behind the flash and dust.
+
+Custom Properties:
+start_frame       1824: ignition in the global production timeline.
+speed            1.0: positive age multiplier; use 24 fps.
+size             1.0: uniform native parent scale.
+intensity        0.94: effect opacity/intensity multiplier.
+smoke_density    0.88: independent cold-smoke opacity control.
+wind             0.18: horizontal plume drift.
+smoke_color      [0.72, 0.77, 0.83]: cold-paint RGB multiplier.
+hot_frames       14: ends the separate hot phase.
+age              Computed from (frame - start_frame) * speed; do not edit.
+hot_envelope     Computed 0–1 guide for production's source-linked lighting.
+
+The collection contains NO lights, receiver materials, scenery, camera or
+compositor. Production owns lighting, contact and live occlusion. Do not
+append the held preview's maps or lighting into production. Its local light
+map exists only to show the intended brief hot-phase timing in this held test.
+Material smoke colors are painted values, not physically scattered volumes.
+
+DEPENDENCIES AND ALPHA
+Three original PNGs are packed: hero launch 1254 x 1254, dust 2172 x 724,
+and the four-form cold atlas 1254 x 1254 (about 627 px per quadrant).
+Source images use Straight alpha; native compositor work uses premultiplied
+render results. Viewing MP4s are opaque H.264, BT.709, yuv420p. No transparent
+animation sequence is supplied in this revision. Native geometry and materials
+are editable; a separate append sandbox and all 120 source PNGs remain local.
+
+VALIDATION AND LIMITS
+Fresh-scene append: 55 objects, three packed images, 510 valid drivers,
+no driver target outside the root, no lights. Tested at a moved origin,
+start_frame 24 and size 1.1. The source-world hash remains unchanged.
+All 120 new PNGs, 96 reference PNGs and both full MP4s decoded successfully.
+GPU motion render took 55.18 seconds, one job, two CPU threads, 32 Eevee
+samples; no bake or simulation cache. A competing worker caused a deferral.
+
+The two targeted defects are corrected in the reviewed frames: late hot core
+is absent and the smoke replaces its contour/internal grouping rather than
+stretching one entire plume. Treat this as a candidate for the separate
+integrated battlefield proof, not overall cinematic acceptance.
+Four underlying painted forms are reused; this is 2.5D layered flow, not a
+fluid simulation or true evolving volumetric self-shadow. The cloud lifts
+clear of the dust, becomes broad, and thins strongly near the end of the
+five-second test. Moving camera, live occlusion, character interaction and
+4K sampling still need review in production's separate integrated proof.

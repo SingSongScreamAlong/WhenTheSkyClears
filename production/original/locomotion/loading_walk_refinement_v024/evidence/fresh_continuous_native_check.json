@@ -1,0 +1,34 @@
+{
+  "fresh_native_samples": 373,
+  "sample_rate_per_frame": 4,
+  "max_actual_sole_anchor_error_m": 2.4191451214334697e-07,
+  "minimum_actual_sole_z_m": -4.0978193283081055e-08,
+  "unreachable_native_chains": [],
+  "loop_mesh_translation_error_m": 7.251217997429632e-07,
+  "motion_model_transition_checks": [
+    {
+      "q": 0,
+      "max_ankle_position_jump_over_2e_minus5_frames_m": 2.748446057531245e-07
+    },
+    {
+      "q": 4.25,
+      "max_ankle_position_jump_over_2e_minus5_frames_m": 5.632323754408889e-07
+    },
+    {
+      "q": 16,
+      "max_ankle_position_jump_over_2e_minus5_frames_m": 2.449118848880122e-07
+    },
+    {
+      "q": 18.5,
+      "max_ankle_position_jump_over_2e_minus5_frames_m": 4.675762758797855e-07
+    },
+    {
+      "q": 31,
+      "max_ankle_position_jump_over_2e_minus5_frames_m": 2.748446055767361e-07
+    }
+  ],
+  "drawing_swaps": 0,
+  "frame_handlers": 0,
+  "status": "PASS",
+  "scope": "Contact, reach, loop and absence of hard drawing switches; not continuous-playback artistic acceptance"
+}

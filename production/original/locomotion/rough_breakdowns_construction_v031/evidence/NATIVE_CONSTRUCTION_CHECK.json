@@ -1,0 +1,35 @@
+{
+  "scope": "Numerical construction safeguards, not visual acceptance",
+  "Blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "source_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+  "period_frames": 32,
+  "fps": 30,
+  "stride_m": 0.8146774020162355,
+  "speed_m_per_sec": 0.7637600643902208,
+  "root_curve": "LINEAR; X=stride*(F-1)/32 metres",
+  "selected_phase_frames": {
+    "contact": 1,
+    "down": 4,
+    "passing": 10,
+    "up": 13,
+    "opposite_contact": 17,
+    "opposite_down": 20,
+    "opposite_passing": 26,
+    "opposite_up": 29
+  },
+  "limb_lengths_m": {
+    "thigh": 0.26,
+    "shin": 0.26,
+    "upper_arm": 0.198,
+    "forearm": 0.178
+  },
+  "minimum_reach_margin_m": 0.002039808347611305,
+  "maximum_support_sole_height_error_m": 0.0,
+  "drawings": 32,
+  "native_review_frames": 96,
+  "head_choice": "Single original source F1 side profile, translated by neck; no profile change, card rotation, v008 reuse or hair redraw. Head design and UVs retained.",
+  "body_height_corrections": "Explicit authored vertical breakdowns in construction_motion.py, applied to body stack. No reach clamp, stretch or generic IK mass correction.",
+  "chest_and_waist": "Rounded outer shoulder/rib contours; down rib/waist settle, up opens. Short partial oblique seam replaces full-width belt crease.",
+  "source_scope": "Only isolated v031 files changed; no production timeline, pair animation, music/title changes."
+}

@@ -1,0 +1,2537 @@
+{
+  "v020 | Walking path | continuous blended paint": {
+    "type": "MESH",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        2.059999942779541
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dimensions": [
+      244.0,
+      0.0,
+      30.958799362182617
+    ],
+    "hide": false,
+    "bbox": [
+      [
+        -24.0,
+        220.0
+      ],
+      [
+        2.059999942779541,
+        2.059999942779541
+      ],
+      [
+        -30.0,
+        0.9588000178337097
+      ]
+    ],
+    "verts": 4,
+    "mats": [
+      {
+        "name": "v058d | continuous painterly soil | earth-only source",
+        "nodes": [
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Ground_Painted_v001.png",
+            "size": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy)",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.009",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.001",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+            "size": [
+              1908,
+              824
+            ]
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy).001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.010",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeHueSaturation",
+            "name": "Hue/Saturation/Value",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeEmission",
+            "name": "Emission",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeBsdfTransparent",
+            "name": "Transparent BSDF",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixShader",
+            "name": "Mix Shader",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.011",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.012",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.013",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.014",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.015",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.016",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.017",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.018",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.019",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.009",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v039 restrained foreground value",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v039 actual firelight world position",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v039 local receiver radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.010",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.020",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.011",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.021",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v039 receiver strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v039 coherent fire beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.022",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.023",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v039 restrained local firelight | preserved ink",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v040 actual physical source position",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.009",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.012",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | School debris | fixed emitter receiver_radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.024",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.013",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.025",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | School debris | fixed emitter receiver_strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | School debris | fixed emitter fire_beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.026",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.027",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v040 localized source-connected warmth",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v040 actual physical source position.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.010",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.011",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.012",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.014",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.028",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.015",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.029",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.030",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.031",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v040 localized source-connected warmth.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v040 actual physical source position.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.013",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.014",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.015",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.016",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.032",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.017",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.033",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.034",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.035",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v040 localized source-connected warmth.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeUVMap",
+            "name": "UV Map",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.002",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.018",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.019",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.036",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.020",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.037",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.021",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.038",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "v048b | peaceful earth-only spatial join",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeUVMap",
+            "name": "UV Map.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.003",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.022",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.023",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.039",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.024",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.040",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.025",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.041",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "v048b | transition earth-only spatial join",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeUVMap",
+            "name": "UV Map.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.004",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.026",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.027",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.042",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.028",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.043",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.029",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.044",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "v048b | war_zone earth-only spatial join",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.045",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.046",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.047",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | MULTIPLY_ADD",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | FRACT",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | ADD",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | FRACT.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.005",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.006",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | MULTIPLY",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | COSINE",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058a | MULTIPLY_ADD.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "v058a | overlapping paint samples hide wrap without mirrors",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "v058a | warm village soil to cool ash",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "v058a | fixed geography warmth",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "v058a | replace mirrored lower leaf border only",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "v058a | foreground-only spatial mask",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058c | MULTIPLY_ADD",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "v058d | hard source exclusion of all painted people",
+            "image": null,
+            "size": null
+          }
+        ]
+      }
+    ]
+  },
+  "v020 | Foreground bank | continuous blended paint": {
+    "type": "MESH",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -4.989999771118164
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dimensions": [
+      244.0,
+      0.0,
+      31.25
+    ],
+    "hide": false,
+    "bbox": [
+      [
+        -24.0,
+        220.0
+      ],
+      [
+        -4.989999771118164,
+        -4.989999771118164
+      ],
+      [
+        -30.0,
+        1.25
+      ]
+    ],
+    "verts": 4,
+    "mats": [
+      {
+        "name": "v039 | Foreground bank | stable paint variation",
+        "nodes": [
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Ground_Painted_v001.png",
+            "size": [
+              1536,
+              1024
+            ]
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy)",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.009",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture.001",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Foreground_Ground.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy).001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.010",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy).002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeHueSaturation",
+            "name": "Hue/Saturation/Value",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeEmission",
+            "name": "Emission",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeBsdfTransparent",
+            "name": "Transparent BSDF",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixShader",
+            "name": "Mix Shader",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.011",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.012",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.013",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.014",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "Mix.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexNoise",
+            "name": "Noise Texture.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.015",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.016",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.017",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.018",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "Combine XYZ.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v039 restrained foreground value",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v039 actual firelight world position",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v039 local receiver radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.009",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.019",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.010",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.020",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v039 receiver strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v039 coherent fire beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.021",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.022",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v039 restrained local firelight | preserved ink",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.011",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.023",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.004",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v040 actual physical source position",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.007",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.008",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.009",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.012",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | School debris | fixed emitter receiver_radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.024",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.013",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.025",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | School debris | fixed emitter receiver_strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | School debris | fixed emitter fire_beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.026",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.027",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v040 localized source-connected warmth",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.005",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v040 actual physical source position.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.010",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.011",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.012",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.014",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.028",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.015",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.029",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.030",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.031",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v040 localized source-connected warmth.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeNewGeometry",
+            "name": "Geometry.006",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeCombineXYZ",
+            "name": "v040 actual physical source position.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.013",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.014",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeVectorMath",
+            "name": "Vector Math.015",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.016",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.032",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeRGBToBW",
+            "name": "RGB to BW.003",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.017",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.033",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValue",
+            "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.034",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.035",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMix",
+            "name": "v040 localized source-connected warmth.002",
+            "image": null,
+            "size": null
+          }
+        ]
+      }
+    ]
+  },
+  "v016 | Woods | near rooted oaks": {
+    "type": "MESH",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        43.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        6.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        4.440616607666016
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dimensions": [
+      23.026287078857422,
+      0.0,
+      12.94941520690918
+    ],
+    "hide": false,
+    "bbox": [
+      [
+        31.49394989013672,
+        54.520233154296875
+      ],
+      [
+        6.0,
+        6.0
+      ],
+      [
+        -2.0315723419189453,
+        10.917842864990234
+      ]
+    ],
+    "verts": 1421,
+    "mats": [
+      {
+        "name": "v016 | Woods | near rooted oaks paint",
+        "nodes": [
+          {
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeEmission",
+            "name": "Emission",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexCoord",
+            "name": "Texture Coordinate",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Woods_v001.png",
+            "size": [
+              1672,
+              941
+            ]
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeHueSaturation",
+            "name": "Hue/Saturation/Value",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy)",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixRGB",
+            "name": "Mix (Legacy).001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "FX opacity",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixShader",
+            "name": "Mix Shader",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeBsdfTransparent",
+            "name": "Transparent BSDF",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.002",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeTexCoord",
+            "name": "Texture Coordinate.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeSeparateXYZ",
+            "name": "Separate XYZ.001",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeValToRGB",
+            "name": "STATIC paint edge overlap | no time input",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMath",
+            "name": "Math.003",
+            "image": null,
+            "size": null
+          }
+        ]
+      }
+    ]
+  },
+  "v030 | High crown foreground oak 1": {
+    "type": "MESH",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        54.5
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -3.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.30000001192092896
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dimensions": [
+      5.33502197265625,
+      0.0,
+      8.0
+    ],
+    "hide": false,
+    "bbox": [
+      [
+        51.83333206176758,
+        57.16835403442383
+      ],
+      [
+        -3.0,
+        -3.0
+      ],
+      [
+        0.30000001192092896,
+        8.300000190734863
+      ]
+    ],
+    "verts": 1617,
+    "mats": [
+      {
+        "name": "v030 | Purpose-painted high crown oak",
+        "nodes": [
+          {
+            "type": "ShaderNodeTexImage",
+            "name": "Image Texture",
+            "image": "WTSC_LOCAL_WORKSPACE\\sets\\world_v030\\High_Crown_Oak.png",
+            "size": [
+              1024,
+              1536
+            ]
+          },
+          {
+            "type": "ShaderNodeHueSaturation",
+            "name": "Hue/Saturation/Value",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMapRange",
+            "name": "Map Range",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeEmission",
+            "name": "Emission",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeBsdfTransparent",
+            "name": "Transparent BSDF",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeMixShader",
+            "name": "Mix Shader",
+            "image": null,
+            "size": null
+          },
+          {
+            "type": "ShaderNodeOutputMaterial",
+            "name": "Material Output",
+            "image": null,
+            "size": null
+          }
+        ]
+      }
+    ]
+  },
+  "visible_plant_sets": [
+    {
+      "name": "v025 | Far woods continuation left",
+      "xyz": [
+        25.0,
+        18.014999389648438,
+        3.1099863052368164
+      ],
+      "dim": [
+        24.348468780517578,
+        0.0,
+        13.692727088928223
+      ]
+    },
+    {
+      "name": "v025 | Far woods continuation right",
+      "xyz": [
+        61.0,
+        18.014999389648438,
+        3.1099863052368164
+      ],
+      "dim": [
+        24.348468780517578,
+        0.0,
+        13.692727088928223
+      ]
+    },
+    {
+      "name": "v023 | Opening oak roots fence and path | one coherent surface",
+      "xyz": [
+        0.0,
+        2.0,
+        3.0
+      ],
+      "dim": [
+        12.999795913696289,
+        7.3021240234375,
+        0.0
+      ]
+    },
+    {
+      "name": "v016 | Woods | far silver canopy",
+      "xyz": [
+        43.0,
+        18.0,
+        3.1099863052368164
+      ],
+      "dim": [
+        24.348468780517578,
+        0.0,
+        13.692727088928223
+      ]
+    },
+    {
+      "name": "v016 | Woods | near rooted oaks",
+      "xyz": [
+        43.0,
+        6.0,
+        4.440616607666016
+      ],
+      "dim": [
+        23.026287078857422,
+        0.0,
+        12.94941520690918
+      ]
+    },
+    {
+      "name": "v020 | Foreground bank | continuous blended paint",
+      "xyz": [
+        0.0,
+        -4.989999771118164,
+        0.0
+      ],
+      "dim": [
+        244.0,
+        0.0,
+        31.25
+      ]
+    },
+    {
+      "name": "v030 | High crown foreground oak 0",
+      "xyz": [
+        34.0,
+        -4.0,
+        0.30000001192092896
+      ],
+      "dim": [
+        5.387270927429199,
+        0.0,
+        8.0
+      ]
+    },
+    {
+      "name": "v030 | High crown foreground oak 1",
+      "xyz": [
+        54.5,
+        -3.0,
+        0.30000001192092896
+      ],
+      "dim": [
+        5.33502197265625,
+        0.0,
+        8.0
+      ]
+    },
+    {
+      "name": "v030 | High crown foreground oak 2",
+      "xyz": [
+        76.5,
+        -4.0,
+        0.30000001192092896
+      ],
+      "dim": [
+        5.37989616394043,
+        0.0,
+        8.0
+      ]
+    },
+    {
+      "name": "v030 | High crown foreground oak 3",
+      "xyz": [
+        99.0,
+        -3.0,
+        0.30000001192092896
+      ],
+      "dim": [
+        5.379786491394043,
+        0.0,
+        8.0
+      ]
+    },
+    {
+      "name": "v016 | Slow ground mist 0",
+      "xyz": [
+        33.84013366699219,
+        16.0,
+        1.399999976158142
+      ],
+      "dim": [
+        24.0,
+        0.0,
+        2.0999999046325684
+      ]
+    },
+    {
+      "name": "v016 | Slow ground mist 1",
+      "xyz": [
+        48.24384307861328,
+        8.0,
+        1.0
+      ],
+      "dim": [
+        18.0,
+        0.0,
+        1.100000023841858
+      ]
+    },
+    {
+      "name": "v016 | Slow ground mist 2",
+      "xyz": [
+        78.09024047851562,
+        16.0,
+        1.100000023841858
+      ],
+      "dim": [
+        23.0,
+        0.0,
+        1.5
+      ]
+    },
+    {
+      "name": "v016 | Slow ground mist 3",
+      "xyz": [
+        113.84999084472656,
+        18.0,
+        0.800000011920929
+      ],
+      "dim": [
+        30.0,
+        0.0,
+        2.200000047683716
+      ]
+    },
+    {
+      "name": "v016 | Slow ground mist 4",
+      "xyz": [
+        157.51321411132812,
+        19.0,
+        1.100000023841858
+      ],
+      "dim": [
+        35.0,
+        0.0,
+        2.5999999046325684
+      ]
+    },
+    {
+      "name": "v016 | WHEN THE SKY CLEARS | monumental lettering",
+      "xyz": [
+        66.0,
+        2.4000000953674316,
+        0.15000000596046448
+      ],
+      "dim": [
+        31.999998092651367,
+        3.6000001430511475,
+        0.5299999713897705
+      ]
+    },
+    {
+      "name": "v048 | peaceful fixed foreground soil bank",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dim": [
+        5.834159851074219,
+        0.0,
+        0.7871347069740295
+      ]
+    },
+    {
+      "name": "v048 | transition fixed foreground soil bank",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dim": [
+        5.834163665771484,
+        0.0,
+        0.7870115637779236
+      ]
+    },
+    {
+      "name": "v048 | war_zone fixed foreground soil bank",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dim": [
+        5.834159851074219,
+        0.0,
+        0.7888780236244202
+      ]
+    }
+  ],
+  "scene": {
+    "engine": "BLENDER_EEVEE",
+    "world": "v012 | black outside plate",
+    "color": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "nodes": [
+      [
+        "Render Layers",
+        "CompositorNodeRLayers"
+      ],
+      [
+        "Group Output",
+        "NodeGroupOutput"
+      ],
+      [
+        "Exposure",
+        "CompositorNodeExposure"
+      ]
+    ]
+  }
+}

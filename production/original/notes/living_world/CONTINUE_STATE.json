@@ -1,0 +1,70 @@
+{
+  "stage": "Technical delivery complete; world and atmosphere artistic review pending",
+  "source": "shots/world/WTSC_Living_World_v010.blend",
+  "editable_source": "shots/world/WTSC_Living_World_Editable_v011.blend",
+  "editable_source_sha256": "13ab34cf37953f6fa8ce12ce3a70c7202547b7f144770399e5d3bd7f5ac409e4",
+  "editable_source_status": "40 asset roots, 27 curve objects, same 80904 visible mesh vertices and 46247 polygons as v010. Native reopen and motion/image/audio checks passed. World coordinates/UV/color/keys preserved. Per-object leaf sorting can differ; inspect v011 still after render completes before GUI delivery.",
+  "source_sha256": "dedb85194afa2776e5bd0ca8bcbdd16f45e34ad47095a06dd2e03ba10adc6560",
+  "movie": "renders/living_world/WTSC_Living_World_4K_v010.mp4",
+  "supervisor_exec_session": 93119,
+  "workers": [
+    {
+      "pid": 48440,
+      "frames": [
+        1,
+        600
+      ]
+    },
+    {
+      "pid": 25616,
+      "frames": [
+        601,
+        1200
+      ]
+    },
+    {
+      "pid": 15400,
+      "frames": [
+        1201,
+        1800
+      ]
+    },
+    {
+      "pid": 28156,
+      "frames": [
+        1801,
+        2400
+      ]
+    }
+  ],
+  "dcc": {
+    "pid": 39896,
+    "instance": "dda6f921-e18c-49ca-98c6-23dc0ee2dbd2",
+    "prefix": "blender.dda6f921.",
+    "port": 50271,
+    "route": "CLI --gateway local --transport mcp"
+  },
+  "existing_gui": {
+    "pid": 38908,
+    "file": "WTSC_World_First_v006.blend",
+    "instruction": "Preserve; do not overwrite or close user work. New final source can open in a separate --factory-startup GUI after render finishes."
+  },
+  "completed": [
+    "Read full handoff and user scope; preserved source/v006 and rejected gait experiments.",
+    "Three new GPT imagegen surface paint assets copied into sets/surface_paint, exact prompts saved.",
+    "50 mesh groups created through typed native mesh interface; 12 detail meshes; 4 tapered native curve tree groups and wire curve.",
+    "Animated native branches/canopy/grass/anchored cloth/water/volumetric smoke/chimney/birds/papers/sky/light; held native GP pair preserved.",
+    "Fresh v010 reopen verified packed 16 images and source audio, correct UHD24fps100s settings, changing ambience and position-only held pair.",
+    "Reviewed native 4K v009 frames and final geometry/material test. Foliage DITHERED optimization not adopted; final v010 retains tested BLENDED material.",
+    "Authoring helper reopened v010 after test to free GPU cache. Disk source is immutable during render."
+  ],
+  "remaining": [
+    "No further render or export work remains. Character gait/acting is deferred; user review of this environment iteration comes first."
+  ],
+  "important": "This is the environment-first stage following prior explicit user direction. Latest user approved concept and authorized modeled/painted 3D sets to bring world to life. No new procedural child gait. No subagents or automations. No new app/package installs. Do not update global memory.",
+  "memory_citation": "Relevant MEMORY.md lines18 and80 were read for painterly material breakup and environment-first preference; include required memory citation at very end. All current technical facts were verified live.",
+  "supervisor_completed": true,
+  "editable_gui_pid": 12316,
+  "verification": "notes/living_world/movie_verification_v010.json",
+  "editable_transform_verification": "notes/living_world/asset_transform_verification_v011.json"
+}

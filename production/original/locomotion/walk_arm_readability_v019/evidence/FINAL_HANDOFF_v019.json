@@ -1,0 +1,69 @@
+{
+  "checkpoint": "v019",
+  "scope": "Bounded wrists/order diagnostic on frozen rejected v018 gait",
+  "artistic_status": "REJECTED; latest user rating of v018 was2/10. V019 is an occlusion diagnostic, not an accepted walk.",
+  "local_result": "Near hand now separates from the coat at all integer frames10..16 in the critical-frame crop board. The change is visible at original shot framing. Far arm ordering is deliberate; its rear hand still legitimately occludes behind the coat.",
+  "whole_walk_conclusion": "The current asset can produce a technically controlled profile walk and clearer hand silhouettes. As currently posed/deformed it cannot deliver the required natural, appealing finished performance. Further arm polishing or tighter contact tolerances will not address the dominant visible failures.",
+  "regression": {
+    "sample_count": 193,
+    "purpose": "Bounded regression only; do not infer visual quality from this result.",
+    "all_native_chains_reachable": true,
+    "max_IK_endpoint_error_m": 2.9232728726882278e-05,
+    "frozen_body_lower_bone_matrix_max_delta": 0.0,
+    "frozen_boot_vertices_max_delta_m": 0.0,
+    "frozen_travel_matrix_max_delta": 0.0,
+    "non_wrist_action_channels_identical": true,
+    "status": "PASS",
+    "artistic_status": "REJECTED OVERALL WALK; bounded arm diagnostic only"
+  },
+  "preview": {
+    "movie": "WTSC_LOCAL_WORKSPACE\\locomotion\\walk_arm_readability_v019\\previews\\WTSC_v019_Arm_Comparison_Whole_Body_and_Shot_Size_2s.mp4",
+    "bytes": 512658,
+    "sha256": "020f925b063a3a2a7080b7505fd3b8cddce7a91e0fd36b79e4e8257cf01953a8",
+    "fps": 24,
+    "frames": 48,
+    "duration_seconds": 2,
+    "dimensions": [
+      1920,
+      1160
+    ],
+    "decoded_review_frames": [
+      1,
+      7,
+      8,
+      10,
+      13,
+      16,
+      19,
+      20,
+      22,
+      25,
+      37,
+      48
+    ],
+    "observation_limit": "Decoded samples and crop boards only; no normal-speed playback observation claimed. Cadence judgement remains provisional.",
+    "screen_loop": "Two translating cycles; replay resets world travel and numbered markers."
+  },
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\walk_arm_readability_v019\\native\\WTSC_Boy_Arm_Readability_v019.blend",
+  "report": "WTSC_LOCAL_WORKSPACE\\locomotion\\walk_arm_readability_v019\\V019_WHOLE_WALK_DIAGNOSIS.txt",
+  "guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\walk_arm_readability_v019\\V019_IMPORT_AND_CHANGE_GUIDE.txt",
+  "source_unchanged": true,
+  "library_files": [
+    {
+      "file_name": "WTSC_v019_Arm_Comparison_Whole_Body_and_Shot_Size_2s.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "current_version_number": 0,
+      "file_size_bytes": 512658
+    },
+    {
+      "file_name": "WTSC_v019_Arm_Window_Before_After.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "current_version_number": 0,
+      "file_size_bytes": 251216
+    }
+  ],
+  "stop_for_independent_review": true,
+  "blockers": "No execution blocker. Whole-walk artistic quality is rejected; independent normal-speed review remains necessary. Local metadata xattrs unavailable on Windows; Library preview saves succeeded."
+}

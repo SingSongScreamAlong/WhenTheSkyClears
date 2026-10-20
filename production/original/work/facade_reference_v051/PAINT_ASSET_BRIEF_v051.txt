@@ -1,0 +1,44 @@
+WHEN THE SKY CLEARS / REGISTERED SCHOOL FACADE PAINT REQUEST
+
+Inputs: the unmodified School_v001 source image provides style and architectural
+context. The separate84x163 native crop is the exact required material region.
+The labeled context board is an instruction reference only; its labels and
+inspection enlargement must not appear in the new artwork.
+
+SOURCE REGISTRATION
+Original source canvas:1672x941, top-left pixel origin.
+Half-open target box: x[1004,1088),y[475,638). Native size84x163.
+Existing Paint UV bounds: u[0.6004784689,0.6507177033],
+v[0.3219978746,0.4952178533]. Image top maps to sourcey475.
+The selected plaster panel lies between the broken window and porch; do not
+move, widen or redesign the window, door, porch, roof or structural edges.
+
+REQUESTED ASSET
+Independently repaint this exact region as a2048x3974 lossless PNG, same aspect
+and orientation. Match the existing restrained painterly rendering, irregular
+masonry, chipped lime plaster, existing small impact damage and coarse wear
+placement. Preserve the diagonal porch shadow, broad light direction and
+border values. Paint irregular stone light planes, recessed mortar, chipped
+plaster lips and material-specific brush marks that remain coherent at native
+4K. Do not sharpen or enlarge the source, add generic noise, or produce flat
+regular stone cells. Do not include words, arrows, borders or crop marks.
+
+JOINS
+Preserve a matching border equivalent to6source pixels inside each edge
+(about146target pixels). The interior must provide newly authored painted
+detail. The existing source image remains the registration guide; the proposed
+child color progression is on hold and must not be integrated or redesigned.
+
+ACCEPTANCE
+This patch projects to about453x880 pixels in the unchanged3840x2160 camera.
+Judge a native-pixel crop and fullframe1225,then adjacent1201and1249 if improved.
+The children retain visual priority. A sharper but stylistically separate patch
+fails. Keep the existing source and production files; integrate only into a
+separate diagnostic branch after the returned artwork passes visual review.
+
+AVAILABLE ROUTES / LIMIT
+The private Library references permit a reference-guided image workflow outside
+this worker's broken local path route. That local route previously failed with
+AbsolutePathBuf deserialized without a base path; it was not retried here.
+Native procedural pigment rendering was tried once in v050 and rejected for
+visual incoherence. No such procedural patch is supplied as an art reference.

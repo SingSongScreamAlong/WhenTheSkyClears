@@ -1,0 +1,40 @@
+{
+  "status": "Actual PNG comparisons ready for visual inspection, no artistic acceptance inferred.",
+  "probe_only": true,
+  "frames": [
+    1849,
+    1901
+  ],
+  "comparisons": [
+    {
+      "frame": 1849,
+      "seconds": 77.0,
+      "actual_art_png": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\Probe_Art_v045b_1849_4K.png",
+      "art_png_sha256": "e10457c59630aa705723ba86e6a785a50ac7be6c3b004960b0abe2d809e38656",
+      "v044_actual_source_png": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\v044_actual_reference_pngs\\v044_1849_4K.png",
+      "color_comparison": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Matched_Color_1849_v044_vs_v045b.jpg",
+      "grayscale_comparison": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Matched_Grayscale_1849_v044_vs_v045b.jpg",
+      "native_bank_crop": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Bank_1849_Native_Pixels.jpg"
+    },
+    {
+      "frame": 1901,
+      "seconds": 79.16666666666667,
+      "actual_art_png": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\Probe_Art_v045b_1901_4K.png",
+      "art_png_sha256": "5a40fbd5629bc326b5589627f7dc6a5db878688038271a89262ecbb71450bd4b",
+      "v044_actual_source_png": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\v044_actual_reference_pngs\\v044_1901_4K.png",
+      "color_comparison": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Matched_Color_1901_v044_vs_v045b.jpg",
+      "grayscale_comparison": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Matched_Grayscale_1901_v044_vs_v045b.jpg",
+      "native_bank_crop": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Bank_1901_Native_Pixels.jpg"
+    }
+  ],
+  "color_thumbnail_sheet": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Thumbnail_Color_v044_vs_v045b.jpg",
+  "grayscale_thumbnail_sheet": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045b\\comparisons_probe\\Thumbnail_Grayscale_v044_vs_v045b.jpg",
+  "normal_panels": "Each1920x1080from actual3840x2160source, labels outsideart.",
+  "thumbnail_panels": [
+    320,
+    180
+  ],
+  "grayscale": "Review-only grayscale of actual pixels; native production art unchanged.",
+  "baseline": "Exact v044actual movie frames, zero-based index=globalframe-1801.",
+  "no_movie_rendered": true
+}

@@ -1,0 +1,553 @@
+00:00.625  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\reference\PRESERVED_WALK_v024.blend"
+{
+  "version": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "object_type": "GREASEPENCIL",
+  "data_rna": "GreasePencil",
+  "frame_rna": "GreasePencilFrame",
+  "drawing_rna": "GreasePencilDrawing",
+  "drawing_properties": [
+    {
+      "id": "rna_type",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "type",
+      "type": "ENUM",
+      "readonly": true
+    },
+    {
+      "id": "user_count",
+      "type": "INT",
+      "readonly": true
+    },
+    {
+      "id": "curve_offsets",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "attributes",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "color_attributes",
+      "type": "COLLECTION",
+      "readonly": true
+    }
+  ],
+  "stroke_properties": [
+    {
+      "id": "add_points",
+      "value": "<bound method GreasePencilStroke.add_points of <_bpy_internal.grease_pencil.stroke.GreasePencilStroke object at 0x000002086AFFFE80>>"
+    },
+    {
+      "id": "aspect_ratio",
+      "value": "1.0"
+    },
+    {
+      "id": "curve_type",
+      "value": "1"
+    },
+    {
+      "id": "cyclic",
+      "value": "False"
+    },
+    {
+      "id": "end_cap",
+      "value": "0"
+    },
+    {
+      "id": "fill_color",
+      "value": "(0.0, 0.0, 0.0, 0.0)"
+    },
+    {
+      "id": "fill_id",
+      "value": "0"
+    },
+    {
+      "id": "fill_opacity",
+      "value": "1.0"
+    },
+    {
+      "id": "hide_stroke",
+      "value": "False"
+    },
+    {
+      "id": "material_index",
+      "value": "0"
+    },
+    {
+      "id": "points",
+      "value": "<_bpy_internal.grease_pencil.stroke.GreasePencilStrokePointSlice object at 0x000002086B0F3D30>"
+    },
+    {
+      "id": "remove_points",
+      "value": "<bound method GreasePencilStroke.remove_points of <_bpy_internal.grease_pencil.stroke.GreasePencilStroke object at 0x000002086AFFFE80>>"
+    },
+    {
+      "id": "select",
+      "value": "True"
+    },
+    {
+      "id": "softness",
+      "value": "0.0"
+    },
+    {
+      "id": "start_cap",
+      "value": "0"
+    },
+    {
+      "id": "time_start",
+      "value": "0.0"
+    }
+  ],
+  "point_properties": [
+    {
+      "id": "delta_time",
+      "value": "0.0"
+    },
+    {
+      "id": "handle_left",
+      "value": "None"
+    },
+    {
+      "id": "handle_right",
+      "value": "None"
+    },
+    {
+      "id": "opacity",
+      "value": "1.0"
+    },
+    {
+      "id": "position",
+      "value": "<Vector (0.0000, 0.0000, 0.0000)>"
+    },
+    {
+      "id": "radius",
+      "value": "0.01"
+    },
+    {
+      "id": "rotation",
+      "value": "0.0"
+    },
+    {
+      "id": "select",
+      "value": "True"
+    },
+    {
+      "id": "vertex_color",
+      "value": "(0.0, 0.0, 0.0, 0.0)"
+    }
+  ],
+  "layer_properties": [
+    {
+      "id": "rna_type",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "name",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "hide",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "lock",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "select",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "use_onion_skinning",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "use_masks",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "channel_color",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "next_node",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "prev_node",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "parent_group",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "frames",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "mask_layers",
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    {
+      "id": "lock_frame",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "opacity",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "tint_color",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "tint_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "radius_offset",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "use_lights",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "pass_index",
+      "type": "INT",
+      "readonly": false
+    },
+    {
+      "id": "parent",
+      "type": "POINTER",
+      "readonly": false
+    },
+    {
+      "id": "parent_bone",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "translation",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "rotation",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "scale",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "viewlayer_render",
+      "type": "STRING",
+      "readonly": false
+    },
+    {
+      "id": "use_viewlayer_masks",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "blend_mode",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "ignore_locked_materials",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "matrix_local",
+      "type": "FLOAT",
+      "readonly": true
+    },
+    {
+      "id": "matrix_parent_inverse",
+      "type": "FLOAT",
+      "readonly": true
+    }
+  ],
+  "material_properties": [
+    {
+      "id": "rna_type",
+      "type": "POINTER",
+      "readonly": true
+    },
+    {
+      "id": "color",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "fill_color",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "mix_color",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "mix_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "mix_stroke_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "texture_angle",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "texture_scale",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "texture_offset",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "pixel_size",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "hide",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "lock",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "ghost",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "texture_clamp",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "flip",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "use_overlap_strokes",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "use_stroke_holdout",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "use_fill_holdout",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "show_stroke",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "show_fill",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "alignment_mode",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "alignment_rotation",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "placement_mode",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "placement_count",
+      "type": "INT",
+      "readonly": false
+    },
+    {
+      "id": "placement_radius_spacing",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "placement_density",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "use_randomization",
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    {
+      "id": "random_size_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "random_strength_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "random_rotation_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "random_hue_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "random_saturation_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "random_value_factor",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "random_noise_scale",
+      "type": "FLOAT",
+      "readonly": false
+    },
+    {
+      "id": "pass_index",
+      "type": "INT",
+      "readonly": false
+    },
+    {
+      "id": "mode",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "stroke_style",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "stroke_image",
+      "type": "POINTER",
+      "readonly": false
+    },
+    {
+      "id": "fill_style",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "gradient_type",
+      "type": "ENUM",
+      "readonly": false
+    },
+    {
+      "id": "fill_image",
+      "type": "POINTER",
+      "readonly": false
+    },
+    {
+      "id": "is_stroke_visible",
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    {
+      "id": "is_fill_visible",
+      "type": "BOOLEAN",
+      "readonly": true
+    }
+  ],
+  "has_object_modifiers": true,
+  "grease_pencil_operators": [
+    "brush_stroke",
+    "interpolate",
+    "interpolate_sequence",
+    "material_copy_to_object",
+    "material_hide",
+    "material_isolate",
+    "material_lock_all",
+    "material_lock_unselected",
+    "material_lock_unused",
+    "material_reveal",
+    "material_select",
+    "material_unlock_all",
+    "select_by_stroke_type",
+    "set_active_material",
+    "set_material",
+    "set_stroke_type",
+    "stroke_material_set",
+    "stroke_merge_by_distance",
+    "stroke_reset_vertex_color",
+    "stroke_simplify",
+    "stroke_smooth",
+    "stroke_split",
+    "stroke_subdivide",
+    "stroke_subdivide_smooth",
+    "stroke_switch_direction",
+    "stroke_trim",
+    "vertex_brush_stroke",
+    "weight_brush_stroke"
+  ]
+}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

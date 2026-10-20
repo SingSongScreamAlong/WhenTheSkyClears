@@ -1,0 +1,142 @@
+{
+  "status": "Useful isolated motion proof; not approved final animation or production integration.",
+  "folder": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009\\native\\WTSC_Recovery_Walk_v009.blend",
+    "bytes": 4515361,
+    "sha256": "d6c2c56f9f10a66095ea8ffdd2b4475b811e0c3bec0be363165bf2575fe1b6ac",
+    "collection": "WTSC_RECOVERY_WALK_PAIR_v009",
+    "root_property": "motion_revision == v009_recovery_walk",
+    "version": "Blender5.2.2LTS buildd13f752e3b9c"
+  },
+  "guide": "IMPORT_TIMING_GUIDE_v009.txt",
+  "preview_files": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009\\WTSC_v009_Neutral_Recovery_Walk_5s.mp4",
+      "bytes": 642203,
+      "sha256": "683d7a15d0346b9ccc4af023d21f1b1f22c623fc0ab824275504ab0d1b81b9cd",
+      "decoded_frames": 120,
+      "fps": 24.0,
+      "size": [
+        960,
+        540
+      ],
+      "duration": 5.0
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009\\WTSC_v009_Matched_Recovery_Walk_75_80.mp4",
+      "bytes": 943564,
+      "sha256": "8a594cc7700a5a347c25cf88187c70d165aa790db0fd5fabf5556d95f7400552",
+      "decoded_frames": 120,
+      "fps": 24.0,
+      "size": [
+        960,
+        540
+      ],
+      "duration": 5.0
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009\\WTSC_v046_vs_v009_Matched_Comparison_5s.mp4",
+      "bytes": 1571027,
+      "sha256": "85398b98f48a0c706e7b37e79b33834bae3bc0953e4e41b6d88006dbe8ce5bb6",
+      "decoded_frames": 120,
+      "fps": 24.0,
+      "size": [
+        1920,
+        540
+      ],
+      "duration": 5.0
+    }
+  ],
+  "private_library": {
+    "operation": "replace_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v009_Matched_Recovery_Walk_75_80.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v009_Matched_Recovery_Walk_75_80.mp4",
+    "current_version_number": 1,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "1"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 943564,
+    "external_connectors_accessed": false
+  },
+  "contract": {
+    "source_frames": [
+      1,
+      120
+    ],
+    "global_frames": [
+      1801,
+      1920
+    ],
+    "boundary_global": 1921,
+    "fps": 24,
+    "total_travel_m": 0.8616666674613953,
+    "extra_vs_v046_m": 0.3,
+    "route": "evidence/travel_curve_v009.csv",
+    "root_motion": "Configure exactly once using embedded configure_v009.py. World/camera contracts are in guide.",
+    "traveling_camera": "original v046 world matrix + worldX delta D009-D007",
+    "anchor_xyz": [
+      107.6339569,
+      0,
+      0.7200737
+    ],
+    "pair_gap_m": 0.8,
+    "girl_first_landing_global": 1902,
+    "boy_first_landing_global": 1916,
+    "end_velocity_mps": 0.288
+  },
+  "technical_validation": {
+    "cold_reopen": true,
+    "fresh_empty_scene_append": true,
+    "retiming_error_m": 2.9087066644173376e-08,
+    "max_flat_stance_drift_m": 2.384185791015625e-07,
+    "floor_min_m": -0.0005100592970848083,
+    "decoded_frames": 120,
+    "protected_inputs": {
+      "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+      "renders/world_v016/integration_v046/WTSC_Supported_Recovery_v046_1080p_75_80.mp4": true,
+      "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend": true,
+      "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend": true,
+      "locomotion/head_turn_patch_v008/evidence/STATUS_REFERENCE_REQUIRED.json": true
+    },
+    "art_preservation": "Body/head rest mesh, skeleton, UV errors0; all120 original girl-profile exposure verified."
+  },
+  "artistic_assessment": {
+    "status": "Useful isolated motion proof; not approved final animation or production integration.",
+    "reviewed": "Actual neutral and matched rendered shot-size contact sheets, dense transition poses, decoded120frame preview streams; technical checks separately recorded. No claim of human artistic approval.",
+    "gains": [
+      "Authored recovery-to-step rather than long final hold",
+      "Girl leads with earlier0.30m step; boy transfers then takes0.32m step later",
+      "Original profile, hair and braid retained continuously through1844/1845; no passing disc or rejected v008 redesign",
+      "Softer late elbow lines and downward released arms; explicit0.30m extra travel and camera match",
+      "Four world soft contacts re-baked to actual new soles, no stale old foot trajectory"
+    ],
+    "limits": [
+      "Early stumble/catch retained and still constructed",
+      "Planar shoulders/wrists and first steps remain stylized; not a fluid finished walk cycle",
+      "No literal back glance; intact right-profile nod trades gaze range for coherent design",
+      "Light fingertip steadying cue only; no load-bearing clasp",
+      "Girl second foot is airborne at end; following motion must be authored and match0.288m/s travel; no final-stop acceptance"
+    ]
+  },
+  "remaining_blockers": [
+    {
+      "action": "Persist local Library identity extended attributes",
+      "target": "WTSC_LOCAL_WORKSPACE\\locomotion\\recovery_walk_refinement_v009\\WTSC_v009_Matched_Recovery_Walk_75_80.mp4",
+      "reason": "Windows Python has no os.setxattr; official metadata helper failed. Preview upload/replacement succeeded.",
+      "state": "failed unsupported local metadata operation, not an approval denial; no uncertain upload or duplicate write",
+      "completed": "Private Library preview saved; exact identity/version receipt retained locally."
+    }
+  ],
+  "production_state": "No production files or specialist sources written; final SHA256 preservation checked. No installs/purchases/external sharing/full trailer render."
+}

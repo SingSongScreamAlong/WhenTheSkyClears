@@ -1,0 +1,53 @@
+{
+  "functions": {
+    "new": [
+      {
+        "name": "frame_number",
+        "type": "INT"
+      },
+      {
+        "name": "frame",
+        "type": "POINTER"
+      }
+    ],
+    "remove": [
+      {
+        "name": "frame_number",
+        "type": "INT"
+      }
+    ],
+    "copy": [
+      {
+        "name": "from_frame_number",
+        "type": "INT"
+      },
+      {
+        "name": "to_frame_number",
+        "type": "INT"
+      },
+      {
+        "name": "instance_drawing",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "copy",
+        "type": "POINTER"
+      }
+    ],
+    "move": [
+      {
+        "name": "from_frame_number",
+        "type": "INT"
+      },
+      {
+        "name": "to_frame_number",
+        "type": "INT"
+      },
+      {
+        "name": "moved",
+        "type": "POINTER"
+      }
+    ]
+  },
+  "copy_doc": "GreasePencilFrames.copy(from_frame_number, to_frame_number, instance_drawing=False)\nCopy a Grease Pencil frame"
+}

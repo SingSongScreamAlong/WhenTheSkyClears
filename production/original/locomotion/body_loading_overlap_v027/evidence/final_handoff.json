@@ -1,0 +1,167 @@
+{
+  "status": "FOCUSED_LOADING_COMPARISON_DELIVERED_ART_REVIEW_OPEN",
+  "baseline_human_assessment": "v026 directional improvement, about3/10; preserved, not approved final",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\body_loading_overlap_v027\\native\\WTSC_Body_Loading_Overlap_v027.blend",
+  "native_bytes": 2501640,
+  "native_sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+  "private_preview": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v027_vs_v026_Loading_Comparison_27p9s.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v027_vs_v026_Loading_Comparison_27p9s.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 5937097,
+    "external_connectors_accessed": false
+  },
+  "preview": {
+    "filename": "WTSC_v027_vs_v026_Loading_Comparison_27p9s.mp4",
+    "bytes": 5937097,
+    "sha256": "10a801f14807166bf8400a971579a0938062019cd79bc3a37c3df9c34f8485e0",
+    "frames_decoded": 837,
+    "fps": 30.0,
+    "duration_seconds": 27.9,
+    "dimensions": [
+      1280,
+      800
+    ],
+    "candidate_only_segments": [
+      {
+        "filename": "WTSC_v027_CLOSE_9p3s_Normal_Speed.mp4",
+        "frames": 279,
+        "seconds": 9.3,
+        "bytes": 2208108
+      },
+      {
+        "filename": "WTSC_v027_SHOT_9p3s_Normal_Speed.mp4",
+        "frames": 279,
+        "seconds": 9.3,
+        "bytes": 793468
+      }
+    ],
+    "comparison_segments": [
+      {
+        "start_seconds": 0,
+        "seconds": 9.3,
+        "view": "matched close, baseline left / v027 right"
+      },
+      {
+        "start_seconds": 9.3,
+        "seconds": 9.3,
+        "view": "baseline shot framing"
+      },
+      {
+        "start_seconds": 18.6,
+        "seconds": 9.3,
+        "view": "v027 shot framing"
+      }
+    ],
+    "cycles_per_segment": 9,
+    "native_period_frames": 31,
+    "duplicate_boundary_frames": false,
+    "retiming_or_generated_inbetweens": false,
+    "blue_fill_artifact_frames": [],
+    "continuous_playback_observed": false,
+    "visual_review_status": "Inspected actual encoded first-cycle comparison, full-size matched F4/F20, late joins F30/31/32 through F278/279 and matched shot-frame board. No new blue fill, head/hair damage or abrupt coat discontinuity seen in those frames. Frame inspection only; continuous playback remains unobserved."
+  },
+  "two_visible_causes": [
+    "Upper body stays columnar while centered hip resets backward late in the cycle",
+    "Coat flare/tuck keyed by phase rather than responding to trunk loading"
+  ],
+  "coherent_changes": [
+    "Authored smooth asymmetric hip X spacing and compressed rise/recovery, without changing sole goals or root",
+    "Forward trunk loading and delayed upper mass; original gaze orientation retained",
+    "Painted trouser centerlines refitted with fixed cuffs and UVs",
+    "Passive damped coat hem driven by trunk, retaining a single accepted design template"
+  ],
+  "spacing_example_F25p25_to_F27p25": {
+    "v026_centered_hip_delta_m": -0.036658985930251575,
+    "v027_centered_hip_delta_m": -0.0052980112364620635
+  },
+  "technical_only": {
+    "sample_count": 125,
+    "late_contact_checks": 9,
+    "max_actual_boot_change_m": 0.0,
+    "max_world_sole_goal_matrix_change": 0.0,
+    "max_final_cuff_row_change_m": 0.0,
+    "unreachable_samples": 0,
+    "head_mesh_unchanged": true,
+    "pelvis_low_frames": [
+      3.75,
+      19.75
+    ],
+    "upper_mass_low_frames": [
+      4.75,
+      20.75
+    ]
+  },
+  "actual_continuous_playback_observed": false,
+  "visual_review": "Inspected actual encoded first-cycle comparison, full-size matched F4/F20, late joins F30/31/32 through F278/279 and matched shot-frame board. No new blue fill, head/hair damage or abrupt coat discontinuity seen in those frames. Frame inspection only; continuous playback remains unobserved.",
+  "artistic_assessment": "Clearer load/recovery separation and more consistent coat design are visible in matched poses. Naturalness/cadence over time is unapproved; repeated forward settle may still read as a nod. Requires Conrad playback feedback.",
+  "remaining_art": [
+    "Same footfall schedule; this is changed body spacing, not a new temporal cadence.",
+    "Arm timing retained; shoulders/wrists may still require a focused pass.",
+    "Passive hem is simplified; no cloth/thigh collision simulation or individual collision drawings.",
+    "Painted surface/fold finish deferred until motion is accepted.",
+    "Paired fatigue/support, girl intention and recovery restart in the75-80second shot remain unfinished."
+  ],
+  "head_choice": "Preserve original painted profile and sagittal gaze orientation; translate through neck attachment, no turnaround or v008 patch.",
+  "integration_contract": {
+    "period_frames": 31,
+    "fps": 30,
+    "stride_m": 0.9524437384576381,
+    "root": "D=.9524437384576381*(F-1)/31 metres +X; native unwrapped travel",
+    "footfall_timing_changed": false,
+    "root_or_sole_trajectory_changed": false,
+    "near_contact_frame": 1,
+    "far_contact_frame": 17,
+    "not_complete_paired_recovery_scene": true
+  },
+  "timing_guide": "V027_VIEWING_AND_IMPORT_GUIDE.txt",
+  "travel_curve": "V027_TRAVEL_AND_SUPPORT_QUARTER_FRAMES.csv",
+  "preservation": {
+    "v046": {
+      "path": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v026_preserved_baseline": {
+      "original_sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+      "copy_sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+      "unchanged": true
+    }
+  },
+  "render_coordination": "World specialist explicitly released slot before558smallframes/threads2,174.5s. Blender exited and slot released immediately. No additional character render active/planned.",
+  "initial_proof_correction": "Copied GP fill_color was an invalid view after source drawings were removed. Converted it to an owned tuple, rebuilt from immutable baseline, re-rendered/reviewed all32proof frames. Initial bad proof retained outside package.",
+  "no_production_integration": true,
+  "blockers": [
+    {
+      "action": "Observe continuous normal-speed playback for artistic acceptance",
+      "target": "WTSC_v027_vs_v026_Loading_Comparison_27p9s.mp4",
+      "reason": "No observable running player is exposed through the available task tools. All837frames decoded and selected actual encoded frames/boards inspected.",
+      "status": "PENDING_HUMAN_VIEWING_FEEDBACK",
+      "denied": false
+    }
+  ]
+}

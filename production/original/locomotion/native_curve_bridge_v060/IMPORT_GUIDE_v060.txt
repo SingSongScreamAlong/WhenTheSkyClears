@@ -1,0 +1,45 @@
+WHEN THE SKY CLEARS | ISOLATED NATIVE CURVE AUTHORING PROOF | 2026-10-19
+
+Purpose
+This project-owned Blender operator can author one editable Grease Pencil
+stroke from a supplied list of 3D positions. It is an app-native data route,
+not a mouse/pen gesture and not an upgrade to DCC-CUA pointer delivery.
+The two arcs are diagnostic shapes, not character artwork or animation.
+
+Files
+- scripts/native_curve_author.py: temporary operator, not installed.
+- scripts/test_native_curve_author_gui.py: GUI Undo/repeat/save proof.
+- native/GP_Native_Curve_Seed_v060.blend: untouched blank starting point.
+- native/GP_Native_Curve_Proof_v060.blend: editable result.
+- previews/GP_Native_Curve_Proof_v060.png: exact-window screenshot, 343 KB.
+- evidence/NATIVE_CURVE_GUI_TEST_v060.json: before/after Undo counts.
+- evidence/NATIVE_CURVE_COLD_REOPEN_v060.json: cold-open native readback.
+- evidence/PRIVATE_LIBRARY_UPLOAD_v060.json: private preview identity.
+
+Use in a separate Blender scene
+Register scripts/native_curve_author.py in the current Blender session, select
+a Grease Pencil object with an active layer, set the intended frame, then call
+bpy.ops.wtsc.add_native_curve(points_json=json.dumps([(x,y,z), ...]),
+                              base_radius=0.045).
+Each call adds exactly one stroke to that layer's current frame. The point
+coordinates are Blender object-local positions. They must be finite and each
+component must remain within +/-10000. The operator accepts 2-4096 positions.
+It does not create a bridge, daemon, credential, or persistent registration.
+For scripted Undo, push a Blender editor checkpoint after each call; the GUI
+proof used bpy.ops.ed.undo_push and bpy.ops.ed.undo to remove only the second
+stroke, then called the operator again. This path cold-reopened with point
+counts [9,7] and every position within 1e-5 of the specified input. The
+two strokes have a 4.99-unit endpoint gap, so no connecting stroke exists.
+
+Scope and artistic assessment
+The operator makes explicit hand-authored positions editable and repeatable.
+It does not sample a real pointer, pen pressure, stroke timing, or curved drag
+from DCC-CUA. The viewport shows simple test arcs with object-selection
+outlines. This proves a technical authoring path but does not improve the
+children's silhouettes, paint, head turn, walk, weight, or 4/10 look rating.
+Do not import these arcs into production. Author and assess actual character
+contours at shot size before using the route in animation.
+
+Rollback
+Close the Blender proof window and leave this v060 folder unused. No addon,
+provider, production file, trailer timing, audio, or title asset is changed.

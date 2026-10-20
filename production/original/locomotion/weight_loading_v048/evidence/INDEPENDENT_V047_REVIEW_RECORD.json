@@ -1,0 +1,219 @@
+{
+  "movies": [
+    {
+      "name": "WTSC_Steady_Walk_v047_NormalSpeed_8Cycles.mp4",
+      "sha256": "0837ab907f7f0563a8f1c8457ad358130cab9fb97ed301c171576ba914067195",
+      "decoded_frames": 257,
+      "resolution": [
+        1280,
+        800
+      ],
+      "decoder_exit": 0
+    },
+    {
+      "name": "WTSC_v046_vs_v047_Steady_Walk_NormalSpeed.mp4",
+      "sha256": "8b4b607cde60be1f0ca1d2bb43dada06f6d2ef475e6228e87d6f98e7336ee73e",
+      "decoded_frames": 257,
+      "resolution": [
+        1920,
+        640
+      ],
+      "decoder_exit": 0
+    }
+  ],
+  "boards": [
+    "V047_ACTUAL_SUPPORT_F10_17.jpg",
+    "V047_ACTUAL_SUPPORT_F26_33.jpg",
+    "V047_ACTUAL_LOOP_NEIGHBORHOODS.jpg"
+  ],
+  "saved_native_curve_reanalysis": {
+    "V046": {
+      "BOY": {
+        "hip_height_turns": [
+          {
+            "frame": 1.75,
+            "z_m": 0.7006259560585022,
+            "kind": "min"
+          },
+          {
+            "frame": 10.25,
+            "z_m": 0.7352084517478943,
+            "kind": "max"
+          },
+          {
+            "frame": 17.0,
+            "z_m": 0.7037595510482788,
+            "kind": "min"
+          },
+          {
+            "frame": 18.25,
+            "z_m": 0.7098909616470337,
+            "kind": "max"
+          },
+          {
+            "frame": 19.75,
+            "z_m": 0.706606924533844,
+            "kind": "min"
+          },
+          {
+            "frame": 27.0,
+            "z_m": 0.7380507588386536,
+            "kind": "max"
+          }
+        ],
+        "hip_height_range_m": 0.03742480278015137,
+        "hip_fore_aft_range_m": 0.04860001802444458,
+        "knees": {
+          "near": {
+            "min_flex_deg": 9.36125897361334,
+            "max_sampled_angular_rate": {
+              "ending_frame": 18.375,
+              "degrees_per_source_frame": 14.586933941260739
+            }
+          },
+          "far": {
+            "min_flex_deg": 9.383676500638568,
+            "max_sampled_angular_rate": {
+              "ending_frame": 6.625,
+              "degrees_per_source_frame": 10.321665173849738
+            }
+          }
+        }
+      },
+      "GIRL": {
+        "hip_height_turns": [
+          {
+            "frame": 6.75,
+            "z_m": 0.7292028665542603,
+            "kind": "max"
+          },
+          {
+            "frame": 13.5,
+            "z_m": 0.6967282891273499,
+            "kind": "min"
+          },
+          {
+            "frame": 15.0,
+            "z_m": 0.7032829523086548,
+            "kind": "max"
+          },
+          {
+            "frame": 16.25,
+            "z_m": 0.7005873918533325,
+            "kind": "min"
+          },
+          {
+            "frame": 23.5,
+            "z_m": 0.7320266962051392,
+            "kind": "max"
+          },
+          {
+            "frame": 29.5,
+            "z_m": 0.6939802169799805,
+            "kind": "min"
+          }
+        ],
+        "hip_height_range_m": 0.03804647922515869,
+        "hip_fore_aft_range_m": 0.04860001802444458,
+        "knees": {
+          "near": {
+            "min_flex_deg": 9.394263885945792,
+            "max_sampled_angular_rate": {
+              "ending_frame": 15.25,
+              "degrees_per_source_frame": 13.819633062996871
+            }
+          },
+          "far": {
+            "min_flex_deg": 9.414077556233806,
+            "max_sampled_angular_rate": {
+              "ending_frame": 3.25,
+              "degrees_per_source_frame": 10.629085917309169
+            }
+          }
+        }
+      }
+    },
+    "V047": {
+      "BOY": {
+        "hip_height_turns": [
+          {
+            "frame": 9.0,
+            "z_m": 0.7459999918937683,
+            "kind": "max"
+          },
+          {
+            "frame": 17.0,
+            "z_m": 0.7200000286102295,
+            "kind": "min"
+          },
+          {
+            "frame": 25.0,
+            "z_m": 0.7459999918937683,
+            "kind": "max"
+          }
+        ],
+        "hip_height_range_m": 0.02599996328353882,
+        "hip_fore_aft_range_m": 0.003000000026077032,
+        "knees": {
+          "near": {
+            "min_flex_deg": 6.857474311662265,
+            "max_sampled_angular_rate": {
+              "ending_frame": 20.0,
+              "degrees_per_source_frame": 12.005851034244387
+            }
+          },
+          "far": {
+            "min_flex_deg": 6.857474311662265,
+            "max_sampled_angular_rate": {
+              "ending_frame": 4.0,
+              "degrees_per_source_frame": 12.005851034244387
+            }
+          }
+        }
+      },
+      "GIRL": {
+        "hip_height_turns": [
+          {
+            "frame": 7.0,
+            "z_m": 0.7400000095367432,
+            "kind": "max"
+          },
+          {
+            "frame": 15.0,
+            "z_m": 0.7139999866485596,
+            "kind": "min"
+          },
+          {
+            "frame": 23.0,
+            "z_m": 0.7400000095367432,
+            "kind": "max"
+          },
+          {
+            "frame": 31.0,
+            "z_m": 0.7139999866485596,
+            "kind": "min"
+          }
+        ],
+        "hip_height_range_m": 0.026000022888183594,
+        "hip_fore_aft_range_m": 0.003000000026077032,
+        "knees": {
+          "near": {
+            "min_flex_deg": 6.219648088579923,
+            "max_sampled_angular_rate": {
+              "ending_frame": 17.875,
+              "degrees_per_source_frame": 12.79701753923436
+            }
+          },
+          "far": {
+            "min_flex_deg": 6.219648088579923,
+            "max_sampled_angular_rate": {
+              "ending_frame": 1.875,
+              "degrees_per_source_frame": 12.79701753923436
+            }
+          }
+        }
+      }
+    }
+  },
+  "scope": "Independent encoded movie decode and frame inspection; read-only reanalysis of existing native curve records. No continuous playback, new native evaluation, project changes or renders."
+}

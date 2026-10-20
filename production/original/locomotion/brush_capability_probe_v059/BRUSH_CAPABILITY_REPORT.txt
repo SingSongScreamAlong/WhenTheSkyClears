@@ -1,0 +1,110 @@
+WHEN THE SKY CLEARS | BRUSH INPUT CAPABILITY PROBE | 2026-10-19
+
+Outcome: A real, scoped Windows pointer drag created one Blender Grease Pencil
+brush stroke. Foreground Ctrl+Z removed it; a second drag recreated it;
+foreground Ctrl+S saved it. A cold reopen recovered one editable stroke with
+two points. This proves a STRAIGHT brush gesture, not freehand curved input,
+pressure, finished character art, or animation. The 120-frame B/C comparison
+remains paused.
+
+Host and route
+- Installed Blender executable: Blender 5.2.2 LTS (hash d13f752e3b9c).
+- No world/character render was active at test start; proof used two threads.
+- Direct Blender Python calls were used in a separate scratch scene.
+- The installed project DCC-CUA runtime is 1.9.4. Its executable is callable
+  by absolute path; the registered dccCuaTaskAutomation MCP server initialized
+  and bound the isolated Blender scratch at PID 2348 / HWND 2756748. The
+  unscoped direct drag failed input_failed; a five-minute scoped task could
+  snapshot and deliver input. No installation or permission change was made.
+- Adobe Animate 24.0.15.5 can store manually specified vector paths, but its
+  documented UI drag remained unsuccessful in prior readbacks. Its drag API
+  exposes endpoints, not hold duration or a sampled path. Animate is not a
+  stronger proven freehand route at present.
+
+Blender brush operator diagnosis
+- The actual 5.2 operator is grease_pencil.brush_stroke, not draw.
+- Its input sample type exposes mouse, mouse_event, pressure, size, tilt,
+  time and is_start fields.
+- In a scratch Grease Pencil object, Paint mode, Pencil brush, and an exact
+  VIEW_3D/WINDOW context, operator poll became true. Thus the simple wrong
+  mode/area/brush explanation was ruled out for these tests.
+- In background mode, four explicit line samples returned PASS_THROUGH and
+  made zero strokes (evidence/BLENDER_BRUSH_OPERATOR_BACKGROUND.json).
+- In a GUI-context launch, the same predeclared samples returned RUNNING_MODAL
+  but made only one point at an unintended coordinate; no straight line or
+  completed stroke followed (evidence/BLENDER_BRUSH_OPERATOR_GUI.json).
+  The operator needs a real ongoing event stream; the tested property call
+  did not replay a usable press/move/release path. The exact OS-event cause
+  was investigated with the scoped DCC-CUA pointer route below.
+
+Real brush-input proof
+- Isolated file: native/GP_UI_Brush_Real_Stroke_v059.blend. Screenshot:
+  previews/GP_UI_Brush_Real_Stroke_v059.png (379 KB).
+- The verified screenshot was saved to the user's private Library as
+  [PRIVATE_LIBRARY_REFERENCE_REMOVED].
+- A six-point curved path request was rejected before input with exact error:
+  InvalidAction: the configured CUA driver accepts only drag endpoints; use
+  at most two path points. More interpolation steps still follow a straight
+  line and cannot specify curvature.
+- A valid two-endpoint background drag was posted but the fresh screenshot
+  remained blank. Foreground escalation sent the same 900 ms / 40-step drag;
+  the next screenshot showed a stroke and Blender marked the file dirty.
+- Background Ctrl+S and Ctrl+Z were posted but did not change file or image.
+  Foreground Ctrl+S saved the file; foreground Ctrl+Z removed the visible
+  stroke. A repeated foreground drag redrew it and was saved.
+- Cold reopen of the saved input proof found one editable Grease Pencil stroke
+  with two points at approximately (-1.767, 0.604, 0) and
+  (1.219, 0.379, 0), radii 0.03, layer Pointer Input, frame 1, material
+  UI Test Black. See evidence/GP_UI_BRUSH_COLD_REOPEN.json.
+- The straight line is a capability test. It has no artistic relevance to the
+  boy or girl and does not address the 4/10 character-look assessment.
+
+Editable data and undo tests
+- Explicit Grease Pencil drawing.add_strokes made a visible straight four-
+  point stroke: native/GP_Data_Straight_v059.blend and
+  previews/GP_Data_Straight_v059.png.
+- Explicit drawing.remove_strokes removed it from the scratch scene. That is
+  data removal, NOT a claim about brush Undo.
+- A deliberately specified curved eight-point stroke and a separate three-
+  point stroke rendered without connection:
+  native/GP_Data_Two_Separate_v059.blend and
+  previews/GP_Data_Two_Separate_v059.png.
+- Cold reopening that .blend recovered two editable stroke objects, point
+  counts [8,3], their positions, radii, layer and material. See
+  evidence/GP_COLD_REOPEN.json.
+- In a GUI scratch scene, editor undo_push before/after one direct data
+  mutation plus ed.undo returned FINISHED and reduced stroke count 1 to 0.
+  See evidence/GUI_UNDO_DATA_TEST.json. This verifies a GUI undo path for
+  explicitly checkpointed DATA editing, not a completed brush gesture.
+- Point radius 0.055 vs 0.09 produced distinct visible stroke widths and
+  survived cold reopen. This is width DATA. The brush operator advertises a
+  pressure input field, but no real pressure delivery or radius response was
+  verified. Do not claim pressure support from that field alone.
+
+Remaining blocker and smallest supported remedy
+The configured DCC-CUA 1.9.4 driver enforces at most two path points for one
+drag. Its documented drag schema requires from_x/from_y/to_x/to_y, with steps
+interpolating one straight line. The task-scoped HostAction accepts a path
+array but rejects more than two points with InvalidAction. The visible tool
+inventory exposes no separate mouse-button-down, move, or button-up actions;
+the task grant also offers no such action names. get_config and set_config
+advertise capture/display settings only, with no path mode. Local installed
+files contain the compiled dcc-cua.exe, not editable CUA bridge source.
+The repeatable read-only API audit is scripts/audit_dcc_cua_path_contract.ps1;
+its captured result is evidence/DCC_CUA_PATH_CONTRACT_v059.json.
+
+The dependency is a supported DCC-CUA driver/HostAction change that keeps the
+button down through >=6 supplied coordinates, or exposes scoped down/move/up
+events. That change must preserve exact-window binding, observation fencing,
+and task authorization. It is outside this isolated project folder and would
+require a provider update; no runtime modification or installation was made.
+Once available, repeat the curved stroke, Undo, separate second stroke and
+cold reopen. A sequence of endpoint drags creates separate strokes and is
+not a valid substitute. A separate follow-up at
+locomotion/native_curve_bridge_v060 supplies a temporary Blender-native
+operator for explicit multi-point Grease Pencil data. That is a useful
+authoring route, but it is not held-button pointer delivery.
+
+Production v046 and v053 SHA-256 hashes matched their recorded originals.
+No production, music, title, world or specialist file was changed. All
+Blender test processes exited or were stopped by their exact owned PID.

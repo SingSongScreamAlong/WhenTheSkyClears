@@ -1,0 +1,65 @@
+{
+  "resolution": 64,
+  "domain_metres": [
+    6,
+    2.4,
+    2.8
+  ],
+  "frames": [
+    1,
+    120
+  ],
+  "threads": 2,
+  "noise_upres": false,
+  "sources": [
+    {
+      "object": "FXv010 | finite flow short earth core",
+      "birth": 7,
+      "last_inflow": 9,
+      "velocity": [
+        0.1,
+        0,
+        2.5
+      ],
+      "density": 1.6
+    },
+    {
+      "object": "FXv010 | finite flow left low dust",
+      "birth": 7,
+      "last_inflow": 9,
+      "velocity": [
+        -4.5,
+        -0.08,
+        0.22
+      ],
+      "density": 1.5
+    },
+    {
+      "object": "FXv010 | finite flow right low dust",
+      "birth": 7,
+      "last_inflow": 9,
+      "velocity": [
+        4.4,
+        -0.06,
+        0.2
+      ],
+      "density": 1.5
+    },
+    {
+      "object": "FXv010 | finite flow rear rolling dust",
+      "birth": 8,
+      "last_inflow": 10,
+      "velocity": [
+        0.1,
+        0.18,
+        0.5
+      ],
+      "density": 1.0
+    }
+  ],
+  "density_buoyancy": 1.6,
+  "heat_buoyancy": 0,
+  "vorticity": 1.3,
+  "cache_limit_bytes": 134217728,
+  "render_status": "Eight keyframes only after bake; no full animation yet."
+}

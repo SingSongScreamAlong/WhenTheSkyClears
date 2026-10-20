@@ -1,0 +1,231 @@
+{
+  "all_checks_pass": true,
+  "checks": {
+    "meshes_source_exact": true,
+    "rig_rest_source_exact": true,
+    "transforms_source_exact": true,
+    "actions_source_exact": true,
+    "drivers_source_exact": true,
+    "modifiers_source_exact": true,
+    "materials_source_exact": true,
+    "all_source_packed_image_pixels_and_registration_exact": true,
+    "all_target_FILE_images_packed": true,
+    "camera_source_matches_planned_3m_f6_3_basis": true,
+    "camera_lowered_exactly_1_3m": true,
+    "camera_shift_y_matches_15_64m_compensation": true,
+    "camera_aperture_is_planned_f5_6": true,
+    "camera_all_other_transform_fields_exact": true,
+    "camera_lens_projection_Xshift_sensor_clipping_exact": true,
+    "camera_all_other_focus_and_dof_fields_exact": true,
+    "camera_data_action_and_drivers_exact": true,
+    "camera_actions_exact_except_Z_key_and_handle_values_minus_1_3m": true,
+    "scene_24fps_937_1056": true,
+    "root_parent_inverse_identity_no_floor_shear": true,
+    "stage_is_source_translation_only": true,
+    "physical_corridor_matches_flat_actor_floor": true,
+    "evaluated_root_has_no_shear_or_rotation": true,
+    "stage_static_across_shot": true,
+    "four_boots_no_penetration_beyond_50um": true,
+    "known_stance_support_within_0_3mm": true,
+    "camera_root_x_offset_constant_within_30um": true
+  },
+  "differences": {
+    "meshes": [],
+    "rig_rest": [],
+    "transforms": [],
+    "actions": [],
+    "drivers": [],
+    "modifiers": [],
+    "materials": [],
+    "images": []
+  },
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.blend",
+  "source_sha256": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+  "scene": "WTSC_INK_WASH_DEPTH_v061",
+  "samples": 477,
+  "production_frames": [
+    937,
+    1056
+  ],
+  "source_clock": "F=1+(G-937)*1.25;32frames/.78m/.73125mps;girl+2alreadybaked.",
+  "expected_flat_stage_world_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      49.68421173095703
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.36000001430511475
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.7713720202445984
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "root_parent_inverse": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "floor_z_m": 0.7713720202445984,
+  "physical_floor": {
+    "corridor_vertices": 791,
+    "maximum_flat_corridor_height_error_m": 0.0
+  },
+  "boot_clearances": {
+    "V044 BOY | boot far": {
+      "minimum_clearance_m": -1.0192394256591797e-05,
+      "maximum_clearance_m": 0.04498395323753357,
+      "stance_maximum_abs_clearance_m": 0.00014285556972026825,
+      "stance_samples": 266,
+      "below_floor_samples": 0,
+      "near_floor_samples": 276
+    },
+    "V044 BOY | boot near": {
+      "minimum_clearance_m": -1.0190531611442566e-05,
+      "maximum_clearance_m": 0.04498395323753357,
+      "stance_maximum_abs_clearance_m": 0.0001430278643965721,
+      "stance_samples": 301,
+      "below_floor_samples": 0,
+      "near_floor_samples": 310
+    },
+    "V044 GIRL | boot far": {
+      "minimum_clearance_m": -1.0171905159950256e-05,
+      "maximum_clearance_m": 0.04498393461108208,
+      "stance_maximum_abs_clearance_m": 0.0001317756250500679,
+      "stance_samples": 266,
+      "below_floor_samples": 0,
+      "near_floor_samples": 276
+    },
+    "V044 GIRL | boot near": {
+      "minimum_clearance_m": -1.0173767805099487e-05,
+      "maximum_clearance_m": 0.04498393461108208,
+      "stance_maximum_abs_clearance_m": 0.0001316126435995102,
+      "stance_samples": 295,
+      "below_floor_samples": 0,
+      "near_floor_samples": 304
+    }
+  },
+  "camera_root_x_offset_range_m": 7.62939453125e-06,
+  "camera_permitted_change_validation": {
+    "plan": {
+      "height_delta_m": -1.3,
+      "focus_plane_depth_m": 15.64,
+      "aperture_fstop": 5.6,
+      "unchanged": "X/Y, rotations, lens, sensor, focus target/distance, frame times, interpolation, non-Z keys and handles, all drivers"
+    },
+    "source_height_m": 3.0,
+    "expected_height_m": 1.7,
+    "actual_height_m": 1.7000000476837158,
+    "source_shift_y": -0.26705533266067505,
+    "expected_shift_y": -0.0361658754285068,
+    "actual_shift_y": -0.03616587445139885,
+    "source_aperture_fstop": 6.300000190734863,
+    "actual_aperture_fstop": 5.599999904632568,
+    "Z_action_curves_changed": 1,
+    "maximum_Z_key_or_handle_shift_error_m": 4.768371586472142e-08
+  },
+  "maximum_root_basis_error": 0.0,
+  "endpoint_samples": [
+    {
+      "frame": 937.0,
+      "root_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          49.68421173095703
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7713720202445984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_root_x_offset_m": 1.6891212463378906
+    },
+    {
+      "frame": 1056.0,
+      "root_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          53.309993743896484
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7713720202445984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_root_x_offset_m": 1.6891212463378906
+    }
+  ],
+  "object_material_overrides_allowed": true,
+  "source_data_material_slots_protected": true,
+  "native_open_save_render_in_apply": false,
+  "limits": "Raw geometry/UV/attributes/shapes/actions/materials and images compare to the exact frozen v060. Current boot mesh minima are measured; transparent paint silhouettes and artistic weight/contact/lighting are not approved by this report.",
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\native\\WTSC_Physical_Ink_Wash_Forest_v061.blend",
+  "native_sha256": "2fec6adb94e31a9a01dfb87a4df454cf9bdc896bebf019834b86e6e6c38c9b15",
+  "native_file_unchanged": true
+}

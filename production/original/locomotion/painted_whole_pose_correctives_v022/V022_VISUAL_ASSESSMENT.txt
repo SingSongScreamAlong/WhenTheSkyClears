@@ -1,0 +1,41 @@
+WTSC v022 VISUAL ASSESSMENT — 2026-10-18
+Completed scope: painted representation corrective study for L_LOADING and L_PASSING. This is a separate isolated branch from v021. No full walk cycle or production integration.
+
+ACTUAL VISUAL GAINS
+The stronger improvement is in the trousers. The original grey cuff artwork was being carried high along the articulated calf as a flat strip. Four pose-specific replacement mesh drawings now carry the original pigments over continuous curved thigh/knee/calf contours and bow/flare the rolled cuffs near the hem. Cropped trousers and visible dark ankles remain part of the boy's design.
+At close size the passing knee turns more smoothly into the calf, and both loading legs read more like fabric around a limb. At the retained shot framing, the cuff/ankle separation is clearer and the legs appear less segmented. The cuff remains intentionally grey: this is placement/shape repair, not deletion of a design feature.
+The coat has distinct loading compression and passing hem lift/tuck, with subtle tapered ink/wash folds. The front triangular hem is quieter; the waist/hip overlap is closed after an initial visible gap was found and corrected. Coat improvement is smaller than trouser improvement.
+L_LOADING: max authored coat displacement 26.65mm
+L_PASSING: max authored coat displacement 30.98mm
+These claims are based on the actual rendered before/after painted images and decoded final comparison movie. The image placement, camera and skeleton are identical within each before/after pair.
+
+LIMITATIONS — ARTISTIC ACCEPTANCE REMAINS OPEN
+The torso/coat still reads as a flat painted cutout. The new fold ribbons are subtle and do not create fully convincing cloth volume or replace the baked fold design. This does not resolve the general cloth problem.
+The leg shapes can still look too smoothly tubular; reusing original pigment stretches some internal marks. They are pose-specific mesh drawings using existing paint, not newly hand-painted replacement animation.
+The loading and passing samples are two local representations, not a temporal sequence. Their differently shaped cuffs/cloth could pop between poses. No blend, velocity, overlap timing or moving silhouette has been accepted.
+The v021 source-angle residuals, asymmetric UP heights and adult reference cadence remain. v022 makes no new weight-transfer, restart-step, pair interaction or full-trailer performance claim.
+More complete coat drawings would need pose-specific garment panels/folds with consistent cross-pose volumes, followed by a short temporal test. Do not promote this file as finished animation or integrate it automatically.
+
+DESIGN / SUPPORT PRESERVATION — TECHNICAL EVIDENCE
+Fresh saved native file versus v021:
+- Boy bone world matrices: maximum delta0.
+- All actual boot vertices: maximum delta0. Contact and swing clearance remain v021.
+- Original head, arms and hands: maximum mesh delta0.
+- Other six selected poses: maximum original-mesh delta0.
+- Original base mesh coordinates/UVs and packed image bytes unchanged.
+- All native limb IK chains reachable.
+These are preservation checks only. They are separate from the partial visual assessment above.
+The new mesh drawings preserve boot-collar endpoints and add a hidden60mm waist overlap; bone lengths and support trajectories are not changed.
+
+PREVIEW / DELIVERY
+Actual MP4:8s,240frames,30fps,1920x1200,250875bytes. All3unique slides decoded and reviewed. Loading/passing holds3s each; detail2s. No gait playback.
+The before/after close and shot views are included as JPEG boards and original960x540PNGs. Detail crops are enlarged for inspection.
+The comparison is saved privately in Library, confirmed version0; exact receipt is evidence/private_library_receipt.json.
+Editable blend, local source copy, rebuild code, timing data and technical evidence accompany the preview. No sourceFBX or native package was externally shared.
+
+RESOURCE COORDINATION / BLOCKERS
+Initial coordination notice to world task01a14565-35ea-72b8-8731-2181768cf013 succeeded. Local Blender CPU activity was checked before each render. One threads2job at a time; the final eight-still job completed in about3s. No render contention was observed.
+The completion notice to that world task returned 'invalid turn/start params: AbsolutePathBuf deserialized without a base path'; delivery of that final notice is unconfirmed. No additional renders are queued.
+The private preview save is confirmed; its identity and version receipt are retained with the evidence.
+No asset-authoring or rendering blocker remains for this bounded study. Full artistic approval and temporal consistency are unresolved.
+Protected v021, v046, v007 and v045c native source hashes are unchanged. Production, music, titles, duration, world/art and explosion files were untouched.

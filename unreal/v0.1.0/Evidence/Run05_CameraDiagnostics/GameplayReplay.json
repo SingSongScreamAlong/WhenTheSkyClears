@@ -1,0 +1,100 @@
+{
+	"engine": "5.8.3-58210709+++UE5+Release-5.8",
+	"test_type": "Real engine gameplay using simulated native key events; not a human or OS-keyboard playtest",
+	"passed": true,
+	"game_seconds": 38.090362548828125,
+	"distance_walked_cm": 4919.4873046875,
+	"events": [
+		{
+			"event": "fresh_state",
+			"passed": true,
+			"game_seconds": 4.0025296211242676,
+			"player_x": 100,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=-20.000 Y=2349.986 Z=439.997"
+		},
+		{
+			"event": "walked_to_cache",
+			"passed": true,
+			"game_seconds": 20.023807525634766,
+			"player_x": 2895.2151445530353,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=2696.570 Y=2350.000 Z=440.000"
+		},
+		{
+			"event": "searched_finite_cache",
+			"passed": true,
+			"game_seconds": 23.02644157409668,
+			"player_x": 2899.8279316234566,
+			"carry_units": 5,
+			"storage_units": 5,
+			"cache_available": false,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=2759.815 Y=2350.000 Z=440.000"
+		},
+		{
+			"event": "cache_cannot_duplicate_loot",
+			"passed": true,
+			"game_seconds": 24.026941299438477,
+			"player_x": 2899.8279316234566,
+			"carry_units": 5,
+			"storage_units": 5,
+			"cache_available": false,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=2759.828 Y=2350.000 Z=440.000"
+		},
+		{
+			"event": "returned_and_deposited",
+			"passed": true,
+			"game_seconds": 37.086498260498047,
+			"player_x": 780.16279139790231,
+			"carry_units": 0,
+			"storage_units": 10,
+			"cache_available": false,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=644.346 Y=2350.000 Z=440.000"
+		},
+		{
+			"event": "saved_checkpoint_readback",
+			"passed": true,
+			"game_seconds": 37.086498260498047,
+			"player_x": 780.16279139790231,
+			"carry_units": 0,
+			"storage_units": 10,
+			"cache_available": false,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=644.346 Y=2350.000 Z=440.000"
+		},
+		{
+			"event": "fresh_restart_restores_cache_and_storage",
+			"passed": true,
+			"game_seconds": 38.090362548828125,
+			"player_x": 100,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true,
+			"view_target": "CameraActor_0",
+			"orthographic": true,
+			"ortho_width": 2450,
+			"camera_location": "X=127.183 Y=2350.000 Z=440.000"
+		}
+	]
+}

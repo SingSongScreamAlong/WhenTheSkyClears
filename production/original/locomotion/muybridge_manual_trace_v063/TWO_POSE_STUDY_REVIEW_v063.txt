@@ -1,0 +1,27 @@
+WTSC — two manually authored source-pose study, v063
+2026-10-19
+
+What is delivered
+Phase 6 is the independently preserved v062 file. Phase 8 is a second, contrasting editable native Grease Pencil file in this v063 folder. Both were drawn by selecting contour points manually from the retained Muybridge Plate 2 photograph. Phase 6 shows a wide passing stride; phase 8 shows weight over the planted foot while the trailing foot lifts. This is motion anatomy reference, not a child-character drawing or a timed walk cycle.
+
+Exact source and registration
+The source JPEG is locomotion/three_way_walk_test_v057/reference/Muybridge_Animal_Locomotion_Plate_2_1887.jpg, SHA256 d0178c822beeae7c86f9e780f2fd4f9e6309accc9a8f03b8f4696b01abab1911. Phase 6 uses image rectangle [1581,32,1891,620]; phase 8 uses [2201,32,2511,620]. Each crop is 310 x 588 pixels. Both Blender files convert a crop pixel (x,y) into local GP coordinates ((x-155)*0.01,(294-y)*0.01,0) and use the same 620 x 1176 orthographic source camera at scale 5.88. Their render alphas were composited on the exact source crops at 2x registration. The local phase-8 contour list is reference/phase08_manual_contours.json. No automatic tracing, pose synthesis or inferred inbetween was used.
+
+Technical result
+The installed Blender executable reports 5.2.2 LTS. The final phase-8 file cold-opened successfully: one editable GREASEPENCIL object, 17 separate strokes, 152 specified points in the expected order, maximum coordinate error 1.09e-7 world units. Phase 6 v062 previously cold-opened with 18 strokes and 187 points. The proof images are 2.1 MB or smaller, below the 20 MB preview limit.
+
+Visual result and limits
+At source scale, both poses register their principal contours and foot contacts. The phase-8 planted sole and airborne trailing toe are now located on the photo, after the initial lifted-foot outline was corrected from an enlarged pixel inspection. Phase 8 communicates the narrower stride and single-support moment without simply moving the phase-6 contours. The head profiles are deliberately simplified where the photographic edge is unreadable. The phase-8 hand is still a rough cue: it has the direction and location of the hanging fingers, but its little peaks are too regular as a standalone drawing. The shoulder-to-upper-arm transition and upper back remain incomplete because the source is blurred and occluded there. Phase 6 remains schematic around its hip and shoulder. These are credible rough source traces for silhouette/contact comparison, not faithful finished anatomical drawings. The adult photographic proportions, uniform line weight and absent painting are unsuitable as production child designs.
+
+Why no full animation yet
+Two stills establish neither contact timing nor the 75–80 s shot's root travel. The photographs were taken at distinct camera-panel positions; the 620-pixel difference between crop origins is not a usable character travel curve. Interpolating these contours would add unobserved poses and likely produce sliding or stiff deformation. The next production-level step must solve the children's own silhouette and design at shot scale, then author support changes and overlapping action with an explicit root/ground contract. This study should not be imported directly over the approved v045c art or used to override the v046 scene.
+
+Files for inspection
+- native/Muybridge_Phase08_Manual_Trace_v063.blend: editable phase-8 Grease Pencil strokes.
+- reference/phase08_source_crop.png and phase08_manual_contours.json: exact source crop and hand-selected points.
+- previews/Phase08_Source_Native_Overlay_v063.png: source, isolated native render, registered overlay.
+- previews/Phase06_Phase08_Source_Overlays_v063.png: four-panel matched source and overlay comparison.
+- previews/Phase06_Phase08_At_Source_Scale_v063.png: both overlays at one output pixel per source pixel.
+- evidence/PHASE08_NATIVE_BUILD_v063.json, PHASE08_COLD_REOPEN_v063.json, TWO_POSE_PROOF_v063.json: technical evidence.
+
+No production, world, music, title, source-reference or other specialists' files were changed. The phase-6 v062 file remains intact.

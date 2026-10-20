@@ -1,0 +1,205 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Village_Still_Review_v013.blend",
+  "source_sha256": "107541346f126bf52076c0e2c28cff4d9bf29b36ee79ac810aa0d5f28fe4a606",
+  "original_review_png": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\Village_Still_v013_4K.png",
+  "original_review_png_sha256": "c6141948c343c16d48e38c71b077119e07e941cfadc7550e25119ee6462474ee",
+  "original_source_and_review_png_preserved": true,
+  "original_camera_pose_and_lens_preserved": true,
+  "inspection_copy": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Village_Inspection_v013.blend",
+  "blender": "5.2.2 LTS",
+  "views": [
+    {
+      "file": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\inspection_v013\\01_Children_Contact_Native_4K.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "provenance": "New native Blender camera render of existing v013 assets; not a PNG crop",
+      "shows": "Held pure-black editable GP children, hand connection, shoe shapes and relationship to the painted path. This does not prove planted animated feet or gait.",
+      "camera": {
+        "location": [
+          0.0,
+          -16.0,
+          3.0
+        ],
+        "lens_mm": 150.0,
+        "shift_x": -0.44999998807907104,
+        "shift_y": -0.3881250023841858
+      }
+    },
+    {
+      "file": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\inspection_v013\\02_Bakery_Detail_Native_4K.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "provenance": "New native Blender camera render of existing v013 assets; not a PNG crop",
+      "shows": "Actual painted bakery facade, warm window, plaster, foliage and foreground overlap. Details live in a 1672x941 bitmap, not modeled window/roof geometry.",
+      "camera": {
+        "location": [
+          0.0,
+          -16.0,
+          3.0
+        ],
+        "lens_mm": 102.5,
+        "shift_x": 0.4099999964237213,
+        "shift_y": -0.1614374965429306
+      }
+    },
+    {
+      "file": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\inspection_v013\\03_Oblique_Depths_Diagnostic_Native_4K.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "provenance": "Native Blender render from an added oblique diagnostic camera; actual v013 objects, with explicitly labeled inspection annotations",
+      "shows": "Four physically separated image planes, native GP pair and original review-camera marker/frustum. Demonstrates layer spacing and flat construction; not a production frame or proof of approved scrolling.",
+      "stage": [
+        {
+          "number": 1,
+          "object": "v013 | Rear countryside",
+          "actual_y": 40.0,
+          "source": "sets\\village_lookdev\\v012\\Rear_Countryside.png",
+          "corners": [
+            [
+              -20.15999984741211,
+              39.98,
+              -8.34000015258789
+            ],
+            [
+              20.15999984741211,
+              39.98,
+              -8.34000015258789
+            ],
+            [
+              20.15999984741211,
+              39.98,
+              14.34000015258789
+            ],
+            [
+              -20.15999984741211,
+              39.98,
+              14.34000015258789
+            ]
+          ]
+        },
+        {
+          "number": 2,
+          "object": "v013 | Painted village",
+          "actual_y": 12.0,
+          "source": "sets\\village_lookdev\\v012\\Village_Middle.png",
+          "corners": [
+            [
+              -8.064000129699707,
+              11.98,
+              -2.6700000762939453
+            ],
+            [
+              12.095999717712402,
+              11.98,
+              -2.6700000762939453
+            ],
+            [
+              12.095999717712402,
+              11.98,
+              8.670000076293945
+            ],
+            [
+              -8.064000129699707,
+              11.98,
+              8.670000076293945
+            ]
+          ]
+        },
+        {
+          "number": 3,
+          "object": "v013 | Walking path",
+          "actual_y": 2.0,
+          "source": "sets\\village_lookdev\\v012\\Foreground_Ground.png",
+          "corners": [
+            [
+              -6.480000019073486,
+              1.98,
+              -0.6449999809265137
+            ],
+            [
+              6.480000019073486,
+              1.98,
+              -0.6449999809265137
+            ],
+            [
+              6.480000019073486,
+              1.98,
+              6.644999980926514
+            ],
+            [
+              -6.480000019073486,
+              1.98,
+              6.644999980926514
+            ]
+          ]
+        },
+        {
+          "number": 4,
+          "object": "v013 | Oak frame and near bank",
+          "actual_y": -5.0,
+          "source": "sets\\village_lookdev\\v012\\Foreground_Ground.png",
+          "corners": [
+            [
+              -3.9600000381469727,
+              -5.02,
+              0.7725000381469727
+            ],
+            [
+              3.9600000381469727,
+              -5.02,
+              0.7725000381469727
+            ],
+            [
+              3.9600000381469727,
+              -5.02,
+              5.227499961853027
+            ],
+            [
+              -3.9600000381469727,
+              -5.02,
+              5.227499961853027
+            ]
+          ]
+        }
+      ],
+      "diagnostic_camera": [
+        -52.0,
+        -58.0,
+        36.0
+      ],
+      "diagnostic_additions": "Colored plane/GP bounds, numbered text, schematic review-camera frustum, coordinate grid and legend"
+    }
+  ],
+  "imagegen_used": false,
+  "new_modeled_set_assets": false,
+  "character_pose_changed": false,
+  "scrolling_started": false,
+  "approval": "Still approval pending",
+  "reference": "Provisional handoff reference; exact approved ink-and-wash image remains unavailable",
+  "paint_source_sizes": [
+    [
+      1672,
+      941
+    ],
+    [
+      1672,
+      941
+    ],
+    [
+      1672,
+      941
+    ]
+  ],
+  "visual_review": [
+    "All three outputs decoded and visually inspected.",
+    "Child close-up exposes apparent floating feet / unresolved contact.",
+    "Bakery details are raster paint and soften at this magnification.",
+    "Oblique view shows actual source construction with added labeled diagnostic aids."
+  ]
+}

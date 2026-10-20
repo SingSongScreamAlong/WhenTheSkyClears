@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];E=P/'evidence';f=E/'ACTUAL_MOTION_FINAL_HANDOFF.json';r=json.loads(f.read_text());a=json.loads((E/'LIBRARY_VERIFIED_LIBRARY_ACTUAL_REVIEW_ARCHIVE_CREATE_RESULT.json').read_text());assert len(a)==1 and a[0]['metadata_verified'];r['archive_library_file']=a[0];r['review_scope']='Actual frozen v049 model rendered at every F1..257 with v048 gait exactly preserved. No artistic acceptance.';f.write_text(json.dumps(r,indent=2));print('Actual v049 native, two static proofs, two actual motion movies and private native package delivered. All five Library metadata records verified. No technical blocker.')

@@ -1,0 +1,2053 @@
+{
+  "videos": [
+    {
+      "path": "WTSC_v006_Neutral_5s.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 630333,
+      "sha256": "5a6d8e5479270a4c92726ce6f67af927f25426f5d9afbfcde0c70dda89bc4da1"
+    },
+    {
+      "path": "WTSC_v006_Integrated_5s.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 2461947,
+      "sha256": "74cc765c9ea24c3d2508f2da63c0de2e1fc997f9a1320152e2980bc67bbc0886"
+    },
+    {
+      "path": "WTSC_v043_vs_v006_Matched_Framing.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 3353775,
+      "sha256": "9897e084dab372413851d188847dd844492c4e7fb5922dfd6d54e73893fb5db2"
+    }
+  ],
+  "source_preservation": {
+    "shots/world/WTSC_Open_Battlefield_Combined_Trial_v043.blend": true,
+    "renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4": true,
+    "locomotion/battlefield_proof_v005/native/WTSC_Battlefield_Weary_Stumble_5s_v005.blend": true,
+    "characters/Pair_Painterly_Near_Age_v015.png": true
+  },
+  "rendered_planted_boot_vs_ground": {
+    "method": "Independent normalized pixel correlation of actual flat planted boot patches versus visible ground ticks, roll/airborne frames excluded.",
+    "matches": 308,
+    "max_abs_error_pixels": 1,
+    "samples": [
+      {
+        "frame": 2,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 2,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 2,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 2,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 3,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 3,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 3,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 3,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 4,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 4,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 4,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 4,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 5,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 5,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 5,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 5,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 6,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 6,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 6,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 7,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 7,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 7,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 8,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 8,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 9,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 9,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 10,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 10,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 11,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 11,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 12,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 12,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 14,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 14,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 15,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 15,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 16,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 16,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 17,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 17,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 18,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 18,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": -1
+      },
+      {
+        "frame": 19,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 19,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 20,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 20,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 21,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 21,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 22,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 23,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 47,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 48,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 49,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 49,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 50,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 50,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 51,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 51,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 52,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 52,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 53,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 53,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 54,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 54,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 55,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 55,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 56,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 56,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 57,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 57,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 58,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 58,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 59,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 59,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 60,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 60,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 61,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 61,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 62,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 62,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 1
+      },
+      {
+        "frame": 62,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 1
+      },
+      {
+        "frame": 63,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 63,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 63,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 64,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 64,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 64,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 64,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 65,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 65,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 65,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": -1
+      },
+      {
+        "frame": 65,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 66,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 66,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 66,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 66,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 67,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 67,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 67,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 67,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 68,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 68,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 68,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 68,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 69,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 69,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 69,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 69,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 70,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 70,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 70,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 70,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 71,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 71,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 71,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 71,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 72,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 72,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 72,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 72,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 73,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 73,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 73,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 73,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 74,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 74,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 74,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 74,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 75,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 75,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 75,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 75,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 76,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 76,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 76,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 76,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 78,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 78,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 78,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 78,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 79,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 79,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 79,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 79,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 80,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 80,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 80,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 80,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 81,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 81,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 81,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 81,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 82,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 82,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 82,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 82,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 83,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 83,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 83,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 83,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 84,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 84,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 84,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 84,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 85,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 85,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 85,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 85,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 86,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 86,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 86,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 86,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 87,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 87,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 87,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 87,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 88,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 88,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 88,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 88,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 89,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 89,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 89,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 89,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 90,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 90,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 90,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 90,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 91,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 91,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 91,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 91,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 92,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 92,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 92,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 92,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 93,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 93,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 93,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 93,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 94,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 94,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 94,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 94,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 95,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 95,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 95,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 95,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 96,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 96,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 96,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 96,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 97,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 97,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 97,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 97,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 98,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 98,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 98,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 98,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 99,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 99,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 99,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 99,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 100,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 100,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 100,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 100,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 101,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 101,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 101,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 101,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 102,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 102,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 102,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 102,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 103,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 103,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 103,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 103,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 104,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 104,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 104,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 104,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 105,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 105,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 105,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 105,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 106,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 106,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 106,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 106,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 107,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 107,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 107,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 107,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 108,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 108,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 108,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 108,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 109,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 109,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 109,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 109,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 110,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 110,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 110,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 110,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 111,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 111,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 111,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 111,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 112,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 112,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 112,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 112,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 113,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 113,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 113,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 113,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 114,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 114,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 114,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 114,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 115,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 115,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 115,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 115,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 116,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 116,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 116,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 116,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 117,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 117,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 117,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 117,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 118,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 118,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 118,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 118,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 119,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 119,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 119,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 119,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 120,
+        "who": "BOY",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 120,
+        "who": "BOY",
+        "side": "far",
+        "error_px": 0
+      },
+      {
+        "frame": 120,
+        "who": "GIRL",
+        "side": "near",
+        "error_px": 0
+      },
+      {
+        "frame": 120,
+        "who": "GIRL",
+        "side": "far",
+        "error_px": 0
+      }
+    ]
+  },
+  "actual_post_stop_silhouette_changes": [
+    {
+      "frame": 81,
+      "changed_silhouette_pixels_from81": 0
+    },
+    {
+      "frame": 82,
+      "changed_silhouette_pixels_from81": 1939
+    },
+    {
+      "frame": 83,
+      "changed_silhouette_pixels_from81": 3429
+    },
+    {
+      "frame": 84,
+      "changed_silhouette_pixels_from81": 4651
+    },
+    {
+      "frame": 85,
+      "changed_silhouette_pixels_from81": 5714
+    },
+    {
+      "frame": 86,
+      "changed_silhouette_pixels_from81": 6598
+    },
+    {
+      "frame": 87,
+      "changed_silhouette_pixels_from81": 7381
+    },
+    {
+      "frame": 88,
+      "changed_silhouette_pixels_from81": 7963
+    },
+    {
+      "frame": 89,
+      "changed_silhouette_pixels_from81": 8350
+    },
+    {
+      "frame": 90,
+      "changed_silhouette_pixels_from81": 8619
+    },
+    {
+      "frame": 91,
+      "changed_silhouette_pixels_from81": 8739
+    },
+    {
+      "frame": 92,
+      "changed_silhouette_pixels_from81": 8798
+    },
+    {
+      "frame": 93,
+      "changed_silhouette_pixels_from81": 8772
+    },
+    {
+      "frame": 94,
+      "changed_silhouette_pixels_from81": 8715
+    },
+    {
+      "frame": 95,
+      "changed_silhouette_pixels_from81": 8669
+    },
+    {
+      "frame": 96,
+      "changed_silhouette_pixels_from81": 8592
+    },
+    {
+      "frame": 97,
+      "changed_silhouette_pixels_from81": 8497
+    },
+    {
+      "frame": 98,
+      "changed_silhouette_pixels_from81": 8375
+    },
+    {
+      "frame": 99,
+      "changed_silhouette_pixels_from81": 8289
+    },
+    {
+      "frame": 100,
+      "changed_silhouette_pixels_from81": 8154
+    },
+    {
+      "frame": 101,
+      "changed_silhouette_pixels_from81": 7994
+    },
+    {
+      "frame": 102,
+      "changed_silhouette_pixels_from81": 7836
+    },
+    {
+      "frame": 103,
+      "changed_silhouette_pixels_from81": 7701
+    },
+    {
+      "frame": 104,
+      "changed_silhouette_pixels_from81": 7547
+    },
+    {
+      "frame": 105,
+      "changed_silhouette_pixels_from81": 7392
+    },
+    {
+      "frame": 106,
+      "changed_silhouette_pixels_from81": 7241
+    },
+    {
+      "frame": 107,
+      "changed_silhouette_pixels_from81": 7069
+    },
+    {
+      "frame": 108,
+      "changed_silhouette_pixels_from81": 6894
+    },
+    {
+      "frame": 109,
+      "changed_silhouette_pixels_from81": 6695
+    },
+    {
+      "frame": 110,
+      "changed_silhouette_pixels_from81": 6556
+    },
+    {
+      "frame": 111,
+      "changed_silhouette_pixels_from81": 6398
+    },
+    {
+      "frame": 112,
+      "changed_silhouette_pixels_from81": 6272
+    },
+    {
+      "frame": 113,
+      "changed_silhouette_pixels_from81": 6146
+    },
+    {
+      "frame": 114,
+      "changed_silhouette_pixels_from81": 6133
+    },
+    {
+      "frame": 115,
+      "changed_silhouette_pixels_from81": 6110
+    },
+    {
+      "frame": 116,
+      "changed_silhouette_pixels_from81": 6127
+    },
+    {
+      "frame": 117,
+      "changed_silhouette_pixels_from81": 6140
+    },
+    {
+      "frame": 118,
+      "changed_silhouette_pixels_from81": 6238
+    },
+    {
+      "frame": 119,
+      "changed_silhouette_pixels_from81": 6306
+    },
+    {
+      "frame": 120,
+      "changed_silhouette_pixels_from81": 6418
+    }
+  ],
+  "artistic_review": "Rounded leg silhouettes now avoid the source angular/hollow lifted-knee shapes; original painting/design retained. Hands visibly open/relax with followthrough; subtle balance/breath/cloth continues after route stop. Deep boy boot overlap and small fingers still merit final-scale review. No cinematic acceptance.",
+  "renderer_limit": "Integrated proof is CyclesCPU2sample960x540; v043 original was EEVEE4K. Camera/framing/timing/nativeworld retained, renderer grain/light appearance can differ."
+}

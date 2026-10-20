@@ -1,0 +1,74 @@
+WHEN THE SKY CLEARS | STAGE 1: AGE-TEN STATIC PROPORTION CANDIDATE v044
+
+Conrad explicitly specified TEN for both children and "Scale it, then adjust animation". This is the separately saved SCALE checkpoint. It does not claim an animation correction, a final character-design approval, a true front-view illustration, or Arcane-level quality. No user approval is being requested before the next authorized work.
+
+EDITABLE NATIVE
+native/WTSC_Age10_Static_Proportion_Candidate_v044.blend
+Blender5.2.2 LTS, metric units, scale_length1. Active scene:
+V044 | AGE TEN | STATIC SCALE FIRST
+Append only collection V044 | age10 editable profile anatomy for the new assets. It contains two independent editable armatures, refitted planar painted parts, original UV painting, and labelled surface-landmark empties. The separate reference scene preserves earlier source rigs/actions as references; those are not new character animation. The new age-ten rigs have no Actions.
+
+CHOSEN CANDIDATE VALUES — metres unless stated
+                              BOY         GIRL
+Age                            10          10
+Barefoot skull-vertex stature  1.390       1.380
+Vertical chin-to-skull vertex   .194        .193
+Shoe heel support lift          .025        .025
+Skull vertex in shod model     1.415       1.405
+Drawn hand length               .145        .144
+Bare foot heel-to-toe guide      .202        .200
+Outer shoe drawing length       .223        .221
+Front shoulder SURFACE GUIDE    .300        .298
+Estimated hip-joint height      .752        .746
+Estimated knee-joint height     .417        .413
+Estimated ankle-joint height    .095        .095
+Estimated shoulder-joint height1.145       1.137
+Estimated upper-arm JOINT span  .235        .233
+Estimated forearm JOINT span    .200        .199
+Estimated thigh JOINT span      .335        .333
+Estimated shin JOINT span       .322        .318
+
+The near/far sides of each revised rig now use the same segment lengths. The hand control bone is .13m; it is deliberately not asserted to equal the full visible hand or a surface measurement. Foot control bones are also not bare-foot length. The shoulder breadth is a separate FRONT CONSTRUCTION guide; planar profile paintings do not demonstrate three-dimensional shoulder breadth. The front guide is not finished front art.
+
+MEASUREMENT DEFINITIONS / UNCERTAINTY
+Barefoot stature measures sole support to the skull vertex, with shoes and hair excluded. Head height is vertical chin/menton to skull vertex. The cranial vertex is hidden by the existing hair, so its position in each painting is an explicit drawing estimate, not an observed skull measurement. Candidate source-pixel anchors:
+boy atlas crown(225,95),chin(328,403); one uniform scale .194/308m per source pixel.
+girl original pair crown(985,137),chin(1064,280); one uniform scale .193/143m per source pixel. The girl's full original braid stays with her head; it is not counted as anatomical head height.
+Hand reference is wrist crease to middle-finger tip with hand extended; a hand pose/drawing envelope may differ. Bare foot is heel to longest toe, excluding the shoe. Our heel/toe points are guides inside the chosen boot drawing, not a newly modelled bare foot.
+Sitting height includes head, neck, torso and pelvis and starts at a seat surface. Stature minus sitting height is not hip-joint height. Knee-top-to-floor and buttock-to-knee are surface measurements, not femur/tibia lengths. Internal joint positions and tissue offsets above are authored estimates. They are not claimed as exact measured bone targets.
+
+RESEARCH BASIS
+CDC stature data at120.5months give medians138.82cm for boys and138.21cm for girls. The chosen1.39/1.38m figures are close to those anchors; the1cm boy lead is a modest continuity choice, not a mandatory sex difference. Raw data:
+https://www.cdc.gov/growthcharts/data/zscore/statage.csv
+Definitions: https://www.cdc.gov/growthcharts/cdc-data-files.htm
+
+CPSC/University of Michigan Snyder1977, hosted by NIST, age9.5–10.5: coordinated primary-source extraction supplied male median vertical head19.4cm and radiale–stylion20.7cm; female acromion–radiale24.8cm, biacromial breadth30.1cm / outer shoulder32.9cm. These sex-specific surface measures inform the drawing; they are not mixed into a mandatory joint-length recipe. Girl19.3cm head and the slight between-character variations are art choices. Sitting-height regressions give approximately72.8/72.3cm at our chosen statures; seat-to-joint offsets remain estimates.
+https://math.nist.gov/~SRessler/anthrokids/child77lnk.pdf
+Definitions read directly: https://math.nist.gov/~SRessler/anthrokids/data1977/descrip.htm
+The31MB PDF exceeded the web reader limit in this specialist thread; its extracted values came from the parent's separately verified primary-source research.
+
+The1975 tables provide a younger combined109–120month cross-check: median hand14.5cm; male foot20.2cm / female foot20.0cm. These are historic US samples and age bins, not universal ideal-child dimensions or a reason to combine percentile extremes.
+https://math.nist.gov/~SRessler/anthrokids/data1975/99.htm
+https://math.nist.gov/~SRessler/anthrokids/data1975/109.htm
+https://math.nist.gov/~SRessler/anthrokids/data1975/108.htm
+
+WHAT WAS CHANGED
+Rebuilt clean editable mesh copies before rebinding to new, bilaterally consistent rigs. Removed the old boy head's unequal horizontal/vertical image fitting; refitted the liked head uniformly using separate crown/chin anchors. Shortened the relative head/torso mass, lengthened the lower-body construction, enlarged the tiny hand drawings and selected smaller shared footwear. Preserved existing source images and identities. Refitted original coat, dress, limbs and collar; repaired visible wrist gaps and neck joins found in the initial render. Both shoes use the existing canonical source shoe and its painted material. Original source files and image pixels are unchanged.
+
+WHAT THE PROOFS SHOW
+AGE10_AFTER_NEUTRAL_PROFILE.png: actual native static profiles with10cm grid, crown/chin marks and a2m same-plane calibration frame. Girl arms are opened24/-18degrees for model-sheet visibility; this is not new walking acting.
+BEFORE_EXISTING_F1_SAME_SCALE.png: actual earlier F1 art snapshots on the SAME camera/metre grid; they are source contact poses, not neutral poses. Do not confuse a pose difference with a height measurement.
+AGE10_FRONT_CONSTRUCTION_GUIDE.png: unpainted front construction drawing, estimated internal joints; no finished front artwork exists in the available source package.
+WORLD_AGE10_STATIC_0241_1280.png and1201: revised neutral profiles appended IN RAM into preserved v058 at its original camera, along with a2m same-depth calibrator. These are scale witnesses, not new acting shots. World natives were not saved. Their new materials are not bound to the parent's world light response, so this is not a lighting/palette integration approval.
+
+WORLD PLACEMENT CONTRACT FOR THE STATIC WITNESS
+Metres; +X travel, +Z up. Held pair's GP root X is the centre; revised boy/girl roots are centreX-.4 / centreX+.4. Set drawing-plane Y=-.36. Use the held root baseZ, .771372m in the inspected scene, as the neutral outside-sole baseline. The new rigs' neutral sole is localZ0 and their barefoot heel support is localZ.025 inside the boot. Do not add2.5cm again after placing the rig; it is already in the anatomy construction. New root rotation and scale remain identity.
+The v046 recovery anchor differs: (107.6339569,0,.7200737) with its own .561666667m distance curve. Do not substitute that stopped recovery route for a walking travel curve or reuse both routes together.
+The active world path is a vertical painted card atY2.06, not a physical horizontal contact floor. Background painted doors are at greater depth than the foreground children. Their screen height alone is not a ruler. No verified separately dimensioned door object was found. Do not uniformly rescale the world from that visual comparison.
+
+VISUAL LIMITS / NEXT STAGE
+The head/body/hand/foot relationships now have an explicit age-ten construction rather than the old whole-silhouette fit. This is a proportion candidate. Source cloth still reads fitted/flat; girl's charcoal painting and small white eye differ from the boy's newer full-color face/costume. Girl braid remains rigidly attached in this static proof. Crown estimates and garment volumes need artistic judgement. These facts prevent a final-look or animation-quality claim.
+Animation must be adjusted in a DIFFERENT checkpoint after this static result. Preserve preferred31-frame timing/footfall character as a reference; re-solve hips, knees, ankles and planted contact for the new segment lengths and footwear. The old distance curve is not automatically validated by anatomy tests. No full-trailer duration, music, title, production scene or other specialist's native has been edited.
+
+TECHNICAL / FAILURE RECORD
+Source hashes before/after are recorded in STATIC_SCALE_BUILD.json and WORLD_STATIC_SCALE_WITNESS.json. Cold reopen rendered the actual native candidate. First build had a near/far name-detection error and saved nothing. A subsequent inherited-deformation-data crash was corrected by reconstructing clean mesh data before rebinding. The first visually rejected native and four renders with wrist/neck gaps are retained under REJECTED_Static_Joint_Gaps_v044a.blend and previews/rejected_A. Technical export success was not used to accept those visible defects.

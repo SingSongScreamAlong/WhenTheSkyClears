@@ -1,0 +1,86 @@
+{
+  "scope": "Focused native art correction; no animation curves edited",
+  "sleeves": {
+    "V007_BOY | drawn sleeve near": {
+      "original_halfwidth_last_m": 0.036660000681877136,
+      "candidate_halfwidth_last_m": 0.027861600518226625,
+      "shoulder_width_retained": true,
+      "UV_material_retained": true
+    },
+    "V007_BOY | drawn source gray cuff near": {
+      "original_halfwidth_last_m": 0.036660000681877136,
+      "candidate_halfwidth_last_m": 0.027861600518226625,
+      "shoulder_width_retained": true,
+      "UV_material_retained": true
+    },
+    "V007_BOY | drawn sleeve far": {
+      "original_halfwidth_last_m": 0.03665999695658684,
+      "candidate_halfwidth_last_m": 0.027861597687005996,
+      "shoulder_width_retained": true,
+      "UV_material_retained": true
+    },
+    "V007_BOY | drawn source gray cuff far": {
+      "original_halfwidth_last_m": 0.03665999695658684,
+      "candidate_halfwidth_last_m": 0.027861597687005996,
+      "shoulder_width_retained": true,
+      "UV_material_retained": true
+    }
+  },
+  "hands": {
+    "near": {
+      "thumb_local_adjustment_max_m": 0.0036400550298376372,
+      "palm_finger_vertices_unchanged": 80,
+      "global_hand_scale_unchanged": true,
+      "no_hand_path_or_bone_orientation_edit": true
+    },
+    "far": {
+      "thumb_local_adjustment_max_m": 0.0036400550298376372,
+      "palm_finger_vertices_unchanged": 80,
+      "global_hand_scale_unchanged": true,
+      "no_hand_path_or_bone_orientation_edit": true
+    }
+  },
+  "cuffs": {
+    "near": {
+      "cross_section_width_reduction_fraction": 0.085,
+      "max_vertex_change_m": 0.004344896122890704,
+      "center_and_shoe_paths_unchanged": true,
+      "calf_local_width_reduction_fraction": 0.065
+    },
+    "far": {
+      "cross_section_width_reduction_fraction": 0.085,
+      "max_vertex_change_m": 0.004779389431664788,
+      "center_and_shoe_paths_unchanged": true,
+      "calf_local_width_reduction_fraction": 0.065
+    }
+  },
+  "shoe_upper_contour": {
+    "shared_mesh": true,
+    "changed_upper_vertices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "all_support_vertices_unchanged": true,
+    "support_vertex_count": 13,
+    "tested_pitch_degrees": [
+      -85,
+      85
+    ],
+    "max_upper_vertex_change_m": 0.003014405872252094,
+    "foot_and_shoe_object_paths_edited": false
+  }
+}

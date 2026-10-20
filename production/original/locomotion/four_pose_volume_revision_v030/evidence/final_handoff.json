@@ -1,0 +1,160 @@
+{
+  "status": "REVISED_FOUR_POSE_BOARD_DELIVERED_ART_REVIEW_PENDING_NO_CYCLE",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_volume_revision_v030\\native\\WTSC_Four_Pose_Volume_Revision_v030.blend",
+  "native_bytes": 2539794,
+  "native_sha256": "134860e2f6b43503cd8a2305bd06275cf71a591962e64fa1043d7726bd7e57bb",
+  "primary_board": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_volume_revision_v030\\previews\\WTSC_v030_Four_Pose_Review_Board.png",
+    "bytes": 1446040,
+    "sha256": "adea8b0e2e97c98c2c6eaaa843c5674f7081c7287b8d8073f1e003b568232ddf",
+    "dimensions": [
+      1920,
+      2220
+    ],
+    "content": "Actual Blender-rendered v029/v030 contact,loaded-down,passing,up close and shot-camera comparisons"
+  },
+  "private_preview": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v030_Four_Pose_Review_Board.png",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v030_Four_Pose_Review_Board.png",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "image/png",
+    "library_artifact_type": "image",
+    "file_size_bytes": 1446040,
+    "external_connectors_accessed": false
+  },
+  "actual_Blender_renders": {
+    "frames": [
+      1,
+      4,
+      11,
+      13
+    ],
+    "views": {
+      "CLOSE": [
+        480,
+        720
+      ],
+      "SHOT": [
+        1280,
+        720
+      ]
+    },
+    "actual_Blender_renders": 8,
+    "threads": 2,
+    "elapsed_seconds": 3.5798850059509277,
+    "no_cycle_rendered": true
+  },
+  "review": {
+    "status": "ACTUAL_FOUR_POSE_COMPARISON_FOR_INDEPENDENT_REVIEW_NOT_A_PASS",
+    "inspected": [
+      "four individual480x720close renders",
+      "matched close comparison",
+      "matched shot-camera comparison"
+    ],
+    "contact_upper_body_scanline": {
+      "y": 270,
+      "threshold": "maxRGB<100",
+      "width_pixels": {
+        "v029": 78,
+        "v030": 112
+      },
+      "scope": "Pixel-size preservation/readability check only, not artistic acceptance"
+    },
+    "loaded_mass_drop_from_contact_mm": {
+      "pelvis": 26,
+      "waist": 35,
+      "ribcage": 33,
+      "neck": 37
+    },
+    "rise_from_passing_to_up_mm": {
+      "pelvis": 26,
+      "waist": 26,
+      "ribcage": 30,
+      "neck": 30
+    },
+    "passing_sole_clearance_m": {
+      "v029": 0.09500000000000001,
+      "v030": 0.095
+    },
+    "passing_ankle_projection_x_m": {
+      "v029": -0.015,
+      "v030": 0.065
+    },
+    "observed_improvements": [
+      "Shoulder/ribcage envelope is visibly fuller around the unchanged head.",
+      "Contact/down differ through whole-body mass, not just head/knee.",
+      "Knee edges are softer; useful passing leg separation retained.",
+      "Passing boot projects clear of support ankle more clearly without increasing minimum sole clearance.",
+      "Up combines forefoot roll, extended support and pelvis/ribcage rise.",
+      "Rear contact hand separates from hem; front gestures hang more calmly."
+    ],
+    "remaining_art": [
+      "Coat/ribcage still reads as broad armor-like graphic planes.",
+      "Pelvis value bridge may still look like a patch rather than mass.",
+      "Passing/up hands partly merge with hem or thigh.",
+      "The loaded-down may overstate crouching/fatigue; four static drawings cannot settle this.",
+      "Body surface is a structural value block-in against retained painted head/collar/boots."
+    ],
+    "no_cycle_or_animation_pass": true,
+    "independent_review_routing": "Through parent, as requested; no direct cross-thread review message attempted."
+  },
+  "not_an_art_pass": "The volume/projection corrections are visible, but the broad graphic coat, pelvis value bridge and hand staging still need independent review. Stronger load/rise could become crouched/bouncy if generically interpolated.",
+  "full_cycle_or_inbetweens_generated": false,
+  "motion_playback_or_animation_pass_claimed": false,
+  "production_integration": false,
+  "travel_contract": "None authored. Root/stage frozen. Frames1,4,11,13 select independent poses; timing/intermediate playback undefined.",
+  "head_choice": "Original painted profile/head/hair UVs and design retained, translated with the revised whole-body mass positions; no turnaround or v008 patch.",
+  "critique_and_native_guide": "V030_POSE_GUIDE_AND_CANDID_CRITIQUE.txt",
+  "source_preservation": {
+    "v046": {
+      "path": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v026": {
+      "path": "locomotion/gp_extended_review_v026/native/WTSC_GP_Extended_Review_v026.blend",
+      "sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+      "unchanged": true
+    },
+    "v027": {
+      "path": "locomotion/body_loading_overlap_v027/native/WTSC_Body_Loading_Overlap_v027.blend",
+      "sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+      "unchanged": true
+    },
+    "v028": {
+      "path": "locomotion/upper_body_pose_refinement_v028/native/WTSC_Upper_Body_Pose_Refinement_v028.blend",
+      "sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+      "unchanged": true
+    },
+    "v029": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_silhouette_rebuild_v029\\native\\WTSC_Four_Pose_Silhouette_Rebuild_v029.blend",
+      "sha256": "5a810378e997691493aacb99bb00ffcdd41db10bcca124f9d9164a425c4381ed",
+      "unchanged": true
+    }
+  },
+  "coordination": "All short threads2 Blender jobs used immediate host no-Blender-process gates and exited. No heavy/full-cycle render. Per user instruction, review requests go through parent; no direct world message attempted.",
+  "remaining_review_request": "Please independently review the v030 board before any full-cycle work, focusing on body/head proportion, loaded body mass, the boot/ankle gap and UP support construction.",
+  "execution_blockers": []
+}

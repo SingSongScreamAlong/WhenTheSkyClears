@@ -1,0 +1,27 @@
+WHEN THE SKY CLEARS — BOY TWO-POSE REFERENCE ADAPTATION GATE v065
+2026-10-19. Isolated locomotion study; no production, v049, v053, v057, or world files edited.
+
+DECISION: TECHNICAL PROOF PASSES; ARTISTIC / DESIGN GATE FAILS.
+Do not make inbetweens or start the full A/B/C sequence from these drawings.
+
+What is actually here
+- Two independently point-authored reference-based child drawings for the contrasting adult Muybridge photo phases 6 (wide stride) and 8 (single support / trailing foot). Each has its own listed contour coordinates in scripts/pose_specs.py, 45 individually editable filled meshes and 23 individually editable detail curves in Blender. Phase 6 has 426 authored points; phase 8 has 422. The leg and arm shapes are separate pose drawings; there is no procedural puppet deformation, automatic tracing, mocap, or generated inbetween.
+- Actual 660x720 renders: previews/Boy_Phase06_Native_Redraw_v065.png and Boy_Phase08_Native_Redraw_v065.png.
+- Editable Blender 5.2.2 LTS natives: native/Boy_Phase06_Point_Authored_Redraw_v065.blend and Boy_Phase08_Point_Authored_Redraw_v065.blend. Camera, 660x720 framing, and the corresponding A/photo comparison pixels are packed. Cold-open evidence: evidence/TWO_POSE_COLD_OPEN_v065.json.
+- Main review: previews/Boy_Two_Pose_Reference_Adaptation_Review_v065.png. Rows align the actual v053 A frame, actual adult photo, and child redraw on the same 720px floor frame. The adult source was scaled for apparent-height comparison; it is not a child proportion reference. A frame 0 accompanies phase 6; A frame 6 accompanies phase 8.
+- A supplementary retained-art diagnostic: previews/Boy_Phase06_Retained_Head_Trial_v065.png and Phase08 equivalent. These are PIL composites of the actual painted A head with the native contour renders, not native Blender output and not a new painted head. Source alpha images and exact code are retained in reference/ and scripts/retained_head_trial_v065.py. The diagnostic isolates how much design quality the head alone restores; it does not repair the body. It must not be passed off as an animation/painted final.
+
+Anatomy and contact read
+- The local age-ten static guide gives approximately 1.415m shod stature, 0.335m thigh, 0.322m shin, and 0.223m shoe length. At 563px rendered stature the expected thigh and shin axes are about 133px and 128px. Phase 6 axes: rear 132.85/126.49px and front 132.85/126.49px. Phase 8: trailing 136.01/120.21px and planted 133.03/127.02px. These are plausible construction guides, not a measurement of completed anatomy or a certified age-ten model.
+- Phase 6 reads as a two-foot-contact stride, while phase 8 has one planted foot and a trailing lifted foot. The boots share a palette and design cues, but their volume/soles are too polygonal, and the trailing boot in phase 8 looks undersized. Knee-to-ankle lines are clear but too ruler-straight in the painted silhouette; neither pose conveys sufficient knee compression, heel rollover, or mass settled over the contact foot.
+- The arms differ by pose, but hands are simplified prongs and the wrists and shoulders stay angular. The phase 8 body is nearly static above the hips; the change of support is not expressed through pelvis, torso, or coat. These are pose studies only; no time spacing, root travel, momentum, recovery step, or foot-slide validation exists here.
+
+Visual assessment against the actual A pixels
+- The v053 boy has specific painted hair, cheek/ear/nose structure, cloth folds and edge variation, coat thickness, and shaped leather boots. The point-authored redraw preserves approximate palette and proportions but reads as a flat vector mannequin. The main board makes the loss obvious at shot size. Its source-faithful leg construction is useful, but it is not a faithful character rendering and is not a visual upgrade over A.
+- Reusing the approved A head for a diagnostic retains recognizability, but exposes how far the simplified coat, arms, trousers and boots remain from the painted design. It also creates a mixed-media edge at the collar. This does not justify interpolating these poses.
+
+Next development gate
+Author one fully painted child support pose at the 660x720 comparison camera using the v049/v053 painted design as the visual target and the phase-8 segment guides only as underdrawing. Shape the coat and bent cloth around the actual weight-bearing hip/knee, paint individual fingers, and draw the heel/sole roll at the planted boot. Match it against the actual A frame at shot size before any second painted pose or inbetweens. Keep the retained hair/face continuity intact. If the painted pose passes, make the complementary stride and only then test two-pose timing/contact; derive any eventual world travel curve from the final root/foot tracks. No integration contract is claimed by this two-pose proof.
+
+Dependency / scope note
+The one read-only Remote Desktop Commander who-am-I check returned 17% monthly remote calls remaining at check time. These assets were authored and validated with installed local Blender/Python; no further Remote Desktop Commander calls were used, and no install or external sharing occurred. The comparison board may be uploaded only to the authorized private Library.
