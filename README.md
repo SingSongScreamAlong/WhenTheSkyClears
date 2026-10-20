@@ -1,5 +1,10 @@
 # When the Sky Clears
 
+**On macOS:** clone this repository, install **Godot 4.6 stable Standard**, and
+import **`game/project.godot`** in Godot's Project Manager. Run the project with
+F5. See [macOS setup and verification limits](docs/MACOS.md). No Windows build,
+Python, .NET, or external runtime asset download is required.
+
 The isolated **0.4.0 development pass** adds equal-height character collision,
 head clearance while crouching, more stable companion following, and a freight
 crossing rehearsal combining supplies, shelter, stealth, traversal and shared
