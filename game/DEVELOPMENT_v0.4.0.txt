@@ -2,10 +2,10 @@ WHEN THE SKY CLEARS - DEVELOPMENT 0.4.0
 20 October 2026
 
 BUILD STATUS
-The v0.4.0 source is undergoing final native verification. The appended mill
-mechanism is included in that work. Earlier scenario passes do not establish
-a pass for the final executable. The previous v0.3.0 release is retained.
-The planned standalone package is When_The_Sky_Clears_Windows_v0.4.0.zip.
+The v0.4.0 Windows executable and frozen source passed final verification.
+The standalone package is When_The_Sky_Clears_Windows_v0.4.0.zip; editable
+source is When_The_Sky_Clears_Editable_Source_v0.4.0.zip. Earlier releases
+remain available. The selected evidence identifies the exact final build.
 Extract its Windows ZIP before running When the Sky Clears.exe. Godot and
 Python are development dependencies, not requirements for standalone play.
 PLAY.cmd selects the 0.4.0 executable when present. MILL_PLAYTEST.cmd opens
@@ -117,7 +117,23 @@ VERIFICATION AND LIMITS
 Evidence belongs in evidence/v040. DELIVERY_MANIFEST_v040.json records the
 package identity and selected results. release_final/<scenario>/invocation.json
 identifies the final packaged executable, invocation, exit status and timing.
-Final totals remain pending until that exact build completes its checks.
+The final executable passed 371 native functional checks: smoke 158,
+survival 13, encounters 10, journey 35, optional routes 13, development
+branches 45, movement 13, mill 16, story 56 and freight crossing 12.
+The separate native source animation fixture passed 27 checks against the
+frozen source. Its 13 baseline movement checks are not added again to 371.
+
+Continuous navigation completed all five chapters in 730.45 simulated
+seconds, with one checkpoint recovery. That is automated traversal, not
+measured human playtime. Nine native scene captures are 3840 x 2160.
+The silent native mill movie is 18 seconds, 1440 x 810, 30 fps and 540 frames;
+all frames decoded successfully. The current terrain audit checked 627,876
+polygons with zero failures. ART_READABILITY_BEFORE_AFTER.jpg compares earlier
+native views with revised actual captures from the final executable.
+
+Final executable: 138,136,680 bytes.
+SHA-256: ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734
+
 qa_v040.py retains invocation, executable
 identity, exit status and logs. The new movement-checks, development-checks
 and mill-checks scenarios complement smoke, survival, encounters, journey,
