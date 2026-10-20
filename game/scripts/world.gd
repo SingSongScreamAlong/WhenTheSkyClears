@@ -143,7 +143,7 @@ func _draw():
 			var y = fposmod(i*77.6+t*790,920)-40
 			draw_line(Vector2(x,y),Vector2(x-5,y+19),Color(.7,.8,.86,.13),.8,true)
 	for p in game.dust:
-		draw_circle(p.p,p.size,Color(.65,.65,.51,p.life*.3))
+		draw_circle(p.p,p.size,Color(.44,.58,.57,p.life*.24) if game.slice_active else Color(.65,.65,.51,p.life*.3))
 	for impact in game.impacts:
 		var age=impact.age; var pos=impact.p
 		for i in range(11):

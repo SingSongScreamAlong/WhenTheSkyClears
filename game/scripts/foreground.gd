@@ -15,6 +15,10 @@ func _draw():
 		if not game.ground_at(x): continue
 		var y=float(game.surface_y_at(x,700))
 		var wind=sin(game.clock*1.3+i)*2
+		if game.slice_active:
+			for child in [game.player,game.boy]:
+				if absf(child.position.y-y)<25 and absf(child.position.x-x)<42:
+					wind+=signf(x-child.position.x)*(1-absf(child.position.x-x)/42)*minf(4,absf(child.velocity.x)/45)
 		var height=4+game.world.noise_at(i)*7
 		var theme=game.world.zone_at(x)
 		if theme=="school_courtyard" or theme=="rail_yard": height*=.5

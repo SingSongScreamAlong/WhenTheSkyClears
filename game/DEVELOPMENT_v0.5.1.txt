@@ -1,0 +1,85 @@
+WHEN THE SKY CLEARS / 0.5.1 / LAST HOUSE VISUAL AND MOTION CHECKPOINT
+
+This bounded pass refines the existing Last House section. It adds no chapter
+or route and retains the v050 survival, stealth, interaction and save rules.
+Choose Last House before the Crossing from the title. The full journey and
+freight rehearsal remain available. Both children keep their original atlases,
+identity, scale1.0 and equal99/74standing/crouched collision heights.
+
+VISIBLE CHANGES
+Last House movement has short start/stop/turn offsets, eased crouch depth and
+landing compression. Idle stance feet keep their world placement rather than
+sliding back into a symmetrical rest pose. A stance restarts from the current
+foot positions, and turning uses actual travel direction for the stride.
+These pose/foot changes are conditional on Last House. Native movement and
+collision still own the children; there is no animation-driven root motion.
+The initial gathering step uses the foot already ahead and its available travel,
+then joins the normal stride. Separate planted/swing state preserves liftoff when
+walk/run timing changes. The rendered pelvis fits both finite leg-reach disks;
+regression measures actual hip, knee and ankle transforms through first steps,
+sprint changes, stopping, reversing, crouching and landing for both children.
+Discontinuous root moves resynchronize the planted pose instead of retaining
+feet at the old position. Native tests cover this saved/debug setup boundary.
+
+During support work both hands target the visible handle. The girl bends to
+lower a cloth bag instead of immediately showing a crate. During the meal,
+the children turn toward each other and bring small portions toward their
+mouths; the boy attends while the bag is set down. Quiet relief uses a softer
+standing pose. Paired hands use current rendered positions and a reachable
+shared grip instead of a stale physics target stretching the leading arm.
+
+The flat translucent band crossing room interiors and lower legs is removed.
+Clothing, faces and edges read more clearly with restrained local warmth.
+Sole shadows, selective roof-edge drips, wet-step flecks and nearby grass bends
+give limited contact/weather feedback without covering the hands or silhouettes.
+The existing painted assets are retained; no new raster character was invented.
+
+VERIFICATION
+Exact release/source hashes, route and legacy results, measured wrist/sole
+transforms, comparative captures and performance are in evidence/v051.
+The native before/after pose fixture uses identical fixed actions and deliberate
+scenario starting positions. It is separate from continuous route verification.
+Before is the eff7813 runtime snapshot, with only isolated saves and an early QA
+flag so the fixture never starts audible/Dummy ambience. The after fixture uses
+the current source. Both use the same Godot4.6 Standard engine and1440x810 view.
+
+The first fixture armed QA after scene readiness, allowing the looping ambience
+to start under the Dummy audio driver. Immediate fixture teardown left its WAV
+playback in use. Verbose diagnosis identified horizon.wav in both untouched
+baseline and after runs. The fixture now arms QA at startup, stops/releases
+ambience, allows its cleanup interval and defers quit. Normal game sound logic
+was not changed by this pass. Clean final fixture/runtime results are recorded
+separately; early WIP warnings are not counted as passing verification.
+
+The contact report measures actual drawn wrists and soles, not only intended
+pose coordinates. Performance compares two8-second uncapped fixed viewpoints
+after2-second warmups, audioDummy and no screenshot I/O during measurement.
+It is a short Windows source-runtime comparison, not a Mac, input-latency,
+moving-route stress test or packaged-executable performance guarantee.
+
+SAVE AND SOURCE PRESERVATION
+This compatible polish retains WhenTheSkyClears/v050 user data and its separate
+main, rehearsal and Last House files. QA disk tests use unique disposable paths.
+Existing originals, earlier packages and saves are preserved. The v050 route
+JSON and runtime image/audio assets are unchanged. Cosmetic bag/meal beats are
+transient; after a checkpoint reload the bag rests at its authored door spot.
+
+REMAINING SHORTCOMINGS / NEXT SCOPE
+The children remain procedurally articulated painted cutouts. These are authored
+timing/pose refinements, not finished acting, final fingers, physical weight or
+AAA animation. Some profiles/turns, elbow/knee silhouettes and cloth transitions
+still need artistic judgment. The meal/bag gestures are brief; quiet relief is
+standing rather than a finished seated performance. No completed external Godot
+motion export was available; older review-only Blender rigs were not integrated.
+Companion spacing during reversals can still stack silhouettes briefly and needs
+a later movement/acting pass. Root navigation and pair collision rules are retained.
+
+Repeated house imagery, generic foreground benches/props and parts of the wider
+play plane still need bespoke scenery integration. Lighting/weather responses
+are selective native drawing, not physical weather or a finished cinematography
+pass. These refinements should be judged in motion at normal game size.
+Audio spatialization/cues/mix/listening and accessibility/device prompts,
+rebinding, text scaling and crouch toggles remain for the next pass.
+No physical controller, human audio, human route-duration or Mac runtime review
+is claimed. Scripted route times are not a5-10minute human experience estimate.
+The protected Library denial was not retried or bypassed; no Library ID is asserted.

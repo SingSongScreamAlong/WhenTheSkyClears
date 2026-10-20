@@ -46,6 +46,7 @@ static func run(g):
 	for i in range(110):g.clock=-1.36;await frames(g,1)
 	g.assert_check("uncovered_boy_gets_individual_seen_feedback",float(g.child_detection.Boy)>.08 or float(g.child_injury.Boy)>0,str(g.child_detection))
 	g.assert_check("covered_girl_avoids_individual_injury",float(g.child_injury.Girl)==0 and float(g.child_injury.Boy)>0,str(g.child_injury))
+	g.assert_check("teleported_pose_feet_resync_with_body",absf(g.player.feet[0].x)<35 and absf(g.player.feet[1].x)<35 and absf(g.boy.feet[0].x)<35 and absf(g.boy.feet[1].x)<35)
 	release()
 	# Abort, return and retry the reciprocal passage using held input.
 	g.last_house.start(false);g.player.position=Vector2(3900,699);g.boy.position=Vector2(3846,699);await frames(g,10)

@@ -5,7 +5,11 @@ import **`game/project.godot`** in Godot's Project Manager. Run the project with
 F5. See [macOS setup and verification limits](docs/MACOS.md). No Windows build,
 Python, .NET, or external runtime asset download is required.
 
-**Current development checkpoint: 0.5.0 on `dev/last-house-before-crossing`.**
+**Current development checkpoint: 0.5.1 on `dev/last-house-before-crossing`.**
+Last House now has authored movement/acting timing, planted stance feet, hands
+meeting support grips, bag/meal gestures and clearer local character staging.
+See [visual/motion notes and remaining shortcomings](game/DEVELOPMENT_v0.5.1.txt)
+and [exact verification](game/evidence/v051/CHECKPOINT_MANIFEST.json).
 The Last House title option adds painted house exploration, shop/arcade choices,
 reciprocal passage help, pair cover and individual exposure feedback, then a dry
 room with shared food and quiet playable relief. See [route notes and remaining

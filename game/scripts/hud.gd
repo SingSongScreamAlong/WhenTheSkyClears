@@ -83,7 +83,7 @@ func title_screen():
 	button("Leave",Rect2(112,y,410,42),"quit")
 	text_at("AN ORIGINAL SURVIVAL JOURNEY",Vector2(119,844),11,dim)
 	if not game.save_notice.is_empty(): paragraph(game.save_notice,Vector2(920,716),580,15,gold)
-	text_at("DEVELOPMENT  0.5.0",Vector2(1338,847),10,dim)
+	text_at("DEVELOPMENT  0.5.1",Vector2(1338,847),10,dim)
 	text_at("Move with care. There is someone behind you.",Vector2(1015,816),17,Color(palette,.65),true)
 
 func playing_hud():

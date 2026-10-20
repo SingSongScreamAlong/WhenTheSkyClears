@@ -1,0 +1,9 @@
+{
+  "commit": "eff78139278d87ef16cd3976bcf2ed9a66d28f22",
+  "runtime_bytes_match_v050_manifest": true,
+  "only_environment_change": "Isolated baseline save directory after byte validation. Existing source/exports unchanged.",
+  "source_engine_sha256": "fc759f9d296fe54f09ab66d41df6ddd2d278493b0e71109f6688ef029ad271ae",
+  "baseline_release_sha256": "eea1257a0cc509f9ad3ee932c4a2968c5c7098222ba86e17462b025b2c1b85cf",
+  "character_delivery": "Inspected original characters/locomotion; latest v014/v017 are older review-only 3D rigs/blocking. No completed Godot motion export found. Dedicated character thread unavailable on durable host. Existing runtime atlases retained.",
+  "qa_environment_followup": "Adds --visual-review to existing smoke_test startup flags only, after original runtime hash validation. This prevents unintended Dummy WAV playback before external fixture sets QA state. Poses, movement, assets and route logic remain original eff7813."
+}

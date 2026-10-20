@@ -1,0 +1,104 @@
+{
+  "before": {
+    "scenes": {
+      "6120": {
+        "draw_calls": {
+          "above_16_667": 901,
+          "above_33_334": 901,
+          "maximum": 1175.0,
+          "mean": 1174.59156492786,
+          "median": 1175.0,
+          "p95": 1175.0,
+          "p99": 1175.0,
+          "samples": 901
+        },
+        "frame_interval_ms": {
+          "above_16_667": 0,
+          "above_33_334": 0,
+          "maximum": 15.51,
+          "mean": 8.88428079911211,
+          "median": 8.407,
+          "p95": 11.079,
+          "p99": 12.987,
+          "samples": 901
+        },
+        "static_memory_bytes": 52349073.0
+      },
+      "8550": {
+        "draw_calls": {
+          "above_16_667": 860,
+          "above_33_334": 860,
+          "maximum": 1178.0,
+          "mean": 1177.64302325581,
+          "median": 1178.0,
+          "p95": 1178.0,
+          "p99": 1178.0,
+          "samples": 860
+        },
+        "frame_interval_ms": {
+          "above_16_667": 0,
+          "above_33_334": 0,
+          "maximum": 14.773,
+          "mean": 9.30895,
+          "median": 8.909,
+          "p95": 11.839,
+          "p99": 13.669,
+          "samples": 860
+        },
+        "static_memory_bytes": 52651105.0
+      }
+    },
+    "scope": "Uncapped VSync-disabled native Godot4.6 source runtime,1440x810, audio dummy. Two8-second fixed viewpoints after2-second warmup each; no screenshot IO during measurement. Not human input latency, Mac or packaged performance."
+  },
+  "after": {
+    "scenes": {
+      "6120": {
+        "draw_calls": {
+          "above_16_667": 863,
+          "above_33_334": 863,
+          "maximum": 1178.0,
+          "mean": 1177.62456546929,
+          "median": 1178.0,
+          "p95": 1178.0,
+          "p99": 1178.0,
+          "samples": 863
+        },
+        "frame_interval_ms": {
+          "above_16_667": 0,
+          "above_33_334": 0,
+          "maximum": 15.024,
+          "mean": 9.27346002317496,
+          "median": 8.832,
+          "p95": 11.428,
+          "p99": 13.335,
+          "samples": 863
+        },
+        "static_memory_bytes": 52542420.0
+      },
+      "8550": {
+        "draw_calls": {
+          "above_16_667": 859,
+          "above_33_334": 859,
+          "maximum": 1183.0,
+          "mean": 1182.58905704307,
+          "median": 1183.0,
+          "p95": 1183.0,
+          "p99": 1183.0,
+          "samples": 859
+        },
+        "frame_interval_ms": {
+          "above_16_667": 0,
+          "above_33_334": 0,
+          "maximum": 14.371,
+          "mean": 9.31627939464493,
+          "median": 8.798,
+          "p95": 11.584,
+          "p99": 12.996,
+          "samples": 859
+        },
+        "static_memory_bytes": 52847624.0
+      }
+    },
+    "scope": "Uncapped VSync-disabled native Godot4.6 source runtime,1440x810, audio dummy. Two8-second fixed viewpoints after2-second warmup each; no screenshot IO during measurement. Not human input latency, Mac or packaged performance."
+  }
+}
