@@ -1,0 +1,93 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.4.1
+
+STATUS AND PLAY
+Final verification passed 386 native functional checks, 27 separately reported
+source-animation checks, and 12 fresh native 4K captures. The final identity
+freezes 143 runtime files. Full-journey navigation completed all five chapters.
+The verified v0.4.0 release, its source ZIP and frozen evidence remain available.
+
+Packages: When_The_Sky_Clears_Windows_v0.4.1.zip and
+When_The_Sky_Clears_Editable_Source_v0.4.1.zip. Extract the Windows ZIP and run
+When the Sky Clears.exe; Godot and Python are not required for standalone play.
+The editable project opens in Godot 4.6 Standard. Editor play needs no export
+templates. See docs/releases/v0.4.1.md and docs/REPOSITORY.md in the repository.
+
+PLAY.cmd selects the current executable. CANAL_PLAYTEST.cmd or -- --canal-preview
+opens an isolated, unsaved canal approach with zero salvage. Search the existing
+canvas tool roll, then choose whether to spend salvage on the pump or high route.
+MILL_PLAYTEST.cmd retains the unsaved physical mill preview; FREIGHT_CROSSING.cmd
+retains its separate rehearsal save. The full campaign remains compatible with
+v0.4.0: journey_v4.json in the WhenTheSkyClears/v040 Godot user-data directory.
+
+PAINTED INTERACTIONS
+Six new props give searches and work their own materials: a ration box,
+medicine satchel, canvas tool roll, cast-iron pump body, separate pump lever,
+and warm lantern. The 1536 x 1024 RGBA atlas retains its transparent source
+pixels; native source rectangles and transforms provide the runtime parts.
+Its exact built-in ImageGen prompt and source provenance are recorded in
+assets/props/Interaction_Props_PROVENANCE_v041.json.
+
+Partially searched caches display what remains. If the pack is full of food,
+taking medicine removes the medicine art while leaving the unclaimed food.
+Empty containers remain as search history. Rendering does not grant supplies.
+The pump lever rotates at its bearing toward the working hands. The sluice
+rises with the receding water. Clearing, bracing and shared lifting receive
+local work movement; warmer lanterns give braces a distinct focal point.
+
+PLACES AND MECHANICAL FEEDBACK
+School, railway and ash regions use more distinct architectural fragments
+and staging. Cleaner banks, bridge edges and foreground vegetation leave room
+to read the route. The mill refines its crop registration, chain, bearing and
+breakaway debris while retaining its connected bridge/fence/wheel/gate sequence.
+This pass refines the existing 79,200-unit, five-chapter journey rather than
+claiming additional chapters or a new measured human playtime.
+
+Work now interrupts if the child leaves its height, releases the input or loses
+the required companion. Both children are released from interrupted shared work.
+Pause holds work and the lever; inventory and pause hold the water transition.
+The source fixtures test these states separately from full-journey navigation.
+Existing finite food, salvage, medicine, cold, wetness, cover and both-child
+requirements remain part of the campaign.
+
+CONTROLS
+A/D or arrows: move | Space/W/Up: jump | Shift: run | S/Down: crouch
+Hold E: search, work or rest | Hold E+A/D against crate: push
+Q: ask him to wait low / call him | H: medicine | Tab: pack/objective
+R: checkpoint recovery | Esc: pause | F11: fullscreen | M: mute
+Controller: left stick/D-pad move, A jump, B crouch, X held work,
+Y wait/call, RB run, Back pack, Start pause.
+
+BUILD AND EVIDENCE
+From the repository root, run python game/tools/setup_godot.py, then
+python game/tools/build_v041.py export. The helper temporarily selects portable
+Windows templates and product metadata, then restores the preset byte for byte.
+It hashes all runtime source, assets and UID sidecars. Manual editor exports
+instead require matching Godot 4.6 templates installed through Godot.
+
+After freezing the source, use the same helper with test all, test capture,
+verify, and package. Output stays under build/v0.4.1 and evidence/v041. Earlier
+v0.4.0 packages and evidence are preserved. The verification operation writes
+nothing. Each scenario removes only its recognized direct outputs and records
+fresh per-run output hashes, so stale JSON/PNG files cannot become new proof.
+
+The 386 passing native checks include the earlier 371 and 15 refinement checks.
+The 27-check source animation fixture includes the 13 baseline movement checks
+and stays outside that total. The 12-image review includes staged pump-work,
+fully drained sluice and supply close views. Continuous navigation completed
+all five chapters with no failure, one checkpoint recovery and 730.45 simulated
+seconds. That is an automated route result, not measured human playtime.
+
+Final executable: 139,823,648 bytes.
+SHA-256: 3e5142dbfc510c590098394615f323f10146cb2db5a59d2301906532a70b6ac3
+
+WTSC_Mill_Playthrough_v041.mp4 is an 18-second silent native recording at
+1440 x 810 / 30 fps / 540 frames. Full FFmpeg decoding and frame count passed.
+Its source invocation matches the final executable. Explicit initial fixture
+setup precedes the physical Input-driven safe crossing. Risk and pause are
+tested separately. The video SHA-256 is:
+7eaafbd825792d8671100f222f2d6ee40b6ea88035f7494a8164551f6f081e99
+No new offline geometry audit is claimed for this pass.
+
+AAA quality remains the production target. Bespoke acting, transitions,
+environment craft, encounter depth, sound and human balancing still need work.
+Technical checks and native captures do not establish artistic acceptance.

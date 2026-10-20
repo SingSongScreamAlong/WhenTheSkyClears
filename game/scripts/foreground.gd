@@ -14,10 +14,10 @@ func _draw():
 	var left=game.camera.position.x-800
 	for i in range(maxi(0,int((left-40)/67)),int(minf(float(game.level.width),left+1660)/67)+1):
 		var x=i*67.0+game.world.noise_at(i*2)*21
-		if not game.ground_at(x): continue
+		if not game.ground_at(x) or game.world.near_route_focus(x): continue
 		var y=float(game.surface_y_at(x,700))
 		var wind=sin(game.clock*1.3+i)*2
-		var height=4+game.world.noise_at(i)*7
+		var height=3+game.world.noise_at(i)*5
 		var theme=game.world.zone_at(x)
 		if theme in ["school_courtyard","rail_yard","shattered_arcade","signal_yard","drainage_tunnel"]: height*=.5
 		draw_polyline(PackedVector2Array([Vector2(x,y+3),Vector2(x+wind+2,y-height*.5),Vector2(x+wind+5,y-height)]),Color(.10,.16,.14,.65),1.1,true)

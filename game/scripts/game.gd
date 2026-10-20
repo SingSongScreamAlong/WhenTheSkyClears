@@ -93,10 +93,11 @@ var section_preview=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears Â· Development 0.4.0")
+	DisplayServer.window_set_title("When the Sky Clears Â· Development 0.4.1")
 	qa_args=OS.get_cmdline_user_args()
 	smoke_test="--mill-preview" in qa_args or "--mill-checks" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--development-checks" in qa_args or "--movement-checks" in qa_args or "--capture-v040" in qa_args or "--side-routes" in qa_args
 	smoke_test=smoke_test or "--story-checks" in qa_args or "--capture-story" in qa_args
+	smoke_test=smoke_test or "--refinement-checks" in qa_args or "--capture-v041" in qa_args or "--canal-preview" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args: smoke_test=true
 	setup_input()
@@ -141,12 +142,24 @@ func _ready():
 		smoke_test=true; call_deferred("run_movement_checks")
 	if "--capture-v040" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
+	if "--capture-v041" in qa_args:
+		smoke_test=true; call_deferred("capture_v040")
+	if "--refinement-checks" in qa_args:
+		load("res://scripts/refinement_checks.gd").run.call_deferred(self)
 	if "--mill-checks" in qa_args:
 		smoke_test=true; call_deferred("run_mill_checks")
 	if "--mill-preview" in qa_args:
 		smoke_test=true; journey_active=true; flags={}; load_chapter(1,false); mode="playing"
 		checkpoint_x=15500; respawn(false); chapter_card=0
 		announce_message("The old bridge. A jammed wheel. A rope leading to the sluice.",7)
+	if "--canal-preview" in qa_args:
+		smoke_test=true; journey_active=true; flags={}; load_chapter(1,false); mode="playing"
+		for gate in level.gates:
+			if float(gate.x)<11300: flags[gate.key]=true
+		for bridge in level.get("bridges",[]):
+			if float(bridge.x)<11300: flags[bridge.key]=true
+		scrap=0; checkpoint_x=11370; respawn(false); chapter_card=0
+		announce_message("Search the canvas tool roll. Spend its salvage on the sluice or the raised crossing. Keep him close.",8)
 	if "--story-preview" in qa_args:
 		journey_active=true; journey_completed=false; flags={}; memories={}; cache_remaining={}
 		load_chapter(0,false); checkpoint_x=3860; mode="playing"
@@ -348,7 +361,8 @@ func _process(dt):
 	dust=dust.filter(func(p): return p.life>0)
 	for p in impacts: p.age+=dt
 	impacts=impacts.filter(func(p):return p.age<4)
-	for zone in level.get("water_zones",[]): water_offsets[zone.key]=move_toward(float(water_offsets.get(zone.key,0)),62.0 if flags.get(zone.key,false) else 0.0,dt*24)
+	if mode=="playing":
+		for zone in level.get("water_zones",[]): water_offsets[zone.key]=move_toward(float(water_offsets.get(zone.key,0)),62.0 if flags.get(zone.key,false) else 0.0,dt*24)
 
 func _physics_process(dt):
 	if mode!="playing": return
@@ -603,12 +617,12 @@ func interact():
 
 func tick_action(dt):
 	if pending_action.is_empty(): return
-	if not Input.is_action_pressed("interact") or abs(player.position.x-pending_action.x)>100:
-		action_interrupts+=1; pending_action={}; action_progress=0; player.action_time=0; return
+	if not Input.is_action_pressed("interact") or abs(player.position.x-pending_action.x)>100 or abs(player.position.y-float(pending_action.get("y",player.position.y)))>100:
+		action_interrupts+=1; pending_action={}; action_progress=0; player.action_time=0; boy.action_time=0; return
 	player.action_time=.12
 	if pending_action.get("companion_required",false):
 		if abs(player.position.x-boy.position.x)>105 or abs(player.position.y-boy.position.y)>45:
-			action_interrupts+=1; pending_action={}; action_progress=0; player.action_time=0; return
+			action_interrupts+=1; pending_action={}; action_progress=0; player.action_time=0; boy.action_time=0; return
 		boy.action_time=.12
 		stamina=maxf(0,stamina-dt*4)
 	if pending_action.kind=="fire": boy.action_time=.12
@@ -1360,6 +1374,8 @@ func capture_v040():
 	await get_tree().process_frame; camera.position=Vector2(12875,427)
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(report_path("07_character_close_study.png"))
+	if "--capture-v041" in qa_args:
+		await load("res://scripts/refinement_checks.gd").capture(self)
 	print("V040_NATIVE_4K_CAPTURE_COMPLETE"); call_deferred("quit_game")
 
 func run_mill_checks():
