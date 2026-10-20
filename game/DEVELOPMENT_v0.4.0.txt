@@ -1,0 +1,51 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.4.0
+
+This bounded Godot pass builds on the preserved 0.3.0 journey. It retains all
+five chapters and their painted assets. It does not develop or merge Unreal.
+
+PLAY
+Run PLAY.cmd for the journey, or FREIGHT_CROSSING.cmd for the new rehearsal.
+The title screen also offers Freight crossing rehearsal. The rehearsal begins
+at the camp approach with cold hands and an almost empty pack. Search the tool
+roll for bread, return to the sheltered flame if needed, keep both children low
+beneath the fallen beam, watch the light, jump the broken crossing and lift the
+loading bar together. All these changes also exist in chapter three.
+
+MOVEMENT AND COMPANION
+Both children now use the same drawing scale and 99-unit standing / 74-unit
+crouching collision height. Releasing crouch under an obstruction keeps the
+smaller shape until there is room to stand. The boy eases into following
+distance, catches up using a continuous speed range, and uses short-lived,
+single-use takeoff cues instead of scanning an old trail of airborne positions.
+He waits at a gap beyond his reachable span. Waiting and calling remain on Q.
+He still uses native physics and can become separated; there is no teleport.
+
+SAVES
+This development build writes to a separate Windows user-data directory:
+%APPDATA%\WhenTheSkyClears\v040
+The journey uses journey_v3.json; the rehearsal uses freight_crossing_v040.json.
+The original 0.3.0 directory and running session are left untouched. Existing
+schema-1 save loading remains in the code. No original journey save existed in
+the inspected directory, so a real personal-save migration was not exercised.
+Native smoke tests verify atomic write/readback, resume, and title preservation
+using unique disposable files. To continue an existing journey, copy (do not
+move) its journey_v3.json into the new directory while this build is closed.
+
+CONTROLS
+A/D or arrows move; Space/W/Up jump; Shift run; S/Down crouch; hold E work or
+search; Q wait/call; H medicine; Tab pack; R recover; Esc pause; F11 fullscreen.
+Controller mappings are retained from 0.3.0.
+
+LIMITS
+The articulated procedural character drawing and existing paintings are reused.
+This is not the separate character-animation team's finished motion export.
+No suitable completed handoff was found in the inspected local locations.
+Head turns, acting and gait transitions remain rough. A companion can still
+fall behind during a sprint; stopping and calling is part of the current loop.
+Automated input-driven traversal and rendered evidence do not establish human
+balancing, art approval, or a finished commercial game. The preview has no audio.
+The recorded freight sequence survives but takes one shockwave hit during the
+automated cover approach; cover alignment and encounter timing remain rough.
+
+See evidence/v040/DELIVERY_MANIFEST.json for exact tested binary hashes, native
+results and preview provenance. Source and Windows packages are separate.

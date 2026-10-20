@@ -149,6 +149,14 @@
       "w": 220,
       "h": 22,
       "kind": "stone"
+    },
+    {
+      "x": 900,
+      "y": 594,
+      "w": 145,
+      "h": 27,
+      "kind": "stone",
+      "id": "freight_low_beam"
     }
   ],
   "scenery": [
@@ -213,13 +221,21 @@
   ],
   "interact": [
     {
+      "kind": "fire",
+      "x": 520,
+      "y": 700,
+      "label": "Warm your hands before the crossing",
+      "hold_seconds": 3.2
+    },
+    {
       "kind": "cache",
       "x": 720,
       "y": 700,
-      "label": "An abandoned tool roll",
+      "label": "Bread and wire in a tool roll",
       "id": "camp_tools",
       "scrap": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "rations": 1
     },
     {
       "kind": "cache",
@@ -230,6 +246,15 @@
       "rations": 1,
       "scrap": 1,
       "hold_seconds": 1.1
+    },
+    {
+      "kind": "relay",
+      "x": 2090,
+      "y": 700,
+      "id": "freight_loading_bar",
+      "label": "Lift the loading bar together",
+      "hold_seconds": 2.8,
+      "companion_required": true
     },
     {
       "kind": "cache",
@@ -384,6 +409,13 @@
       "h": 190,
       "key": "camp_station_passage",
       "kind": "rubble"
+    },
+    {
+      "x": 2190,
+      "y": 700,
+      "h": 185,
+      "key": "freight_loading_bar",
+      "kind": "timber_bar"
     }
   ],
   "covers": [
@@ -462,6 +494,16 @@
       "w": 300,
       "kind": "wall",
       "y": 700.0
+    },
+    {
+      "x": 970,
+      "w": 230,
+      "kind": "wall"
+    },
+    {
+      "x": 1785,
+      "w": 160,
+      "kind": "wall"
     }
   ],
   "danger": [
@@ -497,7 +539,9 @@
   ],
   "checkpoints": [
     180,
+    420,
     1810,
+    1990,
     3620,
     5100,
     7040,
@@ -533,9 +577,25 @@
     {
       "x": 9990,
       "text": "The light returns to the same place. Let it pass, then take him with you."
+    },
+    {
+      "x": 700,
+      "text": "Search the tool roll [hold E]. Bring the bread back to the sheltered flame if you need warmth."
+    },
+    {
+      "x": 870,
+      "text": "Hold S beneath the fallen beam. Both children need to stay low."
+    },
+    {
+      "x": 1400,
+      "text": "Wait behind the wall for the light to pass. Stand, run and jump the broken crossing."
+    },
+    {
+      "x": 2030,
+      "text": "Four hands at the loading bar. Hold E when he is beside you."
     }
   ],
-  "build": "0.3.0",
+  "build": "0.4.0",
   "bridges": [],
   "pushables": [],
   "water_zones": [],
@@ -552,6 +612,10 @@
     {
       "x": 9625,
       "w": 400
+    },
+    {
+      "x": 400,
+      "w": 240
     }
   ],
   "hazard_lanes": [

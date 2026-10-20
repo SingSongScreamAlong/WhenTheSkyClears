@@ -1,5 +1,13 @@
 # When the Sky Clears
 
+The isolated **0.4.0 development pass** adds equal-height character collision,
+head clearance while crouching, more stable companion following, and a freight
+crossing rehearsal combining supplies, shelter, stealth, traversal and shared
+work. Run `game/PLAY.cmd` or `game/FREIGHT_CROSSING.cmd` in this checkout. Read
+[the pass notes](game/DEVELOPMENT_v0.4.0.txt) and
+[its exact verification manifest](game/evidence/v040/DELIVERY_MANIFEST.json).
+The original 0.3.0 documentation and history below remain as provenance.
+
 A painted, side-scrolling survival game about two children holding on to each other through displacement, ruined places, and the first signs of renewal.
 
 Guide the older child, keep her companion close, and find shelter for both. Food, warmth, medicine, and salvage are finite. Low cover requires crouching; exposed crossings require timing. Shared lifting, searching, repairs, and rest take time while the world keeps moving.

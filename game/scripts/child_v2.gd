@@ -57,7 +57,7 @@ func _ready():
 	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 	anim_time=0 if is_girl else .83
 	collision_layer=2; collision_mask=1; floor_snap_length=14
-	col=CollisionShape2D.new(); col.shape=RectangleShape2D.new(); col.shape.size=Vector2(23,99 if is_girl else 84); col.position.y=-col.shape.size.y/2
+	col=CollisionShape2D.new(); col.shape=RectangleShape2D.new(); col.shape.size=Vector2(23,99); col.position.y=-col.shape.size.y/2
 	add_child(col); reset_feet()
 
 func reset_feet():
@@ -65,7 +65,7 @@ func reset_feet():
 		foot_lock[i]=position+Vector2(-10 if i==0 else 10,0)
 		foot_lock[i].y=surface_height(foot_lock[i].x,position.y)
 		foot_start[i]=foot_lock[i]
-		feet[i]=(foot_lock[i]-position)/(1.0 if is_girl else .84)
+		feet[i]=(foot_lock[i]-position)/1.0
 	phase=.26; foot_phase=[.26,.76]
 
 func surface_height(world_x,fallback_y):
@@ -121,7 +121,9 @@ func _physics_process(dt):
 		ai_jump=false
 		if not is_on_floor() and leap_axis!=0: axis=leap_axis
 		elif is_on_floor() and not jump: leap_axis=0
-	crouching=Input.is_action_pressed("crouch") if controlled else forced_crouch
+	var wants_crouch=Input.is_action_pressed("crouch") if controlled else forced_crouch
+	# Keep the smaller collider until the full standing shape is clear.
+	crouching=wants_crouch or (crouching and not can_stand())
 	if climbing:
 		climb_clock-=dt
 		if hit_time>0 or climb_clock<=0:
@@ -140,7 +142,7 @@ func _physics_process(dt):
 		speed=265
 		if abs(axis)>.1: game.stamina=maxf(0,game.stamina-dt*21)
 	if not controlled:
-		speed=210 if abs(game.player.position.x-position.x)>105 else 172
+		speed=clampf(166.0+(abs(game.player.position.x-position.x)-70.0)*1.1,166.0,265.0)
 		if jump or (not is_on_floor() and leap_axis!=0): speed=268
 	if crouching: speed=73
 	if game.in_water(position.x,position.y): speed*=.61
@@ -159,10 +161,12 @@ func _physics_process(dt):
 		velocity.y=-525; jump_buffer=0; coyote=0
 		takeoff_time=.18
 		if not controlled: leap_axis=axis
-		if controlled: game.stamina=maxf(0,game.stamina-7)
+		if controlled:
+			game.stamina=maxf(0,game.stamina-7)
+			game.remember_jump(position,axis)
 	velocity.y+=1420*dt
 	if controlled and Input.is_action_just_released("jump") and not Input.is_action_pressed("jump") and velocity.y< -170: velocity.y*=.55
-	var height=(74.0 if is_girl else 62.0) if crouching else (99.0 if is_girl else 84.0)
+	var height=74.0 if crouching else 99.0
 	col.shape.size.y=height; col.position.y=-height/2
 	move_and_slide()
 	if not is_on_floor() and is_on_wall() and velocity.y> -75 and abs(axis)>.1 and not crouching:
@@ -193,18 +197,18 @@ func _physics_process(dt):
 				if p<stance:
 					if foot_phase[i]>=stance:
 						foot_lock[i]=Vector2(position.x+facing*reach,surface_height(position.x+facing*reach,position.y)); step(i)
-					feet[i]=(foot_lock[i]-position)/(1.0 if is_girl else .84)
+					feet[i]=(foot_lock[i]-position)/1.0
 				else:
-					if foot_phase[i]<stance: foot_start[i]=position+feet[i]*(1.0 if is_girl else .84)
+					if foot_phase[i]<stance: foot_start[i]=position+feet[i]*1.0
 					var u=(p-stance)/(1-stance); var smooth=u*u*(3-2*u)
 					var end=Vector2(position.x+facing*reach,surface_height(position.x+facing*reach,position.y))
-					feet[i]=(foot_start[i].lerp(end,smooth)-position)/(1.0 if is_girl else .84)
+					feet[i]=(foot_start[i].lerp(end,smooth)-position)/1.0
 					feet[i].y-=sin(u*PI)*(18 if abs(velocity.x)>220 else 12)
 				foot_phase[i]=p
 		else:
 			for i in range(2):
 				var rest_x=(-9.0 if i==0 else 9.0)
-				var sole_y=(surface_height(position.x+rest_x*(1.0 if is_girl else .84),position.y)-position.y)/(1.0 if is_girl else .84)
+				var sole_y=(surface_height(position.x+rest_x*1.0,position.y)-position.y)/1.0
 				feet[i]=feet[i].lerp(Vector2(rest_x,sole_y),1-exp(-dt*12))
 	else:
 		var rising=clampf(-velocity.y/400.0,0,1)
@@ -214,6 +218,13 @@ func _physics_process(dt):
 		if climbing:
 			feet[0]=feet[0].lerp(Vector2(-11*facing,-5),1-exp(-dt*14)); feet[1]=feet[1].lerp(Vector2(16*facing,-31),1-exp(-dt*14))
 	was_floor=is_on_floor(); last_direction=facing; moving_last=abs(velocity.x)>5
+
+func can_stand():
+	var shape=RectangleShape2D.new(); shape.size=Vector2(22,98)
+	var query=PhysicsShapeQueryParameters2D.new()
+	query.shape=shape; query.transform=Transform2D(0,global_position+Vector2(0,-50))
+	query.collision_mask=1; query.exclude=[get_rid()]
+	return get_world_2d().direct_space_state.intersect_shape(query,1).is_empty()
 
 func step(_side):
 	game.play_step(position,(-24 if crouching else -20) if controlled else (-32 if crouching else -28))
@@ -272,7 +283,7 @@ func draw_hand(at,elbow,color,open_hand=false):
 		draw_line(at-across*1.0,at+direction*4.4-across*1.0,color,1.2,true)
 
 func _draw():
-	var s=1.0 if is_girl else .84
+	var s=1.0
 	draw_set_transform(Vector2.ZERO,0,Vector2(s,s))
 	var run=clampf((abs(velocity.x)-160)/105,0,1)
 	var gait=fposmod(phase,1)*TAU

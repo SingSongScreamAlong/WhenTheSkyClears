@@ -76,11 +76,12 @@ func title_screen():
 	if game.save_exists:
 		button("Continue the journey",Rect2(112,y,410,49),"continue"); y+=52
 	button("Begin a new journey",Rect2(112,y,410,49),"new"); y+=52
+	button("Freight crossing rehearsal",Rect2(112,y,410,49),"crossing"); y+=52
 	button("Chapters",Rect2(112,y,410,49),"chapters"); y+=52
 	button("Settings & controls",Rect2(112,y,410,49),"settings"); y+=52
 	button("Leave",Rect2(112,y,410,49),"quit")
 	text_at("AN ORIGINAL SURVIVAL JOURNEY",Vector2(119,844),11,dim)
-	text_at("DEVELOPMENT  0.3.0",Vector2(1338,847),10,dim)
+	text_at("DEVELOPMENT  0.4.0",Vector2(1338,847),10,dim)
 	text_at("Move with care. There is someone behind you.",Vector2(1015,816),17,Color(palette,.65),true)
 
 func playing_hud():
@@ -232,7 +233,8 @@ func _input(event):
 
 func activate(action):
 	match action:
-		"new": game.new_journey()
+		"new": game.save_path="user://journey_v3.json"; game.new_journey()
+		"crossing": game.start_crossing()
 		"continue": game.continue_journey()
 		"resume": game.mode="playing"
 		"restart": game.mode="playing"; game.recover(false)
