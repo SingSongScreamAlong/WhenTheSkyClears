@@ -44,4 +44,4 @@ static func run(g):
 	var waiting_x=g.boy.position.x;Input.action_press("right");await frames(g,65)
 	g.assert_check("wait_command_preserves_companion_position_during_crossing",absf(g.boy.position.x-waiting_x)<.05 and not g.boy.following)
 	release();var passed=g.test_log.all(func(c):return c.passed)
-	var f=FileAccess.open(g.report_path("quality_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify({"build":"0.5.4","all_passed":passed,"checks":g.test_log,"reversal_cases":cases,"scope":"Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."},"\t"));f.close();g.quit_game(0 if passed else 1)
+	var f=FileAccess.open(g.report_path("quality_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify({"build":"0.5.5","all_passed":passed,"checks":g.test_log,"reversal_cases":cases,"scope":"Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."},"\t"));f.close();g.quit_game(0 if passed else 1)

@@ -1,0 +1,749 @@
+{
+  "version": "0.5.5",
+  "review_state": "Scene/performance review checkpoint; animation and cold-entry complaints remain open",
+  "base_commit": "33d3f96daccb25c866bd8ecad4e5c84dcc54d843",
+  "branch": "dev/last-house-before-crossing",
+  "executable_sha256": "dcc67c79196fd1080b7f16bad8d11da7ec46e3598b756805c8c9e08db263560b",
+  "source_sha256": {
+    "scripts/access_checks.gd": "4fce066ed37270c49fd57710176afde277abaa478df8fea8ef357149a1a1003f",
+    "scripts/access_checks.gd.uid": "355ec6a4166021c40becf47c895b4756413284f57acc6bb1c590b123beb4b5fd",
+    "scripts/access_settings.gd": "1a702258aa1076dc78a821fcde9438dcf6f01070773d8c5796728db49d08d76f",
+    "scripts/access_settings.gd.uid": "0b60cb36fbcc29d3ebf82c286b29144069154085dc89da832db333ca1ab1a069",
+    "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts/child.gd.uid": "e0358e821e975776dc050e03d9c5cc604195406304b1337dec459326785f1fac",
+    "scripts/child_performance.gd": "8328a28fcab7b20bf114c55fad5d29d7615d6b582b12454b3169aa41de079561",
+    "scripts/child_performance.gd.uid": "19f04267631fea7e57d2754b434b8b6c5562612dbdfd7b84d9a54f969b155d30",
+    "scripts/child_v2.gd": "209c6fc91a6db69c8daa59d2ccf1a0c984bd1515a9ae3dbcf8ec436bb5e9dc10",
+    "scripts/child_v2.gd.uid": "7580c2baf68e24a1d94278973d79b7f6c10421420d0ce8d740c36c8e7be3caff",
+    "scripts/crossing_checks.gd": "dcb3d2c65ac7b7aab1cb3d70692d47930bf548d1fcd8f77d0fc4a595002e1e2d",
+    "scripts/crossing_checks.gd.uid": "3c484968f313bc08f69a23456b25e800d96efbe3c082dd4998bc47f557db3126",
+    "scripts/feedback_audio.gd": "412d9e7513b2022267081ffe87b3c48002c4db515dce99d3b0857a89c6286c9d",
+    "scripts/feedback_audio.gd.uid": "73975b86c6986a8e9a4c6311a7a44c4cbe3299519ff6640fddaa077c3299c7b7",
+    "scripts/foreground.gd": "ab3e4e8716221fd69348b315c33e2affa4dcbf65e1b93c0f92dba85781252401",
+    "scripts/foreground.gd.uid": "53545838701b4c78dd59ee6366b2692cce1073857e7b2a5d9e5471097f5e3771",
+    "scripts/game.gd": "1da5745273ef581f4024616c59904c58e34e4320b183343ab994944995aaa3c6",
+    "scripts/game.gd.uid": "b42abaf92f79be93b8e2ba006ff5f75317bfeaa8c2cf9240dcb53de4c7cce8fb",
+    "scripts/hud.gd": "25a7a37555ceb6d06653b850e64410f219b042c4255444988e356d05066ae4eb",
+    "scripts/hud.gd.uid": "0ca2f16dcd37a5654727716d4d4683366d5390456089439ab8e9604e61c73b9b",
+    "scripts/last_house.gd": "77d00e60b048e7ced18d75173267e49857635b9cde110b4f86617748d1dc9752",
+    "scripts/last_house.gd.uid": "4e91d05b69f80c2b9990255bbb7eadc96d169d17ecd7d8a5a61e8e29a1c4b40e",
+    "scripts/last_house_checks.gd": "6bc849322cd30459c2866071ea4c13a350aaccc5a761004812b0d1757efd9352",
+    "scripts/last_house_checks.gd.uid": "b4b24f1454c889d97056b24a039709dded0288a6c1708da79ea4b42a32b6b676",
+    "scripts/painted_child.gd": "f6c59a7328f4e99ed8ec5e5930184ec0eca1f4a9b9ca37b98fe5fe45d214ea03",
+    "scripts/painted_child.gd.uid": "b4725c8a9bac17a0dafb43f84545e5af9ee621cc1ed7d8f253191933c5e9b699",
+    "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts/pushable.gd.uid": "8c0001652f3c85f1341165595471f167c48b12bb3d289b0d0b0c7fe9797f3348",
+    "scripts/quality_checks.gd": "96e479668e7e7b52dc7ca4eaee98ea1c6dd4c369e7766375be06e787662893f0",
+    "scripts/quality_checks.gd.uid": "02ebe70ed6d23861c08e0a1745c32ecbb32eec1a03c593b11e85f3a263a07491",
+    "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts/side_route_checks.gd.uid": "db4937cc1c33b28b9a7959bc157f7a1f8ca3441b79d472d82c3f6d3c486513f7",
+    "scripts/trust_checks.gd": "c3b312fa2a7cea5439ff08a738d20e709f9af5e51d17829853cd8015eeacaba6",
+    "scripts/trust_checks.gd.uid": "c4e1d81755cc963b61f632ef3a4fddf4c5c941d22c9b6815cf5ab51cb41060c1",
+    "scripts/world.gd": "866cdf2910fc49a1fb1ebaeec2ccde2b13634c97af581b4693495601d7184dda",
+    "scripts/world.gd.uid": "2186abbed5b3e691f821efdfdb136147f4232de492a2e11f7aabba293466ba71",
+    "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+    "levels/01.json": "6f06c7d7c3cd36e44e349d74d8ff89e229dba8de842c9692635590b5cbff56aa",
+    "levels/02.json": "13151c89c2ccc25825e18142dfff62c9730dbc17c0a51438bcea6634356f5bfc",
+    "levels/03.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+    "levels/04.json": "702473811c7222a46542976bdd5d19d6bc10b2806add6b6e78677ddb4c5db68c",
+    "levels/05.json": "b7b2d1995b2c0143c36cd2ded4a5e275737a6dbd8caad4f963fe5e0c032aed4c",
+    "levels/last_house.json": "55bbe834a8d7b915b26f8e24b4b5aedc7a3230826c80a2f7f84731d1bf0ad674",
+    "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+    "assets/audio/bread.wav": "eb09b2365b48bce78653560429bcca4adf1c2305023cc665006bc1f0df0f7458",
+    "assets/audio/cloth.wav": "495fc25594611f97ec3832d9a9e5f44f9350def760533be03b83455dc570c862",
+    "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+    "assets/audio/FEEDBACK_PROVENANCE_v052.json": "4a97677737a8a38da4d27b24d7568aa0a4154df21fa1a629e24c496e12ad4069",
+    "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+    "assets/audio/rain_open.wav": "9e0ba00550675bdb86cd849c49cf17fab6dc6120715bc5b6e06b07e0870c488d",
+    "assets/audio/rain_roof.wav": "0f3d8f98b8136810f625c8715a9bf8b9704d6cf4ff01b4377aea2d662cd80d3d",
+    "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+    "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+    "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+    "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+    "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+    "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+    "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+    "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+    "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+    "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+    "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+    "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+    "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+    "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+    "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+    "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+    "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+    "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+    "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+    "assets/environments/LastHouse_PROVENANCE_v050.txt": "de765508c9b5a0dbd6c301846e9bb014fc7e0b3044efd29e9827575dc1c8f594",
+    "assets/environments/LastHouse_v050.png": "b3e3e2c2f81542c0f0e4c40c0e9ed2c93c07309d95e841dc8286002d628b3910",
+    "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+    "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+    "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+    "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+    "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+    "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+    "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+    "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+    "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+    "project.godot": "25c9f595ed0b6ced7cbeea65a7a506875a41a4ebfce1817971c866c98a9c52c3"
+  },
+  "complaints": {
+    "rain": {
+      "status": "improved",
+      "evidence": "Independent world-space falls drawn behind architecture; camera-locked arithmetic grid and shelter-mask columns removed. Density intentionally reduced."
+    },
+    "scale": {
+      "status": "improved",
+      "evidence": "80units/metre art calibration; doorway163.47units=2.04m versus approximately107units=1.34m drawn children. Equal child profiles and99unit colliders unchanged."
+    },
+    "opacity_cutaway": {
+      "status": "improved",
+      "evidence": "Constant low foreground wall cutaway; complete rear wall. No Last House proximity alpha switch."
+    },
+    "background_depth": {
+      "status": "improved",
+      "evidence": "Oversized translucent village and repeated alpha horizon strips replaced by one distant low parallax panorama; near architecture fixed in world."
+    },
+    "grounding": {
+      "status": "improved",
+      "evidence": "Source floor sill at740 lands on700 collision ground; atlas transparent padding cropped; shelf supports reach the real floor. Native movement frames inspected."
+    },
+    "frame_rate": {
+      "status": "improved warm rendering headroom; cold entry unresolved",
+      "evidence": {
+        "before_timing": {
+          "settings": {
+            "camera_zoom": "(1.12, 1.12)",
+            "canvas_reference": "(1600, 900)",
+            "current_screen": 0,
+            "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+            "max_fps": 60,
+            "physics_hz": 60,
+            "refresh_hz": 240.001022338867,
+            "renderer": "mobile",
+            "startup_scene_load_ms": 774.105,
+            "vsync_mode": 1,
+            "window_mode": 0,
+            "window_size": "(1440, 810)"
+          },
+          "cases": {
+            "full_rain": {
+              "warm": {
+                "samples": 836,
+                "p50_ms": 16.665,
+                "p95_ms": 16.766,
+                "p99_ms": 16.856,
+                "worst_ms": 18.873,
+                "above33_3ms": 0
+              },
+              "cold": {
+                "samples": 175,
+                "p50_ms": 16.663,
+                "p95_ms": 16.832,
+                "p99_ms": 17.5,
+                "worst_ms": 126.478,
+                "above33_3ms": 1
+              },
+              "warm_draw_calls_median": 1270.0,
+              "warm_process_ms_median": 12.148
+            },
+            "open_rain": {
+              "warm": {
+                "samples": 835,
+                "p50_ms": 16.664,
+                "p95_ms": 16.775,
+                "p99_ms": 16.84,
+                "worst_ms": 16.953,
+                "above33_3ms": 0
+              },
+              "cold": {
+                "samples": 181,
+                "p50_ms": 16.666,
+                "p95_ms": 16.79,
+                "p99_ms": 16.961,
+                "worst_ms": 17.123,
+                "above33_3ms": 0
+              },
+              "warm_draw_calls_median": 1396.0,
+              "warm_process_ms_median": 13.842
+            }
+          }
+        },
+        "after_timing": {
+          "settings": {
+            "camera_zoom": "(1.12, 1.12)",
+            "canvas_reference": "(1600, 900)",
+            "current_screen": 0,
+            "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+            "max_fps": 60,
+            "physics_hz": 60,
+            "refresh_hz": 240.001022338867,
+            "renderer": "mobile",
+            "startup_scene_load_ms": 742.407,
+            "vsync_mode": 1,
+            "window_mode": 0,
+            "window_size": "(1440, 810)"
+          },
+          "cases": {
+            "full_rain": {
+              "warm": {
+                "samples": 835,
+                "p50_ms": 16.667,
+                "p95_ms": 16.791,
+                "p99_ms": 16.918,
+                "worst_ms": 18.174,
+                "above33_3ms": 0
+              },
+              "cold": {
+                "samples": 177,
+                "p50_ms": 16.666,
+                "p95_ms": 16.846,
+                "p99_ms": 17.089,
+                "worst_ms": 105.132,
+                "above33_3ms": 1
+              },
+              "warm_draw_calls_median": 392.0,
+              "warm_process_ms_median": 5.831
+            },
+            "open_rain": {
+              "warm": {
+                "samples": 835,
+                "p50_ms": 16.664,
+                "p95_ms": 16.792,
+                "p99_ms": 16.885,
+                "worst_ms": 17.095,
+                "above33_3ms": 0
+              },
+              "cold": {
+                "samples": 181,
+                "p50_ms": 16.667,
+                "p95_ms": 16.768,
+                "p99_ms": 16.918,
+                "worst_ms": 16.96,
+                "above33_3ms": 0
+              },
+              "warm_draw_calls_median": 484.0,
+              "warm_process_ms_median": 6.758
+            }
+          }
+        },
+        "measurement_definitions": {
+          "total_frame_interval_ms": "Wall-clock intervals between process callbacks, including rendering/presentation/scheduling; distributions separate warm from first3seconds.",
+          "warm_process_ms_median": "Godot Performance.TIME_PROCESS diagnostic multiplied by1000; CPU-side process-time metric, not total frame interval or input latency.",
+          "draw_calls": "Godot per-frame rendering monitor, not FPS."
+        },
+        "scope": "Native two-case matched v054 versus scene repair, real wall-clock frame intervals. No fixed-fps or screenshot I/O. Cold means first 3 seconds after case entry in a fresh process; not a driver/system cold boot. Synthetic native keyboard replay, no physical controller or human latency claim."
+      },
+      "limitations": "Source-engine native timing comparison. Packaged external timing diagnostic produced no result and was terminated; no packaged timing claim."
+    },
+    "movement_response": {
+      "status": "preserved; subjective movement complaint unresolved",
+      "evidence": "Native response, reversal, waiting, safe yielding, equal-height and pair-cover regressions pass; same physics/pose solver."
+    },
+    "animation": {
+      "status": "unresolved",
+      "evidence": "Existing painted cutout motion remains. Profile flips, extreme folds and close waiting/air crossing overlap remain visible. No turn-away-head or cloth trial included."
+    }
+  },
+  "validation": {
+    "source": {
+      "slice-checks": {
+        "checks": 38,
+        "passed": true,
+        "scope": "Both routes use native held Input continuously from fresh start without repositioning, immunity, resource grants or geometry changes. Separate boundary, abort and save/retry fixtures deliberately set initial actor positions. Scripted verification; no human controller, Mac or audio review claimed."
+      },
+      "quality-checks": {
+        "checks": 14,
+        "passed": true,
+        "scope": "Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."
+      },
+      "trust-checks": {
+        "checks": 21,
+        "passed": true,
+        "scope": "Native scene, real prompts/held input/event mapping, paused frames and unique disposable disk saves. Scenario setup repositions actors. No physical controller or human playtest claimed."
+      },
+      "crossing-checks": {
+        "checks": 12,
+        "passed": true,
+        "scope": "Native controller checks use deliberate initial setups. Freight sequence then uses held Input actions with no actor repositioning, immunity or resource grants."
+      },
+      "smoke": {
+        "checks": 120,
+        "passed": true,
+        "scope": "Actual Godot runtime: native CharacterBody2D physics, Input action simulation, authored interactions, cover and damage, death recovery. Targeted interaction checks reposition actors; these are not a complete human playthrough."
+      },
+      "survival": {
+        "checks": 13,
+        "passed": true,
+        "scope": "Real Godot physics and damage/rest/cache rules. Deliberate scenario setup repositions actors and sets initial conditions; continuous_traversal.json tests uninterrupted navigation separately."
+      },
+      "encounters": {
+        "checks": 10,
+        "passed": true,
+        "scope": "Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."
+      },
+      "journey-checks": {
+        "checks": 35,
+        "passed": true,
+        "scope": "Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."
+      },
+      "side-routes": {
+        "checks": 13,
+        "passed": true,
+        "scope": "Targeted native Godot physics fixtures. Each route starts both children once on authored ground 410 pixels before its raised cache. Prior gates are explicitly unlocked and timed dangers are disabled to isolate the climb. After set-up there are no position changes, collision edits, forced jump velocities or resource grants. Native Input actions drive the climb and full held search; the existing companion AI must follow. This does not replace the continuous campaign test."
+      },
+      "access-capture": {
+        "checks": 48,
+        "passed": true,
+        "scope": "Native keyboard and synthetic InputEventJoypadButton injection, real controller/physics/menu paths and disposable preference files. No physical controller or human hearing validation. Targeted audio state/fixture setups are separate from route completion."
+      },
+      "traverse": {
+        "checks": 0,
+        "passed": true,
+        "scope": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."
+      }
+    },
+    "release_": {
+      "slice-checks": {
+        "checks": 38,
+        "passed": true,
+        "scope": "Both routes use native held Input continuously from fresh start without repositioning, immunity, resource grants or geometry changes. Separate boundary, abort and save/retry fixtures deliberately set initial actor positions. Scripted verification; no human controller, Mac or audio review claimed."
+      },
+      "quality-checks": {
+        "checks": 14,
+        "passed": true,
+        "scope": "Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."
+      },
+      "trust-checks": {
+        "checks": 21,
+        "passed": true,
+        "scope": "Native scene, real prompts/held input/event mapping, paused frames and unique disposable disk saves. Scenario setup repositions actors. No physical controller or human playtest claimed."
+      },
+      "crossing-checks": {
+        "checks": 12,
+        "passed": true,
+        "scope": "Native controller checks use deliberate initial setups. Freight sequence then uses held Input actions with no actor repositioning, immunity or resource grants."
+      },
+      "smoke": {
+        "checks": 120,
+        "passed": true,
+        "scope": "Actual Godot runtime: native CharacterBody2D physics, Input action simulation, authored interactions, cover and damage, death recovery. Targeted interaction checks reposition actors; these are not a complete human playthrough."
+      },
+      "survival": {
+        "checks": 13,
+        "passed": true,
+        "scope": "Real Godot physics and damage/rest/cache rules. Deliberate scenario setup repositions actors and sets initial conditions; continuous_traversal.json tests uninterrupted navigation separately."
+      },
+      "encounters": {
+        "checks": 10,
+        "passed": true,
+        "scope": "Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."
+      },
+      "journey-checks": {
+        "checks": 35,
+        "passed": true,
+        "scope": "Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."
+      },
+      "side-routes": {
+        "checks": 13,
+        "passed": true,
+        "scope": "Targeted native Godot physics fixtures. Each route starts both children once on authored ground 410 pixels before its raised cache. Prior gates are explicitly unlocked and timed dangers are disabled to isolate the climb. After set-up there are no position changes, collision edits, forced jump velocities or resource grants. Native Input actions drive the climb and full held search; the existing companion AI must follow. This does not replace the continuous campaign test."
+      },
+      "access-capture": {
+        "checks": 48,
+        "passed": true,
+        "scope": "Native keyboard and synthetic InputEventJoypadButton injection, real controller/physics/menu paths and disposable preference files. No physical controller or human hearing validation. Targeted audio state/fixture setups are separate from route completion."
+      },
+      "traverse": {
+        "checks": 0,
+        "passed": true,
+        "scope": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."
+      }
+    }
+  },
+  "checks_per_suite": {
+    "source": 324,
+    "release_": 324
+  },
+  "continuous_journey": {
+    "build": "0.5.5",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 0,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.59999999999999
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6166666666668
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2666666666662
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_basket",
+        "kind": "cache",
+        "time": 44.1166666666654
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 51.1499999999984
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 66.2833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 75.0166666666637
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 80.9666666666634
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 90.4833333333295
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 94.4166666666626
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 106.633333333329
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 120.383333333328
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 136.433333333334
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 142.300000000005
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 147.883333333343
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 158.550000000018
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 162.600000000022
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 179.416666666702
+      },
+      {
+        "chapter": 2,
+        "id": "freight_loading_bar",
+        "kind": "relay",
+        "time": 200.766666666719
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 225.400000000072
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 231.100000000076
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 237.383333333414
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 240.26666666675
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 246.950000000089
+      },
+      {
+        "chapter": 2,
+        "id": "freight_kitchen",
+        "kind": "cache",
+        "time": 256.100000000096
+      },
+      {
+        "chapter": 2,
+        "id": "camp_waiting_roof",
+        "kind": "brace",
+        "time": 263.500000000089
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 274.266666666746
+      },
+      {
+        "chapter": 2,
+        "id": "freight_bread",
+        "kind": "cache",
+        "time": 280.833333333407
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 294.450000000061
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 313.66666666671
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 326.466666666698
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 328.30000000003
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 337.266666666689
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 342.016666666684
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 346.76666666668
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 354.08333333334
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 361.383333333333
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 369.333333333326
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 379.749999999983
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 391.06666666664
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 398.366666666633
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 414.416666666618
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 432.216666666602
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_tin",
+        "kind": "cache",
+        "time": 451.099999999918
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 464.049999999907
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 478.199999999894
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 489.649999999883
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 494.833333333212
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 1,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 494.833333333212
+  },
+  "native_release_routes": {
+    "slice-capture": {
+      "complete": true,
+      "deaths": 0,
+      "playtime": 82.9499999999966,
+      "health": 100.0,
+      "warmth": 96.0289706666674,
+      "wetness": 0.166416666666671,
+      "maximum_separation": 299.73486328125,
+      "frames": 2471,
+      "capture_fps": 30
+    },
+    "slice-shop-capture": {
+      "complete": true,
+      "deaths": 0,
+      "playtime": 64.383333333331,
+      "health": 100.0,
+      "warmth": 96.0289706666674,
+      "wetness": 0.166416666666671,
+      "maximum_separation": 287.314208984375,
+      "frames": 1914,
+      "capture_fps": 30
+    }
+  },
+  "visual_scope": "Native main-game before/after at1440x810, zoom1.12, fixed60simulation exported at30fps; three8second keyboard-replay clips, plus packaged full graphical Arcade/Shop routes. Captured image sequence reviewed at gameplay/crop scale, no claim of human play or performance from capture rate.",
+  "preservation": {
+    "protected_fingerprints_verified": 57,
+    "paused_motion": "polish_v055/UNPUBLISHED_MOTION_CHECKPOINT.zip and original modified checkout preserved",
+    "main_remote_observed_before_push": "6ab6434c6c92c2d432d782d63f5c4bb3f337cbcc",
+    "original_main_receipt_was": "8d6743eba53b009c123abdfdd2c2081d8a35ce14",
+    "main_note": "Remote main differs from older receipt; this repair never checked out, committed or pushed main."
+  },
+  "limitations": [
+    "Cold-entry hitch persists; warm60FPS test is a bounded MSI run, not all hardware.",
+    "No physical controller, human pacing, subjective hearing or Mac runtime test.",
+    "Protected Windows Library PermissionErrorErrno13 was not retried, bypassed, permission-modified, or routed through another executor. No Library file IDs.",
+    "Packaged external timing diagnostic was stopped after119.59seconds without a result. Embedded release checks and native graphical routes validate the executable."
+  ],
+  "library_file_ids": [],
+  "cold_entry_diagnosis": {
+    "scene_construction_ms": 724.452,
+    "section_setup_first_ms": 0.283,
+    "section_setup_repeat_ms": 0.371,
+    "first_render_bracket_ms": 96.351,
+    "subsequent_render_bracket_median_ms": 0.931,
+    "repeat_render_bracket_worst_ms": 1.189,
+    "first_scene_creation_to_present_ms": 839.312,
+    "finding": "Large entry stall is localized to first RenderingServer pre/post draw bracket, not section setup. Driver/resource/pipeline contributor remains unisolated; these signals are not a GPU hardware timer.",
+    "decision": "No prewarm/loading delay added: it would relocate first-submit cost into startup without evidence of removing it. All constructor and first-render costs retained in evidence; cold hitch remains unresolved.",
+    "measurement_definitions": {
+      "total_frame_interval_ms": "Wall-clock interval between native process callbacks; includes rendering/presentation/scheduling effects. p50/p95/p99/worst reported separately for warm and first3seconds.",
+      "warm_process_ms_median": "Godot Performance.TIME_PROCESS monitor multiplied by1000. CPU-side process-time diagnostic, not total frame interval or input latency. Sampled monitor values update less often than callbacks.",
+      "cold": "Fresh game process entry, not OS/driver cache cold boot."
+    }
+  },
+  "delivery_state": {
+    "native_review_executable": "game/build/v0.5.5/When the Sky Clears.exe",
+    "zip": "Paused before creation due low system disk space",
+    "large_outputs": "Full route video encoding and large evidence duplicates not started. No file deleted. Local small before/after movies and full raw route frames retained."
+  }
+}

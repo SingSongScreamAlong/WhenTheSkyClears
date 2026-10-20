@@ -134,7 +134,7 @@ func _draw():
 		draw_rect(Rect2(left,-100,1600,1100),Color(.77,.68,.48,game.shell_warning*.05))
 	if game.flash>0: draw_rect(Rect2(left,-300,1600,1500),Color(.82,.85,.75,game.flash*.17))
 	# Fine drifting particles are deterministic; no imported stock particle effects.
-	for i in range(100):
+	for i in range(0 if game.slice_active else 100):
 		var x = left+fposmod(i*97.3+t*(8+i%7)-left*.18,1640)-20
 		var y = fposmod(i*53.3+t*(2+i%5),760)
 		draw_circle(Vector2(x,y),.5+(i%3)*.35,Color(.85,.88,.77,.08+(i%4)*.025))
@@ -207,7 +207,7 @@ func terrain(p, earth):
 		draw_polygon(polygon,PackedColorArray([tint]),uv,textures.Ground_Painted)
 		# Broad translucent contours retain the source brushwork and communicate
 		# packed earth, sediment, damp stone and deep occlusion in the cut banks.
-		for layer in range(7):
+		for layer in range(3 if game.slice_active else 7):
 			var band=PackedVector2Array()
 			for pt in top: band.append(pt+Vector2(0,18+layer*36+sin(pt.x*.018+layer*3)*5))
 			for i in range(top.size()-1,-1,-1):
@@ -242,12 +242,18 @@ func terrain(p, earth):
 		var base=surface(x+w*.5,700)
 		var kind=str(p.get("kind","rubble"))
 		var asset="log" if kind=="log" else ("crate" if kind=="crate" else "rubble")
-		paint_asset(self,asset,Vector2(x+w/2,base+8),w+14,maxf(38,base-y+12),Color(.57,.65,.61))
+		# Long shop shelves are timber supported from the real ground. Stretching
+		# one rubble sprite across twelve metres made a floating, blurred ramp.
+		if not (game.slice_active and w>300):
+			paint_asset(self,asset,Vector2(x+w/2,base+8),w+14,maxf(38,base-y+12),Color(.57,.65,.61))
 		if kind=="letter": draw_rect(Rect2(x+9,y+18,w-18,maxf(0,base-y-18)),Color(.13,.19,.22,.8))
 		# A continuous painted tread makes the exact landing line readable.
 		# Rear timber supports keep raised supply shelves grounded in the scene.
 		if base-y>38 and kind!="letter":
-			for support in [x+18,x+w-19]:
+			var supports=[x+18,x+w-19]
+			if game.slice_active and w>300:
+				for support in range(int(x+190),int(x+w-60),190):supports.append(float(support))
+			for support in supports:
 				paint_beam(Vector2(support,y+10),Vector2(support,surface(support,700)+3),10,Color(.35,.42,.36,.86))
 		paint_beam(Vector2(x,y+6),Vector2(x+w,y+6),14,Color(.49,.55,.46))
 		draw_line(Vector2(x+2,y+1),Vector2(x+w-2,y+1),Color(.49,.54,.45,.25),.8,true)
@@ -275,6 +281,9 @@ func zone_at(x):
 	return ["orchard","ridge","rail_yard","school_courtyard","ash_garden"][game.chapter]
 
 func draw_surface_dressing(left):
+	# The painted floor and sparse foreground already carry this section.
+	# Hundreds of animated micro-blades added redraw cost and grew indoors.
+	if game.slice_active:return
 	var length=float(game.level.width)
 	for i in range(maxi(0,int((left-40)/23)),int(minf(length,left+1650)/23)+1):
 		var x=i*23.0+noise_at(i+7)*16
@@ -380,6 +389,10 @@ func draw_hazard(h):
 
 func paint_asset(canvas,key,bottom,width,height=0.0,tint=Color.WHITE):
 	var region=prop_regions[key]
+	if game.slice_active:
+		# Crop transparent atlas padding so requested size/foot are physical.
+		var grounded={"wall":Rect2(7,205,481,179),"log":Rect2(497,219,441,168),"crate":Rect2(938,217,303,170),"tent":Rect2(6,486,499,271),"cart":Rect2(505,580,415,177),"rubble":Rect2(920,547,327,210),"door":Rect2(20,798,453,376),"stove":Rect2(488,830,398,348),"winch":Rect2(912,812,310,363)}
+		region=grounded[key]
 	if height<=0: height=width*region.size.y/region.size.x
 	canvas.draw_texture_rect_region(prop_atlas,Rect2(bottom-Vector2(width/2,height),Vector2(width,height)),region,tint)
 

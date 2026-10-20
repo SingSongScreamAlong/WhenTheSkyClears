@@ -1,0 +1,29 @@
+WHEN THE SKY CLEARS / 0.5.5 SCENE REPAIR REVIEW
+
+Open PLAY.cmd for the menu, or LAST_HOUSE.cmd for the repaired Last House.
+Controls: A/D move, Space jump, Shift sprint, S crouch, E interact/hold,
+Q wait/follow, Escape pause. The companion and both-covered stealth still matter.
+
+This bounded review repairs the Last House presentation: calibrated house scale
+(80 units/metre, 2.04m doorway against approximately 1.34m drawn children),
+grounded atlas props, supported shop shelves, constant low foreground wall
+cutaway, one quiet distant horizon, and world-space rain behind architecture.
+No new chapter, route, generated art, or motion-trial integration.
+
+Warm native frame pacing holds the 60FPS target at 1440x810 / zoom1.12 /
+Vulkan Mobile / RTX5070Ti laptop. Render submissions and process cost fell
+substantially. A first-entry hitch of approximately105ms remains; this build
+does not resolve all cold-start pacing. Full numbers and limitations are in
+game/evidence/v055/SCENE_REPAIR_REVIEW.json in the source repository.
+
+Motion remains the v054 painted cutout solver. Profile flips, extreme folds,
+and close waiting overlap still need an animation pass. Smaller tessellation
+retains the solver and original art; it is not a new animation system.
+
+Scripted native Windows regressions and routes are checked before packaging.
+No human pacing, physical controller, subjective hearing, or Mac runtime
+acceptance is claimed. Source opens in Godot4.6 Standard; see docs/MACOS.md.
+Existing saves retain their schema and directory. The prior motion experiment,
+original project, and original assets remain preserved separately.
+
+Local previews only. The prior protected Library transfer failure was not retried.

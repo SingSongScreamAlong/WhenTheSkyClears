@@ -18,6 +18,8 @@ func _init(game):
 	data=JSON.parse_string(FileAccess.get_file_as_string("res://levels/last_house.json"))
 func start(resume=true):
 	g.slice_active=true;g.section_preview=true;g.save_path=g.last_house_save_path
+	# Stable 60Hz presentation matches physics on high-refresh laptop displays.
+	if not g.smoke_test:Engine.max_fps=60
 	stage="idle";exposure={"Girl":0.0,"Boy":0.0};relief_clock=0;unavailable="";last_warning=-20;beat="";beat_clock=0;bag_at=Vector2(8318,700);footfalls.clear()
 	if resume and g.load_save(true):
 		g.mode="playing";return
@@ -187,28 +189,24 @@ func objective():
 	return "Spend a quiet moment by the window together."
 func paint_house(canvas,center,floor_y,width,tint):
 	var scale=width/1774.0
-	canvas.draw_texture_rect(house_texture,Rect2(center-width*.5,floor_y-755*scale,width,887*scale),false,tint)
+	canvas.draw_texture_rect(house_texture,Rect2(center-width*.5,floor_y-740*scale,width,887*scale),false,tint)
 func draw_backdrop(w):
 	var cx=g.camera.position.x;var left=cx-800
 	w.draw_rect(Rect2(left-100,-350,1800,1500),Color("8c9b9d"))
 	w.draw_texture_rect(w.textures.Sky_Painted,Rect2(left-100,-180,1800,1050),false,Color(.60,.73,.76,.75))
-	w.scenery("Distant_Hills",.12,2400,650,Color(.56,.66,.66,.62))
-	w.scenery("Village_Empty",.27,2600,670,Color(.47,.56,.59,.24))
-	# A distant warm window is visible from the first room; its projection
-	# hands off to the actual shelter as the pair approaches.
-	if cx<7200:
-		var far_x=cx+(8500-cx)*.075
-		paint_house(w,far_x,650,250,Color(.55,.65,.65,.24))
-		w.glow(Vector2(far_x+25,620),Color(.95,.72,.37),16,.12)
+	# One subdued distant horizon, with slow parallax and no tile boundary.
+	# Fixed target height keeps distant trees below the playable roofline.
+	w.draw_texture_rect_region(w.textures.Distant_Hills,Rect2(left-700-left*.10,370,3200,330),w.bounds.Distant_Hills,Color(.70,.78,.79))
+	draw_weather(w)
 	if left<1900:
-		# The first house is a cold, partial interior. Its missing right wing
-		# opens onto the shop route; only the final room keeps the full roof.
-		w.draw_texture_rect_region(house_texture,Rect2(110,26,1340,789),Rect2(0,0,1505,887),Color(.69,.77,.78))
+		# Shared physical calibration:80units/metre,163unit doorway.
+		# Source sill row740 is planted on the collision surface.
+		paint_house(w,880,700,1000,Color(.69,.77,.78))
 	if left<4600 and left+1700>3350:
 		# The damaged passage belongs to a collapsed street frontage, not a
 		# second copy of the kitchen waiting at the end of the railway.
 		w.art("School",3330,705,1280,Color(.55,.65,.65))
-	if left+1700>7400:paint_house(w,8550,700,1800,Color(.93,.89,.73))
+	if left+1700>7400:paint_house(w,8550,700,1000,Color(.93,.89,.73))
 	draw_inhabited_details(w,left)
 	# Quiet street and railway planes keep the playable strip distinct.
 	# Broken wet strokes sit on the actual ground instead of a translucent
@@ -264,7 +262,7 @@ func draw_interaction(w,p):
 				w.draw_arc(grip+Vector2(0,6),7,PI,TAU,12,Color("8a8260"),2.2,true)
 				w.draw_line(b+Vector2(-12,1),b+Vector2(-12,10),Color(.25,.31,.25,.6),1,true)
 		"share":
-			w.paint_asset(w,"stove",pos+Vector2(0,4),104,114,Color(.86,.84,.66));w.glow(pos+Vector2(0,-35),Color(1,.64,.27),185,.24)
+			w.paint_asset(w,"stove",pos+Vector2(-62,4),68,70,Color(.86,.84,.66));w.glow(pos+Vector2(-62,-26),Color(1,.64,.27),110,.20)
 			if g.flags.get("shared_meal",false):w.draw_arc(pos+Vector2(40,-24),10,0,PI,16,Color(.65,.64,.48),3,true)
 			if beat=="meal" and absf(g.player.position.x-g.boy.position.x)<86:
 				var center=(g.player.position+g.boy.position)*.5+Vector2(0,-47)
@@ -274,29 +272,21 @@ func draw_interaction(w,p):
 		_ :return false
 	return true
 func draw_weather(canvas):
-	var left=g.camera.position.x-800
-	for i in range(75):
-		var x=left+fposmod(i*83.7-g.clock*84,1700)-50
-		var y=fposmod(i*151.7+g.clock*550,760)-30
-		if y>230 and g.in_safe_zone(x,700):continue
-		canvas.draw_line(Vector2(x,y),Vector2(x-5,y+16),Color(.73,.82,.81,.15),1,true)
-	# A few roof-edge drips and foot-level splashes make rain respond to the
-	# occupied place. They stay below/behind hands and interaction silhouettes.
-	for edge in [[330,535],[1510,580],[3600,578],[4320,600],[7905,525],[9335,565]]:
-		var x=float(edge[0]);var roof=float(edge[1])
-		if x<left-40 or x>left+1640:continue
-		for drop in range(3):
-			var y=roof+fposmod(g.clock*470+drop*61+x,700-roof)
-			canvas.draw_line(Vector2(x,y),Vector2(x-1,y+7),Color(.66,.78,.77,.22),1,true)
-	for child in [g.player,g.boy]:
-		if not child.is_on_floor() or g.in_safe_zone(child.position.x,child.position.y):continue
-		var phase=fposmod(child.phase*2,1)
-		if absf(child.velocity.x)>40 and phase<.28:
-			for i in range(3):
-				var origin=child.position+Vector2(-child.facing*(3+i*3),-1)
-				canvas.draw_line(origin,origin+Vector2(-child.facing*(3+i*2),-3-i*2),Color(.62,.76,.74,(.28-phase)*.9),1,true)
+	if not g.get_meta("study_rain",true):return
+	# Independent deterministic world-space falls. Only respawn at the top;
+	# no per-frame randomisation, camera offset, periodic columns or roof mask.
+	var left=g.camera.position.x-900
+	for i in range(300):
+		var speed=350+g.world.noise_at(i*7+19)*160
+		var travel=g.clock*speed+g.world.noise_at(i*11+37)*1000
+		var cycle=floorf(travel/1000)
+		var y=fposmod(travel,1000)-200
+		var x=g.world.noise_at(i*31+cycle*71+101)*11000-600-(y+200)*.07
+		if x<left or x>left+1800:continue
+		var length=4+g.world.noise_at(i*17+3)*4
+		canvas.draw_line(Vector2(x,y),Vector2(x-length*.07,y+length),Color(.66,.76,.77,.12),.8,true)
 
-func room_floor(x):return (x>260 and x<1490) or (x>3510 and x<4410) or (x>7860 and x<9370)
+func room_floor(x):return (x>600 and x<1130) or (x>8270 and x<8800)
 func draw_platform(w,p):
 	var x=float(p.x);var y=float(p.y);var width=float(p.w)
 	# Keep the painted rubble and timber. Sparse joinery sits on its exact tread.

@@ -5,12 +5,17 @@ import **`game/project.godot`** in Godot's Project Manager. Run the project with
 F5. See [macOS setup and verification limits](docs/MACOS.md). No Windows build,
 Python, .NET, or external runtime asset download is required.
 
-**Current development checkpoint: 0.5.4 on `dev/last-house-before-crossing`.**
-Last House now deforms retained painted coats, sleeves, trousers, hands and boots
-with the native rig. Distinct abandoned-house, collapsed-passage and warm-room
-compositions accompany safer passing presentation and the existing shared actions.
-See [motion/composition notes and remaining scope](game/DEVELOPMENT_v0.5.4.txt)
-and [exact verification](game/evidence/v054/CHECKPOINT_MANIFEST.json).
+**Current development review: 0.5.5 on `dev/last-house-before-crossing`.**
+Last House uses calibrated house/prop scale, grounded shelf supports, a stable
+low wall cutaway, one distant horizon, and world-space rain behind buildings.
+Reduced garment tessellation and surface detail lower native rendering cost.
+Warm 60FPS pacing holds on the tested MSI; a first-entry hitch remains, and
+the painted cutout animation still needs a dedicated pass.
+See [review notes and limitations](game/DEVELOPMENT_v0.5.5.txt) and
+[measured results and complaint status](game/evidence/v055/SCENE_REPAIR_REVIEW.json).
+The paused turn-away/cloth motion experiment is preserved separately and is
+not part of this checkpoint. Native Windows scripted checks do not establish
+human pacing, physical controller, subjective hearing, or Mac runtime acceptance.
 The Last House title option adds painted house exploration, shop/arcade choices,
 reciprocal passage help, pair cover and individual exposure feedback, then a dry
 room with shared food and quiet playable relief. See [route notes and remaining

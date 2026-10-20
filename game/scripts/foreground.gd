@@ -6,7 +6,14 @@ func _draw():
 	if game==null or game.world==null or game.level.is_empty(): return
 	for c in game.level.covers:
 		if c.kind=="wall":
-			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w,82,Color(.48,.57,.55,.40 if (absf(game.player.position.x-c.x)<c.w*.5 or absf(game.boy.position.x-c.x)<c.w*.5) else 1.0))
+			if game.slice_active:
+				# A stable low cutaway preserves both silhouettes. The complete
+				# painted wall remains behind them; no proximity alpha switching.
+				var source=Rect2(7,205+179*.68,481,179*.32)
+				var y=float(c.get("y",game.surface_y_at(c.x,700)))+5
+				draw_texture_rect_region(game.world.prop_atlas,Rect2(c.x-c.w*.5,y-82*.32,c.w,82*.32),source,Color(.56,.65,.63))
+			else:
+				game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w,82,Color(.48,.57,.55,.40 if (absf(game.player.position.x-c.x)<c.w*.5 or absf(game.boy.position.x-c.x)<c.w*.5) else 1.0))
 	# Foot-level foreground accents sit in front of the actors; major scenery
 	# stays behind them, so stealth reads without hiding the route.
 	var left=game.camera.position.x-800
@@ -28,4 +35,3 @@ func _draw():
 				var bend=wind*(1+reed*.3)
 				draw_polyline(PackedVector2Array([Vector2(x+reed*4,y+3),Vector2(x+reed*4+bend,y-11),Vector2(x+reed*4+bend*2,y-19+reed*3)]),Color(.12,.20,.16,.52),.8,true)
 
-	if game.slice_active: game.last_house.draw_weather(self)

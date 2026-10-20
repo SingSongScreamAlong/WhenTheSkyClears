@@ -1,0 +1,91 @@
+{
+	"all_passed": true,
+	"build": "0.5.5",
+	"checks": [
+		{
+			"check": "walk_reversals_keep_separate_bodies",
+			"details": "{ \"sprint\": false, \"minimum_gap\": 44.02783203125, \"maximum_gap\": 72.939453125, \"largest_native_step\": 2.871337890625 }",
+			"passed": true
+		},
+		{
+			"check": "walk_yield_uses_native_motion",
+			"details": "{ \"sprint\": false, \"minimum_gap\": 44.02783203125, \"maximum_gap\": 72.939453125, \"largest_native_step\": 2.871337890625 }",
+			"passed": true
+		},
+		{
+			"check": "sprint_reversals_keep_separate_bodies",
+			"details": "{ \"sprint\": true, \"minimum_gap\": 50.6910400390625, \"maximum_gap\": 113.236083984375, \"largest_native_step\": 4.41668701171875 }",
+			"passed": true
+		},
+		{
+			"check": "sprint_yield_uses_native_motion",
+			"details": "{ \"sprint\": true, \"minimum_gap\": 50.6910400390625, \"maximum_gap\": 113.236083984375, \"largest_native_step\": 4.41668701171875 }",
+			"passed": true
+		},
+		{
+			"check": "player_reversal_is_not_delayed_by_yield",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "yield_refuses_left_boundary",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "yield_refuses_missing_ground",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "cover_stop_keeps_both_children_safe",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "relief_waits_for_meal_performance",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "relief_has_no_extra_five_second_gate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "relief_has_contextual_attention",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "equal_collision_heights_preserved",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "grounded_companion_yields_during_safe_air_crossing",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "wait_command_preserves_companion_position_during_crossing",
+			"details": "",
+			"passed": true
+		}
+	],
+	"reversal_cases": [
+		{
+			"largest_native_step": 2.871337890625,
+			"maximum_gap": 72.939453125,
+			"minimum_gap": 44.02783203125,
+			"sprint": false
+		},
+		{
+			"largest_native_step": 4.41668701171875,
+			"maximum_gap": 113.236083984375,
+			"minimum_gap": 50.6910400390625,
+			"sprint": true
+		}
+	],
+	"scope": "Targeted native safety/response regression. Does not grade animation/composition quality. Deliberate starts are separate from route traversal; no physical controller or human pacing test."
+}

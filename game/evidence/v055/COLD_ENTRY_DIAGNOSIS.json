@@ -1,0 +1,16 @@
+{
+  "scene_construction_ms": 724.452,
+  "section_setup_first_ms": 0.283,
+  "section_setup_repeat_ms": 0.371,
+  "first_render_bracket_ms": 96.351,
+  "subsequent_render_bracket_median_ms": 0.931,
+  "repeat_render_bracket_worst_ms": 1.189,
+  "first_scene_creation_to_present_ms": 839.312,
+  "finding": "Large entry stall is localized to first RenderingServer pre/post draw bracket, not section setup. Driver/resource/pipeline contributor remains unisolated; these signals are not a GPU hardware timer.",
+  "decision": "No prewarm/loading delay added: it would relocate first-submit cost into startup without evidence of removing it. All constructor and first-render costs retained in evidence; cold hitch remains unresolved.",
+  "measurement_definitions": {
+    "total_frame_interval_ms": "Wall-clock interval between native process callbacks; includes rendering/presentation/scheduling effects. p50/p95/p99/worst reported separately for warm and first3seconds.",
+    "warm_process_ms_median": "Godot Performance.TIME_PROCESS monitor multiplied by1000. CPU-side process-time diagnostic, not total frame interval or input latency. Sampled monitor values update less often than callbacks.",
+    "cold": "Fresh game process entry, not OS/driver cache cold boot."
+  }
+}

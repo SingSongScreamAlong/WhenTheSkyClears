@@ -1,0 +1,247 @@
+{
+	"all_passed": true,
+	"build": "0.5.5",
+	"checks": [
+		{
+			"check": "default_keyboard_preserved",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "default_pad_preserved",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "conflict_rejected",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "escape_reserved",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "menu_start_reserved",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "raw_key_capture_rebinds_without_gameplay",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "captured_conflict_stays_pending",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "escape_cancels_binding_without_leaving_settings",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "raw_pad_capture_rebinds",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pad_start_cancels_capture",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "settings_atomic_write",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "settings_and_key_permutation_persist",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "malformed_settings_recovers_backup",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "legacy_preferences_migrate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "invalid_preference_types_are_safe",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "reset_restores_defaults",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "rebound_raw_key_drives_native_jump",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "raw_keyboard_moves_native_body",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "toggle_crouch_survives_key_release",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pad_toggles_crouch_back",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "default_hold_crouches",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "default_release_stands",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "toggle_respects_overhead_clearance",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "toggle_stands_after_leaving_low_ceiling",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "simulated_stick_moves_native_body",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "simulated_pad_jump_uses_native_body",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "simulated_start_pauses_and_freezes",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "simulated_start_resumes",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "simulated_pack_freezes",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "simulated_pack_closes",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pad_menu_accept_opens_access_tab",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pad_cancel_returns_to_sound_tab",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pad_cancel_closes_settings",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "keyboard_menu_changes_text_size",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "reset_requires_confirmation",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "confirmed_ui_reset_restores_defaults",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "device_prompt_uses_current_binding",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "keyboard_prompt_returns",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "master_zero_is_muted",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "master_mute_is_applied",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "weather_bus_zero_is_silent",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "weather_bus_restored",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "roof_transition_follows_actual_safe_zones",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "threat_spatial_bus_and_caption",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "threat_ducks_ambience",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "rain_duck_reaches_players",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "repeated_action_debounced",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pause_stops_active_cues",
+			"details": "",
+			"passed": true
+		}
+	],
+	"method": "Native keyboard and synthetic InputEventJoypadButton injection, real controller/physics/menu paths and disposable preference files. No physical controller or human hearing validation. Targeted audio state/fixture setups are separate from route completion."
+}

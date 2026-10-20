@@ -1,0 +1,124 @@
+{
+  "before_timing": {
+    "settings": {
+      "camera_zoom": "(1.12, 1.12)",
+      "canvas_reference": "(1600, 900)",
+      "current_screen": 0,
+      "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "max_fps": 60,
+      "physics_hz": 60,
+      "refresh_hz": 240.001022338867,
+      "renderer": "mobile",
+      "startup_scene_load_ms": 774.105,
+      "vsync_mode": 1,
+      "window_mode": 0,
+      "window_size": "(1440, 810)"
+    },
+    "cases": {
+      "full_rain": {
+        "warm": {
+          "samples": 836,
+          "p50_ms": 16.665,
+          "p95_ms": 16.766,
+          "p99_ms": 16.856,
+          "worst_ms": 18.873,
+          "above33_3ms": 0
+        },
+        "cold": {
+          "samples": 175,
+          "p50_ms": 16.663,
+          "p95_ms": 16.832,
+          "p99_ms": 17.5,
+          "worst_ms": 126.478,
+          "above33_3ms": 1
+        },
+        "warm_draw_calls_median": 1270.0,
+        "warm_process_ms_median": 12.148
+      },
+      "open_rain": {
+        "warm": {
+          "samples": 835,
+          "p50_ms": 16.664,
+          "p95_ms": 16.775,
+          "p99_ms": 16.84,
+          "worst_ms": 16.953,
+          "above33_3ms": 0
+        },
+        "cold": {
+          "samples": 181,
+          "p50_ms": 16.666,
+          "p95_ms": 16.79,
+          "p99_ms": 16.961,
+          "worst_ms": 17.123,
+          "above33_3ms": 0
+        },
+        "warm_draw_calls_median": 1396.0,
+        "warm_process_ms_median": 13.842
+      }
+    }
+  },
+  "after_timing": {
+    "settings": {
+      "camera_zoom": "(1.12, 1.12)",
+      "canvas_reference": "(1600, 900)",
+      "current_screen": 0,
+      "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "max_fps": 60,
+      "physics_hz": 60,
+      "refresh_hz": 240.001022338867,
+      "renderer": "mobile",
+      "startup_scene_load_ms": 742.407,
+      "vsync_mode": 1,
+      "window_mode": 0,
+      "window_size": "(1440, 810)"
+    },
+    "cases": {
+      "full_rain": {
+        "warm": {
+          "samples": 835,
+          "p50_ms": 16.667,
+          "p95_ms": 16.791,
+          "p99_ms": 16.918,
+          "worst_ms": 18.174,
+          "above33_3ms": 0
+        },
+        "cold": {
+          "samples": 177,
+          "p50_ms": 16.666,
+          "p95_ms": 16.846,
+          "p99_ms": 17.089,
+          "worst_ms": 105.132,
+          "above33_3ms": 1
+        },
+        "warm_draw_calls_median": 392.0,
+        "warm_process_ms_median": 5.831
+      },
+      "open_rain": {
+        "warm": {
+          "samples": 835,
+          "p50_ms": 16.664,
+          "p95_ms": 16.792,
+          "p99_ms": 16.885,
+          "worst_ms": 17.095,
+          "above33_3ms": 0
+        },
+        "cold": {
+          "samples": 181,
+          "p50_ms": 16.667,
+          "p95_ms": 16.768,
+          "p99_ms": 16.918,
+          "worst_ms": 16.96,
+          "above33_3ms": 0
+        },
+        "warm_draw_calls_median": 484.0,
+        "warm_process_ms_median": 6.758
+      }
+    }
+  },
+  "measurement_definitions": {
+    "total_frame_interval_ms": "Wall-clock intervals between process callbacks, including rendering/presentation/scheduling; distributions separate warm from first3seconds.",
+    "warm_process_ms_median": "Godot Performance.TIME_PROCESS diagnostic multiplied by1000; CPU-side process-time metric, not total frame interval or input latency.",
+    "draw_calls": "Godot per-frame rendering monitor, not FPS."
+  },
+  "scope": "Native two-case matched v054 versus scene repair, real wall-clock frame intervals. No fixed-fps or screenshot I/O. Cold means first 3 seconds after case entry in a fresh process; not a driver/system cold boot. Synthetic native keyboard replay, no physical controller or human latency claim."
+}

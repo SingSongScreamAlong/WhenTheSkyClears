@@ -11,7 +11,7 @@ static func quad(c,points,uv,texture,tint):
 
 static func limb(c,a,b,end,width_a,width_b,width_end,material,depth):
 	var sleeve=material=="sleeve"
-	var rows=10
+	var rows=4
 	var previous=[]
 	var previous_uv=[]
 	var tint=Color(.78,.82,.76) if sleeve else Color(.67,.70,.60)
@@ -43,7 +43,7 @@ static func limb(c,a,b,end,width_a,width_b,width_end,material,depth):
 		previous=points;previous_uv=uv
 
 static func coat(c,shoulder,hip,hem,wind,face,skirt_only=false):
-	var rows=8
+	var rows=4
 	var start=hip+Vector2(0,-3) if skirt_only else shoulder+Vector2(0,-5)
 	var bottom=Vector2(hip.x*.25+wind,hem+1)
 	var tint=Color(.69,.77,.75) if c.is_girl else Color(.80,.82,.74)
