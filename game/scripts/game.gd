@@ -1,5 +1,9 @@
 extends Node2D
 
+const AccessSettings=preload("res://scripts/access_settings.gd")
+const FeedbackAudio=preload("res://scripts/feedback_audio.gd")
+var access
+var soundscape
 const LastHouse = preload("res://scripts/last_house.gd")
 const Child = preload("res://scripts/child_v2.gd")
 const Pushable = preload("res://scripts/pushable.gd")
@@ -94,9 +98,9 @@ var wind_strain=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears · Development 0.5.1")
+	DisplayServer.window_set_title("When the Sky Clears · Development 0.5.2")
 	qa_args=OS.get_cmdline_user_args()
-	smoke_test="--visual-review" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--side-routes" in qa_args
+	smoke_test="--access-checks" in qa_args or "--access-capture" in qa_args or "--audio-capture" in qa_args or "--visual-review" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--side-routes" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args or "--trust-checks" in qa_args: smoke_test=true
 	last_house=LastHouse.new(self)
@@ -111,6 +115,7 @@ func _ready():
 	var layer = CanvasLayer.new(); layer.layer=20; add_child(layer)
 	hud = HUD.new(); hud.game=self; hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT); layer.add_child(hud)
 	setup_audio()
+	if "--audio-capture" in qa_args:soundscape.audit_enabled=true
 	load_chapter(0,false)
 	mode="menu"
 	player.position.x=1240; boy.position.x=1188; camera.position.x=1050
@@ -139,29 +144,22 @@ func _ready():
 	if "--journey-checks" in qa_args: call_deferred("run_journey_checks")
 	if "--capture-new" in qa_args: call_deferred("capture_new_journey")
 	if "--side-routes" in qa_args: SideRouteChecks.run.call_deferred(self)
+	if "--access-checks" in qa_args or "--access-capture" in qa_args or "--audio-capture" in qa_args:load("res://scripts/access_checks.gd").run.call_deferred(self)
 	if "--chapter" in qa_args:
 		var idx = qa_args.find("--chapter")
 		if idx+1<qa_args.size():
 			load_chapter(clampi(int(qa_args[idx+1])-1,0,4)); mode="playing"
 
 func setup_input():
-	var bindings = {"left":[KEY_A,KEY_LEFT],"right":[KEY_D,KEY_RIGHT],"jump":[KEY_SPACE,KEY_W,KEY_UP],"crouch":[KEY_S,KEY_DOWN],"sprint":[KEY_SHIFT],"interact":[KEY_E],"companion":[KEY_Q],"pack":[KEY_TAB],"heal":[KEY_H],"restart":[KEY_R],"pause":[KEY_ESCAPE],"fullscreen":[KEY_F11,KEY_F],"mute":[KEY_M]}
-	for action in bindings:
-		if not InputMap.has_action(action): InputMap.add_action(action)
-		for key in bindings[action]:
-			var ev = InputEventKey.new(); ev.physical_keycode=key; InputMap.action_add_event(action,ev)
-	var buttons = {"jump":JOY_BUTTON_A,"crouch":JOY_BUTTON_B,"interact":JOY_BUTTON_X,"companion":JOY_BUTTON_Y,"pause":JOY_BUTTON_START,"pack":JOY_BUTTON_BACK,"sprint":JOY_BUTTON_RIGHT_SHOULDER,"heal":JOY_BUTTON_LEFT_SHOULDER,"left":JOY_BUTTON_DPAD_LEFT,"right":JOY_BUTTON_DPAD_RIGHT}
-	for action in buttons:
-		var ev = InputEventJoypadButton.new(); ev.button_index=buttons[action]; InputMap.action_add_event(action,ev)
-	for action in ["left","right"]:
-		var ev = InputEventJoypadMotion.new(); ev.axis=JOY_AXIS_LEFT_X; ev.axis_value=-1.0 if action=="left" else 1.0; InputMap.action_add_event(action,ev)
+	access=AccessSettings.new(self);access.install()
 
 func setup_audio():
 	for material in ["grass","concrete","wood"]:
 		step_sounds[material]=[]
 		for variant in range(5): step_sounds[material].append(load("res://assets/audio/foley/footstep_%s_%03d.ogg"%[material,variant]))
-	for name in ["step","collect","warning","blast","wheel"]: sfx[name]=load("res://assets/audio/"+name+".wav")
-	ambience=AudioStreamPlayer.new()
+	for name in ["step","collect","warning","blast","wheel","cloth","bread"]: sfx[name]=load("res://assets/audio/"+name+".wav")
+	soundscape=FeedbackAudio.new(self);add_child(soundscape);soundscape.setup()
+	ambience=AudioStreamPlayer.new();ambience.bus="WTSCMusic"
 	var stream=load("res://assets/audio/horizon.wav")
 	stream.loop_mode=AudioStreamWAV.LOOP_FORWARD
 	stream.loop_begin=0; stream.loop_end=int(stream.get_length()*stream.mix_rate)
@@ -169,26 +167,27 @@ func setup_audio():
 	if not smoke_test: ambience.play()
 	apply_volume()
 
-func play_sfx(name,db=-12):
-	if not sfx.has(name) or smoke_test: return
-	var a=AudioStreamPlayer.new(); a.stream=sfx[name]; a.volume_db=db; a.pitch_scale=randf_range(.94,1.04) if name=="step" else 1.0
-	add_child(a); a.finished.connect(a.queue_free); a.play()
+func play_sfx(name,db=-12,at=null,caption=""):
+	if soundscape!=null:return soundscape.cue(name,db,at,caption)
+	return null
 
 func play_step(pos,db=-20):
-	if smoke_test: return
+	if smoke_test and not soundscape.audit_enabled:return
 	var material="concrete" if chapter>=2 else "grass"
 	for bridge in level.get("bridges",[]):
 		if pos.x>bridge.x and pos.x<bridge.x+bridge.w: material="wood"
 	for p in level.platforms:
 		if pos.x>p.x and pos.x<p.x+p.w and pos.y<p.y+7: material="wood" if p.kind in ["log","crate"] else "concrete"
-	var a=AudioStreamPlayer.new(); a.stream=step_sounds[material].pick_random(); a.volume_db=db; a.pitch_scale=randf_range(.93,1.07)
+	if slice_active:
+		soundscape.cue("step",db,pos,"",step_sounds[material].pick_random());return
+	var a=AudioStreamPlayer.new();a.bus="WTSCActions";a.stream=step_sounds[material].pick_random(); a.volume_db=db; a.pitch_scale=randf_range(.93,1.07)
 	add_child(a); a.finished.connect(a.queue_free); a.play()
 
 func apply_volume():
-	AudioServer.set_bus_volume_db(0,linear_to_db(maxf(volume,.001)))
-	AudioServer.set_bus_mute(0,muted)
+	if soundscape!=null:soundscape.apply()
 
 func load_chapter(idx, announce=true):
+	access.crouch_latched=false
 	chapter=idx; level=last_house.data if slice_active and idx==2 else levels[idx]
 	if is_instance_valid(solids):
 		remove_child(solids); solids.queue_free()
@@ -282,14 +281,21 @@ func choose_chapter(index):
 	if index<=unlocked:
 		journey_active=true; load_chapter(index); mode="playing"; write_save()
 
+func _input(event):
+	if access!=null and access.observe(event):get_viewport().set_input_as_handled()
+
 func _unhandled_input(event):
+	if event is InputEventKey and event.echo:return
+	if mode=="playing" and access.crouch_toggle and event.is_action_pressed("crouch"):access.crouch_latched=not access.crouch_latched
 	if event.is_action_pressed("fullscreen"):
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode()==DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN)
-	if event.is_action_pressed("mute"): muted=not muted; apply_volume()
+	if event.is_action_pressed("mute"): muted=not muted;apply_volume();access.save_settings()
 	if event.is_action_pressed("pause"):
 		if mode=="playing": mode="pause"; hud.selected=0; write_save()
 		elif mode in ["pause","inventory"]: mode="playing"
-		elif mode in ["settings","chapters"]: mode=settings_return
+		elif mode in ["settings","chapters"]:
+			if mode=="settings" and access.page!="sound":access.page="sound";hud.selected=0
+			else:mode=settings_return
 	if event.is_action_pressed("pack") and mode in ["playing","inventory"]:
 		mode="inventory" if mode=="playing" else "playing"
 	if mode!="playing": return
@@ -307,6 +313,7 @@ func _unhandled_input(event):
 	if event.is_action_pressed("restart"): recover(false)
 
 func _process(dt):
+	if soundscape!=null:soundscape.tick(dt)
 	if mode=="playing": clock+=dt
 	flash=move_toward(flash,0,dt*2.5); shake=move_toward(shake,0,dt*11)
 	message_time=maxf(0,message_time-dt)
@@ -497,6 +504,7 @@ func update_prompt():
 	else:
 		for tutorial in level.tutorials:
 			if abs(player.position.x-tutorial.x)<180: prompt=tutorial.text; break
+	prompt=control_text(prompt)
 
 func in_safe_zone(x,feet_y=INF):
 	for zone in level.get("safe_zones",[]):
@@ -686,6 +694,15 @@ func respawn(reset_survival=true):
 
 func announce_message(text,duration=4): message=text; message_time=duration
 
+func control_text(text):
+	text=text.replace("A / D",access.label("left")+" / "+access.label("right"))
+	for token in ["HOLD E","Hold E","hold E","Press E","press E","[E]","[Q]","Press Q","press Q","Q  ","HOLD S","Hold S","hold S","SPACE","TAB","SHIFT","H  "]:
+		var action="interact" if "E" in token and token!="SPACE" else ("companion" if "Q" in token else ("crouch" if token.to_upper()=="HOLD S" else ("jump" if token=="SPACE" else ("pack" if token=="TAB" else ("heal" if token=="H  " else "sprint")))))
+		var prefix="HOLD " if token.to_upper().begins_with("HOLD") else ""
+		if action=="crouch" and access.crouch_toggle:prefix="TOGGLE "
+		text=text.replace(token,prefix+access.label(action)+("  " if token.ends_with("  ") else ""))
+	return text
+
 func spawn_dust(pos,count):
 	for i in range(count): dust.append({"p":pos+Vector2(randf_range(-10,10),-3),"v":Vector2(randf_range(-20,20),randf_range(-16,-3)),"size":randf_range(1,4),"life":randf_range(.3,.8)})
 
@@ -716,10 +733,9 @@ func read_valid_save(path):
 
 func write_save():
 	if smoke_test: return
-	var prefs=FileAccess.open(settings_path,FileAccess.WRITE)
-	if prefs: prefs.store_string(JSON.stringify({"volume":volume,"muted":muted,"reduced_motion":reduced_motion})); prefs.close()
+	access.save_settings()
 	if not journey_active: return
-	var data={"schema":1,"build":"0.5.1","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed,"scenario":"last_house" if slice_active else ("rehearsal" if section_preview else "journey")}
+	var data={"schema":1,"build":"0.5.2","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed,"scenario":"last_house" if slice_active else ("rehearsal" if section_preview else "journey")}
 	var f=FileAccess.open(save_path+".tmp",FileAccess.WRITE)
 	if not f: save_notice="Could not save. Check the save folder before leaving."; return
 	f.store_string(JSON.stringify(data,"\t")); f.close()
@@ -730,13 +746,7 @@ func write_save():
 	save_notice=""
 
 func load_save(resume=false):
-	if FileAccess.file_exists(settings_path):
-		var prefs=JSON.parse_string(FileAccess.get_file_as_string(settings_path))
-		if prefs is Dictionary:
-			var v=prefs.get("volume",.6)
-			if (v is int or v is float) and is_finite(float(v)): volume=clampf(float(v),0,1)
-			if prefs.get("muted",false) is bool: muted=prefs.get("muted",false)
-			if prefs.get("reduced_motion",false) is bool: reduced_motion=prefs.get("reduced_motion",false)
+	if not smoke_test:access.load_settings()
 	var d=read_valid_save(save_path)
 	if d==null:
 		d=read_valid_save(save_path+".bak")
@@ -761,6 +771,7 @@ func _notification(what):
 
 func quit_game(code=0):
 	write_save()
+	if soundscape!=null:soundscape.stop_all()
 	if is_instance_valid(ambience): ambience.stop(); ambience.stream=null
 	await get_tree().process_frame
 	await get_tree().process_frame
@@ -959,7 +970,7 @@ func traverse_journey():
 					Input.action_release("right"); Input.action_press("crouch"); stalled=0
 		if frame%1800==0: print("TRAVERSE_PROGRESS ",chapter+1," ",int(player.position.x)," boy=",int(boy.position.x)," deaths=",death_count)
 	for action in ["left","right","jump","sprint","crouch","interact"]: Input.action_release(action)
-	var report={"build":"0.5.1","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
+	var report={"build":"0.5.2","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
 	var f=FileAccess.open(report_path("continuous_traversal.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("TRAVERSE_RESULT ",JSON.stringify(report))
 	call_deferred("quit_game",0 if completed else 1)
@@ -1100,7 +1111,7 @@ func run_encounter_tests():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.5.1","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
+	var report={"build":"0.5.2","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
 	var f=FileAccess.open(report_path("encounter_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("ENCOUNTER_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 
@@ -1138,7 +1149,7 @@ func run_motion_review():
 		previous_feet=current; previous_phase=player.foot_phase.duplicate()
 	var maximum=0.0
 	for drift in drifts: maximum=maxf(maximum,drift)
-	var report={"build":"0.5.1","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
+	var report={"build":"0.5.2","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
 	var f=FileAccess.open(report_path("motion_review.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("MOTION_REVIEW_COMPLETE ",JSON.stringify(report)); call_deferred("quit_game")
 
@@ -1258,7 +1269,7 @@ func run_journey_checks():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.5.1","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
+	var report={"build":"0.5.2","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
 	var f=FileAccess.open(report_path("journey_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("JOURNEY_CHECKS_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 

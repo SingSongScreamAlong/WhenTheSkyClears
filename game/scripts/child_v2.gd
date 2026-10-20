@@ -137,7 +137,7 @@ func _physics_process(dt):
 		ai_jump=false
 		if not is_on_floor() and leap_axis!=0: axis=leap_axis
 		elif is_on_floor() and not jump: leap_axis=0
-	var wants_crouch=Input.is_action_pressed("crouch") if controlled else forced_crouch
+	var wants_crouch=game.access.crouch_pressed() if controlled else forced_crouch
 	# Keep the smaller collider until the full standing shape is clear.
 	crouching=wants_crouch or (crouching and not can_stand())
 	if climbing:

@@ -47,6 +47,6 @@ godot --headless --path game --fixed-fps 60 -- --smoke
 complete automated journey on Windows. Filename case and source dependencies
 were checked for portability. No Mac runtime test was performed, and no Mac was
 accessed. The procedural character animation and encounter timing still need
-refinement; see [the visual/motion notes](../game/DEVELOPMENT_v0.5.1.txt). Scripted route
+refinement; see [the sound/access notes](../game/DEVELOPMENT_v0.5.2.txt). Scripted route
 durations are not human playtime estimates. This branch is a verified route
 checkpoint; further art, animation, audio and accessibility work is pending.

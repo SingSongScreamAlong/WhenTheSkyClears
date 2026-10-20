@@ -1,0 +1,88 @@
+{
+  "file": "C:\\Users\\conra\\Documents\\Codex\\2026-10-19\\task-3\\WTSC_Godot_LastHouse\\game\\evidence\\v052\\release_final\\audio-capture\\native_mix.wav",
+  "sha256": "587b5b112ee3ae7aa45caf7b15ab085da6eeb8dc35fede40b3fea978ae2fcbd7",
+  "sample_rate": 48000,
+  "channels": 2,
+  "seconds": 12.554666666666666,
+  "peak": 0.097808837890625,
+  "clipped_samples": 0,
+  "segments": {
+    "outside": {
+      "window_seconds": [
+        0.4,
+        1.8
+      ],
+      "rms_channels": [
+        0.004871390953229436,
+        0.004691943412984636
+      ]
+    },
+    "left": {
+      "window_seconds": [
+        2.05,
+        3.3
+      ],
+      "rms_channels": [
+        0.007103826375087261,
+        0.0058997591843908785
+      ]
+    },
+    "right": {
+      "window_seconds": [
+        3.55,
+        4.8
+      ],
+      "rms_channels": [
+        0.006159947517876546,
+        0.007071147079326028
+      ]
+    },
+    "threat": {
+      "window_seconds": [
+        5.1,
+        7.3
+      ],
+      "rms_channels": [
+        0.014669560912540168,
+        0.017939495755315935
+      ]
+    },
+    "inside": {
+      "window_seconds": [
+        9,
+        10.5
+      ],
+      "rms_channels": [
+        0.004961895748713928,
+        0.0047351929881783985
+      ]
+    },
+    "cloth": {
+      "window_seconds": [
+        10.8,
+        11.6
+      ],
+      "rms_channels": [
+        0.008048921973289491,
+        0.007256265281839823
+      ]
+    },
+    "bread": {
+      "window_seconds": [
+        11.8,
+        12.5
+      ],
+      "rms_channels": [
+        0.006454116962488205,
+        0.0059102571906216395
+      ]
+    }
+  },
+  "scope": "Actual release Godot master-bus capture on WASAPI. Approximate phase windows from deliberate cue/roof fixture; not continuous route or subjective listening. Microphone disabled.",
+  "checks": {
+    "no_clipping": true,
+    "left_source_left_channel_dominant": true,
+    "right_source_right_channel_dominant": true
+  },
+  "interpretation": "Full master mix includes the changing original score. Roof transition is independently checked from actual safe-zone state/player levels; this recording does not isolate rain loudness or establish subjective comfort."
+}

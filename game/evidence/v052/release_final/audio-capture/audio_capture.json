@@ -1,0 +1,54 @@
+{
+	"audio_driver": "WASAPI",
+	"build": "0.5.2",
+	"events": [
+		{
+			"at": "(4366.37, 479.86)",
+			"bus": "WTSCActions",
+			"caption": "LEFT SOURCE",
+			"db": 0.0,
+			"name": "collect",
+			"spatial": true,
+			"time": 0
+		},
+		{
+			"at": "(5369.98, 479.86)",
+			"bus": "WTSCActions",
+			"caption": "RIGHT SOURCE",
+			"db": 0.0,
+			"name": "collect",
+			"spatial": true,
+			"time": 0
+		},
+		{
+			"at": "(5169.992, 650.0)",
+			"bus": "WTSCThreat",
+			"caption": "THREAT RIGHT - COVER BOTH CHILDREN",
+			"db": -6.0,
+			"name": "warning",
+			"spatial": true,
+			"time": 0
+		},
+		{
+			"at": "(8550.0, 699.0)",
+			"bus": "WTSCActions",
+			"caption": "BAG SET DOWN",
+			"db": -4.0,
+			"name": "cloth",
+			"spatial": true,
+			"time": 0
+		},
+		{
+			"at": "(8550.0, 699.0)",
+			"bus": "WTSCActions",
+			"caption": "SHARING FOOD",
+			"db": -4.0,
+			"name": "bread",
+			"spatial": true,
+			"time": 0
+		}
+	],
+	"saved": true,
+	"scope": "Actual native master bus recording in a deliberate positional/roof transition fixture. No microphone or OS loopback. No subjective listening/physical device claim.",
+	"seconds": 12.5546666666667
+}

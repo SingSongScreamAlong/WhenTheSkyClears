@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
-if exist "build\v0.5.1\When the Sky Clears.exe" (
-    start "" "build\v0.5.1\When the Sky Clears.exe" -- --freight-crossing
+if exist "build\v0.5.2\When the Sky Clears.exe" (
+    start "" "build\v0.5.2\When the Sky Clears.exe" -- --freight-crossing
 ) else if exist "tools\godot\Godot_v4.6-stable_win64.exe" (
     start "" "tools\godot\Godot_v4.6-stable_win64.exe" --path "%~dp0." -- --freight-crossing
 ) else (

@@ -1,0 +1,31 @@
+{
+  "generator": "tools/synthesize_feedback.py",
+  "seed": 52026,
+  "sample_rate": 32000,
+  "assets": {
+    "rain_open": {
+      "sha256": "9e0ba00550675bdb86cd849c49cf17fab6dc6120715bc5b6e06b07e0870c488d",
+      "seconds": 8.0,
+      "peak": 0.329822281643368,
+      "origin": "Original deterministic noise/oscillator synthesis; no external sample, voice or melody."
+    },
+    "rain_roof": {
+      "sha256": "0f3d8f98b8136810f625c8715a9bf8b9704d6cf4ff01b4377aea2d662cd80d3d",
+      "seconds": 8.0,
+      "peak": 0.16884863776565726,
+      "origin": "Original deterministic noise/oscillator synthesis; no external sample, voice or melody."
+    },
+    "cloth": {
+      "sha256": "495fc25594611f97ec3832d9a9e5f44f9350def760533be03b83455dc570c862",
+      "seconds": 0.55,
+      "peak": 0.35,
+      "origin": "Original deterministic noise/oscillator synthesis; no external sample, voice or melody."
+    },
+    "bread": {
+      "sha256": "eb09b2365b48bce78653560429bcca4adf1c2305023cc665006bc1f0df0f7458",
+      "seconds": 0.65,
+      "peak": 0.28,
+      "origin": "Original deterministic noise/oscillator synthesis; no external sample, voice or melody."
+    }
+  }
+}

@@ -1,0 +1,58 @@
+WHEN THE SKY CLEARS / 0.5.2 / SOUND AND ACCESS CHECKPOINT
+
+This bounded pass retains the Last House routes and previous movement/art pass.
+There are no new chapters, colliders, character assets or save schema changes.
+Original source/saves and main/Unreal/archive lineages remain preserved.
+
+COMPLETE IN THIS CHECKPOINT
+- Last House footsteps and action/threat cues use positional 2D sources.
+  Existing project synthesized cues and CC0 Kenney footsteps are retained.
+  New rain/roof/cloth/bread textures are deterministic original noise synthesis;
+  tools/synthesize_feedback.py and assets/audio/FEEDBACK_PROVENANCE_v052.json
+  contain the exact generator, seed and hashes. No purchased or downloaded music.
+- Last House rain crossfades according to both children's actual roof coverage.
+  Roof rain is softer and filtered, with authored drips; exterior rain is brighter.
+  Threats briefly lower rain/music; action concurrency and rapid repeats are capped.
+  Existing children state text and a directional caption duplicate important cues.
+- Master, music, weather, action and threat levels; mute and zero volume silence;
+  an explicit preview button. Other chapters retain their cues and ambient score,
+  using shared settings; new environmental sound logic is scoped to Last House.
+- Current keyboard/controller prompts follow input and rebinding. Generic paired
+  Xbox/PlayStation labels describe logical Godot buttons; platform glyphs are not
+  automatically inferred from an unverified physical device. Menu controls remain
+  fixed: arrows/D-pad, Enter/A, Esc/B/Start. Left stick remains bound to movement.
+- Gameplay key/button rebinding rejects conflicts and reserved menu/global inputs;
+  capture cancellation and confirmed default reset keep a safe menu escape path.
+  A controller checkpoint button can be assigned; it is unassigned by default.
+- Text scale 100/120/140 percent, hold/default or toggle crouch, reduced motion.
+  Large display titles remain fixed; long button labels fit their available width.
+  Toggle crouch respects overhead clearance. Existing controls remain defaults.
+- Shared preferences use the existing settings_v1.json path, versioned contents,
+  atomic replacement and a previous-valid backup. Old three-field preferences load.
+  Invalid fields/conflicting maps are rejected safely. Game saves remain schema1
+  in WhenTheSkyClears/v050 with independent main/rehearsal/Last House filenames.
+
+VERIFICATION AND LIMITS
+Native functional/input/UI/route reports, exact source/executable hashes, selected
+screenshots and measured master-bus output are recorded in evidence/v052.
+Input tests inject real Godot key/joypad events through native menus/controller
+and physics paths. They do not establish physical controller compatibility/feel.
+Fixtures deliberately reset positions for individual clearance, cue and roof tests;
+continuous journey/Last House routes are separately tested with native Input actions.
+The native audio fixture records the Godot master bus, with microphone disabled.
+Channel RMS, peaks and clipping are objective checks; they are not a subjective
+speaker/headphone listening assessment. No supported model-side listening tool
+was available. Full spatial mix/comfort and real device testing remain partial.
+Text was visually checked at 140 percent in settings, bindings, pack and gameplay.
+Screen reader navigation, arbitrary key chords/mouse/axis rebinding, device glyph
+packs and a complete accessibility audit are outside this bounded checkpoint.
+
+DEFERRED
+Brief companion silhouette overlap on reversals remains. Preventing the children
+crossing paths changes root navigation and needs a dedicated movement/pass design;
+this sound/input pass preserves the verified companion/traversal behavior.
+Procedural cutout acting, bespoke scene integration and other v051 art limitations
+remain. No Mac runtime test or Mac export is claimed; docs/MACOS.md describes
+Godot 4.6 Standard editor play from this branch and its verification limits.
+Private Library upload was previously denied by its protected connection. This
+pass does not retry/bypass that denial and does not assert a library_file_id.

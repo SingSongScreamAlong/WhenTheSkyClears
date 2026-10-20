@@ -41,7 +41,7 @@ func prompt_for(p):
 	if p.kind=="share" and not g.flags.get("bag_down",false):return label_for(p)
 	if p.kind=="quiet" and not g.flags.get("shared_meal",false):return label_for(p)
 	if p.kind=="brace" and g.scrap<1:return "1 SALVAGE NEEDED   Search the exposed shop shelf"
-	return ("HOLD E   " if p.kind in ["cache","brace","reciprocal"] else "E   ")+label_for(p)
+	return ("HOLD " if p.kind in ["cache","brace","reciprocal"] else "")+g.access.label("interact")+"   "+label_for(p)
 func try_interact(p):
 	unavailable=""
 	match p.kind:
@@ -59,13 +59,14 @@ func try_interact(p):
 		"bag":
 			if absf(g.player.position.x-g.boy.position.x)>140:return refuse("Bring him inside before setting the bag down.")
 			beat="bag";beat_clock=0;beat_duration=.6;bag_at=Vector2(g.player.position.x+g.player.facing*24,700)
+			g.play_sfx("cloth",-10,bag_at,"BAG SET DOWN")
 			g.flags["bag_down"]=true;g.player.action_time=.6;g.boy.action_time=.6;g.checkpoint_x=maxf(8100,g.player.position.x)
 			g.announce_message("The bag lands softly. For the first time, there is no need to hurry.",6);g.write_save();return true
 		"share":
 			if not g.flags.get("bag_down",false):return refuse("Set the bag down beside the door first.")
 			if absf(g.player.position.x-g.boy.position.x)>120:return refuse("Wait for him before sharing.")
 			if not g.flags.get("shared_meal",false):
-				beat="meal";beat_clock=0;beat_duration=1.0
+				beat="meal";beat_clock=0;beat_duration=1.0;g.play_sfx("bread",-10,g.player.position,"SHARING FOOD")
 				if g.rations>0:g.rations-=1;g.food=minf(100,g.food+36)
 				else:
 					g.flags["emergency_bowl"]=true;g.food=maxf(35,g.food)
@@ -138,7 +139,7 @@ func tick(dt):
 		g.player.action_time=.12
 		if absf(g.boy.position.x-4190)<12:
 			stage="boy_holds";g.flags["passage_braced"]=true;g.player.action_time=0
-			g.announce_message("He catches the support. Now she can pass.",5);g.play_sfx("wheel",-20);g.write_save()
+			g.announce_message("He catches the support. Now she can pass.",5);g.play_sfx("wheel",-12,Vector2(4160,650),"SUPPORT SECURED - JOIN HIM");g.write_save()
 		elif not Input.is_action_pressed("interact"):
 			stage="returning";g.player.action_time=0;g.announce_message("The support slips. Give him room to come back, then try again.",4)
 	elif stage=="returning":
@@ -161,7 +162,7 @@ func tick(dt):
 		if at_risk:caught.append(child)
 	g.exposure=maxf(float(exposure.Girl),float(exposure.Boy))
 	if g.exposure>.3 and g.playtime-last_warning>4:
-		g.play_sfx("warning",-22);last_warning=g.playtime
+		g.play_sfx("warning",-12,Vector2(shop_beam_x() if g.player.position.x<3450 else beam_x(),650),"SEEN - REACH COVER TOGETHER");last_warning=g.playtime
 	if g.exposure>=1.5:
 		var who=" and ".join(caught.map(func(c):return str(c.name).to_lower()))
 		g.hurt(28,"The light caught "+who+". Reach the next wall together.",caught)

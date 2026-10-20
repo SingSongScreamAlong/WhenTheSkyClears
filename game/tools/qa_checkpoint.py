@@ -6,8 +6,8 @@ for kind in args.kinds:
  d=P/('evidence/v'+args.version.replace('.',''))/args.tag/kind;d.mkdir(parents=True,exist_ok=True)
  exe=P/('build/v'+args.version+'/When the Sky Clears.exe' if args.release else 'tools/godot/Godot_v4.6-stable_win64_console.exe')
  cmd=[str(exe)]+([] if args.release else ['--path',str(P)])
- if kind not in ['crossing-capture','capture-new','motion','slice-capture','slice-shop-capture']:cmd+=['--headless']
- cmd+=['--fixed-fps','30' if kind=='motion' else '60','--log-file',str(d/'engine.log'),'--','--evidence-dir',str(d)]
+ if kind not in ['crossing-capture','capture-new','motion','slice-capture','slice-shop-capture','access-checks','access-capture','audio-capture']:cmd+=['--headless']
+ cmd+=([] if kind=='audio-capture' else ['--fixed-fps','30' if kind=='motion' else '60'])+['--log-file',str(d/'engine.log'),'--','--evidence-dir',str(d)]
  cmd+=(['--slice-capture','--shop-route'] if kind=='slice-shop-capture' else ['--'+kind])
  start=time.monotonic()
  with (d/'stdout.log').open('w',encoding='utf8') as out,(d/'stderr.log').open('w',encoding='utf8') as err:
