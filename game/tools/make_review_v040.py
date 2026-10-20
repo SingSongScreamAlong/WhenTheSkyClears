@@ -11,9 +11,9 @@ E = P / 'evidence/v040'
 F = E / 'release_final/mill-playthrough'
 report = json.loads((F / 'mill_checks.json').read_text(encoding='utf-8'))
 recording = report['recording']
-frames = sorted((F / 'motion_frames').glob('*.jpg'))
+frames = [F / 'motion_frames' / f'{index:05d}.jpg' for index in range(recording['frames'])]
 assert report['all_passed'] and recording['enabled']
-assert len(frames) == recording['frames'] > 0
+assert recording['frames'] > 0 and all(frame.is_file() for frame in frames)
 size = Image.open(frames[0]).size
 assert all(Image.open(frame).size == size for frame in frames)
 ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()

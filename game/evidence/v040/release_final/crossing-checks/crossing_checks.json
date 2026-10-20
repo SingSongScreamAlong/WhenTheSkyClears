@@ -1,0 +1,80 @@
+{
+	"all_passed": true,
+	"checks": [
+		{
+			"check": "authored_children_standing_colliders",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "release_crouch_under_beam_keeps_head_clear",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "both_leave_low_passage_and_stand",
+			"details": "[(1116.072, 699.9252), (1078.655, 699.9252)]",
+			"passed": true
+		},
+		{
+			"check": "wait_command_holds_position",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "call_rejoins_and_settles",
+			"details": "(0.0, 0.0)",
+			"passed": true
+		},
+		{
+			"check": "idle_follower_does_not_oscillate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "reverse_direction_rejoins",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unreachable_crossing_waits_without_suicide",
+			"details": "(1195.958, 699.9252)",
+			"passed": true
+		},
+		{
+			"check": "old_airborne_trail_cannot_trigger_jump",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "freight_sequence_reached_shared_gate",
+			"details": "{ \"searched\": true, \"rested\": true, \"reached_gate\": true, \"phase\": \"done\", \"girl\": \"(2250.56, 699.9252)\", \"boy\": \"(2208.547, 699.9252)\", \"health\": 100.0, \"warmth\": 80.4325888333283, \"maximum_separation\": 136.014404296875, \"frames\": 0, \"phase_events\": [], \"deaths\": 0 }",
+			"passed": true
+		},
+		{
+			"check": "freight_sequence_supply_rest_and_shared_work",
+			"details": "{ \"searched\": true, \"rested\": true, \"reached_gate\": true, \"phase\": \"done\", \"girl\": \"(2250.56, 699.9252)\", \"boy\": \"(2208.547, 699.9252)\", \"health\": 100.0, \"warmth\": 80.4325888333283, \"maximum_separation\": 136.014404296875, \"frames\": 0, \"phase_events\": [], \"deaths\": 0 }",
+			"passed": true
+		},
+		{
+			"check": "freight_sequence_both_children_survive",
+			"details": "{ \"searched\": true, \"rested\": true, \"reached_gate\": true, \"phase\": \"done\", \"girl\": \"(2250.56, 699.9252)\", \"boy\": \"(2208.547, 699.9252)\", \"health\": 100.0, \"warmth\": 80.4325888333283, \"maximum_separation\": 136.014404296875, \"frames\": 0, \"phase_events\": [], \"deaths\": 0 }",
+			"passed": true
+		}
+	],
+	"crossing": {
+		"boy": "(2208.547, 699.9252)",
+		"deaths": 0,
+		"frames": 0,
+		"girl": "(2250.56, 699.9252)",
+		"health": 100.0,
+		"maximum_separation": 136.014404296875,
+		"phase": "done",
+		"phase_events": [],
+		"reached_gate": true,
+		"rested": true,
+		"searched": true,
+		"warmth": 80.4325888333283
+	},
+	"scope": "Native controller checks use deliberate initial setups. Freight sequence then uses held Input actions with no actor repositioning, immunity or resource grants."
+}

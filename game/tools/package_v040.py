@@ -145,7 +145,10 @@ def invocation(folder: Path, executable_sha: str):
 def verify_report(folder: Path, filename: str, executable_sha: str):
     call = invocation(folder, executable_sha)
     report = load(folder / filename)
-    require(report.get("build", VERSION) == VERSION, f"Wrong report version in {folder}")
+    # The unchanged side-route harness retains its v0.3 label. The invocation,
+    # embedded source and native executable hash bind its newly run results.
+    allowed_versions = [VERSION, "0.3.0"] if folder.name == "side-routes" else [VERSION]
+    require(report.get("build", VERSION) in allowed_versions, f"Wrong report version in {folder}")
     if folder.name == "traverse":
         require(report.get("completed") is True and not report.get("failure"),
                 "Continuous final journey did not complete.")

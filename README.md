@@ -8,7 +8,7 @@ Guide the older child, keep her companion close, and find shelter for both. Envi
 
 ## Play
 
-The **v0.4.0 source is undergoing final native verification**. Its planned Windows package is **When_The_Sky_Clears_Windows_v0.4.0.zip** on the [v0.4.0 release page](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/tag/v0.4.0). The previous [v0.3.0 release](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/tag/v0.3.0) remains available. Extract a Windows package and run **When the Sky Clears.exe**. Standalone builds do not require Godot or Python.
+Download the [v0.4.0 Windows ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.0/When_The_Sky_Clears_Windows_v0.4.0.zip), extract it, and run **When the Sky Clears.exe**. Standalone builds do not require Godot or Python. The [editable-source ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.0/When_The_Sky_Clears_Editable_Source_v0.4.0.zip) opens in Godot 4.6 Standard. [Release notes](docs/releases/v0.4.0.md) identify the verified build; earlier releases remain available.
 
 Use [`game/PLAY.cmd`](game/PLAY.cmd) to launch the full journey from a prepared checkout. [`game/MILL_PLAYTEST.cmd`](game/MILL_PLAYTEST.cmd) opens the mill directly in an isolated, unsaved playtest (`-- --mill-preview`). [`game/FREIGHT_CROSSING.cmd`](game/FREIGHT_CROSSING.cmd) opens a separate freight rehearsal (`-- --freight-crossing`) combining supply searches, shelter, stealth, traversal, and shared work. Its own save keeps the main journey intact. Normal campaign progress uses `journey_v4.json` in the separate `WhenTheSkyClears/v040` Godot user-data directory; earlier saves are preserved.
 
@@ -43,6 +43,8 @@ Eighteen timed hazard lanes, including two sound-sensitive listening posts, join
 The characters use drawn silhouettes, articulated limbs, planted feet, companion gestures, cloth follow-through, and collision-aware climbing. This pass refines crouch transitions, standing clearance under low ceilings, turn braking, quiet settling, and boot placement on slopes. Layered paintings, foreground cover, and collision-matched terrain form the world.
 
 The current art pass uses the painted tent's material clarity as its benchmark. Faces and clothing retain visible paint and fabric detail, with clearer skin, hair, and garment values. Material tints, softer contact shadows, and restrained environmental darkness bring characters, terrain, and props into the same painted world. Final rendered review and artistic acceptance remain separate from functional test results.
+
+See the [native-renderer art comparison](game/evidence/v040/ART_READABILITY_BEFORE_AFTER.jpg), whose revised views come from the final executable's actual captures. Original artwork and recorded ImageGen prompts remain preserved.
 
 This is an evolving development build, **not a finished commercial game or an achieved AAA quality target**. Bespoke acting, animation transitions, terrain and prop craft, encounter depth, sound design, and human balancing remain active work.
 
@@ -87,7 +89,9 @@ Create the output directory before a manual export. See the [repository guide](d
 
 ## Verification
 
-Final v0.4.0 verification is in progress, including the appended mill encounter. Begin with the [delivery manifest](game/evidence/v040/DELIVERY_MANIFEST_v040.json) and `game/evidence/v040/release_final/<scenario>/invocation.json` for the packaged build's identity, exit status, and results. Earlier passes do not establish a pass for a later build. Native full-journey navigation, targeted movement and encounter tests, and staged visual studies have separate scopes.
+The final Windows executable passed **371 native functional checks**. Automated continuous navigation completed all five chapters in **730.45 simulated seconds**, with one checkpoint recovery. This is an automated route result, not measured human playtime. A separate **27-check native source animation fixture** passed against the frozen source; it includes the 13 baseline movement checks and is excluded from the 371 total.
+
+The final evidence includes **nine native 4K captures**, an **18-second silent mill playthrough** fully decoded at 1440 × 810 / 30 fps / 540 frames, and **627,876 terrain polygon checks with zero failures**. Begin with the [delivery manifest](game/evidence/v040/DELIVERY_MANIFEST_v040.json) and `game/evidence/v040/release_final/<scenario>/invocation.json` for build identity and scope. Targeted fixtures, continuous campaign navigation, and rendered studies remain separate evidence.
 
 The retained v0.3.0 release passed **189 functional checks** and completed its automated journey in approximately **8 minutes 16 seconds**, with one checkpoint recovery. Those results belong to v0.3.0, not the expanded v0.4.0 route; they are not human playtime estimates.
 
@@ -108,7 +112,7 @@ godot --headless --path game --fixed-fps 60 -- --traverse
 
 [`qa_v040.py`](game/tools/qa_v040.py) records invocations, hashes, logs, and exit status; its portable-engine and release paths follow the Windows workspace layout. For example, run `python game/tools/qa_v040.py mill-checks` against the source or add `--release` for the exported v0.4.0 executable. [`export_v040.py`](game/tools/export_v040.py) imports, exports, and records build identity. Selected 4K captures use the actual renderer; character close views are staged. The [mill playthrough](game/evidence/v040/WTSC_Mill_Playthrough_v040.mp4) records native input and physics through that encounter, separately from full campaign traversal. Earlier movement movies remain labeled studies of their recorded versions. Automated checks and rendered captures do not establish artistic acceptance or replace human playtesting.
 
-The expanded animation fixture is reported separately because it includes the baseline movement checks. [`package_v040.py`](game/tools/package_v040.py) verifies frozen source hashes, final executable evidence, rendered captures, movie decoding, and terrain results before writing the Windows and editable-source ZIPs. Use `--verify-only` for a check without writing delivery artifacts.
+[`package_v040.py`](game/tools/package_v040.py) verifies frozen source hashes, final executable evidence, rendered captures, movie decoding, and terrain results before writing the Windows and editable-source ZIPs. Use `--verify-only` for a check without writing delivery artifacts.
 
 ## Artwork and licenses
 

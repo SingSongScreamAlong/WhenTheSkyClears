@@ -31,6 +31,10 @@ The [publisher license snapshot captured during development](../game/character_s
 
 The original handoff also lists Blender Studio Human Base Meshes and Spring as possible future modeling references. Neither was downloaded or integrated, and they are not dependencies of this game.
 
+## Native art review
+
+The [v0.4.0 readability comparison](../game/evidence/v040/ART_READABILITY_BEFORE_AFTER.jpg) places earlier native views beside revised actual captures from the verified final executable. The [playable review](../game/evidence/v040/V040_PLAYABLE_REVIEW.jpg) draws from nine native 4K captures, including a staged character close view. These artifacts document rendering and material revisions; they do not replace the original art, its recorded prompts, or human artistic acceptance.
+
 ## Repository packaging
 
 Runtime assets and source licenses are included. Windows executables and versioned source ZIPs are distributed through [GitHub Releases](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases). Local engine installations, import caches, save games, redundant capture frames and session-bearing download-page HTML are not source assets. The source receipts and provenance files remain available for review without publishing those machine artifacts.

@@ -8,7 +8,7 @@ This repository contains the When the Sky Clears Godot game. The original produc
 - Native source snapshots under `game/previous/v0.1.0/`, `v0.2.0/`, and `v0.3.0/`. These preserve prior development states without inventing historical Git commits.
 - Level authoring, engine setup, packaging, and native verification tools. Python media helpers additionally use Pillow and FFmpeg where their imports/commands require them.
 - Development notes, source receipts, exact third-party license texts, reports, captured scenes, review movies, and build identity manifests.
-- Standalone Windows and editable-source ZIPs through GitHub Releases. Versions 0.1.0, 0.2.0, and 0.3.0 are retained. The [v0.4.0 release](releases/v0.4.0.md) adds the physical mill sequence, route choices, and controller work; final package verification is in progress.
+- Standalone Windows and editable-source ZIPs through GitHub Releases. Versions 0.1.0, 0.2.0, and 0.3.0 are retained. The verified [v0.4.0 release](releases/v0.4.0.md) adds the physical mill sequence, route choices, controller work, freight rehearsal, and art consistency pass.
 
 ## Local/generated material
 
@@ -37,12 +37,14 @@ After source, artwork and evidence are frozen, `python game/tools/package_v040.p
 
 ## Evidence interpretation
 
-For v0.4.0, begin with the following final package records. Verification is still in progress; pending final totals must not be inferred from earlier development runs.
+The final v0.4.0 executable passed 371 native functional checks and completed all five chapters in 730.45 simulated seconds with one checkpoint recovery. The separate 27-check source animation fixture includes the baseline 13 movement checks and is excluded from that total. Begin with these final records:
 
 - `game/evidence/v040/DELIVERY_MANIFEST_v040.json` and `EXPORT_IDENTITY.json`: selected evidence, source hashes, and executable identity.
-- `game/evidence/v040/release_final/<scenario>/invocation.json`: the exact packaged invocation, executable SHA-256, exit status and engine errors. Scenarios cover smoke, survival, encounters, journey, optional routes, movement, development branches, the mill, freight crossing, story dependencies, and continuous traversal. The expanded animation fixture is recorded separately because its checks include the baseline movement suite; an editor fallback must bind its full source hash map to the export identity.
-- `game/evidence/v040/V040_PLAYABLE_REVIEW.jpg`: selected actual-renderer scenes, including staged close views where labeled.
-- `game/evidence/v040/WTSC_Mill_Playthrough_v040.mp4`: native input and physics through the mill encounter. This is distinct from continuous full-journey navigation.
+- `game/evidence/v040/release_final/<scenario>/invocation.json`: the exact packaged invocation, executable SHA-256, exit status and engine errors. Scenarios cover smoke, survival, encounters, journey, optional routes, movement, development branches, the mill, freight crossing, story dependencies, and continuous traversal. The separate `animation-checks` invocation binds its native editor fixture and full source hash map to the frozen export identity.
+- `game/evidence/v040/V040_PLAYABLE_REVIEW.jpg`: selected actual-renderer scenes from nine 3840 × 2160 captures, including a staged character close view.
+- `game/evidence/v040/ART_READABILITY_BEFORE_AFTER.jpg`: earlier native views compared with revised actual captures from the final executable.
+- `game/evidence/v040/WTSC_Mill_Playthrough_v040.mp4` and `mill_movie_validation.json`: an 18-second silent, 1440 × 810 / 30 fps / 540-frame native mill playthrough, fully decoded. This is distinct from continuous full-journey navigation.
+- `game/evidence/v040/terrain_polygon_audit_current.json`: 627,876 current geometry checks with zero failed polygons.
 
 The final manifest selects the valid runs. Folder names alone do not establish that a report matches the delivered executable. Earlier `source`, `packaged`, `integration`, `title_route` and diagnostic iterations remain as development history, including failures.
 
@@ -59,4 +61,4 @@ Reports retain original machine paths and timestamps as historical evidence. The
 
 The release source includes the story and animation dependencies present in the tested snapshot. Their presence does not establish full artistic approval or a finished film adaptation. Current release scope and verification belong to the manifest and [release notes](releases/v0.4.0.md).
 
-The current art consistency pass uses the painted tent's material clarity as the benchmark, with readable painted faces and clothing, revised material tints, softer contact shadows, and restrained environmental darkness. Rendered before/after review is needed to assess that craft independently of reachability and controller checks.
+The current art consistency pass uses the painted tent's material clarity as the benchmark, with readable painted faces and clothing, revised material tints, softer contact shadows, and restrained environmental darkness. The [rendered comparison](../game/evidence/v040/ART_READABILITY_BEFORE_AFTER.jpg) supports craft review independently of reachability and controller checks. It does not establish artistic acceptance or AAA completion.

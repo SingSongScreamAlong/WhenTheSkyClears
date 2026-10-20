@@ -1,0 +1,1195 @@
+{
+  "build": "0.4.0",
+  "created_at_utc": "2026-10-20T16:09:35.421069+00:00",
+  "executable": {
+    "file": "build/v0.4.0/When the Sky Clears.exe",
+    "bytes": 138136680,
+    "sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734"
+  },
+  "source": {
+    "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+    "assets/audio/blast.wav.import": "376596e2e795b2d3436b5b5d2158f0167027d3d04189f2dcd81413c03d96f3b3",
+    "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+    "assets/audio/collect.wav.import": "246ea4ef068118d7367f3dcd7a5931509898104241a88e46f044f9406c382bc3",
+    "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+    "assets/audio/foley/footstep_concrete_000.ogg.import": "71ee475493b798410142fe9b1259fbbd0f0a695226eca26705c63178799b1d49",
+    "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+    "assets/audio/foley/footstep_concrete_001.ogg.import": "8187a2c194129b614785f65487ef86cf443e95986790a7d8b3c3f3ff12a40cf6",
+    "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+    "assets/audio/foley/footstep_concrete_002.ogg.import": "f5d2800fbc36ed2ef1d89b7ed9b2d2c9a2a62393fe64205a2bc8e1f3e63098c2",
+    "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+    "assets/audio/foley/footstep_concrete_003.ogg.import": "b1e980f62772e1f6b5f24ce11ba32e5fc59a8cb9a889607d18302f80b275f34e",
+    "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+    "assets/audio/foley/footstep_concrete_004.ogg.import": "1346970cad7b32fa93b78cef2f7a5668df15651487920b6878547bd8638ed559",
+    "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "assets/audio/foley/footstep_grass_000.ogg.import": "5b4ecb44f418eba4a7dc108724a55887fb702f18cfb0c17fe8a1ef14bcd457db",
+    "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "assets/audio/foley/footstep_grass_001.ogg.import": "cdd098cc3fe1ea05c47449bcbc7274319d6b7768be03b5a4ddb5eddd7d7a8239",
+    "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "assets/audio/foley/footstep_grass_002.ogg.import": "6dd670b3323e552fc472882c6a130fd73b50847963d4bca0e9b662cc9abead5b",
+    "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "assets/audio/foley/footstep_grass_003.ogg.import": "7b77fe138e973c7ab667625e6dfc5371027157cc7c108665407e96c06ffe1a22",
+    "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "assets/audio/foley/footstep_grass_004.ogg.import": "656a0144316d1dab65fcf2dde8c549fbeded5aafe2bced50c51b6b5c33a7d5dc",
+    "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+    "assets/audio/foley/footstep_wood_000.ogg.import": "d3ad1c16dabaf9ad7f15d7827150f39690438137bdcb1f741879d091757e5810",
+    "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+    "assets/audio/foley/footstep_wood_001.ogg.import": "87c155409cd19a8f011f60c9a39c19e705b95b3fa6d84eb69fbc4c9d2932a796",
+    "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+    "assets/audio/foley/footstep_wood_002.ogg.import": "fbf77ce4941d9c2cc23b07432130ef9b337a122efe9bed951b1cf66abb019980",
+    "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+    "assets/audio/foley/footstep_wood_003.ogg.import": "0d22e158425e5cf0603c4b733effe74c641116ca293df432fc2e530e385f3b03",
+    "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+    "assets/audio/foley/footstep_wood_004.ogg.import": "b099f8dd315d4c3e1e1c0ab8fee6b3b05ca6107bcc006a7b83fa24a8f948f08f",
+    "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+    "assets/audio/horizon.wav.import": "c77928700ba725704781f5a4d99aac56c15843071d7acb152263d8d7ee02e9ed",
+    "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+    "assets/audio/step.wav.import": "5d43bf042a41b238a332dd5cbace280dabbc5b10a67dd1c4601b28a84264d7ba",
+    "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+    "assets/audio/warning.wav.import": "c78550e199db0a75ccc0f021bc7b1ea0c21cd002be1b6d823f72b4ffaa2b2d79",
+    "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+    "assets/audio/wheel.wav.import": "1ff1bd3a7d8875f68e412d59a8445f5fcb7bd21cf38887f322b02b010daca1d6",
+    "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "assets/characters/boy_atlas.png.import": "0e2c427d269a6c2b456e2ac36db06c47c21739443b2552c717846d368cfa0c86",
+    "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+    "assets/characters/girl_profile.png.import": "a09edc18f10ce7029e0abff15909b1882a71f99bfae554768ec33c206f2648ae",
+    "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+    "assets/environments/Battlefield_v001.png.import": "be640d52933c4b48000a2cdd53ba6e6e91aae9b040cbafe54b3f61b2abd827bc",
+    "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+    "assets/environments/Camp_v001.png.import": "2c26d132722a9503ebd017fc09b65424468c563a4254c937e98aa4ddb3de833e",
+    "assets/environments/Canal_PROVENANCE_v040.txt": "a907aaa58c696bcc6d067961def1e1384b74a806bcce5028af32317f93ef3896",
+    "assets/environments/Canal_v040.png": "3e4b8aeb23d445b833115dc8ea2239023d148387d25fb10752c606f6235b9ec3",
+    "assets/environments/Canal_v040.png.import": "f7609d62fce47527f1d2093f52eb2733d0628d8c13d5f8f73337320542082b07",
+    "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+    "assets/environments/Distant_Hills_v001.png.import": "76b649fa7e48a53224c7ae8f1eec042d89c3bf89012fbffab7c327f09290e3a8",
+    "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+    "assets/environments/Foreground_Tree_v001.png.import": "3571ff0d24f0f3f640c93a3d7bac834651f1237b951d2a53a777b8fa04c87d1e",
+    "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+    "assets/environments/Ground_Painted_v001.png.import": "dd3e79325566debdcb3c6cdd0d5fd101e7c1a2ae36f28b7510c788d085b3c728",
+    "assets/environments/Mill_Background_PROVENANCE_v040.txt": "e0466031d0a3b056f18428bb786a0c93fb4f2043cdf66614d3d1931d5485fa72",
+    "assets/environments/Mill_Background_v040.png": "0faee756ddaa03c55ebb9df4c9d02f2184170280ea3e0610cb852706515d12f5",
+    "assets/environments/Mill_Background_v040.png.import": "250817dda171e506752a22f5e59a0119b61bbb7d4d188bfa26e766d372ea0fb3",
+    "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+    "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "assets/environments/Rail_Yard_v030.png.import": "ba6e68227563716428e92f7ed3f339c8ccb1d90e47e70d27894e8695d49cb345",
+    "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+    "assets/environments/School_v001.png.import": "addce78528db3fcf6ce8a19b2df9871a2c5dc862bbf4d143075290e6522138a8",
+    "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+    "assets/environments/Sky_Painted_v001.png.import": "0f3f2ca74c5bfcd40b75fce8f58867bba8f873ebd591ec2d2b5965016ed3bc99",
+    "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+    "assets/environments/Village_Empty_v001.png.import": "bc638de64327cf96d5e053008b4ab46f756c000b9d46767985fd3b33e8530767",
+    "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+    "assets/environments/Village_Warm_v001.png.import": "f2c0d2e729da2b5f23de4c1401f625a22a7419e5ae9e846f25bb17dd92666e54",
+    "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+    "assets/environments/Woods_v001.png.import": "d8d0b0936265ffdba6e5348edfb690b6c50e4e6db663ad87fa03f16775f53cfa",
+    "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "assets/fonts/display.ttf.import": "87799f854464b4606c237a57deda4a890f2c9e73713db693d61ea5b22d96c17b",
+    "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "assets/fonts/interface.ttf.import": "43b94549fbb3a797154d9e726422effabfab235362d7fff1d87a28741921a900",
+    "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+    "assets/props/Mill_Parts_PROVENANCE_v040.txt": "6c3ad629afdaecae5a973eccddecaa3e52eb834b353990f1cfdcafe0733425ee",
+    "assets/props/Mill_Parts_v040.png": "c18bc26fa298400ddb13910acfda263f938a4f19756ae13604b2bbbe35394171",
+    "assets/props/Mill_Parts_v040.png.import": "4c5c5235422a00ab7c1de6903f1acb3af858150a9e3d6a9f17fdb23254c032eb",
+    "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+    "assets/props/painted_survival_atlas_v020.png.import": "035f05e99d183f0dfaebc6738b6bec23ed4356a2d33a34db21d4c4985fc8533c",
+    "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+    "export_presets.cfg": "08b360c73d5ccb9e6d541d5af8419c56951e38236c8d9399f6889ea393043816",
+    "levels/01.json": "3ae4d4554a66ed8eb0eea33d980de7d5d7a32040799487e450129981e1f18ca4",
+    "levels/02.json": "ea26c39e77a6bafa770a00fd1216d11f983fb7a08be3e122c72557bd45891147",
+    "levels/03.json": "f1e0a1b08a531da2de5f419d8a29d734f7d3c56d3c233f07a3325ffb6eae54ac",
+    "levels/04.json": "4f8c85afa1f10b0ea8fc932ca381030e4bb3021c13db13c176a9d5ff7d20bca7",
+    "levels/05.json": "556f7517d55c6ea4c87f5d6b7f068ea393b5f8f0fa5d6186ac60f81c812e5c29",
+    "levels/freight_crossing.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+    "project.godot": "21f950c312314ced1eb41f8d101e1583cd5510e7886ddb3467ac394355603f21",
+    "scenes/animation_review.tscn": "83b465f09ba6ffb4b8cf89662b0c9aaad1eb998a18dc8580afe6459e1a3752fd",
+    "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+    "scripts/animation_movement_checks.gd": "d5dbf7bbaf2f1b63cb54c12f80130f2b3226abb20035c32f74f7455090698732",
+    "scripts/animation_review.gd": "e62e1c095d7b7d29ac3831c9e93748a8a2fbc5c8b42ccefe02c22b08053746b5",
+    "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts/child_v2.gd": "6af44d2be2cfa3aabe800e67889d405f14141389eea72a5ebdd2d9a2cca96551",
+    "scripts/crossing_checks.gd": "d161d4f7c81e4eefadee19597d23354729fa7fde9254c4fe8ac7ba4805bff865",
+    "scripts/development_checks.gd": "0b13787c6cbd7339e0a571c7ed340b68bc8f0d5a137b2f707fe4ec8b994dd95d",
+    "scripts/foreground.gd": "e95d1d7ffc892be6dc9ecf8476c254b4ff364580d16f1924084d52c4b4797044",
+    "scripts/game.gd": "1cca91f2babb6b7fea4ecbd081ae4cb1218ef5e359f2ad6769748e6c0c5b5fa4",
+    "scripts/hud.gd": "f993f1bb609f567f9fa89ba0a6e1fa64401dfbdbdf9fe6ad7f2637846feeebcf",
+    "scripts/mill_checks.gd": "b8eb030110624dd040dfcc42f6b80959e70c8dca3e24c704885dcadec33bc954",
+    "scripts/mill_encounter.gd": "f82363f81fa3d4cabf366be62f6689ca075fbb72ea8a01ba15d22f70e7f0078e",
+    "scripts/movement_checks.gd": "c826da81692979cef262603820bb4c4047b5ac3b0e2dc42fb512b09d3de2aade",
+    "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts/story_checks.gd": "cac513857b435f2b304b5c5c5eac522318af9e1e73f86441d1a5af0fb5986cc2",
+    "scripts/story_director.gd": "88e5b15abd1c9fcebb6578ead3688723967a9cde88b474ce2ad1733412524545",
+    "scripts/title_route_checks.gd": "46d0c9082189b321036280aa4958b8fc63f127c2e4fb9ba1a8bea3a31b1b7e9d",
+    "scripts/world.gd": "4b20fade4562ee1cdad4247e0ddb42dd2d3e0debb5a592702bc20b39e1f41598",
+    "story/moments.json": "1862ef3f0f0ce385ec9e5d3e40473d0542f57cfcc20ebd4bc20c9e5b0f7bda53"
+  },
+  "checks": {
+    "smoke": 158,
+    "survival": 13,
+    "encounters": 10,
+    "journey-checks": 35,
+    "side-routes": 13,
+    "development-checks": 45,
+    "movement-checks": 13,
+    "mill-checks": 16,
+    "story-checks": 56,
+    "crossing-checks": 12
+  },
+  "total_functional_checks": 371,
+  "animation_fixture": {
+    "checks": 27,
+    "all_passed": true,
+    "excluded_from_functional_total": true,
+    "overlaps_baseline_movement_checks": true,
+    "invocation_scope": "Native editor fixture bound to the full final export source map"
+  },
+  "journey": {
+    "build": "0.4.0",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 1,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.58333333333332
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6000000000002
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2333333333328
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 50.3666666666651
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 65.4833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 74.1999999999971
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 80.58333333333
+      },
+      {
+        "chapter": 0,
+        "id": "mill_road_beam",
+        "kind": "relay",
+        "time": 105.416666666662
+      },
+      {
+        "chapter": 0,
+        "id": "mill_kitchen_tin",
+        "kind": "cache",
+        "time": 109.649999999995
+      },
+      {
+        "chapter": 0,
+        "id": "mill_passage_roof",
+        "kind": "brace",
+        "time": 117.166666666661
+      },
+      {
+        "chapter": 0,
+        "id": "mill_roots",
+        "kind": "clear",
+        "time": 124.233333333328
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 131.916666666664
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 136.116666666667
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 148.066666666677
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 156.316666666683
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 166.716666666691
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 182.750000000038
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 189.433333333376
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 200.066666666718
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 204.133333333388
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 218.083333333399
+      },
+      {
+        "chapter": 1,
+        "id": "canal_approach_pack",
+        "kind": "cache",
+        "time": 225.883333333405
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 231.716666666743
+      },
+      {
+        "chapter": 1,
+        "id": "woods_canal_drain",
+        "kind": "pump",
+        "time": 238.150000000082
+      },
+      {
+        "chapter": 1,
+        "id": "signal_keeper_supper",
+        "kind": "cache",
+        "time": 257.833333333428
+      },
+      {
+        "chapter": 1,
+        "id": "woods_signal_sleepers",
+        "kind": "clear",
+        "time": 266.400000000086
+      },
+      {
+        "chapter": 1,
+        "id": "woods_mill",
+        "kind": "mill_weight",
+        "time": 281.683333333406
+      },
+      {
+        "chapter": 1,
+        "id": "woods_mill",
+        "kind": "mill_breakaway",
+        "time": 282.883333333405
+      },
+      {
+        "chapter": 1,
+        "id": "woods_mill",
+        "kind": "mill_open",
+        "time": 284.75000000007
+      },
+      {
+        "chapter": 2,
+        "id": "camp_tools",
+        "kind": "cache",
+        "time": 300.600000000055
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 334.250000000025
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 339.950000000019
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 346.21666666668
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 349.083333333345
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 355.766666666672
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 381.866666666648
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 401.283333333297
+      },
+      {
+        "chapter": 2,
+        "id": "signal_approach_food",
+        "kind": "cache",
+        "time": 407.866666666624
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 413.699999999952
+      },
+      {
+        "chapter": 2,
+        "id": "camp_yard_signal",
+        "kind": "relay",
+        "time": 432.233333333269
+      },
+      {
+        "chapter": 2,
+        "id": "station_arcade_loaf",
+        "kind": "cache",
+        "time": 439.399999999929
+      },
+      {
+        "chapter": 2,
+        "id": "camp_arcade_stones",
+        "kind": "clear",
+        "time": 445.449999999924
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 465.283333333239
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 472.549999999899
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 478.099999999894
+      },
+      {
+        "chapter": 3,
+        "kind": "recovery",
+        "reason": "They need a safer way through.",
+        "time": 484.766666666554
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 493.033333333214
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 497.783333333209
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 505.083333333203
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 512.399999999863
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 520.333333333189
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 530.733333333179
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 542.049999999836
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 549.349999999829
+      },
+      {
+        "chapter": 3,
+        "id": "arcade_approach_food",
+        "kind": "cache",
+        "time": 567.566666666479
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 573.399999999807
+      },
+      {
+        "chapter": 3,
+        "id": "school_arcade_drain",
+        "kind": "pump",
+        "time": 579.683333333135
+      },
+      {
+        "chapter": 3,
+        "id": "library_garden_food",
+        "kind": "cache",
+        "time": 602.199999999781
+      },
+      {
+        "chapter": 3,
+        "id": "school_greenhouse_frames",
+        "kind": "clear",
+        "time": 609.183333333108
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 617.133333333101
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 661.233333333061
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 675.383333333048
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 688.01666666637
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 699.699999999692
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_trellis",
+        "kind": "relay",
+        "time": 711.983333333014
+      },
+      {
+        "chapter": 4,
+        "id": "terrace_last_supper",
+        "kind": "cache",
+        "time": 718.549999999675
+      },
+      {
+        "chapter": 4,
+        "id": "ash_greenhouse_beam",
+        "kind": "brace",
+        "time": 725.183333333002
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 730.449999999664
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 2,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 730.449999999664
+  },
+  "journey_design": {
+    "route_units": 79200,
+    "previous_route_units": 56000,
+    "physical_forks": 2,
+    "timed_hazard_lanes": 18,
+    "held_relay_clear_brace_actions": 27
+  },
+  "invocations": {
+    "smoke": {
+      "file": "evidence/v040/release_final/smoke/invocation.json",
+      "sha256": "6d7ccb520b1996dfd366531a729e9a262e9b4c8bb896436398a712790100f998",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\smoke\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\smoke",
+        "--smoke"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 95.33,
+      "engine_errors": []
+    },
+    "survival": {
+      "file": "evidence/v040/release_final/survival/invocation.json",
+      "sha256": "a5a68e5f777680b9a361b10dfd5c7d718ed5d106341b7f7fc30065da55aabc47",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\survival\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\survival",
+        "--survival"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 4.5,
+      "engine_errors": []
+    },
+    "encounters": {
+      "file": "evidence/v040/release_final/encounters/invocation.json",
+      "sha256": "595e72b357583c2a291f78a6cbbfb0176984675333aa91e355ae49433275ddd4",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\encounters\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\encounters",
+        "--encounters"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 7.38,
+      "engine_errors": []
+    },
+    "journey-checks": {
+      "file": "evidence/v040/release_final/journey-checks/invocation.json",
+      "sha256": "51fc7cbbd4374bf86dc35803c3a8c31d28e66787df4a99db08c37c985618ffc9",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\journey-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\journey-checks",
+        "--journey-checks"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 9.59,
+      "engine_errors": []
+    },
+    "side-routes": {
+      "file": "evidence/v040/release_final/side-routes/invocation.json",
+      "sha256": "c1496526f42eadb3d9ec8d6f4f33248ca8883da51efae5ac490bad0f8db29e1e",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\side-routes\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\side-routes",
+        "--side-routes"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 8.28,
+      "engine_errors": []
+    },
+    "development-checks": {
+      "file": "evidence/v040/release_final/development-checks/invocation.json",
+      "sha256": "d451ef32c0e3cf6e9735e2856bd098912b1fd9e056715b226d61815ac7c20524",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\development-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\development-checks",
+        "--development-checks"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 56.28,
+      "engine_errors": []
+    },
+    "movement-checks": {
+      "file": "evidence/v040/release_final/movement-checks/invocation.json",
+      "sha256": "35114cb801c6b8a456b72e6cc6df6147785fb8a1983050d73ab66d5efcdda97e",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\movement-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\movement-checks",
+        "--movement-checks"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 3.94,
+      "engine_errors": []
+    },
+    "mill-checks": {
+      "file": "evidence/v040/release_final/mill-checks/invocation.json",
+      "sha256": "525d3690b79d548281242e0af2abe609c605465024f08ca420c992b12435e080",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\mill-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\mill-checks",
+        "--mill-checks"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 10.41,
+      "engine_errors": []
+    },
+    "story-checks": {
+      "file": "evidence/v040/release_final/story-checks/invocation.json",
+      "sha256": "528972ab3925300eda7eebfa97bdebc475226b1445ded84e632ec8bdd99ba161",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\story-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\story-checks",
+        "--story-checks"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 15.12,
+      "engine_errors": []
+    },
+    "crossing-checks": {
+      "file": "evidence/v040/release_final/crossing-checks/invocation.json",
+      "sha256": "c7cbf8157690178260dc8c9a4d5a83ab5be6a41e33b08f5049c9704acc72d4dc",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\crossing-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\crossing-checks",
+        "--crossing-checks"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 10.69,
+      "engine_errors": []
+    },
+    "animation-checks": {
+      "file": "evidence/v040/release_final/animation-checks/invocation.json",
+      "sha256": "bc5934181de8132fdffc5a30d93d788ec1c786f268f2a216ae8b475d5a56d70f",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\tools\\godot\\Godot_v4.6-stable_win64_console.exe",
+        "--path",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game",
+        "--headless",
+        "--script",
+        "res://scripts/animation_movement_checks.gd",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\animation-checks\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\animation-checks",
+        "--animation-checks"
+      ],
+      "exe_sha256": "fc759f9d296fe54f09ab66d41df6ddd2d278493b0e71109f6688ef029ad271ae",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 1.62,
+      "engine_errors": [],
+      "source": {
+        "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+        "assets/audio/blast.wav.import": "376596e2e795b2d3436b5b5d2158f0167027d3d04189f2dcd81413c03d96f3b3",
+        "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+        "assets/audio/collect.wav.import": "246ea4ef068118d7367f3dcd7a5931509898104241a88e46f044f9406c382bc3",
+        "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+        "assets/audio/foley/footstep_concrete_000.ogg.import": "71ee475493b798410142fe9b1259fbbd0f0a695226eca26705c63178799b1d49",
+        "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+        "assets/audio/foley/footstep_concrete_001.ogg.import": "8187a2c194129b614785f65487ef86cf443e95986790a7d8b3c3f3ff12a40cf6",
+        "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+        "assets/audio/foley/footstep_concrete_002.ogg.import": "f5d2800fbc36ed2ef1d89b7ed9b2d2c9a2a62393fe64205a2bc8e1f3e63098c2",
+        "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+        "assets/audio/foley/footstep_concrete_003.ogg.import": "b1e980f62772e1f6b5f24ce11ba32e5fc59a8cb9a889607d18302f80b275f34e",
+        "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+        "assets/audio/foley/footstep_concrete_004.ogg.import": "1346970cad7b32fa93b78cef2f7a5668df15651487920b6878547bd8638ed559",
+        "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+        "assets/audio/foley/footstep_grass_000.ogg.import": "5b4ecb44f418eba4a7dc108724a55887fb702f18cfb0c17fe8a1ef14bcd457db",
+        "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+        "assets/audio/foley/footstep_grass_001.ogg.import": "cdd098cc3fe1ea05c47449bcbc7274319d6b7768be03b5a4ddb5eddd7d7a8239",
+        "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+        "assets/audio/foley/footstep_grass_002.ogg.import": "6dd670b3323e552fc472882c6a130fd73b50847963d4bca0e9b662cc9abead5b",
+        "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+        "assets/audio/foley/footstep_grass_003.ogg.import": "7b77fe138e973c7ab667625e6dfc5371027157cc7c108665407e96c06ffe1a22",
+        "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+        "assets/audio/foley/footstep_grass_004.ogg.import": "656a0144316d1dab65fcf2dde8c549fbeded5aafe2bced50c51b6b5c33a7d5dc",
+        "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+        "assets/audio/foley/footstep_wood_000.ogg.import": "d3ad1c16dabaf9ad7f15d7827150f39690438137bdcb1f741879d091757e5810",
+        "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+        "assets/audio/foley/footstep_wood_001.ogg.import": "87c155409cd19a8f011f60c9a39c19e705b95b3fa6d84eb69fbc4c9d2932a796",
+        "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+        "assets/audio/foley/footstep_wood_002.ogg.import": "fbf77ce4941d9c2cc23b07432130ef9b337a122efe9bed951b1cf66abb019980",
+        "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+        "assets/audio/foley/footstep_wood_003.ogg.import": "0d22e158425e5cf0603c4b733effe74c641116ca293df432fc2e530e385f3b03",
+        "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+        "assets/audio/foley/footstep_wood_004.ogg.import": "b099f8dd315d4c3e1e1c0ab8fee6b3b05ca6107bcc006a7b83fa24a8f948f08f",
+        "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+        "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+        "assets/audio/horizon.wav.import": "c77928700ba725704781f5a4d99aac56c15843071d7acb152263d8d7ee02e9ed",
+        "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+        "assets/audio/step.wav.import": "5d43bf042a41b238a332dd5cbace280dabbc5b10a67dd1c4601b28a84264d7ba",
+        "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+        "assets/audio/warning.wav.import": "c78550e199db0a75ccc0f021bc7b1ea0c21cd002be1b6d823f72b4ffaa2b2d79",
+        "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+        "assets/audio/wheel.wav.import": "1ff1bd3a7d8875f68e412d59a8445f5fcb7bd21cf38887f322b02b010daca1d6",
+        "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+        "assets/characters/boy_atlas.png.import": "0e2c427d269a6c2b456e2ac36db06c47c21739443b2552c717846d368cfa0c86",
+        "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+        "assets/characters/girl_profile.png.import": "a09edc18f10ce7029e0abff15909b1882a71f99bfae554768ec33c206f2648ae",
+        "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+        "assets/environments/Battlefield_v001.png.import": "be640d52933c4b48000a2cdd53ba6e6e91aae9b040cbafe54b3f61b2abd827bc",
+        "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+        "assets/environments/Camp_v001.png.import": "2c26d132722a9503ebd017fc09b65424468c563a4254c937e98aa4ddb3de833e",
+        "assets/environments/Canal_PROVENANCE_v040.txt": "a907aaa58c696bcc6d067961def1e1384b74a806bcce5028af32317f93ef3896",
+        "assets/environments/Canal_v040.png": "3e4b8aeb23d445b833115dc8ea2239023d148387d25fb10752c606f6235b9ec3",
+        "assets/environments/Canal_v040.png.import": "f7609d62fce47527f1d2093f52eb2733d0628d8c13d5f8f73337320542082b07",
+        "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+        "assets/environments/Distant_Hills_v001.png.import": "76b649fa7e48a53224c7ae8f1eec042d89c3bf89012fbffab7c327f09290e3a8",
+        "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+        "assets/environments/Foreground_Tree_v001.png.import": "3571ff0d24f0f3f640c93a3d7bac834651f1237b951d2a53a777b8fa04c87d1e",
+        "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+        "assets/environments/Ground_Painted_v001.png.import": "dd3e79325566debdcb3c6cdd0d5fd101e7c1a2ae36f28b7510c788d085b3c728",
+        "assets/environments/Mill_Background_PROVENANCE_v040.txt": "e0466031d0a3b056f18428bb786a0c93fb4f2043cdf66614d3d1931d5485fa72",
+        "assets/environments/Mill_Background_v040.png": "0faee756ddaa03c55ebb9df4c9d02f2184170280ea3e0610cb852706515d12f5",
+        "assets/environments/Mill_Background_v040.png.import": "250817dda171e506752a22f5e59a0119b61bbb7d4d188bfa26e766d372ea0fb3",
+        "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+        "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+        "assets/environments/Rail_Yard_v030.png.import": "ba6e68227563716428e92f7ed3f339c8ccb1d90e47e70d27894e8695d49cb345",
+        "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+        "assets/environments/School_v001.png.import": "addce78528db3fcf6ce8a19b2df9871a2c5dc862bbf4d143075290e6522138a8",
+        "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+        "assets/environments/Sky_Painted_v001.png.import": "0f3f2ca74c5bfcd40b75fce8f58867bba8f873ebd591ec2d2b5965016ed3bc99",
+        "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+        "assets/environments/Village_Empty_v001.png.import": "bc638de64327cf96d5e053008b4ab46f756c000b9d46767985fd3b33e8530767",
+        "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+        "assets/environments/Village_Warm_v001.png.import": "f2c0d2e729da2b5f23de4c1401f625a22a7419e5ae9e846f25bb17dd92666e54",
+        "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+        "assets/environments/Woods_v001.png.import": "d8d0b0936265ffdba6e5348edfb690b6c50e4e6db663ad87fa03f16775f53cfa",
+        "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+        "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+        "assets/fonts/display.ttf.import": "87799f854464b4606c237a57deda4a890f2c9e73713db693d61ea5b22d96c17b",
+        "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+        "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+        "assets/fonts/interface.ttf.import": "43b94549fbb3a797154d9e726422effabfab235362d7fff1d87a28741921a900",
+        "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+        "assets/props/Mill_Parts_PROVENANCE_v040.txt": "6c3ad629afdaecae5a973eccddecaa3e52eb834b353990f1cfdcafe0733425ee",
+        "assets/props/Mill_Parts_v040.png": "c18bc26fa298400ddb13910acfda263f938a4f19756ae13604b2bbbe35394171",
+        "assets/props/Mill_Parts_v040.png.import": "4c5c5235422a00ab7c1de6903f1acb3af858150a9e3d6a9f17fdb23254c032eb",
+        "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+        "assets/props/painted_survival_atlas_v020.png.import": "035f05e99d183f0dfaebc6738b6bec23ed4356a2d33a34db21d4c4985fc8533c",
+        "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+        "export_presets.cfg": "08b360c73d5ccb9e6d541d5af8419c56951e38236c8d9399f6889ea393043816",
+        "levels/01.json": "3ae4d4554a66ed8eb0eea33d980de7d5d7a32040799487e450129981e1f18ca4",
+        "levels/02.json": "ea26c39e77a6bafa770a00fd1216d11f983fb7a08be3e122c72557bd45891147",
+        "levels/03.json": "f1e0a1b08a531da2de5f419d8a29d734f7d3c56d3c233f07a3325ffb6eae54ac",
+        "levels/04.json": "4f8c85afa1f10b0ea8fc932ca381030e4bb3021c13db13c176a9d5ff7d20bca7",
+        "levels/05.json": "556f7517d55c6ea4c87f5d6b7f068ea393b5f8f0fa5d6186ac60f81c812e5c29",
+        "levels/freight_crossing.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+        "project.godot": "21f950c312314ced1eb41f8d101e1583cd5510e7886ddb3467ac394355603f21",
+        "scenes/animation_review.tscn": "83b465f09ba6ffb4b8cf89662b0c9aaad1eb998a18dc8580afe6459e1a3752fd",
+        "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+        "scripts/animation_movement_checks.gd": "d5dbf7bbaf2f1b63cb54c12f80130f2b3226abb20035c32f74f7455090698732",
+        "scripts/animation_review.gd": "e62e1c095d7b7d29ac3831c9e93748a8a2fbc5c8b42ccefe02c22b08053746b5",
+        "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+        "scripts/child_v2.gd": "6af44d2be2cfa3aabe800e67889d405f14141389eea72a5ebdd2d9a2cca96551",
+        "scripts/crossing_checks.gd": "d161d4f7c81e4eefadee19597d23354729fa7fde9254c4fe8ac7ba4805bff865",
+        "scripts/development_checks.gd": "0b13787c6cbd7339e0a571c7ed340b68bc8f0d5a137b2f707fe4ec8b994dd95d",
+        "scripts/foreground.gd": "e95d1d7ffc892be6dc9ecf8476c254b4ff364580d16f1924084d52c4b4797044",
+        "scripts/game.gd": "1cca91f2babb6b7fea4ecbd081ae4cb1218ef5e359f2ad6769748e6c0c5b5fa4",
+        "scripts/hud.gd": "f993f1bb609f567f9fa89ba0a6e1fa64401dfbdbdf9fe6ad7f2637846feeebcf",
+        "scripts/mill_checks.gd": "b8eb030110624dd040dfcc42f6b80959e70c8dca3e24c704885dcadec33bc954",
+        "scripts/mill_encounter.gd": "f82363f81fa3d4cabf366be62f6689ca075fbb72ea8a01ba15d22f70e7f0078e",
+        "scripts/movement_checks.gd": "c826da81692979cef262603820bb4c4047b5ac3b0e2dc42fb512b09d3de2aade",
+        "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+        "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+        "scripts/story_checks.gd": "cac513857b435f2b304b5c5c5eac522318af9e1e73f86441d1a5af0fb5986cc2",
+        "scripts/story_director.gd": "88e5b15abd1c9fcebb6578ead3688723967a9cde88b474ce2ad1733412524545",
+        "scripts/title_route_checks.gd": "46d0c9082189b321036280aa4958b8fc63f127c2e4fb9ba1a8bea3a31b1b7e9d",
+        "scripts/world.gd": "4b20fade4562ee1cdad4247e0ddb42dd2d3e0debb5a592702bc20b39e1f41598",
+        "story/moments.json": "1862ef3f0f0ce385ec9e5d3e40473d0542f57cfcc20ebd4bc20c9e5b0f7bda53"
+      },
+      "export_identity_sha256": "3fb6ba964a6ad3e521c694982f3ea55258077eb19128eacc75ab3f175756e084"
+    },
+    "traverse": {
+      "file": "evidence/v040/release_final/traverse/invocation.json",
+      "sha256": "b3104cf3f072e7870771a98d996eca20cb6ebb6a7231fc1482a8d9717721ba56",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--headless",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\traverse\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\traverse",
+        "--traverse"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 230.19,
+      "engine_errors": []
+    },
+    "mill-playthrough": {
+      "file": "evidence/v040/release_final/mill-playthrough/invocation.json",
+      "sha256": "74256d77fd57569fccfa9356d7d029293fd168265ed020d4bfacbecb6a6d64bf",
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--position",
+        "-20000,-20000",
+        "--fixed-fps",
+        "30",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\mill-playthrough\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\mill-playthrough",
+        "--mill-checks",
+        "--record-mill"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 36.67,
+      "engine_errors": []
+    }
+  },
+  "graphics": {
+    "captures": [
+      {
+        "file": "evidence/v040/release_final/capture-v040/01_mill_gardens.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "57833958d03b6c5b80de70185ec344d349258f9e87c0c927cc101ce000f91140",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/02_canal_lower_route.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "20ae22027c3830be5d0ea0d3a35bd994bb569bd684701584060ae71925ca0228",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/03_canal_upper_route.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "756ae5594a2166e128e0b38978333d1c879c8df1b11a05790431f863131f78ec",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/04_signal_yard.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "c63c73a315f3e8ae18f1775010b0b854acb4fd6ed065974248653bc743b94e67",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/05_school_gallery.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "a214e6613b73bfa3dac73a44c73fb10ffaaa93d9524b8ff3695e85abd242eff9",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/06_living_terraces.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "3017eed6f9a2f29d2f3671a0e68a75e8ba240bd82a04defcc31d2c4c44819672",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/07_character_close_study.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "60c1013616393b6adbebdef4462b73065aa6ca13250bf27f91792564567bf87c",
+        "scope": "Staged character close view"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/08_interactive_mill_bridge.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "c22a5efca10626f10ca48ea35afd0bbfd5bef4269430c52952f91c1685167eb9",
+        "scope": "Native rendered scene capture"
+      },
+      {
+        "file": "evidence/v040/release_final/capture-v040/09_interactive_wheel_approach.png",
+        "size": [
+          3840,
+          2160
+        ],
+        "sha256": "88c70d94c1af9a0ee8a49681b4376ce8c6fe7a907bc5060b1bf20c7dc50589e5",
+        "scope": "Native rendered scene capture"
+      }
+    ],
+    "invocation": {
+      "command": [
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\v0.4.0\\When the Sky Clears.exe",
+        "--position",
+        "-20000,-20000",
+        "--fixed-fps",
+        "60",
+        "--log-file",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\capture-v040\\engine.log",
+        "--",
+        "--evidence-dir",
+        "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v040\\release_final\\capture-v040",
+        "--capture-v040"
+      ],
+      "exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+      "exit_code": 0,
+      "native_exit_code": 0,
+      "elapsed_seconds": 30.58,
+      "engine_errors": []
+    }
+  },
+  "mill_movie": {
+    "file": "WTSC_Mill_Playthrough_v040.mp4",
+    "bytes": 31253581,
+    "sha256": "2754350351b50c1dd4e078e1ef9b6e60ad1d26b6bf7ccba856ef614beea8b36d",
+    "size": [
+      1440,
+      810
+    ],
+    "fps": 30,
+    "decoded_frames": 540,
+    "duration_seconds": 18.0,
+    "source_exe_sha256": "ce855adeb41b7c14730576e504e90bff8b2a769027e475f237774068c3365734",
+    "source_invocation_sha256": "74256d77fd57569fccfa9356d7d029293fd168265ed020d4bfacbecb6a6d64bf",
+    "scope": "Safe Input-driven native mill playthrough, starting after explicit initial fixture setup and ending when both children have physically crossed the gate. Preparation, modal suspension checks and the separate boy-risk fixture are excluded.",
+    "silent": true,
+    "decode_complete": true
+  },
+  "terrain_geometry_audit": {
+    "all_passed": true,
+    "camera_step_pixels": 2.3,
+    "chapters": [
+      {
+        "chapter": 1,
+        "failed_polygons": 0,
+        "polygon_checks": 117288
+      },
+      {
+        "chapter": 2,
+        "failed_polygons": 0,
+        "polygon_checks": 143919
+      },
+      {
+        "chapter": 3,
+        "failed_polygons": 0,
+        "polygon_checks": 121032
+      },
+      {
+        "chapter": 4,
+        "failed_polygons": 0,
+        "polygon_checks": 125046
+      },
+      {
+        "chapter": 5,
+        "failed_polygons": 0,
+        "polygon_checks": 120591
+      }
+    ],
+    "checks": 627876,
+    "elapsed_ms": 2605,
+    "failed_polygons": 0,
+    "failure_counts": {},
+    "first_failures": [],
+    "method": "Offline Geometry2D.triangulate_polygon audit of current world.gd earth, 7 soil bands and turf over 5 actual JSON chapters; dense camera samples plus exact profile-knot clipping probes. No game state changes.",
+    "mode": "current"
+  },
+  "evidence_files": {
+    "evidence/v040/EXPORT_IDENTITY.json": "3fb6ba964a6ad3e521c694982f3ea55258077eb19128eacc75ab3f175756e084",
+    "evidence/v040/release_final/smoke/runtime_smoke.json": "56ec318bcb63766982b89e83a22f728d28cffce747cd2b7514152deb977af5bb",
+    "evidence/v040/release_final/smoke/invocation.json": "6d7ccb520b1996dfd366531a729e9a262e9b4c8bb896436398a712790100f998",
+    "evidence/v040/release_final/survival/survival_consequences.json": "7403e47f2524c98d589ee55da9cb046414cd2bcdbcef5cb3e0697e0b94a103ad",
+    "evidence/v040/release_final/survival/invocation.json": "a5a68e5f777680b9a361b10dfd5c7d718ed5d106341b7f7fc30065da55aabc47",
+    "evidence/v040/release_final/encounters/encounter_checks.json": "06854bc49bf43dd8fa6fe63608b024dc11c2cefb965c761d431370bd62b62c5c",
+    "evidence/v040/release_final/encounters/invocation.json": "595e72b357583c2a291f78a6cbbfb0176984675333aa91e355ae49433275ddd4",
+    "evidence/v040/release_final/journey-checks/journey_checks.json": "019406afde70f9c184c0f9aa9fdafad0cf0b7aeae9290013a721f4abe270eb26",
+    "evidence/v040/release_final/journey-checks/invocation.json": "51fc7cbbd4374bf86dc35803c3a8c31d28e66787df4a99db08c37c985618ffc9",
+    "evidence/v040/release_final/side-routes/side_route_checks.json": "37c02f35a4df958fa5a26c7f2b20b1504e90cfb0900f6ea8deb34142620ac9e5",
+    "evidence/v040/release_final/side-routes/invocation.json": "c1496526f42eadb3d9ec8d6f4f33248ca8883da51efae5ac490bad0f8db29e1e",
+    "evidence/v040/release_final/development-checks/development_checks.json": "b80392f050b9f15252bc4ab1dfb809281aca7ee8790c65f2453b6f25eef0fd0c",
+    "evidence/v040/release_final/development-checks/invocation.json": "d451ef32c0e3cf6e9735e2856bd098912b1fd9e056715b226d61815ac7c20524",
+    "evidence/v040/release_final/movement-checks/movement_checks.json": "1ae51e54e587619e23eb8c7ca221aae5c1d4eef5aa9e0a5adfb0f402f7eb43ac",
+    "evidence/v040/release_final/movement-checks/invocation.json": "35114cb801c6b8a456b72e6cc6df6147785fb8a1983050d73ab66d5efcdda97e",
+    "evidence/v040/release_final/mill-checks/mill_checks.json": "25d3e32f4bb03b151fbf68cc8fe1d4500495fbbe35ccff093ab421bb6bbc6542",
+    "evidence/v040/release_final/mill-checks/invocation.json": "525d3690b79d548281242e0af2abe609c605465024f08ca420c992b12435e080",
+    "evidence/v040/release_final/story-checks/story_checks.json": "b5b27660d81db9fb0993e3ebf98289854facbddffa2fc0a05f560c720078ff77",
+    "evidence/v040/release_final/story-checks/invocation.json": "528972ab3925300eda7eebfa97bdebc475226b1445ded84e632ec8bdd99ba161",
+    "evidence/v040/release_final/crossing-checks/crossing_checks.json": "6b0ed34e3d215167a27549526aaf053eb0b6ce489821feca10724982e7c41916",
+    "evidence/v040/release_final/crossing-checks/invocation.json": "c7cbf8157690178260dc8c9a4d5a83ab5be6a41e33b08f5049c9704acc72d4dc",
+    "evidence/v040/release_final/animation-checks/movement_checks.json": "a9c97f7332b3ccb2e73e4878f5872cf7602f5e6463561cf483a205aaa9a37916",
+    "evidence/v040/release_final/animation-checks/invocation.json": "bc5934181de8132fdffc5a30d93d788ec1c786f268f2a216ae8b475d5a56d70f",
+    "evidence/v040/release_final/traverse/continuous_traversal.json": "4eb7f69fd6905d20c1b41fc811daa170f9b19c658e006149e26313a824c2ae50",
+    "evidence/v040/release_final/traverse/invocation.json": "b3104cf3f072e7870771a98d996eca20cb6ebb6a7231fc1482a8d9717721ba56",
+    "evidence/v040/release_final/mill-playthrough/mill_checks.json": "8689b4669119d248e525643a4dde5302e3db4d7a16643defd2abd078ff5eefa8",
+    "evidence/v040/release_final/mill-playthrough/invocation.json": "74256d77fd57569fccfa9356d7d029293fd168265ed020d4bfacbecb6a6d64bf",
+    "evidence/v040/release_final/capture-v040/invocation.json": "c555d54ed1183e21b4e772a3e5c24f3868983e83f5522236c9991ca8919e4dae",
+    "evidence/v040/mill_movie_validation.json": "1992596ad748633e4cfb2a13365313b878de89dddd99567799b7d9a067557723",
+    "evidence/v040/terrain_polygon_audit_current.json": "f0f5c744fb91c35fa9e2b73249191b0b9a1de0a300044ecbd5017b038d77a20d"
+  },
+  "source_archive_transform": {
+    "file": "export_presets.cfg",
+    "operation": "Clear debug/release custom templates for installed Godot 4.6 templates.",
+    "original_sha256": "08b360c73d5ccb9e6d541d5af8419c56951e38236c8d9399f6889ea393043816",
+    "archive_sha256": "fea8f45450d9549bd8c6aa52eac16a30b387e4e09e56bf231234c8bd92c4eeee"
+  },
+  "notes": [
+    "Full journey, targeted fixtures and rendered scene studies have separate scopes.",
+    "Mill movie uses native input and physics after explicit initial fixture setup; it is not the full campaign.",
+    "The mill recording repeats checks for media verification; its checks are not added twice to the functional total.",
+    "Packaged gameplay invocations identify the same final executable SHA-256; any editor fallback animation fixture separately binds the complete source identity.",
+    "The expanded animation fixture includes baseline movement checks and is reported separately without inflating the functional total.",
+    "Source ZIP keeps project.godot at archive root; repository game/ paths are flattened.",
+    "Source export-template normalization is the declared archive-only configuration change.",
+    "Route length is measured authored data; human playtime and artistic approval are not established.",
+    "Expanded development build; AAA quality remains a production target."
+  ]
+}

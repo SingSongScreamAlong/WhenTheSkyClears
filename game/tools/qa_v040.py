@@ -16,8 +16,9 @@ parser.add_argument('--engine', type=Path, default=P/'tools/godot/Godot_v4.6-sta
 args = parser.parse_args()
 folder = P/'evidence/v040'/(args.evidence_tag or ('packaged' if args.release else 'source'))/args.kind
 folder.mkdir(parents=True, exist_ok=True)
-executable = P/'build/v0.4.0/When the Sky Clears.exe' if args.release else args.engine
-command = [str(executable)] + ([] if args.release else ['--path', str(P)])
+native_release = args.release and args.kind != 'animation-checks'
+executable = P/'build/v0.4.0/When the Sky Clears.exe' if native_release else args.engine
+command = [str(executable)] + ([] if native_release else ['--path', str(P)])
 if args.kind not in ['capture-v040', 'motion', 'mill-playthrough', 'crossing-capture']:
     command += ['--headless']
 else:
@@ -44,8 +45,14 @@ errors = [line for line in log.splitlines() if 'ERROR:' in line or 'SCRIPT ERROR
 code = result.returncode or (1 if errors else 0)
 invocation = dict(command=command, exe_sha256=digest, exit_code=code,
     native_exit_code=result.returncode, elapsed_seconds=round(time.monotonic()-start, 2), engine_errors=errors)
+if args.kind == 'animation-checks' and args.release:
+    identity_path=P/'evidence/v040/EXPORT_IDENTITY.json'
+    identity=json.loads(identity_path.read_text(encoding='utf-8'))
+    assert all(hashlib.sha256((P/name).read_bytes()).hexdigest() == source_hash for name, source_hash in identity['source'].items())
+    invocation['source']=identity['source']
+    invocation['export_identity_sha256']=hashlib.sha256(identity_path.read_bytes()).hexdigest()
 (folder/'invocation.json').write_text(json.dumps(invocation, indent=2), encoding='utf-8')
-print(json.dumps(invocation))
+print(json.dumps({key:value for key,value in invocation.items() if key != "source"}))
 if code:
     print(result.stdout[-4000:]); print(result.stderr[-4000:])
 raise SystemExit(code)
