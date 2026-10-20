@@ -6,14 +6,16 @@ play it. Download the matching macOS editor from the
 [official Godot 4.6 archive](https://godotengine.org/download/archive/4.6-stable/).
 
 ```sh
-git clone https://github.com/SingSongScreamAlong/WhenTheSkyClears.git
+git clone --branch dev/last-house-before-crossing https://github.com/SingSongScreamAlong/WhenTheSkyClears.git
 cd WhenTheSkyClears
 ```
 
 Open Godot's Project Manager, choose **Import**, and select
 `WhenTheSkyClears/game/project.godot`. Allow the initial asset import to finish,
 then use **Run Project** (F5). The main scene is `game/scenes/main.tscn`.
-The title screen offers the full journey and **Freight crossing rehearsal**.
+The title screen offers **Last House before the Crossing**, the full journey and
+**Freight crossing rehearsal**. Last House resumes its own checkpoint; pause and
+choose **Begin Last House again** to restart that section.
 
 The editable content is in `game/scripts`, `game/scenes`, `game/levels`, and
 `game/assets`. Paintings, character atlases, fonts, motion JSON, and runtime audio
@@ -22,8 +24,9 @@ runtime. Asset provenance and third-party notices are in
 [ASSET_SOURCES.md](ASSET_SOURCES.md) and `docs/licenses`.
 
 Godot rebuilds the untracked `game/.godot` import cache on your Mac. Saves use
-Godot's portable `user://` location in the separate `WhenTheSkyClears/v041`
-user-data directory. The rehearsal has a separate save from the full journey.
+Godot's portable `user://` location in the separate `WhenTheSkyClears/v050`
+user-data directory. Last House, rehearsal and full journey use separate save
+files. Existing original/v040/v041 save folders are untouched.
 
 The included export preset targets Windows, but its custom template paths are
 empty so the source does not depend on a developer's Windows files. Export
@@ -44,4 +47,6 @@ godot --headless --path game --fixed-fps 60 -- --smoke
 complete automated journey on Windows. Filename case and source dependencies
 were checked for portability. No Mac runtime test was performed, and no Mac was
 accessed. The procedural character animation and encounter timing still need
-refinement; see [the pass notes](../game/DEVELOPMENT_v0.4.0.txt).
+refinement; see [the route notes](../game/DEVELOPMENT_v0.5.0.txt). Scripted route
+durations are not human playtime estimates. This branch is a verified route
+checkpoint; further art, animation, audio and accessibility work is pending.

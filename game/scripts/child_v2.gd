@@ -116,6 +116,9 @@ func _physics_process(dt):
 	if game==null or game.mode!="playing": return
 	pushing=false
 	var axis=Input.get_axis("left","right") if controlled else ai_axis
+	if controlled and game.slice_active:
+		var alignment=game.last_house.alignment_axis()
+		if alignment!=null: axis=alignment
 	var jump=Input.is_action_just_pressed("jump") if controlled else ai_jump
 	if not controlled:
 		ai_jump=false

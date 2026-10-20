@@ -1,0 +1,332 @@
+{
+  "id": "last_house",
+  "build": "0.5.0",
+  "title": "The last house before the crossing",
+  "subtitle": "A ROOM OUT OF THE RAIN",
+  "epigraph": "A light waited on the other side.",
+  "objective": "Find a way to the warm room across the railway.",
+  "width": 9800,
+  "sky": "#7f9295",
+  "fog": "#9daaa9",
+  "cold": 0.18,
+  "scenery": [
+    "camp"
+  ],
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 5640,
+      "h": 600,
+      "kind": "stone"
+    },
+    {
+      "x": 5810,
+      "y": 700,
+      "w": 650,
+      "h": 600,
+      "kind": "stone"
+    },
+    {
+      "x": 6630,
+      "y": 700,
+      "w": 3170,
+      "h": 600,
+      "kind": "stone"
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1830,
+      "y": 640,
+      "w": 100,
+      "h": 24,
+      "kind": "stone"
+    },
+    {
+      "x": 2010,
+      "y": 580,
+      "w": 170,
+      "h": 24,
+      "kind": "stone"
+    },
+    {
+      "x": 2230,
+      "y": 580,
+      "w": 980,
+      "h": 24,
+      "kind": "stone"
+    }
+  ],
+  "props": [
+    {
+      "kind": "bench",
+      "x": 760,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 1510,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 3360,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "barricade",
+      "x": 4910,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 8800,
+      "y": 700,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "inspect",
+      "x": 920,
+      "y": 700,
+      "label": "Look at the photograph",
+      "hold_seconds": 1.1,
+      "id": "house_photo"
+    },
+    {
+      "kind": "cache",
+      "x": 1280,
+      "y": 700,
+      "label": "Bread wrapped in a tea towel",
+      "hold_seconds": 1.1,
+      "id": "house_bread",
+      "rations": 1,
+      "scrap": 0
+    },
+    {
+      "kind": "cache",
+      "x": 2690,
+      "y": 580,
+      "label": "The exposed shop shelf",
+      "hold_seconds": 1.1,
+      "id": "shop_supplies",
+      "rations": 2,
+      "scrap": 1,
+      "medicine": 1,
+      "optional": true
+    },
+    {
+      "kind": "reciprocal",
+      "x": 3920,
+      "y": 700,
+      "label": "Hold the support while he crosses",
+      "hold_seconds": 1.1,
+      "id": "damaged_passage",
+      "companion_required": true
+    },
+    {
+      "kind": "brace",
+      "x": 5400,
+      "y": 700,
+      "label": "Secure the torn crossing awning - 1 salvage",
+      "hold_seconds": 2.2,
+      "id": "rail_awning",
+      "optional": true
+    },
+    {
+      "kind": "bag",
+      "x": 8300,
+      "y": 700,
+      "label": "Set the bag down",
+      "hold_seconds": 1.1,
+      "id": "bag_down"
+    },
+    {
+      "kind": "share",
+      "x": 8560,
+      "y": 700,
+      "label": "Share what you carried",
+      "hold_seconds": 1.1,
+      "id": "shared_meal"
+    },
+    {
+      "kind": "quiet",
+      "x": 8770,
+      "y": 700,
+      "label": "Stay a moment by the window",
+      "hold_seconds": 1.1,
+      "id": "quiet_window"
+    }
+  ],
+  "gates": [
+    {
+      "x": 4050,
+      "y": 700,
+      "h": 170,
+      "key": "passage_braced",
+      "kind": "timber_bar"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1780,
+      "w": 280,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 2230,
+      "w": 300,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 3140,
+      "w": 260,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 3650,
+      "w": 280,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 4890,
+      "w": 280,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 5480,
+      "w": 260,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 6120,
+      "w": 380,
+      "kind": "wall",
+      "y": 700
+    },
+    {
+      "x": 6880,
+      "w": 300,
+      "kind": "wall",
+      "y": 700
+    }
+  ],
+  "memories": [],
+  "checkpoints": [
+    180,
+    1420,
+    3450,
+    4500,
+    5300,
+    6700,
+    7950,
+    8300
+  ],
+  "safe_zones": [
+    {
+      "x": 820,
+      "w": 1400,
+      "y": 700,
+      "height_tolerance": 43
+    },
+    {
+      "x": 2300,
+      "w": 900,
+      "y": 700,
+      "height_tolerance": 43
+    },
+    {
+      "x": 3900,
+      "w": 850,
+      "y": 700,
+      "height_tolerance": 43
+    },
+    {
+      "x": 8500,
+      "w": 2350,
+      "y": 700,
+      "height_tolerance": 43
+    },
+    {
+      "x": 5550,
+      "w": 520,
+      "key": "rail_awning",
+      "y": 700,
+      "height_tolerance": 43
+    }
+  ],
+  "tutorials": [
+    {
+      "x": 300,
+      "text": "A dry window beyond the railway. Stay together."
+    },
+    {
+      "x": 880,
+      "text": "A photograph remains in the house. You can stop to look."
+    },
+    {
+      "x": 1740,
+      "text": "The lower arcade is sheltered: hold S beneath it. Jump up to the exposed shop shelf if you need supplies."
+    },
+    {
+      "x": 3670,
+      "text": "Hold the lintel for him. He will secure it from the other side."
+    },
+    {
+      "x": 5150,
+      "text": "Watch the moving light from safety. Both of you fit behind each wall."
+    },
+    {
+      "x": 7850,
+      "text": "A room out of the rain. Bring the bag inside, then share what you carried."
+    }
+  ],
+  "bridges": [],
+  "pushables": [],
+  "water_zones": [],
+  "hazard_lanes": [],
+  "zones": [
+    {
+      "x": 0,
+      "w": 1700,
+      "theme": "last_house",
+      "name": "THE ABANDONED HOUSE"
+    },
+    {
+      "x": 1700,
+      "w": 1750,
+      "theme": "rain_gully",
+      "name": "THE SHOP OR THE ARCADE"
+    },
+    {
+      "x": 3450,
+      "w": 1050,
+      "theme": "last_house",
+      "name": "THE DAMAGED PASSAGE"
+    },
+    {
+      "x": 4500,
+      "w": 2650,
+      "theme": "rail_yard",
+      "name": "THE RAILWAY"
+    },
+    {
+      "x": 7150,
+      "w": 2650,
+      "theme": "last_house",
+      "name": "THE DRY ROOM"
+    }
+  ]
+}

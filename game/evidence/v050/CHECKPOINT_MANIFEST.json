@@ -1,0 +1,1156 @@
+{
+  "version": "0.5.0",
+  "base_commit": "859897886d798522b63284574f3cde47e89e93fc",
+  "branch": "dev/last-house-before-crossing",
+  "executable": "game/build/v0.5.0/When the Sky Clears.exe",
+  "executable_sha256": "eea1257a0cc509f9ad3ee932c4a2968c5c7098222ba86e17462b025b2c1b85cf",
+  "executable_bytes": 133542208,
+  "checks": {
+    "slice-checks": 37,
+    "trust-checks": 21,
+    "crossing-checks": 12,
+    "smoke": 120,
+    "survival": 13,
+    "encounters": 10,
+    "journey-checks": 35,
+    "side-routes": 13
+  },
+  "total_checks": 261,
+  "journey": {
+    "build": "0.5.0",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 0,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.59999999999999
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6166666666668
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2666666666662
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_basket",
+        "kind": "cache",
+        "time": 44.1166666666654
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 51.1499999999984
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 66.2833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 75.0166666666637
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 80.9666666666634
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 90.4833333333295
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 94.4166666666626
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 106.633333333329
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 120.383333333328
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 136.433333333334
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 142.300000000005
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 147.883333333343
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 158.550000000018
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 162.600000000022
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 179.416666666702
+      },
+      {
+        "chapter": 2,
+        "id": "freight_loading_bar",
+        "kind": "relay",
+        "time": 200.766666666719
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 225.400000000072
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 231.100000000076
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 237.383333333414
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 240.26666666675
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 246.950000000089
+      },
+      {
+        "chapter": 2,
+        "id": "freight_kitchen",
+        "kind": "cache",
+        "time": 256.100000000096
+      },
+      {
+        "chapter": 2,
+        "id": "camp_waiting_roof",
+        "kind": "brace",
+        "time": 263.500000000089
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 274.266666666746
+      },
+      {
+        "chapter": 2,
+        "id": "freight_bread",
+        "kind": "cache",
+        "time": 280.833333333407
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 294.450000000061
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 313.66666666671
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 326.466666666698
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 328.30000000003
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 337.266666666689
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 342.016666666684
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 346.76666666668
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 354.08333333334
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 361.383333333333
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 369.333333333326
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 379.749999999983
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 391.06666666664
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 398.366666666633
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 414.416666666618
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 432.216666666602
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_tin",
+        "kind": "cache",
+        "time": 451.099999999918
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 464.049999999907
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 478.199999999894
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 489.649999999883
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 494.833333333212
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 1,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 494.833333333212
+  },
+  "routes": [
+    {
+      "boy": "(8726.844, 699.9252)",
+      "complete": true,
+      "deaths": 0,
+      "details": {},
+      "events": [
+        {
+          "boy": "(137.1321, 699.9252)",
+          "frame": 0,
+          "girl": "(180.3, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.5
+        },
+        {
+          "boy": "(841.5985, 699.9252)",
+          "frame": 0,
+          "girl": "(912.4267, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.96666666666665
+        },
+        {
+          "boy": "(1238.015, 699.9252)",
+          "frame": 0,
+          "girl": "(1280.076, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.24999999999999
+        },
+        {
+          "boy": "(1815.866, 608.2574)",
+          "frame": 0,
+          "girl": "(1855.221, 639.9252)",
+          "health": 100,
+          "phase": "arcade",
+          "time": 12.5000000000002
+        },
+        {
+          "boy": "(3100.693, 699.9252)",
+          "frame": 0,
+          "girl": "(3251.443, 699.9252)",
+          "health": 100,
+          "phase": "passage",
+          "time": 31.5833333333328
+        },
+        {
+          "boy": "(4326.144, 699.9252)",
+          "frame": 0,
+          "girl": "(4404.083, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 40.549999999999
+        },
+        {
+          "boy": "(5403.528, 699.9252)",
+          "frame": 0,
+          "girl": "(5474.758, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 46.9999999999986
+        },
+        {
+          "boy": "(5431.126, 699.9252)",
+          "frame": 0,
+          "girl": "(5482.843, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 56.3666666666647
+        },
+        {
+          "boy": "(5922.076, 699.9252)",
+          "frame": 0,
+          "girl": "(6128.238, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 58.9166666666646
+        },
+        {
+          "boy": "(6098.122, 699.9252)",
+          "frame": 0,
+          "girl": "(6150.099, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 65.9999999999975
+        },
+        {
+          "boy": "(6666.745, 698.135)",
+          "frame": 0,
+          "girl": "(6888.24, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 68.8999999999974
+        },
+        {
+          "boy": "(6832.184, 699.9252)",
+          "frame": 0,
+          "girl": "(6910.101, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 71.0833333333306
+        },
+        {
+          "boy": "(7282.37, 699.9252)",
+          "frame": 0,
+          "girl": "(7427.417, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 73.1499999999971
+        },
+        {
+          "boy": "(8222.715, 699.9252)",
+          "frame": 0,
+          "girl": "(8293.942, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 78.3499999999968
+        },
+        {
+          "boy": "(8482.225, 699.9252)",
+          "frame": 0,
+          "girl": "(8553.452, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 80.53333333333
+        },
+        {
+          "boy": "(8726.844, 699.9252)",
+          "frame": 0,
+          "girl": "(8768.884, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 85.5499999999964
+        }
+      ],
+      "frames": 0,
+      "girl": "(8768.884, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 303.768310546875,
+      "phase": "complete",
+      "playtime": 85.5499999999964,
+      "stuck_frames": 158,
+      "upper_shop": false,
+      "warmth": 97.555792444446,
+      "wetness": 0.00878333333334061
+    },
+    {
+      "boy": "(8727.497, 699.9252)",
+      "complete": true,
+      "deaths": 0,
+      "details": {},
+      "events": [
+        {
+          "boy": "(137.2121, 699.9252)",
+          "frame": 0,
+          "girl": "(180.3, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.516666666666667
+        },
+        {
+          "boy": "(841.5985, 699.9252)",
+          "frame": 0,
+          "girl": "(912.4267, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.98333333333332
+        },
+        {
+          "boy": "(1238.015, 699.9252)",
+          "frame": 0,
+          "girl": "(1280.076, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.26666666666666
+        },
+        {
+          "boy": "(1815.866, 608.2574)",
+          "frame": 0,
+          "girl": "(1855.221, 639.9252)",
+          "health": 100,
+          "phase": "shop",
+          "time": 12.5166666666669
+        },
+        {
+          "boy": "(3213.789, 579.9252)",
+          "frame": 0,
+          "girl": "(3285.014, 688.7918)",
+          "health": 100,
+          "phase": "passage",
+          "time": 22.9833333333333
+        },
+        {
+          "boy": "(4326.625, 699.9252)",
+          "frame": 0,
+          "girl": "(4404.938, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 31.5333333333328
+        },
+        {
+          "boy": "(5401.616, 699.9252)",
+          "frame": 0,
+          "girl": "(5472.846, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 37.9666666666658
+        },
+        {
+          "boy": "(5408.995, 699.9252)",
+          "frame": 0,
+          "girl": "(5478.713, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 38.0166666666658
+        },
+        {
+          "boy": "(5913.243, 699.9252)",
+          "frame": 0,
+          "girl": "(6124.475, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 40.499999999999
+        },
+        {
+          "boy": "(6094.629, 699.9252)",
+          "frame": 0,
+          "girl": "(6146.335, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 47.5333333333319
+        },
+        {
+          "boy": "(6663.911, 696.2961)",
+          "frame": 0,
+          "girl": "(6884.477, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 50.4333333333318
+        },
+        {
+          "boy": "(6827.983, 699.9252)",
+          "frame": 0,
+          "girl": "(6906.338, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 52.5999999999983
+        },
+        {
+          "boy": "(7282.803, 699.9252)",
+          "frame": 0,
+          "girl": "(7428.07, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 54.6833333333315
+        },
+        {
+          "boy": "(8223.368, 699.9252)",
+          "frame": 0,
+          "girl": "(8294.596, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 59.8833333333312
+        },
+        {
+          "boy": "(8482.878, 699.9252)",
+          "frame": 0,
+          "girl": "(8554.105, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 62.0666666666644
+        },
+        {
+          "boy": "(8727.497, 699.9252)",
+          "frame": 0,
+          "girl": "(8769.537, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 67.0833333333308
+        }
+      ],
+      "frames": 0,
+      "girl": "(8769.537, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 285.825439453125,
+      "phase": "complete",
+      "playtime": 67.0833333333308,
+      "stuck_frames": 158,
+      "upper_shop": true,
+      "warmth": 97.7025855555566,
+      "wetness": 0.0
+    }
+  ],
+  "captures": {
+    "slice-capture": {
+      "boy": "(8727.949, 699.9252)",
+      "complete": true,
+      "deaths": 0,
+      "details": {
+        "boy_holds_support": {
+          "boy": "(4187.953, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 555,
+          "girl": "(3903.117, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 37.5166666666658
+        },
+        "girl_holds_support": {
+          "boy": "(4026.663, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 545,
+          "girl": "(3903.117, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 36.8833333333325
+        },
+        "pair_covered_0": {
+          "boy": "(5433.348, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 705,
+          "girl": "(5485.065, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 47.5333333333319
+        },
+        "pair_covered_1": {
+          "boy": "(6100.402, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 911,
+          "girl": "(6152.321, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 61.2999999999978
+        }
+      },
+      "events": [
+        {
+          "boy": "(137.2398, 699.9252)",
+          "frame": 1,
+          "girl": "(180.9, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.516666666666667
+        },
+        {
+          "boy": "(841.5985, 699.9252)",
+          "frame": 67,
+          "girl": "(912.4267, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.96666666666665
+        },
+        {
+          "boy": "(1236.593, 699.9252)",
+          "frame": 117,
+          "girl": "(1278.648, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.26666666666666
+        },
+        {
+          "boy": "(1811.671, 608.2574)",
+          "frame": 180,
+          "girl": "(1851.027, 639.9252)",
+          "health": 100,
+          "phase": "arcade",
+          "time": 12.4833333333335
+        },
+        {
+          "boy": "(3101.91, 699.9252)",
+          "frame": 467,
+          "girl": "(3252.449, 699.9252)",
+          "health": 100,
+          "phase": "passage",
+          "time": 31.6166666666662
+        },
+        {
+          "boy": "(4323.745, 699.9252)",
+          "frame": 601,
+          "girl": "(4400.772, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 40.5833333333323
+        },
+        {
+          "boy": "(5402.984, 699.9252)",
+          "frame": 698,
+          "girl": "(5474.214, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 47.0499999999986
+        },
+        {
+          "boy": "(5433.348, 699.9252)",
+          "frame": 838,
+          "girl": "(5485.065, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 56.3999999999981
+        },
+        {
+          "boy": "(5917.66, 699.9252)",
+          "frame": 876,
+          "girl": "(6126.043, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 58.9499999999979
+        },
+        {
+          "boy": "(6100.402, 699.9252)",
+          "frame": 982,
+          "girl": "(6152.321, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 66.0333333333309
+        },
+        {
+          "boy": "(6663.911, 696.2961)",
+          "frame": 1025,
+          "girl": "(6881.629, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 68.916666666664
+        },
+        {
+          "boy": "(6829.751, 699.9252)",
+          "frame": 1057,
+          "girl": "(6907.907, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 71.0833333333306
+        },
+        {
+          "boy": "(7284.461, 699.9252)",
+          "frame": 1089,
+          "girl": "(7429.639, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 73.1833333333305
+        },
+        {
+          "boy": "(8223.82, 699.9252)",
+          "frame": 1166,
+          "girl": "(8295.048, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 78.3666666666635
+        },
+        {
+          "boy": "(8480.969, 699.9252)",
+          "frame": 1199,
+          "girl": "(8552.196, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 80.53333333333
+        },
+        {
+          "boy": "(8727.949, 699.9252)",
+          "frame": 1274,
+          "girl": "(8769.989, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 85.5666666666631
+        }
+      ],
+      "frames": 1274,
+      "girl": "(8769.989, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 300.45703125,
+      "pause_has_restart": true,
+      "phase": "complete",
+      "playtime": 85.5833333333298,
+      "stuck_frames": 158,
+      "title_has_slice": true,
+      "upper_shop": false,
+      "warmth": 97.5649665416682,
+      "wetness": 0.00820000000000726
+    },
+    "slice-shop-capture": {
+      "boy": "(8727.709, 699.9252)",
+      "complete": true,
+      "deaths": 0,
+      "details": {
+        "boy_holds_support": {
+          "boy": "(4185.815, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 419,
+          "girl": "(3903.088, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 28.4499999999997
+        },
+        "exposed_shop_supplies": {
+          "boy": "(2638.745, 579.9252)",
+          "boy_state": "OPEN",
+          "frame": 271,
+          "girl": "(2680.8, 579.9252)",
+          "girl_state": "OPEN",
+          "time": 18.5666666666669
+        },
+        "girl_holds_support": {
+          "boy": "(4024.208, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 409,
+          "girl": "(3903.088, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 27.8166666666664
+        },
+        "pair_covered_1": {
+          "boy": "(6100.228, 699.9252)",
+          "boy_state": "COVERED",
+          "frame": 635,
+          "girl": "(6152.08, 699.9252)",
+          "girl_state": "COVERED",
+          "time": 42.8999999999988
+        }
+      },
+      "events": [
+        {
+          "boy": "(137.2398, 699.9252)",
+          "frame": 1,
+          "girl": "(180.9, 699.9252)",
+          "health": 100,
+          "phase": "photo",
+          "time": 0.516666666666667
+        },
+        {
+          "boy": "(841.5985, 699.9252)",
+          "frame": 67,
+          "girl": "(912.4267, 699.9252)",
+          "health": 100,
+          "phase": "bread",
+          "time": 4.96666666666665
+        },
+        {
+          "boy": "(1236.593, 699.9252)",
+          "frame": 117,
+          "girl": "(1278.648, 699.9252)",
+          "health": 100,
+          "phase": "approach",
+          "time": 8.26666666666666
+        },
+        {
+          "boy": "(1811.671, 608.2574)",
+          "frame": 180,
+          "girl": "(1851.027, 639.9252)",
+          "health": 100,
+          "phase": "shop",
+          "time": 12.4833333333335
+        },
+        {
+          "boy": "(3212.361, 579.9252)",
+          "frame": 337,
+          "girl": "(3283.586, 679.7197)",
+          "health": 100,
+          "phase": "passage",
+          "time": 22.9666666666666
+        },
+        {
+          "boy": "(4323.388, 699.9252)",
+          "frame": 465,
+          "girl": "(4400.744, 699.9252)",
+          "health": 100,
+          "phase": "rail_approach",
+          "time": 31.5166666666662
+        },
+        {
+          "boy": "(5402.955, 699.9252)",
+          "frame": 562,
+          "girl": "(5474.185, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 37.9833333333325
+        },
+        {
+          "boy": "(5413.101, 699.9252)",
+          "frame": 563,
+          "girl": "(5482.819, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 38.0499999999991
+        },
+        {
+          "boy": "(5917.66, 699.9252)",
+          "frame": 600,
+          "girl": "(6125.803, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 40.549999999999
+        },
+        {
+          "boy": "(6100.228, 699.9252)",
+          "frame": 705,
+          "girl": "(6152.08, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 47.5166666666653
+        },
+        {
+          "boy": "(6661.111, 697.4739)",
+          "frame": 748,
+          "girl": "(6885.805, 699.9252)",
+          "health": 100,
+          "phase": "cover_wait",
+          "time": 50.4166666666651
+        },
+        {
+          "boy": "(6835.631, 699.9252)",
+          "frame": 783,
+          "girl": "(6912.083, 699.9252)",
+          "health": 100,
+          "phase": "rail_run",
+          "time": 52.716666666665
+        },
+        {
+          "boy": "(7284.514, 699.9252)",
+          "frame": 814,
+          "girl": "(7429.398, 699.9252)",
+          "health": 100,
+          "phase": "room",
+          "time": 54.7999999999982
+        },
+        {
+          "boy": "(8223.58, 699.9252)",
+          "frame": 891,
+          "girl": "(8294.808, 699.9252)",
+          "health": 100,
+          "phase": "share",
+          "time": 59.9833333333312
+        },
+        {
+          "boy": "(8480.729, 699.9252)",
+          "frame": 924,
+          "girl": "(8551.956, 699.9252)",
+          "health": 100.0,
+          "phase": "quiet",
+          "time": 62.1499999999978
+        },
+        {
+          "boy": "(8727.709, 699.9252)",
+          "frame": 999,
+          "girl": "(8769.749, 699.9252)",
+          "health": 100.0,
+          "phase": "complete",
+          "time": 67.1833333333308
+        }
+      ],
+      "frames": 999,
+      "girl": "(8769.749, 699.9252)",
+      "health": 100.0,
+      "maximum_separation": 288.916259765625,
+      "pause_has_restart": true,
+      "phase": "complete",
+      "playtime": 67.1999999999975,
+      "stuck_frames": 158,
+      "title_has_slice": true,
+      "upper_shop": true,
+      "warmth": 97.7037072361122,
+      "wetness": 0.0
+    }
+  },
+  "selected_screenshots": [
+    {
+      "file": "evidence/v050/selected/01_02_bread.jpg",
+      "sha256": "95687aee2db5009dbf21587e36311cadef714332dc6eb1ba8a3233884ec5060a",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v050/release_final/slice-capture/02_bread.png",
+      "native_source_sha256": "9d934074a39c9fccdfa0e88fe3e70108e16d292b09891f73fd07767ccf734773",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v050/selected/02_detail_exposed_shop_supplies.jpg",
+      "sha256": "5420ab86ec7358a7311f7b34bab203b552d1bd1b0daa7b7258aee23f81a983c1",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v050/release_final/slice-shop-capture/detail_exposed_shop_supplies.png",
+      "native_source_sha256": "2ecd8dd2c89f2f3c4d7d06ff959e0cd7cc63c158de5aa1c3114975f16d9891c4",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v050/selected/03_detail_girl_holds_support.jpg",
+      "sha256": "6955f3a099f544ed6079a5e70b8017e11e1fe83d1ec30a5ded9420b6728c4faf",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v050/release_final/slice-capture/detail_girl_holds_support.png",
+      "native_source_sha256": "54e03b68146a3ccf3cd3e68d6e6e067ca346af38b56b91f90cac30d7912e1f52",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v050/selected/04_detail_boy_holds_support.jpg",
+      "sha256": "2c7cd558d67b4977f33df01778aecb54421566a446e9abee3b6326feec59fdf5",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v050/release_final/slice-capture/detail_boy_holds_support.png",
+      "native_source_sha256": "04b59eff0547e6d98ae4ce67adde359d3de0fe0325e1e26ba164b222cdb382fa",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v050/selected/05_detail_pair_covered_1.jpg",
+      "sha256": "c9a4219bd6ee0219868a10cdc2d3d7a8f9952f0a2619c01423f245ad7531ebe4",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v050/release_final/slice-capture/detail_pair_covered_1.png",
+      "native_source_sha256": "640696a09889da06b7d44743cb5d23762ad8312c1028a4346c1518080676229b",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    },
+    {
+      "file": "evidence/v050/selected/06_16_complete.jpg",
+      "sha256": "7f46893e72b64d3088fbd7c63d5f2bffbe130b9c0a16e18915884cd394139e8e",
+      "size": [
+        1440,
+        810
+      ],
+      "native_source": "evidence/v050/release_final/slice-capture/16_complete.png",
+      "native_source_sha256": "2ded37451630e8850d747d823db4ca7cb36c561ebdd9b5048289c1cc51f34366",
+      "scope": "Native scripted gameplay capture; source PNG retained locally."
+    }
+  ],
+  "source_sha256": {
+    "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts/child.gd.uid": "e0358e821e975776dc050e03d9c5cc604195406304b1337dec459326785f1fac",
+    "scripts/child_v2.gd": "d2ebd43a27ae327bb5c7ac9125c29ac411350bce0c3554791b544b678747b520",
+    "scripts/child_v2.gd.uid": "7580c2baf68e24a1d94278973d79b7f6c10421420d0ce8d740c36c8e7be3caff",
+    "scripts/crossing_checks.gd": "dcb3d2c65ac7b7aab1cb3d70692d47930bf548d1fcd8f77d0fc4a595002e1e2d",
+    "scripts/crossing_checks.gd.uid": "3c484968f313bc08f69a23456b25e800d96efbe3c082dd4998bc47f557db3126",
+    "scripts/foreground.gd": "4d3b358fc6e94af18b8d522aa1713e267e438320c7ea664494d9bc42370bcc3a",
+    "scripts/foreground.gd.uid": "53545838701b4c78dd59ee6366b2692cce1073857e7b2a5d9e5471097f5e3771",
+    "scripts/game.gd": "4b404197bd0f7d84733669a88b30fa6fb501235cd247e532a00c72a5c0bcca56",
+    "scripts/game.gd.uid": "b42abaf92f79be93b8e2ba006ff5f75317bfeaa8c2cf9240dcb53de4c7cce8fb",
+    "scripts/hud.gd": "e6c03625253712e64d3656c22cfb4b8720b2241241f2c6df7978d80705f29781",
+    "scripts/hud.gd.uid": "0ca2f16dcd37a5654727716d4d4683366d5390456089439ab8e9604e61c73b9b",
+    "scripts/last_house.gd": "a8ee4a8437131bee3a864aee6909b5dc3af51cc0945dfac1f699b07ab7791842",
+    "scripts/last_house.gd.uid": "4e91d05b69f80c2b9990255bbb7eadc96d169d17ecd7d8a5a61e8e29a1c4b40e",
+    "scripts/last_house_checks.gd": "db301e19de8634702a2102d0e631a60a986be0ba9f332a091e1b7730c180e2d0",
+    "scripts/last_house_checks.gd.uid": "b4b24f1454c889d97056b24a039709dded0288a6c1708da79ea4b42a32b6b676",
+    "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts/pushable.gd.uid": "8c0001652f3c85f1341165595471f167c48b12bb3d289b0d0b0c7fe9797f3348",
+    "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts/side_route_checks.gd.uid": "db4937cc1c33b28b9a7959bc157f7a1f8ca3441b79d472d82c3f6d3c486513f7",
+    "scripts/trust_checks.gd": "c3b312fa2a7cea5439ff08a738d20e709f9af5e51d17829853cd8015eeacaba6",
+    "scripts/trust_checks.gd.uid": "c4e1d81755cc963b61f632ef3a4fddf4c5c941d22c9b6815cf5ab51cb41060c1",
+    "scripts/world.gd": "63fb752ac12e475ddec8e331cf0196ba0de005588ab173d2c45045befeb14769",
+    "scripts/world.gd.uid": "2186abbed5b3e691f821efdfdb136147f4232de492a2e11f7aabba293466ba71",
+    "levels/01.json": "6f06c7d7c3cd36e44e349d74d8ff89e229dba8de842c9692635590b5cbff56aa",
+    "levels/02.json": "13151c89c2ccc25825e18142dfff62c9730dbc17c0a51438bcea6634356f5bfc",
+    "levels/03.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+    "levels/04.json": "702473811c7222a46542976bdd5d19d6bc10b2806add6b6e78677ddb4c5db68c",
+    "levels/05.json": "b7b2d1995b2c0143c36cd2ded4a5e275737a6dbd8caad4f963fe5e0c032aed4c",
+    "levels/last_house.json": "90618230e2085da86469ec4f33e4e0ed4ba99565dc6036e8f56e25aacca45569",
+    "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+    "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+    "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+    "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+    "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+    "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+    "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+    "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+    "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+    "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+    "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+    "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+    "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+    "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+    "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+    "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+    "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+    "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+    "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+    "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+    "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+    "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+    "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+    "assets/environments/LastHouse_PROVENANCE_v050.txt": "de765508c9b5a0dbd6c301846e9bb014fc7e0b3044efd29e9827575dc1c8f594",
+    "assets/environments/LastHouse_v050.png": "b3e3e2c2f81542c0f0e4c40c0e9ed2c93c07309d95e841dc8286002d628b3910",
+    "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+    "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+    "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+    "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+    "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+    "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+    "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+    "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+    "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+    "project.godot": "25c9f595ed0b6ced7cbeea65a7a506875a41a4ebfce1817971c866c98a9c52c3"
+  },
+  "motion": [
+    {
+      "file": "WTSC_v050_Support_Gameplay.mp4",
+      "sha256": "da9bca1302c1f9a71365703d010a00e612cac57ef3894eb649ecae69ffc14b90",
+      "decoded_frames": 135,
+      "fps": 15,
+      "seconds": 9.0,
+      "source_start_frame": 521,
+      "scope": "Actual native scripted gameplay, no human controller or audio review claimed; silent excerpt."
+    },
+    {
+      "file": "WTSC_v050_Railway_Gameplay.mp4",
+      "sha256": "dd1d24f6faee31005c582f5f352e2e3fa5c67f8565ea57139fc9417cb6338ccc",
+      "decoded_frames": 270,
+      "fps": 15,
+      "seconds": 18.0,
+      "source_start_frame": 808,
+      "scope": "Actual native scripted gameplay, no human controller or audio review claimed; silent excerpt."
+    }
+  ],
+  "pacing": "Continuous scripted route times include deterministic light waits. They are not human exploration/stealth duration estimates; no 5-10 minute experience claim.",
+  "verification_limits": "Native Windows Godot 4.6. No physical controller feel, human audio, human duration or Mac runtime review. Art/animation/contact/audio/accessibility polish remains.",
+  "source_export_note": "After release export, only custom Windows template paths are cleared in the source preset for portable editor play; runtime source/project bytes are unchanged.",
+  "library": "Prior protected connection denial retained. No upload retry/bypass; no Library file ID available."
+}

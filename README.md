@@ -5,7 +5,16 @@ import **`game/project.godot`** in Godot's Project Manager. Run the project with
 F5. See [macOS setup and verification limits](docs/MACOS.md). No Windows build,
 Python, .NET, or external runtime asset download is required.
 
-**Current checkpoint: 0.4.1.** Five audit failures are fixed: pump prompt masking, paused searchlight timing, rehearsal/Continue isolation, malformed save validation with backup recovery, and controller LB medicine. See [checkpoint notes](game/DEVELOPMENT_v0.4.1.txt) and [native verification](game/evidence/v041/CHECKPOINT_MANIFEST.json). The larger Last House art/gameplay pass is in progress.
+**Current development checkpoint: 0.5.0 on `dev/last-house-before-crossing`.**
+The Last House title option adds painted house exploration, shop/arcade choices,
+reciprocal passage help, pair cover and individual exposure feedback, then a dry
+room with shared food and quiet playable relief. See [route notes and remaining
+polish](game/DEVELOPMENT_v0.5.0.txt) and [native verification](game/evidence/v050/CHECKPOINT_MANIFEST.json).
+The full five chapters and freight rehearsal remain available. This branch
+preserves the earlier reliability fixes; main is not merged with this checkpoint.
+On Mac, clone this development branch as shown in [setup](docs/MACOS.md), import
+`game/project.godot` and run with F5. On Windows use `game/PLAY.cmd` or
+`game/LAST_HOUSE.cmd` when working in this checkout.
 
 The isolated **0.4.0 development pass** adds equal-height character collision,
 head clearance while crouching, more stable companion following, and a freight

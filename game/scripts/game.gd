@@ -1,5 +1,6 @@
 extends Node2D
 
+const LastHouse = preload("res://scripts/last_house.gd")
 const Child = preload("res://scripts/child_v2.gd")
 const Pushable = preload("res://scripts/pushable.gd")
 const World = preload("res://scripts/world.gd")
@@ -45,6 +46,11 @@ var trail = []
 var companion_jumps=[]
 var companion_alert_clock=0.0
 var section_preview=false
+var slice_active=false
+var last_house
+var last_house_save_path="user://last_house_v050.json"
+var child_detection={"Girl":0.0,"Boy":0.0}
+var child_injury={"Girl":0.0,"Boy":0.0}
 var dust = []
 var chapter_card = 0.0
 var message = ""
@@ -88,11 +94,13 @@ var wind_strain=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears · Development 0.4.1")
+	DisplayServer.window_set_title("When the Sky Clears · Development 0.5.0")
 	qa_args=OS.get_cmdline_user_args()
 	smoke_test="--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--side-routes" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args or "--trust-checks" in qa_args: smoke_test=true
+	last_house=LastHouse.new(self)
+	if "--slice-checks" in qa_args or "--slice-capture" in qa_args: smoke_test=true
 	setup_input()
 	for i in range(1,6):
 		levels.append(JSON.parse_string(FileAccess.get_file_as_string("res://levels/%02d.json" % i)))
@@ -107,6 +115,9 @@ func _ready():
 	mode="menu"
 	player.position.x=1240; boy.position.x=1188; camera.position.x=1050
 	qa_args = OS.get_cmdline_user_args()
+	if "--last-house" in qa_args: last_house.start.call_deferred(true)
+	if "--slice-checks" in qa_args: load("res://scripts/last_house_checks.gd").run.call_deferred(self)
+	if "--slice-capture" in qa_args: load("res://scripts/last_house_checks.gd").capture.call_deferred(self)
 	if "--trust-checks" in qa_args: load("res://scripts/trust_checks.gd").run.call_deferred(self)
 	if "--crossing-checks" in qa_args: call_deferred("run_crossing_checks")
 	if "--crossing-capture" in qa_args: call_deferred("capture_crossing")
@@ -178,7 +189,7 @@ func apply_volume():
 	AudioServer.set_bus_mute(0,muted)
 
 func load_chapter(idx, announce=true):
-	chapter=idx; level=levels[idx]
+	chapter=idx; level=last_house.data if slice_active and idx==2 else levels[idx]
 	if is_instance_valid(solids):
 		remove_child(solids); solids.queue_free()
 	solids=Node2D.new(); solids.name="Collisions"; add_child(solids)
@@ -200,7 +211,7 @@ func load_chapter(idx, announce=true):
 	player=Child.new(); player.game=self; player.name="Girl"; player.position=Vector2(180,698); add_child(player)
 	boy=Child.new(); boy.is_girl=false; boy.controlled=false; boy.game=self; boy.name="Boy"; boy.position=Vector2(123,698); add_child(boy)
 	checkpoint_x=180; trail.clear(); companion_jumps.clear(); shell_clock=0; shell_warning=0; exposure=0; invulnerable=2
-	hazard_exposure.clear(); hazard_cues.clear(); sector_seen.clear()
+	hazard_exposure.clear(); hazard_cues.clear(); sector_seen.clear(); child_detection={"Girl":0.0,"Boy":0.0}; child_injury={"Girl":0.0,"Boy":0.0}
 	camera.position=Vector2(800,450); camera.reset_smoothing()
 	chapter_card=5.5 if announce else 0
 	if announce: announce_message(level.objective,7)
@@ -241,7 +252,7 @@ func surface_y_at(x,fallback_y=700.0):
 	return closest
 
 func new_journey():
-	save_path=journey_save_path; section_preview=false
+	save_path=journey_save_path; section_preview=false; slice_active=false
 	journey_active=true; journey_completed=false
 	flags={}; memories={}; cache_remaining={}; rations=2; scrap=0; medicine=1
 	wetness=0; encounter_events=[]; action_interrupts=0
@@ -249,7 +260,7 @@ func new_journey():
 	load_chapter(0); mode="playing"; write_save()
 
 func continue_journey():
-	save_path=journey_save_path; section_preview=false; journey_active=false
+	save_path=journey_save_path; section_preview=false; slice_active=false; journey_active=false
 	if not load_save(true):
 		mode="menu"; return false
 	mode="ending" if journey_completed else "playing"
@@ -257,7 +268,7 @@ func continue_journey():
 
 func return_to_title():
 	write_save()
-	section_preview=false; journey_active=false; save_path=journey_save_path
+	section_preview=false; slice_active=false; journey_active=false; save_path=journey_save_path
 	save_exists=false; unlocked=0; load_save(false); mode="menu"
 
 func open_chapters():
@@ -266,7 +277,7 @@ func open_chapters():
 	settings_return="menu"; mode="chapters"
 
 func choose_chapter(index):
-	save_path=journey_save_path; section_preview=false
+	save_path=journey_save_path; section_preview=false; slice_active=false
 	if not load_save(true): new_journey()
 	if index<=unlocked:
 		journey_active=true; load_chapter(index); mode="playing"; write_save()
@@ -284,8 +295,10 @@ func _unhandled_input(event):
 	if mode!="playing": return
 	if event.is_action_pressed("interact"): interact()
 	if event.is_action_pressed("companion"):
-		boy.following=not boy.following
-		announce_message("He’s coming. Keep a little room for him." if boy.following else "He’ll wait here. Don’t go too far.",3)
+		if slice_active and last_house.is_helping(): announce_message("Finish the passage together before calling him.",3)
+		else:
+			boy.following=not boy.following
+			announce_message("He’s coming. Keep a little room for him." if boy.following else "He’ll wait here. Don’t go too far.",3)
 	if event.is_action_pressed("heal"):
 		if medicine>0 and health<100:
 			medicine-=1; health=minf(100,health+45); announce_message("A clean dressing. It will have to be enough.",4); write_save()
@@ -318,20 +331,22 @@ func _process(dt):
 func _physics_process(dt):
 	if mode!="playing": return
 	playtime+=dt; invulnerable=maxf(0,invulnerable-dt)
+	for name in child_injury: child_injury[name]=maxf(0,float(child_injury[name])-dt)
 	tick_action(dt)
 	if (not Input.is_action_pressed("sprint") or abs(player.velocity.x)<15) and not wind_strain: stamina=minf(100,stamina+dt*15)
 	food=maxf(0,food-dt*.38)
 	sheltered=is_covered(player) and is_covered(boy)
-	var under_roof=in_safe_zone(player.position.x) and in_safe_zone(boy.position.x)
+	var under_roof=in_safe_zone(player.position.x,player.position.y) and in_safe_zone(boy.position.x,boy.position.y)
 	var cold=float(level.cold) * (.08 if under_roof else (.22 if sheltered else 1.0))
 	var soaked=in_water(player.position.x,player.position.y) or in_water(boy.position.x,boy.position.y)
 	wetness=clampf(wetness+dt*(.20 if soaked else -.009),0,1)
-	if chapter==2 and under_roof and not flags.get("shelter_roof",false): wetness=minf(1,wetness+dt*.045); cold=.4
+	if chapter==2 and not slice_active and under_roof and not flags.get("shelter_roof",false): wetness=minf(1,wetness+dt*.045); cold=.4
 	cold+=wetness*.65
 	warmth=clampf(warmth-dt*cold,0,100)
 	if food<12 or warmth<8: health=maxf(0,health-dt*.7)
 	update_companion(dt)
 	tick_hazard_lanes(dt)
+	if slice_active: last_house.tick(dt)
 	for sector in level.get("zones",[]):
 		if player.position.x>=sector.x and player.position.x<sector.x+sector.w and not sector_seen.has(sector.x):
 			sector_seen[sector.x]=true
@@ -367,7 +382,7 @@ func _physics_process(dt):
 	if player.position.y>1030 or boy.position.y>1050:
 		recover(true,"The road gave way. Try again, together.")
 	if health<=0: recover(true,"They need a safer way through.")
-	if player.position.x>float(level.width)-110:
+	if not slice_active and player.position.x>float(level.width)-110:
 		if abs(player.position.x-boy.position.x)<180:
 			if chapter<4:
 				unlocked=maxi(unlocked,chapter+1); load_chapter(chapter+1); write_save()
@@ -388,11 +403,15 @@ func update_companion(dt):
 	companion_alert_clock=maxf(0,companion_alert_clock-dt)
 	boy.ai_axis=0; boy.ai_jump=false
 	var gap=player.position.x-boy.position.x
+	var cover_target=companion_cover_target()
+	var follow_gap=gap if cover_target==null else float(cover_target)-boy.position.x
 	boy.forced_crouch=player.crouching if boy.following else true
 	if boy.following:
 		var forward=signf(gap)
 		# Ease into the following distance instead of alternating full speed.
-		if absf(gap)>42: boy.ai_axis=forward*clampf((absf(gap)-42)/30.0,0,1)
+		if cover_target!=null:
+			boy.ai_axis=clampf(follow_gap/15.0,-1,1) if absf(follow_gap)>4 else 0.0
+		elif absf(gap)>42: boy.ai_axis=forward*clampf((absf(gap)-42)/30.0,0,1)
 		if boy.is_on_floor() and absf(gap)>55:
 			var ahead=boy.position.x+forward*22
 			var edge=not ground_at(ahead) and boy.position.y>660
@@ -410,10 +429,27 @@ func update_companion(dt):
 					boy.ai_jump=true; boy.forced_crouch=false; companion_jumps.remove_at(i); break
 		if absf(gap)>390 and companion_alert_clock<=0:
 			announce_message("He is falling behind. Slow down and call him [Q].",3); companion_alert_clock=6
+	if slice_active: last_house.companion_override()
 	var close=absf(gap)<58 and absf(player.position.y-boy.position.y)<17 and not player.crouching and player.is_on_floor() and boy.is_on_floor() and player.action_time<=0 and boy.action_time<=0
 	player.hand_active=close; boy.hand_active=close
 	var hand=(player.position+boy.position)*.5+Vector2(0,-53)
 	player.contact_hand=hand; boy.contact_hand=hand
+
+func companion_cover_target():
+	if not boy.following or not player.crouching or absf(player.velocity.x)>20: return null
+	for c in level.covers:
+		if absf(player.position.x-c.x)>=c.w*.5-8 or absf(player.position.y-surface_y_at(c.x,700))>45: continue
+		var lo=float(c.x)-float(c.w)*.5+22; var hi=float(c.x)+float(c.w)*.5-22
+		var target=clampf(player.position.x-player.facing*48,lo,hi)
+		if absf(target-player.position.x)<30: target=clampf(player.position.x+player.facing*48,lo,hi)
+		if ground_at(target): return target
+	return null
+
+func child_status(child):
+	var key=str(child.name)
+	if float(child_injury.get(key,0))>0: return "HURT"
+	if float(child_detection.get(key,0))>.08: return "SEEN"
+	return "COVERED" if is_covered(child) else "OPEN"
 
 func ground_at(x):
 	for bridge in level.get("bridges",[]):
@@ -423,7 +459,7 @@ func ground_at(x):
 	return false
 
 func is_covered(child):
-	if in_safe_zone(child.position.x): return true
+	if in_safe_zone(child.position.x,child.position.y): return true
 	for c in level.covers:
 		if abs(child.position.x-c.x)<c.w/2.0 and (child.crouching or c.kind=="tent") and abs(child.position.y-surface_y_at(c.x,700))<65: return true
 	return false
@@ -431,6 +467,7 @@ func is_covered(child):
 func beam_x(): return 2650+sin(clock*.29)*1970
 
 func gate_open(g):
+	if slice_active and g.key=="passage_braced": return last_house.gate_held()
 	if flags.get(g.key,false): return true
 	if g.has("plate"):
 		for body in pushables:
@@ -448,25 +485,28 @@ func update_prompt():
 	prompt=""; near_item={}; var best_score=INF; var full_cache={}
 	for p in level.interact:
 		if p.kind=="cache" and flags.get(p.id,false): continue
-		if p.kind in ["wheel","latch","repair","roof","pump","bridge","relay","clear","brace"] and flags.get(p.id,false): continue
+		if p.kind in ["wheel","latch","repair","roof","pump","bridge","relay","clear","brace","inspect","reciprocal","bag","share","quiet"] and flags.get(p.id,false): continue
 		if abs(player.position.x-p.x)>=86 or abs(player.position.y-p.y)>=100: continue
 		if p.kind=="cache" and not cache_has_room(p): full_cache=p; continue
 		# World work wins over a co-located cache. Distance breaks ties of one kind.
 		var priority=180.0 if p.kind=="cache" else (90.0 if p.kind=="fire" else 0.0)
 		var score=priority+absf(player.position.x-float(p.x))
 		if score<best_score: best_score=score; near_item=p
-	if not near_item.is_empty(): prompt="HOLD E   "+near_item.label
+	if not near_item.is_empty(): prompt=last_house.prompt_for(near_item) if slice_active else "HOLD E   "+near_item.label
 	elif not full_cache.is_empty(): prompt="PACK FULL - supplies remain here"
 	else:
 		for tutorial in level.tutorials:
 			if abs(player.position.x-tutorial.x)<180: prompt=tutorial.text; break
 
-func in_safe_zone(x):
+func in_safe_zone(x,feet_y=INF):
 	for zone in level.get("safe_zones",[]):
-		if abs(x-zone.x)<zone.w/2.0 and (not zone.has("key") or flags.get(zone.key,false)): return true
+		if abs(x-zone.x)<zone.w/2.0 and (not zone.has("key") or flags.get(zone.key,false)):
+			if zone.has("y") and absf(feet_y-float(zone.y))>float(zone.get("height_tolerance",45)): continue
+			return true
 	return false
 
 func current_objective():
+	if slice_active: return last_house.objective()
 	for p in level.interact:
 		if p.kind in ["relay","clear","brace"] and not p.get("optional",false) and not flags.get(p.id,false) and player.position.x>p.x-900:
 			return p.get("objective",p.label)
@@ -531,6 +571,7 @@ func tick_hazard_lanes(dt):
 		elif h.kind=="wind" and at_risk: wind_strain=true
 
 func interact():
+	if slice_active and not near_item.is_empty() and last_house.try_interact(near_item): return
 	if not pending_action.is_empty() or near_item.is_empty(): return
 	if player.action_time>0: return
 	pending_action=near_item.duplicate(); action_progress=0; action_duration=float(pending_action.get("hold_seconds",1.1))
@@ -614,10 +655,12 @@ func complete_interaction(task={}):
 	encounter_events.append({"kind":p.kind,"id":p.get("id",""),"chapter":chapter,"time":playtime})
 	write_save(); update_prompt()
 
-func hurt(amount,reason):
+func hurt(amount,reason,affected=[]):
 	if invulnerable>0: return
 	health=maxf(0,health-amount); invulnerable=3; flash=.65; shake=5; announce_message(reason,4)
-	player.hit_time=.35; boy.hit_time=.35
+	if affected.is_empty(): affected=[player,boy]
+	for child in affected:
+		child.hit_time=.35; child_injury[str(child.name)]=2.5
 	pending_action={}; action_progress=0
 
 func recover(count=true,reason="Take another breath. Try a different path."):
@@ -634,6 +677,7 @@ func respawn(reset_survival=true):
 	player.reset_feet(); boy.reset_feet(); pending_action={}
 	for body in pushables: body.reset_to_origin()
 	trail.clear(); companion_jumps.clear()
+	if slice_active: last_house.reset_after_recovery()
 	if reset_survival: health=maxf(55,health); warmth=maxf(35,warmth); food=maxf(30,food); stamina=100
 	wind_strain=false
 	shell_clock=0; shell_warning=0; invulnerable=4; exposure=0; mode="playing"
@@ -675,7 +719,7 @@ func write_save():
 	var prefs=FileAccess.open(settings_path,FileAccess.WRITE)
 	if prefs: prefs.store_string(JSON.stringify({"volume":volume,"muted":muted,"reduced_motion":reduced_motion})); prefs.close()
 	if not journey_active: return
-	var data={"schema":1,"build":"0.4.1","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed}
+	var data={"schema":1,"build":"0.5.0","chapter":chapter,"checkpoint":checkpoint_x,"flags":flags,"memories":memories,"cache_remaining":cache_remaining,"unlocked":unlocked,"rations":rations,"scrap":scrap,"medicine":medicine,"health":health,"warmth":warmth,"food":food,"wetness":wetness,"stamina":stamina,"playtime":playtime,"volume":volume,"muted":muted,"reduced_motion":reduced_motion,"completed":journey_completed,"scenario":"last_house" if slice_active else ("rehearsal" if section_preview else "journey")}
 	var f=FileAccess.open(save_path+".tmp",FileAccess.WRITE)
 	if not f: save_notice="Could not save. Check the save folder before leaving."; return
 	f.store_string(JSON.stringify(data,"\t")); f.close()
@@ -915,7 +959,7 @@ func traverse_journey():
 					Input.action_release("right"); Input.action_press("crouch"); stalled=0
 		if frame%1800==0: print("TRAVERSE_PROGRESS ",chapter+1," ",int(player.position.x)," boy=",int(boy.position.x)," deaths=",death_count)
 	for action in ["left","right","jump","sprint","crouch","interact"]: Input.action_release(action)
-	var report={"build":"0.4.1","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
+	var report={"build":"0.5.0","completed":completed,"chapters_reached":reached,"failure":failure,"deaths":death_count,"simulated_seconds":playtime,"rations_remaining":rations,"medicine_remaining":medicine,"health":health,"encounters":encounter_events,"method":"Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance."}
 	var f=FileAccess.open(report_path("continuous_traversal.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("TRAVERSE_RESULT ",JSON.stringify(report))
 	call_deferred("quit_game",0 if completed else 1)
@@ -1056,7 +1100,7 @@ func run_encounter_tests():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.4.1","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
+	var report={"build":"0.5.0","all_passed":passed,"checks":test_log,"method":"Native rigid-body push, timed held input and interruption, bridge collision activation, crate pressure plate, wading and wetness, pump, shelter roof consumption and thermal behavior. Deliberate test setups are separate from full journey navigation."}
 	var f=FileAccess.open(report_path("encounter_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("ENCOUNTER_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 
@@ -1094,7 +1138,7 @@ func run_motion_review():
 		previous_feet=current; previous_phase=player.foot_phase.duplicate()
 	var maximum=0.0
 	for drift in drifts: maximum=maxf(maximum,drift)
-	var report={"build":"0.4.1","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
+	var report={"build":"0.5.0","frames":360,"fps":30,"duration_seconds":12,"scene":"Isolated flat locomotion study using the actual runtime controller and renderer. Not a campaign playthrough.","stance_samples":drifts.size(),"maximum_stance_world_x_drift_pixels":maximum,"grounded_pose_solver":"distance-driven stance locks, two-bone knees, authored arm/garment/ribbon motion"}
 	var f=FileAccess.open(report_path("motion_review.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("MOTION_REVIEW_COMPLETE ",JSON.stringify(report)); call_deferred("quit_game")
 
@@ -1214,7 +1258,7 @@ func run_journey_checks():
 	var passed=true
 	for result in test_log:
 		if not result.passed: passed=false
-	var report={"build":"0.4.1","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
+	var report={"build":"0.5.0","all_passed":passed,"checks":test_log,"route_units":total,"method":"Native physics on authored slopes, measured planted sole heights, sloped checkpoint restoration, actual held shared lift and clearance, finite brace consumption, periodic warning and separate-child patrol exposure. Targeted setups are isolated from the continuous journey."}
 	var f=FileAccess.open(report_path("journey_checks.json"),FileAccess.WRITE); f.store_string(JSON.stringify(report,"\t")); f.close()
 	print("JOURNEY_CHECKS_RESULT ",JSON.stringify(report)); call_deferred("quit_game",0 if passed else 1)
 
@@ -1251,7 +1295,7 @@ func capture_new_journey():
 
 func start_crossing():
 	# A separate rehearsal save leaves the full journey intact.
-	section_preview=true; save_path=rehearsal_save_path
+	slice_active=false; section_preview=true; save_path=rehearsal_save_path
 	journey_active=true; journey_completed=false; flags={}; memories={}; cache_remaining={}
 	rations=0; scrap=0; medicine=1; health=82; warmth=38; food=39; stamina=100; wetness=.22
 	load_chapter(2,false); mode="playing"; checkpoint_x=420; respawn(false)

@@ -72,17 +72,18 @@ func title_screen():
 	text_at("When the",Vector2(112,301),77,palette,true)
 	text_at("Sky Clears",Vector2(112,385),103,palette,true)
 	paragraph("Two children. A road through a world coming apart. Keep moving. Keep each other.",Vector2(120,438),460,18,Color("aebbad"))
-	var y=527
+	var y=501
 	if game.save_exists:
-		button("Continue the journey",Rect2(112,y,410,49),"continue"); y+=52
-	button("Begin a new journey",Rect2(112,y,410,49),"new"); y+=52
-	button("Freight crossing rehearsal",Rect2(112,y,410,49),"crossing"); y+=52
-	button("Chapters",Rect2(112,y,410,49),"chapters"); y+=52
-	button("Settings & controls",Rect2(112,y,410,49),"settings"); y+=52
-	button("Leave",Rect2(112,y,410,49),"quit")
+		button("Continue the journey",Rect2(112,y,410,42),"continue"); y+=44
+	button("Begin a new journey",Rect2(112,y,410,42),"new"); y+=44
+	button("Last House before the Crossing",Rect2(112,y,410,42),"last_house"); y+=44
+	button("Freight crossing rehearsal",Rect2(112,y,410,42),"crossing"); y+=44
+	button("Chapters",Rect2(112,y,410,42),"chapters"); y+=44
+	button("Settings & controls",Rect2(112,y,410,42),"settings"); y+=44
+	button("Leave",Rect2(112,y,410,42),"quit")
 	text_at("AN ORIGINAL SURVIVAL JOURNEY",Vector2(119,844),11,dim)
-	if not game.save_notice.is_empty(): paragraph(game.save_notice,Vector2(120,802),740,15,gold)
-	text_at("DEVELOPMENT  0.4.1",Vector2(1338,847),10,dim)
+	if not game.save_notice.is_empty(): paragraph(game.save_notice,Vector2(920,716),580,15,gold)
+	text_at("DEVELOPMENT  0.5.0",Vector2(1338,847),10,dim)
 	text_at("Move with care. There is someone behind you.",Vector2(1015,816),17,Color(palette,.65),true)
 
 func playing_hud():
@@ -92,7 +93,11 @@ func playing_hud():
 	for sector in game.level.get("zones",[]):
 		if game.player.position.x>=sector.x and game.player.position.x<sector.x+sector.w:
 			text_at(sector.get("name",str(sector.theme).replace("_"," ").to_upper()),Vector2(156,99),10,dim)
-	text_at("Q  "+("STAY CLOSE" if game.boy.following else "WAITING"),Vector2(1308,77),11,gold if not game.boy.following else dim)
+	var helping=game.slice_active and game.last_house.is_helping()
+	text_at("HELPING EACH OTHER" if helping else "Q  "+("STAY CLOSE" if game.boy.following else "WAITING"),Vector2(1308,77),11,gold if helping or not game.boy.following else dim)
+	for info in [[game.player,1010],[game.boy,1250]]:
+		var state=game.child_status(info[0]);var color=Color("e2b979") if state in ["SEEN","HURT"] else Color("bdcdb5")
+		text_at(str(info[0].name).to_upper()+" / "+state,Vector2(info[1],103),12,color)
 	# Compact survival indicators, always readable against any painted zone.
 	draw_rect(Rect2(48,795,448,51),Color(.025,.05,.055,.49))
 	bar("STRENGTH",game.health,Vector2(64,813),96,Color("b6b598"))
@@ -109,7 +114,7 @@ func playing_hud():
 		text_at("SEEN  ·  REACH COVER",Vector2(1240,817),12,Color("d2b78c"))
 	elif game.shell_warning>0:
 		text_at("TAKE COVER  ·  HOLD S",Vector2(1236,817),12,Color("d8ba87"))
-	else: text_at("HOLD E  INTERACT    ·    ESC  PAUSE",Vector2(1178,817),10,dim)
+	else: text_at("E INTERACT / HOLD WHEN SHOWN" if game.slice_active else "HOLD E  INTERACT",Vector2(1178,817),10,dim)
 	if not game.pending_action.is_empty():
 		var progress=clampf(game.action_progress/maxf(.01,game.action_duration),0,1)
 		var point=game.get_viewport().get_canvas_transform()*game.player.global_position+Vector2(0,-151)
@@ -144,6 +149,7 @@ func pause_screen():
 	button("Open the pack",Rect2(145,532,440,56),"pack")
 	button("Settings & controls",Rect2(145,594,440,56),"settings")
 	button("Save & return to title",Rect2(145,656,440,56),"menu")
+	if game.slice_active: button("Begin Last House again",Rect2(145,718,440,56),"last_house_new")
 	rule(930,304,390,Color(gold,.35))
 	paragraph(game.level.epigraph,Vector2(930,349),390,24,palette)
 	paragraph("Progress saves at lanterns, shelters and chapter crossings. Supplies and remembered things stay with you.",Vector2(930,489),390,17,dim)
@@ -171,7 +177,7 @@ func settings_screen():
 	button("Toggle fullscreen",Rect2(140,524,440,50),"fullscreen")
 	button("Back",Rect2(140,691,440,52),"back")
 	text_at("ON THE ROAD",Vector2(840,295),12,gold)
-	var controls=[["A / D or ← / →","Move"],["SPACE / W / ↑","Jump · release early for a short jump"],["SHIFT","Run · uses stamina"],["S / ↓","Crouch · shelter behind cover"],["HOLD E","Search · work · rest / push + A/D"],["Q","Ask him to wait / call him"],["H / LB","Use one medicine"],["TAB","Open the pack"],["R / ESC","Last checkpoint / pause"],["F11 / M","Fullscreen / mute"]]
+	var controls=[["A / D or ← / →","Move"],["SPACE / W / ↑","Jump · release early for a short jump"],["SHIFT","Run · uses stamina"],["S / ↓","Crouch · shelter behind cover"],["E / HOLD E","Search · work · rest / push + A/D"],["Q","Ask him to wait / call him"],["H / LB","Use one medicine"],["TAB","Open the pack"],["R / ESC","Last checkpoint / pause"],["F11 / M","Fullscreen / mute"]]
 	for i in range(controls.size()):
 		text_at(controls[i][0],Vector2(842,336+i*34),14,palette)
 		text_at(controls[i][1],Vector2(1030,336+i*34),14,dim)
@@ -236,6 +242,8 @@ func activate(action):
 	match action:
 		"new": game.new_journey()
 		"crossing": game.start_crossing()
+		"last_house": game.last_house.start(true)
+		"last_house_new": game.last_house.start(false)
 		"continue": game.continue_journey()
 		"resume": game.mode="playing"
 		"restart": game.mode="playing"; game.recover(false)

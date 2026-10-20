@@ -57,44 +57,47 @@ func _draw():
 	var cx = game.camera.position.x
 	var left = cx-800
 	var t = game.clock
-	var sky = Color(l.sky)
-	draw_rect(Rect2(left-100,-350,1800,1500),sky)
-	var sky_tint = [Color(1, .91, .74, .72),Color(.56,.72,.75,.66),Color(.44,.55,.61,.67),Color(.39,.50,.58,.7),Color(.7,.74,.77,.48)][game.chapter]
-	draw_texture_rect(textures.Sky_Painted,Rect2(left-100,-180,1800,1050),false,sky_tint)
-	# Quiet shafts of light, painted horizons, and independent depth planes.
-	var ray_col = Color(.9,.86,.65,.05) if game.chapter == 0 else Color(.65,.77,.83,.025)
-	for i in range(5):
-		var x = left+fposmod(190+i*386-left*.04,1800)-100
-		draw_colored_polygon(PackedVector2Array([Vector2(x,-40),Vector2(x+45,-40),Vector2(x-160,760),Vector2(x-460,760)]),ray_col)
-	scenery("Distant_Hills",.12,2100,710,Color(.65,.74,.77,.72))
-	var haze = Color(l.fog)
-	for strip in range(24): draw_rect(Rect2(left,430+strip*16,1600,17),Color(haze,.005+strip*.0008))
-	match game.chapter:
-		0:
-			scenery("Village_Warm",.48,1750,692,Color(.82,.83,.71,.88))
-			art("Woods",4100,703,1600,Color(.44,.56,.48,.8))
-		1:
-			scenery("Woods",.38,1800,715,Color(.44,.57,.56,.9))
-			scenery("Woods",.65,2100,720,Color(.37,.47,.46,.8))
-		2:
-			scenery("Battlefield",.24,2150,685,Color(.44,.52,.58,.8))
-			scenery("Camp",.61,1700,703,Color(.64,.68,.7,.85))
-		3:
-			scenery("Battlefield",.26,2200,700,Color(.54,.61,.66,.9))
-			art("School",980,700,1760,Color(.73,.76,.77,.9))
-			art("Village_Empty",3400,705,1900,Color(.48,.57,.61,.85))
-		4:
-			scenery("Battlefield",.22,2500,700,Color(.53,.60,.65,.7))
-			# Monumental title forms belong to the world, behind the traversable bases.
-			for pair in [["WHEN",1700,435],["THE SKY",2950,460],["CLEARS",4330,420]]:
-				draw_string(font,Vector2(pair[1],pair[2]),pair[0],HORIZONTAL_ALIGNMENT_LEFT,-1,210,Color(.12,.18,.21,.71))
-	# Soft near-ground mist makes charcoal contacts readable.
-	for j in range(9):
-		draw_rect(Rect2(left,535+j*19,1600,20),Color(haze,.012+j*.004))
-	if l.get("searchlight",false):
-		var bx = game.beam_x()
-		draw_colored_polygon(PackedVector2Array([Vector2(bx-260,-200),Vector2(bx-115,720),Vector2(bx+130,720)]),Color(.84,.88,.72,.14))
-		draw_line(Vector2(bx-260,-200),Vector2(bx+125,720),Color(.9,.91,.72,.08),2,true)
+	if game.slice_active:
+		game.last_house.draw_backdrop(self)
+	else:
+		var sky = Color(l.sky)
+		draw_rect(Rect2(left-100,-350,1800,1500),sky)
+		var sky_tint = [Color(1, .91, .74, .72),Color(.56,.72,.75,.66),Color(.44,.55,.61,.67),Color(.39,.50,.58,.7),Color(.7,.74,.77,.48)][game.chapter]
+		draw_texture_rect(textures.Sky_Painted,Rect2(left-100,-180,1800,1050),false,sky_tint)
+		# Quiet shafts of light, painted horizons, and independent depth planes.
+		var ray_col = Color(.9,.86,.65,.05) if game.chapter == 0 else Color(.65,.77,.83,.025)
+		for i in range(5):
+			var x = left+fposmod(190+i*386-left*.04,1800)-100
+			draw_colored_polygon(PackedVector2Array([Vector2(x,-40),Vector2(x+45,-40),Vector2(x-160,760),Vector2(x-460,760)]),ray_col)
+		scenery("Distant_Hills",.12,2100,710,Color(.65,.74,.77,.72))
+		var haze = Color(l.fog)
+		for strip in range(24): draw_rect(Rect2(left,430+strip*16,1600,17),Color(haze,.005+strip*.0008))
+		match game.chapter:
+			0:
+				scenery("Village_Warm",.48,1750,692,Color(.82,.83,.71,.88))
+				art("Woods",4100,703,1600,Color(.44,.56,.48,.8))
+			1:
+				scenery("Woods",.38,1800,715,Color(.44,.57,.56,.9))
+				scenery("Woods",.65,2100,720,Color(.37,.47,.46,.8))
+			2:
+				scenery("Battlefield",.24,2150,685,Color(.44,.52,.58,.8))
+				scenery("Camp",.61,1700,703,Color(.64,.68,.7,.85))
+			3:
+				scenery("Battlefield",.26,2200,700,Color(.54,.61,.66,.9))
+				art("School",980,700,1760,Color(.73,.76,.77,.9))
+				art("Village_Empty",3400,705,1900,Color(.48,.57,.61,.85))
+			4:
+				scenery("Battlefield",.22,2500,700,Color(.53,.60,.65,.7))
+				# Monumental title forms belong to the world, behind the traversable bases.
+				for pair in [["WHEN",1700,435],["THE SKY",2950,460],["CLEARS",4330,420]]:
+					draw_string(font,Vector2(pair[1],pair[2]),pair[0],HORIZONTAL_ALIGNMENT_LEFT,-1,210,Color(.12,.18,.21,.71))
+		# Soft near-ground mist makes charcoal contacts readable.
+		for j in range(9):
+			draw_rect(Rect2(left,535+j*19,1600,20),Color(haze,.012+j*.004))
+		if l.get("searchlight",false):
+			var bx = game.beam_x()
+			draw_colored_polygon(PackedVector2Array([Vector2(bx-260,-200),Vector2(bx-115,720),Vector2(bx+130,720)]),Color(.84,.88,.72,.14))
+			draw_line(Vector2(bx-260,-200),Vector2(bx+125,720),Color(.9,.91,.72,.08),2,true)
 	# Craters have atmospheric depth, rather than exposing a repeated sky image.
 	draw_rect(Rect2(left,700,1600,600),Color("23363b") if game.chapter>1 else Color("2e3930"))
 	for i in range(10): draw_rect(Rect2(left,720+i*28,1600,29),Color(.04,.08,.09,.035+i*.035))
@@ -410,7 +413,7 @@ func cover(c):
 		draw_line(Vector2(x-45,y),Vector2(x-30,y-230),col,42,true)
 		draw_line(Vector2(x-30,y-180),Vector2(x+90,y-120),col,28,true)
 	else:
-		paint_asset(self,"wall",Vector2(x,y+5),w+20,82,Color(.56,.65,.63))
+		paint_asset(self,"wall",Vector2(x,y+5),w,82,Color(.56,.65,.63))
 	# Universal readable shelter marker: three sloping strokes, no bright UI sign.
 	draw_polyline(PackedVector2Array([Vector2(x-7,y-63),Vector2(x,y-68),Vector2(x+7,y-63)]),Color(.7,.75,.66,.5),1,true)
 
@@ -450,6 +453,7 @@ func prop(p):
 			draw_line(Vector2(x-25,y-32),Vector2(x+115,y-45),ink,6,true)
 
 func interact_prop(p):
+	if game.slice_active and game.last_house.draw_interaction(self,p): return
 	var pos = Vector2(p.x,surface(float(p.x),float(p.get("y",700))))
 	var used = game.flags.get(p.get("id",p.get("key","")),false)
 	match p.kind:
@@ -514,6 +518,7 @@ func interact_prop(p):
 			glow(pos+Vector2(0,-110),Color(.82,.87,.8),190,.18)
 
 func gate(g):
+	if game.slice_active and g.key=="passage_braced": return
 	var open = game.gate_open(g)
 	var x = float(g.x)
 	var ground_y=surface(x,float(g.y))

@@ -6,7 +6,7 @@ func _draw():
 	if game==null or game.world==null or game.level.is_empty(): return
 	for c in game.level.covers:
 		if c.kind=="wall":
-			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w+20,82,Color(.48,.57,.55))
+			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w,82,Color(.48,.57,.55,.40 if (absf(game.player.position.x-c.x)<c.w*.5 or absf(game.boy.position.x-c.x)<c.w*.5) else 1.0))
 	# Foot-level foreground accents sit in front of the actors; major scenery
 	# stays behind them, so stealth reads without hiding the route.
 	var left=game.camera.position.x-800
@@ -23,3 +23,5 @@ func _draw():
 			for reed in range(3):
 				var bend=wind*(1+reed*.3)
 				draw_polyline(PackedVector2Array([Vector2(x+reed*4,y+3),Vector2(x+reed*4+bend,y-11),Vector2(x+reed*4+bend*2,y-19+reed*3)]),Color(.12,.20,.16,.52),.8,true)
+
+	if game.slice_active: game.last_house.draw_weather(self)
