@@ -1,0 +1,108 @@
+{
+  "WTSC_v040_Freight_Crossing_Full_Gameplay.mp4": {
+    "bytes": 11720865,
+    "sha256": "ff31a1f1198323f90fd19985ef49450176aa4c2ba1f3f23261d1ebd4621bb878",
+    "decoded_frames": 917,
+    "fps": 30,
+    "size": [
+      1440,
+      810
+    ],
+    "seconds": 30.566666666666666,
+    "scope": "Uncut native automated gameplay after the rehearsal start; no actor repositioning. Short preview is a continuous excerpt. Silent."
+  },
+  "WTSC_v040_Motion_Preview.mp4": {
+    "bytes": 4759792,
+    "sha256": "c026a060d77df19dd37cf8e615bad5f42f272122f36761e65572b19f05bba123",
+    "decoded_frames": 359,
+    "fps": 30,
+    "size": [
+      1440,
+      810
+    ],
+    "seconds": 11.966666666666667,
+    "scope": "Uncut native automated gameplay after the rehearsal start; no actor repositioning. Short preview is a continuous excerpt. Silent."
+  },
+  "capture": {
+    "renderer_log": "evidence\\v040\\packaged\\crossing-capture\\engine.log",
+    "frames": 917,
+    "report": {
+      "boy": "(2181.369, 699.9252)",
+      "deaths": 0,
+      "frames": 917,
+      "girl": "(2252.589, 699.9252)",
+      "health": 35.0,
+      "maximum_separation": 228.336120605469,
+      "phase": "done",
+      "phase_events": [
+        {
+          "frame": 0,
+          "phase": "search",
+          "time": 0.0166666666666667
+        },
+        {
+          "frame": 86,
+          "phase": "return",
+          "time": 2.88333333333333
+        },
+        {
+          "frame": 134,
+          "phase": "rest",
+          "time": 4.48333333333332
+        },
+        {
+          "frame": 231,
+          "phase": "beam",
+          "time": 7.71666666666664
+        },
+        {
+          "frame": 394,
+          "phase": "wall",
+          "time": 13.1500000000002
+        },
+        {
+          "frame": 452,
+          "phase": "wait",
+          "time": 15.0833333333337
+        },
+        {
+          "frame": 618,
+          "phase": "gap",
+          "time": 20.6166666666668
+        },
+        {
+          "frame": 673,
+          "phase": "rejoin",
+          "time": 22.45
+        },
+        {
+          "frame": 697,
+          "phase": "gate",
+          "time": 23.25
+        },
+        {
+          "frame": 815,
+          "phase": "done",
+          "time": 27.1833333333331
+        }
+      ],
+      "reached_gate": true,
+      "rested": true,
+      "searched": true,
+      "warmth": 76.8672416666588
+    },
+    "original_screenshots": {
+      "00_search.png": "4013f5bd71541ee16b55a4d74813103bfdc8199ac63afc7af7bde17fba78d295",
+      "01_return.png": "5e6d596b55bf96687b981cf8c740a6e28570c82e74589e6c3a1be4912058f6f1",
+      "02_rest.png": "4823aa4210e053179f91f9da64d3616ec75b6621355d3d2bf04c83e5fa1946ff",
+      "03_beam.png": "eb10e88f197ed1e9e802b879955986d96c6ae9aa25c6ff7d41f9d37030091333",
+      "04_wall.png": "e675ca6522c16f5d26960879a65a823ed3f0e529aea82dd818a320b8a60918b9",
+      "05_wait.png": "bdf44a3659a151e2b1c06d19eca20883ff59e66e860e13e0ae0753a39f56a6eb",
+      "06_gap.png": "fdd4c73abaa2b95a21e2a8db1fbd7197c8f122911d3b4151b4a2a83722446832",
+      "07_rejoin.png": "bdf345a812a605897c5b59786969a7e653ae1b5af7f8326d2cdd7dcb8af64555",
+      "08_gate.png": "74d55696597754300acc997c74e6cdab208154603c10cb62dd2bbb3d699950cc",
+      "09_done.png": "36d2c8fc9e10285ff03037bf1ee6ae3c03dace45f9063cf230946c95bcfff5a7",
+      "crossing_arrival.png": "656681ba95be11b05d3e41cbae7e44581f3b3b757c968b9ff131331cb6e31144"
+    }
+  }
+}
