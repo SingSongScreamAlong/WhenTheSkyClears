@@ -1,0 +1,146 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.4.0
+20 October 2026
+
+BUILD STATUS
+The v0.4.0 source is undergoing final native verification. The appended mill
+mechanism is included in that work. Earlier scenario passes do not establish
+a pass for the final executable. The previous v0.3.0 release is retained.
+The planned standalone package is When_The_Sky_Clears_Windows_v0.4.0.zip.
+Extract its Windows ZIP before running When the Sky Clears.exe. Godot and
+Python are development dependencies, not requirements for standalone play.
+PLAY.cmd selects the 0.4.0 executable when present. MILL_PLAYTEST.cmd opens
+the mill encounter directly; the equivalent CLI option is -- --mill-preview.
+That preview is isolated and does not save over normal campaign progress.
+FREIGHT_CROSSING.cmd, or -- --freight-crossing, opens a separate freight
+rehearsal combining searching, warmth, cover, traversal and shared lifting.
+It uses freight_crossing_v040.json and keeps the full journey save intact.
+
+The editable game opens from project.godot in Godot 4.6 Standard. This version
+uses journey_v4.json in the separate WhenTheSkyClears/v040 Godot user-data
+directory, preserving the earlier journey files. Continue restores saved
+survival resources. Checkpoint recovery
+remains a separate action.
+On macOS, import the same project in Godot 4.6 stable Standard and run with F5.
+The repository's docs/MACOS.md records setup and platform verification limits.
+
+Editor play needs no export templates. To build Windows from the repository
+root, run python game/tools/setup_godot.py and python game/tools/export_v040.py.
+The export helper temporarily selects the downloaded portable Windows templates
+for its export, restores the preset's empty custom-template fields in a finally
+block, then records source and executable identity. The editable ZIP also keeps
+those fields empty. For manual editor or direct command-line exports, install
+matching Godot 4.6 export templates through Godot. Python is not needed to play.
+
+A CONNECTED MILL ENCOUNTER
+The woods now end with a connected bridge, fence, wheel, tether and gate.
+The bridge deck spans a real collision gap. The fence and boards provide
+physical steps onto the large wheel; the construction is part of the route.
+Standing on its crown loads the frame for 0.4 seconds, then begins a 1.2-second
+warning before the wheel breaks free. Its RigidBody2D body rolls to the right.
+The visible tether and gate respond to its actual travel. After 240 pixels
+of travel the gate can rise clear. Holding E does not bypass the mechanism.
+
+Both children must retreat from the rolling wheel. A child left in front can
+be hurt, so sending the girl ahead while forgetting him has consequences.
+The approach and retreat ground provide room to plan the movement. This is
+an authored physical sequence; other painted objects are not automatically
+interactive merely because they appear in the environment.
+
+ROUTES WITH DIFFERENT COSTS
+The five chapters span 79,200 authored world units, up from 56,000. This is
+measured route data, not a human playtime estimate. New mill gardens, canal,
+signal yard, shattered arcade and living terraces extend the existing story.
+Read JOURNEY_v0.4.0.txt for chapter staging and route details.
+
+The woods canal and school arcade each offer real lower and upper routes.
+The low route is continuous ground under cold water and a listening lane.
+A slow crouched crossing can avoid detection while saving salvage. Faster
+wading splashes; running carries farther. A shared pump costs one salvage
+and drains the low route. Both children must help with that work.
+
+The high route uses stepped, one-way platforms above the lower hazard.
+Both children can climb. One salvage secures the upper crossbar; dry food
+and medicine lie beyond it. The approach salvage can pay for the pump OR
+the upper brace. Inventory carried from earlier choices can change the plan.
+The routes meet again on safe ground. A child left below stays exposed.
+
+There are 18 timed hazard lanes, including two sound-sensitive listeners,
+and 27 held relay, clearing and bracing actions across the authored levels.
+Moving light, falling masonry, wind, shelter repairs and finite searches
+remain part of the journey. Quiet intervals and permanent repairs offer
+different ways through selected hazards.
+
+SURVIVAL AND THE PACK
+The pack holds four food portions, three salvage pieces and two medicines.
+Across the complete world, caches contain 26 food portions, 18 salvage and
+13 medicines. Those are finite authored totals, not starting inventory or
+guaranteed rewards on the main route. Full packs leave supplies in place.
+Optional elevated searches often reward medicine instead of another meal.
+Warmth, wetness, hunger and shared strength still affect the journey.
+
+CHARACTERS AND FEEL
+The drawn children retain their established profiles and her blue ribbon.
+Crouching now blends into the pose instead of snapping immediately. Standing
+checks overhead clearance so a low ceiling keeps the child down. Turn braking,
+support-foot locks, quiet settling and sloped boot placement refine movement.
+The existing articulated walk, run, landing, mantle, shared work, fatigue and
+companion gestures remain editable in the native controller.
+
+LOOK AND SOUND
+The painted tent's readable material is the benchmark for this art pass.
+Faces and clothing keep visible painted detail, with clearer skin, hair and
+garment values. Material-aware tints and softened contact shadows improve
+consistency across children, terrain, cover and props. Environmental darkness
+is restrained so it supports the staging without hiding the character work.
+This is a visual revision to review, not an artistic approval or AAA claim.
+
+Collision-matched terrain, painted banks, roots and foreground cover continue
+the layered world. The new canal layer is assets/environments/Canal_v040.png;
+its recorded prompt and provenance are beside it. Mill_Background_v040.png
+removes the moving parts from the architectural painting. Mill_Parts_v040.png
+keeps the wheel, gate and railing in separate atlas cells. The runtime uses
+those parts with their corresponding collision bodies and mechanism state.
+Each painting has its built-in ImageGen prompt and provenance beside it;
+the generated source pixels and earlier paintings are preserved.
+Vulkan Forward Mobile uses 4x 2D MSAA and mipmapped paintings. Material-specific
+Kenney CC0 foot contacts remain; movement noise now also affects listeners.
+
+CONTROLS
+A/D or arrows: move | Space/W/Up: jump | Shift: run | S/Down: crouch
+Hold E: search, work or rest | Hold E+A/D against crate: push
+Q: ask him to wait low / call him | H: medicine | Tab: pack/objective
+R: checkpoint recovery | Esc: pause | F11: fullscreen | M: mute
+Controller: left stick/D-pad move, A jump, B crouch, X held work,
+Y wait/call, RB run, Back pack, Start pause.
+
+VERIFICATION AND LIMITS
+Evidence belongs in evidence/v040. DELIVERY_MANIFEST_v040.json records the
+package identity and selected results. release_final/<scenario>/invocation.json
+identifies the final packaged executable, invocation, exit status and timing.
+Final totals remain pending until that exact build completes its checks.
+qa_v040.py retains invocation, executable
+identity, exit status and logs. The new movement-checks, development-checks
+and mill-checks scenarios complement smoke, survival, encounters, journey,
+optional-route, freight-crossing and continuous-traversal checks. The expanded
+animation fixture includes the baseline movement checks, so its results are
+reported separately rather than added again to the functional total.
+export_v040.py records the
+source and executable identity of a native Windows export.
+package_v040.py verifies the frozen source, matching native evidence, nine
+4K captures, full mill movie decode and current terrain audit before creating
+the Windows and editable-source ZIPs. --verify-only writes no delivery files.
+
+Full-journey navigation uses native input, physics, finite supplies, held
+interactions and actual recovery. Targeted scenarios arrange isolated setups
+to measure controller behavior, branch costs, detection and mechanism states.
+Rendered 4K scenes use the actual game renderer; character close views are
+staged. WTSC_Mill_Playthrough_v040.mp4 records native input and physics through
+the mill encounter, separately from full-journey navigation. Older movement
+movies remain studies of their recorded versions. A report verifies only its
+recorded build and scenario. Diagnostic and failed runs remain in the evidence
+history; they do not override the final manifest's selected invocations.
+
+This development build still needs more bespoke acting, animation transitions,
+terrain and prop craft, encounter depth, sound design and human balancing.
+The requested AAA quality remains a production target, not an achieved or
+approved quality claim. Technical checks do not establish artistic acceptance.

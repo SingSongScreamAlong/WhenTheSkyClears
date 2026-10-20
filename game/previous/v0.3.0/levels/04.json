@@ -1,0 +1,606 @@
+{
+  "id": "04",
+  "title": "The last school",
+  "subtitle": "THE RUINED STREET",
+  "epigraph": "The lesson on the board had never been finished.",
+  "objective": "Drain the yard. Find the classrooms beyond it, then the road through the broken library.",
+  "width": 11400,
+  "sky": "#536972",
+  "fog": "#81969d",
+  "cold": 0.7,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1100,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1235,
+      "y": 700,
+      "w": 1525,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 2910,
+      "y": 700,
+      "w": 1210,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 4270,
+      "y": 700,
+      "w": 1230,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 5500,
+      "y": 700,
+      "w": 1800,
+      "h": 600,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 7300,
+      "y": 700,
+      "w": 2200,
+      "h": 600,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          450,
+          0
+        ],
+        [
+          800,
+          52
+        ],
+        [
+          1150,
+          52
+        ],
+        [
+          1500,
+          0
+        ],
+        [
+          2200,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 9500,
+      "y": 700,
+      "w": 1900,
+      "h": 600,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          320,
+          0
+        ],
+        [
+          650,
+          -54
+        ],
+        [
+          1010,
+          -54
+        ],
+        [
+          1380,
+          0
+        ],
+        [
+          1900,
+          0
+        ]
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "x": 670,
+      "y": 642,
+      "w": 160,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 1600,
+      "y": 640,
+      "w": 160,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 1810,
+      "y": 580,
+      "w": 210,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 3320,
+      "y": 640,
+      "w": 200,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 4530,
+      "y": 640,
+      "w": 160,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 6640,
+      "y": 640.0,
+      "w": 150,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 6830,
+      "y": 580.0,
+      "w": 220,
+      "h": 22,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "school",
+    "battlefield"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 300,
+      "y": 700,
+      "label": "SCHOOL"
+    },
+    {
+      "kind": "barricade",
+      "x": 1440,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 1960,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 3650,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 4830,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 6190,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 6780,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 8480,
+      "y": 747.54,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 9280,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 11160,
+      "y": 700.0,
+      "label": "THE FIELDS"
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 780,
+      "y": 700,
+      "label": "A lunchbox in the rubble",
+      "id": "school_food",
+      "rations": 2,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "wheel",
+      "x": 2300,
+      "y": 700,
+      "label": "Open the old service passage",
+      "id": "school_gate",
+      "hold_seconds": 2.0
+    },
+    {
+      "kind": "cache",
+      "x": 3190,
+      "y": 700,
+      "label": "The caretaker’s cupboard",
+      "id": "school_cupboard",
+      "medicine": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "fire",
+      "x": 3800,
+      "y": 700,
+      "label": "A flame out of the rain",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 4780,
+      "y": 700,
+      "label": "A blanket and a biscuit",
+      "id": "school_blanket",
+      "rations": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 5670,
+      "y": 700.0,
+      "label": "The school kitchen’s biscuit tin",
+      "hold_seconds": 1.2,
+      "id": "school_kitchen_tin",
+      "rations": 2,
+      "scrap": 2,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 5850,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "relay",
+      "x": 6330,
+      "y": 700.0,
+      "label": "Lift the fallen classroom shelf together",
+      "hold_seconds": 3.2,
+      "id": "school_shelf",
+      "companion_required": true
+    },
+    {
+      "kind": "cache",
+      "x": 6930,
+      "y": 580.0,
+      "label": "A blanket in the sports cupboard",
+      "hold_seconds": 1.2,
+      "id": "school_sports_cupboard",
+      "optional": true,
+      "route": "raised_supply_spur",
+      "rations": 1,
+      "medicine": 1,
+      "scrap": 0
+    },
+    {
+      "kind": "brace",
+      "x": 7350,
+      "y": 700.0,
+      "label": "Prop up the library awning · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "school_library_awning",
+      "optional": true
+    },
+    {
+      "kind": "cache",
+      "x": 8890,
+      "y": 700.0,
+      "label": "A flask and bread in the staff room",
+      "hold_seconds": 1.2,
+      "id": "school_staff_flask",
+      "rations": 2,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 9070,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 9510,
+      "y": 700.0,
+      "label": "Stack the fallen desks out of the way",
+      "hold_seconds": 2.8,
+      "id": "school_desks"
+    },
+    {
+      "kind": "pump",
+      "x": 3190,
+      "y": 700,
+      "id": "school_drain",
+      "label": "Work the old drainage pump",
+      "hold_seconds": 4.0
+    }
+  ],
+  "gates": [
+    {
+      "x": 2550,
+      "y": 700,
+      "h": 220,
+      "key": "school_gate"
+    },
+    {
+      "x": 3520,
+      "y": 700,
+      "h": 160,
+      "key": "school_drain"
+    },
+    {
+      "x": 6570,
+      "y": 700.0,
+      "h": 190,
+      "key": "school_shelf",
+      "kind": "fallen_shelf"
+    },
+    {
+      "x": 9720,
+      "y": 700.0,
+      "h": 190,
+      "key": "school_desks",
+      "kind": "fallen_desks"
+    }
+  ],
+  "covers": [
+    {
+      "x": 780,
+      "w": 180,
+      "kind": "wall"
+    },
+    {
+      "x": 1680,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 2390,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 3300,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 3860,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 4670,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 5815,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 7420,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 8140,
+      "w": 300,
+      "kind": "wall",
+      "y": 752.0
+    },
+    {
+      "x": 9035,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 10270,
+      "w": 300,
+      "kind": "wall",
+      "y": 646.0
+    },
+    {
+      "x": 10990,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    }
+  ],
+  "danger": [
+    500,
+    5000
+  ],
+  "searchlight": false,
+  "memories": [
+    {
+      "x": 1890,
+      "y": 540,
+      "id": "lesson",
+      "text": "Tomorrow, the teacher had written. Nothing after that."
+    },
+    {
+      "x": 4600,
+      "y": 600,
+      "id": "shoe",
+      "text": "A small shoe beside the road. She turned him away from it."
+    },
+    {
+      "x": 6110,
+      "y": 630.0,
+      "id": "coathooks",
+      "text": "Small coats hung from the hooks. The sleeves waited for hands."
+    },
+    {
+      "x": 8810,
+      "y": 630.0,
+      "id": "small_chair",
+      "text": "He straightened a chair. Then another. She waited by the door."
+    },
+    {
+      "x": 10000,
+      "y": 600.55,
+      "id": "lesson_after_rain",
+      "text": "On a dry scrap: after the rain, draw what you see."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1350,
+    3020,
+    4380,
+    5815,
+    6080,
+    6800,
+    8860,
+    9035,
+    9300,
+    10900,
+    11000
+  ],
+  "tutorials": [
+    {
+      "x": 450,
+      "text": "Cold and rain take their strength. Fires cost one ration; use them wisely."
+    },
+    {
+      "x": 3090,
+      "text": "H  uses medicine. TAB  opens the pack and survival notes."
+    },
+    {
+      "x": 3040,
+      "text": "Water will soak their clothes and steal their warmth. Find the caretaker’s pump."
+    },
+    {
+      "x": 7390,
+      "text": "The books are wet. The roof is loose. One piece of salvage makes a dry way through."
+    },
+    {
+      "x": 10220,
+      "text": "The wall is long enough for two. Wait for the light to turn away."
+    }
+  ],
+  "build": "0.3.0",
+  "bridges": [],
+  "pushables": [],
+  "water_zones": [
+    {
+      "x": 2970,
+      "w": 570,
+      "top": 684,
+      "key": "school_drain"
+    }
+  ],
+  "safe_zones": [
+    {
+      "x": 3840,
+      "w": 310
+    },
+    {
+      "x": 5815,
+      "w": 400
+    },
+    {
+      "x": 9035,
+      "w": 400
+    }
+  ],
+  "hazard_lanes": [
+    {
+      "x": 7570,
+      "w": 420,
+      "kind": "debris",
+      "period": 11.5,
+      "active": 2.1,
+      "offset": 3.0,
+      "key": "school_library_awning"
+    },
+    {
+      "x": 10420,
+      "w": 420,
+      "kind": "sweep",
+      "period": 12.0,
+      "active": 2.0,
+      "offset": 7.0
+    }
+  ],
+  "zones": [
+    {
+      "x": 0,
+      "w": 5500,
+      "theme": "school_courtyard"
+    },
+    {
+      "x": 5500,
+      "w": 1800,
+      "theme": "school_courtyard"
+    },
+    {
+      "x": 7300,
+      "w": 2200,
+      "theme": "rain_gully"
+    },
+    {
+      "x": 9500,
+      "w": 1900,
+      "theme": "school_courtyard"
+    }
+  ],
+  "route_length_units": 11400,
+  "original_route_end": 5500
+}

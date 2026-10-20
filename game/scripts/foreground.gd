@@ -4,9 +4,11 @@ func _ready(): texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 func _process(_dt): queue_redraw()
 func _draw():
 	if game==null or game.world==null or game.level.is_empty(): return
+	for mill in game.get("mill_encounters") if game.get("mill_encounters")!=null else []:
+		if is_instance_valid(mill): mill.draw_foreground(self)
 	for c in game.level.covers:
 		if c.kind=="wall":
-			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w+20,82,Color(.48,.57,.55))
+			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w+20,82,Color(.56,.65,.63))
 	# Foot-level foreground accents sit in front of the actors; major scenery
 	# stays behind them, so stealth reads without hiding the route.
 	var left=game.camera.position.x-800
@@ -17,9 +19,23 @@ func _draw():
 		var wind=sin(game.clock*1.3+i)*2
 		var height=4+game.world.noise_at(i)*7
 		var theme=game.world.zone_at(x)
-		if theme=="school_courtyard" or theme=="rail_yard": height*=.5
+		if theme in ["school_courtyard","rail_yard","shattered_arcade","signal_yard","drainage_tunnel"]: height*=.5
 		draw_polyline(PackedVector2Array([Vector2(x,y+3),Vector2(x+wind+2,y-height*.5),Vector2(x+wind+5,y-height)]),Color(.10,.16,.14,.65),1.1,true)
-		if theme=="rain_gully" and i%7==0:
+		if theme in ["rain_gully","canal"] and i%7==0:
 			for reed in range(3):
 				var bend=wind*(1+reed*.3)
 				draw_polyline(PackedVector2Array([Vector2(x+reed*4,y+3),Vector2(x+reed*4+bend,y-11),Vector2(x+reed*4+bend*2,y-19+reed*3)]),Color(.12,.20,.16,.52),.8,true)
+	# These small foreground arcs sit over the ankles only where water is
+	# physically deep enough. The dry raised route keeps its clear silhouette.
+	for water in game.level.get("water_zones",[]):
+		var water_y=float(water.top)+float(game.water_offsets.get(water.key,0))
+		for child in [game.player,game.boy]:
+			if child==null or child.position.x<water.x or child.position.x>water.x+water.w: continue
+			if child.position.y<water_y-3 or child.position.y>water_y+84: continue
+			var speed=clampf(absf(child.velocity.x)/90.0,0,1)
+			var spread=fposmod(game.clock*1.25+child.position.x*.01,1.0)
+			draw_set_transform(Vector2(child.position.x,water_y+2),0,Vector2(1,.20))
+			for ring in range(2):
+				var radius=9+spread*12+ring*7
+				draw_arc(Vector2.ZERO,radius,0,PI,18,Color(.43,.59,.55,(.14+.09*speed)*(1-spread)),1.3,true)
+			draw_set_transform(Vector2.ZERO,0,Vector2.ONE)

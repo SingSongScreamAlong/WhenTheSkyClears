@@ -1,0 +1,82 @@
+WHEN THE SKY CLEARS — JOURNEY DESIGN 0.4.0
+
+The five chapters now span 79,200 authored world units, up from 56,000.
+Length alone is not the goal. The new sectors ask how the two children will
+get through, what they will spend, and which risks they will carry together.
+
+TWO PHYSICAL FORKS
+The woods canal and shattered school arcade each contain two playable levels
+of terrain. The lower way is continuous ground, but it holds cold water and
+passes a listening post. A slow crouched crossing can remain quiet without
+spending salvage. Walking through water or rushing risks detection during
+the listening interval. A one-salvage pump drains the lower way; both children
+must help with the work.
+
+The upper way is a real stepped boardwalk/gallery above the water and the
+listening lane. Jumping onto its boards is a choice: one-way platform tops
+allow the children to stay on the ground underneath. Both children can climb.
+A crossbar blocks only the upper passage and takes one salvage to secure.
+Beyond it, dry food and medicine reward the climb. A salvage piece in the
+approach can drain the low way OR open the high one. It cannot pay both costs.
+Existing inventory from earlier decisions may change what is possible.
+
+These are physical route alternatives, not a menu or a cosmetic raised strip.
+The upper route's foot height is outside the lower hazard's vertical bounds.
+Water also checks actual feet, so the high route remains dry. The routes
+rejoin on safe ground. No compulsory death gap forces a route selection.
+
+NEW SITUATIONS BY CHAPTER
+VILLAGE: terraced mill gardens, an exposed floodbank, a coat worth searching
+for medicine, a beam needing four hands, and a mill roof that can consume
+salvage or be crossed between falls. The roots at the mill exit take time.
+
+WOODS: the drainage mouth opens into the first route choice. Below are water,
+cold and the listening post. Above are the towing-path boards and a dry
+medicine case. The signal hut offers warmth after either crossing; sleepers
+block the road beyond it. Keeping the medicine dry is an environmental beat.
+Beyond the hut is a physical mill encounter. Its bridge deck spans an actual
+gap; the fence rails, wheel and gate belong to the same staged construction.
+Two board steps lead onto the wheel. A child's weight strains the frame,
+then starts a warning before the wheel breaks free and rolls to the right.
+The moving wheel pulls the visible tether, and the gate rises only after
+240 pixels of real wheel travel. There is no held switch that opens it.
+Both children must retreat out of the wheel's path. The ground beneath the
+wheel remains continuous, with clear room behind it and beyond the gate.
+
+CAMP: a drainage way leads below the freight road, then into the signal yard.
+The light can be crossed in its quiet interval. Alternatively, the children
+can stop together at the signal crank and permanently turn it away. A supply
+box is exposed before that decision. The broken station arcade leads onward.
+
+SCHOOL: the kitchen approach offers another scarce salvage piece. The broken
+arcade repeats the canal decision in a longer, different space: a flooded
+ground gallery under a listening window, or a dry nurse's satchel in the
+upper gallery. A damaged greenhouse and living soil follow the reunion point.
+
+ASH: new living terraces rise and fall after the previous final approach.
+Wind catches the high ground. A fallen garden trellis takes both children,
+and another greenhouse beam can be made safe before the last doorway. The
+final interaction remains taking his hand; it now stands at x=13,900.
+
+SUPPLIES AND CONSEQUENCES
+Across the complete authored journey, caches contain 26 food portions,
+18 salvage pieces and 13 medicines. These are finite world totals, not
+starting inventory or guaranteed main-route rewards. Food is concentrated
+at selected refuges; many tool searches supply only salvage, and the six
+earlier raised spurs now usually reward medicine. The first legacy caches
+and the camp's three accessible pre-door salvage pieces are preserved.
+
+New approach caches and sheltered fires support the added distance, while
+packs remain finite. The salvage pack holds three pieces. Medicine and two
+food portions on each high route compete with the effort,
+time and salvage needed to get there. Cold water can turn a saved salvage
+piece into a later need for food or medicine. Leaving the boy below while
+the girl searches above leaves him exposed; his route must be planned too.
+
+BUILD AND REVIEW BOUNDARY
+The deterministic authoring script reads previous/v0.3.0/levels and preserves
+earlier encounter positions. It validates terrain slopes below 18 degrees,
+route metadata, finite cache IDs, interaction ordering and timing windows.
+These are data checks. Native physics, both branch traversals, survival and
+listening consequences need their separate runtime evidence. Route length is
+measured data, not a claim of human playtime, balance or AAA completion.

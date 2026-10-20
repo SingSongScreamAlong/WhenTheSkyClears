@@ -3,8 +3,8 @@
   "title": "The last school",
   "subtitle": "THE RUINED STREET",
   "epigraph": "The lesson on the board had never been finished.",
-  "objective": "Drain the yard. Find the classrooms beyond it, then the road through the broken library.",
-  "width": 11400,
+  "objective": "Past the classrooms, choose the broken arcade: a wet quiet way below, or the dry upper gallery.",
+  "width": 15400,
   "sky": "#536972",
   "fog": "#81969d",
   "cold": 0.7,
@@ -119,6 +119,101 @@
           0
         ]
       ]
+    },
+    {
+      "x": 11400,
+      "y": 700,
+      "w": 700,
+      "h": 650,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          400,
+          0
+        ],
+        [
+          520,
+          24
+        ],
+        [
+          590,
+          24
+        ],
+        [
+          700,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 12100,
+      "y": 700,
+      "w": 2200,
+      "h": 650,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          160,
+          0
+        ],
+        [
+          460,
+          60
+        ],
+        [
+          1600,
+          60
+        ],
+        [
+          2070,
+          0
+        ],
+        [
+          2200,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 14300,
+      "y": 700,
+      "w": 1100,
+      "h": 650,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          260,
+          0
+        ],
+        [
+          530,
+          -64
+        ],
+        [
+          790,
+          -64
+        ],
+        [
+          1060,
+          0
+        ],
+        [
+          1100,
+          0
+        ]
+      ]
     }
   ],
   "platforms": [
@@ -170,6 +265,56 @@
       "w": 220,
       "h": 22,
       "kind": "stone"
+    },
+    {
+      "x": 12140,
+      "y": 640,
+      "w": 150,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "school_arcade_high"
+    },
+    {
+      "x": 12330,
+      "y": 580,
+      "w": 150,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "school_arcade_high"
+    },
+    {
+      "x": 12520,
+      "y": 540,
+      "w": 1220,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "school_arcade_high"
+    },
+    {
+      "x": 13780,
+      "y": 600,
+      "w": 170,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "school_arcade_high"
+    },
+    {
+      "x": 13990,
+      "y": 650,
+      "w": 170,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "school_arcade_high"
     }
   ],
   "scenery": [
@@ -236,6 +381,36 @@
       "x": 11160,
       "y": 700.0,
       "label": "THE FIELDS"
+    },
+    {
+      "kind": "bench",
+      "x": 11770,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 12120,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 13650,
+      "y": 760.0,
+      "label": ""
+    },
+    {
+      "kind": "well",
+      "x": 14490,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 15280,
+      "y": 681.037,
+      "label": "THE GARDENS"
     }
   ],
   "interact": [
@@ -246,7 +421,8 @@
       "label": "A lunchbox in the rubble",
       "id": "school_food",
       "rations": 2,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "scrap": 0
     },
     {
       "kind": "wheel",
@@ -264,7 +440,8 @@
       "id": "school_cupboard",
       "medicine": 1,
       "scrap": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "rations": 0
     },
     {
       "kind": "fire",
@@ -280,7 +457,8 @@
       "label": "A blanket and a biscuit",
       "id": "school_blanket",
       "rations": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "scrap": 0
     },
     {
       "kind": "cache",
@@ -289,8 +467,8 @@
       "label": "The school kitchen’s biscuit tin",
       "hold_seconds": 1.2,
       "id": "school_kitchen_tin",
-      "rations": 2,
-      "scrap": 2,
+      "rations": 1,
+      "scrap": 0,
       "medicine": 0
     },
     {
@@ -318,7 +496,7 @@
       "id": "school_sports_cupboard",
       "optional": true,
       "route": "raised_supply_spur",
-      "rations": 1,
+      "rations": 0,
       "medicine": 1,
       "scrap": 0
     },
@@ -335,10 +513,10 @@
       "kind": "cache",
       "x": 8890,
       "y": 700.0,
-      "label": "A flask and bread in the staff room",
+      "label": "The caretaker’s ties and wire in the staff room",
       "hold_seconds": 1.2,
       "id": "school_staff_flask",
-      "rations": 2,
+      "rations": 0,
       "scrap": 1,
       "medicine": 0
     },
@@ -356,6 +534,85 @@
       "label": "Stack the fallen desks out of the way",
       "hold_seconds": 2.8,
       "id": "school_desks"
+    },
+    {
+      "kind": "cache",
+      "x": 11580,
+      "y": 700.0,
+      "label": "Wire in a dry kitchen tin",
+      "hold_seconds": 1.2,
+      "id": "arcade_approach_food",
+      "rations": 0,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 11760,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "pump",
+      "x": 12010,
+      "y": 719.636,
+      "label": "Drain the arcade · 1 salvage · both children",
+      "hold_seconds": 4.0,
+      "id": "school_arcade_drain",
+      "scrap_cost": 1,
+      "companion_required": true,
+      "optional": true
+    },
+    {
+      "kind": "brace",
+      "x": 12720,
+      "y": 540,
+      "label": "Lash the upper passage open · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "school_arcade_crossbar",
+      "optional": true,
+      "route": "school_arcade_high"
+    },
+    {
+      "kind": "cache",
+      "x": 13320,
+      "y": 540,
+      "label": "The nurse’s dry satchel in the upper gallery",
+      "hold_seconds": 1.2,
+      "id": "school_arcade_satchel",
+      "optional": true,
+      "route": "branch_supply",
+      "branch": "school_arcade_high",
+      "rations": 2,
+      "medicine": 1,
+      "scrap": 0
+    },
+    {
+      "kind": "cache",
+      "x": 14290,
+      "y": 700.0,
+      "label": "A bundle of useful ties in the greenhouse corner",
+      "hold_seconds": 1.2,
+      "id": "library_garden_food",
+      "rations": 0,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 14470,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 14840,
+      "y": 636.0,
+      "label": "Move the greenhouse frames from the road",
+      "hold_seconds": 2.8,
+      "id": "school_greenhouse_frames"
     },
     {
       "kind": "pump",
@@ -392,6 +649,20 @@
       "h": 190,
       "key": "school_desks",
       "kind": "fallen_desks"
+    },
+    {
+      "x": 12830,
+      "y": 540,
+      "h": 174,
+      "key": "school_arcade_crossbar",
+      "kind": "upper_crossbar"
+    },
+    {
+      "x": 15060,
+      "y": 636.0,
+      "h": 190,
+      "key": "school_greenhouse_frames",
+      "kind": "fallen_shelf"
     }
   ],
   "covers": [
@@ -460,6 +731,36 @@
       "w": 300,
       "kind": "wall",
       "y": 700.0
+    },
+    {
+      "x": 11725,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 13320,
+      "w": 230,
+      "kind": "tent",
+      "y": 540
+    },
+    {
+      "x": 12470,
+      "w": 300,
+      "kind": "wall",
+      "y": 742.0
+    },
+    {
+      "x": 13530,
+      "w": 300,
+      "kind": "wall",
+      "y": 760.0
+    },
+    {
+      "x": 14435,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
     }
   ],
   "danger": [
@@ -497,6 +798,24 @@
       "y": 600.55,
       "id": "lesson_after_rain",
       "text": "On a dry scrap: after the rain, draw what you see."
+    },
+    {
+      "x": 11960,
+      "y": 660.0,
+      "id": "arcade_cooking_marks",
+      "text": "Pencil marks beside the kitchen door measured someone growing taller."
+    },
+    {
+      "x": 13330,
+      "y": 475,
+      "id": "arcade_sun_paper",
+      "text": "A yellow paper sun. There was still a fold where it had been held."
+    },
+    {
+      "x": 14680,
+      "y": 607.556,
+      "id": "greenhouse_soil",
+      "text": "He brushed the broken glass away from a little square of soil."
     }
   ],
   "checkpoints": [
@@ -511,7 +830,13 @@
     9035,
     9300,
     10900,
-    11000
+    11000,
+    11725,
+    12060,
+    14220,
+    14435,
+    14500,
+    15220
   ],
   "tutorials": [
     {
@@ -533,9 +858,21 @@
     {
       "x": 10220,
       "text": "The wall is long enough for two. Wait for the light to turn away."
+    },
+    {
+      "x": 11960,
+      "text": "Two ways: the water below, or the boards above. One piece of salvage can make either way safer."
+    },
+    {
+      "x": 12270,
+      "text": "Jump onto the upper boards to climb. Keep walking underneath to take the lower way."
+    },
+    {
+      "x": 12430,
+      "text": "The water makes every footstep louder. A crouched crossing is slow but quiet. Keep him beside you."
     }
   ],
-  "build": "0.3.0",
+  "build": "0.4.0",
   "bridges": [],
   "pushables": [],
   "water_zones": [
@@ -544,6 +881,12 @@
       "w": 570,
       "top": 684,
       "key": "school_drain"
+    },
+    {
+      "x": 12620,
+      "w": 760,
+      "top": 744,
+      "key": "school_arcade_drain"
     }
   ],
   "safe_zones": [
@@ -558,6 +901,14 @@
     {
       "x": 9035,
       "w": 400
+    },
+    {
+      "x": 11725,
+      "w": 390
+    },
+    {
+      "x": 14435,
+      "w": 390
     }
   ],
   "hazard_lanes": [
@@ -577,6 +928,15 @@
       "period": 12.0,
       "active": 2.0,
       "offset": 7.0
+    },
+    {
+      "x": 12620,
+      "w": 760,
+      "kind": "listener",
+      "period": 17.0,
+      "active": 3.0,
+      "offset": 8.0,
+      "feet_min_y": 650
     }
   ],
   "zones": [
@@ -599,8 +959,51 @@
       "x": 9500,
       "w": 1900,
       "theme": "school_courtyard"
+    },
+    {
+      "x": 11400,
+      "w": 700,
+      "theme": "drainage_tunnel",
+      "caption": "Behind the school kitchens"
+    },
+    {
+      "x": 12100,
+      "w": 2200,
+      "theme": "shattered_arcade",
+      "caption": "The broken gallery"
+    },
+    {
+      "x": 14300,
+      "w": 1100,
+      "theme": "terraced_garden",
+      "caption": "The garden behind the library"
     }
   ],
-  "route_length_units": 11400,
-  "original_route_end": 5500
+  "route_length_units": 15400,
+  "original_route_end": 5500,
+  "previous_route_end": 11400,
+  "branch_routes": [
+    {
+      "id": "school_arcade_high",
+      "entry_x": 12120,
+      "exit_x": 14220,
+      "from_x": 12120,
+      "to_x": 14220,
+      "upper_y": 540,
+      "lower_y": 760,
+      "safe_key": "school_arcade_crossbar",
+      "cache_id": "school_arcade_satchel",
+      "pump_id": "school_arcade_drain",
+      "cost": 1,
+      "platform_indices": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "description": "The lower canal costs warmth and makes noise. Spend one salvage at the pump to drain it, or climb and spend that salvage on the upper crossbar. The upper path stays dry and reaches a finite food/medicine cache. Crouching quietly through the lower water remains a no-salvage alternative."
+    }
+  ],
+  "mechanisms": []
 }

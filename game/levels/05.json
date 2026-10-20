@@ -3,8 +3,8 @@
   "title": "The hand that stayed",
   "subtitle": "THE ASH FIELDS",
   "epigraph": "There was no promise of morning. Only another step.",
-  "objective": "Stay together. Follow the gardens beyond the ash. There is still a doorway ahead.",
-  "width": 10800,
+  "objective": "There are gardens beyond the ash. Keep a little strength for both of you. Keep going together.",
+  "width": 14200,
   "sky": "#788992",
   "fog": "#b0b9b8",
   "cold": 0.12,
@@ -116,6 +116,105 @@
         ],
         [
           1600,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 10800,
+      "y": 700,
+      "w": 1200,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          260,
+          0
+        ],
+        [
+          570,
+          -92
+        ],
+        [
+          840,
+          -92
+        ],
+        [
+          1170,
+          0
+        ],
+        [
+          1200,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 12000,
+      "y": 700,
+      "w": 1200,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          220,
+          0
+        ],
+        [
+          500,
+          38
+        ],
+        [
+          790,
+          38
+        ],
+        [
+          1100,
+          0
+        ],
+        [
+          1200,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 13200,
+      "y": 700,
+      "w": 1000,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          220,
+          0
+        ],
+        [
+          450,
+          -44
+        ],
+        [
+          650,
+          -44
+        ],
+        [
+          850,
+          0
+        ],
+        [
+          1000,
           0
         ]
       ]
@@ -231,6 +330,30 @@
       "x": 10680,
       "y": 700.0,
       "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 11080,
+      "y": 694.065,
+      "label": ""
+    },
+    {
+      "kind": "well",
+      "x": 12220,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 13040,
+      "y": 707.355,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 13980,
+      "y": 684.6,
+      "label": ""
     }
   ],
   "interact": [
@@ -242,7 +365,8 @@
       "id": "ash_parcel",
       "rations": 1,
       "medicine": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "scrap": 0
     },
     {
       "kind": "fire",
@@ -258,8 +382,8 @@
       "label": "A seed tin with bread beneath it",
       "hold_seconds": 1.2,
       "id": "ash_garden_tin",
-      "rations": 2,
-      "scrap": 1,
+      "rations": 1,
+      "scrap": 0,
       "medicine": 0
     },
     {
@@ -286,7 +410,7 @@
       "id": "garden_ledge",
       "optional": true,
       "route": "raised_supply_spur",
-      "rations": 1,
+      "rations": 0,
       "medicine": 1,
       "scrap": 0
     },
@@ -303,10 +427,10 @@
       "kind": "cache",
       "x": 9230,
       "y": 700.0,
-      "label": "A place set for someone who did not return",
+      "label": "A repaired cup and a length of garden wire",
       "hold_seconds": 1.2,
       "id": "garden_table",
-      "rations": 1,
+      "rations": 0,
       "scrap": 1,
       "medicine": 0
     },
@@ -327,9 +451,75 @@
       "optional": true
     },
     {
+      "kind": "cache",
+      "x": 10870,
+      "y": 700.0,
+      "label": "Bread beneath a packet of seeds",
+      "hold_seconds": 1.2,
+      "id": "terrace_seed_tin",
+      "rations": 1,
+      "scrap": 0,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 11050,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "relay",
+      "x": 12350,
+      "y": 717.643,
+      "label": "Lift the garden trellis together",
+      "hold_seconds": 3.2,
+      "id": "ash_garden_trellis",
+      "companion_required": true
+    },
+    {
+      "kind": "cache",
+      "x": 12910,
+      "y": 723.29,
+      "label": "A bandage in a bowl beneath a dry stone",
+      "hold_seconds": 1.2,
+      "id": "terrace_bowl",
+      "rations": 0,
+      "optional": true,
+      "scrap": 0,
+      "medicine": 1
+    },
+    {
+      "kind": "cache",
+      "x": 13110,
+      "y": 700.0,
+      "label": "A little bread in a folded cloth",
+      "hold_seconds": 1.2,
+      "id": "terrace_last_supper",
+      "rations": 1,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 13290,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "brace",
+      "x": 13500,
+      "y": 684.696,
+      "label": "Tie the greenhouse beam · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "ash_greenhouse_beam",
+      "optional": true
+    },
+    {
       "kind": "end",
-      "x": 10500,
-      "y": 700,
+      "x": 13900,
+      "y": 667.0,
       "label": "Take his hand",
       "hold_seconds": 2.0
     }
@@ -347,6 +537,13 @@
       "y": 700.0,
       "h": 190,
       "key": "ash_branch",
+      "kind": "fallen_bough"
+    },
+    {
+      "x": 12590,
+      "y": 738.0,
+      "h": 190,
+      "key": "ash_garden_trellis",
       "kind": "fallen_bough"
     }
   ],
@@ -401,6 +598,42 @@
       "w": 300,
       "kind": "wall",
       "y": 700.0
+    },
+    {
+      "x": 11015,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 11370,
+      "w": 300,
+      "kind": "wall",
+      "y": 608.0
+    },
+    {
+      "x": 12030,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 13255,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 13470,
+      "w": 300,
+      "kind": "wall",
+      "y": 690.435
+    },
+    {
+      "x": 13990,
+      "w": 300,
+      "kind": "wall",
+      "y": 686.8
     }
   ],
   "memories": [
@@ -433,6 +666,24 @@
       "y": 586.0,
       "id": "blue_thread",
       "text": "The ribbon was almost grey. She tied it twice again."
+    },
+    {
+      "x": 11280,
+      "y": 570.71,
+      "id": "terrace_first_leaf",
+      "text": "The green was too small to see from the road. He had seen it first."
+    },
+    {
+      "x": 12740,
+      "y": 674.0,
+      "id": "terrace_water",
+      "text": "He cupped his hands below the slow drip. She waited until they were steady."
+    },
+    {
+      "x": 13860,
+      "y": 594.2,
+      "id": "terrace_ribbon",
+      "text": "She tied the ribbon twice. This time he held the ends."
     }
   ],
   "checkpoints": [
@@ -446,7 +697,13 @@
     8540,
     9280,
     9375,
-    10600
+    10600,
+    11015,
+    12000,
+    12680,
+    13200,
+    13255,
+    13870
   ],
   "tutorials": [
     {
@@ -454,7 +711,7 @@
       "text": "Stay close. There is still a road ahead."
     },
     {
-      "x": 10400,
+      "x": 13830,
       "text": "Some things survive because we carry them together."
     },
     {
@@ -464,9 +721,17 @@
     {
       "x": 10060,
       "text": "The last few steps can still hurt. Secure the awning, or wait beneath the wall."
+    },
+    {
+      "x": 11330,
+      "text": "The high terraces catch the wind first. Slow down before he spends the last of his strength."
+    },
+    {
+      "x": 13400,
+      "text": "One more roof. One more choice to make before he passes beneath it."
     }
   ],
-  "build": "0.3.0",
+  "build": "0.4.0",
   "bridges": [],
   "pushables": [],
   "water_zones": [],
@@ -482,6 +747,14 @@
     {
       "x": 9375,
       "w": 400
+    },
+    {
+      "x": 11015,
+      "w": 390
+    },
+    {
+      "x": 13255,
+      "w": 390
     }
   ],
   "hazard_lanes": [
@@ -501,6 +774,23 @@
       "active": 2.0,
       "offset": 2.0,
       "key": "ash_awning"
+    },
+    {
+      "x": 11520,
+      "w": 360,
+      "kind": "wind",
+      "period": 13.0,
+      "active": 2.4,
+      "offset": 1.0
+    },
+    {
+      "x": 13620,
+      "w": 220,
+      "kind": "debris",
+      "period": 12.0,
+      "active": 2.0,
+      "offset": 5.0,
+      "key": "ash_greenhouse_beam"
     }
   ],
   "zones": [
@@ -523,8 +813,29 @@
       "x": 9200,
       "w": 1600,
       "theme": "ash_garden"
+    },
+    {
+      "x": 10800,
+      "w": 1200,
+      "theme": "terraced_garden",
+      "caption": "The first living terraces"
+    },
+    {
+      "x": 12000,
+      "w": 1200,
+      "theme": "canal",
+      "caption": "The garden watercourse"
+    },
+    {
+      "x": 13200,
+      "w": 1000,
+      "theme": "terraced_garden",
+      "caption": "The hand that stayed"
     }
   ],
-  "route_length_units": 10800,
-  "original_route_end": 5700
+  "route_length_units": 14200,
+  "original_route_end": 5700,
+  "previous_route_end": 10800,
+  "branch_routes": [],
+  "mechanisms": []
 }

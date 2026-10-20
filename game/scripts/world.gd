@@ -20,6 +20,13 @@ func _ready():
 	# rectangles retain every visible painted edge and align feet to the route.
 	var painted_bounds={"Battlefield":Rect2(0,133,1672,690),"Camp":Rect2(1,391,1670,349),"Distant_Hills":Rect2(0,505,1672,436),"Foreground_Tree":Rect2(35,6,1470,993),"School":Rect2(10,174,1648,575),"Village_Empty":Rect2(0,180,1671,600),"Village_Warm":Rect2(1,182,1669,599),"Woods":Rect2(0,59,1672,724)}
 	for key in painted_bounds: bounds[key]=painted_bounds[key]
+	# New focal art is optional while source work is in progress. Existing
+	# editions remain editable without a missing preload dependency.
+	var canal_path="res://assets/environments/Canal_v040.png"
+	if ResourceLoader.exists(canal_path):
+		var canal=load(canal_path)
+		textures["Canal"]=canal
+		bounds["Canal"]=canal.get_image().get_used_rect()
 	rng.seed = 271019
 	# All small dressing is sampled in world coordinates around the camera.
 	# Long chapters keep the same density without allocating a chapter of plants.
@@ -27,11 +34,19 @@ func _ready():
 func art(key, x, bottom, width, tint = Color.WHITE):
 	var r = bounds[key]
 	var h = width * float(r.size.y)/float(r.size.x)
+	if key in ["Rail_Yard","Canal"]: tint=material_tint(tint,.65)
 	draw_texture_rect_region(textures[key],Rect2(x,bottom-h,width,h),r,tint)
+
+func material_tint(tint,amount=.75):
+	# Source paint already contains light, wear and warm material color. Keep
+	# it visible instead of multiplying every foreground object into green ink.
+	var result=tint.lerp(Color(.93,.91,.84,tint.a),amount)
+	result.a=tint.a
+	return result
 
 func scenery(key, factor, width, bottom, tint):
 	var left = game.camera.position.x - 800
-	var soft=key in ["Battlefield","Distant_Hills"]
+	var soft=key in ["Battlefield","Distant_Hills","Woods"]
 	var advance=width*.82 if soft else width
 	var offset = fposmod(-left*factor,advance)
 	for i in range(-1,2):
@@ -72,19 +87,19 @@ func _draw():
 	match game.chapter:
 		0:
 			scenery("Village_Warm",.48,1750,692,Color(.82,.83,.71,.88))
-			art("Woods",4100,703,1600,Color(.44,.56,.48,.8))
+			art("Woods",4100,703,1600,Color(.61,.68,.58,.70))
 		1:
-			scenery("Woods",.38,1800,715,Color(.44,.57,.56,.9))
-			scenery("Woods",.65,2100,720,Color(.37,.47,.46,.8))
+			scenery("Woods",.38,1800,715,Color(.60,.68,.63,.72))
+			scenery("Woods",.65,2100,720,Color(.55,.62,.55,.66))
 		2:
-			scenery("Battlefield",.24,2150,685,Color(.44,.52,.58,.8))
-			scenery("Camp",.61,1700,703,Color(.64,.68,.7,.85))
+			scenery("Battlefield",.24,2150,685,Color(.57,.65,.68,.68))
+			scenery("Camp",.61,1700,703,Color(.76,.78,.76,.73))
 		3:
-			scenery("Battlefield",.26,2200,700,Color(.54,.61,.66,.9))
+			scenery("Battlefield",.26,2200,700,Color(.64,.71,.74,.73))
 			art("School",980,700,1760,Color(.73,.76,.77,.9))
-			art("Village_Empty",3400,705,1900,Color(.48,.57,.61,.85))
+			art("Village_Empty",3400,705,1900,Color(.70,.75,.74,.78))
 		4:
-			scenery("Battlefield",.22,2500,700,Color(.53,.60,.65,.7))
+			scenery("Battlefield",.22,2500,700,Color(.67,.74,.75,.68))
 			# Monumental title forms belong to the world, behind the traversable bases.
 			for pair in [["WHEN",1700,435],["THE SKY",2950,460],["CLEARS",4330,420]]:
 				draw_string(font,Vector2(pair[1],pair[2]),pair[0],HORIZONTAL_ALIGNMENT_LEFT,-1,210,Color(.12,.18,.21,.71))
@@ -99,16 +114,21 @@ func _draw():
 	draw_rect(Rect2(left,700,1600,600),Color("23363b") if game.chapter>1 else Color("2e3930"))
 	for i in range(10): draw_rect(Rect2(left,720+i*28,1600,29),Color(.04,.08,.09,.035+i*.035))
 	draw_zone_dressing(left)
+	for mill in game.get("mill_encounters") if game.get("mill_encounters")!=null else []:
+		if is_instance_valid(mill): mill.draw_background(self)
 	for g in l.ground: terrain(g,true)
 	for p in l.platforms: terrain(p,false)
 	for bridge in l.get("bridges",[]): draw_bridge(bridge)
 	for water in l.get("water_zones",[]): draw_water(water)
+	draw_route_details(left)
+	draw_actor_contacts()
 	for c in l.covers: cover(c)
 	for p in l.props: prop(p)
 	for p in l.interact: interact_prop(p)
 	for g in l.gates: gate(g)
 	for h in l.get("hazard_lanes",[]): draw_hazard(h)
 	for body in game.pushables:
+		contact_shadow(self,Vector2(body.position.x,body.position.y+27),37,.28)
 		paint_asset(self,"crate",Vector2(body.position.x,body.position.y+26),83,64,Color(.58,.65,.61))
 	for m in l.memories:
 		if not game.memories.has(m.id):
@@ -125,7 +145,7 @@ func _draw():
 	if game.chapter <= 1:
 		for i in range(2):
 			var x=left+fposmod(i*1800-left*1.13,3600)-1050
-			art("Foreground_Tree",x,808,730,Color(.08,.14,.12,.42))
+			art("Foreground_Tree",x,808,730,Color(.46,.50,.40,.23))
 	if game.shell_warning > 0:
 		draw_rect(Rect2(left,-100,1600,1100),Color(.77,.68,.48,game.shell_warning*.05))
 	if game.flash>0: draw_rect(Rect2(left,-300,1600,1500),Color(.82,.85,.75,game.flash*.17))
@@ -174,25 +194,31 @@ func terrain(p, earth):
 		var polygon=top.duplicate()
 		var right_y=segment_y(p,finish)
 		var left_y=segment_y(p,start)
+		var right_exposed=finish>=x+w-1 and exposed_bank(x+w,1)
+		var left_exposed=start<=x+1 and exposed_bank(x,-1)
 		for depth in range(1,17):
 			var notch=sin(depth*8.37+x)*11+sin(depth*3.17)*7
-			polygon.append(Vector2(finish+notch*(1.0 if finish>=x+w-1 else 0.0),right_y+depth*34))
+			polygon.append(Vector2(finish+notch*(1.0 if right_exposed else 0.0),right_y+depth*34))
 		polygon.append(Vector2(start,left_y+570))
 		for depth in range(16,0,-1):
 			var notch=sin(depth*4.57+x)*12+cos(depth*2.4)*8
-			polygon.append(Vector2(start+notch*(1.0 if start<=x+1 else 0.0),left_y+depth*34))
+			polygon.append(Vector2(start+notch*(1.0 if left_exposed else 0.0),left_y+depth*34))
 		draw_colored_polygon(polygon,ink)
 		var uv=PackedVector2Array()
 		for pt in polygon: uv.append(Vector2(pt.x/760.0,pt.y/760.0))
 		texture_repeat=CanvasItem.TEXTURE_REPEAT_ENABLED
-		var tint=Color(.27,.29,.22) if game.chapter==0 else Color(.22,.27,.25)
-		if game.chapter>=3: tint=Color(.25,.28,.29)
+		var tint=[Color(.84,.81,.72),Color(.77,.80,.73),Color(.80,.79,.73),Color(.76,.81,.81),Color(.82,.83,.77)][game.chapter]
 		var theme=zone_at((start+finish)*.5)
 		match theme:
-			"rain_gully": tint=Color(.22,.29,.29)
-			"rail_yard": tint=Color(.29,.28,.24)
-			"school_courtyard": tint=Color(.28,.29,.29)
-			"ash_garden": tint=Color(.29,.30,.29)
+			"rain_gully": tint=Color(.72,.79,.77)
+			"rail_yard": tint=Color(.84,.80,.72)
+			"school_courtyard": tint=Color(.79,.81,.79)
+			"ash_garden": tint=Color(.83,.84,.79)
+			"canal": tint=Color(.75,.82,.75)
+			"drainage_tunnel": tint=Color(.70,.77,.74)
+			"terraced_garden": tint=Color(.87,.84,.70)
+			"shattered_arcade": tint=Color(.82,.82,.76)
+			"signal_yard": tint=Color(.81,.82,.74)
 		draw_polygon(polygon,PackedColorArray([tint]),uv,textures.Ground_Painted)
 		# Broad translucent contours retain the source brushwork and communicate
 		# packed earth, sediment, damp stone and deep occlusion in the cut banks.
@@ -202,27 +228,18 @@ func terrain(p, earth):
 			for i in range(top.size()-1,-1,-1):
 				var pt=top[i]
 				band.append(pt+Vector2(0,60+layer*40+sin(pt.x*.014+layer)*7))
-			draw_colored_polygon(band,Color(.035,.065,.068,.12+layer*.055))
+			draw_colored_polygon(band,Color(.12,.14,.12,.045+layer*.026))
 		var turf=PackedVector2Array()
 		for pt in top: turf.append(pt+Vector2(0,2))
 		for i in range(top.size()-1,-1,-1):
 			var pt=top[i]
 			# Keep a positive two-pixel minimum thickness at every vertex.
 			turf.append(pt+Vector2(0,4+noise_at(pt.x)*2))
-		draw_colored_polygon(turf,Color(.20,.25,.19,.30) if game.chapter<2 else Color(.27,.31,.29,.26))
-		draw_polyline(top,Color(.55,.59,.45,.12),1.1,true)
-		# Root fans break the pit silhouettes. Each has a tap root and smaller
-		# branches, shaded against exposed damp stone rather than straight walls.
-		for edge_x in [x+2,x+w-2]:
-			if edge_x<left-30 or edge_x>left+1830: continue
-			var ey=segment_y(p,edge_x)
-			var direction=1.0 if edge_x<x+w*.5 else -1.0
-			for root in range(7):
-				var rx=edge_x+direction*(4+root*5)
-				var bend=sin(root*4.1+x)*14
-				var end=Vector2(rx+bend,ey+52+root*16)
-				draw_polyline(PackedVector2Array([Vector2(rx,ey+4),Vector2(rx+direction*9,ey+22+root*5),end]),Color(.27,.31,.23,.72),2.2-root*.15,true)
-				draw_line(end-Vector2(bend*.3,14),end+Vector2(direction*(12+root),9),Color(.24,.29,.22,.56),1,true)
+		draw_colored_polygon(turf,Color(.39,.38,.27,.19) if game.chapter<2 else Color(.43,.46,.40,.17))
+		draw_polyline(top,Color(.72,.70,.55,.22),1.0,true)
+		draw_material_traces(p,start,finish)
+		# Exposed banks retain the source's painted stones and organic cut.
+		# Long synthetic root fans previously overwhelmed the bridge material.
 		for i in range(int(start/43),int(finish/43)+1):
 			var xx=i*43.0+noise_at(i*13)*17
 			var yy=segment_y(p,xx)
@@ -230,19 +247,49 @@ func terrain(p, earth):
 	else:
 		var base=surface(x+w*.5,700)
 		var kind=str(p.get("kind","rubble"))
-		var asset="log" if kind=="log" else ("crate" if kind=="crate" else "rubble")
-		paint_asset(self,asset,Vector2(x+w/2,base+8),w+14,maxf(38,base-y+12),Color(.57,.65,.61))
+		var scaffold=kind=="scaffold" or w>260
+		if not scaffold:
+			var asset="log" if kind=="log" else ("crate" if kind=="crate" else "rubble")
+			paint_asset(self,asset,Vector2(x+w/2,base+8),w+14,maxf(38,base-y+12),Color(.57,.65,.61))
 		if kind=="letter": draw_rect(Rect2(x+9,y+18,w-18,maxf(0,base-y-18)),Color(.13,.19,.22,.8))
 		# A continuous painted tread makes the exact landing line readable.
-		# Rear timber supports keep raised supply shelves grounded in the scene.
+		# Long scaffolds stay open underneath. Painted narrow boards repeat at
+		# their real scale instead of stretching an entire rubble sprite 900px.
 		if base-y>38 and kind!="letter":
-			for support in [x+18,x+w-19]:
-				paint_beam(Vector2(support,y+10),Vector2(support,surface(support,700)+3),10,Color(.35,.42,.36,.86))
-		paint_beam(Vector2(x,y+6),Vector2(x+w,y+6),14,Color(.49,.55,.46))
+			var columns=maxi(1,int(ceil(w/215.0)))
+			for index in range(columns+1):
+				var support=lerpf(x+18,x+w-19,float(index)/columns)
+				var foot=maxf(y+28,surface(support,700)+3)
+				paint_beam(Vector2(support,y+10),Vector2(support,foot),9,Color(.33,.41,.34,.78))
+				if scaffold:
+					var brace_end=minf(x+w-12,support+63)
+					if brace_end>support+15: paint_beam(Vector2(support,y+57),Vector2(brace_end,y+12),7,Color(.34,.43,.34,.62))
+		var board_count=maxi(1,int(ceil(w/117.0)))
+		for index in range(board_count):
+			var a=x+float(index)*w/board_count
+			var b=x+float(index+1)*w/board_count
+			paint_beam(Vector2(a,y+6),Vector2(b+.5,y+6),14,Color(.45+.02*(index%3),.51+.015*(index%3),.42))
+			if scaffold:
+				draw_line(Vector2(a+2,y+1),Vector2(a+2,y+10),Color(.12,.20,.16,.46),.8,true)
+				draw_circle(Vector2(a+7,y+3),.65,Color(.66,.66,.48,.34))
 		draw_line(Vector2(x+2,y+1),Vector2(x+w-2,y+1),Color(.49,.54,.45,.25),.8,true)
+		if p.get("optional_route",false):
+			# Worn treads and a knotted strip of cloth mark the higher route
+			# through the environment, without filling the fork with UI arrows.
+			for dx in [14,w-14]:
+				draw_line(Vector2(x+dx-5,y+.5),Vector2(x+dx+5,y+.5),Color(.64,.65,.50,.34),1.1,true)
+			if w>280:
+				var wind=sin(game.clock*1.8+x*.02)*2
+				draw_line(Vector2(x+22,y+9),Vector2(x+26+wind,y+27),Color(.43,.51,.46,.57),2.4,true)
 
 func surface(x, fallback=700.0):
 	return float(game.surface_y_at(x,fallback))
+
+func exposed_bank(edge_x,direction):
+	var beyond=edge_x+direction*2.0
+	for other in game.level.ground:
+		if beyond>=float(other.x) and beyond<=float(other.x)+float(other.w): return false
+	return true
 
 func segment_y(p, world_x):
 	var profile=p.get("profile",[])
@@ -262,6 +309,78 @@ func zone_at(x):
 		if x>=float(zone.x) and x<=float(zone.x)+float(zone.w): return str(zone.theme)
 	return ["orchard","ridge","rail_yard","school_courtyard","ash_garden"][game.chapter]
 
+func contact_shadow(canvas,at,width,strength=.24):
+	# Small layered ellipses keep objects planted while retaining painted edges.
+	canvas.draw_set_transform(at,0,Vector2(1,.18))
+	for ring in range(4,0,-1): canvas.draw_circle(Vector2.ZERO,width*(.58+ring*.12),Color(.025,.045,.041,strength*.19))
+	canvas.draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
+
+func draw_actor_contacts():
+	for child in [game.player,game.boy]:
+		if child==null: continue
+		var floor_y=surface(child.position.x,child.position.y+1)
+		var lift=maxf(0,floor_y-child.position.y)
+		if lift<115 and game.ground_at(child.position.x):
+			contact_shadow(self,Vector2(child.position.x,floor_y+2),18+lift*.045,.32*(1-lift/115))
+
+func draw_material_traces(p,start,finish):
+	# Sparse cropped paint, damp deposits and moss interrupt identical ground
+	# texture without introducing another long, fragile polygon contour.
+	for index in range(int(ceil((start+65)/229)),int((finish-65)/229)+1):
+		var x=index*229.0
+		var theme=zone_at(x)
+		var y=segment_y(p,x)
+		if theme in ["canal","drainage_tunnel","shattered_arcade","signal_yard"]:
+			var bottom=maxf(segment_y(p,x-58),segment_y(p,x+58))+66
+			paint_asset(self,"wall",Vector2(x,bottom),124,38,Color(.35,.40,.34,.36 if theme=="canal" else .25))
+		if theme in ["canal","drainage_tunnel","rain_gully"]:
+			for stain in range(3):
+				var dx=(stain-1)*29+noise_at(index+stain)*13
+				draw_set_transform(Vector2(x+dx,y+24+stain*9),0,Vector2(.36,1))
+				draw_circle(Vector2.ZERO,11+noise_at(index*3+stain)*9,Color(.08,.18,.15,.10))
+				draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
+		elif theme=="terraced_garden" or theme=="orchard":
+			for moss in range(2):
+				var at=Vector2(x+moss*41,y+12+moss*7)
+				draw_set_transform(at,0,Vector2(1,.24))
+				draw_circle(Vector2.ZERO,19+noise_at(index+moss)*11,Color(.26,.31,.13,.13))
+				draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
+
+func draw_route_details(left):
+	for fork in game.level.get("branch_routes",[]):
+		var entry=float(fork.get("entry_x",0))
+		var exit_x=float(fork.get("exit_x",entry+900))
+		if exit_x<left-150 or entry>left+1750: continue
+		# A weathered handrail and pale wear marks give the upper choice an
+		# authored silhouette. They never imply an additional collision surface.
+		var high=float(fork.get("upper_y",540))
+		var rise_x=entry+40
+		var low=surface(rise_x,700)
+		paint_beam(Vector2(rise_x,low+3),Vector2(rise_x-3,low-54),6,Color(.38,.44,.33,.72))
+		var knot=Vector2(rise_x-3,low-47)
+		draw_line(knot,knot+Vector2(17,sin(game.clock*1.4)*2),Color(.56,.58,.43,.50),2,true)
+		# Sparse shafts underneath the raised walk differentiate sheltered
+		# water below from the dry high route without a colored overlay.
+		for i in range(3):
+			var x=entry+240+i*minf(245,(exit_x-entry)/4)
+			if x<left-80 or x>left+1680: continue
+			var floor_y=surface(x,780)
+			draw_line(Vector2(x,high+25),Vector2(x+29,floor_y-8),Color(.63,.72,.65,.025),16,true)
+
+func draw_arch(center,radius,tint):
+	# The arch opening is an occluded rear plane. Texture-bearing masonry
+	# voussoirs give it a rounded painted rim rather than a flat gray ring.
+	tint=material_tint(tint,.68)
+	draw_circle(center,radius*.86,Color(.08,.105,.09,.82))
+	for stone in range(13):
+		var angle=PI+stone*PI/12.0
+		var at=center+Vector2(cos(angle),sin(angle))*radius
+		draw_set_transform(at,angle+PI*.5,Vector2.ONE)
+		draw_texture_rect_region(prop_atlas,Rect2(-radius*.14,-15,radius*.28+2,30),Rect2(73,247,294,76),tint)
+		draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
+	for dx in [-radius,radius]:
+		paint_asset(self,"wall",center+Vector2(dx,21),38,46,tint)
+
 func draw_surface_dressing(left):
 	var length=float(game.level.width)
 	for i in range(maxi(0,int((left-40)/23)),int(minf(length,left+1650)/23)+1):
@@ -270,7 +389,8 @@ func draw_surface_dressing(left):
 		var y=surface(x)
 		var theme=zone_at(x)
 		var height=3+noise_at(i*19)*9
-		if theme=="rail_yard" or theme=="school_courtyard": height*=.45
+		if theme in ["rail_yard","school_courtyard","shattered_arcade","signal_yard","drainage_tunnel"]: height*=.45
+		if theme=="terraced_garden": height*=1.15
 		var wind=sin(game.clock*1.4+x*.028)*2.4
 		var green=Color(.13,.19,.15,.54) if game.chapter<2 else Color(.17,.22,.20,.48)
 		for blade in range(3):
@@ -285,11 +405,50 @@ func draw_zone_dressing(left):
 	# places them behind the playable plane and leaves action silhouettes clear.
 	var length=float(game.level.width)
 	for zone in game.level.get("zones",[]):
-		if str(zone.theme)!="rail_yard": continue
-		var station_x=float(zone.x)+200
-		var station_w=minf(2540,float(zone.w)-180)
-		if station_x+station_w<left-100 or station_x>left+1700: continue
-		art("Rail_Yard",station_x,surface(station_x+station_w*.5)+10,station_w,Color(.62,.69,.65,.91))
+		var theme=str(zone.theme)
+		var zone_x=float(zone.x)
+		var width=float(zone.w)
+		if zone_x+width<left-320 or zone_x>left+1850: continue
+		if theme=="rail_yard":
+			var station_x=zone_x+200
+			var station_w=minf(2540,width-180)
+			art("Rail_Yard",station_x,surface(station_x+station_w*.5)+10,station_w,Color(.62,.69,.65,.91))
+		elif theme=="canal" and textures.has("Canal") and not zone.get("interactive_mill",false):
+			var painting_w=clampf(width*.96,1700,2580)
+			art("Canal",zone_x+140,surface(zone_x+width*.5,780)+19,painting_w,Color(.52,.63,.59,.95))
+		elif theme=="drainage_tunnel":
+			var mouth_x=zone_x+width*.62
+			var floor_y=surface(mouth_x)
+			paint_asset(self,"wall",Vector2(mouth_x,floor_y+26),324,111,Color(.40,.46,.38,.84))
+			draw_arch(Vector2(mouth_x,floor_y+2),96,Color(.41,.49,.41,.91))
+			glow(Vector2(mouth_x-26,floor_y-37),Color(.59,.68,.52),58,.06)
+		elif theme=="terraced_garden":
+			var center=zone_x+width*.47
+			var ground=surface(center)
+			paint_asset(self,"wall",Vector2(center-71,ground+7),288,72,Color(.57,.60,.43,.77))
+			paint_asset(self,"wall",Vector2(center+163,ground-30),239,62,Color(.45,.51,.35,.51))
+			for stem in range(14):
+				var x=center-175+stem*29
+				var bottom=ground-42 if stem<8 else ground-74
+				var tip=Vector2(x+sin(game.clock*.9+stem)*1.2,bottom-10-noise_at(stem+center)*15)
+				draw_line(Vector2(x,bottom+2),tip,Color(.18,.28,.14,.57),1,true)
+				if stem%3==0: draw_circle(tip,1.7,Color(.60,.58,.31,.43))
+		elif theme=="shattered_arcade":
+			var center=zone_x+width*.56
+			var ground=surface(center)
+			draw_arch(Vector2(center-142,ground+12),105,Color(.43,.47,.41,.62))
+			draw_arch(Vector2(center+141,ground+16),97,Color(.39,.44,.39,.47))
+			paint_asset(self,"rubble",Vector2(center+43,ground+16),182,73,Color(.46,.51,.44,.74))
+		elif theme=="signal_yard":
+			var center=zone_x+width*.58
+			var ground=surface(center)
+			paint_beam(Vector2(center,ground+3),Vector2(center-5,ground-222),12,Color(.37,.44,.35,.72))
+			paint_beam(Vector2(center-68,ground-193),Vector2(center+55,ground-199),12,Color(.42,.47,.38,.69))
+			for dx in [-42,34]:
+				var at=Vector2(center+dx,ground-187)
+				draw_line(at,at+Vector2(0,23),Color(.22,.29,.24,.76),1.1,true)
+				glow(at+Vector2(0,26),Color(.87,.63,.30),33,.12)
+				draw_circle(at+Vector2(0,26),3.3,Color(.65,.56,.33,.70))
 	# The original paintings carry the broad forms. Sparse painted objects add
 	# local depth without layering repeated geometric placeholders over them.
 	for i in range(maxi(0,int((left-300)/790)),int(minf(length,left+1900)/790)+1):
@@ -328,6 +487,18 @@ func draw_zone_dressing(left):
 					draw_line(Vector2(x+16,y),Vector2(x+20,y-82),ink,2,true)
 					var flutter=sin(game.clock*1.7+i)*4
 					draw_colored_polygon(PackedVector2Array([Vector2(x+20,y-75),Vector2(x+34,y-73),Vector2(x+37+flutter,y-52),Vector2(x+23+flutter,y-55)]),Color(.29,.34,.31,.24))
+			"canal", "drainage_tunnel":
+				paint_asset(self,"wall",Vector2(x,y+17),127,48,Color(.34,.44,.36,.60))
+				if i%2==0:
+					for reed in range(5):
+						var sway=sin(game.clock*1.2+reed)*2
+						draw_line(Vector2(x+reed*3,y+4),Vector2(x+reed*3+sway,y-15-reed%3*7),Color(.17,.27,.18,.42),.8,true)
+			"terraced_garden":
+				if i%2==0: paint_asset(self,"crate",Vector2(x,y+3),42,31,Color(.47,.53,.36,.71))
+			"shattered_arcade":
+				paint_asset(self,"rubble",Vector2(x,y+5),133,49,Color(.43,.48,.43,.66))
+			"signal_yard":
+				if i%2==0: paint_asset(self,"cart",Vector2(x,y+7),139,81,Color(.39,.45,.38,.58))
 
 func draw_hazard(h):
 	var x=float(h.x)
@@ -338,6 +509,26 @@ func draw_hazard(h):
 	var warning=bool(game.hazard_warning(h))
 	var phase=float(game.playtime)+float(h.get("offset",0))
 	var kind=str(h.get("kind","debris"))
+	if kind=="listener":
+		# A distant lit opening, listening figure and a faint damp reflection
+		# communicate attention without painting a rectangular danger zone.
+		var mid=x+w*.68
+		var ground=surface(mid,780)
+		paint_asset(self,"door",Vector2(mid,ground+5),97,154,Color(.31,.40,.34,.60))
+		var window=Vector2(mid+1,ground-101)
+		var strength=.21 if active else (.12 if warning else .035)
+		glow(window,Color(.91,.65,.31),61,strength)
+		draw_rect(Rect2(window+Vector2(-10,-15),Vector2(20,25)),Color(.83,.60,.29,.22 if active else .055))
+		draw_line(window+Vector2(-11,-3),window+Vector2(11,-3),Color(.10,.17,.14,.78),1.5,true)
+		draw_line(window+Vector2(0,-15),window+Vector2(0,10),Color(.10,.17,.14,.78),1.4,true)
+		if active:
+			draw_circle(window+Vector2(-3,3),4.3,Color(.04,.09,.08,.79))
+			draw_line(window+Vector2(-4,8),window+Vector2(-4,17),Color(.04,.09,.08,.79),9,true)
+		for i in range(4):
+			var xx=mid-48+i*24
+			var yy=surface(xx,780)-1
+			draw_line(Vector2(xx,yy),Vector2(xx+13,yy),Color(.69,.58,.34,strength*.34),.8,true)
+		return
 	if kind=="wind":
 		for i in range(22):
 			var xx=x+fposmod(i*81.7+phase*(420 if active else 65),w)
@@ -369,6 +560,7 @@ func draw_hazard(h):
 func paint_asset(canvas,key,bottom,width,height=0.0,tint=Color.WHITE):
 	var region=prop_regions[key]
 	if height<=0: height=width*region.size.y/region.size.x
+	tint=material_tint(tint,.22 if key=="tent" else .75)
 	canvas.draw_texture_rect_region(prop_atlas,Rect2(bottom-Vector2(width/2,height),Vector2(width,height)),region,tint)
 
 func draw_bridge(bridge):
@@ -377,17 +569,29 @@ func draw_bridge(bridge):
 		return
 	for i in range(int(bridge.w/19)+1):
 		var x=float(bridge.x)+i*19
-		draw_colored_polygon(PackedVector2Array([Vector2(x,bridge.y),Vector2(x+18,bridge.y+sin(i)*1.5),Vector2(x+17,bridge.y+14),Vector2(x+1,bridge.y+16)]),Color("4d5548"))
-		draw_line(Vector2(x+2,bridge.y+2),Vector2(x+16,bridge.y+3),Color("7c8169"),1,true)
+		paint_beam(Vector2(x,bridge.y+7),Vector2(minf(x+18,float(bridge.x)+float(bridge.w)),bridge.y+7),14,Color(.69,.72,.57))
+		draw_line(Vector2(x+2,bridge.y+1),Vector2(x+16,bridge.y+1),Color(.72,.70,.55,.29),.8,true)
 	for y in [bridge.y-7,bridge.y+23]:draw_line(Vector2(bridge.x-24,y),Vector2(bridge.x+bridge.w+24,y+3),Color("323f3b"),2.4,true)
 
 func draw_water(water):
-	var drained=game.flags.get(water.key,false)
 	var y=float(water.top)+float(game.water_offsets.get(water.key,0))
-	draw_rect(Rect2(water.x,y,water.w,400),Color(.16,.29,.33,.57))
-	for i in range(13):
-		var xx=water.x+fposmod(i*67+game.clock*18,water.w)
-		draw_line(Vector2(xx,y+2+i%4*11),Vector2(minf(xx+24,water.x+water.w),y+2+i%4*11),Color(.48,.66,.67,.20),1,true)
+	var left=float(game.camera.position.x)-850
+	if float(water.x)+float(water.w)<left or float(water.x)>left+1700: return
+	var floor_y=surface(float(water.x)+float(water.w)*.5,float(water.top)+30)
+	if y>=floor_y+4: return
+	var depth_size=maxf(4,floor_y-y+4)/8.0
+	for depth in range(8):
+		var alpha=.29+depth*.025
+		draw_rect(Rect2(water.x,y+depth*depth_size,water.w,depth_size+.15),Color(.12,.25,.28,alpha))
+	# Soft broken reflections make water read as a horizontal moving surface.
+	for i in range(21):
+		var xx=water.x+fposmod(i*73.7+game.clock*(9+i%3*2),water.w)
+		var yy=y+2+i%6*minf(3,depth_size)
+		var length=12+noise_at(i+water.x)*29
+		draw_line(Vector2(xx,yy),Vector2(minf(xx+length,water.x+water.w),yy+sin(game.clock+i)*.5),Color(.40,.57,.55,.13-i%6*.013),.8,true)
+	for bank in [float(water.x),float(water.x)+float(water.w)]:
+		paint_asset(self,"rubble",Vector2(bank,y+31),65,29,Color(.31,.43,.36,.51))
+		draw_line(Vector2(bank-8,y+2),Vector2(bank+11,y+2),Color(.52,.62,.52,.23),.8,true)
 
 func glow(pos, color, radius, strength):
 	for j in range(7,0,-1): draw_circle(pos,radius*j/7.0,Color(color,strength*(1.0-j/8.0)*.24))
@@ -397,11 +601,12 @@ func cover(c):
 	var w = float(c.w)
 	var y = float(c.get("y",surface(x)))
 	var col = Color("202a2b")
+	contact_shadow(self,Vector2(x,y+3),minf(w*.43,117),.29)
 	if c.kind == "tent":
 		paint_asset(self,"tent",Vector2(x,y+4),w+34,148,Color(.68,.75,.72))
 	elif c.kind == "tree":
-		draw_line(Vector2(x-45,y),Vector2(x-30,y-230),col,42,true)
-		draw_line(Vector2(x-30,y-180),Vector2(x+90,y-120),col,28,true)
+		paint_beam(Vector2(x-45,y+4),Vector2(x-30,y-230),42,Color(.59,.65,.50))
+		paint_beam(Vector2(x-30,y-180),Vector2(x+90,y-120),28,Color(.57,.64,.48))
 	else:
 		paint_asset(self,"wall",Vector2(x,y+5),w+20,82,Color(.56,.65,.63))
 	# Universal readable shelter marker: three sloping strokes, no bright UI sign.
@@ -411,17 +616,18 @@ func prop(p):
 	var x = float(p.x)
 	var y = surface(x,float(p.get("y",700)))
 	var ink = Color("26312f")
+	contact_shadow(self,Vector2(x,y+2),38 if p.kind in ["cart","bench","well"] else 19,.18)
 	match p.kind:
 		"cart":
 			paint_asset(self,"cart",Vector2(x,y+4),182,116,Color(.56,.65,.59))
 		"sign":
-			draw_line(Vector2(x,y),Vector2(x-3,y-97),ink,6,true)
-			draw_rect(Rect2(x-51,y-94,112,29),ink)
+			paint_beam(Vector2(x,y+2),Vector2(x-3,y-97),6,Color(.56,.61,.45))
+			paint_beam(Vector2(x-51,y-80),Vector2(x+61,y-80),29,Color(.55,.58,.42))
 			draw_string(font,Vector2(x-44,y-74),p.label,HORIZONTAL_ALIGNMENT_LEFT,-1,11,Color("9ba599"))
 		"bench":
-			draw_rect(Rect2(x-51,y-35,102,9),ink)
-			for dx in [-39,39]: draw_line(Vector2(x+dx,y-32),Vector2(x+dx+6,y),ink,6,true)
-			draw_rect(Rect2(x-51,y-68,102,19),ink)
+			paint_beam(Vector2(x-51,y-31),Vector2(x+51,y-31),9,Color(.59,.62,.46))
+			for dx in [-39,39]: paint_beam(Vector2(x+dx,y-32),Vector2(x+dx+6,y),6,Color(.53,.59,.42))
+			paint_beam(Vector2(x-51,y-58),Vector2(x+51,y-58),19,Color(.57,.61,.45))
 		"washing":
 			# Faded narrow laundry sits in the rear plane, with ample empty air.
 			for dx in [-100,100]: paint_beam(Vector2(x+dx,y+2),Vector2(x+dx-2,y-119),5,Color(.28,.36,.29,.5))
@@ -431,35 +637,50 @@ func prop(p):
 				var sway=sin(game.clock*1.6+i)*2
 				draw_colored_polygon(PackedVector2Array([Vector2(px,y-112),Vector2(px+16,y-111),Vector2(px+18+sway,y-86),Vector2(px+sway,y-85)]),Color(.26,.32,.25,.18))
 		"well":
-			draw_rect(Rect2(x-37,y-38,74,38),ink)
-			for dx in [-30,30]: draw_line(Vector2(x+dx,y-38),Vector2(x+dx,y-119),ink,5,true)
-			draw_line(Vector2(x-48,y-116),Vector2(x+48,y-116),ink,7,true)
-			draw_line(Vector2(x,y-116),Vector2(x,y-45),ink,1,true)
+			paint_asset(self,"wall",Vector2(x,y+4),80,42,Color(.66,.70,.58))
+			for dx in [-30,30]: paint_beam(Vector2(x+dx,y-30),Vector2(x+dx,y-119),5,Color(.54,.61,.44))
+			paint_beam(Vector2(x-48,y-116),Vector2(x+48,y-116),7,Color(.62,.66,.48))
+			draw_line(Vector2(x,y-116),Vector2(x,y-37),Color(.57,.54,.38,.72),1,true)
 		"stump":
-			draw_colored_polygon(PackedVector2Array([Vector2(x-42,y),Vector2(x-27,y-53),Vector2(x+16,y-56),Vector2(x+31,y)]),ink)
+			paint_asset(self,"log",Vector2(x,y+5),83,51,Color(.61,.64,.44))
 		"barricade":
 			for i in range(5):
-				draw_line(Vector2(x+i*20,y),Vector2(x-24+i*24,y-97),ink,8,true)
-			draw_line(Vector2(x-25,y-32),Vector2(x+115,y-45),ink,6,true)
+				paint_beam(Vector2(x+i*20,y),Vector2(x-24+i*24,y-97),8,Color(.58,.64,.47))
+			paint_beam(Vector2(x-25,y-32),Vector2(x+115,y-45),6,Color(.62,.66,.49))
 
 func interact_prop(p):
 	var pos = Vector2(p.x,surface(float(p.x),float(p.get("y",700))))
 	var used = game.flags.get(p.get("id",p.get("key","")),false)
+	contact_shadow(self,pos+Vector2(0,2),32,.24)
 	match p.kind:
 		"cache":
-			draw_rect(Rect2(pos+Vector2(-16,-23),Vector2(32,23)),Color("353e36") if not used else Color("29312e"))
-			draw_line(pos+Vector2(-16,-23),pos+Vector2(16,-23),Color("8f9277"),2,true)
-			draw_line(pos+Vector2(0,-22),pos,Color("777a63"),2,true)
-			if not used: glow(pos+Vector2(0,-25),Color(.85,.75,.48),24,.18)
+			paint_asset(self,"crate",pos+Vector2(0,4),40,29,Color(.58,.61,.45) if not used else Color(.33,.41,.34))
+			# A tiny tied linen edge catches the eye against worn painted wood.
+			draw_line(pos+Vector2(-5,-15),pos+Vector2(8,-13),Color(.59,.60,.45,.57 if not used else .16),1.6,true)
+			if not used: glow(pos+Vector2(0,-18),Color(.85,.75,.48),20,.11)
 		"fire":
 			paint_asset(self,"stove",pos+Vector2(0,5),108,114,Color(.74,.76,.68))
 			for dx in [-10,0,10]: draw_line(pos+Vector2(dx-9,-2),pos+Vector2(dx+10,-7),Color("30342b"),4,true)
 			glow(pos+Vector2(0,-19),Color(1,.59,.23),110,.3)
-			for i in range(6):
-				var offset = sin(game.clock*6+i*1.6)*5
-				draw_colored_polygon(PackedVector2Array([pos+Vector2(-10+i*3,-5),pos+Vector2(-8+i*3+offset,-23-i%3*8),pos+Vector2(-3+i*3,-5)]),Color(.83,.44+i*.04,.18,.85))
+			for i in range(4):
+				var flame=pos+Vector2(-7+i*4+sin(game.clock*5+i)*1.3,-14-i%2*4)
+				draw_set_transform(flame,0,Vector2(.50,1))
+				draw_circle(Vector2.ZERO,5+sin(game.clock*8+i)*.8,Color(.79,.39+i*.035,.12,.40))
+				draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
+			for ember in range(3):
+				var age=fposmod(game.clock*.42+ember*.33,1.0)
+				var at=pos+Vector2(22+sin(age*6+ember)*6,-81-age*37)
+				draw_circle(at,.55,Color(.84,.55,.24,(1-age)*.30))
 		"wheel", "latch", "bridge", "pump":
 			paint_asset(self,"winch",pos+Vector2(0,4),93,114,Color(.54,.65,.59))
+			if p.kind=="pump" and int(p.get("scrap_cost",0))>0:
+				# The chain and lowered timber leaf identify the canal sluice
+				# as distinct from an ordinary well or searchable supply box.
+				var lift=46 if used else 0
+				paint_beam(pos+Vector2(59,8),pos+Vector2(59,-104),9,Color(.37,.48,.37,.81))
+				paint_beam(pos+Vector2(112,8),pos+Vector2(112,-108),9,Color(.37,.48,.37,.81))
+				for plank in range(4): paint_beam(pos+Vector2(60,-12-plank*16-lift),pos+Vector2(112,-14-plank*16-lift),12,Color(.37,.49,.38,.77))
+				draw_line(pos+Vector2(4,-72),pos+Vector2(85,-95),Color(.46,.52,.41,.59),1.3,true)
 		"repair":
 			paint_asset(self,"door",pos+Vector2(0,5),156,192,Color(.61,.69,.65))
 		"roof":
@@ -524,6 +745,7 @@ func gate(g):
 
 func paint_beam(a,b,thickness,tint):
 	var delta=b-a
+	tint=material_tint(tint,.80)
 	draw_set_transform(a,delta.angle(),Vector2.ONE)
 	# The opaque bark interior avoids the transparent margin of the log sprite.
 	draw_texture_rect_region(prop_atlas,Rect2(0,-thickness*.5,delta.length(),thickness),Rect2(555,296,300,52),tint)

@@ -3,8 +3,8 @@
   "title": "Where the birds went",
   "subtitle": "THE WOODS",
   "epigraph": "She waited until he could hear her footsteps again.",
-  "objective": "Follow the ridge to the old rail path. Wait for him at every crossing.",
-  "width": 11200,
+  "objective": "Find the drainage way. Decide whether to spend salvage below, or climb to the dry boards above.",
+  "width": 18600,
   "sky": "#778e91",
   "fog": "#9aafad",
   "cold": 0.075,
@@ -112,6 +112,135 @@
           0
         ]
       ]
+    },
+    {
+      "x": 11200,
+      "y": 700,
+      "w": 700,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          180,
+          0
+        ],
+        [
+          370,
+          28
+        ],
+        [
+          500,
+          28
+        ],
+        [
+          700,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 11900,
+      "y": 700,
+      "w": 1850,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          280,
+          0
+        ],
+        [
+          580,
+          80
+        ],
+        [
+          1280,
+          80
+        ],
+        [
+          1550,
+          0
+        ],
+        [
+          1850,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 13750,
+      "y": 700,
+      "w": 1650,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          350,
+          0
+        ],
+        [
+          700,
+          -58
+        ],
+        [
+          1040,
+          -58
+        ],
+        [
+          1370,
+          0
+        ],
+        [
+          1650,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 15400,
+      "y": 700,
+      "w": 320,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          320,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 15930,
+      "y": 700,
+      "w": 2670,
+      "h": 650,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2670,
+          0
+        ]
+      ]
     }
   ],
   "platforms": [
@@ -170,6 +299,74 @@
       "w": 220,
       "h": 22,
       "kind": "stone"
+    },
+    {
+      "x": 12000,
+      "y": 640,
+      "w": 150,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_canal_high"
+    },
+    {
+      "x": 12190,
+      "y": 580,
+      "w": 150,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_canal_high"
+    },
+    {
+      "x": 12380,
+      "y": 540,
+      "w": 900,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_canal_high"
+    },
+    {
+      "x": 13320,
+      "y": 600,
+      "w": 170,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_canal_high"
+    },
+    {
+      "x": 13530,
+      "y": 650,
+      "w": 170,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_canal_high"
+    },
+    {
+      "x": 16320,
+      "y": 640,
+      "w": 150,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "route": "mill_wheel_approach"
+    },
+    {
+      "x": 16510,
+      "y": 580,
+      "w": 125,
+      "h": 20,
+      "kind": "scaffold",
+      "one_way": true,
+      "route": "mill_wheel_approach"
     }
   ],
   "scenery": [
@@ -229,6 +426,42 @@
       "x": 11000,
       "y": 700.0,
       "label": "THE CAMP"
+    },
+    {
+      "kind": "cart",
+      "x": 11470,
+      "y": 713.263,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 11840,
+      "y": 708.4,
+      "label": "TOWING PATH"
+    },
+    {
+      "kind": "well",
+      "x": 12160,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 13880,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "barricade",
+      "x": 14550,
+      "y": 642.0,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 18480,
+      "y": 700.0,
+      "label": "THE CAMP"
     }
   ],
   "interact": [
@@ -269,9 +502,9 @@
       "kind": "cache",
       "x": 4490,
       "y": 700,
-      "label": "A tin beneath the roots",
+      "label": "A tin of nails beneath the roots",
       "id": "woods_tin",
-      "rations": 1,
+      "rations": 0,
       "scrap": 1,
       "hold_seconds": 1.1
     },
@@ -279,12 +512,12 @@
       "kind": "cache",
       "x": 6310,
       "y": 482.0,
-      "label": "A scarf wrapped around a tin",
+      "label": "A length of wire wrapped in a scarf",
       "hold_seconds": 1.2,
       "id": "ridge_scarf",
       "optional": true,
       "route": "raised_supply_spur",
-      "rations": 1,
+      "rations": 0,
       "medicine": 0,
       "scrap": 1
     },
@@ -295,8 +528,8 @@
       "label": "The workers’ lunch pail",
       "hold_seconds": 1.2,
       "id": "ridge_lunch",
-      "rations": 2,
-      "scrap": 1,
+      "rations": 1,
+      "scrap": 0,
       "medicine": 0
     },
     {
@@ -328,11 +561,11 @@
       "kind": "cache",
       "x": 8790,
       "y": 700.0,
-      "label": "A tin in the keeper’s hut",
+      "label": "The keeper’s medical tin",
       "hold_seconds": 1.2,
       "id": "woods_keeper_tin",
-      "rations": 1,
-      "scrap": 1,
+      "rations": 0,
+      "scrap": 0,
       "medicine": 1
     },
     {
@@ -354,14 +587,111 @@
       "kind": "cache",
       "x": 11020,
       "y": 580.0,
-      "label": "The high shelf in a ruined hut",
+      "label": "A bandage on the high shelf in a ruined hut",
       "hold_seconds": 1.2,
       "id": "woods_high_sack",
       "optional": true,
       "route": "raised_supply_spur",
-      "rations": 1,
-      "medicine": 0,
+      "rations": 0,
+      "medicine": 1,
       "scrap": 0
+    },
+    {
+      "kind": "cache",
+      "x": 11470,
+      "y": 713.263,
+      "label": "The canal keeper’s copper and wire",
+      "hold_seconds": 1.2,
+      "id": "canal_approach_pack",
+      "rations": 0,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 11650,
+      "y": 728.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "pump",
+      "x": 11920,
+      "y": 700.0,
+      "label": "Drain the canal · 1 salvage · both children",
+      "hold_seconds": 4.0,
+      "id": "woods_canal_drain",
+      "scrap_cost": 1,
+      "companion_required": true,
+      "optional": true
+    },
+    {
+      "kind": "brace",
+      "x": 12550,
+      "y": 540,
+      "label": "Lash the upper passage open · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "woods_canal_crossbar",
+      "optional": true,
+      "route": "woods_canal_high"
+    },
+    {
+      "kind": "cache",
+      "x": 12900,
+      "y": 540,
+      "label": "A dry medicine case on the towing-path shelf",
+      "hold_seconds": 1.2,
+      "id": "woods_canal_ledger",
+      "optional": true,
+      "route": "branch_supply",
+      "branch": "woods_canal_high",
+      "rations": 2,
+      "medicine": 1,
+      "scrap": 0
+    },
+    {
+      "kind": "cache",
+      "x": 13790,
+      "y": 700.0,
+      "label": "A supper tin in the signal hut",
+      "hold_seconds": 1.2,
+      "id": "signal_keeper_supper",
+      "rations": 1,
+      "scrap": 0,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 13970,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 14600,
+      "y": 642.0,
+      "label": "Move the sleepers from the signal path",
+      "hold_seconds": 2.8,
+      "id": "woods_signal_sleepers"
+    },
+    {
+      "kind": "cache",
+      "x": 15420,
+      "y": 700.0,
+      "label": "A little bread beneath the mill eaves",
+      "hold_seconds": 1.2,
+      "id": "mill_approach_bread",
+      "rations": 1,
+      "scrap": 0,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 15600,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
     }
   ],
   "gates": [
@@ -385,6 +715,20 @@
       "h": 190,
       "key": "woods_culvert",
       "kind": "fallen_bough"
+    },
+    {
+      "x": 12650,
+      "y": 540,
+      "h": 174,
+      "key": "woods_canal_crossbar",
+      "kind": "upper_crossbar"
+    },
+    {
+      "x": 14800,
+      "y": 643.758,
+      "h": 190,
+      "key": "woods_signal_sleepers",
+      "kind": "rubble"
     }
   ],
   "covers": [
@@ -433,6 +777,42 @@
       "w": 300,
       "kind": "wall",
       "y": 700.0
+    },
+    {
+      "x": 11615,
+      "w": 390,
+      "kind": "tent",
+      "y": 728.0
+    },
+    {
+      "x": 12900,
+      "w": 230,
+      "kind": "tent",
+      "y": 540
+    },
+    {
+      "x": 12270,
+      "w": 300,
+      "kind": "wall",
+      "y": 724.0
+    },
+    {
+      "x": 13270,
+      "w": 300,
+      "kind": "wall",
+      "y": 753.333
+    },
+    {
+      "x": 13935,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 15565,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
     }
   ],
   "memories": [
@@ -459,6 +839,36 @@
       "y": 663.94,
       "id": "half_map",
       "text": "The paper showed a road. The water had taken the names."
+    },
+    {
+      "x": 11750,
+      "y": 657.0,
+      "id": "canal_rope",
+      "text": "The rope was worn smooth where many hands had held it."
+    },
+    {
+      "x": 12890,
+      "y": 475,
+      "id": "canal_ledger_memory",
+      "text": "A name, a date, a small drawing of a boat. She kept the page dry."
+    },
+    {
+      "x": 14320,
+      "y": 599.543,
+      "id": "signal_left_on",
+      "text": "The lamp had been left on. Someone had expected to return before dark."
+    },
+    {
+      "x": 16070,
+      "y": 636.0,
+      "id": "mill_fence_marks",
+      "text": "The marks on the fence were worn by hands waiting for the wheel to turn."
+    },
+    {
+      "x": 18050,
+      "y": 636.0,
+      "id": "mill_chain_silence",
+      "text": "The chain fell quiet behind them. He waited for the sound to end before letting go."
     }
   ],
   "checkpoints": [
@@ -472,7 +882,17 @@
     8935,
     9140,
     10400,
-    11000
+    11000,
+    11615,
+    11860,
+    13720,
+    13935,
+    14000,
+    15100,
+    15500,
+    15565,
+    17800,
+    18200
   ],
   "tutorials": [
     {
@@ -498,9 +918,33 @@
     {
       "x": 9560,
       "text": "The gully carries every gust. There is room for both of you behind the fallen trunk."
+    },
+    {
+      "x": 11820,
+      "text": "Two ways: the water below, or the boards above. One piece of salvage can make either way safer."
+    },
+    {
+      "x": 12130,
+      "text": "Jump onto the upper boards to climb. Keep walking underneath to take the lower way."
+    },
+    {
+      "x": 12230,
+      "text": "Someone listens beyond the canal. Running, moving crates and splashing carry. Crouch in the water to keep both of you quiet."
+    },
+    {
+      "x": 15600,
+      "text": "The bridge and the mill gate are still joined by the old chain."
+    },
+    {
+      "x": 16200,
+      "text": "Jump up the boards. The wheel’s weight can pull the gate. Keep a way back for him."
+    },
+    {
+      "x": 16600,
+      "text": "The frame is giving way. Get both children clear when the chain begins to strain."
     }
   ],
-  "build": "0.3.0",
+  "build": "0.4.0",
   "bridges": [
     {
       "x": 1205,
@@ -523,6 +967,12 @@
       "w": 330,
       "top": 740,
       "key": "forest_bridge"
+    },
+    {
+      "x": 12420,
+      "w": 700,
+      "top": 754,
+      "key": "woods_canal_drain"
     }
   ],
   "safe_zones": [
@@ -537,6 +987,18 @@
     {
       "x": 8935,
       "w": 400
+    },
+    {
+      "x": 11615,
+      "w": 390
+    },
+    {
+      "x": 13935,
+      "w": 390
+    },
+    {
+      "x": 15565,
+      "w": 390
     }
   ],
   "hazard_lanes": [
@@ -556,6 +1018,15 @@
       "period": 12.5,
       "active": 2.6,
       "offset": 6.0
+    },
+    {
+      "x": 12420,
+      "w": 700,
+      "kind": "listener",
+      "period": 16.0,
+      "active": 3.0,
+      "offset": 2.0,
+      "feet_min_y": 650
     }
   ],
   "zones": [
@@ -578,8 +1049,79 @@
       "x": 8700,
       "w": 2500,
       "theme": "rain_gully"
+    },
+    {
+      "x": 11200,
+      "w": 700,
+      "theme": "drainage_tunnel",
+      "caption": "The drainage mouth"
+    },
+    {
+      "x": 11900,
+      "w": 1850,
+      "theme": "canal",
+      "caption": "Below the towing path"
+    },
+    {
+      "x": 13750,
+      "w": 1650,
+      "theme": "signal_yard",
+      "caption": "An abandoned signal hut"
+    },
+    {
+      "x": 15400,
+      "w": 3200,
+      "theme": "mill",
+      "caption": "The mill chain"
     }
   ],
-  "route_length_units": 11200,
-  "original_route_end": 5500
+  "route_length_units": 18600,
+  "original_route_end": 5500,
+  "previous_route_end": 11200,
+  "branch_routes": [
+    {
+      "id": "woods_canal_high",
+      "entry_x": 11980,
+      "exit_x": 13730,
+      "from_x": 11980,
+      "to_x": 13730,
+      "upper_y": 540,
+      "lower_y": 780,
+      "safe_key": "woods_canal_crossbar",
+      "cache_id": "woods_canal_ledger",
+      "pump_id": "woods_canal_drain",
+      "cost": 1,
+      "platform_indices": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "description": "The lower canal costs warmth and makes noise. Spend one salvage at the pump to drain it, or climb and spend that salvage on the upper crossbar. The upper path stays dry and reaches a finite food/medicine cache. Crouching quietly through the lower water remains a no-salvage alternative."
+    }
+  ],
+  "mechanisms": [
+    {
+      "kind": "breakaway_mill",
+      "id": "woods_mill",
+      "key": "mill_gate_open",
+      "bridge_x": 15720,
+      "bridge_y": 700,
+      "bridge_w": 210,
+      "bridge_h": 20,
+      "wheel_x": 16700,
+      "wheel_y": 604,
+      "radius": 96,
+      "gate_x": 17350,
+      "gate_y": 700,
+      "gate_h": 205,
+      "travel_required": 240,
+      "load_seconds": 0.4,
+      "warning_seconds": 1.2,
+      "roll_direction": 1,
+      "retreat_x": 16540,
+      "exit_x": 17800
+    }
+  ]
 }

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "moments": [
+    {
+      "id": "care_village", "chapter": 0, "x": 3860, "y": 635,
+      "label": "Wait with him", "hold_seconds": 0.65,
+      "lines": ["He holds out his hand.", "There is still time to walk slowly."],
+      "kept": "At the last warm hearth, he held out his hand. We stopped for a while."
+    },
+    {
+      "id": "care_woods", "chapter": 1, "x": 3070, "y": 700,
+      "label": "Wait with him", "hold_seconds": 0.65,
+      "lines": ["She stops. He takes one more step before he notices.", "Then he comes back."],
+      "kept": "In the hollow, we waited. He came back without being called."
+    },
+    {
+      "id": "care_roof", "chapter": 2, "x": 5100, "y": 700,
+      "requires": ["shelter_door", "shelter_roof"],
+      "label": "Stay a little longer", "hold_seconds": 0.65,
+      "lines": ["He keeps his coat on beside the fire.", "She does not ask him to take it off."],
+      "kept": "The dripping stopped. He kept his coat on. We stayed."
+    },
+    {
+      "id": "care_school", "chapter": 3, "x": 3910, "y": 700,
+      "label": "Wait with him", "hold_seconds": 0.65,
+      "lines": ["He makes room beside him.", "She stays until he is ready."],
+      "kept": "Out of the rain, he made room. There was nowhere else we needed to be just then."
+    },
+    {
+      "id": "care_garden", "chapter": 4, "x": 5790, "y": 700,
+      "label": "Let him take your hand", "hold_seconds": 0.65,
+      "lines": ["For once, he reaches first.", "She waits for him."],
+      "kept": "In the garden, he reached for my hand first. I waited for him."
+    }
+  ],
+  "final": {
+    "id": "care_final",
+    "lines": ["He holds out his hand.", "This time, she follows."],
+    "unfamiliar_lines": ["He takes one step ahead.", "She lets him."],
+    "kept": ""
+  }
+}

@@ -3,8 +3,8 @@
   "title": "Under a borrowed roof",
   "subtitle": "THE DISPLACEMENT CAMP",
   "epigraph": "The light came first. Then the earth remembered.",
-  "objective": "Leave the shelter by the freight yard. Make the roofs safe or cross between the warnings.",
-  "width": 11800,
+  "objective": "Cross the signal yard. A quiet stop can turn the light away; an exposed rush leaves him behind.",
+  "width": 16000,
   "sky": "#65787e",
   "fog": "#8c9a9c",
   "cold": 0.5,
@@ -112,6 +112,101 @@
           0
         ]
       ]
+    },
+    {
+      "x": 11800,
+      "y": 700,
+      "w": 1400,
+      "h": 650,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          350,
+          0
+        ],
+        [
+          700,
+          -64
+        ],
+        [
+          1000,
+          -64
+        ],
+        [
+          1400,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 13200,
+      "y": 700,
+      "w": 1700,
+      "h": 650,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          300,
+          0
+        ],
+        [
+          600,
+          56
+        ],
+        [
+          1000,
+          56
+        ],
+        [
+          1400,
+          0
+        ],
+        [
+          1700,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 14900,
+      "y": 700,
+      "w": 1100,
+      "h": 650,
+      "kind": "stone",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          250,
+          0
+        ],
+        [
+          520,
+          -44
+        ],
+        [
+          760,
+          -44
+        ],
+        [
+          1030,
+          0
+        ],
+        [
+          1100,
+          0
+        ]
+      ]
     }
   ],
   "platforms": [
@@ -209,6 +304,36 @@
       "x": 11620,
       "y": 700.0,
       "label": "SCHOOL ROAD"
+    },
+    {
+      "kind": "barricade",
+      "x": 12290,
+      "y": 674.4,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 13320,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 14200,
+      "y": 756.0,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 15120,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 15880,
+      "y": 691.852,
+      "label": "THE SCHOOL ROAD"
     }
   ],
   "interact": [
@@ -219,7 +344,8 @@
       "label": "An abandoned tool roll",
       "id": "camp_tools",
       "scrap": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "rations": 0
     },
     {
       "kind": "cache",
@@ -239,7 +365,8 @@
       "id": "camp_med",
       "medicine": 1,
       "scrap": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "rations": 0
     },
     {
       "kind": "repair",
@@ -271,7 +398,8 @@
       "label": "A shared loaf",
       "id": "camp_loaf",
       "rations": 1,
-      "hold_seconds": 1.1
+      "hold_seconds": 1.1,
+      "scrap": 0
     },
     {
       "kind": "clear",
@@ -288,8 +416,8 @@
       "label": "The freight kitchen’s last pot",
       "hold_seconds": 1.2,
       "id": "freight_kitchen",
-      "rations": 2,
-      "scrap": 2,
+      "rations": 1,
+      "scrap": 0,
       "medicine": 0
     },
     {
@@ -328,7 +456,7 @@
       "route": "raised_supply_spur",
       "rations": 0,
       "medicine": 1,
-      "scrap": 1
+      "scrap": 0
     },
     {
       "kind": "cache",
@@ -337,8 +465,8 @@
       "label": "Bread wrapped in a station timetable",
       "hold_seconds": 1.2,
       "id": "freight_bread",
-      "rations": 2,
-      "scrap": 1,
+      "rations": 1,
+      "scrap": 0,
       "medicine": 0
     },
     {
@@ -355,6 +483,71 @@
       "label": "Clear the stones from the station passage",
       "hold_seconds": 2.8,
       "id": "camp_station_passage"
+    },
+    {
+      "kind": "cache",
+      "x": 11970,
+      "y": 700.0,
+      "label": "A wire stores tin behind the drainage door",
+      "hold_seconds": 1.2,
+      "id": "signal_approach_food",
+      "rations": 0,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 12150,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 13570,
+      "y": 713.067,
+      "label": "Inside the switch keeper’s box",
+      "hold_seconds": 1.2,
+      "id": "signal_keeper_box",
+      "rations": 0,
+      "scrap": 1,
+      "optional": true
+    },
+    {
+      "kind": "relay",
+      "x": 14040,
+      "y": 756.0,
+      "label": "Turn the yard signal together",
+      "hold_seconds": 3.2,
+      "id": "camp_yard_signal",
+      "companion_required": true,
+      "optional": true
+    },
+    {
+      "kind": "cache",
+      "x": 14890,
+      "y": 700.0,
+      "label": "A loaf wrapped in a damp timetable",
+      "hold_seconds": 1.2,
+      "id": "station_arcade_loaf",
+      "rations": 1,
+      "scrap": 0,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 15070,
+      "y": 700.0,
+      "label": "Share warmth before choosing the next way",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 15300,
+      "y": 675.556,
+      "label": "Clear the fallen arcade stones",
+      "hold_seconds": 2.8,
+      "id": "camp_arcade_stones"
     }
   ],
   "gates": [
@@ -383,6 +576,13 @@
       "y": 700.0,
       "h": 190,
       "key": "camp_station_passage",
+      "kind": "rubble"
+    },
+    {
+      "x": 15520,
+      "y": 656.0,
+      "h": 190,
+      "key": "camp_arcade_stones",
       "kind": "rubble"
     }
   ],
@@ -462,6 +662,48 @@
       "w": 300,
       "kind": "wall",
       "y": 700.0
+    },
+    {
+      "x": 12115,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 12870,
+      "w": 300,
+      "kind": "wall",
+      "y": 647.2
+    },
+    {
+      "x": 13590,
+      "w": 300,
+      "kind": "wall",
+      "y": 716.8
+    },
+    {
+      "x": 14050,
+      "w": 310,
+      "kind": "tent",
+      "y": 756.0
+    },
+    {
+      "x": 14150,
+      "w": 300,
+      "kind": "wall",
+      "y": 756.0
+    },
+    {
+      "x": 14930,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 15035,
+      "w": 390,
+      "kind": "tent",
+      "y": 700.0
     }
   ],
   "danger": [
@@ -493,6 +735,24 @@
       "y": 630.0,
       "id": "waiting_bench",
       "text": "A folded coat on a bench. It still held the shape of waiting."
+    },
+    {
+      "x": 12650,
+      "y": 572.0,
+      "id": "signal_whistle",
+      "text": "He raised an empty fist to his mouth. The train sound did not come."
+    },
+    {
+      "x": 13720,
+      "y": 677.067,
+      "id": "signal_buttons",
+      "text": "Three bright buttons in a tin. He chose the blue one and put the others back."
+    },
+    {
+      "x": 15740,
+      "y": 605.037,
+      "id": "station_roots",
+      "text": "A root had found a crack between the tiles. It was growing toward the light."
     }
   ],
   "checkpoints": [
@@ -507,7 +767,13 @@
     9625,
     9840,
     10980,
-    11600
+    11600,
+    12115,
+    12900,
+    13850,
+    14900,
+    15035,
+    15800
   ],
   "tutorials": [
     {
@@ -533,9 +799,13 @@
     {
       "x": 9990,
       "text": "The light returns to the same place. Let it pass, then take him with you."
+    },
+    {
+      "x": 13880,
+      "text": "Four hands can turn the signal away. Or wait for the light and cross while it is gone."
     }
   ],
-  "build": "0.3.0",
+  "build": "0.4.0",
   "bridges": [],
   "pushables": [],
   "water_zones": [],
@@ -552,6 +822,14 @@
     {
       "x": 9625,
       "w": 400
+    },
+    {
+      "x": 12115,
+      "w": 390
+    },
+    {
+      "x": 15035,
+      "w": 390
     }
   ],
   "hazard_lanes": [
@@ -571,6 +849,23 @@
       "period": 13.0,
       "active": 2.4,
       "offset": 5.0
+    },
+    {
+      "x": 13020,
+      "w": 420,
+      "kind": "wind",
+      "period": 12.5,
+      "active": 2.5,
+      "offset": 5.0
+    },
+    {
+      "x": 14300,
+      "w": 480,
+      "kind": "sweep",
+      "period": 13.5,
+      "active": 2.6,
+      "offset": 3.0,
+      "key": "camp_yard_signal"
     }
   ],
   "zones": [
@@ -593,8 +888,29 @@
       "x": 9600,
       "w": 2200,
       "theme": "rail_yard"
+    },
+    {
+      "x": 11800,
+      "w": 1400,
+      "theme": "drainage_tunnel",
+      "caption": "A way beneath the freight road"
+    },
+    {
+      "x": 13200,
+      "w": 1700,
+      "theme": "signal_yard",
+      "caption": "The signal yard"
+    },
+    {
+      "x": 14900,
+      "w": 1100,
+      "theme": "shattered_arcade",
+      "caption": "The station arcade"
     }
   ],
-  "route_length_units": 11800,
-  "original_route_end": 5700
+  "route_length_units": 16000,
+  "original_route_end": 5700,
+  "previous_route_end": 11800,
+  "branch_routes": [],
+  "mechanisms": []
 }

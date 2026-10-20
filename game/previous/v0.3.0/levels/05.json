@@ -1,0 +1,530 @@
+{
+  "id": "05",
+  "title": "The hand that stayed",
+  "subtitle": "THE ASH FIELDS",
+  "epigraph": "There was no promise of morning. Only another step.",
+  "objective": "Stay together. Follow the gardens beyond the ash. There is still a doorway ahead.",
+  "width": 10800,
+  "sky": "#788992",
+  "fog": "#b0b9b8",
+  "cold": 0.12,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1500,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1630,
+      "y": 700,
+      "w": 1570,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3340,
+      "y": 700,
+      "w": 870,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 4345,
+      "y": 700,
+      "w": 1355,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 5700,
+      "y": 700,
+      "w": 1700,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          180,
+          0
+        ],
+        [
+          520,
+          -72
+        ],
+        [
+          860,
+          -72
+        ],
+        [
+          1240,
+          0
+        ],
+        [
+          1700,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 7400,
+      "y": 700,
+      "w": 1800,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 9200,
+      "y": 700,
+      "w": 1600,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          180,
+          0
+        ],
+        [
+          480,
+          -44
+        ],
+        [
+          760,
+          -44
+        ],
+        [
+          1060,
+          0
+        ],
+        [
+          1600,
+          0
+        ]
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1070,
+      "y": 640,
+      "w": 200,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 1830,
+      "y": 640,
+      "w": 170,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 2060,
+      "y": 584,
+      "w": 190,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 2310,
+      "y": 640,
+      "w": 200,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 3570,
+      "y": 640,
+      "w": 180,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 3810,
+      "y": 580,
+      "w": 200,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 4550,
+      "y": 640,
+      "w": 220,
+      "h": 27,
+      "kind": "letter"
+    },
+    {
+      "x": 8230,
+      "y": 640.0,
+      "w": 150,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 8420,
+      "y": 580.0,
+      "w": 220,
+      "h": 22,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "battlefield"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 480,
+      "y": 700,
+      "label": "KEEP GOING"
+    },
+    {
+      "kind": "title",
+      "x": 1600,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 6360,
+      "y": 628.0,
+      "label": ""
+    },
+    {
+      "kind": "well",
+      "x": 7580,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 8500,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 9600,
+      "y": 667.73,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 10680,
+      "y": 700.0,
+      "label": ""
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 720,
+      "y": 700,
+      "label": "The last parcel",
+      "id": "ash_parcel",
+      "rations": 1,
+      "medicine": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "fire",
+      "x": 2850,
+      "y": 700,
+      "label": "A small fire in the ash",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 5700,
+      "y": 700.0,
+      "label": "A seed tin with bread beneath it",
+      "hold_seconds": 1.2,
+      "id": "ash_garden_tin",
+      "rations": 2,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 5880,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "clear",
+      "x": 7230,
+      "y": 700.0,
+      "label": "Unwind the wire from the garden gate",
+      "hold_seconds": 2.8,
+      "id": "ash_wire"
+    },
+    {
+      "kind": "cache",
+      "x": 8520,
+      "y": 580.0,
+      "label": "A parcel beneath a dry flowerpot",
+      "hold_seconds": 1.2,
+      "id": "garden_ledge",
+      "optional": true,
+      "route": "raised_supply_spur",
+      "rations": 1,
+      "medicine": 1,
+      "scrap": 0
+    },
+    {
+      "kind": "relay",
+      "x": 8920,
+      "y": 700.0,
+      "label": "Lift the storm-fallen branch together",
+      "hold_seconds": 3.2,
+      "id": "ash_branch",
+      "companion_required": true
+    },
+    {
+      "kind": "cache",
+      "x": 9230,
+      "y": 700.0,
+      "label": "A place set for someone who did not return",
+      "hold_seconds": 1.2,
+      "id": "garden_table",
+      "rations": 1,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 9410,
+      "y": 695.6,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "brace",
+      "x": 10100,
+      "y": 676.53,
+      "label": "Tie the broken garden awning · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "ash_awning",
+      "optional": true
+    },
+    {
+      "kind": "end",
+      "x": 10500,
+      "y": 700,
+      "label": "Take his hand",
+      "hold_seconds": 2.0
+    }
+  ],
+  "gates": [
+    {
+      "x": 7440,
+      "y": 700.0,
+      "h": 190,
+      "key": "ash_wire",
+      "kind": "wire_gate"
+    },
+    {
+      "x": 9150,
+      "y": 700.0,
+      "h": 190,
+      "key": "ash_branch",
+      "kind": "fallen_bough"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1120,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 2730,
+      "w": 200,
+      "kind": "wall"
+    },
+    {
+      "x": 4640,
+      "w": 220,
+      "kind": "wall"
+    },
+    {
+      "x": 5845,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 7630,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 8390,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 9375,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 10050,
+      "w": 300,
+      "kind": "wall",
+      "y": 669.2
+    },
+    {
+      "x": 10550,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    }
+  ],
+  "memories": [
+    {
+      "x": 2150,
+      "y": 544,
+      "id": "sun",
+      "text": "He drew the sun even after he had forgotten its warmth."
+    },
+    {
+      "x": 3890,
+      "y": 540,
+      "id": "hand",
+      "text": "The hand that pulled him into play was the hand that would not let go."
+    },
+    {
+      "x": 6610,
+      "y": 567.47,
+      "id": "garden_seedlings",
+      "text": "There were green things under the ash. He knelt to make sure."
+    },
+    {
+      "x": 8670,
+      "y": 630.0,
+      "id": "two_cups",
+      "text": "Two cups on a sill. One much smaller than the other."
+    },
+    {
+      "x": 9890,
+      "y": 586.0,
+      "id": "blue_thread",
+      "text": "The ribbon was almost grey. She tied it twice again."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1710,
+    3400,
+    4900,
+    5845,
+    7000,
+    7520,
+    8540,
+    9280,
+    9375,
+    10600
+  ],
+  "tutorials": [
+    {
+      "x": 480,
+      "text": "Stay close. There is still a road ahead."
+    },
+    {
+      "x": 10400,
+      "text": "Some things survive because we carry them together."
+    },
+    {
+      "x": 7570,
+      "text": "Ash lifts before the wind reaches you. Bring him behind the wall and wait."
+    },
+    {
+      "x": 10060,
+      "text": "The last few steps can still hurt. Secure the awning, or wait beneath the wall."
+    }
+  ],
+  "build": "0.3.0",
+  "bridges": [],
+  "pushables": [],
+  "water_zones": [],
+  "safe_zones": [
+    {
+      "x": 2830,
+      "w": 220
+    },
+    {
+      "x": 5845,
+      "w": 400
+    },
+    {
+      "x": 9375,
+      "w": 400
+    }
+  ],
+  "hazard_lanes": [
+    {
+      "x": 7780,
+      "w": 460,
+      "kind": "wind",
+      "period": 13.0,
+      "active": 2.7,
+      "offset": 4.0
+    },
+    {
+      "x": 10200,
+      "w": 200,
+      "kind": "debris",
+      "period": 12.5,
+      "active": 2.0,
+      "offset": 2.0,
+      "key": "ash_awning"
+    }
+  ],
+  "zones": [
+    {
+      "x": 0,
+      "w": 5700,
+      "theme": "ash_garden"
+    },
+    {
+      "x": 5700,
+      "w": 1700,
+      "theme": "ridge"
+    },
+    {
+      "x": 7400,
+      "w": 1800,
+      "theme": "ash_garden"
+    },
+    {
+      "x": 9200,
+      "w": 1600,
+      "theme": "ash_garden"
+    }
+  ],
+  "route_length_units": 10800,
+  "original_route_end": 5700
+}

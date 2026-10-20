@@ -1,0 +1,544 @@
+{
+  "id": "01",
+  "title": "Before the silence",
+  "subtitle": "THE VILLAGE",
+  "epigraph": "Once, the distance between us was only a game.",
+  "objective": "Find the orchard road. Keep him close when the branches begin to move.",
+  "width": 10800,
+  "sky": "#9da59c",
+  "fog": "#bfc3ad",
+  "cold": 0.025,
+  "ground": [
+    {
+      "x": 0,
+      "y": 700,
+      "w": 1450,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 1570,
+      "y": 700,
+      "w": 1780,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 3495,
+      "y": 700,
+      "w": 1705,
+      "h": 600,
+      "kind": "earth"
+    },
+    {
+      "x": 5200,
+      "y": 700,
+      "w": 1500,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          500,
+          -60
+        ],
+        [
+          850,
+          -60
+        ],
+        [
+          1200,
+          0
+        ],
+        [
+          1500,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 6700,
+      "y": 700,
+      "w": 1800,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          1800,
+          0
+        ]
+      ]
+    },
+    {
+      "x": 8500,
+      "y": 700,
+      "w": 2300,
+      "h": 600,
+      "kind": "earth",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          500,
+          0
+        ],
+        [
+          820,
+          -68
+        ],
+        [
+          1150,
+          -68
+        ],
+        [
+          1480,
+          0
+        ],
+        [
+          2300,
+          0
+        ]
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "x": 1770,
+      "y": 650,
+      "w": 190,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 2420,
+      "y": 616,
+      "w": 180,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 3750,
+      "y": 635,
+      "w": 210,
+      "h": 27,
+      "kind": "stone"
+    },
+    {
+      "x": 7930,
+      "y": 640.0,
+      "w": 150,
+      "h": 22,
+      "kind": "stone"
+    },
+    {
+      "x": 8120,
+      "y": 580.0,
+      "w": 220,
+      "h": 22,
+      "kind": "stone"
+    }
+  ],
+  "scenery": [
+    "village",
+    "woods"
+  ],
+  "props": [
+    {
+      "kind": "sign",
+      "x": 570,
+      "y": 700,
+      "label": "THE OLD ROAD"
+    },
+    {
+      "kind": "cart",
+      "x": 2080,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "well",
+      "x": 3890,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 1090,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "bench",
+      "x": 4350,
+      "y": 700,
+      "label": ""
+    },
+    {
+      "kind": "washing",
+      "x": 5530,
+      "y": 665.5,
+      "label": ""
+    },
+    {
+      "kind": "cart",
+      "x": 6840,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "stump",
+      "x": 8730,
+      "y": 700.0,
+      "label": ""
+    },
+    {
+      "kind": "well",
+      "x": 9860,
+      "y": 675.27,
+      "label": ""
+    },
+    {
+      "kind": "sign",
+      "x": 10680,
+      "y": 700.0,
+      "label": "THE WOODS"
+    }
+  ],
+  "interact": [
+    {
+      "kind": "cache",
+      "x": 830,
+      "y": 700,
+      "label": "A paper parcel",
+      "id": "village_parcel",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "wheel",
+      "x": 2900,
+      "y": 700,
+      "label": "Raise the orchard gate",
+      "id": "orchard_gate",
+      "hold_seconds": 2.0
+    },
+    {
+      "kind": "fire",
+      "x": 4040,
+      "y": 700,
+      "label": "The last warm hearth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 4600,
+      "y": 700,
+      "label": "Bread left on a sill",
+      "id": "village_sill",
+      "rations": 1,
+      "scrap": 1,
+      "hold_seconds": 1.1
+    },
+    {
+      "kind": "cache",
+      "x": 6390,
+      "y": 698.29,
+      "label": "A basket beneath the hedge",
+      "hold_seconds": 1.2,
+      "id": "orchard_basket",
+      "rations": 2,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 6570,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "relay",
+      "x": 6900,
+      "y": 700.0,
+      "label": "Lift the crooked orchard bar together",
+      "hold_seconds": 3.2,
+      "id": "orchard_bar",
+      "companion_required": true
+    },
+    {
+      "kind": "cache",
+      "x": 8220,
+      "y": 580.0,
+      "label": "Under the orchard keeper’s coat",
+      "hold_seconds": 1.2,
+      "id": "orchard_terrace",
+      "optional": true,
+      "route": "raised_supply_spur",
+      "rations": 1,
+      "medicine": 1,
+      "scrap": 0
+    },
+    {
+      "kind": "clear",
+      "x": 8820,
+      "y": 700.0,
+      "label": "Move the fallen boughs",
+      "hold_seconds": 2.8,
+      "id": "orchard_boughs"
+    },
+    {
+      "kind": "cache",
+      "x": 9920,
+      "y": 687.64,
+      "label": "A flour tin in the empty shed",
+      "hold_seconds": 1.2,
+      "id": "orchard_shed_food",
+      "rations": 1,
+      "scrap": 1,
+      "medicine": 0
+    },
+    {
+      "kind": "fire",
+      "x": 10100,
+      "y": 700.0,
+      "label": "Share a little warmth",
+      "hold_seconds": 4.0
+    },
+    {
+      "kind": "brace",
+      "x": 10200,
+      "y": 700.0,
+      "label": "Secure the loose shed roof · 1 salvage",
+      "hold_seconds": 3.5,
+      "id": "orchard_shed_brace",
+      "optional": true
+    }
+  ],
+  "gates": [
+    {
+      "x": 3170,
+      "y": 700,
+      "h": 185,
+      "key": "orchard_gate"
+    },
+    {
+      "x": 7140,
+      "y": 700.0,
+      "h": 190,
+      "key": "orchard_bar",
+      "kind": "timber_bar"
+    },
+    {
+      "x": 9050,
+      "y": 689.38,
+      "h": 190,
+      "key": "orchard_boughs",
+      "kind": "fallen_bough"
+    }
+  ],
+  "covers": [
+    {
+      "x": 1870,
+      "w": 150,
+      "kind": "wall"
+    },
+    {
+      "x": 4080,
+      "w": 150,
+      "kind": "wall"
+    },
+    {
+      "x": 6535,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 7410,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 8170,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 10065,
+      "w": 400,
+      "kind": "tent",
+      "y": 700.0
+    },
+    {
+      "x": 10170,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    },
+    {
+      "x": 10730,
+      "w": 300,
+      "kind": "wall",
+      "y": 700.0
+    }
+  ],
+  "memories": [
+    {
+      "x": 1850,
+      "y": 610,
+      "id": "ribbon",
+      "text": "A blue ribbon. She tied it twice so it would stay."
+    },
+    {
+      "x": 3840,
+      "y": 595,
+      "id": "puddle",
+      "text": "He used to jump over the puddles just to make her laugh."
+    },
+    {
+      "x": 5800,
+      "y": 570.0,
+      "id": "orchard_names",
+      "text": "Their names were cut in the bark. Smaller letters, a summer ago."
+    },
+    {
+      "x": 9700,
+      "y": 572.3,
+      "id": "empty_swing",
+      "text": "The swing moved once. Neither of them had touched it."
+    }
+  ],
+  "checkpoints": [
+    180,
+    1680,
+    3600,
+    4800,
+    6535,
+    7250,
+    8500,
+    10065,
+    10700
+  ],
+  "tutorials": [
+    {
+      "x": 300,
+      "text": "A / D  walk     ·     SPACE  jump     ·     SHIFT  run"
+    },
+    {
+      "x": 760,
+      "text": "Hold E to search. Moving away or letting go interrupts the task."
+    },
+    {
+      "x": 2670,
+      "text": "The gate has a hand wheel. Stand beside it and press E."
+    },
+    {
+      "x": 3980,
+      "text": "Rest at a fire. One ration restores food, warmth and strength."
+    },
+    {
+      "x": 2130,
+      "text": "Hold E and move against the crate to push. Climb it to reach the wall."
+    },
+    {
+      "x": 1250,
+      "text": "Hold SHIFT across a long gap. Release SPACE early for a short jump."
+    },
+    {
+      "x": 6760,
+      "text": "Some things need four hands. Bring him close, then hold E at the bar."
+    },
+    {
+      "x": 7380,
+      "text": "Listen to the branches. Wait in the wall’s lee until the gust passes."
+    },
+    {
+      "x": 10100,
+      "text": "The roof creaks before it falls. Brace it with salvage, or wait for a quiet moment."
+    }
+  ],
+  "build": "0.3.0",
+  "bridges": [],
+  "pushables": [
+    {
+      "id": "orchard_crate",
+      "x": 2190,
+      "y": 672
+    }
+  ],
+  "water_zones": [],
+  "safe_zones": [
+    {
+      "x": 3920,
+      "w": 340
+    },
+    {
+      "x": 6535,
+      "w": 400
+    },
+    {
+      "x": 10065,
+      "w": 400
+    }
+  ],
+  "hazard_lanes": [
+    {
+      "x": 7560,
+      "w": 460,
+      "kind": "wind",
+      "period": 10.5,
+      "active": 2.2,
+      "offset": 1.0
+    },
+    {
+      "x": 10320,
+      "w": 260,
+      "kind": "debris",
+      "period": 11.0,
+      "active": 2.3,
+      "offset": 4.3,
+      "key": "orchard_shed_brace"
+    }
+  ],
+  "zones": [
+    {
+      "x": 0,
+      "w": 5200,
+      "theme": "orchard"
+    },
+    {
+      "x": 5200,
+      "w": 1500,
+      "theme": "ridge"
+    },
+    {
+      "x": 6700,
+      "w": 1800,
+      "theme": "orchard"
+    },
+    {
+      "x": 8500,
+      "w": 2300,
+      "theme": "rain_gully"
+    }
+  ],
+  "route_length_units": 10800,
+  "original_route_end": 5200
+}
