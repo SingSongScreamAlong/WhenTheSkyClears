@@ -1,0 +1,101 @@
+WTSC v028 - TRUNK / ARM SUCCESSION COMPARISON
+Status: isolated upper-body refinement; artistic acceptance OPEN.
+V027 is preserved unchanged and supplied as the baseline reference native.
+
+VIEW FIRST
+previews/WTSC_v028_vs_v027_Upper_Body_Comparison_27p9s.mp4
+Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version 0.
+Verified upload: [PRIVATE_LIBRARY_REFERENCE_REMOVED]; 5,941,342 bytes; 27.9seconds.
+0.0-9.3 seconds: matched close, V027 left / V028 right.
+9.3-18.6 seconds: V027 at the original shot-camera framing on the neutral stage.
+18.6-27.9 seconds: V028 at the exact same shot-camera framing.
+Every segment is nine uninterrupted 31-frame cycles at the original 30fps.
+The camera-view cut restarts native F1; each segment otherwise runs F1-279 continuously.
+No extra bookend sample, frame hold, slowdown or optical interpolation is inserted.
+Candidate-only 9.3-second CLOSE and SHOT movies are supplied for separate uninterrupted review.
+The shot camera retains its source lens/shift/framing. This is not a battlefield composite.
+
+FOCUSED CHANGES
+The loaded-to-passing trunk bends/releases under the preserved head, with direction changes
+restricted to -1.6 through +.65 degrees relative to v027. It is not a larger whole-body lean.
+The chest pivots at its upper attachment; the waist/coat bridges the preserved pelvis below.
+Upper-arm swing directions and elbow flex are authored separately for near/far sides.
+The near forearm reversal follows its upper arm by 1.5 frames; far forearm by 1 frame.
+Hand direction follows the forearm by .75/.5 frames, with restrained relaxed wrist orientation.
+This separates shoulder, elbow and wrist reversals instead of moving the previous arm pose
+through one common torso transform. The original painted arms/hands and fixed limb lengths remain.
+The hand/coat separation is clearer in the inspected F11/F27 passing poses and F20 front swing.
+
+Coat changes follow the body corrections: upper attachment follows the chest, waist compression
+is derived from the amount of trunk bend and is limited to 5mm. The additional hem response is
+a damped follower of that trunk correction, layered over the retained v027 passive response.
+There is no new independently timed flare, new material or texture-polish pass.
+
+PRESERVED FOUNDATION
+V027 root, sole goals, footfall timing, pelvis/leg motion, trouser pose samples and boot geometry remain.
+Original head/hair design, original profile orientation and world motion remain v027.
+HEAD_PROFILE is parented to CHEST, so its local keys are compensated for the new chest bend.
+This keeps the head's world motion fixed; it is not a new head performance or turnaround.
+The actual head mesh is checked in its foreground render-layer dependency graph.
+No rejected v008 patch, edge-on head card, new proportions or other child redesign is used.
+Production, the approved art base, music, duration, title mask and other specialist files are untouched.
+
+EDITABLE NATIVE
+native/WTSC_Upper_Body_Pose_Refinement_v028.blend
+Verified executable: Blender 5.2.2 LTS, build d13f752e3b9c.
+No addon, installation or frame handler is required; original pigments are packed.
+Modified targets: BOY | CHEST, HEAD_PROFILE, WRIST_near/far, ARM_POLE_near/far.
+HEAD_PROFILE changes are parent compensation only. V027 world head motion is retained.
+Their actions are named V028 | upper-body succession | ... with quarter-frame keys F1-32
+and native REPEAT modifiers. The other target/root/foot/leg actions retain their baseline identities.
+Arm goals/poles remain editable fixed-length native IK; no hidden reach clamp or limb stretch is used.
+The coat remains V025 | COAT drawings | editable GP with native editable drawings on ones.
+F1-31 are the cycle; F32 instances F1. Native drawing instances repeat through F280.
+Unlink/copy a shared drawing before making a unique later-cycle change.
+The retained compositor combines coat/lower body with the original foreground identity layer.
+Use the native Render result to judge that composite, rather than a single viewport layer.
+
+EXACT TRAVEL / INTEGRATION CONTRACT
+One Blender unit = one metre. Z up; +X forward; camera from negative Y.
+Native rate30fps, period31frames = 1.033333333333seconds.
+Stride S = .9524437384576381m. Nominal speed = .9217197468944884m/s.
+q = native F - 1. Unwrapped root D(q) = S*q/31.
+Near contact = native F1/q0; far contact = F17/q16.
+Near stance18.5frames; far stance19.25frames, unchanged from v027.
+Root and separate world sole-goal X channels repeat with spatial offset.
+Local pose controls repeat without spatial offset. Every31 output samples advance world travel by S.
+V028_TRAVEL_AND_SUPPORT_QUARTER_FRAMES.csv supplies the preserved support/travel curve,
+updated upper origin/chest direction and authored upper/forearm/hand directions at quarter-frame spacing.
+The native is authoritative for the actual boot hull, rocker and interpolated controls.
+
+For centered characters, evaluate body/feet relative to D and scroll the ground/world by -D consistently.
+Transform the root hierarchy AND both separate world-space sole goals with one placement transform.
+Do not move only V021 | CHILD_SUPPORT_TRAVEL while leaving the world sole goals behind.
+Do not add an equivalent second world/camera translation on top of retained native root travel.
+At24fps production timing, preserve seconds:
+native F = 1 + phase_q + 30*(film_frame - chosen_film_start_frame)/24.
+Relative travel from the chosen seam = D(native F) - D(1+phase_q).
+Do not paste31native samples into31film frames at24fps. Resample GP exposures/drawing keys for the film seam.
+Import the body targets and GP drawing corrections with the existing rig/foreground dependencies.
+The included complete native retains the baseline leg/trouser/foot setup to make this concrete.
+No seam into75-80seconds or genuine recovery restart is authored/approved by this solo walking comparison.
+
+REVIEW / TECHNICAL LIMITS
+Actual matched close and shot key/breakdown frames were reviewed before the long render.
+They show useful hand/coat separation and restrained trunk articulation, warranting a longer comparison.
+They do not establish convincing motion over time.
+125 first-cycle samples and nine later contact repeats pass fixed-length reach/preservation safeguards.
+Head world motion is preserved to floating-point precision, checked in the actual foreground render layer.
+Root/boots/trousers remain unchanged at the checked samples.
+Normal-speed playback cannot be observed through the exposed task tools; decoded frame review is reported separately.
+Conrad's playback judgment remains the artistic gate. See V028_CANDID_ASSESSMENT.txt for real remaining weaknesses.
+
+REPRODUCTION
+scripts/inspect_upper_body.py reads source poses/linkage without saving the baseline.
+scripts/upper_body_model.py holds the authored trunk and arm knots/delays.
+scripts/build_upper_body.py reads the included immutable baseline and saves only this isolated native/evidence.
+scripts/render_pose_proof.py renders32close and13matched shot frames for the pose comparison.
+scripts/render_long_comparison.py renders279close+279shot candidate frames; coordinate first, threads2.
+scripts/encode_comparison.py reuses the unchanged v027 frame sequence and encodes the27.9second comparison.
+Raw PNG sequences are omitted from the ZIP. Outside this workspace, regenerate the baseline with
+render_long_comparison.py -- --baseline; the encoder then reads previews/BASELINE automatically.

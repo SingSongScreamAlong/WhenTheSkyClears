@@ -1,0 +1,63 @@
+{
+  "blender": "5.2.2 LTS",
+  "independent_append": [
+    {
+      "root": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+      "start_frame": 1.0,
+      "age_at_frame33": 32.0,
+      "material_driver_targets_correct": true
+    },
+    {
+      "root": "FX01_Explosion_Tall_Charcoal | CONTROLS.001",
+      "start_frame": 49.0,
+      "age_at_frame33": -16.0,
+      "material_driver_targets_correct": true
+    }
+  ],
+  "link_test": {
+    "file": "WTSC_LOCAL_WORKSPACE\\effects\\ink_wash_v001\\native\\FX07_Smoke_Roll_Loop_v001.blend",
+    "collection": "FX07_Smoke_Roll_Loop",
+    "object_count": 14,
+    "instance_location": [
+      4.0,
+      1.0,
+      0.0
+    ]
+  },
+  "loops": [
+    {
+      "collection": "FX07_Smoke_Roll_Loop",
+      "frames_compared": [
+        1,
+        193
+      ],
+      "max_numeric_difference": 0.0,
+      "pass": true
+    },
+    {
+      "collection": "FX08_Ash_Embers_Loop",
+      "frames_compared": [
+        1,
+        193
+      ],
+      "max_numeric_difference": 0.0,
+      "pass": true
+    },
+    {
+      "collection": "FX09_Burning_Debris_Loop",
+      "frames_compared": [
+        1,
+        193
+      ],
+      "max_numeric_difference": 1.3716043690162696e-15,
+      "pass": true
+    }
+  ],
+  "source_hashes_unchanged": {
+    "shots\\world\\WTSC_World_Atmosphere_v036.blend": true,
+    "scripts\\build_spatial_atmosphere_v036.py": true,
+    "sets\\fx\\Painted_Smoke_Wisp_v016.png": true,
+    "sets\\fx\\v036\\Painterly_Flame.png": true
+  },
+  "no_simulation_caches": true
+}

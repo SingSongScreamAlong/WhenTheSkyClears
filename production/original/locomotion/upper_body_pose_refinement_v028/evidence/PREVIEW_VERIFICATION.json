@@ -1,0 +1,50 @@
+{
+  "filename": "WTSC_v028_vs_v027_Upper_Body_Comparison_27p9s.mp4",
+  "bytes": 5941342,
+  "sha256": "d6c6063bcbb3593810e7739d5bdb9d104e7c87bf6a0e1fd339b74b8af66a3ef9",
+  "frames_decoded": 837,
+  "fps": 30.0,
+  "duration_seconds": 27.9,
+  "dimensions": [
+    1280,
+    800
+  ],
+  "candidate_only_segments": [
+    {
+      "filename": "WTSC_v028_CLOSE_9p3s_Normal_Speed.mp4",
+      "frames": 279,
+      "seconds": 9.3,
+      "bytes": 2213110
+    },
+    {
+      "filename": "WTSC_v028_SHOT_9p3s_Normal_Speed.mp4",
+      "frames": 279,
+      "seconds": 9.3,
+      "bytes": 797144
+    }
+  ],
+  "comparison_segments": [
+    {
+      "start_seconds": 0,
+      "seconds": 9.3,
+      "view": "matched close, baseline left / v028 right"
+    },
+    {
+      "start_seconds": 9.3,
+      "seconds": 9.3,
+      "view": "baseline shot framing"
+    },
+    {
+      "start_seconds": 18.6,
+      "seconds": 9.3,
+      "view": "v028 shot framing"
+    }
+  ],
+  "cycles_per_segment": 9,
+  "native_period_frames": 31,
+  "duplicate_boundary_frames": false,
+  "retiming_or_generated_inbetweens": false,
+  "blue_fill_artifact_frames": [],
+  "continuous_playback_observed": false,
+  "visual_review_status": "Inspected all32native pose frames, matched key/breakdown and shot boards, actual encoded first-cycle comparison, full-size encoded F4/F20/F26, late joins throughF278/279 and matched encoded shot frames. Hand/coat separation remains clearer at the inspected passing/front-swing poses; no new head/hair damage, color glitch or abrupt coat join seen. Frame review only; continuous normal-speed playback unobserved."
+}

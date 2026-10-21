@@ -1,0 +1,88 @@
+WHEN THE SKY CLEARS | v050 FACE / HAND FINISH CANDIDATE
+
+v049 remains the positively received, frozen comparison baseline. This candidate
+changes model finish only. All age-ten rest bones, original rig/root/camera and
+garment Actions, clothing shapes, boots, head geometry and original UVs remain
+exactly as in v049. No production or world integration has been performed.
+
+EDITABLE NATIVE
+native/WTSC_Face_Hand_Finish_v050.blend (all images packed)
+Scene: V050 | FACE FINISH AND RELAXED HANDS | v049 gait
+Append master: V050 | AGE10 PAIR | face and hand finish
+Root: V048 | shared travel | steady .73125mps
+Rigs retain V044 BOY/GIRL | estimated joint centres names.
+The native keeps a fixed side profile. No flat head card is rotated edge-on.
+
+WHAT CHANGED
+The girl's exposed face/ear/neck now use a registered warm painterly skin and
+eye finish, guided by the existing girl profile and the boy's painting language.
+The original profile silhouette/alpha, head mesh and attached braid geometry
+remain intact. Original black hair/braid painting remains outside the eligible
+face region; the generated whole-head study is not substituted wholesale.
+The old white triangular eye cue is covered by the new restrained painted eye.
+The girl's visible forearms and hands use the existing atlas skin painting
+instead of its prior charcoal conversion; no outfit redesign or repaint.
+The original generated study, exact prompt, source crops, native shader and
+registration parameters are included. Built-in image generation was used; no
+CLI/API generation, installation, external sharing or source-file overwrite.
+
+Hands retain their original painting and UVs but have a continuous relaxed
+MCP/finger arc, a little finger grouping and a tucked thumb. The wrist/proximal
+palm remain fixed to preserve their forearm connection. Developed centreline
+wrist-to-fingertip targets remain .145m boy/.144m girl; projection becomes
+slightly shorter under the curl, rather than scaling the hand down. Curl is
+23/19degrees boy near/far and21/17degrees girl. These are static pose/model
+changes, not finger articulation or new animation. Original anthropometric
+anchors and hidden skull/joint estimates remain estimates, not certification.
+
+CORRECTION DURING REVIEW
+First static proof exposed a horizontal neck stripe from a single alpha-edge
+correspondence outlier at original source row278. That isolated UV jump was
+removed. Corrected native and all static proofs were rerendered before the
+normal-speed render. The rejected stripe proof is not the delivered candidate.
+
+EXACT TIMING / TRAVEL CONTRACT (UNCHANGED)
+30sourcefps;32frame cycle; .78m stride; .73125m/s.
+D(F)=.78*(F-1)/32. Girl's2frame phase lead is already baked into her Actions.
+Metric roots remain atX=-.4/+ .4m relative to the shared travelling root.
+Local sole baselineZ=0. Proof camera followsD.
+At24productionfps: F=1+(G-G0)*30/24. Cycle25.6production frames; do not round.
+Retime both rigs, root/camera and garment drawing Actions together.
+Travelling pair keeps root+D. Centred pair disables ONLY shared rootX and
+passes world-D with a stationary camera. Do not apply travel twice.
+TRAVEL_CURVE_v050.csv is the unchanged v049 eighth-frame curve throughF257.
+This is ordinary walking; no recovery restart, support clasp or full-trailer,
+music, title-mask or duration changes are included.
+
+PROOF / VALIDATION
+Static before=v049; after=v050. Same neutral bones, F1/F5/F9/F17 and cameras.
+Nine existing v050 walk poses include theF33 cycle endpoint. Isolated hand
+details hide bodies only in RAM; no hand spread/scale change is made for review.
+Both actual clips render257timeline frames at30fps,8.566667seconds; no video
+interpolation or reused loop frames. The matched comparison is v049 LEFT and
+v050 RIGHT with identical gait, phase, camera, scale and root travel.
+Every encoded frame was decoded; all32 first-cycle integer poses and selected
+decoded phases across8cycles are reviewed. Continuous player playback has
+not been observed by the agent. Numerical/technical tests are not art acceptance.
+
+EDITING / REPRODUCTION
+build_finish.py opens frozen v049 and authors only the separate v050 native.
+Duplicate/version the folder before changing the delivered checkpoint. Face
+registration is native shader math in original UV space. Generated alpha never
+owns the head silhouette. Hand vertices remain directly editable.
+The static neutral renderer regenerates original v049 garment caches IN RAM.
+The scripts refer to their original project-relative baseline paths; raw motion
+PNG folders are excluded from the ZIP and remain in the project. Both native
+files are packed and can be opened independently for editing/inspection.
+
+CANDID ARTISTIC ASSESSMENT
+The girl now shares the boy's painted exposed-skin language and reads as a
+face rather than a charcoal mask with a white eye. Relaxed fingertips are less
+straight/splayed while wrists remain continuous in the reviewed poses.
+Remaining limits: original hair has broader charcoal brush marks than the boy;
+the heads remain fixed profiles, expression/gaze do not act, hands retain one
+painted pose, clothing stays planar, and dress/braid do not follow the steps.
+Movement is the preserved v049/v048 gait; no additional performance improvement
+is claimed here. The recovery/clasp transition remains separate outstanding work.
+This is a bounded finish candidate for artistic review, not final approval or
+an Arcane-level quality claim.

@@ -1,0 +1,99 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Village_Still_Review_v012.blend",
+  "scene": "WTSC_VILLAGE_STILL_v012",
+  "blender": "5.2.2 LTS",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "frames": [
+    1,
+    1
+  ],
+  "objects": [
+    {
+      "name": "v012 | Rear countryside",
+      "type": "MESH",
+      "location": [
+        0.0,
+        40.0,
+        3.0
+      ]
+    },
+    {
+      "name": "v012 | Painted village",
+      "type": "MESH",
+      "location": [
+        0.0,
+        12.0,
+        3.0
+      ]
+    },
+    {
+      "name": "v012 | Walking path",
+      "type": "MESH",
+      "location": [
+        0.0,
+        2.0,
+        3.0
+      ]
+    },
+    {
+      "name": "v012 | CHILDREN | held editable GP black silhouettes",
+      "type": "GREASEPENCIL",
+      "location": [
+        -1.6891200542449951,
+        0.0,
+        0.8463720083236694
+      ]
+    },
+    {
+      "name": "v012 | Oak frame and near bank",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -5.0,
+        3.0
+      ]
+    },
+    {
+      "name": "v012 | Review camera",
+      "type": "CAMERA",
+      "location": [
+        0.0,
+        -16.0,
+        3.0
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Foreground_Ground.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true
+    },
+    {
+      "name": "Rear_Countryside.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true
+    },
+    {
+      "name": "Village_Middle.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true
+    }
+  ],
+  "pure_black_light_independent_gp": true,
+  "animation": "None",
+  "still_approval": "Pending Conrad's review",
+  "scrolling_review": "Not started; awaits still approval"
+}

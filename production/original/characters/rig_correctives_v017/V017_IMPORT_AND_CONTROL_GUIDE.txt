@@ -1,0 +1,16 @@
+V017 EDITABLE CHECKPOINT / IMPORT CONTRACT
+
+Primary: native/WTSC_Painted_Rig_Control_Asset_v017.blend (unkeyed). Append collection WTSC_PAINTED_RIG_CORRECTIVES_v017 with all child targets, drivers, shape keys and node groups. Fresh append was tested. The original v016 control ABI/tag and foot recipe are deliberately retained for compatibility; corrective_revision identifies v017. Eight IK chains total, 33 original bones, 28 painted meshes. Do not treat this study as production-approved art.
+
+native/WTSC_Painted_Rig_Corrective_Board_v017.blend holds the same twelve stepped tests at 1,21,..221. native/WTSC_Painted_Rig_Arm_Correctives_v017.blend is the earlier arm-only checkpoint. native/WTSC_Painted_Rig_Diagnostic_v017.blend is a 48 frame/24fps control fixture:1..24 cuff/reach/compression and25..48 brace follow, with a deliberate section cut. It has no trailer placement or walking timing contract.
+
+New correctives live in corrective_geometry.py: source-width/UV arm ribbons use a shared shoulder-elbow-wrist curve and native subdivision. Body shape keys and trouser-width fields respond to joint/foot distances. No runtime Python handler or frame-specific contour clock is required. Source body weights and original image pixels remain.
+
+FAR WRIST FrontLayer:0 uses source rear depth;1 brings that arm forward of the torso, keeping the skin forward of sleeve/cuff and the hand forward of skin. Key this as CONSTANT for deliberate2D occlusion changes. Primary neutral value is 0. It does not repair every folded silhouette. Reach/Brace/TorsoFollow and calibrated NEAR BraceFollow remain the v016 controls; hand-shape weights still normalize. Preserve drivers when clearing animation: set animation_data.action=None; do not use animation_data_clear.
+
+World-space foot locks while moving WORLD_TRAVEL
+Load embedded rig_pose_api.py into a namespace, call initialize_from_scene(), capture each ANKLE's matrix_world as the desired foot-bone goal. After changing WORLD_TRAVEL, call set_world_foot_matrix(child,side,goal) for all planted feet, then require_reachable(). Equivalently, target_local=inverse(rig.matrix_world)@desired_world_foot_bone_matrix. Moving travel without resetting the world goal moves its child ankle targets and slides boots. The helper does not stretch legs or plan a step; out-of-range poses must be rejected/re-authored. The supplied root-compensation test proves a 25 mm case and rejects 500 mm excess. No new production travel curve was authored.
+
+Coordinates: metres; +X travel, +Z up; camera from-Y. Use in-plane head pitch only. Original right-profile eyes/hair are not a turnaround or eye-gaze rig. Keep proportions, near/far identity and the retained braid/skirt bones. The source near/far projected lengths are intentionally not assumed equal. See V017_CHECKPOINT_REPORT.txt for exact missing head-view registration and candid remaining cloth/crossing defects.
+
+Actual Blender 5.2.2 LTS (build d13f752e3b9c) was verified. Native source files are self-contained with packed original paint. Source v016 files and production remain immutable. The written-reference handoff is now received. This checkpoint is returned before starting the separate guided exercise; it is not a tutorial match or an approved walk.

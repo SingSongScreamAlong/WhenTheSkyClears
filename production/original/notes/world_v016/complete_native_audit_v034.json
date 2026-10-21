@@ -1,0 +1,103 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Complete_Trailer_Editable_v034.blend",
+  "source_sha256": "89df930fb43da0a881dfe2a888e4af723e147847b6459eaaf59965b4080cc341",
+  "native_projection_checks": [
+    {
+      "frame": 1,
+      "pair_center": [
+        0.5000001639127731,
+        0.4999999403953552
+      ],
+      "world_projection_vs_original_2x_crop_max_pixel_error": 0.00020116567611694336
+    },
+    {
+      "frame": 1249,
+      "pair_center": [
+        0.4999999701976776,
+        0.4999999403953552
+      ],
+      "world_projection_vs_original_2x_crop_max_pixel_error": 0.00020116567611694336
+    },
+    {
+      "frame": 1681,
+      "pair_center": [
+        0.4999999701976776,
+        0.4999999403953552
+      ],
+      "world_projection_vs_original_2x_crop_max_pixel_error": 0.0026607513427734375
+    },
+    {
+      "frame": 1968,
+      "pair_center": [
+        0.5000006556510925,
+        0.4999999403953552
+      ],
+      "world_projection_vs_original_2x_crop_max_pixel_error": null
+    }
+  ],
+  "cached_crop_integer_rounding_error_pixels_y": 0.507368803024292,
+  "held_drawing_sha256": "933559b907808ac042380413a8d24dd116fd7b147481935469f1c06a7827ad1d",
+  "held_drawing_frames": 1,
+  "native_master_strips": [
+    {
+      "type": "SCENE",
+      "name": "WORLD | shared pair centered | 0\u201382",
+      "start": 1,
+      "end_exclusive": 1969,
+      "scene": "WTSC_WORLD_CENTERED_v034"
+    },
+    {
+      "type": "SCENE",
+      "name": "ENDING | native font alpha | 82\u2013103",
+      "start": 1969,
+      "end_exclusive": 2473,
+      "scene": "WTSC_KNOCKOUT_ENDING_v034"
+    },
+    {
+      "type": "SOUND",
+      "name": "MUSIC | original start + original 90\u2013100 fade",
+      "start": 1,
+      "end_exclusive": 2401,
+      "scene": null
+    }
+  ],
+  "native_master_sound_volume": [
+    [
+      1,
+      1.0
+    ],
+    [
+      1968,
+      1.0
+    ],
+    [
+      1969,
+      1.0
+    ],
+    [
+      2161,
+      1.0
+    ],
+    [
+      2281,
+      0.49790793657302856
+    ],
+    [
+      2400,
+      0.0
+    ]
+  ],
+  "sound_packed": true,
+  "render_output": [
+    3840,
+    2160,
+    24,
+    1,
+    2472
+  ],
+  "linked_movie": [
+    "//..\\..\\renders\\world_v016\\WTSC_Painted_World_4K_v030.mp4"
+  ],
+  "legacy_title_hidden": true,
+  "limitation": "0\u201370 cached crop effective1080; native70\u201382 UHD; ending cached fill effective1080. At82 deliberate cut to initially black knockout, clean52\u201370 world replay inside glyphs; exact pair center and scale preserved."
+}

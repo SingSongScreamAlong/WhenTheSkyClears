@@ -1,0 +1,32 @@
+{
+  "filename": "WTSC_v026_GP_Normal_Speed_9p3s_Close_9p3s_Shot.mp4",
+  "bytes": 3011180,
+  "sha256": "1fecf03dfbaf2e2c1cdbe2dbb037218d3ab644429e66dbde87159a77f49b0f08",
+  "frames_decoded": 558,
+  "fps": 30.0,
+  "duration_seconds": 18.6,
+  "dimensions": [
+    1280,
+    800
+  ],
+  "segments": [
+    {
+      "filename": "WTSC_v026_GP_CLOSE_9p3s_Normal_Speed.mp4",
+      "frames": 279,
+      "seconds": 9.3,
+      "bytes": 2214028
+    },
+    {
+      "filename": "WTSC_v026_GP_SHOT_9p3s_Normal_Speed.mp4",
+      "frames": 279,
+      "seconds": 9.3,
+      "bytes": 789760
+    }
+  ],
+  "cycles_per_segment": 9,
+  "native_period_frames": 31,
+  "duplicate_boundary_frames": false,
+  "holds_slowdown_optical_interpolation": false,
+  "segment_cut": "At9.3s, restart the same nine-cycle sequence in the second camera view. Within each segment, motion and travel are uninterrupted.",
+  "observation": "All558frames decoded; firstcycle, latejoin and shot boards inspected separately. This is frame review, not observed continuous playback."
+}

@@ -1,0 +1,48 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "phase": 4,
+  "source_sha256_verified": true,
+  "source_crop_exact_pixels_verified": true,
+  "source_crop_xyxy": [
+    961,
+    32,
+    1271,
+    620
+  ],
+  "native_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_source_sequence_v064\\native\\Muybridge_Phase04_Manual_Trace_v064.blend",
+  "render_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_source_sequence_v064\\previews\\phase04_native_rgba_v064.png",
+  "contour_names": [
+    "head_visible_profile",
+    "nape_to_shoulder",
+    "front_neck_breast",
+    "back_short_visible",
+    "hip_outer_arc",
+    "near_arm_outer",
+    "near_arm_inner_and_hand",
+    "far_arm_short_visible",
+    "stance_leg_outer_to_sole",
+    "stance_leg_inner",
+    "front_thigh_outer",
+    "front_shin_outer_to_lifted_toe",
+    "front_leg_inner"
+  ],
+  "point_counts": [
+    11,
+    6,
+    7,
+    4,
+    7,
+    7,
+    11,
+    3,
+    12,
+    10,
+    7,
+    10,
+    10
+  ],
+  "stroke_count": 13,
+  "total_manually_authored_points": 105,
+  "registration": "X=(source_x-155)*0.01; Y=(294-source_y)*0.01; 620x1176 camera ortho_scale 5.88",
+  "no_interpolation_or_pose_synthesis": true
+}

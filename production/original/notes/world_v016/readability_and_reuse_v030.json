@@ -1,0 +1,47 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v030.blend",
+  "source_sha256": "b68e097922883c9cb409da4d5a999a889be2ffc9768627824087f44745574bb6",
+  "changed_objects": [
+    "v030 | High crown foreground oak 0",
+    "v030 | High crown foreground oak 1",
+    "v030 | High crown foreground oak 2",
+    "v030 | High crown foreground oak 3"
+  ],
+  "change": "New purpose-painted high-crown oak; source aspect ratio preserved, no warping",
+  "native_new_frames": [
+    301,
+    1872
+  ],
+  "new_frame_count": 1572,
+  "reuse_ranges_frames": [
+    [
+      1,
+      300
+    ],
+    [
+      1873,
+      2400
+    ]
+  ],
+  "reused_frame_count": 828,
+  "proof": "Old and new signed-wind geometry bounds strictly outside horizontal camera frustum on all 828 reused frames. Only emissive foreground tree meshes changed; no raytracing, no relevant title-light shadow overlap. All camera, GP, scenery, effects and fades preserved.",
+  "parent_movie": "renders/world_v016/WTSC_Painted_World_4K_v027.mp4",
+  "art_status": "Observed occlusion correction; no artistic acceptance inferred.",
+  "new_asset": {
+    "objects": [
+      "v030 | High crown foreground oak 0",
+      "v030 | High crown foreground oak 1",
+      "v030 | High crown foreground oak 2",
+      "v030 | High crown foreground oak 3"
+    ],
+    "image_pixels": [
+      1024,
+      1536
+    ],
+    "physical_size": [
+      5.333333333333333,
+      8
+    ],
+    "source": "sets/world_v030/High_Crown_Oak.png"
+  }
+}

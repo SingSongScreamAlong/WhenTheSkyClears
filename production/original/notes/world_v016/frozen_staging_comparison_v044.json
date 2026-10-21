@@ -1,0 +1,38 @@
+{
+  "checkpoint": "v043",
+  "candidate": "v044",
+  "all120frames_compared": true,
+  "global_frames": [
+    1801,
+    1920
+  ],
+  "engine": "BLENDER_EEVEE",
+  "all_original_render_camera_world_settings_equal_before_save": true,
+  "fresh_open_frozen_max_error": 0,
+  "errors_vs_frozen_v043": {
+    "camera_matrix": 0.0,
+    "new_vs_old_travel": 0.0,
+    "fx_origin": 0.0,
+    "fx_clock": 0.0,
+    "physical_light": 0.0,
+    "receiver_watts": 0.0,
+    "protected_foot_world_matrices": 2.384185791015625e-07,
+    "sole_extrema": 1.2715657504713818e-06
+  },
+  "route_total_m": 0.561666667,
+  "actor_origin": [
+    107.63395690917969,
+    0.0,
+    0.7200736999511719
+  ],
+  "actor_scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "camera_binding": "Retains original hidden v005TRAVEL; newTRAVEL matches every frame. No double travel.",
+  "fx": "Existing v003collection, controls, clock, physical light and receiver kept fixed. No source Cycles comparison world/settings appended.",
+  "contacts": "Four existing native baked contacts retained and assigned new boot references; matching foot matrices/sole extrema checked.",
+  "old_pair_and_all6_caps_hidden": true,
+  "future_route_change": "Pending separate coordinated staging work only; current route/camera unchanged."
+}

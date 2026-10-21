@@ -1,0 +1,71 @@
+{
+  "version": "5.2.2 LTS",
+  "cold_reopened": true,
+  "all_sampled_pose_matrix_error": 3.5762786865234375e-07,
+  "flat_stance_max_vertex_xz_drift_m": {
+    "BOY_far": 1.4901161193847656e-07,
+    "BOY_near": 5.960464477539063e-08,
+    "GIRL_far": 1.1920928955078125e-07,
+    "GIRL_near": 2.384185791015625e-07
+  },
+  "late_boot_min_floor_z_m": -0.0005100592970848083,
+  "late_max_clearance_m": 0.07613670825958252,
+  "flat_stance_ranges_local": {
+    "BOY_far": [
+      [
+        81,
+        120
+      ]
+    ],
+    "BOY_near": [
+      [
+        81,
+        95
+      ],
+      [
+        119,
+        120
+      ]
+    ],
+    "GIRL_far": [
+      [
+        81,
+        106
+      ]
+    ],
+    "GIRL_near": [
+      [
+        81,
+        82
+      ],
+      [
+        105,
+        120
+      ]
+    ]
+  },
+  "technical_note": "Flat sole vertex world lock tested independently of screen pixels. Roll ranges excluded; animated pivot/contact is deliberate. Hip is a visual support proxy, not a physical COM or dynamics solution.",
+  "paint": "Original packed source image, original UVs, head mesh and body proportions. No new bitmap.",
+  "head": "Original-profile object visible all120; rejected passing/mirror variants hidden in isolated asset.",
+  "double_duration_distance_error_m": 2.9087066644173376e-08,
+  "protected_inputs_preserved": {
+    "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+    "renders/world_v016/integration_v046/WTSC_Supported_Recovery_v046_1080p_75_80.mp4": true,
+    "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend": true,
+    "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend": true,
+    "locomotion/head_turn_patch_v008/evidence/STATUS_REFERENCE_REQUIRED.json": true
+  },
+  "fresh_append": {
+    "objects": 157,
+    "camera_light_count": 0,
+    "packed_images": [
+      "Pair_Painterly_Near_Age_v015.png"
+    ],
+    "all_drawings_present": 27,
+    "travel_at_1920": [
+      0.8616666793823242,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "status": "RIG_AUDIT_AND_TARGETED_LINKAGE_FIX_DELIVERED; ART_READINESS_UNPASSED",
+  "created_utc": "2026-10-18T00:03:35.229815+00:00",
+  "scope": "Latest user direction: kids and rig first; performance paused",
+  "primary_asset": "WTSC_LOCAL_WORKSPACE\\characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Control_Asset_v016.blend",
+  "report": "WTSC_LOCAL_WORKSPACE\\characters\\rig_capability_audit_v016\\RIG_CAPABILITIES_AND_DEFECTS_v016.txt",
+  "guide": "WTSC_LOCAL_WORKSPACE\\characters\\rig_capability_audit_v016\\IMPORT_AND_POSING_GUIDE_v016.txt",
+  "technical_gates": {
+    "16_live_contours": true,
+    "no_old_pose_clock": true,
+    "all12_native_IK_under0_1mm": true,
+    "all16_respond_to_new_native_hip_edit": true,
+    "new_edit_planted_boot_drift_under1micron": true,
+    "all_rolls_floor_under1micron": true,
+    "boots_rigid_under1micron": true,
+    "brace_projected_gap0_to2mm_in_test_range": true,
+    "head_and_braid_profile_rigid_under1micron": true,
+    "original_UVs_and_topology_exact": true,
+    "original_body_weights_exact": true,
+    "original_rest_bones_exact": true,
+    "self_contained_append": true,
+    "source_hash_unchanged": true
+  },
+  "fresh_native_delivery_pass": true,
+  "max_live_IK_error_mm": 0.04796283815013736,
+  "brace_gap_mm_range": [
+    0.4999627126380801,
+    0.5001407116651535
+  ],
+  "preview_verification": [
+    {
+      "file": "WTSC_v016_Painted_Rig_Diagnostic_4s.mp4",
+      "bytes": 314978,
+      "sha256": "7a2a6b2b94983c6174d833c3c8310f48efaa7203e2fb7d21d9c69244c4879687",
+      "decoded_frames": 96,
+      "width": 960,
+      "height": 540,
+      "fps": 24.0,
+      "duration_seconds": 4.0,
+      "under20MB": true,
+      "review_method": "All frames decoded; chronological sample board inspected. No normal-speed playback claim."
+    },
+    {
+      "file": "WTSC_v016_Camera_Matched_Rig_Diagnostic_4s.mp4",
+      "bytes": 128627,
+      "sha256": "6f73dfcaed7cb4a92397a4fde4943034c8a6f4b70b4df9fd93bdf9d40150e9c7",
+      "decoded_frames": 96,
+      "width": 960,
+      "height": 540,
+      "fps": 24.0,
+      "duration_seconds": 4.0,
+      "under20MB": true,
+      "review_method": "All frames decoded; chronological sample board inspected. No normal-speed playback claim."
+    }
+  ],
+  "artistic_assessment": {
+    "status": "FINAL_ART_READINESS_UNPASSED",
+    "technical_linkage": "PROVEN_WITHIN_TESTED_RANGES",
+    "actual_art_not_proxy": true,
+    "visually_working": [
+      "Original character paint and profile identity retained",
+      "Contacts and planted source boots visible",
+      "New posed contours follow controls without cache",
+      "Head and attached braid in-plane continuity"
+    ],
+    "visually_open_or_failed": [
+      "Boxy cuffs and constructed crossed/deep elbows",
+      "Tubular knee/cloth compression and stretched garment paint need authored correction",
+      "Fixed source near/far draw order needs per-pose extreme crossing review",
+      "Girl required look back is not supplied by retained profile",
+      "No independent eye-gaze drawing or arbitrary finger/grasp rig"
+    ],
+    "normal_speed_review": false,
+    "performance_approval": false,
+    "production_integration": false,
+    "historical_failed_head_visible_in_evidence": true
+  },
+  "library_uploads": {
+    "status": "All4 private Library previews created successfully, version0",
+    "files": [
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v016_Painted_Pose_Stress_Tests.jpg",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v016_Painted_Pose_Stress_Tests.jpg",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "image/jpeg",
+        "library_artifact_type": "image",
+        "file_size_bytes": 476639
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v016_Contacts_And_Head_Limits.jpg",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v016_Contacts_And_Head_Limits.jpg",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "image/jpeg",
+        "library_artifact_type": "image",
+        "file_size_bytes": 453419
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v016_Painted_Rig_Diagnostic_4s.mp4",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v016_Painted_Rig_Diagnostic_4s.mp4",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "video/mp4",
+        "library_artifact_type": "other",
+        "file_size_bytes": 314978
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v016_Camera_Matched_Rig_Diagnostic_4s.mp4",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v016_Camera_Matched_Rig_Diagnostic_4s.mp4",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "video/mp4",
+        "library_artifact_type": "other",
+        "file_size_bytes": 128627
+      }
+    ],
+    "local_xattrs": "Attempted on all4 local preview files using official helper; failed because Windows Python lacks os.setxattr. Exact IDs and versions preserved in receipts. No upload failure or uncertain write."
+  },
+  "blockers": [
+    {
+      "action": "Approve final girl look-back/turn capability",
+      "target": "Actual painted girl head/profile art",
+      "reason": "Two registered matching quarter views missing; original profile cannot express the required turn. Rejectedv008 not reused.",
+      "state": "unresolved art/design requirement, not an execution denial"
+    }
+  ],
+  "source_integrity": [
+    {
+      "file": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "expected": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "actual": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    {
+      "file": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "expected": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "actual": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    {
+      "file": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "expected": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "actual": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    }
+  ],
+  "hand_shape_normalization": true,
+  "secondary_tests": [
+    {
+      "control": "braid",
+      "delta_degrees": -5,
+      "max_head_displacement_m": 0.019323620951026715,
+      "head_vertices_without_braid_weight_max_drift_m": 0.0,
+      "max_dress_displacement_m": 0.0,
+      "dress_triangle_orientation_flips": 0,
+      "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+    },
+    {
+      "control": "braid",
+      "delta_degrees": 5,
+      "max_head_displacement_m": 0.019323702093455616,
+      "head_vertices_without_braid_weight_max_drift_m": 0.0,
+      "max_dress_displacement_m": 0.0,
+      "dress_triangle_orientation_flips": 0,
+      "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+    },
+    {
+      "control": "skirt",
+      "delta_degrees": -5,
+      "max_head_displacement_m": 0.0,
+      "head_vertices_without_braid_weight_max_drift_m": 0.0,
+      "max_dress_displacement_m": 0.03560414091619922,
+      "dress_triangle_orientation_flips": 0,
+      "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+    },
+    {
+      "control": "skirt",
+      "delta_degrees": 5,
+      "max_head_displacement_m": 0.0,
+      "head_vertices_without_braid_weight_max_drift_m": 0.0,
+      "max_dress_displacement_m": 0.035604141324913394,
+      "dress_triangle_orientation_flips": 0,
+      "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+    }
+  ],
+  "paused_inbetween_work": "locomotion/performance_inbetweens_v015/evidence/STATUS_PAUSED_FOR_CHARACTER_RIG_AUDIT.json",
+  "execution_blockers": [],
+  "deliverables": [
+    {
+      "path": "native/WTSC_Painted_Rig_Capability_v016.blend",
+      "bytes": 1125602,
+      "sha256": "2ac224b52393fb083067843ead3018ba4fc6371ee71faeba614f686b2a70b094"
+    },
+    {
+      "path": "native/WTSC_Painted_Rig_Control_Asset_v016.blend",
+      "bytes": 1095855,
+      "sha256": "d4956a9b9328b679af531de4f912ec56c106b6bf39076b99366d4f4a7501e432"
+    },
+    {
+      "path": "native/WTSC_Painted_Rig_Live_Diagnostic_v016.blend",
+      "bytes": 1193877,
+      "sha256": "fc1ed8274fda3c0d9fdf5c536516ddad3719631b74b982564995f5890f53ea92"
+    },
+    {
+      "path": "scripts/build_rig_audit.py",
+      "bytes": 13852,
+      "sha256": "7567b8873e9199910fc4dde648b70b4be080e0eba6ec4cce31ce7a7dce165b40"
+    },
+    {
+      "path": "scripts/diagnostic_poses.py",
+      "bytes": 7679,
+      "sha256": "f7faa82904a5f929a1d43b9bb72a7d774460a53d60aaf6ff107ab6082e07a765"
+    },
+    {
+      "path": "scripts/finish_evidence.py",
+      "bytes": 3345,
+      "sha256": "1a089397fb0074c2827b4ef55c28ba3da63f8c56eba5fb9ba022baf672ec671d"
+    },
+    {
+      "path": "scripts/finish_native_metadata.py",
+      "bytes": 1636,
+      "sha256": "d1fb25b2c2d5b220d57787a55507d4e4b748d6708c495c9f7c847906c7486dde"
+    },
+    {
+      "path": "scripts/inspect_evaluated.py",
+      "bytes": 1640,
+      "sha256": "ddfc17eb9b61e5de9a6025c763b650c55ddb13ffbf821cd171996372cd3051e6"
+    },
+    {
+      "path": "scripts/inspect_source.py",
+      "bytes": 1480,
+      "sha256": "84e3746cd269511aa025a368918142c7c70664967d5df857656a9b496364633d"
+    },
+    {
+      "path": "scripts/inspect_source_camera.py",
+      "bytes": 1663,
+      "sha256": "988596cab602debae570c7b5673094e3493a6bdda22fa97ba7fc1887d28e7a8b"
+    },
+    {
+      "path": "scripts/live_contours.py",
+      "bytes": 7771,
+      "sha256": "36e4a123db432e8e34e48dc12891de4a923e59df9fa9031196b910ba1cc1681f"
+    },
+    {
+      "path": "scripts/make_live_diagnostic.py",
+      "bytes": 5413,
+      "sha256": "86f315002aebaa1cc53133d3b66b18c5a706b3ab2bc9212296bfc25958e88b3e"
+    },
+    {
+      "path": "scripts/probe_ik.py",
+      "bytes": 1530,
+      "sha256": "22a1b55c1c6baf0f99d291545b78a516f0f24ac21ef60c8fddb3c6eebbfa6015"
+    },
+    {
+      "path": "scripts/probe_live_contour.py",
+      "bytes": 1060,
+      "sha256": "dc93a2e1660f90df5c949fb3eec937a18c1d59c4691e3e2506f4f4f011f09d49"
+    },
+    {
+      "path": "scripts/process_previews.py",
+      "bytes": 7451,
+      "sha256": "19506d6cf8e04cdb6d992b2086cf70cffa74ee2d63d7d3f42ba4e2a3a5bd1f02"
+    },
+    {
+      "path": "scripts/render_diagnostics.py",
+      "bytes": 1175,
+      "sha256": "e82e54db8a970ed2c7a55503f7593207c3c94c400280b31a7cd15dbb87bebbcf"
+    },
+    {
+      "path": "scripts/rig_pose_api.py",
+      "bytes": 6971,
+      "sha256": "ce0ccbed0ba8710c8565ead2499b7bd460e9292a0e21291449a2c67cb2c594c5"
+    },
+    {
+      "path": "scripts/test_secondary_controls.py",
+      "bytes": 2180,
+      "sha256": "1a61e0d590dcf4a63db969f4841bb7bb989762415c3b0781a3cb4f06fb4cdcb1"
+    },
+    {
+      "path": "scripts/validate_rig.py",
+      "bytes": 11564,
+      "sha256": "9b2eca8bf79a5653091e739583d5abe88c15ace23aba9207399c2e9acefafb4f"
+    },
+    {
+      "path": "scripts/verify_delivery.py",
+      "bytes": 5448,
+      "sha256": "14013408b2f0e318d90c9a6896ffe558eecc8d6bef361265548799e61329afcc"
+    },
+    {
+      "path": "scripts/write_reports.py",
+      "bytes": 14492,
+      "sha256": "22c5e2641b51795de8292cba8a4ddb38f4b030b8c0f8a0b7f480e9b17e052a27"
+    },
+    {
+      "path": "IMPORT_AND_POSING_GUIDE_v016.txt",
+      "bytes": 6791,
+      "sha256": "b3d2c95e559dd3dc926e6941391986c2733794b08aaad295ecbbcacfc8305746"
+    },
+    {
+      "path": "RIG_CAPABILITIES_AND_DEFECTS_v016.txt",
+      "bytes": 4587,
+      "sha256": "014aa84aaeba0c1409ac7060df078892fe6c124af7fb2f65c468bd00c67300e8"
+    },
+    {
+      "path": "NATIVE_CONTROL_MAP_v016.json",
+      "bytes": 17263,
+      "sha256": "7a87db3c65ac35d65c466aa62db711b046a3d2c1356ec2b62af92fbc0415cb65"
+    },
+    {
+      "path": "WTSC_v016_Contacts_And_Head_Limits.jpg",
+      "bytes": 453419,
+      "sha256": "66e182487489a3045b4b05155c7c871cfd535f6daf4c9675d9c4fed45bb1c176"
+    },
+    {
+      "path": "WTSC_v016_Painted_Pose_Stress_Tests.jpg",
+      "bytes": 476639,
+      "sha256": "be34cd44374ce260228bfbbe02b12a331fa924ac5e02d29e0c463ec646ecda04"
+    },
+    {
+      "path": "WTSC_v016_Camera_Matched_Rig_Diagnostic_4s.mp4",
+      "bytes": 128627,
+      "sha256": "6f73dfcaed7cb4a92397a4fde4943034c8a6f4b70b4df9fd93bdf9d40150e9c7"
+    },
+    {
+      "path": "WTSC_v016_Painted_Rig_Diagnostic_4s.mp4",
+      "bytes": 314978,
+      "sha256": "7a2a6b2b94983c6174d833c3c8310f48efaa7203e2fb7d21d9c69244c4879687"
+    },
+    {
+      "path": "evidence/actual_v046_camera.json",
+      "bytes": 2507,
+      "sha256": "a6470c2c8684f533d18c03842d8970be631847b4e0d04544d4e5a10955cc947a"
+    },
+    {
+      "path": "evidence/artistic_assessment.json",
+      "bytes": 948,
+      "sha256": "ffc1edfee9b84023455a961d0cee814e5309cc7212bed881fd45a86a8f11e447"
+    },
+    {
+      "path": "evidence/delivery_native_verification.json",
+      "bytes": 24707,
+      "sha256": "896ae1903623267bcdbda96a6b1bbb6184a29fda6e727f10049aa2d22d977826"
+    },
+    {
+      "path": "evidence/diagnostic_pose_manifest.json",
+      "bytes": 25105,
+      "sha256": "c5e220ba01be3f8b1c5327a8f30b9e8c74e9a5d55c955ccc1348b8b59f65c707"
+    },
+    {
+      "path": "evidence/evaluated_geometry_debug.json",
+      "bytes": 57867,
+      "sha256": "3cf00fb2179bf00324d07e2b6f86e18dda738b90c5e7ffce8aa57ff04e420fa5"
+    },
+    {
+      "path": "evidence/final_native_metadata_cleanup.json",
+      "bytes": 686,
+      "sha256": "4528d7b3639bf4743b5f6fffe3d189450535d07399ca2a78510826b3016fd3ae"
+    },
+    {
+      "path": "evidence/hand_shape_safety.json",
+      "bytes": 815,
+      "sha256": "aa3f9bc1d196015c586f40374153deec8ac30595b9e5d1c754a4a3f24fb66786"
+    },
+    {
+      "path": "evidence/ik_plane_probe.json",
+      "bytes": 181316,
+      "sha256": "ef4e2f453cacc64b1c92caca83f145dc9803aef894791030c6e544e236d68c90"
+    },
+    {
+      "path": "evidence/library_images_receipt.json",
+      "bytes": 1499,
+      "sha256": "6522996bb2bf0dc8683a87e6ceba70f183dcf743a38b5784b99af770693b7219"
+    },
+    {
+      "path": "evidence/library_movies_receipt.json",
+      "bytes": 1513,
+      "sha256": "9fc7a828f83ddfb2b4fe9fb5fa3a8a871fb845dce26fd618f30fc6bd2cebc820"
+    },
+    {
+      "path": "evidence/linkage_repair.json",
+      "bytes": 5208,
+      "sha256": "cc977b61dd737a409c17f40d01f67ad0a75f3fbb1e46ce9ff7ba77d0d4fd4b07"
+    },
+    {
+      "path": "evidence/live_diagnostic_samples.json",
+      "bytes": 13489,
+      "sha256": "85dc445fb7a52fe24c25758d2a8108612d371c219edfe5c43518715e2c197cce"
+    },
+    {
+      "path": "evidence/local_library_metadata_status.json",
+      "bytes": 5059,
+      "sha256": "7eee989f54b6f123c9656c30a799af4ac1f10a2586b57f230fafe6a82c759d74"
+    },
+    {
+      "path": "evidence/native_ik_initial.json",
+      "bytes": 19572,
+      "sha256": "33eee4004ca258a123a333769a325a2d08f1210d41879ed196cfbad19897735c"
+    },
+    {
+      "path": "evidence/native_point_driver_probe.json",
+      "bytes": 44,
+      "sha256": "50a871710e7cf9aa435f2f42bec20ac97d86de8a5eca4a16834503534cfb6113"
+    },
+    {
+      "path": "evidence/painted_clearance_masks.json",
+      "bytes": 880,
+      "sha256": "1fd3c1be8b70b94ec8566fabb98fbb878ca767e27333c5c68d249c5aaeee9a7b"
+    },
+    {
+      "path": "evidence/preview_verification.json",
+      "bytes": 858,
+      "sha256": "6b808de4589d42a7ac9590d0f439b378e6eb54ba2b1f335f162107e03d6c0cb1"
+    },
+    {
+      "path": "evidence/secondary_control_tests.json",
+      "bytes": 1432,
+      "sha256": "22bb5bbd9a8f00c59796b3927a5e97c00d9d926dc5eb4ba99ee0ece25184cc84"
+    },
+    {
+      "path": "evidence/source_integrity.json",
+      "bytes": 851,
+      "sha256": "3fce5f182fcab32fc076a417aeb25c8b3b70f883e4f2e8889cc9dfa7bc2e40bb"
+    },
+    {
+      "path": "evidence/source_pose_structure.json",
+      "bytes": 55232,
+      "sha256": "1430646a8fb8cd20c9fd462e061f583c0adc351c222ad9bfd99b2c969cdbfbd4"
+    },
+    {
+      "path": "evidence/technical_validation.json",
+      "bytes": 44370,
+      "sha256": "841dfa98c8ef3587347fa09d398532716aa3aea68530fe838ca24c0b91224b00"
+    },
+    {
+      "path": "evidence/diagnostic_world_travel.csv",
+      "bytes": 6726,
+      "sha256": "88a0184d98db1a55fe6a74a169e40c9852d71f0264aafdef6b45c603bafc2a01"
+    },
+    {
+      "path": "evidence/dcc_reuse_gate_execution.txt",
+      "bytes": 514,
+      "sha256": "3baa63f556aaed8a5fbe3834d95196e7ef545c6f9c3ae1602166412a47e0601b"
+    },
+    {
+      "path": "evidence/dcc_agent_workflows.md",
+      "bytes": 33045,
+      "sha256": "042521db7d63399fe13b3dfed3551685fd38136e42af1b98c51506bd9f6215ac"
+    },
+    {
+      "path": "evidence/DECODED_INSPECTION.jpg",
+      "bytes": 222182,
+      "sha256": "c082a7e55104abddb1f924ae151f68b5a5f19e47f3d471d594df1becec616543"
+    },
+    {
+      "path": "evidence/DECODED_MATCHED_SHOT.jpg",
+      "bytes": 178205,
+      "sha256": "2c9db79ac6053f97867cbd01d9c4a8aa258a296b212f3bc2fc71bc5879264df0"
+    },
+    {
+      "path": "reference/existing_source_alternatives.json",
+      "bytes": 859,
+      "sha256": "9f34c8c5f4fbd7817dbc8e5f43b0901a67bfc6322d353dc9c57647f66c8906cb"
+    },
+    {
+      "path": "reference/native_structures.json",
+      "bytes": 530229,
+      "sha256": "b6d649414a5f287baa63ef9704e8d12dc8548f74b42b557494b548d17cf1e2a7"
+    },
+    {
+      "path": "reference/Rig_Readiness_Audit.json",
+      "bytes": 14575,
+      "sha256": "818e1b608b778b43849a433b2befe77487522af544d9ba01b25b0f44ae4727be"
+    }
+  ]
+}

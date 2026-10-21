@@ -1,0 +1,122 @@
+WHEN THE SKY CLEARS — V031 ROUGH CONSTRUCTION TEST
+
+STATUS / SCOPE
+This is the requested rough action connecting the V030 construction poses.
+It is a boy-only two-step construction test, not an approved or finished walk.
+It is not the completed two-child recovery, clasp, stumble or restart scene.
+Independent normal-speed review is the next gate, through the parent task.
+No production file, girl asset, trailer duration, music or title was edited.
+V030 and earlier native checkpoints are preserved.
+
+OPEN / REVIEW
+native/WTSC_Rough_Construction_v031.blend — editable Blender5.2.2 LTS.
+Verified executable: WTSC_LOCAL_USER/AppData/Local/Programs/Blender/
+blender-5.2.2-windows-x64/blender.exe; build d13f752e3b9c.
+Preview: previews/WTSC_Rough_Construction_v031_Normal_Speed.mp4.
+6.4 seconds,1280x800,30fps: three uninterrupted cycles CLOSE3.2s, then
+three cycles SHOT3.2s. Rendered source frames1..96 per view, not slowed.
+Use the contact/down/passing/up comparison board and the two complete
+breakdown boards alongside the movie. Shot camera/lens matches the retained
+study, but this is a neutral stage, not an integrated battlefield preview.
+
+AUTHORING
+Thirty-two editable native GP body drawings on ones; F33 copies F1.
+The first32 drawings are instanced through F97 for three review cycles.
+Painting on head/collar/boots is from the retained original source assets.
+The body uses rough construction fills, not final painterly finish.
+Thigh and shin are260mm each; upper arm198mm, forearm178mm. No limb stretch.
+Boot hull is the retained V030 refit: X*.78,Z*.90 about the original ankle.
+Rigid boot rotation/translation follows exact polygon-rocker contacts.
+Head/collar/boot transforms are keyed every1/16 native frame; linear curves
+with cyclic repetition. Body contours are native drawings on ones.
+Explicit authored pelvis-height breakdowns move the body stack; no reach clamp.
+
+F1 CONTACT; F4 DOWN; F10 PASSING; F13 UP.
+F17 opposite CONTACT; F20 DOWN; F26 PASSING; F29 UP; F33 bookend.
+V030 F11 was a pose selector, with no approved timing. Passing is now F10.
+The opposite load is deliberately deeper than the first proof to give visible
+settle with the differently projected original near/far boots.
+Arms alternate gestures. Shoulder positions stay on their own torso side;
+the second step is not a shoulder-position swap. Hand overlap during passing
+is intentional. F13 has a deliberate hand/hem gap.
+The chest/shoulder silhouette is rounded, the rib/waist settles at DOWN and
+opens at UP, and a partial oblique seam replaces the heavy waist belt crease.
+
+HEAD CHOICE
+One original painted F1 side profile is retained throughout, translated with
+the neck. This avoids an unconvincing turnaround and keeps the original hair.
+There is no head-card rotation, polygonal-disc profile change, hair redraw,
+or reuse of the rejected V008 study. A genuine partner-directed gaze would
+need a later design-preserving pose, after this construction passes review.
+
+EXACT TRAVEL CONTRACT — DO NOT USE OLD V026–V028 TRAVEL
+Native coordinates: metres, +X forward, Z up; floor Z=0.
+Native phase q=F-1. Period32 frames at30fps (1.0666666667s).
+Stride0.8146774020162355m. Half-step0.40733870100811775m.
+D(q)=0.8146774020162355*q/32 metres, unwrapped +X.
+Ground speed0.7637600643902208m/s. Root has no speed pulse.
+Root object: V031 | CONSTRUCTION TRAVEL.
+The cameras follow this root; the ground ruler remains world stationary.
+Do not reset D at each cycle. All local curves repeat; root repeats with offset.
+Near initial contact q0; far q16. Each foot's contact interval lasts20frames;
+swing occupies phase20..32, giving4frames of double support.
+The active polygon contact vertex can change while rolling across an edge.
+Do not replace the articulated heel/toe rocker with a planted ankle clamp.
+
+evidence/TRAVEL_SOLE_AND_BODY_QUARTER_FRAME.csv contains both feet's exact
+root, ankle, pitch, support state, active contact anchor and hip/knee samples.
+scripts/construction_motion.py is the continuous evaluator, including the
+piecewise polygon rocker, swing clearance and explicit body breakdowns.
+scripts/draw_construction.py generates matching rough contour drawings.
+Do not infer the world curve by tracking a rendered toe pixel.
+
+APPEND / FUTURE INTEGRATION
+Append only the V031 travel root, editable rough construction GP, original
+painted near/far boot, retained painted head and retained painted collar
+objects, with their data/materials/images. The native contains hidden old
+references; do not append its entire scene into production indiscriminately.
+The body and boots render in the base layer. Head/collar use the retained
+foreground layer and alpha-over compositor; keep their parent root evaluated
+in both layers. Otherwise an excluded head can appear stale in diagnostics.
+The static ground ruler is a review aid; omit it from a final painted scene.
+
+For an anchor C0 and spatial scale s, move the character world root by
+C(t)=C0+s*D(30*(t-t0))*forward_axis. Use one common scale for body and soles.
+If the children stay centered and the world passes, translate the environment
+by the corresponding -s*D, relative to its anchor. Match camera/world travel
+to this curve; retaining the old world speed would slide the soles.
+This is a level-ground construction, not a terrain-adapted path solver.
+
+The production scene is24fps. Do not independently retime held GP drawings
+and continuous boots: it can detach cuffs. For a later24fps test, sample all
+body drawings, head and boots from the same evaluator at q=30*(N-N0)/24+q0
+and bake each output frame together. Root increment is0.0318233360162592m
+per24fps frame at scale1. A32-frame native cycle spans25.6 production frames;
+there is no integer-frame24fps loop seam. Bake the intended shot duration.
+This delivery does not claim a production-ready24fps recovery/restart bake.
+
+TECHNICAL EVIDENCE VS ARTISTIC JUDGMENT
+The native cold check reopens the saved file and samples transforms and
+contacts, including between keys. Numerical errors and preservation hashes
+are recorded in evidence. These are safeguards, not animation approval.
+All actual32 close drawings and selected shot frames were inspected before
+the normal-speed render. The movie is decoded fully and selected encoded
+frames checked. Continuous player playback was not observed through the
+available tools. Independent/human normal-speed review remains necessary.
+
+CANDID ASSESSMENT
+This has a coherent construction path through contact, load, passing, rise
+and opposite contact. The fuller V030 body and clearer foot projection remain.
+The hand/hem fix and softened chest/waist are visible in actual frames.
+The arms are restrained and still merge with the coat around parts of passing.
+The two loads are asymmetric; playback must judge whether that feels weighted
+or uneven. The collar/head are a preserved single profile rather than a full
+independent head performance. Coat and pelvis value panels remain graphic.
+Further texture polish would not resolve these performance questions.
+Do not copy this boy loop onto the girl. Her hesitation/supporting intention
+and the pair's recovery-to-walking transition need separately authored action.
+
+Render coordination: immediate host no-Blender-process gates, two threads,
+small review renders only. No installation, purchase or public sharing.
+Private Library preview copies are authorized; receipts and metadata readback
+are in evidence. Review requests are routed through the parent task.

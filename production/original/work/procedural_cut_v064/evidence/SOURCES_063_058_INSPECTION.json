@@ -1,0 +1,745 @@
+{
+  "color": [
+    {
+      "scene": "REFERENCE | liked v041 boy and original source pair | preserved",
+      "frames": [
+        1,
+        94
+      ],
+      "view": "Standard",
+      "camera": {
+        "name": "V024 | CLOSE portrait",
+        "loc": [
+          0.0,
+          -7.0,
+          0.75
+        ],
+        "drivers": []
+      },
+      "objects": [
+        {
+          "name": "V025 | COAT drawings | editable GP",
+          "type": "GREASEPENCIL",
+          "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+          "loc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [],
+          "constraints": [],
+          "actions": null,
+          "nla": []
+        },
+        {
+          "name": "V025 | bare torso diagnostic | optional",
+          "type": "GREASEPENCIL",
+          "parent": "V021 | CHILD_SUPPORT_TRAVEL",
+          "loc": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              1.689819574356079
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [],
+          "constraints": [],
+          "actions": null,
+          "nla": []
+        }
+      ]
+    },
+    {
+      "scene": "V060 | STEADY PAIR | first hand contact",
+      "frames": [
+        1,
+        151
+      ],
+      "view": "Standard",
+      "camera": {
+        "name": "V044 orthographic metric camera",
+        "loc": [
+          1.3406246900558472,
+          -10.0,
+          0.800000011920929
+        ],
+        "drivers": []
+      },
+      "objects": [
+        {
+          "name": "V047 | shared travel | steady .73125mps",
+          "type": "EMPTY",
+          "parent": "V060 | current age-ten pair | fixed world registration",
+          "loc": [
+            1.3406246900558472,
+            0.0,
+            0.0
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              51.024837493896484
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.36000001430511475
+            ],
+            [
+              0.0,
+              -0.14249539375305176,
+              1.0,
+              0.7713720202445984
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.14249539375305176,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [
+            "V044 BOY | estimated joint centres",
+            "V044 GIRL | estimated joint centres"
+          ],
+          "constraints": [],
+          "actions": {
+            "name": "V047 | shared travel | steady .73125mpsAction",
+            "range": [
+              937.0,
+              1141.800048828125
+            ],
+            "curves": [
+              {
+                "path": "location",
+                "index": 0,
+                "count": 2,
+                "range": [
+                  937.0,
+                  1141.800048828125
+                ],
+                "modifiers": []
+              }
+            ]
+          },
+          "nla": []
+        }
+      ]
+    },
+    {
+      "scene": "WTSC_FIRST_DANGER_EDIT_v060",
+      "frames": [
+        937,
+        1056
+      ],
+      "view": "AgX",
+      "camera": null,
+      "objects": []
+    },
+    {
+      "scene": "WTSC_FIRST_DANGER_TITLE_CHECK_v060",
+      "frames": [
+        937,
+        1056
+      ],
+      "view": "Standard",
+      "camera": {
+        "name": "v032 | Flat title camera",
+        "loc": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "drivers": []
+      },
+      "objects": []
+    },
+    {
+      "scene": "WTSC_SHARED_COLOR_TO_CHARCOAL_v063",
+      "frames": [
+        937,
+        1056
+      ],
+      "view": "Standard",
+      "camera": {
+        "name": "V060 | camera follows actual steady root",
+        "loc": [
+          52.713958740234375,
+          -16.0,
+          3.0
+        ],
+        "drivers": []
+      },
+      "objects": [
+        {
+          "name": "V060 | current age-ten pair | fixed world registration",
+          "type": "EMPTY",
+          "parent": null,
+          "loc": [
+            49.68421173095703,
+            -0.36000001430511475,
+            0.7713720202445984
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              49.68421173095703
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.36000001430511475
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.7713720202445984
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [
+            "V047 | shared travel | steady .73125mps"
+          ],
+          "constraints": [],
+          "actions": null,
+          "nla": []
+        },
+        {
+          "name": "v016 | CHILDREN | held painterly near-age pair",
+          "type": "GREASEPENCIL",
+          "parent": null,
+          "loc": [
+            52.42198944091797,
+            0.0,
+            0.7713720202445984
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              52.42198944091797
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.7713720202445984
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [
+            "v014 | Ground contact | Held shoe 1",
+            "v014 | Ground contact | Held shoe 2",
+            "v014 | Ground contact | Held shoe 3",
+            "v014 | Ground contact | Held shoe 4",
+            "v015 | Near-black painted fill | GP vector clipped",
+            "v039 shoe0 core",
+            "v039 shoe0 penumbra",
+            "v039 shoe1 core",
+            "v039 shoe1 penumbra",
+            "v039 shoe2 core",
+            "v039 shoe2 penumbra",
+            "v039 shoe3 core",
+            "v039 shoe3 penumbra"
+          ],
+          "constraints": [],
+          "actions": {
+            "name": "v016 | CHILDREN | held painterly near-age pairAction",
+            "range": [
+              1.0,
+              2400.0
+            ],
+            "curves": [
+              {
+                "path": "location",
+                "index": 1,
+                "count": 201,
+                "range": [
+                  1.0,
+                  2400.0
+                ],
+                "modifiers": []
+              },
+              {
+                "path": "location",
+                "index": 2,
+                "count": 201,
+                "range": [
+                  1.0,
+                  2400.0
+                ],
+                "modifiers": []
+              },
+              {
+                "path": "location",
+                "index": 0,
+                "count": 8,
+                "range": [
+                  1.0,
+                  2400.0
+                ],
+                "modifiers": []
+              }
+            ]
+          },
+          "nla": []
+        },
+        {
+          "name": "V047 | shared travel | steady .73125mps",
+          "type": "EMPTY",
+          "parent": "V060 | current age-ten pair | fixed world registration",
+          "loc": [
+            1.3406246900558472,
+            0.0,
+            0.0
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              51.024837493896484
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.36000001430511475
+            ],
+            [
+              0.0,
+              -0.14249539375305176,
+              1.0,
+              0.7713720202445984
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.14249539375305176,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [
+            "V044 BOY | estimated joint centres",
+            "V044 GIRL | estimated joint centres"
+          ],
+          "constraints": [],
+          "actions": {
+            "name": "V047 | shared travel | steady .73125mpsAction",
+            "range": [
+              937.0,
+              1141.800048828125
+            ],
+            "curves": [
+              {
+                "path": "location",
+                "index": 0,
+                "count": 2,
+                "range": [
+                  937.0,
+                  1141.800048828125
+                ],
+                "modifiers": []
+              }
+            ]
+          },
+          "nla": []
+        }
+      ]
+    }
+  ],
+  "world": [
+    {
+      "scene": "WTSC_MASTER_4K_100S_v031",
+      "frames": [
+        1,
+        2400
+      ],
+      "view": "Standard",
+      "camera": null,
+      "objects": []
+    },
+    {
+      "scene": "WTSC_MASTER_4K_106S_v040",
+      "frames": [
+        1,
+        2544
+      ],
+      "view": "Standard",
+      "camera": null,
+      "objects": []
+    },
+    {
+      "scene": "WTSC_WORLD_FOREGROUND_v058d",
+      "frames": [
+        1,
+        2400
+      ],
+      "view": "Standard",
+      "camera": {
+        "name": "v032 | Camera follows shared pair center",
+        "loc": [
+          54.11111068725586,
+          -16.0,
+          3.0
+        ],
+        "drivers": [
+          {
+            "path": "location",
+            "expression": "pair_world_x+1.6891200542449951"
+          }
+        ]
+      },
+      "objects": [
+        {
+          "name": "v016 | CHILDREN | held painterly near-age pair",
+          "type": "GREASEPENCIL",
+          "parent": null,
+          "loc": [
+            52.42198944091797,
+            0.0,
+            0.7713720202445984
+          ],
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              52.42198944091797
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.7713720202445984
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "children": [
+            "v014 | Ground contact | Held shoe 1",
+            "v014 | Ground contact | Held shoe 2",
+            "v014 | Ground contact | Held shoe 3",
+            "v014 | Ground contact | Held shoe 4",
+            "v015 | Near-black painted fill | GP vector clipped",
+            "v039 shoe0 core",
+            "v039 shoe0 penumbra",
+            "v039 shoe1 core",
+            "v039 shoe1 penumbra",
+            "v039 shoe2 core",
+            "v039 shoe2 penumbra",
+            "v039 shoe3 core",
+            "v039 shoe3 penumbra"
+          ],
+          "constraints": [],
+          "actions": {
+            "name": "v016 | CHILDREN | held painterly near-age pairAction",
+            "range": [
+              1.0,
+              2400.0
+            ],
+            "curves": [
+              {
+                "path": "location",
+                "index": 1,
+                "count": 201,
+                "range": [
+                  1.0,
+                  2400.0
+                ],
+                "modifiers": []
+              },
+              {
+                "path": "location",
+                "index": 2,
+                "count": 201,
+                "range": [
+                  1.0,
+                  2400.0
+                ],
+                "modifiers": []
+              },
+              {
+                "path": "location",
+                "index": 0,
+                "count": 8,
+                "range": [
+                  1.0,
+                  2400.0
+                ],
+                "modifiers": []
+              }
+            ]
+          },
+          "nla": []
+        }
+      ]
+    }
+  ]
+}

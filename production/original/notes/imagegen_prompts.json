@@ -1,0 +1,18 @@
+{
+  "mode":"built-in image_gen.imagegen; no API/CLI fallback",
+  "assets":[
+    {
+      "file":"characters/Girl_Profile_Imagegen_v001.png",
+      "actual_size":[1672,941],
+      "transparent_background":true,
+      "prompt":"Original 2D animation character design for the film When the Sky Clears. A school-age girl in a simple knee-length everyday dress, socks and sturdy shoes, shown as a clean deep-charcoal silhouette in strict side profile facing right. She has a small nose, fringe, a short braid and a small faded-blue ribbon. Neutral relaxed standing pose, arms slightly separated from the body so the hands and elbows are readable, feet slightly apart on one level baseline. Full figure centered on a wide transparent canvas, occupying 85 percent of its height. Clear hand-drawn outline, flat charcoal fill, extremely restrained gold edge light along the forehead and shoulder, no facial details. One figure only. No text, no scenery. This is an isolated drawing reference for a flat Grease Pencil puppet. Please generate at 3840 x 2160 with a genuinely transparent background."
+    },
+    {
+      "file":"characters/Girl_Parts_Imagegen_v001.png",
+      "actual_size":[1448,1086],
+      "transparent_background":true,
+      "reference":"characters/Girl_Profile_Imagegen_v001.png",
+      "prompt":"Use the supplied girl image as the character identity and clothing reference. Create a technical animation puppet PARTS SHEET with genuinely transparent background. Same charcoal 2D hand-drawn silhouette treatment, same plain dress, profile facing right, same simple shoes and braid blue ribbon. Isolated drawing parts only, well separated with generous transparent space, arranged in a tidy 4-column by 4-row grid. Every piece must be completely separate from every other piece. No text, no labels, no lines, no borders, no shadows, no scenery. Row 1: (1) complete side-profile head and neck including hair but no braid, (2) torso and complete knee-length dress together without head arms legs, (3) separate short braid with small faded-blue ribbon, (4) blank. Row 2: (1) near upper arm with short sleeve, (2) near forearm plus simple hand, (3) far upper arm with short sleeve, (4) far forearm plus simple hand. Row 3: (1) near upper leg, (2) near lower leg with sock but no shoe, (3) near sturdy shoe pointing right, (4) far upper leg. Row 4: (1) far lower leg with sock but no shoe, (2) far sturdy shoe pointing right, (3) blank, (4) blank. Limbs nearly vertical with round overlapping joint ends so a Grease Pencil animator can articulate them. Keep consistent scale and design across all pieces. These are raw art parts for a provisional puppet test, not a finished animation. Largest available landscape resolution."
+    }
+  ]
+}

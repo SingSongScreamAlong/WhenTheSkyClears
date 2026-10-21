@@ -1,0 +1,28 @@
+2026-10-19T14:42:59.411555Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 0 new skill(s), total 0
+2026-10-19T14:42:59.411707Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 skill(s)
+2026-10-19T14:42:59.411741Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 accumulated skill(s)
+2026-10-19T14:42:59.417444Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: in-process executor registered ΓÇö load_skill() will use in-process handlers (issue #464)
+2026-10-19T14:42:59.417532Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: main-thread dispatcher attached ΓÇö tools/call will route through DccDispatcher::post
+2026-10-19T14:42:59.417832Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: readiness probe installed ΓÇö /mcp and /v1/call will share it (issue #714)
+2026-10-19T14:42:59.714489Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 73 new skill(s), total 73
+2026-10-19T14:43:00.001730Z  INFO ThreadId(01) opentelemetry: name="MeterProvider.GlobalSet" Global meter provider is set. Meters can now be created using global::meter() or global::meter_with_scope().
+2026-10-19T14:43:00.040840Z  INFO ThreadId(01) dcc_mcp_http::handler::rmcp_mount: rmcp MCP endpoint mounted at /mcp (legacy + 2026 stateless dispatcher)
+2026-10-19T14:43:00.042373Z  INFO ThreadId(01) dcc_mcp_http::server: MCP HTTP server dcc-mcp-blender v0.2.14 listening on http://127.0.0.1:60888/mcp server_name=dcc-mcp-blender server_version=0.2.14
+2026-10-19T14:43:00.044256Z  INFO tokio-rt-worker dcc_mcp_transport::discovery::file_registry: registering service dcc_type=blender instance_id=0313f5a8-f3e8-4fc0-820e-ddea7d370738 host=127.0.0.1 port=60888
+2026-10-19T14:43:00.058530Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Registered in FileRegistry instance=0313f5a8-f3e8-4fc0-820e-ddea7d370738
+2026-10-19T14:43:00.068290Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Gateway port held by healthy resident ΓÇö running as plain DCC instance port=9765 gateway_version=0.20.42 gateway_adapter_version=None gateway_adapter_dcc=Some("gateway") own_version=0.2.14 own_adapter_version=None own_adapter_dcc=Some("blender") resident_health=Healthy
+WTSC_LOCAL_WORKSPACE\locomotion\muybridge_manual_trace_v061\scripts\build_manual_trace_phase06.py:42: DeprecationWarning: 'MaterialGPencilStyle.show_stroke' is expected to be removed in Blender 6.0
+  material.grease_pencil.show_stroke = True
+WTSC_LOCAL_WORKSPACE\locomotion\muybridge_manual_trace_v061\scripts\build_manual_trace_phase06.py:43: DeprecationWarning: 'MaterialGPencilStyle.show_fill' is expected to be removed in Blender 6.0
+  material.grease_pencil.show_fill = False
+2026-10-19T14:43:01.819782Z  INFO dcc-mcp-http-60888 serve_inner: rmcp::service: Service initialized as server peer_info=None
+2026-10-19T14:43:01.820553Z  INFO dcc-mcp-http-60888 serve_inner: rmcp::service: input stream terminated
+2026-10-19T14:43:01.820600Z  INFO dcc-mcp-http-60888 serve_inner: rmcp::service: serve finished quit_reason=Closed
+00:03.328  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\muybridge_manual_trace_v061\previews\phase06_native_trace_rgba.png'
+Info: Saved as "Muybridge_Phase06_Manual_Trace_v061.blend"
+PHASE06_NATIVE_BUILD {"blender_version": "5.2.2 LTS", "source_sha256_verified": true, "source_crop": [1581, 32, 1891, 620], "phase": 6, "native_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_manual_trace_v061\\native\\Muybridge_Phase06_Manual_Trace_v061.blend", "render_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_manual_trace_v061\\previews\\phase06_native_trace_rgba.png", "contour_count": 16, "point_counts": [17, 6, 8, 7, 7, 9, 7, 7, 9, 11, 6, 17, 13, 20, 9, 3], "total_manually_specified_points": 156, "registration": "X=(source_x-155)*0.01; Y=(294-source_y)*0.01; camera 620x1176 ortho_scale 5.88", "route": "temporary Blender-native Grease Pencil operator, not OS pointer delivery"}
+2026-10-19T14:43:01.966642Z  INFO dcc-mcp-http-60888 dcc_mcp_http::server::spawn_impl: MCP HTTP server (dedicated) stopped
+2026-10-19T14:43:01.967224Z  INFO ThreadId(01) dcc_mcp_transport::discovery::file_registry: deregistered service dcc_type=blender instance_id=0313f5a8-f3e8-4fc0-820e-ddea7d370738
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

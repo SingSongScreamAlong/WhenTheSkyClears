@@ -1,0 +1,35 @@
+{
+	"engine": "5.8.3-58210709+++UE5+Release-5.8",
+	"art_study": true,
+	"test_type": "Actual engine art-study capture; scripted walking and slight camera arc; completion is not gameplay regression or art approval",
+	"passed": true,
+	"game_seconds": 4.3000173568725586,
+	"recorded_frames": 0,
+	"wall_seconds": 4.387450098991394,
+	"actual_runtime_fps_including_capture": 375.84473049142582,
+	"capture_target_fps": 30,
+	"capture_method": "Real rendered viewport JPEG callbacks at wall-clock intervals; no fixed time step or frame duplication",
+	"capture_frames": [],
+	"distance_walked_cm": 0,
+	"events": [
+		{
+			"event": "art_camera_reference_only",
+			"objective": "SEARCH  /  Reach the small shop to the east",
+			"objective_passed": true,
+			"passed": true,
+			"game_seconds": 3.5014638900756836,
+			"player_x": 100,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true,
+			"head_world": "X=100.000 Y=11.000 Z=121.150",
+			"hand_world": "X=109.000 Y=9.000 Z=68.150",
+			"foot_height_error_cm": 0.04999963566660881,
+			"maximum_stance_slip_cm_per_frame": 0,
+			"view_target": "CameraActor_2147482386",
+			"orthographic": true,
+			"ortho_width": 1250,
+			"camera_location": "X=0.000 Y=2350.000 Z=525.000"
+		}
+	]
+}

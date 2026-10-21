@@ -1,0 +1,21 @@
+{
+  "technical_comparison_reviewed": true,
+  "human_artistic_approval_inferred": false,
+  "range_seconds": [64, 69],
+  "comparison": "renders/world_v016/camp_benchmark_v039/WTSC_Camp_5s_Baseline_vs_Study_v039.mp4",
+  "comparison_bytes": 5234661,
+  "actual_review_method": "Inspected five chronological decoded four-panel samples across the five-second movie, plus native UHD study frame1609. All study/baseline/comparison movies independently decoded120frames. Requested Codex preview opening returned queued, not proof of user playback.",
+  "review_frames": ["QA_Compare_01.png", "QA_Compare_02.png", "QA_Compare_03.png", "QA_Compare_04.png", "QA_Compare_05.png", "QA_Study_Native_1609.png"],
+  "observations": [
+    "Matched scene motion, held pair placement and native glyph timing agree across baseline/study panels.",
+    "Study removes broad orange canvas wash and retains visible gray fabric folds, darker seam/rope values, cooler distant landscape separation.",
+    "Restrained gold flame replaces hot orange appearance; source flame silhouette changes in the decoded sequence and remains rooted. Native driver audit separately verifies coherent light/receiver beat.",
+    "Children retain established near-black charcoal design and subtle white eyes, same age/height relation, same held drawing and pose. Contour response is subtle.",
+    "Broader soft shoe contacts stay attached to measured soles; the pass does not introduce foot motion.",
+    "Rooted grass tips and darker coherent bank improve foreground layering, but the original strip-like repeated plant forms remain visible. This is a partial treatment, not a complete foreground repaint.",
+    "No obvious new smoke reset pop or rectangle boundary appears in the inspected sequence. This sampling does not establish complete film-wide artistic acceptance."
+  ],
+  "propagation": "Proceed with the demonstrated source-connected light, cool shaped regional paint, restrained existing flame palette, soft contact and rooted foreground treatment. Render and inspect other regions before full film export.",
+  "excluded": "Rejected ink_wash_v001 assets; untested separate character motion; any Arcane-level or final artistic approval claim.",
+  "comparison_delivered_before_propagation": true
+}

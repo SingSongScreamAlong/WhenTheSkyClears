@@ -1,0 +1,6529 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Drawn_Trial_v044.blend",
+  "sha256": "6d661eaa07198d44c40db1abf936c9ffd42d1db8c4c12e4ca18149a2b0379593",
+  "frame": 1849,
+  "objects": [
+    {
+      "object": "v026 | Countryside panorama | stationary at true depth",
+      "location": [
+        50.0,
+        180.0,
+        3.0
+      ],
+      "dimensions": [
+        280.0,
+        0.0,
+        111.97176361083984
+      ],
+      "screen_bounds": [
+        -2.0320732593536377,
+        1.936180591583252,
+        -0.4358140826225281,
+        2.3853437900543213
+      ],
+      "collections": [
+        "Scene Collection"
+      ],
+      "materials": [
+        {
+          "name": "v026 | Continuous countryside paint | fixed land, cloud wind only",
+          "images": [
+            {
+              "name": "Countryside_Continuous_Panorama.png",
+              "size": [
+                1983,
+                793
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "v016 | Battlefield | broken village line",
+      "location": [
+        115.0,
+        12.0,
+        6.701237678527832
+      ],
+      "dimensions": [
+        35.0,
+        0.0,
+        19.697965621948242
+      ],
+      "screen_bounds": [
+        -0.4233238697052002,
+        3.0488979816436768,
+        -0.10949348658323288,
+        3.3645741939544678
+      ],
+      "collections": [
+        "v016 | 02 Regional painted sets"
+      ],
+      "materials": [
+        {
+          "name": "v041 OWNED | live event receiver | v016 | Battlefield | broken village line",
+          "images": [
+            {
+              "name": "Battlefield_v001.png",
+              "size": [
+                1672,
+                941
+              ]
+            }
+          ],
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "operation": null,
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "Emission",
+              "type": "ShaderNodeEmission",
+              "operation": null,
+              "inputs": {
+                "Strength": 1.0,
+                "Weight": 0.0
+              }
+            },
+            {
+              "name": "Texture Coordinate",
+              "type": "ShaderNodeTexCoord",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Image Texture",
+              "type": "ShaderNodeTexImage",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Hue/Saturation/Value",
+              "type": "ShaderNodeHueSaturation",
+              "operation": null,
+              "inputs": {
+                "Hue": 0.5,
+                "Saturation": 0.3100000023841858,
+                "Value": 1.0,
+                "Factor": 1.0
+              }
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {
+                "Factor": 1.0,
+                "Color2": [
+                  0.7400000095367432,
+                  0.8399999737739563,
+                  0.9300000071525574,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Mix (Legacy).001",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {
+                "Factor": 0.05000000074505806,
+                "Color2": [
+                  0.3199999928474426,
+                  0.38999998569488525,
+                  0.4300000071525574,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.001",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "FX opacity",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix Shader",
+              "type": "ShaderNodeMixShader",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "ShaderNodeBsdfTransparent",
+              "operation": null,
+              "inputs": {
+                "Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Weight": 0.0
+              }
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.001",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.002",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Geometry",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.002",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.003",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.003",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.004",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.001",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.004",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.005",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.002",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Texture Coordinate.001",
+              "type": "ShaderNodeTexCoord",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "STATIC paint edge overlap | no time input",
+              "type": "ShaderNodeValToRGB",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.006",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Geometry.001",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Bump",
+              "type": "ShaderNodeBump",
+              "operation": null,
+              "inputs": {
+                "Strength": 0.11999999731779099,
+                "Distance": 0.03500000014901161,
+                "Filter Width": 0.10000000149011612
+              }
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DOT_PRODUCT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Math.007",
+              "type": "ShaderNodeMath",
+              "operation": "MAXIMUM",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 paint response",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "v040 preserved painted form with coherent cool key",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.002",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 85.0,
+                "Y": 9.600000381469727,
+                "Z": -0.13548064231872559
+              }
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.006",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.007",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.005",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Camp hearth | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.008",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Vector Math.008",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DOT_PRODUCT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Math.009",
+              "type": "ShaderNodeMath",
+              "operation": "MAXIMUM",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.010",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.006",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.011",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Camp hearth | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Camp hearth | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.012",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.013",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.003",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position.001",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 112.0,
+                "Y": 11.530000686645508,
+                "Z": -0.15849679708480835
+              }
+            },
+            {
+              "name": "Vector Math.009",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.010",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.011",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.007",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.014",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Vector Math.012",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DOT_PRODUCT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Math.015",
+              "type": "ShaderNodeMath",
+              "operation": "MAXIMUM",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.016",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.001",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.008",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.017",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.018",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.019",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth.001",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.004",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position.002",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 151.0,
+                "Y": 23.68000030517578,
+                "Z": -1.619815707206726
+              }
+            },
+            {
+              "name": "Vector Math.013",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.014",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.015",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.009",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.020",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Vector Math.016",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DOT_PRODUCT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Math.021",
+              "type": "ShaderNodeMath",
+              "operation": "MAXIMUM",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.022",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.002",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.010",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.023",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.024",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.025",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth.002",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.005",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v041 | Live event binding | awaiting veri",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 109.0999984741211,
+                "Y": 10.0,
+                "Z": -0.7048802971839905
+              }
+            },
+            {
+              "name": "Separate XYZ.002",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 EVENT | wall_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Vector Math.017",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.011",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.026",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.003",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.012",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.027",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 EVENT | power_watts",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 EVENT | reference_watts",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.028",
+              "type": "ShaderNodeMath",
+              "operation": "DIVIDE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 EVENT | receiver_gain",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.029",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.030",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.031",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 DORMANT | source-bound local warmth",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "v020 | Walking path | continuous blended paint",
+      "location": [
+        0.0,
+        2.059999942779541,
+        0.0
+      ],
+      "dimensions": [
+        244.0,
+        0.0,
+        30.958799362182617
+      ],
+      "screen_bounds": [
+        -19.78433609008789,
+        17.744890213012695,
+        -8.04865550994873,
+        0.4166252315044403
+      ],
+      "collections": [
+        "v016 | 03 Continuous painted path"
+      ],
+      "materials": [
+        {
+          "name": "v041 OWNED | live event receiver | v020 | Walking path | continuous blended paint",
+          "images": [
+            {
+              "name": "Ground_Painted_v001.png",
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "name": "Path_Detail_Repaint.png",
+              "size": [
+                1908,
+                824
+              ]
+            }
+          ],
+          "nodes": [
+            {
+              "name": "Geometry",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Noise Texture",
+              "type": "ShaderNodeTexNoise",
+              "operation": null,
+              "inputs": {
+                "W": 0.0,
+                "Scale": 8.0,
+                "Detail": 2.0,
+                "Roughness": 0.5,
+                "Lacunarity": 2.0,
+                "Offset": 0.0,
+                "Gain": 1.0,
+                "Distortion": 0.0
+              }
+            },
+            {
+              "name": "Math",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.001",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.002",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.003",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.004",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.005",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.006",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Combine XYZ",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Image Texture",
+              "type": "ShaderNodeTexImage",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {
+                "Factor": 1.0,
+                "Color2": [
+                  0.3700000047683716,
+                  0.4099999964237213,
+                  0.33000001311302185,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.007",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.008",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.009",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Map Range",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Combine XYZ.001",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Image Texture.001",
+              "type": "ShaderNodeTexImage",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.001",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Mix (Legacy).001",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.002",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.010",
+              "type": "ShaderNodeMath",
+              "operation": "MAXIMUM",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Hue/Saturation/Value",
+              "type": "ShaderNodeHueSaturation",
+              "operation": null,
+              "inputs": {
+                "Hue": 0.5,
+                "Saturation": 0.2981606423854828,
+                "Value": 1.0,
+                "Factor": 1.0
+              }
+            },
+            {
+              "name": "Emission",
+              "type": "ShaderNodeEmission",
+              "operation": null,
+              "inputs": {
+                "Strength": 1.0,
+                "Weight": 0.0
+              }
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "ShaderNodeBsdfTransparent",
+              "operation": null,
+              "inputs": {
+                "Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Weight": 0.0
+              }
+            },
+            {
+              "name": "Mix Shader",
+              "type": "ShaderNodeMixShader",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "operation": null,
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "Map Range.003",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Map Range.004",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.011",
+              "type": "ShaderNodeMath",
+              "operation": "MAXIMUM",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Geometry.001",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.005",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.012",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.006",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.013",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.001",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.007",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.014",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.002",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.008",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.015",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.003",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.002",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Noise Texture.001",
+              "type": "ShaderNodeTexNoise",
+              "operation": null,
+              "inputs": {
+                "W": 0.0,
+                "Scale": 0.41999998688697815,
+                "Detail": 2.0,
+                "Roughness": 0.5,
+                "Lacunarity": 2.0,
+                "Offset": 0.0,
+                "Gain": 1.0,
+                "Distortion": 0.0
+              }
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.016",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.017",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.018",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.019",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Combine XYZ.002",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Map Range.009",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "v039 restrained foreground value",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.003",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v039 actual firelight world position",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 85.0,
+                "Y": 9.600000381469727,
+                "Z": -0.13548064231872559
+              }
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.006",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "v039 local receiver radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.010",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.020",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.011",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.021",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v039 receiver strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v039 coherent fire beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.022",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.023",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v039 restrained local firelight | preserved ink",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.004",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 61.5,
+                "Y": 9.600000381469727,
+                "Z": -0.3514806628227234
+              }
+            },
+            {
+              "name": "Vector Math.007",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.008",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.009",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.012",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | School debris | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.024",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.001",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.013",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.025",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | School debris | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | School debris | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.026",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.027",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.005",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position.001",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 112.0,
+                "Y": 11.530000686645508,
+                "Z": -0.15849679708480835
+              }
+            },
+            {
+              "name": "Vector Math.010",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.011",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.012",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.014",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.028",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.002",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.015",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.029",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.030",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.031",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth.001",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.006",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position.002",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 151.0,
+                "Y": 23.68000030517578,
+                "Z": -1.619815707206726
+              }
+            },
+            {
+              "name": "Vector Math.013",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.014",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.015",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.016",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.032",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.003",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.017",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.033",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.034",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.035",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth.002",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.007",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v041 | Live event binding | awaiting veri",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 109.0999984741211,
+                "Y": 10.0,
+                "Z": -0.7048802971839905
+              }
+            },
+            {
+              "name": "Separate XYZ.002",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 EVENT | ground_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v032 | Camera follows shared pair center",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 109.83110809326172,
+                "Y": -16.0,
+                "Z": 3.0
+              }
+            },
+            {
+              "name": "Separate XYZ.003",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v020 | Walking path | continuous blended ",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 0.0,
+                "Y": 2.059999942779541,
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Separate XYZ.004",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.036",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.037",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.038",
+              "type": "ShaderNodeMath",
+              "operation": "DIVIDE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Combine XYZ.003",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.039",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.040",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.041",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.042",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.043",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.044",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.045",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.046",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.047",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.048",
+              "type": "ShaderNodeMath",
+              "operation": "ABSOLUTE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.049",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Vector Math.016",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.018",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.050",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.004",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.019",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.051",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 EVENT | power_watts",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 EVENT | reference_watts",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.052",
+              "type": "ShaderNodeMath",
+              "operation": "DIVIDE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 EVENT | receiver_gain",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.053",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.054",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.055",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 DORMANT | source-bound local warmth",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "v020 | Foreground bank | continuous blended paint",
+      "location": [
+        0.0,
+        -4.989999771118164,
+        0.0
+      ],
+      "dimensions": [
+        244.0,
+        0.0,
+        31.469999313354492
+      ],
+      "screen_bounds": [
+        -32.96504211425781,
+        28.59516143798828,
+        -13.826595306396484,
+        0.28852003812789917
+      ],
+      "collections": [
+        "v016 | 03 Continuous painted path"
+      ],
+      "materials": [
+        {
+          "name": "v041 OWNED | live event receiver | v020 | Foreground bank | continuous blended paint",
+          "images": [
+            {
+              "name": "Ground_Painted_v001.png",
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "name": "Foreground_Ground.png",
+              "size": [
+                1672,
+                941
+              ]
+            }
+          ],
+          "nodes": [
+            {
+              "name": "Geometry",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Noise Texture",
+              "type": "ShaderNodeTexNoise",
+              "operation": null,
+              "inputs": {
+                "W": 0.0,
+                "Scale": 8.0,
+                "Detail": 2.0,
+                "Roughness": 0.5,
+                "Lacunarity": 2.0,
+                "Offset": 0.0,
+                "Gain": 1.0,
+                "Distortion": 0.0
+              }
+            },
+            {
+              "name": "Math",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.001",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.002",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.003",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.004",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.005",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.006",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Combine XYZ",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Image Texture",
+              "type": "ShaderNodeTexImage",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {
+                "Factor": 1.0,
+                "Color2": [
+                  0.12999999523162842,
+                  0.17000000178813934,
+                  0.1599999964237213,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.007",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.008",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.009",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Map Range",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Combine XYZ.001",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Image Texture.001",
+              "type": "ShaderNodeTexImage",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Mix (Legacy).001",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {
+                "Factor": 1.0,
+                "Color2": [
+                  0.1599999964237213,
+                  0.18000000715255737,
+                  0.1599999964237213,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Map Range.001",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Map Range.002",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.010",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix (Legacy).002",
+              "type": "ShaderNodeMixRGB",
+              "operation": null,
+              "inputs": {
+                "Factor": 0.0
+              }
+            },
+            {
+              "name": "Map Range.003",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Hue/Saturation/Value",
+              "type": "ShaderNodeHueSaturation",
+              "operation": null,
+              "inputs": {
+                "Hue": 0.5,
+                "Saturation": 0.2981606423854828,
+                "Value": 1.0,
+                "Factor": 1.0
+              }
+            },
+            {
+              "name": "Emission",
+              "type": "ShaderNodeEmission",
+              "operation": null,
+              "inputs": {
+                "Strength": 1.0,
+                "Weight": 0.0
+              }
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "ShaderNodeBsdfTransparent",
+              "operation": null,
+              "inputs": {
+                "Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Weight": 0.0
+              }
+            },
+            {
+              "name": "Mix Shader",
+              "type": "ShaderNodeMixShader",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "operation": null,
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "Geometry.001",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Vector Math",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.004",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.011",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.005",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.012",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.001",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.006",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.013",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.002",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.007",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.014",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Mix.003",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.002",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Noise Texture.001",
+              "type": "ShaderNodeTexNoise",
+              "operation": null,
+              "inputs": {
+                "W": 0.0,
+                "Scale": 0.41999998688697815,
+                "Detail": 2.0,
+                "Roughness": 0.5,
+                "Lacunarity": 2.0,
+                "Offset": 0.0,
+                "Gain": 1.0,
+                "Distortion": 0.0
+              }
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.015",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.016",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.017",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.018",
+              "type": "ShaderNodeMath",
+              "operation": "PINGPONG",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Combine XYZ.002",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Map Range.008",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "v039 restrained foreground value",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.003",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v039 actual firelight world position",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 85.0,
+                "Y": 9.600000381469727,
+                "Z": -0.13548064231872559
+              }
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.006",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "v039 local receiver radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.009",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.019",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.010",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.020",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v039 receiver strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v039 coherent fire beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.021",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.022",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v039 restrained local firelight | preserved ink",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Map Range.011",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.023",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Geometry.004",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 61.5,
+                "Y": 9.600000381469727,
+                "Z": -0.3514806628227234
+              }
+            },
+            {
+              "name": "Vector Math.007",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.008",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.009",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.012",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | School debris | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.024",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.001",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.013",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.025",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | School debris | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | School debris | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.026",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.027",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.005",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position.001",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 112.0,
+                "Y": 11.530000686645508,
+                "Z": -0.15849679708480835
+              }
+            },
+            {
+              "name": "Vector Math.010",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.011",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.012",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.014",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.028",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.002",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.015",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.029",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Battlefield burn | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.030",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.031",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth.001",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.006",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 actual physical source position.002",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 151.0,
+                "Y": 23.68000030517578,
+                "Z": -1.619815707206726
+              }
+            },
+            {
+              "name": "Vector Math.013",
+              "type": "ShaderNodeVectorMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.014",
+              "type": "ShaderNodeVectorMath",
+              "operation": "NORMALIZE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Vector Math.015",
+              "type": "ShaderNodeVectorMath",
+              "operation": "LENGTH",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.016",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.032",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.003",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.017",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.033",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter receiver_strength",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v040 v036 | Distant ruin burn | fixed emitter fire_beat",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.034",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.035",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v040 localized source-connected warmth.002",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.007",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v041 | Live event binding | awaiting veri",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 109.0999984741211,
+                "Y": 10.0,
+                "Z": -0.7048802971839905
+              }
+            },
+            {
+              "name": "Separate XYZ.002",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 EVENT | ground_radius",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v032 | Camera follows shared pair center",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 109.83110809326172,
+                "Y": -16.0,
+                "Z": 3.0
+              }
+            },
+            {
+              "name": "Separate XYZ.003",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 live transform | v020 | Foreground bank | continuous blend",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {
+                "X": 0.0,
+                "Y": -4.989999771118164,
+                "Z": 0.0
+              }
+            },
+            {
+              "name": "Separate XYZ.004",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.036",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.037",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.038",
+              "type": "ShaderNodeMath",
+              "operation": "DIVIDE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Combine XYZ.003",
+              "type": "ShaderNodeCombineXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.039",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.040",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.041",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.042",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.043",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.044",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.045",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.046",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.047",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.048",
+              "type": "ShaderNodeMath",
+              "operation": "ABSOLUTE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.049",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Vector Math.016",
+              "type": "ShaderNodeVectorMath",
+              "operation": "DISTANCE",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Scale": 1.0
+              }
+            },
+            {
+              "name": "Map Range.018",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "name": "Math.050",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "RGB to BW.004",
+              "type": "ShaderNodeRGBToBW",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Map Range.019",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Math.051",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 EVENT | power_watts",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "v041 EVENT | reference_watts",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.052",
+              "type": "ShaderNodeMath",
+              "operation": "DIVIDE",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 EVENT | receiver_gain",
+              "type": "ShaderNodeValue",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Math.053",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.054",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.055",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "v041 DORMANT | source-bound local warmth",
+              "type": "ShaderNodeMix",
+              "operation": null,
+              "inputs": {
+                "Factor": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "A": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "B": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Geometry.008",
+              "type": "ShaderNodeNewGeometry",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Separate XYZ.005",
+              "type": "ShaderNodeSeparateXYZ",
+              "operation": null,
+              "inputs": {}
+            },
+            {
+              "name": "Noise Texture.002",
+              "type": "ShaderNodeTexNoise",
+              "operation": null,
+              "inputs": {
+                "W": 0.0,
+                "Scale": 2.5999999046325684,
+                "Detail": 2.0,
+                "Roughness": 0.5,
+                "Lacunarity": 2.0,
+                "Offset": 0.0,
+                "Gain": 1.0,
+                "Distortion": 0.0
+              }
+            },
+            {
+              "name": "Math.056",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.057",
+              "type": "ShaderNodeMath",
+              "operation": "MULTIPLY",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.058",
+              "type": "ShaderNodeMath",
+              "operation": "ADD",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Math.059",
+              "type": "ShaderNodeMath",
+              "operation": "SUBTRACT",
+              "inputs": {
+                "Value": 0.5
+              }
+            },
+            {
+              "name": "Map Range.020",
+              "type": "ShaderNodeMapRange",
+              "operation": null,
+              "inputs": {
+                "From Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "From Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "To Min": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "To Max": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Steps": [
+                  4.0,
+                  4.0,
+                  4.0
+                ],
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "v016 | Slow ground mist 3",
+      "location": [
+        115.56504821777344,
+        18.0,
+        0.800000011920929
+      ],
+      "dimensions": [
+        30.0,
+        0.0,
+        2.200000047683716
+      ],
+      "screen_bounds": [
+        0.04296918213367462,
+        2.4939496517181396,
+        0.49546197056770325,
+        0.8149971961975098
+      ],
+      "collections": [
+        "v016 | 06 Painted light and mist"
+      ],
+      "materials": [
+        {
+          "name": "v016 | Layered mist 3",
+          "images": [],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | short hot launch jet | gone after hot_frames",
+      "location": [
+        109.0999984741211,
+        10.010000228881836,
+        -0.7048802971839905
+      ],
+      "dimensions": [
+        3.2057042121887207,
+        0.0,
+        3.077209949493408
+      ],
+      "screen_bounds": [
+        0.5565654039382935,
+        0.898923397064209,
+        0.27135446667671204,
+        0.855595052242279
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | detailed soot internal light and cooling",
+          "images": [
+            {
+              "name": "FXv002 original detailed eruption | packed",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | broad low asymmetric dust sheets",
+      "location": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ],
+      "dimensions": [
+        2.4193785190582275,
+        0.0,
+        0.4160899817943573
+      ],
+      "screen_bounds": [
+        0.5930031538009644,
+        0.8523817658424377,
+        0.26558616757392883,
+        0.34489011764526367
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | granular low dust with neutral edge palette",
+          "images": [
+            {
+              "name": "FXv002 original granular ground surge | packed",
+              "size": [
+                2172,
+                724
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | brief torn ignition core",
+      "location": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ],
+      "dimensions": [
+        1.25,
+        0.0,
+        0.7799999713897705
+      ],
+      "screen_bounds": [
+        0.6544449329376221,
+        0.7886111736297607,
+        0.2678210735321045,
+        0.4166561961174011
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | fast pale-hot core flash",
+          "images": [
+            {
+              "name": "FXv002 original detailed eruption | packed",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 00 | born 00",
+      "location": [
+        109.70073699951172,
+        10.119999885559082,
+        1.0423505306243896
+      ],
+      "dimensions": [
+        1.6500152349472046,
+        0.0,
+        1.6811374425888062
+      ],
+      "screen_bounds": [
+        0.6962847113609314,
+        0.8781497478485107,
+        0.44022831320762634,
+        0.7692099213600159
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 00 | form 2 birth 0 life 62",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 01 | born 01",
+      "location": [
+        109.00775146484375,
+        10.145999908447266,
+        0.9370010495185852
+      ],
+      "dimensions": [
+        1.7574926614761353,
+        0.0,
+        1.6315633058547974
+      ],
+      "screen_bounds": [
+        0.600005567073822,
+        0.8293771743774414,
+        0.3873695731163025,
+        0.7793858051300049
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 01 | form 0 birth 1 life 71",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 02 | born 03",
+      "location": [
+        109.17607116699219,
+        10.17199993133545,
+        0.9594723582267761
+      ],
+      "dimensions": [
+        1.6168420314788818,
+        0.0,
+        1.3922823667526245
+      ],
+      "screen_bounds": [
+        0.6267616152763367,
+        0.8375944495201111,
+        0.4137246906757355,
+        0.7625740170478821
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 02 | form 1 birth 3 life 65",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 03 | born 05",
+      "location": [
+        109.09187316894531,
+        10.197999954223633,
+        0.8189975619316101
+      ],
+      "dimensions": [
+        1.3645931482315063,
+        0.0,
+        1.2986950874328613
+      ],
+      "screen_bounds": [
+        0.6259878873825073,
+        0.8172501921653748,
+        0.3963784873485565,
+        0.7309218049049377
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 03 | form 2 birth 5 life 87",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 04 | born 08",
+      "location": [
+        108.95738220214844,
+        10.223999977111816,
+        0.7623990178108215
+      ],
+      "dimensions": [
+        1.5439790487289429,
+        0.0,
+        1.4526081085205078
+      ],
+      "screen_bounds": [
+        0.610889732837677,
+        0.8049888610839844,
+        0.38710102438926697,
+        0.7192951440811157
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 04 | form 0 birth 8 life 79",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 05 | born 12",
+      "location": [
+        109.52268981933594,
+        10.25,
+        0.34272509813308716
+      ],
+      "dimensions": [
+        1.379551649093628,
+        0.0,
+        1.090195655822754
+      ],
+      "screen_bounds": [
+        0.6938313245773315,
+        0.840895414352417,
+        0.37110278010368347,
+        0.5786290764808655
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 05 | form 3 birth 12 life 67",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 06 | born 16",
+      "location": [
+        109.30740356445312,
+        10.276000022888184,
+        0.0951617956161499
+      ],
+      "dimensions": [
+        1.2891933917999268,
+        0.0,
+        1.2916896343231201
+      ],
+      "screen_bounds": [
+        0.6643999218940735,
+        0.8248732686042786,
+        0.2860077917575836,
+        0.5716601014137268
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 06 | form 1 birth 16 life 62",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "FXv003 | rolling smoke 07 | born 20",
+      "location": [
+        109.24478912353516,
+        10.302000045776367,
+        -0.10495913028717041
+      ],
+      "dimensions": [
+        0.9745668172836304,
+        0.0,
+        0.866386890411377
+      ],
+      "screen_bounds": [
+        0.6739789247512817,
+        0.8045260906219482,
+        0.2801540195941925,
+        0.5015090703964233
+      ],
+      "collections": [
+        "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS"
+      ],
+      "materials": [
+        {
+          "name": "FXv003 | cold billow 07 | form 2 birth 20 life 65",
+          "images": [
+            {
+              "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+              "size": [
+                1254,
+                1254
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "LOCO_BOY | PAINT body.001",
+      "location": [
+        107.7031021118164,
+        0.0,
+        0.7200736999511719
+      ],
+      "dimensions": [
+        0.436729371547699,
+        6.780833672337394e-09,
+        0.515382707118988
+      ],
+      "screen_bounds": [
+        0.4126203656196594,
+        0.48844143748283386,
+        0.39318811893463135,
+        0.5522568225860596
+      ],
+      "collections": [
+        "LOCO_BOY | painted 2D rig.001"
+      ],
+      "materials": [
+        {
+          "name": "PERF_BOY | original body paint, clean native boundary",
+          "images": [
+            {
+              "name": "Pair_Painterly_Near_Age_v015.png.002",
+              "size": [
+                1672,
+                941
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "PERF_BOY | original head.001",
+      "location": [
+        107.7031021118164,
+        0.0,
+        0.7200736999511719
+      ],
+      "dimensions": [
+        0.5274531841278076,
+        1.4901161193847656e-08,
+        0.5431089997291565
+      ],
+      "screen_bounds": [
+        0.4590763747692108,
+        0.5509059429168701,
+        0.5069280862808228,
+        0.675027072429657
+      ],
+      "collections": [
+        "LOCO_BOY | painted 2D rig.001"
+      ],
+      "materials": [
+        {
+          "name": "LOCO | ORIGINAL v015 charcoal paint, packed",
+          "images": [
+            {
+              "name": "Pair_Painterly_Near_Age_v015.png.002",
+              "size": [
+                1672,
+                941
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "LOCO_GIRL | PAINT body.001",
+      "location": [
+        108.50310516357422,
+        0.0,
+        0.7200736999511719
+      ],
+      "dimensions": [
+        0.5986423492431641,
+        6.5879874888707946e-09,
+        0.7068390846252441
+      ],
+      "screen_bounds": [
+        0.5190093517303467,
+        0.6229400038719177,
+        0.30310139060020447,
+        0.5212615728378296
+      ],
+      "collections": [
+        "LOCO_GIRL | painted 2D rig.001"
+      ],
+      "materials": [
+        {
+          "name": "PERF_GIRL | original body paint, clean native boundary",
+          "images": [
+            {
+              "name": "Pair_Painterly_Near_Age_v015.png.002",
+              "size": [
+                1672,
+                941
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "object": "PERF_GIRL | original head and attached braid.001",
+      "location": [
+        108.50310516357422,
+        0.0,
+        0.7200736999511719
+      ],
+      "dimensions": [
+        0.5607729554176331,
+        1.1175870895385742e-08,
+        0.5490522384643555
+      ],
+      "screen_bounds": [
+        0.5747060775756836,
+        0.672336220741272,
+        0.48080724477767944,
+        0.6507457494735718
+      ],
+      "collections": [
+        "LOCO_GIRL | painted 2D rig.001"
+      ],
+      "materials": [
+        {
+          "name": "LOCO | ORIGINAL v015 charcoal paint, packed",
+          "images": [
+            {
+              "name": "Pair_Painterly_Near_Age_v015.png.002",
+              "size": [
+                1672,
+                941
+              ]
+            }
+          ],
+          "nodes": []
+        }
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "name": "v016 | Cold title side light",
+      "type": "AREA",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "energy": 2300.0,
+      "rotation": [
+        0.7607979774475098,
+        3.10602494835166e-08,
+        -0.4048917889595032
+      ]
+    },
+    {
+      "name": "v036 | School debris | physical firelight",
+      "type": "POINT",
+      "color": [
+        1.0,
+        0.4000000059604645,
+        0.11999999731779099
+      ],
+      "energy": 202.40829467773438,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | physical firelight",
+      "type": "POINT",
+      "color": [
+        1.0,
+        0.4000000059604645,
+        0.11999999731779099
+      ],
+      "energy": 312.7339782714844,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | physical firelight",
+      "type": "POINT",
+      "color": [
+        1.0,
+        0.4000000059604645,
+        0.11999999731779099
+      ],
+      "energy": 580.6409912109375,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "v043 OWNED | Brief eruption light",
+      "type": "POINT",
+      "color": [
+        1.0,
+        0.3700000047683716,
+        0.10999999940395355
+      ],
+      "energy": 0.0,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

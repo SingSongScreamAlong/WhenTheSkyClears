@@ -1,0 +1,56 @@
+{
+  "version": "5.2.2 LTS",
+  "frames": 144,
+  "fps": 24,
+  "duration_s": 6,
+  "new_motion": "Independent roots, toe scuff, catch-step loading, front-foot recovery, shorter low restart steps. No source v010 curves retained.",
+  "proportion_basis": {
+    "BOY": {
+      "height": 1.45,
+      "leg": [
+        0.285,
+        0.285
+      ],
+      "arm": [
+        0.225,
+        0.215
+      ],
+      "torso": [
+        0.18,
+        0.27
+      ],
+      "head": [
+        0.155,
+        0.185
+      ],
+      "ankle": 0.09,
+      "hand": 0.07
+    },
+    "GIRL": {
+      "height": 1.369917744,
+      "leg": [
+        0.27,
+        0.27
+      ],
+      "arm": [
+        0.21,
+        0.2
+      ],
+      "torso": [
+        0.17,
+        0.24
+      ],
+      "head": [
+        0.145,
+        0.17
+      ],
+      "ankle": 0.085,
+      "hand": 0.067
+    }
+  },
+  "kinematic_changes": "Overall child height/head/body/reach preserved approximately; elbow positions rebuilt so boy forearm is not less than half the upper-arm length.",
+  "not_physics": "Authored support-aware kinematics, fixed segment lengths and mass proxy. No force/dynamics or measured child mocap claim.",
+  "camera": "Separate pair-average follow; source world not used. Inspection and shot-size cameras.",
+  "source_assets": "None imported. No painting, cloth, FX, title, music or full-trailer edits.",
+  "all144_evaluated_joint_target_error_m": 1.3706284170978053e-06
+}

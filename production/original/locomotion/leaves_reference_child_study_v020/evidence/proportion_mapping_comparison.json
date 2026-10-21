@@ -1,0 +1,296 @@
+[
+  {
+    "mapping": {
+      "near": "R",
+      "far": "L"
+    },
+    "max_correction_m": 0.02888585042180372,
+    "poses": [
+      {
+        "phase": "R_CONTACT",
+        "hip_wanted": [
+          0.00859584379941225,
+          0.0,
+          0.5977806448936462
+        ],
+        "hip_fitted": [
+          0.008098781108856201,
+          0.0,
+          0.596502423286438
+        ],
+        "hip_reach_correction_m": 0.0013714670301342672,
+        "source_chest_degrees": 2.7512194758422464,
+        "source_pelvis_degrees": -7.297054076480661,
+        "source_head_degrees": 4.8406855917519165
+      },
+      {
+        "phase": "R_LOADING",
+        "hip_wanted": [
+          0.08266714960336685,
+          0.0,
+          0.5900130867958069
+        ],
+        "hip_fitted": [
+          0.08266714215278625,
+          0.0,
+          0.5900130867958069
+        ],
+        "hip_reach_correction_m": 7.450580596923828e-09,
+        "source_chest_degrees": 2.9726667163037295,
+        "source_pelvis_degrees": -7.145350860501202,
+        "source_head_degrees": 4.793663685693578
+      },
+      {
+        "phase": "R_PASSING",
+        "hip_wanted": [
+          0.2736417353153229,
+          0.0,
+          0.612230658531189
+        ],
+        "hip_fitted": [
+          0.2736417353153229,
+          0.0,
+          0.612230658531189
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.6385751869461753,
+        "source_pelvis_degrees": -9.065562296500328,
+        "source_head_degrees": 5.3430251610449115
+      },
+      {
+        "phase": "R_UP",
+        "hip_wanted": [
+          0.3144928514957428,
+          0.0,
+          0.6127871870994568
+        ],
+        "hip_fitted": [
+          0.3144928514957428,
+          0.0,
+          0.6127871870994568
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.526049718091949,
+        "source_pelvis_degrees": -8.82183692152089,
+        "source_head_degrees": 5.078529432811135
+      },
+      {
+        "phase": "L_CONTACT",
+        "hip_wanted": [
+          0.5357713103294373,
+          0.0,
+          0.59017413854599
+        ],
+        "hip_fitted": [
+          0.549087405204773,
+          0.0,
+          0.564540684223175
+        ],
+        "hip_reach_correction_m": 0.02888585042180372,
+        "source_chest_degrees": 2.662748729214617,
+        "source_pelvis_degrees": -7.2770563580584575,
+        "source_head_degrees": 4.888245715653154
+      },
+      {
+        "phase": "L_LOADING",
+        "hip_wanted": [
+          0.5439892411231995,
+          0.0,
+          0.5896772742271423
+        ],
+        "hip_fitted": [
+          0.5558921694755554,
+          0.0,
+          0.5661580562591553
+        ],
+        "hip_reach_correction_m": 0.026359691426316785,
+        "source_chest_degrees": 2.690019933632285,
+        "source_pelvis_degrees": -7.242244161239227,
+        "source_head_degrees": 4.887272426675636
+      },
+      {
+        "phase": "L_PASSING",
+        "hip_wanted": [
+          0.808397650718689,
+          0.0,
+          0.6110583543777466
+        ],
+        "hip_fitted": [
+          0.808397650718689,
+          0.0,
+          0.6110583543777466
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.8398701782827085,
+        "source_pelvis_degrees": -8.461311868772052,
+        "source_head_degrees": 5.330448449028903
+      },
+      {
+        "phase": "L_UP",
+        "hip_wanted": [
+          0.8740907907485962,
+          0.0,
+          0.6123595237731934
+        ],
+        "hip_fitted": [
+          0.8740907907485962,
+          0.0,
+          0.6123595237731934
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.168572704040309,
+        "source_pelvis_degrees": -8.307272711596582,
+        "source_head_degrees": 4.725370423740216
+      }
+    ],
+    "scale": 0.6809223280401697,
+    "stride_m": 1.0213834920602545
+  },
+  {
+    "mapping": {
+      "near": "L",
+      "far": "R"
+    },
+    "max_correction_m": 0.023310161102656202,
+    "poses": [
+      {
+        "phase": "R_CONTACT",
+        "hip_wanted": [
+          0.00859584379941225,
+          0.0,
+          0.5977806448936462
+        ],
+        "hip_fitted": [
+          0.017989709973335266,
+          0.0,
+          0.5764471292495728
+        ],
+        "hip_reach_correction_m": 0.023310161102656202,
+        "source_chest_degrees": 2.7512194758422464,
+        "source_pelvis_degrees": -7.297054076480661,
+        "source_head_degrees": 4.8406855917519165
+      },
+      {
+        "phase": "R_LOADING",
+        "hip_wanted": [
+          0.08266714960336685,
+          0.0,
+          0.5900130867958069
+        ],
+        "hip_fitted": [
+          0.08349272608757019,
+          0.0,
+          0.5876145958900452
+        ],
+        "hip_reach_correction_m": 0.0025365991303795124,
+        "source_chest_degrees": 2.9726667163037295,
+        "source_pelvis_degrees": -7.145350860501202,
+        "source_head_degrees": 4.793663685693578
+      },
+      {
+        "phase": "R_PASSING",
+        "hip_wanted": [
+          0.2736417353153229,
+          0.0,
+          0.612230658531189
+        ],
+        "hip_fitted": [
+          0.2736417353153229,
+          0.0,
+          0.612230658531189
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.6385751869461753,
+        "source_pelvis_degrees": -9.065562296500328,
+        "source_head_degrees": 5.3430251610449115
+      },
+      {
+        "phase": "R_UP",
+        "hip_wanted": [
+          0.3144928514957428,
+          0.0,
+          0.6127871870994568
+        ],
+        "hip_fitted": [
+          0.3144928514957428,
+          0.0,
+          0.6127872467041016
+        ],
+        "hip_reach_correction_m": 5.960464477539063e-08,
+        "source_chest_degrees": 3.526049718091949,
+        "source_pelvis_degrees": -8.82183692152089,
+        "source_head_degrees": 5.078529432811135
+      },
+      {
+        "phase": "L_CONTACT",
+        "hip_wanted": [
+          0.5357713103294373,
+          0.0,
+          0.59017413854599
+        ],
+        "hip_fitted": [
+          0.5357713103294373,
+          0.0,
+          0.59017413854599
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 2.662748729214617,
+        "source_pelvis_degrees": -7.2770563580584575,
+        "source_head_degrees": 4.888245715653154
+      },
+      {
+        "phase": "L_LOADING",
+        "hip_wanted": [
+          0.5439892411231995,
+          0.0,
+          0.5896772742271423
+        ],
+        "hip_fitted": [
+          0.5439892411231995,
+          0.0,
+          0.5896772742271423
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 2.690019933632285,
+        "source_pelvis_degrees": -7.242244161239227,
+        "source_head_degrees": 4.887272426675636
+      },
+      {
+        "phase": "L_PASSING",
+        "hip_wanted": [
+          0.808397650718689,
+          0.0,
+          0.6110583543777466
+        ],
+        "hip_fitted": [
+          0.808397650718689,
+          0.0,
+          0.6110583543777466
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.8398701782827085,
+        "source_pelvis_degrees": -8.461311868772052,
+        "source_head_degrees": 5.330448449028903
+      },
+      {
+        "phase": "L_UP",
+        "hip_wanted": [
+          0.8740907907485962,
+          0.0,
+          0.6123595237731934
+        ],
+        "hip_fitted": [
+          0.8740907907485962,
+          0.0,
+          0.6123595237731934
+        ],
+        "hip_reach_correction_m": 0.0,
+        "source_chest_degrees": 3.168572704040309,
+        "source_pelvis_degrees": -8.307272711596582,
+        "source_head_degrees": 4.725370423740216
+      }
+    ],
+    "scale": 0.6809223280401697,
+    "stride_m": 1.0213834920602545
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "scope": "Anatomy/support safeguards, not visual acceptance",
+  "source_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+  "version": "5.2.2 LTS",
+  "selected_frames": [
+    1,
+    4,
+    11,
+    13
+  ],
+  "new_drawings": 4,
+  "shared_thigh_length_m": 0.26,
+  "shared_shin_length_m": 0.26,
+  "boot_refit": [
+    0.78,
+    0.9
+  ],
+  "new_arm_lengths_m": [
+    0.198,
+    0.178
+  ],
+  "head_design": "Four existing painted source profiles retained as translated native mesh shape samples; head/hair UV/materials unchanged. No turnaround.",
+  "head_vertices": 9,
+  "collar_vertices": 114,
+  "poses": [
+    {
+      "frame": 1,
+      "name": "CONTACT",
+      "hip": [
+        0,
+        0.594
+      ],
+      "neck": [
+        0.033,
+        1.085
+      ],
+      "legs": {
+        "near": {
+          "hip": [
+            0.018,
+            0.594
+          ],
+          "knee": [
+            0.09720053276628887,
+            0.3463565554884684
+          ],
+          "ankle": [
+            0.15,
+            0.09177412039162935
+          ],
+          "sole_clearance": 0.0,
+          "boot_length_x": 0.18659004233834597
+        },
+        "far": {
+          "hip": [
+            -0.022,
+            0.594
+          ],
+          "knee": [
+            -0.04722613560983651,
+            0.33522665886495545
+          ],
+          "ankle": [
+            -0.17,
+            0.10603988301890936
+          ],
+          "sole_clearance": 0.0,
+          "boot_length_x": 0.19689399572619762
+        }
+      }
+    },
+    {
+      "frame": 4,
+      "name": "LOADED_DOWN",
+      "hip": [
+        0.02,
+        0.585
+      ],
+      "neck": [
+        0.065,
+        1.065
+      ],
+      "legs": {
+        "near": {
+          "hip": [
+            0.038,
+            0.585
+          ],
+          "knee": [
+            0.15015634237815642,
+            0.3504345403424584
+          ],
+          "ankle": [
+            0.115,
+            0.09282236751168967
+          ],
+          "sole_clearance": 0.0,
+          "boot_length_x": 0.18838380619883538
+        },
+        "far": {
+          "hip": [
+            -0.0019999999999999983,
+            0.585
+          ],
+          "knee": [
+            -0.04640544002405047,
+            0.3288200692945084
+          ],
+          "ankle": [
+            -0.195,
+            0.11546670807056619
+          ],
+          "sole_clearance": 0.0,
+          "boot_length_x": 0.18907313513888446
+        }
+      }
+    },
+    {
+      "frame": 11,
+      "name": "PASSING",
+      "hip": [
+        0,
+        0.61
+      ],
+      "neck": [
+        0.025,
+        1.11
+      ],
+      "legs": {
+        "near": {
+          "hip": [
+            0.018,
+            0.61
+          ],
+          "knee": [
+            0.012862254751494693,
+            0.350050767314536
+          ],
+          "ankle": [
+            -0.025,
+            0.09282236751168967
+          ],
+          "sole_clearance": 0.0,
+          "boot_length_x": 0.18838380619883538
+        },
+        "far": {
+          "hip": [
+            -0.022,
+            0.61
+          ],
+          "knee": [
+            0.13739645785675764,
+            0.4045912143487555
+          ],
+          "ankle": [
+            -0.015,
+            0.19393671135222923
+          ],
+          "sole_clearance": 0.09500000000000001,
+          "boot_length_x": 0.20059693240115745
+        }
+      }
+    },
+    {
+      "frame": 13,
+      "name": "UP",
+      "hip": [
+        0.015,
+        0.614
+      ],
+      "neck": [
+        0.038,
+        1.12
+      ],
+      "legs": {
+        "near": {
+          "hip": [
+            0.033,
+            0.614
+          ],
+          "knee": [
+            0.0253369431226753,
+            0.3541129523056316
+          ],
+          "ankle": [
+            -0.065,
+            0.11031131837499006
+          ],
+          "sole_clearance": 0.0,
+          "boot_length_x": 0.18340154177397017
+        },
+        "far": {
+          "hip": [
+            -0.006999999999999999,
+            0.614
+          ],
+          "knee": [
+            0.14027452666449172,
+            0.39973331151168195
+          ],
+          "ankle": [
+            0.13,
+            0.13993640217321304
+          ],
+          "sole_clearance": 0.05499999999999999,
+          "boot_length_x": 0.1979060624719559
+        }
+      }
+    }
+  ],
+  "no_cycle_or_production_integration": true
+}

@@ -1,0 +1,23 @@
+{
+  "status": "Unapproved standalone age-ten walking and painted-outfit checkpoint. Not final animation.",
+  "source_assumption": "Earlier liked look interpreted as v040/v041; exact older version was not named.",
+  "visual_review_method": "Inspected native full-size F1/F9/F17/F25, actual-bone board, all31 local-cycle integer poses in three contact sheets, and12 selected decoded preview frames. Agent did not observe continuous player playback.",
+  "fixed": [
+    "Transparent garment origins now sort coat over thighs and collar over coat without moving world geometry.",
+    "Native painted bodice registration is feathered; hard rectangular chest patches removed.",
+    "Original detached sleeve armhole covered with existing cloth painting so moving shoulder does not reveal a second empty cavity.",
+    "Girl stocking UV rows map knee-to-cuff on actual shin; old cuff pixels no longer run through entire leg.",
+    "Retained richer cloth, buttons, pockets, sleeve rolls and original painted hand silhouettes on corrected anatomy."
+  ],
+  "remaining_artistic_work": [
+    "Girl retains old charcoal face, white eye and rigid braid; visual finish differs from full-color boy.",
+    "Planar fixed profiles and rigid painted hands need expressive drawing changes and finger intentions.",
+    "Cloth needs authored secondary motion and settling.",
+    "Shot-specific fatigue, load-bearing clasp and recovery-to-walk restart are not authored here.",
+    "Actual production camera/world-light integration remains separate; technical contacts are not artistic approval."
+  ],
+  "next_priority": "Unify girl painting and secondary cloth/braid movement while preserving validated scale and contacts; then author shot-specific recovery and support acting.",
+  "technical_validation_separate": true,
+  "preview_below_20_MB": true,
+  "no_production_overwrite": true
+}

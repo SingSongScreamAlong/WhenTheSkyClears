@@ -1,0 +1,479 @@
+{
+  "status": "V033_PREFERRED_V028_MOVEMENT_RESTORED_CONSISTENT_SHOE_REVIEW_DELIVERED",
+  "artistic_acceptance": false,
+  "user_feedback_basis": {
+    "v028": "This feels better",
+    "v031": "This doesn\u2019t feel as good. Also 2 different shoes",
+    "v032": "Preserved and superseded as a movement direction; no upload or improvement claim"
+  },
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\preferred_walk_consistent_footwear_v033\\native\\WTSC_Preferred_Walk_Consistent_Shoes_v033.blend",
+  "native_bytes": 2564744,
+  "native_sha256": "e949e76b90397357f3f7378d02669caf276b2aec864a1c82e8594fe166ebd9b4",
+  "private_Library": {
+    "MATCHED": {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/WTSC_v033_vs_v028_Preferred_Movement_18p6s.mp4",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_v033_vs_v028_Preferred_Movement_18p6s.mp4",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "mime_type": "video/mp4",
+      "library_artifact_type": "other",
+      "file_size_bytes": 4678518,
+      "external_connectors_accessed": false
+    },
+    "CANDIDATE": {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/WTSC_v033_Consistent_Shoes_Normal_Speed_18p6s.mp4",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_v033_Consistent_Shoes_Normal_Speed_18p6s.mp4",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "mime_type": "video/mp4",
+      "library_artifact_type": "other",
+      "file_size_bytes": 2974019,
+      "external_connectors_accessed": false
+    },
+    "BOARD": {
+      "operation": "create_library_file",
+      "status": "succeeded",
+      "path": "/WTSC_v033_Consistent_Shoe_Design_Board.png",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_v033_Consistent_Shoe_Design_Board.png",
+      "current_version_number": 0,
+      "restored_from_version_number": null,
+      "xattrs": [
+        {
+          "name": "user.library-file-version",
+          "value": "0"
+        }
+      ],
+      "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "mime_type": "image/png",
+      "library_artifact_type": "image",
+      "file_size_bytes": 847066,
+      "external_connectors_accessed": false
+    }
+  },
+  "movies": {
+    "MATCHED": {
+      "file": "previews\\WTSC_v033_vs_v028_Preferred_Movement_18p6s.mp4",
+      "bytes": 4678518,
+      "sha256": "cc5106ae8700f831b9863bfc273d695d26b331eb30e0fdb9ebca89f35b466830",
+      "decoded_frames": 558,
+      "fps": 30.0,
+      "size": [
+        1280,
+        840
+      ],
+      "seconds": 18.6,
+      "layout": "9.3s close then9.3s shot; nine31-frame cycles per view",
+      "baseline": "Actual unchanged V028 source renders matched to V033 native frames1..279; no retiming, holds, phase alignment, interpolation or frame recycling",
+      "selected_actual_encoded_frames": [
+        "previews\\DECODED_MATCHED_000.png",
+        "previews\\DECODED_MATCHED_003.png",
+        "previews\\DECODED_MATCHED_010.png",
+        "previews\\DECODED_MATCHED_016.png",
+        "previews\\DECODED_MATCHED_019.png",
+        "previews\\DECODED_MATCHED_026.png",
+        "previews\\DECODED_MATCHED_030.png",
+        "previews\\DECODED_MATCHED_031.png",
+        "previews\\DECODED_MATCHED_061.png",
+        "previews\\DECODED_MATCHED_092.png",
+        "previews\\DECODED_MATCHED_185.png",
+        "previews\\DECODED_MATCHED_278.png",
+        "previews\\DECODED_MATCHED_279.png",
+        "previews\\DECODED_MATCHED_309.png",
+        "previews\\DECODED_MATCHED_557.png"
+      ],
+      "observation_limit": "Decoded actual movie frames inspected; continuous player playback not observed through available tools. New footwear/user review remains pending."
+    },
+    "CANDIDATE": {
+      "file": "previews\\WTSC_v033_Consistent_Shoes_Normal_Speed_18p6s.mp4",
+      "bytes": 2974019,
+      "sha256": "fcdf7b36b1c6d413a0be7ee948f0e59385d8c6ec2047291b540c248d9297b8bb",
+      "decoded_frames": 558,
+      "fps": 30.0,
+      "size": [
+        1280,
+        800
+      ],
+      "seconds": 18.6,
+      "layout": "9.3s close then9.3s shot; nine31-frame cycles per view",
+      "baseline": "Actual unchanged V028 source renders matched to V033 native frames1..279; no retiming, holds, phase alignment, interpolation or frame recycling",
+      "selected_actual_encoded_frames": [
+        "previews\\DECODED_CANDIDATE_000.png",
+        "previews\\DECODED_CANDIDATE_016.png",
+        "previews\\DECODED_CANDIDATE_026.png",
+        "previews\\DECODED_CANDIDATE_278.png",
+        "previews\\DECODED_CANDIDATE_279.png",
+        "previews\\DECODED_CANDIDATE_557.png"
+      ],
+      "observation_limit": "Decoded actual movie frames inspected; continuous player playback not observed through available tools. New footwear/user review remains pending."
+    }
+  },
+  "design_board": "WTSC_LOCAL_WORKSPACE\\locomotion\\preferred_walk_consistent_footwear_v033\\previews\\WTSC_v033_Consistent_Shoe_Design_Board.png",
+  "full_cycle_shoe_boards": [
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\preferred_walk_consistent_footwear_v033\\previews\\WTSC_v033_Shoe_Joins_F01_16.png",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\preferred_walk_consistent_footwear_v033\\previews\\WTSC_v033_Shoe_Joins_F17_32.png"
+  ],
+  "guide": "WTSC_LOCAL_WORKSPACE\\locomotion\\preferred_walk_consistent_footwear_v033\\V033_VIEWING_IMPORT_AND_CANDID_ASSESSMENT.txt",
+  "shoe_build": {
+    "scope": "V028 preferred movement retained; footwear design correction, not a new preferred animation or artistic approval.",
+    "source_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+    "Blender": "5.2.2 LTS",
+    "canonical_source_object": "V007_BOY | redrawn support boot near",
+    "one_shared_mesh": true,
+    "near_scale": 1.0,
+    "far_uniform_perspective_scale": 0.97,
+    "canonical_vertices": 76,
+    "canonical_dimensions_xz_m": [
+      0.24151772260665894,
+      0.14492740854620934
+    ],
+    "preserved": "All V028 rig/control/upper-body/head/coat actions, near trouser data and original31frame cadence/root travel. No V031/V032 movements imported.",
+    "changed": "Two consistent shoe instances; far-art rocker/swing placement and lower far cuff drawing fit the shared design. Gait bones and old ankle targets remain untouched.",
+    "period_frames": 31,
+    "fps": 30,
+    "stride_m": 0.9524437384576381,
+    "far_flat_ankle_contact_origin_m": 0.7110689096152782,
+    "maximum_lower_cuff_vertex_refit_m": 0.03656537426497934,
+    "maximum_far_art_anchor_shift_m": 0.01677242757399317,
+    "maximum_contact_sole_error_m": 5.21540641784668e-08,
+    "head_choice": "Exact preferred V028 original profile action preserved; no new head-card rotation or design.",
+    "artistic_acceptance": false
+  },
+  "preferred_motion_preservation": {
+    "scope": "Cold native preservation/contact safeguards, not artistic acceptance",
+    "preferred_source": "v028",
+    "source_original_action_count": 24,
+    "original_actions_changed": [],
+    "original_GP_coat_drawing_hash_unchanged": true,
+    "preserved_visible_mesh_names": [
+      "V007_BOY | articulated drawn hand far",
+      "V007_BOY | drawn skin far",
+      "V007_BOY | drawn sleeve far",
+      "V007_BOY | drawn source gray cuff far",
+      "V024 continuous near trouser drawing",
+      "LOCO_BOY | PAINT body",
+      "PERF_BOY | original head",
+      "V007_BOY | articulated drawn hand near",
+      "V007_BOY | drawn skin near",
+      "V007_BOY | drawn sleeve near",
+      "V007_BOY | drawn source gray cuff near"
+    ],
+    "max_all_bone_world_matrix_change": 0.0,
+    "max_root_world_matrix_change": 0.0,
+    "max_preserved_visible_mesh_change_m": 0.0,
+    "max_near_shoe_vertex_change_m": 1.561181118175407e-07,
+    "max_far_upper72percent_trouser_change_m": 0.0,
+    "max_far_cuff_endpoint_fit_error_m": 2.0316498317227835e-07,
+    "contact_samples": 993,
+    "sample_interval_frames": 0.03125,
+    "max_support_sole_height_error_m": 0.00044349953532218933,
+    "max_swing_sole_clearance_change_m": 0.0001462369026252186,
+    "one_shared_shoe_mesh": true,
+    "same_UVs_and_material": true,
+    "perspective_scales": [
+      1.0,
+      0.9700000286102295
+    ],
+    "observation_limit": "Continuous playback not observed; matched source/candidate frames and actual movie will be reviewed.",
+    "support_sole_error_by_side_m": {
+      "near": 0.00044349953532218933,
+      "far": 8.719111792743206e-05
+    },
+    "preferred_v028_support_sole_error_by_side_m": {
+      "near": 0.00044350156072378577,
+      "far": 0.0002574545358410285
+    },
+    "contact_criterion": "Retained near shoe may preserve baseline subframe sole error, with at most20micrometre increase; corrected far shoe must remain below0.4mm. No unexplained threshold broadening."
+  },
+  "matched_actual_render_upper_body_comparison": {
+    "scope": "Matched actual V028/V033 frame crop comparison, not artistic acceptance",
+    "crop": [
+      0,
+      0,
+      480,
+      450
+    ],
+    "maximum_RGB_channel_difference": 0,
+    "frames": [
+      {
+        "frame": 1,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 2,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 3,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 4,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 5,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 6,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 7,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 8,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 9,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 10,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 11,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 12,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 13,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 14,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 15,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 16,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 17,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 18,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 19,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 20,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 21,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 22,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 23,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 24,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 25,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 26,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 27,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 28,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 29,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 30,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 31,
+        "max_upper_body_RGB_difference": 0
+      },
+      {
+        "frame": 32,
+        "max_upper_body_RGB_difference": 0
+      }
+    ]
+  },
+  "later_cycle_contacts": {
+    "actual_contact_samples": 350,
+    "through_frame": 279,
+    "max_horizontal_active_contact_anchor_error_m": 1.312476138437546e-06,
+    "scope": "Native shared far-shoe rocker anchor preservation over9cycles, not artistic acceptance"
+  },
+  "final_native_visibility": {
+    "current_view_layer": "V025 | coat and lower body",
+    "obsolete_shoes_visible_in_viewport": {
+      "near": false,
+      "far": false
+    },
+    "obsolete_shoes_render_hidden": {
+      "near": true,
+      "far": true
+    },
+    "new_shoes_visible_in_viewport": {
+      "near": true,
+      "far": true
+    },
+    "new_shoes_shared_mesh": true,
+    "native_unchanged": true
+  },
+  "actual_render": {
+    "frames_per_view": 279,
+    "actual_candidate_renders": 558,
+    "fps": 30,
+    "cycles_per_view": 9,
+    "seconds_per_view": 9.3,
+    "views": {
+      "CLOSE": [
+        480,
+        720
+      ],
+      "SHOT": [
+        1280,
+        720
+      ]
+    },
+    "baseline": "Original V028 actual279-frame renders from its existing CLOSE/SHOT folders, unchanged",
+    "matching": "Same native frame numbers, camera, lens, duration and30fps; no phase alignment/retiming",
+    "threads": 2,
+    "elapsed_seconds": 175.62135004997253
+  },
+  "visual_review": {
+    "status": "V028_PREFERRED_MOVEMENT_RESTORED_CONSISTENT_SHOE_PROOF_READY_FOR_MATCHED_REVIEW",
+    "proceed_to_matched_normal_speed_review": true,
+    "user_feedback_basis": "Conrad preferred V028 ('This feels better') and rejected V031 ('This doesn\u00e2\u20ac\u2122t feel as good. Also 2 different shoes'). V031/V032 are not the movement baseline.",
+    "actually_inspected": [
+      "All32 actual close frames as shoe/sole/cuff boards F1\u00e2\u20ac\u201c16 and F17\u00e2\u20ac\u201c32",
+      "Actual full close frames F1,F17,F27 before and after cuff correction",
+      "Actual flat old-pair and shared-pair native renders in the shoe design board",
+      "Matched actual V028/V033 upper-body crop comparison for F1\u00e2\u20ac\u201c32"
+    ],
+    "visible_findings": [
+      "The original two shoe profiles differed in shaft, toe and outsole contour. The new pair visually shares those details, with only uniform3% far perspective scale.",
+      "The initial far cuff wedge gap is closed by using the canonical near shoe's actual cuff-to-shoe attachment offset, not merely its ankle-bone origin.",
+      "Heel, toe, sole and cuff remain coherent across the32 inspected source-rate frames. Pitch differences correspond to gait phases and do not swap shoe design.",
+      "V028 upper-body rendered crop is pixel-identical in all32 matched frames; native action, bone, head/arm mesh and coat checks also preserve it."
+    ],
+    "remaining_caveats": [
+      "Passing shoe/leg overlap remains tight, inherited from the preferred V028 movement. No V031/V032 gait or whole-body redraw is introduced to conceal it.",
+      "The retained canonical shoe is a graphic polygonal ink silhouette. Design consistency is corrected; final shoe painting/edge refinement is not claimed.",
+      "The far shoe needs a small new rocker/clearance placement and a local lower-cuff drawing refit. Its gait bones and all original actions remain unchanged.",
+      "V028's movement is positively received directionally, not approved final animation. Continuous player playback is not observed through available tools; actual consecutive/decoded frames are the available review evidence.",
+      "No girl acting, paired recovery/clasp/stumble/restart, production integration, duration/music/title change is included."
+    ],
+    "artistic_acceptance": false
+  },
+  "source_preservation": {
+    "v046": {
+      "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v026": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\gp_extended_review_v026\\native\\WTSC_GP_Extended_Review_v026.blend",
+      "sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+      "unchanged": true
+    },
+    "v027": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\body_loading_overlap_v027\\native\\WTSC_Body_Loading_Overlap_v027.blend",
+      "sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+      "unchanged": true
+    },
+    "v028": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\upper_body_pose_refinement_v028\\native\\WTSC_Upper_Body_Pose_Refinement_v028.blend",
+      "sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+      "unchanged": true
+    },
+    "v029": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_silhouette_rebuild_v029\\native\\WTSC_Four_Pose_Silhouette_Rebuild_v029.blend",
+      "sha256": "5a810378e997691493aacb99bb00ffcdd41db10bcca124f9d9164a425c4381ed",
+      "unchanged": true
+    },
+    "v030": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_volume_revision_v030\\native\\WTSC_Four_Pose_Volume_Revision_v030.blend",
+      "sha256": "134860e2f6b43503cd8a2305bd06275cf71a591962e64fa1043d7726bd7e57bb",
+      "unchanged": true
+    },
+    "v031": {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\rough_breakdowns_construction_v031\\native\\WTSC_Rough_Construction_v031.blend",
+      "sha256": "e6eb02da647d5b2483b8ac575323b30dc94a903292381616d79e438682ef2a08",
+      "unchanged": true
+    }
+  },
+  "remaining_caveats": [
+    "Passing shoe/leg overlap remains tight, inherited from the preferred V028 movement. No V031/V032 gait or whole-body redraw is introduced to conceal it.",
+    "The retained canonical shoe is a graphic polygonal ink silhouette. Design consistency is corrected; final shoe painting/edge refinement is not claimed.",
+    "The far shoe needs a small new rocker/clearance placement and a local lower-cuff drawing refit. Its gait bones and all original actions remain unchanged.",
+    "V028's movement is positively received directionally, not approved final animation. Continuous player playback is not observed through available tools; actual consecutive/decoded frames are the available review evidence.",
+    "No girl acting, paired recovery/clasp/stumble/restart, production integration, duration/music/title change is included."
+  ],
+  "observation_limit": "Consecutive actual source-rate frames, flat actual shoe renders and selected fully decoded movie frames inspected. Continuous normal-speed playback not observed through available tools; user feedback remains pending.",
+  "production_integration": false,
+  "travel_contract": "Preferred V028 retained:31frames30fps; stride.9524437384576381m; D=stride*(F-1)/31 metres+X unwrapped. Far art-shoe rocker/cuff fit must travel with the corrected visible shoe pair; see guide and CSV.",
+  "coordination": "All Blender jobs used two threads and host no-process gates; all exited. No production/other-specialist files edited. Private Library previews only.",
+  "execution_blockers": []
+}

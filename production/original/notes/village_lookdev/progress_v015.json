@@ -1,0 +1,158 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Village_Progress_v015.blend",
+  "scene": "WTSC_VILLAGE_PROGRESS_v015",
+  "wide": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\v015\\Village_Progress_v015_Wide_4K.png",
+  "closeup": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\v015\\Children_Contact_v015_4K.png",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "camera_unchanged_from_v013": true,
+  "contacts": {
+    "pair_location_before": [
+      -1.6891200542449951,
+      0.0,
+      0.8463720083236694
+    ],
+    "pair_location_after": [
+      -1.6891200542449951,
+      0.0,
+      0.7713720202445984
+    ],
+    "vertical_change_m": -0.075,
+    "pose_points_changed": false,
+    "contact_type": "Four native soft painted ground marks behind the four held soles",
+    "soles": [
+      {
+        "shoe": "Held shoe 1",
+        "contact_center": [
+          -1.163670301437378,
+          -0.3499999940395355,
+          0.7660759091377258
+        ],
+        "width_m": 0.15008225616921272
+      },
+      {
+        "shoe": "Held shoe 2",
+        "contact_center": [
+          -1.5186257362365723,
+          -0.3499999940395355,
+          0.7643719911575317
+        ],
+        "width_m": 0.24
+      },
+      {
+        "shoe": "Held shoe 3",
+        "contact_center": [
+          -1.8238266706466675,
+          -0.3499999940395355,
+          0.7677797675132751
+        ],
+        "width_m": 0.22846063454759108
+      },
+      {
+        "shoe": "Held shoe 4",
+        "contact_center": [
+          -2.1953847408294678,
+          -0.3499999940395355,
+          0.7694836258888245
+        ],
+        "width_m": 0.2011985898942421
+      }
+    ]
+  },
+  "detail_tiles": [
+    {
+      "object": "v013 | Painted village",
+      "tile": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Bakery_Detail_Repaint.png",
+      "new_painted_pixels": [
+        1356,
+        1159
+      ],
+      "original_full_plate_pixels": [
+        1672,
+        941
+      ],
+      "uv_bounds": [
+        0.325,
+        0.68,
+        0.13,
+        0.67
+      ],
+      "old_region_pixels": [
+        593.5600000000001,
+        508.14000000000004
+      ],
+      "registration": "Native material UV mapping into existing card; original image alpha retained",
+      "feather": 0.07
+    },
+    {
+      "object": "v013 | Walking path",
+      "tile": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "new_painted_pixels": [
+        1908,
+        824
+      ],
+      "original_full_plate_pixels": [
+        1672,
+        941
+      ],
+      "uv_bounds": [
+        0.25,
+        0.46,
+        0.06,
+        0.22
+      ],
+      "old_region_pixels": [
+        351.12000000000006,
+        150.56
+      ],
+      "registration": "Native material UV mapping into existing card; original image alpha retained",
+      "feather": 0.07
+    }
+  ],
+  "characters": {
+    "source": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+    "source_size": [
+      1672,
+      941
+    ],
+    "bounds_pixels": [
+      434,
+      56,
+      1254,
+      907
+    ],
+    "soles": [
+      {
+        "x": 0.5254496971888275,
+        "z": 0.0017038777908343124,
+        "width": 0.15008225616921272
+      },
+      {
+        "x": 0.17049427144535836,
+        "z": 0.0,
+        "width": 0.24
+      },
+      {
+        "x": -0.13470657358125385,
+        "z": 0.003407755581668625,
+        "width": 0.22846063454759108
+      },
+      {
+        "x": -0.5062646886016451,
+        "z": 0.005111633372502937,
+        "width": 0.2011985898942421
+      }
+    ],
+    "height_m": 1.45,
+    "boy_height_m": 1.45,
+    "girl_height_m": 1.3699177438307872,
+    "style": "Near-black painted grayscale, tiny nonglowing off-white eye marks",
+    "motion": "Held pose only, as user explicitly requested",
+    "status": "User-directed proportion/style revision; original approved ink-and-wash image missing"
+  },
+  "provenance": "Native Blender renders. Existing source v013 opened read-only in a separate process and saved to a new file. No animation rendered yet in this checkpoint.",
+  "world_animation": "Authorized and continuing. This progress frame is not a request to pause.",
+  "reference": "PROVISIONAL exact approved reference missing"
+}

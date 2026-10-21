@@ -1,0 +1,27 @@
+{
+  "status": "Unapproved static model-fit proof plus preserved bounded motion candidate. No final animation or design acceptance.",
+  "model_changes": [
+    "Softer garment ribcage/waist/pelvis contour,15mm maximum boy/20mm girl; no joint movement.",
+    "Fuller tapered forearms and alpha-contour-matched wrist overlap remove a ledge found in the first proof.",
+    "Grouped existing painted thumb/fingers with all hand Z coordinates/extended-hand targets preserved.",
+    "Softer sleeve crown/cuff; same v048 poses and timing."
+  ],
+  "preserved": [
+    "All rest bones, entire v048 rig/root/camera Actions.",
+    "Face/hair and boots, original packed raster pixels, material slots and UV registration.",
+    "v047 and v048 source checkpoints; production sources."
+  ],
+  "visual_review": [
+    "v048 all32integer local-cycle poses plus native transition poses and selected decoded frames; movies independently fully decoded. Continuous player playback not observed.",
+    "v049 same-camera before/after neutral, actual F1/F5/F9 and isolated arm details. Recoverable wrist ledge corrected."
+  ],
+  "limits": [
+    "Model fit may still feel awkward; static proof needs artistic judgment, not numerical approval.",
+    "Girl charcoal face/white eye remains a separate finish mismatch.",
+    "Hands remain one rigid painted pose; planar clothing/profile construction remains.",
+    "v049 updated fit is static proof only; normal-speed movie depicts frozen v048.",
+    "No new cloth/braid embellishment, supporting clasp or recovery transition. Broader motion polish paused for this model checkpoint."
+  ],
+  "technical_blockers": [],
+  "render_status": "Our Blender jobs exited. No active job remains for this delivery."
+}

@@ -1,0 +1,25 @@
+WHEN THE SKY CLEARS — ONE-POSE BODY PAINT-OVER ROUTE GATE
+2026-10-19. Read-only capability check. No artwork, native character asset, or production file was modified.
+
+Decision: no verified, currently accessible direct-painting route for a credible 660x720 body paint-over. Stop artistic iteration on the v066 polygon/point route. No v067 paint-over was attempted or claimed.
+
+Already established local evidence
+- locomotion/brush_capability_probe_v059/BRUSH_CAPABILITY_REPORT.txt documents a real Blender Grease Pencil straight mouse drag, but DCC-CUA 1.9.4 rejected a six-point curved drag with InvalidAction: only two drag endpoints are accepted. Separate down/move/up actions were not exposed. Blender's brush_stroke property replay did not make a valid curved held-button gesture in either background or GUI tests. Direct Grease Pencil data insertion made editable curved geometry but was explicitly not freehand brush input.
+- locomotion/native_curve_bridge_v060/DEVELOPMENT_OUTCOME_v060.txt validated point-authored curved Grease Pencil data with Undo/cold reopen; it did not validate actual curved pointer delivery or painted character art.
+- The prior Adobe Animate 24.0.15.5 drag API exposes endpoints, and its tested UI drag did not establish a better painting route. No repeat of those driver tests was made here.
+
+New bounded check
+- Windows installed-app registry shows Photoshop 2026 (27.11.0.26) and Adobe Animate 2024. No Photoshop or Blender process was active during this check. The currently exposed assistant tool inventory has no callable Photoshop/Krita/GIMP brush-paint operation; dcc-mcp-cli and dcc-cua are not on PATH in this execution context.
+- Adobe's official Photoshop scripting documentation says local JavaScript scripts are supported through File > Scripts > Browse. Adobe's official PathItem API documents strokePath with ToolType.BRUSH. This is a potential path-based brush API, not verified hand-guided pointer painting and not evidence of a finished paint-over.
+- A read-only attempt to instantiate the installed Photoshop.Application COM automation object returned 0x80070005 E_ACCESSDENIED before the app opened. No Photoshop process appeared. The denied action was local COM activation for a capability check; outcome is known not to have executed. No unsandboxed retry, plugin installation, permission change, or new provider access was requested, because this task did not authorize expanded access.
+
+Exact blocker
+The only verified live brush input in this workspace is a two-endpoint straight drag. The configured driver cannot maintain one brush gesture through the curved shoulder/elbow/waist, fingers, trouser cloth, and boots. The typed native-curve route authors geometry, which the independent review already found artistically insufficient. Photoshop might provide a brush path or direct UI route in another authorized context, but this environment could not verify one; COM activation was denied. Thus a credible direct-paint body pass cannot presently be produced or honestly labeled as hand painting here.
+
+What remains complete
+- v066's single support pose, native Blender file, matched board, and private Library upload remain intact and unchanged. Its anatomy is useful as underdrawing. No additional pose, inbetweens, preview, or integration claim was made in this gate.
+
+Official documentation read for this check
+- https://helpx.adobe.com/photoshop/using/scripting.html
+- https://developer.adobe.com/photoshop/uxp/2022/ps-reference/classes/pathitem
+- https://developer.adobe.com/photoshop/uxp/2022/ps-reference/modules/constants

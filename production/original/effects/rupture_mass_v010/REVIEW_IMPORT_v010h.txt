@@ -1,0 +1,31 @@
+WHEN THE SKY CLEARS — RUPTURE KEY STUDY v010h
+STATUS: UNACCEPTED VISUAL PROTOTYPE. NO FULL CLIP OR TRAILER INTEGRATION.
+
+The plain-motion and shadow/color keys remain below the requested artistic target: earth fragments still read as blocks, the connected native dust is soft rather than a designed forceful eruption, and the crater depression/contact remains weak in the painted side-view terrain. Technical tests must not be presented as artistic acceptance.
+
+Actual review images are Blender frames6,8,10,16,24,40,56,120 at1920x1080. These are a few real final-camera frames, not an interpolated video. No full v010 animation, chat video or finished RGBA sequence was rendered.
+
+Native contents
+-16 shared-boundary rough solid crust pieces; installed Bullet flight/contact baked directly into native age-driven geometry keys. No tiny-particle spray or generated pose dissolve.
+-Negative-height native crater and a local broken bank, with an extended collision floor. A projected original-paint receiver is included for native contact shadows.
+-Finite three-frame core and lateral dust sources, baked using installed Mantaflow at64 divisions,120frames, two CPU threads, no noise upres. Completed cache is38.55MB. The clean append asset uses a native OpenVDB Volume sequence; it contains no active fluid simulation modifier or flow source.
+-20 native objects, one packed project-owned image, no camera or lights in the append collection. All project images are original project content; no third-party art or software added.
+
+Import the study
+1. Keep native/ and cache/ beside each other after extracting this archive.
+2. File > Append > native/WTSC_Earth_Rupture_Append_v010h.blend > Collection > FXv010 | JOINED EARTH RUPTURE and DUST.
+3. Select FXv010 | fixed impact anchor and timing. Defaults:start_frame7,speed1,size1,dust_density1. The proof is24fps, frames1–120; impact begins at7. X is horizontal,Z up,camera looks+Y, one unit=one metre. Default anchor is approximately(109.22947,10,-0.43154).
+4. If appending into a .blend saved elsewhere, set the Volume file path to this extracted cache/dust64_flat/data/fluid_data_0001.vdb. Enable Sequence,120frames,start1. Keep its existing frame_offset driver; it follows the root age clock. The external VDB folder is required; the painting is packed.
+5. Moving/scaling the root moves/scales the whole study. Size also scales the recorded trajectory and density field; it does not rebake a new gravity solution. Volume playback is sampled at integer24fps cache frames.
+
+The included held-shot proof has a local camera, review compositing and preview lights. The independently saved append-test scene is empty apart from the imported collection. It verifies exact mesh equality and actual fluid_data_0020.vdb loading after a100-frame offset, and1.7x geometric scaling. The offset comparison also rendered pixel-identical images. These tests do not establish that the force, timing or appearance is good.
+
+The ground painting and receiver UVs are specific to this held proof camera. They require reprojection/replacement for a different shot. This is not automatic moving-camera integration. The review PNGs contain the background and have no alpha. For a later RGBA export, use transparent film and bypass the held-background review compositor; use straight alpha and24fps. No finished RGBA effect is supplied at this rejected-key stage.
+
+New reference direction
+The user supplied Dong Chang, How to animate Explosions:
+https://www.youtube.com/watch?v=LUeELkfGR-I
+The research task verified the creator description and chapter names/timestamps only. Actual animated frames and transcript were unavailable at this checkpoint; no tutorial-specific shape, timing or motion claim is made. Separate plain motion, shadow and painterly finishing passes are our proposed workflow. This study must not be described as matching the tutorial.
+
+Preservation
+All previous v009d/v008b checkpoints and production files are preserved. All work is confined to effects/rupture_mass_v010. No shared UI control was used. Key renders defer if another Blender worker starts. The full effects pack is not finished.

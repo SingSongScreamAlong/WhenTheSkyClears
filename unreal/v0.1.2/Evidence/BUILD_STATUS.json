@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-20T01:15:49.360718+00:00",
+  "version": "0.1.2",
+  "stage": "packaged; eleven regressions passed; matched actual-engine comparison and realtime clip ready for review",
+  "validated_gameplay": true,
+  "art_approval": false,
+  "release": {
+    "utc": "2026-10-20T01:15:49.360718+00:00",
+    "version": "0.1.2 art study",
+    "project": "WTSC_LOCAL_WORKSPACE\\WTSC_Survival_Prototype_v0_1_2\\WTSC_Survival.uproject",
+    "package": "WTSC_LOCAL_WORKSPACE\\WTSC_Survival_Prototype_v0_1_2\\Deliverables\\WTSC_Shelter_Study_Win64_v0.1.2_ArtStudy.zip",
+    "package_bytes": 354521939,
+    "package_sha256": "4f6fc6b64b82be5b74a1b2b1c3870c57ceae72890a7d287565864c22d2dee7f7",
+    "package_crc_verified": true,
+    "runtime_files": 48,
+    "tests_passed": 11,
+    "test_game_seconds": 57.42914581298828,
+    "test_type": "Actual native engine simulated key events, not an OS/human playtest",
+    "matched_before_after": true,
+    "room_geometry": {
+      "parts": 748,
+      "vertices": 75207,
+      "triangles": 34535,
+      "material_slots": 20
+    },
+    "retained_detailed_props": 7,
+    "video_bytes": 2025022,
+    "video_seconds": 11.0,
+    "real_video_frames": 327,
+    "actual_capture_fps": 29.678366617428082,
+    "runtime_fps_during_art_capture": 164.18218347474112,
+    "no_duplicated_smoothing_frames": true,
+    "art_approved": false,
+    "source_provenance": "Code-authored geometry and SVG surface graphics with editable sources, not imagegen mockups or artist hand-painted frames",
+    "remaining_gaps": [
+      "Child cutout shoulder gaps, stiffness, expression and companion behavior remain unresolved",
+      "One room only: upper floor, other rooms, shop and exterior remain at previous prototype quality",
+      "Foreground/photo-prop/painted-backdrop style integration is still an art study requiring user review",
+      "No new gameplay systems or map expansion; upstairs remains inaccessible"
+    ],
+    "interruption": "First packaged regression lost its process connection and stopped before a final receipt; log retained; complete rerun passed through existing Desktop Commander background route"
+  },
+  "private_library": "Four previews confirmed saved; current combined size 5412466 bytes",
+  "library_delivery_receipt": "LibraryDeliveryConfirmed.json",
+  "running_game_operations": []
+}

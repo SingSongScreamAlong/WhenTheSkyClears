@@ -1,0 +1,218 @@
+{
+  "status": "Completed one continuous native blast proof v008b, silhouette validation followed by existing paint on unchanged motion. Ready for user review; no artistic acceptance or production integration claimed.",
+  "scope": "One blast only. No variants, tracer expansion, full trailer edits, new image generation, simulation cache, software installation, public publishing or shared UI control.",
+  "native": {
+    "append": "WTSC_LOCAL_WORKSPACE\\effects\\coherent_native_v008\\native\\WTSC_Coherent_Append_v008b.blend",
+    "bytes": 6260196,
+    "sha256": "c992fb8247a968299350cc8e2f9db4b4ee6f38ae2ede28742d11398036b7fa2e",
+    "collection": "FXv008 | ONE COHERENT NATIVE BLAST",
+    "root": "FXv008 | fixed world impact and controls",
+    "objects": 22,
+    "packed_images": 2,
+    "geometry_sha256": "7511604983810bb19e8f2ba3b2316778f0172d835493018a99758c1be8cb2edd",
+    "painted_proof": "WTSC_LOCAL_WORKSPACE\\effects\\coherent_native_v008\\native\\WTSC_Coherent_Painted_v008b.blend",
+    "silhouette_proof": "WTSC_LOCAL_WORKSPACE\\effects\\coherent_native_v008\\native\\WTSC_Coherent_Silhouette_Clean_v008.blend",
+    "fresh_append_sandbox": "WTSC_LOCAL_WORKSPACE\\effects\\coherent_native_v008\\native\\WTSC_Coherent_Append_Test_v008b.blend"
+  },
+  "media": [
+    {
+      "phase": "painted_final",
+      "video": "WTSC_Coherent_Painted_v008b_MUTED.mp4",
+      "bytes": 820195,
+      "sha256": "00e55545e9aa13a8c6f9e935ec4dfc8740193eb62a46822928ae4757827fc997",
+      "fps": 24,
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 120,
+      "seconds": 5,
+      "audio": false,
+      "camera_shake": false,
+      "all120_native_pngs_decoded": true,
+      "full_video_decode": true,
+      "review_frames": [
+        1824,
+        1825,
+        1826,
+        1827,
+        1829,
+        1832,
+        1836,
+        1842,
+        1848,
+        1856,
+        1868,
+        1884,
+        1908,
+        1937
+      ],
+      "decoded_frames": [
+        1825,
+        1827,
+        1836,
+        1848,
+        1868,
+        1908,
+        1937
+      ],
+      "pose_dissolves": false
+    },
+    {
+      "phase": "silhouette",
+      "video": "WTSC_Coherent_Silhouette_v008_MUTED.mp4",
+      "bytes": 572303,
+      "sha256": "7109b9be6dac2e2ccacf763999b2dd216137d3ad63141213e33e656f4c96e27f",
+      "fps": 24,
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 120,
+      "seconds": 5,
+      "audio": false,
+      "camera_shake": false,
+      "all120_native_pngs_decoded": true,
+      "full_video_decode": true,
+      "review_frames": [
+        1824,
+        1825,
+        1826,
+        1827,
+        1829,
+        1832,
+        1836,
+        1842,
+        1848,
+        1856,
+        1868,
+        1884,
+        1908,
+        1937
+      ],
+      "decoded_frames": [
+        1825,
+        1827,
+        1836,
+        1848,
+        1868,
+        1908,
+        1937
+      ],
+      "pose_dissolves": false
+    }
+  ],
+  "criteria_review": {
+    "sharp_muted_impulse": "Actualframes1824\u20131829 show a compact hot ground impulse followed immediately by rapid unequal mass expansion and separated chunks. No audio or camera shake is present.",
+    "continuous_changing_silhouette": "Left/right/core retain the same vertex IDs through133absolute native keys. Perimeter shape, position and internal pigment coordinates evolve; there are no generated-pose replacements/crossfades. The painted stage has the identical geometry hash.",
+    "weight": "The main left mass reaches its apex around age12\u201318 then descends while keeping density and spreads along the ground. Fresh Append evaluation measured its local top2.24374 atage12,2.11742 atage24,1.54080 atage44 and0.87265 atage113. It does not keep rising as a chimney.",
+    "ground_and_persistence": "Connected low dust spreads and settles. Eight independently tumbling chunks follow separate ascent/apex/descent and remain at contact; four landing puffs accompany several landings. Actualframe2064 verifies the shallow gouge and landed debris after the smoke is gone.",
+    "children": "Nine sampled actual full-resolution frames preserve all7334opaque child-mask pixels exactly, with maximum channel difference0; full-shot visual checks retain the faces/figures in front."
+  },
+  "review_method": "Inspected actual full-shot native frames, dense chronological frames, decodedMP4 audit frames, and the post-smoke frame2064. Full MP4 decoding confirmed. An independent real-time player session was not verified; do not claim to have watched the inaccessible linked video.",
+  "remaining_visible_limits": [
+    "Some outer contour scallops remain stylized.",
+    "Pigment can stretch on the low dust/front and during strong deformation; the brief flash is angular when paused.",
+    "The crater is shallow at this camera and some left-side landings are hidden by the existing foreground.",
+    "Held-camera proof only: final moving-camera live occlusion, receiver lighting and character/environment integration remain production work."
+  ],
+  "controls": {
+    "fps": 24,
+    "frames": [
+      1818,
+      1937
+    ],
+    "start_frame": 1824,
+    "world_anchor": [
+      109.13587188720703,
+      10.0,
+      -0.4315446615219116
+    ],
+    "orientation": "Xhorizontal,+Zup,camera looks+Y; metric scale_length1",
+    "properties": [
+      "start_frame",
+      "speed",
+      "size",
+      "intensity",
+      "painted"
+    ],
+    "python_control_update": "Call root.update_tag(refresh={OBJECT}) and update the view layer/depsgraph after changing custom properties; verified by retime/scale test."
+  },
+  "verified": {
+    "all240_native_phase_PNGs_decoded": true,
+    "both120frame_videos_fully_decoded": true,
+    "videos_under20MB": true,
+    "source_hashes_unchanged": {
+      "v003_assets": true,
+      "v006_proof": true,
+      "v007b_assets": true,
+      "production_v038": true
+    },
+    "same_silhouette_and_painted_vertex_geometry": true,
+    "fresh_append_packed_dependencies_and_controls": true,
+    "invalid_drivers": [],
+    "outside_driver_targets": [],
+    "after_smoke_ground_frame": 2064,
+    "zip_crc_passed": true
+  },
+  "resource_use": {
+    "threads": 2,
+    "silhouette_motion_seconds": 118.0934733999893,
+    "painted_motion_seconds": 118.80937799997628,
+    "render_resolution": [
+      1920,
+      1080
+    ],
+    "new_simulation_bake": false,
+    "effects_Blender_processes_left_running": 0
+  },
+  "library": [
+    {
+      "file_name": "WTSC_Coherent_Painted_Frames_v008b.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 531695,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Coherent_Persistent_Aftermath_v008b.png",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 2443247,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Coherent_Painted_v008b_MUTED.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 820195,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Coherent_Silhouette_v008_MUTED.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 572303,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Coherent_One_Blast_Source_v008b.zip",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 15068695,
+      "status": "succeeded"
+    }
+  ],
+  "package": {
+    "file": "WTSC_Coherent_One_Blast_Source_v008b.zip",
+    "bytes": 15068695,
+    "sha256": "fb3474bdfc3f144a9a142f28257a716a2e78aea5750e65d13af682612d174288",
+    "files": 30,
+    "zip_crc_passed": true,
+    "production_scene_or_background_plate_included": false,
+    "simulation_cache": false
+  },
+  "guide": "WTSC_LOCAL_WORKSPACE\\effects\\coherent_native_v008\\IMPORT_AND_REVIEW.txt",
+  "delivery_notes": "Fresh current Library helpers were fetched. Prepared helper reported prepare_uploads unavailable before any reservation; ordered direct creates then succeeded for all5files. Local version-xattr writeback remains unsupported by the supplied helper on Windows; receipts and logs are preserved.",
+  "blockers": []
+}

@@ -1,0 +1,277 @@
+WHEN THE SKY CLEARS — ANIMATION AUDIT AND RECOVERY PLAN
+19 October 2026 | Inspection and recommendations; no animation sources changed
+
+The main shortfall is authored performance. The full-film branch still moves a
+held drawing through the landscape. The separate walking branch can move limbs,
+but does not yet make the children feel alert, weighted, individual or emotionally
+connected. The newer first-danger shot repairs presentation and continuity while
+retaining that limited performance. Repeated small costume and motion adjustments
+have not solved the underlying acting problem.
+
+The painted world, established designs and layered 2D/2.5D method are useful
+foundations. Preserve them. The next production investment should be strong
+full-body poses, timing, head/gaze drawings and believable paired interaction.
+
+WHAT THIS AUDIT ACTUALLY CHECKED
+
+Reopened, evaluated and closed these three files in Blender 5.2.2 LTS without
+saving them. Before/after SHA-256 values match for all three:
+- work/procedural_cut_v064/native/WTSC_Procedural_Full_Trailer_v064.blend
+- locomotion/authored_walk_beats_v053/native/WTSC_Authored_Walk_Beats_v053.blend
+- work/first_danger_conform_v065/native/WTSC_First_Danger_Conformed_v065f.blend
+
+Fully decoded five existing movies: the v040 full review, v053 ordinary walk,
+v056 girl shoulder study, v065f first-danger review and v059 recovery benchmark.
+All 3,154 expected frames decoded successfully. Generated new chronological
+boards from the actual encoded movies and inspected them, plus the existing
+matched pose sheets and v065f every-fourth-frame chronology.
+
+Read the extracted handoff, current continuity/method instructions, selected
+builders and study notes, and the earlier production audit. Rechecked newer
+work before carrying any older finding forward. This is a focused animation
+audit, not a second census of every project file.
+
+Visual judgments use chronological decoded frames and native pose measurements.
+They do not constitute observed uninterrupted player playback, a listening
+review, or final artistic approval. Native DCC discovery timed out; separate
+background Blender processes performed the file inspection successfully.
+
+1. THE FILM DOES NOT YET CONTAIN THE DEVELOPED CHARACTER ANIMATION
+
+Severity: critical for the film's animation quality.
+
+Fresh v064 readback finds zero armatures in the world scene. Its visible actor is
+"v016 | CHILDREN | held painterly near-age pair". That Grease Pencil object has
+one layer, a single drawing at frame 1, no modifiers and location channels only.
+The 100-second picture still has the held pair, even though color and world
+movement advance. This is a coverage failure, independent of any walk's quality.
+
+v053 is a separate ordinary-walk asset. v056 is an exploratory girl costume/body
+study. v065f is a seven-second first-danger candidate with two character rigs.
+v059 is an earlier-model recovery benchmark. Their version numbers do not mean
+those improvements are assembled into one continuously acted film.
+
+Delivery caveat: both full-cut MP4 paths advertised in v064's START_HERE are
+absent at inspection time. RENDER_STATUS.json says its 2,400 world frames are
+complete. Completed world frames and a native assembly do not establish the
+advertised encoded full movies. The completed full movie verified here is v040.
+Do not let an entry-point document become the evidence for animation coverage.
+
+Action: establish one working animation assembly with an explicit component map.
+After a performance segment passes review, integrate it and issue an updated
+low-resolution full-cut review. Keep unanimated intervals visibly recorded as
+unfinished in the production register.
+
+2. PRIMARY BODY MECHANICS STILL READ AS A RESTRAINED PUPPET CYCLE
+
+Severity: critical for the perceived quality of the newer character work.
+
+The v053 chronology shows repeating strides beneath a largely stable upper-body
+silhouette. Chest, head and pelvis relationships vary too little to create a
+strong sense of accepting weight, passing over support and releasing into the
+next step. The arms remain dominated by recurrent swing; the hands and face
+contribute little change of intention. Both children share a closely related
+rhythm and a fixed phase offset rather than independently motivated behavior.
+
+Fresh measurements over 129 quarter-frame samples of one source cycle:
+                     boy             girl
+Pelvis angle span    3.20 degrees    2.40 degrees
+Chest angle span     4.07 degrees    2.38 degrees
+Head angle span      1.49 degrees    0.82 degrees
+Pelvis height span   21.5 mm         21.5 mm
+
+These are evaluated sagittal angles in rig coordinates. They are descriptive,
+not pass/fail targets or a prescription to add arbitrary rotation and bounce.
+The visual problem is the weak pose differentiation and repeated timing at the
+actual viewing scale. Simply increasing every value could create worse motion.
+
+The v053 builder deliberately preserves the old hip head, foot/boot paths and
+travel, then compensates the legs around small pelvis/chest edits. That makes
+sense for a controlled comparison, but it also limits how far the performance
+can change. The next mechanics pass should permit newly designed support times,
+pelvis motion, stride and foot paths when the action needs them. Preserve the
+outcome of planted, coherent feet; do not make every old trajectory untouchable.
+Any revised travel must be conformed with camera and terrain progression.
+
+Action: draw/pose clearly distinct contact, compression, passing and release
+relationships for both sides of one cycle. Check chest over pelvis, support-leg
+loading, trailing heel release, swing-foot clearance and purposeful arm response.
+Judge a rough silhouette at scene scale before rebuilding painted caches.
+
+3. THE CHILDREN NEED A VISIBLE THOUGHT PROCESS
+
+Severity: critical for the story.
+
+In v065f the children walk and bring their hands together, but the head/profile,
+gaze and upper-body action provide little readable transition from ordinary
+walking to awareness of danger. The reach is visible; the decision motivating
+it and the partner's response remain weak. That is why a technically correct
+hand approach can still feel emotionally empty.
+
+Author a sequence the audience can follow:
+- One child notices the threat with eyes/head before the arm starts reaching.
+- The chest and supporting foot change as the child checks or arrests momentum.
+- The reaching hand opens and searches; the partner notices and receives it.
+- Fingers close, the wrists settle and the connection changes both bodies.
+- Their subsequent steps show a changed intention and relationship.
+
+Use slight differences in response timing and action for a reason. A phase
+offset or random noise does not by itself create individuality. For this story,
+playful, cautious, urgent and exhausted movement each need different support,
+spacing, posture and interaction. One loop with speed and palette changes cannot
+express the whole progression.
+
+4. THE DRAWING PACKAGE LIMITS THE ACTING
+
+Severity: high.
+
+The fixed profile faces, repeated hand shapes and rigid dress silhouette restrict
+what the rigs can communicate. In v056 the added shoulder yoke changes a local
+form, but the chest-to-pelvis relationship remains similar across steps and the
+shape can read as a stiff bib. More deformation of that one part is unlikely to
+produce the needed body performance.
+
+Recommended method: retain the layered painted 2D production and use a hybrid of
+rigged movement and authored replacement drawings. Use the rig for travel,
+contact and broad posing; draw replacements where turning, compression, overlap
+or anatomy changes the silhouette. Prioritize:
+- Registered profile-to-look-back head poses, connected neck/hair/braid shapes,
+  and eye/gaze or expression changes that remain readable at shot size.
+- Relaxed, opening, reaching, receiving, clasping and supporting hands.
+- Full torso/dress shapes for near/far loading, passing, release and protection.
+- Connected shoulder/sleeve, elbow and wrist shapes at the actual posed joints.
+
+Approve the rough silhouette and construction first, then restore the established
+painting. Keep the current identities, proportions, costumes and palette; this
+does not call for character redesign or volumetric 3D replacements.
+
+The v057 three-method comparison is unfinished: A has a five-second movie; B
+records eight pilot drawings out of 120 intended; C remains a reference decision.
+It supplies no completed three-way result supporting a method choice. Unique
+algorithmic drawing files are not evidence of good timing or strong posing.
+
+5. CONTACT MUST COMMUNICATE WEIGHT AND CHANGE THE NEXT ACTION
+
+Severity: high.
+
+v059 has a useful attempt at stopping, turning and reaching, but its late contact
+reads as reassurance. It does not yet show a secure grip taking the other's
+weight, a convincing assisted recovery, and a completed resumed step. It also
+uses an older character model, so direct promotion would regress consistency.
+
+For support, stage the helper's brace and counterbalance, show where the load
+passes through the hands, and keep the supported child's pelvis related to its
+feet. Author the release/restart and outgoing step. A joined wrist distance is a
+technical constraint; the body response makes it assistance.
+
+6. FINAL COMPOSITION STILL AFFECTS HOW THE MOTION READS
+
+Severity: high, with an important recent improvement.
+
+Keep the v065f color-pipeline, clock, camera-route and depth-aware drawing reveal
+work. The older blanket claim that the first-danger title hides the children is
+superseded locally: the new reveal restores their visible drawings and respects
+foreground-tree occlusion. The native START_HERE also records a changed downstream
+camera route; later sections need to be rendered consistently when it is promoted.
+
+However, the chronology still places feet and bodies against large black title
+regions, sometimes removing the visible ground beneath a foot. This weakens
+grounding even when the foot trajectory is correct. Check supporting ground,
+hands and head separation through the actual moving title treatment. Reserve a
+clear readable interval for the central decision/contact before the outgoing
+tree occludes the girl. Keep the established typography treatment unless the
+user chooses a change.
+
+7. SECONDARY MOTION AND FINISHING ARE CURRENTLY LOWER-PRIORITY WORK
+
+Boy-coat work is useful; girl dress, braid and ribbon still need follow-through.
+Those should trail and settle from the accepted body action. Continuous sine-like
+motion or generalized wobble would add activity without fixing intention.
+
+Stage cloth compression/release, braid lag and hand settling after the primary
+motion works. Rebuild dependent sleeve, leg and garment drawing caches after
+changing the rig or its timing. Keep the source 30fps / production 24fps mapping
+consistent; the existing 32-source-frame loop spans 25.6 production frames.
+
+The painted environments, atmosphere and effects should support these actions.
+Extra detail, more UHD exports and more local costume patches have low value
+while the audience cannot read the children's performance.
+
+THE NEXT BOUNDED PRODUCTION PASS
+
+Use the existing 38–45s first-danger candidate: developed action at 39–44s, with
+one second of neighboring motion on either side. This is the best first quality
+benchmark because it tests walking, awareness, head direction, reaching, contact,
+paired reaction and final composition in one short piece.
+
+1. Freeze the selected art and component sources in a new assembly candidate.
+   Keep v065f presentation/continuity fixes, the established painted world,
+   current age-ten designs and the continuous color arc. Record each dependency
+   and its status. Do not replace a character solely because its file is newer.
+
+2. Create a performance pose board before dense keys or cloth work.
+   Show about eight decisive whole-body moments: ordinary travel, notice,
+   checked step, look/reach, receiving hand, settled contact, changed paired
+   travel and outgoing step. Both characters must be posed as an interacting
+   pair. Align reactions to the existing threat cue; the v060 source identifies
+   flash peak G957. Verify its timing in the selected candidate before retiming.
+   The music need not change for this acting pass.
+
+3. Animate a rough version with deliberate spacing.
+   Establish feet and mass together; add the head and hand drawings required
+   by the acting. Allow a brief interruption or change of step if motivated.
+   Maintain the neighboring route handles, or explicitly reconform and verify
+   them if the new travel changes. Avoid merely layering angles over the old loop.
+
+4. Review matched previous/new movies at normal speed, actual shot scale, both
+   unmasked and through the final title. Include the full seven seconds and
+   the outgoing step. Use the same camera, time and color conditions for A/B.
+   Look for a visible decision and partner response, convincing support and
+   a coherent silhouette. Close crops and numerical proofs are supporting views.
+
+5. Add painting corrections, cloth/hair follow-through and restrained contacts
+   only after primary movement passes the visual review. Preserve connected
+   joints, drawing volume and the established design through every transition.
+
+6. Integrate the accepted segment into one low-resolution full-film development
+   review and update the coverage register. Then address play, threat/protection,
+   escape, fatigue/recovery and ending in coherent sections. Each accepted section
+   must advance the actual film. Produce UHD keys after acting/composition review;
+   schedule the full UHD render after the integrated picture is ready.
+
+VISUAL COMPLETION GATE FOR THE SEVEN-SECOND BENCHMARK
+
+- The threat, notice, decision, reach and response are readable without explanation.
+- The children have different, motivated timing and remain on the established model.
+- The pelvis visibly accepts support; feet plant/release coherently with travel.
+- The hand contact connects anatomically and influences the paired body motion.
+- Head/neck, shoulders, wrists and costume contours stay connected and stable.
+- The new intention continues through the first outgoing steps and both handles.
+- The final title treatment preserves the action and enough ground to judge contact.
+- A normal-speed review at final composition scale shows a clear improvement.
+
+Do not count a save, a render, a decode, a new version number or smaller numerical
+errors as passing this gate. No guarantee of an eventual numeric quality score is
+implied. This project needs an animation judgment at each stage; the largest
+remaining gains require stronger authored drawings, poses and performance timing.
+
+LOCAL EVIDENCE
+
+native_readback.json       Fresh scene/rig/drawing inspection and source integrity.
+media_readback.json        Full-decode results and v064 advertised-file existence.
+walk_one_cycle.jpg         Fresh v053 chronological cycle at 0.1s intervals.
+danger_action.jpg          Fresh v065f chronology including both handles.
+recovery_action.jpg        Fresh earlier-model v059 stop/reach/recovery chronology.
+inspect_native.py          Reproducible read-only native audit script.
+inspect_media.py           Reproducible decode and evidence-board script.
+
+Current project references examined:
+source/handoff_extracted.txt
+WHEN_THE_SKY_CLEARS_CONTINUITY_RESTORED_v062.txt
+work/procedural_cut_v064/START_HERE_v064.txt
+work/first_danger_conform_v065/START_HERE_v065.txt
+locomotion/authored_walk_beats_v053/IMPORT_TIMING_AND_ASSESSMENT_v053.txt
+locomotion/girl_yoke_drape_v056/ (study notes and preview boards)
+locomotion/three_way_walk_test_v057/SETUP_AND_LIMITS.txt
+work/production_review_v059/START_HERE_v059.txt
+notes/production_audit_2026_10_18/PRODUCTION_AUDIT.txt

@@ -1,0 +1,67 @@
+{
+  "still_pixels": [
+    3840,
+    2160
+  ],
+  "clip_pixels": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "clip_frames": 96,
+  "clip_seconds": 4,
+  "clip_bytes": 1066325,
+  "renderer": "Eevee32samples, one bounded GPU process with2CPUthreads; compositorGPU",
+  "full_mp4_decode": true,
+  "all96_pngs_decoded": true,
+  "source_unchanged": true,
+  "frame_differences": [
+    {
+      "frames": [
+        1813,
+        1814
+      ],
+      "whole_shot_mean_abs_difference": 5.666606706532922,
+      "fx_region_mean_abs_difference": 17.993411613158937
+    },
+    {
+      "frames": [
+        1814,
+        1817
+      ],
+      "whole_shot_mean_abs_difference": 2.3621056777263374,
+      "fx_region_mean_abs_difference": 7.753489892984542
+    },
+    {
+      "frames": [
+        1817,
+        1825
+      ],
+      "whole_shot_mean_abs_difference": 3.621600115740741,
+      "fx_region_mean_abs_difference": 18.03817974633373
+    },
+    {
+      "frames": [
+        1825,
+        1840
+      ],
+      "whole_shot_mean_abs_difference": 2.9072059863683126,
+      "fx_region_mean_abs_difference": 17.35985037653587
+    },
+    {
+      "frames": [
+        1840,
+        1870
+      ],
+      "whole_shot_mean_abs_difference": 1.9733918467078189,
+      "fx_region_mean_abs_difference": 11.068806975822433
+    }
+  ],
+  "artistic_status": "Unaccepted benchmark. Technical checks and detailed still are not artistic acceptance. Actual motion and stylistic fit require review.",
+  "limitations": [
+    "Held actual project camera/characters/scene context, not locomotion or full moving trailer integration",
+    "2.5D original paint with native surface flow and3D debris; no volumetric smoke simulation",
+    "Motion proof uses held native occlusion/receiver maps; they must be re-evaluated for moving camera",
+    "Hero image1254px square and dust2172x724, inspected in a4K shot; no DLSS/upscaling claim"
+  ]
+}

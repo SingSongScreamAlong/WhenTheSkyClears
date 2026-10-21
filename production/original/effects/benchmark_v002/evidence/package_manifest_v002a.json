@@ -1,0 +1,98 @@
+{
+  "status": "One unaccepted detailed benchmark. V001 remains rejected.",
+  "included": [
+    {
+      "path": "BENCHMARK_README.txt",
+      "bytes": 6279,
+      "sha256": "c80f2ac40f176d6b2ef41c61e8257b6f5ce1cc9b9348a75eb60fe5ee8261be0a"
+    },
+    {
+      "path": "CURRENT_STATUS_v002a.txt",
+      "bytes": 2213,
+      "sha256": "ad0d6b9e89b704b2b382c079619571908b12b995db3976cdb5b9bafcd88acc1a"
+    },
+    {
+      "path": "native/WTSC_Hero_Eruption_Collection_v002a.blend",
+      "bytes": 5115730,
+      "sha256": "0444a17a9da49756e20778cb390cbe8e130d23e1e695bffe787c8f703760e724"
+    },
+    {
+      "path": "native/WTSC_FX_Append_Test_v002a.blend",
+      "bytes": 5144744,
+      "sha256": "16d2a29b0436450a8df99d3f7fa086e95fdd3fdca23da4bb896719d746e2ce29"
+    },
+    {
+      "path": "assets/Hero_Explosion_Paint_v002.png",
+      "bytes": 2306539,
+      "sha256": "d88876cf48b4fa58dc2a759dd85b1c3d3f073ff3dcf3b5ed0f0ffda530f1b662"
+    },
+    {
+      "path": "assets/Ground_Dust_Paint_v002.png",
+      "bytes": 2507292,
+      "sha256": "238eafab00171c6de6a0146701e01dfa32070ee9f1e2ee5bd939e4acf739ae49"
+    },
+    {
+      "path": "previews/Native_Append_Test_RGBA_v002a.png",
+      "bytes": 249265,
+      "sha256": "4744c45debd331192b4476c391b6f356a9be50730223b6b19e18b6771d630644"
+    },
+    {
+      "path": "scripts/append_sandbox_v002a.py",
+      "bytes": 4540,
+      "sha256": "cc35400f7c142ea9f46c5e207c7b727695749473c4100683c5d138db09218407"
+    },
+    {
+      "path": "scripts/render_motion_gpu_v002.py",
+      "bytes": 3900,
+      "sha256": "038398fe427a3ec46506301d608fe2240a35bef55bb24a7ffbcbe926fcf1fd7b"
+    },
+    {
+      "path": "scripts/package_benchmark_v002a.py",
+      "bytes": 2814,
+      "sha256": "47b18ce1cb1bd66e521a817683ffaa6b0e0b1e8a2e477e3ef5918102438c0135"
+    },
+    {
+      "path": "evidence/append_test_v002a.json",
+      "bytes": 1960,
+      "sha256": "a985a14f215853a6396cbb0429a419fae44e99dd7f27d3cc5279c768f5ba1be1"
+    },
+    {
+      "path": "evidence/benchmark_native_validation.json",
+      "bytes": 1475,
+      "sha256": "25fcbe0b24741aa5f604c80b5a0066b4034d1e2f6283f15a8e44f83f3f4739b9"
+    },
+    {
+      "path": "evidence/visual_audit_v002a.json",
+      "bytes": 1750,
+      "sha256": "decdca172d873eec2cf1499129c36f22b5b4c5bf0b9ae2b48b466f589c114bb6"
+    },
+    {
+      "path": "evidence/media_validation.json",
+      "bytes": 1948,
+      "sha256": "9d945af8611cb8130e37b219735cfaa9bf677a781343da8a1961ceabd379113c"
+    },
+    {
+      "path": "evidence/gpu_motion_render_v002.json",
+      "bytes": 338,
+      "sha256": "3398f994acf07a3ebd29c32c86d2e6a14f16f4b0f40b2a6139fbde0f2cd301d6"
+    },
+    {
+      "path": "evidence/resume_reconciliation_20261017.json",
+      "bytes": 846,
+      "sha256": "9e5a68e3a6a99176d13c99f5eb5e7e3f4661858857d1e2b21918854e493357d1"
+    },
+    {
+      "path": "evidence/imagegen_prompts_full.json",
+      "bytes": 3761,
+      "sha256": "235b8a46a6933afe11acbd396f6768f54e99e1cfa1cea4fe108ea56ffbda3cc2"
+    },
+    {
+      "path": "evidence/art_recipe.json",
+      "bytes": 1487,
+      "sha256": "7e29fb3bef97f5520fc4ebc28078b3c8dbb09e902c65625b0c58efdfe4713698"
+    }
+  ],
+  "excluded": "Production sources, full scene copies, render caches, partial CPU frames, generated base64 transfer files and unrelated private files.",
+  "render_script_note": "The GPU render script records local provenance. It requires the separately retained project-specific motion scene and is not a standalone rebuild script.",
+  "alpha_still_note": "Single native sandbox RGBA image only; no transparent animation sequence claimed."
+}

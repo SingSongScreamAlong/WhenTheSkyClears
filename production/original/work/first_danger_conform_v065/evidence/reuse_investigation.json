@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-18",
+  "scope": "First-danger color/edit, camera continuity and title readability while preserving existing layered 2D artwork",
+  "guide": {"source": "https://raw.githubusercontent.com/dcc-mcp/dcc-mcp-core/main/crates/dcc-mcp-gateway/src/gateway/native_resources/agent_workflows.md", "local": "dcc_agent_workflows.md", "contract": "dcc-mcp-production-reuse/v1", "shape_check": "passed", "substantive_rules_read": true},
+  "sources": [
+    {"source": "Installed dcc-mcp skill 0.19.113 and native MCP search", "query": "blender scene inspect", "result": "Gateway CLI inventory timed out after 15 seconds; no ready exact application instance established; no mutation attempted"},
+    {"source": "Existing project", "query": "v063 developed first-danger scene, v060 drawing/rig clocks, v058d world, native audit and v064 full-cut clock", "result": "Reuse the original packed artwork, meshes, UVs, rigs, global timing and native Blender compositor. No replacement art or external asset needed."},
+    {"source": "Official Blender Extensions", "query": "camera animation compositing title", "urls": ["https://extensions.blender.org/tag/add-ons/compositing/", "https://extensions.blender.org/add-ons/export-camera-animation/"], "result": "Camera export and generic compositing extensions do not resolve this exact existing-scene route or title/actor occlusion. No extension installation needed."},
+    {"source": "Blender manual", "query": "video sequencer scene strip color management", "urls": ["https://docs.blender.org/manual/en/latest/video_editing/sequencer_scene.html", "https://docs.blender.org/manual/en/5.0/render/color_management/color_spaces.html"], "result": "Use native Scene strips, explicit matching view transforms, render layers and alpha compositing."}
+  ],
+  "fallback": "Minimal project-local native Blender scripts with separate background processes; source hashes, save/reopen, actual render/decode and image readback. This is not claimed as live-MCP qualification.",
+  "rights_and_cost": "Reuses only existing project-owned artwork, supplied music and packed fonts. No assets acquired or redistributed externally; no paid content, installation or account changes.",
+  "other_work": "v064 full-cut workers were already rendering; do not interrupt, mutate their inputs or use their incomplete output as proof."
+}

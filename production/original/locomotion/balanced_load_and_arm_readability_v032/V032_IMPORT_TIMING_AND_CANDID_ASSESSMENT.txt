@@ -1,0 +1,135 @@
+WHEN THE SKY CLEARS — V032 LANDING / ARM CORRECTION
+
+CURRENT STATUS
+Focused boy-only construction correction after independent V031 review.
+Paired acting remains on hold. No finished-cycle or artistic acceptance claim.
+The girl, supported recovery, clasp, stumble and restart are not authored here.
+The longer review movie does not change the trailer or its five-second scene.
+All earlier character and production source files are preserved by hash.
+
+DELIVERABLES
+native/WTSC_Rough_Construction_v032.blend — editable32-drawing GP action,
+original painted head/collar/boots, and native transform/travel curves.
+previews/WTSC_Rough_Construction_v032_Normal_Speed.mp4 —19.2s at30fps,
+9.6s close followed by9.6s shot; nine uninterrupted32-frame cycles per view.
+All576 source frames are actual Blender renders, F1..288 per view.
+No slow motion, held poses, optical interpolation or encoded-frame repetition.
+The authored32-drawing cycle itself is repeated for normal-speed inspection.
+Blender5.2.2 LTS, build d13f752e3b9c; actual installed executable verified.
+
+Review boards:
+WTSC_v032_Construction_Comparison_Board.png — V031/V032 contact and load.
+WTSC_v032_Landing_Consecutive_F12_21.png — actual successive first landing.
+WTSC_v032_Landing_Consecutive_F28_37.png — actual successive second landing.
+WTSC_v032_Arm_Overlap_Comparison.png — F17/20/23/26 actual arm/coat crops.
+WTSC_v032_All_Breakdowns_F01_16.png and F17_32.png — every authored drawing.
+WTSC_v032_Shot_Comparison_Board.png — matched shot-camera keys on neutral stage.
+The movie supplies the longer normal-speed review; boards supply actual poses.
+
+WHAT CHANGED
+1. Pelvis, ribcage, waist and neck/head now have separately authored body
+   spacing through both up-to-contact transitions. The second pelvis advances
+   slightly over support; it is not lowered wholesale to make the leg reach.
+   Both trunks absorb and push, with modest timing/position differences.
+2. The near arm leads forward on the second loading/passing interval. The far
+   arm projects behind the body instead of vanishing with the near arm.
+   A restrained charcoal foreground skin plane keeps the near forearm/hand
+   identifiable while it overlaps the coat. This is construction value staging,
+   not a final skin-paint treatment. No torso slimming hides the overlap issue.
+3. All V031 sole, rocker, swing-clearance and world-travel curves are unchanged.
+   Legs are redrawn around the revised hip/knee positions with the same lengths
+   and width coefficients. Cuffs follow the new shin directions into the boots.
+
+ACTUAL FRAME EVIDENCE
+A single consistent dark-head-pixel measure gives V031 up/contact falls34/21px,
+and V03224/27px. V032 contact/down falls11/14px. These raster measurements
+support comparison; they are not a motion-quality score. The preserved texture
+and subpixel placement also affect the topmost dark pixel.
+Authored rib drops from UP to CONTACT are65/60mm, and contact/down37/35mm.
+Authored neck drops are56/57mm and contact/down28/28mm. Pelvis drops differ
+slightly as the original near/far boots have different projected ankle heights.
+See evidence/ACTUAL_FRAME_SPACING_COMPARISON.json for all successive head rows
+and separate projected pelvis/rib/neck/waist anchor data.
+
+TECHNICAL SAFEGUARDS — SEPARATE FROM ART
+The saved V031 and V032 natives are both opened for actual boot comparison.
+Cold V032 sampling includes1/64frame intervals between the1/16frame transform
+keys. It compares native transformed boot vertices and active support anchors
+to the retained analytic polygon-rocker curves, and evaluates the head in its
+actual foreground layer. It also measures the actual GP cuff centers against
+the native boot origins at33 integer frames, both legs.
+Results are in evidence/COLD_REOPEN_AND_RENDER_CHECK.json.
+No stretch or numerical reach clamp: thighs/shins260mm each; upper arms198mm,
+forearms178mm. No boot/cuff/art redesign. Body/limb contour width coefficients
+are retained from V031; anchor poses and arm projection change.
+Numerical passes do not establish convincing weight transfer or acting.
+
+NATIVE EDITING
+The first32 GP body drawings are editable on ones. F33 is an instance of F1;
+subsequent frames throughF289 instance that same cycle for nine review repeats.
+Head/collar/boot transform curves use linear keys every1/16 native frame.
+Root uses repeat-with-offset; local part curves repeat without travel offset.
+scripts/construction_motion.py contains the continuous feet, body anchors,
+pelvis breakdowns and independently authored arm gestures.
+scripts/draw_construction.py retains editable contour/volume construction.
+scripts/build_construction.py rebuilds the isolated native from preserved V028
+painting. Preserved V030 and V031 natives are included as reference checkpoints.
+This is not a finished rig or a production-ready24fps acting bake.
+
+HEAD / PAINTING CHOICE
+One original painted side-profile head and hair is translated with the neck.
+No profile morph, flat-card rotation, hair/braid redraw or rejected V008 reuse.
+Head, collar and boots retain original source pigment/UVs. Body shading is rough
+flat construction against those painted elements, with no final wash claim.
+
+EXACT UNCHANGED V031 TRAVEL CONTRACT
+Metres, +X forward, Z up; level-ground sole planeZ=0.
+Native phaseq=F-1;32 frames at30fps,1.0666666667s per two-step cycle.
+Stride0.8146774020162355m; half-step0.40733870100811775m.
+D(q)=0.8146774020162355*q/32 metres, unwrapped linear+X.
+Speed0.7637600643902208m/s. Root: V032 | CONSTRUCTION TRAVEL.
+Near contactF1; far contactF17. Contact duration20frames per foot; swing20..32,
+giving4frames of double support. Keep the rocker contact vertex/edge changes.
+Cameras follow the root; the faint static ground ruler is a review aid only.
+TRAVEL_SOLE_AND_BODY_QUARTER_FRAME.csv supplies exact travel/sole/body samples.
+The feet/root match V031; the older V026–V028 travel remains incompatible.
+
+APPEND / LATER PRODUCTION INTEGRATION
+Append the V032 travel root, editable rough construction GP, near/far boots,
+retained painted head and collar, with their data/materials/images. Do not
+append the whole reference-filled scene or replace production indiscriminately.
+Keep the root evaluated in both layers. Body/boots use the base layer;
+head/collar use the retained foreground layer and alpha-over compositing.
+Omit study cameras/ruler when preparing an eventual painterly integration.
+
+At anchorC0 and common spatial scales, move root by C0+s*D*forward_axis.
+If the children remain centered, match world translation to-s*D relative to its
+anchor. Do not combine these contacts with a different world speed.
+Production is24fps. Bake all drawings and head/boot transforms together from
+q=30*(N-N0)/24+q0 at each output frame. Independently retiming held GP and
+continuous boots can detach cuffs. The native cycle spans25.6 production
+frames, so bake the intended shot rather than forcing an integer-frame loop.
+Root increment at scale1 is0.0318233360162592m per24fps frame.
+The supported recovery/restart and terrain adaptation remain separate work.
+
+CANDID REMAINING ISSUES
+The two landing arcs are more comparable in the actual successive frames.
+F20 has two distinct hand/forearm silhouettes; the near arm stays identifiable
+through most second-step loading/passing. F27–28 remains a tight near-hand/
+coat overlap, read mainly by the foreground value plane. The arm reversal
+around the second UP may still feel brisk. The single preserved head profile
+has no partner-directed gaze or separate head acting.
+Clean body panels remain visibly unlike final painterly ink-and-wash treatment.
+The key question is whether the absorption, push and arms feel convincing at
+normal speed. Continuous player playback is not observable with the available
+tools; actual consecutive frames and decoded movie frames were inspected.
+Independent review and user feedback remain pending. Keep paired acting on hold.
+Do not copy this boy action onto the girl's different hesitation/support intent.
+
+DELIVERY / COORDINATION
+All Blender jobs are bounded, two threads, preceded by a host no-process gate.
+The movie and comparison board have authorized private Library copies; receipts
+and real local metadata readback are in evidence. No public sharing/install.
+Raw render sequences stay in this isolated workspace; the ZIP contains native,
+preserved references, scripts, guide, evidence, compact boards and the actual
+movie, omitting bulk intermediate PNG sequences.

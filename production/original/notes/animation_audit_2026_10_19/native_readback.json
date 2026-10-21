@@ -1,0 +1,332 @@
+{
+  "full_v064": {
+    "source": "work/procedural_cut_v064/native/WTSC_Procedural_Full_Trailer_v064.blend",
+    "sha256_before": "caac0a93ddf8f7ae03f5ca7b002a9c1ca14e0d2242d5861165471e88f3af4d35",
+    "blender": "5.2.2 LTS",
+    "scenes": [
+      {
+        "name": "WTSC_MASTER_4K_100S_v031",
+        "range": [
+          1,
+          2400
+        ],
+        "fps": 24.0,
+        "types": {},
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_PROCEDURAL_COLOR_WORLD_v064",
+        "range": [
+          1,
+          2400
+        ],
+        "fps": 24.0,
+        "types": {
+          "MESH": 416,
+          "CAMERA": 2,
+          "EMPTY": 5,
+          "GREASEPENCIL": 1,
+          "LIGHT": 6,
+          "FONT": 1
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_PROCEDURAL_FULL_CUT_v064",
+        "range": [
+          1,
+          2544
+        ],
+        "fps": 24.0,
+        "types": {
+          "CAMERA": 1,
+          "FONT": 6
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_PROCEDURAL_MASTER_106S_v064",
+        "range": [
+          1,
+          2544
+        ],
+        "fps": 24.0,
+        "types": {},
+        "color_view": "Standard"
+      }
+    ],
+    "grease_pencil_actors": [
+      {
+        "scene": "WTSC_PROCEDURAL_COLOR_WORLD_v064",
+        "name": "v016 | CHILDREN | held painterly near-age pair",
+        "hide_render": false,
+        "layers": [
+          {
+            "name": "HELD | near-age painted children | native vector boundary",
+            "frames": [
+              1
+            ]
+          }
+        ],
+        "modifiers": [],
+        "animation_channels": [
+          "location",
+          "location",
+          "location"
+        ]
+      }
+    ],
+    "rigs": [],
+    "sha256_after": "caac0a93ddf8f7ae03f5ca7b002a9c1ca14e0d2242d5861165471e88f3af4d35",
+    "production_source_unchanged": true
+  },
+  "walk_v053": {
+    "source": "locomotion/authored_walk_beats_v053/native/WTSC_Authored_Walk_Beats_v053.blend",
+    "sha256_before": "23fc2578b499d6d2fded4f1d16a5466d93bea59b8bb7caa9eee26e7004a8a29b",
+    "blender": "5.2.2 LTS",
+    "scenes": [
+      {
+        "name": "REFERENCE | liked v041 boy and original source pair | preserved",
+        "range": [
+          1,
+          94
+        ],
+        "fps": 30.0,
+        "types": {
+          "ARMATURE": 4,
+          "MESH": 124,
+          "EMPTY": 172,
+          "CURVE": 151,
+          "CAMERA": 7,
+          "GREASEPENCIL": 2
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "V053 | AUTHORED WALK BEATS | v051 grounded feet",
+        "range": [
+          1,
+          257
+        ],
+        "fps": 30.0,
+        "types": {
+          "CAMERA": 1,
+          "MESH": 673,
+          "FONT": 17,
+          "EMPTY": 9,
+          "ARMATURE": 2
+        },
+        "color_view": "Standard"
+      }
+    ],
+    "grease_pencil_actors": [],
+    "rigs": [
+      {
+        "name": "V044 BOY | estimated joint centres",
+        "bone_count": 15,
+        "sagittal_angle_min_max_span_degrees": {
+          "pelvis": [
+            -1.145016810724233,
+            2.0535790204681197,
+            3.1985958311923524
+          ],
+          "chest": [
+            1.7678572956893337,
+            5.8383617864612924,
+            4.070504490771959
+          ],
+          "head": [
+            -0.3799023919357901,
+            1.1095898756952507,
+            1.4894922676310407
+          ],
+          "upper_arm_near": [
+            -192.5763915855188,
+            -166.83484780852558,
+            25.74154377699321
+          ],
+          "upper_arm_far": [
+            167.40296896181215,
+            192.61449217085647,
+            25.211523209044316
+          ]
+        },
+        "pelvis_height_min_max_span_metres": [
+          0.7224999666213989,
+          0.7439999580383301,
+          0.021499991416931152
+        ],
+        "unique_key_times": 129,
+        "actions": "V053 BOY | contact loading passing push |32frames"
+      },
+      {
+        "name": "V044 GIRL | estimated joint centres",
+        "bone_count": 15,
+        "sagittal_angle_min_max_span_degrees": {
+          "pelvis": [
+            -0.8450168849248457,
+            1.5525363006496968,
+            2.3975531855745427
+          ],
+          "chest": [
+            2.2842607038151064,
+            4.6600771290718335,
+            2.375816425256727
+          ],
+          "head": [
+            0.4800958504154316,
+            1.3046265859647321,
+            0.8245307355493006
+          ],
+          "upper_arm_near": [
+            -185.40713702655623,
+            -166.56746103669266,
+            18.839675989863565
+          ],
+          "upper_arm_far": [
+            168.61271796952468,
+            191.3872811324419,
+            22.774563162917218
+          ]
+        },
+        "pelvis_height_min_max_span_metres": [
+          0.7164999842643738,
+          0.7379999756813049,
+          0.021499991416931152
+        ],
+        "unique_key_times": 129,
+        "actions": "V053 GIRL | contact loading passing push |32frames"
+      }
+    ],
+    "sha256_after": "23fc2578b499d6d2fded4f1d16a5466d93bea59b8bb7caa9eee26e7004a8a29b",
+    "production_source_unchanged": true
+  },
+  "danger_v065f": {
+    "source": "work/first_danger_conform_v065/native/WTSC_First_Danger_Conformed_v065f.blend",
+    "sha256_before": "d73f23c9b5e2d28a65454fbcdf363c1d837c90e88dfbf33d9dec39df1bdbe78f",
+    "blender": "5.2.2 LTS",
+    "scenes": [
+      {
+        "name": "REFERENCE | liked v041 boy and original source pair | preserved",
+        "range": [
+          1,
+          94
+        ],
+        "fps": 30.0,
+        "types": {
+          "ARMATURE": 4,
+          "MESH": 124,
+          "EMPTY": 172,
+          "CURVE": 151,
+          "CAMERA": 7,
+          "GREASEPENCIL": 2
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "V060 | STEADY PAIR | first hand contact",
+        "range": [
+          1,
+          151
+        ],
+        "fps": 30.0,
+        "types": {
+          "CAMERA": 1,
+          "MESH": 481,
+          "FONT": 17,
+          "EMPTY": 9,
+          "ARMATURE": 2
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "V065 | actual foreground oak alpha",
+        "range": [
+          913,
+          1080
+        ],
+        "fps": 24.0,
+        "types": {
+          "MESH": 1,
+          "CAMERA": 1
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_FIRST_DANGER_REVIEW_MASTER_v065",
+        "range": [
+          913,
+          1080
+        ],
+        "fps": 24.0,
+        "types": {},
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_FIRST_DANGER_TITLE_v065",
+        "range": [
+          913,
+          1080
+        ],
+        "fps": 24.0,
+        "types": {
+          "CAMERA": 1,
+          "FONT": 6
+        },
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_FIRST_DANGER_UNMASKED_EDIT_v065",
+        "range": [
+          913,
+          1080
+        ],
+        "fps": 24.0,
+        "types": {},
+        "color_view": "Standard"
+      },
+      {
+        "name": "WTSC_FIRST_DANGER_WORLD_v065",
+        "range": [
+          913,
+          1080
+        ],
+        "fps": 24.0,
+        "types": {
+          "MESH": 484,
+          "CAMERA": 4,
+          "EMPTY": 16,
+          "GREASEPENCIL": 1,
+          "LIGHT": 6,
+          "FONT": 1,
+          "ARMATURE": 2
+        },
+        "color_view": "Standard"
+      }
+    ],
+    "grease_pencil_actors": [
+      {
+        "scene": "WTSC_FIRST_DANGER_WORLD_v065",
+        "name": "v016 | CHILDREN | held painterly near-age pair",
+        "hide_render": true,
+        "layers": [
+          {
+            "name": "HELD | near-age painted children | native vector boundary",
+            "frames": [
+              1
+            ]
+          }
+        ],
+        "modifiers": [],
+        "animation_channels": [
+          "location",
+          "location",
+          "location"
+        ]
+      }
+    ],
+    "rigs": [],
+    "sha256_after": "d73f23c9b5e2d28a65454fbcdf363c1d837c90e88dfbf33d9dec39df1bdbe78f",
+    "production_source_unchanged": true
+  }
+}

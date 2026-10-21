@@ -1,0 +1,53 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "source_sha256_verified": true,
+  "source_crop": [
+    1581,
+    32,
+    1891,
+    620
+  ],
+  "phase": 6,
+  "native_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_manual_trace_v061\\native\\Muybridge_Phase06_Manual_Trace_v061.blend",
+  "render_path": "WTSC_LOCAL_WORKSPACE\\locomotion\\muybridge_manual_trace_v061\\previews\\phase06_native_trace_rgba.png",
+  "contour_count": 16,
+  "contour_names": [
+    "head_profile",
+    "nape_to_shoulder",
+    "front_neck_and_breast",
+    "posterior_torso",
+    "anterior_torso",
+    "hanging_arm_outer",
+    "hanging_arm_inner",
+    "hanging_hand_fingers",
+    "swing_arm_upper",
+    "swing_arm_lower",
+    "far_arm_visible",
+    "rear_leg_outer_to_toe",
+    "rear_leg_inner",
+    "front_leg_outer_and_lifted_toe",
+    "front_leg_inner",
+    "hip_to_front_thigh_seam"
+  ],
+  "point_counts": [
+    17,
+    6,
+    8,
+    7,
+    7,
+    9,
+    7,
+    7,
+    9,
+    11,
+    6,
+    17,
+    13,
+    20,
+    9,
+    3
+  ],
+  "total_manually_specified_points": 156,
+  "registration": "X=(source_x-155)*0.01; Y=(294-source_y)*0.01; camera 620x1176 ortho_scale 5.88",
+  "route": "temporary Blender-native Grease Pencil operator, not OS pointer delivery"
+}

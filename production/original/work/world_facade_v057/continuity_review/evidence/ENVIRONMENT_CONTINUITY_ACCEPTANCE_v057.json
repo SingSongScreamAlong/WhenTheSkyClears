@@ -1,0 +1,100 @@
+{
+  "status": "PASS: BOUNDED ENVIRONMENT CONTINUITY REVIEW AT PREVIEW RESOLUTION",
+  "purpose": "Environment continuity only; no new character motion.",
+  "best_checkpoint_preserved": "WTSC_LOCAL_WORKSPACE\\work\\world_facade_v057\\WTSC_Continuous_Painterly_Facade_Proof_v057.blend",
+  "best_checkpoint_sha256": "87c897b5ccc178b1288f5d614eeaa34d642b8e8ac2c239bcd2ab50a79569361a",
+  "best_checkpoint_file_unchanged": true,
+  "video": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuity_review_v057\\WTSC_v057_ENVIRONMENT_Continuity_24fps_1201-1249.mp4",
+  "video_sha256": "401c7d40500787bebd871cbe045498be9b48a04d5377ec07703a2734a21fabb4",
+  "video_bytes": 931495,
+  "source_interval_frames": [
+    1201,
+    1249
+  ],
+  "source_interval_seconds": [
+    50,
+    52
+  ],
+  "fps": 24,
+  "frame_count": 49,
+  "duration_seconds": 2.0416666666666665,
+  "picture_dimensions": [
+    1280,
+    720
+  ],
+  "encoded_dimensions": [
+    1280,
+    800
+  ],
+  "picture_unobscured_by_review_labels": true,
+  "decoded_timing_verified": true,
+  "decoded_unique_frames": 49,
+  "visual_witnesses_reviewed": [
+    "ENVIRONMENT_COMPOSITION_CONTACT_SHEET.jpg",
+    "FACADE_TRACKED_DETAILS_CONTACT_SHEET.jpg",
+    "WINDOW_LAYER_CONTINUITY_CONTACT_SHEET.jpg",
+    "WINDOW_ALL_49_FRAMES.jpg",
+    "ENVIRONMENT_REVIEW_POSTER.png"
+  ],
+  "findings": [
+    "No texture swimming detected in five camera-registered surface tracks across all49frames;best residual is0at0.25preview-pixel search resolution.",
+    "Painterly plaster,exposed stone,porch tiles,door surround and the left external join remain attached to their expected world locations.",
+    "No seam reveal,rectangular plate cutoff,window-layer gap or spatial discontinuity is visible in the inspected intermediate compositions and49-frame upper-window witness.",
+    "Unobstructed facade-band correlation remains above.999;no sampled pixel differs from the camera-registered reference by more than45channel levels.",
+    "Window depth produces the expected smooth parallax;adjacent registered window-band correlation remains above.998.",
+    "Existing source saturation/fire-light animation explains the strict material-state signature change;this was investigated,not suppressed or replaced.",
+    "Original character animation,437source objects,41Actions,14child material sets,cameras and source timing are preserved."
+  ],
+  "registration_summary": [
+    {
+      "name": "plaster_shadow",
+      "min_camera_registered_ncc": 0.9985019564628601,
+      "max_mean_absolute_channel_difference": 0.4908040463924408,
+      "max_residual_shift_preview_pixels": 0.0
+    },
+    {
+      "name": "exposed_stone",
+      "min_camera_registered_ncc": 0.998153567314148,
+      "max_mean_absolute_channel_difference": 0.740646243095398,
+      "max_residual_shift_preview_pixels": 0.0
+    },
+    {
+      "name": "porch_tiles",
+      "min_camera_registered_ncc": 0.9991217255592346,
+      "max_mean_absolute_channel_difference": 0.8760127425193787,
+      "max_residual_shift_preview_pixels": 0.0
+    },
+    {
+      "name": "door_surround",
+      "min_camera_registered_ncc": 0.9984060525894165,
+      "max_mean_absolute_channel_difference": 0.4392361044883728,
+      "max_residual_shift_preview_pixels": 0.0
+    },
+    {
+      "name": "left_join",
+      "min_camera_registered_ncc": 0.9989395141601562,
+      "max_mean_absolute_channel_difference": 0.5341435074806213,
+      "max_residual_shift_preview_pixels": 0.0
+    }
+  ],
+  "facade_band_min_ncc": 0.9993430376052856,
+  "window_min_adjacent_ncc": 0.9980700016021729,
+  "review_method": "All49rendered frames analyzed at actual camera-projected positions;intermediate compositions and all49upper-window crops visually inspected;encoded video decoded to verify24fps,49consecutive unique frames and frame durations.",
+  "native_player_playback_observed": false,
+  "review_scope_limits": [
+    "Acceptance is limited to frames1201\u20131249at1280x720picture resolution and the existing v057facade.",
+    "No native-player playback observation is claimed;review uses rendered/decoded frame inspection and temporal registration analysis.",
+    "No new character motion or current character-task integration was authored.",
+    "Other world shots,broader3Darchitecture,whole-trailer continuity and final production adoption remain open."
+  ],
+  "production_integration_performed": false,
+  "new_blend_saved": false,
+  "further_facade_changes_or_renders_planned": false,
+  "review_library": {
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "file_name": "WTSC_v057_ENVIRONMENT_Continuity_24fps_1201-1249.mp4"
+  },
+  "project_review_video": "WTSC_LOCAL_WORKSPACE\\work\\world_facade_v057\\continuity_review\\WTSC_v057_ENVIRONMENT_Continuity_24fps_1201-1249.mp4"
+}

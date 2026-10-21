@@ -1,0 +1,244 @@
+{
+  "status": "SAFE_RIG_CHECKPOINT_RETURNED_BEFORE_SEPARATE_REFERENCE_LED_WALK",
+  "technical_status": "PASS_WITHIN_TESTED_RANGES",
+  "visual_status": "PARTIAL_IMPROVEMENT_FINAL_ART_UNPASSED",
+  "IK_chains": 8,
+  "static_poses": 12,
+  "fresh_fractional_samples": 94,
+  "max_IK_error_mm": 0.048922808821571254,
+  "palm_gap_mm_range": [
+    0.4999327939003706,
+    0.5001355893909931
+  ],
+  "root_compensation": {
+    "root_travel_test_m": 0.025,
+    "without_compensation_boot_drift_m": 0.025000005541368706,
+    "with_world_goal_compensation_boot_drift_m": 6.83872392426648e-08,
+    "compensated_IK": [
+      {
+        "who": "BOY",
+        "chain": "shin_near",
+        "distance_m": 0.37544733178877493,
+        "min_reach_m": 0.0407126247882843,
+        "max_reach_m": 0.5368893444538116,
+        "endpoint_error_m": 4.4809875445380526e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_near",
+        "distance_m": 0.23391363510674276,
+        "min_reach_m": 0.16332972049713135,
+        "max_reach_m": 0.41623932123184204,
+        "endpoint_error_m": 1.7633542205436496e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "shin_far",
+        "distance_m": 0.3927370385557162,
+        "min_reach_m": 0.05283306539058685,
+        "max_reach_m": 0.5204908400774002,
+        "endpoint_error_m": 2.3068201959031282e-05,
+        "reachable": true
+      },
+      {
+        "who": "BOY",
+        "chain": "forearm_far",
+        "distance_m": 0.41262345318026183,
+        "min_reach_m": 0.14860978722572327,
+        "max_reach_m": 0.41609153151512146,
+        "endpoint_error_m": 4.214919264725834e-08,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "shin_near",
+        "distance_m": 0.32344416599996095,
+        "min_reach_m": 0.06422944366931915,
+        "max_reach_m": 0.5014990419149399,
+        "endpoint_error_m": 2.7762047053380336e-05,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "forearm_near",
+        "distance_m": 0.16400773192946907,
+        "min_reach_m": 0.030218064785003662,
+        "max_reach_m": 0.39169734716415405,
+        "endpoint_error_m": 1.450253139578654e-05,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "shin_far",
+        "distance_m": 0.36016739814575494,
+        "min_reach_m": 0.08207911252975464,
+        "max_reach_m": 0.5061906576156616,
+        "endpoint_error_m": 9.023760470516642e-06,
+        "reachable": true
+      },
+      {
+        "who": "GIRL",
+        "chain": "forearm_far",
+        "distance_m": 0.3195395866573806,
+        "min_reach_m": 0.041569650173187256,
+        "max_reach_m": 0.32195982336997986,
+        "endpoint_error_m": 1.7377809474260165e-07,
+        "reachable": true
+      }
+    ],
+    "excess_root_travel_test_m": 0.5,
+    "excess_unreachable_pose_rejected": true,
+    "scope": "Rig-space/world-goal compensation fixture only; no production travel curve or performance."
+  },
+  "core_gates": {
+    "eight_IK_chains": true,
+    "original_bone_poses_unchanged": true,
+    "boots_unchanged": true,
+    "UV_materials_base_topology_retained": true,
+    "body_weights_retained": true,
+    "all_static_IK_reachable": true,
+    "off_cache_all16_respond": true,
+    "off_cache_boots_fixed": true,
+    "finite_geometry": true,
+    "v016_immutable": true
+  },
+  "fresh_append": {
+    "appended_objects": 187,
+    "meshes": 28,
+    "armatures": 2,
+    "IK_chains": 8,
+    "actions": 0,
+    "native_drivers_checked": 32,
+    "external_dependencies": [],
+    "packed_original_images": [
+      "Pair_Painterly_Near_Age_v015.png"
+    ],
+    "pass": true
+  },
+  "preview": {
+    "file": "WTSC_v017_Before_After_Rig_Diagnostic_2s.mp4",
+    "bytes": 347375,
+    "sha256": "d449af8639fc64f30745edbab67f563f2f9c3e6298a4e9957e66228311cb5f8a",
+    "width": 1920,
+    "height": 540,
+    "fps": 24.0,
+    "duration_seconds": 2.0,
+    "decoded_frames": 48,
+    "under20MB": true,
+    "review": "All frames decoded; chronological board used for review. No continuous video playback observation claimed."
+  },
+  "head_view": "Required girl attention quarter views unresolved; original profile retained openly.",
+  "next_work": "Parent-provided written findings received. One-child exercise authorized separately, not started here.",
+  "production_modified": false,
+  "v016_sources_unchanged": {
+    "characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Control_Asset_v016.blend": true,
+    "characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Capability_v016.blend": true,
+    "characters\\rig_capability_audit_v016\\native\\WTSC_Painted_Rig_Live_Diagnostic_v016.blend": true
+  },
+  "library_previews": {
+    "route": "Authorized private preview create, using working direct upload path",
+    "results": [
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v017_Before_After_Focused_Stress_Board.jpg",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v017_Before_After_Focused_Stress_Board.jpg",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "image/jpeg",
+        "library_artifact_type": "image",
+        "file_size_bytes": 589475
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v017_All_Stress_Poses_Before_After.jpg",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v017_All_Stress_Poses_Before_After.jpg",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "image/jpeg",
+        "library_artifact_type": "image",
+        "file_size_bytes": 528763
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/WTSC_v017_Before_After_Rig_Diagnostic_2s.mp4",
+        "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "file_name": "WTSC_v017_Before_After_Rig_Diagnostic_2s.mp4",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "mime_type": "video/mp4",
+        "library_artifact_type": "other",
+        "file_size_bytes": 347375
+      }
+    ],
+    "local_metadata_attempts": [
+      {
+        "file": "WTSC_v017_Before_After_Focused_Stress_Board.jpg",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "exit_code": 1,
+        "metadata_write": "failed - Windows Python has no os.setxattr",
+        "output": "Warning: truncated output (original token count: 254)\nTotal output lines: 12\n\nTraceback (most recent call last):\r\n  File \"WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\library_helpers_current\\library_file_transfer.py\", line 303, in <module>\r\n    raise SystemExit(main(sys.argv[1:]))\r\n                     ^^^^^^^^^^^^^^^^^^\r\n  File \"WTSC_LOCAL_WORKSPACE\\\u202674 tokens truncated\u2026nsfer.py\", line 246, in apply_xattrs\r\n    xattr.apply(path)\r\n  File \"WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\library_helpers_current\\library_file_transfer.py\", line 64, in apply\r\n    os.setxattr(path, self.name, encoded_value)\r\n    ^^^^^^^^^^^\r\nAttributeError: module 'os' has no attribute 'setxattr'\r\n"
+      },
+      {
+        "file": "WTSC_v017_All_Stress_Poses_Before_After.jpg",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "exit_code": 1,
+        "metadata_write": "failed - Windows Python has no os.setxattr",
+        "output": "Warning: truncated output (original token count: 254)\nTotal output lines: 12\n\nTraceback (most recent call last):\r\n  File \"WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\library_helpers_current\\library_file_transfer.py\", line 303, in <module>\r\n    raise SystemExit(main(sys.argv[1:]))\r\n                     ^^^^^^^^^^^^^^^^^^\r\n  File \"WTSC_LOCAL_WORKSPACE\\\u202674 tokens truncated\u2026nsfer.py\", line 246, in apply_xattrs\r\n    xattr.apply(path)\r\n  File \"WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\library_helpers_current\\library_file_transfer.py\", line 64, in apply\r\n    os.setxattr(path, self.name, encoded_value)\r\n    ^^^^^^^^^^^\r\nAttributeError: module 'os' has no attribute 'setxattr'\r\n"
+      },
+      {
+        "file": "WTSC_v017_Before_After_Rig_Diagnostic_2s.mp4",
+        "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+        "exit_code": 1,
+        "metadata_write": "failed - Windows Python has no os.setxattr",
+        "output": "Warning: truncated output (original token count: 254)\nTotal output lines: 12\n\nTraceback (most recent call last):\r\n  File \"WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\library_helpers_current\\library_file_transfer.py\", line 303, in <module>\r\n    raise SystemExit(main(sys.argv[1:]))\r\n                     ^^^^^^^^^^^^^^^^^^\r\n  File \"WTSC_LOCAL_WORKSPACE\\\u202674 tokens truncated\u2026nsfer.py\", line 246, in apply_xattrs\r\n    xattr.apply(path)\r\n  File \"WTSC_LOCAL_WORKSPACE\\locomotion\\whole_pose_blocking_v014\\evidence\\library_helpers_current\\library_file_transfer.py\", line 64, in apply\r\n    os.setxattr(path, self.name, encoded_value)\r\n    ^^^^^^^^^^^\r\nAttributeError: module 'os' has no attribute 'setxattr'\r\n"
+      }
+    ]
+  },
+  "follow_on_verdict": "Technically supports a bounded straight-profile one-child test. Existing deep cloth/crossing defects remain visual failure criteria and final-art readiness is unpassed.",
+  "remaining_next_exercise_tests": [
+    "active toe/heel locks during roll",
+    "swing clearance",
+    "two-step root/loop displacement",
+    "no knee pops/stretch",
+    "stable painted joins"
+  ],
+  "local_metadata_status": "All3 previews retained in private Library version0. Local extended-attribute writes failed because Windows Python lacks os.setxattr; exact IDs/versions retained in receipt.",
+  "production_hashes_unchanged": {
+    "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend": true,
+    "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+    "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend": true
+  },
+  "created_utc": "2026-10-18T00:43:44.272392+00:00",
+  "execution_blockers": []
+}

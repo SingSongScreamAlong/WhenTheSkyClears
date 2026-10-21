@@ -1,0 +1,108 @@
+{
+  "version": "v052",
+  "source_v051_sha256": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f",
+  "candidate_sha256": "2abb8a2f3c4350f5537861263722312a34a073eb12d1f67ea2bae6c256ec6abb",
+  "source_and_production_unchanged": true,
+  "contacts": {
+    "source_hashes": {
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\coat_fluidity_v051\\native\\WTSC_Controlled_Fluid_Coat_v051.blend": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f",
+      "WTSC_LOCAL_WORKSPACE\\locomotion\\upper_body_overlap_v052\\native\\WTSC_Support_Linked_Upper_Body_v052.blend": "2abb8a2f3c4350f5537861263722312a34a073eb12d1f67ea2bae6c256ec6abb"
+    },
+    "cold_reopen_passed": true,
+    "root_camera_leg_pelvis_fcurves_exact": true,
+    "rest_bones_non_sleeve_geometry_coat_keys_uv_weights_materials_packed_images_exact": true,
+    "sampled_quarter_frames": 129,
+    "maximum_boot_vertex_difference_m": 0.0,
+    "maximum_pelvis_endpoint_difference_m": 0.0,
+    "difference_ranges_degrees": {
+      "BOY": {
+        "chest": [
+          -0.9036881416069145,
+          0.8998981718234966
+        ],
+        "near_elbow": [
+          -0.6495796422613971,
+          2.3995230735894335
+        ],
+        "far_elbow": [
+          -0.4498988564913802,
+          1.6489495193189452
+        ]
+      },
+      "GIRL": {
+        "chest": [
+          -0.642868139802834,
+          0.6499330654893782
+        ],
+        "near_elbow": [
+          -0.3497781316244968,
+          1.2497503452875964
+        ],
+        "far_elbow": [
+          -0.3499309833394513,
+          1.7988531552609466
+        ]
+      }
+    },
+    "elbow_timing_correlations": {
+      "BOY": {
+        "old_near_far_elbow": 0.9999999999912016,
+        "new_near_far_elbow": 0.6595213099901959
+      },
+      "GIRL": {
+        "old_near_far_elbow": 0.9999999999906315,
+        "new_near_far_elbow": 0.6034017395256288
+      }
+    },
+    "technical_vs_art": "No new contact error. This does not establish natural acting."
+  },
+  "movie": {
+    "file_name": "WTSC_v051_vs_v052_Support_Linked_Upper_Body_NormalSpeed.mp4",
+    "bytes": 2514012,
+    "sha256": "eb380b471de57fb82f0753b286d4144163ce5f7ff4a3ca20f19650022fd54d14",
+    "decoded_frames": 129,
+    "fps": 30,
+    "duration_seconds": 4.3,
+    "resolution": [
+      1920,
+      640
+    ],
+    "all_frames_decoded": true,
+    "actual_native_frame_sources": true,
+    "same_foot_root_camera_travel": true,
+    "continuous_player_observed_by_agent": false,
+    "technical_pass_not_artistic_approval": true
+  },
+  "private_library": [
+    {
+      "file_name": "WTSC_v051_v052_Matched_Static_Proof.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    },
+    {
+      "file_name": "WTSC_v051_vs_v052_Support_Linked_Upper_Body_NormalSpeed.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0,
+      "metadata_verified": true
+    }
+  ],
+  "review": {
+    "status": "technical candidate; no substantial artistic improvement established",
+    "observed_at_shot_size": "The chest and elbow response is visually subtle in the matched stills and decoded normal-speed frames. The regular loop and flat character acting remain. Preserve v051 as the stronger visually confirmed baseline until this is judged in a player.",
+    "actual_timing_change": "Boy near/far elbow correlation 1.00 to0.66; girl1.00 to0.60. Appropriate opposite arm swing retained. Pelvis/leg/boot trajectories exact.",
+    "next_animation_work": "Author stronger, non-identical pose intent across the pair and across the recovery beat, with clear preparation/load/release and a true restart step. Keep foot contacts tied to world travel; review at final shot size.",
+    "continuous_player_observed_by_agent": false,
+    "technical_export_not_artistic_approval": true
+  },
+  "archive": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\upper_body_overlap_v052\\WTSC_Support_Linked_Upper_Body_v052_Review.zip",
+    "bytes": 34445493,
+    "sha256": "043ed4e788e6553a8c92676875b6ce813c2da3c708632575cd54a3b8b24af662",
+    "zip_crc_verified": true,
+    "file_count": 21,
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_version": 0,
+    "library_metadata_verified": true
+  }
+}

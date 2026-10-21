@@ -1,0 +1,401 @@
+[
+  {
+    "object": "v015 | Near-black painted fill | GP vector clipped",
+    "parent": "v016 | CHILDREN | held painterly near-age pair",
+    "materials": [
+      {
+        "name": "v015 | Subtle charcoal painting and soft white eyes",
+        "nodes": [
+          [
+            "Image Texture",
+            "ShaderNodeTexImage"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "ShaderNodeHueSaturation"
+          ],
+          [
+            "Emission",
+            "ShaderNodeEmission"
+          ],
+          [
+            "Transparent BSDF",
+            "ShaderNodeBsdfTransparent"
+          ],
+          [
+            "Mix Shader",
+            "ShaderNodeMixShader"
+          ],
+          [
+            "Material Output",
+            "ShaderNodeOutputMaterial"
+          ]
+        ],
+        "emission_links": [
+          {
+            "node": "Emission",
+            "color_from": [
+              [
+                "Hue/Saturation/Value",
+                "Color"
+              ]
+            ]
+          }
+        ],
+        "image_nodes": [
+          {
+            "name": "Image Texture",
+            "image": "Pair_Painterly_Near_Age_v015.png",
+            "vector_links": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "object": "v014 | Ground contact | Held shoe 1",
+    "parent": "v016 | CHILDREN | held painterly near-age pair",
+    "materials": [
+      {
+        "name": "v014 | Soft painted contact | ground only",
+        "nodes": [
+          [
+            "Texture Coordinate",
+            "ShaderNodeTexCoord"
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Color Ramp",
+            "ShaderNodeValToRGB"
+          ],
+          [
+            "Emission",
+            "ShaderNodeEmission"
+          ],
+          [
+            "Transparent BSDF",
+            "ShaderNodeBsdfTransparent"
+          ],
+          [
+            "Mix Shader",
+            "ShaderNodeMixShader"
+          ],
+          [
+            "Material Output",
+            "ShaderNodeOutputMaterial"
+          ]
+        ],
+        "emission_links": [
+          {
+            "node": "Emission",
+            "color_from": []
+          }
+        ],
+        "image_nodes": []
+      }
+    ]
+  },
+  {
+    "object": "v014 | Ground contact | Held shoe 2",
+    "parent": "v016 | CHILDREN | held painterly near-age pair",
+    "materials": [
+      {
+        "name": "v014 | Soft painted contact | ground only",
+        "nodes": [
+          [
+            "Texture Coordinate",
+            "ShaderNodeTexCoord"
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Color Ramp",
+            "ShaderNodeValToRGB"
+          ],
+          [
+            "Emission",
+            "ShaderNodeEmission"
+          ],
+          [
+            "Transparent BSDF",
+            "ShaderNodeBsdfTransparent"
+          ],
+          [
+            "Mix Shader",
+            "ShaderNodeMixShader"
+          ],
+          [
+            "Material Output",
+            "ShaderNodeOutputMaterial"
+          ]
+        ],
+        "emission_links": [
+          {
+            "node": "Emission",
+            "color_from": []
+          }
+        ],
+        "image_nodes": []
+      }
+    ]
+  },
+  {
+    "object": "v014 | Ground contact | Held shoe 3",
+    "parent": "v016 | CHILDREN | held painterly near-age pair",
+    "materials": [
+      {
+        "name": "v014 | Soft painted contact | ground only",
+        "nodes": [
+          [
+            "Texture Coordinate",
+            "ShaderNodeTexCoord"
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Color Ramp",
+            "ShaderNodeValToRGB"
+          ],
+          [
+            "Emission",
+            "ShaderNodeEmission"
+          ],
+          [
+            "Transparent BSDF",
+            "ShaderNodeBsdfTransparent"
+          ],
+          [
+            "Mix Shader",
+            "ShaderNodeMixShader"
+          ],
+          [
+            "Material Output",
+            "ShaderNodeOutputMaterial"
+          ]
+        ],
+        "emission_links": [
+          {
+            "node": "Emission",
+            "color_from": []
+          }
+        ],
+        "image_nodes": []
+      }
+    ]
+  },
+  {
+    "object": "v014 | Ground contact | Held shoe 4",
+    "parent": "v016 | CHILDREN | held painterly near-age pair",
+    "materials": [
+      {
+        "name": "v014 | Soft painted contact | ground only",
+        "nodes": [
+          [
+            "Texture Coordinate",
+            "ShaderNodeTexCoord"
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Color Ramp",
+            "ShaderNodeValToRGB"
+          ],
+          [
+            "Emission",
+            "ShaderNodeEmission"
+          ],
+          [
+            "Transparent BSDF",
+            "ShaderNodeBsdfTransparent"
+          ],
+          [
+            "Mix Shader",
+            "ShaderNodeMixShader"
+          ],
+          [
+            "Material Output",
+            "ShaderNodeOutputMaterial"
+          ]
+        ],
+        "emission_links": [
+          {
+            "node": "Emission",
+            "color_from": []
+          }
+        ],
+        "image_nodes": []
+      }
+    ]
+  },
+  {
+    "object": "v016 | Camp | pinned canvas and ropes",
+    "parent": null,
+    "materials": [
+      {
+        "name": "v016 | Camp | pinned canvas and ropes paint",
+        "nodes": [
+          [
+            "Material Output",
+            "ShaderNodeOutputMaterial"
+          ],
+          [
+            "Emission",
+            "ShaderNodeEmission"
+          ],
+          [
+            "Texture Coordinate",
+            "ShaderNodeTexCoord"
+          ],
+          [
+            "Image Texture",
+            "ShaderNodeTexImage"
+          ],
+          [
+            "Map Range",
+            "ShaderNodeMapRange"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "ShaderNodeHueSaturation"
+          ],
+          [
+            "Mix (Legacy)",
+            "ShaderNodeMixRGB"
+          ],
+          [
+            "Math",
+            "ShaderNodeMath"
+          ],
+          [
+            "Math.001",
+            "ShaderNodeMath"
+          ],
+          [
+            "FX opacity",
+            "ShaderNodeMath"
+          ],
+          [
+            "Mix Shader",
+            "ShaderNodeMixShader"
+          ],
+          [
+            "Transparent BSDF",
+            "ShaderNodeBsdfTransparent"
+          ],
+          [
+            "Separate XYZ",
+            "ShaderNodeSeparateXYZ"
+          ],
+          [
+            "Map Range.001",
+            "ShaderNodeMapRange"
+          ],
+          [
+            "Math.002",
+            "ShaderNodeMath"
+          ],
+          [
+            "Geometry",
+            "ShaderNodeNewGeometry"
+          ],
+          [
+            "Vector Math",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Map Range.002",
+            "ShaderNodeMapRange"
+          ],
+          [
+            "Math.003",
+            "ShaderNodeMath"
+          ],
+          [
+            "Mix",
+            "ShaderNodeMix"
+          ],
+          [
+            "Vector Math.001",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Map Range.003",
+            "ShaderNodeMapRange"
+          ],
+          [
+            "Math.004",
+            "ShaderNodeMath"
+          ],
+          [
+            "Mix.001",
+            "ShaderNodeMix"
+          ],
+          [
+            "Vector Math.002",
+            "ShaderNodeVectorMath"
+          ],
+          [
+            "Map Range.004",
+            "ShaderNodeMapRange"
+          ],
+          [
+            "Math.005",
+            "ShaderNodeMath"
+          ],
+          [
+            "Mix.002",
+            "ShaderNodeMix"
+          ],
+          [
+            "Texture Coordinate.001",
+            "ShaderNodeTexCoord"
+          ],
+          [
+            "Separate XYZ.001",
+            "ShaderNodeSeparateXYZ"
+          ],
+          [
+            "STATIC paint edge overlap | no time input",
+            "ShaderNodeValToRGB"
+          ],
+          [
+            "Math.006",
+            "ShaderNodeMath"
+          ]
+        ],
+        "emission_links": [
+          {
+            "node": "Emission",
+            "color_from": [
+              [
+                "Mix.002",
+                "Result"
+              ]
+            ]
+          }
+        ],
+        "image_nodes": [
+          {
+            "name": "Image Texture",
+            "image": "Camp_v001.png",
+            "vector_links": [
+              [
+                "Texture Coordinate",
+                "UV"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

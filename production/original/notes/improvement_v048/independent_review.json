@@ -1,0 +1,52 @@
+{
+  "reviewer": "visual_review subagent",
+  "source": "WTSC_Open_Battlefield_Refinement_v047g.blend",
+  "evidence_viewed": [
+    "renders/refinement_v047g/review_evidence/Whole_Shot_Chronology_Actual4K.jpg",
+    "renders/refinement_v047g/review_evidence/Actor_Chronology_2.jpg",
+    "renders/refinement_v047g/review_evidence/Actor_Chronology_4.jpg",
+    "renders/refinement_v047g/review_evidence/Actor_Chronology_5.jpg"
+  ],
+  "method": "Visual inspection of actual-render-derived sheets. This is a static frame review, not a real-time playback review or new native render.",
+  "strengths": [
+    "Foreground bank, illuminated path, low vegetation, broken fence silhouettes and misted ruins now form distinct visible depth bands.",
+    "Near-age child proportions and subtly painted black clothing have a clear direction. Original dark face and single white eye read at whole-shot scale.",
+    "The late offered hand gesture is understandable in silhouette, and the newer head turns preserve a useful facial read."
+  ],
+  "highest_value_improvements": [
+    {
+      "priority": 1,
+      "target": "Shoulder, sleeve and elbow continuity",
+      "observation": "The boy shoulder silhouette has a vertical squared cutoff, while the girl upper sleeve forms a separate flat block ahead of her chest. Bent sleeves end in sharp diagonal cuff wedges; black forearms read as straight hinged slivers. These are conspicuous at frames 1837-1846 and 1897-1918 and give the children a paper mannequin construction even when hand direction is correct.",
+      "bounded_fix": "Preserve existing bones, timings and joint centers. Reshape the sleeve start so it overlaps into and follows the torso shoulder; gently round the shoulder transition in the contour itself. Keep the outer bent-elbow contour continuous and place one narrow compressed fold on its inner side. Carry a restrained painted grayscale value through the sleeve-to-forearm transition. Reuse source paint rather than adding a new circular joint patch.",
+      "avoid": "Do not introduce visible round caps or uniform bright contour strokes. Do not add walking choreography to this world pass.",
+      "review_keys": [1801, 1834, 1840, 1846, 1881, 1901, 1918],
+      "acceptance": "At shot size, an uninterrupted shoulder-to-wrist silhouette reads as a clothed arm; at native pixels, no exposed triangular gap or conspicuous layer seam appears. Existing hand contact and boot positions remain unchanged."
+    },
+    {
+      "priority": 2,
+      "target": "Girl turned-head value and texture continuity",
+      "observation": "After the turn, the girl face is noticeably grayer and lighter than the boy face, both children's hands, and her original profile. Her hair has many fine pale strands compared with the boy's darker broader paint. The identity is usable, but it reads like a brighter replacement asset at frames 1846 onward.",
+      "bounded_fix": "Use a copied native material adjustment on only the new girl turn drawings. Compress the light hair strand values and darken the skin range toward the original painterly silhouette while preserving the eye highlight and enough face-plane variation to read direction. Compare all four new exposures, not only the final profile.",
+      "avoid": "Do not flatten all facial detail to black, redesign the face, change the original source raster, or paint a screen-following halo.",
+      "review_keys": [1841, 1842, 1844, 1846, 1848, 1881, 1901],
+      "acceptance": "The turn feels like the same child's head under the same light; girl and boy share a dark painterly value family, with the white eye remaining the brightest intentional face accent."
+    },
+    {
+      "priority": 3,
+      "target": "Main blast attachment and designed motion",
+      "observation": "The bright onset is compact, then the main smoke develops into an isolated detailed clump beside and above the ground. By 1881-1901 the low silhouette hangs over the field without a persistent torn-earth footprint, wide low dust, or readable debris landing. This competes with the painted world because the smoke alone is high-frequency volumetric detail.",
+      "bounded_fix": "In a separate candidate, retain an anchored low dust/skirt and dark disturbed-earth scar, separate the central impulsive upstroke from slower drifting residual smoke, and design a few readable debris arcs and landings. Give near/mid/far masses different value and edge treatment. Keep native scene scale and shot context while assessing force.",
+      "avoid": "Do not substitute a technically validated but visually tiny compact burst as the main explosion; do not scale only the smoke without checking ground attachment and character occlusion.",
+      "review_keys": [1825, 1831, 1841, 1848, 1881, 1901, 1920],
+      "acceptance": "The onset pushes visibly out of the field, the later smoke retains a believable connection to damaged ground, debris arrives and stays, and the effect follows the world's painterly edge and value language."
+    }
+  ],
+  "secondary_findings": [
+    "A few chopped plant tips remain along the walking-path paint transition. Repair with dedicated clean-ground art or a carefully bounded material treatment; extending the existing full-shot paint sample risks importing character pixels.",
+    "The boy's lower leg and cuff shapes still show angular bands when the foot lifts. Treat this as contour construction work after the shoulder seam, preserving foot anchors.",
+    "Do not infer acting or world-motion quality from these static sheets. A short actual rendered playback remains necessary after accepted contour and material changes."
+  ],
+  "artistic_acceptance": false,
+  "mutations": "Only this review note was added. No native sources, images, Blender jobs or other chats were modified."
+}

@@ -1,0 +1,57 @@
+WHEN THE SKY CLEARS | v056 ORIGINAL-PAINT GIRL SHOULDER STUDY
+
+STATUS
+Independent editable candidate, not an approved final character design or
+production integration. v053, v054 and v055 are preserved. The v056 native
+restores a small movable shoulder yoke from the girl's original charcoal
+painting, and adds six editable bodice contour shapes. It is intentionally
+separate from the five-second supported-recovery scene.
+
+NATIVE / IMPORT
+native/WTSC_Girl_Original_Paint_Yoke_v056.blend
+Blender 5.2.2 LTS. The original girl paint is packed in the native.
+Scene: V056 | ORIGINAL-PAINT SHOULDER DRAPE | v053 grounded walk.
+Append collection: V053 | AGE10 PAIR | authored walk beats.
+The new V056 GIRL shoulder yoke is inside that collection; the existing girl
+dress has six new relative shape keys. Both have separately editable 32-frame
+cyclic shape-key Actions with loading/passing/push-off near/far peaks. The
+existing boy/girl rig Actions, the pair travel Action, camera Action, bones,
+painted materials/UVs and all boot trajectories remain exactly v053.
+
+The yoke is an editable 17x11 mesh parented to the girl's age-ten rig, with
+chest/pelvis weights. Its UVs sample the already-existing charcoal shoulder
+painting. It is not a new skin tone or an image-generated turnaround.
+
+TRAVEL AND CLOCK CONTRACT
+30 source fps; 32-frame loop period; .78m per period; speed .73125m/s.
+D(F)=.78*(F-1)/32 metres. Pair-local root offsets -.4/+ .4m; girl lead 2
+source frames remains baked. For 24fps production, use
+F=1+(G-G0)*30/24 without rounding; one ordinary step loop spans 25.6
+production frames. Retime rig, root/camera, sleeve and leg drawing caches,
+coat and both new dress/yoke shape-key Actions together. To keep the children
+centered, remove only root X travel and move the world by -D; do not apply
+travel twice. The normal-speed review includes source frames1-65 only; the
+editable source scene still ends at frame257. The v053 travel CSV remains
+exact: locomotion/authored_walk_beats_v053/TRAVEL_CURVE_v053.csv.
+
+INDEPENDENT TECHNICAL CHECK
+Cold reopened v053/v056. Root, camera and both existing rig F-curves; rest
+bones and girl's original base dress geometry match exactly. Sampled129
+quarter-frame boot poses; maximum v053/v056 world boot difference was0m.
+The new yoke belongs to the append collection and its original painting is
+packed. Encoded matched preview is65frames/30fps, decoded all65 frames,
+2560x720; full candidate preview is1280x720. Both are under20MB.
+
+ARTISTIC CHECK
+At original shot size the added shoulder form actually reads, unlike v054
+sub-centimetre contour nudges and v055 pigment strokes. It uses existing
+charcoal painting and a tapering drape rather than a flat black cutout.
+However, the new shape can still resemble a stiff upper bib or shoulder pad,
+especially during passing. The torso/waist acting and arm insertion remain
+too similar across beats for the desired hand-drawn performance. This is a
+concrete exploration, not an Arcane-level or approved final animation.
+No continuous playback was observed by this agent; the full encoded sequence
+was checked for frame count and sampled visually at native frames.
+
+Nothing here creates the requested75-80s supported recovery restart, clasp,
+head turnaround, music/title changes or any full-trailer production edit.

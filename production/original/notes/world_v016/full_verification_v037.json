@@ -1,0 +1,376 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend",
+  "source_sha256": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "world_frames": 2400,
+  "credit_frames": 144,
+  "total_frames": 2544,
+  "total_seconds": 106,
+  "resource_plan": {
+    "maximum_parallel_blender": 4,
+    "threads_per_blender": 3,
+    "world_eevee_samples": 32,
+    "world_and_mask_phases_sequential": true,
+    "shared_UI": false,
+    "effects_pack_dependency": false
+  },
+  "fresh_native_world": true,
+  "cached_old_world_used": false,
+  "split_compositor_proof": "4K split world+raw native Fontalpha matched direct native compositor with mean pixel error0 atframe1609.",
+  "world_workers": [
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_01.log",
+      "start": 1,
+      "end": 600,
+      "pid": 42896
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_02.log",
+      "start": 601,
+      "end": 1200,
+      "pid": 54320
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_03.log",
+      "start": 1201,
+      "end": 1800,
+      "pid": 848
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_04.log",
+      "start": 1801,
+      "end": 2400,
+      "pid": 10448
+    }
+  ],
+  "mask_workers": [
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_01.log",
+      "start": 1,
+      "end": 600,
+      "pid": 37996
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_02.log",
+      "start": 601,
+      "end": 1200,
+      "pid": 42700
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_03.log",
+      "start": 1201,
+      "end": 1800,
+      "pid": 50356
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_04.log",
+      "start": 1801,
+      "end": 2400,
+      "pid": 30924
+    }
+  ],
+  "movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v037.mp4",
+  "movie_sha256": "fe19daa7c105475fedc089331f93ed00b28a9b787baaeee37a6c119e05205390",
+  "bytes": 214442225,
+  "full_decode_frames": 2544,
+  "full_decode_pass": true,
+  "audio": "One original suppliedWAV, single90\u2013100fade, silent100\u2013106",
+  "credit_source": "Native4K frame2401 held144frames, no interpolation",
+  "frame_duplication_in_moving_portion": false,
+  "frame_interpolation": false,
+  "viewing_copy": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_View_v037.mp4",
+    "bytes": 15065118,
+    "sha256": "712b86abb2e5eacbebca27d08cf2cca3deb27ccdf6963a30192ef7f876413693",
+    "resolution": [
+      1280,
+      720
+    ],
+    "frames": 2544,
+    "under20000000bytes": true,
+    "full_decode_pass": true
+  },
+  "metadata": {
+    "WTSC_Full_Knockout_Trailer_4K_v037.mp4": [
+      "Duration: 00:01:46.00, start: 0.000000, bitrate: 16184 kb/s",
+      "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3840x2160 [SAR 1:1 DAR 16:9], 15906 kb/s, 24 fps, 24 tbr, 24k tbn (default)",
+      "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 272 kb/s (default)"
+    ],
+    "WTSC_Full_Knockout_Trailer_View_v037.mp4": [
+      "Duration: 00:01:46.01, start: 0.000000, bitrate: 1136 kb/s",
+      "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 1009 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+      "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 122 kb/s (default)"
+    ]
+  },
+  "mask_black_checks": [
+    {
+      "frame": 1,
+      "seconds": 0.0,
+      "far_outside_glyph_max_pixel": 0,
+      "glyph_alpha_pixels": 0
+    },
+    {
+      "frame": 241,
+      "seconds": 10.0,
+      "far_outside_glyph_max_pixel": 5,
+      "glyph_alpha_pixels": 5248849
+    },
+    {
+      "frame": 481,
+      "seconds": 20.0,
+      "far_outside_glyph_max_pixel": 2,
+      "glyph_alpha_pixels": 5238063
+    },
+    {
+      "frame": 841,
+      "seconds": 35.0,
+      "far_outside_glyph_max_pixel": 2,
+      "glyph_alpha_pixels": 4796117
+    },
+    {
+      "frame": 1201,
+      "seconds": 50.0,
+      "far_outside_glyph_max_pixel": 3,
+      "glyph_alpha_pixels": 4173408
+    },
+    {
+      "frame": 1609,
+      "seconds": 67.0,
+      "far_outside_glyph_max_pixel": 2,
+      "glyph_alpha_pixels": 2676561
+    },
+    {
+      "frame": 1921,
+      "seconds": 80.0,
+      "far_outside_glyph_max_pixel": 3,
+      "glyph_alpha_pixels": 5284852
+    },
+    {
+      "frame": 2161,
+      "seconds": 90.0,
+      "far_outside_glyph_max_pixel": 4,
+      "glyph_alpha_pixels": 5308553
+    },
+    {
+      "frame": 2400,
+      "seconds": 99.95833333333333,
+      "far_outside_glyph_max_pixel": 3,
+      "glyph_alpha_pixels": 3869,
+      "final_S_remaining_rightmost_pixel": 17
+    }
+  ],
+  "native_compositor_matches": [
+    {
+      "frame": 241,
+      "movie_vs_native_compositor_mean_error": 1.7901764644418725
+    },
+    {
+      "frame": 841,
+      "movie_vs_native_compositor_mean_error": 1.3532941904578188
+    },
+    {
+      "frame": 1201,
+      "movie_vs_native_compositor_mean_error": 1.2665220711162553
+    },
+    {
+      "frame": 1609,
+      "movie_vs_native_compositor_mean_error": 0.7616839072145062
+    },
+    {
+      "frame": 2161,
+      "movie_vs_native_compositor_mean_error": 1.4805200697659464
+    }
+  ],
+  "render_boundaries": [
+    {
+      "first_frame": 601,
+      "seconds": 25.0,
+      "adjacent_pixel_differences": [
+        10.689067322530864,
+        10.604652938528806,
+        10.514254597479423
+      ],
+      "intentional_credit_cut": false
+    },
+    {
+      "first_frame": 1201,
+      "seconds": 50.0,
+      "adjacent_pixel_differences": [
+        10.85157053755144,
+        10.898835358796296,
+        10.513579443158436
+      ],
+      "intentional_credit_cut": false
+    },
+    {
+      "first_frame": 1801,
+      "seconds": 75.0,
+      "adjacent_pixel_differences": [
+        10.188151041666666,
+        10.209514853395062,
+        10.076421039094651
+      ],
+      "intentional_credit_cut": false
+    },
+    {
+      "first_frame": 2401,
+      "seconds": 100.0,
+      "adjacent_pixel_differences": [
+        0.11588139789094651,
+        107.5775061085391,
+        0.005979938271604938
+      ],
+      "intentional_credit_cut": true
+    }
+  ],
+  "credit_native_mean_error": 0.027791642554012345,
+  "exact_credit_lines": [
+    "WHEN THE",
+    "SKY CLEARS.",
+    "The Animated Series.",
+    "2027.",
+    "A Two Truck Productions project."
+  ],
+  "audio_timing_and_fade_checks": [
+    {
+      "global_seconds": [
+        10,
+        11
+      ],
+      "output_rms": 1561.5823210835968,
+      "source_rms": 1562.599579316867,
+      "relative_to_source": 0.9993489962196745,
+      "source_sample_alignment_correlation": 0.9999825675517314
+    },
+    {
+      "global_seconds": [
+        24.5,
+        25.5
+      ],
+      "output_rms": 1325.724037692077,
+      "source_rms": 1327.071451915677,
+      "relative_to_source": 0.9989846709296211,
+      "source_sample_alignment_correlation": 0.9999685627298441
+    },
+    {
+      "global_seconds": [
+        49.5,
+        50.5
+      ],
+      "output_rms": 2053.600267018369,
+      "source_rms": 2055.1434856486703,
+      "relative_to_source": 0.9992490944593028,
+      "source_sample_alignment_correlation": 0.9999785713834128
+    },
+    {
+      "global_seconds": [
+        74.5,
+        75.5
+      ],
+      "output_rms": 2420.946617372359,
+      "source_rms": 2423.098170548313,
+      "relative_to_source": 0.9991120652055681,
+      "source_sample_alignment_correlation": 0.9999823887796226
+    },
+    {
+      "global_seconds": [
+        81.5,
+        82.5
+      ],
+      "output_rms": 2084.537762046021,
+      "source_rms": 2086.455296414831,
+      "relative_to_source": 0.999080960722185,
+      "source_sample_alignment_correlation": 0.999984246152842
+    },
+    {
+      "global_seconds": [
+        89,
+        90
+      ],
+      "output_rms": 2493.8737673735113,
+      "source_rms": 2495.5197407199403,
+      "relative_to_source": 0.9993404286411479,
+      "source_sample_alignment_correlation": 0.9999843882169457
+    },
+    {
+      "global_seconds": [
+        92,
+        93
+      ],
+      "output_rms": 1454.9769299681639,
+      "source_rms": 1934.9763554191688,
+      "relative_to_source": 0.751935250212903
+    },
+    {
+      "global_seconds": [
+        96,
+        97
+      ],
+      "output_rms": 267.6099886222797,
+      "source_rms": 737.0999132721652,
+      "relative_to_source": 0.3630579570065258
+    },
+    {
+      "global_seconds": [
+        99,
+        100
+      ],
+      "output_rms": 7.731569482754887,
+      "source_rms": 105.60169432234504,
+      "relative_to_source": 0.07321444539662947
+    },
+    {
+      "global_seconds": [
+        99.9,
+        100
+      ],
+      "output_rms": 0.0,
+      "source_rms": 12.10839928864808,
+      "relative_to_source": 0.0
+    },
+    {
+      "global_seconds": [
+        100.05,
+        105.95
+      ],
+      "output_rms": 0.0,
+      "source_rms": null,
+      "relative_to_source": null
+    }
+  ],
+  "native_audit": "notes/world_v016/full_native_audit_v037.json",
+  "preserved_prior_files": {
+    "shots/world/WTSC_Painted_World_Trailer_v030.blend": "b68e097922883c9cb409da4d5a999a889be2ffc9768627824087f44745574bb6",
+    "renders/world_v016/WTSC_Painted_World_4K_v030.mp4": "64729abab8e899cf717781f664d82ff1f3b6a8a02afaee82ec947c59f29b6999",
+    "shots/world/WTSC_Knockout_Ending_Editable_v033.blend": "a63d3b6a5780f6347f4f9db5b424709927f0009ba509caaf816657e8e4c0ee7b",
+    "renders/world_v016/WTSC_Knockout_Ending_4K_v033.mp4": "58d0c802e00b147a0074533af0cad61a7f51babaab1c2def348a8665c05ab2ef",
+    "shots/world/WTSC_World_Spatial_Corrections_v035.blend": "c2310b87557e94ce403ac562d3ded61d7e84e34d3047136751c189b0aec9dd1b"
+  },
+  "review_frames": [
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\01_Start.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\02_Village.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\03_Village_Empty.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\04_Woods.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\05_School.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\06_Camp.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\07_Battlefield.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\08_Ruins.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\09_Last_S.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\10_Credits_Start.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_decoded_v037\\11_Credits_Last.png"
+  ],
+  "picture_scope": "All100seconds fresh native4K correctedworld through native4K FontAlpha. No output scaling/interpolation; source paintings mostly1672x941. Same held painterlypair.",
+  "scope": "Technical delivery verification and actualdecodedframe inspection; not final artistic acceptance."
+}

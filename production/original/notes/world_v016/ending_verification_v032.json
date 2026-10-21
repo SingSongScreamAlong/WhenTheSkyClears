@@ -1,0 +1,125 @@
+{
+  "preview": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Knockout_Ending_4K_v032.mp4",
+  "size": 25713640,
+  "sha256": "63145d7075fd4b1b3ab0072ffb799fecf489566068a150c331ac1cec53320183",
+  "frames": 504,
+  "seconds": 21,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "global_range": [
+    82,
+    103
+  ],
+  "native_picture_parts": [
+    [
+      1969,
+      2094
+    ],
+    [
+      2095,
+      2220
+    ],
+    [
+      2221,
+      2346
+    ],
+    [
+      2347,
+      2472
+    ]
+  ],
+  "clean_cached_picture_range": [
+    52,
+    70
+  ],
+  "music_source_range": [
+    82,
+    100
+  ],
+  "music_fade_global": [
+    90,
+    100
+  ],
+  "silent_card_global": [
+    100,
+    103
+  ],
+  "full_decode_pass": true,
+  "metadata": [
+    "Duration: 00:00:21.00, start: 0.000000, bitrate: 9795 kb/s",
+    "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3840x2160 [SAR 1:1 DAR 16:9], 9552 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+    "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 238 kb/s (default)"
+  ],
+  "native_outside_mask_max": 0,
+  "encoded_far_outside_mask_max": 5,
+  "native_master_vs_ending_mean_error": 0.0,
+  "audio_qc": [
+    {
+      "preview_seconds": [
+        0,
+        1
+      ],
+      "rms": 1992.4820353016987,
+      "relative_to_original": 0.998967207583951
+    },
+    {
+      "preview_seconds": [
+        7,
+        8
+      ],
+      "rms": 2493.44196088501,
+      "relative_to_original": 0.999167395953225
+    },
+    {
+      "preview_seconds": [
+        10,
+        11
+      ],
+      "rms": 1454.7176318110958,
+      "relative_to_original": 0.7518012443598899
+    },
+    {
+      "preview_seconds": [
+        14,
+        15
+      ],
+      "rms": 267.5845061611378,
+      "relative_to_original": 0.36302338576227117
+    },
+    {
+      "preview_seconds": [
+        17,
+        18
+      ],
+      "rms": 7.726301805089763,
+      "relative_to_original": 0.07316456288575758
+    },
+    {
+      "preview_seconds": [
+        18.05,
+        20.95
+      ],
+      "rms": 0.0,
+      "relative_to_original": null
+    }
+  ],
+  "prior_deliverables_unchanged": {
+    "shots/world/WTSC_Painted_World_Editable_v031.blend": "ff2158da0174ba6b6ad985f82195d668857d84caded6c71101a7d6ca8f655bc4",
+    "shots/world/WTSC_Painted_World_Trailer_v030.blend": "b68e097922883c9cb409da4d5a999a889be2ffc9768627824087f44745574bb6",
+    "renders/world_v016/WTSC_Painted_World_4K_v030.mp4": "64729abab8e899cf717781f664d82ff1f3b6a8a02afaee82ec947c59f29b6999"
+  },
+  "decoded_stills": [
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\01_start.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\02_WHEN.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\03_THE.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\04_SKY_CLEARS.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\05_last_S.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\06_last_S_fragment.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\07_card_start.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\ending_decoded_v032\\08_card_end.png"
+  ],
+  "visual_scope": "Native glyph alpha and card at4K. Clean cached world52\u201370 fills global82\u2013100 via uniform2x crop; effective picture detail1920x1080. Children held. Only ending preview exported; full103s native edit prepared."
+}

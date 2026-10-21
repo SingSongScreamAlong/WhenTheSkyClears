@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "native_master_view_matches_world": true,
+    "master_120_frames": true
+  },
+  "file_sha256": "989b9a1fb0eba82158419fe2a596b0729180ecadf297db12eea4f74520e4b3c6",
+  "title_clock_samples": [
+    {
+      "frame": 1844,
+      "glyph_location": [
+        -133.07078552246094,
+        -4.477499961853027,
+        0.0
+      ]
+    },
+    {
+      "frame": 1901,
+      "glyph_location": [
+        -137.43397521972656,
+        -4.477499961853027,
+        0.0
+      ]
+    },
+    {
+      "frame": 1918,
+      "glyph_location": [
+        -138.73529052734375,
+        -4.477499961853027,
+        0.0
+      ]
+    }
+  ],
+  "reason": "Matched native review master to source Standard view transform; separately active title scene and world evaluated at each exact frame. Earlier three title_visibility files had stale glyph evaluation and are superseded by title_corrected_clock outputs."
+}

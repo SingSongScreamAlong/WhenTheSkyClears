@@ -1,0 +1,66 @@
+{
+  "completed_utc": "2026-10-17T23:23:40.595085+00:00",
+  "selected_working_revision": "v047g",
+  "result": "Visible head/hand/foreground gains, retained as a working refinement. The trailer is not artistically finished.",
+  "review_method": {
+    "first_review": "Actual native4K key crops, full1901 image, all40 chronological actor samples,12 consecutive turn frames and8 whole-shot samples from v047f.",
+    "followup": "Actual v047g1847/1848 native4K key crops, changed tail24 chronological samples, six turn frames1845..1850 and eight whole-shot samples. Unchanged prefix key images1842/1844/1846 match v047f exactly.",
+    "before_after": "Actual native4K head and lower-ground before/after comparisons.",
+    "limits": "Chronological decoded-frame review and full-file decode; no claim of continuous normal-speed artistic playback or full-trailer acceptance."
+  },
+  "iterations": [
+    {
+      "revision": "v047a",
+      "finding": "New turn drawings improve head readability; added round arm caps look mechanical.",
+      "action": "Caps rejected."
+    },
+    {
+      "revision": "v047b",
+      "finding": "Earlier backward hand silhouettes improve, but late hand correction weakens offered-touch read.",
+      "action": "Limit correction window."
+    },
+    {
+      "revision": "v047c",
+      "finding": "Early direction corrections retained; original later hand orientations restored. Tapered cuff/wrist shapes read cleaner.",
+      "action": "Retained as character foundation."
+    },
+    {
+      "revision": "v047d",
+      "finding": "New bank earth detail and rooted wind wisps improve foreground variety; repeat row remains.",
+      "action": "Inspect the upper ground layers."
+    },
+    {
+      "revision": "v047e",
+      "finding": "Bank alpha change does not solve repeated plants embedded in the lower path paint.",
+      "action": "Do not select; return to v047d and correct the path layer."
+    },
+    {
+      "revision": "v047f",
+      "finding": "Lower path and bank repeats substantially reduced. Full4K movie reveals a hair-shape/texture pop when returning to older reflected profile at1848.",
+      "action": "Generate and register a matching true-left-profile painting."
+    },
+    {
+      "revision": "v047g",
+      "finding": "Matching profile carries the turn style into the late pose, with subtle damped braid settle.",
+      "action": "Selected working checkpoint after native keys and changed-tail review."
+    }
+  ],
+  "improvements": [
+    "Four original imagegen head paintings: right quarter, frontal, left quarter, matching left profile. Original disc is excluded.",
+    "Painted turn exposed on2s at1842..1847, matching profile1848..1920. Editable contour meshes, four native Grease Pencil contour guides and SVG outlines retained.",
+    "Backward early hand silhouettes redirected about fixed wrists; corrections fade out at local67..80 to preserve the late light offered touch. Forearm and cuff outlines tapered.",
+    "Bespoke fixed-projection bank/lower-path paint reduces repeated plant borders and adds quieter, varied soil detail.",
+    "Nine fixed roots with53 native animated blade curves; up to6.38mm sampled tip motion, no root drift."
+  ],
+  "remaining_work": [
+    "Body/shoulder/elbow construction still reads planar and angular. Stumble, weight and recovery need stronger whole-body acting before production propagation.",
+    "Turn is still a quick sequence of replacement drawings; some facial/skin-value variation and secondary hair continuity need further craft review.",
+    "A few clipped lower-path leaf tips/paint transitions remain; foreground is improved, not fully finished.",
+    "Existing FXv003 remains too cloud-like; larger impulse/expansion, ground damage, readable debris landings and depth remain needed.",
+    "FXv013 compact study was inspected but is too small/subdued to replace the main eruption. It remains unaccepted and unintegrated.",
+    "Later hands remain a light offered touch, not a load-bearing clasp. Restart/first new step remains unresolved.",
+    "Other village/woods/school/camp sections have not received this new pass; full trailer remains at preserved v040."
+  ],
+  "artistic_acceptance": false,
+  "full_trailer_propagated": false
+}

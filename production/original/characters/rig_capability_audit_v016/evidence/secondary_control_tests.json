@@ -1,0 +1,38 @@
+[
+  {
+    "control": "braid",
+    "delta_degrees": -5,
+    "max_head_displacement_m": 0.019323620951026715,
+    "head_vertices_without_braid_weight_max_drift_m": 0.0,
+    "max_dress_displacement_m": 0.0,
+    "dress_triangle_orientation_flips": 0,
+    "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+  },
+  {
+    "control": "braid",
+    "delta_degrees": 5,
+    "max_head_displacement_m": 0.019323702093455616,
+    "head_vertices_without_braid_weight_max_drift_m": 0.0,
+    "max_dress_displacement_m": 0.0,
+    "dress_triangle_orientation_flips": 0,
+    "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+  },
+  {
+    "control": "skirt",
+    "delta_degrees": -5,
+    "max_head_displacement_m": 0.0,
+    "head_vertices_without_braid_weight_max_drift_m": 0.0,
+    "max_dress_displacement_m": 0.03560414091619922,
+    "dress_triangle_orientation_flips": 0,
+    "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+  },
+  {
+    "control": "skirt",
+    "delta_degrees": 5,
+    "max_head_displacement_m": 0.0,
+    "head_vertices_without_braid_weight_max_drift_m": 0.0,
+    "max_dress_displacement_m": 0.035604141324913394,
+    "dress_triangle_orientation_flips": 0,
+    "art_acceptance": "OPEN; bounded secondary control test only, not approved hair/cloth motion."
+  }
+]

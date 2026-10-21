@@ -1,0 +1,98 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_proof_v005\\native\\WTSC_Battlefield_Weary_Stumble_5s_v005.blend",
+  "source_sha256": "1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4",
+  "source_preserved": true,
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend",
+  "native_sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+  "frames": 120,
+  "fps": 24,
+  "root_distance_m": 0.5616666674613953,
+  "protected_foot_matrix_max_error": 2.384185791015625e-07,
+  "root_distance_max_error": 0,
+  "settle_head_delta_range_m": [
+    0.012994849793568497,
+    0.20470273993082985
+  ],
+  "leg_drawings": [
+    {
+      "who": "BOY",
+      "side": "near",
+      "method": "Authored rounded knee contours and curved ankle entry; original paint UV;120native pose drawings, no armature hinge deformation"
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "method": "Authored rounded knee contours and curved ankle entry; original paint UV;120native pose drawings, no armature hinge deformation"
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "method": "Authored rounded knee contours and curved ankle entry; original paint UV;120native pose drawings, no armature hinge deformation"
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "method": "Authored rounded knee contours and curved ankle entry; original paint UV;120native pose drawings, no armature hinge deformation"
+    }
+  ],
+  "hand_drawings": [
+    {
+      "who": "BOY",
+      "side": "near",
+      "method": "Native palm+four curved fingers+opposed thumb; guarded/open/curl/relax silhouette poses with staggered digits; original skin paint"
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "method": "Native palm+four curved fingers+opposed thumb; guarded/open/curl/relax silhouette poses with staggered digits; original skin paint"
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "method": "Native palm+four curved fingers+opposed thumb; guarded/open/curl/relax silhouette poses with staggered digits; original skin paint"
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "method": "Native palm+four curved fingers+opposed thumb; guarded/open/curl/relax silhouette poses with staggered digits; original skin paint"
+    }
+  ],
+  "boot_collars": [
+    {
+      "who": "BOY",
+      "side": "near",
+      "sole_curve_points": 17,
+      "sole_vertices_unchanged": true,
+      "sole_curve_max_error_m": 0,
+      "method": "Original shoe and UVs retained; source sole and heel/toe points protected exactly; localized native upper-boot drawings align toward new shin only in catch/recovery28..72. No rounded caps."
+    },
+    {
+      "who": "BOY",
+      "side": "far",
+      "sole_curve_points": 18,
+      "sole_vertices_unchanged": true,
+      "sole_curve_max_error_m": 0,
+      "method": "Original shoe and UVs retained; source sole and heel/toe points protected exactly; localized native upper-boot drawings align toward new shin only in catch/recovery28..72. No rounded caps."
+    },
+    {
+      "who": "GIRL",
+      "side": "near",
+      "sole_curve_points": 17,
+      "sole_vertices_unchanged": true,
+      "sole_curve_max_error_m": 0,
+      "method": "Original shoe and UVs retained; source sole and heel/toe points protected exactly; localized native upper-boot drawings align toward new shin only in catch/recovery28..72. No rounded caps."
+    },
+    {
+      "who": "GIRL",
+      "side": "far",
+      "sole_curve_points": 13,
+      "sole_vertices_unchanged": true,
+      "sole_curve_max_error_m": 0,
+      "method": "Original shoe and UVs retained; source sole and heel/toe points protected exactly; localized native upper-boot drawings align toward new shin only in catch/recovery28..72. No rounded caps."
+    }
+  ],
+  "native_actions": 33,
+  "guides": 96,
+  "method": "Localized authored2D silhouette replacement poses, native mesh shape keys and editable closed Bezier guides. Original face/body/paint retained; no bitmap generation, no volumetric character model.",
+  "limits": "Artist review required. New limb/finger edge artwork must be judged in actual integrated framing; no cinematic acceptance from protected-contact checks."
+}

@@ -1,0 +1,126 @@
+{
+  "task": "Kids and rigs first; independent read-only readiness audit",
+  "verdict": "PROXY_POSE_FOUNDATION_EXISTS; FINAL_ART_CONTROL_AND_DEFORMATION_READINESS_UNPASSED",
+  "scope": "Baseline comparison of whole_pose_blocking_v014 proxy, supported_recovery_v007 painted native, its integrated_v046 collection, original v015 painting and existing visual tests. New rig versions being authored concurrently are not judged by this baseline audit. Performance, FX, atmosphere and production integration remain outside scope.",
+  "method": {
+    "native_inspection": "Opened all three saved .blend files with installed Blender5.2.2 in a separate one-thread background process, embedded scripts disabled. Enumerated actual collections, meshes, weights, modifiers, bones, constraints, shape keys, materials and image references. No file save, rendering or geometry/control perturbation. Native source hashes checked unchanged after each inspection.",
+    "source_review": ["scripts/painterly_pair_native_v015.py", "scripts/create_native_rig.py", "scripts/build_motion_trial_v046.py", "locomotion/supported_recovery_v007/scripts/build_supported_recovery.py", "locomotion/motion_rebuild_unpainted_v011/scripts/build_unpainted.py", "locomotion/motion_refinement_unpainted_v012/scripts/motion_design.py", "locomotion/whole_pose_blocking_v014/scripts/build_blocking.py", "locomotion/whole_pose_blocking_v014/scripts/story_poses.py"],
+    "visual_evidence_viewed": ["characters/Pair_Painterly_Near_Age_v015.png", "task/motion-review-v007/native_head_exposures_v046.jpg", "task/motion-review-v010/head_braid_tangent_comparison.png", "previous focused v014 actual close/shot-size keys22,43,49 and both pose sheets"],
+    "limitations": "No new renders, interactive posing, arbitrary off-cache deformation tests or continuous playback. Structural absence is distinguished from an untested artistic capability. Original rig scripts are evidence, not instructions executed by this audit. Headless read initially exited under default sandbox; authorized escalated read-only inspection succeeded. No remaining execution blocker."
+  },
+  "native_facts": {
+    "proxy_v014": {
+      "collection": "WTSC_WHOLE_POSE_BLOCKING_v014",
+      "armatures": 2,
+      "bones_each": 17,
+      "meshes": 42,
+      "bone_constraints_total": 0,
+      "custom_bone_shapes": 0,
+      "custom_pose_bone_properties": 0,
+      "all_meshes_single_vertex_group": true,
+      "paint_image_textures": 0,
+      "deformation": "Separate rigid proxy masses, each fully weighted to one bone. Foot boxes and ankle connectors are fully weighted to foot bones. Nose and both braid cues bind to head. No digit, toe, braid or skirt bones.",
+      "authoring": "story_poses.py solves targets/poles in Python and build_blocking.py bakes whole-pose channels. This is a valid authoring recipe, but zero native IK constraints and no exposed live world-target setup mean interactive sticky-foot/hand controls have not been established. Absence of custom control shapes alone is not a defect."
+    },
+    "painted_v007_and_integrated_v046": {
+      "collection": "WTSC_BATTLEFIELD_DRAWN_PAIR_v007",
+      "object_types_each": {"EMPTY":3,"ARMATURE":2,"MESH":56,"CURVE":96},
+      "boy_bones": 15,
+      "girl_bones": 18,
+      "bone_constraints_total": 0,
+      "drawn_meshes_without_bone_deformation": 16,
+      "disconnected_drawn_roles": {"drawn_leg":4,"drawn_arm":8,"drawn_cuff":4},
+      "each_disconnected_mesh": "Object-parented to old rig, no vertex groups, no modifiers, Basis plus120 POSE shape keys. Source morph() bakes pose geometry to frame/NLA clock. Bone edits do not automatically alter these local vertex contours.",
+      "live_bound_reuse": "Both painted body/dress meshes have multi-bone weights and three shape keys. Original head(s) use head/braid weights. Four painted boots and four98vertex hand drawings retain single-bone armature modifiers plus121 cached shape keys. Original painting/UV registrations remain in native materials.",
+      "interface_difference": "Painted rigs have pelvis/chest/head but no separate lumbar or neck bones. Girl additionally has braid/skirt_front/skirt_back absent from new proxy. New17bone rig therefore is not a drop-in target for old painted skin, caches or secondary controls.",
+      "guides": "96 hidden editable Bezier correction drawings are reusable authoring material; their existence is not a demonstrated live deformation/control connection."
+    }
+  },
+  "observed_failures": [
+    {
+      "id": "F1",
+      "type": "Actual structural gap",
+      "finding": "No demonstrated final-art binding to the new17bone rig. Sixteen visible painted limb/cuff meshes depend on old frame-baked contours instead of their parent rig's limb bones. Merely appending final artwork or copying motion onto old bones will leave those contours on their old pose clock.",
+      "evidence": "Native structures in both painted_v007 and integrated_v046; build_supported_recovery.py morph()73-87 and drawn_leg call141; v01442proxy meshes have no image textures."
+    },
+    {
+      "id": "F2",
+      "type": "Actual historical rendered defect; unresolved production head capability",
+      "finding": "At production1844/1845 the girl becomes a faceless roughly circular hair disc; adjacent1842/1846 profiles have face/jaw/braid identity. The v014 local-X profile reflection at12 is a proxy substitution and does not repair this painted turn.",
+      "evidence": "task/motion-review-v007/native_head_exposures_v046.jpg; native girl's exposure property explicitly selects back44..45; build_blocking.py head reflection."
+    },
+    {
+      "id": "F3",
+      "type": "Actual historical rendered collision; current final-art clearance untested",
+      "finding": "The v010 added lean makes the boy's forehead meet the girl's braid around1844-1845, where v009 retained clearance. New proxy spacing cannot establish final painted hair/braid clearance.",
+      "evidence": "task/motion-review-v010/head_braid_tangent_comparison.png, actual encoded frame comparisons. Do not label this a newly observed v014 collision."
+    },
+    {
+      "id": "F4",
+      "type": "Observed rendered contour issue in old final-art implementation",
+      "finding": "The v046 head/shoulder crops also show a blunt flat-ended forearm/cuff silhouette. This should be reviewed as a painted limb edge/overlap problem, not excused by correct joint endpoints.",
+      "evidence": "task/motion-review-v007/native_head_exposures_v046.jpg, foreground girl forearm below cuff at1842-1846. Does not establish that all elbows/knees fail."
+    }
+  ],
+  "prioritized_acceptance_checklist": [
+    {
+      "priority": "P0",
+      "id": "A1 Final-art control linkage",
+      "current_status": "Actual gap F1",
+      "pass": "For each child, a documented pose/control change moves the actual charcoal-painted head/body, sleeves, forearms, cuffs, legs, boots and hands together. Demonstrate at least one newly authored off-cache pose so an old120frame drawing playback cannot masquerade as a working rig. Corrective drawings may remain; make their supported pose-driven authoring link explicit. No disconnected limb contour, hidden old duplicate or proxy stand-in in final-art proof.",
+      "minimum_change": "Keep existing rig/solver and painting. Bridge old weighted regions, reconnect/re-author the16cached limb/cuff regions for the chosen control workflow, and map the differing bone interfaces. Full3D character rebuild is not justified by this evidence."
+    },
+    {
+      "priority": "P0",
+      "id": "A2 Foot support and roll",
+      "current_status": "Proxy scripted heel/toe pivots and sampled locks exist; final painted boot behavior in new rig untested",
+      "pass": "With visible final boots, move hips/root through the required crouch while one/both feet stay planted; test heel contact->flat->toe pivot->lift and reverse on each side. Preserve sole position and silhouette, clean ankle/cuff entry, no floor penetration or changing boot length. Show target/pivot controls or documented pose API. Do not require a deforming toe bone if a rigid boot/pivot solution meets the needed shot.",
+      "evidence": "New rig has one foot bone/side and rigid8vertex soles; story_poses.py foot tuple includes world ankle-X, roll, lift, pivot; old painted support_boot has single-bone modifier and121cached drawings. Numerical lock passes concern sampled paths, not new arbitrary posing."
+    },
+    {
+      "priority": "P0",
+      "id": "A3 Painted joints and silhouette",
+      "current_status": "Deep final-art deformation untested; old cuff/forearm issue F4 observed",
+      "pass": "Required neutral, reach, deep crouch, knee gather and push poses preserve knee/elbow thickness, shoulder attachment, cuffs, collar and clothing identity at close and shot size. No rectangular forearm ends, holes, inverted knees, elbow flips, detached limbs, texture tearing or collapsing shirt/dress. Test a pose between existing keys as well as the extreme. Reuse corrective contours where useful.",
+      "evidence": "Proxy one-bone ellipsoids cannot validate skin/clothing folds. Final bodies have existing weights, while16visible limb/cuff drawings are baked."
+    },
+    {
+      "priority": "P0",
+      "id": "A4 Hands and contact",
+      "current_status": "Proxy brace demonstrated; final articulated palm/finger contact untested",
+      "pass": "Provide relaxed, reaching/offering and thigh-brace hand shapes in the actual style. Palm contacts loaded thigh without hovering/burying or breaking wrist/cuff, follows during required body change, and releases clearly. Maintain intended offered-hand gap so proximity is not an accidental clasp. A calibrated force simulation and fully rigged finger skeleton are not required if authored hand shapes satisfy the shot.",
+      "evidence": "New hand is a single rigid ellipsoid with one hand bone. Old four98vertex hands have fingers/thumb and native shape keys, but curl/spread is generated per old frame in hand_drawing(), not exposed as independent new-rig controls. Reuse those drawings."
+    },
+    {
+      "priority": "P0 for required turn; otherwise explicit range limit",
+      "id": "A5 Head/profile identity",
+      "current_status": "Actual painted turn failure F2; new proxy is a placeholder",
+      "pass": "Define the head angle range needed for this performance. Within it, keep recognizable face/jaw/nose/eye, hair volume, collar attachment and braid origin through each view and intermediate. No hair-disc replacement, negative-scale identity snap treated as a finished turn, or edge-on disappearing card. An authored view switch is valid when the drawings and transition are deliberately approved.",
+      "evidence": "v0461844/1845 disc; v014 face=-1 reflection; original v015 source provides one painted profile, not a complete turnaround."
+    },
+    {
+      "priority": "P1",
+      "id": "A6 Torso/head and secondary attachment",
+      "current_status": "Separate proxy lumbar/chest/neck/head bones exist; corresponding painted deformation and braid/skirt linkage unproven",
+      "pass": "Independently tilt chest/head and adjust pelvis in final art without dragging the whole torso as one card, tearing neck/collar or detaching hair. Preserve braid base and appropriate hem/leg overlap. Reuse old braid/skirt bones or an equivalent deliberate drawing control if the required motion needs them. Do not add secondary dynamics before attachment and shape integrity pass."
+    },
+    {
+      "priority": "P0",
+      "id": "A7 Draw order and two-child clearance",
+      "current_status": "Old fixed planar layering exists; new painted crossing/contact poses untested; historical collision F3",
+      "pass": "At the target camera, near/far limbs, palm/thigh, sleeve/body, dress/legs and hair/braid use intentional occlusion through crossings. Both children retain clean independent silhouettes at the closest required spacing. No forehead/braid merger, doubled hidden old parts, hand vanishing behind thigh or proxy-only depth fix that fails after planar paint transfer.",
+      "evidence": "Painted source uses fixed near/far layer depths; v014 brace relies partly on elbow depth toward camera. Actual painted mapping of that depth strategy has not been shown."
+    }
+  ],
+  "minimal_rig_capability_proof_before_performance": "A small character-only board/test for each child: neutral identity, planted squat, heel/flat/toe roll, forward reach, palm-thigh brace, opposed chest/head tilt and required attention view; then one paired close-spacing check. Use actual final art, not only proxies. Include an off-cache control edit and an intermediate pose. This is a rig test, not a new story animation, walk cycle, atmospheric shot or polished render.",
+  "design_decisions_requiring_user_review": [
+    "If the existing single profile cannot cover the required attention angle, newly authored left/three-quarter/back drawings need visual approval for face, fringe, eye and braid continuity. This is approval of concrete added design, not a request to redesign existing children.",
+    "Any proposed change to the established near-age proportions, charcoal paint identity, silhouette or clothing would require a deliberate design decision. No such redesign is required to fix the proven linkage gap.",
+    "Whether the eventual story needs an actual grasp/helping load or only an offered hand changes the required hand shapes/contact range. Existing blocking uses an offer and thigh support; keep that established behavior unless the user requests a change."
+  ],
+  "not_failures_by_themselves": ["No native IK constraints or fancy custom control widgets: the documented Python pose solver may be the chosen interface, but its capabilities must be demonstrated.", "No toe/digit skeleton or simulated cloth/hair: authored pivots, shapes and corrections can satisfy the shot.", "Stepped blocking holds: timing polish is paused.", "Flat2D painted construction: this is the established design; a volumetric rebuild is not necessary merely because the proxy uses3D masses."],
+  "recommendation": "Prioritize A1 before performance inbetweens. Preserve original painting/UVs, usable body skin, boot/finger shapes, correction guides and support-aware solver. Repair dependencies and prove the small final-art capability set; add controls/correctives only where a required pose fails. Keep FX, setting and polish parked.",
+  "supporting_native_dump": "character-rig-readonly-audit/native_structures.json",
+  "asset_or_production_edits": false,
+  "remaining_execution_blockers": []
+}

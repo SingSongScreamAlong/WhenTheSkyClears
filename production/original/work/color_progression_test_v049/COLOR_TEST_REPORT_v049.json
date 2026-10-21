@@ -1,0 +1,88 @@
+{
+  "native": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\color_progression_study_v049\\WTSC_Three_Still_Color_Test_v049b.blend",
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\world_art_v048d\\WTSC_World_Art_Checkpoint_v048d.blend",
+  "source_sha256": "fe3270155538a44cb08ef3ee2c37f25461d292d5a9f10f4d2406e65822df3e5a",
+  "source_unchanged": true,
+  "stages": [
+    {
+      "frame": 241,
+      "label": "peaceful",
+      "world_saturation": 0.95,
+      "child_saturation": 1.0,
+      "child_warmth": 0.75
+    },
+    {
+      "frame": 1201,
+      "label": "transition",
+      "world_saturation": 0.22,
+      "child_saturation": 1.0,
+      "child_warmth": 0.75
+    },
+    {
+      "frame": 1849,
+      "label": "war_zone",
+      "world_saturation": 0.08,
+      "child_saturation": 0.06,
+      "child_warmth": 0.04
+    }
+  ],
+  "world_materials": [
+    "COLOR TEST v049 | WORLD | v026 | Continuous countryside paint | fixed land, cloud wind only",
+    "COLOR TEST v049 | WORLD | v012 | Painted material | Painted village",
+    "COLOR TEST v049 | WORLD | v012 | Painted material | Oak frame and near bank",
+    "COLOR TEST v049 | WORLD | v048 | warm morning | v016 | Village continues | abandoned",
+    "COLOR TEST v049 | WORLD | v016 | Woods | far silver canopy paint",
+    "COLOR TEST v049 | WORLD | v016 | Woods | near rooted oaks paint",
+    "COLOR TEST v049 | WORLD | v048 | overcast plaster | v016 | School | broken windows and plaster",
+    "COLOR TEST v049 | WORLD | v039 | Camp paint | shaped cool key and localized warm source",
+    "COLOR TEST v049 | WORLD | v048 | storm clearing | v016 | Battlefield | broken village line",
+    "COLOR TEST v049 | WORLD | v048 | storm clearing | v016 | Ruins | distant ash street",
+    "COLOR TEST v049 | WORLD | v048b | continuous path | fixed earth-only paint joins",
+    "COLOR TEST v049 | WORLD | v039 | Foreground bank | stable paint variation",
+    "COLOR TEST v049 | WORLD | v030 | Purpose-painted high crown oak",
+    "COLOR TEST v049 | WORLD | v016 | Painted grass ink",
+    "COLOR TEST v049 | WORLD | v036 | Charred rough logs and stones",
+    "COLOR TEST v049 | WORLD | v048b | peaceful original painted earth",
+    "COLOR TEST v049 | WORLD | v048 | limestone crevice",
+    "COLOR TEST v049 | WORLD | v048b | transition original painted earth",
+    "COLOR TEST v049 | WORLD | v048 | slate fracture shadow",
+    "COLOR TEST v049 | WORLD | v048b | war_zone original painted earth"
+  ],
+  "child_material": "COLOR TEST v049 | CHILDREN | restrained umber to charcoal",
+  "warmth_multiplier": [
+    1.55,
+    1.03,
+    0.59
+  ],
+  "new_geometry": false,
+  "alpha_changed": false,
+  "new_hand_contact": false,
+  "residual_accent": "None added; war preset tends to neutral charcoal.",
+  "status": "TEST ONLY; no full-film propagation or approved transition curve",
+  "native_sha256": "761c68f7b2122654ea0637ef833f4d2e347b5337d99c14ceb5cff0719bc12637",
+  "preset_curves_constant": 20,
+  "actual_render_dimensions": [
+    3840,
+    2160
+  ],
+  "render_samples": 32,
+  "visual_assessment": "Warm restrained umber remains readable; school world loses color before children; war drains children to near-neutral charcoal. No residual accent added. Test only, no new contact or geometry.",
+  "comparison": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\color_progression_study_v049\\WTSC_Color_Progression_Test_v049_Current_vs_Proposed.jpg",
+  "baseline_frames": [
+    {
+      "frame": 241,
+      "seconds": 10.0,
+      "file": "WTSC_LOCAL_WORKSPACE\\work\\world_art_v048d\\native_4k_after\\WTSC_v048d_peaceful_241_4K.png"
+    },
+    {
+      "frame": 1201,
+      "seconds": 50.0,
+      "file": "WTSC_LOCAL_WORKSPACE\\work\\world_art_v048d\\native_4k_after\\WTSC_v048d_transition_1201_4K.png"
+    },
+    {
+      "frame": 1849,
+      "seconds": 77.0,
+      "file": "WTSC_LOCAL_WORKSPACE\\work\\world_art_v048d\\native_4k_after\\WTSC_v048d_war_zone_1849_4K.png"
+    }
+  ]
+}

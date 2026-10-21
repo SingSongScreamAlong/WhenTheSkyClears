@@ -1,0 +1,56 @@
+{
+  "native_source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\native\\WTSC_Face_Hand_Finish_v050.blend": "1721ae5ce9146e9d0379419d153c64ef09a122074a972a8e4bd68fb1953d176e",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\coat_fluidity_v051\\native\\WTSC_Controlled_Fluid_Coat_v051.blend": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f"
+  },
+  "movies": [
+    {
+      "file_name": "WTSC_Controlled_Fluid_Coat_v051_Actual_NormalSpeed.mp4",
+      "bytes": 3707000,
+      "sha256": "dedbd1cdf40af99de5ab0008817e218256aad6d24603d2c454de2e583009e934",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1280,
+        800
+      ],
+      "under_20_MB": true,
+      "same_v050_gait": true
+    },
+    {
+      "file_name": "WTSC_v050_vs_v051_Cloth_Only_Same_Gait.mp4",
+      "bytes": 4981797,
+      "sha256": "86604986ea64856e3646cf01ce451ba3df71c63564ef2b8ba8defec2407f6e21",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true,
+      "same_v050_gait": true
+    },
+    {
+      "file_name": "WTSC_v050_vs_v051_Coat_Detail_NormalSpeed.mp4",
+      "bytes": 1958232,
+      "sha256": "c494fa7b78186ca8f43bb200fa0927f323e8cc55dc352f3a1ca83a43de112f58",
+      "decoded_frames": 129,
+      "fps": 30,
+      "duration_seconds": 4.3,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true,
+      "same_v050_gait": true
+    }
+  ],
+  "all_encoded_frames_decoded": true,
+  "video_interpolation": false,
+  "looped_pngs_instead_of_native_timeline_render": false,
+  "body_timing_changed": false,
+  "visual_review_material": "All32 decoded first-cycle integer poses,12 full A/B frames over8cycles and12 native coat-camera A/B frames over4cycles. Continuous player playback not observed.",
+  "artistic_scope": "Cloth contribution isolated. Numerical contacts and successful decoding do not establish natural performance or artistic approval."
+}

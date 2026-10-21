@@ -1,0 +1,76 @@
+[
+  {
+    "name": "new",
+    "parameters": [
+      {
+        "name": "socket_type",
+        "type": "ENUM",
+        "enum": [
+          "FLOAT",
+          "INT",
+          "BOOLEAN",
+          "VECTOR",
+          "RGBA",
+          "ROTATION",
+          "MATRIX",
+          "STRING",
+          "MENU",
+          "SHADER",
+          "OBJECT",
+          "IMAGE",
+          "GEOMETRY",
+          "COLLECTION",
+          "TEXTURE",
+          "MATERIAL",
+          "BUNDLE",
+          "CLOSURE",
+          "FONT",
+          "SCENE",
+          "TEXT",
+          "MASK",
+          "SOUND",
+          "INT_VECTOR"
+        ]
+      },
+      {
+        "name": "name",
+        "type": "STRING",
+        "enum": []
+      },
+      {
+        "name": "item",
+        "type": "POINTER",
+        "enum": []
+      }
+    ]
+  },
+  {
+    "name": "remove",
+    "parameters": [
+      {
+        "name": "item",
+        "type": "POINTER",
+        "enum": []
+      }
+    ]
+  },
+  {
+    "name": "clear",
+    "parameters": []
+  },
+  {
+    "name": "move",
+    "parameters": [
+      {
+        "name": "from_index",
+        "type": "INT",
+        "enum": []
+      },
+      {
+        "name": "to_index",
+        "type": "INT",
+        "enum": []
+      }
+    ]
+  }
+]

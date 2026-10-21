@@ -1,0 +1,18 @@
+{
+  "motion_scene": "FX_MOTION_v002 | real shot plate + animated native FX",
+  "frames": [
+    1795,
+    1890
+  ],
+  "fps": 24,
+  "pixels": [
+    1920,
+    1080
+  ],
+  "background": "Real project camera, scenery and characters held at1825 for FX evaluation. Not a locomotion or full-trailer integration test.",
+  "occlusion": "Original native foreground alpha captured once for this fixed camera; real animated FX masked by it.",
+  "light": "Native spatial receiver response captured at peak, modulated with the same source time/flicker expression; not a global overlay.",
+  "debris": "Refined smaller rough3D stone with actual weighted trajectories and cool diffuse fill.",
+  "smoke": "Detailed original paint, subdivided native pinned flow, UV advection and shader cooling;2.5D rather than fluid simulation.",
+  "source_editing": "No production file modified."
+}

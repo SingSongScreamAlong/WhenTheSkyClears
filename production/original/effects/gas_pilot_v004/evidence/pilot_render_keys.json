@@ -1,0 +1,1441 @@
+{
+  "frames": [
+    {
+      "frame": 12,
+      "equivalent_v003_frame": 1835,
+      "density": {
+        "cells": 41040,
+        "max": 0.81689453125,
+        "sum": 287.5807290673256,
+        "positive_cells": 2198
+      },
+      "render_seconds": 2.845274400024209
+    },
+    {
+      "frame": 36,
+      "equivalent_v003_frame": 1859,
+      "density": {
+        "cells": 41040,
+        "max": 0.10028076171875,
+        "sum": 381.96419328451157,
+        "positive_cells": 15221
+      },
+      "render_seconds": 0.4644694000016898
+    },
+    {
+      "frame": 64,
+      "equivalent_v003_frame": 1887,
+      "density": {
+        "cells": 41040,
+        "max": 0.0192718505859375,
+        "sum": 201.44852077960968,
+        "positive_cells": 33425
+      },
+      "render_seconds": 0.4872965000104159
+    }
+  ],
+  "wall_seconds": 3.8186976999859326,
+  "renderer": "Eevee32samples",
+  "pixels": [
+    1920,
+    1080
+  ],
+  "particle_support": {
+    "ParticleSettings": true,
+    "particle_system_add": true
+  },
+  "method": "Actual native density volume, zero emission/blackbody. Local preview shading lights only, no production pass.",
+  "ParticleSettings_properties": {
+    "rna_type": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "RNA type definition"
+    },
+    "name": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Unique data-block ID name (within a same type and library)"
+    },
+    "name_full": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Unique data-block ID name, including library one if any"
+    },
+    "id_type": {
+      "type": "ENUM",
+      "enum": [
+        "ACTION",
+        "ARMATURE",
+        "BRUSH",
+        "CACHEFILE",
+        "CAMERA",
+        "COLLECTION",
+        "CURVE",
+        "CURVES",
+        "FONT",
+        "GREASEPENCIL",
+        "GREASEPENCIL_V3",
+        "IMAGE",
+        "KEY",
+        "LATTICE",
+        "LIBRARY",
+        "LIGHT",
+        "LIGHT_PROBE",
+        "LINESTYLE",
+        "MASK",
+        "MATERIAL",
+        "MESH",
+        "META",
+        "MOVIECLIP",
+        "NODETREE",
+        "OBJECT",
+        "PAINTCURVE",
+        "PALETTE",
+        "PARTICLE",
+        "POINTCLOUD",
+        "SCENE",
+        "SCREEN",
+        "SOUND",
+        "SPEAKER",
+        "TEXT",
+        "TEXTURE",
+        "VOLUME",
+        "WINDOWMANAGER",
+        "WORKSPACE",
+        "WORLD"
+      ],
+      "description": "Type identifier of this data-block"
+    },
+    "session_uid": {
+      "type": "INT",
+      "enum": [],
+      "description": "A session-wide unique identifier for the data block that remains the same across renames and internal reallocations, unchanged when reloading the file"
+    },
+    "is_evaluated": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Whether this ID is runtime-only, evaluated data-block, or actual data from .blend file"
+    },
+    "original": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Actual data-block from .blend file (Main database) that generated that evaluated one"
+    },
+    "users": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of times this data-block is referenced"
+    },
+    "use_fake_user": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Save this data-block even if it has no users"
+    },
+    "use_extra_user": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Indicates whether an extra user is set or not (mainly for internal/debug usages)"
+    },
+    "is_embedded_data": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "This data-block is not an independent one, but is actually a sub-data of another ID (typical example: root node trees or master collections)"
+    },
+    "is_linked_packed": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "This data-block is linked and packed into the .blend file"
+    },
+    "is_missing": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "This data-block is a place-holder for missing linked data (i.e. it is [an override of] a linked data that could not be found anymore)"
+    },
+    "is_runtime_data": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "This data-block is runtime data, i.e. it won't be saved in .blend file. Note that e.g. evaluated IDs are always runtime, so this value is only editable for data-blocks in Main data-base."
+    },
+    "is_editable": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "This data-block is editable in the user interface. Linked data-blocks are not editable, except if they were loaded as editable assets."
+    },
+    "tag": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Tools can use this to tag data for their own purposes (initial state is undefined)"
+    },
+    "is_library_indirect": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Is this ID block linked indirectly"
+    },
+    "library": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Library file the data-block is linked from"
+    },
+    "library_weak_reference": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Weak reference to a data-block in another library .blend file (used to re-use already appended data instead of appending new copies)"
+    },
+    "asset_data": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Additional data for an asset data-block"
+    },
+    "override_library": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Library override data"
+    },
+    "preview": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Preview image and icon of this data-block (always None if not supported for this type of data)"
+    },
+    "texture_slots": {
+      "type": "COLLECTION",
+      "enum": [],
+      "description": "Texture slots defining the mapping and influence of textures"
+    },
+    "active_texture": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Active texture slot being displayed"
+    },
+    "active_texture_index": {
+      "type": "INT",
+      "enum": [],
+      "description": "Index of active texture slot"
+    },
+    "is_fluid": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particles were created by a fluid simulation"
+    },
+    "use_react_start_end": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Give birth to unreacted particles eventually"
+    },
+    "use_react_multiple": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "React multiple times"
+    },
+    "use_regrow_hair": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Regrow hair for each frame"
+    },
+    "show_unborn": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show particles before they are emitted"
+    },
+    "use_dead": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show particles after they have died"
+    },
+    "use_emit_random": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Emit in random order of elements"
+    },
+    "use_even_distribution": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use even distribution from faces based on face areas or edge lengths"
+    },
+    "use_die_on_collision": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particles die when they collide with a deflector object"
+    },
+    "use_size_deflect": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use particle's size in deflection"
+    },
+    "use_rotations": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Calculate particle rotations"
+    },
+    "use_dynamic_rotation": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particle rotations are affected by collisions and effectors"
+    },
+    "use_multiply_size_mass": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Multiply mass by particle size"
+    },
+    "use_advanced_hair": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use full physics calculations for growing hair"
+    },
+    "lock_boids_to_surface": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Constrain boids to a surface"
+    },
+    "use_hair_bspline": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Interpolate hair using B-Splines"
+    },
+    "invert_grid": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Invert what is considered object and what is not"
+    },
+    "hexagonal_grid": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Create the grid in a hexagonal pattern"
+    },
+    "apply_effector_to_children": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Apply effectors to children"
+    },
+    "create_long_hair_children": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Calculate children that suit long hair well"
+    },
+    "apply_guide_to_children": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": ""
+    },
+    "use_self_effect": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particle effectors affect themselves"
+    },
+    "type": {
+      "type": "ENUM",
+      "enum": [
+        "EMITTER",
+        "HAIR"
+      ],
+      "description": "Particle type"
+    },
+    "emit_from": {
+      "type": "ENUM",
+      "enum": [
+        "VERT",
+        "FACE",
+        "VOLUME"
+      ],
+      "description": "Where to emit particles from"
+    },
+    "distribution": {
+      "type": "ENUM",
+      "enum": [
+        "JIT",
+        "RAND",
+        "GRID"
+      ],
+      "description": "How to distribute particles on selected element"
+    },
+    "physics_type": {
+      "type": "ENUM",
+      "enum": [
+        "NO",
+        "NEWTON",
+        "KEYED",
+        "BOIDS",
+        "FLUID"
+      ],
+      "description": "Particle physics type"
+    },
+    "rotation_mode": {
+      "type": "ENUM",
+      "enum": [
+        "NONE",
+        "NOR",
+        "NOR_TAN",
+        "VEL",
+        "GLOB_X",
+        "GLOB_Y",
+        "GLOB_Z",
+        "OB_X",
+        "OB_Y",
+        "OB_Z"
+      ],
+      "description": "Particle orientation axis (does not affect Explode modifier's results)"
+    },
+    "angular_velocity_mode": {
+      "type": "ENUM",
+      "enum": [
+        "NONE",
+        "VELOCITY",
+        "HORIZONTAL",
+        "VERTICAL",
+        "GLOBAL_X",
+        "GLOBAL_Y",
+        "GLOBAL_Z",
+        "RAND"
+      ],
+      "description": "What axis is used to change particle rotation with time"
+    },
+    "react_event": {
+      "type": "ENUM",
+      "enum": [
+        "DEATH",
+        "COLLIDE",
+        "NEAR"
+      ],
+      "description": "The event of target particles to react on"
+    },
+    "show_guide_hairs": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show guide hairs"
+    },
+    "show_hair_grid": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show hair simulation grid"
+    },
+    "show_velocity": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show particle velocity"
+    },
+    "show_size": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show particle size"
+    },
+    "show_health": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Display boid health"
+    },
+    "use_absolute_path_time": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Path timing is in absolute frames"
+    },
+    "use_parent_particles": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Render parent particles"
+    },
+    "show_number": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Show particle number"
+    },
+    "use_collection_pick_random": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Pick objects from collection randomly"
+    },
+    "use_collection_count": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use object multiple times in the same collection"
+    },
+    "use_global_instance": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use object's global coordinates for duplication"
+    },
+    "use_rotation_instance": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use object's rotation for duplication (global x-axis is aligned particle rotation axis)"
+    },
+    "use_scale_instance": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use object's scale for duplication"
+    },
+    "use_render_adaptive": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Display steps of the particle path"
+    },
+    "use_velocity_length": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Multiply line length by particle speed"
+    },
+    "use_whole_collection": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use whole collection at once"
+    },
+    "use_strand_primitive": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use the strand primitive for rendering"
+    },
+    "display_method": {
+      "type": "ENUM",
+      "enum": [
+        "NONE",
+        "RENDER",
+        "DOT",
+        "CIRC",
+        "CROSS",
+        "AXIS"
+      ],
+      "description": "How particles are displayed in viewport"
+    },
+    "render_type": {
+      "type": "ENUM",
+      "enum": [
+        "NONE",
+        "HALO",
+        "LINE",
+        "PATH",
+        "OBJECT",
+        "COLLECTION"
+      ],
+      "description": "How particles are rendered"
+    },
+    "display_color": {
+      "type": "ENUM",
+      "enum": [
+        "NONE",
+        "MATERIAL",
+        "VELOCITY",
+        "ACCELERATION"
+      ],
+      "description": "Display additional particle data as a color"
+    },
+    "display_size": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Size of particles on viewport"
+    },
+    "child_type": {
+      "type": "ENUM",
+      "enum": [
+        "NONE",
+        "SIMPLE",
+        "INTERPOLATED"
+      ],
+      "description": "Create child particles"
+    },
+    "display_step": {
+      "type": "INT",
+      "enum": [],
+      "description": "How many steps paths are displayed with (power of 2)"
+    },
+    "render_step": {
+      "type": "INT",
+      "enum": [],
+      "description": "How many steps paths are rendered with (power of 2)"
+    },
+    "hair_step": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of hair segments"
+    },
+    "bending_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Random stiffness of hairs"
+    },
+    "keys_step": {
+      "type": "INT",
+      "enum": [],
+      "description": ""
+    },
+    "adaptive_angle": {
+      "type": "INT",
+      "enum": [],
+      "description": "How many degrees path has to curve to make another render segment"
+    },
+    "adaptive_pixel": {
+      "type": "INT",
+      "enum": [],
+      "description": "How many pixels path has to cover to make another render segment"
+    },
+    "display_percentage": {
+      "type": "INT",
+      "enum": [],
+      "description": "Percentage of particles to display in 3D view"
+    },
+    "material": {
+      "type": "INT",
+      "enum": [],
+      "description": "Index of material slot used for rendering particles"
+    },
+    "material_slot": {
+      "type": "ENUM",
+      "enum": [
+        "DEFAULT"
+      ],
+      "description": "Material slot used for rendering particles"
+    },
+    "integrator": {
+      "type": "ENUM",
+      "enum": [
+        "EULER",
+        "VERLET",
+        "MIDPOINT",
+        "RK4"
+      ],
+      "description": "Algorithm used to calculate physics, from the fastest to the most stable and accurate: Midpoint, Euler, Verlet, RK4"
+    },
+    "kink": {
+      "type": "ENUM",
+      "enum": [
+        "NO",
+        "CURL",
+        "RADIAL",
+        "WAVE",
+        "BRAID",
+        "SPIRAL"
+      ],
+      "description": "Type of periodic offset on the path"
+    },
+    "kink_axis": {
+      "type": "ENUM",
+      "enum": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "description": "Which axis to use for offset"
+    },
+    "color_maximum": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Maximum length of the particle color vector"
+    },
+    "frame_start": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Frame number to start emitting particles"
+    },
+    "frame_end": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Frame number to stop emitting particles"
+    },
+    "lifetime": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Life span of the particles"
+    },
+    "lifetime_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Give the particle life a random variation"
+    },
+    "time_tweak": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "A multiplier for physics timestep (1.0 means one frame = 1/25 seconds)"
+    },
+    "timestep": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "The simulation timestep per frame (seconds per frame)"
+    },
+    "use_adaptive_subframes": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Automatically set the number of subframes"
+    },
+    "subframes": {
+      "type": "INT",
+      "enum": [],
+      "description": "Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))"
+    },
+    "courant_target": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "The relative distance a particle can move before requiring more subframes (target Courant number); 0.01 to 0.3 is the recommended range"
+    },
+    "jitter_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of jitter applied to the sampling"
+    },
+    "effect_hair": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Hair stiffness for effectors"
+    },
+    "count": {
+      "type": "INT",
+      "enum": [],
+      "description": "Total number of particles"
+    },
+    "userjit": {
+      "type": "INT",
+      "enum": [],
+      "description": "Emission locations per face (0 = automatic)"
+    },
+    "grid_resolution": {
+      "type": "INT",
+      "enum": [],
+      "description": "The resolution of the particle grid"
+    },
+    "grid_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Add random offset to the grid locations"
+    },
+    "effector_amount": {
+      "type": "INT",
+      "enum": [],
+      "description": "How many particles are effectors (0 is all particles)"
+    },
+    "normal_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Let the surface normal give the particle a starting velocity"
+    },
+    "object_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Let the object give the particle a starting velocity"
+    },
+    "factor_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Give the starting velocity a random variation"
+    },
+    "particle_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Let the target particle give the particle a starting velocity"
+    },
+    "tangent_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Let the surface tangent give the particle a starting velocity"
+    },
+    "tangent_phase": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Rotate the surface tangent"
+    },
+    "reactor_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Let the vector away from the target particle's location give the particle a starting velocity"
+    },
+    "object_align_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Let the emitter object orientation give the particle a starting velocity"
+    },
+    "angular_velocity_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Angular velocity amount (in radians per second)"
+    },
+    "phase_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Rotation around the chosen orientation axis"
+    },
+    "rotation_factor_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Randomize particle orientation"
+    },
+    "phase_factor_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Randomize rotation around the chosen orientation axis"
+    },
+    "hair_length": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Length of the hair"
+    },
+    "mass": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Mass of the particles"
+    },
+    "particle_size": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "The size of the particles"
+    },
+    "size_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Give the particle size a random variation"
+    },
+    "collision_collection": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Limit colliders to this collection"
+    },
+    "drag_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of air drag"
+    },
+    "brownian_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of random, erratic particle movement"
+    },
+    "damping": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of damping"
+    },
+    "length_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Give path length a random variation"
+    },
+    "child_percent": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of children per parent"
+    },
+    "rendered_child_count": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of children per parent for rendering"
+    },
+    "virtual_parents": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Relative amount of virtual parents"
+    },
+    "child_size": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "A multiplier for the child particle size"
+    },
+    "child_size_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Random variation to the size of the child particles"
+    },
+    "child_radius": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Radius of children around parent"
+    },
+    "child_roundness": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Roundness of children around parent"
+    },
+    "clump_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of clumping"
+    },
+    "clump_shape": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Shape of clumping"
+    },
+    "use_clump_curve": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use a curve to define clump tapering"
+    },
+    "clump_curve": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Curve defining clump tapering"
+    },
+    "use_clump_noise": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Create random clumps around the parent"
+    },
+    "clump_noise_size": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Size of clump noise"
+    },
+    "kink_amplitude": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "The amplitude of the offset"
+    },
+    "kink_amplitude_clump": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "How much clump affects kink amplitude"
+    },
+    "kink_amplitude_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Random variation of the amplitude"
+    },
+    "kink_frequency": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "The frequency of the offset (1/total length)"
+    },
+    "kink_shape": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Adjust the offset to the beginning/end"
+    },
+    "kink_flat": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "How flat the hairs are"
+    },
+    "kink_extra_steps": {
+      "type": "INT",
+      "enum": [],
+      "description": "Extra steps for resolution of special kink features"
+    },
+    "kink_axis_random": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Random variation of the orientation"
+    },
+    "roughness_1": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of location dependent roughness"
+    },
+    "roughness_1_size": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Size of location dependent roughness"
+    },
+    "roughness_2": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of random roughness"
+    },
+    "roughness_2_size": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Size of random roughness"
+    },
+    "roughness_2_threshold": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of particles left untouched by random roughness"
+    },
+    "roughness_endpoint": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of endpoint roughness"
+    },
+    "roughness_end_shape": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Shape of endpoint roughness"
+    },
+    "use_roughness_curve": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use a curve to define roughness"
+    },
+    "roughness_curve": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Curve defining roughness"
+    },
+    "child_length": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Length of child paths"
+    },
+    "child_length_threshold": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Amount of particles left untouched by child path length"
+    },
+    "child_parting_factor": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Create parting in the children based on parent strands"
+    },
+    "child_parting_min": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Minimum root to tip angle (tip distance/root distance for long hair)"
+    },
+    "child_parting_max": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Maximum root to tip angle (tip distance/root distance for long hair)"
+    },
+    "branch_threshold": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Threshold of branching"
+    },
+    "line_length_tail": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Length of the line's tail"
+    },
+    "line_length_head": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Length of the line's head"
+    },
+    "path_start": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Starting time of path"
+    },
+    "path_end": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "End time of path"
+    },
+    "trail_count": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of trail particles"
+    },
+    "keyed_loops": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of times the keys are looped"
+    },
+    "use_modifier_stack": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Emit particles from mesh with modifiers applied (must use same subdivision surface level for viewport and render for correct results)"
+    },
+    "instance_collection": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Show objects in this collection in place of particles"
+    },
+    "instance_weights": {
+      "type": "COLLECTION",
+      "enum": [],
+      "description": "Weights for all of the objects in the instance collection"
+    },
+    "active_instanceweight": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "active_instanceweight_index": {
+      "type": "INT",
+      "enum": [],
+      "description": ""
+    },
+    "instance_object": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Show this object in place of particles"
+    },
+    "boids": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "fluid": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "effector_weights": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "animation_data": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Animation data for this data-block"
+    },
+    "force_field_1": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "force_field_2": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "twist": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Number of turns around parent along the strand"
+    },
+    "use_twist_curve": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use a curve to define twist"
+    },
+    "twist_curve": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Curve defining twist"
+    },
+    "use_close_tip": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Set tip radius to zero"
+    },
+    "shape": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Strand shape parameter"
+    },
+    "root_radius": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Strand diameter width at the root"
+    },
+    "tip_radius": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Strand diameter width at the tip"
+    },
+    "radius_scale": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "Multiplier of diameter properties"
+    }
+  },
+  "ParticleSystem_properties": {
+    "rna_type": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "RNA type definition"
+    },
+    "name": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Particle system name"
+    },
+    "settings": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Particle system settings"
+    },
+    "particles": {
+      "type": "COLLECTION",
+      "enum": [],
+      "description": "Particles generated by the particle system"
+    },
+    "child_particles": {
+      "type": "COLLECTION",
+      "enum": [],
+      "description": "Child particles generated by the particle system"
+    },
+    "seed": {
+      "type": "INT",
+      "enum": [],
+      "description": "Offset in the random number table, to get a different randomized result"
+    },
+    "child_seed": {
+      "type": "INT",
+      "enum": [],
+      "description": "Offset in the random number table for child particles, to get a different randomized result"
+    },
+    "is_global_hair": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Hair keys are in global coordinate space"
+    },
+    "use_hair_dynamics": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Enable hair dynamics using cloth simulation"
+    },
+    "cloth": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Cloth dynamics for hair"
+    },
+    "reactor_target_object": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "For reactor systems, the object that has the target particle system (empty if same object)"
+    },
+    "reactor_target_particle_system": {
+      "type": "INT",
+      "enum": [],
+      "description": "For reactor systems, index of particle system on the target object"
+    },
+    "use_keyed_timing": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use key times"
+    },
+    "targets": {
+      "type": "COLLECTION",
+      "enum": [],
+      "description": "Target particle systems"
+    },
+    "active_particle_target": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "active_particle_target_index": {
+      "type": "INT",
+      "enum": [],
+      "description": ""
+    },
+    "vertex_group_density": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control density"
+    },
+    "invert_vertex_group_density": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the density vertex group"
+    },
+    "vertex_group_velocity": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control velocity"
+    },
+    "invert_vertex_group_velocity": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the velocity vertex group"
+    },
+    "vertex_group_length": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control length"
+    },
+    "invert_vertex_group_length": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the length vertex group"
+    },
+    "vertex_group_clump": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control clump"
+    },
+    "invert_vertex_group_clump": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the clump vertex group"
+    },
+    "vertex_group_kink": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control kink"
+    },
+    "invert_vertex_group_kink": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the kink vertex group"
+    },
+    "vertex_group_roughness_1": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control roughness 1"
+    },
+    "invert_vertex_group_roughness_1": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the roughness 1 vertex group"
+    },
+    "vertex_group_roughness_2": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control roughness 2"
+    },
+    "invert_vertex_group_roughness_2": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the roughness 2 vertex group"
+    },
+    "vertex_group_roughness_end": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control roughness end"
+    },
+    "invert_vertex_group_roughness_end": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the roughness end vertex group"
+    },
+    "vertex_group_size": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control size"
+    },
+    "invert_vertex_group_size": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the size vertex group"
+    },
+    "vertex_group_tangent": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control tangent"
+    },
+    "invert_vertex_group_tangent": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the tangent vertex group"
+    },
+    "vertex_group_rotation": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control rotation"
+    },
+    "invert_vertex_group_rotation": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the rotation vertex group"
+    },
+    "vertex_group_field": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control field"
+    },
+    "invert_vertex_group_field": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the field vertex group"
+    },
+    "vertex_group_twist": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Vertex group to control twist"
+    },
+    "invert_vertex_group_twist": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Negate the effect of the twist vertex group"
+    },
+    "point_cache": {
+      "type": "POINTER",
+      "enum": [],
+      "description": ""
+    },
+    "has_multiple_caches": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particle system has multiple point caches"
+    },
+    "parent": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "Use this object's coordinate system instead of global coordinate system"
+    },
+    "is_editable": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particle system can be edited in particle mode"
+    },
+    "is_edited": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Particle system has been edited in particle mode"
+    },
+    "dt_frac": {
+      "type": "FLOAT",
+      "enum": [],
+      "description": "The current simulation time step size, as a fraction of a frame"
+    }
+  },
+  "PointCache_properties": {
+    "rna_type": {
+      "type": "POINTER",
+      "enum": [],
+      "description": "RNA type definition"
+    },
+    "frame_start": {
+      "type": "INT",
+      "enum": [],
+      "description": "Frame on which the simulation starts"
+    },
+    "frame_end": {
+      "type": "INT",
+      "enum": [],
+      "description": "Frame on which the simulation stops"
+    },
+    "frame_step": {
+      "type": "INT",
+      "enum": [],
+      "description": "Number of frames between cached frames"
+    },
+    "index": {
+      "type": "INT",
+      "enum": [],
+      "description": "Index number of cache files"
+    },
+    "is_baked": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "The cache is baked"
+    },
+    "is_baking": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "The cache is being baked"
+    },
+    "use_disk_cache": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Save cache files to disk (.blend file must be saved first)"
+    },
+    "is_outdated": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": ""
+    },
+    "is_frame_skip": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Some frames were skipped while baking/saving that cache"
+    },
+    "name": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Cache name"
+    },
+    "filepath": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Cache file path"
+    },
+    "info": {
+      "type": "STRING",
+      "enum": [],
+      "description": "Info on current cache status"
+    },
+    "use_external": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Read cache from an external location"
+    },
+    "use_library_path": {
+      "type": "BOOLEAN",
+      "enum": [],
+      "description": "Use this file's path for the disk cache when library linked into another file (for local bakes per scene file, disable this option)"
+    },
+    "point_caches": {
+      "type": "COLLECTION",
+      "enum": [],
+      "description": ""
+    }
+  }
+}

@@ -1,0 +1,1310 @@
+{
+  "retimed_actor_actions": 80,
+  "source_clock": "30fps input to24fps world by exact key/handle time transform; cycle25.6 production frames",
+  "range": [
+    937,
+    1056
+  ],
+  "source_range_evaluated": [
+    1,
+    149.75
+  ],
+  "floor_depth_slope": 0.14249539512502568,
+  "world_registration_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      49.68421173095703
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.36000001430511475
+    ],
+    [
+      0.0,
+      -0.14249539375305176,
+      1.0,
+      0.7713720202445984
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "original_held_hidden": [
+    "v016 | CHILDREN | held painterly near-age pair",
+    "v014 | Ground contact | Held shoe 1",
+    "v014 | Ground contact | Held shoe 2",
+    "v014 | Ground contact | Held shoe 3",
+    "v014 | Ground contact | Held shoe 4",
+    "v015 | Near-black painted fill | GP vector clipped",
+    "v039 shoe0 core",
+    "v039 shoe0 penumbra",
+    "v039 shoe1 core",
+    "v039 shoe1 penumbra",
+    "v039 shoe2 core",
+    "v039 shoe2 penumbra",
+    "v039 shoe3 core",
+    "v039 shoe3 penumbra"
+  ],
+  "actual_all_four_boot_retime_stage_max_error_m": 1.1727620936311998e-05,
+  "new_camera": "Moves with actual .73125m/s root. No second travel layer.",
+  "head_response": {
+    "status": "V060 brief native neck-pitch response; render review required",
+    "event_metadata": {
+      "controller": "V060 | one offscreen distant flash | painted response",
+      "flash_peak_output_frame": 957
+    },
+    "event_timing_interpretation": "Metadata only; explicit absolute output-frame schedule below.",
+    "selected_scope": "Only head transform channels on two copied rig actions.",
+    "output_fps": 24,
+    "checked_range": [
+      937,
+      1056
+    ],
+    "quarter_samples": 477,
+    "schedule_output_frames": {
+      "GIRL": {
+        "peak_degrees": -2.5,
+        "zero": 955.0,
+        "peak_start": 958.0,
+        "peak_end": 960.0,
+        "release": 970.0
+      },
+      "BOY": {
+        "peak_degrees": -1.4,
+        "zero": 958.0,
+        "peak_start": 961.0,
+        "peak_end": 963.0,
+        "release": 973.0
+      }
+    },
+    "integer_frame_pitch_samples": [
+      {
+        "output_frame": 954.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": 0.0
+      },
+      {
+        "output_frame": 955.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": 0.0
+      },
+      {
+        "output_frame": 956.0,
+        "girl_pitch_delta_degrees": -0.5246913580246914,
+        "boy_pitch_delta_degrees": 0.0
+      },
+      {
+        "output_frame": 957.0,
+        "girl_pitch_delta_degrees": -1.9753086419753088,
+        "boy_pitch_delta_degrees": 0.0
+      },
+      {
+        "output_frame": 958.0,
+        "girl_pitch_delta_degrees": -2.5,
+        "boy_pitch_delta_degrees": 0.0
+      },
+      {
+        "output_frame": 959.0,
+        "girl_pitch_delta_degrees": -2.5,
+        "boy_pitch_delta_degrees": -0.2938271604938271
+      },
+      {
+        "output_frame": 960.0,
+        "girl_pitch_delta_degrees": -2.5,
+        "boy_pitch_delta_degrees": -1.106172839506173
+      },
+      {
+        "output_frame": 961.0,
+        "girl_pitch_delta_degrees": -2.4786,
+        "boy_pitch_delta_degrees": -1.4
+      },
+      {
+        "output_frame": 962.0,
+        "girl_pitch_delta_degrees": -2.3552,
+        "boy_pitch_delta_degrees": -1.4
+      },
+      {
+        "output_frame": 963.0,
+        "girl_pitch_delta_degrees": -2.0923,
+        "boy_pitch_delta_degrees": -1.4
+      },
+      {
+        "output_frame": 964.0,
+        "girl_pitch_delta_degrees": -1.7064,
+        "boy_pitch_delta_degrees": -1.388016
+      },
+      {
+        "output_frame": 965.0,
+        "girl_pitch_delta_degrees": -1.25,
+        "boy_pitch_delta_degrees": -1.3189119999999999
+      },
+      {
+        "output_frame": 966.0,
+        "girl_pitch_delta_degrees": -0.7935999999999999,
+        "boy_pitch_delta_degrees": -1.1716879999999998
+      },
+      {
+        "output_frame": 967.0,
+        "girl_pitch_delta_degrees": -0.4077000000000003,
+        "boy_pitch_delta_degrees": -0.9555839999999999
+      },
+      {
+        "output_frame": 968.0,
+        "girl_pitch_delta_degrees": -0.14479999999999965,
+        "boy_pitch_delta_degrees": -0.7
+      },
+      {
+        "output_frame": 969.0,
+        "girl_pitch_delta_degrees": -0.021400000000000585,
+        "boy_pitch_delta_degrees": -0.44441599999999987
+      },
+      {
+        "output_frame": 970.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": -0.22831200000000015
+      },
+      {
+        "output_frame": 971.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": -0.0810879999999998
+      },
+      {
+        "output_frame": 972.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": -0.011984000000000328
+      },
+      {
+        "output_frame": 973.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": 0.0
+      },
+      {
+        "output_frame": 974.0,
+        "girl_pitch_delta_degrees": 0.0,
+        "boy_pitch_delta_degrees": 0.0
+      }
+    ],
+    "nonhead_action_channels_hash_exact": true,
+    "all_rest_bones_exact": true,
+    "checks": {
+      "protected_nonhead_bone_matrix_max_abs_error": 0.0,
+      "root_world_matrix_max_abs_error": 0.0,
+      "camera_world_matrix_max_abs_error": 0.0,
+      "head_base_max_position_error_m": 1.862645149230957e-09,
+      "head_segment_length_max_error_m": 1.2546318622908004e-07,
+      "authored_head_matrix_max_abs_error": 5.960464477539063e-08,
+      "head_matrix_outside_response_max_abs_error": 5.960464477539063e-08
+    },
+    "method": "Head.matrix = T(native head base) @ RY(pitch) @ T(-native head base) @ baseline head.matrix. Quintic nonoscillating rise/hold/release.",
+    "limits": [
+      "Brief neck pitch only; original fixed-profile face painting retained.",
+      "No eye movement, facial expression, head-turn drawing or physical impact response claimed.",
+      "Selected head channels authored only within the checked output shot range."
+    ]
+  },
+  "painted_light": {
+    "objects": [
+      {
+        "name": "V044 BOY | boot far",
+        "kind": "boy"
+      },
+      {
+        "name": "V044 BOY | boot near",
+        "kind": "boy"
+      },
+      {
+        "name": "V044 BOY | collar",
+        "kind": "boy"
+      },
+      {
+        "name": "V044 BOY | head",
+        "kind": "boy"
+      },
+      {
+        "name": "V044 GIRL | boot far",
+        "kind": "girl"
+      },
+      {
+        "name": "V044 GIRL | boot near",
+        "kind": "girl"
+      },
+      {
+        "name": "V044 GIRL | head",
+        "kind": "girl"
+      },
+      {
+        "name": "V044 GIRL | neck overlap drawn bridge",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 BOY | original painted hand far",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 BOY | painted continuous rolled sleeve far",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 BOY | painted forearm far",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 BOY | painted forearm near",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 BOY | painted rigid-axis trousers far",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 BOY | painted rigid-axis trousers near",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 BOY | tailored coat",
+        "kind": "boy"
+      },
+      {
+        "name": "V046 GIRL | original painted hand far",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | original painted stockings far",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | original painted stockings near",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted continuous rolled sleeve far",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted forearm far",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted forearm near",
+        "kind": "girl"
+      },
+      {
+        "name": "V046 GIRL | tailored knee-length dress",
+        "kind": "girl"
+      },
+      {
+        "name": "V060 BOY | reach sleeve near",
+        "kind": "boy"
+      },
+      {
+        "name": "V060 BOY | retained paint hand fold near",
+        "kind": "boy"
+      },
+      {
+        "name": "V060 GIRL | reach sleeve near",
+        "kind": "girl"
+      },
+      {
+        "name": "V060 GIRL | retained paint hand fold near",
+        "kind": "girl"
+      },
+      {
+        "name": "v016 | Woods | near rooted oaks",
+        "kind": "world"
+      },
+      {
+        "name": "v020 | Foreground bank | continuous blended paint",
+        "kind": "world"
+      },
+      {
+        "name": "v020 | Walking path | continuous blended paint",
+        "kind": "world"
+      },
+      {
+        "name": "v030 | High crown foreground oak 1",
+        "kind": "world"
+      },
+      {
+        "name": "v048 | transition fixed foreground soil bank",
+        "kind": "world"
+      }
+    ],
+    "materials": [
+      {
+        "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V044 preserved paint | V041 | linen broad fold",
+        "copy": "V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V044 preserved paint | V041 | linen turned leaf",
+        "copy": "V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "copy": "V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "copy": "V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V044 girl | quiet original charcoal neck bridge",
+        "copy": "V060 | girl light | V044 girl | quiet original charcoal neck bridge",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 BOY | original atlas hand",
+        "copy": "V060 | boy light | V046 BOY | original atlas hand",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 BOY | original atlas sleeve",
+        "copy": "V060 | boy light | V046 BOY | original atlas sleeve",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 BOY | original atlas skin",
+        "copy": "V060 | boy light | V046 BOY | original atlas skin",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 BOY | original atlas pants",
+        "copy": "V060 | boy light | V046 BOY | original atlas pants",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 BOY | seamless original painted bodice",
+        "copy": "V060 | boy light | V046 BOY | seamless original painted bodice",
+        "kind": "boy",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 GIRL | original atlas hand",
+        "copy": "V060 | girl light | V046 GIRL | original atlas hand",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 GIRL | retained original stocking painting",
+        "copy": "V060 | girl light | V046 GIRL | retained original stocking painting",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 GIRL | original atlas sleeve",
+        "copy": "V060 | girl light | V046 GIRL | original atlas sleeve",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 GIRL | original atlas skin",
+        "copy": "V060 | girl light | V046 GIRL | original atlas skin",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "V046 GIRL | seamless original painted bodice",
+        "copy": "V060 | girl light | V046 GIRL | seamless original painted bodice",
+        "kind": "girl",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "v016 | Woods | near rooted oaks paint",
+        "copy": "V060 | world light | v016 | Woods | near rooted oaks paint",
+        "kind": "world",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "v039 | Foreground bank | stable paint variation",
+        "copy": "V060 | world light | v039 | Foreground bank | stable paint variation",
+        "kind": "world",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "v058d | continuous painterly soil | earth-only source",
+        "copy": "V060 | world light | v058d | continuous painterly soil | earth-only source",
+        "kind": "world",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "v030 | Purpose-painted high crown oak",
+        "copy": "V060 | world light | v030 | Purpose-painted high crown oak",
+        "kind": "world",
+        "emissions": [
+          "Emission"
+        ]
+      },
+      {
+        "source": "v048b | transition original painted earth",
+        "copy": "V060 | world light | v048b | transition original painted earth",
+        "kind": "world",
+        "emissions": [
+          "Emission"
+        ]
+      }
+    ],
+    "skipped": [],
+    "limits": [
+      "Paint response only; original UV/alpha/pixels/Strength/geometry/timing preserved. No occlusion, rim or new shadows.",
+      "Named near receivers only; 14m falloff and world-height mask exclude sky.",
+      "Pre-attenuation flash: actors .20EV/world .12EV; settle 4% saturation/.10EV value."
+    ]
+  },
+  "girl_head_edge": {
+    "object": "V044 GIRL | head",
+    "materials": [
+      {
+        "source": "V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "copy": "V060 | subtle head edge | V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "image": "Pair_Painterly_Near_Age_v015.png.001",
+        "pixels": [
+          1672,
+          941
+        ],
+        "uv_mapping": "Original active UV: Original v015 paint source",
+        "texel_offset": 1.2,
+        "max_linear_add": 0.0288
+      }
+    ],
+    "limits": "Head only; original alpha/UV/pixels/Strength untouched. No body rim or normals/occlusion. Actual renders require review."
+  },
+  "contacts": {
+    "method": "Evaluated-geometry-driven native painted contact core and penumbra; no physical-shadow claim.",
+    "collection": "V060 | evaluated boot contact paint | no physical shadow claim",
+    "objects": [
+      "V060 contact core | V044 BOY | boot far",
+      "V060 contact penumbra | V044 BOY | boot far",
+      "V060 contact core | V044 BOY | boot near",
+      "V060 contact penumbra | V044 BOY | boot near",
+      "V060 contact core | V044 GIRL | boot near",
+      "V060 contact penumbra | V044 GIRL | boot near",
+      "V060 contact core | V044 GIRL | boot far",
+      "V060 contact penumbra | V044 GIRL | boot far"
+    ],
+    "range": [
+      937.0,
+      1056.0
+    ],
+    "quarter_production_samples_per_boot": 477,
+    "core_height_m": 0.006,
+    "penumbra_height_m": 0.018,
+    "opacity_clearance_thresholds_m": {
+      "core_full_below": 0.0005,
+      "core_zero_at": 0.003,
+      "penumbra_full_below": 0.002,
+      "penumbra_zero_at": 0.045
+    },
+    "support_measurement": "Smooth weighted six-millimetre lower envelope; world floor clearance includes each evaluated vertex Y.",
+    "foot_geometry_or_animation_edited": false,
+    "endpoint_evaluated_boot_vertex_change_m": 0.0,
+    "object_origins": "At each animated world contact centre for transparent sorting; quads stay in camera-facing XZ.",
+    "per_boot": {
+      "V044 BOY | boot far": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0215159833126819e-05,
+          "maximum": 0.04498390066963465
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.651394597971025e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.022980815277539597,
+          "maximum": 0.10780285503774538
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.1820234148749881
+        },
+        "geometric_stance_samples_below_half_mm": 279,
+        "maximum_stance_floor_error_m": 0.0004580985341671173,
+        "visible_swing_samples_at_or_above_3mm": 178,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 49.188546456602104,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.049045590063997904,
+            "lower_support_span_m": 0.06317520141601562,
+            "lower_support_count": 12,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.046593310560798004,
+            "penumbra_width_m": 0.08493106087167765
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": 0.0017422806058529083,
+            "support_x": 49.842840805211836,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.0624513058187,
+            "lower_support_span_m": 0.06923294067382812,
+            "lower_support_count": 6,
+            "core_opacity": 0.09167509048338575,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.059328740527764996,
+            "penumbra_width_m": 0.10005498805875174
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 49.924461832939286,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10729145380395151,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 16,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10192688111375393,
+            "penumbra_width_m": 0.1501664282604257
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.012993909004748172,
+            "support_x": 50.54318470305813,
+            "support_y": -0.3250000178813935,
+            "effective_support_span_m": 0.042234289494148966,
+            "lower_support_span_m": 0.0189361572265625,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.10516590883422267,
+            "core_width_m": 0.04012257501944152,
+            "penumbra_width_m": 0.08235200615142108
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 50.70280871304111,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10883031086607352,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338879532276984,
+            "penumbra_width_m": 0.15188994817000234
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.028630531910479373,
+            "support_x": 51.1842569628397,
+            "support_y": -0.3250000178813934,
+            "effective_support_span_m": 0.024215272499663147,
+            "lower_support_span_m": 0.022365570068359375,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.015787745250673352,
+            "core_width_m": 0.023004508874679988,
+            "penumbra_width_m": 0.0746034585462327
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 51.482805649924416,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10882764438466949,
+            "lower_support_span_m": 0.10398101806640625,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338626216543602,
+            "penumbra_width_m": 0.15188696171082983
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.041487074974596805,
+            "support_x": 51.80011801985457,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.03181965150077171,
+            "lower_support_span_m": 0.022396087646484375,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 5.376400956999944e-05,
+            "core_width_m": 0.030228668925733126,
+            "penumbra_width_m": 0.09020473582634125
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 52.26280655813962,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10882906170685366,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338760862151097,
+            "penumbra_width_m": 0.1518885491116761
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.04332009661537439,
+            "support_x": 52.46408296271774,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.11274085796641983,
+            "lower_support_span_m": 0.1037139892578125,
+            "lower_support_count": 14,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 2.9831489422420246e-06,
+            "core_width_m": 0.10710381506809884,
+            "penumbra_width_m": 0.18116784088163423
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": -2.7012270198412125e-08,
+            "support_x": 53.042804076915054,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_m": 0.10882927060268283,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338780707254867,
+            "penumbra_width_m": 0.15188878307500478
+          }
+        ]
+      },
+      "V044 BOY | boot near": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0221906507457135e-05,
+          "maximum": 0.044983893922960316
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.655841268198854e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.022980942545891798,
+          "maximum": 0.10780170704062889
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.18202207269881382
+        },
+        "geometric_stance_samples_below_half_mm": 313,
+        "maximum_stance_floor_error_m": 0.00045773415962413466,
+        "visible_swing_samples_at_or_above_3mm": 147,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 49.4644280604347,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.06357917901735116,
+            "lower_support_span_m": 0.0692291259765625,
+            "lower_support_count": 6,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.0604002200664836,
+            "penumbra_width_m": 0.10120868049943331
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 49.56136187262612,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.051435212698107566,
+            "lower_support_span_m": 0.0484619140625,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.04886345206320219,
+            "penumbra_width_m": 0.08760743822188047
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": 0.00637212424675182,
+            "support_x": 50.2014592856703,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.05584628399452863,
+            "lower_support_span_m": 0.06922149658203125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.14145164310698052,
+            "core_width_m": 0.053053969794802196,
+            "penumbra_width_m": 0.09390972244989225
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 50.31280624931623,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882916258126873,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1033877044522053,
+            "penumbra_width_m": 0.15188866209102098
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.020711869291460072,
+            "support_x": 50.86944864059363,
+            "support_y": -0.40500003099441534,
+            "effective_support_span_m": 0.02904506386472567,
+            "lower_support_span_m": 0.01894378662109375,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05341034791608249,
+            "core_width_m": 0.027592810671489384,
+            "penumbra_width_m": 0.07354349971832665
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 51.0928068994551,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882909873545374,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338764379868105,
+            "penumbra_width_m": 0.15188859058370818
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.035854131273424183,
+            "support_x": 51.493259031793166,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.029190177955859594,
+            "lower_support_span_m": 0.022388458251953125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.0020348877142707584,
+            "core_width_m": 0.027730669058066613,
+            "penumbra_width_m": 0.08501473152195302
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 51.87280762260724,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10882916258126873,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1033877044522053,
+            "penumbra_width_m": 0.15188866209102098
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.044633716634904896,
+            "support_x": 52.10903086426872,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.03998205439872154,
+            "lower_support_span_m": 0.022411346435546875,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 7.027196793291048e-09,
+            "core_width_m": 0.03798295167878546,
+            "penumbra_width_m": 0.09977495887190159
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 52.65280126155469,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10883053822956865,
+            "lower_support_span_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10338901131809021,
+            "penumbra_width_m": 0.1518902028171169
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": 0.016515821508562123,
+            "support_x": 52.77130573034354,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.048424787575622893,
+            "lower_support_span_m": 0.059894561767578125,
+            "lower_support_count": 10,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.08104793643606817,
+            "core_width_m": 0.04600354819684175,
+            "penumbra_width_m": 0.09186653009293137
+          }
+        ]
+      },
+      "V044 GIRL | boot near": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0221906507457135e-05,
+          "maximum": 0.044983893922960316
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.655841268198854e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.02279277566674572,
+          "maximum": 0.10675800476547638
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.1803521246584514
+        },
+        "geometric_stance_samples_below_half_mm": 306,
+        "maximum_stance_floor_error_m": 0.0004580321828480116,
+        "visible_swing_samples_at_or_above_3mm": 153,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 50.25540026118435,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10596030241143742,
+            "lower_support_span_m": 0.09790420532226562,
+            "lower_support_count": 10,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10066228729086554,
+            "penumbra_width_m": 0.1486755387008099
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 50.350732267416454,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.04722156884369089,
+            "lower_support_span_m": 0.059383392333984375,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.044860490401506345,
+            "penumbra_width_m": 0.0828881571049338
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 50.99568836545746,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.06208938336081846,
+            "lower_support_span_m": 0.06862258911132812,
+            "lower_support_count": 6,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.058984914192777536,
+            "penumbra_width_m": 0.09954010936411668
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 51.09116698863877,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.051364079518589595,
+            "lower_support_span_m": 0.04802703857421875,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.048795875542660114,
+            "penumbra_width_m": 0.08752776906082035
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.00637212424675182,
+            "support_x": 51.73260851672694,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.054316396689276104,
+            "lower_support_span_m": 0.06861114501953125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.14145164310698052,
+            "core_width_m": 0.0516005768548123,
+            "penumbra_width_m": 0.09219624866800942
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 51.842996786209625,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.1078531238410929,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246046764903825,
+            "penumbra_width_m": 0.15079549870202408
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.020711869291460072,
+            "support_x": 52.4002179934753,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.028332683743954902,
+            "lower_support_span_m": 0.01877593994140625,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05341034791608249,
+            "core_width_m": 0.026916049556757155,
+            "penumbra_width_m": 0.07274563398306338
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 52.62299713823787,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10785237938012135,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10245976041111528,
+            "penumbra_width_m": 0.15079466490573593
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.035854131273424183,
+            "support_x": 53.02399061807331,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_m": 0.02949225747485034,
+            "lower_support_span_m": 0.022186279296875,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.0020348877142707584,
+            "core_width_m": 0.02801764460110782,
+            "penumbra_width_m": 0.08535306058322266
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": -2.951225086533782e-08,
+            "support_x": 53.402990531218606,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.10785312813466935,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246047172793588,
+            "penumbra_width_m": 0.15079550351082968
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": 0.04158875375190929,
+            "support_x": 53.60124590188947,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_m": 0.09738935258594072,
+            "lower_support_span_m": 0.10305404663085938,
+            "lower_support_count": 14,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 4.796399308054021e-05,
+            "core_width_m": 0.09251988495664368,
+            "penumbra_width_m": 0.16366687036744026
+          }
+        ]
+      },
+      "V044 GIRL | boot far": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0215159833126819e-05,
+          "maximum": 0.04498390066963465
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.651394597971025e-14,
+          "maximum": 0.15
+        },
+        "core_width_m": {
+          "minimum": 0.022780395258384017,
+          "maximum": 0.10682967246687196
+        },
+        "penumbra_width_m": {
+          "minimum": 0.065,
+          "maximum": 0.18087608384406365
+        },
+        "geometric_stance_samples_below_half_mm": 279,
+        "maximum_stance_floor_error_m": 0.0004583369527462189,
+        "visible_swing_samples_at_or_above_3mm": 178,
+        "visible_swing_core_opacity_is_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 49.971156350044325,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.03939603788310632,
+            "lower_support_span_m": 0.048828125,
+            "lower_support_count": 9,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.037426235988951,
+            "penumbra_width_m": 0.07412356242907908
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": -2.7012270198412125e-08,
+            "support_x": 50.613974521515146,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_m": 0.03632097266838137,
+            "lower_support_span_m": 0.018772125244140625,
+            "lower_support_count": 5,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.0345049240349623,
+            "penumbra_width_m": 0.07067948938858715
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 50.71809975940103,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.048369790440898515,
+            "lower_support_span_m": 0.06261825561523438,
+            "lower_support_count": 12,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.045951300918853584,
+            "penumbra_width_m": 0.08417416529380634
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.001742276359159245,
+            "support_x": 51.37408572485717,
+            "support_y": -0.32500004768371576,
+            "effective_support_span_m": 0.06094568206375043,
+            "lower_support_span_m": 0.06862258911132812,
+            "lower_support_count": 6,
+            "core_opacity": 0.09167601623318916,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.057898397960562904,
+            "penumbra_width_m": 0.09836868892635958
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 51.45462178765539,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10634517372509147,
+            "lower_support_span_m": 0.10305404663085938,
+            "lower_support_count": 16,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.1010279150388369,
+            "penumbra_width_m": 0.14910659457210246
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.012993909004748172,
+            "support_x": 52.074133455444255,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.04094990151903866,
+            "lower_support_span_m": 0.018772125244140625,
+            "lower_support_count": 5,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.10516590883422267,
+            "core_width_m": 0.03890240644308673,
+            "penumbra_width_m": 0.08091349161929755
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 52.23299463928914,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10785334038370124,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246067336451618,
+            "penumbra_width_m": 0.1507957412297454
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.028630531910479373,
+            "support_x": 52.71497202065349,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.02406763399744809,
+            "lower_support_span_m": 0.02216339111328125,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.015787745250673352,
+            "core_width_m": 0.022864252297575684,
+            "penumbra_width_m": 0.07443810342375183
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 53.01299531264497,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.10785367209625644,
+            "lower_support_span_m": 0.10305404663085938,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246098849144362,
+            "penumbra_width_m": 0.15079611274780724
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.04148635547216584,
+            "support_x": 53.33085879769213,
+            "support_y": -0.3250000474762697,
+            "effective_support_span_m": 0.03222085503926363,
+            "lower_support_span_m": 0.022190093994140625,
+            "lower_support_count": 6,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 5.380680036435662e-05,
+            "core_width_m": 0.030609812287300444,
+            "penumbra_width_m": 0.09065391116258571
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": -2.2765576535022092e-08,
+            "support_x": 53.792993722431035,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_m": 0.1078531059416403,
+            "lower_support_span_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_m": 0.10246045064455828,
+            "penumbra_width_m": 0.15079547865463716
+          }
+        ]
+      }
+    },
+    "limits": "These are painted grounding cues, not physically simulated shadows. A geometric contact threshold is not a gait-phase label. Inspect actual full-shot and native-pixel foot crops for darkness, intersection and sorting."
+  },
+  "shot_edit": {
+    "scene": "WTSC_FIRST_DANGER_EDIT_v060",
+    "picture_strip_start": 937,
+    "picture_strip_duration": 120,
+    "music": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+    "music_exists": true,
+    "timeline_seconds": [
+      39,
+      44
+    ]
+  },
+  "native_dual_output": "Actual compositor world branch and inherited glyph view rendered together; no synthetic title overlay.",
+  "event_float_curve_fix": {
+    "pulse_and_settle_properties": "FLOAT; integer FCurve flags cleared",
+    "intermediate_settle_at984": 0.5,
+    "pulse_samples": [
+      {
+        "frame": 955,
+        "pulse": 0.0
+      },
+      {
+        "frame": 956,
+        "pulse": 0.15000000596046448
+      },
+      {
+        "frame": 956.5,
+        "pulse": 0.5750000476837158
+      },
+      {
+        "frame": 957,
+        "pulse": 1.0
+      },
+      {
+        "frame": 958,
+        "pulse": 0.800000011920929
+      },
+      {
+        "frame": 960,
+        "pulse": 0.23000000417232513
+      },
+      {
+        "frame": 965,
+        "pulse": 0.0
+      }
+    ]
+  }
+}

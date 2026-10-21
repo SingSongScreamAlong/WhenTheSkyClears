@@ -1,0 +1,3250 @@
+{
+  "status": "PASS: BOUNDED ENVIRONMENT CONTINUITY REVIEW AT PREVIEW RESOLUTION",
+  "frame_count": 49,
+  "source_fps": 24,
+  "preview_dimensions": [
+    1280,
+    720
+  ],
+  "source_native_unchanged": true,
+  "source_objects_actions_children_timing_preserved": true,
+  "fixed_facade_and_window_signature_unchanged_all49frames": false,
+  "new_character_motion_authored": false,
+  "camera_x_step_range_world_units": [
+    0.05391693115234375,
+    0.053924560546875
+  ],
+  "camera_max_step_change_world_units": 7.62939453125e-06,
+  "detail_tracks": [
+    {
+      "name": "plaster_shadow",
+      "patch_size": 64,
+      "min_camera_registered_ncc": 0.9985019564628601,
+      "max_mean_absolute_channel_difference": 0.4908040463924408,
+      "max_residual_shift_preview_pixels": 0.0,
+      "checks": [
+        {
+          "frame": 1201,
+          "camera_registered_ncc": 0.9996157288551331,
+          "mean_absolute_channel_difference": 0.1602376252412796,
+          "best_ncc": 0.9996157288551331,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1202,
+          "camera_registered_ncc": 0.9985019564628601,
+          "mean_absolute_channel_difference": 0.485595703125,
+          "best_ncc": 0.9985019564628601,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1203,
+          "camera_registered_ncc": 0.999212384223938,
+          "mean_absolute_channel_difference": 0.3158365786075592,
+          "best_ncc": 0.999212384223938,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1204,
+          "camera_registered_ncc": 0.9992195963859558,
+          "mean_absolute_channel_difference": 0.3124186098575592,
+          "best_ncc": 0.9992195963859558,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1205,
+          "camera_registered_ncc": 0.9986477494239807,
+          "mean_absolute_channel_difference": 0.4576009213924408,
+          "best_ncc": 0.9986477494239807,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1206,
+          "camera_registered_ncc": 0.9994359016418457,
+          "mean_absolute_channel_difference": 0.233154296875,
+          "best_ncc": 0.9994359016418457,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1207,
+          "camera_registered_ncc": 0.9987439513206482,
+          "mean_absolute_channel_difference": 0.438720703125,
+          "best_ncc": 0.9987439513206482,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1208,
+          "camera_registered_ncc": 0.9989525675773621,
+          "mean_absolute_channel_difference": 0.38916015625,
+          "best_ncc": 0.9989525675773621,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1209,
+          "camera_registered_ncc": 0.9997103214263916,
+          "mean_absolute_channel_difference": 0.1204427108168602,
+          "best_ncc": 0.9997103214263916,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1210,
+          "camera_registered_ncc": 0.9985067248344421,
+          "mean_absolute_channel_difference": 0.4861653745174408,
+          "best_ncc": 0.9985067248344421,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1211,
+          "camera_registered_ncc": 0.9992064237594604,
+          "mean_absolute_channel_difference": 0.31787109375,
+          "best_ncc": 0.9992064237594604,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1212,
+          "camera_registered_ncc": 0.9992779493331909,
+          "mean_absolute_channel_difference": 0.2913411557674408,
+          "best_ncc": 0.9992779493331909,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1213,
+          "camera_registered_ncc": 0.9986389875411987,
+          "mean_absolute_channel_difference": 0.461669921875,
+          "best_ncc": 0.9986389875411987,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1214,
+          "camera_registered_ncc": 0.999435544013977,
+          "mean_absolute_channel_difference": 0.231201171875,
+          "best_ncc": 0.999435544013977,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1215,
+          "camera_registered_ncc": 0.9987825155258179,
+          "mean_absolute_channel_difference": 0.4325357973575592,
+          "best_ncc": 0.9987825155258179,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1216,
+          "camera_registered_ncc": 0.9989412426948547,
+          "mean_absolute_channel_difference": 0.3915201723575592,
+          "best_ncc": 0.9989412426948547,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1217,
+          "camera_registered_ncc": 0.9998330473899841,
+          "mean_absolute_channel_difference": 0.068359375,
+          "best_ncc": 0.9998330473899841,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1218,
+          "camera_registered_ncc": 0.9985218048095703,
+          "mean_absolute_channel_difference": 0.4847818911075592,
+          "best_ncc": 0.9985218048095703,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1219,
+          "camera_registered_ncc": 0.999207615852356,
+          "mean_absolute_channel_difference": 0.3172200620174408,
+          "best_ncc": 0.999207615852356,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1220,
+          "camera_registered_ncc": 0.9993066191673279,
+          "mean_absolute_channel_difference": 0.2799479067325592,
+          "best_ncc": 0.9993066191673279,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1221,
+          "camera_registered_ncc": 0.998612105846405,
+          "mean_absolute_channel_difference": 0.466552734375,
+          "best_ncc": 0.998612105846405,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1222,
+          "camera_registered_ncc": 0.9994283318519592,
+          "mean_absolute_channel_difference": 0.2338053435087204,
+          "best_ncc": 0.9994283318519592,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1223,
+          "camera_registered_ncc": 0.9988200068473816,
+          "mean_absolute_channel_difference": 0.426025390625,
+          "best_ncc": 0.9988200068473816,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1224,
+          "camera_registered_ncc": 0.9989164471626282,
+          "mean_absolute_channel_difference": 0.397705078125,
+          "best_ncc": 0.9989164471626282,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1225,
+          "camera_registered_ncc": 0.9999998807907104,
+          "mean_absolute_channel_difference": 0.0,
+          "best_ncc": 0.9999998807907104,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1226,
+          "camera_registered_ncc": 0.9985175132751465,
+          "mean_absolute_channel_difference": 0.4862467348575592,
+          "best_ncc": 0.9985175132751465,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1227,
+          "camera_registered_ncc": 0.9991703033447266,
+          "mean_absolute_channel_difference": 0.3291015625,
+          "best_ncc": 0.9991703033447266,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1228,
+          "camera_registered_ncc": 0.9993427991867065,
+          "mean_absolute_channel_difference": 0.266357421875,
+          "best_ncc": 0.9993427991867065,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1229,
+          "camera_registered_ncc": 0.9985830783843994,
+          "mean_absolute_channel_difference": 0.4736328125,
+          "best_ncc": 0.9985830783843994,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1230,
+          "camera_registered_ncc": 0.9994041919708252,
+          "mean_absolute_channel_difference": 0.2437337189912796,
+          "best_ncc": 0.9994041919708252,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1231,
+          "camera_registered_ncc": 0.9988516569137573,
+          "mean_absolute_channel_difference": 0.4208984375,
+          "best_ncc": 0.9988516569137573,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1232,
+          "camera_registered_ncc": 0.9988834857940674,
+          "mean_absolute_channel_difference": 0.4092610776424408,
+          "best_ncc": 0.9988834857940674,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1233,
+          "camera_registered_ncc": 0.9998399019241333,
+          "mean_absolute_channel_difference": 0.06591796875,
+          "best_ncc": 0.9998399019241333,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1234,
+          "camera_registered_ncc": 0.9985144734382629,
+          "mean_absolute_channel_difference": 0.4894205629825592,
+          "best_ncc": 0.9985144734382629,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1235,
+          "camera_registered_ncc": 0.9991553425788879,
+          "mean_absolute_channel_difference": 0.3360188901424408,
+          "best_ncc": 0.9991553425788879,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1236,
+          "camera_registered_ncc": 0.9993749856948853,
+          "mean_absolute_channel_difference": 0.2562662661075592,
+          "best_ncc": 0.9993749856948853,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1237,
+          "camera_registered_ncc": 0.9985819458961487,
+          "mean_absolute_channel_difference": 0.4775390625,
+          "best_ncc": 0.9985819458961487,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1238,
+          "camera_registered_ncc": 0.9993662238121033,
+          "mean_absolute_channel_difference": 0.26025390625,
+          "best_ncc": 0.9993662238121033,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1239,
+          "camera_registered_ncc": 0.9988764524459839,
+          "mean_absolute_channel_difference": 0.41845703125,
+          "best_ncc": 0.9988764524459839,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1240,
+          "camera_registered_ncc": 0.9988687038421631,
+          "mean_absolute_channel_difference": 0.41455078125,
+          "best_ncc": 0.9988687038421631,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1241,
+          "camera_registered_ncc": 0.9997291564941406,
+          "mean_absolute_channel_difference": 0.1123046875,
+          "best_ncc": 0.9997291564941406,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1242,
+          "camera_registered_ncc": 0.9985210299491882,
+          "mean_absolute_channel_difference": 0.4908040463924408,
+          "best_ncc": 0.9985210299491882,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1243,
+          "camera_registered_ncc": 0.999126672744751,
+          "mean_absolute_channel_difference": 0.346923828125,
+          "best_ncc": 0.999126672744751,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1244,
+          "camera_registered_ncc": 0.9993835091590881,
+          "mean_absolute_channel_difference": 0.2550455629825592,
+          "best_ncc": 0.9993835091590881,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1245,
+          "camera_registered_ncc": 0.998552143573761,
+          "mean_absolute_channel_difference": 0.485107421875,
+          "best_ncc": 0.998552143573761,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1246,
+          "camera_registered_ncc": 0.9993332028388977,
+          "mean_absolute_channel_difference": 0.2757161557674408,
+          "best_ncc": 0.9993332028388977,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1247,
+          "camera_registered_ncc": 0.9989084601402283,
+          "mean_absolute_channel_difference": 0.41259765625,
+          "best_ncc": 0.9989084601402283,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1248,
+          "camera_registered_ncc": 0.9988279938697815,
+          "mean_absolute_channel_difference": 0.4283040463924408,
+          "best_ncc": 0.9988279938697815,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1249,
+          "camera_registered_ncc": 0.9996361136436462,
+          "mean_absolute_channel_difference": 0.152099609375,
+          "best_ncc": 0.9996361136436462,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exposed_stone",
+      "patch_size": 56,
+      "min_camera_registered_ncc": 0.998153567314148,
+      "max_mean_absolute_channel_difference": 0.740646243095398,
+      "max_residual_shift_preview_pixels": 0.0,
+      "checks": [
+        {
+          "frame": 1201,
+          "camera_registered_ncc": 0.9997835159301758,
+          "mean_absolute_channel_difference": 0.18356718122959137,
+          "best_ncc": 0.9997835159301758,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1202,
+          "camera_registered_ncc": 0.9981575012207031,
+          "mean_absolute_channel_difference": 0.7355442047119141,
+          "best_ncc": 0.9981575012207031,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1203,
+          "camera_registered_ncc": 0.9994158148765564,
+          "mean_absolute_channel_difference": 0.4248511791229248,
+          "best_ncc": 0.9994158148765564,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1204,
+          "camera_registered_ncc": 0.9994651079177856,
+          "mean_absolute_channel_difference": 0.3934949040412903,
+          "best_ncc": 0.9994651079177856,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1205,
+          "camera_registered_ncc": 0.9984051585197449,
+          "mean_absolute_channel_difference": 0.681866466999054,
+          "best_ncc": 0.9984051585197449,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1206,
+          "camera_registered_ncc": 0.9996545910835266,
+          "mean_absolute_channel_difference": 0.2864583432674408,
+          "best_ncc": 0.9996545910835266,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1207,
+          "camera_registered_ncc": 0.9986446499824524,
+          "mean_absolute_channel_difference": 0.6360543966293335,
+          "best_ncc": 0.9986446499824524,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1208,
+          "camera_registered_ncc": 0.9989495277404785,
+          "mean_absolute_channel_difference": 0.5647321343421936,
+          "best_ncc": 0.9989495277404785,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1209,
+          "camera_registered_ncc": 0.9998310208320618,
+          "mean_absolute_channel_difference": 0.14179421961307526,
+          "best_ncc": 0.9998310208320618,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1210,
+          "camera_registered_ncc": 0.998153567314148,
+          "mean_absolute_channel_difference": 0.740646243095398,
+          "best_ncc": 0.998153567314148,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1211,
+          "camera_registered_ncc": 0.9994072318077087,
+          "mean_absolute_channel_difference": 0.4271896183490753,
+          "best_ncc": 0.9994072318077087,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1212,
+          "camera_registered_ncc": 0.9995047450065613,
+          "mean_absolute_channel_difference": 0.3757440447807312,
+          "best_ncc": 0.9995047450065613,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1213,
+          "camera_registered_ncc": 0.998393714427948,
+          "mean_absolute_channel_difference": 0.6885629296302795,
+          "best_ncc": 0.998393714427948,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1214,
+          "camera_registered_ncc": 0.9996404647827148,
+          "mean_absolute_channel_difference": 0.2976190447807312,
+          "best_ncc": 0.9996404647827148,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1215,
+          "camera_registered_ncc": 0.9987024664878845,
+          "mean_absolute_channel_difference": 0.6241496801376343,
+          "best_ncc": 0.9987024664878845,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1216,
+          "camera_registered_ncc": 0.9988999962806702,
+          "mean_absolute_channel_difference": 0.5782312750816345,
+          "best_ncc": 0.9988999962806702,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1217,
+          "camera_registered_ncc": 0.9998787641525269,
+          "mean_absolute_channel_difference": 0.10182823240756989,
+          "best_ncc": 0.9998787641525269,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1218,
+          "camera_registered_ncc": 0.9981780052185059,
+          "mean_absolute_channel_difference": 0.7379889488220215,
+          "best_ncc": 0.9981780052185059,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1219,
+          "camera_registered_ncc": 0.9993828535079956,
+          "mean_absolute_channel_difference": 0.432823121547699,
+          "best_ncc": 0.9993828535079956,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1220,
+          "camera_registered_ncc": 0.999539315700531,
+          "mean_absolute_channel_difference": 0.35246598720550537,
+          "best_ncc": 0.999539315700531,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1221,
+          "camera_registered_ncc": 0.9983412027359009,
+          "mean_absolute_channel_difference": 0.699404776096344,
+          "best_ncc": 0.9983412027359009,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1222,
+          "camera_registered_ncc": 0.9996356964111328,
+          "mean_absolute_channel_difference": 0.30314627289772034,
+          "best_ncc": 0.9996356964111328,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1223,
+          "camera_registered_ncc": 0.9987645745277405,
+          "mean_absolute_channel_difference": 0.6113945841789246,
+          "best_ncc": 0.9987645745277405,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1224,
+          "camera_registered_ncc": 0.9988812208175659,
+          "mean_absolute_channel_difference": 0.5830144286155701,
+          "best_ncc": 0.9988812208175659,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1225,
+          "camera_registered_ncc": 0.9999999403953552,
+          "mean_absolute_channel_difference": 0.0,
+          "best_ncc": 0.9999999403953552,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1226,
+          "camera_registered_ncc": 0.9981982707977295,
+          "mean_absolute_channel_difference": 0.7295918464660645,
+          "best_ncc": 0.9981982707977295,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1227,
+          "camera_registered_ncc": 0.9993559718132019,
+          "mean_absolute_channel_difference": 0.4406887888908386,
+          "best_ncc": 0.9993559718132019,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1228,
+          "camera_registered_ncc": 0.9995723962783813,
+          "mean_absolute_channel_difference": 0.33216410875320435,
+          "best_ncc": 0.9995723962783813,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1229,
+          "camera_registered_ncc": 0.9983143210411072,
+          "mean_absolute_channel_difference": 0.7014243006706238,
+          "best_ncc": 0.9983143210411072,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1230,
+          "camera_registered_ncc": 0.9996189475059509,
+          "mean_absolute_channel_difference": 0.3147321343421936,
+          "best_ncc": 0.9996189475059509,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1231,
+          "camera_registered_ncc": 0.9988488554954529,
+          "mean_absolute_channel_difference": 0.5922619104385376,
+          "best_ncc": 0.9988488554954529,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1232,
+          "camera_registered_ncc": 0.9988253116607666,
+          "mean_absolute_channel_difference": 0.5983206033706665,
+          "best_ncc": 0.9988253116607666,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1233,
+          "camera_registered_ncc": 0.999878466129303,
+          "mean_absolute_channel_difference": 0.10140305757522583,
+          "best_ncc": 0.999878466129303,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1234,
+          "camera_registered_ncc": 0.9982196092605591,
+          "mean_absolute_channel_difference": 0.725021243095398,
+          "best_ncc": 0.9982196092605591,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1235,
+          "camera_registered_ncc": 0.9993259310722351,
+          "mean_absolute_channel_difference": 0.4569515287876129,
+          "best_ncc": 0.9993259310722351,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1236,
+          "camera_registered_ncc": 0.9996071457862854,
+          "mean_absolute_channel_difference": 0.31441327929496765,
+          "best_ncc": 0.9996071457862854,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1237,
+          "camera_registered_ncc": 0.9982984662055969,
+          "mean_absolute_channel_difference": 0.7097151279449463,
+          "best_ncc": 0.9982984662055969,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1238,
+          "camera_registered_ncc": 0.9996071457862854,
+          "mean_absolute_channel_difference": 0.324404776096344,
+          "best_ncc": 0.9996071457862854,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1239,
+          "camera_registered_ncc": 0.9988831281661987,
+          "mean_absolute_channel_difference": 0.5835459232330322,
+          "best_ncc": 0.9988831281661987,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1240,
+          "camera_registered_ncc": 0.998780369758606,
+          "mean_absolute_channel_difference": 0.6077806353569031,
+          "best_ncc": 0.998780369758606,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1241,
+          "camera_registered_ncc": 0.9998070597648621,
+          "mean_absolute_channel_difference": 0.1613520383834839,
+          "best_ncc": 0.9998070597648621,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1242,
+          "camera_registered_ncc": 0.9982509016990662,
+          "mean_absolute_channel_difference": 0.7223639488220215,
+          "best_ncc": 0.9982509016990662,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1243,
+          "camera_registered_ncc": 0.9993008375167847,
+          "mean_absolute_channel_difference": 0.47045066952705383,
+          "best_ncc": 0.9993008375167847,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1244,
+          "camera_registered_ncc": 0.9996240139007568,
+          "mean_absolute_channel_difference": 0.3059098720550537,
+          "best_ncc": 0.9996240139007568,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1245,
+          "camera_registered_ncc": 0.9983234405517578,
+          "mean_absolute_channel_difference": 0.7090773582458496,
+          "best_ncc": 0.9983234405517578,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1246,
+          "camera_registered_ncc": 0.999588668346405,
+          "mean_absolute_channel_difference": 0.340029776096344,
+          "best_ncc": 0.999588668346405,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1247,
+          "camera_registered_ncc": 0.9989538788795471,
+          "mean_absolute_channel_difference": 0.5684523582458496,
+          "best_ncc": 0.9989538788795471,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1248,
+          "camera_registered_ncc": 0.9987645745277405,
+          "mean_absolute_channel_difference": 0.6159651279449463,
+          "best_ncc": 0.9987645745277405,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1249,
+          "camera_registered_ncc": 0.9997692108154297,
+          "mean_absolute_channel_difference": 0.19462159276008606,
+          "best_ncc": 0.9997692108154297,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "porch_tiles",
+      "patch_size": 48,
+      "min_camera_registered_ncc": 0.9991217255592346,
+      "max_mean_absolute_channel_difference": 0.8760127425193787,
+      "max_residual_shift_preview_pixels": 0.0,
+      "checks": [
+        {
+          "frame": 1201,
+          "camera_registered_ncc": 0.9998652935028076,
+          "mean_absolute_channel_difference": 0.27893519401550293,
+          "best_ncc": 0.9998652935028076,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1202,
+          "camera_registered_ncc": 0.9991754293441772,
+          "mean_absolute_channel_difference": 0.8548900485038757,
+          "best_ncc": 0.9991754293441772,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1203,
+          "camera_registered_ncc": 0.9997923374176025,
+          "mean_absolute_channel_difference": 0.39597800374031067,
+          "best_ncc": 0.9997923374176025,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1204,
+          "camera_registered_ncc": 0.999593198299408,
+          "mean_absolute_channel_difference": 0.5882523059844971,
+          "best_ncc": 0.999593198299408,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1205,
+          "camera_registered_ncc": 0.9994112253189087,
+          "mean_absolute_channel_difference": 0.7241030335426331,
+          "best_ncc": 0.9994112253189087,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1206,
+          "camera_registered_ncc": 0.999832034111023,
+          "mean_absolute_channel_difference": 0.33304399251937866,
+          "best_ncc": 0.999832034111023,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1207,
+          "camera_registered_ncc": 0.9992048740386963,
+          "mean_absolute_channel_difference": 0.8401331305503845,
+          "best_ncc": 0.9992048740386963,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1208,
+          "camera_registered_ncc": 0.9996567964553833,
+          "mean_absolute_channel_difference": 0.5442708134651184,
+          "best_ncc": 0.9996567964553833,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1209,
+          "camera_registered_ncc": 0.9998781085014343,
+          "mean_absolute_channel_difference": 0.24725115299224854,
+          "best_ncc": 0.9998781085014343,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1210,
+          "camera_registered_ncc": 0.9991567730903625,
+          "mean_absolute_channel_difference": 0.8696469664573669,
+          "best_ncc": 0.9991567730903625,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1211,
+          "camera_registered_ncc": 0.999793529510498,
+          "mean_absolute_channel_difference": 0.39163774251937866,
+          "best_ncc": 0.999793529510498,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1212,
+          "camera_registered_ncc": 0.999637246131897,
+          "mean_absolute_channel_difference": 0.5442708134651184,
+          "best_ncc": 0.999637246131897,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1213,
+          "camera_registered_ncc": 0.9993909001350403,
+          "mean_absolute_channel_difference": 0.7280092835426331,
+          "best_ncc": 0.9993909001350403,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1214,
+          "camera_registered_ncc": 0.9998371601104736,
+          "mean_absolute_channel_difference": 0.31915509700775146,
+          "best_ncc": 0.9998371601104736,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1215,
+          "camera_registered_ncc": 0.9992230534553528,
+          "mean_absolute_channel_difference": 0.8139467835426331,
+          "best_ncc": 0.9992230534553528,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1216,
+          "camera_registered_ncc": 0.9996526837348938,
+          "mean_absolute_channel_difference": 0.5399305820465088,
+          "best_ncc": 0.9996526837348938,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1217,
+          "camera_registered_ncc": 0.999904453754425,
+          "mean_absolute_channel_difference": 0.19024884700775146,
+          "best_ncc": 0.999904453754425,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1218,
+          "camera_registered_ncc": 0.9991570711135864,
+          "mean_absolute_channel_difference": 0.8548900485038757,
+          "best_ncc": 0.9991570711135864,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1219,
+          "camera_registered_ncc": 0.9997963309288025,
+          "mean_absolute_channel_difference": 0.3841145932674408,
+          "best_ncc": 0.9997963309288025,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1220,
+          "camera_registered_ncc": 0.9996781349182129,
+          "mean_absolute_channel_difference": 0.49942129850387573,
+          "best_ncc": 0.9996781349182129,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1221,
+          "camera_registered_ncc": 0.9993855357170105,
+          "mean_absolute_channel_difference": 0.7288773059844971,
+          "best_ncc": 0.9993855357170105,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1222,
+          "camera_registered_ncc": 0.999847948551178,
+          "mean_absolute_channel_difference": 0.30005785822868347,
+          "best_ncc": 0.999847948551178,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1223,
+          "camera_registered_ncc": 0.9992654919624329,
+          "mean_absolute_channel_difference": 0.7853009104728699,
+          "best_ncc": 0.9992654919624329,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1224,
+          "camera_registered_ncc": 0.9996446371078491,
+          "mean_absolute_channel_difference": 0.5423900485038757,
+          "best_ncc": 0.9996446371078491,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1225,
+          "camera_registered_ncc": 1.0000001192092896,
+          "mean_absolute_channel_difference": 0.0,
+          "best_ncc": 1.0000001192092896,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1226,
+          "camera_registered_ncc": 0.9991527795791626,
+          "mean_absolute_channel_difference": 0.8511284589767456,
+          "best_ncc": 0.9991527795791626,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1227,
+          "camera_registered_ncc": 0.9997954964637756,
+          "mean_absolute_channel_difference": 0.3893229067325592,
+          "best_ncc": 0.9997954964637756,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1228,
+          "camera_registered_ncc": 0.999712347984314,
+          "mean_absolute_channel_difference": 0.46556714177131653,
+          "best_ncc": 0.999712347984314,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1229,
+          "camera_registered_ncc": 0.9993577599525452,
+          "mean_absolute_channel_difference": 0.7456597089767456,
+          "best_ncc": 0.9993577599525452,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1230,
+          "camera_registered_ncc": 0.9998425245285034,
+          "mean_absolute_channel_difference": 0.31568285822868347,
+          "best_ncc": 0.9998425245285034,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1231,
+          "camera_registered_ncc": 0.9992793798446655,
+          "mean_absolute_channel_difference": 0.7760416865348816,
+          "best_ncc": 0.9992793798446655,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1232,
+          "camera_registered_ncc": 0.9996263384819031,
+          "mean_absolute_channel_difference": 0.5666956305503845,
+          "best_ncc": 0.9996263384819031,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1233,
+          "camera_registered_ncc": 0.9999064803123474,
+          "mean_absolute_channel_difference": 0.1840277761220932,
+          "best_ncc": 0.9999064803123474,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1234,
+          "camera_registered_ncc": 0.9991370439529419,
+          "mean_absolute_channel_difference": 0.8641493320465088,
+          "best_ncc": 0.9991370439529419,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1235,
+          "camera_registered_ncc": 0.9997764825820923,
+          "mean_absolute_channel_difference": 0.42259839177131653,
+          "best_ncc": 0.9997764825820923,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1236,
+          "camera_registered_ncc": 0.999731719493866,
+          "mean_absolute_channel_difference": 0.4435763955116272,
+          "best_ncc": 0.999731719493866,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1237,
+          "camera_registered_ncc": 0.9993345737457275,
+          "mean_absolute_channel_difference": 0.7651909589767456,
+          "best_ncc": 0.9993345737457275,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1238,
+          "camera_registered_ncc": 0.9998315572738647,
+          "mean_absolute_channel_difference": 0.33969905972480774,
+          "best_ncc": 0.9998315572738647,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1239,
+          "camera_registered_ncc": 0.9992743134498596,
+          "mean_absolute_channel_difference": 0.7838541865348816,
+          "best_ncc": 0.9992743134498596,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1240,
+          "camera_registered_ncc": 0.9995896816253662,
+          "mean_absolute_channel_difference": 0.6008391380310059,
+          "best_ncc": 0.9995896816253662,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1241,
+          "camera_registered_ncc": 0.9998759031295776,
+          "mean_absolute_channel_difference": 0.24797452986240387,
+          "best_ncc": 0.9998759031295776,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1242,
+          "camera_registered_ncc": 0.9991217255592346,
+          "mean_absolute_channel_difference": 0.8760127425193787,
+          "best_ncc": 0.9991217255592346,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1243,
+          "camera_registered_ncc": 0.9997602701187134,
+          "mean_absolute_channel_difference": 0.44646990299224854,
+          "best_ncc": 0.9997602701187134,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1244,
+          "camera_registered_ncc": 0.9997575879096985,
+          "mean_absolute_channel_difference": 0.41825810074806213,
+          "best_ncc": 0.9997575879096985,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1245,
+          "camera_registered_ncc": 0.9993000626564026,
+          "mean_absolute_channel_difference": 0.7874710559844971,
+          "best_ncc": 0.9993000626564026,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1246,
+          "camera_registered_ncc": 0.999819815158844,
+          "mean_absolute_channel_difference": 0.36429399251937866,
+          "best_ncc": 0.999819815158844,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1247,
+          "camera_registered_ncc": 0.9993044137954712,
+          "mean_absolute_channel_difference": 0.7738715410232544,
+          "best_ncc": 0.9993044137954712,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1248,
+          "camera_registered_ncc": 0.9995757341384888,
+          "mean_absolute_channel_difference": 0.6170428395271301,
+          "best_ncc": 0.9995757341384888,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1249,
+          "camera_registered_ncc": 0.9998611211776733,
+          "mean_absolute_channel_difference": 0.2829861044883728,
+          "best_ncc": 0.9998611211776733,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "door_surround",
+      "patch_size": 48,
+      "min_camera_registered_ncc": 0.9984060525894165,
+      "max_mean_absolute_channel_difference": 0.4392361044883728,
+      "max_residual_shift_preview_pixels": 0.0,
+      "checks": [
+        {
+          "frame": 1201,
+          "camera_registered_ncc": 0.9995306134223938,
+          "mean_absolute_channel_difference": 0.16203702986240387,
+          "best_ncc": 0.9995306134223938,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1202,
+          "camera_registered_ncc": 0.9986060857772827,
+          "mean_absolute_channel_difference": 0.40436920523643494,
+          "best_ncc": 0.9986060857772827,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1203,
+          "camera_registered_ncc": 0.9990828037261963,
+          "mean_absolute_channel_difference": 0.30613425374031067,
+          "best_ncc": 0.9990828037261963,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1204,
+          "camera_registered_ncc": 0.9992178082466125,
+          "mean_absolute_channel_difference": 0.26316550374031067,
+          "best_ncc": 0.9992178082466125,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1205,
+          "camera_registered_ncc": 0.9984248876571655,
+          "mean_absolute_channel_difference": 0.43865740299224854,
+          "best_ncc": 0.9984248876571655,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1206,
+          "camera_registered_ncc": 0.999293327331543,
+          "mean_absolute_channel_difference": 0.23900462687015533,
+          "best_ncc": 0.999293327331543,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1207,
+          "camera_registered_ncc": 0.9989089369773865,
+          "mean_absolute_channel_difference": 0.3433159589767456,
+          "best_ncc": 0.9989089369773865,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1208,
+          "camera_registered_ncc": 0.9985830783843994,
+          "mean_absolute_channel_difference": 0.40943285822868347,
+          "best_ncc": 0.9985830783843994,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1209,
+          "camera_registered_ncc": 0.999550461769104,
+          "mean_absolute_channel_difference": 0.15205439925193787,
+          "best_ncc": 0.999550461769104,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1210,
+          "camera_registered_ncc": 0.998627781867981,
+          "mean_absolute_channel_difference": 0.39901620149612427,
+          "best_ncc": 0.998627781867981,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1211,
+          "camera_registered_ncc": 0.9990322589874268,
+          "mean_absolute_channel_difference": 0.31712964177131653,
+          "best_ncc": 0.9990322589874268,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1212,
+          "camera_registered_ncc": 0.9992867708206177,
+          "mean_absolute_channel_difference": 0.24377892911434174,
+          "best_ncc": 0.9992867708206177,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1213,
+          "camera_registered_ncc": 0.9984769225120544,
+          "mean_absolute_channel_difference": 0.42332175374031067,
+          "best_ncc": 0.9984769225120544,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1214,
+          "camera_registered_ncc": 0.9993026256561279,
+          "mean_absolute_channel_difference": 0.2356770783662796,
+          "best_ncc": 0.9993026256561279,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1215,
+          "camera_registered_ncc": 0.9989787340164185,
+          "mean_absolute_channel_difference": 0.32783564925193787,
+          "best_ncc": 0.9989787340164185,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1216,
+          "camera_registered_ncc": 0.9986258745193481,
+          "mean_absolute_channel_difference": 0.39916089177131653,
+          "best_ncc": 0.9986258745193481,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1217,
+          "camera_registered_ncc": 0.9995975494384766,
+          "mean_absolute_channel_difference": 0.1336805522441864,
+          "best_ncc": 0.9995975494384766,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1218,
+          "camera_registered_ncc": 0.9986265897750854,
+          "mean_absolute_channel_difference": 0.39684605598449707,
+          "best_ncc": 0.9986265897750854,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1219,
+          "camera_registered_ncc": 0.998981773853302,
+          "mean_absolute_channel_difference": 0.33087384700775146,
+          "best_ncc": 0.998981773853302,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1220,
+          "camera_registered_ncc": 0.9992621541023254,
+          "mean_absolute_channel_difference": 0.24508102238178253,
+          "best_ncc": 0.9992621541023254,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1221,
+          "camera_registered_ncc": 0.9984099268913269,
+          "mean_absolute_channel_difference": 0.43677660822868347,
+          "best_ncc": 0.9984099268913269,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1222,
+          "camera_registered_ncc": 0.9992613196372986,
+          "mean_absolute_channel_difference": 0.2465277761220932,
+          "best_ncc": 0.9992613196372986,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1223,
+          "camera_registered_ncc": 0.9989674091339111,
+          "mean_absolute_channel_difference": 0.32494214177131653,
+          "best_ncc": 0.9989674091339111,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1224,
+          "camera_registered_ncc": 0.9985783696174622,
+          "mean_absolute_channel_difference": 0.40813079476356506,
+          "best_ncc": 0.9985783696174622,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1225,
+          "camera_registered_ncc": 0.9999997615814209,
+          "mean_absolute_channel_difference": 0.0,
+          "best_ncc": 0.9999997615814209,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1226,
+          "camera_registered_ncc": 0.9986808896064758,
+          "mean_absolute_channel_difference": 0.3841145932674408,
+          "best_ncc": 0.9986808896064758,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1227,
+          "camera_registered_ncc": 0.9989686608314514,
+          "mean_absolute_channel_difference": 0.33043980598449707,
+          "best_ncc": 0.9989686608314514,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1228,
+          "camera_registered_ncc": 0.9992890954017639,
+          "mean_absolute_channel_difference": 0.23379629850387573,
+          "best_ncc": 0.9992890954017639,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1229,
+          "camera_registered_ncc": 0.9984938502311707,
+          "mean_absolute_channel_difference": 0.41550925374031067,
+          "best_ncc": 0.9984938502311707,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1230,
+          "camera_registered_ncc": 0.9992714524269104,
+          "mean_absolute_channel_difference": 0.24623842537403107,
+          "best_ncc": 0.9992714524269104,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1231,
+          "camera_registered_ncc": 0.9990394115447998,
+          "mean_absolute_channel_difference": 0.3090277910232544,
+          "best_ncc": 0.9990394115447998,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1232,
+          "camera_registered_ncc": 0.9985973238945007,
+          "mean_absolute_channel_difference": 0.4058159589767456,
+          "best_ncc": 0.9985973238945007,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1233,
+          "camera_registered_ncc": 0.9995948672294617,
+          "mean_absolute_channel_difference": 0.13599537312984467,
+          "best_ncc": 0.9995948672294617,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1234,
+          "camera_registered_ncc": 0.9987077713012695,
+          "mean_absolute_channel_difference": 0.3836805522441864,
+          "best_ncc": 0.9987077713012695,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1235,
+          "camera_registered_ncc": 0.9989354610443115,
+          "mean_absolute_channel_difference": 0.34172454476356506,
+          "best_ncc": 0.9989354610443115,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1236,
+          "camera_registered_ncc": 0.9993051290512085,
+          "mean_absolute_channel_difference": 0.2356770783662796,
+          "best_ncc": 0.9993051290512085,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1237,
+          "camera_registered_ncc": 0.9984644055366516,
+          "mean_absolute_channel_difference": 0.42766204476356506,
+          "best_ncc": 0.9984644055366516,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1238,
+          "camera_registered_ncc": 0.9992586970329285,
+          "mean_absolute_channel_difference": 0.25101274251937866,
+          "best_ncc": 0.9992586970329285,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1239,
+          "camera_registered_ncc": 0.9990061521530151,
+          "mean_absolute_channel_difference": 0.31785300374031067,
+          "best_ncc": 0.9990061521530151,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1240,
+          "camera_registered_ncc": 0.9985070824623108,
+          "mean_absolute_channel_difference": 0.42158564925193787,
+          "best_ncc": 0.9985070824623108,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1241,
+          "camera_registered_ncc": 0.9995415806770325,
+          "mean_absolute_channel_difference": 0.15422452986240387,
+          "best_ncc": 0.9995415806770325,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1242,
+          "camera_registered_ncc": 0.998638927936554,
+          "mean_absolute_channel_difference": 0.39453125,
+          "best_ncc": 0.998638927936554,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1243,
+          "camera_registered_ncc": 0.9988882541656494,
+          "mean_absolute_channel_difference": 0.35387730598449707,
+          "best_ncc": 0.9988882541656494,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1244,
+          "camera_registered_ncc": 0.9992682337760925,
+          "mean_absolute_channel_difference": 0.24291087687015533,
+          "best_ncc": 0.9992682337760925,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1245,
+          "camera_registered_ncc": 0.9984060525894165,
+          "mean_absolute_channel_difference": 0.4392361044883728,
+          "best_ncc": 0.9984060525894165,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1246,
+          "camera_registered_ncc": 0.9991240501403809,
+          "mean_absolute_channel_difference": 0.28877314925193787,
+          "best_ncc": 0.9991240501403809,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1247,
+          "camera_registered_ncc": 0.9989653825759888,
+          "mean_absolute_channel_difference": 0.3259548544883728,
+          "best_ncc": 0.9989653825759888,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1248,
+          "camera_registered_ncc": 0.9984748959541321,
+          "mean_absolute_channel_difference": 0.42390045523643494,
+          "best_ncc": 0.9984748959541321,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1249,
+          "camera_registered_ncc": 0.9994264841079712,
+          "mean_absolute_channel_difference": 0.1883680522441864,
+          "best_ncc": 0.9994264841079712,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "left_join",
+      "patch_size": 48,
+      "min_camera_registered_ncc": 0.9989395141601562,
+      "max_mean_absolute_channel_difference": 0.5341435074806213,
+      "max_residual_shift_preview_pixels": 0.0,
+      "checks": [
+        {
+          "frame": 1201,
+          "camera_registered_ncc": 0.9997724294662476,
+          "mean_absolute_channel_difference": 0.15943287312984467,
+          "best_ncc": 0.9997724294662476,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1202,
+          "camera_registered_ncc": 0.9994012713432312,
+          "mean_absolute_channel_difference": 0.39293980598449707,
+          "best_ncc": 0.9994012713432312,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1203,
+          "camera_registered_ncc": 0.998990535736084,
+          "mean_absolute_channel_difference": 0.5215567350387573,
+          "best_ncc": 0.998990535736084,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1204,
+          "camera_registered_ncc": 0.999570906162262,
+          "mean_absolute_channel_difference": 0.2977430522441864,
+          "best_ncc": 0.999570906162262,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1205,
+          "camera_registered_ncc": 0.9991965889930725,
+          "mean_absolute_channel_difference": 0.46122685074806213,
+          "best_ncc": 0.9991965889930725,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1206,
+          "camera_registered_ncc": 0.999427080154419,
+          "mean_absolute_channel_difference": 0.36950230598449707,
+          "best_ncc": 0.999427080154419,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1207,
+          "camera_registered_ncc": 0.9995119571685791,
+          "mean_absolute_channel_difference": 0.34085649251937866,
+          "best_ncc": 0.9995119571685791,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1208,
+          "camera_registered_ncc": 0.9989484548568726,
+          "mean_absolute_channel_difference": 0.5311053395271301,
+          "best_ncc": 0.9989484548568726,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1209,
+          "camera_registered_ncc": 0.9998172521591187,
+          "mean_absolute_channel_difference": 0.12861689925193787,
+          "best_ncc": 0.9998172521591187,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1210,
+          "camera_registered_ncc": 0.9994233846664429,
+          "mean_absolute_channel_difference": 0.38483795523643494,
+          "best_ncc": 0.9994233846664429,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1211,
+          "camera_registered_ncc": 0.9989821314811707,
+          "mean_absolute_channel_difference": 0.5266203880310059,
+          "best_ncc": 0.9989821314811707,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1212,
+          "camera_registered_ncc": 0.9995838403701782,
+          "mean_absolute_channel_difference": 0.28891780972480774,
+          "best_ncc": 0.9995838403701782,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1213,
+          "camera_registered_ncc": 0.9991952776908875,
+          "mean_absolute_channel_difference": 0.4657118022441864,
+          "best_ncc": 0.9991952776908875,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1214,
+          "camera_registered_ncc": 0.9993919730186462,
+          "mean_absolute_channel_difference": 0.38512730598449707,
+          "best_ncc": 0.9993919730186462,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1215,
+          "camera_registered_ncc": 0.9995250701904297,
+          "mean_absolute_channel_difference": 0.33825230598449707,
+          "best_ncc": 0.9995250701904297,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1216,
+          "camera_registered_ncc": 0.9989559650421143,
+          "mean_absolute_channel_difference": 0.5315393805503845,
+          "best_ncc": 0.9989559650421143,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1217,
+          "camera_registered_ncc": 0.9998879432678223,
+          "mean_absolute_channel_difference": 0.07870370149612427,
+          "best_ncc": 0.9998879432678223,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1218,
+          "camera_registered_ncc": 0.9994449615478516,
+          "mean_absolute_channel_difference": 0.37890625,
+          "best_ncc": 0.9994449615478516,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1219,
+          "camera_registered_ncc": 0.9989769458770752,
+          "mean_absolute_channel_difference": 0.5264756679534912,
+          "best_ncc": 0.9989769458770752,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1220,
+          "camera_registered_ncc": 0.9995905160903931,
+          "mean_absolute_channel_difference": 0.28616899251937866,
+          "best_ncc": 0.9995905160903931,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1221,
+          "camera_registered_ncc": 0.9992280006408691,
+          "mean_absolute_channel_difference": 0.45500579476356506,
+          "best_ncc": 0.9992280006408691,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1222,
+          "camera_registered_ncc": 0.9993583559989929,
+          "mean_absolute_channel_difference": 0.39641204476356506,
+          "best_ncc": 0.9993583559989929,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1223,
+          "camera_registered_ncc": 0.9995384216308594,
+          "mean_absolute_channel_difference": 0.3250868022441864,
+          "best_ncc": 0.9995384216308594,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1224,
+          "camera_registered_ncc": 0.9989733099937439,
+          "mean_absolute_channel_difference": 0.5287905335426331,
+          "best_ncc": 0.9989733099937439,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1225,
+          "camera_registered_ncc": 1.000000238418579,
+          "mean_absolute_channel_difference": 0.0,
+          "best_ncc": 1.000000238418579,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1226,
+          "camera_registered_ncc": 0.9994571208953857,
+          "mean_absolute_channel_difference": 0.37138310074806213,
+          "best_ncc": 0.9994571208953857,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1227,
+          "camera_registered_ncc": 0.9989659190177917,
+          "mean_absolute_channel_difference": 0.5274884104728699,
+          "best_ncc": 0.9989659190177917,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1228,
+          "camera_registered_ncc": 0.9996032118797302,
+          "mean_absolute_channel_difference": 0.2769097089767456,
+          "best_ncc": 0.9996032118797302,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1229,
+          "camera_registered_ncc": 0.9992440342903137,
+          "mean_absolute_channel_difference": 0.4509548544883728,
+          "best_ncc": 0.9992440342903137,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1230,
+          "camera_registered_ncc": 0.9993035793304443,
+          "mean_absolute_channel_difference": 0.41811344027519226,
+          "best_ncc": 0.9993035793304443,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1231,
+          "camera_registered_ncc": 0.9995368719100952,
+          "mean_absolute_channel_difference": 0.32667824625968933,
+          "best_ncc": 0.9995368719100952,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1232,
+          "camera_registered_ncc": 0.9989892244338989,
+          "mean_absolute_channel_difference": 0.5224247574806213,
+          "best_ncc": 0.9989892244338989,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1233,
+          "camera_registered_ncc": 0.9998698234558105,
+          "mean_absolute_channel_difference": 0.09273726493120193,
+          "best_ncc": 0.9998698234558105,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1234,
+          "camera_registered_ncc": 0.9994706511497498,
+          "mean_absolute_channel_difference": 0.3628472089767456,
+          "best_ncc": 0.9994706511497498,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1235,
+          "camera_registered_ncc": 0.9989479184150696,
+          "mean_absolute_channel_difference": 0.5313946604728699,
+          "best_ncc": 0.9989479184150696,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1236,
+          "camera_registered_ncc": 0.9996171593666077,
+          "mean_absolute_channel_difference": 0.2669270932674408,
+          "best_ncc": 0.9996171593666077,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1237,
+          "camera_registered_ncc": 0.9992609620094299,
+          "mean_absolute_channel_difference": 0.44458910822868347,
+          "best_ncc": 0.9992609620094299,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1238,
+          "camera_registered_ncc": 0.9992680549621582,
+          "mean_absolute_channel_difference": 0.42896410822868347,
+          "best_ncc": 0.9992680549621582,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1239,
+          "camera_registered_ncc": 0.9995319843292236,
+          "mean_absolute_channel_difference": 0.32913774251937866,
+          "best_ncc": 0.9995319843292236,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1240,
+          "camera_registered_ncc": 0.9989883899688721,
+          "mean_absolute_channel_difference": 0.5221354365348816,
+          "best_ncc": 0.9989883899688721,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1241,
+          "camera_registered_ncc": 0.9998223185539246,
+          "mean_absolute_channel_difference": 0.1267361044883728,
+          "best_ncc": 0.9998223185539246,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1242,
+          "camera_registered_ncc": 0.9994761943817139,
+          "mean_absolute_channel_difference": 0.36342594027519226,
+          "best_ncc": 0.9994761943817139,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1243,
+          "camera_registered_ncc": 0.9989395141601562,
+          "mean_absolute_channel_difference": 0.5341435074806213,
+          "best_ncc": 0.9989395141601562,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1244,
+          "camera_registered_ncc": 0.9996206760406494,
+          "mean_absolute_channel_difference": 0.26533564925193787,
+          "best_ncc": 0.9996206760406494,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1245,
+          "camera_registered_ncc": 0.9992853403091431,
+          "mean_absolute_channel_difference": 0.43764469027519226,
+          "best_ncc": 0.9992853403091431,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1246,
+          "camera_registered_ncc": 0.9992280006408691,
+          "mean_absolute_channel_difference": 0.44806134700775146,
+          "best_ncc": 0.9992280006408691,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1247,
+          "camera_registered_ncc": 0.9995429515838623,
+          "mean_absolute_channel_difference": 0.32060185074806213,
+          "best_ncc": 0.9995429515838623,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1248,
+          "camera_registered_ncc": 0.9990179538726807,
+          "mean_absolute_channel_difference": 0.5146122574806213,
+          "best_ncc": 0.9990179538726807,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 1249,
+          "camera_registered_ncc": 0.9997677803039551,
+          "mean_absolute_channel_difference": 0.16594327986240387,
+          "best_ncc": 0.9997677803039551,
+          "residual_translation_preview_pixels": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "unobstructed_facade_band": [
+    {
+      "frame": 1201,
+      "ncc": 0.9998387694358826,
+      "mean_absolute_channel_difference": 0.16925048828125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1202,
+      "ncc": 0.9993435144424438,
+      "mean_absolute_channel_difference": 0.50714111328125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1203,
+      "ncc": 0.9996695518493652,
+      "mean_absolute_channel_difference": 0.33184814453125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1204,
+      "ncc": 0.9996821284294128,
+      "mean_absolute_channel_difference": 0.32012939453125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1205,
+      "ncc": 0.9994071125984192,
+      "mean_absolute_channel_difference": 0.473876953125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1206,
+      "ncc": 0.9997607469558716,
+      "mean_absolute_channel_difference": 0.2496337890625,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1207,
+      "ncc": 0.9994575381278992,
+      "mean_absolute_channel_difference": 0.4575398862361908,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1208,
+      "ncc": 0.9995434284210205,
+      "mean_absolute_channel_difference": 0.40771484375,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1209,
+      "ncc": 0.9998770356178284,
+      "mean_absolute_channel_difference": 0.12847900390625,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1210,
+      "ncc": 0.9993430376052856,
+      "mean_absolute_channel_difference": 0.506591796875,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1211,
+      "ncc": 0.9996666312217712,
+      "mean_absolute_channel_difference": 0.3320108950138092,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1212,
+      "ncc": 0.9996935129165649,
+      "mean_absolute_channel_difference": 0.3045247495174408,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1213,
+      "ncc": 0.9994011521339417,
+      "mean_absolute_channel_difference": 0.4804280698299408,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1214,
+      "ncc": 0.9997595548629761,
+      "mean_absolute_channel_difference": 0.2479044646024704,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1215,
+      "ncc": 0.999471127986908,
+      "mean_absolute_channel_difference": 0.451904296875,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1216,
+      "ncc": 0.9995381832122803,
+      "mean_absolute_channel_difference": 0.41363525390625,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1217,
+      "ncc": 0.99992436170578,
+      "mean_absolute_channel_difference": 0.0782674178481102,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1218,
+      "ncc": 0.9993440508842468,
+      "mean_absolute_channel_difference": 0.5083414912223816,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1219,
+      "ncc": 0.9996636509895325,
+      "mean_absolute_channel_difference": 0.33367919921875,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1220,
+      "ncc": 0.9997138977050781,
+      "mean_absolute_channel_difference": 0.2902018129825592,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1221,
+      "ncc": 0.9993930459022522,
+      "mean_absolute_channel_difference": 0.48480224609375,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1222,
+      "ncc": 0.9997543096542358,
+      "mean_absolute_channel_difference": 0.2526448667049408,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1223,
+      "ncc": 0.9994937777519226,
+      "mean_absolute_channel_difference": 0.4439697265625,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1224,
+      "ncc": 0.9995287656784058,
+      "mean_absolute_channel_difference": 0.4181315004825592,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1225,
+      "ncc": 0.9999997019767761,
+      "mean_absolute_channel_difference": 0.0,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1226,
+      "ncc": 0.9993516206741333,
+      "mean_absolute_channel_difference": 0.5063679814338684,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1227,
+      "ncc": 0.9996613264083862,
+      "mean_absolute_channel_difference": 0.34295654296875,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1228,
+      "ncc": 0.9997276067733765,
+      "mean_absolute_channel_difference": 0.27783203125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1229,
+      "ncc": 0.999387800693512,
+      "mean_absolute_channel_difference": 0.4878133237361908,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1230,
+      "ncc": 0.9997462034225464,
+      "mean_absolute_channel_difference": 0.2618204653263092,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1231,
+      "ncc": 0.9995061159133911,
+      "mean_absolute_channel_difference": 0.4395751953125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1232,
+      "ncc": 0.9995155334472656,
+      "mean_absolute_channel_difference": 0.4265340268611908,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1233,
+      "ncc": 0.9999265074729919,
+      "mean_absolute_channel_difference": 0.0759073868393898,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1234,
+      "ncc": 0.9993572235107422,
+      "mean_absolute_channel_difference": 0.5072835087776184,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1235,
+      "ncc": 0.9996457695960999,
+      "mean_absolute_channel_difference": 0.3489583432674408,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1236,
+      "ncc": 0.9997352361679077,
+      "mean_absolute_channel_difference": 0.2691243588924408,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1237,
+      "ncc": 0.9993799328804016,
+      "mean_absolute_channel_difference": 0.4951578676700592,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1238,
+      "ncc": 0.9997351765632629,
+      "mean_absolute_channel_difference": 0.2734781801700592,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1239,
+      "ncc": 0.9995218515396118,
+      "mean_absolute_channel_difference": 0.4340616762638092,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1240,
+      "ncc": 0.9995058178901672,
+      "mean_absolute_channel_difference": 0.4335733950138092,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1241,
+      "ncc": 0.9998857378959656,
+      "mean_absolute_channel_difference": 0.1233723983168602,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1242,
+      "ncc": 0.9993540644645691,
+      "mean_absolute_channel_difference": 0.5118204951286316,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1243,
+      "ncc": 0.9996345639228821,
+      "mean_absolute_channel_difference": 0.3598836362361908,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1244,
+      "ncc": 0.999743640422821,
+      "mean_absolute_channel_difference": 0.26629638671875,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1245,
+      "ncc": 0.999372124671936,
+      "mean_absolute_channel_difference": 0.50323486328125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1246,
+      "ncc": 0.9997231364250183,
+      "mean_absolute_channel_difference": 0.28546142578125,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1247,
+      "ncc": 0.999535083770752,
+      "mean_absolute_channel_difference": 0.4304402768611908,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1248,
+      "ncc": 0.9994931817054749,
+      "mean_absolute_channel_difference": 0.4448038637638092,
+      "fraction_pixels_channel_difference_above45": 0.0
+    },
+    {
+      "frame": 1249,
+      "ncc": 0.999848484992981,
+      "mean_absolute_channel_difference": 0.1609700471162796,
+      "fraction_pixels_channel_difference_above45": 0.0
+    }
+  ],
+  "sampling_notes": "All49rendered frames compared after actual camera projection. Normal interpolation/AA can vary edge pixels. Residual search is quarter-preview-pixel within\u00b11;visual contact sheets and layer witnesses reviewed separately.",
+  "band_sampling_note": "128x128 camera-tracked area above the source characters. The earlier180x180 diagnostic band intersected their normal foreground occlusion near its lower edge and was replaced by this unobstructed witness.",
+  "upper_window_layer_adjacent_frame_checks": [
+    {
+      "frame_pair": [
+        1201,
+        1202
+      ],
+      "adjacent_camera_registered_ncc": 0.9995585083961487,
+      "mean_absolute_channel_difference": 0.659339427947998,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1202,
+        1203
+      ],
+      "adjacent_camera_registered_ncc": 0.9994219541549683,
+      "mean_absolute_channel_difference": 0.7842446565628052,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1203,
+        1204
+      ],
+      "adjacent_camera_registered_ncc": 0.9992042779922485,
+      "mean_absolute_channel_difference": 1.0063283443450928,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1204,
+        1205
+      ],
+      "adjacent_camera_registered_ncc": 0.9994195103645325,
+      "mean_absolute_channel_difference": 0.8006415963172913,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1205,
+        1206
+      ],
+      "adjacent_camera_registered_ncc": 0.9995426535606384,
+      "mean_absolute_channel_difference": 0.6831437945365906,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1206,
+        1207
+      ],
+      "adjacent_camera_registered_ncc": 0.9993500709533691,
+      "mean_absolute_channel_difference": 0.9139617681503296,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1207,
+        1208
+      ],
+      "adjacent_camera_registered_ncc": 0.9992809295654297,
+      "mean_absolute_channel_difference": 0.8881452083587646,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1208,
+        1209
+      ],
+      "adjacent_camera_registered_ncc": 0.9993429780006409,
+      "mean_absolute_channel_difference": 0.9225940704345703,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1209,
+        1210
+      ],
+      "adjacent_camera_registered_ncc": 0.9995261430740356,
+      "mean_absolute_channel_difference": 0.6920166015625,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1210,
+        1211
+      ],
+      "adjacent_camera_registered_ncc": 0.9993773698806763,
+      "mean_absolute_channel_difference": 0.8062044382095337,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1211,
+        1212
+      ],
+      "adjacent_camera_registered_ncc": 0.9991329908370972,
+      "mean_absolute_channel_difference": 1.053601622581482,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1212,
+        1213
+      ],
+      "adjacent_camera_registered_ncc": 0.9993924498558044,
+      "mean_absolute_channel_difference": 0.8164260983467102,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1213,
+        1214
+      ],
+      "adjacent_camera_registered_ncc": 0.9995755553245544,
+      "mean_absolute_channel_difference": 0.6854913830757141,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1214,
+        1215
+      ],
+      "adjacent_camera_registered_ncc": 0.9992991089820862,
+      "mean_absolute_channel_difference": 0.9523621797561646,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1215,
+        1216
+      ],
+      "adjacent_camera_registered_ncc": 0.9992656707763672,
+      "mean_absolute_channel_difference": 0.8858048915863037,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1216,
+        1217
+      ],
+      "adjacent_camera_registered_ncc": 0.9993768334388733,
+      "mean_absolute_channel_difference": 0.917490541934967,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1217,
+        1218
+      ],
+      "adjacent_camera_registered_ncc": 0.9995450973510742,
+      "mean_absolute_channel_difference": 0.7062773108482361,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1218,
+        1219
+      ],
+      "adjacent_camera_registered_ncc": 0.9993544816970825,
+      "mean_absolute_channel_difference": 0.8297608494758606,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1219,
+        1220
+      ],
+      "adjacent_camera_registered_ncc": 0.9989767074584961,
+      "mean_absolute_channel_difference": 1.0950641632080078,
+      "fraction_pixels_channel_difference_above35": 6.561679790026247e-05
+    },
+    {
+      "frame_pair": [
+        1220,
+        1221
+      ],
+      "adjacent_camera_registered_ncc": 0.999251127243042,
+      "mean_absolute_channel_difference": 0.8433654308319092,
+      "fraction_pixels_channel_difference_above35": 6.561679790026247e-05
+    },
+    {
+      "frame_pair": [
+        1221,
+        1222
+      ],
+      "adjacent_camera_registered_ncc": 0.999356210231781,
+      "mean_absolute_channel_difference": 0.713801383972168,
+      "fraction_pixels_channel_difference_above35": 0.0001531058617672791
+    },
+    {
+      "frame_pair": [
+        1222,
+        1223
+      ],
+      "adjacent_camera_registered_ncc": 0.9987863302230835,
+      "mean_absolute_channel_difference": 1.0470690727233887,
+      "fraction_pixels_channel_difference_above35": 0.0004374453193350831
+    },
+    {
+      "frame_pair": [
+        1223,
+        1224
+      ],
+      "adjacent_camera_registered_ncc": 0.9988958835601807,
+      "mean_absolute_channel_difference": 0.961198627948761,
+      "fraction_pixels_channel_difference_above35": 0.0003062117235345582
+    },
+    {
+      "frame_pair": [
+        1224,
+        1225
+      ],
+      "adjacent_camera_registered_ncc": 0.9989582300186157,
+      "mean_absolute_channel_difference": 0.9997010827064514,
+      "fraction_pixels_channel_difference_above35": 0.0004374453193350831
+    },
+    {
+      "frame_pair": [
+        1225,
+        1226
+      ],
+      "adjacent_camera_registered_ncc": 0.9993534088134766,
+      "mean_absolute_channel_difference": 0.7330344319343567,
+      "fraction_pixels_channel_difference_above35": 0.0002405949256342957
+    },
+    {
+      "frame_pair": [
+        1226,
+        1227
+      ],
+      "adjacent_camera_registered_ncc": 0.9982857704162598,
+      "mean_absolute_channel_difference": 0.9278944134712219,
+      "fraction_pixels_channel_difference_above35": 0.0011592300962379703
+    },
+    {
+      "frame_pair": [
+        1227,
+        1228
+      ],
+      "adjacent_camera_registered_ncc": 0.9986788630485535,
+      "mean_absolute_channel_difference": 1.1467337608337402,
+      "fraction_pixels_channel_difference_above35": 0.0003937007874015748
+    },
+    {
+      "frame_pair": [
+        1228,
+        1229
+      ],
+      "adjacent_camera_registered_ncc": 0.999049723148346,
+      "mean_absolute_channel_difference": 0.8783974647521973,
+      "fraction_pixels_channel_difference_above35": 0.0003937007874015748
+    },
+    {
+      "frame_pair": [
+        1229,
+        1230
+      ],
+      "adjacent_camera_registered_ncc": 0.9992119073867798,
+      "mean_absolute_channel_difference": 0.7697360515594482,
+      "fraction_pixels_channel_difference_above35": 0.0005030621172353455
+    },
+    {
+      "frame_pair": [
+        1230,
+        1231
+      ],
+      "adjacent_camera_registered_ncc": 0.9985784888267517,
+      "mean_absolute_channel_difference": 1.0601706504821777,
+      "fraction_pixels_channel_difference_above35": 0.0008530183727034121
+    },
+    {
+      "frame_pair": [
+        1231,
+        1232
+      ],
+      "adjacent_camera_registered_ncc": 0.9982385635375977,
+      "mean_absolute_channel_difference": 1.0284266471862793,
+      "fraction_pixels_channel_difference_above35": 0.0010279965004374454
+    },
+    {
+      "frame_pair": [
+        1232,
+        1233
+      ],
+      "adjacent_camera_registered_ncc": 0.9980700016021729,
+      "mean_absolute_channel_difference": 1.0854986906051636,
+      "fraction_pixels_channel_difference_above35": 0.0015091863517060367
+    },
+    {
+      "frame_pair": [
+        1233,
+        1234
+      ],
+      "adjacent_camera_registered_ncc": 0.9986342191696167,
+      "mean_absolute_channel_difference": 0.8126421570777893,
+      "fraction_pixels_channel_difference_above35": 0.001268591426071741
+    },
+    {
+      "frame_pair": [
+        1234,
+        1235
+      ],
+      "adjacent_camera_registered_ncc": 0.9986645579338074,
+      "mean_absolute_channel_difference": 0.9504593014717102,
+      "fraction_pixels_channel_difference_above35": 0.0011811023622047244
+    },
+    {
+      "frame_pair": [
+        1235,
+        1236
+      ],
+      "adjacent_camera_registered_ncc": 0.9986810088157654,
+      "mean_absolute_channel_difference": 1.1340842247009277,
+      "fraction_pixels_channel_difference_above35": 0.00034995625546806647
+    },
+    {
+      "frame_pair": [
+        1236,
+        1237
+      ],
+      "adjacent_camera_registered_ncc": 0.9991313219070435,
+      "mean_absolute_channel_difference": 0.8892315626144409,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1237,
+        1238
+      ],
+      "adjacent_camera_registered_ncc": 0.9992581009864807,
+      "mean_absolute_channel_difference": 0.7938757538795471,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1238,
+        1239
+      ],
+      "adjacent_camera_registered_ncc": 0.9988502264022827,
+      "mean_absolute_channel_difference": 1.0600029230117798,
+      "fraction_pixels_channel_difference_above35": 0.0001968503937007874
+    },
+    {
+      "frame_pair": [
+        1239,
+        1240
+      ],
+      "adjacent_camera_registered_ncc": 0.9989554286003113,
+      "mean_absolute_channel_difference": 0.960214376449585,
+      "fraction_pixels_channel_difference_above35": 0.0001531058617672791
+    },
+    {
+      "frame_pair": [
+        1240,
+        1241
+      ],
+      "adjacent_camera_registered_ncc": 0.9989771246910095,
+      "mean_absolute_channel_difference": 1.0130431652069092,
+      "fraction_pixels_channel_difference_above35": 0.0003937007874015748
+    },
+    {
+      "frame_pair": [
+        1241,
+        1242
+      ],
+      "adjacent_camera_registered_ncc": 0.9990394711494446,
+      "mean_absolute_channel_difference": 0.8253353834152222,
+      "fraction_pixels_channel_difference_above35": 0.0005905511811023622
+    },
+    {
+      "frame_pair": [
+        1242,
+        1243
+      ],
+      "adjacent_camera_registered_ncc": 0.9991784691810608,
+      "mean_absolute_channel_difference": 0.8980242013931274,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1243,
+        1244
+      ],
+      "adjacent_camera_registered_ncc": 0.9987373948097229,
+      "mean_absolute_channel_difference": 1.1280038356781006,
+      "fraction_pixels_channel_difference_above35": 0.0003062117235345582
+    },
+    {
+      "frame_pair": [
+        1244,
+        1245
+      ],
+      "adjacent_camera_registered_ncc": 0.9992640018463135,
+      "mean_absolute_channel_difference": 0.8536381125450134,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1245,
+        1246
+      ],
+      "adjacent_camera_registered_ncc": 0.9991773366928101,
+      "mean_absolute_channel_difference": 0.8196850419044495,
+      "fraction_pixels_channel_difference_above35": 0.00041557305336832894
+    },
+    {
+      "frame_pair": [
+        1246,
+        1247
+      ],
+      "adjacent_camera_registered_ncc": 0.9990004301071167,
+      "mean_absolute_channel_difference": 1.040645956993103,
+      "fraction_pixels_channel_difference_above35": 0.0
+    },
+    {
+      "frame_pair": [
+        1247,
+        1248
+      ],
+      "adjacent_camera_registered_ncc": 0.9990732073783875,
+      "mean_absolute_channel_difference": 0.9338801503181458,
+      "fraction_pixels_channel_difference_above35": 0.0001968503937007874
+    },
+    {
+      "frame_pair": [
+        1248,
+        1249
+      ],
+      "adjacent_camera_registered_ncc": 0.9991099238395691,
+      "mean_absolute_channel_difference": 0.9860382080078125,
+      "fraction_pixels_channel_difference_above35": 0.00032808398950131233
+    }
+  ],
+  "window_sampling_note": "Native preview upper window band y0..180, above source character occlusion; card-camera registered. Existing3Dwindow parallax is expected and not forced to zero.",
+  "inherited_material_animation_classified": true,
+  "fixed_facade_geometry_visibility_and_material_coordinate_controls_all49frames": true
+}

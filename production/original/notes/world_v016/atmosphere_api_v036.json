@@ -1,0 +1,240 @@
+{
+  "objects": [
+    {
+      "name": "v032 | Camera follows shared pair center",
+      "parent": null,
+      "location": [
+        0.0,
+        -16.0,
+        3.0
+      ],
+      "type": "CAMERA",
+      "bounds": [
+        0.0,
+        0.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "name": "v015 | Painted village",
+      "parent": null,
+      "location": [
+        2.0160000324249268,
+        12.0,
+        3.0
+      ],
+      "type": "MESH",
+      "bounds": [
+        -8.064000129699707,
+        12.095999717712402,
+        -2.6700000762939453,
+        8.683228492736816
+      ]
+    },
+    {
+      "name": "v016 | CHILDREN | held painterly near-age pair",
+      "parent": null,
+      "location": [
+        -1.6891200542449951,
+        0.0,
+        0.7713720202445984
+      ],
+      "type": "GREASEPENCIL",
+      "bounds": [
+        -2.3882100582122803,
+        -0.9900301098823547,
+        0.7708719968795776,
+        2.221872091293335
+      ]
+    },
+    {
+      "name": "v023 | Opening oak roots fence and path | one coherent surface",
+      "parent": null,
+      "location": [
+        0.0,
+        2.0,
+        3.0
+      ],
+      "type": "MESH",
+      "bounds": [
+        -6.480000019073486,
+        6.516041278839111,
+        -0.6456131935119629,
+        6.652525424957275
+      ]
+    },
+    {
+      "name": "v020 | Walking path | continuous blended paint",
+      "parent": null,
+      "location": [
+        0.0,
+        2.059999942779541,
+        0.0
+      ],
+      "type": "MESH",
+      "bounds": [
+        -24.0,
+        122.0,
+        -30.0,
+        0.9588000178337097
+      ]
+    },
+    {
+      "name": "v020 | Foreground bank | continuous blended paint",
+      "parent": null,
+      "location": [
+        0.0,
+        -4.989999771118164,
+        0.0
+      ],
+      "type": "MESH",
+      "bounds": [
+        -24.0,
+        122.0,
+        -30.0,
+        1.25
+      ]
+    }
+  ],
+  "glare_properties": [
+    "location",
+    "location_absolute",
+    "width",
+    "height",
+    "name",
+    "label",
+    "parent",
+    "warning_propagation",
+    "use_custom_color",
+    "color",
+    "select",
+    "show_options",
+    "show_preview",
+    "hide",
+    "mute",
+    "show_texture",
+    "bl_idname",
+    "bl_label",
+    "bl_description",
+    "bl_icon",
+    "bl_width_default",
+    "bl_width_min",
+    "bl_width_max",
+    "bl_height_default",
+    "bl_height_min",
+    "bl_height_max"
+  ],
+  "glare_inputs": [
+    [
+      "Image",
+      "NodeSocketColor",
+      "<bpy_float[4], NodeSocketColor.default_value>"
+    ],
+    [
+      "Type",
+      "NodeSocketMenu",
+      "Streaks"
+    ],
+    [
+      "Quality",
+      "NodeSocketMenu",
+      "Medium"
+    ],
+    [
+      "Threshold",
+      "NodeSocketFloat",
+      "1.0"
+    ],
+    [
+      "Smoothness",
+      "NodeSocketFloatFactor",
+      "0.10000000149011612"
+    ],
+    [
+      "Clamp",
+      "NodeSocketBool",
+      "False"
+    ],
+    [
+      "Maximum",
+      "NodeSocketFloat",
+      "10.0"
+    ],
+    [
+      "Strength",
+      "NodeSocketFloatFactor",
+      "1.0"
+    ],
+    [
+      "Saturation",
+      "NodeSocketFloatFactor",
+      "1.0"
+    ],
+    [
+      "Tint",
+      "NodeSocketColor",
+      "<bpy_float[4], NodeSocketColor.default_value>"
+    ],
+    [
+      "Size",
+      "NodeSocketFloatFactor",
+      "0.5"
+    ],
+    [
+      "Streaks",
+      "NodeSocketInt",
+      "4"
+    ],
+    [
+      "Streaks Angle",
+      "NodeSocketFloatAngle",
+      "0.0"
+    ],
+    [
+      "Iterations",
+      "NodeSocketInt",
+      "3"
+    ],
+    [
+      "Fade",
+      "NodeSocketFloatFactor",
+      "0.8999999761581421"
+    ],
+    [
+      "Color Modulation",
+      "NodeSocketFloatFactor",
+      "0.25"
+    ],
+    [
+      "Diagonal",
+      "NodeSocketBool",
+      "True"
+    ],
+    [
+      "Sun Position",
+      "NodeSocketVectorFactor2D",
+      "<bpy_float[2], NodeSocketVectorFactor2D.default_value>"
+    ],
+    [
+      "Jitter",
+      "NodeSocketFloatFactor",
+      "0.0"
+    ],
+    [
+      "Kernel Data Type",
+      "NodeSocketMenu",
+      "Float"
+    ],
+    [
+      "Kernel",
+      "NodeSocketFloat",
+      "0.0"
+    ],
+    [
+      "Kernel",
+      "NodeSocketColor",
+      "<bpy_float[4], NodeSocketColor.default_value>"
+    ]
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "status": "Completed bounded full-color coat continuity rough; private normal-speed preview supplied. Independent artistic review pending. No production integration.",
+  "native_files": {
+    "WTSC_Full_Color_Coat_Continuity_Rough_v039.blend": {
+      "file": "native\\WTSC_Full_Color_Coat_Continuity_Rough_v039.blend",
+      "bytes": 3276178,
+      "sha256": "b566f189a848b364af3e0660ac7985db7f74d6c95bafd18914ead8ece09d5e84"
+    }
+  },
+  "reference": {
+    "file": "reference\\PRESERVED_COLOR_v038.blend",
+    "sha256": "6660e9a558ad77488e6c52c321cd930a39b5c1c6c98531dafc2a5b8a30341e34",
+    "matches_preserved_v038": true
+  },
+  "guide": "VIEWING_IMPORT_AND_ASSESSMENT_v039.txt",
+  "private_preview": {
+    "file": "previews\\WTSC_v039_Full_Color_Coat_Normal_Speed_Rough.mp4",
+    "bytes": 691877,
+    "sha256": "7cff3a37752975cc41437fb5a930f2285ad4e6c68c859f403e21d8a8f94fb203",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "status": "succeeded",
+    "local_metadata_readback_verified": true,
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download"
+  },
+  "proof_board": "previews/WTSC_v039_Coat_Cycle_Proof.png",
+  "movie": {
+    "preview": "previews\\WTSC_v039_Full_Color_Coat_Normal_Speed_Rough.mp4",
+    "bytes": 691877,
+    "dimensions": [
+      1280,
+      840
+    ],
+    "fps": 30.0,
+    "decoded_frames": 188,
+    "duration_seconds": 6.266666666666667,
+    "sections": [
+      {
+        "view": "CLOSE",
+        "movie_frames_zero_based": [
+          0,
+          93
+        ],
+        "source_native_frames": [
+          1,
+          94
+        ],
+        "scaling": "Original480x720 centered; no enlargement."
+      },
+      {
+        "view": "SHOT",
+        "movie_frames_zero_based": [
+          94,
+          187
+        ],
+        "source_native_frames": [
+          1,
+          94
+        ],
+        "scaling": "Original1280x720 at native pixels."
+      }
+    ],
+    "unique_native_frames_per_camera": 94,
+    "native_render_total_images": 188,
+    "recycled_native_cycle_frames": false,
+    "authored_coat_cycle": [
+      1,
+      32
+    ],
+    "cycles_repeated_natively": 3,
+    "body_root_unwrapped": true,
+    "closing_pose_included": true,
+    "audio": false,
+    "observation_limit": "Actual movie decoded for pixel/frame checks. No continuous video-player playback observation claimed.",
+    "proof_board": "previews\\WTSC_v039_Coat_Cycle_Proof.png"
+  },
+  "authored_coat_scope": {
+    "period_frames": 31,
+    "fps": 30,
+    "cycle_with_bookend": [
+      1,
+      32
+    ],
+    "quarter_frame_samples": 125,
+    "shape_keys_including_basis": 124,
+    "maximum_applied_hem_lag_degrees": 1.4908945326164722,
+    "method": "Continuous native garment shape breakdowns, loading compression and small settled response to actual trunk direction. Original color material/UVs retained.",
+    "active_actions_replaced": [
+      "coat shape-key Action",
+      "garment compression custom-property Action"
+    ]
+  },
+  "technical": {
+    "scope": "Cold native technical preservation and coat continuity. Does not establish artistic quality.",
+    "blender": "5.2.2 LTS",
+    "build_hash": "d13f752e3b9c",
+    "sampled_body_frames": 187,
+    "sampled_range": [
+      1,
+      94
+    ],
+    "all_noncoat_active_object_actions_changed": [],
+    "original_action_datablocks_mutated": [],
+    "other_mesh_rest_shape_UV_and_float_attributes_changed": [],
+    "material_node_defaults_ramps_links_images_changed": [],
+    "packed_image_bytes_changed": [],
+    "coat_UVs_unchanged": true,
+    "preservation_errors": {
+      "root_matrix": 0.0,
+      "all_bone_world_matrices": 0.0,
+      "wrist_world_matrices": 0.0,
+      "all_other_visible_mesh_vertices_m": 0.0,
+      "camera_matrices": 0.0
+    },
+    "quarter_frame_coat_samples_three_cycles": 373,
+    "local_coat_bookend_error_m": 0.0,
+    "local_coat_repeat_error_m": 0.0,
+    "max_quarter_frame_local_vertex_step_m": 0.004268848220096567,
+    "held_quarter_frame_intervals": 0,
+    "cycle_boundary_max_local_vertex_velocity_change_m_per_source_frame": 0.001311301968314413,
+    "compression_range": [
+      0,
+      1
+    ],
+    "intentional_changes": [
+      "Only coat shape-key breakdown action and compression custom-property action replaced.",
+      "Same full-color palette, UVs, image bytes and layer order.",
+      "Small settled hem lag and continuous loading compression."
+    ],
+    "artistic_limits": [
+      "Coat may still read fitted/flat; existing painting is pattern, not modeled fabric volume.",
+      "Existing crowded passing feet and paired acting remain outside this bounded coat pass."
+    ]
+  },
+  "visual": {
+    "scope": "Author inspection of actual native stills and decoded encoded-movie frames. Independent normal-speed artistic review remains pending.",
+    "inspected_native_files": [
+      "previews/CLOSE/0011.png",
+      "previews/CLOSE/0027.png",
+      "previews/SHOT/0020.png",
+      "previews/WTSC_v039_Coat_Cycle_Proof.png"
+    ],
+    "inspected_decoded_files": [
+      "previews/DECODED/0026.png",
+      "previews/DECODED/0120.png",
+      "previews/DECODED/0093.png"
+    ],
+    "observations": [
+      "Hands remain distinguishable against the garment in the inspected close poses and shot views.",
+      "Painted front and hem are attached coherently in the inspected poses; no detached painting layer or new exposed root wedge observed.",
+      "Coat changes are restrained; fitted/flat profile and conspicuous pattern remain.",
+      "Passing feet are still crowded; coat continuity does not resolve the gait/model or acting limits."
+    ],
+    "observation_limit": "No continuous video-player playback observation claimed. Decoding and native continuity tests are separate from visual animation quality.",
+    "direction": "Keep this as a rough coat/color continuity candidate. Do not mark final or promote over production."
+  },
+  "preservation": {
+    "protected_source_files_checked": 17,
+    "all_unchanged": true,
+    "body_hands_legs_shoes_head_cameras_and_materials_unchanged": true,
+    "full_color_v038_and_dark_variants_separate": true,
+    "no_other_specialist_or_production_files_written": true
+  },
+  "render": {
+    "total_final_native_images": 188,
+    "same_frame_proof_images_reused": 17,
+    "new_motion_images": 171,
+    "threads": 2,
+    "all_own_Blender_jobs_exited": true,
+    "world_renders": 0
+  },
+  "clock": {
+    "source_fps": 30,
+    "period": 31,
+    "stride_m": 0.9524437384576381,
+    "speed_mps": 0.9217197468944885,
+    "D_F_metres_plus_X": "0.9524437384576381*(F-1)/31",
+    "production_24fps_map": "F=1+(G-G0)*30/24; body/cloth/drawings/shoes/world share this mapping; unwrapped root must not repeat or be added twice.",
+    "production_origin_assigned": false,
+    "travel_csv": "reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv"
+  },
+  "remaining": [
+    "Coat still fitted/flat; surface pattern does not establish fabric volume",
+    "Crowded passing feet, simple profile/face/eye and limb/hand construction",
+    "Independent normal-speed viewing and artistic acceptance pending",
+    "Paired intentions, fatigue, stumbling, load-bearing clasp/support and authored recovery restart remain unfinished"
+  ],
+  "blockers": [],
+  "goal_assessment": "Useful bounded continuity progress; Arcane-level animation has not been reached."
+}

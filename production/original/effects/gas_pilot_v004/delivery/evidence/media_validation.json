@@ -1,0 +1,221 @@
+{
+  "outputs": [
+    {
+      "file": "WTSC_Gas_Particles_75-80s_v004.mp4",
+      "bytes": 957504,
+      "sha256": "1c812a8d1e348a8c1492448ed50cf7b2455e4e7401a7542cedce36754909fa3c",
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "full_decode": true
+    },
+    {
+      "file": "WTSC_Compare_LEFT-v003_RIGHT-Gas-v004.mp4",
+      "bytes": 2540582,
+      "sha256": "cd702baf23c7f8c2849aeb626e1f655383696fc8dce33764c09273f803702c9f",
+      "pixels": [
+        3840,
+        1080
+      ],
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "full_decode": true
+    }
+  ],
+  "all120_new_pngs_decoded": true,
+  "all_frames_actual_new_gpu_renders": true,
+  "partial_CPU_frames_excluded": true,
+  "same_camera_and_framing_as_v003": true,
+  "timeline": {
+    "new_local_range": [
+      -23,
+      96
+    ],
+    "production_range": [
+      1800,
+      1919
+    ],
+    "local_ignition": 1,
+    "production_ignition": 1824,
+    "gas_cache_local_range": [
+      1,
+      120
+    ]
+  },
+  "v003_source_unchanged_sha256": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+  "renderer": {
+    "mode": "motion",
+    "frames": [],
+    "wall_seconds": 50.6986938000191,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "range": [
+      0,
+      96
+    ],
+    "renderer": "Eevee32samples, volume96steps/32shadowsteps,4pixel tiles, custom depth18-34metres",
+    "cpu_threads": 2,
+    "requested_range": [
+      -23,
+      96
+    ],
+    "actual_main_pass_frames": 97,
+    "additional_manual_preroll_frames": 23,
+    "additional_manual_preroll_seconds": 10.747246099985205,
+    "total_final_frames": 120,
+    "total_render_calls_seconds": 61.445939900004305,
+    "note": "Initial animation start clamped to0. Missing23negative pre-roll frames were subsequently rendered explicitly; all120finalframes were validated."
+  },
+  "render_resources": {
+    "pid": 15384,
+    "exit_code": 0,
+    "terminated_for_limit": null,
+    "wall_seconds": 52.74122750002425,
+    "peak_rss_bytes": 1079332864,
+    "gpu_baseline_total_used_MiB": 282,
+    "gpu_peak_total_used_MiB": 1801,
+    "gpu_note": "Device total usage, not exclusive per-process attribution. Production was absent at preflight.",
+    "samples": [
+      {
+        "seconds": 0.01,
+        "rss_bytes": 2211840,
+        "gpu_total_used_MiB": 282
+      },
+      {
+        "seconds": 2.07,
+        "rss_bytes": 399368192,
+        "gpu_total_used_MiB": 308
+      },
+      {
+        "seconds": 4.13,
+        "rss_bytes": 927076352,
+        "gpu_total_used_MiB": 669
+      },
+      {
+        "seconds": 6.19,
+        "rss_bytes": 820617216,
+        "gpu_total_used_MiB": 461
+      },
+      {
+        "seconds": 8.27,
+        "rss_bytes": 878587904,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 10.33,
+        "rss_bytes": 1003286528,
+        "gpu_total_used_MiB": 669
+      },
+      {
+        "seconds": 12.39,
+        "rss_bytes": 904433664,
+        "gpu_total_used_MiB": 1801
+      },
+      {
+        "seconds": 14.45,
+        "rss_bytes": 1005981696,
+        "gpu_total_used_MiB": 683
+      },
+      {
+        "seconds": 16.51,
+        "rss_bytes": 1007816704,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 18.59,
+        "rss_bytes": 916205568,
+        "gpu_total_used_MiB": 1801
+      },
+      {
+        "seconds": 20.65,
+        "rss_bytes": 913084416,
+        "gpu_total_used_MiB": 461
+      },
+      {
+        "seconds": 22.72,
+        "rss_bytes": 1043746816,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 24.79,
+        "rss_bytes": 1006284800,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 26.88,
+        "rss_bytes": 1012805632,
+        "gpu_total_used_MiB": 669
+      },
+      {
+        "seconds": 28.93,
+        "rss_bytes": 911605760,
+        "gpu_total_used_MiB": 1798
+      },
+      {
+        "seconds": 31.0,
+        "rss_bytes": 914337792,
+        "gpu_total_used_MiB": 1801
+      },
+      {
+        "seconds": 33.07,
+        "rss_bytes": 914608128,
+        "gpu_total_used_MiB": 1801
+      },
+      {
+        "seconds": 35.13,
+        "rss_bytes": 914644992,
+        "gpu_total_used_MiB": 1801
+      },
+      {
+        "seconds": 37.2,
+        "rss_bytes": 1013944320,
+        "gpu_total_used_MiB": 1601
+      },
+      {
+        "seconds": 39.27,
+        "rss_bytes": 1013981184,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 41.33,
+        "rss_bytes": 941068288,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 43.4,
+        "rss_bytes": 915451904,
+        "gpu_total_used_MiB": 461
+      },
+      {
+        "seconds": 45.47,
+        "rss_bytes": 915472384,
+        "gpu_total_used_MiB": 1801
+      },
+      {
+        "seconds": 47.54,
+        "rss_bytes": 1014530048,
+        "gpu_total_used_MiB": 764
+      },
+      {
+        "seconds": 49.61,
+        "rss_bytes": 934776832,
+        "gpu_total_used_MiB": 461
+      },
+      {
+        "seconds": 51.68,
+        "rss_bytes": 916140032,
+        "gpu_total_used_MiB": 1801
+      }
+    ],
+    "all_frames_report_exists": true
+  },
+  "status": "Coarse technique proof. Gas viability is not cinematic acceptance or production integration."
+}

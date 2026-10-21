@@ -1,0 +1,21 @@
+{
+  "status": "Unaccepted artistic benchmark; technical completion only",
+  "method": "Native-resolution visual inspection of six actual decoded H.264 export frames, plus native append RGBA still. Entire MP4 and all96 PNGs fully decoded by FFmpeg/Pillow. No real-time playback was performed by this audit.",
+  "decoded_source_frames": [1814, 1817, 1825, 1845, 1875, 1890],
+  "observations": [
+    "The hard horizontal ignition crop edge seen in the first GPU test is removed by a native UV alpha falloff.",
+    "The growing soot plume retains detailed irregular lobes and torn fine edges in the H.264 export.",
+    "The contact point stays behind the native held foreground grass/path masking.",
+    "The late low dust widens at the ground rather than following the plume crown.",
+    "The camera, children and scenery remain held by design; their stillness is not an animation result.",
+    "Late plume samples retain substantially the same main lobe silhouette and painted core illumination. This is an unresolved art weakness."
+  ],
+  "limits": [
+    "No claim that sampled frames establish convincing full-speed temporal motion.",
+    "2.5D deformation and UV advection do not create new volumetric billows or evolving self-shadow.",
+    "H.264 preview is1080p; the separate still is native4K. Individual hero texture is1254x1254 and dust2172x724.",
+    "Single held shot does not establish integration with a moving production camera, emitter or character animation."
+  ],
+  "review_decision": "Deliver the concrete motion proof for artistic review. Do not declare cinematic acceptance or finish a larger pack using this method until its motion quality is accepted or revised.",
+  "v001": "Rejected technical prototype, preserved separately."
+}

@@ -1,0 +1,25 @@
+V017 SAFE CORRECTIVE CHECKPOINT - ACTUAL PAINTED CHILDREN
+Status: bounded technical tests pass; VISUAL READINESS STILL UNPASSED.
+
+Changed from immutable v016
+The sleeve and cuff now share a rounded elbow path. A tapered, gently bowed forearm and native corner subdivision remove many flat end corners. Original images, base UVs, materials, source skeleton, body weights, hand drawings and contact controls remain. The evaluated arm surface interpolates the original UVs; it is still a planar painted surface.
+The trouser knee gains a bend-driven inner compression notch and restrained outer cap. The girl's front hem stays over the bent knee, while rear slack is tucked slightly inward. These are pose-driven correctives, not frame-clock drawings. The thigh support station and boot-entry anchors are unchanged.
+A FrontLayer override on each FAR wrist changes the sleeve/cuff/forearm/hand ordering for the crossing study; forearm is in front of its sleeve. This is a deliberate drawing-layer choice, not proof that every folded pose is visually solved.
+
+Observed gain and limits
+Cuff corners, shoulder transitions and reaching/brace elbow joins are softer and more continuous in the before/after renders. Compression is only a partial gain: trousers still read as bent painted strips in some deep poses, and skirt/jacket mass still needs authored cloth judgement. The tight folded far arm remains puffy/ambiguous even with the explicit layer override. Hand shapes and the helping offer are unchanged; no load-bearing clasp is approved. These defects remain visible on the stress boards. No final-art or natural-performance acceptance is implied.
+
+Technical evidence
+There are EIGHT actual two-bone IK chains: four arms and four legs. Twelve refers to stress poses, not chains.
+All twelve baseline skeletal poses match v016; boot geometry, base UVs, original materials, base topology and body weights are retained. No additional signed polygon inversions were found in those static leg/garment tests. Fresh off-cache HIP and wrist edits respond. Native unkeyed append passes with internal dependencies and drivers retained.
+The saved two-second fixture was reopened with scripts disabled and tested at 94 integer/half-frame samples (the deliberate section cut excluded). Maximum IK error is 0.049mm, boot drift is zero, and projected palm gap is 0.500..0.500mm. Those are planar drawing-contact measurements, not 3D force validation.
+Root travel of 25 mm drifts boots by 25 mm without compensation. Reapplying fixed world foot-bone goals reduces measured drift to 0.000068mm, with all eight chains reachable. Deliberate 500 mm excess travel is rejected by the reach guard. The brace chest-angle scan rejects sampled 0/10/20 degree cases; sampled 25..65 degree cases are reachable at that fixed hip/foot setup. This is not a general visual approval or an exact continuous limit.
+
+Girl attention view remains UNSOLVED
+The original right-profile head and braid are retained unchanged. No v008 patch, edge-on card turn, proxy head or invented approval was used. Required art remains two matching registered quarter views bridging right profile, front passage and toward-boy left profile, preserving fringe, skull/cheek/jaw, eye/nose and anatomical braid origin.
+Source atlas: 1672x941. Retained girl neck registration approximately [1009.0, 315.0]; braid root approximately [947.0, 282.0]. New views need explicit crop offsets/neck registration and a tagged braid root for deliberate interpolation, followed by design and pair-clearance review. Existing profile/reflection is not a completed attention turn.
+
+Safe pause
+This checkpoint ends the current unguided corrective pass. No walk cycle, new performance, tutorial emulation, FX or production edit was started. The parent has now supplied verified written/illustrated findings; the separate one-child walk has not started before this checkpoint return. Web documentation/extension fetch attempts in this task were unavailable and are not claimed as studied tutorial evidence. Production and v016 source hashes remain unchanged. Actual comparison movie: 2 seconds, 48 frames at 24fps, under20MB.
+
+Follow-on verdict: the rig supports attempting a bounded one-child straight-profile walk test, with visual defects kept as explicit failure criteria. Deep cloth/crossing defects prevent final-art acceptance, not that isolated experiment. This checkpoint proves flat-foot world-matrix locking under root travel. Fixed active toe/heel pivots during rolling, swing clearance, two-step displacement and loop seams remain acceptance checks for the next exercise; they are not claimed proved here.

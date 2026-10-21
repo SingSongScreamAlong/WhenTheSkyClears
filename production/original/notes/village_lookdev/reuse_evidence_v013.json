@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-16",
+  "contract": "dcc-mcp-production-reuse/v1",
+  "guide": "notes/dcc_agent_workflows.md",
+  "guide_checker_passed": true,
+  "scope": "One provisional 4K village still; no scrolling or full-length render",
+  "host": {"blender": "5.2.2 LTS", "adapter": "0.2.14", "instance": "dda6f921-e18c-49ca-98c6-23dc0ee2dbd2", "pid": 39896},
+  "discovery": [
+    {"source": "Existing project/native inspection", "result": "Verified v011 file ownership, reusable native GP pair, native image.import_as_mesh_planes operator; inspected source/image1 and previous village painting pixels."},
+    {"source": "DCC-MCP marketplace", "query": "blender image planes grease pencil", "candidates": ["dcc-ai-hunyuan3d 0.1.0", "dcc-ai-openai-image 0.1.0", "dcc-ai-tripo3d 0.1.0"], "result": "External 3D providers do not solve the frame composition and require other services; image provider duplicates requested built-in imagegen. No installations or purchases."},
+    {"source": "Official Blender Extensions", "url": "https://extensions.blender.org/add-ons/import-images-as-planes/versions/", "result": "Image-plane extension identified, but the host's built-in operator is already callable. No third-party package is needed."},
+    {"source": "Official Blender upstream", "url": "https://github.com/blender/blender-addons/blob/main/io_import_images_as_planes.py", "result": "Native image/UV-plane workflow fits the task; actual installed operator validated through real local MCP."}
+  ],
+  "selected": "Reuse native image-as-mesh-plane importer and existing GP drawing. Exposed scripting only coordinates original scene composition, masks and material value grouping. Built-in GPT imagegen supplies three original painted raster layers.",
+  "rights": "Only project-supplied image references and new built-in GPT imagegen outputs used in the new scene. No Arcane artwork imported, no third-party asset source bundled, no accounts or permissions changed.",
+  "verification": ["native_reopen_v013.json", "media_verification_v013.json"],
+  "approval": "Pending still review"
+}

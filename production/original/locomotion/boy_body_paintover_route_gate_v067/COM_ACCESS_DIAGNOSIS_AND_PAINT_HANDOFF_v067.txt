@@ -1,0 +1,28 @@
+WHEN THE SKY CLEARS — READ-ONLY PHOTOSHOP ROUTE DIAGNOSIS / USER PAINT HANDOFF
+2026-10-19. No COM retry, elevated execution, registry/security change, installation, Photoshop launch, art edit, render, or production mutation.
+
+Known facts
+- The prior local `New-Object -ComObject Photoshop.Application` attempt failed before Photoshop opened: `Retrieving the COM class factory ... CLSID {2682BB05-0A88-430F-8614-EE4E60E6D916} ... 80070005 Access is denied (E_ACCESSDENIED)`. Its outcome is known denied; no process was started. This check did not retry it.
+- The read-only HKCR registration for that exact CLSID exists. `LocalServer32` points to `C:\Program Files\Adobe\Adobe Photoshop 2026\Photoshop.exe /Automation`, and that executable exists with product version 27.11. Adobe's `Presets\Scripts` folder also exists. A missing executable or absent COM class registration is therefore not the observed blocker.
+- PowerShell reported FullLanguage. This alone says nothing about the effective COM activation permission.
+- A read-only query for matching Windows DistributedCOM System events returned `Attempted to perform an unauthorized operation`; the event detail needed to attribute the denial is unavailable here. No AppID subkey was returned beneath this CLSID by the bounded registry read; that is not a diagnosis of DCOM configuration.
+- The known DCC-CUA 1.9.4 capability test limits one drag to two endpoints. It cannot produce a held curved painting gesture, and native Blender data curves remain geometric authoring rather than brush painting.
+
+What is uncertain
+- `0x80070005` means access was denied, but does not identify the denying layer. This evidence cannot distinguish the workspace sandbox from Windows COM launch/activation policy, account-specific application policy, or another local access control. No Photoshop-specific Windows event was observable. Do not prescribe a DCOM ACL or registry edit from this error alone. Microsoft's documentation also notes that some DCOM 10016 events are expected and need no permission edits.
+- Adobe supports local Photoshop scripts from File > Scripts > Browse, and its API documents PathItem.strokePath with a brush. Those documentation facts do not prove this execution context can run it; scripted path stroking is also not equivalent to human freehand painting. No supported automation remedy is verified here.
+
+Smallest viable route without new access: USER-OPERATED PAINTING HANDOFF
+1. In the isolated file `locomotion/boy_reference_adaptation_v066/native/Boy_Phase08_Manual_Painted_Contour_Correction_v066.blend`, hide the clearly named `RETAINED v053 A006 HEAD | front-facing image` object for render and export one transparent 660x720 body underdrawing. Do not edit the original v066 native; save any working copy in a new isolated folder.
+2. Open that underdrawing and the actual painted `locomotion/boy_reference_adaptation_v065/reference/A_v053_frame006.png` as matched-size layers/reference in Photoshop. Hide/crop the heads for body judgment. On a separate raster layer, hand-paint the connected shoulder–elbow–waist cloth folds, knee/calf volume, boot shafts and sole rollover, and distinct nonparallel fingers/wrists. Use the v066 joint locations as anatomical underdrawing, not as final angular silhouettes.
+3. Save a layered PSD and export one transparent 660x720 PNG in the isolated folder. Keep the paint layer separate from the underdrawing. Compare the resulting body next to A at full shot size with heads hidden; only then restore the approved head for a final single-pose review. Do not start other poses or inbetweens on a body that still looks disconnected.
+
+This is a user-operated art step, not a completed assistant paint-over. It requires the person doing the painting to use the already installed Photoshop UI; it does not require a permission change, install, purchase, or new credentials. It is the smallest route that can actually provide direct brush painting under current assistant access.
+
+If automated Photoshop access is desired later, obtain explicit authorization for a bounded access diagnosis by the user or administrator. The first diagnostic should identify which policy denied activation for the exact CLSID and execution context (including a matching Windows event if available); only a confirmed rule should drive a change. Permission/registry changes or an unsandboxed COM retry are not approved by this continuation.
+
+Official references
+- Adobe Photoshop scripting: https://helpx.adobe.com/photoshop/using/scripting.html
+- Adobe PathItem API: https://developer.adobe.com/photoshop/uxp/2022/ps-reference/classes/pathitem
+- Microsoft HRESULT 0x80070005: https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/705fb797-2175-4a90-b5a3-3918024b10b8
+- Microsoft DCOM event 10016 caution: https://learn.microsoft.com/en-us/troubleshoot/windows-client/application-management/event-10016-logged-when-accessing-dcom

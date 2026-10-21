@@ -1,0 +1,115 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\locomotion\\authored_walk_beats_v053\\native\\WTSC_Authored_Walk_Beats_v053.blend",
+  "source_sha256": "23fc2578b499d6d2fded4f1d16a5466d93bea59b8bb7caa9eee26e7004a8a29b",
+  "original_pair_paint": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+  "original_pair_sha256": "e7968ec2efa29e176330a74f0557578702b3b5de0a9eb7855a069d1b0f8a5d04",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\girl_yoke_drape_v056\\native\\WTSC_Girl_Original_Paint_Yoke_v056.blend",
+  "native_sha256": "439bb9d4ae8e135d72a38fab1171d03bbfbacc16d23112cb7bd8c3b5c064687b",
+  "source_unchanged": true,
+  "source_root_camera_and_all_existing_rig_actions_untouched": true,
+  "new_yoke_grid": [
+    17,
+    11
+  ],
+  "dress_original_uv_material_pixels_unchanged": true,
+  "shape_actions": [
+    {
+      "object": "V056 GIRL | pose-specific original painted shoulder yoke",
+      "keys": 6,
+      "curves": 6,
+      "action": "V056 | original-paint yoke authored 32-frame cloth cycle"
+    },
+    {
+      "object": "V046 GIRL | tailored knee-length dress",
+      "keys": 6,
+      "curves": 6,
+      "action": "V056 | girl fitted torso authored 32-frame cloth cycle"
+    }
+  ],
+  "shape_clock_frames": 32,
+  "phase_anchors": [
+    [
+      1,
+      {
+        "loading_near": 0.1
+      }
+    ],
+    [
+      4,
+      {
+        "loading_near": 1.0
+      }
+    ],
+    [
+      7,
+      {}
+    ],
+    [
+      9,
+      {
+        "passing_near": 1.0
+      }
+    ],
+    [
+      11,
+      {}
+    ],
+    [
+      13,
+      {
+        "push_near": 1.0
+      }
+    ],
+    [
+      16,
+      {}
+    ],
+    [
+      17,
+      {
+        "loading_far": 0.1
+      }
+    ],
+    [
+      20,
+      {
+        "loading_far": 1.0
+      }
+    ],
+    [
+      23,
+      {}
+    ],
+    [
+      25,
+      {
+        "passing_far": 1.0
+      }
+    ],
+    [
+      27,
+      {}
+    ],
+    [
+      29,
+      {
+        "push_far": 1.0
+      }
+    ],
+    [
+      32,
+      {}
+    ],
+    [
+      33,
+      {
+        "loading_near": 0.1
+      }
+    ]
+  ],
+  "scene_frame_end": 257,
+  "render_range_for_review": [
+    1,
+    65
+  ]
+}

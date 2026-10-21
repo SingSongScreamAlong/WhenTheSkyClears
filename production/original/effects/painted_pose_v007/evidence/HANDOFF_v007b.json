@@ -1,0 +1,664 @@
+{
+  "status": "Completed requested actual pose strip and short single-blast proof v007b. Artistic criteria only partially met; NOT accepted and not ready for production substitution.",
+  "scope": "One blast,24fps, no variants/tracer expansion/full integration.96actual1080p frames,4seconds, no audio or camera shake.",
+  "user_priority": "Preserve liked painted appearance; correct lack of weight, impact and intensity.",
+  "assessment": {
+    "silhouette_evolution": {
+      "result": "Visibly corrected as distinct shapes; temporal weight only partly corrected.",
+      "observed": "Actual shot keys change from compact rupture to angled dirt fan atage3, unequal peak masses atage10, separate curled remnants atages18\u201332. They no longer just enlarge the same mature cloud. However, the12cel weighted transitions can read as dissolves; detached curls remain too translucent to establish heavy rolling resistance."
+    },
+    "connected_ground_consequence": {
+      "result": "Improved, but not convincingly finished.",
+      "observed": "The source is continuously connected to a low spreading dust skirt; actual96frame proof shows chunks rising and returning, short landing puffs, then stationary chips and a shallow scar. The puffs/scar are subtle at full shot size and the contact remains visibly planar. Some left-side contact is hidden by the foreground/character holdout."
+    },
+    "impact_intensity": {
+      "result": "Sharper attack is visible; do not claim the weight problem solved.",
+      "observed": "Frames1824\u20131827 move from a compact ground glint to a large asymmetric dirt gesture within3frames. Heat and local response are brief and source-timed. This provides a clearer impulse without shake/audio/additional explosions. Later smoke thins into floating curls too readily rather than resisting and settling as a heavy mass."
+    },
+    "liked_style": {
+      "result": "Partial preservation only.",
+      "observed": "Preferred v003 material saturation/value/tint and generated paint grain are retained. New cels are visibly different modeled washes, so this is not an exact restoration of the liked v003 texture. Do not promote the new art as approved."
+    },
+    "method_limit": "The current12pose generated-atlas plus exposure-blending approach supplies genuine silhouette changes but does not reliably supply temporally coherent rolling inbetweens or the required sustained weight. More variants/scale curves would not solve that remaining limitation. No further pass or new simulation was started."
+  },
+  "inspection": "Inspected actual full-size native pose keys, pose/landing strips, final settled frame and decodedMP4 frames1825/1827/1834/1846/1848/1850/1868/1913. Full MP4 decode verified. No claim of independently verified real-time player playback.",
+  "media": {
+    "video": {
+      "file": "WTSC_Single_Drawn_Blast_v007b_MUTED.mp4",
+      "bytes": 637705,
+      "sha256": "4fd5d14ab0f037e7eb47f5631ae8e2ac9ddee5dea7dbbcf6f1e1d3ff0ea9b259",
+      "fps": 24,
+      "pixels": [
+        1920,
+        1080
+      ],
+      "frames": 96,
+      "seconds": 4,
+      "audio": false,
+      "full_decode_passed": true,
+      "all96_actual_pngs_decoded": true
+    },
+    "pose_strip": {
+      "file": "WTSC_Drawn_Pose_Strip_v007b.jpg",
+      "actual_native_keys": 12,
+      "not_just_raw_generated_atlas": true
+    },
+    "impact_strip": {
+      "file": "WTSC_Impact_and_Landings_v007b.jpg",
+      "actual_frames": [
+        1824,
+        1825,
+        1826,
+        1827,
+        1829,
+        1834,
+        1844,
+        1846,
+        1848,
+        1850,
+        1854,
+        1913
+      ]
+    },
+    "decoded_audit_frames": [
+      1825,
+      1827,
+      1834,
+      1846,
+      1848,
+      1850,
+      1868,
+      1913
+    ],
+    "opaque_child_mask": [
+      {
+        "frame": 1825,
+        "opaque_child_pixels": 7334,
+        "max_channel_delta": 0
+      },
+      {
+        "frame": 1827,
+        "opaque_child_pixels": 7334,
+        "max_channel_delta": 0
+      },
+      {
+        "frame": 1834,
+        "opaque_child_pixels": 7334,
+        "max_channel_delta": 0
+      },
+      {
+        "frame": 1848,
+        "opaque_child_pixels": 7334,
+        "max_channel_delta": 0
+      },
+      {
+        "frame": 1913,
+        "opaque_child_pixels": 7334,
+        "max_channel_delta": 0
+      }
+    ],
+    "protected_sources_unchanged": {
+      "v006_native": true,
+      "v003_assets": true,
+      "production_v038": true
+    },
+    "native_asset": {
+      "file": "WTSC_Single_Drawn_Blast_Assets_v007b.blend",
+      "bytes": 3800257,
+      "sha256": "9226d59e470d07535a1694f4552bf4cbe816419e7b6d41cd34cb6dfdbc87b1c3",
+      "new_packed_art_atlases": 2,
+      "cel_scale_rotation_position_animation": false
+    },
+    "no_audio_camera_shake_variants_or_tracers": true,
+    "review_status": "Review candidate; distinct shapes are visible but impact/rolling weight and drawing continuity require honest visual evaluation, not build-only acceptance."
+  },
+  "native_proof": "WTSC_LOCAL_WORKSPACE\\effects\\painted_pose_v007\\native\\WTSC_Single_Drawn_Blast_Proof_v007b.blend",
+  "native_assets": "WTSC_LOCAL_WORKSPACE\\effects\\painted_pose_v007\\native\\WTSC_Single_Drawn_Blast_Assets_v007b.blend",
+  "guide": "WTSC_LOCAL_WORKSPACE\\effects\\painted_pose_v007\\REVIEW_AND_IMPORT.txt",
+  "library": [
+    {
+      "file_name": "WTSC_Drawn_Pose_Strip_v007b.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 493654,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Impact_and_Landings_v007b.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 548101,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Single_Drawn_Blast_v007b_MUTED.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 637705,
+      "status": "succeeded"
+    },
+    {
+      "file_name": "WTSC_Single_Blast_Review_Source_v007b.zip",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_size_bytes": 5933935,
+      "status": "succeeded"
+    }
+  ],
+  "package": {
+    "file": "WTSC_Single_Blast_Review_Source_v007b.zip",
+    "bytes": 5933935,
+    "sha256": "05fbe182c361e91de3c59e4fca2e3cd72885e7469e8df7bb7f9b1b4291833471",
+    "files": 17,
+    "crc_passed": true,
+    "background_or_production_scene_included": false,
+    "simulation_cache": false
+  },
+  "renderer": {
+    "mode": "motion",
+    "fps": 24,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "renderer": "BLENDER_EEVEE",
+    "samples": 32,
+    "one_blast": true,
+    "audio": false,
+    "records": [
+      {
+        "frame": 1818,
+        "seconds": 2.1291059000068344,
+        "file": "previews\\motion_frames\\1818.png"
+      },
+      {
+        "frame": 1819,
+        "seconds": 0.880074400047306,
+        "file": "previews\\motion_frames\\1819.png"
+      },
+      {
+        "frame": 1820,
+        "seconds": 0.8844733000150882,
+        "file": "previews\\motion_frames\\1820.png"
+      },
+      {
+        "frame": 1821,
+        "seconds": 0.8919914999860339,
+        "file": "previews\\motion_frames\\1821.png"
+      },
+      {
+        "frame": 1822,
+        "seconds": 0.8800820999895222,
+        "file": "previews\\motion_frames\\1822.png"
+      },
+      {
+        "frame": 1823,
+        "seconds": 0.8974734000512399,
+        "file": "previews\\motion_frames\\1823.png"
+      },
+      {
+        "frame": 1824,
+        "seconds": 0.8853496999945492,
+        "file": "previews\\motion_frames\\1824.png"
+      },
+      {
+        "frame": 1825,
+        "seconds": 0.8971993000013754,
+        "file": "previews\\motion_frames\\1825.png"
+      },
+      {
+        "frame": 1826,
+        "seconds": 0.8884257000172511,
+        "file": "previews\\motion_frames\\1826.png"
+      },
+      {
+        "frame": 1827,
+        "seconds": 0.8548713999916799,
+        "file": "previews\\motion_frames\\1827.png"
+      },
+      {
+        "frame": 1828,
+        "seconds": 0.8837651999783702,
+        "file": "previews\\motion_frames\\1828.png"
+      },
+      {
+        "frame": 1829,
+        "seconds": 0.8570939999772236,
+        "file": "previews\\motion_frames\\1829.png"
+      },
+      {
+        "frame": 1830,
+        "seconds": 0.8746542000444606,
+        "file": "previews\\motion_frames\\1830.png"
+      },
+      {
+        "frame": 1831,
+        "seconds": 0.8587503000162542,
+        "file": "previews\\motion_frames\\1831.png"
+      },
+      {
+        "frame": 1832,
+        "seconds": 0.8778921000193805,
+        "file": "previews\\motion_frames\\1832.png"
+      },
+      {
+        "frame": 1833,
+        "seconds": 0.8609703999827616,
+        "file": "previews\\motion_frames\\1833.png"
+      },
+      {
+        "frame": 1834,
+        "seconds": 0.8824951999704354,
+        "file": "previews\\motion_frames\\1834.png"
+      },
+      {
+        "frame": 1835,
+        "seconds": 0.8711765999905765,
+        "file": "previews\\motion_frames\\1835.png"
+      },
+      {
+        "frame": 1836,
+        "seconds": 0.8612660999642685,
+        "file": "previews\\motion_frames\\1836.png"
+      },
+      {
+        "frame": 1837,
+        "seconds": 0.876531099958811,
+        "file": "previews\\motion_frames\\1837.png"
+      },
+      {
+        "frame": 1838,
+        "seconds": 0.8746169999940321,
+        "file": "previews\\motion_frames\\1838.png"
+      },
+      {
+        "frame": 1839,
+        "seconds": 0.8651630000094883,
+        "file": "previews\\motion_frames\\1839.png"
+      },
+      {
+        "frame": 1840,
+        "seconds": 0.8813653999823146,
+        "file": "previews\\motion_frames\\1840.png"
+      },
+      {
+        "frame": 1841,
+        "seconds": 0.8577173000085168,
+        "file": "previews\\motion_frames\\1841.png"
+      },
+      {
+        "frame": 1842,
+        "seconds": 0.8837676000548527,
+        "file": "previews\\motion_frames\\1842.png"
+      },
+      {
+        "frame": 1843,
+        "seconds": 0.8654777000192553,
+        "file": "previews\\motion_frames\\1843.png"
+      },
+      {
+        "frame": 1844,
+        "seconds": 0.8766679000109434,
+        "file": "previews\\motion_frames\\1844.png"
+      },
+      {
+        "frame": 1845,
+        "seconds": 0.8723671000334434,
+        "file": "previews\\motion_frames\\1845.png"
+      },
+      {
+        "frame": 1846,
+        "seconds": 0.8876157999620773,
+        "file": "previews\\motion_frames\\1846.png"
+      },
+      {
+        "frame": 1847,
+        "seconds": 0.8830615999759175,
+        "file": "previews\\motion_frames\\1847.png"
+      },
+      {
+        "frame": 1848,
+        "seconds": 0.8762825999874622,
+        "file": "previews\\motion_frames\\1848.png"
+      },
+      {
+        "frame": 1849,
+        "seconds": 0.88889860000927,
+        "file": "previews\\motion_frames\\1849.png"
+      },
+      {
+        "frame": 1850,
+        "seconds": 0.862776699999813,
+        "file": "previews\\motion_frames\\1850.png"
+      },
+      {
+        "frame": 1851,
+        "seconds": 0.8755220999591984,
+        "file": "previews\\motion_frames\\1851.png"
+      },
+      {
+        "frame": 1852,
+        "seconds": 0.8689411000232212,
+        "file": "previews\\motion_frames\\1852.png"
+      },
+      {
+        "frame": 1853,
+        "seconds": 0.875694399990607,
+        "file": "previews\\motion_frames\\1853.png"
+      },
+      {
+        "frame": 1854,
+        "seconds": 0.8651858000084758,
+        "file": "previews\\motion_frames\\1854.png"
+      },
+      {
+        "frame": 1855,
+        "seconds": 0.8818606000277214,
+        "file": "previews\\motion_frames\\1855.png"
+      },
+      {
+        "frame": 1856,
+        "seconds": 0.8717850999673828,
+        "file": "previews\\motion_frames\\1856.png"
+      },
+      {
+        "frame": 1857,
+        "seconds": 0.8813809999846853,
+        "file": "previews\\motion_frames\\1857.png"
+      },
+      {
+        "frame": 1858,
+        "seconds": 0.8766944000381045,
+        "file": "previews\\motion_frames\\1858.png"
+      },
+      {
+        "frame": 1859,
+        "seconds": 0.860563300026115,
+        "file": "previews\\motion_frames\\1859.png"
+      },
+      {
+        "frame": 1860,
+        "seconds": 0.8795931999920867,
+        "file": "previews\\motion_frames\\1860.png"
+      },
+      {
+        "frame": 1861,
+        "seconds": 0.8892401999910362,
+        "file": "previews\\motion_frames\\1861.png"
+      },
+      {
+        "frame": 1862,
+        "seconds": 0.8782999999821186,
+        "file": "previews\\motion_frames\\1862.png"
+      },
+      {
+        "frame": 1863,
+        "seconds": 0.8881947000045329,
+        "file": "previews\\motion_frames\\1863.png"
+      },
+      {
+        "frame": 1864,
+        "seconds": 0.8573557000490837,
+        "file": "previews\\motion_frames\\1864.png"
+      },
+      {
+        "frame": 1865,
+        "seconds": 0.8766797999851406,
+        "file": "previews\\motion_frames\\1865.png"
+      },
+      {
+        "frame": 1866,
+        "seconds": 0.8653826999943703,
+        "file": "previews\\motion_frames\\1866.png"
+      },
+      {
+        "frame": 1867,
+        "seconds": 0.8730656999978237,
+        "file": "previews\\motion_frames\\1867.png"
+      },
+      {
+        "frame": 1868,
+        "seconds": 0.8585179999936372,
+        "file": "previews\\motion_frames\\1868.png"
+      },
+      {
+        "frame": 1869,
+        "seconds": 0.8813393000164069,
+        "file": "previews\\motion_frames\\1869.png"
+      },
+      {
+        "frame": 1870,
+        "seconds": 0.8639086000039242,
+        "file": "previews\\motion_frames\\1870.png"
+      },
+      {
+        "frame": 1871,
+        "seconds": 0.8818239999818616,
+        "file": "previews\\motion_frames\\1871.png"
+      },
+      {
+        "frame": 1872,
+        "seconds": 0.874739299993962,
+        "file": "previews\\motion_frames\\1872.png"
+      },
+      {
+        "frame": 1873,
+        "seconds": 0.8831363000208512,
+        "file": "previews\\motion_frames\\1873.png"
+      },
+      {
+        "frame": 1874,
+        "seconds": 0.8837343999766745,
+        "file": "previews\\motion_frames\\1874.png"
+      },
+      {
+        "frame": 1875,
+        "seconds": 0.8818571000010706,
+        "file": "previews\\motion_frames\\1875.png"
+      },
+      {
+        "frame": 1876,
+        "seconds": 0.8693867999827489,
+        "file": "previews\\motion_frames\\1876.png"
+      },
+      {
+        "frame": 1877,
+        "seconds": 0.8798431999748573,
+        "file": "previews\\motion_frames\\1877.png"
+      },
+      {
+        "frame": 1878,
+        "seconds": 0.8694484000443481,
+        "file": "previews\\motion_frames\\1878.png"
+      },
+      {
+        "frame": 1879,
+        "seconds": 0.876355100015644,
+        "file": "previews\\motion_frames\\1879.png"
+      },
+      {
+        "frame": 1880,
+        "seconds": 0.8595133000053465,
+        "file": "previews\\motion_frames\\1880.png"
+      },
+      {
+        "frame": 1881,
+        "seconds": 0.8799976999871433,
+        "file": "previews\\motion_frames\\1881.png"
+      },
+      {
+        "frame": 1882,
+        "seconds": 0.869305300002452,
+        "file": "previews\\motion_frames\\1882.png"
+      },
+      {
+        "frame": 1883,
+        "seconds": 0.8852107999846339,
+        "file": "previews\\motion_frames\\1883.png"
+      },
+      {
+        "frame": 1884,
+        "seconds": 0.8655648999847472,
+        "file": "previews\\motion_frames\\1884.png"
+      },
+      {
+        "frame": 1885,
+        "seconds": 0.8740876000374556,
+        "file": "previews\\motion_frames\\1885.png"
+      },
+      {
+        "frame": 1886,
+        "seconds": 0.8948400999652222,
+        "file": "previews\\motion_frames\\1886.png"
+      },
+      {
+        "frame": 1887,
+        "seconds": 0.8938615000224672,
+        "file": "previews\\motion_frames\\1887.png"
+      },
+      {
+        "frame": 1888,
+        "seconds": 0.8788247000193223,
+        "file": "previews\\motion_frames\\1888.png"
+      },
+      {
+        "frame": 1889,
+        "seconds": 0.8655234000179917,
+        "file": "previews\\motion_frames\\1889.png"
+      },
+      {
+        "frame": 1890,
+        "seconds": 0.8802754000062123,
+        "file": "previews\\motion_frames\\1890.png"
+      },
+      {
+        "frame": 1891,
+        "seconds": 0.8802385000162758,
+        "file": "previews\\motion_frames\\1891.png"
+      },
+      {
+        "frame": 1892,
+        "seconds": 0.8638978999806568,
+        "file": "previews\\motion_frames\\1892.png"
+      },
+      {
+        "frame": 1893,
+        "seconds": 0.8808532999828458,
+        "file": "previews\\motion_frames\\1893.png"
+      },
+      {
+        "frame": 1894,
+        "seconds": 0.8777835000073537,
+        "file": "previews\\motion_frames\\1894.png"
+      },
+      {
+        "frame": 1895,
+        "seconds": 0.8638843999942765,
+        "file": "previews\\motion_frames\\1895.png"
+      },
+      {
+        "frame": 1896,
+        "seconds": 0.88285240001278,
+        "file": "previews\\motion_frames\\1896.png"
+      },
+      {
+        "frame": 1897,
+        "seconds": 0.8623704999918118,
+        "file": "previews\\motion_frames\\1897.png"
+      },
+      {
+        "frame": 1898,
+        "seconds": 0.882003300008364,
+        "file": "previews\\motion_frames\\1898.png"
+      },
+      {
+        "frame": 1899,
+        "seconds": 0.8777668999973685,
+        "file": "previews\\motion_frames\\1899.png"
+      },
+      {
+        "frame": 1900,
+        "seconds": 0.864523200027179,
+        "file": "previews\\motion_frames\\1900.png"
+      },
+      {
+        "frame": 1901,
+        "seconds": 0.8855675000231713,
+        "file": "previews\\motion_frames\\1901.png"
+      },
+      {
+        "frame": 1902,
+        "seconds": 0.8731030999915674,
+        "file": "previews\\motion_frames\\1902.png"
+      },
+      {
+        "frame": 1903,
+        "seconds": 0.8812629000167362,
+        "file": "previews\\motion_frames\\1903.png"
+      },
+      {
+        "frame": 1904,
+        "seconds": 0.8884585999767296,
+        "file": "previews\\motion_frames\\1904.png"
+      },
+      {
+        "frame": 1905,
+        "seconds": 0.8858387999935076,
+        "file": "previews\\motion_frames\\1905.png"
+      },
+      {
+        "frame": 1906,
+        "seconds": 0.8744453000253998,
+        "file": "previews\\motion_frames\\1906.png"
+      },
+      {
+        "frame": 1907,
+        "seconds": 0.8642647999804467,
+        "file": "previews\\motion_frames\\1907.png"
+      },
+      {
+        "frame": 1908,
+        "seconds": 0.8605527000036091,
+        "file": "previews\\motion_frames\\1908.png"
+      },
+      {
+        "frame": 1909,
+        "seconds": 0.8589060000376776,
+        "file": "previews\\motion_frames\\1909.png"
+      },
+      {
+        "frame": 1910,
+        "seconds": 0.874206900014542,
+        "file": "previews\\motion_frames\\1910.png"
+      },
+      {
+        "frame": 1911,
+        "seconds": 0.858201100025326,
+        "file": "previews\\motion_frames\\1911.png"
+      },
+      {
+        "frame": 1912,
+        "seconds": 0.8677542000077665,
+        "file": "previews\\motion_frames\\1912.png"
+      },
+      {
+        "frame": 1913,
+        "seconds": 0.8636232999851927,
+        "file": "previews\\motion_frames\\1913.png"
+      }
+    ],
+    "this_session_seconds": 98.88802419998683,
+    "no_new_simulation": true,
+    "threads": 2
+  },
+  "source_preservation": {
+    "v006_native": true,
+    "v003_assets": true,
+    "production_v038": true
+  },
+  "all_effects_jobs_finished": true,
+  "source_images": "Built-in ImageGen; original returnedPNG bytes packed. Exact initial/edit/dust prompts saved under evidence.",
+  "no_production_or_shared_UI_mutation": true,
+  "delivery_notes": "Prepared-upload helper reported prepare_uploads unavailable before any reservation. Ordered direct creates all succeeded. Local metadata helper cannot set version xattrs on this Windows Python; receipts and logs preserved.",
+  "remaining_blocker": "Artistic: current drawing/interpolation approach does not yet make heavy rolling aftermath convincingly readable. Do not fix by adding variants, huge bloom or more explosions."
+}

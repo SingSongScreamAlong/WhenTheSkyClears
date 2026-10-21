@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-16",
+  "contract": "dcc-mcp-production-reuse/v1",
+  "guide": "https://raw.githubusercontent.com/dcc-mcp/dcc-mcp-core/main/crates/dcc-mcp-gateway/src/gateway/native_resources/agent_workflows.md",
+  "local_guide_checker_passed": true,
+  "discovery": [
+    {
+      "source": "Installed skills and live adapter",
+      "query": "grease pencil / rigging / materialize",
+      "selected": "blender-grease-pencil native drawing tools; blender-rigging native armature tools; scripting only for the GP parenting and projected motion gap",
+      "real_call": "13 create_object and 13 add_drawing calls; create_armature and 14 create_bone calls; native inspect readback",
+      "host": "Blender 5.2.2 LTS, build d13f752e3b9c",
+      "adapter_distribution": "dcc-mcp-blender 0.2.14",
+      "cli": "0.20.42"
+    },
+    {
+      "source": "DCC-MCP marketplace",
+      "query": "grease pencil, dcc blender",
+      "result": "Lookdev, Tripo3D, mesh-ops and spatial-interchange results; none supplies the needed original 2D child drawing or paired contact performance.",
+      "selection": "Rejected for functional fit; none installed."
+    },
+    {
+      "source": "Blender official extensions",
+      "query": "Grease Pencil rig 2D animation",
+      "urls": [
+        "https://extensions.blender.org/tag/add-ons/grease-pencil/?page=1&sort_by=name",
+        "https://extensions.blender.org/add-ons/frame-by-plane/"
+      ],
+      "result": "Search exposed Frame By Plane and rigging/category listings; direct pages returned 402 in the web reader. Package version, licence and native operation could not be verified. No package installed."
+    },
+    {
+      "source": "Official Blender documentation",
+      "urls": [
+        "https://developer.blender.org/docs/features/grease_pencil/architecture/",
+        "https://developer.blender.org/docs/release_notes/4.3/grease_pencil_migration/"
+      ],
+      "result": "Native GP data, frame, stroke and point model. Existing native typed tools were used for the actual drawing creation."
+    }
+  ],
+  "asset_rights": {
+    "character_art": "New built-in GPT imagegen outputs for this task. No third-party character package imported.",
+    "motion": "Original authored kinematic joint trajectories; no external clip or retargeting claim.",
+    "music": "User-supplied WAV. Public release permission not established.",
+    "handoff_style_image": "Source reference only, kept separate and not used as rendered scenery."
+  },
+  "remaining_gap": "The typed tools do not directly assemble image-sheet contours into a projected 2D walk with rigid GP bone parenting. A task-local native script binds the GP parts and authors those trajectories. Artistic gait acceptance remains pending.",
+  "world_pass_update": {
+    "user_direction": "World and sets first; static translating vector silhouettes; include village, woods, school and battlefield",
+    "selected_art_provider": "Built-in GPT imagegen, explicitly requested by user; 10 set paintings and a held-pair source",
+    "native_interfaces": "Blender GP, image alpha materials, actual ground/title geometry, perspective camera and native VSE Scene/Sound strips through installed DCC-MCP adapter",
+    "package_reuse": "No suitable stock package represents this original continuous multi-state world. Existing native host interfaces were used; no new marketplace, installer or add-on was built.",
+    "readback": "world_native_reopen_verification.json and native 4K render/decode evidence",
+    "api_findings": "Blender 5.2 uses ImageFormatSettings.media_type VIDEO; compositor uses Scene.compositing_node_group. World is rendered through a native Scene strip so supplied sound plays in the master."
+  }
+}

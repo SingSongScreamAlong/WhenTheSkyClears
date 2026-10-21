@@ -1,0 +1,13 @@
+{
+  "videos_watched": false,
+  "sources": [
+    {"url":"https://www.micahbuzan.com/zombie-walk-cycle-2d-animation-tutorial/","read":"Written article","application":"Retain the solved legs/pelvis as foundation, layer torso and cloth drawings, inspect curved spacing and delayed loose fabric, reuse stable identity parts selectively."},
+    {"url":"https://blenderartists.org/t/a-quick-walk-cycle-to-explore-techniques-in-grease-pencil/1579177","read":"Vivek Ram's written post","application":"A hybrid native test can draw body/cloth while retaining other asset parts. This is a method reference, not a visual style target or evidence that this candidate is good."},
+    {"url":"https://www.animationmentor.com/wp-content/uploads/2017/06/ELEnt10_Posing.pdf","read":"Eric Larson1983 notes, text plus PDF pages3-5","application":"Separate timed body planning from incidental cloth extremes. Draw a tail extreme between body keys and replace inadequate contours instead of preserving them as fixed extremes."},
+    {"url":"https://www.animationmentor.com/blog/how-to-create-believable-weight-in-animation/","read":"Wayne Gilbert's written article","application":"Inspect downward compression arrest and effort to rise using the bare body before evaluating the coat."},
+    {"url":"https://www.animationmentor.com/blog/slow-in-and-slow-out-the-12-basic-principles-of-animation/","read":"Kevin Koch's written article","application":"Track visible pelvis/sternum/knee/sole endpoints separately. Do not treat a generic easing curve or event-time match as proof of convincing spacing."},
+    {"url":"https://www.animationmentor.com/blog/follow-through-and-overlapping-action-the-12-basic-principles-of-animation/","read":"Drew Adams's written article","application":"Tie cloth lag to body motion and attachment. The tail should react rather than lead independently; use small, nonuniform response instead of a sine-wave flap."}
+  ],
+  "documentation": {"requested":"https://docs.blender.org/manual/en/latest/grease_pencil/animation/interpolation.html","web_result":"Fetch failed402; current API pages also failed402","fallback":"Direct verifiedBlender5.2.2 runtime probe: objectGREASEPENCIL, dataGreasePencil, frame.drawing.add_strokes, current stroke wrappers, object.modifiers and bpy.ops.grease_pencil. No oldgpencil/GreasePencilv3 workflow used."},
+  "scope":"One separate authored coat transition over preservedv024; not automatic cutout conversion, not a restarted character build."
+}

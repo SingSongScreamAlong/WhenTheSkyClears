@@ -1,0 +1,1161 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\work\\color_arc_v063\\native\\WTSC_Shared_Color_To_Charcoal_v063.blend",
+  "blender": "5.2.2 LTS",
+  "sha256": "d1d4393c3afc77bf71fb8989bd001da56866baaa7f682216a5f05e54e9523687",
+  "scenes": [
+    {
+      "name": "REFERENCE | liked v041 boy and original source pair | preserved",
+      "frames": [
+        1,
+        94
+      ],
+      "fps": 30.0,
+      "output": [
+        480,
+        720,
+        100
+      ],
+      "output_path": "WTSC_LOCAL_WORKSPACE\\characters\\rig_correctives_v017\\previews\\AFTER\\0221.png",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 460,
+      "types": {
+        "ARMATURE": 4,
+        "MESH": 124,
+        "EMPTY": 172,
+        "CURVE": 151,
+        "CAMERA": 7,
+        "GREASEPENCIL": 2
+      },
+      "camera": "V024 | CLOSE portrait",
+      "markers": [
+        {
+          "name": "CONTACT / CYCLE START",
+          "frame": 1
+        },
+        {
+          "name": "LOADED DOWN",
+          "frame": 4
+        },
+        {
+          "name": "PASSING / ARM CROSS",
+          "frame": 11
+        },
+        {
+          "name": "FAR CONTACT",
+          "frame": 17
+        },
+        {
+          "name": "LOADED DOWN / FAR HAND BEHIND LEG",
+          "frame": 20
+        },
+        {
+          "name": "HAND HEM CHECK",
+          "frame": 27
+        },
+        {
+          "name": "EXACT LOCAL COAT BOOKEND",
+          "frame": 32
+        },
+        {
+          "name": "SECOND CYCLE BOOKEND",
+          "frame": 63
+        },
+        {
+          "name": "THIRD CYCLE BOOKEND",
+          "frame": 94
+        }
+      ],
+      "strips": []
+    },
+    {
+      "name": "V060 | STEADY PAIR | first hand contact",
+      "frames": [
+        1,
+        151
+      ],
+      "fps": 30.0,
+      "output": [
+        1280,
+        720,
+        100
+      ],
+      "output_path": "//",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 510,
+      "types": {
+        "CAMERA": 1,
+        "MESH": 481,
+        "FONT": 17,
+        "EMPTY": 9,
+        "ARMATURE": 2
+      },
+      "camera": "V044 orthographic metric camera",
+      "markers": [],
+      "strips": []
+    },
+    {
+      "name": "WTSC_FIRST_DANGER_EDIT_v060",
+      "frames": [
+        937,
+        1056
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v060\\",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "AgX",
+      "objects": 0,
+      "types": {},
+      "camera": null,
+      "markers": [],
+      "strips": [
+        {
+          "name": "V060 | first danger | current drawn children",
+          "type": "SCENE",
+          "start": 937,
+          "end_exclusive": 1057,
+          "scene": "WTSC_SHARED_COLOR_TO_CHARCOAL_v063",
+          "sound": null,
+          "sound_packed": null
+        },
+        {
+          "name": "Original supplied trailer music | unchanged time",
+          "type": "SOUND",
+          "start": 1,
+          "end_exclusive": 2401,
+          "scene": null,
+          "sound": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+          "sound_packed": true
+        }
+      ]
+    },
+    {
+      "name": "WTSC_FIRST_DANGER_TITLE_CHECK_v060",
+      "frames": [
+        937,
+        1056
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v060\\",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 7,
+      "types": {
+        "CAMERA": 1,
+        "FONT": 6
+      },
+      "camera": "v032 | Flat title camera",
+      "markers": [],
+      "strips": []
+    },
+    {
+      "name": "WTSC_SHARED_COLOR_TO_CHARCOAL_v063",
+      "frames": [
+        937,
+        1056
+      ],
+      "fps": 24.0,
+      "output": [
+        3840,
+        2160,
+        100
+      ],
+      "output_path": "//renders_v060\\",
+      "engine": "BLENDER_EEVEE",
+      "color_view": "Standard",
+      "objects": 513,
+      "types": {
+        "MESH": 484,
+        "CAMERA": 3,
+        "EMPTY": 16,
+        "GREASEPENCIL": 1,
+        "LIGHT": 6,
+        "FONT": 1,
+        "ARMATURE": 2
+      },
+      "camera": "V060 | camera follows actual steady root",
+      "markers": [
+        {
+          "name": "VILLAGE | warm painted depth",
+          "frame": 1
+        },
+        {
+          "name": "ABANDONED VILLAGE",
+          "frame": 433
+        },
+        {
+          "name": "WOODS | two wind layers",
+          "frame": 673
+        },
+        {
+          "name": "SCHOOL",
+          "frame": 961
+        },
+        {
+          "name": "CAMP | wind and smoke",
+          "frame": 1249
+        },
+        {
+          "name": "BATTLEFIELD",
+          "frame": 1609
+        },
+        {
+          "name": "TITLE TERRAIN",
+          "frame": 1921
+        },
+        {
+          "name": "MUSIC FADE",
+          "frame": 2161
+        },
+        {
+          "name": "FINAL WIDE",
+          "frame": 2305
+        },
+        {
+          "name": "PICTURE FADE",
+          "frame": 2353
+        }
+      ],
+      "strips": []
+    }
+  ],
+  "images": [
+    {
+      "name": "Bakery_Detail_Repaint.png",
+      "source": "FILE",
+      "size": [
+        1356,
+        1159
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Bakery_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Battlefield_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Battlefield_v001.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Camp_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Camp_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Countryside_Continuous_Panorama.png",
+      "source": "FILE",
+      "size": [
+        1983,
+        793
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v026\\Countryside_Continuous_Panorama.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Foreground_Bank_Paintover_v047.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\refinement_v047\\Foreground_Bank_Paintover_v047.png",
+      "external_path_exists": true,
+      "users": 14
+    },
+    {
+      "name": "Foreground_Ground.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Foreground_Ground.png",
+      "external_path_exists": true,
+      "users": 3
+    },
+    {
+      "name": "Ground_Painted_v001.png",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Ground_Painted_v001.png",
+      "external_path_exists": true,
+      "users": 4
+    },
+    {
+      "name": "High_Crown_Oak.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\world_v030\\High_Crown_Oak.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Painted_Smoke_Wisp_v016.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\Painted_Smoke_Wisp_v016.png",
+      "external_path_exists": true,
+      "users": 31
+    },
+    {
+      "name": "Painterly_Flame.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\v036\\Painterly_Flame.png",
+      "external_path_exists": true,
+      "users": 8
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 64
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.001",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 28
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.002",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 7
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png.003",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "//..\\..\\..\\characters\\Pair_Painterly_Near_Age_v015.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Path_Detail_Repaint.png",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 2
+    },
+    {
+      "name": "Path_Detail_Repaint.png.001",
+      "source": "FILE",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "School_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\School_v001.png",
+      "external_path_exists": true,
+      "users": 3
+    },
+    {
+      "name": "Village_Empty_v001.png",
+      "source": "FILE",
+      "size": [
+        1671,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Empty_v001.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Village_Middle.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Village_Middle.png",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "Woods_v001.png",
+      "source": "FILE",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Woods_v001.png",
+      "external_path_exists": true,
+      "users": 3
+    },
+    {
+      "name": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "source": "FILE",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\character_design_finish_v040\\textures\\WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "external_path_exists": true,
+      "users": 59
+    },
+    {
+      "name": "WTSC_Boy_Painted_Parts_Atlas_v040.png.001",
+      "source": "FILE",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\character_design_finish_v040\\textures\\WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "external_path_exists": true,
+      "users": 3
+    },
+    {
+      "name": "WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+      "source": "FILE",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v056\\WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+      "external_path_exists": true,
+      "users": 1
+    },
+    {
+      "name": "WTSC_Girl_Face_Finish_Study_v050.png",
+      "source": "FILE",
+      "size": [
+        1167,
+        1347
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\face_hand_finish_v050\\textures\\WTSC_Girl_Face_Finish_Study_v050.png",
+      "external_path_exists": true,
+      "users": 1
+    }
+  ],
+  "unpacked_missing_images": [],
+  "libraries": [],
+  "sounds": [
+    {
+      "name": "When_The_Sky_Clears_Trailer_Music_100s.wav",
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Arial Black",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Black.001",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\ariblk.ttf"
+    },
+    {
+      "name": "Arial Regular",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\arial.ttf"
+    },
+    {
+      "name": "Bfont Regular",
+      "packed": false,
+      "path": "<builtin>"
+    },
+    {
+      "name": "Bfont Regular.001",
+      "packed": false,
+      "path": "<builtin>"
+    },
+    {
+      "name": "Impact Regular.001",
+      "packed": true,
+      "path": "C:\\Windows\\Fonts\\impact.ttf"
+    }
+  ],
+  "actors": [
+    {
+      "name": "LOCO_BOY | RIG",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 4,
+        "keys": 1492,
+        "key_range": [
+          937.0,
+          1011.4000244140625
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_BOY | RIG.001",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 15
+    },
+    {
+      "name": "LOCO_GIRL | RIG",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "bones": 18
+    },
+    {
+      "name": "v016 | CHILDREN | held painterly near-age pair",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 3,
+        "keys": 410,
+        "key_range": [
+          1.0,
+          2400.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "HELD | near-age painted children | native vector boundary",
+          "drawing_frames": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V020 | SOURCE52 | exact FBX sampled poses",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 523,
+        "keys": 4707,
+        "key_range": [
+          937.0,
+          961.7999877929688
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 52
+    },
+    {
+      "name": "V025 | bare torso diagnostic | optional",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "Pelvis ribcage sternum | no coat",
+          "drawing_frames": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V025 | COAT drawings | editable GP",
+      "type": "GREASEPENCIL",
+      "object_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": true,
+      "layers": [
+        {
+          "name": "01 | new coat silhouette and painted planes",
+          "drawing_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V044 BOY | estimated joint centres",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 150,
+        "keys": 36990,
+        "key_range": [
+          937.0,
+          1057.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 15
+    },
+    {
+      "name": "V044 GIRL | estimated joint centres",
+      "type": "ARMATURE",
+      "object_animation": {
+        "channels": 150,
+        "keys": 36990,
+        "key_range": [
+          937.0,
+          1057.0
+        ]
+      },
+      "data_animation": {
+        "channels": 0,
+        "keys": 0,
+        "key_range": [
+          null,
+          null
+        ]
+      },
+      "hide_render": false,
+      "bones": 15
+    }
+  ],
+  "actions": 138,
+  "driver_count": 1195,
+  "drivers_with_missing_targets": [
+    {
+      "owner": "Key.053",
+      "path": "key_blocks[\"Reach\"].value",
+      "is_valid_after_sample_evaluation": true,
+      "expression": "max(0,reach)/max(1,max(0,reach)+max(0,brace))",
+      "missing_targets": [
+        {
+          "name": "reach",
+          "id_type": "OBJECT",
+          "path": "[\"Reach\"]"
+        },
+        {
+          "name": "brace",
+          "id_type": "OBJECT",
+          "path": "[\"Brace\"]"
+        }
+      ]
+    },
+    {
+      "owner": "Key.053",
+      "path": "key_blocks[\"Brace\"].value",
+      "is_valid_after_sample_evaluation": true,
+      "expression": "max(0,brace)/max(1,max(0,reach)+max(0,brace))",
+      "missing_targets": [
+        {
+          "name": "reach",
+          "id_type": "OBJECT",
+          "path": "[\"Reach\"]"
+        },
+        {
+          "name": "brace",
+          "id_type": "OBJECT",
+          "path": "[\"Brace\"]"
+        }
+      ]
+    }
+  ],
+  "invalid_drivers_after_samples": [],
+  "color_controller": "V063 | shared color to charcoal | both children",
+  "color_samples": [
+    {
+      "frame": 1,
+      "progress": 0.0
+    },
+    {
+      "frame": 433,
+      "progress": 0.07999999821186066
+    },
+    {
+      "frame": 841,
+      "progress": 0.2800000011920929
+    },
+    {
+      "frame": 1201,
+      "progress": 0.47999998927116394
+    },
+    {
+      "frame": 1609,
+      "progress": 0.7200000286102295
+    },
+    {
+      "frame": 1921,
+      "progress": 0.8799999952316284
+    },
+    {
+      "frame": 2161,
+      "progress": 0.9599999785423279
+    },
+    {
+      "frame": 2305,
+      "progress": 1.0
+    },
+    {
+      "frame": 2401,
+      "progress": 1.0
+    }
+  ],
+  "source_sha256_unchanged": true,
+  "inspection_limits": "Read-only native sample; auto-run source scripts disabled. No claim of all-frame render, playback quality, or artistic approval."
+}

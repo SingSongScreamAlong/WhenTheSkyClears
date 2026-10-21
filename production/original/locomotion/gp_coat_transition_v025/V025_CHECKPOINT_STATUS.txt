@@ -1,0 +1,28 @@
+PRESERVED SHORT GP TRANSITION - v025
+
+Human feedback: the rough looks like a solid improvement but is too short to judge.
+Private original review: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version0.
+Source file: reference/PRESERVED_GP_FIRST_ROUGH_v025.blend.
+Native: native/WTSC_GP_Coat_Transition_v025.blend.
+16drawings, F17-32at30fps; the short movie replays that half-step four times with labelled resets.
+It is not a complete cycle and should not be mistaken for a seamless loop.
+
+The requested longer version is now in ../gp_extended_review_v026.
+Its native preserves this original half-step exactly and completes the opposing half.
+Long review: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version0.
+18.6seconds total:9.3seconds close plus9.3seconds at trailer size, nine uninterrupted cycles each.
+Use that review for the current viewing decision.
+
+Separate v025b experiments remain isolated and excluded from v026:
+WTSC_GP_Upper_Loading_v025b.blend delays upper vertical loading1frame, max7.98mm, preserving foot/root trajectories.
+The measured sternum minimum moves fromF19.25toF20.25; native reach checks pass.
+WTSC_GP_Coat_Transition_Pigment_Study_v025b.blend explores a small original pigment patch and a fill carrier.
+Those experiments have no artistic approval and should not silently replace the human-reviewed rough.
+The last painted-fill-carrier job lost its executor session during recovery (executor key changed).
+Its native file exists, but no completed painted-fill render was returned or verified. Treat that final carrier
+attempt as an uncertain experimental result; inspect the saved native before any reuse. No automatic approval denied it.
+The exposed tools support frame inspection, not observing an actual running player. No playback art pass is claimed.
+
+Current GP5.2 API proof is in evidence/RUNTIME_API_AND_REGISTRATION.json and NATIVE_PRIMITIVE_FILL_GROUPS.json.
+Native foreground layers/compositor preserve the original transparent collar/head/near sleeve/hand.
+The original v024 rig/support and protected production sources are unchanged.

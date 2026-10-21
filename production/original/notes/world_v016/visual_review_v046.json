@@ -1,0 +1,74 @@
+{
+  "completed_utc": "2026-10-17T18:05:47.663960+00:00",
+  "status": "Bounded review complete; preserved candidate, not artistic acceptance.",
+  "source_sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+  "method": {
+    "actual_candidate_chronology": "40 actual 1080p decoded frames at 8 fps, all five chronology sheets inspected.",
+    "critical_boot_motion": "All 22 consecutive actual HD samples, frames 1837-1858, inspected.",
+    "post_stop": "14 matched actual HD samples at three-frame intervals, 1881-1920, all four sheets inspected.",
+    "shot_size": "Eight matched whole-frame baseline/candidate samples inspected.",
+    "native4K": "Actual 3840x2160 rendered images; native-pixel head, boot, recovery, and fingertip crops inspected.",
+    "native4K_frames": [
+      1842,
+      1844,
+      1845,
+      1846,
+      1849,
+      1856,
+      1889,
+      1901,
+      1920
+    ],
+    "limits": "Decoded chronological samples and full-file decode, not a claim of real-time audiovisual playback or every 4K movie frame."
+  },
+  "visible_improvements": [
+    "Distinct boot and shin paths reduce the folded-boy-leg overlap with the supporting leg; negative space is visibly better.",
+    "The girl stabilizes and turns toward the boy; the boy attends to his thigh, prepares, reaches, and rises. The stop reads as recovery.",
+    "The painterly charcoal identities and near-age proportions remain; the boy is slightly larger at his standing basis.",
+    "The retained v045c background separation and original coherent foreground remain visible in both matched renders."
+  ],
+  "remaining_art_faults": [
+    {
+      "priority": "major",
+      "frames": [
+        1844,
+        1845
+      ],
+      "global_seconds": [
+        76.791666667,
+        76.833333333
+      ],
+      "finding": "Girl passing head is a flat faceted charcoal disc with paint streaks, switching to the reflected original painted profile at 1846. This is not a convincing turn.",
+      "future_work": "Purpose-drawn turning silhouettes with neck and shoulder response. No drawing or timing was silently changed in v046."
+    },
+    {
+      "priority": "major",
+      "finding": "Angular wrists, shoulders, elbows, and exposed forearm wedges still reveal planar cutout construction."
+    },
+    {
+      "priority": "major",
+      "finding": "Late hand meeting is a projected light fingertip cue; a small gap remains in native crops. It is not an interlocked or load-bearing clasp. Feet and thigh brace carry weight."
+    },
+    {
+      "priority": "unfinished",
+      "finding": "Route ends in the recovery/offered-hand pose. No authored restart or first step is included."
+    },
+    {
+      "priority": "unfinished",
+      "finding": "Original foreground repeats and existing FXv003 limitations remain. Future crater, debris, lighting, and FX work is pending."
+    }
+  ],
+  "technical_checks_are_not_artistic_acceptance": true,
+  "source_drawings_and_timing_preserved": true,
+  "full_trailer_propagation": false,
+  "artistic_acceptance": false,
+  "evidence_directory": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence",
+  "head_evidence": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence\\Head_Turn_1844_1845_1846_Native4KPixels.jpg",
+  "boot_evidence": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence\\Boot_Negative_Space_Native4KPixels.jpg",
+  "recovery_evidence": [
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence\\Support_Preparation_Rise_1889_Native4KPixels.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence\\Support_Preparation_Rise_1901_Native4KPixels.jpg",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence\\Support_Preparation_Rise_1920_Native4KPixels.jpg"
+  ],
+  "hand_evidence": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v046\\review_evidence\\Projected_Fingertip_Cue_Native4KPixels.jpg"
+}

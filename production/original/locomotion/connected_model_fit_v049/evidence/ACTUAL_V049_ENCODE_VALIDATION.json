@@ -1,0 +1,43 @@
+{
+  "native_source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\weight_loading_v048\\native\\WTSC_Connected_Weight_Loading_v048.blend": "eeefa9ea2059a613d796277d6dfebfabe84a89b1c31470b585e5475fcb35001b",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\connected_model_fit_v049\\native\\WTSC_Connected_Model_Fit_v049.blend": "2f78c5cd86b96d437d97a165b8b61473bcd6c9d1ab284015c229bfb11c6f9a94"
+  },
+  "movies": [
+    {
+      "file_name": "WTSC_Model_Fit_v049_Actual_NormalSpeed.mp4",
+      "bytes": 3629632,
+      "sha256": "4f5cfb957d2c5db0231e0f5dd45fd835377344aaa570954d5db85bccd02e2877",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1280,
+        800
+      ],
+      "under_20_MB": true,
+      "model_version": "v049",
+      "motion_version": "v048 unchanged"
+    },
+    {
+      "file_name": "WTSC_v048_vs_v049_Model_Fit_SameMotion.mp4",
+      "bytes": 4885859,
+      "sha256": "cc8a3dcd835fdc0543171101867bb823e0b67e1fae0839261a048178834ae4cd",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true,
+      "model_version": "v048 left, v049 right",
+      "motion_version": "v048 unchanged"
+    }
+  ],
+  "all_encoded_frames_decoded": true,
+  "interpolated_video_frames": false,
+  "rendered_frames_repeated_instead_of_actual_timeline": false,
+  "visual_review_material": "Decoded all32 integer cycle poses, selected decoded comparison frames across8cycles, decoded upper-body phase details. Continuous player playback has not been observed by the agent.",
+  "scope": "Model coherence review. Gait intentionally unchanged from v048. Technical checks do not establish artistic acceptance."
+}

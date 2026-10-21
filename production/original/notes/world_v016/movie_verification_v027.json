@@ -1,0 +1,130 @@
+{
+  "movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Painted_World_4K_v027.mp4",
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v027.blend",
+  "source_sha256": "729d4de4d664738e4fabee541ae71ef313ee0910ebaa7cdf5d8be37bed03ce6e",
+  "movie_sha256": "6432e64594a0118adeb1e2749c90f4fa4626019609f6f5a30749ac480554f532",
+  "bytes": 429042860,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "frames": 2400,
+  "duration_seconds": 100,
+  "full_decode": "2400 video frames decoded successfully in render controller; source hash frozen across render",
+  "metadata": [
+    "Duration: 00:01:40.00, start: 0.000000, bitrate: 34323 kb/s",
+    "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3840x2160 [SAR 1:1 DAR 16:9], 34030 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+    "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 289 kb/s (default)"
+  ],
+  "picture_fade_means": {
+    "01_Village": 108.20747749485597,
+    "02_Village_Empty": 79.78623850630144,
+    "03_Woods": 78.03558087384259,
+    "04_School": 49.004799463091565,
+    "05_Camp": 114.8830444235468,
+    "06_Battlefield": 122.42372914255401,
+    "07_Title": 145.74254509066358,
+    "08_Fade_98s": 145.71957413033692,
+    "09_Fade_99s": 104.2651637651106,
+    "10_Fade_99p75s": 48.65922650623714,
+    "11_Last_Frame": 0.0
+  },
+  "last_frame_max_pixel": 0,
+  "audio_fade_windows": [
+    {
+      "seconds": [
+        10,
+        11
+      ],
+      "source_rms": 1562.599579316867,
+      "output_rms": 1561.5823210835968,
+      "relative_rms": 0.9993489962196745
+    },
+    {
+      "seconds": [
+        89,
+        90
+      ],
+      "source_rms": 2495.5197407199403,
+      "output_rms": 2493.8737673735113,
+      "relative_rms": 0.9993404286411479
+    },
+    {
+      "seconds": [
+        92,
+        93
+      ],
+      "source_rms": 1934.9763554191688,
+      "output_rms": 1454.9769299681639,
+      "relative_rms": 0.751935250212903
+    },
+    {
+      "seconds": [
+        96,
+        97
+      ],
+      "source_rms": 737.0999132721652,
+      "output_rms": 267.6099886222797,
+      "relative_rms": 0.3630579570065258
+    },
+    {
+      "seconds": [
+        99,
+        100
+      ],
+      "source_rms": 105.60169432234504,
+      "output_rms": 7.731569482754887,
+      "relative_rms": 0.07321444539662947
+    },
+    {
+      "seconds": [
+        99.9,
+        100
+      ],
+      "source_rms": 12.10839928864808,
+      "output_rms": 0.0,
+      "relative_rms": 0.0
+    }
+  ],
+  "chunk_boundaries": [
+    {
+      "first_new_frame": 601,
+      "adjacent_mean_differences": [
+        13.808260191615226,
+        13.858036747685185,
+        13.78321116255144
+      ]
+    },
+    {
+      "first_new_frame": 1201,
+      "adjacent_mean_differences": [
+        13.790380658436215,
+        13.780815972222221,
+        13.374670460390947
+      ]
+    },
+    {
+      "first_new_frame": 1801,
+      "adjacent_mean_differences": [
+        5.810635288065844,
+        5.834888599537037,
+        5.757257908950617
+      ]
+    }
+  ],
+  "decoded_review_frames": [
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\01_Village.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\02_Village_Empty.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\03_Woods.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\04_School.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\05_Camp.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\06_Battlefield.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\07_Title.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\08_Fade_98s.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\09_Fade_99s.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\10_Fade_99p75s.png",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\decoded_review_v027\\11_Last_Frame.png"
+  ],
+  "scope": "World animation pass, held painterly children; artistic finish and performance remain subject to review."
+}

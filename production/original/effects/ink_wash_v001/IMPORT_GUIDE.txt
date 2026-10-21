@@ -1,0 +1,116 @@
+WHEN THE SKY CLEARS - INK + WASH FX PACK v001
+Blender 5.2.2 LTS | 24 fps | original editable 2.5D effects
+
+START WITH THE NATIVE COLLECTIONS
+File > Append > native/WTSC_Ink_Wash_FX_Library_v001.blend > Collection.
+Select one FX01...FX09 collection. Each also has its own small .blend file.
+Append into the moving WORLD scene, before the giant knockout lettering mask.
+The flat title/knockout scene looks down -Z; the world and these FX use XZ.
+Do not append the library's cameras or preview scenes to the production master.
+
+The CONTROLS empty is the fixed emitter. Move it to the ground contact and
+leave its children parented. +X is screen-right, +Z is up, and +Y is depth.
+The world camera is at negative Y looking along +Y. Units are metres;
+one Blender unit is one metre. The measured held children are about 1.45m tall.
+Default explosion plumes are approximately 2m tall before depth projection.
+Burning debris flames are approximately 1m tall. Size these for shot distance.
+All shapes, UV meshes, materials, drivers, shape keys, debris and lights remain
+editable. Original project flame and smoke artwork are packed into the files.
+No add-on, external cache, external texture folder, Python handler or script
+execution is needed for playback. Drivers use standard arithmetic/functions.
+
+CUSTOM PROPERTIES ON CONTROLS
+start_frame: first frame/phase origin. Shifts every child/material animation.
+speed: playback multiplier. 1 = the authored 24fps timing.
+size: uniform local scale; the emitter position stays fixed.
+intensity: opacity/flash/light multiplier, usually 0.3 to 1.2.
+wind: horizontal smoke/particle drift; negative blows left.
+warmth: amber/cool response for fire, embers, trails and physical firelight.
+tint: RGB multiplier for every painted effect; white preserves the palette.
+Normal object rotation and location on CONTROLS supply placement/orientation.
+Do not edit the driven age property or the internal SCALE_RIG transforms.
+For loops, start_frame is a phase offset, not a visibility gate; loops are
+prefilled and play continuously. Animate intensity if a fade-in is needed.
+
+ASSETS AND SOURCE RANGES
+FX01_Explosion_Tall_Charcoal       1-144   one shot, charcoal rise + debris
+FX02_Explosion_Low_Rolling_Dust    1-144   one shot, broad ochre/charcoal wash
+FX03_Explosion_Distant_Muted      1-144   one shot, smaller restrained burst
+FX04_Incoming_Left_To_Right       1-72    brush streak ending at fixed impact
+FX05_Incoming_Right_To_Left       1-72    reverse direction + impact
+FX06_Impact_Dry_Dust              1-72    independent short dust puff
+FX07_Smoke_Roll_Loop              1-192   continuous upward/rolling soot
+FX08_Ash_Embers_Loop              1-192   scraped ash + sparse warm embers
+FX09_Burning_Debris_Loop          1-192   pinned painted fire, soot + firelight
+For all loops, frame193 equals frame1. Loop frames1-192; do not include193.
+At speed1, these are 6s, 3s and 8s respectively. There is no retiming in exports.
+
+INDEPENDENT COPIES AND LINK
+Append the same standalone file again for another independently timed effect.
+This was tested: both copies have separate materials and correctly remapped
+driver targets. A plain linked duplicate shares materials and timing controls.
+File > Link > Collection and create a collection instance for shared library
+updates. Linked instances support independent object placement/scale, while
+the linked control animation remains shared. Use Append for independent time,
+color and intensity; or make a deliberate library hierarchy override in your
+own working file. Link dependency loading was tested; override workflows were
+not tested. Keep the source .blend at its linked path, or relink after moving.
+
+FLOOR AND DEPTH PLACEMENT
+The world is layered painted scenery, not a simulated physical ground mesh.
+Place the emitter on the visible floor ray at its chosen depth. The integration
+check used the existing camera and GP sole contact to measure that ray:
+z = 3 - ((3 - sole_z) / (16 + sole_y)) * (16 + emitter_y).
+Use current measured sole values if the shot camera/pair placement changes.
+The test report records actual emitter coordinates. For distant FX use positive
+Y, keep children/foreground in front, and choose a restrained size/intensity.
+Do not parent world FX to the scrolling camera or the children. An anchored
+emitter stays attached to its set while the camera passes it.
+
+FIRELIGHT
+FX01-03 include brief point-light flashes; FX09 includes a periodic warm point
+light and an optional soft painted pool. Physical lights affect lit materials.
+The current world uses emission-painted scenery, so physical lights alone
+cannot recolor those paintings. Use the optional pool or add a localized warm
+color response in the receiving paint material. This pack does not modify any
+production scenery material or add a global color overlay.
+
+TRANSPARENT PNG SEQUENCES
+Three complete working sequences are included: FX01 explosion (144 frames),
+FX06 impact (72 frames), and FX09 burning debris (192 frames).
+sequences/<collection>/0001.png etc. are 256x256, 8-bit RGBA, 24fps.
+All nine effects also have 512px transparent stills under previews/native_assets.
+The six other animations are fully native; full image sequences for them are
+deferred to avoid contention with the production four-worker4K render.
+They are low-cost working/previsualization exports, not full-resolution finals.
+Native meshes can be rendered at the required shot resolution later.
+PNG RGB uses straight/unassociated alpha. Set imported image Alpha Mode to
+Straight; in premultiplied compositors convert exactly once. Use Alpha Over
+for soot, dust and fire combined; Screen/Add would erase the charcoal smoke.
+Do not chroma-key black. RGB is display-referred sRGB, Standard view transform.
+There is no motion blur or sound baked into these exports.
+
+Each full square image is an orthographic view of 6x6m, centered at X0/Z1.5m,
+The optional incoming-streak export recipe uses8x8m for the approach path.
+Place the image pivot at the emitter, not the center of its visible alpha.
+In top-left pixel coordinates, the emitter is:
+  Included FX01/06/09: (128,192) in the256px square; image size6x6m.
+  Native512px stills: (256,384), except FX04/05 (256,352;8x8m).
+See evidence/sequence_manifest.json for per-sequence values and frame ranges.
+For Blender planes, orient the square in XZ and offset its center Z by+1.5m
+relative to the emitter. Apply uniform size to both the plane and this offset.
+
+PREVIEWS AND VALIDATION
+WTSC_FX_Reel_v001.mp4: six-second representative sandbox reel, 24fps.
+native/WTSC_FX_Append_Sandbox_v001.blend: real factory-empty Append test,
+all nine effects, offset timing and a lightweight illustrative ruin backdrop.
+previews/WTSC_FX_Actual_World_Integration_v001.png: actual production world
+loaded read-only, native effects appended at measured scale/depth, then one
+small CPU frame rendered. The production .blend was never saved by this task.
+CPU Cycles and production Eevee can differ in native GP line rendering.
+evidence/: native load/Append/Link, independent timing, loop repeat, driver,
+alpha/bounds/media checks and source preservation reports.
+This is a first reusable style pass for artistic review, not a final approved
+shot placement. Full-film knockout coverage and live production scene edits
+are outside this isolated pack. No costly simulation or full-resolution render
+was created. No third-party stock assets, add-ons or purchases were used.

@@ -1,0 +1,22 @@
+00:00.625  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\native\WTSC_GP_Coat_Transition_v025.blend"
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\render_first_check.py:8: DeprecationWarning: 'MaterialGPencilStyle.show_fill' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('V025 diagnostic warm ink');bpy.data.materials.create_gpencil_data(m);m.grease_pencil.show_fill=False;m.grease_pencil.show_stroke=True;m.grease_pencil.color=(.14,.065,.035,1);gp.materials.append(m)
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\render_first_check.py:8: DeprecationWarning: 'MaterialGPencilStyle.show_stroke' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('V025 diagnostic warm ink');bpy.data.materials.create_gpencil_data(m);m.grease_pencil.show_fill=False;m.grease_pencil.show_stroke=True;m.grease_pencil.color=(.14,.065,.035,1);gp.materials.append(m)
+00:02.188  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\BARE_0019.png'
+00:02.328  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\BARE_0021.png'
+00:02.453  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\BARE_0025.png'
+00:02.578  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\BARE_0028.png'
+00:02.719  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_CLOSE_0019.png'
+00:02.844  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_CLOSE_0021.png'
+00:02.969  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_CLOSE_0025.png'
+00:03.094  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_CLOSE_0028.png'
+00:03.282  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_SHOT_0019.png'
+00:03.469  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_SHOT_0021.png'
+00:03.641  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_SHOT_0025.png'
+00:03.813  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_SHOT_0028.png'
+Info: Saved as "WTSC_GP_Coat_Transition_v025.blend"
+V025_FIRST_CHECK_COMPLETE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

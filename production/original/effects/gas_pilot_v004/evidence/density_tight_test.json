@@ -1,0 +1,31 @@
+[
+  {
+    "eevee_settings": {
+      "volumetric_samples": 128,
+      "volumetric_shadow_samples": 64,
+      "use_volumetric_shadows": true,
+      "volumetric_start": 18.0,
+      "volumetric_end": 34.0,
+      "volumetric_sample_distribution": 0.0,
+      "volumetric_tile_size": "4"
+    },
+    "available_eevee_volume_properties": {
+      "clamp_volume_direct": "If non-zero, the maximum value for lights contribution in volumes. Higher values will be scaled down to avoid too much noise and slow convergence at the cost of accuracy. Used by light objects.",
+      "clamp_volume_indirect": "If non-zero, the maximum value for indirect lighting in volumes. Higher values will be scaled down to avoid too much noise and slow convergence at the cost of accuracy. Used by light-probes.",
+      "volumetric_start": "Start distance of the volumetric effect",
+      "volumetric_end": "End distance of the volumetric effect",
+      "volumetric_tile_size": "Control the quality of the volumetric effects. Higher resolution uses more memory.",
+      "volumetric_samples": "Number of steps to compute volumetric effects. Higher step count increase VRAM usage and quality.",
+      "volumetric_sample_distribution": "Distribute more samples closer to the camera",
+      "volumetric_ray_depth": "Maximum surface intersection count used by the accurate volume intersection method. Will create artifact if it is exceeded. Higher count increases VRAM usage.",
+      "volumetric_light_clamp": "Maximum light contribution, reducing noise",
+      "use_volumetric_shadows": "Cast shadows from volumetric materials onto volumetric materials (Very expensive)",
+      "volumetric_shadow_samples": "Number of samples to compute volumetric shadowing",
+      "use_volume_custom_range": "Enable custom start and end clip distances for volume computation"
+    }
+  },
+  {
+    "mode": "VolumeInfo35_TightFroxels",
+    "seconds": 1.8487053000135347
+  }
+]

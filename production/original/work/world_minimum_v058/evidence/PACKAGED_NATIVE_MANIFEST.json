@@ -1,0 +1,68 @@
+{
+  "native": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_minimum_v058\\WTSC_World_Development_v058_Packed.blend",
+  "sha256": "13c2aee075315131eac6f85d9d726b766051a84edffa961f4ec38ecf7029a890",
+  "rendered_content_source": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_minimum_v058\\WTSC_World_Foreground_Development_v058d.blend",
+  "rendered_content_source_sha256": "501d899e17a491b0704843f37898e9c0a394b97d9a598019fcb6ff9cfd273b48",
+  "packaging_only_changes": [
+    "Unique relative renders_v058 export paths in every scene",
+    "Native READ ME text block"
+  ],
+  "material_node_graphs_identical": true,
+  "all_images_packed": true,
+  "scenes": [
+    {
+      "name": "WTSC_FULL_FILM_KNOCKOUT_v040",
+      "range": [
+        1,
+        2544
+      ],
+      "fps": 24,
+      "resolution": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "name": "WTSC_MASTER_4K_100S_v031",
+      "range": [
+        1,
+        2400
+      ],
+      "fps": 24,
+      "resolution": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "name": "WTSC_MASTER_4K_106S_v040",
+      "range": [
+        1,
+        2544
+      ],
+      "fps": 24,
+      "resolution": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "name": "WTSC_WORLD_FOREGROUND_v058d",
+      "range": [
+        1,
+        2400
+      ],
+      "fps": 24,
+      "resolution": [
+        3840,
+        2160
+      ]
+    }
+  ],
+  "relative_output_paths": {
+    "WTSC_FULL_FILM_KNOCKOUT_v040": "//renders_v058/WTSC_FULL_FILM_KNOCKOUT_v040/frame_",
+    "WTSC_MASTER_4K_100S_v031": "//renders_v058/WTSC_MASTER_4K_100S_v031/frame_",
+    "WTSC_MASTER_4K_106S_v040": "//renders_v058/WTSC_MASTER_4K_106S_v040/frame_",
+    "WTSC_WORLD_FOREGROUND_v058d": "//renders_v058/WTSC_WORLD_FOREGROUND_v058d/frame_"
+  }
+}

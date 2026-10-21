@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-17",
+  "contract": "dcc-mcp-production-reuse/v1",
+  "guide_checker": "Passed using task-local evidence/dcc_agent_workflows.md; substantive Production reuse gate read",
+  "canonical_source": "https://raw.githubusercontent.com/dcc-mcp/dcc-mcp-core/main/crates/dcc-mcp-gateway/src/gateway/native_resources/agent_workflows.md",
+  "sources_checked": [
+    "Available DCC-MCP skill/provider inventory; no callable DCC tools surfaced, dcc-mcp-cli absent from PATH",
+    "Current v038 production blend and earlier Girl_Walk_Proof_v002.blend, read-only native Blender audit",
+    "Current v015 painterly pair PNG, vector recipe and native GP boundary",
+    "Official Blender extension Rigify URL and native Grease Pencil armature manual URL; unavailable in web reader",
+    "Bounded web queries for official Blender 2D/GP rig reuse; no usable compatible asset surfaced"
+  ],
+  "candidates": [
+    {
+      "candidate": "Existing project Girl_Walk_Rig / v002",
+      "result": "Rejected as visible art source: older different girl design and no matching boy. Its authored contact workflow informed native inspection only. No production file mutated.",
+      "rights": "Existing project asset, no new external licence dependency"
+    },
+    {
+      "candidate": "Current held v015 pair in v038",
+      "result": "Selected paint and native boundary source; exact unchanged painting packed, exact GP boundary preserved hidden. No armature existed; build missing native planar rigs on copies.",
+      "rights": "Existing project-created imagegen painting, user-authorized ongoing project use and private results delivery"
+    },
+    {
+      "candidate": "Rigify / third-party prebuilt locomotion or 3D character assets",
+      "result": "No install or purchase authorized. No verified compatible source/tool or output redistribution rights obtained. Generic 3D characters would not preserve the current silhouette design. Not acquired or used.",
+      "rights": "Unresolved, not treated as approved"
+    }
+  ],
+  "fallback": "Native Blender 5.2.2 bpy background authoring: editable planar meshes with original packed texture, native armatures/Actions/NLA; no new plugin, external model or generic visible 3D child",
+  "acceptance": "Real saved/reopened native files, fresh empty-scene Append, measured contacts, native retiming, actual CPU preview renders, production/source hashes preserved",
+  "limitations": "No DCC-MCP host reuse call is claimed. Isolated native Blender SDK execution was used to avoid production/shared UI and GPU contention. No install, update or marketplace download."
+}

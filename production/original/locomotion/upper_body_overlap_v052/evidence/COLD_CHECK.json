@@ -1,0 +1,53 @@
+{
+  "source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\coat_fluidity_v051\\native\\WTSC_Controlled_Fluid_Coat_v051.blend": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\upper_body_overlap_v052\\native\\WTSC_Support_Linked_Upper_Body_v052.blend": "2abb8a2f3c4350f5537861263722312a34a073eb12d1f67ea2bae6c256ec6abb"
+  },
+  "cold_reopen_passed": true,
+  "root_camera_leg_pelvis_fcurves_exact": true,
+  "rest_bones_non_sleeve_geometry_coat_keys_uv_weights_materials_packed_images_exact": true,
+  "sampled_quarter_frames": 129,
+  "maximum_boot_vertex_difference_m": 0.0,
+  "maximum_pelvis_endpoint_difference_m": 0.0,
+  "difference_ranges_degrees": {
+    "BOY": {
+      "chest": [
+        -0.9036881416069145,
+        0.8998981718234966
+      ],
+      "near_elbow": [
+        -0.6495796422613971,
+        2.3995230735894335
+      ],
+      "far_elbow": [
+        -0.4498988564913802,
+        1.6489495193189452
+      ]
+    },
+    "GIRL": {
+      "chest": [
+        -0.642868139802834,
+        0.6499330654893782
+      ],
+      "near_elbow": [
+        -0.3497781316244968,
+        1.2497503452875964
+      ],
+      "far_elbow": [
+        -0.3499309833394513,
+        1.7988531552609466
+      ]
+    }
+  },
+  "elbow_timing_correlations": {
+    "BOY": {
+      "old_near_far_elbow": 0.9999999999912016,
+      "new_near_far_elbow": 0.6595213099901959
+    },
+    "GIRL": {
+      "old_near_far_elbow": 0.9999999999906315,
+      "new_near_far_elbow": 0.6034017395256288
+    }
+  },
+  "technical_vs_art": "No new contact error. This does not establish natural acting."
+}

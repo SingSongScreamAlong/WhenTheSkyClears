@@ -1,0 +1,517 @@
+{
+  "utc": "2026-10-19T21:42:12.543057+00:00",
+  "scope": "v0.1.1 objective-state correction",
+  "prior_checkpoint": "ObjectiveFix/Before/Evidence/EditableProjectCheckpoint.json",
+  "files": [
+    {
+      "file": "Source\\WTSC_Survival.Target.cs",
+      "bytes": 353,
+      "sha256": "2316cc96b24780dd87c2a883cdd753cb840b22579e7f5fcb0d66badd66886569"
+    },
+    {
+      "file": "Source\\WTSC_SurvivalEditor.Target.cs",
+      "bytes": 367,
+      "sha256": "5600f18581ab3e0ee86f7c099ee4534f86c8cee74c0bee82054bbf3fd1cd31cb"
+    },
+    {
+      "file": "Source\\WTSCSurvival\\WTSC.cpp",
+      "bytes": 50809,
+      "sha256": "22fab6cec4eb0e7186bb8cce96ca19d82f812a8acc66057d2f25fa711d81829a"
+    },
+    {
+      "file": "Source\\WTSCSurvival\\WTSC.h",
+      "bytes": 7174,
+      "sha256": "ee0164d5e783891ccc5e52f3d7b74e2b416ebd5070f723cbf4dfddb042ffdfec"
+    },
+    {
+      "file": "Source\\WTSCSurvival\\WTSCSurvival.Build.cs",
+      "bytes": 355,
+      "sha256": "5ea37dfd1ce42e0f6b9ef14c500ff8d10ee0ad945fcb04f0db7e3119803c836e"
+    },
+    {
+      "file": "Config\\DefaultEngine.ini",
+      "bytes": 1032,
+      "sha256": "1d662a517ba9a34136cb5f32ec02da6a3ee9a456e80dd75715e66d2f8b39fb7b"
+    },
+    {
+      "file": "Config\\DefaultGame.ini",
+      "bytes": 501,
+      "sha256": "bdabd1067c9dff591420c6c66d63493189db3bb9ae7244362b68740a519c2620"
+    },
+    {
+      "file": "Config\\DefaultInput.ini",
+      "bytes": 320,
+      "sha256": "281f53c277a15d90439eac8d841ed4f03605a0d7750afe466e6132950dc63ec4"
+    },
+    {
+      "file": "Content\\Maps\\ShelterDawn.umap",
+      "bytes": 297651,
+      "sha256": "90f40e0e202c612b11973ba31e9637fb66540edeae5b1a136c21ef2497f8e5d1"
+    },
+    {
+      "file": "Content\\WTSC\\EstablishedArt\\boy_atlas.uasset",
+      "bytes": 1152542,
+      "sha256": "8cfc0aa17ae4369733d2c6d386aad3e1e02ccecd8ed5436268cdc89c1bc17dc8"
+    },
+    {
+      "file": "Content\\WTSC\\EstablishedArt\\girl_profile.uasset",
+      "bytes": 1561964,
+      "sha256": "439c6da30508570e160b1cc6aee0c7850bbec60f858fd2968ed24010259b0dd7"
+    },
+    {
+      "file": "Content\\WTSC\\EstablishedArt\\Village_Empty_v001.uasset",
+      "bytes": 1811133,
+      "sha256": "185570ce01f5a9c3f203a67f27ee93b4e4cf220b951fb869d02df3b635dabfd8"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Backdrop.uasset",
+      "bytes": 7768,
+      "sha256": "71569c0de32159504bab9121ea6a96816de3d698afb6533605ce9fb473d95e51"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyArm.uasset",
+      "bytes": 8738,
+      "sha256": "9e5f61706c17363d0d172e65a83065642c2a641d9a0421bd47b717accad4adfb"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyBoot.uasset",
+      "bytes": 8743,
+      "sha256": "9e658cff44be89d5ee96faccddd44018c1a4ea4b233e9ec6b2bc3d7c675f2ece"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyCoat.uasset",
+      "bytes": 8714,
+      "sha256": "3337b2824571ae670f787c9ba92d023d2f7f69533c61fc101ac633abee65bb77"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyForearm.uasset",
+      "bytes": 9898,
+      "sha256": "81d3beca66068dd7ee0695e76b96695e6cff4d6065b3a8bf43b44fc04f4c555e"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyHand.uasset",
+      "bytes": 9883,
+      "sha256": "72d015432b692b02e591e422a463292a6b849a9d35080c3453c8205bacd287af"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyHead.uasset",
+      "bytes": 8685,
+      "sha256": "b592a033e3057940f59094b59ae2444b37f8111e28626bad78523afdb83a41e4"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyLeg.uasset",
+      "bytes": 8738,
+      "sha256": "b69641a221f43ebdbb2236f7adc5796ba2c387c2ebf9a734cdbb1052e6d6ba14"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyShin.uasset",
+      "bytes": 9883,
+      "sha256": "17fd0df9d477391e8cac1cba759ff43b1925fcc2523db8304e669cd1582669e7"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoySleeve.uasset",
+      "bytes": 9864,
+      "sha256": "c5a58b7d01c9902d095eb4cbc0d5adb24cbb961b1f7901b976421de0af8c3fe2"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_BoyThigh.uasset",
+      "bytes": 9888,
+      "sha256": "eb1184bf8018b0fe3bb5d22e5a300ada3fe7ed11c43a505f7cc1e56641e0ab9f"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Brick.uasset",
+      "bytes": 7999,
+      "sha256": "cc529112c7a0d1c25c875353759e3b74cd64c5b86c8c8f8dec783ced4e9eb284"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Bundle.uasset",
+      "bytes": 7655,
+      "sha256": "fc09f006796e9f79c7038db4312f79690a1aeaa6800abdd8ebb99f374c4d1a9c"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Cloth.uasset",
+      "bytes": 7999,
+      "sha256": "622a7336e390497069c129edeec060ebcf01da3bca81c4414392eaa7f02cb70a"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Dark.uasset",
+      "bytes": 5523,
+      "sha256": "2a59127a3f1b18a32eed5dac56bf909cce194079798bfb731c5febb0a2d00989"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_DarkWood.uasset",
+      "bytes": 8014,
+      "sha256": "0bd27c82ae40de6383bdaf043e2cdac76bba4909e9a40e14f2f0baaa74adffbd"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_FadedBlue.uasset",
+      "bytes": 8019,
+      "sha256": "f66f933b74739c403c4d7411912c929f44a523d80705eb74b0fd80dad8a3dacd"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_GirlBlouse.uasset",
+      "bytes": 9904,
+      "sha256": "6e213b794848368a2be10fa5f8af10989bd1152eed05a054b83f99792cc4bdf6"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_GirlDress.uasset",
+      "bytes": 7670,
+      "sha256": "6bc317d7093f04508f72540f9ff29f34eeb672970e52fa9bcd9d0a656563add8"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_GirlProfile.uasset",
+      "bytes": 8711,
+      "sha256": "60b5486416534918be6bd55000500cadc58858822250dfab88bd75baa0d0b537"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_GirlSleeve.uasset",
+      "bytes": 9869,
+      "sha256": "bc73e7552d90f694f85e11f452ffc8de7ae864a1a624ab5de4de79244989b4e1"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Lamp.uasset",
+      "bytes": 5837,
+      "sha256": "51e616313b5605a96c2afb373a3d5e84590d7aad744544c8eded69cf2145327a"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Metal.uasset",
+      "bytes": 7999,
+      "sha256": "2eafa233bc8740cdb7eab941a0284ce0eec28d33f4e5d6238cccaa27c3f69587"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Ochre.uasset",
+      "bytes": 7650,
+      "sha256": "d860f00e45cf09b55b7742ca3a8ab31987dbd5941298e066cf7cde25cfa7203c"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_OldWood.uasset",
+      "bytes": 8009,
+      "sha256": "967a514157aee248a1a2bf3d7d517005d4a774db31446e8266b7492ffcd0d8fd"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Plaster.uasset",
+      "bytes": 8009,
+      "sha256": "755a86dd7628477148a7ba74ea9a0a181573c01597d53df2a5c6638967484ca8"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Road.uasset",
+      "bytes": 7994,
+      "sha256": "db860585f2726352b8da67d98d26ccb454b38e19dfbb039ef408129403ce6e0a"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_ShopPlaster.uasset",
+      "bytes": 8029,
+      "sha256": "e9971ef8de2d40bad744dc5f1f045f28c80d9cfd9344cb40d3ac34d4783c0e5f"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Sky.uasset",
+      "bytes": 5832,
+      "sha256": "cb655228644f55d78998d27701c0187044b3524b86b6c7570d3e50153d1785e8"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Stain.uasset",
+      "bytes": 7650,
+      "sha256": "3ae7f9998f578d5eb287c19e92f34e35d17988248aa0b38c65604b0c9700f9cd"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Stone.uasset",
+      "bytes": 7999,
+      "sha256": "141a893b5c645fb2524fb643ae04ceaa80079ff845ff55e39a257b9bc741a738"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_WarmPlaster.uasset",
+      "bytes": 8029,
+      "sha256": "18f084a95b8a5a07057088c898cba79ff74636358b7accea89cc5f34333a6615"
+    },
+    {
+      "file": "Content\\WTSC\\Materials\\M_Wood.uasset",
+      "bytes": 7994,
+      "sha256": "119dcfdf9cf5c74e4c29ca5b8432ad0282e15bc9c02d9a370d0532913c8bcc9d"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\barrel_stove\\barrel_stove_static\\Materials\\barrel_stove.uasset",
+      "bytes": 72145,
+      "sha256": "9bcae22a07045d3065dd1b9526f2216ef6c0efb50374118bffdc7420a9d0921f"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\barrel_stove\\barrel_stove_static\\StaticMeshes\\barrel_stove_static.uasset",
+      "bytes": 362875,
+      "sha256": "df2041bdd4eacb13e9dc3161348a91ae1e1d53d4cca63e0225f5090568bb5de3"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\barrel_stove\\barrel_stove_static\\Textures\\barrel_stove_diff.uasset",
+      "bytes": 7466121,
+      "sha256": "d7bc0618bce5c96f9d0840cb45c7dd0a072ce8cfe27abd44678e6294dc9990e6"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\barrel_stove\\barrel_stove_static\\Textures\\barrel_stove_metal-barrel_stove_rough.uasset",
+      "bytes": 6409197,
+      "sha256": "49825492369f03b8bd32e1ede1b25da27654cf52acb3aa9f179ea05ac5ff8000"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\barrel_stove\\barrel_stove_static\\Textures\\barrel_stove_nor_gl.uasset",
+      "bytes": 2543453,
+      "sha256": "0d3de4c0d2b63c2d5141224e5524d88857ff5e700b43b471048b232e2a95affa"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\bench_vice_01\\bench_vice_01_static\\Materials\\bench_vice_01.uasset",
+      "bytes": 72270,
+      "sha256": "3b03a9c535d001e533f3b31ad6f10cba087209f9a05389042b7b0b7cd3ac6e97"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\bench_vice_01\\bench_vice_01_static\\StaticMeshes\\bench_vice_01_static.uasset",
+      "bytes": 183516,
+      "sha256": "33ddf701a67aaabf888e1d90153a26fea9ed3ce6d8a2b929d32551e5b8e60438"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\bench_vice_01\\bench_vice_01_static\\Textures\\bench_vice_01_diff.uasset",
+      "bytes": 6000771,
+      "sha256": "3072978fd34232b04aec568888ca9955bcd56fbc37e67afe0a7de9412ff0c389"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\bench_vice_01\\bench_vice_01_static\\Textures\\bench_vice_01_metal-bench_vice_01_rough.uasset",
+      "bytes": 7161445,
+      "sha256": "7b183315cac6898fde4e80a78f6625160249cf48415728beb4d93bccd9b093c6"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\bench_vice_01\\bench_vice_01_static\\Textures\\bench_vice_01_nor_gl.uasset",
+      "bytes": 9325466,
+      "sha256": "8bc46cf765bb01fe81b87eaeaab1d6d14e77a32812ffb3f0dc0fcb5437dfafe0"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\medical_box\\medical_box_static\\Materials\\medical_box.uasset",
+      "bytes": 72020,
+      "sha256": "9e7e5aa06ce0925163cd171d697013b70e46d95418bb8f837d217c4affbaf251"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\medical_box\\medical_box_static\\StaticMeshes\\medical_box_static.uasset",
+      "bytes": 192640,
+      "sha256": "e54903d1dfbe692f2c4b6a02373740d0261682f136390837077bf23cb27cc3a3"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\medical_box\\medical_box_static\\Textures\\medical_box_diff.uasset",
+      "bytes": 5597295,
+      "sha256": "3c0e7bce2e77d71746ae5bfd351df67363d5ceb187524b2729523fbe7b1e6263"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\medical_box\\medical_box_static\\Textures\\medical_box_metal-medical_box_rough.uasset",
+      "bytes": 7206020,
+      "sha256": "d4cb9ed8f4a694a67d5d0af7f0cd37b44ad7ad6fa70eea1f034bd402a8c4d17b"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\medical_box\\medical_box_static\\Textures\\medical_box_nor_gl.uasset",
+      "bytes": 3876030,
+      "sha256": "b4acc3289d27baf2e47fa332d5cdbd0ebba28f76f10c825d37c3fa6b7947cb18"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\plastic_bottle_gallon\\plastic_bottle_gallon_static\\Materials\\plastic_bottle_gallon.uasset",
+      "bytes": 73813,
+      "sha256": "712ce56b095d70b6567d6c12748787079fb529588b9fd307edcf338ddcbecf0e"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\plastic_bottle_gallon\\plastic_bottle_gallon_static\\StaticMeshes\\plastic_bottle_gallon_static.uasset",
+      "bytes": 496809,
+      "sha256": "7975595a82cf74affa909edc910839fcba435b6235885f1b139543e64079bf40"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\plastic_bottle_gallon\\plastic_bottle_gallon_static\\Textures\\plastic_bottle_gallon_diff.uasset",
+      "bytes": 3376461,
+      "sha256": "6a75b767f1e8b8676a9c7b497713843631c4fd22372cd07011ab465a207047ba"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\plastic_bottle_gallon\\plastic_bottle_gallon_static\\Textures\\plastic_bottle_gallon_nor_gl.uasset",
+      "bytes": 5471626,
+      "sha256": "edeb52db53f0e7c68c567b7d5822039401a898a372306131ee1117ef04d5fd98"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\plastic_bottle_gallon\\plastic_bottle_gallon_static\\Textures\\plastic_bottle_gallon_rough.uasset",
+      "bytes": 3152312,
+      "sha256": "16852029b75e1ed7c528abbab4c641fe292d828713dac8f10d453a001d4ff9a5"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\russian_food_cans_01\\russian_food_cans_01_static\\Materials\\russian_food_cans_01.uasset",
+      "bytes": 73184,
+      "sha256": "5b357d223e8b90855df1e87a6c3ec28f992cb07fdff5f21c42d8a10c4b596895"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\russian_food_cans_01\\russian_food_cans_01_static\\StaticMeshes\\russian_food_cans_01_static.uasset",
+      "bytes": 110314,
+      "sha256": "858c441b0c23b56ec1d1c4bcfbe5d2af0ec4fd1bff07788b9e99271ba821b8ae"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\russian_food_cans_01\\russian_food_cans_01_static\\Textures\\russian_food_cans_01_diff.uasset",
+      "bytes": 4015661,
+      "sha256": "978a6147e969c57474c0bf93bc1027b58cfc8a61c37c0033a3b01e98fe776ab0"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\russian_food_cans_01\\russian_food_cans_01_static\\Textures\\russian_food_cans_01_metallic-russian_food_cans_01_rough.uasset",
+      "bytes": 4612218,
+      "sha256": "404e27e16ed770482eeefece90010d93259a36c8d9c8a20b0aaf5b4e85e16038"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\russian_food_cans_01\\russian_food_cans_01_static\\Textures\\russian_food_cans_01_nor_gl.uasset",
+      "bytes": 4081171,
+      "sha256": "c557d1db4fabc92214bfd9868135767469ac6ca99379f2c148f25d27ee732c50"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\vintage_day_bed\\vintage_day_bed_static\\Materials\\vintage_day_bed.uasset",
+      "bytes": 72529,
+      "sha256": "9c34f1c343a318cbe920734c5782a8025eb00fbd0757698d5de905a34f9bff6d"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\vintage_day_bed\\vintage_day_bed_static\\StaticMeshes\\vintage_day_bed_static.uasset",
+      "bytes": 162125,
+      "sha256": "7f6735a5caf788fd086c8dec17d6975e7fff7abea4fea94329aad42d6e06503c"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\vintage_day_bed\\vintage_day_bed_static\\Textures\\vintage_day_bed_diff.uasset",
+      "bytes": 6908163,
+      "sha256": "7aa9d4d2889f1310097291e927c18c4fcb31dec2962256af8e17fce9f0466da8"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\vintage_day_bed\\vintage_day_bed_static\\Textures\\vintage_day_bed_metal-vintage_day_bed_rough.uasset",
+      "bytes": 6234922,
+      "sha256": "7a1fa5c448879a5de77a3b5d04429b79fd9ae35bc63867aa8135862e3fb0f718"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\vintage_day_bed\\vintage_day_bed_static\\Textures\\vintage_day_bed_nor_gl.uasset",
+      "bytes": 8443427,
+      "sha256": "21daf49488f6096393b2288bd0b52779770bd72e2197abc8bbc62c2aecc42156"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\wooden_table_02\\wooden_table_02_static\\Materials\\wooden_table_02.uasset",
+      "bytes": 72529,
+      "sha256": "21f4791640fb25de5fc3439fb9e509f07b9541ea5c454c38a7ee503303ca381e"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\wooden_table_02\\wooden_table_02_static\\StaticMeshes\\wooden_table_02_static.uasset",
+      "bytes": 92743,
+      "sha256": "089015f514bb3c88df9e6d8aff8f26f0c00d6b2a0aad23a1aa1c8ebbec9dbcc6"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\wooden_table_02\\wooden_table_02_static\\Textures\\wooden_table_02_diff.uasset",
+      "bytes": 4938240,
+      "sha256": "053b381dc83e1934a3f663815621f64e8a6a394b130f9d3e3eb3cb2e323ca005"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\wooden_table_02\\wooden_table_02_static\\Textures\\wooden_table_02_metal-wooden_table_02_rough.uasset",
+      "bytes": 5862416,
+      "sha256": "22b8e3fdd627df0c5ad23a98fe6f518487367cbfbdb35cf0f3f1be765de6239e"
+    },
+    {
+      "file": "Content\\WTSC\\Props\\wooden_table_02\\wooden_table_02_static\\Textures\\wooden_table_02_nor_gl.uasset",
+      "bytes": 4517022,
+      "sha256": "e3fe5dac2919ccbb070fd623730161caaf571c15ad2d84f0402b4c12d67cf696"
+    },
+    {
+      "file": "Scripts\\accept_packaged.ps1",
+      "bytes": 1748,
+      "sha256": "27f02558726f9a817ad27800da860604bfa552a5ee568f6b40aed19338137838"
+    },
+    {
+      "file": "Scripts\\author_content.py",
+      "bytes": 8684,
+      "sha256": "e8472cfa18acc020081e108b5cfcb6f234bd9a36867d9ba253b06efd3c932224"
+    },
+    {
+      "file": "Scripts\\bake_static_gltf.py",
+      "bytes": 8168,
+      "sha256": "d3da63bf4a4831aea9271eddbce9ab74deb70558e68d309a07f180a0caf533e6"
+    },
+    {
+      "file": "Scripts\\check_native_scene.py",
+      "bytes": 2385,
+      "sha256": "700d0b01378a5c2c35928755071f89d5a1317461562ab3a74ec5d33ad78edad8"
+    },
+    {
+      "file": "Scripts\\collect_packaged_evidence.py",
+      "bytes": 3653,
+      "sha256": "df92eaf47365ed0ee0fde8a3f4a83bcb94767d78219be10632d7460d73f0f20f"
+    },
+    {
+      "file": "Scripts\\encode_capture.py",
+      "bytes": 3504,
+      "sha256": "ca83ba73150a9f22b8f27eda16270ff499ed8c1fbbce52004243103eee8cf5ec"
+    },
+    {
+      "file": "Scripts\\encode_preview.py",
+      "bytes": 1481,
+      "sha256": "cbc7d51819c31c96c12c830adf376e5a46dc13e44770254b54936241925a0af3"
+    },
+    {
+      "file": "Scripts\\finalize_handoff.py",
+      "bytes": 8293,
+      "sha256": "15dd78e85e86922716748332b06b90e761ba56839bb56e10ebe1f9f08c71dc4d"
+    },
+    {
+      "file": "Scripts\\finalize_refinement.py",
+      "bytes": 8409,
+      "sha256": "f25ead725190718afae3469ab4525ba460b3157dcff63d6ae7261cc5d53339a4"
+    },
+    {
+      "file": "Scripts\\package_deliverable.py",
+      "bytes": 2635,
+      "sha256": "d6997479471b3fbcaceef367f3ffbf4de3049e1926d2e3f35f626fab5e4074f6"
+    },
+    {
+      "file": "Scripts\\PlayPackaged.cmd",
+      "bytes": 119,
+      "sha256": "a0c40fb8c118c4981a5bd365c8607bb3f472a16347209e927f02c0fc8308ef77"
+    },
+    {
+      "file": "Scripts\\refine_content.py",
+      "bytes": 2067,
+      "sha256": "883ed06bbeb46578db77ca1b4f8be9f81063c1a0beed3101e32e174b2477ad6c"
+    },
+    {
+      "file": "Scripts\\stage_sources.py",
+      "bytes": 1973,
+      "sha256": "ec3b6c2933f655692b0fa9afc5f7dea38c5c87e395aa0de7a701c5bd05e82023"
+    },
+    {
+      "file": "Scripts\\Unreal.ps1",
+      "bytes": 2574,
+      "sha256": "987eb21788ff9ea647001b242137a0ef2b34f894a04c59672450aac135553baf"
+    },
+    {
+      "file": "Docs\\ASSET_MANIFEST.md",
+      "bytes": 2931,
+      "sha256": "04822da6e64dad4ebba0251c38c6a2eff211445cb23975033a40e609c9e98eb7"
+    },
+    {
+      "file": "Docs\\DESIGN.md",
+      "bytes": 3478,
+      "sha256": "666c4abb303d58de5920f960183262e621236ac04f0e40324f0866a91b7d55ef"
+    },
+    {
+      "file": "Docs\\REUSE_AND_RIGHTS.md",
+      "bytes": 4719,
+      "sha256": "cd7b6b0c4c192d7f5396af906a4012ec4087b90c2eaa73667f71270ae9c7cd15"
+    },
+    {
+      "file": "Docs\\VERIFICATION.md",
+      "bytes": 4719,
+      "sha256": "94ee977a1c7f6111a425057cec45bc9dad09687acf61f378957e34b48d5c49e8"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2491,
+      "sha256": "244e1ad1345d81ae505e85f74c465b64d48aaacb268f4795ef0027b82d1f8e00"
+    },
+    {
+      "file": "AGENTS.md",
+      "bytes": 1449,
+      "sha256": "d7908be55aa4985d6a9401eea5bd0be04fe2ff8dc961d06b510fa2bfedc4b9b5"
+    },
+    {
+      "file": "WTSC_Survival.uproject",
+      "bytes": 527,
+      "sha256": "b4c92257e599b1be788869ffc97cecc44d7b75792d463adc0dd2e7cee35a680a"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 68,
+      "sha256": "79b778312a41e5b11855617f0b7aac4358b7d1f3a5282a313db64d689c6eb430"
+    }
+  ]
+}

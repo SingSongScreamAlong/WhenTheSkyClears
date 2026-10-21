@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "tool_slug": "blender.dda6f921.blender_scripting__execute_script_file",
+  "backend_tool": "blender_scripting__execute_script_file",
+  "dcc_type": "blender",
+  "instance_id": "dda6f921-e18c-49ca-98c6-23dc0ee2dbd2",
+  "instance_short": "dda6f921",
+  "request_id": "dcc-mcp-cli-local-577cd60c-854a-4b7a-910c-17bcdbeed05b",
+  "arguments": {
+    "filepath": "WTSC_LOCAL_WORKSPACE/scripts/configure_world_video.py"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Script executed: WTSC_LOCAL_WORKSPACE/scripts/configure_world_video.py\",\"error\":null,\"prompt\":\"Script completed successfully.\",\"context\":{\"filepath\":\"WTSC_LOCAL_WORKSPACE/scripts/configure_world_video.py\",\"stdout\":\"Info: Saved as \\\"WTSC_World_First_v003.blend\\\"\\n{\\\"format\\\": \\\"FFMPEG\\\", \\\"media\\\": \\\"VIDEO\\\", \\\"size\\\": [3840, 2160], \\\"fps\\\": 24, \\\"frames\\\": [1, 2400], \\\"path\\\": \\\"//../../renders/world/WTSC_World_Atmosphere_4K_v003.mp4\\\", \\\"audio_codec\\\": \\\"AAC\\\"}\\n\",\"stderr\":\"\"}}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Script executed: WTSC_LOCAL_WORKSPACE/scripts/configure_world_video.py",
+      "error": null,
+      "prompt": "Script completed successfully.",
+      "context": {
+        "filepath": "WTSC_LOCAL_WORKSPACE/scripts/configure_world_video.py",
+        "stdout": "Info: Saved as \"WTSC_World_First_v003.blend\"\n{\"format\": \"FFMPEG\", \"media\": \"VIDEO\", \"size\": [3840, 2160], \"fps\": 24, \"frames\": [1, 2400], \"path\": \"//../../renders/world/WTSC_World_Atmosphere_4K_v003.mp4\", \"audio_codec\": \"AAC\"}\n",
+        "stderr": ""
+      }
+    },
+    "isError": false
+  },
+  "source": "local_mcp",
+  "control_route": "local_mcp_direct",
+  "gateway_stats_recorded": false,
+  "gateway_stats_hint": "Use --require-gateway and _meta.agent_context.session_id for attributable gateway stats."
+}

@@ -1,0 +1,28 @@
+WTSC — twelve-phase manually authored source-motion study v064
+2026-10-19
+
+Purpose
+This folder is an isolated study of the twelve side-view photographs in the top row of the retained Muybridge Plate 2 image. It is evidence for broad stride, support, and contact changes. It is not production character art, a continuous-frame animation, or a solution for the trailer's 75–80 second recovery shot. Earlier v062 and v063 trace folders remain preserved. No production scene, v045c art, world, music, title or other specialist file was edited.
+
+Open and edit
+Each native/Muybridge_PhaseNN_Manual_Trace_v064.blend is a separate Blender 5.2.2 LTS file. Open the file in Blender and select its "Phase NN Manual GP Contours" object. It has one Grease Pencil layer and one authored frame, at Blender frame 1. The actual curves can be edited point by point. Its companion source crop is reference/phaseNN_source_crop.png; its manually selected pixel point list is phase_specs/phaseNN.json. The files are independent. There are no animation keys, automatic inbetweens, procedural skeletons, or copied frames passed off as new drawings.
+
+Registration and source provenance
+The original image is locomotion/three_way_walk_test_v057/reference/Muybridge_Animal_Locomotion_Plate_2_1887.jpg, SHA256 d0178c822beeae7c86f9e780f2fd4f9e6309accc9a8f03b8f4696b01abab1911. Each phase crop is exactly 310 x 588 RGB pixels, with source rectangle [31 + 310*(NN-1), 32, 341 + 310*(NN-1), 620]. The crops were pixel-compared to the original image and all twelve passed. Every source pixel point (x,y) maps to Grease Pencil local coordinates ((x-155)*0.01,(294-y)*0.01,0). Every native file uses a 620 x 1176 orthographic camera with ortho scale 5.88. This is a shared crop-space registration; the different camera-panel origins are not a character root-travel curve.
+
+Previews and timing disclosure
+previews/All_12_Source_Overlays_v064.png shows each source crop with its own actual native Blender render alpha registered over it. previews/Original_12_Phase_Crops_v064.png shows the raw source crops. previews/Muybridge_12_Source_Phases_Editorial_3fps_v064.mp4 is a 1280 x 720, four-second review playback. It contains exactly twelve distinct decoded video frames: one authored source phase per frame, in plate order, displayed at an editorial 3 fps. The pace is for legibility only. The original photographic exposure intervals are unverified; this video does not claim correct historical timing, continuous motion, or a complete walk cycle. No audio, holds, duplicate drawings, or generated intermediate poses were added. Frame labels explicitly disclose this.
+
+Technical validation
+The actual Blender 5.2.2 LTS executable built all twelve native files. A later cold reopen of every file passed the expected stroke counts, exact manually specified point order, coordinate registration, camera scale and render dimensions. Total: twelve files, 164 distinct Grease Pencil strokes, 1,459 hand-specified points. Maximum readback coordinate error is 1.28e-7 world units. The playback decoded as 12 unique frames at 3.0 fps for 4.0 seconds. See evidence/SOURCE_CROPS_VERIFIED_v064.json, ALL_12_COLD_REOPEN_v064.json, EDITORIAL_PLAYBACK_v064.json and EDITORIAL_PLAYBACK_DECODE_v064.json. These are technical checks, not artistic approval.
+
+Artistic assessment
+The repeated local scale, major foot contacts, support narrowing, swing reversal and wide-stride poses read coherently across the twelve source photographs. The v064 phase-8 hand was simplified from v063's comb-like fingers; its planted-foot dorsum and knee occlusion now have separate visible strokes. Many head and shoulder contours remain deliberately sparse because the source has blur and overlapping limbs. The linework is even, diagrammatic, and anatomically approximate at the hand and knee intersections. The adult photographic proportions and unpainted contours are not a suitable look for the boy and girl. This can guide observation of weight transfer, but it does not meet the requested cinematic character quality.
+
+Production integration contract and unsolved work
+There is no direct import contract into shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend, because this source study has no authored trailer timing, no child-size design, no root travel curve, and no locked foot coordinates in the world scene. If a later character pass draws from these observations, production must independently specify phase timing at 24 fps, continuous root motion and world travel, planted-foot anchors, camera-space size, child proportions, differentiated intentions, material/painting treatment and hand-contact intent. The intended recovery-to-walking restart at about 78.3 seconds and genuine A/B/C visual performance studies remain outstanding. The original photograph cannot supply those decisions by interpolation alone.
+
+Private Library
+Intermediate five-phase source overlay: [PRIVATE_LIBRARY_REFERENCE_REMOVED].
+Final twelve-phase overlay: [PRIVATE_LIBRARY_REFERENCE_REMOVED].
+Editorial twelve-frame MP4: [PRIVATE_LIBRARY_REFERENCE_REMOVED].

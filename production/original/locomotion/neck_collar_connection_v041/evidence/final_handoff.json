@@ -1,0 +1,216 @@
+{
+  "status": "Completed isolated neck/collar construction candidate, actual matched native preview, source-preservation check and editable handoff. Artistic review pending; production untouched.",
+  "latest_user_direction": "User liked the v040 painted look and asked to continue development. Preserve that face/painting and preferred walk.",
+  "native_files": {
+    "WTSC_Neck_Collar_Connection_Candidate_v041.blend": {
+      "file": "native\\WTSC_Neck_Collar_Connection_Candidate_v041.blend",
+      "bytes": 4545213,
+      "sha256": "c9806d2d905168f9e1ff2adbc20842ac298e37def9f37223d228639f414b931c"
+    }
+  },
+  "exact_v040_source_reference": {
+    "file": "reference\\PRESERVED_PAINTED_WALK_v040.blend",
+    "sha256": "cfa9827e8caecdb66271eb46b63d6d5e9a998c0dbba69380f53f7f5d6f7cf503",
+    "matches_original": true
+  },
+  "guide": "VIEWING_IMPORT_AND_ASSESSMENT_v041.txt",
+  "private_preview": {
+    "file": "previews\\WTSC_v041_vs_v040_Neck_Collar_Normal_Speed.mp4",
+    "bytes": 895717,
+    "sha256": "0eeda8e954fbc861b05914ec24cbc6762fdfedea90bdae4cd7ec40e56e4c512f",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "status": "succeeded",
+    "local_metadata_readback_verified": true,
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download"
+  },
+  "comparison": {
+    "file": "previews\\WTSC_v041_vs_v040_Neck_Collar_Normal_Speed.mp4",
+    "bytes": 895717,
+    "sha256": "0eeda8e954fbc861b05914ec24cbc6762fdfedea90bdae4cd7ec40e56e4c512f",
+    "dimensions": [
+      1280,
+      840
+    ],
+    "fps": 30.0,
+    "decoded_frames": 189,
+    "duration_seconds": 6.3,
+    "source_frames_per_section": [
+      1,
+      63
+    ],
+    "cycles_per_section": 2,
+    "closing_pose_included": true,
+    "sections": [
+      "Matched close at native480x720 per panel",
+      "Matched shot reduced to640x360 per panel",
+      "Candidate shot at full native1280x720"
+    ],
+    "native_candidate_unique_motion_frames": 126,
+    "native_cycles_rendered_not_recycled": true,
+    "same_original_body_actions": true,
+    "new_AI_paint_or_AI_animation": false,
+    "board": "previews\\WTSC_v041_Neck_Collar_Matched_Proof.png",
+    "board_dimensions": [
+      1920,
+      3900
+    ],
+    "board_bytes": 3156179,
+    "observation_limit": "Actual encoded movie decoded for frame/pixel inspection. No continuous video-player playback observation claimed."
+  },
+  "construction": {
+    "new_collar_vertices": 36,
+    "new_collar_faces": 23,
+    "connected_stand_and_leaf": true,
+    "authored_pose_samples": 125,
+    "period_frames": 31,
+    "fps": 30,
+    "cycle_with_bookend": [
+      1,
+      32
+    ],
+    "maximum_upper_coat_vertex_shift_m": 0.04331014352371954,
+    "only_coat_pose_rows0_to5_changed": true,
+    "original_yoke_hidden_intact": true,
+    "original_coat_action_unchanged": true,
+    "upper_painted_UV_registration_changed": true,
+    "lower_painted_UV_and_specified_front_placket_unchanged": true,
+    "no_new_painting_or_lights": true
+  },
+  "technical": {
+    "scope": "Cold source preservation and side-view garment construction continuity. Technical results do not establish artistic acceptance.",
+    "blender": "5.2.2 LTS",
+    "build_hash": "d13f752e3b9c",
+    "body_samples": 187,
+    "body_range": [
+      1,
+      94
+    ],
+    "visible_geometry_camera_frames": [
+      1,
+      4,
+      8,
+      11,
+      13,
+      17,
+      20,
+      24,
+      27,
+      31,
+      32,
+      63,
+      94
+    ],
+    "original_action_datablocks_changed": [],
+    "original_active_object_actions_changed": [],
+    "other_original_mesh_rest_shape_all_UV_float_data_changed": [],
+    "original_material_nodes_ramps_links_changed": [],
+    "original_packed_image_bytes_changed": [],
+    "preservation_errors": {
+      "root_matrix": 0.0,
+      "all_bone_world_matrices": 0.0,
+      "wrists": 0.0,
+      "all_other_visible_mesh_vertices_m": 0.0,
+      "coat_rows6_through32_rendered_vertices_m": 0.0,
+      "camera_matrices": 0.0
+    },
+    "coat_pose_rows6_through32_error_m": 0.0,
+    "original_coat_first_UV_retained": true,
+    "painted_UV_rows12_through32_retained": true,
+    "front_placket_UV_cols13_through16_from_row6_error": 0.0,
+    "new_collar_eighth_frame_join_samples": 249,
+    "collar_to_coat_top_max_XZ_gap_m": 3.577054704474748e-07,
+    "collar_to_coat_top_max_XYZ_gap_m": 3.577054704474748e-07,
+    "collar_to_coat_top_max_projected_shot_gap_pixels": 0.00011483759478370948,
+    "minimum_projected_coat_quad_area_m2": 2.872570876788494e-05,
+    "collar_local_bookend_max_error_m": 0.0,
+    "same_shoe_mesh_material": true,
+    "source_yoke_preserved_hidden": true,
+    "intentional_changes": [
+      "New36-vertex folded collar on the existing31-frame clock.",
+      "Only coat shape coordinates in rows0..5 change; original coat Action and lower rows remain.",
+      "Original yoke hidden intact; upper painted UVs corrected around exposed armhole/duplicate collar, with original UV0/lower/front placket preserved."
+    ],
+    "layer_depth_disclosure": "Collar inner edge meets the original head depth and its lower edge meets the coat depth. The shared boundary aligns inXYZ; this local connection does not turn the fixed-profile character into a general3Drig.",
+    "remaining": [
+      "Fixed profile/expression",
+      "Simple body/hand contours and crowded passing feet",
+      "Paired acting/support/recovery restart unfinished"
+    ]
+  },
+  "visual": {
+    "scope": "Actual native hero/detail/shot renders and decoded comparison pixels inspected; independent normal-speed artistic review remains separate.",
+    "native_inspection": [
+      "previews/CANDIDATE_HERO/0001.png",
+      "previews/CANDIDATE_DETAIL/0001.png",
+      "previews/CANDIDATE_DETAIL/0011.png",
+      "previews/CANDIDATE_DETAIL/0020.png",
+      "previews/CANDIDATE_CLOSE/0020.png",
+      "previews/WTSC_v041_Neck_Collar_Matched_Proof.png"
+    ],
+    "decoded_inspection": [
+      "previews/DECODED/0019.png",
+      "previews/DECODED/0145.png"
+    ],
+    "observations": [
+      "Liked v040 face/hair and the body/foot performance remain visually the same in the matched renders.",
+      "The neck follows a folded collar and the coat carries the upper connection without the separate yoke.",
+      "Exposed armhole/duplicate collar and an erroneous jaw endpoint were corrected before final render.",
+      "The front placket/buttons and lower costume remain; overly broad first texture simplification was revised.",
+      "A small fold/painted edge is still visible in close detail. Upper coat/shoulder form remains simple and fitted."
+    ],
+    "not_claimed": [
+      "Continuous video-player playback observation",
+      "Final character or animation acceptance",
+      "A full3Dface/costume rig or Arcane-level finish",
+      "New emotional/paired recovery acting"
+    ]
+  },
+  "render": {
+    "final_unique_native_motion_images": 126,
+    "final_additional_candidate_hero": 1,
+    "final_candidate_and_baseline_detail_images": 8,
+    "final_unique_native_images": 135,
+    "same_final_proof_motion_frames_reused": 8,
+    "new_motion_renders": 118,
+    "bounded_proof_iterations": 6,
+    "images_per_proof_iteration": 17,
+    "superseded_proof_images_overwritten": 85,
+    "all_emitted_native_images_including_superseded": 220,
+    "threads": 2,
+    "all_own_Blender_jobs_exited": true,
+    "world_renders": 0
+  },
+  "source_preservation": {
+    "protected_source_files_checked": 19,
+    "all_unchanged": true,
+    "v040_face_geometry_UVs_materials_and_source_images_preserved": true,
+    "no_production_or_other_specialist_files_written": true
+  },
+  "integration": {
+    "source_fps": 30,
+    "period_frames": 31,
+    "D_F_plus_X_metres": "0.9524437384576381*(F-1)/31",
+    "production24fps_map": "F=1+(G-G0)*30/24; one clock for body/root, coat/collar, hands, contours, shoe/cuff bakes and world/camera. Do not round31sourceframes to an integer production period or add travel twice.",
+    "travel_curve": "reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv",
+    "preview_range": [
+      1,
+      63
+    ],
+    "native_retained_source_range": [
+      1,
+      94
+    ],
+    "production_origin_assigned": false,
+    "production_integrated": false
+  },
+  "remaining": [
+    "Simple folded edge/upper-coat and shoulder form; artistic comparison pending",
+    "Fixed profile/expression and simple underlying body/hand contours",
+    "Crowded passing feet",
+    "Paired intentions, fatigue, stumbling, load-bearing hand support/clasp and genuine recovery-to-walking restart",
+    "Original75-80second scene/full-trailer integration remains undone"
+  ],
+  "goal_assessment": "A local construction refinement over the liked v040 direction. Arcane-level quality remains a target, not a completed result.",
+  "blockers": []
+}

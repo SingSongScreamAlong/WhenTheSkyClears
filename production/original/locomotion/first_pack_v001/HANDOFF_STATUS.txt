@@ -1,0 +1,50 @@
+WHEN THE SKY CLEARS / THIRD WORKSTREAM / LOCOMOTION v001
+2026-10-17 / bounded first pack complete locally
+
+DELIVERY
+WTSC_Locomotion_First_Pack_v001.zip (7,256,422 bytes)
+native/WTSC_Locomotion_Library_v001.blend
+native/WTSC_Neutral_Walk_Proof_v001.blend
+native/WTSC_Locomotion_Append_Test_v001.blend
+IMPORT_GUIDE.txt / MOTION_STATUS.txt
+
+VIEW FIRST
+WTSC_Locomotion_First_Pack_Reel_v001.mp4 (756,741 bytes, 7.667s)
+  Neutral walk then weary trudge. Both children, current charcoal paint.
+WTSC_Walk_Knockout_Readability_v001.mp4 (846,807 bytes, 4s)
+  Actual copied production lettering fragment beside the neutral walk.
+WTSC_Acting_Blocking_Studies_v001.mp4 (393,606 bytes, 4.667s)
+  Crouch/reach prototypes, clearly labelled unfinished due to missing art.
+WTSC_Locomotion_Contact_Sheet_v001.jpg
+
+TECHNICAL RESULT
+Blender 5.2.2 LTS verified; 24fps; metre scale; XZ staging.
+2 native rigs, 17 editable flat painted parts, 8 native Actions including
+4 prototype child Actions. Original paint packed, exact GP source hidden.
+Walk 32frames /0.40m/s; trudge 44frames /0.24m/s.
+Fresh Append/packed paint, root placement, scale, root motion, in-place and
+2x NLA retiming passed. Planted drift <=1.2e-7m/frame; visible sole samples
+within about2.2mm of floor; no gait limb stretch. Full video decode passed.
+Source shoe shapes are locked contacts; there is no articulated heel/toe rig.
+Every render was CPU-only/two threads, one sequential Blender process at a
+time; no shared UI/GPU use. No production/shared/effects file was written.
+All five protected original native/source hashes match the initial audit.
+
+REMAINING ART / MOTION WORK
+First motion study, not production/artistic acceptance. Crouch/reach have
+native blocking keys and planted feet but still need hidden sleeves, joint
+redraws and interaction cleanup. They are not completed movement clips.
+Skip/frolic, run, crawl, stumble/recovery, fall/get-up, helping lift and
+contact-matched transitions remain planned and untested. Trailer integration
+is for the parent; match phase by ground distance before adding these loops.
+
+LIBRARY BLOCKER
+Action: ordered private upload of the main reel, readability reel and ZIP.
+Target: exact local files above, through current Library prepared-upload helper.
+Outcome: failed/denied local transfer bridge access; no Library save/IDs
+confirmed. Helper exited1 with permission denied accessing its local transfer
+bridge. See evidence/library_upload_stderr.txt and library_upload_request.json.
+No retry, alternative upload route, or further external write was attempted.
+Parent must provide the original user private-upload authorization evidence
+before any retry, as requested in the delegation. Reconcile any uncertain
+Library outcome before replaying a write. Local deliverables are unaffected.

@@ -1,0 +1,79 @@
+WHEN THE SKY CLEARS / FOCUSED STEPPED CORRECTION v014
+
+STATUS
+Independent v013 review found a viable whole-pose foundation, not finished
+movement acceptance. v014 changes only the requested balance/attending arm
+keys and the boy's near-hand thigh brace. Stop for focused review before
+curve polish, repaint, walking extension or production integration.
+
+CHANGED KEYS ONLY
+Boy10,13,16,19: a longer leading reach follows the forward/downward fall;
+the other arm trails low/back instead of presenting a second raised bent arm.
+Girl12,17: one lower available hand, the other arm settled beside her hip.
+These sparse keys retain their original held exposures through21.
+Boy22,26,32,38,43: middle of existing hand lies along the upper surface of
+the loaded front thigh. Wrist and hand now rest outside the thigh instead of
+pointing into its center. A near-camera elbow position separates the arm from
+the torso/thigh contour. This is an explicit3D proxy arm pose; no mesh, hand
+size, shading, source painting or character proportions were changed.
+The brace holds through48; original release49 is preserved exactly.
+
+PRESERVED FOUNDATION
+All72frames were compared against v013. World matrices outside the allowed
+arm bones match exactly. Root routes, body/spine/head poses, foot collection,
+girl's both-heels-down wait, low gather, push, head-profile placeholder,
+cameras, meshes, UVs and material assignments are unchanged.
+No key was added/deleted.15boy/11girl whole-pose keys, including end hold,
+still use CONSTANT interpolation. No recurring gait or spline polish.
+
+TECHNICAL CONTACT VERSUS PERCEIVED LOAD
+Native evaluated geometry places the hand about0.45mm outside the thigh
+surface at brace keys22,26,32,38,43 and held48, with no triangle intersection.
+The hand axis is aligned to the thigh; the original49 releases it by about
+73mm. These are proxy surface checks, not dynamics, force or final fingers.
+The flattened hand placement reads more explicitly close up; judge whether
+it is unmistakable at shot size from the actual shot-size movie. Geometry
+success alone does not establish the desired weight-bearing intention.
+
+FILES / LOCAL CLOCK
+native/WTSC_Whole_Pose_Blocking_v014.blend
+Collection WTSC_WHOLE_POSE_BLOCKING_v014 contains44objects/2native armatures
+and bound plain proxy meshes, no camera/light or external image. The full
+native also includes the unchanged plain test stage/cameras.
+Verified Blender5.2.2LTS, buildd13f752e3b9c. Cold reopen and fresh append pass.
+72frames at24fps, frame1=0s, frame72=2.958333s, boundary73=3s.
+Append only into an empty review scene, metre units/scale1. Keep Object root
+routes and native pose channels together. Leave CONSTANT exposures intact.
+scripts/story_poses.py and build_blocking.py are editable and embedded in the
+native as Texts. The rebuild recipe refers to original v013 rig and original
+v012 rest-foot geometry in this project; the saved native needs no externals.
+evidence/world_motion_samples.csv preserves the local stepped route/support
+clock. No production75..80s mapping or world-travel contract is authorized.
+
+PREVIEWS AND REVIEW
+WTSC_v014_Whole_Pose_Blocking_3s.mp4: close review.
+WTSC_v014_Shot_Size_Blocking_3s.mp4: original approximate character size.
+Both are actual72frame silent960x540 movies, with no pose labels.
+WTSC_v014_INSPECTION_Key_Poses.jpg and WTSC_v014_SHOT_SIZE_Key_Poses.jpg:
+key-pose sheets, also saved privately to Library with exact returned IDs in
+evidence/library_key_sheets_receipt.json and final_handoff.json.
+Actual final movies fully decoded, all72frames per view inspected in order.
+No continuous/full-speed playback observed; urgency/pacing remain provisional.
+
+SOURCE AND DESIGN LIMITS
+The v013 head/profile attention shorthand is unchanged: one stepped reflected
+plain proxy profile, no edge-on card rotation or interpolated turnaround.
+Painted head/hair/braid continuity remains unresolved and outside this task.
+No v008 reuse, painting, production integration, trailer duration/music/title
+or FX changes. v013 and the production source are hash-checked unchanged.
+Prior observed Muybridge reference and its limits remain documented in
+../whole_pose_blocking_v013/reference/REFERENCE_OBSERVATIONS.txt. No new
+reference is claimed or used to validate natural timing in this correction.
+
+DELIVERY NOTE
+The prepared Library helper could not discover prepare_uploads and stopped
+before any write. This was confirmed as a discovery failure, with zero upload
+sessions or uncertain saves. The two image creates then succeeded through the
+available ordered save route. Windows local identity metadata is unsupported;
+exact Library/file/version receipts are retained and no local metadata success
+is claimed. This does not affect the saved images or editable native.

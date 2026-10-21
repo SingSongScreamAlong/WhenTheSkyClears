@@ -1,0 +1,78 @@
+{
+  "reviewer": "visual_review subagent",
+  "status_distinction": {
+    "full_trailer": "v040: 106 seconds, 3840x2160, 24fps, giant scrolling title knockouts over the world, original held child pair. This is the full-trailer master currently referenced by its delivery manifest.",
+    "latest_bounded_pass": "v048a: separate five-second, unmasked battlefield candidate, with retained v047 ground/head work and new sleeve crowns/head-value treatment. These refinements are not yet propagated across the v040 full movie.",
+    "approval": "Neither technical manifests nor this independent static review establish final artistic acceptance."
+  },
+  "method": "Read the current v040 delivery/build/native-audit records and visually inspected actual decoded v040 frames. The additional unmasked camp image is the v039 study used by v040, explicitly labeled as such. Static images show art/composition, not whether existing motion looks good at playback speed.",
+  "records_read": [
+    "notes/world_v016/full_delivery_manifest_v040.json",
+    "notes/world_v016/full_build_v040.json",
+    "notes/world_v016/full_native_audit_v040.json",
+    "notes/world_v016/full_visual_review_v040.json"
+  ],
+  "global_priorities": [
+    {
+      "priority": 1,
+      "issue": "Repeated mirrored foreground foliage remains conspicuous across unrelated areas.",
+      "evidence": ["renders/world_v016/full_decoded_v040/02_Village.png", "renders/world_v016/full_decoded_v040/04_Woods.png", "renders/world_v016/full_decoded_v040/05_School.png", "renders/world_v016/full_decoded_v040/07_Battlefield.png"],
+      "next_work": "Extend the quieter soil/root direction from the v047 battlefield treatment into a dedicated continuous world-ground candidate. Break the large repeated leaf silhouettes with separately drawn rooted clumps, bare earth intervals and region-specific debris. Keep roots and paint projection fixed in world space. Review the actual scroll, not only a single frame."
+    },
+    {
+      "priority": 2,
+      "issue": "The title masks often cut through the children's faces and hide much of the environment beat.",
+      "evidence": ["renders/world_v016/full_decoded_v040/03_Village_Empty.png", "renders/world_v016/full_decoded_v040/05_School.png", "renders/world_v016/full_decoded_v040/06_Camp.png", "renders/world_v016/full_decoded_v040/07_Battlefield.png"],
+      "next_work": "Keep the established knockout motif and exact wording/timing as the baseline. Judge every new world detail in both the unmasked working view and the final glyph composition. In a separate art candidate, study staging within the available letter openings so an important face, flame base or set landmark is not consistently hidden when its beat needs to read. Do not treat an attractive unmasked proof as evidence that the final title composition works."
+    }
+  ],
+  "area_priorities": [
+    {
+      "area": "Village",
+      "review_frames": [241, 481],
+      "images": ["renders/world_v016/full_decoded_v040/02_Village.png", "renders/world_v016/full_decoded_v040/03_Village_Empty.png"],
+      "current_read": "Warm cream walls, green shutters, laundry and gold foliage establish the strongest welcoming palette. Dense flowers and foliage have similarly busy values across several depth layers.",
+      "next_work": "Build one small near-set assembly around the laundry/doorway: fixed clothesline anchors with cloth moving locally, an independent branch/ivy contour and a wall receiver for changing shadow. Strengthen a cool recessed doorway/window behind warm plaster. Upgrade only the hero-facing paint regions that are enlarged at native4K; do not apply uniform sharpening to the whole painting.",
+      "world_motion_review": "Use a short actual render to check readable cloth/branch movement, moving shadow and parallax. Existing motion cannot be judged from these stills alone."
+    },
+    {
+      "area": "Woods",
+      "review_frames": [841],
+      "images": ["renders/world_v016/full_decoded_v040/04_Woods.png"],
+      "current_read": "Near trunks are legible and the cool canopy gives atmosphere, but the visible low vegetation forms a dense repeated strip and the near/far tree masses could separate more clearly.",
+      "next_work": "Choose one foreground branch cluster for independent rooted bending, one midground bough, and a slower far canopy. Preserve still trunks and stagger the motion rather than moving the complete painting as one sheet. Add a few readable dappled shadow changes across the path and keep the distant opening quieter in value."
+    },
+    {
+      "area": "School",
+      "review_frames": [1201],
+      "images": ["renders/world_v016/full_decoded_v040/05_School.png"],
+      "current_read": "Broken glazing and peeling plaster read clearly, but the front wall dominates as a painted surface and the damage has little separated foreground/interior structure in the sample.",
+      "next_work": "Separate the closest broken mullions, sill and rubble into a few true-depth painted pieces. Keep the classroom interior dark and quiet so window-edge planes and cool reflected light stand out. Animate one appropriate loose edge and a small amount of drifting dust/ash, reviewed for scale. Preserve the existing facade design and avoid inventing story-specific signs or props without source support."
+    },
+    {
+      "area": "Camp",
+      "review_frames": [1609],
+      "images": ["renders/world_v016/full_decoded_v040/06_Camp.png", "renders/world_v016/camp_benchmark_v039/QA_Study_Native_1609.png"],
+      "current_read": "Gray canvas, stakes and distant hills establish the camp. In the unmasked v039 proof used by the current direction, the flame is much brighter and more intricately filamented than the surrounding gray paint, with a weak visible hearth mass beneath it.",
+      "next_work": "Create a restrained painted flame assembly with fewer readable warm masses, a dark ember/log or fuel base appropriate to the existing emitter, and smoke that begins at that source. Use the already animated native light to connect flame change to nearby ground/canvas color and shadow. Add local tent-edge movement and rope response at fixed stakes. Review in the narrow title opening as well as the unmasked world.",
+      "existing_motion_note": "The v040 native audit already records changing flame geometry and light wattage. This recommendation concerns their visual design and grounding, not a claim that no animation exists."
+    },
+    {
+      "area": "Battlefield and ruins",
+      "review_frames": [1921, 2161],
+      "images": ["renders/world_v016/full_decoded_v040/07_Battlefield.png", "renders/world_v016/full_decoded_v040/08_Ruins.png", "renders/refinement_v048a/Full_1901_4K.png"],
+      "current_read": "Misted ruined silhouettes have useful depth. The full v040 sequence still shows the older held pair and repeated foreground; its tall warm flame has the same fine-edged mismatch as camp. The separate v048 battlefield shot is a visibly newer look and character construction.",
+      "next_work": "Finish the main impact attachment and persistent damage in the bounded battlefield scene, then compare an integration candidate through the full-trailer mask before propagation. Use distinct near wire/debris silhouettes, mid ruined walls and soft far smoke; do not add equal high-frequency detail everywhere. Retain the newer shoulder/head treatment only after its motion review, and keep children held in other world passes."
+    },
+    {
+      "area": "Title and credits",
+      "review_frames": [2400, 2544],
+      "images": ["renders/world_v016/full_decoded_v040/09_Last_S.png", "renders/world_v016/full_decoded_v040/11_Credits_Last.png"],
+      "current_read": "The six-second final card is clearly readable and matches the recorded exact text. The title block fills nearly the entire screen width and height, leaving little breathing room. The last moving frame is almost black as the final S leaves, consistent with the recorded design.",
+      "next_work": "After world integration, review a typography-only candidate with deliberate outer margins and more considered spacing between title, series line, year and production line, preserving exact wording/case/punctuation and the established 106-second timing. Judge the almost-black-to-card transition at playback speed before changing it."
+    }
+  ],
+  "recommended_next_benchmark": "A five-second village world-detail candidate around the laundry and doorway, with children held: rooted cloth and branch motion, a readable moving shadow, and quieter nonrepeating foreground soil. Keep an unmasked view for craft review and the exact current title mask for composition review.",
+  "source_resolution_note": "The current delivery manifest reports many original paintings at 1672x941, while the movie is genuinely rendered at3840x2160. For hero-facing details, regenerate or repaint selected source regions with GPT imagegen and maintain independent depth pieces; a 4K output raster alone does not add painted detail.",
+  "mutations": "Only this assessment note was added. No native scenes, source art, full-trailer timing or render jobs were changed."
+}

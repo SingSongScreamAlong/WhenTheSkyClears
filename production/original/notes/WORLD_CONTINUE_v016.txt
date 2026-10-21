@@ -1,0 +1,83 @@
+LATEST DIRECT USER DIRECTIONS SUPERSEDE THE OLD STILL-ONLY GATE
+
+User explicitly says: bring EVERYTHING in the world to life; lights flicker/move,
+branches wave; this is a trailer, not a test. Preserve visible painterly depth and
+selective detail separation like the Arcane benchmark. User explicitly answered:
+KEEP CHILDREN HELD FOR THIS WORLD PASS. No gait/acting animation.
+User revised characters: near-black painterly/grayscale detail, maybe white eyes;
+near same age/height with boy slightly bigger/older; user loves the direction.
+Do NOT stop at an older five-second/still approval gate. Continue actual 100s
+world animation and deliver a real 4K trailer world pass with supplied music.
+
+COMPLETED CURRENT CHECKPOINT
+Source: shots/world/WTSC_Village_Progress_v015.blend
+Active scene: WTSC_VILLAGE_PROGRESS_v015
+Wide: renders/village_lookdev/v015/Village_Progress_v015_Wide_4K.png
+Close: renders/village_lookdev/v015/Children_Contact_v015_4K.png
+Native Blender 5.2.2 renders, both 3840x2160, actually visually inspected.
+Rebuilt native editable GP outer contour from new imagegen pair alpha. Matching
+painted fill is a flat vector-mask mesh parented to GP, not modeled 3D children.
+Boy 1.45m, girl ~1.37m. Held pose, gentle black/gray paint, small white eye marks.
+Lowered 0.075m and added four native 2D painted contact washes behind soles.
+Two new registered painted detail tiles in existing card materials:
+bakery 1356x1159 replaces ~594x508 source pixels;
+path 1908x824 replaces ~351x151 source pixels.
+All base plates and character fill remain 1672x941. No sharpening. Wide detail
+improved; zooms still magnify bitmaps. Four backdrop planes are flat paintings.
+
+FILES / CODE
+scripts/village_still_refinements_v014.py: contacts + UV detail tile registration
+scripts/painterly_pair_native_v015.py: native GP + clipped painted fill
+scripts/assemble_village_progress_v015.py: executed and rendered successfully
+characters/Pair_Painterly_Near_Age_v015.png and *_Vector_v015.json
+notes/village_lookdev/progress_v015.json; imagegen prompts v014 and v015 saved.
+
+NEXT FULL WORLD PASS (v016)
+Build from v015 into NEW .blend, preserve all prior files. One continuous-looking
+100s lateral journey through village, abandoned village/woods, school, camp,
+battlefield, monumental title. Reuse existing original painted assets in
+sets/painted_layers and native title collection from WTSC_World_First_v006.blend.
+Reference original route from scripts/build_world_first.py: at 0,18,35,50,67,80,
+90,96,100 seconds route X=0,12,27,41,56,67,80,87,90. Native original hero camera
+is (0,-16,3); GP pair (-1.68912,0,.771372), paint fill follows parent. Keep that
+initial composition. Move camera/pair along route; end pullback exposes title.
+Global rear painting can follow camera at infinity, with slow UV cloud movement;
+midground and foreground stay physically separated for visible parallax.
+Extend path with a continuous mesh strip sampling the NEW path tile repeatedly
+at its existing physical scale: original UV region u .25-.46,v .06-.22 maps
+world center X=-1.8792,Y=2,Z=.3756, width2.7216,height1.1664. Keep v015 initial
+path/card framing, add continuation behind it, dark foreground bank extension.
+Append original regional paintings with deliberate distinct depth/value bands.
+Animate via dense native card grids with pinned shape keys (tree canopy/trunks,
+cloth/grass) and shared gust timing, never wobbling architecture. Window/lamp
+emission masks flicker, moving leaf shadow passes on walls, smoke wisps/embers,
+wind-driven leaves/papers, drifting cloud/mist, tent fabric and rope movement,
+distant restrained flashes. Give visible distinct frequencies and depth layers.
+Keep motion painted and coherent, do not call moving a single card full animation.
+Original full world v011 has ambient motion but poor blocklike sets; do not undo
+the better v015 painterly composition by reverting to those near proxies.
+No new concept art unless an actual needed layer; GPT imagegen is available.
+
+NATIVE RUNTIME
+Blender: WTSC_LOCAL_USER/AppData/Local/Programs/Blender/blender-5.2.2-windows-x64/blender.exe
+Use --factory-startup --background <file> --python <script> for separate owned
+render/edit processes. Existing GUIs/source remain untouched.
+Bundled Python: WTSC_LOCAL_USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe
+FFmpeg: WTSC_LOCAL_USER/AppData/Local/Programs/Python/Python311/Lib/site-packages/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe
+Native 4K,24fps,2400frames,100s. Music supplied WAV under edit/. Fade 90-100s,
+picture final2s to black. Render chunks with real native frames, then mux source
+audio with verified fade. Do not claim completion on launch. Inspect frames and
+decode full movie. User expects progress updates, no new permission gate.
+
+PRESERVATION
+v013 source SHA256 107541346f126bf52076c0e2c28cff4d9bf29b36ee79ac810aa0d5f28fe4a606
+v013 PNG c6141948c343c16d48e38c71b077119e07e941cfadc7550e25119ee6462474ee
+Prior full v010 source/movie remain immutable. Preservation baseline lists nine
+files in notes/village_lookdev/preservation_before_v014.json.
+The live editable v011 changed concurrently at 23:25:06 UTC (38,923 bytes larger).
+No v014/v015 script writes it. Its .blend1 backup still hashes to the original
+13ab34cf37953f6fa8ce12ce3a70c7202547b7f144770399e5d3bd7f5ac409e4.
+Do not overwrite or restore that live v011; preserve both current and backup.
+Use v015 / immutable v006 for next work. Report v013 preservation, not that every
+live project file remained unchanged. Source exact approved ink-and-wash image
+still missing; use PROVISIONAL label, user likes present direction.

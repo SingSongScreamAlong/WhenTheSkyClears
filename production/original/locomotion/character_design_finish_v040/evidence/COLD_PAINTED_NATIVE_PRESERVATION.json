@@ -1,0 +1,51 @@
+{
+  "scope": "Technical cold native preservation, separate from artistic look acceptance.",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "body_sample_count": 187,
+  "body_range": [
+    1,
+    94
+  ],
+  "geometry_camera_frames": [
+    1,
+    4,
+    8,
+    11,
+    13,
+    17,
+    20,
+    24,
+    27,
+    31,
+    32,
+    63,
+    94
+  ],
+  "original_actions_changed": [],
+  "original_active_actions_changed": [],
+  "original_rest_shape_first_UV_and_float_attributes_changed": [],
+  "original_packed_image_bytes_changed": [],
+  "errors": {
+    "root_matrix": 0.0,
+    "all_bone_world_matrices": 0.0,
+    "wrist_world_matrices": 0.0,
+    "all_other_visible_mesh_vertices_m": 0.0,
+    "camera_matrices": 0.0,
+    "new_head_object_follows_original_matrix": 0.0,
+    "new_head_matches_original_rigid_head_bone_affine_m": 2.2293035620847717e-07
+  },
+  "same_shoe_mesh_and_new_material": true,
+  "original_head_preserved_hidden": true,
+  "new_head_fixed_profile_only": true,
+  "intentional_changes": [
+    "New atlas-painted material copies and explicit additional UV layer on existing parts. Original first UV layers retained.",
+    "New fixed-profile head/neck paint plane, fitted to original painted occupancy and same head-bone affine motion. Original head hidden, retained intact.",
+    "Garment-local linen collar masks and painted shoulder field; no world/light changes."
+  ],
+  "limitations": [
+    "New painted face/hair and coat buttons/pocket are a design candidate, not approved identity or costume.",
+    "Existing body contours and hand meshes, fixed expression and original crowded passing feet remain.",
+    "No 3D head, head turn, facial rig, paired acting or recovery restart authored."
+  ]
+}

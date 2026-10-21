@@ -1,0 +1,145 @@
+{
+  "period_frames": 31,
+  "fps": 30,
+  "cycles": 9,
+  "frames_per_view": 279,
+  "seconds_per_view": 9.3,
+  "frames_encoded_per_cycle": 31,
+  "duplicate_boundary_frame_inserted": false,
+  "preserved_v025_frames_17_32_exact": true,
+  "newly_authored_opposite_half_frames": [
+    1,
+    16
+  ],
+  "opposite_half_shape_keys": [
+    1.0,
+    4.25,
+    6.0,
+    9.4,
+    11.3,
+    14.0,
+    17.0
+  ],
+  "opposite_half_reference_drawings": [
+    32,
+    20,
+    22,
+    25,
+    27,
+    29,
+    17
+  ],
+  "GP_frames": 280,
+  "unique_GP_drawings": 32,
+  "GP_Rcontact_bookend_error_m": 0.0,
+  "sampled_native_frames": 298,
+  "max_root_curve_error_m": 6.972770858482136e-07,
+  "max_sole_repeat_translation_error_m": 9.5367431640625e-07,
+  "minimum_sole_z_m": -4.0978193283081055e-08,
+  "unreachable_chains": [],
+  "source_sha256": "adc14d6af70e558036c847763328c2a4184a23760e978a15f56eaef76329e994",
+  "action_extensions": [
+    {
+      "object": "LOCO_BOY | RIG",
+      "action": "LOCO_BOY | RIGAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "V021 | CHILD_SUPPORT_TRAVEL",
+      "action": "V021 | CHILD_SUPPORT_TRAVELAction.001",
+      "travel_offset_x": true
+    },
+    {
+      "object": "BOY | HIP",
+      "action": "BOY | HIPAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | CHEST",
+      "action": "BOY | CHESTAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | HEAD_PROFILE",
+      "action": "BOY | HEAD_PROFILEAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | ANKLE_near",
+      "action": "BOY | ANKLE_nearAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | WRIST_near",
+      "action": "BOY | WRIST_nearAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | LEG_POLE_near",
+      "action": "BOY | LEG_POLE_nearAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | ARM_POLE_near",
+      "action": "BOY | ARM_POLE_nearAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | RELAXED_HAND_TORSO_ANCHOR_near",
+      "action": "BOY | RELAXED_HAND_TORSO_ANCHOR_nearAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | ANKLE_far",
+      "action": "BOY | ANKLE_farAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | WRIST_far",
+      "action": "BOY | WRIST_farAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | LEG_POLE_far",
+      "action": "BOY | LEG_POLE_farAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | ARM_POLE_far",
+      "action": "BOY | ARM_POLE_farAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "BOY | RELAXED_HAND_TORSO_ANCHOR_far",
+      "action": "BOY | RELAXED_HAND_TORSO_ANCHOR_farAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "V020 | SOURCE52 | exact FBX sampled poses",
+      "action": "V020 | SOURCE52 | exact FBX sampled posesAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "V020 | near | ACTUAL_SOLE_PIVOT",
+      "action": "V020 | near | ACTUAL_SOLE_PIVOTAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "V020 | near | SOLE_BONE_GOAL",
+      "action": "V020 | near | SOLE_BONE_GOALAction",
+      "travel_offset_x": true
+    },
+    {
+      "object": "V020 | far | ACTUAL_SOLE_PIVOT",
+      "action": "V020 | far | ACTUAL_SOLE_PIVOTAction",
+      "travel_offset_x": false
+    },
+    {
+      "object": "V020 | far | SOLE_BONE_GOAL",
+      "action": "V020 | far | SOLE_BONE_GOALAction",
+      "travel_offset_x": true
+    }
+  ],
+  "upper_loading_and_pigment_experiments_included": false,
+  "scope": "Technical continuity and source preservation only; artistic acceptance requires normal-speed review"
+}

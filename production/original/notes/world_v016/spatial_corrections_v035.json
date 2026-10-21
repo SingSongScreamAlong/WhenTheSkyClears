@@ -1,0 +1,145 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_World_Spatial_Corrections_v035.blend",
+  "source_sha256": "c2310b87557e94ce403ac562d3ded61d7e84e34d3047136751c189b0aec9dd1b",
+  "world_scene": "WTSC_WORLD_CENTERED_v035",
+  "removed_alpha_curves": [
+    {
+      "material": "v016 | Bakery chimney wisp 0",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Bakery chimney wisp 1",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Bakery chimney wisp 2",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Battlefield smoke wisp 0",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Battlefield smoke wisp 1",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Battlefield smoke wisp 2",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Battlefield | broken village line paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Camp smoke wisp 0",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Camp smoke wisp 1",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Camp smoke wisp 2",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Camp | pinned canvas and ropes paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Far battlefield smoke wisp 0",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Far battlefield smoke wisp 1",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Far battlefield smoke wisp 2",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Far chimney wisp 0",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Far chimney wisp 1",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Far chimney wisp 2",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "smoke regional gate",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Ruins | distant ash street paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | School | broken windows and plaster paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Village continues | abandoned paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Woods | far silver canopy paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    },
+    {
+      "material": "v016 | Woods | near rooted oaks paint",
+      "path": "nodes[\"Math.001\"].inputs[1].default_value",
+      "scope": "persistent set",
+      "preserved": "source cutout alpha and particle-age driver, if present"
+    }
+  ],
+  "persistent_materials_corrected": 7,
+  "smoke_region_gates_removed": 15,
+  "static_cutout_alpha_preserved": true,
+  "natural_smoke_age_opacity_preserved": true,
+  "whole_world_picture_fade_removed": true,
+  "music_and_final_title_timing_unchanged_pending_answer": true
+}

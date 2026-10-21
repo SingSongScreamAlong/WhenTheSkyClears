@@ -1,0 +1,59 @@
+V020 EDITABLE CHECKPOINT / IMPORT AND SOURCE-TIME GUIDE
+
+Open native/WTSC_Leaves_Reference_Child_Eight_Poses_v020.blend. Append the complete
+WTSC_LEAVES_CHILD_EIGHT_POSES_v020 collection if needed. Native playback uses
+stored targets/constraints/keys; no Python frame handler or external linked asset
+is required. The file contains the original52bone FBX action (fake user retained)
+and a separate stepped source action paired with the original15bone boy rig.
+Appending only the collection brings the stepped dependency set; append the
+unused original source action separately if you need it in another scene.
+
+The child has eight unique poses plus a duplicate first-pose bookend at scene32.
+Scene is30fps solely to retain source-time meaning. Full trailer timing is not
+changed. Study scene frame F=1+(unwrapped source frame-9.75). Source clip wraps
+2..33 with31frame period; real source root displacement adds1.50m per loop.
+See reference/SOURCE_TO_STUDY_PHASES_v020.csv and SOURCE_PHASE_TIMING_v020.json.
+The second contact/loading are deliberately near-coincident, as measured.
+
+Source travel is world-Ynegative mapped to child+X, Zretained. Child root travel
+is the actual source root delta fromsource9.75 multiplied by0.680922328. One full
+cycle travels1.021383492m. Native keys are CONSTANT at the eight study poses;
+reference/DERIVED_TRAVEL_KEYS_v020.json gives sampled travel. There is no authored
+continuous child root/foot trajectory or integration contract for production.
+
+V020 | CHILD_SOURCE_TRAVEL is the child travel parent, separate from HIP/CHEST/
+HEAD_PROFILE. BOY WRIST, ANKLE and pole controls retain the v016/v017 native ABI.
+World-space sole controls live under V020 study stage. Each ANKLE chooses a native
+ACTUAL_SOLE_PIVOT/BONE_GOAL or SWING_BONE_GOAL via COPY_TRANSFORMS. The unchanged
+boot hull, original flat bone frame, actual active vertex and fixed ground anchor
+are stored per pose in evidence/eight_pose_matching.json. Pivot rotation and
+anchor changes are stepped, not a continuous rolling/contact validation.
+
+Source skeleton render uses native bone-head/tail targets from the actual source
+rig. Child skeleton render reads the actual child bones. They are not unrelated
+proxies. Color R/childnear is ochre; L/childfar is teal. Display shows major source
+chains; all52source bones remain editable. Source and child are displayed in
+native metre sizes, not height-normalized. Four V020 cameras provide SOURCE/
+CHILD CLOSE and SHOT views. SHOT copies the v046100mm lens/sensor/shift framing.
+The skeleton render collections can be toggled independently from the painted
+child. Native file opens on the painted child; preview skeletons are hidden only
+for initial viewport convenience.
+
+native/Leaves_Walk_Source_Inspection_v020.blend contains the original imported
+source skeleton/action at30fps,range2..33. The raw FBX itself is not redistributed.
+reference/BASE_CONTROL_ASSET_v017_COPY.blend and ORIGINAL_BOY_BOOT_PIVOTS_v018.json
+are byte copies of the unchanged project-owned bases, included for isolated
+rebuilding. The scripts build_study.py and fresh_check_and_diagram.py reproduce
+the posing and comparison, using the cached source inspection native and sampled
+source JSON. Optional inspect_source.py reimport requires the original absolute
+Leaves FBX path recorded in its evidence. Generated skeleton curves are preview
+helpers; the child painting/topology/materials/rest proportions are unchanged.
+
+LIMITS / REVIEW
+This is an adult-reference study, not approved child acting. Pelvis accommodation
+up to28.89mm, shin direction residual up to18.2deg, and a grazing swing boot remain
+matching defects. The painted torso/knees/cloth remain unpassed as described in
+V020_REFERENCE_TO_CHILD_REPORT.txt and V020_CORRECTIVES_NOT_STARTED.csv. No new
+corrective art was authored. MP4 holds every pose0.5s for comparison; it is not
+normal-speed walking. No broad in-betweens, finished walk or production/world
+integration. Stop for independent review.

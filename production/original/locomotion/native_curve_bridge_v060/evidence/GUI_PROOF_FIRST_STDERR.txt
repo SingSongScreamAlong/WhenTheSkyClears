@@ -1,0 +1,21 @@
+2026-10-19T14:28:13.814804Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 0 new skill(s), total 0
+2026-10-19T14:28:13.815897Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 skill(s)
+2026-10-19T14:28:13.816500Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 accumulated skill(s)
+2026-10-19T14:28:13.822351Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: in-process executor registered — load_skill() will use in-process handlers (issue #464)
+2026-10-19T14:28:13.822739Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: main-thread dispatcher attached — tools/call will route through DccDispatcher::post
+2026-10-19T14:28:13.823045Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: readiness probe installed — /mcp and /v1/call will share it (issue #714)
+2026-10-19T14:28:14.080665Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 73 new skill(s), total 73
+2026-10-19T14:28:14.335673Z  INFO ThreadId(01) opentelemetry: name="MeterProvider.GlobalSet" Global meter provider is set. Meters can now be created using global::meter() or global::meter_with_scope().
+2026-10-19T14:28:14.371278Z  INFO ThreadId(01) dcc_mcp_http::handler::rmcp_mount: rmcp MCP endpoint mounted at /mcp (legacy + 2026 stateless dispatcher)
+2026-10-19T14:28:14.373014Z  INFO ThreadId(01) dcc_mcp_http::server: MCP HTTP server dcc-mcp-blender v0.2.14 listening on http://127.0.0.1:52012/mcp server_name=dcc-mcp-blender server_version=0.2.14
+2026-10-19T14:28:14.376743Z  INFO tokio-rt-worker dcc_mcp_transport::discovery::file_registry: registering service dcc_type=blender instance_id=f88cf0fe-4471-49d6-b8ee-431602d909d8 host=127.0.0.1 port=52012
+2026-10-19T14:28:14.379339Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Registered in FileRegistry instance=f88cf0fe-4471-49d6-b8ee-431602d909d8
+2026-10-19T14:28:14.388504Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Gateway port held by healthy resident — running as plain DCC instance port=9765 gateway_version=0.20.42 gateway_adapter_version=None gateway_adapter_dcc=Some("gateway") own_version=0.2.14 own_adapter_version=None own_adapter_dcc=Some("blender") resident_health=Healthy
+Traceback (most recent call last):
+  File "WTSC_LOCAL_WORKSPACE\locomotion\native_curve_bridge_v060\scripts\test_native_curve_author_gui.py", line 64, in <module>
+    report["undo"] = list(bpy.ops.ed.undo())
+                          ~~~~~~~~~~~~~~~^^
+RuntimeError: Operator bpy.ops.ed.undo.poll() failed, context is incorrect
+2026-10-19T14:28:44.847418Z  INFO dcc-mcp-http-52012 serve_inner: rmcp::service: Service initialized as server peer_info=None
+2026-10-19T14:28:44.848520Z  INFO dcc-mcp-http-52012 serve_inner: rmcp::service: input stream terminated
+2026-10-19T14:28:44.848796Z  INFO dcc-mcp-http-52012 serve_inner: rmcp::service: serve finished quit_reason=Closed

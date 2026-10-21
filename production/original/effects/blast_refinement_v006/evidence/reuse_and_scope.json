@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-17",
+  "bounded_scope": "Five-second refinement of the existing painted v003 proof; no100second production pass.",
+  "selected_reuse": "Existing project-owned v003 original painted eruption, cold-form atlas, dust sheet, native materials and shape keys.",
+  "selected_source": "effects/benchmark_v003/native/WTSC_Evolving_Eruption_Collection_v003.blend",
+  "selected_source_sha256": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+  "functional_fit": "Native editable 2.5D painted geometry matches the user's preferred direction and existing side-scrolling camera.",
+  "alternative": "Existing project gas pilot v004 and unrendered hybrid v005.",
+  "alternative_rejection": "User preferred painted v003; coarse gas pilot was softer, less painted and did not solve the requested finite blast gesture. No new gas bake.",
+  "new_art": "One original transparent painted soil-gouge asset generated with the built-in ImageGen tool; original returned PNG bytes preserved. Native shaders supply scene palette changes.",
+  "new_implementation": "Authored native drivers and compositor nodes for finite expansion, lobe lifetimes, debris arcs, persistent ground and depth variants. No addon or external asset acquisition.",
+  "compatibility": "Installed Blender5.2.2 LTS build d13f752e3b9c, native build and factory-scene Append tested.",
+  "rights": "Reused original generated project paint and read-only project reference geometry. No third-party purchased or redistributable marketplace assets bundled. Source images packed into native library.",
+  "resource_policy": "Two CPU threads, one effects GPU render at a time. Yielded after frame1894 when production preview appeared; resumed only after production Blender exited. Current motion loop checks other Blender PIDs before each frame.",
+  "shared_ui": "No shared UI control taken.",
+  "production_sources": "Read only. New scripts, assets, native files, evidence and renders confined to effects/blast_refinement_v006."
+}

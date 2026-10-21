@@ -1,0 +1,74 @@
+{
+  "status": "Ground-first prototype; visual force criterion NOT met. Do not integrate or call full effects pack finished.",
+  "primary_preview_library_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "library": [
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Ground_First_Impact_Debris_Proof_v009d.mp4",
+      "file_size_bytes": 440510
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Ground_First_Prototype_Source_v009d.zip",
+      "file_size_bytes": 1858554
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Ground_Proof_Actual_Frame_Sheet_v009d.jpg",
+      "file_size_bytes": 850042
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Ground_Proof_Aftermath_v009d.png",
+      "file_size_bytes": 2155690
+    }
+  ],
+  "local_native_asset": "WTSC_LOCAL_WORKSPACE\\effects\\ground_impact_v009\\native\\WTSC_Ground_Debris_Append_v009d.blend",
+  "local_native_test": "WTSC_LOCAL_WORKSPACE\\effects\\ground_impact_v009\\native\\WTSC_Ground_Debris_Append_Test_v009d.blend",
+  "local_held_proof": "WTSC_LOCAL_WORKSPACE\\effects\\ground_impact_v009\\native\\WTSC_Ground_Debris_Proof_v009d.blend",
+  "review": "WTSC_LOCAL_WORKSPACE\\effects\\ground_impact_v009\\evidence\\visual_assessment_v009d.json",
+  "tests": "WTSC_LOCAL_WORKSPACE\\effects\\ground_impact_v009\\evidence\\append_test_v009d.json",
+  "preservation": "WTSC_LOCAL_WORKSPACE\\effects\\ground_impact_v009\\evidence\\preserved_sources_v009d.json",
+  "progress": "18 exact baked Bullet rigid fragments +340 fine ballistic grains, persistent native bowl/rim/contact shadow; no rejected painted cloud construction.",
+  "visual_limit": "Discrete grit onset and coarse added ring/pile still fail connected earth rupture / integrated gouge; no connected decelerating low dust. No smoke or gas added.",
+  "controls_tested": {
+    "start_offset_frames": 100,
+    "retime_max_error": 0,
+    "scale_factor": 1.7,
+    "scale_max_error": 0.000013732910156216693,
+    "speed_factor": 2,
+    "speed_max_error": 0
+  },
+  "native": {
+    "objects": 37,
+    "external_images": 0,
+    "cameras_lights": 0,
+    "invalid_drivers": 0,
+    "external_driver_ids": 0,
+    "cache_required": false,
+    "append_sha256": "a0d3859e4d4fa793d47195fc5540b25e3412a5dff0e413c3465426ecdae73d48"
+  },
+  "preview": {
+    "fps": 24,
+    "frames": 120,
+    "seconds": 5,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "muted": true,
+    "bytes": 440510,
+    "fully_decoded": true
+  },
+  "preservation_statement": "Production v038, preferred v003 and rejected v008b hashes unchanged. No UI control or production edits. Only idle bridge Blender PID39896 remained after this worker finished.",
+  "pending_or_denied_actions": "None. An approval-review timeout before execution was retried once successfully. All uploads confirmed succeeded; artistic quality is the remaining blocker.",
+  "library_local_metadata": "Library uploads succeeded. Windows xattr helper failed; full receipts persisted. No claim that local extended metadata was applied."
+}

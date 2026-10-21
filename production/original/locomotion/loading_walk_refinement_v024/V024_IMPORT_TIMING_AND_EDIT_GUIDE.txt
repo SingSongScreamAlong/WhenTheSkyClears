@@ -1,0 +1,86 @@
+WTSC v024 - LOADING / CONTINUOUS WALK REFINEMENT
+Status: editable isolated candidate. TECHNICAL CHECKS PASS; ART ACCEPTANCE OPEN.
+This checkpoint is a boy-only walk study following v021 support and v022 art work.
+It is not a replacement for the paired recovery shot or a finished trailer insert.
+
+OPEN / REVIEW
+native/WTSC_Continuous_Coat_Walk_v024.blend
+Verified executable: Blender 5.2.2 LTS, build hash d13f752e3b9c.
+Packed original painting; native IK, drivers, geometry nodes and shape keys.
+No installation, add-on or Python frame handler is needed to evaluate the saved file.
+30 fps, native preview range F1-F93. F94 is the third-cycle bookend.
+Movie: previews/WTSC_v024_Normal_Speed_Walk_Close_and_Shot_3p1s.mp4
+93 frames, 3.1 seconds, 1328x608, 611212 bytes. No holds, retiming or slow motion.
+Left: close portrait; right: retained v046 camera framing on a neutral stage.
+Original camera parameters are retained, but this is not a rendered battlefield composite.
+Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version 0.
+The encoded frames were inspected. Continuous playback was not observable with the exposed tools.
+
+CHANGE FROM v023
+Feet, boot geometry and step placements retained. Pelvis Z was authored more deliberately:
+q (F-1): 0, 2.25, 8, 9.25, 16, 18.25, 24.25, 26.25
+Z metres: .58977876685, .5745, .6158, .6185, .58611382825, .5745, .60983876862, .61595606853
+The second loading minimum now occurs 2.25 frames after contact, rather than .25 frame.
+The first upper pose is lowered approximately 9mm. No after-solve hip clamp or leg stretch is used.
+Chest loading follows by one frame with up to .026rad additional settle; head counters by .010rad.
+Arm swing is centred on the child's stance and delayed by one frame, retaining 20% of the source arm direction.
+Near/far means .11428092746/.23441640849rad; upper arm angle = -.60*(leg angle-mean)+.20*(source angle+.15).
+Elbow and wrist continue the swing using original limb lengths. Far arm stays on one depth layer throughout.
+Coat compression follows the revised low point. Original head, hair and profile are retained.
+
+TRAVEL / EXACT COORDINATE CONTRACT
+One Blender unit = one metre. X is travel, Z is up, camera views from negative Y.
+Let q = native_frame - 1. Period =31 frames =31/30 seconds.
+Stride S =0.9524437384576381m. D(q)=S*q/31. Speed=0.9217197468944884m/s.
+Near contact: q=0+31n; far contact: q=16+31n. Steps are intentionally unequal in time.
+Near stance lasts18.5frames; far stance19.25frames from its own contact.
+Boots roll over their original painted sole polygon and have a single continuously active goal each.
+Quarter-frame values F1-F94 are in V024_TRAVEL_AND_SUPPORT_QUARTER_FRAMES.csv (373 rows).
+The table supplies root, free hip, pelvis/chest/head, both ankle world positions, pitches, contact vertices and anchors.
+Exact interpolation and rigid-hull solve are in scripts/motion_model.py and scripts/v021_model.py.
+Use those functions for off-grid evaluation; a CSV interpolation alone does not reproduce all nonlinear detail.
+
+For world-travelling characters, retain D and move the camera consistently; the ground is stationary.
+For centred characters, stationary stage foot position is A(q)-D(q), and the ground/world must scroll -D(q).
+Apply the same world offset to all character controls, including unparented world foot goals.
+Do not animate only V021 | CHILD_SUPPORT_TRAVEL: the world-space sole goals must receive the same placement transform.
+Do not add a second root translation or independently ease the landscape while these contacts are planted.
+To continue cycles, evaluate local pose at q modulo31 and add n*S to root AND world sole goals.
+The native preview timeline wraps world travel when restarted; the floor ticks are not a seamless video loop.
+F32, F63 and F94 are congruent character poses translated by S, 2S and 3S respectively.
+
+SAFE IMPORT STUDY
+Open this native as a separate scene/file first. For a disposable integration test, append the complete scene/dependencies.
+Keep all imported root hierarchies and world-space sole targets under one common static placement transform,
+parenting each imported root once with its original world transform preserved. Retain drivers and constraint targets.
+The main collection is WTSC_CONTINUOUS_COAT_WALK_v024; it relies on retained rig, targets and study-stage collections.
+Appending only the coat/trouser subcollection is insufficient.
+Timing map: choose seam time t0 and phase q0, evaluate q=30*(t-t0)+q0; travel offset is D(q)-D(q0).
+Retiming must apply to rig actions, goals, coat node action and trouser shape-key actions together.
+No time offset into production75-80s is approved here. A recovery-to-walk seam still requires paired-shot authoring.
+
+EDITABLE DRAWINGS / COAT
+V024 | continuous painted representation contains two persistent trouser meshes, 97 rows x7 columns each.
+31 sampled shapes interpolate continuously with Cycles modifiers. There are no visibility switches.
+Original rolled-cuff pigment stays mapped to the anatomical trouser hem. Hidden waist overlap60mm remains.
+Coat object LOCO_BOY | PAINT body retains original477vertices, base coordinates, topology, UV and packed paint.
+Modifier V024 continuous coat contour, convexity and folded value planes reads31 editable vector attributes
+V024_coat_delta_00..30 and31 scalar shade attributes V024_coat_shade_00..30.
+The geometry-node action interpolates31 samples; V024CoatShade modulates the original pigment.
+Neck and shoulder design is held; waist compresses and tails tuck with pose. These are native art correctives, not cloth simulation.
+The baked folds in the original texture still read too flat. A pose-specific repaint was attempted but the image tool failed before generation.
+Do not claim a new painted coat, volumetric garment model, new turnaround, or approved cloth result.
+The rejected v008 head patch is not used. The head stays in a design-preserving profile with slight sagittal motion.
+
+REPRODUCTION / VERIFICATION
+scripts/build_continuous.py rebuilds from the included byte-identical v022 base and renders a small proof.
+scripts/refine_arm_centres.py records the later arm-only edit; a fresh full build already uses the same centred formula.
+scripts/check_continuity_and_coat.py opens the final native, checks373 quarter-frame samples and renders two selected coat poses.
+scripts/render_review.py renders93 frames each close and shot; scripts/encode_review.py builds/verifies the movie.
+Coordinate before rendering and use --threads2; do not run these alongside world/FX jobs.
+Pure Python support model uses NumPy; preview packaging uses PIL and imageio_ffmpeg. No installs were performed.
+Read V024_VISUAL_ASSESSMENT.txt and evidence/final_handoff.json for the distinction between checks and artistic review.
+
+PRESERVATION
+v022 and v023 remain intact. Included reference/PRESERVED_CONTINUOUS_v023.blend is the earlier continuous checkpoint.
+v046, v007, v045c, full-trailer duration, music, title mask and production files were not edited.

@@ -1,0 +1,92 @@
+{
+  "status": "v010h key study complete as a checkpoint; visual target still NOT met. Do not integrate or call the effects pack finished.",
+  "library": [
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Rupture_Key_Study_Source_v010h.zip",
+      "file_size_bytes": 56064155
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Plain_Motion_Actual_Keys_v010h.jpg",
+      "file_size_bytes": 475903
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Shadow_Color_Actual_Keys_v010h.jpg",
+      "file_size_bytes": 475355
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Rupture_Aftermath_Key_v010h.png",
+      "file_size_bytes": 2159392
+    }
+  ],
+  "native_asset": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\native\\WTSC_Earth_Rupture_Append_v010h.blend",
+  "native_append_test": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\native\\WTSC_Earth_Rupture_Append_Test_v010h.blend",
+  "held_proof": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\native\\WTSC_Earth_Rupture_VDB_v010h.blend",
+  "plain_proof": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\native\\WTSC_Earth_Plain_Motion_v010h.blend",
+  "review": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\evidence\\visual_assessment_h.json",
+  "import_guide": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\REVIEW_IMPORT_v010h.txt",
+  "tests": "WTSC_LOCAL_WORKSPACE\\effects\\rupture_mass_v010\\evidence\\append_test_h.json",
+  "scope": {
+    "fps": 24,
+    "source_frames": [
+      1,
+      120
+    ],
+    "rendered_key_frames": [
+      6,
+      8,
+      10,
+      16,
+      24,
+      40,
+      56,
+      120
+    ],
+    "full_v010_clip_rendered": false,
+    "finished_RGBA_sequence": false,
+    "production_integration": false
+  },
+  "progress": "16 shared-boundary rough crust pieces with native Bullet motion/contact keys; negative-height crater, local bank and projected shadow receiver; finite connected native dust cache imported as clean retimeable Volume.",
+  "native_validation": {
+    "objects": 20,
+    "packed_images": 1,
+    "cameras_lights": 0,
+    "fluid_simulation_modifiers": 0,
+    "append_geometry_error": 0,
+    "offset100_geometry_error": 0,
+    "offset100_loaded_vdb": "fluid_data_0020.vdb",
+    "offset100_rendered_pixels_bit_identical": true,
+    "scale1p7_geometry_error": 0.000009918212890647204,
+    "asset_sha256": "504d71606650c36abaebce6797bf3803a9b17ee9035d301e778b0f24f24da8fa",
+    "cache_bytes": 38554795,
+    "bake_seconds": 45.93585830001393,
+    "threads": 2
+  },
+  "visual_limits": [
+    "Fragments still read as coarse blocks/masonry rather than a designed forceful earth rupture.",
+    "The native dust mass is connected and lower/broader, but still soft and insufficiently authored.",
+    "Crater depth and visible footing against the painted side-view terrain remain weak despite true geometry/contact and a receiver pass.",
+    "Painterly finish does not meet preferred v003 appearance; no tutorial-match claim."
+  ],
+  "reference": {
+    "url": "https://www.youtube.com/watch?v=LUeELkfGR-I",
+    "verified": "Creator description and chapter names/timestamps only, relayed by parent research task.",
+    "unobserved": "Actual animated motion, shape evolution, detailed frame timing and transcript.",
+    "method_claim": "Separate plain motion, shadow and painterly finish is our proposed workflow, not a claim about unobserved tutorial animation."
+  },
+  "preservation": "v038 production, prior v009d and rejected v008b source hashes unchanged; all writes in new effects folder; no UI taken; only idle bridge Blender PID39896 remained at last process check.",
+  "blocked_or_pending": "No remaining execution approval, upload or uncertain-write blocker. Full clip/finishing/production integration remain gated by failed artistic key review. Actual tutorial footage/project motion evidence remains unavailable.",
+  "library_metadata": "All four Library creates confirmed succeeded. Windows xattr helper failed; full identities/receipts retained; no claim of successful local extended-attribute persistence.",
+  "next_design_focus": "Resolve the large authored silhouette/rupture design and camera-projected footing in a few keys. Physical dynamics/caches alone have not met this visual goal."
+}

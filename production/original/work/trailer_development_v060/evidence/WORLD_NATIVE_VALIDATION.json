@@ -1,0 +1,231 @@
+{
+  "all_checks_pass": true,
+  "checks": {
+    "original_actor_rest_topology_UV_point_attributes_shape_coordinates_material_slots_exact": true,
+    "original_material_datablocks_exact_object_material_overrides_allowed": true,
+    "original_actor_actions_retime_exact_except_selected_near_arm_and_head": true,
+    "age10_rest_bones_exact": true,
+    "original_actor_local_transforms_and_moved_depth_origins_preserved": true,
+    "all_original_actor_packed_image_pixels_present_unchanged": true,
+    "all_target_FILE_images_packed": true,
+    "scene_clock_and_range": true,
+    "root_parent_registration_matches_recorded_affine": true,
+    "boot_world_vertex_m_within_30um_numeric": true,
+    "root_world_matrix_within_30um_numeric": true,
+    "rig_world_matrix_within_30um_numeric": true,
+    "nonselected_bone_world_matrix_within_30um_numeric": true,
+    "head_response_remains_small": true,
+    "camera_follows_root_without_second_travel": true,
+    "event_pulse_actual_957_clock": true,
+    "event_settle_keys": true,
+    "original_font_glyph_geometry_and_actions_preserved": true,
+    "original_supplied_music_packed": true,
+    "shot_music_uses_original_global_start": true,
+    "owned_natives_unchanged": true
+  },
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\trailer_development_v060\\reference\\PRESERVED_STEADY_PAIR_v047.blend",
+  "source_sha256": "29a4d9f794187602af43f7349f2b01c1019f39cba9f1d1278b966b78d1770103",
+  "world_source": "WTSC_LOCAL_WORKSPACE\\work\\trailer_development_v060\\reference\\PRESERVED_WORLD_v058.blend",
+  "world_source_sha256": "13c2aee075315131eac6f85d9d726b766051a84edffa961f4ec38ecf7029a890",
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\trailer_development_v060\\native\\WTSC_First_Danger_Trailer_Development_v060.blend",
+  "native_sha256": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+  "world_frames": [
+    937,
+    1056
+  ],
+  "source_frames": [
+    1,
+    149.75
+  ],
+  "quarter_production_samples": 477,
+  "source_mapping": "F=1+(G-937)*1.25; source30fps -> world24fps.",
+  "expected_affine": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      49.68421173095703
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.36000001430511475
+    ],
+    [
+      0.0,
+      -0.14249539375305176,
+      1.0,
+      0.7713720202445984
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "errors": {
+    "boot_world_vertex_m": 1.1307597100514584e-05,
+    "root_world_matrix": 2.86102294921875e-06,
+    "rig_world_matrix": 4.291534423828125e-06,
+    "nonselected_bone_world_matrix": 2.1848827600479126e-05
+  },
+  "numeric_tolerance": 3e-05,
+  "camera_root_x_offset_range_m": 7.62939453125e-06,
+  "allowed_head_response": {
+    "BOY": {
+      "maximum_rotation_difference_degrees": 1.3999761788340097,
+      "maximum_local_pivot_change_m": 8.356367970918654e-07
+    },
+    "GIRL": {
+      "maximum_rotation_difference_degrees": 2.499984959445375,
+      "maximum_local_pivot_change_m": 8.356615808224888e-07
+    }
+  },
+  "normalized_action_time_max_error_source_frames": 6.103515625e-05,
+  "action_value_max_error": 0.0,
+  "protected_data_differences": {
+    "meshes": [],
+    "materials": [],
+    "action_keys": []
+  },
+  "original_actor_image_matches": {
+    "Pair_Painterly_Near_Age_v015.png": true,
+    "Pair_Painterly_Near_Age_v015.png.001": true,
+    "WTSC_Boy_Painted_Parts_Atlas_v040.png": true
+  },
+  "pulse_samples": [
+    {
+      "frame": 937,
+      "pulse": 0.0,
+      "expected": 0
+    },
+    {
+      "frame": 955,
+      "pulse": 0.0,
+      "expected": 0
+    },
+    {
+      "frame": 956,
+      "pulse": 0.15000000596046448,
+      "expected": 0.15
+    },
+    {
+      "frame": 957,
+      "pulse": 1.0,
+      "expected": 1
+    },
+    {
+      "frame": 958,
+      "pulse": 0.800000011920929,
+      "expected": 0.8
+    },
+    {
+      "frame": 960,
+      "pulse": 0.23000000417232513,
+      "expected": 0.23
+    },
+    {
+      "frame": 965,
+      "pulse": 0.0,
+      "expected": 0
+    },
+    {
+      "frame": 1056,
+      "pulse": 0.0,
+      "expected": 0
+    }
+  ],
+  "event_pulse_max_error": 1.1920928910669204e-08,
+  "event_settle_max_error": 0.0,
+  "source_glyph_objects": [
+    "v037 | Entire film | WHEN THE SKY CLEARS",
+    "v037 | Credits | 0 | WHEN THE",
+    "v037 | Credits | 1 | SKY CLEARS.",
+    "v037 | Credits | 2 | The Animated Series.",
+    "v037 | Credits | 3 | 2027.",
+    "v037 | Credits | 4 | A Two Truck Productions project."
+  ],
+  "target_glyph_objects": [
+    "v037 | Entire film | WHEN THE SKY CLEARS",
+    "v037 | Credits | 0 | WHEN THE",
+    "v037 | Credits | 1 | SKY CLEARS.",
+    "v037 | Credits | 2 | The Animated Series.",
+    "v037 | Credits | 3 | 2027.",
+    "v037 | Credits | 4 | A Two Truck Productions project."
+  ],
+  "packed_music": [
+    {
+      "name": "When_The_Sky_Clears_Trailer_Music_100s.wav",
+      "packed": true,
+      "filepath": "WTSC_LOCAL_WORKSPACE\\edit\\When_The_Sky_Clears_Trailer_Music_100s.wav"
+    }
+  ],
+  "endpoint_samples": [
+    {
+      "world_frame": 937.0,
+      "source_frame": 1.0,
+      "root_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          49.68421173095703
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          -0.14249539375305176,
+          1.0,
+          0.7713720202445984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_root_x_offset": 1.6891212463378906
+    },
+    {
+      "world_frame": 1056.0,
+      "source_frame": 149.75,
+      "root_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          53.309993743896484
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          -0.14249539375305176,
+          1.0,
+          0.7713720202445984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_root_x_offset": 1.6891212463378906
+    }
+  ],
+  "no_native_save_or_render": true,
+  "limits": "Read-only data and fractional-time staging validation. It does not approve hand anatomy, perceived weight, painted contacts, lighting or title readability."
+}

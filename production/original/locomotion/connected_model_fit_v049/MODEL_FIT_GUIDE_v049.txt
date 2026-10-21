@@ -1,0 +1,72 @@
+WHEN THE SKY CLEARS | v049 TARGETED MODEL-FIT STATIC CANDIDATE
+
+Responds to independent visual findings: projecting/pinched fitted torso,
+assembled wrists/hands and abrupt sleeve caps. This is a before/after static
+review, not acceptance, anatomical certification or broad new animation polish.
+
+EDITABLE NATIVE
+native/WTSC_Connected_Model_Fit_v049.blend
+Scene: V049 | MODEL FIT AND GROUPED HANDS | v048 motion
+Append master: V049 | AGE10 PAIR | connected model fit
+Original names inside are intentionally retained for armatures and painted parts.
+Root remains V048 | shared travel | steady .73125mps. Images are packed.
+
+PRESERVED EXACTLY
+All age-ten rest bones/joint centres and the entire v048 armature/root/camera
+Actions. Face/hair mesh geometry, original packed raster payloads, materials,
+UV registrations and boots. No artwork repaint, head rotation study, new shoe,
+world edit or wholesale anatomy rescale. Boy/girl barefoot skull construction
+remains1.390/1.380m. Those joint/hidden-skull estimates are not certification.
+Planar profiles do not establish true shoulder/pelvis breadth.
+
+SMALL CLOTHING/HAND CHANGES
+The girl's bodice projection is reduced and waist gently filled; the boy's button
+line/waist/hip outline is more continuous. Only garment X outlines change, up to
+about15mm boy/20mm girl. Neck and hem end rows remain fixed; joints do not move.
+Sleeves have a softer crown and a quieter cuff flare with a4mm shaped edge.
+Forearms have a little more proximal volume and a continuous wrist taper. The
+last forearm rows match the actual painted hand's alpha contour to remove a
+rectangular wrist ledge found in the first proof. Cuff/forearm overlap is retained.
+The existing thumb and fingers are grouped horizontally. All original vertical
+hand coordinates and extended-hand targets .145/.144m are unchanged. This is an
+editable deformation of the existing painted pose; no finger articulation or
+new hand anatomy/length is claimed. Pixels and UVs are not repainted or moved.
+Sleeve drawing caches were regenerated to the SAME129quarter-frame v048 poses.
+
+STATIC PROOF
+Before=v048; after=v049. Pair neutral and F1/F5/F9 use identical1280x720 camera,
+3.25m orthographic width, .8m camera height. F5before/after has identical bone
+poses, timing and travel. Neutral uses actual rest bones, with sleeve/leg caches
+regenerated to those axes IN RAM. It is not a guessed paint-over.
+The arm/wrist detail hides bodies only in RAM so the girl's charcoal hand is
+visible against the background. It uses the SAME neutral pose and1.6m camera
+width for both versions. No joint spreading or hand resizing for that review.
+The before/after board labels these different views. No native is saved during
+proof rendering. The older preferred actual v041 boy reference and its caveats
+are included from the preserved v048 model-review set.
+
+TIMING / INTEGRATION
+No change from v048:30fps,32source-frame cycle, .78m stride, .73125m/s.
+D(F)=.78*(F-1)/32. Girl's2frame lead is baked in.
+At24fps:F=1+(G-G0)*30/24; cycle25.6production frames. Retime rig, travel and
+garment drawing Actions together. Travelling pair retains+D; centred pair
+disables ONLY rootX and passes world-D. Do not apply travel twice.
+This remains ordinary walking, not a recovery restart or load-bearing clasp.
+The new v049 fit is shown as static proof only. The separately delivered
+normal-speed motion movie is the frozen v048 model, clearly labelled.
+
+EDITING
+Model-fit parameters are in scripts/model_spec.py. Torso, forearm and hand meshes
+remain editable; original painting/UVs are retained. Sleeves use native shape
+keys/caches and need regeneration if rig poses change. The v048 gait is retained
+as editable native Actions. Sources/checkpoints remain separate and untouched.
+
+CANDID ASSESSMENT
+The dressed contour is softer and the broad open hand silhouette is more grouped;
+the wrist ledge found in the first proof is corrected. Whether these modest
+changes resolve the model's awkwardness needs artistic review. Head/neck,
+shoulder design and overall silhouette are not declared solved by measurements.
+The girl's charcoal face/white eye is still a separate finish mismatch. Hands
+remain one rigid painted pose and clothing remains planar. No final model or
+Arcane-level animation-quality claim is made. Further motion polish is held
+at this static model-review checkpoint rather than masking design issues.

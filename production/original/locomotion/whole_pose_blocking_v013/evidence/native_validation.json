@@ -1,0 +1,39 @@
+{
+  "host": "5.2.2 LTS",
+  "cold_reopened": true,
+  "all72frames_checked": true,
+  "joint_target_error_m": 2.6051288269525034e-06,
+  "segment_length_error_m": 9.694126550663373e-07,
+  "bound_mesh_center_error_m": 9.329654721656488e-07,
+  "flat_sole_vertex_drift_m": 3.92694368196448e-07,
+  "flat_adjacent_pairs": 199,
+  "floor_min_z_m": -9.279431765207846e-07,
+  "girl_both_feet_flat27_through72": true,
+  "native_curve_structure": {
+    "BOY": {
+      "keys_per_channel": [
+        15
+      ],
+      "interpolation": [
+        "CONSTANT"
+      ],
+      "no_recurring_gait_channels": true
+    },
+    "GIRL": {
+      "keys_per_channel": [
+        11
+      ],
+      "interpolation": [
+        "CONSTANT"
+      ],
+      "no_recurring_gait_channels": true
+    }
+  },
+  "sources_preserved": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\native\\WTSC_Unpainted_Motion_Rebuild_v012.blend": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\scripts\\motion_design.py": true,
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend": true
+  },
+  "scope": "Native binding/contact/stepped-exposure integrity only. Held blocking poses deliberately jump between keys; no continuous dynamics, smoothness or artistic acceptance test."
+}

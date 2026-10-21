@@ -1,0 +1,83 @@
+WHEN THE SKY CLEARS — DRAWN COMPACT IMPACT v013
+Review candidate. Artistic acceptance is pending. No production integration.
+
+WHAT CHANGED
+The onset uses separate native contour drawings: narrow seed, wider cap, split
+crown, torn left/right lobes, then sparse low strokes. Each has its own exposure;
+there is no crossfade of a finished painting and no animated onset scale.
+Seven irregular pieces have different sizes and authored flight/contact times.
+Their bottoms follow a measured grass/ground edge from the actual held shot.
+Four brief contact cues (six frames per event) and broken terrain-following marks replace the flat row
+and straight streak. No smoke volume, simulation bake or external cache is used.
+
+REVIEW FIRST
+previews/WTSC_Drawn_Compact_Impact_Review_v013.mp4 is the actual 72-frame,
+3-second, 24fps, 1920x1080 muted proof. It is under 20MB. The shot uses the held
+production camera and painted scene/foreground masks for context, without
+changing the production file. Actual keys and landing sheets are also included.
+The v012 star corners have been rounded, wash edges softened and initial heat
+muted. Debris remains solid; opacity grain is restricted away from solid chips
+and ground marks. Brief contact puffs have higher contrast. The compact onset
+still reads as a stylized small burst, and perceived impact force/weight remain
+artistic review issues. The new wash has a soft grain and should be judged at
+actual shot size. Final B/C contact drawings are 1.15x wider and 1.65x taller
+than the first v013 test, with the peak held three frames. They remain subtle
+in the wide shot; contact-puff readability and grounded weight are unresolved
+artistic review items. Alpha-edge terrain seating is an approximation of the
+painted bank, not a physical terrain solve. Native/control checks below do not establish impact force or acceptance.
+No claim is made that unavailable tutorial footage was watched or reproduced.
+
+APPEND / LINK
+Blender 5.2.2 LTS was used. File > Append >
+native/WTSC_Drawn_Impact_Append_v013.blend > Collection >
+FXv013 | DRAWN COMPACT IMPACT | distinct onset and contacts
+The collection contains 48 objects and one packed original pigment image.
+It contains no camera, light, volume, fluid modifier or external simulation cache.
+For Link, make a library override to edit the control object's custom properties.
+The separate Append_Test file is an empty-scene import; Render_Test adds only a
+validation camera and holds age 2 at scene frame 109 with start_frame 107.
+
+ANCHOR / CONTROLS
+Select 'FXv013 | terrain anchor and controls'. The original shot placement is
+X 109.2294693, Y 10.0, Z -0.5300196 metres. Move this anchor for placement.
+X is screen-right, Z is up; the drawing lies in X/Z and the camera looks +Y.
+Metric scale: 1 Blender unit = 1 metre. The widest early torn silhouette is
+about 1.07m wide; the debris spreads about 1.9m. The held camera sees roughly
+205 pixels per metre at this depth in the 1920x1080 proof.
+start_frame = 7: first impulse frame. Change to offset the whole effect.
+speed = 1: age = (scene frame - start_frame) * speed. Use positive values.
+size = 1: uniform scale around the terrain anchor; use this instead of editing
+the scale fields, which are driven. intensity = 1: material opacity multiplier;
+0 to 1 is the intended range. painted = 1 selects the original pigment finish;
+0 exposes the plain color construction. Color is editable in the clearly named
+FXv013 materials' palette inputs. Geometry is native editable mesh/shape keys.
+The 'age' property is driven; do not key it directly. The asset starts before age
+0 as invisible, and retains settled small debris after the short impact action.
+Frame 1–72 at 24fps is supplied; first impulse is frame 7; final frame is age 65.
+Ground variation is authored for this measured shot. Moving/scaling the asset
+does not automatically solve new terrain. Adjust chip shape keys/contact drawings
+for another slope, and place the collection behind foreground/character layers.
+
+RGBA PLATE
+rgba/Drawn_Compact_Impact_24fps/0001.png through 0072.png are full-frame,
+1920x1080, 8-bit RGBA PNGs at 24fps. PNG alpha is straight/unassociated.
+Set the receiving app's alpha interpretation to Straight. Color dithering is
+disabled for the reusable PNG export to keep empty frames small. Blender's internal
+premultiplication is converted on PNG output. No background, foreground grass
+or character holdout is baked into these plates. Composite them behind those
+layers to reproduce shot occlusion. Frames before 7 are transparent. The PNG
+sequence is camera-specific; use the native collection for different staging.
+
+TESTED
+All 72 proof PNGs and all 72 RGBA files opened successfully; MP4 fully decoded.
+An actual empty-scene Append preserved exposed geometry and object visibility
+at 10 sampled ages. +100 frame shift preserved both; uniform 1.7 scale had max
+world-coordinate error below 0.00001m. The exact driver count and measured errors are recorded in evidence/append_test.json.
+A separate appended RGBA frame was actually rendered for baseline and offset
+comparison; exact pixel errors are recorded in evidence/rgba_validation.json.
+See the actual pixel-comparison measurements in evidence/rgba_validation.json;
+no bit-identical source-render match is presumed.
+The original production v038 and prior v012 append hashes match their recorded
+values after this work. No active trailer scene, source, asset or render was edited.
+Actual key/contact frames were visually inspected. Continuous-speed playback was
+not observed; the full MP4 decode is a file validation, not an artistic playback pass.

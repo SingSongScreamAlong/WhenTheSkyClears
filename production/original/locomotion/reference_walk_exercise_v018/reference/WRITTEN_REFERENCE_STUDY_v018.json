@@ -1,0 +1,65 @@
+{
+  "sources": [
+    {
+      "url": "https://www.polygon-treehouse.com/blog/2019/1/30/anatomy-of-a-walk-cycle",
+      "publisher": "Polygon Treehouse",
+      "author": "Alex Kanaris-Sotiriou",
+      "used": "Read article text and viewed KeyPoses_Wide.jpg and Roll_Pitch_Yaw.jpg; no video viewed.",
+      "principles": "Alternating contacts and passing positions; opposed arms; hips participate in the transfer of support. Character proportions and weight determine the result.",
+      "adaptation": "Use the existing boy profile and preserve its flat painted construction. In-plane pelvic pitch/translation stands in for the weight transfer idea; no literal 3D hip yaw or head turnaround."
+    },
+    {
+      "url": "https://www.polygon-treehouse.com/blog/2019/2/1/walk-pt2",
+      "publisher": "Polygon Treehouse",
+      "used": "Read article text and inspected eight static samples from its 56-frame Tove_Walk_Breakdown.gif illustration. This is illustrated reference study, not normal-speed video observation.",
+      "principles": "New support compresses under load; head/chest can respond after the hips; lower arm overlap can soften simultaneous motion. Amounts depend on the character.",
+      "adaptation": "Small source-proportion compression/rebound; one-frame chest phase offset, two-frame head offset and 1.5-frame lower-arm phase offset. The existing head view stays unchanged."
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/4.5/animation/constraints/tracking/ik_solver.html",
+      "used": "Earlier parent handoff supplied the documented two-bone/pole/optional-stretch principles. Direct fetch here returned402, so this is not claimed as independently retrieved documentation. Actual bpy chain settings and lengths were inspected and tested."
+    }
+  ],
+  "proposed_timing_not_prescribed_by_sources": {
+    "fps": 24,
+    "cycle_frames": 24,
+    "step_frames": 12,
+    "step_distance_m": 0.22,
+    "cycle_distance_m": 0.44,
+    "speed_m_per_s": 0.44,
+    "contacts": [
+      1,
+      13,
+      25,
+      37,
+      49
+    ],
+    "down": [
+      4,
+      16,
+      28,
+      40
+    ],
+    "passing": [
+      7,
+      19,
+      31,
+      43
+    ],
+    "up": [
+      10,
+      22,
+      34,
+      46
+    ],
+    "stance_frames": 14,
+    "swing_frames": 10,
+    "double_support_frames_per_transfer": 2,
+    "sole_clearance_peak_m": 0.055,
+    "rocker_degrees": [
+      -4,
+      8
+    ]
+  },
+  "limits": "No new quarter-view art; boy-only capability exercise. Child rig has unequal drawn limb reach; hip path is deliberately asymmetric inside both native envelopes. No leg stretch. Deep cloth and folded/crossing-arm defects remain failure criteria, not inferred passes."
+}

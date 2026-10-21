@@ -1,0 +1,99 @@
+[
+  {
+    "key": "world_village_warm",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Use the attached image only as a reference for painterly atmosphere and sophisticated brush texture, not its ruins or its characters. Create a WIDE SIDE-ON BACKGROUND ARCHITECTURE LAYER for the BEFORE section of When the Sky Clears. An original peaceful rural village street in warm late-afternoon amber and muted leaf-green. Four modest plaster-and-stone houses in one continuous horizontal row, a warmly glowing bakery window containing simple bread shapes, a washing line with pale fabric between the middle houses, two small garden fences, light through leafy background trees. The audience looks straight across the street, almost orthographic side elevation, no deep road vanishing point. Buildings occupy the lower two-thirds of a 16:9 wide canvas, with calm irregular roof silhouettes. Leave all sky, all space between tree branches, and everything below the buildings' ground baseline genuinely TRANSPARENT. No foreground tree, no ground strip, no people, no children, no lettering, no flags or identifying insignia, no explosions. Opaque painterly houses and tree shapes with believable edges and hand-painted texture. More luminous and legible than the supplied ruined reference. Designed as one reusable depth plane in Blender; every building base aligned. Largest available wide landscape resolution, ideally 3840x2160.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\source\\image1.png"
+    ]
+  },
+  {
+    "key": "world_village_empty",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Edit this exact transparent architecture layer for the SOMETHING CHANGES section. Preserve the exact canvas size, every house position, building width and roofline, every ground-baseline position, and the same side-on perspective and painterly brush style. The SAME village is now abandoned. All shutters closed; bakery window dark; remove all hanging washing but retain the empty line; gardens neglected and muted; an abandoned small wooden cart near the bakery. No people. Cool the light to pale neutral daylight and desaturate the greens; no dramatic ruin yet, no explosion. Keep every sky area, inter-branch hole, and the entire region below the existing building baseline genuinely transparent exactly as before. Do not add a background sky or ground. No text, no border. This is the matching empty-state texture for the same Blender depth plane.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Warm_v001.png"
+    ]
+  },
+  {
+    "key": "world_sky",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create a cinematic hand-painted SKY ONLY panoramic background for When the Sky Clears, matching the sophisticated textured painterly atmosphere of the attached style reference. A broad pale ivory and cool gray-blue cloud sky with amber light low along the left horizon, darker layered cloud masses high above, subtle dry-brushed gouache and oil-paint texture, broad calm tonal shapes. No dramatic sun disc, no god rays, no triumphant sunrise, no land, no hills, no trees, no buildings, no people, no text. The low-left warmth should blend naturally into cool pale daylight across the rest of the sky so a later cool desaturated treatment remains plausible. Wide landscape canvas, 16:9, largest available resolution. This sky is a rear depth layer for a continuous side-on war-and-displacement trailer, quiet and haunting rather than spectacular.",
+    "transparent_background": false,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\source\\image1.png"
+    ]
+  },
+  {
+    "key": "world_woods",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create a separate WIDE WOODS depth layer for the same painterly film world as the supplied village art. A side-on band of woodland: seven irregular mature oak and beech trunks, textured mossy bark, connected muted green-gray canopy across the upper canvas, golden light becoming cool mist among the middle-distance trunks. Uneven spacing with large clear gaps between trunks in the LOWER HALF so small walking silhouettes can read against lighter atmosphere placed behind. No path painted into this layer. Every trunk base must end at one common horizontal baseline around 85 percent down the canvas. Space below that baseline, sky outside the canopy, and all gaps between trunks must be genuinely TRANSPARENT. No people, no animals, no houses, no letters, no signs. Original quiet cinematic gouache/oil matte-painting style with shaped brush strokes, soft distant detail, not a photographic forest. Largest available wide 16:9 landscape image. Used for actual layered camera parallax in Blender.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Warm_v001.png"
+    ]
+  },
+  {
+    "key": "world_school",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create a WIDE separate SCHOOL EXTERIOR depth layer for the same original hand-painted film world as the supplied village. A modest rural two-storey plaster-and-stone school building seen straight side-on, recognizable by three tall classroom windows and a small simple entrance, plus a short adjoining wall. It has suffered war damage: one roof section missing, one tall window shattered with dark irregular glazing, cracked plaster, scattered masonry at its base, a little torn paper. Preserve strong simple facade masses and enough pale wall to contrast with small foreground child silhouettes. Cool gray-blue daylight with only a trace of warm light in one interior recess, restrained charcoal and faded earth colors. No people, no school signs or text, no flags, no symbols, no modern logos, no foreground ground strip. The building and rubble sit on one horizontal baseline at 84 percent down the canvas. All sky, all empty space around the silhouette and the entire region below this baseline must be genuinely transparent. Texture with deliberate painterly brush strokes and chipped edges; no photographs. Wide 16:9 landscape, largest available resolution. Designed for use as a real image plane in a layered Blender set.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Warm_v001.png"
+    ]
+  },
+  {
+    "key": "world_camp",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "A wide SIDE-ON CAMP background layer for the painterly animated film When the Sky Clears. Three weathered canvas tents in an irregular row, a few wooden posts, stretched ropes, a small crate stack, a sagging length of fence becoming a barricade. No people or soldiers, no weapons, no insignia, no writing. Tents are old neutral gray-beige civilian displacement shelters, not a modern branded campsite. Dirty blue-gray and muted earth palette, a trace of dull orange light low behind one tent. Rich hand-painted gouache/oil texture and shaped shadow masses matching the attached cinematic ruined-landscape style reference. The three tent bases align on one horizontal baseline at 84 percent down the canvas. Genuinely transparent sky, transparent spaces between separate structures, transparent below the baseline. No painted ground strip, no foreground framing tree. Quiet, empty and haunted, no spectacular explosion. Wide 16:9 landscape at largest available size. This is an isolated alpha painting to be placed on a Blender depth plane.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\source\\image1.png"
+    ]
+  },
+  {
+    "key": "world_battlefield",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create a WIDE isolated BATTLEFIELD / RUINED OUTSKIRTS painted depth layer for When the Sky Clears. Strict side-on composition with a low horizon: shattered village wall fragments, a few scorched bare trees, broken fence posts, scattered earth and masonry, two distant irregular columns of drifting smoke rising behind the ruin line. No soldiers, no people, no bodies, no weapons, no military insignia or flags. This is the aftermath of war viewed from a child's journey, quiet and immense, not an action spectacle. Dirty blue-gray, charcoal, cold ash, only two tiny restrained ember-orange glows low among distant debris. Painterly brush planes, hand-painted atmospheric matte art matching the supplied reference, not photography. Structures and rubble end at a common horizontal baseline at 84 percent down the canvas. Genuinely transparent sky around smoke and trees, transparent gaps, transparent below the ground baseline. No big explosion, no painted foreground path, no text. Wide 16:9 landscape, largest available resolution, designed as an alpha layer for a Blender set.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\source\\image1.png"
+    ]
+  },
+  {
+    "key": "world_static_pair",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create a single clean flat drawing of TWO CHARACTERS for a world-layout film animatic. Use the supplied girl's braid, small faded-blue ribbon and simple everyday dress as her design reference. She is in strict side profile facing RIGHT, holding the hand of a smaller boy behind her. The boy has untidy hair, a plain short coat, trousers and sturdy shoes, also strict side profile facing right. Both are full-body deep charcoal silhouettes with no eyes or facial interior detail, no interior clothing lines. Their joined hands and separated legs must be clearly readable through negative space. The girl is about one-quarter taller than the boy. Both stand on one shared horizontal sole baseline in a gentle held step pose: this single drawing will translate intact through a layered landscape, with no limb animation. Cohesive naturally drawn limb outlines, no visible joints or puppet segmentation. Original restrained hand-drawn film silhouettes, not cartoon mannequins. No setting, no props, no weapons, no text, no border. Genuinely transparent background. Wide landscape canvas, largest available size.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\characters\\Girl_Profile_Imagegen_v001.png"
+    ]
+  },
+  {
+    "key": "world_hills",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create a very wide DISTANT HILLS AND WOODLAND HORIZON layer matching the painterly world of the attached reference. Soft original rural hills and a few distant tree masses, hand-painted gray-green and mist blue, pale diffuse daylight. The hill ridge should undulate gently through the lower half of the wide 16:9 canvas, with considerable irregular transparent sky above it. The entire lower edge is opaque landscape continuing beyond the canvas. No houses, no ruins, no people, no foreground details, no water, no text, no strong sunbeams. Atmospheric depth, painterly brush texture and soft natural edges; never flat geometric polygons. Genuinely transparent sky above the hill contours. Intended as a distant parallax image layer, largest available landscape resolution.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\source\\image1.png"
+    ]
+  },
+  {
+    "key": "world_ground",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "An original seamless TILEABLE painterly GROUND SURFACE TEXTURE for a cinematic 2D/3D layered landscape. Top-down orthographic material study, no horizon. Muted dark olive earth, weathered brown soil, small gray stones, faint irregular grass patches and dry-brushed gouache/oil texture. Broad natural brush marks and subtle tactile variation rather than photographic detail. Most of the image is a quiet worn path, with restrained scattered moss and grass. Neutral soft illumination, no directional cast shadows, no footprints, no objects, no text, no borders. Match a rural hand-painted war-and-displacement film world; the texture will be tinted gradually from warm village soil to cold battlefield ash in Blender. Seamlessly repeatable edges, largest available landscape resolution.",
+    "transparent_background": false,
+    "references": []
+  },
+  {
+    "key": "world_fg_tree",
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Create ONE isolated mature oak tree as a foreground parallax cutout for the same painterly film world as the supplied village. Entire tree including all canopy edges, trunk base and spreading branches fully inside the image with generous transparent margin on all sides. Tall irregular trunk with rich dark hand-painted bark, restrained muted olive leaves, deep charcoal-brown shadow masses with just a trace of amber edge light. The overall silhouette should be dark enough to frame a rural village but retain sophisticated dry-brush gouache/oil texture. No other trees, no houses, no grass strip, no ground plane, no people, no text. Genuinely transparent background around EVERY edge, no part cut off by the canvas boundary. One complete original tree, largest available landscape size. This will pass near a Blender camera as a transition occluder.",
+    "transparent_background": true,
+    "references": [
+      "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Warm_v001.png"
+    ]
+  }
+]

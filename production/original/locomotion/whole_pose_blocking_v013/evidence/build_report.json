@@ -1,0 +1,48 @@
+{
+  "host": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "source_rig": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\native\\WTSC_Unpainted_Motion_Rebuild_v012.blend",
+  "authored_key_frames": {
+    "BOY": [
+      1,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      26,
+      32,
+      38,
+      43,
+      49,
+      56,
+      64,
+      72
+    ],
+    "GIRL": [
+      1,
+      8,
+      12,
+      17,
+      22,
+      27,
+      34,
+      43,
+      54,
+      64,
+      72
+    ]
+  },
+  "actual_pose_counts": {
+    "BOY": 15,
+    "GIRL": 11
+  },
+  "frames": 72,
+  "fps": 24,
+  "duration_s": 3,
+  "interpolation": "CONSTANT; held key poses and deliberate breakdowns. No generated inbetween gait or polished curves.",
+  "evaluated_key_joint_error_m": 2.6051288269525034e-06,
+  "head_profile_note": "Girl uses one stepped local-X proxy head reflection at12 to block attending profile. No edge-on card rotation, inbetween turn or painted hair/braid solution is claimed.",
+  "scope": "Blocking candidate only. No artistic approval, walking extension, painting or production integration."
+}

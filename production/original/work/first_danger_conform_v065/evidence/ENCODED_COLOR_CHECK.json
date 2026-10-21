@@ -1,0 +1,38 @@
+{
+  "movie": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_conform_v065\\previews\\WTSC_First_Danger_Title_v065f_4K.mp4",
+  "comparison_resolution": [
+    1280,
+    720
+  ],
+  "source": "The actual final native UHD pixel sequence, resized using the same FFmpeg Lanczos filter",
+  "encoder_matrix": "Explicit BT.709 limited-range YUV conversion; decoded RGB compared to source",
+  "rows": [
+    {
+      "frame": 937,
+      "mean_absolute_RGB_error": 1.3557280815972221,
+      "signed_mean_RGB_error": [
+        -1.3820648871527779,
+        -1.1695909288194444,
+        -1.267197265625
+      ]
+    },
+    {
+      "frame": 981,
+      "mean_absolute_RGB_error": 1.196720558449074,
+      "signed_mean_RGB_error": [
+        -1.200539279513889,
+        -1.040009765625,
+        -1.1330631510416667
+      ]
+    },
+    {
+      "frame": 1056,
+      "mean_absolute_RGB_error": 0.9335282841435185,
+      "signed_mean_RGB_error": [
+        -0.9770073784722222,
+        -0.7903678385416667,
+        -0.9506032986111111
+      ]
+    }
+  ]
+}

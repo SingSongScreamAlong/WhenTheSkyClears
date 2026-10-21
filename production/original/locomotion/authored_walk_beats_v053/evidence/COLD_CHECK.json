@@ -1,0 +1,63 @@
+{
+  "source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\coat_fluidity_v051\\native\\WTSC_Controlled_Fluid_Coat_v051.blend": "e888f7b7ab4c01040e675fc7d974e575a09df5e16f991897cae63629ec7dfd4f",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\authored_walk_beats_v053\\native\\WTSC_Authored_Walk_Beats_v053.blend": "23fc2578b499d6d2fded4f1d16a5466d93bea59b8bb7caa9eee26e7004a8a29b"
+  },
+  "cold_reopen_passed": true,
+  "root_camera_fcurves_exact": true,
+  "world_legs_boots_kept_grounded_with_pelvis_compensation": true,
+  "rest_bones_non_sleeve_geometry_coat_keys_uv_weights_materials_packed_images_exact": true,
+  "sampled_quarter_frames": 129,
+  "maximum_boot_vertex_difference_m": 1.2627580208091656e-07,
+  "maximum_leg_endpoint_difference_m": 6.664001874625056e-08,
+  "maximum_hip_head_difference_m": 0.0,
+  "difference_ranges": {
+    "BOY": {
+      "chest": [
+        -0.8745534932440415,
+        4.409043973754359
+      ],
+      "near_elbow": [
+        -0.08817139533076102,
+        11.04060560603522
+      ],
+      "far_elbow": [
+        0.9501449628551146,
+        10.075976172639992
+      ],
+      "pelvis_tail_m": [
+        3.637978807091713e-11,
+        0.0031496568688962985
+      ]
+    },
+    "GIRL": {
+      "chest": [
+        -0.5073934114143674,
+        2.808608408297717
+      ],
+      "near_elbow": [
+        -0.05241309714079456,
+        8.313073548378618
+      ],
+      "far_elbow": [
+        0.9837659712489994,
+        9.019918270012775
+      ],
+      "pelvis_tail_m": [
+        3.637978807091713e-11,
+        0.0022752536993373425
+      ]
+    }
+  },
+  "elbow_timing_correlations": {
+    "BOY": {
+      "old_near_far_elbow": 0.9999999999912016,
+      "new_near_far_elbow": -0.32137553868285385
+    },
+    "GIRL": {
+      "old_near_far_elbow": 0.9999999999906315,
+      "new_near_far_elbow": -0.005410668710400904
+    }
+  },
+  "technical_vs_art": "Same planted boot path; technical contact check does not establish convincing performance."
+}

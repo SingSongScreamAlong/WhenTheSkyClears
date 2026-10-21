@@ -1,0 +1,42 @@
+{
+  "movies": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\reference_walk_exercise_v018\\previews\\WTSC_Boy_Travelling_Walk_v018_Review_2s.mp4",
+      "bytes": 264992,
+      "sha256": "9358bd93eb9267ef4c0567687e605fcd39e2daa6fbdcffff80f59ddb7236fe1b",
+      "frames": 48,
+      "fps": 24,
+      "duration_seconds": 2
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\reference_walk_exercise_v018\\previews\\WTSC_Boy_Travelling_Walk_v018_Matched_Size_2s.mp4",
+      "bytes": 73996,
+      "sha256": "4b32c178adde5eec66850625e2bd836f66dcbd3e50fe1c73ea80c26b52681f0d",
+      "frames": 48,
+      "fps": 24,
+      "duration_seconds": 2
+    }
+  ],
+  "actual_decode": {
+    "review_dimensions": [
+      1920,
+      640
+    ],
+    "decoded_sample_frames": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      31,
+      37,
+      48
+    ],
+    "method": "imageio-ffmpeg decoded RGB samples; no normal-speed playback observation claimed"
+  },
+  "loop_note": "Translating gait repeats every24frames with+0.44m. MP4 shows two cycles; replay resets world position and numbered ground markers."
+}

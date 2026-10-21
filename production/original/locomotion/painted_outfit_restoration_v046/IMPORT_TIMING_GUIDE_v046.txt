@@ -1,0 +1,143 @@
+WHEN THE SKY CLEARS | AGE-TEN PAINTED OUTFIT RESTORATION v046
+
+STATUS / SCOPE
+Separate development checkpoint, not final animation or a production replacement.
+Conrad requested ten-year-old construction for both children, then animation,
+and a return toward the richer older painted outfit look. The unspecified
+"older" look is interpreted as v040/v041, the last positively received painted
+boy treatment. Actual age-ten bones and v045 walking contacts are preserved.
+No production scene, music, title, duration or other specialist's file is saved.
+
+EDITABLE NATIVE
+native/WTSC_Age10_Painted_Outfit_Restoration_v046.blend
+Verified executable: Blender 5.2.2 LTS, build d13f752e3b9c.
+Active scene: V046 | AGE10 BONES | restored painted clothing
+Append only master collection: V046 | AGE10 PAIR | restored painted outfits
+It includes the shared travel root, both armatures, existing painted anatomy,
+and restored clothing. Review camera, metric grid and old static snapshots are
+outside this append collection. Used file images are packed into the native.
+
+Preserved internal armature names:
+ V044 BOY | estimated joint centres
+ V044 GIRL | estimated joint centres
+Shared travelling root: V045 | shared travel | new stride90percent
+Original anatomy collection: V044 | age10 editable profile anatomy
+New clothing collection: V046 | restored original painted wardrobe
+Hidden superseded study clothes remain editable but must stay hidden.
+
+STRUCTURE / SCALE
+Metres, +X forward travel, +Z up. Root rotation and scale are identity.
+Boy/girl estimated barefoot skull-vertex stature: 1.390 / 1.380 m.
+Vertical chin-to-skull-vertex head measure: .194 / .193 m.
+Visible extended painted hand span target: .145 / .144 m.
+Bare foot guides: .202 / .200 m; outer shoe drawing: .223 / .221 m.
+These surface measures are not control-bone lengths. Skull vertices hidden by
+hair and internal joint centres remain authored estimates. The complete v044
+measurement definitions and research caveats remain in the preserved static
+checkpoint. No anatomy rescale was made in v046.
+Boy/girl root X offsets are -.4 / +.4 m, giving .8 m separation.
+The neutral outside-sole baseline is local Z0. Shoe heel lift is already in the
+construction; do not add another .025 m. Preserve all garment depth offsets and
+their moved object origins: these control transparency sorting.
+
+EXACT TIME AND TRAVEL CONTRACT
+Source clock F is 30 fps; F1 is time zero. Local body cycle is 31 source frames.
+Stride = .8571993646118743 m.
+Speed = .8295477722050396 m/s.
+D(F) = .8571993646118743 * (F - 1) / 31 metres.
+The preview has THREE repeats plus endpoint, F1..F94. Travel continues linearly;
+root and camera curves do not freeze at F94. Rig and drawing cycles repeat.
+The girl's existing 3.5-source-frame lead is baked into her action. Do not add
+that phase offset a second time. Her offered near hand and balancing far arm
+are independently authored, not a duplicate of the boy's swing.
+
+At 24 fps production frame G, for chosen entry frame G0:
+ F = 1 + (G - G0) * 30 / 24.
+Cycle length is therefore 24.8 production frames. Do not round it to 25.
+To retime native keys, map EVERY armature, travel and garment shape-key Action:
+ Gkey = G0 + (Fkey - 1) * 24 / 30.
+Preserve linear interpolation and retime cycle boundaries/modifiers with the
+same mapping. Merely changing scene fps will give the wrong speed and contacts.
+The CSV evidence/TRAVEL_CURVE_v046.csv samples F1..94 at eighth frames and gives
+time, +D travelling-root, -D passing-world and +D camera-follow values.
+
+Choose one integration convention:
+1. Travelling pair: retain native root +D. Apply the chosen fixed world entry
+   translation, and let the production camera follow as desired. Do not add D
+   a second time or also move the world by -D in the same reference frame.
+2. Centred pair / passing landscape: disable ONLY shared root X animation.
+   Retain local bone and garment clocks. Move the landscape by -D on the same
+   clock, with the production camera fixed to the pair.
+For any entry-anchor translation, move the shared root; keep child offsets,
+individual garment offsets and object origins intact. At the inspected v058
+held-pair position, drawing plane Y=-.36 and sole baseline Z=.771372 were scale
+witness values, not a newly approved world-contact integration.
+The old v046 recovery anchor/curve is different and stops around 78.33 seconds.
+This walking cycle does not author a crouch/recovery-to-walk bridge. Do not drop
+it directly into 75-80 seconds and claim a continuous restart or matched travel.
+
+WHAT CHANGED / PAINT REGISTRATION
+The v040 original atlas supplies the boy's coat, sleeves, hands and trousers;
+the original v015 pair supplies the girl's dress and stocking painting.
+Restored actual painted hands replace generic enlarged hand geometry. Sleeves
+and trouser/stocking strips are continuous, with rigid actual limb axes outside
+18/22 mm elbow/knee rounding. Cuffs fit moving boot shafts. The girl's dress hem
+returns close to knee level. Existing collar, head and braid remain attached.
+No raster image pixels were edited or generated.
+Fixed defects found in image review:
+ - Real depth origins now sort the coat over thighs and collar over coat.
+ - Feathered registrations of the SAME cloth painting remove rectangular chest
+   patches. The detached-sleeve atlas armhole is covered with existing cloth so
+   it cannot appear as a second empty cavity when the sleeve swings forward.
+ - Stocking painting maps knee-to-cuff onto the shin rather than spreading ankle
+   cuff stripes through the entire leg. Upper bodice avoids old arm/cuff pixels.
+ - Continuous forearms/hands and moving boot overlaps replace flat study patches.
+World-space geometry before/after depth-origin correction was identical in the
+tested F1/F9/F17 poses. The original rig bones and Actions match v045 exactly.
+
+EDITABILITY / DEPENDENCY
+Torso and skin pieces use native Armature modifiers. Limb clothing uses editable
+quarter-frame shape drawings regenerated from evaluated rig bones: 125 samples
+per 31-frame cycle. Their Actions and shape keys are native editable data.
+If an animator edits the rig poses, regenerate the clothing cache from that
+edited source; existing cache drawings do not automatically solve new poses.
+scripts/build_outfits.py performs that generation and retains original painting.
+Its source is the preserved sibling v045 native, so select a separate edited
+source copy in SRC when generating a new revision. Do not overwrite v045.
+Cold validation scripts also read the preserved v045/v044 evidence. The packed
+v046 native itself opens and renders independently of those generator inputs.
+
+ACTUAL REVIEW DELIVERABLES
+previews/WTSC_Age10_Painted_Outfits_v046_NormalSpeed.mp4
+ 1280x800 including an 80-pixel label area; 188 frames at 30 fps, 6.2667 seconds.
+ First 94 frames: full pair. Next 94: same native frames, 2x contact crop.
+ There are 94 source timeline frames, not 188 distinct animation frames.
+ 90 newly rendered frames and 4 matching final proof stills; no optical flow.
+previews/WTSC_Painted_Outfits_Actual_Bones_v046.png
+ Same-camera dressed, ACTUAL evaluated bones, bone overlay, opposite-stride pose.
+Old source snapshots in the native are static reference material only.
+
+TECHNICAL RESULTS / NOT ARTISTIC APPROVAL
+Cold native F1..94, eighth-frame sampling: 745 samples per child.
+Maximum floor support height error .346 mm; world support X error .417 mm;
+sole penetration .034 mm; joint gap .106 mm. No backward knee; loop matrices
+match exactly. Root/camera distance error below .001 mm.
+249 additional eighth-frame clothing samples over one cycle: actual limb-axis
+registration error below .104 mm; tested wrist overlap deficiency zero.
+All used file images packed; source hashes and native unchanged by check/render.
+All 188 encoded video frames were independently decoded successfully; preview
+is below 20 MB. See evidence JSON for exact metrics, limits, hashes and method.
+The agent inspected native poses and encoded frames; continuous player playback
+was not observed. Successful decode is not a claim of convincing animation.
+
+CANDID ARTISTIC ASSESSMENT / NEXT PRIORITIES
+Richer original cloth painting is restored without undoing the smaller heads,
+consistent actual limb lengths, larger hands or foot-contact work. The exposed
+chest patches, empty armhole and incorrect clothing layers are corrected.
+This is still a planar walk proof. The girl's charcoal face/white eye, rigid
+attached braid and subdued costume do not match the boy's newer full-color
+finish. Cloth lacks authored secondary swing/settle and both profiles need more
+expressive drawing changes. Hands are rigid painted poses without finger acting
+or a load-bearing clasp. The recovery-to-walking transition and fatigue/support
+acting still need an authored shot-specific pass. This checkpoint is not at the
+requested Arcane-level finish and is not claimed as final animation.

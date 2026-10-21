@@ -1,0 +1,38 @@
+READ-ONLY AUDIT OF EXISTING CHARACTER / WORLD SCALE
+
+Current human target: ten years for BOTH children, confirmed by Conrad. This supersedes the old source handoff's approximately10–11-year-old girl / unspecified smaller boy. Older near-age direction with a slightly taller boy remains context; the image-generation prompt's ten-to-twelve /3–5% height difference is a production assumption, not an independently confirmed anatomical requirement.
+
+Girl source FOUND: locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend contains LOCO_GIRL | RIG, the original painted head and attached braid, dress, limbs and articulated hand drawings. Original v015 pair image remains available. The rejected head-turn patch v008 is not a source for this correction.
+
+Existing dimensions (metres; actual native rest-bone measurements, NOT surface anthropometry)
+                        v041 BOY          v007 GIRL
+Nominal height label     1.450000          1.369918
+Head control bone         .247068           .240736
+Chest control bone        .487893           .405526
+Upper arm near/far        .218000/.218000    .210958/.181765
+Forearm near/far          .198239/.198092    .180740/.140195
+Hand control near/far     .085586/.085586    .085586/.085586
+Thigh near/far            .288801/.233829    .282864/.294135
+Shin near/far             .248088/.286662    .218635/.212056
+Foot control near/far     .109857/.092967    .111379/.086747
+
+The girl's far shoulder-to-wrist joint-chain span is17.804% shorter than her near chain. The boy's far hip-to-ankle chain is3.054% shorter. These rig lengths encode the original traced side-view pose/foreshortening and cannot be accepted as bilateral physical anatomy. In the earlier v007 boy, upper/forearm lengths were .289785/.126455; v035 redistributed them to .218000/.198239 while preserving reach. That is a genuine proportion change, not merely shading.
+
+The current near boy hand drawing spans .067076m along its bone, versus the canonical shoe drawing's .241518m rest length (ratio3.60066). Hand/foot control bone length is not the visible body-part length. A hand correction therefore must refit its drawing as well as the rig. A shoe is not a bare foot.
+
+Head-to-body: the v042 actual rendered alpha audit measured hair+head+neck at157px versus629px full character in v041, and158/628 in v028/v036/v039. This includes hair and neck and is NOT a crown-to-chin anatomical head count. The girl head object also includes her attached braid, so its mesh height is particularly unsuitable as a head measurement. The original nominal1.45m source scale was fitted to the whole painted silhouette including hair/shoes, and is not a verified barefoot skull-vertex stature. Cranial vertex under the existing hair must be estimated and labelled on the model sheet.
+
+v040/v041 boy head registration: unequal source-pixel scales stretched the new head painting9.7723% horizontally relative to its generated painting. The new correction must use one scale in both image axes, with separately marked skull crown/chin/neck rather than fitting the whole hair-and-neck rectangle.
+
+World findings
+- Actual v046 world is WTSC_OPEN_SUPPORTED_RECOVERY_TRIAL_v046. The file initially opens its empty compositor master; the audit explicitly selected the actual world for the final measurements.
+- v046 and v058 active world use METRIC, scale_length1.0. All inspected performance roots and rigs have world scale1. No centimetre/metre transform error was found.
+- v046 retains three pairs of armatures for reference/integration history. Active v007 roots use the .002 pair; hidden older copies are not additional visible children. The active performance anchor is (107.6339569,0,.7200737), with per-child roots at +/- .4m and a .561666667m authored recovery route.
+- v058 contains the unchanged HELD GP/painted pair, not the newer v041 rig. It has no character armature in its active world. The held pair root's base Z is .771372m; its artwork is at roughlyY=-.36m. A new asset must match that drawing plane and actual sole line, not simply place its origin at worldZ0.
+- The walking path is a VERTICAL painted card at Y2.06m, X[-24,220], Z[-30,.9588]. The foreground bank is also a vertical painted surface at Y-4.99m. A downward ray at Y0 finds no named physical walking surface in the inspected scenes. Those card bounds are not collision-ground elevation or a walkable slope. Contact remains an authored drawn sole/ground-line contract.
+- Village and ruined architecture largely remain painted cards at Y10–12m. No separately dimensioned door object was found in the active v046/v058 inventory. Painted door outlines inside those images do not establish verified door dimensions. Perspective depth must be included before comparing their screen height with a foreground child.
+- v058's source-registered school aperture has actual reveal dimensions approximately1.0921m wide by2.5658m high and .355m recess depth. It is a WINDOW aperture, not a door, and sits nearY10m. Its backing is .62m behind the card. It is not a universal child-height or door-height calibration.
+
+The scale correction must therefore establish barefoot anatomical landmarks, estimated joints, clothing/hair envelopes and a same-plane dimensioned prop separately. Uniform character or world scaling alone cannot correct the inherited segment disparities. Existing preferred timing and source Actions remain references, while actual animation on revised segment lengths must be solved and validated later.
+
+Evidence: CANON_SEARCH.json, BOTH_CHARACTERS_AND_WORLD_NATIVE.json, CURRENT_SEGMENT_MEASUREMENTS.json. All inspected source native SHA256 values were identical before and after. No native was saved and no render was emitted during this read-only audit.

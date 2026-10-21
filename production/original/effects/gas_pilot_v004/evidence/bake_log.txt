@@ -1,0 +1,31 @@
+2026-10-17T16:31:55.817620Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 0 new skill(s), total 0
+2026-10-17T16:31:55.817763Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 skill(s)
+2026-10-17T16:31:55.817840Z  INFO ThreadId(01) dcc_mcp_http_py::bridge: create_skill_server(blender): discovered 0 accumulated skill(s)
+2026-10-17T16:31:55.822248Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: in-process executor registered — load_skill() will use in-process handlers (issue #464)
+2026-10-17T16:31:55.822338Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: main-thread dispatcher attached — tools/call will route through DccDispatcher::post
+2026-10-17T16:31:55.824514Z  INFO ThreadId(01) dcc_mcp_http_py::skill_server: McpHttpServer: readiness probe installed — /mcp and /v1/call will share it (issue #714)
+2026-10-17T16:31:56.085233Z  INFO ThreadId(01) dcc_mcp_skills::catalog::catalog::discovery_impl: SkillCatalog: discovered 73 new skill(s), total 73
+2026-10-17T16:31:56.357065Z  INFO ThreadId(01) opentelemetry: name="MeterProvider.GlobalSet" Global meter provider is set. Meters can now be created using global::meter() or global::meter_with_scope().
+2026-10-17T16:31:56.395554Z  INFO ThreadId(01) dcc_mcp_http::handler::rmcp_mount: rmcp MCP endpoint mounted at /mcp (legacy + 2026 stateless dispatcher)
+2026-10-17T16:31:56.396685Z  INFO ThreadId(01) dcc_mcp_http::server: MCP HTTP server dcc-mcp-blender v0.2.14 listening on http://127.0.0.1:56663/mcp server_name=dcc-mcp-blender server_version=0.2.14
+2026-10-17T16:31:56.398375Z  INFO tokio-rt-worker dcc_mcp_transport::discovery::file_registry: registering service dcc_type=blender instance_id=c9c5df5e-1669-4e89-ad41-3e8069086ec8 host=127.0.0.1 port=56663
+2026-10-17T16:31:56.402977Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Registered in FileRegistry instance=c9c5df5e-1669-4e89-ad41-3e8069086ec8
+2026-10-17T16:31:56.413019Z  INFO ThreadId(01) dcc_mcp_gateway::gateway::runner: Gateway port held by healthy resident — running as plain DCC instance port=9765 gateway_version=0.20.42 gateway_adapter_version=None gateway_adapter_dcc=Some("gateway") own_version=0.2.14 own_adapter_version=None own_adapter_dcc=Some("blender") resident_health=Healthy
+00:01.422  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\effects\benchmark_v003\native\WTSC_Evolution_Proof_v003.blend"
+WTSC_LOCAL_WORKSPACE\effects\gas_pilot_v004\scripts\bake_gas_pilot.py:37: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('GasPilotv004 | cold native volume | NO emission');mat.use_nodes=True;nt=mat.node_tree;nt.nodes.clear()
+WTSC_LOCAL_WORKSPACE\effects\gas_pilot_v004\scripts\bake_gas_pilot.py:45: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  invisible=bpy.data.materials.new('GasPilotv004 | emitter mesh invisible only');invisible.use_nodes=True;nn=invisible.node_tree;nn.nodes.clear();tr=nn.nodes.new('ShaderNodeBsdfTransparent');out=nn.nodes.new('ShaderNodeOutputMaterial');nn.links.new(tr.outputs[0],out.inputs[0])
+Info: Saved as "WTSC_Gas_Pilot_40r_72f_v004.blend"
+GAS_BAKE_START {"blender": "5.2.2 LTS", "solver": "Installed native FLUID/GAS (Mantaflow)", "domain_object": "GasPilotv004 |40div gas domain4.2x2.8x4.0m", "domain_metres": [4.2, 2.8, 4.0], "resolution_max": 40, "cache_frames": [1, 72], "fps": 24, "seconds": 3, "cache_type": "MODULAR OPENVDB", "noise_upres": false, "adaptive_domain": false, "threads": 2, "cache_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\cache\\pilot_40r_72f", "source_world_position": [109.0999984741211, 10.0, -0.7048802971839905], "sources": [{"object": "GasPilotv004 | short smoke inflow0", "source_local_position": [0, 0, 0.22], "radius": 0.31, "velocity": [0.12, 0, 1.55], "emission_end_frame": 5}, {"object": "GasPilotv004 | short smoke inflow1", "source_local_position": [-0.25, 0.1, 0.23], "radius": 0.24, "velocity": [-0.38, 0.12, 1.35], "emission_end_frame": 4}, {"object": "GasPilotv004 | short smoke inflow2", "source_local_position": [0.23, -0.11, 0.31], "radius": 0.22, "velocity": [0.45, -0.12, 1.6], "emission_end_frame": 6}], "buoyancy": {"density": 0, "heat": 0.35}, "vorticity": 1.1, "timesteps": [1, 2], "hard_supervisor_limits": {"wall_seconds": 120, "cache_MiB": 128, "rss_MiB": 2048}, "note": "Pilot only. No production edit and no main lighting pass. v003 smoke cards are hidden only in this isolated copy."}
+2026-10-17T16:31:57.376400Z  INFO dcc-mcp-http-56663 serve_inner: rmcp::service: Service initialized as server peer_info=None
+2026-10-17T16:31:57.377094Z  INFO dcc-mcp-http-56663 serve_inner: rmcp::service: input stream terminated
+2026-10-17T16:31:57.377158Z  INFO dcc-mcp-http-56663 serve_inner: rmcp::service: serve finished quit_reason=Closed
+00:07.172  reports          | Fluid: Bake Data complete (5.53s)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+Info: Saved as "WTSC_Gas_Pilot_40r_72f_v004.blend"
+GAS_BAKE_COMPLETE {"operator_result": ["FINISHED"], "has_cache_baked_data": true, "bake_seconds": 5.564383200020529, "cache_files": 144, "cache_bytes": 24672198, "cache_vdb_files": 72, "native_path": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\native\\WTSC_Gas_Pilot_40r_72f_v004.blend", "volume_node_inputs": ["Color", "Color Attribute", "Density", "Density Attribute", "Anisotropy", "Absorption Color", "Emission Strength", "Emission Color", "Blackbody Intensity", "Blackbody Tint", "Temperature", "Temperature Attribute", "Weight"]}
+2026-10-17T16:32:02.506954Z  INFO ThreadId(01) dcc_mcp_transport::discovery::file_registry: deregistered service dcc_type=blender instance_id=c9c5df5e-1669-4e89-ad41-3e8069086ec8
+2026-10-17T16:32:02.507240Z  INFO dcc-mcp-http-56663 dcc_mcp_http::server::spawn_impl: MCP HTTP server (dedicated) stopped
+
+Blender quit

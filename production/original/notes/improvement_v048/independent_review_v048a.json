@@ -1,0 +1,37 @@
+{
+  "reviewer": "visual_review subagent",
+  "candidate": "v048a",
+  "scope_read": "scripts/refine_character_v048a.py",
+  "method": "Seven actual native4K PNG render keys compared against matching decoded actual4K v047g movie frames. Analysis crops retain exact native pixels. Images were visually inspected at whole-shot and native-pixel crop scales; no continuous-speed playback was inspected.",
+  "frames_reviewed": [1801, 1834, 1840, 1846, 1881, 1901, 1918],
+  "decision": "KEEP the bounded sleeve-crown and charcoal-head changes as the next review candidate.",
+  "findings": [
+    {
+      "change": "Sleeve shoulder crowns",
+      "decision": "KEEP",
+      "evidence": "At 1801 and 1881, the boy's exposed vertical squared sleeve cutoff is replaced by a continuous shoulder slope. At 1834, 1840, 1846 and 1918, the top of the girl sleeve joins the shoulder more naturally. No new circular cap or separate joint-knob shape appears in these keys.",
+      "remaining": "The girl torso still contains a projecting chest/back polygon corner behind the sleeve. This is the preserved torso mesh silhouette, not a failure introduced by the sleeve crown. The elbow/cuff transitions remain angular despite a small contour improvement."
+    },
+    {
+      "change": "New girl turn-head charcoal compression",
+      "decision": "KEEP at the present gain; do not darken the entire asset further in this pass.",
+      "evidence": "At 1846, 1881, 1901 and 1918, the face is now in the same dark charcoal family as the boy and hands. The white eyes retain their clarity. Pale hair strands are reduced while braid separation and facial direction remain readable.",
+      "remaining": "Fine hair-strand drawing language still differs from the boy's broader painted bands. Further global darkening would bury useful face planes before solving that stylistic difference. This is a source-art craft issue if later refinement is desired, not evidence for reducing the present shader gain again."
+    },
+    {
+      "change": "Cuff mouth contour",
+      "decision": "KEEP the small softening, with further construction work still required.",
+      "evidence": "The visible cuff triangles are a little less projecting. They still read as separate cutout wedges at 1840 and 1918, so this change should be described as an incremental contour improvement rather than fully resolved anatomy or clothing deformation."
+    }
+  ],
+  "analysis_artifacts": {
+    "directory": "notes/improvement_v048/review_evidence",
+    "script": "make_v048a_comparisons.py",
+    "actor_sheets": "Actor_Before_After_<frame>_NativePixels.jpg",
+    "head_shoulder_sheets": "Head_Shoulder_Before_After_<frame>_NativePixels.jpg",
+    "baseline": "v047g_baseline_01.png through v047g_baseline_07.png are direct original-movie decodes, without scaling or interpolation."
+  },
+  "next_review": "Render and decode the bounded shot at its intended timing. Check shoulder continuity between these keys and the head replacement sequence. Preserve existing gait/choreography, hand anchors and boot positions for this world/detail pass.",
+  "artistic_acceptance": false,
+  "mutations": "Only review JSON, analysis script, direct movie decodes and crop comparison sheets were added. Native scenes and source image pixels were not changed."
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "V028 preferred movement retained; footwear design correction, not a new preferred animation or artistic approval.",
+  "source_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+  "Blender": "5.2.2 LTS",
+  "canonical_source_object": "V007_BOY | redrawn support boot near",
+  "one_shared_mesh": true,
+  "near_scale": 1.0,
+  "far_uniform_perspective_scale": 0.97,
+  "canonical_vertices": 76,
+  "canonical_dimensions_xz_m": [
+    0.24151772260665894,
+    0.14492740854620934
+  ],
+  "preserved": "All V028 rig/control/upper-body/head/coat actions, near trouser data and original31frame cadence/root travel. No V031/V032 movements imported.",
+  "changed": "Two consistent shoe instances; far-art rocker/swing placement and lower far cuff drawing fit the shared design. Gait bones and old ankle targets remain untouched.",
+  "period_frames": 31,
+  "fps": 30,
+  "stride_m": 0.9524437384576381,
+  "far_flat_ankle_contact_origin_m": 0.7110689096152782,
+  "maximum_lower_cuff_vertex_refit_m": 0.03656537426497934,
+  "maximum_far_art_anchor_shift_m": 0.01677242757399317,
+  "maximum_contact_sole_error_m": 5.21540641784668e-08,
+  "head_choice": "Exact preferred V028 original profile action preserved; no new head-card rotation or design.",
+  "artistic_acceptance": false
+}

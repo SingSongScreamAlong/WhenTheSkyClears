@@ -1,0 +1,77 @@
+WHEN THE SKY CLEARS | ACTUAL v049 MODEL IN MOTION
+
+This review supersedes the STATIC-ONLY scope of the earlier v049 delivery.
+The v049 native itself is unchanged. Every v049 timeline frame F1..257 was
+rendered cold from that native at1280x720,30fps, using two Blender threads.
+The frozen v048 gait is preserved exactly. This is model-fit review in motion,
+not another gait revision and not final animation/design acceptance.
+
+CURRENT MOVIES
+WTSC_Model_Fit_v049_Actual_NormalSpeed.mp4: actual v049 model, preserved v048
+motion.1280x800 including an80px external label;257frames,8.5667seconds,30fps.
+WTSC_v048_vs_v049_Model_Fit_SameMotion.mp4: LEFT v048 BEFORE MODEL FIT;
+RIGHT v049 FITTED MODEL IN MOTION. Both use the identical v048 motion,
+phase, camera, scale and root travel.1920x640,257frames,30fps. Both are under20MB.
+All movie frames were fully decoded. All32 integer poses in the first cycle,
+eight decoded upper-body phases and12 comparison frames spanning the eight
+cycles were inspected. Continuous player playback was not observed by the agent.
+Decoding and cache/integrity tests do not establish artistic quality.
+
+OLDER MOVIE CLARIFICATION
+Library [PRIVATE_LIBRARY_REFERENCE_REMOVED] is
+WTSC_v047_vs_v048_Weight_Loading_NormalSpeed.mp4.
+LEFT exact label: v047 | QUIET BASELINE
+Sub:32-frame cycle,0.731 m/s | preserved reference
+RIGHT exact label: v048 | CONNECTED STEP LOADING
+Sub:Same pace and phase | knee absorption, drawn-sole rollover and counterbalance
+That movie contains NO v049 model-fit changes. Do not call it v049 motion.
+
+NATIVE / IMPORT
+native/WTSC_Connected_Model_Fit_v049.blend
+Scene: V049 | MODEL FIT AND GROUPED HANDS | v048 motion
+Append master: V049 | AGE10 PAIR | connected model fit
+Root: V048 | shared travel | steady .73125mps
+Rigs: V044 BOY | estimated joint centres
+      V044 GIRL | estimated joint centres
+All images are packed. Face/hair, boots, rest bones and rig/root/camera Actions
+are unchanged from v048. Garments, forearms and original hand grouping have
+the targeted v049 fit. Hand vertical coordinates/extended targets are preserved.
+The append collection contains the pair. The proof camera, metric ground/grid
+are scene aids; do not append them into production unless needed for comparison.
+
+EXACT TIMING / TRAVEL CONTRACT
+Source30fps;32source-frame cycle;16frame halfstep; .78m stride; .73125m/s.
+D(F)=.78*(F-1)/32, with local sole baselineZ=0. Girl's2frame phase lead is baked.
+Both metric child roots lie at X=-.4/+ .4m relative to the shared travelling root.
+The proof camera follows D. SourceF1=0seconds;F257=8.533333seconds and6.24m.
+The257frame encoded clip lasts8.566667seconds including its final frame hold.
+At24fps use F=1+(G-G0)*30/24; cycle25.6production frames. Do not round the cycle.
+Retime BOTH rigs, root, camera and garment shape-key Actions together. Sleeves
+are129quarter-frame native drawings with linear transitions and repeating cycles.
+Travelling pair: retain root+D and provide camera/world consistently.
+Centred pair: disable ONLY shared rootX, pass world-D, use stationary camera.
+Do not apply travel twice. Use TRAVEL_CURVE_v049.csv; it is the unchanged v048
+eighth-frame root/world/camera curve. No world layout or full-trailer edit is made.
+This is ordinary walking. It does not bridge the original75-80second recovery,
+author a supported clasp or replace the stopped recovery travel contract.
+
+EDITING / PACKAGE
+The native is directly editable. The preserved v048 native is included as a
+separate reference. Model-fit parameters and the exact v049 builder are included.
+Do not run builders over the delivered frozen checkpoint; duplicate/version the
+working folder first. Rebuild sleeve drawing caches if changing rig poses.
+The motion render/encode scripts and per-frame hash record are audit material;
+raw frame PNG folders are excluded from the ZIP and remain in the project.
+The old static-only ZIP is retained unchanged; this is a separate motion review.
+
+CANDID ARTISTIC ASSESSMENT
+The reduced bodice projection, softer waist and quieter wrists/cuffs hold across
+the reviewed cycle poses without a newly visible gap or recovered wrist ledge.
+This is a modest fit improvement; the design still needs substantial work.
+The girl's charcoal face/white eye and the boy's painted face remain different
+finishes. Hands retain a single rigid painted pose. Shoulder/neck-to-torso
+construction and the narrow planar dress/jacket still read like assembled cards;
+the fixed dress hem and braid do not respond to steps. Body intention remains
+restrained and cyclic. No head-turn redesign, new artwork or finger articulation
+is claimed. Proportions and painting are retained, not certified anatomically.
+No Arcane-level quality or final model/animation acceptance is claimed.

@@ -1,0 +1,69 @@
+WHEN THE SKY CLEARS | v048 CONNECTED WEIGHT LOADING
+
+Separate unapproved motion checkpoint. v047 is preserved. This pass responds to
+the2/10 feedback about stiff stance knees and level boots; it does not claim the
+model/design is now coherent or that animation quality is approved.
+
+native/WTSC_Connected_Weight_Loading_v048.blend
+Scene: V048 | CONNECTED WEIGHT LOADING | ordinary walk
+Append master: V048 | AGE10 PAIR | connected weight loading
+Root: V048 | shared travel | steady .73125mps
+Armatures retain V044 BOY/GIRL | estimated joint centres names. Used images packed.
+Blender5.2.2 LTS, verified executable build d13f752e3b9c; bounded2thread renders.
+
+PRESERVED: age-ten rest anatomy, all image pixels/material slots/UV registrations,
+matching boots, face/hair identity, regular32-frame cadence and .73125m/s speed.
+Both profiles remain planar. No new cloth/braid embellishment or world work.
+
+CHANGES: landing roll extends to4.5source frames, engaging the actual drawn heel
+at12degrees and settling to the midsole; heel rise starts at phase10.5 and reaches
+26degrees at toe-off. Rolling follows arc distance along the actual lower sole
+contour, avoiding the tiny ankle discontinuities from projected-point switching.
+Knee loading is about19-28degrees. Full-cycle knees stay above14degrees, versus
+about6degrees in v047. Early flight no longer has the same sharp straightening;
+maximum sampled knee rate falls from about12-13 to about7.3-7.4degrees/source frame.
+Pelvis height range21.5mm is smaller than v047's26mm; fore/aft range remains3mm.
+Torso counterbalance is restrained and connected to loading; head/face stay fixed
+in profile. Swing clearance is4cm, earlier in swing. Sleeve/leg caches were rebuilt
+to actual new poses. These are kinematic observations, not a COM/balance model.
+
+EXACT CONTRACT - UNCHANGED FROM v047
+Metres,+X forward,+Z up; roots at-.4/+.4m relative to pair centre. Neutral soleZ0.
+Source30fps, period32frames, half-step16, stride .78m, speed .73125m/s.
+Girl2source-frame lead is baked in; do not apply it again.
+D(F)=.78*(F-1)/32 metres. Native proof F1..257 is8cycles plus endpoint.
+24fps production: F=1+(G-G0)*30/24; cycle25.6production frames; do not round.
+Retime EVERY armature, root and garment shape-key Action with that mapping.
+Travel is already active. For travelling characters, retain root+D. For centred
+characters, disable ONLY rootX travel and move the landscape-D on the same clock.
+Do not add D twice. TRAVEL_CURVE_v047.csv logic/values are unchanged; v048 CSV is
+included. Preserve per-part depth origins, which control transparent layering.
+This is ordinary walking, not an authored75-80second recovery restart or clasp.
+
+Actual MP4s:257frames each,30fps,8.5667seconds. Comparison1920x640; full-size review
+1280x800 including an80pixel label bar. Native images1280x720. Same framing,
+scale, clock, phase, ground/grid and speed as v047. Baseline frames were read-only
+hash-verified prior native renders. No optical-flow/video interpolation.
+Both MP4s independently fully decoded, each below20MB. Agent reviewed native
+poses, all32local-cycle integer poses and encoded frames; continuous player
+playback was not observed. Technical contact tests do not establish convincing
+weight or intent. Normal-speed user judgment remains essential.
+
+Cold contacts:1025eighth-frame samples/child over4cycles. SupportX error below
+.005mm, sole support-height error .112mm, penetration .007mm; no backward knee.
+Bone lengths and source files unchanged. See JSON for exact limits and values.
+
+MODEL REVIEW: model_review/ contains actual neutral standing side view plus
+current F1/F5/F9 contact/loading/passing poses at the same camera/metre scale.
+Neutral clothes were regenerated to actual identity rest-bone poses IN RAM,
+not left in walking cache shapes. The older v041 reference is the actual native
+boy F1 at the same metres/pixel; its older anatomy, walking pose and original
+paper backdrop differ. It is not a new neutral construction or a girl colour model.
+No native was saved during those review renders.
+
+The new feedback that the model feels off prompted a separate v049 static fit
+candidate. v048 remains unchanged. Girl's charcoal face/white eye, rigid hair,
+planar body construction and painted hands remain finish limitations. Fatigue,
+support, finger acting and recovery-to-walk are still separate shot work.
+Original sources, production duration/music/title and other specialist files
+are untouched. This checkpoint is not the requested Arcane-level finish.

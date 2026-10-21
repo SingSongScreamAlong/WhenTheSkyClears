@@ -1,0 +1,265 @@
+{
+  "all_checks_pass": false,
+  "checks": {
+    "meshes_source_exact": false,
+    "rig_rest_source_exact": true,
+    "transforms_source_exact": true,
+    "actions_source_exact": true,
+    "drivers_source_exact": true,
+    "modifiers_source_exact": true,
+    "materials_source_exact": true,
+    "all_source_packed_image_pixels_and_registration_exact": true,
+    "all_target_FILE_images_packed": true,
+    "source_camera_data_transform_actions_exact": true,
+    "scene_24fps_937_1056": true,
+    "root_parent_inverse_identity_no_floor_shear": true,
+    "stage_is_source_translation_only": true,
+    "physical_corridor_matches_flat_actor_floor": true,
+    "evaluated_root_has_no_shear_or_rotation": true,
+    "stage_static_across_shot": true,
+    "four_boots_no_penetration_beyond_50um": true,
+    "known_stance_support_within_0_3mm": true,
+    "camera_root_x_offset_constant_within_30um": true
+  },
+  "differences": {
+    "meshes": [
+      "V044 BOY | boot far",
+      "V044 BOY | boot near",
+      "V044 BOY | coat",
+      "V044 BOY | collar",
+      "V044 BOY | cuff far",
+      "V044 BOY | cuff near",
+      "V044 BOY | forearm far",
+      "V044 BOY | forearm near",
+      "V044 BOY | hand far",
+      "V044 BOY | hand near",
+      "V044 BOY | head",
+      "V044 BOY | leg far",
+      "V044 BOY | leg near",
+      "V044 BOY | upper far",
+      "V044 BOY | upper near",
+      "V044 GIRL | boot far",
+      "V044 GIRL | boot near",
+      "V044 GIRL | cuff far",
+      "V044 GIRL | cuff near",
+      "V044 GIRL | dress",
+      "V044 GIRL | forearm far",
+      "V044 GIRL | forearm near",
+      "V044 GIRL | hand far",
+      "V044 GIRL | hand near",
+      "V044 GIRL | head",
+      "V044 GIRL | leg far",
+      "V044 GIRL | leg near",
+      "V044 GIRL | upper far",
+      "V044 GIRL | upper near",
+      "V045 BOY | boot shaft overlap far",
+      "V045 BOY | boot shaft overlap near",
+      "V045 BOY | wrist paint overlap far",
+      "V045 BOY | wrist paint overlap near",
+      "V045 GIRL | boot shaft overlap far",
+      "V045 GIRL | boot shaft overlap near",
+      "V045 GIRL | wrist paint overlap far",
+      "V045 GIRL | wrist paint overlap near",
+      "V046 BOY | original painted hand far",
+      "V046 BOY | original painted hand near",
+      "V046 BOY | painted continuous rolled sleeve far",
+      "V046 BOY | painted continuous rolled sleeve near",
+      "V046 BOY | painted forearm far",
+      "V046 BOY | painted forearm near",
+      "V046 BOY | painted rigid-axis trousers far",
+      "V046 BOY | painted rigid-axis trousers near",
+      "V046 BOY | tailored coat",
+      "V046 GIRL | original painted hand far",
+      "V046 GIRL | original painted hand near",
+      "V046 GIRL | original painted stockings far",
+      "V046 GIRL | original painted stockings near",
+      "V046 GIRL | painted continuous rolled sleeve far",
+      "V046 GIRL | painted continuous rolled sleeve near",
+      "V046 GIRL | painted forearm far",
+      "V046 GIRL | painted forearm near",
+      "V046 GIRL | tailored knee-length dress",
+      "V060 BOY | reach sleeve near",
+      "V060 BOY | retained paint hand fold near",
+      "V060 GIRL | reach sleeve near",
+      "V060 GIRL | retained paint hand fold near"
+    ],
+    "rig_rest": [],
+    "transforms": [],
+    "actions": [],
+    "drivers": [],
+    "modifiers": [],
+    "materials": [],
+    "images": []
+  },
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\PRESERVED_v060.blend",
+  "source_sha256": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+  "scene": "WTSC_INK_WASH_DEPTH_v061",
+  "samples": 477,
+  "production_frames": [
+    937,
+    1056
+  ],
+  "source_clock": "F=1+(G-937)*1.25;32frames/.78m/.73125mps;girl+2alreadybaked.",
+  "expected_flat_stage_world_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      49.68421173095703
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -0.36000001430511475
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.7713720202445984
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "root_parent_inverse": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "floor_z_m": 0.7713720202445984,
+  "physical_floor": {
+    "corridor_vertices": 791,
+    "maximum_flat_corridor_height_error_m": 0.0
+  },
+  "boot_clearances": {
+    "V044 BOY | boot far": {
+      "minimum_clearance_m": -1.0192394256591797e-05,
+      "maximum_clearance_m": 0.04498395323753357,
+      "stance_maximum_abs_clearance_m": 0.00014285556972026825,
+      "stance_samples": 266,
+      "below_floor_samples": 0,
+      "near_floor_samples": 276
+    },
+    "V044 BOY | boot near": {
+      "minimum_clearance_m": -1.0190531611442566e-05,
+      "maximum_clearance_m": 0.04498395323753357,
+      "stance_maximum_abs_clearance_m": 0.0001430278643965721,
+      "stance_samples": 301,
+      "below_floor_samples": 0,
+      "near_floor_samples": 310
+    },
+    "V044 GIRL | boot far": {
+      "minimum_clearance_m": -1.0171905159950256e-05,
+      "maximum_clearance_m": 0.04498393461108208,
+      "stance_maximum_abs_clearance_m": 0.0001317756250500679,
+      "stance_samples": 266,
+      "below_floor_samples": 0,
+      "near_floor_samples": 276
+    },
+    "V044 GIRL | boot near": {
+      "minimum_clearance_m": -1.0173767805099487e-05,
+      "maximum_clearance_m": 0.04498393461108208,
+      "stance_maximum_abs_clearance_m": 0.0001316126435995102,
+      "stance_samples": 295,
+      "below_floor_samples": 0,
+      "near_floor_samples": 304
+    }
+  },
+  "camera_root_x_offset_range_m": 7.62939453125e-06,
+  "maximum_root_basis_error": 0.0,
+  "endpoint_samples": [
+    {
+      "frame": 937.0,
+      "root_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          49.68421173095703
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7713720202445984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_root_x_offset_m": 1.6891212463378906
+    },
+    {
+      "frame": 1056.0,
+      "root_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          53.309993743896484
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7713720202445984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_root_x_offset_m": 1.6891212463378906
+    }
+  ],
+  "object_material_overrides_allowed": true,
+  "source_data_material_slots_protected": true,
+  "native_open_save_render_in_apply": false,
+  "limits": "Raw geometry/UV/attributes/shapes/actions/materials and images compare to the exact frozen v060. Current boot mesh minima are measured; transparent paint silhouettes and artistic weight/contact/lighting are not approved by this report.",
+  "native": "WTSC_LOCAL_WORKSPACE\\work\\production_look_v061\\reference\\first_physical_blocking\\WTSC_Physical_Ink_Wash_Forest_v061.blend",
+  "native_sha256": "fe5f6c85a1b2e8e527011e0207bab8dff90d168f6354a53afd1f0eb28961d417",
+  "native_file_unchanged": true
+}

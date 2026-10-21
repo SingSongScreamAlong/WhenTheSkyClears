@@ -1,0 +1,62 @@
+WHEN THE SKY CLEARS — V061 ARTISTIC REVIEW
+Status: R&D look-development study. Not production acceptance.
+Review basis: still images only; no playback or full-sequence artistic review.
+
+CURRENT EVIDENCE
+work/production_look_v061/previews/physical_v061_0937.png
+work/production_look_v061/previews/physical_v061_0981.png
+work/production_look_v061/previews/physical_v061_1056.png
+Comparison: work/trailer_development_v060/previews/world_v060_981.png
+Earlier bare v061 and second-iteration v061 frames were inspected before these previews were overwritten. Comparisons with those iterations describe those prior observations, not a retained side-by-side file in this report.
+The parent reports native preservation/floor/camera checks passed. Those checks establish scene integrity; they do not establish artistic quality. The complete 120-frame sequence is rendering and was not assessed here.
+
+VERDICT
+Keep v061 as an experimental physical-depth foundation. Do not present this as an Arcane-level finished shot or as an overall artistic improvement over the richer v060 painted woodland.
+The lower camera, actual walking floor, dimensional trees, painterly bark/earth and overlapping foreground/midground are useful advances. The environment remains visibly constructed, and the drawn heroes still read as flat figures against physical scenery.
+
+WHAT IMPROVED
+The first bare v061 frame had a dominant empty ground field, sparse isolated vegetation and repeated blurry bark strips. The current lower view and denser plant grouping produce a more inhabited frame and better visible foreground-to-background separation.
+The near trunk, roots and diagonal bough in frame1056 provide tangible volume and overlap while leaving the heads and joined hands visible.
+The smooth ellipsoid bush cores from the second iteration are gone. Current shrubs have actual leaf silhouettes rather than visibly smooth pillows with sparse decoration.
+The boy's teal/olive/brown palette and the girl's charcoal silhouette remain recognisable. The pair retain their age-ten design. Frame981 reads as hand contact at this viewing size.
+New bark and earth marks have more ink-and-wash character than the earlier stretched source strip, although their relationship to physical form remains weak.
+
+COMPARISON WITH V060
+The v060 woodland baseline has more natural branching, organic ivy/grass shapes, varied negative spaces and coherent painted value grouping. Its narrow bright lane and dark sloped bank frame the figures more deliberately.
+V061 supplies genuine floor and tree volume, but it loses some of that authored richness. True geometry is a useful construction method, not evidence that the resulting image is more cinematic or more finished.
+V061 should recover v060's deliberate silhouettes and grouped values while retaining its new physical floor and lighting capability.
+
+CURRENT QUALITY GAPS
+1. Unsupported vegetation is the most visible environment defect. Behind the pair, some leaf sprays form elevated clumps or vertical columns with air beneath them and no convincing visible woody attachment. Frame1056 makes several of these suspended groups particularly apparent. The foliage reads as placed chunks rather than plants growing from connected roots and branches.
+2. Dense repeated leaf polygons make blocky hedge-like masses, flat ledges and stacked silhouettes. More leaves have improved coverage but have not supplied a believable botanical structure or an authored wild outline.
+3. Trunks remain broadly straight/cylindrical; large Y forks look engineered. Several branch joints and small triangular buttress roots do not convincingly grow into the trunk. Painterly bark marks cannot compensate for simple underlying form.
+4. The foreground remains a large, relatively empty mottled apron. The walking lane is a very straight horizontal tan strip. Earth marks have weak relation to slope, drainage, roots, traffic and leaf accumulation, so the ground reads as a surface treatment.
+5. Light is still broadly even. There is no sufficiently deliberate broken canopy pattern or quiet focal pool that links the environment, faces and hands. The distant olive haze is coherent, but local tree/leaf value groups need stronger composition.
+6. The heroes remain planar painted profiles. Their silhouettes are clear, yet their light response and form do not match the volumetric set. The hand contact is readable in frame981, but the nearly horizontal arm bridge remains stiff. These stills do not demonstrate nuanced gaze, facial reaction, shoulder/torso weight or responsive grip.
+7. The overall foliage and branch language is coarser than the source painted art. This is still a hybrid look test, not a resolved production style.
+
+NEXT SPECIFIC ART TASKS, IN ORDER
+A. Rebuild the visible shrub silhouettes around a connected woody hierarchy. Each elevated spray needs a legible branch attachment or needs to become basal growth rooted in the ground. Author fewer, stronger plant groups with varied scale, asymmetry, notches and open gaps. Remove suspended vertical stacks and repeated level tops; do not solve this with another uniform density increase.
+B. Design the two or three most prominent tree forms individually. Give them tapered asymmetric trunks, bends, branch transitions, broad root-to-ground integration and varied bark marks that describe those forms. Prioritise the foreground-right trunk and visible midground forks before adding more trees.
+C. Recompose the ground around the physically flat sole corridor. Sculpt the land beyond it into deliberate dark banks and shallow irregular rises; add grounded root/leaf-litter groupings. Break the lane's straight graphic edges and broad empty apron without introducing foot obstacles or obscuring boot contact.
+D. Author a restrained canopy shadow pattern and directed light pool around the pair. Test actual cast shadows and local warm/cool relationships in native renders. Preserve a clear negative space around faces, wrists and the hand contact. Avoid an overall grade being used as a substitute for local staging.
+E. Refine the drawn character performance and material integration. Preserve the original age-ten designs and palettes. Develop shoulder/torso response, gaze/head reaction, hand overlap and grip shape, then add selective drawn form/value changes that follow those actions. A constant planar lighting response is not a substitute for designed anatomical form.
+F. Review the resulting full sequence for foliage stability, scale, physical parallax, ground/sole relation and acting continuity. Separately evaluate the actual synchronised title mask composition: these unmasked keys cannot establish title visibility or whole-trailer readiness.
+
+ACCEPTANCE BOUNDARY
+Retain all source and current R&D evidence. Do not promote this look as final production until the connected plant structure, major tree forms, ground composition, directed lighting and hero integration have each passed actual native image review.
+No new native jobs, source edits, or image changes were performed for this report. Only this requested review text was written.
+
+ADDENDUM — 2026-10-18 22:52 UTC — ACTOR FOCUS DIAGNOSIS
+Actual inspected comparison:
+previews/Native_Head_Hands_4K_Crop_v061.jpg
+previews/DIAGNOSTIC_Dithered_DOF_Head_Hands.jpg
+
+The original 4K crop shows blurred heads/hands alongside substantially sharper coat/body paint. In the DITHERED diagnostic, the boy's eye, hair, ear and facial profile, the girl's hair/braid/profile and the touching hands become distinctly sharp while the background retains depth-of-field softness.
+The native diagnosis established a material rendering interaction with depth of field: the parent reports both a no-DOF test and changing copied V061 actor overrides from BLENDED to DITHERED with DOF still enabled at f/5.6 resolve the softness. The side-by-side diagnostic supports the DITHERED correction. This is not evidence of inherently blurred source face/hand art or inadequate original image resolution.
+The parent is applying the native correction to a new candidate and regenerating all120 frames, retaining the earlier package. This review has not yet assessed the regenerated movie or frame-to-frame dither stability; the fix is established in the diagnostic still and sequence acceptance remains pending.
+scripts/ink_wash_materials.py now sets mat.surface_render_method = 'DITHERED' immediately after original.copy(), before material naming/node changes. Only the copied actor material receives that setting; original source data is untouched. Each material report records the rendering method and the 4K depth-of-field diagnostic reason.
+This correction removes the previously visible rendering softness; it does not resolve coarse/unsupported foliage, tree/ground construction, planar character form or limited acting. The R&D status and next art priorities above remain valid.
+
+FINAL CORRECTED SEQUENCE | 2026-10-18 22:57 UTC
+The DITHERED correction is now in the delivered native8ae4dc3ea23b697b3573afaa2ffc83cb7522933228f4aaaaca71fd5181096fb6. All120native frames were regenerated; both movies fully decoded with correct24fps presentation times and original music timing. Review of all120sheet frames, decoded045/097/120 and4Kcrops found restored head/hand detail and no obvious new detachment, sleeve/hand hole or layering inversion. Fine grain remains visible on the girl; real-time temporal shimmer has not been assessed. The preceding artistic R&D limits still apply. See SEQUENCE_VISUAL_REVIEW.txt and ENCODED_REVIEW_VALIDATION.json.

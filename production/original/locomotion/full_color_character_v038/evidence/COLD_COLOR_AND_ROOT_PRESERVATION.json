@@ -1,0 +1,87 @@
+{
+  "scope": "Cold full-color/root-art technical preservation; artistic acceptance remains separate",
+  "original_actions_changed": [],
+  "original_mesh_vertex_shape_UV_data_changed": [],
+  "original_packed_image_bytes_changed": [],
+  "intentional_geometry_field_change": "Only V036_width_scale point attribute on two trouser meshes is multiplied by a rounded/tucked root factor, ending before30percent down the drawing. Original rest coordinates, pose keys, joints, centerlines and lower70percent stay unchanged.",
+  "root_contour_changes": [
+    {
+      "frame": 1,
+      "object": "V024 continuous near trouser drawing",
+      "max_upper_root_contour_change_m": 0.058621838910037694
+    },
+    {
+      "frame": 1,
+      "object": "V024 continuous far trouser drawing",
+      "max_upper_root_contour_change_m": 0.058621840895907155
+    },
+    {
+      "frame": 4,
+      "object": "V024 continuous near trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862184188884187
+    },
+    {
+      "frame": 4,
+      "object": "V024 continuous far trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862183785504451
+    },
+    {
+      "frame": 11,
+      "object": "V024 continuous near trouser drawing",
+      "max_upper_root_contour_change_m": 0.058621854983166743
+    },
+    {
+      "frame": 11,
+      "object": "V024 continuous far trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862182401601457
+    },
+    {
+      "frame": 20,
+      "object": "V024 continuous near trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862184586058053
+    },
+    {
+      "frame": 20,
+      "object": "V024 continuous far trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862180415731117
+    },
+    {
+      "frame": 27,
+      "object": "V024 continuous near trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862183543476597
+    },
+    {
+      "frame": 27,
+      "object": "V024 continuous far trouser drawing",
+      "max_upper_root_contour_change_m": 0.05862185392817385
+    }
+  ],
+  "all_original_bone_root_wrist_frame_range": [
+    1,
+    94
+  ],
+  "visible_geometry_and_camera_frames": [
+    1,
+    4,
+    11,
+    20,
+    27
+  ],
+  "errors": {
+    "root_matrix": 0.0,
+    "all_bone_world_matrices": 0.0,
+    "wrist_world_matrices": 0.0,
+    "head_hand_coat_sleeve_shoe_mesh_vertices_m": 0.0,
+    "lower70percent_trouser_vertices_m": 0.0,
+    "trouser_centerline_m": 8.429369702178807e-08,
+    "camera_world_matrices": 0.0
+  },
+  "shoe_mesh_shared": true,
+  "shoe_color_material_shared": true,
+  "head_original_alpha_factor_wiring_unchanged": true,
+  "images_packed": true,
+  "head_color_exception": "Native UV mask supplies natural skin/hair colors. Original profile mesh, UV, alpha and packed image bytes stay fixed. A tiny static iris is shaded inside the unchanged original eye opening.",
+  "garment_scope": "Five inherited static coat poses only; no new cloth inbetweens or animation cycle.",
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c"
+}

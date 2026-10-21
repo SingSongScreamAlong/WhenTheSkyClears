@@ -1,0 +1,18 @@
+from pathlib import Path
+import json
+P=Path(__file__).resolve().parents[1];prior=P.parent/'drawn_impact_v012'
+txt=(prior/'IMPORT_AND_REVIEW.txt').read_text().replace('v012','v013')
+txt=txt.replace('The angular/star-like onset remains more graphic than the painted scenery;\ncontact puffs are small and subtle at shot size. These remain artistic review\nissues.', 'The v012 star corners have been rounded, wash edges softened and initial heat\nmuted. Debris remains solid; opacity grain is restricted away from solid chips\nand ground marks. Brief contact puffs have higher contrast. The compact onset\nstill reads as a stylized small burst, and perceived impact force/weight remain\nartistic review issues. The new wash has a soft grain and should be judged at\nactual shot size.')
+txt=txt.replace('All 127 checked drivers were valid.', 'The exact driver count and measured errors are recorded in evidence/append_test.json.')
+txt=txt.replace('The two appended renders (baseline and +100) are pixel-identical. The separately\nrendered source RGBA differs slightly: mean error over the effect area is\n0.196/255, with maximum single-channel error 39/255. No bit-identical source\nrender match is claimed.\n', 'See the actual pixel-comparison measurements in evidence/rgba_validation.json;\nno bit-identical source-render match is presumed.\n')
+txt=txt.replace('The original production v038 and prior v011 append hashes match their recorded', 'The original production v038 and prior v012 append hashes match their recorded')
+txt=txt.replace('Four brief contact cues', 'Four brief contact cues (six frames per event)')
+txt=txt.replace('The new wash has a soft grain and should be judged at\nactual shot size.', 'The new wash has a soft grain and should be judged at\nactual shot size. Final B/C contact drawings are 1.15x wider and 1.65x taller\nthan the first v013 test, with the peak held three frames. They remain subtle\nin the wide shot; contact-puff readability and grounded weight are unresolved\nartistic review items. Alpha-edge terrain seating is an approximation of the\npainted bank, not a physical terrain solve.')
+txt=txt.replace('Set the receiving app\'s alpha interpretation to Straight.', 'Set the receiving app\'s alpha interpretation to Straight. Color dithering is\ndisabled for the reusable PNG export to keep empty frames small.')
+(P/'IMPORT_AND_REVIEW.txt').write_text(txt)
+t=(prior/'scripts/record_library_xattrs.py').read_text().replace('v012','v013')
+t=t.replace(r'wtsc_fx_v013_library_20261017',r'wtsc_fx_v012_library_20261017')
+(P/'scripts/record_library_xattrs.py').write_text(t)
+review={'status':'Isolated compact refinement. Native and actual-frame validation pending completion; independent artistic review pending.','changes':['Two corner-rounding passes preserve the distinct onset exposures/outward breakup.','Softer wash feather and local opacity grain; less saturated initial ochre.','Rounded chip corners; seven debris specifications and measured terrain support retained.','Higher contrast brief contact puffs; solid chips, ground nicks and contact shadows explicitly excluded from opacity grain.'],'rejected_preliminary_step':'Actual side-by-side keys showed opacity grain made debris translucent. Corrected before full proof.','scope':'One same-shot compact impact. No extra smoke, modules, production changes or UI control.','remaining_limits':['Stylized compact onset; independent review must judge force and weight.','Small contact cues may still be subtle at full shot size.','Terrain remains authored for this held shot.'],'continuous_speed_playback_observed':False,'tutorial_motion_verified':False}
+(P/'evidence/artistic_review_status.json').write_text(json.dumps(review,indent=2))
+print('DELIVERY_NOTES_PREPARED')

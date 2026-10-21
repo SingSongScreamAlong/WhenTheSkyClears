@@ -1,0 +1,99 @@
+{
+  "provider": "Built-in GPT imagegen; original outputs copied byte-for-byte, no external art or image editing.",
+  "reference": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png",
+  "purpose": "Four matching head drawings for the existing charcoal girl, including turn intermediates and the new continuing left profile.",
+  "prompt_right": "Identity-preserve: GIRL on right of reference, complete isolated head, little neck, full naturally attached braid and small fabric bow. Nose points image RIGHT about35 degrees off frontal. Exact age/skull/cheek/jaw proportions, swept wavy fringe, subtle charcoal black/grayscale paint, tiny warm-white flat eye marks, transparent margins; no boy, torso, text, halo, cropped-cap hair or 3D rendering.",
+  "prompt_left": "Identity-preserve: use original pair and generated first drawing as references. Corresponding second quarter view, nose image LEFT toward boy about35 degrees off frontal, naturally attached braid behind skull on RIGHT. Same girl and paint/fringe/skull/age; small flat warm-white triangular eye marks, no iris detail/glow, no torso/text/halo/cropped cap; full head/braid on transparent alpha.",
+  "prompt_front": "Identity-preserve: same original charcoal girl and matching generated quarter views, front-on midway through turn. Complete swept fringe, small neck and single naturally attached braid with bow on image right. Nearly black charcoal face and subtle fine grayscale hair strokes, small flat eye marks, genuine transparency, no torso, text, cap or 3D rendering.",
+  "assets": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Three_Quarter_Right_v047.png",
+      "generation_source": "WTSC_LOCAL_USER\\.codex\\generated_images\\01a14548-c7ee-7af3-88fe-234af9b17275\\exec-b80ae632-744c-4ebe-a81b-cf885d671043.png",
+      "sha256": "c7bad607ba0b1c80f24d458d13aacb9d6934faaacb833bf276eb0680fda2bdfa",
+      "size": [
+        1199,
+        1312
+      ],
+      "mode": "RGBA",
+      "alpha_bounds": [
+        0,
+        7,
+        1181,
+        1312
+      ],
+      "opaque_bounds": [
+        144,
+        133,
+        1114,
+        1235
+      ]
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Three_Quarter_Left_v047.png",
+      "generation_source": "WTSC_LOCAL_USER\\.codex\\generated_images\\01a14548-c7ee-7af3-88fe-234af9b17275\\exec-6525c5a9-8450-459a-928e-88127487684c.png",
+      "sha256": "d9f2482c796e9a4ab87fc8bff47ae77ac01b648edbfb678577f238e56060cd8e",
+      "size": [
+        1199,
+        1312
+      ],
+      "mode": "RGBA",
+      "alpha_bounds": [
+        0,
+        0,
+        1146,
+        1288
+      ],
+      "opaque_bounds": [
+        149,
+        140,
+        1112,
+        1237
+      ]
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Front_v047.png",
+      "generation_source": "WTSC_LOCAL_USER\\.codex\\generated_images\\01a14548-c7ee-7af3-88fe-234af9b17275\\exec-3ce97624-0b7f-4c19-b5c1-2dedc2d25e99.png",
+      "sha256": "b1ece1c31aa0ab8a7990536113b4a530245a53bf8a4ef664861c85cdd916553a",
+      "size": [
+        1199,
+        1312
+      ],
+      "mode": "RGBA",
+      "alpha_bounds": [
+        0,
+        17,
+        1167,
+        1312
+      ],
+      "opaque_bounds": [
+        114,
+        141,
+        1087,
+        1223
+      ]
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\head_turn_v047\\Girl_Left_Profile_v047.png",
+      "generation_source": "WTSC_LOCAL_USER\\.codex\\generated_images\\01a14548-c7ee-7af3-88fe-234af9b17275\\exec-0f5ed71b-f82e-410f-bed4-da9996927825.png",
+      "sha256": "303ea678164b1d98f030da16b341ca02a3f35d7b8380c84e1612c00a4bb679e9",
+      "size": [
+        1199,
+        1312
+      ],
+      "mode": "RGBA",
+      "alpha_bounds": [
+        0,
+        2,
+        1181,
+        1312
+      ],
+      "opaque_bounds": [
+        131,
+        108,
+        1145,
+        1230
+      ]
+    }
+  ],
+  "review_limit": "Generated quarter views still require native shot registration and visual review. Eye/pupil rendering differs subtly from the original simple profile mark; no artistic acceptance implied."
+}

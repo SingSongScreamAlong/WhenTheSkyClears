@@ -1,0 +1,72 @@
+{
+	"engine": "5.8.3-58210709+++UE5+Release-5.8",
+	"test_type": "Real engine gameplay using simulated native key events; not a human or OS-keyboard playtest",
+	"passed": true,
+	"game_seconds": 38.089260101318359,
+	"distance_walked_cm": 4919.263671875,
+	"events": [
+		{
+			"event": "fresh_state",
+			"passed": true,
+			"game_seconds": 4.0013294219970703,
+			"player_x": 100,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true
+		},
+		{
+			"event": "walked_to_cache",
+			"passed": true,
+			"game_seconds": 20.022092819213867,
+			"player_x": 2895.1280303157864,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true
+		},
+		{
+			"event": "searched_finite_cache",
+			"passed": true,
+			"game_seconds": 23.024566650390625,
+			"player_x": 2899.7368548301802,
+			"carry_units": 5,
+			"storage_units": 5,
+			"cache_available": false
+		},
+		{
+			"event": "cache_cannot_duplicate_loot",
+			"passed": true,
+			"game_seconds": 24.026096343994141,
+			"player_x": 2899.7368548301802,
+			"carry_units": 5,
+			"storage_units": 5,
+			"cache_available": false
+		},
+		{
+			"event": "returned_and_deposited",
+			"passed": true,
+			"game_seconds": 37.085601806640625,
+			"player_x": 780.21617027699199,
+			"carry_units": 0,
+			"storage_units": 10,
+			"cache_available": false
+		},
+		{
+			"event": "saved_checkpoint_readback",
+			"passed": true,
+			"game_seconds": 37.085601806640625,
+			"player_x": 780.21617027699199,
+			"carry_units": 0,
+			"storage_units": 10,
+			"cache_available": false
+		},
+		{
+			"event": "fresh_restart_restores_cache_and_storage",
+			"passed": true,
+			"game_seconds": 38.089260101318359,
+			"player_x": 100,
+			"carry_units": 0,
+			"storage_units": 5,
+			"cache_available": true
+		}
+	]
+}

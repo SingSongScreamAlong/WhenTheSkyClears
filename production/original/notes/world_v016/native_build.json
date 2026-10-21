@@ -1,0 +1,144 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Trailer_v016.blend",
+  "scene": "WTSC_PAINTED_WORLD_4K_100S_v016",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "frames": 2400,
+  "duration_s": 100,
+  "objects": 241,
+  "shape_key_objects": 131,
+  "children": "Held single GP drawing and matching vector-clipped painted mesh; translation only",
+  "assets": [
+    {
+      "name": "Bakery_Detail_Repaint.png",
+      "size": [
+        1356,
+        1159
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Bakery_Detail_Repaint.png"
+    },
+    {
+      "name": "Battlefield_v001.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Battlefield_v001.png"
+    },
+    {
+      "name": "Camp_v001.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Camp_v001.png"
+    },
+    {
+      "name": "Foreground_Ground.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Foreground_Ground.png"
+    },
+    {
+      "name": "Painted_Smoke_Wisp_v016.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\Painted_Smoke_Wisp_v016.png"
+    },
+    {
+      "name": "Pair_Painterly_Near_Age_v015.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\characters\\Pair_Painterly_Near_Age_v015.png"
+    },
+    {
+      "name": "Path_Detail_Repaint.png",
+      "size": [
+        1908,
+        824
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v014\\Path_Detail_Repaint.png"
+    },
+    {
+      "name": "Rear_Countryside.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Rear_Countryside.png"
+    },
+    {
+      "name": "School_v001.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\School_v001.png"
+    },
+    {
+      "name": "Village_Empty_v001.png",
+      "size": [
+        1671,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Village_Empty_v001.png"
+    },
+    {
+      "name": "Village_Middle.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\village_lookdev\\v012\\Village_Middle.png"
+    },
+    {
+      "name": "Woods_v001.png",
+      "size": [
+        1672,
+        941
+      ],
+      "packed": true,
+      "path": "WTSC_LOCAL_WORKSPACE\\sets\\painted_layers\\Woods_v001.png"
+    }
+  ],
+  "depth_bands": [
+    -5,
+    -4,
+    -3,
+    0,
+    2,
+    6,
+    10,
+    12,
+    18,
+    28,
+    40
+  ],
+  "motion": "Native mesh shape keys and drivers, smoke advection, localized light masks, leaf/paper/ash drift, layered haze, lateral camera, end pullback",
+  "limitations": [
+    "2.5D painted architecture, not fully modeled buildings",
+    "Source painting resolution below output UHD",
+    "Held children per user, gait/acting deferred",
+    "Artistic finish still subject to review"
+  ]
+}

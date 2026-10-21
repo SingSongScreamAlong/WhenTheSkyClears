@@ -1,0 +1,41 @@
+v016 - IMPORT / POSING / TIMING GUIDE
+
+Start with native/WTSC_Painted_Rig_Control_Asset_v016.blend. It is the editable unkeyed asset: no Actions, no runtime handler, no external plugin or image dependency. Blender 5.2.2 LTS was verified at WTSC_LOCAL_USER\AppData\Local\Programs\Blender\blender-5.2.2-windows-x64\blender.exe (build d13f752e3b9c).
+
+Append exactly collection WTSC_PAINTED_RIG_CAPABILITY_v016, including all of its control/contour-anchor children. Keep both original armatures, their packed paint, Geometry Nodes groups, drivers and internal targets together. Append to a scratch scene first; no production replacement is authorized by this delivery. Do not copy v014's17-bone proxy Actions onto these original 15/18-bone rigs.
+
+Native files and timing
+- Control_Asset: one unkeyed neutral frame; primary posing asset.
+- Capability: twelve stepped stress poses at 1,21,41,61,81,101,121,141,161,181,201,221; scene 1..240 at 24fps. This is a capability board, not a ten-second story sequence.
+- Live_Diagnostic: frames 1..96 at 24fps (4s).1..24 native hip/foot plant,25..48 sole-aware roll,49..72 painted brace follow,73..96 profile head/braid pitch. These are separate test sections, not performance transitions.
+- Inspection preview uses a simple orthographic 3m camera and 1.24m pair gap. Camera-matched preview uses the actual v046 frame 1844 lens 100mm, 36mm horizontal sensor, original lens shifts and camera relative to the pair root, plus the original 0.8m pair gap. It matches framing/scale, not the world lighting, atmosphere or setting.
+- No timing in these files replaces 75..80 seconds of the trailer. There is no new recovery step or production travel curve in this rig-only phase. diagnostic_world_travel.csv explicitly records zero diagnostic travel.
+
+Coordinates and controls
+Metres, +X travel, +Z up, camera from-Y. In-plane card rotation is about worldY. WORLD_TRAVEL is separate from the children's HIP controls and is zero in all diagnostics. Rig roots are independently spaced; do not change character proportions to fit an imported skeleton.
+For each BOY/GIRL, edit HIP, CHEST, HEAD_PROFILE, ANKLE_near/far, WRIST_near/far and LEG/ARM_POLE_near/far. Internal anchors/row attributes are construction dependencies. HIP moves the pelvis; CHEST and HEAD_PROFILE can counter-tilt independently. The original rig has no separate lumbar or neck bone. Braid and skirt_front/skirt_back remain original girl pose bones, with bounded5-degree tests supplied.
+Native IK preserves original child-specific projected bone lengths. Poles must remain in the XZ drawing plane. Do not rotate the head card in yaw or roll it edge-on. Source near/far lengths are not assumed to be identical.
+
+Hands
+WRIST properties Reach/Brace select reused v007 finger drawings; zero/zero is Relax. Their effective weights normalize if their sum exceeds one. TorsoFollow 1 carries a relaxed hand with the chest; set 0 for an explicit wrist target. The calibrated BraceFollow control is implemented on the NEAR wrist only, and overrides it with the planar thigh anchor. BraceFollow on a far wrist has no follower implementation; far Brace is only a hand-shape choice.
+BraceFollow is validated around the saved deep brace pose: boy HIP(.015,.435), girl HIP(.015,.415), chest 50 degrees, head 7 degrees, near flat ankleX.13/far-.10, with small combined hip changes. It is not a reach planner. Enabling it in an upright pose can exceed arm reach. No hand-to-hand helping load is claimed.
+
+Foot placement / documented pose API
+ANKLE targets are native and remain editable with the IK rig. For an exact source-sole heel/flat/toe placement, use embedded rig_pose_api.py. In Blender's Python Console:
+  ns={}; exec(bpy.data.texts['rig_pose_api.py'].as_string(),ns)
+  ns['initialize_from_scene']()
+  ns['set_foot']('BOY','near',.13,20,0)
+set_foot arguments are child, side, flat-ankle-X, roll degrees, actual sole lift. It uses the original source heel/toe reference and the actual native boot vertices for floor fitting. The boot is rigid; contact may roll over its curved sole. No deforming toe or exact physical force solver is implied.
+set_wrist accepts child,side,X,Z,in-plane hand direction in degrees,shape. It rejects out-of-range arm targets by default. apply_pose is the diagnostic convenience authoring function; requested wrist positions can be fitted into the arm range and that adjustment is recorded. Use native IK endpoint checks before treating a pose as valid. See diagnostic_pose_manifest.json for actual fitted requests and NATIVE_CONTROL_MAP_v016.json for all source lengths/control names.
+
+World travel contract for any later integration
+For a rest-space painted vertex p, a single-bone part evaluates as:
+  p_world = M_rig_world @ M_pose_bone @ inverse(M_rest_bone) @ p
+M_rig_world includes WORLD_TRAVEL and that child's root spacing. The new contours read the same final skeleton/boot targets; they do not read a separate frame clock. If WORLD_TRAVEL moves while a foot is planted, set ANKLE.matrix_world to the desired fixed world foot-bone matrix each frame (equivalently local target=inverse(M_rig_world)@world_target). Merely moving WORLD_TRAVEL carries its child targets and will slide a nominally planted foot. A future motion/world adapter must supply that compensation and an exact travel curve; none is claimed built here.
+
+Design limits and future source motion
+The original right-profile art is the supported head view. Full turn and independent eye gaze remain unpassed; see the report and historical v046 defect witness. Extreme cuffs, deep garment compression and crossing occlusion require further local drawing/corrective review. New quarter views require design approval before a performance turn.
+Potential future3D inputs may supply root/pelvis/spine/limb reference, but must be projected and re-solved to each child's lengths. Original lumbar/neck independence cannot be invented by renaming proxy bones. Keep head/profile, fingers, support contacts, braid, skirt and draw order as authored overrides. Existing Leaves/Synty sampling code was read as a reference only; no automatic2D retargeting compatibility or asset entitlement was established here.
+
+Reproduction and preservation
+scripts/build_rig_audit.py derives only this isolated folder from immutable v007. make_live_diagnostic.py writes the unkeyed/live assets; verify_delivery.py reopens them with scripts disabled and checks every diagnostic frame. Clear Actions with animation_data.action=None; do not call animation_data_clear on the control objects because that deletes their native follower drivers too. The exporter now preserves and verifies those drivers. Original v007, v046 and retained v045c hashes are verified in evidence/source_integrity.json.

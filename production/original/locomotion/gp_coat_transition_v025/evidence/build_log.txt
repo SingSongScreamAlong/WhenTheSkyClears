@@ -1,0 +1,10 @@
+00:00.641  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\reference\PRESERVED_WALK_v024.blend"
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\build_first_transition.py:16: DeprecationWarning: 'MaterialGPencilStyle.show_fill' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);bpy.data.materials.create_gpencil_data(m);g=m.grease_pencil;g.show_fill=fill;g.show_stroke=stroke;g.fill_color=color;g.color=color;gp.materials.append(m);return len(gp.materials)-1,m
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\build_first_transition.py:16: DeprecationWarning: 'MaterialGPencilStyle.show_stroke' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);bpy.data.materials.create_gpencil_data(m);g=m.grease_pencil;g.show_fill=fill;g.show_stroke=stroke;g.fill_color=color;g.color=color;gp.materials.append(m);return len(gp.materials)-1,m
+Info: Saved as "WTSC_GP_Coat_Transition_v025.blend"
+V025_COAT_NATIVE_BUILT 16
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

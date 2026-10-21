@@ -1,0 +1,118 @@
+{
+  "status": "One bounded v007 specialist support/acting candidate. Parent artistic review and integration pending; no full-trailer or cinematic acceptance.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend",
+    "bytes": 4061978,
+    "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+    "collection": "WTSC_BATTLEFIELD_DRAWN_PAIR_v007",
+    "root_property": "motion_revision == v007_drawn_pose_corrections"
+  },
+  "reels": [
+    {
+      "path": "WTSC_v007_Neutral_5s.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 438947,
+      "sha256": "684392428fdc508cf4e16972427600d22df07e8d2c4df2c5e0bba354095b8156"
+    },
+    {
+      "path": "WTSC_v007_Integrated_5s.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 748162,
+      "sha256": "0e6cf87ee021f7f8bf1ddc393090feedc422f4d3346668b6a91e17e89383e838"
+    },
+    {
+      "path": "WTSC_v044_vs_v007_Matched_Framing.mp4",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5,
+      "bytes": 1644121,
+      "sha256": "007000bb64e9962da9d54c574ec3cf6f77ff2f2b83ad97a3569ebc0349f845c4"
+    }
+  ],
+  "guide": "IMPORT_GUIDE_v007.txt",
+  "exact_clock": "configure_v007(start=1801,duration_scale=1,root_motion=True,root=controls). All33 native Actions source1..120. Last1920,boundary1921. Former lead-in and116/95retime baked.",
+  "contract": {
+    "fps": 24,
+    "metres_per_unit": 1,
+    "plane": "XZ",
+    "anchor_xyz": [
+      107.6339569,
+      0,
+      0.7200737
+    ],
+    "pair_gap_m": 0.8,
+    "root_total_m": 0.561666667,
+    "foot_world_matrix_error_v044": 0,
+    "all120_errors_vs_v005": {
+      "foot_world_matrix": 2.384185791015625e-07,
+      "protected_sole_curve_points": 1.2605924956815164e-07,
+      "sole_extrema": 1.1920928955078125e-07,
+      "sole_min_Z": 4.470348358154297e-08,
+      "sole_slice_centroid_X": 1.1920928955078125e-07,
+      "sole_slice_centroid_Y": 4.842877387306599e-09,
+      "all_shoe_vertices_outside_correction": 1.519626234052415e-07,
+      "root_distance": 2.9802322387695312e-08
+    },
+    "production_v044_and_v006_preserved": {
+      "shots/world/WTSC_Open_Battlefield_Drawn_Trial_v044.blend": true,
+      "renders/world_v016/integration_v044/WTSC_Drawn_Open_75_80_View_v044.mp4": true,
+      "locomotion/battlefield_corrections_v006/native/WTSC_Battlefield_Drawn_Corrections_v006.blend": true,
+      "characters/Pair_Painterly_Near_Age_v015.png": true
+    }
+  },
+  "completed_and_tested": [
+    "Localized projected knee/shin drawings and original-shoe upper corrections with source sole-edge points protected",
+    "Distinct girl earlier stabilization, original-painted look toward boy, backwards offered hand and counterbalance",
+    "Boy thigh brace, deliberate post-stop preparation/forward weight shift, reach and approximately10cm supported rise",
+    "Clean empty-scene Append; all33 native Actions,27shape-key meshes,96Bezier guides and packed source paint",
+    "Double-duration native distance/head-exposure retiming and in-place controls",
+    "Actual120frame EEVEE neutral and matched production-camera renders; source v044 camera/world/route/light/FX retained"
+  ],
+  "boy_post_stop_hip_rise_m": 0.09748402237892151,
+  "hand_contact": {
+    "method": "Projected native2D fingertip touch as a light steadying cue; his feet and thigh brace carry the weight. No physics/grip constraint.",
+    "frames": [
+      101,
+      120
+    ],
+    "nearest_drawn_vertex_XZ_distance_m": [
+      0.002512571348117294,
+      0.004562402535303736
+    ],
+    "pair_gap_requirement_m": 0.8
+  },
+  "rendered_contact": {
+    "method": "Independent normalized pixel correlation of actual flat planted boot patches versus visible ground ticks, roll/airborne frames excluded.",
+    "matches": 314,
+    "max_abs_error_pixels": 0
+  },
+  "render_settings": "Production BLENDER_EEVEE/settings. Actual v007 renders960x540,referencev0441920x1080 downsampled; fixed camera/world/FX/light/route. Two threads,one background GPU job at a time,no shared UI.",
+  "artistic_review": "Shot-size and critical-crop review: projected boot/shin paths separate during76.7..77.3; girl stabilizes, turns toward boy and offers her hand; boy braces his thigh, prepares weight forward after stop, reaches and rises visibly. Original sole/shoe/art basis retained. The fast2D head exposure and stylized fingertip clasp remain limited; no cinematic acceptance.",
+  "construction_limit": "Readable local steadying/recovery can be staged in this planar construction. A polished head/torso turn requires purpose-drawn turnaround poses; a load-bearing clasp requires hand/forearm overlap drawings and stronger shoulder/torso construction. A new recovery step requires relaxing the fixed foot-path contract. Current head turn is a quick original-painted reflected profile change with a two-frame passing drawing; parent must judge it in motion.",
+  "not_completed": [
+    "Cinematic acceptance",
+    "New three-quarter turnaround or load-bearing grip rig",
+    "New recovery footstep beyond the fixed comparison contract",
+    "Run/crawl/fall/get-up and final knockout-letter/mask integration"
+  ],
+  "library": {
+    "status": "Pending; no v007 upload attempted, saved ID or bypass.",
+    "reason": "The last official helper attempt returned Library prepare_uploads is not available. Existing private project authorization remains valid."
+  },
+  "comparison_world_copy": "native/WTSC_v007_Integrated_Comparison_Copy.blend; local reproducible review-only,excluded from portableZIP",
+  "retimed_every_output_frame_head_exposure": {
+    "duration_scale": 2,
+    "evaluated_output_frames": 240,
+    "head_counts": {
+      "PERF_GIRL | original head and attached braid": 86,
+      "V007 girl passing back-view drawing": 4,
+      "V007_GIRL | original-painted look toward boy": 150
+    },
+    "bad_frames": [],
+    "pass": true
+  }
+}

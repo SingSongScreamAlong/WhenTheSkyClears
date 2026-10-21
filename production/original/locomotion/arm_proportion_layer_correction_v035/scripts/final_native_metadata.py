@@ -1,0 +1,7 @@
+import bpy,json
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];r={}
+for name,path in [('SOURCE',P/'reference/PREFERRED_v033.blend'),('ARMS',P/'native/WTSC_Arm_Proportion_Correction_v035.blend'),('ALL',P/'native/WTSC_Arm_and_Leg_Structure_v035.blend')]:
+ bpy.ops.wm.open_mainfile(filepath=str(path),load_ui=False,use_scripts=False);S=bpy.context.scene;S.frame_set(20);bpy.context.view_layer.update();o=bpy.data.objects['V007_BOY | articulated drawn hand far'];e=o.evaluated_get(bpy.context.evaluated_depsgraph_get());V=[e.matrix_world@v.co for v in e.data.vertices];r[name]={'far_hand_actual_y_range':[min(p.y for p in V),max(p.y for p in V)],'far_hand_mesh_y_range':[min(v.co.y for v in o.data.vertices),max(v.co.y for v in o.data.vertices)],'shape_y_range':{kb.name:[min(p.co.y for p in kb.data),max(p.co.y for p in kb.data)] for kb in o.data.shape_keys.key_blocks},'images':[{'name':i.name,'packed':bool(i.packed_file),'filepath':i.filepath} for i in bpy.data.images if i.type=='IMAGE']}
+path=P/'native/WTSC_Light_Structure_Review_v035.blend';bpy.ops.wm.open_mainfile(filepath=str(path),load_ui=False,use_scripts=False);S=bpy.context.scene;S.frame_start=1;S.frame_end=31;bpy.ops.wm.save_as_mainfile(filepath=str(path),compress=True);r['light_diagnostic_frame_range']=[1,31]
+(P/'evidence/FINAL_NATIVE_METADATA.json').write_text(json.dumps(r,indent=2));print('V035_FINAL_NATIVE_METADATA',json.dumps({k:{q:v for q,v in d.items() if q!='images'} if isinstance(d,dict) else d for k,d in r.items()}),flush=True)

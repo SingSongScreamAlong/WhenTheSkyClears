@@ -1,0 +1,240 @@
+{
+  "status": "Completed isolated full-color boy reveal and matched still candidate; artistic review pending. Original dark treatment and production preserved.",
+  "priority": "Explicit full-color direction; not diagnostic joint/x-ray colors",
+  "native_files": {
+    "WTSC_Boy_Full_Color_Readability_v038.blend": {
+      "file": "native\\WTSC_Boy_Full_Color_Readability_v038.blend",
+      "bytes": 2772666,
+      "sha256": "6660e9a558ad77488e6c52c321cd930a39b5c1c6c98531dafc2a5b8a30341e34"
+    },
+    "WTSC_Trouser_Root_Repair_Dark_v038.blend": {
+      "file": "native\\WTSC_Trouser_Root_Repair_Dark_v038.blend",
+      "bytes": 2658496,
+      "sha256": "116b41a93314ee9f2458176bb40e62d5bfeb317ce39e8a57e9f72dc75a5fdc4d"
+    }
+  },
+  "guide": "VIEWING_AND_COLOR_ASSET_GUIDE_v038.txt",
+  "private_board": {
+    "file": "previews\\WTSC_v038_Full_Color_Boy_Reveal_and_Poses.png",
+    "dimensions": [
+      2560,
+      6840
+    ],
+    "bytes": 5633962,
+    "sha256": "1d0bc691766fcc32c74e0b9b1bd1f98faa19b0a7687bec151062b58c053ea100",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "confirmed_status": "succeeded",
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download",
+    "local_metadata_readback_verified": true
+  },
+  "transparent_character_PNG": {
+    "file": "previews\\WTSC_Boy_Full_Color_v038_Transparent.png",
+    "mode": "RGBA",
+    "size": [
+      960,
+      1440
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_fraction": 0.8054275173611111,
+    "alpha_bbox": [
+      210,
+      111,
+      822,
+      1376
+    ],
+    "bytes": 941667,
+    "sha256": "c851d5235b3f7dafdadcd0765e15f383b406341089d5998efbb8b42b8323d4a9"
+  },
+  "hero_frame": 1,
+  "matched_key_frames": [
+    1,
+    4,
+    11,
+    20
+  ],
+  "extra_hand_hem_frame": 27,
+  "palette": {
+    "skin": {
+      "range": 0.055,
+      "stops": [
+        [
+          0,
+          "744b36"
+        ],
+        [
+          0.2,
+          "a97754"
+        ],
+        [
+          0.6,
+          "c99b73"
+        ],
+        [
+          1,
+          "dfba92"
+        ]
+      ]
+    },
+    "hair": {
+      "range": 0.09,
+      "stops": [
+        [
+          0,
+          "1a1513"
+        ],
+        [
+          0.25,
+          "473326"
+        ],
+        [
+          0.65,
+          "795b40"
+        ],
+        [
+          1,
+          "a48660"
+        ]
+      ]
+    },
+    "coat": {
+      "range": 0.065,
+      "stops": [
+        [
+          0,
+          "17292e"
+        ],
+        [
+          0.2,
+          "3f6267"
+        ],
+        [
+          0.55,
+          "6c8988"
+        ],
+        [
+          1,
+          "9ca99b"
+        ]
+      ]
+    },
+    "linen": {
+      "range": 0.055,
+      "stops": [
+        [
+          0,
+          "4d554f"
+        ],
+        [
+          0.25,
+          "8b9382"
+        ],
+        [
+          0.65,
+          "b8bba3"
+        ],
+        [
+          1,
+          "d8d3b7"
+        ]
+      ]
+    },
+    "trousers": {
+      "range": 0.085,
+      "stops": [
+        [
+          0,
+          "252d28"
+        ],
+        [
+          0.25,
+          "4d5747"
+        ],
+        [
+          0.65,
+          "777d62"
+        ],
+        [
+          1,
+          "a2a087"
+        ]
+      ]
+    },
+    "shoes": {
+      "range": 0.1,
+      "stops": [
+        [
+          0,
+          "201d1b"
+        ],
+        [
+          0.25,
+          "49372a"
+        ],
+        [
+          0.65,
+          "766049"
+        ],
+        [
+          1,
+          "a38c68"
+        ]
+      ]
+    }
+  },
+  "material_method": "Native copied color-ramp materials use original packed brush detail/UV/alpha. Skin/hands, fabric, linen, trousers and shoes have coherent natural palettes. No bitmap repaint/generation or lighting change.",
+  "head_disclosure": "Native UV mask supplies natural skin/hair colors. Original profile mesh, UV, alpha and packed image bytes stay fixed. A tiny static iris is shaded inside the unchanged original eye opening.",
+  "root_repair": {
+    "method": "Only V036_width_scale point attribute on two trouser meshes is multiplied by a rounded/tucked root factor, ending before30percent down the drawing. Original rest coordinates, pose keys, joints, centerlines and lower70percent stay unchanged.",
+    "dark_before_after_actual_stills": [
+      11,
+      20
+    ],
+    "max_centerline_change_m": 8.429369702178807e-08,
+    "lower70percent_vertex_change_m": 0.0
+  },
+  "F20_far_hand_ID_pixels": {
+    "FULL": 0,
+    "NO_NEAR_TROUSER": 390
+  },
+  "preservation": {
+    "original_actions_changed": [],
+    "original_rest_shape_UV_data_changed": [],
+    "original_paint_bytes_changed": [],
+    "errors": {
+      "root_matrix": 0.0,
+      "all_bone_world_matrices": 0.0,
+      "wrist_world_matrices": 0.0,
+      "head_hand_coat_sleeve_shoe_mesh_vertices_m": 0.0,
+      "lower70percent_trouser_vertices_m": 0.0,
+      "trouser_centerline_m": 8.429369702178807e-08,
+      "camera_world_matrices": 0.0
+    },
+    "all_bone_root_wrist_integer_frames": [
+      1,
+      94
+    ],
+    "head_original_alpha_factor_wiring_retained": true,
+    "shared_shoe_mesh_and_color_material": true,
+    "all_original_images_packed": true,
+    "all_protected_sources_unchanged": true
+  },
+  "actual_render_scope": "17 final images: 14 principal native stills, 1 final native transparent hero and 2 F20 opaque masks. One earlier opaque RGBA attempt was replaced after alpha validation. No motion/trailer/world render.",
+  "remaining": [
+    "Five inherited static coat samples only; cloth inbetweens and moving fabric/color registration are not authored",
+    "Face/eye/profile planes and arm/hand contours remain simple/stylized; clearer color does not finish the model",
+    "Coat still fitted/flat in profile, conspicuous brush pattern, and passing feet still overlap",
+    "Purposeful paired acting, fatigue, load-bearing support/clasp and recovery-to-walking remain unfinished"
+  ],
+  "next": "Review the full-color character and repaired root; then one-cycle-plus-closing-bookend cloth test for compression/hem/arm passage/seam registration if coherent. No permanent silhouette replacement assumed.",
+  "integration": {
+    "fps": 30,
+    "period_frames": 31,
+    "unchanged_D_F": "0.9524437384576381*(F-1)/31 metres +X",
+    "production24fps_map": "F=1+(G-G0)*30/24; unified character/cloth/shoes/world clock",
+    "readiness": "Static color/model review; no production playback/integration approval."
+  },
+  "blockers": [],
+  "render_status": "All character Blender jobs exited."
+}

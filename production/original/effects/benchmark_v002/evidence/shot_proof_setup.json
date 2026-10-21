@@ -1,0 +1,35 @@
+{
+  "proof_scene": "FX_SHOT_PROOF_v002 | held real shot + native eruption",
+  "native_file": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v002\\native\\WTSC_FX_Shot_Proof_v002.blend",
+  "base_plate_pixels": [
+    3840,
+    2160
+  ],
+  "base_plate_source_frame": 1825,
+  "camera_and_children": "Held for FX evaluation; this is not a moving trailer/locomotion test. Foreground geometry is evaluated from the actual scene at the same frame and rendered as alpha-preserving holdouts.",
+  "native_occluders": [
+    "HOLDOUT | v015 | Near-black painted fill | GP vector clipped",
+    "HOLDOUT | v014 | Ground contact | Held shoe 1",
+    "HOLDOUT | v014 | Ground contact | Held shoe 2",
+    "HOLDOUT | v014 | Ground contact | Held shoe 3",
+    "HOLDOUT | v014 | Ground contact | Held shoe 4",
+    "HOLDOUT | v020 | Walking path | continuous blended paint",
+    "HOLDOUT | v020 | Foreground bank | continuous blended paint",
+    "HOLDOUT | v016 | Rooted grass 004",
+    "HOLDOUT | v016 | Rooted grass 017",
+    "HOLDOUT | v016 | Rooted grass 018",
+    "HOLDOUT | v016 | Rooted grass 032",
+    "HOLDOUT | v016 | Rooted grass 048",
+    "HOLDOUT | v016 | Rooted grass 050",
+    "HOLDOUT | v016 | Rooted grass 056",
+    "HOLDOUT | v016 | Rooted grass 074"
+  ],
+  "native_light_receivers": [
+    "LIGHT RESPONSE | v015 | Near-black painted fill | GP vector clipped",
+    "LIGHT RESPONSE | v016 | Battlefield | broken village line",
+    "LIGHT RESPONSE | v020 | Walking path | continuous blended paint"
+  ],
+  "medium": "Original detailed paint with native root-pinned flow, dust, solid debris and local relighting. This is2.5D, not a volumetric fluid simulation.",
+  "first4K_frame": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v002\\previews\\WTSC_Explosion_Benchmark_4K_v002.png",
+  "resource": "One sequential two-thread CPU process; no GPU job or shared UI."
+}

@@ -1,0 +1,140 @@
+WHEN THE SKY CLEARS / v010 STUMBLE POLISH AND SEPARATE CONTINUATION
+2026-10-17. Isolated motion study; no production/full-trailer integration.
+Retains the independently reviewed v009 direction. Not final animation approval.
+
+DELIVERABLES
+native/WTSC_Stumble_Polish_Continuation_v010.blend: editable packed motion asset.
+Collection WTSC_STUMBLE_POLISH_CONTINUATION_v010 has no camera/light/stage.
+Root property motion_revision == 'v010_polish_continuation'.
+Native opens on a neutral moving-ground review stage.
+native/WTSC_v010_Matched_Review_Copy.blend: local retained-world review only;
+excluded from portable package. native/WTSC_v010_Extension_Fresh_Append_Test.blend
+is a technical empty-scene Append proof, not a staged production scene.
+Actual matched previews: original5s polish, separate2s extension, combined7s
+seam review; a v009-v010 first5s comparison is also supplied. Reviews are silent
+for motion assessment. Full-trailer music/title/duration remain unchanged.
+
+ORIGINAL FIVE-SECOND CONTRACT - PRESERVED
+24fps,source1..120,global1801..1920,75.000..79.958333s; boundary1921=80.000s.
+Same v009 staggered restart, exact first120 travel CSV and native distance.
+Total travel at1920=0.8616666674613953m in authoritative CSV.
+Blender float32 evaluates that sample as0.8616666793823242m, same as v009.
+All first120 evaluated boot world vertices agree with v009 within1.28e-7m.
+Do not substitute the old v046/v007 route or a constant speed through these5s.
+Use evidence/travel_original_5s_v010.csv; this duplicates v009 distance samples.
+Girl's first restart heel arrival remains1902; boy's remains1916.
+The light steadying gesture remains light; neither child hangs from the touch.
+
+WHAT THE POLISH CHANGES
+Source24..81: small distinct hip compression/torso lag while existing boots stay.
+Girl keeps one forward balance gesture while the free arm lowers earlier;
+her later offer travels around her silhouette instead of folding across waist.
+Boy keeps the original near-hand thigh brace while the far arm counterbalances
+lower, removing the apparent skirt-reaching gesture. His early hands have
+less wrist reversal; sleeves/forearms use softer continuous elbow tangents.
+The early stumble leg drawings keep their original folded-leg solution, with
+small distributed hip offsets fading to zero at the boot collars.
+Wrist relaxation preserves the94..103 light-touch orientation. The girl keeps
+the coherent original right profile, hair and attached braid for all168frames.
+There is no backward head turn, passing disc, reflected-profile or v008 reuse.
+
+SEPARATE TWO-SECOND CONTINUATION - NOT AN EXTENDED TRAILER EDIT
+The actual new extension is source121..168 =global1921..1968,80.000..81.958333s.
+Boundary1969=82.000s. Source120/global1920 is an overlap/setup sample, not an
+extra displayed extension frame. Its end pose carries straight into121.
+Use evidence/travel_extension_80_82s_v010.csv, which includes overlap120.
+Let f=source_frame. For f>=120:
+ D(f)=0.8616666674613953 +0.012*(f-120) metres.
+Thus1921/80s=.8736666674613953m;1968/81.958333s=1.4376666674613954m.
+Extension increment over the overlap is0.576m; speed stays0.288m/s at24fps.
+The boundary1969 value would be1.4496666674613954m at unchanged speed;
+that boundary sample is explanatory, not an authored169th native drawing.
+Native distance and camera use linear integer samples, as in v009.
+
+Continuation contacts (global; local in parentheses):
+Girl far heel1928(128),flat1931(131).
+Girl near swing1934..1952(134..152),heel1952,flat1955.
+Girl far begins next swing1958(158) and is airborne at1968.
+Boy far swing1924..1942(124..142),heel1942,flat1945.
+Boy near swing1948..1966(148..166),heel1966,still flattening at1968.
+These are independently staggered steps, not mirrored copies.
+The continuation includes support shifts and small body/head lag, with low arm
+swing from the actual moving end pose. It is deliberately a tired cautious gait.
+At1968 both route and acting are still moving. Native HOLD is an asset default,
+not a direction to freeze the film. Any later shot must continue the actual
+end pose/support state and0.288m/s route; this finite study is not a walk loop.
+
+APPEND AND CONFIGURE
+Verified executable/version retained from v009 and confirmed by actual v010 runs:
+WTSC_LOCAL_USER\AppData\Local\Programs\Blender\blender-5.2.2-windows-x64\blender.exe
+Blender5.2.2LTS,buildd13f752e3b9c. Metres,scale1,XZart,+Xtravel,+Zup.
+Same anchor=(107.6339569,0,0.7200737),identityrotation,scale1,pairgap0.8m.
+Original rest heights boy1.45m,girl1.369917744m,body/head rest geometry and UVs.
+Execute embedded Text configure_v010.py (or scripts/configure_v010.py).
+Pass the actual appended controls root if names have suffixes.
+
+Whole study (source1..168,global1801..1968):
+ configure_v010(start=1801,root_motion=True,root=controls,first=1,last=168)
+Only original5s polish (source1..120,global1801..1920):
+ configure_v010(start=1801,root_motion=True,root=controls,first=1,last=120)
+Only extension with overlap (source120..168,global1920..1968):
+ configure_v010(start=1920,root_motion=True,root=controls,first=120,last=168)
+Render/display only1921..1968 for the2s extension; use1920 as the matching pose.
+That extension-only setup was tested against the whole-study state with error0.
+All shape-key,body,armature and distance NLA clocks are configured together.
+Do not add any old lead-in/retime. duration_scale scales the complete selected
+range; do not stretch only armatures. Default duration_scale=1 is the contract.
+
+WORLD / CAMERA / CONTACTS
+Traveling use:root_motion=True; world/ground stay in world coordinates.
+The first5s camera is exactly the retained v009 evaluated camera sequence.
+From1921 onward,camera.X=camera_at1920.X+.012*(global_frame-1920), with other
+camera channels/lens/ortho scale unchanged. Do not leave the old route on HOLD
+after80s, or add a second route on top of this distance curve.
+In-place use:root_motion=False;grounded scenery follows minus absoluteD(f).
+For extension-only use do not reset D to zero. Keep the same anchor and absolute
+distance at overlap1920 so world placements, ground-fixed FX and shadows match.
+If choosing a new shot origin, translate root/world/camera consistently yourself;
+the provided setup preserves the existing world coordinates directly.
+Hide the entire old pair collection,including exposure variants and old caps.
+The supplied matched copy reuses retained v009 material slots/source light
+response and re-bakes the four soft foot-contact marks from actual v010 soles
+through1968. Rebind production external marks similarly; do not leave old keys.
+Exact contact samples: evidence/matched_contact_samples.json.
+Existing source FX clock simply continues for the review; no new FX/explosion
+asset, heavy render, title mask, full-trailer duration or soundtrack edit occurs.
+
+EDITABILITY / VALIDATION
+Armatures, native Actions/NLA and27shape-key meshes; drawn limbs/hands/boots
+have POSE_001..POSE_168. Original packed painting included. No new bitmap/design.
+Edit neighboring source drawings together; bone-only edits do not regenerate
+drawn arm/leg ribbons. scripts/build_polish.py is the editable authoring recipe.
+It reads retained v009, reuses its native geometry helpers and writes v010 only.
+Rebuilding needs the preserved project tree; clean Append does not.
+Inherited stale v007 Bezier guides are removed from v010 copy; editable shape
+keys are the authoritative rendered drawings.
+Native cold reopen/fresh empty-scene Append pass. Original5s CSV/native distance
+error=0; first120 boot-world error1.2732e-7m. Extension flat plants drift less
+than2.4e-7m. Retained source sole offset reaches-0.0005101m at the floor.
+There is no unexplained pose spike across120->121 in sampled visible-vertex
+motion: the largest movement is the girl's existing swing boot and decreases
+smoothly across the seam. See native_validation.json and seam_vertex_motion.json.
+Body/head rest mesh,skeleton and UV preservation error=0; all168 profile
+exposures verified. Technical passes do not establish artistic approval.
+
+CANDID ARTISTIC ASSESSMENT
+At shot size, the girl's arm separation and release are clearer, the boy's
+skirt-reaching implication is reduced, and extreme wrist reversals soften.
+His thigh brace and the reviewed staggered restart remain. The continuation
+keeps the landscape moving and takes distinct steps through80s without a hold.
+This is a narrow polish, not a rebuilt stumble or finished naturalistic gait.
+The inherited large torso lean/foot catch timing still feels constructed, and
+planar sleeve/cuff and wrist silhouettes remain stylized. The low continuation
+is deliberately cautious; there is little torso twist and limited braid follow.
+Touch stays a light cue, not a load-bearing clasp. Any later transition after82s
+still needs authored motion; no final full-trailer acceptance is claimed.
+
+SOURCE PRESERVATION
+Protected v009 native/review/movie,v046native,v007native and v045cbase hashes
+match. All authoring and deliverables are in this separate v010 folder. No
+installs,purchases,external sharing or other specialist/production writes.

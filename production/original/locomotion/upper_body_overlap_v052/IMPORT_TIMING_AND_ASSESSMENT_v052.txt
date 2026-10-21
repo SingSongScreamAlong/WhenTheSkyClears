@@ -1,0 +1,55 @@
+WHEN THE SKY CLEARS | v052 SUPPORT LINKED UPPER BODY | ISOLATED CANDIDATE
+
+SOURCE AND SCOPE
+Frozen source: v051 controlled fluid coat. The v052 native carries its
+painted age-ten proportions, face/hand changes, coat shape and damped hem
+response. Production and the v051 native are untouched. This is an ordinary
+walking-loop performance test, not the 75–80 second recovery scene.
+
+EDITABLE BLENDER ASSET
+native/WTSC_Support_Linked_Upper_Body_v052.blend; packed original paintings.
+Blender 5.2.2 LTS. Scene: V052 | SUPPORT LINKED UPPER BODY | v051 contacts.
+Append collection: V052 | AGE10 PAIR | support linked upper body.
+Boy and girl rig Actions: V052 BOY/GIRL | support linked upper body | 32frames.
+The root remains V048 | shared travel | steady .73125mps. The v051 boy coat
+shape keys and their separate hem response Action remain editable and exact.
+Both sleeve drawing caches were refit to their changed arm poses while
+retaining UVs, materials, painting, proportions and the v051 cap treatment.
+
+PERFORMANCE CHANGE
+The original normal opposite arm/leg swing is retained. No random phase noise
+or stumble is added. The original pelvis and foot trajectories remain fixed.
+Chest pitch counters measured pelvis vertical velocity by at most .90deg for
+the boy and .65deg for the girl, with a smaller heel-loading settle. This
+creates chest motion relative to the existing support-driven pelvis pose.
+Elbows accept load with different timing and amplitude for near/far arms;
+boy peaks are about +2.4/+1.65deg, girl +1.25/+1.8deg. Wrists follow 55percent
+of that added elbow response after a 1.4 source-frame delay. These deterministic
+32-frame curves repeat without noise. Exact numbers and quarter-frame samples
+are in evidence/UPPER_BODY_BUILD.json.
+
+IMPORT / TRAVEL CONTRACT
+30sourcefps, 32frame period, .78m stride, .73125m/s. Shared travel is unchanged:
+D(F)=.78*(F-1)/32 metres. The girl's original two-source-frame lead remains
+baked. Pair-local root offsets remain -.4/+ .4m; outer sole baselineZ=0.
+At24productionfps: F=1+(G-G0)*30/24; the cycle is25.6production frames.
+Retime both rigs, root/camera, sleeve/leg drawing caches and the v051 coat
+shape-key Action together. A travelling pair retains root+D. For a centered
+pair, disable only rootX and pass the world by-D with stationary camera.
+Do not apply root and world travel simultaneously. TRAVEL_CURVE_v052.csv is a
+copy of the unchanged eighth-frame v051 curve. No restart step or supported
+clasp is authored here.
+
+VERIFICATION / ARTISTIC LIMIT
+Cold reopen compared129quarter-frame samples: all boot vertices and pelvis
+endpoints match v051 exactly, 0.0m maximum difference. Root/camera/leg/pelvis
+F-curves, all rest bones, non-sleeve geometry, original image payloads,
+UVs/materials/weights and v051 coat shape keys match. The edited chest pitch
+stays within roughly +/-0.91deg boy and +/-0.65deg girl from source.
+Matched stills and a four-cycle actual-frame A/B at30fps were used for visual
+review. The arm and chest adjustments remain subtle at full shot size. They
+reduce lockstep elbow timing but are not an acting overhaul. Static facial
+expression, planar silhouettes, girl dress/braid response and the original
+recovery-to-walking/clasp transition remain. Passing technical checks does
+not mean convincing or final animation. Continuous player playback was not
+observed by this agent; decoded frames were inspected.

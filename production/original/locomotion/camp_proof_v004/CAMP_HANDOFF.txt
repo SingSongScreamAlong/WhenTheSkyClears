@@ -1,0 +1,49 @@
+PARENT HANDOFF / CAMP64-69s / ONE MOTION / v004
+
+NATIVE: native/WTSC_Camp_Weary_Stumble_5s_v004.blend
+APPEND: Collection > WTSC_CAMP_WEARY_PAIR_v004
+Two original painted children, one cleaned weary stumble/recovery,3 native
+Actions only: boy, girl, root-distance.120frames /24fps /5.000seconds.
+Source v003 and all production files remain unchanged. No integration done.
+
+FAST CONFIGURE IN THE CAMP PROOF COPY
+Run the embedded Text configure_camp.py, then:
+  configure_camp(start=1537, time_scale=1.25, root_motion=True)
+This maps to64.000-69.000s: frames1537-1656, boundary1657.
+Local standalone proof uses start1 and root_motion=False with a moving floor.
+Place CAMP_WEARY | CONTROLS at the desired starting floor/depth in the copy.
+XZ staging, metres, +X forward, +Z up, camera at negativeY. Source heights:
+boy1.45m, girl1.3699m; hip roots +/-0.40m, average remains centred.
+Use uniform scale only. Original paint is packed; no handler or add-on needed.
+
+ROUTE / NO-SKATING REQUIREMENT
+This is a variable-speed action, not a constant-speed loop. It travels exactly
+0.561667m locally over the5s and then stops. Native PERF | DISTANCE_CURVE drives
+TRAVEL when root_motion=True. Let the proof camera follow TRAVEL/mean pair root,
+or bake the same distance curve into your existing route. Hide the old held
+pair only in the proof copy to avoid doubled art. Do not add both routes.
+If root_motion=False, your external route must match that distance curve.
+Do not run the existing fast background/pair route unchanged behind these feet.
+At scaleS the total is0.561667*S metres; retiming scales time, not distance.
+
+LIGHT / FX INTERFACE
+Child paint currently uses emission to preserve the original charcoal values.
+Physical fire lights alone will not relight those pixels. Add a controlled
+material wash/light response in the production proof copy if needed. This
+motion asset does not modify the world's lighting, FX or compositing.
+
+ACTUAL VISUAL REVIEW
+The girl stays connected through the waist during the deep lean. Braid root
+stays attached and the tip has restrained gravity/lag. Rigid source shoes and
+traced limb fills remove the earlier sole/lower-leg breakup. Source face/body
+paint and near-age proportions are retained. The lurch, rescue step and weary
+settle read in the rendered phases. Foot-versus-visible-ground checks accompany
+the reel, and native root/retiming tests use the exact64-69s frame range.
+It still reads as painted cutout animation: cuffs/hand contours and some knee
+arcs need drawn correction poses for a cinematic finish. The pair shares the
+same event with a2-source-frame reaction offset; no helping interaction or new
+facial acting is provided. Do not infer cinematic acceptance from contact tests.
+
+PREVIEW RESOURCE LIMIT
+CPU Cycles only,2threads, one Blender process,960x540/24fps. No shared UI/GPU,
+main production writes, full-length render or catalogue expansion.

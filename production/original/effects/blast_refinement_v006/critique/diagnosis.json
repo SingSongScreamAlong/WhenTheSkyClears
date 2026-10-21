@@ -1,0 +1,35 @@
+{
+  "status": "v006 NOT accepted. Diagnosis only; no new render cycle, variants or native scene changes.",
+  "inspection": {
+    "full_shot_original_1920x1080": [1828,1848,1870],
+    "dense_onset_every_frame": [1823,1840],
+    "expansion_and_debris_every_two_frames": [1840,1870],
+    "late_single_MID_isolation": "Existing960x540 transparent sequence frames1,5,9,13,17,21,25,29,37,49,61,73,85,97,109,120; no later blast mistaken for primary.",
+    "new_Blender_renders": 0,
+    "source_mutations": 0
+  },
+  "three_priority_defects": [
+    {
+      "defect": "Growth of a finished smoke image rather than changing blast drawings.",
+      "visible_evidence": "1825-1829 reveal a tiny flame column and already detailed curled cap growing together. By1840 the large arch/pyramidal contour is established;1840-1870 retains most of that silhouette and its hooked interior curls. Deceleration is present, but resolves into a held-looking shape rather than a convincing change of force and material.",
+      "new_drawings": "Yes, for attack, breakup and internal rolling. Timing/scale adjustments can improve pacing but cannot supply the missing structural poses."
+    },
+    {
+      "defect": "Smoke texture and value hierarchy sit apart from the scenery.",
+      "visible_evidence": "At full shot1848/1870 the blast has numerous similarly crisp, dark, rope-like rimmed curls while the surrounding distant ruins are soft, broad and low contrast. Recurrent curl shapes compete with the broad silhouette and make the effect read as a dense cutout.",
+      "new_drawings": "Yes for simpler broad wash masses, different curl silhouettes and selective edge detail. Atmospheric value/color/softness matching also needs material/compositing adjustment; blur alone will not fix repeated structure."
+    },
+    {
+      "defect": "Weak ground consequence and light/contact connection.",
+      "visible_evidence": "The smoke forms a conspicuous hollow lower arch. In the isolated existing sequence the low soil/dust sheet becomes a narrow suspended-looking strip and largely changes opacity rather than reading as rolling and settling dust. Rising then falling dark chips are visible in1840-1858, but landings disappear behind the foreground, so their impact is hard to read in the actual shot. At1825 a broad background warm response is visible while the source is still only a small glint; the small bloom does not make that source/light connection read strongly.",
+      "new_drawings": "New rupture and settling-dust shapes are needed. Debris silhouettes, landing placement and receiver/bloom timing can be corrected natively without new drawings for every chip."
+    }
+  ],
+  "proposed_single_blast_plan": [
+    "Retain24fps, one MID blast, same full-shot camera and anchored ground point; no variants while judging the replacement.",
+    "Author a few distinct silhouettes: compact1-2frame flash/soil rupture, uneven outward/upward expansion poses through about12frames, then changing two-or-three-lobe rolls and tearing residual smoke. These are art timing targets, not simulation requirements.",
+    "Use broad charcoal/wash values with selective fine detail, an asymmetric contour and an unbroken visual connection to the ground. Avoid scaling a fully formed ornamental cloud from zero.",
+    "Give ground dust its own drawn lateral spread and settling poses, expose a small number of visible chip landings and a fixed scar, and sync the local light peak to the visible flash.",
+    "Review this one blast at full shot size and consecutive frames before any additional variants or expensive rendering. Await the user's clarification before authoring."
+  ]
+}

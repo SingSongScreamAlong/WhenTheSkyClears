@@ -1,0 +1,26 @@
+{
+  "mode": "motion",
+  "frames": [],
+  "wall_seconds": 50.6986938000191,
+  "pixels": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "range": [
+    0,
+    96
+  ],
+  "renderer": "Eevee32samples, volume96steps/32shadowsteps,4pixel tiles, custom depth18-34metres",
+  "cpu_threads": 2,
+  "requested_range": [
+    -23,
+    96
+  ],
+  "actual_main_pass_frames": 97,
+  "additional_manual_preroll_frames": 23,
+  "additional_manual_preroll_seconds": 10.747246099985205,
+  "total_final_frames": 120,
+  "total_render_calls_seconds": 61.445939900004305,
+  "note": "Initial animation start clamped to0. Missing23negative pre-roll frames were subsequently rendered explicitly; all120finalframes were validated."
+}

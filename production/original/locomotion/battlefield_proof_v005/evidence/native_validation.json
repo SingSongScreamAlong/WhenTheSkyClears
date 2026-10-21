@@ -1,0 +1,103 @@
+{
+  "fps": 24,
+  "frames": 120,
+  "seconds": 5.0,
+  "source_clip_frames": 96,
+  "time_scale": 1.2210526315789474,
+  "lead_in_frames": 3,
+  "action_start_global_frame": 1804,
+  "tested_global_range": [
+    1801,
+    1920
+  ],
+  "boundary_frame": 1921,
+  "native_actions": [
+    "PERF_BOY__WEARY_STUMBLE_RECOVER",
+    "PERF_GIRL__WEARY_STUMBLE_RECOVER",
+    "PERF_ROOT__WEARY_STUMBLE_RECOVER"
+  ],
+  "root_distance_error_m": 6.089265325304183e-08,
+  "max_planted_pivot_dx_m": 5.2869319915771484e-05,
+  "bone_scale_range": [
+    0.9999993443489075,
+    1.0000005960464478
+  ],
+  "total_distance_m": 0.5616666666666666,
+  "source_library": "WTSC_LOCAL_WORKSPACE\\locomotion\\performance_v003\\native\\WTSC_Performance_Library_v003.blend",
+  "source_library_sha256": "fcf081b7a6fd2d323495b8e7016a5b9934efbadbc212b6af9ba9413a8bc4d82a",
+  "source_library_preserved": true,
+  "native_sha256": "1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4",
+  "fresh_append": {
+    "actions": 3,
+    "packed_images": [
+      "Pair_Painterly_Near_Age_v015.png"
+    ],
+    "config": {
+      "start": 1801,
+      "action_start": 1804,
+      "last_preview_frame": 1920,
+      "boundary_frame": 1921,
+      "time_scale": 1.2210526315789474,
+      "root_motion": true,
+      "total_local_distance_m": 0.5616666667
+    },
+    "ranges": [
+      {
+        "object": "LOCO_BOY | RIG",
+        "track": "WEARY_STUMBLE_RECOVER",
+        "start": 1804.0,
+        "end": 1920.0,
+        "scale": 1.221052646636963,
+        "extrapolation": "HOLD"
+      },
+      {
+        "object": "LOCO_GIRL | RIG",
+        "track": "WEARY_STUMBLE_RECOVER",
+        "start": 1804.0,
+        "end": 1920.0,
+        "scale": 1.221052646636963,
+        "extrapolation": "HOLD"
+      },
+      {
+        "object": "PERF | DISTANCE_CURVE",
+        "track": "WEARY_STUMBLE_RECOVER",
+        "start": 1804.0,
+        "end": 1920.0,
+        "scale": 1.221052646636963,
+        "extrapolation": "HOLD"
+      }
+    ],
+    "travel_samples": [
+      {
+        "frame": 1801,
+        "time_s": 75.0,
+        "distance_m": 0.0
+      },
+      {
+        "frame": 1804,
+        "time_s": 75.125,
+        "distance_m": 0.0
+      },
+      {
+        "frame": 1825,
+        "time_s": 76.0,
+        "distance_m": 0.20205102860927582
+      },
+      {
+        "frame": 1844,
+        "time_s": 76.79166666666667,
+        "distance_m": 0.44525861740112305
+      },
+      {
+        "frame": 1881,
+        "time_s": 78.33333333333333,
+        "distance_m": 0.5616666674613953
+      },
+      {
+        "frame": 1920,
+        "time_s": 79.95833333333333,
+        "distance_m": 0.5616666674613953
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "verdict": "FAIL the convincing-movement/repaint gate; useful partial mechanical progress. Do not transfer this foundation into painted production yet.",
+  "review_method": "Both144frame movies fully decoded and hashes checked. All144 close frames examined sequentially, actual shot-size pose sheet and native shot-size frames24,44,65,82 examined. No continuous/full-speed playback supported; no UI or Edge interaction. Natural pacing judgment remains provisional from spacing/timing and frame progression.",
+  "component_assessment": {
+    "catch_and_compression": "Partial pass: front heel40 precedes visible knee/hip compression through44; more causal than v010. Boy pelvis drops from0.57m to0.47m over those4frames.",
+    "recovery_over_support": "Partial pass:44-65 body advances while rising over the planted front foot; approximate mass proxy moves through that support region. This is plausible authored support, not calibrated CoM or dynamics validation.",
+    "restart": "Readable separate restart contacts boy78 and girl82, no final held body. Still upright/pendular and insufficiently natural to approve.",
+    "sliding": "No obvious large flat-stance skate in reviewed frames. Native report's flat sole drift3.864e-7m is consistent with locked support. Toe/heel rolls are not flat plants and must not be mislabeled sliding.",
+    "rigid_hinge": "Less severe than inherited v010: spine/head have a separate response. At shot size, upper body still reads as a largely upright stack during later walk, with legs doing most work.",
+    "girl_braking_wait": "Smaller compression and later wait are visible, but her second landing41 and compression44 nearly coincide with boy40/44, so event phase still reads too paired despite independent root curves."
+  },
+  "prioritized_corrections": [
+    {
+      "priority": 1,
+      "frames": [23,40],
+      "seconds": [0.917,1.625],
+      "issue": "Scuff-to-catch cause is too weak and too staged. Toe contact24 is barely distinguishable from a normal foot roll at shot size. Boy dips toward32, rises again toward40, then takes the separate deep landing dip44; this double-bob softens the urgency.",
+      "correction": "Make the swing-toe interruption and continuing forward momentum unmistakable without labels, tighten the reacting catch timing, and remove the decorative pre-catch rise. Preserve heel arrival followed by load compression."
+    },
+    {
+      "priority": 2,
+      "frames": [40,66],
+      "seconds": [1.625,2.708],
+      "issue": "Girl still shares boy's main landing/compression beat40-44; the later wait reads as a near-static upright pose while boy slowly rises.",
+      "correction": "Give her one clearly earlier controlled brake/settle and a held intention to wait while the boy catches/reloads, rather than a smaller near-synchronous second catch. Strengthen shoulder/head counter-response and support shift without a new hand clasp."
+    },
+    {
+      "priority": 3,
+      "frames": [66,144],
+      "seconds": [2.708,5.958],
+      "issue": "Restart/walk is less crouched, but the upright trunk and regular pendular limbs still read mechanically. Small proxy-foot/ankle separation also weakens visible contact, so plate lock alone does not sell load.",
+      "correction": "Refine push-off, pelvis rise/fall and head/chest overlap together, then rejudge at speed and shot size. Keep independent contact clocks; do not try to solve weight by repainting."
+    }
+  ],
+  "retained_gain": "Keep the independent root/foot foundation and the landing->compression->front-support recovery ordering; revise timing/acting within this unpainted test.",
+  "source_or_production_changes": false,
+  "new_native_render_or_integration": false,
+  "full_trailer_preserved": true
+}

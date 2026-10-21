@@ -1,0 +1,2201 @@
+{
+  "camera": {
+    "location": [
+      109.32307434082031,
+      -16.0,
+      3.0
+    ],
+    "rotation": [
+      1.5707963705062866,
+      0.0,
+      0.0
+    ],
+    "lens": 100.0,
+    "shifts": [
+      -0.30000022053718567,
+      -0.26705533266067505
+    ]
+  },
+  "objects": [
+    {
+      "name": "v015 | Painted village",
+      "type": "MESH",
+      "location": [
+        2.0160000324249268,
+        12.0,
+        3.0
+      ],
+      "dimensions": [
+        20.187885284423828,
+        11.34847640991211,
+        0.0
+      ],
+      "materials": [
+        [
+          "v012 | Painted material | Painted village",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ],
+            [
+              "Bakery newly painted detail",
+              "TEX_IMAGE"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | CHILDREN | held painterly near-age pair",
+      "type": "GREASEPENCIL",
+      "location": [
+        107.63395690917969,
+        0.0,
+        0.7713720202445984
+      ],
+      "dimensions": [
+        1.3981798887252808,
+        0.0009999871253967285,
+        1.4509999752044678
+      ],
+      "materials": [
+        [
+          "v012 | Pure black ink | 0",
+          []
+        ],
+        [
+          "v012 | Pure black ink | 1",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v015 | Near-black painted fill | GP vector clipped",
+      "type": "MESH",
+      "location": [
+        107.63395690917969,
+        0.0,
+        0.7713720202445984
+      ],
+      "dimensions": [
+        1.3971798419952393,
+        0.0,
+        1.4500000476837158
+      ],
+      "materials": [
+        [
+          "v015 | Subtle charcoal painting and soft white eyes",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Village continues | abandoned",
+      "type": "MESH",
+      "location": [
+        22.5,
+        12.0600004196167,
+        3.6534616947174072
+      ],
+      "dimensions": [
+        23.03128433227539,
+        0.0,
+        12.964967727661133
+      ],
+      "materials": [
+        [
+          "v016 | Village continues | abandoned paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Woods | far silver canopy",
+      "type": "MESH",
+      "location": [
+        43.0,
+        18.0,
+        3.1099863052368164
+      ],
+      "dimensions": [
+        24.34151268005371,
+        0.0,
+        13.69437026977539
+      ],
+      "materials": [
+        [
+          "v016 | Woods | far silver canopy paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Woods | near rooted oaks",
+      "type": "MESH",
+      "location": [
+        43.0,
+        6.0,
+        4.440616607666016
+      ],
+      "dimensions": [
+        23.01986312866211,
+        0.0,
+        12.950929641723633
+      ],
+      "materials": [
+        [
+          "v016 | Woods | near rooted oaks paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | School | broken windows and plaster",
+      "type": "MESH",
+      "location": [
+        65.0,
+        10.0,
+        3.2922236919403076
+      ],
+      "dimensions": [
+        22.0,
+        0.0,
+        12.381579399108887
+      ],
+      "materials": [
+        [
+          "v016 | School | broken windows and plaster paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Camp | pinned canvas and ropes",
+      "type": "MESH",
+      "location": [
+        87.0,
+        10.0600004196167,
+        3.4948313236236572
+      ],
+      "dimensions": [
+        24.000137329101562,
+        0.0,
+        13.507177352905273
+      ],
+      "materials": [
+        [
+          "v016 | Camp | pinned canvas and ropes paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Battlefield | broken village line",
+      "type": "MESH",
+      "location": [
+        115.0,
+        12.0,
+        6.701237678527832
+      ],
+      "dimensions": [
+        35.0,
+        0.0,
+        19.697965621948242
+      ],
+      "materials": [
+        [
+          "v016 | Battlefield | broken village line paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Ruins | distant ash street",
+      "type": "MESH",
+      "location": [
+        156.0,
+        28.0,
+        8.39413070678711
+      ],
+      "dimensions": [
+        53.0,
+        0.0,
+        29.828350067138672
+      ],
+      "materials": [
+        [
+          "v016 | Ruins | distant ash street paint",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v020 | Walking path | continuous blended paint",
+      "type": "MESH",
+      "location": [
+        0.0,
+        2.059999942779541,
+        0.0
+      ],
+      "dimensions": [
+        244.0,
+        0.0,
+        30.958799362182617
+      ],
+      "materials": [
+        [
+          "v020 | Path continuous painted earth blend",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Image Texture.001",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Camp smoke | wisp 0",
+      "type": "MESH",
+      "location": [
+        85.0,
+        10.055000305175781,
+        0.1590193212032318
+      ],
+      "dimensions": [
+        2.4043097496032715,
+        0.0,
+        5.628905773162842
+      ],
+      "materials": [
+        [
+          "v016 | Camp smoke wisp 0",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Camp smoke | wisp 1",
+      "type": "MESH",
+      "location": [
+        85.0,
+        10.055000305175781,
+        0.1590193212032318
+      ],
+      "dimensions": [
+        2.8313305377960205,
+        0.0,
+        6.260836124420166
+      ],
+      "materials": [
+        [
+          "v016 | Camp smoke wisp 1",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Camp smoke | wisp 2",
+      "type": "MESH",
+      "location": [
+        85.0,
+        10.055000305175781,
+        0.1590193212032318
+      ],
+      "dimensions": [
+        2.117830276489258,
+        0.0,
+        4.938018321990967
+      ],
+      "materials": [
+        [
+          "v016 | Camp smoke wisp 2",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Battlefield smoke | wisp 0",
+      "type": "MESH",
+      "location": [
+        112.0,
+        14.0,
+        0.2690031826496124
+      ],
+      "dimensions": [
+        4.867114067077637,
+        0.0,
+        9.702449798583984
+      ],
+      "materials": [
+        [
+          "v016 | Battlefield smoke wisp 0",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Battlefield smoke | wisp 1",
+      "type": "MESH",
+      "location": [
+        112.0,
+        14.0,
+        0.2690031826496124
+      ],
+      "dimensions": [
+        3.5605883598327637,
+        0.0,
+        7.519928455352783
+      ],
+      "materials": [
+        [
+          "v016 | Battlefield smoke wisp 1",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Battlefield smoke | wisp 2",
+      "type": "MESH",
+      "location": [
+        112.0,
+        14.0,
+        0.2690031826496124
+      ],
+      "dimensions": [
+        4.171149730682373,
+        0.0,
+        8.539093017578125
+      ],
+      "materials": [
+        [
+          "v016 | Battlefield smoke wisp 2",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Far battlefield smoke | wisp 0",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.0,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        6.792275428771973,
+        0.0,
+        12.425261497497559
+      ],
+      "materials": [
+        [
+          "v016 | Far battlefield smoke wisp 0",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Far battlefield smoke | wisp 1",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.0,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        5.143424034118652,
+        0.0,
+        9.785689353942871
+      ],
+      "materials": [
+        [
+          "v016 | Far battlefield smoke wisp 1",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Far battlefield smoke | wisp 2",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.0,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        5.80452823638916,
+        0.0,
+        10.982421875
+      ],
+      "materials": [
+        [
+          "v016 | Far battlefield smoke wisp 2",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v016 | Warm painted light pool 0",
+      "type": "MESH",
+      "location": [
+        1.5,
+        1.9199999570846558,
+        0.4300000071525574
+      ],
+      "dimensions": [
+        2.6041059494018555,
+        0.0,
+        0.5
+      ],
+      "materials": [
+        [
+          "v016 | Bakery warm pool 0",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | School debris | painted flame 0",
+      "type": "MESH",
+      "location": [
+        61.5,
+        9.920000076293945,
+        -0.6934806704521179
+      ],
+      "dimensions": [
+        0.6850078105926514,
+        0.0,
+        1.0224400758743286
+      ],
+      "materials": [
+        [
+          "v036 | School debris | flame paint 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | School debris | painted flame 1",
+      "type": "MESH",
+      "location": [
+        61.5,
+        9.895000457763672,
+        -0.6934806704521179
+      ],
+      "dimensions": [
+        0.3928987979888916,
+        0.0,
+        0.7425174713134766
+      ],
+      "materials": [
+        [
+          "v036 | School debris | flame paint 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | School debris | rooted smoke 0",
+      "type": "MESH",
+      "location": [
+        61.5,
+        9.975000381469727,
+        -0.17098069190979004
+      ],
+      "dimensions": [
+        1.522645115852356,
+        0.0,
+        3.3533058166503906
+      ],
+      "materials": [
+        [
+          "v036 | School debris | soot billow 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | School debris | rooted smoke 1",
+      "type": "MESH",
+      "location": [
+        61.5,
+        9.994999885559082,
+        -0.17098069190979004
+      ],
+      "dimensions": [
+        1.7301757335662842,
+        0.0,
+        3.5878348350524902
+      ],
+      "materials": [
+        [
+          "v036 | School debris | soot billow 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | School debris | rooted smoke 2",
+      "type": "MESH",
+      "location": [
+        61.5,
+        10.015000343322754,
+        -0.17098069190979004
+      ],
+      "dimensions": [
+        1.7828176021575928,
+        0.0,
+        3.7694106101989746
+      ],
+      "materials": [
+        [
+          "v036 | School debris | soot billow 2",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | School debris | rooted smoke 3",
+      "type": "MESH",
+      "location": [
+        61.5,
+        10.03499984741211,
+        -0.17098069190979004
+      ],
+      "dimensions": [
+        1.93607497215271,
+        0.0,
+        4.0525221824646
+      ],
+      "materials": [
+        [
+          "v036 | School debris | soot billow 3",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | painted flame 0",
+      "type": "MESH",
+      "location": [
+        85.0,
+        9.920000076293945,
+        -0.6934806704521179
+      ],
+      "dimensions": [
+        0.9397075176239014,
+        0.0,
+        1.5296021699905396
+      ],
+      "materials": [
+        [
+          "v036 | Camp hearth | flame paint 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | painted flame 1",
+      "type": "MESH",
+      "location": [
+        85.0,
+        9.895000457763672,
+        -0.6934806704521179
+      ],
+      "dimensions": [
+        0.5404980182647705,
+        0.0,
+        1.2098939418792725
+      ],
+      "materials": [
+        [
+          "v036 | Camp hearth | flame paint 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | rooted smoke 0",
+      "type": "MESH",
+      "location": [
+        85.0,
+        9.975000381469727,
+        0.1590193510055542
+      ],
+      "dimensions": [
+        2.1922478675842285,
+        0.0,
+        5.607708930969238
+      ],
+      "materials": [
+        [
+          "v036 | Camp hearth | soot billow 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | rooted smoke 1",
+      "type": "MESH",
+      "location": [
+        85.0,
+        9.994999885559082,
+        0.1590193510055542
+      ],
+      "dimensions": [
+        2.344106435775757,
+        0.0,
+        5.888124942779541
+      ],
+      "materials": [
+        [
+          "v036 | Camp hearth | soot billow 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | rooted smoke 2",
+      "type": "MESH",
+      "location": [
+        85.0,
+        10.015000343322754,
+        0.1590193510055542
+      ],
+      "dimensions": [
+        2.5125155448913574,
+        0.0,
+        6.337718486785889
+      ],
+      "materials": [
+        [
+          "v036 | Camp hearth | soot billow 2",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Camp hearth | rooted smoke 3",
+      "type": "MESH",
+      "location": [
+        85.0,
+        10.03499984741211,
+        0.1590193510055542
+      ],
+      "dimensions": [
+        1.9098882675170898,
+        0.0,
+        4.9103569984436035
+      ],
+      "materials": [
+        [
+          "v036 | Camp hearth | soot billow 3",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | painted flame 0",
+      "type": "MESH",
+      "location": [
+        112.0,
+        11.850000381469727,
+        -0.9684967994689941
+      ],
+      "dimensions": [
+        1.3680074214935303,
+        0.0,
+        2.4311020374298096
+      ],
+      "materials": [
+        [
+          "v036 | Battlefield burn | flame paint 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | painted flame 1",
+      "type": "MESH",
+      "location": [
+        112.0,
+        11.825000762939453,
+        -0.9684967994689941
+      ],
+      "dimensions": [
+        0.7859169840812683,
+        0.0,
+        1.9484061002731323
+      ],
+      "materials": [
+        [
+          "v036 | Battlefield burn | flame paint 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | rooted smoke 0",
+      "type": "MESH",
+      "location": [
+        112.0,
+        11.905000686645508,
+        0.26900315284729004
+      ],
+      "dimensions": [
+        3.2975869178771973,
+        0.0,
+        8.236995697021484
+      ],
+      "materials": [
+        [
+          "v036 | Battlefield burn | soot billow 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | rooted smoke 1",
+      "type": "MESH",
+      "location": [
+        112.0,
+        11.925000190734863,
+        0.26900315284729004
+      ],
+      "dimensions": [
+        3.4306318759918213,
+        0.0,
+        8.819610595703125
+      ],
+      "materials": [
+        [
+          "v036 | Battlefield burn | soot billow 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | rooted smoke 2",
+      "type": "MESH",
+      "location": [
+        112.0,
+        11.945000648498535,
+        0.26900315284729004
+      ],
+      "dimensions": [
+        3.915001153945923,
+        0.0,
+        9.333313941955566
+      ],
+      "materials": [
+        [
+          "v036 | Battlefield burn | soot billow 2",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | rooted smoke 3",
+      "type": "MESH",
+      "location": [
+        112.0,
+        11.96500015258789,
+        0.26900315284729004
+      ],
+      "dimensions": [
+        2.7875418663024902,
+        0.0,
+        7.291239261627197
+      ],
+      "materials": [
+        [
+          "v036 | Battlefield burn | soot billow 3",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | charred hearth stone 0",
+      "type": "MESH",
+      "location": [
+        112.5199966430664,
+        11.850000381469727,
+        -0.943496823310852
+      ],
+      "dimensions": [
+        0.36277878284454346,
+        0.18577978014945984,
+        0.15600000321865082
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | charred hearth stone 1",
+      "type": "MESH",
+      "location": [
+        111.69397735595703,
+        12.018167495727539,
+        -0.943496823310852
+      ],
+      "dimensions": [
+        0.36277878284454346,
+        0.18577978014945984,
+        0.15600000321865082
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | charred hearth stone 2",
+      "type": "MESH",
+      "location": [
+        111.8401870727539,
+        11.652067184448242,
+        -0.943496823310852
+      ],
+      "dimensions": [
+        0.36277878284454346,
+        0.18577978014945984,
+        0.15600000321865082
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | charred hearth stone 3",
+      "type": "MESH",
+      "location": [
+        112.4941177368164,
+        11.914800643920898,
+        -0.943496823310852
+      ],
+      "dimensions": [
+        0.36277878284454346,
+        0.18577978014945984,
+        0.15600000321865082
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | charred hearth stone 4",
+      "type": "MESH",
+      "location": [
+        111.57823181152344,
+        11.971662521362305,
+        -0.943496823310852
+      ],
+      "dimensions": [
+        0.36277878284454346,
+        0.18577978014945984,
+        0.15600000321865082
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 0",
+      "type": "MESH",
+      "location": [
+        112.47276306152344,
+        11.730000495910645,
+        1.4687294960021973
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-0",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 1",
+      "type": "MESH",
+      "location": [
+        112.3564682006836,
+        11.730000495910645,
+        1.859605312347412
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-1",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 2",
+      "type": "MESH",
+      "location": [
+        111.82406616210938,
+        11.730000495910645,
+        -0.8995187282562256
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-2",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 3",
+      "type": "MESH",
+      "location": [
+        111.7221450805664,
+        11.730000495910645,
+        -0.5086427927017212
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-3",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 4",
+      "type": "MESH",
+      "location": [
+        111.89205932617188,
+        11.730000495910645,
+        -0.1177668571472168
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-4",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 5",
+      "type": "MESH",
+      "location": [
+        112.1930160522461,
+        11.730000495910645,
+        0.2731090784072876
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-5",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 6",
+      "type": "MESH",
+      "location": [
+        112.37294006347656,
+        11.730000495910645,
+        0.6639848947525024
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-6",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 7",
+      "type": "MESH",
+      "location": [
+        112.30025482177734,
+        11.730000495910645,
+        1.0548608303070068
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-7",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 8",
+      "type": "MESH",
+      "location": [
+        112.08480072021484,
+        11.730000495910645,
+        1.4457368850708008
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-8",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Battlefield burn | ember 9",
+      "type": "MESH",
+      "location": [
+        111.97691345214844,
+        11.730000495910645,
+        1.8366127014160156
+      ],
+      "dimensions": [
+        0.01549999974668026,
+        0.0,
+        0.03350000083446503
+      ],
+      "materials": [
+        [
+          "v036 | ember 2-9",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | painted flame 0",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.0,
+        -2.6998157501220703
+      ],
+      "dimensions": [
+        1.6471028327941895,
+        0.0,
+        3.2085225582122803
+      ],
+      "materials": [
+        [
+          "v036 | Distant ruin burn | flame paint 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | painted flame 1",
+      "type": "MESH",
+      "location": [
+        151.0,
+        23.975000381469727,
+        -2.6998157501220703
+      ],
+      "dimensions": [
+        0.9822466969490051,
+        0.0,
+        2.3244266510009766
+      ],
+      "materials": [
+        [
+          "v036 | Distant ruin burn | flame paint 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | rooted smoke 0",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.05500030517578,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        4.022064685821533,
+        0.0,
+        11.224750518798828
+      ],
+      "materials": [
+        [
+          "v036 | Distant ruin burn | soot billow 0",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | rooted smoke 1",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.075000762939453,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        4.354686260223389,
+        0.0,
+        11.973998069763184
+      ],
+      "materials": [
+        [
+          "v036 | Distant ruin burn | soot billow 1",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | rooted smoke 2",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.094999313354492,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        4.709841728210449,
+        0.0,
+        12.557489395141602
+      ],
+      "materials": [
+        [
+          "v036 | Distant ruin burn | soot billow 2",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | rooted smoke 3",
+      "type": "MESH",
+      "location": [
+        151.0,
+        24.114999771118164,
+        -1.0498157739639282
+      ],
+      "dimensions": [
+        3.5501441955566406,
+        0.0,
+        10.03787612915039
+      ],
+      "materials": [
+        [
+          "v036 | Distant ruin burn | soot billow 3",
+          [
+            [
+              "Image Texture",
+              "TEX_IMAGE"
+            ],
+            [
+              "Emission",
+              "EMISSION"
+            ],
+            [
+              "Mix Shader",
+              "MIX_SHADER"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | charred hearth stone 0",
+      "type": "MESH",
+      "location": [
+        151.63999938964844,
+        24.0,
+        -2.6748158931732178
+      ],
+      "dimensions": [
+        0.4464969336986542,
+        0.22865204513072968,
+        0.19200000166893005
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | charred hearth stone 1",
+      "type": "MESH",
+      "location": [
+        150.62335205078125,
+        24.20697593688965,
+        -2.6748158931732178
+      ],
+      "dimensions": [
+        0.4464969336986542,
+        0.22865204513072968,
+        0.19200000166893005
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | charred hearth stone 2",
+      "type": "MESH",
+      "location": [
+        150.80331420898438,
+        23.756389617919922,
+        -2.6748158931732178
+      ],
+      "dimensions": [
+        0.4464969336986542,
+        0.22865204513072968,
+        0.19200000166893005
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | charred hearth stone 3",
+      "type": "MESH",
+      "location": [
+        151.608154296875,
+        24.079753875732422,
+        -2.6748158931732178
+      ],
+      "dimensions": [
+        0.4464969336986542,
+        0.22865204513072968,
+        0.19200000166893005
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | charred hearth stone 4",
+      "type": "MESH",
+      "location": [
+        150.48089599609375,
+        24.149738311767578,
+        -2.6748158931732178
+      ],
+      "dimensions": [
+        0.4464969336986542,
+        0.22865204513072968,
+        0.19200000166893005
+      ],
+      "materials": [
+        [
+          "v036 | Charred rough logs and stones",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 0",
+      "type": "MESH",
+      "location": [
+        151.3424072265625,
+        23.8799991607666,
+        -2.6998157501220703
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-0",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 1",
+      "type": "MESH",
+      "location": [
+        151.12246704101562,
+        23.8799991607666,
+        -2.178647994995117
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-1",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 2",
+      "type": "MESH",
+      "location": [
+        150.8079071044922,
+        23.8799991607666,
+        -1.657480001449585
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-2",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 3",
+      "type": "MESH",
+      "location": [
+        150.70494079589844,
+        23.8799991607666,
+        -1.1363121271133423
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-3",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 4",
+      "type": "MESH",
+      "location": [
+        150.9365234375,
+        23.8799991607666,
+        -0.6151442527770996
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-4",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 5",
+      "type": "MESH",
+      "location": [
+        151.3293914794922,
+        23.8799991607666,
+        -0.09397625923156738
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-5",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 6",
+      "type": "MESH",
+      "location": [
+        151.57330322265625,
+        23.8799991607666,
+        0.42719149589538574
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-6",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 7",
+      "type": "MESH",
+      "location": [
+        151.5063018798828,
+        23.8799991607666,
+        0.948359489440918
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-7",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 8",
+      "type": "MESH",
+      "location": [
+        151.2635955810547,
+        23.8799991607666,
+        1.469527244567871
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-8",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "v036 | Distant ruin burn | ember 9",
+      "type": "MESH",
+      "location": [
+        150.6598358154297,
+        23.8799991607666,
+        -2.2093048095703125
+      ],
+      "dimensions": [
+        0.017000000923871994,
+        0.0,
+        0.03799999877810478
+      ],
+      "materials": [
+        [
+          "v036 | ember 3-9",
+          [
+            [
+              "Emission",
+              "EMISSION"
+            ]
+          ]
+        ]
+      ]
+    }
+  ]
+}

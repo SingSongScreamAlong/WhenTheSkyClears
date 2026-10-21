@@ -1,0 +1,101 @@
+{
+  "method": "Original-coat additive native geometry fields; four static pose-specific curved-trouser mesh drawings using the original image/UV pigments and relocated original rolled cuffs. No new raster generation.",
+  "poses": [
+    {
+      "phase": "L_LOADING",
+      "study_frame": 17.25,
+      "coat_max_offset_m": 0.026649447735475614,
+      "trousers": [
+        {
+          "side": "near",
+          "knee_parameter": 0.5989356278312186,
+          "source_cuff_rows": [
+            24,
+            27
+          ],
+          "new_cuff_parameter": [
+            0.825,
+            0.91
+          ],
+          "vertices": 679,
+          "original_boot_collar_center_world": [
+            0.288708359003067,
+            -0.013000000268220901,
+            0.1485694944858551
+          ],
+          "design_retention": "Rolled cuff flare and visible ankle retained; cuff surface bows across its width instead of a flat band."
+        },
+        {
+          "side": "far",
+          "knee_parameter": 0.4971439960664319,
+          "source_cuff_rows": [
+            24,
+            27
+          ],
+          "new_cuff_parameter": [
+            0.825,
+            0.91
+          ],
+          "vertices": 679,
+          "original_boot_collar_center_world": [
+            0.6734533309936523,
+            0.023000000044703484,
+            0.0928250104188919
+          ],
+          "design_retention": "Rolled cuff flare and visible ankle retained; cuff surface bows across its width instead of a flat band."
+        }
+      ],
+      "waist_overlap_extension_m": 0.06,
+      "cloth_drawing": "Two tapered original-pigment crease ribbons, one ink and one wash edge, following the coat compression."
+    },
+    {
+      "phase": "L_PASSING",
+      "study_frame": 25.25,
+      "coat_max_offset_m": 0.03098406445721502,
+      "trousers": [
+        {
+          "side": "near",
+          "knee_parameter": 0.600765037392064,
+          "source_cuff_rows": [
+            24,
+            27
+          ],
+          "new_cuff_parameter": [
+            0.825,
+            0.91
+          ],
+          "vertices": 679,
+          "original_boot_collar_center_world": [
+            0.5881235599517822,
+            -0.013000000268220901,
+            0.19189247488975525
+          ],
+          "design_retention": "Rolled cuff flare and visible ankle retained; cuff surface bows across its width instead of a flat band."
+        },
+        {
+          "side": "far",
+          "knee_parameter": 0.501137357138097,
+          "source_cuff_rows": [
+            24,
+            27
+          ],
+          "new_cuff_parameter": [
+            0.825,
+            0.91
+          ],
+          "vertices": 679,
+          "original_boot_collar_center_world": [
+            0.6989552974700928,
+            0.023000000044703484,
+            0.08962904661893845
+          ],
+          "design_retention": "Rolled cuff flare and visible ankle retained; cuff surface bows across its width instead of a flat band."
+        }
+      ],
+      "waist_overlap_extension_m": 0.06,
+      "cloth_drawing": "Two tapered original-pigment crease ribbons, one ink and one wash edge, following the coat compression."
+    }
+  ],
+  "baseline_sha256": "4f7fc0d5d9f8fd94a69d4eed23edb69ede5de7519b9cbbd0630fe1db11471ada",
+  "blender": "5.2.2 LTS"
+}

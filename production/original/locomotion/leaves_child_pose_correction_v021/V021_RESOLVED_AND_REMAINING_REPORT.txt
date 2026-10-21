@@ -1,0 +1,47 @@
+WTSC v021 RESOLVED AND REMAINING — 2026-10-18
+Scope completed: a bounded correction of the existing eight child poses at unchanged source phases, followed by one small separate geometry art variant. STOPPED before continuous animation and world integration.
+
+WHAT CHANGED
+The v020 adult leg-mean scale produced a1.021383492m cycle and required a28.89mm3D pelvis accommodation at L_CONTACT. v021 solves alternating step placements, free pelvisX/Z, support geometry and swing pose together using the original asymmetric child segment lengths and actual rigid boot polygons. No after-fit pelvis projection or limb stretch.
+Stride is now0.952443738m (6.75% shorter). This is reach-adapted reference blocking, not a declaration that this cadence/stride is right for the child's acting.
+Second-landing hipZ rises from0.564541m to0.586114m. It remains4.06mm below the old unfitted source target rather than25.63mm. The former29mm3D accommodation is removed as an operation by changing the coherent target trajectory; it has not become a zero-error reproduction of the old target.
+Second loading hipZ is0.585453m versus v0200.566158m.
+The large near-shin source discrepancy at second landing/loading falls from about18.15/18.17deg to2.53/3.60deg.
+Largest actual native thigh/shin direction residual per phase:
+R_CONTACT      7.94 ->  5.88 degrees
+R_LOADING      8.63 ->  7.33 degrees
+R_PASSING     11.40 ->  3.70 degrees
+R_UP          10.98 ->  2.10 degrees
+L_CONTACT     18.15 ->  3.48 degrees
+L_LOADING     18.17 ->  3.60 degrees
+L_PASSING      5.69 ->  0.31 degrees
+L_UP           8.78 ->  6.70 degrees
+All sampled swing soles now clear ground by22.00–60.08mm; the previously grazing L_UP boot clears22.00mm. Boot pitch adapts to the child's original boot length: not a literal adult-foot copy.
+Pelvis lowering/contact, support-leg reach and torso placement are coherent selected poses. The hip is not rigidly locked to either foot.
+
+TECHNICAL TESTS — PASS WITH NARROW SCOPE
+Fresh saved native files: all four child IK chains reachable; original rest bone lengths unchanged; max active painted-sole contact error1.21e-07m.
+Duplicate cycle-end painted mesh matches the first pose plus stride within5.13e-07m.
+Art variant skeleton matrices and boot vertices equal mechanics baseline exactly at all eight phases. Other seven poses have zero mesh effect. Original base vertices/UVs/weights/materials retained.
+Actual MP4 decoded:150 frames,30fps,1920x960,5s,236274bytes,9unique slides checked. All three private Library creates succeeded at version0.
+Five protected source files retain their expected SHA256 values, including v020/v017 assets and v046/v007/v045c production sources.
+These tests establish reproducible poses/contacts/proportions/export, not convincing animation.
+
+ARTISTIC ASSESSMENT — STILL UNPASSED
+The second landing no longer reads as the same compressed retarget failure; swing separation is clearer. The painted body still reads as a rigid cutout over articulated strips. Upper-body reference angles and arms are not a new acting pass.
+The largest reference leg difference remains7.33deg at R_LOADING, and L_UP remains6.70deg. First UP pelvis is11.48mm higher than second UP; first loading drop5.15mm versus second0.66mm. These asymmetries need an artistic choice before an animation pass. They are not hidden by averaging.
+The adult source period is still retained (about116steps/min). Contact onsets are inferred from ankle/toe behavior because the FBX has no heel or painted sole. Child character intent and timing remain unapproved.
+No sampled test establishes center-of-mass dynamics, continuous non-slip support, convincing weight transfer at speed, in-between shape or recovery-to-walking performance.
+The source, unchanged child skeleton and painting are presented at the same actual source phases and original camera size; source adult height is not normalized to imitate a proportion match.
+
+SEPARATE WHOLE-POSE ART TEST
+Worst exposed passing choice: L_PASSING/source34/study25.25. The torso/waist/hem and near knee/calf were adjusted together with two small additive geometry offsets; no skeleton, travel, foot, head or paint redesign.
+Max evaluated body change18.29mm; near-leg change3.82mm. The leg method includes a6mm outer-cap intent and4mm posterior-calf intent; actual net displacement is measured after the original shape blending.
+The waist/hem softens modestly and the knee contour rounds slightly at close size. At shot size this is a limited gain. The baked calf band and rigid cloth drawing remain conspicuous. This is not an art pass or proof of deep cloth folds/folded-arm performance.
+Boy profile/hair painting is preserved. No flat head card was turned edge-on, and rejected v008 was not reused. Girl, helping/clasp acting and original75–80s restart are outside this bounded checkpoint.
+
+WORKFLOW / RESOURCES
+Reused the user's exact Animation Base Locomotion v3 FBX through the existing v020 native source and the retained v017 painted control asset. FBX identity SHA2564e5d8bac507f1b9b43c5c20326a47f287c2e84d362a5613501add4eaccb9571b; no asset acquisition or external sharing.
+Actual Blender5.2.2LTS(d13f752e3b9c), native bpy fallback; no typed DCC tool available. Do not claim MCP real-host acceptance. The substantive DCC production guide is retained with evidence.
+One Blender job at a time, threads2, EEVEE32,640x360 mechanical views and960x540 art comparisons. No definite competing-render blocker observed. Production, world/art specialists' files, duration, music, title and explosion work were not modified.
+No execution blocker remains. Artistic acceptance is pending review; no continuous animation/integration was attempted.

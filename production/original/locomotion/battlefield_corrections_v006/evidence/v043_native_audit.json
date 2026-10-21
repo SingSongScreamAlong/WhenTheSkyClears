@@ -1,0 +1,1870 @@
+{
+  "blender": "5.2.2 LTS",
+  "active_scene": "WTSC_OPEN_5S_MASTER_v043",
+  "scenes": [
+    {
+      "scene": "WTSC_OPEN_5S_MASTER_v043",
+      "engine": "BLENDER_EEVEE",
+      "frames": [
+        1801,
+        1920
+      ],
+      "fps": 24,
+      "resolution": [
+        3840,
+        2160
+      ],
+      "objects": 0,
+      "root_names": []
+    },
+    {
+      "scene": "WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043",
+      "engine": "BLENDER_EEVEE",
+      "frames": [
+        1801,
+        1920
+      ],
+      "fps": 24,
+      "resolution": [
+        3840,
+        2160
+      ],
+      "objects": 443,
+      "root_names": [
+        "BATTLEFIELD_WEARY | CONTROLS"
+      ],
+      "samples": [
+        {
+          "frame": 1801,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              109.3619613647461,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "ortho_scale": 6.0,
+            "lens": 100.0
+          },
+          "roots": [
+            {
+              "name": "BATTLEFIELD_WEARY | CONTROLS",
+              "location": [
+                107.63395690917969,
+                0.0,
+                0.7200736999511719
+              ],
+              "matrix_world": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  107.63395690917969
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.7200736999511719
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "properties": {
+                "loco_pack": "WTSC_BATTLEFIELD_WEARY_v005",
+                "root_motion": "1.0",
+                "ground_speed_mps": "0.22931034482758622",
+                "start_frame": "1804.0",
+                "pair_gap_m": "0.8",
+                "guide": "Run embedded configure_performance.py, then configure a clip. Root motion 0=in-place,1=travel. Skip uses constant speed; stumble uses native DISTANCE_CURVE. XZ/metres/24fps. Artistic review required.",
+                "orientation": "XZ drawings; metres; +X forward; +Z up; +Y back. Origins on floor.",
+                "duration_frames": "116.0",
+                "use_distance_curve": "1.0",
+                "review_status": "Candidate for75-80s integrated proof. Waist/shoe/braid cleanup checked; cutout stiffness remains. Not cinematic acceptance."
+              },
+              "rigs": [
+                {
+                  "name": "LOCO_BOY | RIG",
+                  "who": "BOY",
+                  "world": [
+                    107.23395538330078,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.1004867553711,
+                      0.0,
+                      0.8229159116744995
+                    ],
+                    "foot_far": [
+                      107.3571548461914,
+                      -1.7763568394002505e-15,
+                      0.8124387860298157
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_BOY | PAINT body",
+                      "skin": "body",
+                      "verts": 477
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 9765
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 10233
+                    },
+                    {
+                      "name": "PERF_BOY | original hand far",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original hand near",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original head",
+                      "skin": null,
+                      "verts": 9
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot far",
+                      "skin": null,
+                      "verts": 90
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot near",
+                      "skin": null,
+                      "verts": 76
+                    },
+                    {
+                      "name": "PERF_BOY | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                },
+                {
+                  "name": "LOCO_GIRL | RIG",
+                  "who": "GIRL",
+                  "world": [
+                    108.0339584350586,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.9004898071289,
+                      -8.881784197001252e-16,
+                      0.8180649280548096
+                    ],
+                    "foot_far": [
+                      108.15715789794922,
+                      2.220446049250313e-16,
+                      0.8239341974258423
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_GIRL | PAINT body",
+                      "skin": "dress",
+                      "verts": 693
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 3285
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 4581
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand far",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand near",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original head and attached braid",
+                      "skin": null,
+                      "verts": 549
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot far",
+                      "skin": null,
+                      "verts": 108
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot near",
+                      "skin": null,
+                      "verts": 84
+                    },
+                    {
+                      "name": "PERF_GIRL | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 1837,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              109.74828338623047,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "ortho_scale": 6.0,
+            "lens": 100.0
+          },
+          "roots": [
+            {
+              "name": "BATTLEFIELD_WEARY | CONTROLS",
+              "location": [
+                107.63395690917969,
+                0.0,
+                0.7200736999511719
+              ],
+              "matrix_world": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  107.63395690917969
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.7200736999511719
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "properties": {
+                "loco_pack": "WTSC_BATTLEFIELD_WEARY_v005",
+                "root_motion": "1.0",
+                "ground_speed_mps": "0.22931034482758622",
+                "start_frame": "1804.0",
+                "pair_gap_m": "0.8",
+                "guide": "Run embedded configure_performance.py, then configure a clip. Root motion 0=in-place,1=travel. Skip uses constant speed; stumble uses native DISTANCE_CURVE. XZ/metres/24fps. Artistic review required.",
+                "orientation": "XZ drawings; metres; +X forward; +Z up; +Y back. Origins on floor.",
+                "duration_frames": "116.0",
+                "use_distance_curve": "1.0",
+                "review_status": "Candidate for75-80s integrated proof. Waist/shoe/braid cleanup checked; cutout stiffness remains. Not cinematic acceptance."
+              },
+              "rigs": [
+                {
+                  "name": "LOCO_BOY | RIG",
+                  "who": "BOY",
+                  "world": [
+                    107.62027740478516,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.63249969482422,
+                      0.0,
+                      0.8387086391448975
+                    ],
+                    "foot_far": [
+                      107.69278717041016,
+                      -7.105427357601002e-15,
+                      0.9788782596588135
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_BOY | PAINT body",
+                      "skin": "body",
+                      "verts": 477
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 9765
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 10233
+                    },
+                    {
+                      "name": "PERF_BOY | original hand far",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original hand near",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original head",
+                      "skin": null,
+                      "verts": 9
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot far",
+                      "skin": null,
+                      "verts": 90
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot near",
+                      "skin": null,
+                      "verts": 76
+                    },
+                    {
+                      "name": "PERF_BOY | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                },
+                {
+                  "name": "LOCO_GIRL | RIG",
+                  "who": "GIRL",
+                  "world": [
+                    108.42028045654297,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      108.43309020996094,
+                      -4.440892098500626e-16,
+                      0.8364328742027283
+                    ],
+                    "foot_far": [
+                      108.60453033447266,
+                      0.0,
+                      0.9572540521621704
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_GIRL | PAINT body",
+                      "skin": "dress",
+                      "verts": 693
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 3285
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 4581
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand far",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand near",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original head and attached braid",
+                      "skin": null,
+                      "verts": 549
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot far",
+                      "skin": null,
+                      "verts": 108
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot near",
+                      "skin": null,
+                      "verts": 84
+                    },
+                    {
+                      "name": "PERF_GIRL | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 1850,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              109.83588409423828,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "ortho_scale": 6.0,
+            "lens": 100.0
+          },
+          "roots": [
+            {
+              "name": "BATTLEFIELD_WEARY | CONTROLS",
+              "location": [
+                107.63395690917969,
+                0.0,
+                0.7200736999511719
+              ],
+              "matrix_world": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  107.63395690917969
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.7200736999511719
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "properties": {
+                "loco_pack": "WTSC_BATTLEFIELD_WEARY_v005",
+                "root_motion": "1.0",
+                "ground_speed_mps": "0.22931034482758622",
+                "start_frame": "1804.0",
+                "pair_gap_m": "0.8",
+                "guide": "Run embedded configure_performance.py, then configure a clip. Root motion 0=in-place,1=travel. Skip uses constant speed; stumble uses native DISTANCE_CURVE. XZ/metres/24fps. Artistic review required.",
+                "orientation": "XZ drawings; metres; +X forward; +Z up; +Y back. Origins on floor.",
+                "duration_frames": "116.0",
+                "use_distance_curve": "1.0",
+                "review_status": "Candidate for75-80s integrated proof. Waist/shoe/braid cleanup checked; cutout stiffness remains. Not cinematic acceptance."
+              },
+              "rigs": [
+                {
+                  "name": "LOCO_BOY | RIG",
+                  "who": "BOY",
+                  "world": [
+                    107.70787811279297,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.67656707763672,
+                      0.0,
+                      0.9445366263389587
+                    ],
+                    "foot_far": [
+                      107.93062591552734,
+                      -3.552713678800501e-15,
+                      0.8124387860298157
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_BOY | PAINT body",
+                      "skin": "body",
+                      "verts": 477
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 9765
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 10233
+                    },
+                    {
+                      "name": "PERF_BOY | original hand far",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original hand near",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original head",
+                      "skin": null,
+                      "verts": 9
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot far",
+                      "skin": null,
+                      "verts": 90
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot near",
+                      "skin": null,
+                      "verts": 76
+                    },
+                    {
+                      "name": "PERF_BOY | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                },
+                {
+                  "name": "LOCO_GIRL | RIG",
+                  "who": "GIRL",
+                  "world": [
+                    108.50788116455078,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      108.51374053955078,
+                      -4.440892098500626e-16,
+                      0.9470943212509155
+                    ],
+                    "foot_far": [
+                      108.73062896728516,
+                      0.0,
+                      0.8239342570304871
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_GIRL | PAINT body",
+                      "skin": "dress",
+                      "verts": 693
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 3285
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 4581
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand far",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand near",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original head and attached braid",
+                      "skin": null,
+                      "verts": 549
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot far",
+                      "skin": null,
+                      "verts": 108
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot near",
+                      "skin": null,
+                      "verts": 84
+                    },
+                    {
+                      "name": "PERF_GIRL | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 1858,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              109.87409973144531,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "ortho_scale": 6.0,
+            "lens": 100.0
+          },
+          "roots": [
+            {
+              "name": "BATTLEFIELD_WEARY | CONTROLS",
+              "location": [
+                107.63395690917969,
+                0.0,
+                0.7200736999511719
+              ],
+              "matrix_world": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  107.63395690917969
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.7200736999511719
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "properties": {
+                "loco_pack": "WTSC_BATTLEFIELD_WEARY_v005",
+                "root_motion": "1.0",
+                "ground_speed_mps": "0.22931034482758622",
+                "start_frame": "1804.0",
+                "pair_gap_m": "0.8",
+                "guide": "Run embedded configure_performance.py, then configure a clip. Root motion 0=in-place,1=travel. Skip uses constant speed; stumble uses native DISTANCE_CURVE. XZ/metres/24fps. Artistic review required.",
+                "orientation": "XZ drawings; metres; +X forward; +Z up; +Y back. Origins on floor.",
+                "duration_frames": "116.0",
+                "use_distance_curve": "1.0",
+                "review_status": "Candidate for75-80s integrated proof. Waist/shoe/braid cleanup checked; cutout stiffness remains. Not cinematic acceptance."
+              },
+              "rigs": [
+                {
+                  "name": "LOCO_BOY | RIG",
+                  "who": "BOY",
+                  "world": [
+                    107.74609375,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.7892074584961,
+                      0.0,
+                      0.9056277275085449
+                    ],
+                    "foot_far": [
+                      107.93061828613281,
+                      -1.7763568394002505e-15,
+                      0.8124387860298157
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_BOY | PAINT body",
+                      "skin": "body",
+                      "verts": 477
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 9765
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 10233
+                    },
+                    {
+                      "name": "PERF_BOY | original hand far",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original hand near",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original head",
+                      "skin": null,
+                      "verts": 9
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot far",
+                      "skin": null,
+                      "verts": 90
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot near",
+                      "skin": null,
+                      "verts": 76
+                    },
+                    {
+                      "name": "PERF_BOY | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                },
+                {
+                  "name": "LOCO_GIRL | RIG",
+                  "who": "GIRL",
+                  "world": [
+                    108.54609680175781,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      108.60978698730469,
+                      1.7763568394002505e-15,
+                      0.8594385385513306
+                    ],
+                    "foot_far": [
+                      108.73062133789062,
+                      2.220446049250313e-16,
+                      0.8239342570304871
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_GIRL | PAINT body",
+                      "skin": "dress",
+                      "verts": 693
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 3285
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 4581
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand far",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand near",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original head and attached braid",
+                      "skin": null,
+                      "verts": 549
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot far",
+                      "skin": null,
+                      "verts": 108
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot near",
+                      "skin": null,
+                      "verts": 84
+                    },
+                    {
+                      "name": "PERF_GIRL | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 1881,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              109.92362976074219,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "ortho_scale": 6.0,
+            "lens": 100.0
+          },
+          "roots": [
+            {
+              "name": "BATTLEFIELD_WEARY | CONTROLS",
+              "location": [
+                107.63395690917969,
+                0.0,
+                0.7200736999511719
+              ],
+              "matrix_world": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  107.63395690917969
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.7200736999511719
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "properties": {
+                "loco_pack": "WTSC_BATTLEFIELD_WEARY_v005",
+                "root_motion": "1.0",
+                "ground_speed_mps": "0.22931034482758622",
+                "start_frame": "1804.0",
+                "pair_gap_m": "0.8",
+                "guide": "Run embedded configure_performance.py, then configure a clip. Root motion 0=in-place,1=travel. Skip uses constant speed; stumble uses native DISTANCE_CURVE. XZ/metres/24fps. Artistic review required.",
+                "orientation": "XZ drawings; metres; +X forward; +Z up; +Y back. Origins on floor.",
+                "duration_frames": "116.0",
+                "use_distance_curve": "1.0",
+                "review_status": "Candidate for75-80s integrated proof. Waist/shoe/braid cleanup checked; cutout stiffness remains. Not cinematic acceptance."
+              },
+              "rigs": [
+                {
+                  "name": "LOCO_BOY | RIG",
+                  "who": "BOY",
+                  "world": [
+                    107.79562377929688,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.82437133789062,
+                      0.0,
+                      0.8229159116744995
+                    ],
+                    "foot_far": [
+                      107.93062591552734,
+                      -1.7763568394002505e-15,
+                      0.8124387860298157
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_BOY | PAINT body",
+                      "skin": "body",
+                      "verts": 477
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 9765
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 10233
+                    },
+                    {
+                      "name": "PERF_BOY | original hand far",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original hand near",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original head",
+                      "skin": null,
+                      "verts": 9
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot far",
+                      "skin": null,
+                      "verts": 90
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot near",
+                      "skin": null,
+                      "verts": 76
+                    },
+                    {
+                      "name": "PERF_BOY | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                },
+                {
+                  "name": "LOCO_GIRL | RIG",
+                  "who": "GIRL",
+                  "world": [
+                    108.59562683105469,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      108.62437438964844,
+                      4.440892098500626e-16,
+                      0.8180649280548096
+                    ],
+                    "foot_far": [
+                      108.73062896728516,
+                      -2.220446049250313e-16,
+                      0.8239341974258423
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_GIRL | PAINT body",
+                      "skin": "dress",
+                      "verts": 693
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 3285
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 4581
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand far",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand near",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original head and attached braid",
+                      "skin": null,
+                      "verts": 549
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot far",
+                      "skin": null,
+                      "verts": 108
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot near",
+                      "skin": null,
+                      "verts": 84
+                    },
+                    {
+                      "name": "PERF_GIRL | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 1910,
+          "camera": {
+            "name": "v032 | Camera follows shared pair center",
+            "location": [
+              109.92362976074219,
+              -16.0,
+              3.0
+            ],
+            "rotation": [
+              1.5707963705062866,
+              0.0,
+              0.0
+            ],
+            "type": "PERSP",
+            "ortho_scale": 6.0,
+            "lens": 100.0
+          },
+          "roots": [
+            {
+              "name": "BATTLEFIELD_WEARY | CONTROLS",
+              "location": [
+                107.63395690917969,
+                0.0,
+                0.7200736999511719
+              ],
+              "matrix_world": [
+                [
+                  1.0,
+                  0.0,
+                  0.0,
+                  107.63395690917969
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.7200736999511719
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "properties": {
+                "loco_pack": "WTSC_BATTLEFIELD_WEARY_v005",
+                "root_motion": "1.0",
+                "ground_speed_mps": "0.22931034482758622",
+                "start_frame": "1804.0",
+                "pair_gap_m": "0.8",
+                "guide": "Run embedded configure_performance.py, then configure a clip. Root motion 0=in-place,1=travel. Skip uses constant speed; stumble uses native DISTANCE_CURVE. XZ/metres/24fps. Artistic review required.",
+                "orientation": "XZ drawings; metres; +X forward; +Z up; +Y back. Origins on floor.",
+                "duration_frames": "116.0",
+                "use_distance_curve": "1.0",
+                "review_status": "Candidate for75-80s integrated proof. Waist/shoe/braid cleanup checked; cutout stiffness remains. Not cinematic acceptance."
+              },
+              "rigs": [
+                {
+                  "name": "LOCO_BOY | RIG",
+                  "who": "BOY",
+                  "world": [
+                    107.79562377929688,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      107.82437133789062,
+                      0.0,
+                      0.8229159116744995
+                    ],
+                    "foot_far": [
+                      107.93062591552734,
+                      -1.7763568394002505e-15,
+                      0.8124387860298157
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_BOY | PAINT body",
+                      "skin": "body",
+                      "verts": 477
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 9765
+                    },
+                    {
+                      "name": "LOCO_BOY | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 10233
+                    },
+                    {
+                      "name": "PERF_BOY | original hand far",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original hand near",
+                      "skin": null,
+                      "verts": 46
+                    },
+                    {
+                      "name": "PERF_BOY | original head",
+                      "skin": null,
+                      "verts": 9
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot far",
+                      "skin": null,
+                      "verts": 90
+                    },
+                    {
+                      "name": "PERF_BOY | rigid original boot near",
+                      "skin": null,
+                      "verts": 76
+                    },
+                    {
+                      "name": "PERF_BOY | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_BOY | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded knee | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_BOY | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                },
+                {
+                  "name": "LOCO_GIRL | RIG",
+                  "who": "GIRL",
+                  "world": [
+                    108.59562683105469,
+                    0.0,
+                    0.7200736999511719
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "foot_heads": {
+                    "foot_near": [
+                      108.62437438964844,
+                      4.440892098500626e-16,
+                      0.8180649280548096
+                    ],
+                    "foot_far": [
+                      108.73062896728516,
+                      -2.220446049250313e-16,
+                      0.8239341974258423
+                    ]
+                  },
+                  "children": [
+                    {
+                      "name": "LOCO_GIRL | PAINT body",
+                      "skin": "dress",
+                      "verts": 693
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT far_leg",
+                      "skin": "leg_far",
+                      "verts": 3285
+                    },
+                    {
+                      "name": "LOCO_GIRL | PAINT near_leg",
+                      "skin": "leg_near",
+                      "verts": 4581
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | hidden thigh overlap near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand far",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original hand near",
+                      "skin": null,
+                      "verts": 37
+                    },
+                    {
+                      "name": "PERF_GIRL | original head and attached braid",
+                      "skin": null,
+                      "verts": 549
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot far",
+                      "skin": null,
+                      "verts": 108
+                    },
+                    {
+                      "name": "PERF_GIRL | rigid original boot near",
+                      "skin": null,
+                      "verts": 84
+                    },
+                    {
+                      "name": "PERF_GIRL | skin far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | skin near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve far | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "PERF_GIRL | sleeve near | source gray cuff",
+                      "skin": null,
+                      "verts": 22
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG far",
+                      "skin": null,
+                      "verts": 19
+                    },
+                    {
+                      "name": "v043 rounded wrist | LOCO_GIRL | RIG near",
+                      "skin": null,
+                      "verts": 19
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

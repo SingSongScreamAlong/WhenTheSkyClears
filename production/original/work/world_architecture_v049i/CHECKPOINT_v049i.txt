@@ -1,0 +1,62 @@
+WHEN THE SKY CLEARS / v049i / PARTIAL WINDOW DEPTH PROOF
+
+Outcome: reviewable separate construction experiment, not an approved production
+upgrade. The high-resolution painted facade and wider ruin construction remain
+UNMET. No production palette or character-author asset was changed.
+
+Open WTSC_School_Window_Depth_Proof_v049i.blend. Its active diagnostic scene
+shows frame1225 with the existing children and original camera. Original full
+film/title/edit scenes are retained. Existing v040 children are composition
+witnesses; this file does not integrate the author's newer rig or FX.
+
+KEPT
+- One actual source-registered window aperture,35cm masonry reveal and62cm room
+  backing; thick timber and22 surviving glass fragments traced from the owned
+  painting. Original source-painted face colors remain on the new geometry.
+-32 fixed new objects, no new actions or camera-following geometry.
+- Bank/path image samplers map their whole fixed support into valid source
+  columns. This removes the horizontally stretched column blocks visible in
+  v048d's adjacent camera views. No region mask or palette-study merge.
+
+REJECTED AND REMOVED AFTER4K INSPECTION
+- Proud rectangular masonry/arch blocks and added sill produced drafting seams.
+- Approximate and silhouette-bound wall/foliage splits produced visible seams
+  in later cameras. Both rear card and wall return were removed from this final
+  branch. The original ruined-wall painting is restored.
+
+EVIDENCE
+- Actual3840x2160 EEVEE32sample before/after stills at1201,1225,1249,1297
+  (50,51,52,54seconds). Two CPU threads, one headless render job at a time.
+- Review board includes matched full compositions and crops at native4K pixel
+  scale. Crop size is not a claim of new painted detail.
+-405 source-object geometry/transforms/parents/title/visibility fingerprints,
+  41Actions, six camera samples and all scene ranges/FPS match preserved v048d.
+-14 actual children/descendant material sets match source on cold reopen.
+- Cold reopen: all file-backed images packed, audio present, no frame handlers.
+- No normal-speed/full-film review or full-film render is claimed.
+
+SOURCE
+work/world_art_v048d/WTSC_World_Art_Checkpoint_v048d.blend
+SHA256 fe3270155538a44cb08ef3ee2c37f25461d292d5a9f10f4d2406e65822df3e5a
+Final native SHA256
+796a6cafff68acfbcc110e92a38d2a5b0c75ea3188b63e95ae059ea16cf640c8
+
+LIMIT / NEXT REQUIRED WORK
+The facade remains the original1672x941 raster and is visibly soft at1:1.
+Tracing and extruding it cannot invent missing painted brush detail. A properly
+layered high-resolution facade/ruin painting with clean foreground/background
+ownership is still needed before broader reconstruction. Prior reference-guided
+image generation failed with: AbsolutePathBuf deserialized without a base path.
+No failed generation call was repeated this turn and no generated replacement
+facade was used. This is an unresolved asset/quality gap, not an approval denial.
+
+PRIVATE LIBRARY REVIEW
+Board: [PRIVATE_LIBRARY_REFERENCE_REMOVED] / version0
+Full4K frame1225: [PRIVATE_LIBRARY_REFERENCE_REMOVED] / version0
+Color study: [PRIVATE_LIBRARY_REFERENCE_REMOVED] / version0
+Color native lives separately in work/color_progression_test_v049 and was not
+merged here. It contains the three explicitly approved still presets241/1201/1849.
+
+Library identity is retained in the receipt JSON. Local Windows Python lacks
+os.setxattr; extended attributes were not written. Scripts are retained as run
+provenance with workspace paths, not a portable one-command reconstruction.

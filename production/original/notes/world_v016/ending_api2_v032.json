@@ -1,0 +1,302 @@
+{
+  "types": [
+    "CompositorNodeAlphaOver",
+    "CompositorNodeBlankImage",
+    "CompositorNodeBokehImage",
+    "CompositorNodeImage",
+    "CompositorNodeImageCoordinates",
+    "CompositorNodeImageInfo",
+    "CompositorNodeMovieClip",
+    "CompositorNodeMovieDistortion",
+    "CompositorNodeSetAlpha",
+    "CompositorNodeStringToImage"
+  ],
+  "ShaderNodeMix": {
+    "inputs": [
+      [
+        "Factor",
+        "Factor_Float",
+        "NodeSocketFloatFactor",
+        "1.0"
+      ],
+      [
+        "Factor",
+        "Factor_Vector",
+        "NodeSocketVectorFactor",
+        "<bpy_float[3], NodeSocketVectorFactor.default_value>"
+      ],
+      [
+        "A",
+        "A_Float",
+        "NodeSocketFloat",
+        "0.0"
+      ],
+      [
+        "B",
+        "B_Float",
+        "NodeSocketFloat",
+        "0.0"
+      ],
+      [
+        "A",
+        "A_Vector",
+        "NodeSocketVector",
+        "<bpy_float[3], NodeSocketVector.default_value>"
+      ],
+      [
+        "B",
+        "B_Vector",
+        "NodeSocketVector",
+        "<bpy_float[3], NodeSocketVector.default_value>"
+      ],
+      [
+        "A",
+        "A_Color",
+        "NodeSocketColor",
+        "<bpy_float[4], NodeSocketColor.default_value>"
+      ],
+      [
+        "B",
+        "B_Color",
+        "NodeSocketColor",
+        "<bpy_float[4], NodeSocketColor.default_value>"
+      ],
+      [
+        "A",
+        "A_Rotation",
+        "NodeSocketRotation",
+        "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+      ],
+      [
+        "B",
+        "B_Rotation",
+        "NodeSocketRotation",
+        "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+      ]
+    ],
+    "outputs": [
+      [
+        "Result",
+        "Result_Float"
+      ],
+      [
+        "Result",
+        "Result_Vector"
+      ],
+      [
+        "Result",
+        "Result_Color"
+      ],
+      [
+        "Result",
+        "Result_Rotation"
+      ]
+    ],
+    "properties": [
+      "location",
+      "location_absolute",
+      "width",
+      "height",
+      "name",
+      "label",
+      "parent",
+      "warning_propagation",
+      "use_custom_color",
+      "color",
+      "select",
+      "show_options",
+      "show_preview",
+      "hide",
+      "mute",
+      "show_texture",
+      "bl_idname",
+      "bl_label",
+      "bl_description",
+      "bl_icon",
+      "bl_width_default",
+      "bl_width_min",
+      "bl_width_max",
+      "bl_height_default",
+      "bl_height_min",
+      "bl_height_max",
+      "data_type",
+      "factor_mode",
+      "blend_type",
+      "clamp_factor",
+      "clamp_result"
+    ]
+  },
+  "CompositorNodeImage": {
+    "inputs": [],
+    "outputs": [
+      [
+        "Image",
+        "Image"
+      ],
+      [
+        "Alpha",
+        "Alpha"
+      ]
+    ],
+    "properties": [
+      "location",
+      "location_absolute",
+      "width",
+      "height",
+      "name",
+      "label",
+      "parent",
+      "warning_propagation",
+      "use_custom_color",
+      "color",
+      "select",
+      "show_options",
+      "show_preview",
+      "hide",
+      "mute",
+      "show_texture",
+      "bl_idname",
+      "bl_label",
+      "bl_description",
+      "bl_icon",
+      "bl_width_default",
+      "bl_width_min",
+      "bl_width_max",
+      "bl_height_default",
+      "bl_height_min",
+      "bl_height_max",
+      "image",
+      "frame_duration",
+      "frame_start",
+      "frame_offset",
+      "use_cyclic",
+      "use_auto_refresh",
+      "layer",
+      "view"
+    ]
+  },
+  "CompositorNodeSetAlpha": {
+    "inputs": [
+      [
+        "Image",
+        "Image",
+        "NodeSocketColor",
+        "<bpy_float[4], NodeSocketColor.default_value>"
+      ],
+      [
+        "Alpha",
+        "Alpha",
+        "NodeSocketFloat",
+        "1.0"
+      ],
+      [
+        "Type",
+        "Type",
+        "NodeSocketMenu",
+        "Apply Mask"
+      ]
+    ],
+    "outputs": [
+      [
+        "Image",
+        "Image"
+      ]
+    ],
+    "properties": [
+      "location",
+      "location_absolute",
+      "width",
+      "height",
+      "name",
+      "label",
+      "parent",
+      "warning_propagation",
+      "use_custom_color",
+      "color",
+      "select",
+      "show_options",
+      "show_preview",
+      "hide",
+      "mute",
+      "show_texture",
+      "bl_idname",
+      "bl_label",
+      "bl_description",
+      "bl_icon",
+      "bl_width_default",
+      "bl_width_min",
+      "bl_width_max",
+      "bl_height_default",
+      "bl_height_min",
+      "bl_height_max"
+    ]
+  },
+  "CompositorNodeAlphaOver": {
+    "inputs": [
+      [
+        "Background",
+        "Background",
+        "NodeSocketColor",
+        "<bpy_float[4], NodeSocketColor.default_value>"
+      ],
+      [
+        "Foreground",
+        "Foreground",
+        "NodeSocketColor",
+        "<bpy_float[4], NodeSocketColor.default_value>"
+      ],
+      [
+        "Factor",
+        "Fac",
+        "NodeSocketFloatFactor",
+        "1.0"
+      ],
+      [
+        "Type",
+        "Type",
+        "NodeSocketMenu",
+        "Over"
+      ],
+      [
+        "Straight Alpha",
+        "Straight Alpha",
+        "NodeSocketBool",
+        "False"
+      ]
+    ],
+    "outputs": [
+      [
+        "Image",
+        "Image"
+      ]
+    ],
+    "properties": [
+      "location",
+      "location_absolute",
+      "width",
+      "height",
+      "name",
+      "label",
+      "parent",
+      "warning_propagation",
+      "use_custom_color",
+      "color",
+      "select",
+      "show_options",
+      "show_preview",
+      "hide",
+      "mute",
+      "show_texture",
+      "bl_idname",
+      "bl_label",
+      "bl_description",
+      "bl_icon",
+      "bl_width_default",
+      "bl_width_min",
+      "bl_width_max",
+      "bl_height_default",
+      "bl_height_min",
+      "bl_height_max"
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Camp_Light_Ground_Benchmark_v039.blend",
+  "sha256": "0febe04dfc246c5a56509563f3f48966761c122d55a11ec572722821ee1e8dab",
+  "existing_flames_refined": [
+    "v036 | Camp hearth | painted flame 0",
+    "v036 | Camp hearth | painted flame 1"
+  ],
+  "palette": "Restrained charcoal-ochre/gold ramp retaining14%originalpaint grain/color; originalAlpha and native motion unchanged.",
+  "foreground": "Repeated bank photograph contribution removed; continuous painted earth retained. Existing native rooted grass in camp78\u2013100 now rises from bank ray instead of being buried below it. Source wind kept; no new prototype art.",
+  "glow": "Softer medium-quality fog kernel on hot cores, output remains4K; no full-frame scenery blur.",
+  "v001_assets_imported": false,
+  "render_status": "Working benchmark; no substantive moving render yet.",
+  "physical_power_linked_receivers": [
+    {
+      "material": "v039 | Camp paint | shaped cool key and localized warm source",
+      "node": "v039 coherent fire beat"
+    },
+    {
+      "material": "v039 | Charcoal pair | restrained source-connected rim",
+      "node": "v039 source-connected actor beat"
+    },
+    {
+      "material": "v039 | Foreground bank | stable paint variation",
+      "node": "v039 coherent fire beat"
+    },
+    {
+      "material": "v039 | Walking path | stable paint variation",
+      "node": "v039 coherent fire beat"
+    }
+  ],
+  "native_grass_contacts": [
+    {
+      "object": "v016 | Rooted grass 019",
+      "old": [
+        83.74893951416016,
+        -2.198613405227661,
+        0.504790186882019
+      ],
+      "new": [
+        83.74893951416016,
+        -2.198613405227661,
+        0.7508581280708313
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 023",
+      "old": [
+        98.97366333007812,
+        -3.5300238132476807,
+        0.6043229699134827
+      ],
+      "new": [
+        98.97366333007812,
+        -3.5300238132476807,
+        0.9678313136100769
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 027",
+      "old": [
+        81.20394897460938,
+        -2.866889476776123,
+        0.5702558159828186
+      ],
+      "new": [
+        81.20394897460938,
+        -2.866889476776123,
+        0.8597636818885803
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 034",
+      "old": [
+        89.54277038574219,
+        -1.6016980409622192,
+        0.5535356998443604
+      ],
+      "new": [
+        89.54277038574219,
+        -1.6016980409622192,
+        0.6535818576812744
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 047",
+      "old": [
+        85.1045150756836,
+        -3.7109408378601074,
+        0.586301863193512
+      ],
+      "new": [
+        85.1045150756836,
+        -3.7109408378601074,
+        0.997314453125
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 054",
+      "old": [
+        99.86246490478516,
+        -3.02543306350708,
+        0.6313526630401611
+      ],
+      "new": [
+        99.86246490478516,
+        -3.02543306350708,
+        0.885600745677948
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 055",
+      "old": [
+        87.50643920898438,
+        -1.747982144355774,
+        0.5423181056976318
+      ],
+      "new": [
+        87.50643920898438,
+        -1.747982144355774,
+        0.6774210333824158
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 062",
+      "old": [
+        79.1384506225586,
+        -1.8823661804199219,
+        0.6284548044204712
+      ],
+      "new": [
+        79.1384506225586,
+        -1.8823661804199219,
+        0.699320912361145
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 068",
+      "old": [
+        90.51158142089844,
+        -1.644397497177124,
+        0.5007210969924927
+      ],
+      "new": [
+        90.51158142089844,
+        -1.644397497177124,
+        0.6605404019355774
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 075",
+      "old": [
+        84.20344543457031,
+        -3.878403663635254,
+        0.5218783617019653
+      ],
+      "new": [
+        84.20344543457031,
+        -3.878403663635254,
+        1.0246050357818604
+      ]
+    },
+    {
+      "object": "v016 | Rooted grass 085",
+      "old": [
+        99.41256713867188,
+        -1.9441628456115723,
+        0.6246320605278015
+      ],
+      "new": [
+        99.41256713867188,
+        -1.9441628456115723,
+        0.7093916535377502
+      ]
+    }
+  ]
+}

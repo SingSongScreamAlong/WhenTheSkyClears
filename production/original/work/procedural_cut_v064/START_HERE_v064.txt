@@ -1,0 +1,63 @@
+WHEN THE SKY CLEARS | v064 PROCEDURAL FULL CUT
+
+The actual trailer now has one continuous, procedural color-to-charcoal transition for BOTH original full-cut children. Color changes with global trailer time while the established layered 2D/2.5D painted world, original held pair, route, camera, title treatment and credits are retained.
+
+EDITABLE NATIVE
+native/WTSC_Procedural_Full_Trailer_v064.blend
+Active master: WTSC_PROCEDURAL_MASTER_106S_v064
+Picture/title scene: WTSC_PROCEDURAL_FULL_CUT_v064
+World scene: WTSC_PROCEDURAL_COLOR_WORLD_v064
+
+The editable native is configured for 3840 × 2160 at 24 fps, 2,544 frames / 106 seconds:
+- Frames 1–2400: 100 seconds of moving world through the existing title mask.
+- Frames 2401–2544: six seconds of silent credits.
+The original supplied music starts with the picture, fades from 90–100 seconds and remains silent through the credits. Existing title wording, glyph timing and credit geometry are preserved.
+
+PROCEDURAL COLOR CONTROL
+Object: V064 | global procedural color loss | BOTH children
+Driven property: charcoal_progress
+Editable parameters: fade_start_seconds = 0; fade_finish_seconds = 96.
+
+The driver uses absolute frame time, t = (frame − 1) / 24:
+u = clamp((t − fade_start_seconds) / (fade_finish_seconds − fade_start_seconds), 0, 1)
+p = 3u² − 2u³
+
+Both children share p. Pigment saturation is 1 − p, and the blend toward the reviewed v063 neutral charcoal values is p. There are no palette keyframes and no per-shot reset. The pair starts in full painted color, loses color continuously, reaches the detail-preserving charcoal endpoint at 96 seconds and holds it through the ending. Keep finish later than start when editing the two parameters.
+
+The charcoal endpoint uses the reviewed v063 neutral ramp of the full-painted-source luminance, keeping painted facial features and cloth detail visible. Original UVs, alpha, silhouette, geometry and lighting source graph are retained. The older lit-charcoal branch remains preserved internally; it is not the final endpoint.
+
+The color change belongs to the actual 100-second picture clock. It is separate from the existing final picture fade and does not grade the credit card.
+
+SOURCE AND CONTINUITY
+Based on work/world_minimum_v058/WTSC_World_Development_v058_Packed.blend, including its improved painted foreground and inherited full 106-second assembly. The original full-cut Grease Pencil contours and registered painted mesh remain in place. Material copies provide the color treatment while original geometry, drawing positions, UVs, camera/travel curves, world visibility, motion actions and packed source paintings are preserved.
+
+The v063 first-danger gesture/color-study branch remains separate and preserved. Its five-second choreography, camera and newer character rig are not stretched or inserted into this full cut. This material-only pass retains the original full-cut held pair; it does not add new gait, facial performance, protective acting, cloth or hair animation.
+
+REVIEW OUTPUTS
+previews/WTSC_Procedural_Full_Knockout_v064.mp4
+720p, 106 seconds at 24 fps: the full title-mask trailer, original music fade and six silent credit seconds.
+
+previews/WTSC_Procedural_Unmasked_World_v064.mp4
+720p, 100 seconds at 24 fps, mute: the same freshly rendered world without the title mask, for reading the pair and procedural color progression.
+
+These are real-time full-duration review outputs, unlike the earlier five-second compressed palette comparison. The native remains editable at 4K. Review exports and completion hashes are recorded by the packaging evidence rather than assumed from a successful build.
+
+IMPLEMENTATION AND RECORDS
+All implementation scripts are in work/procedural_cut_v064/scripts/, relative to the project root.
+scripts/build_procedural_cut.py — full-cut assembly and global smoothstep driver.
+scripts/color_original_pair_v064.py — copied original-UV pair material treatment.
+scripts/monitor_verified_render.py — active render monitoring for the verified batch.
+scripts/render_world_worker.py — explicit global-frame rendering and same-source resume checks.
+scripts/verify_procedural_timeline_v064.py — completed render/package evidence verification.
+scripts/package_full_cut_v064.py — title-mask assembly, audio/credits, full decoding and timing checks.
+evidence/FULL_CUT_BUILD.json — source provenance, procedural samples and preservation results.
+evidence/ contains the render and package completion/verification records.
+
+NEXT PRODUCTION WORK
+Develop the full story's paired acting, gaze, anticipation, weight, hand contact, transitions, hair and cloth within the established layered drawing method. Carry the same global color driver through those future performances and verify their joins and readability inside the actual title mask.
+
+This is the procedural full-cut palette integration. It does not establish new character acting or completed Arcane-level production quality. All earlier sources remain preserved.
+
+
+CURRENT VISUAL QC
+Native 4K QC records the girl's arm/cuff gaps as corrected. A minor boy jaw/neck registration residual remains where the existing full-cut silhouette meets the registered painted face. The original held poses remain part of this palette-only cut; detailed facial registration and authored story acting remain development work.

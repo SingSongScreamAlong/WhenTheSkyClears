@@ -1,0 +1,386 @@
+{
+  "status": "Unpainted v012 review candidate. Repaint gate remains unpassed; no artistic approval or production integration.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\native\\WTSC_Unpainted_Motion_Rebuild_v012.blend",
+    "bytes": 815437,
+    "sha256": "9843cb4a359299c1345a4554ff21f3c459be9781458ee691ef4a157f01157ad7",
+    "collection": "WTSC_UNPAINTED_MOTION_REBUILD_v012",
+    "frames": [
+      1,
+      144
+    ],
+    "fps": 24,
+    "seconds": 6,
+    "armatures": 2,
+    "objects": 44,
+    "external_images": 0
+  },
+  "previews": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+      "bytes": 293851,
+      "sha256": "0664d4c6be7c2aa78c99aa1530c64b42fe081e69b3e1c2f3830a5963bd888c91",
+      "decoded_frames": 144,
+      "fps": 24.0,
+      "seconds": 6.0,
+      "size": [
+        960,
+        540
+      ],
+      "sound": "Silent motion test; no soundtrack edits.",
+      "chronological_decoded_review_sheets": [
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\INSPECTION_001_024.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\INSPECTION_025_048.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\INSPECTION_049_072.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\INSPECTION_073_096.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\INSPECTION_097_120.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\INSPECTION_121_144.jpg"
+      ]
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Shot_Size_6s.mp4",
+      "bytes": 185614,
+      "sha256": "a51e98993a94cbbd46cb18924e9a3c4323cb7c4d932c043e50b51e8766fee1b3",
+      "decoded_frames": 144,
+      "fps": 24.0,
+      "seconds": 6.0,
+      "size": [
+        960,
+        540
+      ],
+      "sound": "Silent motion test; no soundtrack edits.",
+      "chronological_decoded_review_sheets": [
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\SHOT_SIZE_001_024.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\SHOT_SIZE_025_048.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\SHOT_SIZE_049_072.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\SHOT_SIZE_073_096.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\SHOT_SIZE_097_120.jpg",
+        "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\evidence\\decoded_sequence_review\\SHOT_SIZE_121_144.jpg"
+      ]
+    }
+  ],
+  "private_library": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 293851,
+    "external_connectors_accessed": false
+  },
+  "guide": "REFINEMENT_AND_TIMING_GUIDE_v012.txt",
+  "fundamental_changes": [
+    "World-fixed low obstacle and abrupt arriving-toe interruption24, heel kick through26, continued body travel and forward pitch. Toe X stays pinned through30. Labels hidden in primary movies.",
+    "Catch heel advanced40->36, compression44->40, and continuous descent24..40 removes the decorative pre-catch rise. Weight then advances/rises over planted near foot.",
+    "Girl's second landing41 removed. Her actual compression minimum is29, eleven frames before boy40, followed by settle38 and a waiting support shift/head-shoulder counter-response. No new clasp or backward turnaround.",
+    "Earlier trailing heel release, faster toe extraction, independent body/foot phases and small root-speed modulation. Pelvis/chest phase separation and three-frame head lag replace the most rigid stacked response. Future step definitions avoid a held flat foot at the end.",
+    "Short neck and continuous ankle/boot proxy connection improve visible load continuity without repainting. Two children retain separate routes and contact clocks."
+  ],
+  "artistic_assessment": {
+    "status": "Unpainted v012 review candidate. Repaint gate remains unpassed; no artistic approval or production integration.",
+    "review_method": "Actual final144frame close movie and144frame shot-size movie fully decoded. All frames in both views examined sequentially in chronological decoded-frame sheets, with full-frame stills and pose sheets for framing. No continuous/full-speed playback supported; pacing and naturalness remain provisional. No UI or video-player interaction claimed.",
+    "prior_review": "Independent v011 report read in full; its fail verdict is retained as prior_v011_independent_artistic_review.json. v010 remains artistically rejected.",
+    "fundamental_changes": [
+      "World-fixed low obstacle and abrupt arriving-toe interruption24, heel kick through26, continued body travel and forward pitch. Toe X stays pinned through30. Labels hidden in primary movies.",
+      "Catch heel advanced40->36, compression44->40, and continuous descent24..40 removes the decorative pre-catch rise. Weight then advances/rises over planted near foot.",
+      "Girl's second landing41 removed. Her actual compression minimum is29, eleven frames before boy40, followed by settle38 and a waiting support shift/head-shoulder counter-response. No new clasp or backward turnaround.",
+      "Earlier trailing heel release, faster toe extraction, independent body/foot phases and small root-speed modulation. Pelvis/chest phase separation and three-frame head lag replace the most rigid stacked response. Future step definitions avoid a held flat foot at the end.",
+      "Short neck and continuous ankle/boot proxy connection improve visible load continuity without repainting. Two children retain separate routes and contact clocks."
+    ],
+    "visual_judgment": {
+      "toe_interruption": "More explicit in close progression than v011: the advancing toe stops, heel kicks up and boy pitches forward. At shot size it is still brief and small; I do not certify an unmistakable unprompted trip read or convincing timing without playback review.",
+      "catch_and_load": "Useful causal improvement: no pre-landing rise, heel36 then visible compression40. The boy's reaching gesture and pelvis drop remain deliberately authored and may still feel staged.",
+      "girl": "Earlier brake/settle is now visibly separate while boy compresses. She waits on her front support with trailing heel raised; the emotional intention is understated because fixed profile/no eyes and limited shoulder acting cannot communicate a real look back. No helping load is depicted.",
+      "restart_and_walk": "Trailing release and body rise no longer produce the deep unintended restart sag. Contacts remain distinct boy78/girl83 and travel continues. The later gait still has regular spacing and limited torso/lateral response; I would not call it finished natural movement or approve repainting from this review.",
+      "contacts_and_proxy": "No obvious large flat-stance skate in the inspected progression. Ankle bridges close the prior visible gap. Toe/heel rolls change sole vertices intentionally and are not flat plants. Simple separated proxy masses are diagnostic, not finished silhouettes."
+    },
+    "corrected_during_review": "First v012 rendered/decoded review exposed leg-reach limiting the girl's intended early compression into a later actual dip, plus restart and end-boundary sag. Earlier heel release and swing extraction were revised; final actual minima now girl29/boy40. First-pass traceability is retained locally but excluded from the handoff package.",
+    "technical_separation": "Binding, native lengths, pivot lock, floor and export checks prevent technical defects contaminating review. They are not a naturalism test, collision solve, measured COM, force/dynamics validation or acceptance.",
+    "limitations": [
+      "No continuous/full-speed playback available to agent. Spacing/timing judged from actual sequential frames; pacing provisional.",
+      "Toe/obstacle detail is small at original approximate shot size; the cause may still need clearer acting/timing.",
+      "Waiting intention is restrained, forward profile retained and no actual look back or helping grip is created.",
+      "Later walking remains orderly/pendular in places; head overlap is small. No lateral balance, torso yaw, hair, cloth or production silhouette validation.",
+      "Authored fixed-length kinematics, not dynamics or child motion capture. Geometric mass proxy only. Desired extension is allowed to be limited by leg support geometry, about1.8cm on girl's first restart; actual values are exported.",
+      "Standalone6s routes are not mapped to production75..80s. No painting or integration until the movement gate is met."
+    ],
+    "next_review": "Watch both entire movies at normal speed and judge toe interruption, catch urgency, girl's waiting intention and later walk at shot size. Keep refining fundamental support/timing/acting if these still read mechanically. Do not use technical success as permission to paint."
+  },
+  "technical_integrity": {
+    "cold_reopened": true,
+    "binding_joint_target_error_m": 1.922397789183489e-06,
+    "bound_mesh_center_error_m": 1.911075362309191e-06,
+    "fixed_segment_length_error_m": 1.366475541275669e-06,
+    "flat_sole_vertex_drift_m": 4.852338644407413e-07,
+    "floor_min_z_m": -8.214974513975903e-07,
+    "fresh_append": {
+      "fresh_empty_scene_append": true,
+      "objects": 44,
+      "native_armatures": 2,
+      "camera_light_count": 0,
+      "sample_joint_world_error_m": 1.707179059071223e-06,
+      "external_images": 0
+    },
+    "event_timing_check": {
+      "BOY": {
+        "actual_event_min": [
+          40,
+          0.455
+        ],
+        "samples": {
+          "24": {
+            "root_x": 0.52059375,
+            "hip_z": 0.605,
+            "desired_hip_z": 0.605
+          },
+          "26": {
+            "root_x": 0.57365625,
+            "hip_z": 0.585,
+            "desired_hip_z": 0.585
+          },
+          "29": {
+            "root_x": 0.6534814814814816,
+            "hip_z": 0.565,
+            "desired_hip_z": 0.565
+          },
+          "33": {
+            "root_x": 0.76,
+            "hip_z": 0.55,
+            "desired_hip_z": 0.55
+          },
+          "36": {
+            "root_x": 0.83,
+            "hip_z": 0.545,
+            "desired_hip_z": 0.545
+          },
+          "40": {
+            "root_x": 0.89,
+            "hip_z": 0.455,
+            "desired_hip_z": 0.455
+          },
+          "44": {
+            "root_x": 0.9135000000000001,
+            "hip_z": 0.475,
+            "desired_hip_z": 0.475
+          },
+          "53": {
+            "root_x": 0.965,
+            "hip_z": 0.538984375,
+            "desired_hip_z": 0.538984375
+          },
+          "62": {
+            "root_x": 1.0225,
+            "hip_z": 0.6022222222222222,
+            "desired_hip_z": 0.6022222222222222
+          },
+          "66": {
+            "root_x": 1.055,
+            "hip_z": 0.61234375,
+            "desired_hip_z": 0.61234375
+          },
+          "69": {
+            "root_x": 1.0894687499999998,
+            "hip_z": 0.6237162489469732,
+            "desired_hip_z": 0.6237162489469732
+          },
+          "70": {
+            "root_x": 1.100562216641256,
+            "hip_z": 0.6282343147573323,
+            "desired_hip_z": 0.6282343147573323
+          },
+          "74": {
+            "root_x": 1.144938925520419,
+            "hip_z": 0.6307292597452235,
+            "desired_hip_z": 0.6373454484897959
+          },
+          "78": {
+            "root_x": 1.2024576256159332,
+            "hip_z": 0.6264859259259259,
+            "desired_hip_z": 0.6264859259259259
+          },
+          "83": {
+            "root_x": 1.2791819915882463,
+            "hip_z": 0.6227914907112392,
+            "desired_hip_z": 0.6227914907112392
+          },
+          "94": {
+            "root_x": 1.4545171397871601,
+            "hip_z": 0.626,
+            "desired_hip_z": 0.626
+          },
+          "139": {
+            "root_x": 2.2145171397871604,
+            "hip_z": 0.626,
+            "desired_hip_z": 0.626
+          },
+          "144": {
+            "root_x": 2.2964595229796987,
+            "hip_z": 0.6264734614416841,
+            "desired_hip_z": 0.6264734614416841
+          }
+        }
+      },
+      "GIRL": {
+        "actual_event_min": [
+          29,
+          0.55
+        ],
+        "samples": {
+          "24": {
+            "root_x": 1.4088888888888889,
+            "hip_z": 0.5938038247160693,
+            "desired_hip_z": 0.6132814606377649
+          },
+          "26": {
+            "root_x": 1.48,
+            "hip_z": 0.5722368020875281,
+            "desired_hip_z": 0.587
+          },
+          "29": {
+            "root_x": 1.5342399999999998,
+            "hip_z": 0.55,
+            "desired_hip_z": 0.55
+          },
+          "33": {
+            "root_x": 1.573440233236152,
+            "hip_z": 0.578,
+            "desired_hip_z": 0.578
+          },
+          "36": {
+            "root_x": 1.59298833819242,
+            "hip_z": 0.592904,
+            "desired_hip_z": 0.592904
+          },
+          "40": {
+            "root_x": 1.6032930041152262,
+            "hip_z": 0.60053125,
+            "desired_hip_z": 0.60053125
+          },
+          "44": {
+            "root_x": 1.610511111111111,
+            "hip_z": 0.59846875,
+            "desired_hip_z": 0.59846875
+          },
+          "53": {
+            "root_x": 1.623712,
+            "hip_z": 0.606,
+            "desired_hip_z": 0.606
+          },
+          "62": {
+            "root_x": 1.6377572016460906,
+            "hip_z": 0.6015199999999999,
+            "desired_hip_z": 0.6015199999999999
+          },
+          "66": {
+            "root_x": 1.645,
+            "hip_z": 0.606,
+            "desired_hip_z": 0.606
+          },
+          "69": {
+            "root_x": 1.655,
+            "hip_z": 0.6090565697429672,
+            "desired_hip_z": 0.609281928009429
+          },
+          "70": {
+            "root_x": 1.6612272314115764,
+            "hip_z": 0.6085552793472231,
+            "desired_hip_z": 0.6097522261348833
+          },
+          "74": {
+            "root_x": 1.702682870802427,
+            "hip_z": 0.6124250675427982,
+            "desired_hip_z": 0.6163711470845439
+          },
+          "78": {
+            "root_x": 1.7405737617175352,
+            "hip_z": 0.6073147624020441,
+            "desired_hip_z": 0.6226981113834441
+          },
+          "83": {
+            "root_x": 1.8141447722695947,
+            "hip_z": 0.6058497174949894,
+            "desired_hip_z": 0.606
+          },
+          "94": {
+            "root_x": 1.971199600297735,
+            "hip_z": 0.6130234436715551,
+            "desired_hip_z": 0.6221911599740343
+          },
+          "139": {
+            "root_x": 2.7183196335294375,
+            "hip_z": 0.6135685649228505,
+            "desired_hip_z": 0.623178814382896
+          },
+          "144": {
+            "root_x": 2.8145171397871604,
+            "hip_z": 0.606,
+            "desired_hip_z": 0.606
+          }
+        }
+      },
+      "boy_preload_upward_pairs": [],
+      "boy_blocked_toe_x_span_m": 0.0,
+      "boy_heel_z_at26_m": 0.18564477562904358,
+      "boy_forward_travel_during_toe_block_m": 0.15940625000000008,
+      "girl_restart_max_reach_limit_lowering_m": 0.017776994108690047,
+      "girl_restart_min_actual_hip_m": 0.6011352000593803,
+      "scope": "Technical timing/support evidence only. Actual hip-Z includes leg-reach limiting. No naturalism, force/dynamics, collision-solve or repaint approval claim."
+    },
+    "note": "Technical integrity only. Naturalism/repaint gate remains unpassed."
+  },
+  "clock_and_integration": {
+    "local_frames": [
+      1,
+      144
+    ],
+    "fps": 24,
+    "frame1_seconds": 0,
+    "frame144_seconds": 5.958333333333333,
+    "boundary145_seconds": 6,
+    "boy_catch_heel": 36,
+    "boy_load_minimum": 40,
+    "girl_brake_heel": 26,
+    "girl_load_minimum": 29,
+    "boy_restart_heel": 78,
+    "girl_restart_heel": 83,
+    "travel": "Independent native Object root routes plus per-frame world_motion_samples.csv and full joint_targets.json. Camera averages child routes.",
+    "production_mapping": null,
+    "instruction": "Append only into an empty test scene. Do not combine with old DISTANCE_CURVE, alter full-trailer length or silently retime144 frames into120. Accept movement/timing first, then match world/camera/contact routes together."
+  },
+  "sources_preserved": {
+    "locomotion/stumble_polish_continuation_v010/native/WTSC_Stumble_Polish_Continuation_v010.blend": true,
+    "locomotion/stumble_polish_continuation_v010/native/WTSC_v010_Matched_Review_Copy.blend": true,
+    "locomotion/stumble_polish_continuation_v010/WTSC_v010_Matched_5s_Polish_PLUS_Separate_2s_Continuation.mp4": true,
+    "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend": true,
+    "locomotion/motion_rebuild_unpainted_v011/native/WTSC_Unpainted_Motion_Rebuild_v011.blend": true,
+    "locomotion/motion_rebuild_unpainted_v011/WTSC_v011_Unpainted_Stumble_Recovery_Walk_6s.mp4": true,
+    "locomotion/motion_rebuild_unpainted_v011/evidence/world_motion_samples.csv": true
+  },
+  "remaining_limitations": [
+    "No continuous/full-speed playback available to agent. Spacing/timing judged from actual sequential frames; pacing provisional.",
+    "Toe/obstacle detail is small at original approximate shot size; the cause may still need clearer acting/timing.",
+    "Waiting intention is restrained, forward profile retained and no actual look back or helping grip is created.",
+    "Later walking remains orderly/pendular in places; head overlap is small. No lateral balance, torso yaw, hair, cloth or production silhouette validation.",
+    "Authored fixed-length kinematics, not dynamics or child motion capture. Geometric mass proxy only. Desired extension is allowed to be limited by leg support geometry, about1.8cm on girl's first restart; actual values are exported.",
+    "Standalone6s routes are not mapped to production75..80s. No painting or integration until the movement gate is met."
+  ],
+  "blocked_or_uncertain_actions": [],
+  "ancillary_delivery_issue": {
+    "action": "Persist local Library identity metadata",
+    "target": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_refinement_unpainted_v012\\WTSC_v012_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+    "reason": "Current Windows Python has no os.setxattr; current official helper invoked and returned AttributeError.",
+    "state": "Unavailable, not denied or pending; no local metadata written. Upload confirmed succeeded, exact identity/version receipt saved. No uncertain upload."
+  }
+}

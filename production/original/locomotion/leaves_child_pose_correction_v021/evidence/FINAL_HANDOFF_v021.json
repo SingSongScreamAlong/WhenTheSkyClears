@@ -1,0 +1,59 @@
+{
+  "status": "BOUNDED_POSE_CORRECTION_COMPLETE_ART_UNPASSED",
+  "continuous_animation": "NOT_STARTED",
+  "production_integration": "NOT_STARTED",
+  "stride_m": 0.9524437384576381,
+  "period_s": 1.0333333333333334,
+  "max_native_leg_source_residual_deg": 7.334491064738765,
+  "minimum_sampled_swing_sole_clearance_m": 0.02199885994195938,
+  "technical_checks": {
+    "duplicate_bookend_relative_mesh_error_m": 5.127385417844431e-07,
+    "rest_bone_length_change_m": 0.0,
+    "art_variant_skeleton_matrix_max_delta": 0.0,
+    "art_variant_boot_vertices_max_delta_m": 0.0,
+    "all_variant_native_chains_reachable": true,
+    "frame_handlers": 0,
+    "scope": "Eight selected poses and duplicate bookend only. No continuous gait, mass simulation or blend acceptance.",
+    "status": "PASS"
+  },
+  "private_previews": [
+    {
+      "file": "WTSC_v021_Support_Pose_Correction_and_Art_Study_5s.mp4",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0
+    },
+    {
+      "file": "WTSC_v021_Matching_Correction_Before_After.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0
+    },
+    {
+      "file": "WTSC_v021_Passing_Whole_Pose_Corrective_Before_After.jpg",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "version": 0
+    }
+  ],
+  "native_assets": [
+    "native/WTSC_Child_Coherent_Support_Eight_Poses_v021.blend",
+    "native/WTSC_Child_Passing_Whole_Pose_Art_Study_v021.blend"
+  ],
+  "guide": "V021_IMPORT_AND_REVIEW_GUIDE.txt",
+  "assessment": "V021_RESOLVED_AND_REMAINING_REPORT.txt",
+  "remaining": [
+    "7.33deg worst source leg residual",
+    "11.48mm UP-height asymmetry",
+    "adult source cadence and child intention not accepted",
+    "rigid torso/cloth and calf paint band remain",
+    "continuous weight transfer/recovery transition not authored"
+  ],
+  "execution_blockers": [],
+  "native_sha256": {
+    "WTSC_Child_Coherent_Support_Eight_Poses_v021.blend": "4f7fc0d5d9f8fd94a69d4eed23edb69ede5de7519b9cbbd0630fe1db11471ada",
+    "WTSC_Child_Passing_Whole_Pose_Art_Study_v021.blend": "8cd23d3c3131e6a584b834adc17fbc2aaba34db587abd945e78d34fa844a7399"
+  },
+  "package": "WTSC_Child_Coherent_Poses_and_Art_Study_v021.zip",
+  "native_annotation_pose_change_m": 0.0
+}

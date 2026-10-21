@@ -1,0 +1,141 @@
+{
+  "input_sha256": "e993540280bc60ff5fcc1dafe316f7c8457c5c8750a1110b8f6e307a865d005d",
+  "source_modified_utc": "2026-10-18T21:30:20.628944+00:00",
+  "built_utc": "2026-10-18T21:36:20.470337+00:00",
+  "newest_v046_uv_material_depth_origins_preserved": true,
+  "earlier_manual_uv_remap_applied": false,
+  "garment_lag": {
+    "scope": "Lower-garment follow-through candidate; existing body/arm/foot acting is unchanged.",
+    "source_period_frames": 31.0,
+    "source_fps": 30,
+    "quarter_frame_samples": 124,
+    "cycle_bookend": [
+      1,
+      32
+    ],
+    "body_topology_uv_material_image_edits": false,
+    "rig_action_hashes_unchanged": true,
+    "bones_feet_root_camera_edited": false,
+    "characters": {
+      "BOY": {
+        "object": "V046 BOY | tailored coat",
+        "action": "V046 BOY | tailored coat | V047 measured 31-frame lower-garment lag",
+        "input_angle_rad": {
+          "min": -0.07658250170958088,
+          "max": -0.04810900737472136,
+          "peak_to_peak": 0.028473494334859517,
+          "rms": 0.06637139275222452
+        },
+        "input_pelvis_x_m": {
+          "min": -0.008100003004074097,
+          "max": 0.04050001502037048,
+          "peak_to_peak": 0.04860001802444458,
+          "rms": 0.021303509141070407
+        },
+        "input_pelvis_z_m": {
+          "min": 0.7006259560585022,
+          "max": 0.7380507588386536,
+          "peak_to_peak": 0.03742480278015137,
+          "rms": 0.7182234137118942
+        },
+        "periodic_filter_tau_source_frames": 2.0,
+        "raw_response_x_m": {
+          "min": -0.011611586667562084,
+          "max": 0.011266751840806574,
+          "peak_to_peak": 0.022878338508368658,
+          "rms": 0.007749222060463984
+        },
+        "raw_response_z_m": {
+          "min": -0.002554727609231606,
+          "max": 0.0034133526760635555,
+          "peak_to_peak": 0.005968080285295161,
+          "rms": 0.001713422439244696
+        },
+        "hem_response_x_m": {
+          "min": -0.008971943284449184,
+          "max": 0.008816575249383767,
+          "peak_to_peak": 0.017788518533832953,
+          "rms": 0.00644511493509302
+        },
+        "hem_response_z_m": {
+          "min": -0.0020756755324124114,
+          "max": 0.0024409998871485895,
+          "peak_to_peak": 0.004516675419561001,
+          "rms": 0.001445407903299445
+        },
+        "maximum_authored_rest_displacement_m": 0.0091668582586179,
+        "pinned_rows_inclusive": [
+          0,
+          28
+        ],
+        "pinned_vertices": 493,
+        "new_drawing_samples": 124,
+        "armature_modifier_retained": true,
+        "local_evaluated_closing_bookend_error_m": 2.9802322387695312e-08,
+        "maximum_evaluated_world_change_m": 0.00973797932554068,
+        "maximum_pinned_upper_world_change_m": 0.0,
+        "local_evaluated_closing_bookend_within_2um": true
+      },
+      "GIRL": {
+        "object": "V046 GIRL | tailored knee-length dress",
+        "action": "V046 GIRL | tailored knee-length dress | V047 measured 31-frame lower-garment lag",
+        "input_angle_rad": {
+          "min": -0.08879981928571855,
+          "max": -0.06032634162701829,
+          "peak_to_peak": 0.028473477658700258,
+          "rms": 0.07849986798335572
+        },
+        "input_pelvis_x_m": {
+          "min": -0.008100003004074097,
+          "max": 0.04050001502037048,
+          "peak_to_peak": 0.04860001802444458,
+          "rms": 0.021303509141070407
+        },
+        "input_pelvis_z_m": {
+          "min": 0.6939802169799805,
+          "max": 0.7320266962051392,
+          "peak_to_peak": 0.03804647922515869,
+          "rms": 0.7119812317625196
+        },
+        "periodic_filter_tau_source_frames": 2.75,
+        "raw_response_x_m": {
+          "min": -0.014617063476721386,
+          "max": 0.016865084517335736,
+          "peak_to_peak": 0.03148214799405712,
+          "rms": 0.010798268134521593
+        },
+        "raw_response_z_m": {
+          "min": -0.003646618484711538,
+          "max": 0.0049164403505514275,
+          "peak_to_peak": 0.008563058835262965,
+          "rms": 0.0024848616796521107
+        },
+        "hem_response_x_m": {
+          "min": -0.012073042518933893,
+          "max": 0.013208713087840836,
+          "peak_to_peak": 0.02528175560677473,
+          "rms": 0.009153908771399443
+        },
+        "hem_response_z_m": {
+          "min": -0.0025150004230857434,
+          "max": 0.0027819195338534106,
+          "peak_to_peak": 0.0052969199569391535,
+          "rms": 0.0018301365905868546
+        },
+        "maximum_authored_rest_displacement_m": 0.013438712250969684,
+        "pinned_rows_inclusive": [
+          0,
+          28
+        ],
+        "pinned_vertices": 493,
+        "new_drawing_samples": 124,
+        "armature_modifier_retained": true,
+        "local_evaluated_closing_bookend_error_m": 8.940696716308594e-08,
+        "maximum_evaluated_world_change_m": 0.013001611366226644,
+        "maximum_pinned_upper_world_change_m": 0.0,
+        "local_evaluated_closing_bookend_within_2um": true
+      }
+    },
+    "limits": "Small rest-space deformation over the original armature, not cloth simulation or a new acting performance. Quarter-frame linear drawing blends are position-continuous, not a claim of continuous velocity. Inspect waist volume, projected hem continuity and actual playback before retention."
+  }
+}

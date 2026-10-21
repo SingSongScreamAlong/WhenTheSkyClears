@@ -1,8 +1,13 @@
-# This checkout also contains a separate Blender trailer production.
-# Only the game and its repository documentation belong to this repository.
+# Godot remains the active game. Other implementations and production history
+# are preserved in explicitly separate paths.
 /*
 !/.gitignore
 !/.gitattributes
 !/README.md
 !/docs/
 !/game/
+
+# Separate preservation paths; engines, caches and raw vendor packs stay local.
+!/unreal/
+!/production/
+!/ARCHIVE_INDEX.md

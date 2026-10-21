@@ -1,0 +1,45 @@
+{
+  "size": [
+    1600,
+    900
+  ],
+  "camera_and_character_fields": {
+    "player_x": {
+      "before": -420,
+      "after": -420,
+      "matches": true
+    },
+    "camera_location": {
+      "before": "X=-500.000 Y=2350.000 Z=285.000",
+      "after": "X=-500.000 Y=2350.000 Z=285.000",
+      "matches": true
+    },
+    "ortho_width": {
+      "before": 600,
+      "after": 600,
+      "matches": true
+    },
+    "orthographic": {
+      "before": true,
+      "after": true,
+      "matches": true
+    },
+    "head_world": {
+      "before": "X=-420.000 Y=11.000 Z=121.150",
+      "after": "X=-420.000 Y=11.000 Z=121.150",
+      "matches": true
+    },
+    "hand_world": {
+      "before": "X=-411.000 Y=9.000 Z=68.150",
+      "after": "X=-411.000 Y=9.000 Z=68.150",
+      "matches": true
+    }
+  },
+  "matched": true,
+  "before_provenance": "Unchanged ObjectiveFix art captured in v0.1.2 test-only camera harness before room edits",
+  "after_provenance": "Final packaged v0.1.2 executable",
+  "full_context": "BeforeFullShelter.png is the actual v0.1.1 overview; ArtFull/ArtOverview.png uses the same overview framing; HUD version differs",
+  "rig_code_unchanged": true,
+  "backdrop_material_unchanged": true,
+  "art_approval": false
+}

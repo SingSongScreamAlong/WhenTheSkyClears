@@ -1,0 +1,57 @@
+{
+  "outputs": [
+    {
+      "path": "WTSC_Evolving_Eruption_75-80s_v003.mp4",
+      "bytes": 1587770,
+      "sha256": "e2dac81c532dc99c32413c8b303a63ce3aaf8f1db4a15c30da52b7185006a741",
+      "frames": 120,
+      "fps": 24,
+      "seconds": 5.0,
+      "pixels": [
+        1920,
+        1080
+      ],
+      "full_decode_passed": true
+    },
+    {
+      "path": "WTSC_Compare_LEFT-v002a_RIGHT-v003_matched-ages.mp4",
+      "bytes": 2481608,
+      "sha256": "3b7cb64597d41d64e6b51fc5e6d9f0c48b45e2158d90b037ba2684bd8d904376",
+      "frames": 96,
+      "fps": 24,
+      "seconds": 4.0,
+      "pixels": [
+        3840,
+        1080
+      ],
+      "full_decode_passed": true
+    }
+  ],
+  "all216_source_frames_decoded": true,
+  "same_framing": true,
+  "comparison_alignment": {
+    "legacy_actual_frames": [
+      1795,
+      1890
+    ],
+    "new_actual_frames": [
+      1806,
+      1901
+    ],
+    "common_event_ages": [
+      -18,
+      77
+    ],
+    "method": "Existing96 legacy PNGs reused without freezing or interpolation; compared with corresponding new age. No extra legacy render performed."
+  },
+  "new_ignition": 1824,
+  "held_scene_source_frame": 1825,
+  "production_source_unchanged": true,
+  "artistic_status": "Evaluate actual decoded motion and changing billows. Technical pass is not cinematic acceptance.",
+  "limits": [
+    "Camera/characters held for controlled effects comparison",
+    "2.5D independent paint layers with native shader erosion and deformation, not fluid simulation",
+    "Collection contains no lights; production owns live relighting/occlusion/contact",
+    "No transparent animation sequence is claimed in this review build"
+  ]
+}

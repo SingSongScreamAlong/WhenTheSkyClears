@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Prototype",
+  "Description": "Separate WTSC civilian shelter and scavenging prototype. Age-ten leads; provisional painted puppets.",
+  "Modules": [{"Name": "WTSCSurvival", "Type": "Runtime", "LoadingPhase": "Default"}],
+  "Plugins": [
+    {"Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": ["Editor"]},
+    {"Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": ["Editor"]},
+    {"Name": "Interchange", "Enabled": true}
+  ]
+}

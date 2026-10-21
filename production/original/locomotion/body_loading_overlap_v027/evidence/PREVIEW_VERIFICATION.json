@@ -1,0 +1,50 @@
+{
+  "filename": "WTSC_v027_vs_v026_Loading_Comparison_27p9s.mp4",
+  "bytes": 5937097,
+  "sha256": "10a801f14807166bf8400a971579a0938062019cd79bc3a37c3df9c34f8485e0",
+  "frames_decoded": 837,
+  "fps": 30.0,
+  "duration_seconds": 27.9,
+  "dimensions": [
+    1280,
+    800
+  ],
+  "candidate_only_segments": [
+    {
+      "filename": "WTSC_v027_CLOSE_9p3s_Normal_Speed.mp4",
+      "frames": 279,
+      "seconds": 9.3,
+      "bytes": 2208108
+    },
+    {
+      "filename": "WTSC_v027_SHOT_9p3s_Normal_Speed.mp4",
+      "frames": 279,
+      "seconds": 9.3,
+      "bytes": 793468
+    }
+  ],
+  "comparison_segments": [
+    {
+      "start_seconds": 0,
+      "seconds": 9.3,
+      "view": "matched close, baseline left / v027 right"
+    },
+    {
+      "start_seconds": 9.3,
+      "seconds": 9.3,
+      "view": "baseline shot framing"
+    },
+    {
+      "start_seconds": 18.6,
+      "seconds": 9.3,
+      "view": "v027 shot framing"
+    }
+  ],
+  "cycles_per_segment": 9,
+  "native_period_frames": 31,
+  "duplicate_boundary_frames": false,
+  "retiming_or_generated_inbetweens": false,
+  "blue_fill_artifact_frames": [],
+  "continuous_playback_observed": false,
+  "visual_review_status": "Inspected actual encoded first-cycle comparison, full-size matched F4/F20, late joins F30/31/32 through F278/279 and matched shot-frame board. No new blue fill, head/hair damage or abrupt coat discontinuity seen in those frames. Frame inspection only; continuous playback remains unobserved."
+}

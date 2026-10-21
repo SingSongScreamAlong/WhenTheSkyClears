@@ -1,0 +1,20 @@
+import bpy,math,json,hashlib,sys
+from pathlib import Path
+from mathutils import Vector
+import numpy as np
+P=Path(__file__).resolve().parents[1];ROOT=P.parents[1];sys.path.insert(0,str(P/'scripts'));import motion_spec as M
+M.configure(json.loads((P/'evidence/SUPPORT_GEOMETRY.json').read_text())['characters']);FILE=P/'native/WTSC_Connected_Weight_Loading_v048.blend';before=hashlib.sha256(FILE.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(FILE),load_ui=False,use_scripts=False);S=bpy.data.scenes['V048 | CONNECTED WEIGHT LOADING | ordinary walk'];bpy.context.window.scene=S;ART=bpy.data.collections['V044 | age10 editable profile anatomy'];R={w:bpy.data.objects['V044 '+w+' | estimated joint centres'] for w in ['BOY','GIRL']};rows={w:[] for w in R}
+for i in range(257):
+ f=1+i/8;S.frame_set(int(f),subframe=f-int(f));bpy.context.view_layer.update();dg=bpy.context.evaluated_depsgraph_get()
+ for who,r in R.items():
+  e=r.evaluated_get(dg);hip=e.pose.bones['pelvis'].head;ch=e.pose.bones['chest'];hd=e.pose.bones['head'];row={'frame':f,'hip_local':list(hip),'torso_lean_degrees':math.degrees(math.atan2((ch.tail-ch.head).x,(ch.tail-ch.head).z)),'head_midpoint_local':list((hd.head+hd.tail)/2),'feet':{}}
+  for side in ['near','far']:
+   th=e.pose.bones['thigh_'+side];sh=e.pose.bones['shin_'+side];a=(th.tail-th.head).normalized();b=(sh.tail-sh.head).normalized();flex=math.degrees(math.acos(max(-1,min(1,a.dot(b)))));_,beta,meta=M.foot(f+M.PHASE[who],who,side);o=next(o for o in ART.objects if o.parent==r and o.get('proportion_role')=='boot' and o.name.endswith(side));oe=o.evaluated_get(dg);V=[oe.matrix_world@p.co for p in oe.data.vertices];_,_,_,heelinds=M.support_geometry(who,math.radians(12));heel=sum((V[k] for k in heelinds),Vector())/len(heelinds);flatinds=np.flatnonzero(M.CHAR[who]['offsets_np'][:,2]<=M.CHAR[who]['offsets_np'][:,2].min()+1e-7);front=max(flatinds,key=lambda j:M.CHAR[who]['offsets_np'][j,0]);q={'knee_flex_degrees':flex,'nominal_roll_degrees':math.degrees(beta),'ankle_local':list(e.pose.bones['foot_'+side].head),'heel_point_world':list(heel),'forefoot_ball_world':list(V[front]),**meta};row['feet'][side]=q
+  rows[who].append(row)
+summary={}
+for who,rr in rows.items():
+ out={'hip_vertical_range_m':float(np.ptp([r['hip_local'][2] for r in rr])),'hip_fore_aft_range_m':float(np.ptp([r['hip_local'][0] for r in rr])),'torso_lean_min_max_degrees':[min(r['torso_lean_degrees'] for r in rr),max(r['torso_lean_degrees'] for r in rr)],'legs':{}}
+ for side in ['near','far']:
+  k=np.array([r['feet'][side]['knee_flex_degrees'] for r in rr]);early=[r['feet'][side] for r in rr if r['feet'][side]['stance'] and r['feet'][side]['phase_frame']<=4.5];swing=[r['feet'][side] for r in rr if not r['feet'][side]['stance'] and r['feet'][side]['swing_u']<=.4];out['legs'][side]={'max_knee_rate_deg_per_source_frame':float(np.max(abs(np.diff(k)*8))),'loading_knee_min_max_degrees':[min(q['knee_flex_degrees'] for q in early),max(q['knee_flex_degrees'] for q in early)],'early_swing_knee_min_max_degrees':[min(q['knee_flex_degrees'] for q in swing),max(q['knee_flex_degrees'] for q in swing)],'full_knee_min_max_degrees':[float(k.min()),float(k.max())],'actual_contact_samples':[{'frame':r['frame'],'phase':r['feet'][side]['phase_frame'],'roll':r['feet'][side]['nominal_roll_degrees'],'rest_contact_x_m':r['feet'][side].get('rest_contact_x_m'),'heel_z_m':r['feet'][side]['heel_point_world'][2],'ball_z_m':r['feet'][side]['forefoot_ball_world'][2]} for r in rr if r['feet'][side]['stance'] and abs(r['feet'][side]['phase_frame']-round(r['feet'][side]['phase_frame']))<1e-7]}
+ summary[who]=out
+assert hashlib.sha256(FILE.read_bytes()).hexdigest()==before;report={'native_sha256':before,'summary':summary,'rows':rows,'scope':'Cold actual bone and painted-boot contour observations. Recorded heel/ball points come from preserved drawn sole. No whole-body COM or medical gait model is claimed. Continuous normal-speed judgment is separate.'};(P/'evidence/ACTUAL_LOADING_REVIEW.json').write_text(json.dumps(report,indent=2));print('V048_ACTUAL_LOADING_REVIEW',json.dumps(summary),flush=True)

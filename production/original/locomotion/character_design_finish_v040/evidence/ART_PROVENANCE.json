@@ -1,0 +1,31 @@
+{
+  "mode": "Built-in ImageGen, no CLI fallback",
+  "reference_edit_attempt": {
+    "action": "Edit the preserved v038 full-color transparent character image via referenced_image_paths",
+    "target": "reference/CURRENT_CHARACTER_FULL_COLOR_v038.png",
+    "result": "Failed before generating an image",
+    "reason": "AbsolutePathBuf deserialized without a base path",
+    "approval_denied": false,
+    "uncertain_outcome": false,
+    "resolution": "Independent new concept/parts-atlas generation succeeded; native geometry/UV registration authored separately."
+  },
+  "concept": {
+    "file": "textures/WTSC_Boy_Painted_Design_Concept_v040.png",
+    "sha256": "8a764c2d0bebd2c77a98cc4e83b7ddad3e309c609b1b945b5f4d5386a357ef67",
+    "used_on_native": false,
+    "role": "Exploratory painting only; not an animation render or final reusable cutout."
+  },
+  "consumed_atlas": {
+    "file": "textures\\WTSC_Boy_Painted_Parts_Atlas_v040.png",
+    "sha256": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "used_on_native": true,
+    "pixel_bytes_edited_after_generation": false,
+    "packed": true
+  },
+  "prompts": [
+    "evidence/IMAGEGEN_PROMPT_v040.txt",
+    "evidence/STANDALONE_IMAGEGEN_PROMPT_v040.txt",
+    "evidence/PARTS_ATLAS_IMAGEGEN_PROMPT_v040.txt"
+  ],
+  "new_native_head": "New fixed-profile paint plane in the original head-bone transform, not a copy of the rejected v008 girl patch."
+}

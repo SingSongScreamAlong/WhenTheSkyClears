@@ -1,0 +1,39 @@
+{
+  "actual_clean_candidate_frames": 186,
+  "additional_new_motion_renders": 176,
+  "same_frame_proof_stills_reused": 10,
+  "far_hand_diagnostic_renders": 2,
+  "fps": 30,
+  "cycle_frames": 31,
+  "cycles_per_view": 3,
+  "seconds_per_view": 3.1,
+  "records": [
+    {
+      "view": "CLOSE",
+      "frames": [
+        1,
+        93
+      ],
+      "native_size": [
+        480,
+        720
+      ]
+    },
+    {
+      "view": "SHOT",
+      "frames": [
+        1,
+        93
+      ],
+      "native_size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "threads": 2,
+  "elapsed_seconds": 58.45088863372803,
+  "matching": "Source v033 actual saved renders1-93; same native frame/time/camera; no retiming, interpolation or phase alignment",
+  "upper_shoe_edits_max_sole_envelope_change_m_over_minus85_to85_degrees": 0,
+  "observation_limit": "Actual frames and encoded preview can be inspected; export success is not visual or animation acceptance."
+}

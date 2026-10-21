@@ -1,0 +1,19 @@
+{
+  "user_clarification": "User likes the look. Primary defect is lack of weight, impact and intensity; preserve painted texture/palette and judge impact silently at actual shot size.",
+  "scope": "One new authored blast and connected dust, actual pose strip and short24fps proof. No variants, tracer expansion, camera shake or production integration.",
+  "reused_native_fixture": "Read-only v006 proof camera/background/holdout and existing FX-only bloom helper. New separate native files under effects/painted_pose_v007.",
+  "material_palette": "Same saturation0.15, value0.90 and tint[0.72,0.77,0.83] as preferred v003, retaining drawing grain rather than flattening all detail.",
+  "art_method": "Built-in ImageGen:12 distinct new blast poses and6 dust poses, source PNG bytes preserved. One targeted atlas edit removed late warm cores. Baseline registration is measured; no animation of cel scale, rotation or position.",
+  "art_limit": "Generated poses remain modeled washes; selected native keys and final timing must be reviewed rather than assuming likeness or impact from the atlas.",
+  "first_layout_repair": "First full-size keyframes exposed oversize canvas and whole-shape hot exposure. Preserved first-layout native/PNGs; v007b corrects dimensions and confines HDR strength to bright ignition pixels.",
+  "production_reuse_gate": "Existing project gate read and checker passes dcc-mcp-production-reuse/v1. Prior original project assets reused where appropriate; existing mature-cloud animation rejected for this missing shape capability. No acquisition or addon install.",
+  "rights": "New original generated atlases and existing original project gouge/fixtures. No third-party paid assets or downloaded reference footage bundled.",
+  "parent_research_sources": [
+    "https://www.sidefx.com/docs/houdini/pyro/intro.html",
+    "https://www.sidefx.com/docs/houdini/pyro/explode.html",
+    "https://www.actionvfx.com/blog/just-released-gas-explosions-vol-3-dirt-blasts-vol-2-sand-blasts-vfx-collections",
+    "https://www.actionvfx.com/blog/creating-massive-meteor-impacts-with-actionvfx-large-scale-dust-waves"
+  ],
+  "research_limit": "Parent read documentation/descriptions; embedded video playback was not verified. Used qualitative sourcing/trajectory/dust-layer principles, not slowed preview timing as physical measurement.",
+  "resource_policy": "Background Blender only, two CPU threads, one effects render at a time; check and yield to other Blender workers before each frame. No shared UI used."
+}

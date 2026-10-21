@@ -1,0 +1,1031 @@
+{
+  "BOY": [
+    {
+      "frame": 1,
+      "intent": "He is still trying to keep up",
+      "hip": [
+        0,
+        0.62
+      ],
+      "spine": [
+        4,
+        6,
+        0
+      ],
+      "near_foot": [
+        -0.15,
+        20,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.12,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.13,
+          0.64
+        ],
+        [
+          -0.08,
+          0.67
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 7,
+      "intent": "Arriving toe / momentum still forward",
+      "hip": [
+        0.14,
+        0.61
+      ],
+      "spine": [
+        7,
+        11,
+        0
+      ],
+      "near_foot": [
+        -0.15,
+        32,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.36,
+        8,
+        0.035,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.29,
+          0.68
+        ],
+        [
+          0.0,
+          0.72
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 10,
+      "intent": "Toe stopped / leading arm reaches, trailing arm stays low",
+      "hip": [
+        0.22,
+        0.585
+      ],
+      "spine": [
+        14,
+        24,
+        8
+      ],
+      "near_foot": [
+        -0.15,
+        43,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.4,
+        35,
+        0.04,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.72,
+          0.82
+        ],
+        [
+          0.18,
+          0.59
+        ]
+      ],
+      "elbow_poles": [
+        -1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 13,
+      "intent": "Forward loss / unequal extended reach and backsweep",
+      "hip": [
+        0.34,
+        0.54
+      ],
+      "spine": [
+        19,
+        48,
+        14
+      ],
+      "near_foot": [
+        -0.15,
+        57,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.4,
+        46,
+        0.04,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.94,
+          0.75
+        ],
+        [
+          0.31,
+          0.55
+        ]
+      ],
+      "elbow_poles": [
+        -1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 16,
+      "intent": "Catch foot shoots / leading arm follows the fall downward",
+      "hip": [
+        0.46,
+        0.5
+      ],
+      "spine": [
+        20,
+        50,
+        16
+      ],
+      "near_foot": [
+        0.72,
+        -3,
+        0.11,
+        "heel"
+      ],
+      "far_foot": [
+        0.4,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.065,
+          0.64
+        ],
+        [
+          0.39,
+          0.56
+        ]
+      ],
+      "elbow_poles": [
+        -1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 19,
+      "intent": "Heel catches / reach descends toward loaded thigh",
+      "hip": [
+        0.58,
+        0.49
+      ],
+      "spine": [
+        18,
+        40,
+        22
+      ],
+      "near_foot": [
+        0.88,
+        -7,
+        0,
+        "heel"
+      ],
+      "far_foot": [
+        0.4,
+        23,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.12,
+          0.585
+        ],
+        [
+          0.46,
+          0.61
+        ]
+      ],
+      "elbow_poles": [
+        -1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 22,
+      "intent": "Deep load / near hand finds the thigh",
+      "hip": [
+        0.66,
+        0.395
+      ],
+      "spine": [
+        28,
+        56,
+        32
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.4,
+        40,
+        0,
+        "toe"
+      ],
+      "hands": [
+        "BRACE",
+        [
+          0.58,
+          0.65
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 26,
+      "intent": "Stay low / head checks footing, shoulder bears down",
+      "hip": [
+        0.68,
+        0.405
+      ],
+      "spine": [
+        20,
+        62,
+        12
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.4,
+        57,
+        0,
+        "toe"
+      ],
+      "hands": [
+        "BRACE",
+        [
+          0.58,
+          0.68
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 32,
+      "intent": "Gather the trailing foot / do not rise yet",
+      "hip": [
+        0.72,
+        0.42
+      ],
+      "spine": [
+        14,
+        55,
+        -4
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.62,
+        14,
+        0.05,
+        "toe"
+      ],
+      "hands": [
+        "BRACE",
+        [
+          0.61,
+          0.63
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 38,
+      "intent": "Feet underneath / gather effort over the front leg",
+      "hip": [
+        0.77,
+        0.435
+      ],
+      "spine": [
+        8,
+        56,
+        -8
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.65,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        "BRACE",
+        [
+          0.65,
+          0.65
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 43,
+      "intent": "Leg pushes / shoulder and chest still hang",
+      "hip": [
+        0.8,
+        0.51
+      ],
+      "spine": [
+        3,
+        42,
+        -5
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.65,
+        14,
+        0,
+        "toe"
+      ],
+      "hands": [
+        "BRACE",
+        [
+          0.65,
+          0.75
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 49,
+      "intent": "Hips recover / chest follows and hand unloads",
+      "hip": [
+        0.815,
+        0.58
+      ],
+      "spine": [
+        -4,
+        20,
+        2
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.65,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.99,
+          0.6
+        ],
+        [
+          0.69,
+          0.78
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 56,
+      "intent": "Release the brace / head and shoulder settle separately",
+      "hip": [
+        0.815,
+        0.605
+      ],
+      "spine": [
+        -3,
+        8,
+        8
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.65,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.96,
+          0.65
+        ],
+        [
+          0.67,
+          0.72
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 64,
+      "intent": "Recovered but weary / accept the pause",
+      "hip": [
+        0.81,
+        0.595
+      ],
+      "spine": [
+        2,
+        12,
+        4
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.65,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.97,
+          0.68
+        ],
+        [
+          0.66,
+          0.7
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 72,
+      "intent": "End on a supported pause, not another walk step",
+      "hip": [
+        0.81,
+        0.595
+      ],
+      "spine": [
+        2,
+        12,
+        4
+      ],
+      "near_foot": [
+        0.88,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        0.65,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          0.97,
+          0.68
+        ],
+        [
+          0.66,
+          0.7
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    }
+  ],
+  "GIRL": [
+    {
+      "frame": 1,
+      "intent": "Ahead, still travelling",
+      "hip": [
+        1.24,
+        0.6
+      ],
+      "spine": [
+        2,
+        4,
+        2
+      ],
+      "near_foot": [
+        1.1,
+        17,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.39,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.36,
+          0.63
+        ],
+        [
+          1.14,
+          0.67
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 8,
+      "intent": "Notice the interruption / interrupt her own stride",
+      "hip": [
+        1.38,
+        0.58
+      ],
+      "spine": [
+        0,
+        1,
+        -4
+      ],
+      "near_foot": [
+        1.32,
+        6,
+        0.05,
+        "toe"
+      ],
+      "far_foot": [
+        1.39,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.2,
+          0.7
+        ],
+        [
+          1.62,
+          0.75
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": 1
+    },
+    {
+      "frame": 12,
+      "intent": "Brake and attend / one low available hand, other arm settles",
+      "hip": [
+        1.47,
+        0.565
+      ],
+      "spine": [
+        -6,
+        -8,
+        -12
+      ],
+      "near_foot": [
+        1.61,
+        -6,
+        0,
+        "heel"
+      ],
+      "far_foot": [
+        1.39,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.16,
+          0.68
+        ],
+        [
+          1.57,
+          0.55
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 17,
+      "intent": "Controlled load / quiet low offer with other hand by hip",
+      "hip": [
+        1.54,
+        0.53
+      ],
+      "spine": [
+        -10,
+        -4,
+        -6
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.39,
+        34,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.22,
+          0.67
+        ],
+        [
+          1.64,
+          0.51
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 22,
+      "intent": "Collect the trailing foot / choice to stay",
+      "hip": [
+        1.56,
+        0.55
+      ],
+      "spine": [
+        0,
+        -12,
+        -15
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.48,
+        8,
+        0.045,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.42,
+          0.68
+        ],
+        [
+          1.66,
+          0.68
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 27,
+      "intent": "Both heels down / settle, not a frozen lunge",
+      "hip": [
+        1.58,
+        0.59
+      ],
+      "spine": [
+        2,
+        -14,
+        -18
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.47,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.38,
+          0.7
+        ],
+        [
+          1.73,
+          0.75
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 34,
+      "intent": "Incline toward him / hold a clear space for the offered hand",
+      "hip": [
+        1.55,
+        0.585
+      ],
+      "spine": [
+        -4,
+        -18,
+        -24
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.47,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.34,
+          0.73
+        ],
+        [
+          1.63,
+          0.68
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 43,
+      "intent": "Attend to his effort / hand waits, no helping load",
+      "hip": [
+        1.56,
+        0.59
+      ],
+      "spine": [
+        -2,
+        -14,
+        -16
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.47,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.36,
+          0.76
+        ],
+        [
+          1.64,
+          0.7
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 54,
+      "intent": "Follow his rising head / stay planted",
+      "hip": [
+        1.58,
+        0.6
+      ],
+      "spine": [
+        0,
+        -8,
+        -6
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.47,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.38,
+          0.8
+        ],
+        [
+          1.65,
+          0.72
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 64,
+      "intent": "Let the offer soften / remain with him",
+      "hip": [
+        1.58,
+        0.595
+      ],
+      "spine": [
+        0,
+        -10,
+        -10
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.47,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.41,
+          0.71
+        ],
+        [
+          1.66,
+          0.73
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    },
+    {
+      "frame": 72,
+      "intent": "End attending, both feet settled",
+      "hip": [
+        1.58,
+        0.595
+      ],
+      "spine": [
+        0,
+        -10,
+        -10
+      ],
+      "near_foot": [
+        1.61,
+        0,
+        0,
+        "toe"
+      ],
+      "far_foot": [
+        1.47,
+        0,
+        0,
+        "toe"
+      ],
+      "hands": [
+        [
+          1.41,
+          0.71
+        ],
+        [
+          1.66,
+          0.73
+        ]
+      ],
+      "elbow_poles": [
+        1,
+        -1
+      ],
+      "face": -1
+    }
+  ]
+}

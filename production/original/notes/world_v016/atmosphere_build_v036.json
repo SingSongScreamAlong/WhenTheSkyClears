@@ -1,0 +1,246 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_World_Atmosphere_v036.blend",
+  "scene": "WTSC_WORLD_CORRECTED_v036",
+  "set_placements": [
+    {
+      "object": "v016 | Village continues | abandoned",
+      "old": [
+        19.0,
+        12.0,
+        3.6534616947174072
+      ],
+      "new": [
+        22.5,
+        12.0600004196167,
+        3.6534616947174072
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v016 | Woods | near rooted oaks",
+      "old": [
+        29.0,
+        6.0,
+        4.440616607666016
+      ],
+      "new": [
+        43.0,
+        6.0,
+        4.440616607666016
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v016 | Woods | far silver canopy",
+      "old": [
+        29.0,
+        18.0,
+        3.1099863052368164
+      ],
+      "new": [
+        43.0,
+        18.0,
+        3.1099863052368164
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v025 | Far woods continuation left",
+      "old": [
+        12.0,
+        18.014999389648438,
+        3.1099863052368164
+      ],
+      "new": [
+        25.0,
+        18.014999389648438,
+        3.1099863052368164
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v025 | Far woods continuation right",
+      "old": [
+        46.0,
+        18.014999389648438,
+        3.1099863052368164
+      ],
+      "new": [
+        61.0,
+        18.014999389648438,
+        3.1099863052368164
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v016 | School | broken windows and plaster",
+      "old": [
+        42.0,
+        10.0,
+        3.2922236919403076
+      ],
+      "new": [
+        65.0,
+        10.0,
+        3.2922236919403076
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v016 | Camp | pinned canvas and ropes",
+      "old": [
+        53.0,
+        10.0,
+        3.4948313236236572
+      ],
+      "new": [
+        87.0,
+        10.0600004196167,
+        3.4948313236236572
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v016 | Battlefield | broken village line",
+      "old": [
+        65.0,
+        12.0,
+        6.701237678527832
+      ],
+      "new": [
+        115.0,
+        12.0,
+        6.701237678527832
+      ],
+      "whole_painting_dimensions_preserved": true
+    },
+    {
+      "object": "v016 | Ruins | distant ash street",
+      "old": [
+        77.0,
+        28.0,
+        8.39413070678711
+      ],
+      "new": [
+        156.0,
+        28.0,
+        8.39413070678711
+      ],
+      "whole_painting_dimensions_preserved": true
+    }
+  ],
+  "camera_route_seconds_x": [
+    [
+      0,
+      0
+    ],
+    [
+      18,
+      25.5
+    ],
+    [
+      35,
+      45.4
+    ],
+    [
+      50,
+      67.8
+    ],
+    [
+      67,
+      89.8
+    ],
+    [
+      80,
+      118
+    ],
+    [
+      90,
+      142
+    ],
+    [
+      100,
+      160.75
+    ]
+  ],
+  "ground_extent_x": [
+    -24,
+    220
+  ],
+  "new_fire_anchors": [
+    {
+      "name": "School debris",
+      "fixed_root": [
+        61.5,
+        9.92,
+        0.35
+      ],
+      "flame_height": 0.95,
+      "physical_point_light_energy": 620,
+      "phase": 0.0,
+      "flame_parts": 2,
+      "smoke_parts": 4,
+      "embers": 10
+    },
+    {
+      "name": "Camp hearth",
+      "fixed_root": [
+        85,
+        9.92,
+        0.35
+      ],
+      "flame_height": 1.55,
+      "physical_point_light_energy": 1050,
+      "phase": 2.13,
+      "flame_parts": 2,
+      "smoke_parts": 4,
+      "embers": 10
+    },
+    {
+      "name": "Battlefield burn",
+      "fixed_root": [
+        112,
+        11.85,
+        0.3
+      ],
+      "flame_height": 2.25,
+      "physical_point_light_energy": 1650,
+      "phase": 4.26,
+      "flame_parts": 2,
+      "smoke_parts": 4,
+      "embers": 10
+    },
+    {
+      "name": "Distant ruin burn",
+      "fixed_root": [
+        151,
+        24,
+        0.1
+      ],
+      "flame_height": 3.0,
+      "physical_point_light_energy": 1800,
+      "phase": 6.39,
+      "flame_parts": 2,
+      "smoke_parts": 4,
+      "embers": 10
+    }
+  ],
+  "new_smoke_layers": 16,
+  "responsive_painted_objects": [
+    "v016 | School | broken windows and plaster",
+    "v016 | Camp | pinned canvas and ropes",
+    "v016 | Battlefield | broken village line",
+    "v016 | Ruins | distant ash street",
+    "v020 | Walking path | continuous blended paint",
+    "v020 | Foreground bank | continuous blended paint"
+  ],
+  "fire_asset": "sets/fx/v036/Painterly_Flame.png",
+  "fire_asset_pixels": [
+    1024,
+    1536
+  ],
+  "fire_asset_provenance": "Builtin GPTimagegen; originalalpha preserved; mapped to root-pinned native meshes",
+  "children": "Same held near-age GP drawing and parented painted fill; only whole-pair routetranslation changed",
+  "correction_scope": "Necessary physical layout/overlap and attachedFX corrections. No environment opacity dissolves, no character gait.",
+  "final_timing": "100 moving world +6silentcredits =106s; mask/master created next."
+}

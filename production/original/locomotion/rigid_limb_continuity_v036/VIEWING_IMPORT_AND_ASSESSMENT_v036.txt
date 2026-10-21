@@ -1,0 +1,61 @@
+WHEN THE SKY CLEARS — v036 FOCUSED LIMB ART / MOTION CHECKPOINT
+Status: isolated review candidate. No claim of final animation or Arcane-level quality. No production integration.
+
+WATCH
+previews/WTSC_v036_vs_v033_Normal_Speed_9p3s.mp4
+30 fps,279 decoded frames, 9.3 seconds, 1,865,748 bytes.
+0–3.1s: matched close views, preferred v033 left / v036 right, each at native 480x720.
+3.1–6.2s: matched shot views at 50 percent each.
+6.2–9.3s: v036 at the original shot camera and native 1280x720 pixels.
+Each section covers frames1–93, three complete 31-frame cycles. Same source frame, camera and time; no slow motion, time warping, holds, optical interpolation or phase alignment. The two shot layouts deliberately reuse the same three-cycle native footage. No guides or hand x-rays appear.
+
+OPEN / EDIT
+native/WTSC_Limb_Volume_and_Hand_Readability_v036.blend
+This is the final review candidate for this pass, with packed original images. Open it as a complete review scene. The separate WTSC_Live_Limb_Continuity_v036.blend is an earlier construction-only test; it is retained locally and excluded from the delivery package.
+reference/PREFERRED_v033.blend and reference/PRESERVED_v035.blend are unchanged references.
+No v031/v032 movement is used.
+
+TWO FOCUSED CORRECTIONS
+1. Leg/cuff/boot silhouette
+   Native Geometry Nodes now construct the drawn thigh and shin along the actual straight hip–knee and knee–ankle directions at every evaluated time. A 22 mm local knee region rounds the joint. Knee width is reduced 8.5 percent locally, calf width 6.5 percent locally, rolled cuff cross-sections 8.5 percent. The existing paint, UVs and topology are retained. Cuff cross-sections taper around their existing center; the end-ring width is intentionally changed, unlike the earlier v035 exact-ring preservation test.
+   Both shoes still share one painted mesh and retain their original object trajectories. Only non-support upper-canvas vertices move, at most 3.02 mm. All original supporting sole vertices remain unchanged. The sole envelope is identical over a checked−85..85degree pitch range and throughout the three-cycle movement test.
+2. Sleeve/forearm/hand readability
+   The sleeve and cuff taper gradually to 76 percent of their earlier distal width, while shoulder width and painting remain. The elbow/cuff transition no longer ends in such a wide wedge above the thin forearm.
+   Original palm/finger construction, hand scale, wrist path and orientation remain. A small thumb-only native shape adjustment gives up to 3.64 mm of clearance. Texture-preserving neutral charcoal addition is +.020 linear RGB on hands and +.013 on exposed forearms. No new light, glow or bright outline. At the actual shot size, near-hand median pixel value is 49/50 at F11/F27 versus 31 in v033. It is more separated but remains small.
+   F20 far hand stays behind the near leg. Actual opaque-ID test: 0 visible pixels with the full character; 391 when only the near trouser is removed. No foreground collection promotion or hand x-ray is used.
+
+PREFERRED MOVEMENT — PRECISE CLAIM
+All authored object control actions match preferred v033 except two forearm IK pole-angle channels inherited from the disclosed v035 elbow refit. The rig Action was copied/renamed in v035; the whole rig was not simply left unchanged. Upper/forearm rest lengths intentionally changed in v035, preserving total reach and the shoulder/wrist paths. v036 adds no movement/action edits.
+The complete active channel data was compared, not just action names.745 numerical samples at1/8-frame spacing cover native frames1–94, including three cycle boundaries. Root, every original control world matrix, non-arm bone world matrices, head vertices, hand bone matrices, shoulder paths and sole height match v033 exactly in those samples. Maximum native arm IK wrist endpoint error is 0.00000051 m. Original GP coat drawings hash identically. These are technical preservation checks; finite samples do not establish artistic quality.
+Intentional geometry exceptions: changed sleeve/cuff/leg art, thumb clearance, upper shoe canvas, inherited v035 far-hand 2 mm depth offset and local values. Do not claim all hand/shoe vertices or every arm bone matrix is identical to v033.
+
+ARTISTIC ASSESSMENT / LIMITS
+The actual stills show a more localized knee bend and less broad sleeve/cuff transitions. The hand separates somewhat better from the coat, especially close up. Passing feet still form a crowded combined silhouette, and the final charcoal view remains harder to read than separated diagnostic values. Technical straight axes do not by themselves make the performance natural.
+The body/coat still reads as smoother graphic panels while head, collar, sleeves, trousers and shoes carry denser painted texture. That model/style mismatch and the coat's broad panel shapes remain substantial issues. The next bounded art test should establish a coherent shoulder/ribcage/waist/hem garment with the existing painterly material language, while keeping character identity and preferred rhythm.
+This remains a boy-only repeated walking study. Distinct paired intention, fatigue, stumbling, credible supporting contact and a recovery-to-walking restart have not been delivered by this pass. A more convincing performance requires those authored intentions and transitions, along with further model and drawing refinement.
+Actual native stills and decoded movie frames were inspected. Continuous video-player playback was not observed through the available tools. User/independent normal-speed judgment remains necessary. No claim of studio-level acceptance.
+
+TIMING / EXACT TRAVEL CONTRACT
+Native fps 30. Cycle 31 frames. Frame F has phase q=(F−1)mod 31.
+Travel +X metres: D(F)=0.9524437384576381*(F−1)/31.
+Speed 0.9217197468944885 m/s. Near contact F1; far contact F17.
+Near stance phase 0..18.5; far stance own phase 0..19.25, offset 16 frames.
+Root object: V021 | CHILD_SUPPORT_TRAVEL. Rig: LOCO_BOY | RIG.
+evidence/TRAVEL_CURVE_v036.csv samples the unchanged curve at 1/8-source-frame spacing for three cycles.
+evidence/REFERENCE_v033_CONTACTS_UNCHANGED.csv is the retained original quarter-frame shoe-contact contract. Upper shoe art changed only away from support vertices; object trajectories and lower hull remain.
+For production 24 fps frame G with local origin G0, evaluate source F=1+(G−G0)*30/24. One native cycle spans 24.8 production frames. Use one mapping for root, bones, original shape drawings, live contours, shoe art, camera and world; do not round the cycle duration independently. For centered children, the landscape/camera must match D(F), without adding the same travel twice. No 24 fps integration or five-second recovery scene is supplied here.
+
+IMPORT DEPENDENCIES / EDITING LIMITS
+The delivered native is an editable review scene with its original base/foreground view-layer compositing. Open that scene for a faithful comparison. Appending one mesh or a single old character collection is insufficient.
+Retain the rig and original controls, native shape-key actions, original GP coat drawings, canonical shoe objects/actions, original foreground identity objects/materials and their base/foreground compositing, plus V036 | live contour joint probes and both V036 geometry node groups. Those probes use actual thigh/shin bone Copy Location constraints. Preserve all referenced packed paint materials and node dependencies.
+The new shaft axes follow live joints. The inherited trouser/cuff pose samples and v033 shoe-art object bakes still use the 31-frame clock. New ankle/hip acting or a new travel curve requires a unified drawing/cuff/shoe rebake; this is not yet a general-purpose production character rig. Stage cameras, floor rulers and diagnostic ID materials are review infrastructure, not production artwork. No automatic production append is authorized by this checkpoint.
+
+EVIDENCE
+PREFERRED_WHOLE_CYCLE_PRESERVATION.json — exact active action-channel comparison and 745 three-cycle samples against v033.
+FOCUSED_ART_CORRECTIONS.json — actual art changes and protected sole vertices.
+LIVE_CONTOUR_BUILD_AND_CHECK.json — construction-only graph test before the final art taper;249samples and approximately 0.00000011 m straight-shaft center deviation. Its exact cuff-ring preservation claim applies to that earlier construction file, not the intentionally narrowed final cuff.
+MOTION_RENDER_RECORD.json —186actual candidate native frames; 10 matching proof frames reused, 176 additional motion renders; 2 F20 mask renders; 2 threads.
+PREVIEW_ENCODE_DECODE_AND_READABILITY.json —279decoded MP4frames, dimensions, checksum, near-hand values and F20 opaque-ID test.
+PROTECTED_SOURCE_HASHES.json — unchanged v035/v033, earlier character checkpoints and named production sources.
+LIBRARY_MOTION_RECEIPT.json and metadata verification — confirmed private preview save and real local Library metadata readback.
+All Blender jobs exited. No further render is active. Existing production, world specialist assets, title, music and trailer duration remain unchanged.

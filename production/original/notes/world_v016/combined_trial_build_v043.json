@@ -1,0 +1,399 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Combined_Trial_v043.blend",
+  "base_motion_trial": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Motion_Trial_v042.blend",
+  "base_sha256": "a94f59f974eaadf8140278180543ab5b75c195b0c05e06f8fd51c12c7ed0935b",
+  "scene": "WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043",
+  "motion_snapshot": {
+    "sealed_source": "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_proof_v005\\native\\WTSC_Battlefield_Weary_Stumble_5s_v005.blend",
+    "source_sha256": "1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4",
+    "snapshot": "WTSC_LOCAL_WORKSPACE\\shots\\integration\\v042\\imports\\WTSC_Battlefield_Weary_Stumble_5s_v005.blend",
+    "snapshot_sha256": "1efe45b192913504cf9007e5616aec77063905fd8771107e9e219173f44548f4",
+    "reference_reel": "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_proof_v005\\WTSC_BATTLEFIELD_WEARY_STUMBLE_Reel_v005.mp4",
+    "reference_reel_sha256": "eb70c3402de425efd8f7226ab00a445353292561a83efd2b6a89ac8cbd705d84",
+    "authority": "Coordinating parent sealed current bytes for actual-shot trial; no cinematic acceptance.",
+    "specialist_sources_written": false,
+    "fx_handoff": "PENDING. No v001/v002a imports."
+  },
+  "fx_snapshot": {
+    "sealed_source": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v003\\native\\WTSC_Evolving_Eruption_Collection_v003.blend",
+    "source_sha256": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+    "snapshot": "WTSC_LOCAL_WORKSPACE\\shots\\integration\\v043\\imports\\WTSC_Evolving_Eruption_Collection_v003.blend",
+    "snapshot_sha256": "d089770cccee18b786692d76113b80fbf8514d8034bab4eaae17d6b5f9bd1868",
+    "reference_proof": "WTSC_LOCAL_WORKSPACE\\effects\\benchmark_v003\\WTSC_Evolving_Eruption_75-80s_v003.mp4",
+    "reference_proof_sha256": "e2dac81c532dc99c32413c8b303a63ce3aaf8f1db4a15c30da52b7185006a741",
+    "collection": "FXv003 | Evolving anchored eruption | NO PRODUCTION LIGHTS",
+    "status": "Parent-sealed combined-trial candidate, not cinematic acceptance",
+    "specialist_source_written": false
+  },
+  "native_fx_snapshot_reopened_before_append": true,
+  "fx_import_objects": 55,
+  "fx_import_lights": 0,
+  "owned_physical_lights": 1,
+  "frame_range": [
+    1801,
+    1920
+  ],
+  "global_seconds": [
+    75,
+    80
+  ],
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "floor_correction": {
+    "original_held_floor_point": [
+      107.84693908691406,
+      -0.36000001430511475,
+      0.7713720202445984
+    ],
+    "slope": 0.14249539525535898,
+    "previous_motion_origin_z": 0.7713720202445984,
+    "correct_motion_origin_z": 0.7200736999511719,
+    "cameraX_optical_offset": 1.7280012503815174,
+    "cameraY": -16,
+    "cameraZ": 3
+  },
+  "local_pose_corrections": [
+    {
+      "rig": "LOCO_BOY | RIG",
+      "owned_action": "v043 OWNED | upper-body timing wrist and living settle | LOCO_BOY | RIG",
+      "girl_upper_body_delay_source_frames": 0,
+      "leg_pelvis_and_foot_channels_unchanged": true,
+      "corrections": "Small wrist curl during reach, distinctsubdegree chest/head/braid breath in finalsettle; no cameraY/Z or foot edits."
+    },
+    {
+      "rig": "LOCO_GIRL | RIG",
+      "owned_action": "v043 OWNED | upper-body timing wrist and living settle | LOCO_GIRL | RIG",
+      "girl_upper_body_delay_source_frames": 3.2,
+      "leg_pelvis_and_foot_channels_unchanged": true,
+      "corrections": "Small wrist curl during reach, distinctsubdegree chest/head/braid breath in finalsettle; no cameraY/Z or foot edits."
+    }
+  ],
+  "local_contour_overlaps": [
+    {
+      "object": "v043 rounded knee | LOCO_BOY | RIG near",
+      "joint": "shin_near",
+      "radius_m": 0.047,
+      "method": "Small native polygon overlap using original packedsource RGB, rigidly follows same bone; no source pixel or legpose change."
+    },
+    {
+      "object": "v043 rounded wrist | LOCO_BOY | RIG near",
+      "joint": "hand_near",
+      "radius_m": 0.023,
+      "method": "Small native polygon overlap using original packedsource RGB, rigidly follows same bone; no source pixel or legpose change."
+    },
+    {
+      "object": "v043 rounded knee | LOCO_BOY | RIG far",
+      "joint": "shin_far",
+      "radius_m": 0.047,
+      "method": "Small native polygon overlap using original packedsource RGB, rigidly follows same bone; no source pixel or legpose change."
+    },
+    {
+      "object": "v043 rounded wrist | LOCO_BOY | RIG far",
+      "joint": "hand_far",
+      "radius_m": 0.023,
+      "method": "Small native polygon overlap using original packedsource RGB, rigidly follows same bone; no source pixel or legpose change."
+    },
+    {
+      "object": "v043 rounded wrist | LOCO_GIRL | RIG near",
+      "joint": "hand_near",
+      "radius_m": 0.023,
+      "method": "Small native polygon overlap using original packedsource RGB, rigidly follows same bone; no source pixel or legpose change."
+    },
+    {
+      "object": "v043 rounded wrist | LOCO_GIRL | RIG far",
+      "joint": "hand_far",
+      "radius_m": 0.023,
+      "method": "Small native polygon overlap using original packedsource RGB, rigidly follows same bone; no source pixel or legpose change."
+    }
+  ],
+  "source_connected_actor_materials": [
+    "v043 OWNED | source-painted wrist overlap.003",
+    "v042 OWNED | restrained charcoal response | LOCO v003 | original paint sampled on native overlap geometry",
+    "v042 OWNED | restrained charcoal response | PERF_GIRL | source limb RGB within traced native contour.004",
+    "v043 OWNED | source-painted wrist overlap.001",
+    "v043 OWNED | source-painted wrist overlap",
+    "v042 OWNED | restrained charcoal response | LOCO | ORIGINAL v015 charcoal paint, packed",
+    "v042 OWNED | restrained charcoal response | PERF_BOY | source limb RGB within traced native contour.004",
+    "v043 OWNED | source-painted wrist overlap.002",
+    "v043 OWNED | source-painted knee overlap.001",
+    "v042 OWNED | restrained charcoal response | PERF_BOY | original body paint, clean native boundary",
+    "v042 OWNED | restrained charcoal response | PERF_GIRL | original body paint, clean native boundary",
+    "v042 OWNED | restrained charcoal response | PERF_GIRL | source limb RGB within traced native contour.003",
+    "v043 OWNED | source-painted knee overlap",
+    "v042 OWNED | restrained charcoal response | PERF_BOY | source limb RGB within traced native contour.003"
+  ],
+  "replaced_old_fx_hidden": [
+    "v016 | Battlefield smoke | wisp 0",
+    "v016 | Battlefield smoke | wisp 1",
+    "v016 | Battlefield smoke | wisp 2",
+    "v016 | Far battlefield smoke | wisp 0",
+    "v016 | Far battlefield smoke | wisp 1",
+    "v016 | Far battlefield smoke | wisp 2",
+    "v016 | Distant light bloom 0",
+    "v016 | Distant light bloom 1",
+    "v036 | Battlefield burn | fixed emitter",
+    "v036 | Battlefield burn | painted flame 0",
+    "v036 | Battlefield burn | painted flame 1",
+    "v036 | Battlefield burn | rooted smoke 0",
+    "v036 | Battlefield burn | rooted smoke 1",
+    "v036 | Battlefield burn | rooted smoke 2",
+    "v036 | Battlefield burn | rooted smoke 3",
+    "v036 | Battlefield burn | physical firelight",
+    "v036 | Battlefield burn | ember 0",
+    "v036 | Battlefield burn | ember 1",
+    "v036 | Battlefield burn | ember 2",
+    "v036 | Battlefield burn | ember 3",
+    "v036 | Battlefield burn | ember 4",
+    "v036 | Battlefield burn | ember 5",
+    "v036 | Battlefield burn | ember 6",
+    "v036 | Battlefield burn | ember 7",
+    "v036 | Battlefield burn | ember 8",
+    "v036 | Battlefield burn | ember 9"
+  ],
+  "live_samples": [
+    {
+      "frame": 1801,
+      "camera": [
+        109.3619613647461,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": -23.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1823,
+      "camera": [
+        109.54349517822266,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        107.81549072265625,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": -1.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1824,
+      "camera": [
+        109.55305480957031,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        107.8250503540039,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 0.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1825,
+      "camera": [
+        109.56401062011719,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        107.83600616455078,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 1.0,
+      "hot_envelope": 1.0,
+      "physical_watts": 1692.0,
+      "receiver_watts": 1692.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1830,
+      "camera": [
+        109.64079284667969,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        107.91278839111328,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 6.0,
+      "hot_envelope": 0.18887560069561005,
+      "physical_watts": 319.5775146484375,
+      "receiver_watts": 319.5775146484375,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1838,
+      "camera": [
+        109.76363372802734,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        108.03562927246094,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 14.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1843,
+      "camera": [
+        109.80244445800781,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        108.0744400024414,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 19.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1852,
+      "camera": [
+        109.8454360961914,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        108.117431640625,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 28.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1881,
+      "camera": [
+        109.92362976074219,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 57.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    },
+    {
+      "frame": 1920,
+      "camera": [
+        109.92362976074219,
+        -16.0,
+        3.0
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "fx_age": 96.0,
+      "hot_envelope": 0.0,
+      "physical_watts": 0.0,
+      "receiver_watts": 0.0,
+      "fx_origin": [
+        109.0999984741211,
+        10.0,
+        -0.7048802971839905
+      ]
+    }
+  ],
+  "occlusion": "All real geometry, characters, FX and owned light evaluated in one live scene; no cached image/receiver/holdout compositor nodes.",
+  "comparison_limit": "Original040camera covers10.76m in75\u201380. This localproof follows0.561667m performance, starting near oldglobal76spatialposition. Before/afterwilllabeldifferent localcamera/route, not perfectly matchedA/B.",
+  "artist_review": "Must review actual frames then dense moving sequence. Localcaps/asymmetry/settle are trials, not acceptedcorrectiveart. Cutoutstiffness mayremainweakestissue.",
+  "source_sha256": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+  "native_master": {
+    "scene": "WTSC_OPEN_5S_MASTER_v043",
+    "range": [
+      1801,
+      1920
+    ],
+    "frames": 120,
+    "seconds": 5,
+    "native_scene_strip": "WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043",
+    "native_sound_visible_range": [
+      1801,
+      1921
+    ],
+    "source_audio_offset_frames": 1800,
+    "packed_original_audio": true,
+    "native_export": "4K24fpsH264+AAC, directVSEScene+Sound, no externalmoviecache"
+  }
+}

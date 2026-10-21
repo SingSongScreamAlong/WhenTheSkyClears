@@ -1,0 +1,69 @@
+{
+  "file": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Living_World_Editable_v011.blend",
+  "blender": "5.2.2 LTS",
+  "scene": "WTSC_WORLD_FIRST_4K",
+  "scenes": [
+    "WTSC_MASTER_4K_100S",
+    "WTSC_WORLD_FIRST_4K"
+  ],
+  "image_plane_operator": true,
+  "pair": {
+    "name": "GP_Pair_STATIC_world_scale",
+    "type": "GREASEPENCIL",
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensions": [
+      1.2246239185333252,
+      0.001999974250793457,
+      1.402000069618225
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "parent": null,
+    "layers": [
+      "Held silhouette | no limb animation"
+    ],
+    "materials": [
+      {
+        "name": "Pair_Charcoal",
+        "stroke": [
+          0.00800000037997961,
+          0.009999999776482582,
+          0.014000000432133675,
+          1.0
+        ],
+        "fill": [
+          0.00800000037997961,
+          0.009999999776482582,
+          0.014000000432133675,
+          1.0
+        ],
+        "show_stroke": false,
+        "show_fill": false
+      },
+      {
+        "name": "Pair_Ribbon_Blue",
+        "stroke": [
+          0.05999999865889549,
+          0.15000000596046448,
+          0.23000000417232513,
+          1.0
+        ],
+        "fill": [
+          0.05999999865889549,
+          0.15000000596046448,
+          0.23000000417232513,
+          1.0
+        ],
+        "show_stroke": false,
+        "show_fill": false
+      }
+    ]
+  }
+}

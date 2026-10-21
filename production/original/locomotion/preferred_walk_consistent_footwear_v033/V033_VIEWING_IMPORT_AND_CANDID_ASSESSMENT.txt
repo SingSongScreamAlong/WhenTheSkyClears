@@ -1,0 +1,119 @@
+WHEN THE SKY CLEARS — V033 PREFERRED MOVEMENT / CONSISTENT SHOES
+
+USER FEEDBACK AND SCOPE
+Conrad preferred V028: "This feels better". He rejected V031: "This doesn’t
+feel as good. Also 2 different shoes". This supersedes earlier assumptions
+that V031/V032 represented artistic progress. Those studies are preserved.
+V033 starts from the actual V028 native, retaining its relaxed movement,
+painted body, rhythm and upper-body/cloth overlap. Positive V028 feedback is
+directional; this footwear correction and final animation remain unapproved.
+No V031/V032 movement, whole-body drawing or32-frame clock is imported.
+V030 anatomy remains a reference; no wholesale anatomy redraw is imposed on
+the preferred movement. This pass corrects the footwear and local cuff join.
+
+DELIVERABLES / REVIEW
+native/WTSC_Preferred_Walk_Consistent_Shoes_v033.blend — editable native.
+previews/WTSC_v033_vs_v028_Preferred_Movement_18p6s.mp4 — primary matched
+normal-speed comparison: V028 left, V033 right;9.3s close then9.3s shot.
+Each uses actual native frames1..279 at30fps, nine31-frame cycles per view.
+The shot panels are equally reduced to50% for side-by-side comparison.
+previews/WTSC_v033_Consistent_Shoes_Normal_Speed_18p6s.mp4 — candidate alone,
+with the original full1280x720 shot view after the close view.
+There is no slow motion, pose hold, retiming, phase alignment or frame recycling.
+This longer review movie does not alter the trailer or five-second scene.
+
+WTSC_v033_Consistent_Shoe_Design_Board.png compares actual native flat shoe
+renders, exposing the original design difference and the shared design.
+WTSC_v033_Shoe_Joins_F01_16.png and F17_32.png show every consecutive close
+frame's toe/heel/sole/cuff region. The full-body matched board supplies context.
+The flat shoe layout is an inspection scene only; the saved native is unchanged.
+
+FOOTWEAR / CUFF CORRECTION
+The two old V028 shoes had different hulls and registered drawings, including
+different shaft/toe/outsole contours. Both visible V033 shoes now share one
+76-vertex mesh, original UV map, painted material, shaft, toe, heel and sole.
+The retained original near shoe supplies that design. The near instance is
+unchanged in size; the far instance is uniformly97% for modest perspective.
+There is no different second shoe, nonuniform shape morph or new painted style.
+Both original shoe objects stay hidden in render and viewport as references.
+
+The original near shoe's movement/vertices are preserved to numerical precision.
+The far shoe keeps the original foot pitch, contact/swing timing and sole
+clearance, with rigid polygon-rocker placement for its consistent hull.
+Its art anchor changes by at most16.78mm. The original gait bones/ankle targets
+and all body/upper-body actions remain untouched.
+
+An initial proof revealed that the original ankle origins were insufficient to
+match the two different collars. The final far cuff uses the actual canonical
+near shoe's cuff-to-shoe offset, rotated with the foot, so it joins the same
+opening. Only the lower28% of the far trouser/cuff drawing receives a smooth
+refit, up to36.57mm at its endpoint; the upper72%, near trouser and UVs remain.
+This prevents the detached wedge seen in the preliminary proof.
+
+PRESERVATION AND CONTACT EVIDENCE
+The saved source and candidate were cold-opened and compared over the cycle.
+All24 original actions, every boy bone matrix, root, head/arm visible meshes
+and GP coat drawings are unchanged. All32 matched actual upper-body crops
+(0,0)-(480,450) are pixel-identical to the original V028 renders.
+See COLD_PREFERRED_MOTION_AND_SHOE_CHECK.json and
+RENDERED_UPPER_BODY_REFERENCE_COMPARISON.json in evidence.
+
+Across993subframe contact/clearance samples, the corrected far shoe's maximum
+sole height error is0.0872mm. The near shoe retains the preferred source's
+existing0.4436mm between-key error, without a material increase. The far
+swing clearance difference is below0.147mm; integer-frame cuff fit error is
+below0.001mm. Later-cycle native checks measured1.32micrometres maximum
+horizontal active-contact error over350support samples throughF279.
+These are numerical safeguards. They do not establish artistic acceptance.
+
+NATIVE EDITING / EXACT CLOCK
+Verified Blender executable: WTSC_LOCAL_USER/AppData/Local/Programs/Blender/
+blender-5.2.2-windows-x64/blender.exe,5.2.2LTS, build d13f752e3b9c.
+The packed painting is retained; no install or external image dependency is
+needed to open the native. Preserved V028 native is in reference/.
+
+Native clock:31frames at30fps; cycle1.0333333333s, phaseq=F-1.
+Root travelD(q)=0.9524437384576381*q/31 metres, unwrapped +X; Z up.
+Speed0.9217197468944885m/s. This is V028 travel, not the rejected V031 curve.
+The native root/cameras/actions are retained. Near contactF1; far contactF17.
+Near support endsq18.5; far support ends19.25frames after its own contact.
+The shared far shoe uses the same flat ankle placement origin0.7110689096m
+for the F17contact, repeating by the stride. Heel/toe contacts roll across
+the same rigid hull. Do not replace this with a fixed ankle clamp.
+
+SHOE_TRAVEL_AND_CONTACT_QUARTER_FRAME.csv supplies root, pitch, support,
+actual art anchors, sole clearance, active contact anchors and cuff offsets.
+The new shoes use baked native object curves keyed every1/16frame. They are
+editable independent art objects parented to the retained travel root. When
+authoring new foot poses, update these curves and the cuff fit together with
+the gait targets; the legacy ankle controls do not automatically rebake them.
+No frame handler or silent live solver is installed.
+
+NO PRODUCTION INTEGRATION
+Open the study as its own scene. For later append work, keep the retained V028
+boy rig/root, visible body/coat dependencies, V033 shoe objects and corrected
+far trouser together. Preserve original foreground/body layer compositing.
+Do not append or re-enable obsolete hidden shoes as final art.
+Production world motion must match the unwrapped root at a common scale;
+centered children require corresponding opposite world/camera travel.
+Production24fps would need a unified all-part bake atq=30*(N-N0)/24+q0 and
+review: a native cycle spans24.8production frames. Do not retime shoes,
+held GP coat drawings and body independently. No such integration is claimed.
+Production, full-trailer duration, music, titles and other specialists' files
+remain untouched. The girl, paired recovery/clasp/stumble/restart are outside
+this boy-only footwear correction.
+
+CANDID VISUAL ASSESSMENT
+The shared shoes and corrected cuffs read consistently in the flat comparison
+and every actual source-rate frame. V028's positively received movement is
+retained exactly in the checks and matched render crops.
+Passing feet and legs still overlap tightly, inherited from V028. The canonical
+toe/sole remains a graphic ink silhouette, with angular mesh edges at close
+inspection. Those are separate polish issues; no final art claim is made.
+Continuous player playback was not observed through available tools. Actual
+consecutive frames and selected decoded movie frames were inspected; user
+feedback on the restored movement and footwear remains the artistic gate.
+
+All Blender jobs used two threads and immediate host no-process gates.
+Private Library previews are authorized; receipts and real local metadata
+readback are in evidence. No public sharing or installation occurred.

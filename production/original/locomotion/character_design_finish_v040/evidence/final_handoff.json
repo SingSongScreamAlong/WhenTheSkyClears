@@ -1,0 +1,207 @@
+{
+  "status": "Completed isolated painted character look study and actual matched native normal-speed comparison. Design/artistic acceptance pending; production untouched.",
+  "user_direction": "Prior result4/10 overall; preserve improving movement, improve character appearance substantially.",
+  "native_files": {
+    "WTSC_Painted_Character_Look_STUDY_v040.blend": {
+      "file": "native\\WTSC_Painted_Character_Look_STUDY_v040.blend",
+      "bytes": 4501842,
+      "sha256": "cfa9827e8caecdb66271eb46b63d6d5e9a998c0dbba69380f53f7f5d6f7cf503"
+    }
+  },
+  "guide": "VIEWING_IMPORT_AND_CANDID_ASSESSMENT_v040.txt",
+  "private_preview": {
+    "file": "previews\\WTSC_v040_vs_v039_Same_Movement_Look_Study.mp4",
+    "bytes": 1392031,
+    "sha256": "e02f49626cdfb85719e263124ef9e9b2018cfaed0e83c23b730968b16047fc76",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "status": "succeeded",
+    "local_metadata_readback_verified": true,
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download"
+  },
+  "comparison": {
+    "file": "previews\\WTSC_v040_vs_v039_Same_Movement_Look_Study.mp4",
+    "bytes": 1392031,
+    "sha256": "e02f49626cdfb85719e263124ef9e9b2018cfaed0e83c23b730968b16047fc76",
+    "dimensions": [
+      1280,
+      840
+    ],
+    "fps": 30.0,
+    "decoded_frames": 282,
+    "duration_seconds": 9.4,
+    "source_frames_per_section": [
+      1,
+      94
+    ],
+    "sections": [
+      "Matched close at native480x720 per panel",
+      "Matched shot at50percent640x360 per panel",
+      "Candidate shot at full native1280x720"
+    ],
+    "old_new_walk_actions_identical": true,
+    "new_candidate_source_images_per_camera": 94,
+    "cycles_per_section": 3,
+    "closing_pose_included": true,
+    "actual_native_cycles_rendered_not_one_cycle_recycled": true,
+    "AI_generated_movie": false,
+    "new_paint_origin": "Unedited generated parts atlas, registered to editable native meshes; new fixed-profile head paint mesh bound to original head bone.",
+    "board": "previews\\WTSC_v040_Native_Character_Look_Comparison.png",
+    "board_dimensions": [
+      1920,
+      2460
+    ],
+    "board_bytes": 2505813,
+    "observation_limit": "Actual encoded movie decoded and selected frames inspected. No continuous video-player observation claimed."
+  },
+  "art_provenance": {
+    "mode": "Built-in ImageGen, no CLI fallback",
+    "reference_edit_attempt": {
+      "action": "Edit the preserved v038 full-color transparent character image via referenced_image_paths",
+      "target": "reference/CURRENT_CHARACTER_FULL_COLOR_v038.png",
+      "result": "Failed before generating an image",
+      "reason": "AbsolutePathBuf deserialized without a base path",
+      "approval_denied": false,
+      "uncertain_outcome": false,
+      "resolution": "Independent new concept/parts-atlas generation succeeded; native geometry/UV registration authored separately."
+    },
+    "concept": {
+      "file": "textures/WTSC_Boy_Painted_Design_Concept_v040.png",
+      "sha256": "8a764c2d0bebd2c77a98cc4e83b7ddad3e309c609b1b945b5f4d5386a357ef67",
+      "used_on_native": false,
+      "role": "Exploratory painting only; not an animation render or final reusable cutout."
+    },
+    "consumed_atlas": {
+      "file": "textures\\WTSC_Boy_Painted_Parts_Atlas_v040.png",
+      "sha256": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+      "used_on_native": true,
+      "pixel_bytes_edited_after_generation": false,
+      "packed": true
+    },
+    "prompts": [
+      "evidence/IMAGEGEN_PROMPT_v040.txt",
+      "evidence/STANDALONE_IMAGEGEN_PROMPT_v040.txt",
+      "evidence/PARTS_ATLAS_IMAGEGEN_PROMPT_v040.txt"
+    ],
+    "new_native_head": "New fixed-profile paint plane in the original head-bone transform, not a copy of the rejected v008 girl patch."
+  },
+  "technical_preservation": {
+    "scope": "Technical cold native preservation, separate from artistic look acceptance.",
+    "blender": "5.2.2 LTS",
+    "build_hash": "d13f752e3b9c",
+    "body_sample_count": 187,
+    "body_range": [
+      1,
+      94
+    ],
+    "geometry_camera_frames": [
+      1,
+      4,
+      8,
+      11,
+      13,
+      17,
+      20,
+      24,
+      27,
+      31,
+      32,
+      63,
+      94
+    ],
+    "original_actions_changed": [],
+    "original_active_actions_changed": [],
+    "original_rest_shape_first_UV_and_float_attributes_changed": [],
+    "original_packed_image_bytes_changed": [],
+    "errors": {
+      "root_matrix": 0.0,
+      "all_bone_world_matrices": 0.0,
+      "wrist_world_matrices": 0.0,
+      "all_other_visible_mesh_vertices_m": 0.0,
+      "camera_matrices": 0.0,
+      "new_head_object_follows_original_matrix": 0.0,
+      "new_head_matches_original_rigid_head_bone_affine_m": 2.2293035620847717e-07
+    },
+    "same_shoe_mesh_and_new_material": true,
+    "original_head_preserved_hidden": true,
+    "new_head_fixed_profile_only": true,
+    "intentional_changes": [
+      "New atlas-painted material copies and explicit additional UV layer on existing parts. Original first UV layers retained.",
+      "New fixed-profile head/neck paint plane, fitted to original painted occupancy and same head-bone affine motion. Original head hidden, retained intact.",
+      "Garment-local linen collar masks and painted shoulder field; no world/light changes."
+    ],
+    "limitations": [
+      "New painted face/hair and coat buttons/pocket are a design candidate, not approved identity or costume.",
+      "Existing body contours and hand meshes, fixed expression and original crowded passing feet remain.",
+      "No 3D head, head turn, facial rig, paired acting or recovery restart authored."
+    ]
+  },
+  "visual": {
+    "scope": "Author inspection of actual native renders and selected decoded frames. Human/independent normal-speed look judgment remains separate.",
+    "native_inspection": [
+      "previews/HERO/0001.png",
+      "previews/CLOSE/0001.png",
+      "previews/CLOSE/0011.png",
+      "previews/CLOSE/0020.png",
+      "previews/SHOT/0020.png",
+      "previews/WTSC_v040_Native_Character_Look_Comparison.png"
+    ],
+    "decoded_movie_inspection": [
+      "previews/DECODED/0026.png",
+      "previews/DECODED/0207.png",
+      "previews/DECODED/0093.png"
+    ],
+    "observations": [
+      "New profile has a defined eyelid/iris, eyebrow, cheek/jaw/ear/lips and larger grouped hair locks.",
+      "Cloth, linen, warm skin and leather have more deliberate painted form and quieter surface detail than the old marbled treatment.",
+      "Matching old/new poses show the same walking body silhouette and timing beneath the new painting.",
+      "The initial broad cream yoke, unlinked shoulder-coordinate black fill and armhole sample were corrected before the final native/render.",
+      "The fixed face, neck/shoulder and sleeve-to-body construction, inherited hand/body contours and crowded passing feet remain visible limitations."
+    ],
+    "not_claimed": [
+      "Continuous video-player playback observation",
+      "Approved face identity or costume design",
+      "A full3Dhead, facial animation, paired acting or recovery restart",
+      "Arcane-level animation quality"
+    ]
+  },
+  "source_preservation": {
+    "protected_files_checked": 18,
+    "all_unchanged": true,
+    "v039_reference_copy_exact": true,
+    "girl_and_rejected_v008_study_untouched": true,
+    "no_production_or_other_specialist_writes": true
+  },
+  "render": {
+    "final_unique_candidate_frames_close_and_shot": 188,
+    "new_motion_renders": 180,
+    "same_final_native_pose_proofs_reused": 8,
+    "additional_final_hero": 1,
+    "additional_matched_baseline_hero": 1,
+    "final_unique_images_including_heroes": 190,
+    "bounded_design_proof_iterations": 5,
+    "proof_images_per_iteration": 9,
+    "superseded_proof_images_overwritten": 36,
+    "threads": 2,
+    "all_own_Blender_jobs_exited": true,
+    "world_renders": 0
+  },
+  "integration": {
+    "fps": 30,
+    "period_frames": 31,
+    "D_F_metres_plus_X": "0.9524437384576381*(F-1)/31",
+    "production24fps_map": "F=1+(G-G0)*30/24; one mapping for body/root/drawings/cloth/shoes/world",
+    "travel_curve": "reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv",
+    "production_origin_assigned": false,
+    "production_integrated": false
+  },
+  "remaining": [
+    "New face/hair and coat button/pocket styling need artistic direction; not approved identity/costume",
+    "Head is a fixed-profile painted mesh with one expression, not3Dor facially rigged",
+    "Inherited simple body/hand contours, neck/shoulder construction and crowded passing feet",
+    "Paired intentions, fatigue, stumble, load-bearing support/clasp and genuine recovery-to-walking restart",
+    "No integration into the original75-80second scene or full trailer"
+  ],
+  "goal_assessment": "A substantial look study over preserved movement; target Arcane-level quality has not been reached.",
+  "blockers": []
+}

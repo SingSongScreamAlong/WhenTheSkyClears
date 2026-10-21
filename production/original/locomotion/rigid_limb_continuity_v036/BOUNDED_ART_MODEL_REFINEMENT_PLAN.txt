@@ -1,0 +1,44 @@
+WHEN THE SKY CLEARS — CHARACTER CONSTRUCTION / STYLE REFINEMENT PLAN
+Prepared after the user's request to continue toward an Arcane-level animation goal, and the later diagnosis that the art model/style also contributes.
+Status: await the independent v035 review before further character edits or rendering. This plan is a bounded next test, not an approved redesign or a claim of studio-level quality.
+
+PRESERVED DIRECTION
+Keep the preferred v028 rhythm and gesture, as retained in v033/v035. Retain the established head/profile, hair, age/proportions, original painted identity, consistent shoes, charcoal/ink-and-wash direction and existing checkpoints. Do not import rejected v031/v032 movement. No production, world, title, music or duration edits.
+
+OBSERVED MODEL / STYLE PROBLEMS
+1. The retained v015 painting uses one fabric language across collar, sleeves and coat. In the current rig, head/collar/sleeves/shoes retain strong painted texture while much of the coat is smooth Grease Pencil value panels. This makes the body read as a different drawing system, even when motion is preserved.
+2. The coat's broad hem opening and several long dark panels can read as separate rigid flaps. Ribcage, waist and pelvis compression are not consistently legible beneath them. More moving stripes or extra lighting will not supply convincing mass.
+3. v035 localizes knee bending but its pose-sample interpolation still allows several millimetres of shaft bowing. Knee volume remains broad and passing leg/shoe silhouettes crowd together.
+4. Hands exist and retain the original painted gesture, but they occupy roughly11x15pixels at the shot camera. A small charcoal lift helps; crowded outlines and nearly equal garment values still suppress the palm/thumb. F20 far-hand occlusion by the near leg is intentional and must remain physically sensible.
+
+REVIEW DEPENDENCY
+Use the independent v035 findings to choose the first correction. Do not treat the existing technical checks as visual approval. Do not run another character render before those findings arrive through the parent. No request for new user drawings is needed to investigate the existing assets.
+
+BOUNDED NEXT TEST — FOUR MATCHED POSES, THEN MOTION
+A. Coat construction
+   Test contactF1, loaded-downF4, passingF11 and recovery/loadingF20 at the same cameras. Treat the coat as one garment suspended from the shoulder/ribcage and responding to the pelvis. Resolve the front opening, back panel and free hem into a coherent silhouette. Limit contour changes to the demonstrated attachment/fold defects; preserve neckline, characteristic length and overall design. Keep fold placement tied to measured trunk bend and support, not a decorative clock.
+   Compare the source and one correction with temporary separated values first. If the silhouette is stronger, test transferring the existing painted fabric through native UV/mesh deformation so collar, sleeve and body share a visual language. Use the retained painting and asset materials. Do not add a new unrelated texture, photographic shading, glow or global lighting pass.
+B. Limb volumes
+   Keep rigid thigh/shin axes and original skeleton lengths. Separate the thigh taper, knee cap, calf and ankle instead of widening a uniform tube. Round only the joint region. Preserve exact sole trajectories and cuff-to-shoe joins. Inspect near/far overlap as a silhouette at the actual shot size before adding surface detail.
+C. Hands / arm attachment
+   Keep the v035 total reach, preferred shoulder/wrist paths and original hand scale/design. Resolve sleeve-to-cuff-to-forearm transitions without an abrupt dark wedge. Test a restrained local charcoal hierarchy and a clearer palm/thumb silhouette against the coat. Preserve intentional far-side occlusion; never project all hands above the body. If finger gesture needs adjustment, use a small native shape correction with matching paint, rather than a new hand design or exaggerated size.
+D. Acceptance sequence
+   First: matched actual Blender stills, close and1280x720 shot, no hand x-rays. Include the original retained painting as identity reference. Reject any loss of character design, painted continuity or coherent garment shape.
+   Second: one bounded two-cycle normal-speed comparison,30fps and the unchanged31-frame cycle. Inspect entry to contact, loaded-down support, passing, toe-off and the loop boundary. Review clean artwork first; measured joint guides and contact masks are separate diagnostics.
+   Third: only if this remains visually stronger, extend into distinct paired intentions and a recovery-to-walking transition. Walk-cycle construction is a prerequisite, not completion of the supported recovery scene.
+
+TECHNICAL WORK ALREADY IN FLIGHT WHEN THE HOLD ARRIVED
+Before the parent requested the independent-review hold,126 actual baseline v035 stills had rendered: frames1–63 in CLOSE480x720 and SHOT1280x720. No source file was changed. They are diagnostic source footage, not a new quality claim.
+The isolated v036 live-axis build was already running. It completed and Blender exited. It adds joint-dependent native contour modifiers, a22mm local knee transition and a restrained8.5percent local knee-width reduction.249 samples at1/8-frame spacing report unchanged original actions, bone world matrices, head/hand/shoe vertices and final cuff rings; straight-shaft drawing deviation is approximately0.00000011m. These are technical results only.
+The v036 candidate has NOT been rendered or visually accepted. It is a provisional construction test and must not replace v035 by default. Its source pose samples/cuff region and v033 shoe bakes still require a unified refit if authoring a new gait or paired recovery; the modifier does not make the whole asset a general production character rig.
+
+FILES
+reference/PRESERVED_v035.blend
+native/WTSC_Live_Limb_Continuity_v036.blend — UNRENDERED / PROVISIONAL
+previews/BASE_CLOSE, previews/BASE_SHOT — actual unchanged v035 diagnostic frames
+previews/V035_CYCLE_SHAPES.png — cycle pose contact sheet; static inspection only
+evidence/LIVE_CONTOUR_BUILD_AND_CHECK.json — numerical preservation, not art approval
+evidence/BASELINE_RENDER.json — actual render scope
+
+CURRENT BLOCKER
+Next character edits/render are pending the independent v035 review, as explicitly instructed by the parent. No action was denied and no render is active. Existing production and specialist checkpoints remain untouched.

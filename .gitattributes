@@ -19,3 +19,8 @@ game/character_sources/** -text
 game/evidence/** -text
 # Preserve the existing build-identity hashes, including authored line endings.
 game/** -text
+
+# Preserve byte identity of archival distribution copies after privacy sanitization.
+unreal/** -text
+production/** -text
+docs/acquisition/** -text

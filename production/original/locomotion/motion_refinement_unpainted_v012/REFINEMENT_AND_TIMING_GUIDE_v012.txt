@@ -1,0 +1,112 @@
+WHEN THE SKY CLEARS / UNPAINTED MOTION REFINEMENT v012
+
+STATUS
+v011 failed independent artistic review. v010 remains artistically rejected.
+v012 is a separate unpainted six-second review candidate, not permission to
+repaint, integrate, extend the trailer or replace approved source files.
+No production character, world, music, title or FX assets were imported.
+
+SPECIFIC CHANGES FROM v011
+1. The boy's arriving far toe interrupts against a small world-fixed test
+   obstacle at frame24. Incoming swing has forward velocity; the toe pins in X
+   while the heel kicks upward through26 and the body continues forward.
+   The foot then settles down the obstacle face, flat at30. This is authored
+   contact-aware kinematics, not a collision or force simulation. The test
+   obstacle is 4cm high and affects only the far foot track. It is part of
+   the test stage, not a new approved production prop.
+2. Near catch heel now arrives36, four frames earlier than v011. Compression
+   reaches40. The hip drops continuously through the interruption and catch;
+   the previous dip/rise before the landing is removed. It then advances and
+   rises over the planted near foot. Trailing heel release leads toe-off66.
+3. Girl has one controlled heel arrival26, compression29 and settle38. The
+   second landing41 and second compression44 are removed. She shifts toward
+   her planted front foot, lifts her trailing heel and holds the intention to
+   wait. A small head/shoulder counter-response follows the boy's main load;
+   the hands remain apart. There is no load-bearing clasp or backward turn.
+4. Later walk couples heel arrival to load compression, mid-stance extension
+   and earlier heel rise. Pelvis/lower trunk and chest have different phases;
+   head response is delayed three frames. Independent contact clocks and small
+   root-speed modulation avoid forced synchronization. The regular walk is
+   still authored and may remain too orderly; this is not a naturalism pass.
+   The first v012 frame review caught trailing-leg reach limits shifting the
+   girl's actual low point too late and sagging the boy during restart. Earlier
+   girl heel rise and faster boy toe extraction correct those unintended dips.
+   Next step definitions continue beyond144 so ending stance is not held flat.
+5. A short native neck and boot/ankle connectors close proxy gaps. Total
+   approximate height, head size and limb reach are retained. Plain forms
+   remain diagnostic; they are not a proposed painted character redesign.
+
+LOCAL CLOCK AND CONTACTS
+24fps; native frames1..144. Frame1=0.000s, frame144=5.958333s;
+the boundary at145=6.000s. Both delivered movies contain144 actual frames.
+Boy: toe interruption24 (.958s), maximum heel kick26 (1.042s), foot flat30;
+near catch heel36 (1.458s), main load40 (1.625s), recovery41..65;
+far toe-off66 (2.708s), far restart heel78 (3.208s), near heel94,
+far109, near124, far139. Continued travel through144, no held ending.
+Girl: far braking heel26 (1.042s), compression29 (1.167s), settle38;
+front support/wait through69, near toe-off70 (2.875s), near restart
+heel83 (3.417s), far99, near114, far129, near144.
+Phase labels are hidden in both primary previews. Contact labels do not
+substitute for a visible interruption or weight response.
+
+EDITABLE NATIVE AND IMPORT CONTRACT
+Blender verified at WTSC_LOCAL_USER\AppData\Local\Programs\Blender\
+blender-5.2.2-windows-x64\blender.exe, version5.2.2LTS, buildd13f752e3b9c.
+Open native/WTSC_Unpainted_Motion_Rebuild_v012.blend for the test stage.
+Append collection WTSC_UNPAINTED_MOTION_REBUILD_v012 into an EMPTY test scene.
+It contains44 objects: two native armatures and plain bound proxy meshes,
+no camera, lights, source image, world or production prop. Do not substitute
+this collection into the trailer. A fresh collection append was tested.
+Set24fps, frames1..144, metres, scale1. Each rig Object location carries its
+own world-X route. Native pose channels carry sampled local limb/body motion.
+Keep both together; removing the Object route breaks stationary contacts.
+Native bone lengths stay fixed; Actions and source scripts remain editable.
+No NLA scale/offset is applied. No external textures or dependencies needed.
+
+TEST | INSPECTION follows the mean of the two child root-X positions at
+Y=-12,Z=.82 with orthographic width5.4m. TEST | SHOT_SIZE uses10.4m width.
+The second approximates the original character size; it is not a matched
+painted production camera. Floor ticks and the low obstacle stay world-fixed.
+OPTIONAL | support and mass proxy diagnostics is hidden in previews.
+Source recipes are scripts/motion_design.py and build_unpainted.py, also
+embedded as native Texts. Rebuild only in this isolated folder.
+
+TRAVEL DATA / FUTURE INTEGRATION LIMIT
+evidence/world_motion_samples.csv gives each child's world root-X, actual
+hip-Z, desired hip-Z and foot states at every frame. joint_targets.json gives
+world joint targets plus foot pivots, rolls and coordinates for all144 frames.
+These are the resulting routes for THIS standalone test. All world coordinates
+already include each child's starting separation; do not add it again.
+The camera follows their average. There is no shared DISTANCE_CURVE.
+Do not combine these curves with v007/v009/v010 world speed or time-map them
+silently to global1801..1920. v012 has144 frames, rather than the production
+shot's120; no75..80s replacement contract is authorized or claimed.
+If this foundation is accepted, choose the production timing first, then
+retime the roots, foot contacts and paired camera/world motion together and
+recheck contacts. No root-only rescale or downstream world-speed guess.
+
+REVIEW / CANDID LIMITS
+The v011 review's useful heel->load->front-support recovery order is retained.
+Technical checks concern binding, fixed lengths, floor, planted-foot drift and
+fresh append. They cannot establish appealing movement, balance forces or
+artistic approval. Geometric mass dots are not calibrated child COM.
+Actual hip-Z includes leg-reach limits. Some desired extension remains beyond
+the support arc (about1.8cm for the girl's first restart); that is recorded,
+not presented as an exact desired-pose match or a dynamics pass.
+No dynamic simulation, measured child motion capture or physical correctness
+claim. A moving body can pass beyond its static support during a fall/walk.
+Review both entire six-second movies. Sequential decoded frames can expose
+spacing, support and pose continuity; continuous full-speed playback was not
+available to the agent, so pacing and naturalness remain provisional.
+The caught far toe and obstacle are small at shot size. The waiting intention
+is restrained, and the later regular steps may still feel too mechanical.
+There is no torso yaw, lateral balance, painted silhouette/hair/cloth, emotional
+face turn or real helping grip. Do not try to solve residual weight by painting.
+The painterly design and original right-profile head are preserved in source;
+the rejected v008 turnaround and v010 motion are not reused here.
+
+PRESERVATION
+v011 native/movie/route samples, v010 native/review/movie and productionv046
+are hash-checked unchanged. All v012 work is inside its own folder.
+No full-trailer duration, music, title mask, painting, FX/smoke changes.
+Private Library preview upload is authorized; no public or external sharing.

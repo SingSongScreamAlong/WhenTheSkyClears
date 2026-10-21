@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-19T21:32:19.512450+00:00",
+  "version": "0.1.1",
+  "stage": "built, native scene reopened, packaged gameplay passed, actual video fully decoded",
+  "validated": true,
+  "editor_build": "Succeeded",
+  "native_refinement": "Succeeded, 0 errors and 0 warnings on final commandlet",
+  "win64_package": "Succeeded",
+  "packaged_replay_events": 10,
+  "packaged_replay_passed": true,
+  "actual_capture_fps": 29.63068692169926,
+  "actual_runtime_fps_including_capture": 121.49750056890839,
+  "source_and_baseline_preservation": "Verified",
+  "limitations": [
+    "Provisional interpolated cutouts, not finished cinematic child animation",
+    "Companion presence only; no following or carrying behavior",
+    "Collapsed upper floor deliberately inaccessible; no vertical traversal",
+    "No audio",
+    "Simulated native engine key events, not a human or OS-keyboard playtest",
+    "Downloaded skeletal animations incompatible directly with static cutout artwork; none applied"
+  ]
+}

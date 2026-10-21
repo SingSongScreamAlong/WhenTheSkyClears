@@ -1,0 +1,278 @@
+{
+  "project": "When the Sky Clears",
+  "delivery": "Updated106s painted-world trailer pass v040; held children",
+  "high_quality_4K_movie": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v040.mp4",
+    "bytes": 205435441,
+    "sha256": "a8b4edc357498ba3e2ffb585624a862d88ee852f4bb97caca617a14a19ad8569",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 24,
+    "frames": 2544
+  },
+  "chat_viewing_copy": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_View_v040.mp4",
+    "bytes": 15075200,
+    "sha256": "2c6c48fa129c14b6915dd9134946152274436375f76686a9cf097b4df0b6e3e7",
+    "resolution": [
+      1280,
+      720
+    ],
+    "frames": 2544,
+    "under20000000bytes": true,
+    "full_decode_pass": true
+  },
+  "editable": {
+    "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Full_Trailer_Editable_v040.blend",
+    "sha256": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f",
+    "master_scene": "WTSC_MASTER_4K_106S_v040",
+    "world_scene": "WTSC_WORLD_CORRECTED_v040",
+    "picture_scene": "WTSC_FULL_FILM_KNOCKOUT_v040",
+    "images_packed": [
+      {
+        "name": "Woods_v001.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Countryside_Continuous_Panorama.png",
+        "pixels": [
+          1983,
+          793
+        ]
+      },
+      {
+        "name": "Village_Middle.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Bakery_Detail_Repaint.png",
+        "pixels": [
+          1356,
+          1159
+        ]
+      },
+      {
+        "name": "Pair_Painterly_Near_Age_v015.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Foreground_Ground.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Path_Detail_Repaint.png.001",
+        "pixels": [
+          1908,
+          824
+        ]
+      },
+      {
+        "name": "Village_Empty_v001.png",
+        "pixels": [
+          1671,
+          941
+        ]
+      },
+      {
+        "name": "School_v001.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Camp_v001.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Battlefield_v001.png",
+        "pixels": [
+          1672,
+          941
+        ]
+      },
+      {
+        "name": "Ground_Painted_v001.png",
+        "pixels": [
+          1536,
+          1024
+        ]
+      },
+      {
+        "name": "Path_Detail_Repaint.png",
+        "pixels": [
+          1908,
+          824
+        ]
+      },
+      {
+        "name": "High_Crown_Oak.png",
+        "pixels": [
+          1024,
+          1536
+        ]
+      },
+      {
+        "name": "Painted_Smoke_Wisp_v016.png",
+        "pixels": [
+          1024,
+          1536
+        ]
+      },
+      {
+        "name": "Painterly_Flame.png",
+        "pixels": [
+          1024,
+          1536
+        ]
+      }
+    ],
+    "music_packed": true,
+    "fonts_packed_and_signature_verified": true,
+    "actual_scene_and_sound_strips": true
+  },
+  "comparison_first": {
+    "benchmark_seconds": [
+      64,
+      69
+    ],
+    "frames": [
+      1537,
+      1656
+    ],
+    "decoded_frames": 120,
+    "fps": 24,
+    "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Camp_Light_Ground_Benchmark_v039.blend",
+    "source_sha256": "0febe04dfc246c5a56509563f3f48966761c122d55a11ec572722821ee1e8dab",
+    "baseline_movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v037.mp4",
+    "baseline_world": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\Baseline_v037_World_64_69.mp4",
+    "baseline_knockout": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\Baseline_v037_Knockout_64_69.mp4",
+    "study_world": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\WTSC_Camp_World_64_69_v039.mp4",
+    "study_knockout": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\WTSC_Camp_Knockout_64_69_v039.mp4",
+    "comparison": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\WTSC_Camp_5s_Baseline_vs_Study_v039.mp4",
+    "comparison_resolution": [
+      1920,
+      1080
+    ],
+    "comparison_bytes": 5234661,
+    "comparison_sha256": "81943127edceda7eddc4bb7641519a5efd8281c2d31269be19a789ddb7742485",
+    "native_study_resolution": [
+      3840,
+      2160
+    ],
+    "source_audio": "Original global64\u201369 segment in comparison only; no timing change to full film",
+    "mask_source": "Exact unchanged nativeFontalpha fromv037 at source global64\u201369; no obsoleteworld reused in study.",
+    "v001_pack_used": false,
+    "stage": "Actual moving comparison ready for visual QA, no artistic approval inferred. Full updated film still pending propagation/QA."
+  },
+  "timing": {
+    "moving_world": [
+      0,
+      100
+    ],
+    "silent_credits": [
+      100,
+      106
+    ],
+    "single_original_music_start": 0,
+    "single_music_fade": [
+      90,
+      100
+    ]
+  },
+  "exact_credit_wording": [
+    "WHEN THE SKY CLEARS.",
+    "The Animated Series.",
+    "2027.",
+    "A Two Truck Productions project."
+  ],
+  "changes": {
+    "regional_paint": [
+      {
+        "object": "v016 | School | broken windows and plaster",
+        "old_broad_washes_bypassed": [
+          "Mix.001",
+          "Mix"
+        ]
+      },
+      {
+        "object": "v016 | Battlefield | broken village line",
+        "old_broad_washes_bypassed": [
+          "Mix.002",
+          "Mix.001",
+          "Mix"
+        ]
+      },
+      {
+        "object": "v016 | Ruins | distant ash street",
+        "old_broad_washes_bypassed": [
+          "Mix.001",
+          "Mix"
+        ]
+      }
+    ],
+    "fire_assemblies": [
+      {
+        "root": "v036 | School debris | fixed emitter",
+        "power_watts": 248,
+        "radius": 2.8,
+        "smoke_reset_opacity": 0
+      },
+      {
+        "root": "v036 | Battlefield burn | fixed emitter",
+        "power_watts": 660,
+        "radius": 3.6,
+        "smoke_reset_opacity": 0
+      },
+      {
+        "root": "v036 | Distant ruin burn | fixed emitter",
+        "power_watts": 720,
+        "radius": 5,
+        "smoke_reset_opacity": 0
+      }
+    ],
+    "measured_contacts": "Same8soft core/penumbra contacts introduced in039, now travel throughout100s",
+    "grass_roots_placed_at_bank_edge": 11,
+    "character_material": "Same charcoal design/topology/UV/root/pose. Added bounded physically sourced contours for other3fires only.",
+    "foreground": "Same039stable paint/UV treatment throughout route; no repeated bank photograph contribution.",
+    "glow": "Same039 restrained medium FogGlow throughout.",
+    "mask_credits_audio_timing": "Unchanged106s/24fps/4K, originalsingleWAV0\u2013100,fading90\u2013100,silent6scredits.",
+    "other_regions_grass_staging_preserved": 94
+  },
+  "preserved": "v037 checkpoint, v038 companion and all earlier sources/movies. Separate character motion and FX benchmark workstreams untouched.",
+  "v001_pack_used": false,
+  "new_character_gait_added": false,
+  "verification": "notes/world_v016/full_verification_v040.json",
+  "native_verification": "notes/world_v016/full_native_audit_v040.json",
+  "visual_review": "notes/world_v016/full_visual_review_v040.json",
+  "limitations": [
+    "Foreground plant repetition remains visible; treatment is partial rather than a full repaint.",
+    "Most source paintings remain1672x941; UHD native output does not create4K texture detail.",
+    "Current world uses2.5D layered paint plus native props/effects; not fully modeled architecture.",
+    "Held characters remain intentionally unanimated for this world pass.",
+    "Technical QC and decoded inspection do not establish human artistic approval or Arcane-level finish."
+  ],
+  "original_supplied_music_proof": {
+    "sha256": "0694b2f40f56df5bbadaa23e1c92ac6a048507a8920cebf5b060fc7493368114",
+    "edit_copy": "edit/When_The_Sky_Clears_Trailer_Music_100s.wav",
+    "original": "WTSC_LOCAL_USER\\Downloads\\When_The_Sky_Clears_Trailer_Music_100s.wav",
+    "byte_identical": true
+  }
+}

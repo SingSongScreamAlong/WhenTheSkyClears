@@ -1,0 +1,47 @@
+WORLD ART v048 - SCOPE AND REUSE
+
+User authorization: parallel world/art improvements while the character author
+continues the separate Synty reference test. No character files, production
+overwrites, installs, purchases, external publication or FX advancement.
+
+Sources inspected on 2026-10-18:
+- v040 full trailer, preserved source SHA in native_inventory.json.
+- v047g five-second battlefield refinement, explicitly not artistically approved.
+- Existing original paintings, native world geometry, material nodes and the
+  world-fixed earth painting in sets/refinement_v047.
+
+Production reuse guide retrieved from canonical dcc-mcp-core/main at
+crates/dcc-mcp-gateway/src/gateway/native_resources/agent_workflows.md.
+The saved guide passed check_production_guide.py for
+dcc-mcp-production-reuse/v1. Its substantive reuse section was read.
+
+Provider discovery: no DCC-MCP tools exposed; dcc-mcp-cli and dcc-cua were
+previously checked and not on PATH. No installation or gateway repair attempted.
+Official extension/native-node web discovery was attempted; results were not
+useful. No third-party asset/plugin selected: the project already has matching
+owned paintings, appropriate editable geometry and native shader interfaces.
+No claim of real MCP host validation is made. Native Blender 5.2.2 LTS is the
+actual host used for the isolated copy, not a replacement of a live session.
+
+Reused art: project paintings and ground authored for this existing trailer.
+The v047 foreground painting contains characters above the sampled band. Native
+UV/material masks in this branch only sample earth below texture v=0.269.
+
+First preview rejected: flat polygonal ruin faces, flat bank fill and oversized
+geometric chips/stones. v048 and v048b retain experiment provenance; final v048c
+removes the rejected hidden objects. Do not use v048 first preview as final art.
+
+One imagegen masonry swatch was generated from text after the reference-path
+call failed with AbsolutePathBuf deserialized without a base path. The standalone
+candidate appeared inline but supplied no local artifact path and is NOT used
+by the native checkpoint. It is not a Blender output or a final deliverable.
+No CLI/API fallback, install or key was used. Prompt retained separately.
+
+Resource checks before each render/build: existing Blender CPU delta about
+0.03125 seconds over 1.2 seconds; GPU utilization 0%, VRAM 282 MiB at the first
+build. One new headless job at a time, two fixed CPU threads; no production UI
+input and no concurrent heavy world jobs. Other job activity was checked again
+before final rendering.
+
+Final target remains open: this is a three-region world art checkpoint,
+not full-film visual approval or the requested Arcane-level finish.

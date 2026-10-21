@@ -1,0 +1,84 @@
+WHEN THE SKY CLEARS / PERFORMANCE CLEANUP v003
+Blender5.2.2 LTS /24fps /XZ /metres /1 unit=1 metre
+
+This is the isolated cleanup of v002. Production and earlier studies are
+preserved. Visible art is native editable flat 2D geometry using the original
+packed charcoal paint. Original face/hair/body paint and source heights remain:
+boy1.45m, girl1.3699m. Pose compression changes head height naturally; bones do
+not scale for squash. No visible generic3D character, install or add-on.
+
+OPEN / APPEND
+Open native/WTSC_Performance_Library_v003.blend for both rigs and all5 Actions.
+For a clean production copy: File > Append > Collection >
+WTSC_PERFORMANCE_PAIR_v003. Do not integrate until the motions are reviewed.
+The collection imports both rigs, packed source paint, new native overlap
+geometry,4 character Actions and the stumble's native root-distance Action.
+Preview stage is separate. Hidden exact GP source outline remains in library.
+This is editable 2D cutout animation, not new frame-by-frame GP drawings.
+
+CONTROL / RETIME
+Run the embedded Blender Text configure_performance.py, then in Python Console:
+  configure('PLAYFUL_SKIP', start=1, repeat=3, time_scale=1, root_motion=False)
+  configure('WEARY_STUMBLE_RECOVER', start=1, time_scale=1, root_motion=True)
+  configure('WEARY_STUMBLE_RECOVER', start=101, time_scale=2, root_motion=True)
+With multiple appended packs pass root=the exact controls object.
+The helper edits only that pack's native NLA tracks and controls. No handlers
+or Python runtime service are needed for playback after configuring.
+
+LOCO_PAIR | CONTROLS is the floor origin midway between the hip roots.
+Move it for placement, rotate about Z for shot staging only if desired, and
+scale uniformly. For the XZ staging here, turn around the vertical Z axis only
+with a suitable camera; these are profile drawings, not turnable 3D children.
+The local travel direction is +X, +Z is up, +Y is depth. Camera is at negativeY.
+pair_gap_m defaults0.80m. Rig origins are +/-half the gap, average stays centred.
+root_motion0=in-place;1=travel. Preview ground travels backward in place.
+The camera follows TRAVEL in the proof. Remove preview stage for integration.
+
+PLAYFUL_SKIP
+40-frame cycle, closing key41. 24fps gives1.666667seconds and1.0m stride at
+0.60m/s. Reel120frames shows3 cycles. Girl phase is4frames ahead of boy.
+Boy near foot contact: frames1-6 and11-14. Far contact:21-26 and31-34.
+First contact is a step; second is a hop on the same foot. Alternates sides.
+Airborne spans:7-10,15-20,27-30,35-40. Girl contacts are4frames earlier modulo40.
+Shoe soles are flattened from the actual source contours, with heel/toe roll.
+Body compression, head lag, staggered arms and braid follow-through are keyed.
+
+WEARY_STUMBLE_RECOVER
+96frames /4.0seconds /one shot. Variable travel is a native location curve on
+PERF | DISTANCE_CURVE. Keep use_distance_curve=1; configure does this.
+Entry0.28m/s, lurch0.45, braking0.14, slow settle0.05, then stop from frame64.
+Total local travel0.561667m. Girl reacting2frames ahead uses compensated feet.
+Boy near: toe catches frame18 and holds through32; recovers33-48; planted49-96.
+Boy far: rear release through20; rescue step21-33; braking contact34-96.
+Frame29-41 is the strongest forward lean;56-76 resolves into weary standing.
+The girl is not acting a helping lift or an independently staged narrative.
+
+SPEED / ROUTE MATCHING
+For uniform scale S and NLA time scale T, world distances multiply by S and
+speeds by S/T. Skip at T=2 is0.30m/s. Stumble's entire distance curve retimes
+together with the character keys. Native2x retiming is tested.
+When parenting to a production route, use root_motion=0 and derive animation
+phase from ground distance at foot depth. Do not add this root travel twice.
+For a varying route, one constant NLA scale is insufficient. Bake phase from
+signed accumulated ground distance divided by the clip stride. For stumble,
+retime route and baked distance curve consistently; this one shot ends stopped.
+
+WHAT WAS CLEANED
+- Smooth waist/knee transitions and preserved-volume native skinning.
+- Exact source shoe art separated into rigid native cutouts with ankle overlap.
+- Source-isolated sole supports and preview floor moved to the actual z=0 sole.
+- True source limb contours; original RGB inside them closes exposed alpha gaps.
+- Native hidden thigh overlaps behind the girl's skirt supply occluded anatomy.
+- Braid has continuous root weights and restrained gravity/lag rather than
+  following the head as a rigid sticker. Shoulder placement follows the torso.
+- Original shirt fragments no longer travel with the trouser thighs.
+
+QUALITY / LIMITS
+Review ARTISTIC_REVIEW.txt and the two chronological contact sheets alongside
+the actual reels. Technical tests do not establish cinematic artistic quality.
+Sourced paint is unchanged; native limb overlap and contour treatment changed.
+These changes still require design/animation review before production use.
+No run, crawl, fall/get-up, helping lift, completed fear acting, walk-to-skip
+or walk-to-stumble transition, or final trailer integration is claimed.
+The native library is self-contained. Authoring scripts require the original
+project workspace, v001 native source and the original image/vector recipe.

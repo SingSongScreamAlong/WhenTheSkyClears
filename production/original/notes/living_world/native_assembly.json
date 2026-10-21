@@ -1,0 +1,83 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Living_World_v007.blend",
+  "seed": 93161016,
+  "typed_mesh_counts": {
+    "meshes": 46,
+    "vertices": 100006,
+    "faces": 60676
+  },
+  "animated_meshes": [
+    {
+      "object": "LW_Village_Grass_00",
+      "kind": "Grass",
+      "driver": ".5+.5*sin(frame*0.028+1.4200)"
+    },
+    {
+      "object": "LW_Village_Washing0_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+14.9100)"
+    },
+    {
+      "object": "LW_Village_Washing1_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+15.6200)"
+    },
+    {
+      "object": "LW_Village_Washing2_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+16.3300)"
+    },
+    {
+      "object": "LW_Village_Leaves_00",
+      "kind": "Canopy",
+      "driver": ".5+.5*sin(frame*0.028+17.7500)"
+    },
+    {
+      "object": "LW_Departure_Leaves_00",
+      "kind": "Canopy",
+      "driver": ".5+.5*sin(frame*0.028+19.1700)"
+    },
+    {
+      "object": "LW_Woods_Leaves_00",
+      "kind": "Canopy",
+      "driver": ".5+.5*sin(frame*0.028+20.5900)"
+    },
+    {
+      "object": "LW_Camp_TentCanvas_00",
+      "kind": "Tent",
+      "driver": ".5+.5*sin(frame*0.028+26.9800)"
+    },
+    {
+      "object": "LW_Camp_CampHangingCanvas_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+29.1100)"
+    }
+  ],
+  "images": [
+    {
+      "name": "Architecture_Paint_Atlas_v001.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true
+    },
+    {
+      "name": "Oak_Foliage_Cluster_v001.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "Ground_Painted_v001.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "scope": "Native shape keys: canopy/branches, grass, washing and tent canvas. Animated reflective water normals, 3D smoke density and drift, restrained practical/ember/blast light, tumbling papers. Deterministic native drivers, no external handler."
+}

@@ -1,0 +1,189 @@
+{
+  "blender": "5.2.2 LTS",
+  "build_hash": "d13f752e3b9c",
+  "scene": "FXv010 | joined rupture and ground dust",
+  "root": [
+    109.27357482910156,
+    11.5,
+    -0.4958682358264923
+  ],
+  "root_uv": [
+    0.7950002551078796,
+    0.3470001220703125,
+    27.5
+  ],
+  "fps": 24,
+  "frames": [
+    1,
+    120
+  ],
+  "impact": 7,
+  "pit_depth_metres": 0.32,
+  "maximum_cut_lip_height": 0.018,
+  "crust_sections": [
+    {
+      "object": "FXv010 | connected crust section 00",
+      "center": [
+        -0.5905300378799438,
+        -0.3330686092376709,
+        -0.1468808650970459
+      ],
+      "velocity": [
+        -0.9887632483732484,
+        -0.5403906454734365,
+        5.147115163626152
+      ],
+      "apex_height": 1.2316190898418427,
+      "apex_frame": 20,
+      "final_center": [
+        -2.2261276245117188,
+        -2.0871782302856445,
+        -0.9338260889053345
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 01",
+      "center": [
+        -0.1458468735218048,
+        -0.5961156487464905,
+        -0.2652520537376404
+      ],
+      "velocity": [
+        -0.1970656470523828,
+        -1.0684852595327374,
+        4.882979541815287
+      ],
+      "apex_height": 0.9831685125827789,
+      "apex_frame": 19,
+      "final_center": [
+        -0.5023117065429688,
+        -1.8377504348754883,
+        -0.8215699195861816
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 02",
+      "center": [
+        0.40299418568611145,
+        -0.520905077457428,
+        -0.2314072996377945
+      ],
+      "velocity": [
+        0.864875632775216,
+        -0.8700282192491635,
+        4.577864773816222
+      ],
+      "apex_height": 0.8720678389072418,
+      "apex_frame": 18,
+      "final_center": [
+        1.12432861328125,
+        -1.5238018035888672,
+        -0.680317759513855
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 03",
+      "center": [
+        0.6977699398994446,
+        0.03957464545965195,
+        0.020808590576052666
+      ],
+      "velocity": [
+        1.3479944044131742,
+        0.06228738314424644,
+        4.689369105002311
+      ],
+      "apex_height": 1.1753126680850983,
+      "apex_frame": 19,
+      "final_center": [
+        1.8357086181640625,
+        0.17003536224365234,
+        0.08189040422439575
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 04",
+      "center": [
+        0.37161070108413696,
+        0.5294978618621826,
+        0.24127404391765594
+      ],
+      "velocity": [
+        0.8180752165176612,
+        0.9003857875171395,
+        4.436417130635489
+      ],
+      "apex_height": 1.2816366851329803,
+      "apex_frame": 18,
+      "final_center": [
+        1.0191421508789062,
+        1.2421741485595703,
+        0.5643795728683472
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 05",
+      "center": [
+        -0.15320034325122833,
+        0.6150742173194885,
+        0.2797833979129791
+      ],
+      "velocity": [
+        -0.20211480455287498,
+        1.067388361275928,
+        4.749632485048097
+      ],
+      "apex_height": 1.4635194838047028,
+      "apex_frame": 19,
+      "final_center": [
+        -0.34626007080078125,
+        1.3933134078979492,
+        0.6323528289794922
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 06",
+      "center": [
+        -0.6368106603622437,
+        0.2712555527687073,
+        0.12506499886512756
+      ],
+      "velocity": [
+        -1.0500160495642177,
+        0.43107703905532263,
+        4.57713069883581
+      ],
+      "apex_height": 1.228214591741562,
+      "apex_frame": 18,
+      "final_center": [
+        -1.3369674682617188,
+        0.2146768569946289,
+        0.10195192694664001
+      ]
+    },
+    {
+      "object": "FXv010 | connected crust section 07",
+      "center": [
+        -0.004843598231673241,
+        0.015118846669793129,
+        0.009803480468690395
+      ],
+      "velocity": [
+        0.9708833866839567,
+        0.7890916999894751,
+        5.015040552882207
+      ],
+      "apex_height": 1.322283536195755,
+      "apex_frame": 19,
+      "final_center": [
+        0.8347930908203125,
+        0.6974334716796875,
+        0.3199118375778198
+      ]
+    }
+  ],
+  "physics_seconds": 0.38536269997712225,
+  "native_method": "Eight contiguous shared-boundary solid crust sectors; Bullet launch/contact baked directly into native rigid vertex poses. No tiny-particle spray. Project-owned paint is carried rigidly on solid top faces.",
+  "terrain": "Depressed closed collider and visible cut surface; outer paint projection blends into held terrain; no raised full ring.",
+  "status": "Await actual few final-camera keyframes. No full render yet."
+}

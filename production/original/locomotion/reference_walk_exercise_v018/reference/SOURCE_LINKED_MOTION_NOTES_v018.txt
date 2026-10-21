@@ -1,0 +1,21 @@
+V018 WRITTEN REFERENCE STUDY AND PROPOSED CHILD WALK
+
+https://www.polygon-treehouse.com/blog/2019/1/30/anatomy-of-a-walk-cycle
+Read article text and viewed KeyPoses_Wide.jpg and Roll_Pitch_Yaw.jpg; no video viewed.
+Source principles: Alternating contacts and passing positions; opposed arms; hips participate in the transfer of support. Character proportions and weight determine the result.
+Our adaptation: Use the existing boy profile and preserve its flat painted construction. In-plane pelvic pitch/translation stands in for the weight transfer idea; no literal 3D hip yaw or head turnaround.
+
+https://www.polygon-treehouse.com/blog/2019/2/1/walk-pt2
+Read article text and inspected eight static samples from its 56-frame Tove_Walk_Breakdown.gif illustration. This is illustrated reference study, not normal-speed video observation.
+Source principles: New support compresses under load; head/chest can respond after the hips; lower arm overlap can soften simultaneous motion. Amounts depend on the character.
+Our adaptation: Small source-proportion compression/rebound; one-frame chest phase offset, two-frame head offset and 1.5-frame lower-arm phase offset. The existing head view stays unchanged.
+
+https://docs.blender.org/manual/en/4.5/animation/constraints/tracking/ik_solver.html
+Earlier parent handoff supplied the documented two-bone/pole/optional-stretch principles. Direct fetch here returned402, so this is not claimed as independently retrieved documentation. Actual bpy chain settings and lengths were inspected and tested.
+Source principles: See retrieval note.
+Our adaptation: Native settings and measured results retained in evidence.
+
+OUR TIMING, NOT A TUTORIAL PRESET
+24 fps; contacts every12frames,24frames per translating cycle;0.22m per step,0.44m per cycle. Down3frames after contact, passing6frames after contact, up9frames after contact. Stance14frames, swing10frames, two-frame double support. Modest55mm peak sole clearance and -4/+8degree rocker are bounded by the existing boot polygons and measured reach.
+
+No new quarter-view art; boy-only capability exercise. Child rig has unequal drawn limb reach; hip path is deliberately asymmetric inside both native envelopes. No leg stretch. Deep cloth and folded/crossing-arm defects remain failure criteria, not inferred passes.

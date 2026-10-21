@@ -1,0 +1,217 @@
+{
+  "native": "WTSC_LOCAL_WORKSPACE\\effects\\gas_pilot_v004\\native\\WTSC_Gas_Particles_Proof_48r_120f_v004.blend",
+  "systems": [
+    {
+      "kind": "debris",
+      "count": 12,
+      "seed": 4026,
+      "particle_size": 0.01,
+      "initial_normal_velocity": 4.5,
+      "lifetime_frames": 48,
+      "bake_result": [
+        "FINISHED"
+      ],
+      "is_baked": true,
+      "disk_cache": true
+    },
+    {
+      "kind": "embers",
+      "count": 6,
+      "seed": 913,
+      "particle_size": 0.007,
+      "initial_normal_velocity": 3.0,
+      "lifetime_frames": 28,
+      "bake_result": [
+        "FINISHED"
+      ],
+      "is_baked": true,
+      "disk_cache": true
+    }
+  ],
+  "particle_bake_seconds": 0.4595640000188723,
+  "pointcache_files": 92,
+  "pointcache_bytes": 42983,
+  "samples": [
+    {
+      "frame": 6,
+      "systems": [
+        {
+          "kind": "debris",
+          "alive": 12,
+          "sample_positions": [
+            [
+              109.11383819580078,
+              9.831986427307129,
+              0.17402887344360352
+            ],
+            [
+              109.03614044189453,
+              9.93883228302002,
+              0.11139009147882462
+            ],
+            [
+              109.06307983398438,
+              9.917724609375,
+              0.03654179722070694
+            ]
+          ]
+        },
+        {
+          "kind": "embers",
+          "alive": 6,
+          "sample_positions": [
+            [
+              109.13228607177734,
+              10.058611869812012,
+              -0.1478179395198822
+            ],
+            [
+              109.2341079711914,
+              9.976863861083984,
+              -0.30622467398643494
+            ],
+            [
+              109.27268981933594,
+              9.803768157958984,
+              -0.289100706577301
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "systems": [
+        {
+          "kind": "debris",
+          "alive": 12,
+          "sample_positions": [
+            [
+              109.16776275634766,
+              9.825671195983887,
+              0.5318543910980225
+            ],
+            [
+              109.03124237060547,
+              10.033906936645508,
+              0.4752919673919678
+            ],
+            [
+              109.15185546875,
+              10.007171630859375,
+              0.38902026414871216
+            ]
+          ]
+        },
+        {
+          "kind": "embers",
+          "alive": 6,
+          "sample_positions": [
+            [
+              109.09382629394531,
+              10.153595924377441,
+              -0.1356554627418518
+            ],
+            [
+              109.32312774658203,
+              10.058004379272461,
+              -0.3816604018211365
+            ],
+            [
+              109.38147735595703,
+              9.719188690185547,
+              -0.23713365197181702
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "systems": [
+        {
+          "kind": "debris",
+          "alive": 12,
+          "sample_positions": [
+            [
+              109.25785827636719,
+              9.815119743347168,
+              -0.40613454580307007
+            ],
+            [
+              109.02305603027344,
+              10.192733764648438,
+              -0.4525451362133026
+            ],
+            [
+              109.30016326904297,
+              10.156599998474121,
+              -0.5579017400741577
+            ]
+          ]
+        },
+        {
+          "kind": "embers",
+          "alive": 6,
+          "sample_positions": [
+            [
+              109.05300903320312,
+              10.275815963745117,
+              -0.7626379728317261
+            ],
+            [
+              109.38380432128906,
+              10.13486385345459,
+              -0.7427747249603271
+            ],
+            [
+              109.47830963134766,
+              9.663256645202637,
+              -0.6763149499893188
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 48,
+      "systems": [
+        {
+          "kind": "debris",
+          "alive": 1,
+          "sample_positions": [
+            [
+              109.2130126953125,
+              10.504508972167969,
+              -0.7948657870292664
+            ]
+          ]
+        },
+        {
+          "kind": "embers",
+          "alive": 0,
+          "sample_positions": []
+        }
+      ]
+    },
+    {
+      "frame": 100,
+      "systems": [
+        {
+          "kind": "debris",
+          "alive": 0,
+          "sample_positions": []
+        },
+        {
+          "kind": "embers",
+          "alive": 0,
+          "sample_positions": []
+        }
+      ]
+    }
+  ],
+  "smoke": "Native cached48-division gas. No smoke particles pretending to be volume.",
+  "finishing": "Subtle16percent3D noise density wash; actual large structures are simulated. Cold volume emission/blackbody remain zero.",
+  "lighting": "Separate preview-only shading lights. No production lighting edit.",
+  "collider": "Separate transparent test floor; does not establish production contact."
+}

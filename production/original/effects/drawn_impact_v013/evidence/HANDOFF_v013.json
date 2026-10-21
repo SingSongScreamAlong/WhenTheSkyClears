@@ -1,0 +1,43 @@
+{
+  "status": "Concrete development checkpoint. Authored, rendered and native-tested. User says neither is satisfactory; no acceptance or production integration is implied. Artistic refinement remains necessary.",
+  "parent_thread": "01a11891-101b-7258-912e-593e0317c0ce",
+  "library": {
+    "review_video": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "native_rgba_source_zip": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "actual_keys": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "v012_v013_onset_comparison": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "actual_contact_peak_sequences": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]"
+  },
+  "native_asset": "native/WTSC_Drawn_Impact_Append_v013.blend",
+  "native_asset_sha256": "5f6637d0e18d2599307016bf10f733b50d17e2fd68695151507350204ec059e4",
+  "video_bytes": 341322,
+  "video_sha256": "d3eef51b39969b09f5c98937a17930d2d84dacd0638af02299f4e82d40cb9921",
+  "source_zip_bytes": 43752630,
+  "source_zip_sha256": "5beb16af955dc2393ef2708ede0eceb7fa703ccf3950fdd619f576b1f2adadff",
+  "since_v011": "Distinct narrow seed, wider cap, split crown, torn side lobes and low strokes replace a held mature painting. Seven varied irregular debris pieces replace a nearly level row. Individual measured alpha-edge contact heights, rigid native shape keys, brief landing cues and broken terrain-following marks. No volume, plume or simulation cache.",
+  "v013_refinement": "Two contour rounding passes reduce star corners; softer wash feather and pigment opacity grain; less saturated initial heat. Actual key comparison caught translucent chips, so chips/soil marks/contact shadows remain solid. Contact B/C drawings widened 1.15x and raised 1.65x; peak lasts three frames with two following torn frames. Most puff area is unoccluded in the mask audit; wide-shot readability is still weak.",
+  "technical_tests": {
+    "blender": "5.2.2 LTS",
+    "fps": 24,
+    "frames": [1, 72],
+    "duration_seconds": 3,
+    "pixels": [1920, 1080],
+    "objects": 48,
+    "packed_images": 1,
+    "external_cache_files": 0,
+    "valid_drivers": 138,
+    "append_and_offset100_geometry_error": 0,
+    "scale1_7_geometry_error_metres": 0.000009918212890758227,
+    "baseline_vs_offset100_appended_actual_render": "pixel-identical",
+    "source_vs_appended_rgba_mean_effect_area_8bit_error": 0.3743691695977978,
+    "source_vs_appended_rgba_max_channel_error_8bit": 33,
+    "all_72_rgba_files_validated": true,
+    "mp4_full_decode": true,
+    "zip_crc": "passed",
+    "production_v038_and_v012_source_hashes_preserved": true,
+    "continuous_speed_playback_observed": false
+  },
+  "remaining_artistic_blocker": "Visual impact force and grounded contact/puff readability remain unsatisfactory. Native data correctness is established but does not solve this artistic gap. Terrain is authored to a painted alpha edge, not physically solved soil. No actual tutorial motion was verified.",
+  "scope": "Continue only this compact-impact development. No widening to other modules and no production integration.",
+  "upload_status": "All five private Library uploads succeeded. Canonical helper failed before reservation because prepare_uploads was unavailable, then direct ordered create batches succeeded. Local metadata stamping failed because Windows Python has no os.setxattr; full receipts and failures are retained. No upload/render action has an uncertain outcome."
+}

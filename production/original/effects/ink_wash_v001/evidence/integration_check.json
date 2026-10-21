@@ -1,0 +1,66 @@
+{
+  "source_read_only": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend",
+  "source_sha256": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4",
+  "source_unchanged_after_render": true,
+  "frame": 1801,
+  "output_pixels": [
+    480,
+    270
+  ],
+  "effects": [
+    {
+      "collection": "FX01_Explosion_Tall_Charcoal",
+      "emitter": [
+        102.69999694824219,
+        6.0,
+        -0.13489869236946106
+      ],
+      "size": 0.8,
+      "start_frame": 1773,
+      "age": 28,
+      "evaluated_age": 28.0,
+      "projected_anchor": [
+        0.2376454621553421,
+        0.27108389139175415,
+        22.0
+      ]
+    },
+    {
+      "collection": "FX03_Explosion_Distant_Muted",
+      "emitter": [
+        106.80000305175781,
+        6.0,
+        -0.13489869236946106
+      ],
+      "size": 0.65,
+      "start_frame": 1755,
+      "age": 46,
+      "evaluated_age": 46.0,
+      "projected_anchor": [
+        0.7553229928016663,
+        0.27108389139175415,
+        22.0
+      ]
+    },
+    {
+      "collection": "FX04_Incoming_Left_To_Right",
+      "emitter": [
+        106.69999694824219,
+        5.0,
+        0.007596699520945549
+      ],
+      "size": 0.65,
+      "start_frame": 1796,
+      "age": 5,
+      "evaluated_age": 5.0,
+      "projected_anchor": [
+        0.7399671673774719,
+        0.27108386158943176,
+        21.0
+      ]
+    }
+  ],
+  "placement": "Measured projected floor ray from existing camera and GP sole depth; native meshes appended into world at actual scale. Production file not saved.",
+  "production_file_save_called": false,
+  "engine": "Cycles CPU, 8 samples; low-cost integration check. Native GP renderer support differs from production Eevee."
+}

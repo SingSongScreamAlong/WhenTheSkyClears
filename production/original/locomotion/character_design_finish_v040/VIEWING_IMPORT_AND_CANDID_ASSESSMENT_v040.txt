@@ -1,0 +1,63 @@
+WHEN THE SKY CLEARS - PAINTED CHARACTER LOOK STUDY v040
+
+DIRECTION / STATUS
+The user rated the preceding result 4/10 overall: movement is improving, character appearance is not at the required standard. This pass preserves that movement and investigates a substantially stronger painted face, hair and costume treatment. The earlier look is not treated as approved. This is an isolated design candidate, not a final model, a production replacement, or Arcane-level animation.
+
+WHAT TO VIEW
+previews/WTSC_v040_Native_Character_Look_Comparison.png
+Matched actual native F1 heroes, then before/after F11 and F20 close poses. These are Blender renders of the editable assets, not the generated concept paintings substituted for animation evidence.
+
+previews/WTSC_v040_vs_v039_Same_Movement_Look_Study.mp4
+30 fps, 282 decoded frames, 9.4 seconds, 1280x840, silent.
+0-3.133 seconds: side-by-side close views, each original 480x720, no enlargement.
+3.133-6.267 seconds: side-by-side shot comparisons reduced to 640x360, explicitly labelled 50 percent.
+6.267-9.4 seconds: candidate shot at original 1280x720, no scaling.
+Every section covers native F1-F94: three 31-frame cycles and the closing pose. All 188 candidate camera frames are available locally. The movie does not generate animation with AI or recycle one rendered cycle; it renders the native editable character across three unwrapped strides. The coat itself repeats the one authored cycle inherited from v039. The same source-frame range in each section is intentional comparison, not separate acting takes.
+
+EDITABLE NATIVE / GENERATED ART
+native/WTSC_Painted_Character_Look_STUDY_v040.blend
+Blender 5.2.2 LTS, actual verified executable build d13f752e3b9c.
+reference/PRESERVED_MOVEMENT_COLOR_v039.blend retains the complete previous walk/look.
+textures/WTSC_Boy_Painted_Parts_Atlas_v040.png is the unedited generated source, packed in the native.
+textures/WTSC_Boy_Painted_Design_Concept_v040.png is a standalone exploratory full-body painting. It is not used as a single flat replacement for the animated body and is not animation evidence.
+
+The ImageGen built-in tool generated the independent concept and the six-part atlas. Exact prompts are retained in evidence. The initial reference-image edit failed before producing any image because the image tool rejected the Windows path with 'AbsolutePathBuf deserialized without a base path'. This was not an approval denial and did not make an uncertain source/production write. Standalone generation succeeded; native registration to the existing parts was authored separately. No CLI/API fallback, install or purchase was used.
+
+The atlas contains head/neck, coat torso, sleeve/cuff, forearm/hand, trouser leg and a single boot. It is a new exploratory painting. Face/hair shapes and coat buttons/pocket are intentional design differences requiring artistic judgment; exact original-face identity or final costume approval is not claimed.
+
+NATIVE TRANSFER / EDITING
+The body, sleeves, forearms, hands, trousers, shoes and continuously moving coat retain their original rest/shape geometry, original first UVs, native deformation dependencies and active actions. An explicit additional UV layer named 'V040 | separated painted part registration' maps the painted atlas onto each part. Material copies begin 'V040 PAINT'. Existing original-alpha/edge-mask wiring remains on those parts. No source raster pixels are edited, recolored with Python, or erased.
+The broad inherited cream yoke is resolved into a painted coat-colored shoulder and two small linen collar folds. The masks and shoulder field are registered in the original garment UV space; they move with the mesh. They are not camera-following decals, halos or lighting. The first cream-block transfer is retained as reference/FIRST_TRANSFER_COLLAR_NOT_ACCEPTED_v040.blend. A temporary unlinked texture-coordinate problem and an armhole sample were corrected in the isolated candidate before the final render.
+
+The new head 'V040 | painted boy profile and neck' is an editable fixed-view paint mesh bound fully to the original head bone. Its painted rest occupancy is fitted to the original head's painted bounds. The original 'PERF_BOY | original head' remains intact and hidden in the candidate. Head-object placement and the original head-bone affine motion are preserved. This is a right-profile painted head, not a sculpted 3D head, facial rig, new expression animation or turnaround. Do not rotate it edge-on for a head turn. The rejected v008 girl study was not used or retried, and the girl remains unchanged.
+
+Near and far shoes still share one canonical mesh and one new painted leather material. No foot, ankle, sole or shoe-object trajectories changed. The inherited sleeve and trouser contour dependencies remain live. Append/import the complete scene/collections and dependencies; one isolated mesh is insufficient. The native includes unused original material/action/image data and the hidden original head for preservation and comparison.
+
+TECHNICAL PRESERVATION - SEPARATE FROM VISUAL QUALITY
+Cold checks compare against preserved v039. All original action datablocks and all original active object actions match. Original rest/shape coordinates, original first UV data, float contour attributes and original packed image bytes match.187 samples cover all integer frames 1-94 plus quarter-frame samples through the first cycle. Root, all bone world matrices, wrists and head-object matrices match exactly. At 13 selected poses across three cycles, every other visible body/coat/hand/leg/shoe vertex and camera matches exactly. The new head follows the original rigid head-bone affine transform within 0.000000223 m.
+The new additional UVs, material copies, new fixed-profile head paint mesh and original-head visibility switch are intentional changes. Do not describe the entire rendered head or all materials as unchanged. Original sources remain separate and hash-checked. Lighting, world, camera motion, trailer duration, title mask, music and production are untouched.
+These checks preserve movement. They do not prove character appeal, convincing acting, material anatomy, or final animation quality.
+
+CANDID ARTISTIC ASSESSMENT
+The new painting provides an actual eye/eyelid/iris, eyebrow, cheek, jaw, ear and mouth, rather than the earlier flat face and bright triangular eye. Hair has grouped locks and a clearer large/medium hierarchy. Cloth and leather have more deliberate form and quieter surface detail. These differences survive in the inspected native shot views as well as close views. The collar transfer has been corrected before the moving proof.
+The new face, hairstyle and buttoned coat are design exploration, not automatically a faithful final design. The underlying body and hand outlines are inherited and still simple. Some painted folds are tied to the existing drawing topology; a stronger painting does not make a general 3D garment or fully articulated hand. The neck/shoulder construction, sleeve-to-body transition, fixed expression, and the mismatch between richer painting and simple puppet geometry remain visible limits. Passing feet are still crowded. No new emotional acting, fatigue, stumble, load-bearing clasp, girl recovery or authored restart step is supplied in this pass. The original 75-80 second supported scene remains unintegrated.
+Actual native and decoded movie frames are inspected for head attachment, collar/shoulder registration, hand passage, matching shoes and cycle closure. Continuous video-player playback observation is not claimed. The actual normal-speed movie is supplied for human/independent visual judgment. No final visual acceptance or studio-level finish is claimed.
+
+TIMING / TRAVEL / INTEGRATION CONTRACT
+Original source fps 30; period 31 source frames. Existing coat cycle F1-F32, review range F1-F94.
+Root: V021 | CHILD_SUPPORT_TRAVEL. Rig: LOCO_BOY | RIG.
+Unwrapped +X travel in metres:
+ D(F)=0.9524437384576381*(F-1)/31
+Stride 0.9524437384576381 m; speed 0.9217197468944885 m/s.
+Near contact F1, far contact F17. Near stance phase 0-18.5; far stance own phase 0-19.25, offset 16.
+reference/UNCHANGED_TRAVEL_CURVE_FROM_v036.csv retains the original curve/contact flags.
+For production 24 fps frame G from chosen origin G0:
+ F=1+(G-G0)*30/24
+Cycle length 24.8 production frames. Body/root, coat, hands, shoe/cuff bakes, live contours and world/camera must use one fractional mapping. Do not round cycles independently, loop the unwrapped root, retime only one drawing, or add root travel twice. For a stationary tracked character, move the world by equal/opposite D(F) and remove character translation exactly once. No G0, production import, world synchronization or trailer replacement is authored here.
+New acting/gait poses still require unified drawing/foot-art refits. This is an editable painted look over the preferred walk, not a complete production character rig.
+
+DELIVERY
+The compact package includes final native, preserved v039 reference, unedited generated art, exact prompts, build/verification/render/encoding scripts, travel guide/CSV, selected actual stills, comparison board, actual preview and technical/visual evidence. Full native render sequences remain locally and are omitted from the ZIP. The private Library upload is the actual comparison MP4; metadata/version readback is verified. No public sharing or other specialist writes. All Blender jobs are bounded to two threads with a host process gate; completed jobs have exited.
+
+REBUILD NOTE
+The comparison encoder reads the existing v039 native frame sequence from its sibling project folder. Those old/raw frames are retained locally and omitted from this compact ZIP. The included preserved v039 native can regenerate them at the stated cameras/frame sizes. The final candidate native, generated atlas, actual preview and editing/build scripts are included. The rejected first-transfer native remains local for diagnosis and is also omitted from the compact ZIP.

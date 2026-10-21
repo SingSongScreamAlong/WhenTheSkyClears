@@ -1,0 +1,86 @@
+{
+  "blender": "5.2.2 LTS",
+  "fps": 24,
+  "units": "metres, 1unit/metre",
+  "orientation": "+X right, +Z up, camera on-Y looking+Y",
+  "assets": [
+    {
+      "collection": "FX01_Explosion_Tall_Charcoal",
+      "kind": "One shot ground explosion",
+      "frames": 144,
+      "loop": false,
+      "root": "FX01_Explosion_Tall_Charcoal | CONTROLS",
+      "seed": 100
+    },
+    {
+      "collection": "FX02_Explosion_Low_Rolling_Dust",
+      "kind": "One shot ground explosion",
+      "frames": 144,
+      "loop": false,
+      "root": "FX02_Explosion_Low_Rolling_Dust | CONTROLS",
+      "seed": 101
+    },
+    {
+      "collection": "FX03_Explosion_Distant_Muted",
+      "kind": "One shot ground explosion",
+      "frames": 144,
+      "loop": false,
+      "root": "FX03_Explosion_Distant_Muted | CONTROLS",
+      "seed": 102
+    },
+    {
+      "collection": "FX04_Incoming_Left_To_Right",
+      "kind": "One shot incoming streak + impact",
+      "frames": 72,
+      "loop": false,
+      "root": "FX04_Incoming_Left_To_Right | CONTROLS",
+      "seed": 501
+    },
+    {
+      "collection": "FX05_Incoming_Right_To_Left",
+      "kind": "One shot incoming streak + impact",
+      "frames": 72,
+      "loop": false,
+      "root": "FX05_Incoming_Right_To_Left | CONTROLS",
+      "seed": 499
+    },
+    {
+      "collection": "FX06_Impact_Dry_Dust",
+      "kind": "One shot impact puff",
+      "frames": 72,
+      "loop": false,
+      "root": "FX06_Impact_Dry_Dust | CONTROLS",
+      "seed": 400
+    },
+    {
+      "collection": "FX07_Smoke_Roll_Loop",
+      "kind": "Loop rolling smoke 192f",
+      "frames": 192,
+      "loop": true,
+      "root": "FX07_Smoke_Roll_Loop | CONTROLS",
+      "seed": 610
+    },
+    {
+      "collection": "FX08_Ash_Embers_Loop",
+      "kind": "Loop drifting ash and embers 192f",
+      "frames": 192,
+      "loop": true,
+      "root": "FX08_Ash_Embers_Loop | CONTROLS",
+      "seed": 710
+    },
+    {
+      "collection": "FX09_Burning_Debris_Loop",
+      "kind": "Loop burning debris and warm light 192f",
+      "frames": 192,
+      "loop": true,
+      "root": "FX09_Burning_Debris_Loop | CONTROLS",
+      "seed": 810
+    }
+  ],
+  "simulation_cache_bytes": 0,
+  "packed_images": [
+    "WTSC original flame paint | PACKED",
+    "WTSC original smoke ink | PACKED"
+  ],
+  "source": "Original native procedural wash meshes; existing project GPT imagegen flame packed unchanged."
+}

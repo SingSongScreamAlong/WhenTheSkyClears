@@ -1,0 +1,82 @@
+{
+  "root_travel_test_m": 0.025,
+  "without_compensation_boot_drift_m": 0.025000005541368706,
+  "with_world_goal_compensation_boot_drift_m": 6.83872392426648e-08,
+  "compensated_IK": [
+    {
+      "who": "BOY",
+      "chain": "shin_near",
+      "distance_m": 0.37544733178877493,
+      "min_reach_m": 0.0407126247882843,
+      "max_reach_m": 0.5368893444538116,
+      "endpoint_error_m": 4.4809875445380526e-05,
+      "reachable": true
+    },
+    {
+      "who": "BOY",
+      "chain": "forearm_near",
+      "distance_m": 0.23391363510674276,
+      "min_reach_m": 0.16332972049713135,
+      "max_reach_m": 0.41623932123184204,
+      "endpoint_error_m": 1.7633542205436496e-05,
+      "reachable": true
+    },
+    {
+      "who": "BOY",
+      "chain": "shin_far",
+      "distance_m": 0.3927370385557162,
+      "min_reach_m": 0.05283306539058685,
+      "max_reach_m": 0.5204908400774002,
+      "endpoint_error_m": 2.3068201959031282e-05,
+      "reachable": true
+    },
+    {
+      "who": "BOY",
+      "chain": "forearm_far",
+      "distance_m": 0.41262345318026183,
+      "min_reach_m": 0.14860978722572327,
+      "max_reach_m": 0.41609153151512146,
+      "endpoint_error_m": 4.214919264725834e-08,
+      "reachable": true
+    },
+    {
+      "who": "GIRL",
+      "chain": "shin_near",
+      "distance_m": 0.32344416599996095,
+      "min_reach_m": 0.06422944366931915,
+      "max_reach_m": 0.5014990419149399,
+      "endpoint_error_m": 2.7762047053380336e-05,
+      "reachable": true
+    },
+    {
+      "who": "GIRL",
+      "chain": "forearm_near",
+      "distance_m": 0.16400773192946907,
+      "min_reach_m": 0.030218064785003662,
+      "max_reach_m": 0.39169734716415405,
+      "endpoint_error_m": 1.450253139578654e-05,
+      "reachable": true
+    },
+    {
+      "who": "GIRL",
+      "chain": "shin_far",
+      "distance_m": 0.36016739814575494,
+      "min_reach_m": 0.08207911252975464,
+      "max_reach_m": 0.5061906576156616,
+      "endpoint_error_m": 9.023760470516642e-06,
+      "reachable": true
+    },
+    {
+      "who": "GIRL",
+      "chain": "forearm_far",
+      "distance_m": 0.3195395866573806,
+      "min_reach_m": 0.041569650173187256,
+      "max_reach_m": 0.32195982336997986,
+      "endpoint_error_m": 1.7377809474260165e-07,
+      "reachable": true
+    }
+  ],
+  "excess_root_travel_test_m": 0.5,
+  "excess_unreachable_pose_rejected": true,
+  "scope": "Rig-space/world-goal compensation fixture only; no production travel curve or performance."
+}

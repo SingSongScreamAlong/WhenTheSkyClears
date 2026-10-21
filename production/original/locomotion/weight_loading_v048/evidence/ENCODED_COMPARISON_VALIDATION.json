@@ -1,0 +1,38 @@
+{
+  "native_source_hashes": {
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\steady_walk_baseline_v047\\native\\WTSC_Steady_Ordinary_Walk_v047.blend": "29a4d9f794187602af43f7349f2b01c1019f39cba9f1d1278b966b78d1770103",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\weight_loading_v048\\native\\WTSC_Connected_Weight_Loading_v048.blend": "eeefa9ea2059a613d796277d6dfebfabe84a89b1c31470b585e5475fcb35001b"
+  },
+  "movies": [
+    {
+      "file_name": "WTSC_Weight_Loading_v048_NormalSpeed_8Cycles.mp4",
+      "bytes": 3612712,
+      "sha256": "adbb7105c47cd401c837f266ae043e7d82c3ac535e55c80b0f37d733947ff52d",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1280,
+        800
+      ],
+      "under_20_MB": true
+    },
+    {
+      "file_name": "WTSC_v047_vs_v048_Weight_Loading_NormalSpeed.mp4",
+      "bytes": 4910253,
+      "sha256": "28d8722d550b147fab19785b2496bb6057420b74c5b73ed486c7e9d45904198d",
+      "decoded_frames": 257,
+      "fps": 30,
+      "duration_seconds": 8.566666666666666,
+      "resolution": [
+        1920,
+        640
+      ],
+      "under_20_MB": true
+    }
+  ],
+  "all_encoded_frames_decoded": true,
+  "interpolated_video_frames": false,
+  "visual_review_method": "Native pose inspection, all32 local-cycle integer poses on contact sheets, selected decoded long-comparison frames. Continuous player playback has not been observed by the agent.",
+  "artistic_limit": "A technical pass or quieter numerical curves is not approval of weight and intent. User normal-speed judgment remains essential."
+}

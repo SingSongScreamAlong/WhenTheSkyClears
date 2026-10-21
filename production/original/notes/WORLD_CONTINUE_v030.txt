@@ -1,0 +1,124 @@
+COMPLETED DELIVERY: v030 movie and portable v031 source are verified and ready. No render jobs remain.
+Movie renders/world_v016/WTSC_Painted_World_4K_v030.mp4,434164312bytes,SHA64729abab8e899cf717781f664d82ff1f3b6a8a02afaee82ec947c59f29b6999.
+Source shots/world/WTSC_Painted_World_Editable_v031.blend,SHAff2158da0174ba6b6ad985f82195d668857d84caded6c71101a7d6ca8f655bc4.
+Full decode2400frames,3840x2160,24fps,100s,AAC fades,black lastframe,joins,zero dup/drop verified. Actual decoded school/woods/title inspected.
+Guide WHEN_THE_SKY_CLEARS_WORLD_v030.txt and delivery_manifest_v030.json are current. Old active/pending descriptions below are historical.
+
+CURRENT ACTIVE WORK: finish corrected 100s UHD painted world pass; no approval gate.
+
+User wants the world alive, painterly detail/depth, same-age near-black painted
+children with boy slightly taller. CHILDREN HELD for this world pass, no gait/acting.
+User likes direction. Main-chat feedback on v019: layers moved incoherently.
+
+Completed full v027 movie: renders/world_v016/WTSC_Painted_World_4K_v027.mp4
+429042860 bytes, SHA6432e64594a0118adeb1e2749c90f4fa4626019609f6f5a30749ac480554f532.
+Native 3840x2160,24fps,2400frames/100s. Full decode, music90-100 fade,
+picture98-100fade, black last frame, render joins passed. QC:
+notes/world_v016/movie_verification_v027.json.
+DO NOT FINAL-DELIVER v027: full-movie visual review found oversized foreground
+oak crowns hiding heads and school in the middle. Corrected now in v030.
+
+Actual motion fixes already in all latest sources: opening oak/roots/fence/path
+one surface atY2, no split depths; stationary continuous GPT-painted countryside
+atY180 (1983x793 panorama), cloud drift only on sky; near/far woods scales differ;
+smoke rooted at emitters; registered bakery/path tile UVs; continuous feathered
+ground eliminates black gaps and opaque lower-strip edge. Scene is 2.5D painted
+sets plus real extruded title, NOT fully modeled architecture or Arcane approval.
+Exact old approved ink-wash reference remains missing. Current direction liked.
+
+CORRECTED EXACT VISUAL SOURCE: shots/world/WTSC_Painted_World_Trailer_v030.blend
+Scene WTSC_PAINTED_WORLD_4K_100S_v030
+SHA b68e097922883c9cb409da4d5a999a889be2ffc9768627824087f44745574bb6
+Four new high-crown whole-tree planes from GPT asset
+sets/world_v030/High_Crown_Oak.png (1024x1536), native aspect, no stretched paint.
+Whole bare lower trunk, canopy above heads. Height8,width5.333. Current rendered
+frames in renders/world_v016/inspection_v030_final actually inspected: heads,
+school and camp clear; tree roots planted; no stretched bark/foliage.
+The earlier inspection_v030 folder is the REJECTED stretched-tree intermediate.
+Do not use that art. Current source v030 was revised BEFORE native render start;
+its .blend1 retains the intermediate. Source SHA above is final frozen source.
+
+ACTIVE RENDER CONTROLLER: exec session17951, Python scripts/render_readability_movie_v030.py
+Native Blender worker PIDs16664,20748,52500,52176, four393-frame jobs.
+Ranges301-693,694-1086,1087-1479,1480-1872 (1572 new frames).
+Last seen~382/1572 newframes. New parts renders/world_v016/native_parts_v030.
+828 native frames from verified v027 reused:1-300 and1873-2400. Bounded native
+projection proves old/new changed-tree signed-wind bounds off-camera for ALL828
+reusedframes, even end pullback. Proof notes/world_v016/readability_and_reuse_v030.json.
+No raytracing/physical light interaction relevant outside these ranges.
+Controller will combine prefix12.5s, four native parts, suffix22s, full original
+WAV afade90-100 into NEW WTSC_Painted_World_4K_v030.mp4, H264CRF16fast no scaling
+or interpolation, decode all2400frames, freeze hashes, write native_completed_v030.json.
+Native worker progress30s, final encoding progress30s. Wait/poll <=60s and give
+commentary updates at least every60s; do not claim complete on render launch.
+
+CORRECTED MOVING PREVIEW COMPLETE:
+renders/world_v016/WTSC_Readability_Excerpts_1080p_v030.mp4
+1920x1080,24fps,96frames/4s; actual trailer30-32 and43-45. Fully decoded.
+Shown via open_in_codex (queued). No new approval gate. Continue full render.
+
+PORTABLE EDITABLE prepared: shots/world/WTSC_Painted_World_Editable_v031.blend
+World WTSC_WORLD_EDIT_v031, MASTER WTSC_MASTER_4K_100S_v031.
+Native master contains actual World Scene strip plus packed WAV, linear fade
+frames2161..2400. Both3840x2160,24fps,1..2400. Source opens World for authoring;
+select MASTER for native picture+music export. World-only use_sequencer=False
+produced SILENT AAC, so master setup is essential (proven project workflow).
+Native test1s at10-11s rendered in renders/world_v016/native_audio_check_v031.mp4.
+Need decode and confirm nonzero audio; v029 equivalent native test RMS1559 passed.
+Metadata note cleanup + native master last-frame test just ran in exec context
+using scripts/final_portable_notes_and_fade_v031.py, log native_master_end_v031.log.
+It saves source031 fully UHD then renders lowres last frame WITHOUT saving test
+settings. Need check native_master_last_frame_v031.png max<=2 and re-audit source.
+
+NEXT:
+1) Create/reuse native motion audit for exact030 and portable031. Use base
+scripts/audit_world_motion_v026.py: keep object lookup names v023 Opening oak and
+v026 Countryside, change expected scene to030 or WTSC_WORLD_EDIT_v031. Output
+native_motion_audit_v030/031.json. Compare frame_samples and smoke_anchors and
+add high-crown tree geometry/UV/material/driver fingerprints to ensure identical.
+2) Decode native_audio_check_v031 AAC, ensure RMS>100. Check black native end PNG.
+Write portable_reopen_v031.json including fresh source SHA after note save, pack
+flags, master fade1,.4979,0 at2161,2281,2400, identical world samples to030.
+3) Let controller17951 complete. Then run scripts/verify_painted_movie_v030.py
+(already adapted): native_completed_v030, header4K24fps100sAAC, eleven decoded
+full4Kframes, RMSfade and blackfinal, joins301,694,1087,1480,1873. Inspect actual
+decoded school/woods plus title before final. Do not use only success counts.
+4) Adapt scripts/finish_painted_delivery_v027.py to030 movie/source and031 editable
+report, new asset High_Crown1024x1536 + prompt. Include native render-frame reuse
+receipt828/1572, scope/limits, technical verified vs artistic approval. New guide
+WHEN_THE_SKY_CLEARS_WORLD_v030.txt. Original v027/source029 remain preserved.
+5) Open full movie in Codex file panel and deliver concise actual movie+portable
+Blender source links. State100s3840x2160/24fps, held children, layer coherence fix;
+do not call final Arcane-level film. No external messages to parent (receiving
+delegation does not authorize a reply; parent reads files/this chat).
+
+NATIVE RUNTIME:
+Blender WTSC_LOCAL_USER/AppData/Local/Programs/Blender/blender-5.2.2-windows-x64/blender.exe
+Python WTSC_LOCAL_USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe
+FFmpeg WTSC_LOCAL_USER/AppData/Local/Programs/Python/Python311/Lib/site-packages/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe
+Use owned separate background processes; preserve existing GUIs/v011 user edits.
+
+PRESERVATION: notes/world_v016/prior_source_preservation_v027.json. Eight baseline
+v010/v013 files hash unchanged. Live v011 already changed externally before this
+continuation, currentSHA4f3038c...; its .blend1 retains original13ab34cf... verified.
+Do not restore/overwrite it. All work here in new sources.
+
+LATEST UPDATE (supersedes earlier pending audit items):
+Native exact030 and portable031 audits completed successfully using
+scripts/audit_corrected_world.py. Files native_motion_audit_v030.json,
+native_motion_audit_v031.json and portable_reopen_v031.json now exist.
+Portable031 SHA ff2158da0174ba6b6ad985f82195d668857d84caded6c71101a7d6ca8f655bc4.
+New tree geometry/UV/paint/wind fingerprints, camera/GP samples and smoke anchors
+match exactly between030 and031. Native audio031 RMS1559 verified at10-11s;
+native master last frame RGBmax0. All images/WAV packed; range/resolution100%4K.
+Corrected 4-second moving preview completed and decoded (96frames):
+WTSC_Readability_Excerpts_1080p_v030.mp4,6641883bytes. Shown to user.
+Controller17951 last seen805/1572 newframes, no errors. Still active.
+scripts/finish_painted_delivery_v030.py is now adapted to030/031, adds high-crown
+asset/provenance and explicit1572new/828reused native-frame receipt. Run only AFTER
+controller completion and scripts/verify_painted_movie_v030.py passes; inspect
+actual decoded school/woods/title first. Then open final movie and deliver links.
+
+MEMORY used earlier: MEMORY.md line18 artist-quality preference; rollout
+01a14089-1f81-7f73-853c-ef8fe1a3627e. Append one memory citation block LAST in final
+as specified by developer. No memory updates permitted without human request.

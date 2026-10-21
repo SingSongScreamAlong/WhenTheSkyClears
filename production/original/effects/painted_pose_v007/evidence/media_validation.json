@@ -1,0 +1,90 @@
+{
+  "video": {
+    "file": "WTSC_Single_Drawn_Blast_v007b_MUTED.mp4",
+    "bytes": 637705,
+    "sha256": "4fd5d14ab0f037e7eb47f5631ae8e2ac9ddee5dea7dbbcf6f1e1d3ff0ea9b259",
+    "fps": 24,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "frames": 96,
+    "seconds": 4,
+    "audio": false,
+    "full_decode_passed": true,
+    "all96_actual_pngs_decoded": true
+  },
+  "pose_strip": {
+    "file": "WTSC_Drawn_Pose_Strip_v007b.jpg",
+    "actual_native_keys": 12,
+    "not_just_raw_generated_atlas": true
+  },
+  "impact_strip": {
+    "file": "WTSC_Impact_and_Landings_v007b.jpg",
+    "actual_frames": [
+      1824,
+      1825,
+      1826,
+      1827,
+      1829,
+      1834,
+      1844,
+      1846,
+      1848,
+      1850,
+      1854,
+      1913
+    ]
+  },
+  "decoded_audit_frames": [
+    1825,
+    1827,
+    1834,
+    1846,
+    1848,
+    1850,
+    1868,
+    1913
+  ],
+  "opaque_child_mask": [
+    {
+      "frame": 1825,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1827,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1834,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1848,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    },
+    {
+      "frame": 1913,
+      "opaque_child_pixels": 7334,
+      "max_channel_delta": 0
+    }
+  ],
+  "protected_sources_unchanged": {
+    "v006_native": true,
+    "v003_assets": true,
+    "production_v038": true
+  },
+  "native_asset": {
+    "file": "WTSC_Single_Drawn_Blast_Assets_v007b.blend",
+    "bytes": 3800257,
+    "sha256": "9226d59e470d07535a1694f4552bf4cbe816419e7b6d41cd34cb6dfdbc87b1c3",
+    "new_packed_art_atlases": 2,
+    "cel_scale_rotation_position_animation": false
+  },
+  "no_audio_camera_shake_variants_or_tracers": true,
+  "review_status": "Review candidate; distinct shapes are visible but impact/rolling weight and drawing continuity require honest visual evaluation, not build-only acceptance."
+}

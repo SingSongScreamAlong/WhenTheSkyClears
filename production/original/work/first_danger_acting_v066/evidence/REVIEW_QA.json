@@ -1,0 +1,58 @@
+{
+  "outputs": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_acting_v066\\previews\\WTSC_First_Danger_Acting_v066_Title_24fps.mp4",
+      "actual_frames": 168,
+      "max_timestamp_error_seconds": 3.33333333379926e-07,
+      "audio_source_correlation": 0.9994785865505854,
+      "sha256": "3185c7fd51a5f76ab0e841486c9b248975371d687f022f907d3edf5bb650458d"
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_acting_v066\\previews\\WTSC_First_Danger_Acting_v066_Unmasked_24fps.mp4",
+      "actual_frames": 168,
+      "max_timestamp_error_seconds": 3.33333333379926e-07,
+      "audio_source_correlation": 0.9994785865505854,
+      "sha256": "b099d61081cbef2c58db0cc0157cde5e547d837f26ab4375071bd6800e4524f8"
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_acting_v066\\previews\\WTSC_First_Danger_Before_After_TITLE_v066_24fps.mp4",
+      "actual_frames": 168,
+      "max_timestamp_error_seconds": 3.33333333379926e-07,
+      "audio_source_correlation": 0.9987227396632997,
+      "sha256": "bb9c4e112434c8c742304ca918118d4c9543b17886e8fd963ddfbb122aeddcc0"
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\work\\first_danger_acting_v066\\previews\\WTSC_First_Danger_Before_After_WORLD_v066_24fps.mp4",
+      "actual_frames": 168,
+      "max_timestamp_error_seconds": 3.33333333379926e-07,
+      "audio_source_correlation": 0.9987227396632997,
+      "sha256": "079c0331eabac67e14821013ece0c32774b3a5dd80e116c8ffc74f09e138a2a6"
+    }
+  ],
+  "encoded_to_actual_render_color": [
+    {
+      "global_frame": 957,
+      "RGB_mean_absolute_error": 1.9377202690972222,
+      "RGB_signed_mean_error": -1.3198036024305555
+    },
+    {
+      "global_frame": 990,
+      "RGB_mean_absolute_error": 1.6776222511574075,
+      "RGB_signed_mean_error": -0.7725231481481482
+    },
+    {
+      "global_frame": 1016,
+      "RGB_mean_absolute_error": 1.7260554108796295,
+      "RGB_signed_mean_error": -1.0756163194444444
+    }
+  ],
+  "UHD_keys": [
+    957,
+    990,
+    1016
+  ],
+  "source_unchanged": true,
+  "candidate_unchanged": true,
+  "passed": true,
+  "artistic_review": "Decoded chronological images, matched key comparisons and actual UHD keys inspected; user normal-speed approval pending."
+}

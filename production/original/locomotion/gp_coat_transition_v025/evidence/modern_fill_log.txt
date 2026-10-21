@@ -1,0 +1,12 @@
+00:00.609  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\native\WTSC_GP_Coat_Transition_v025.blend"
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\apply_modern_fill_setup.py:12: DeprecationWarning: 'MaterialGPencilStyle.show_fill' is expected to be removed in Blender 6.0
+  g=m.grease_pencil;color=g.fill_color if g.show_fill else g.color;m.diffuse_color=color;m.use_nodes=True;n=m.node_tree.nodes;n.clear();lk=m.node_tree.links;out=n.new('ShaderNodeOutputMaterial');em=n.new('ShaderNodeEmission');em.inputs['Color'].default_value=(*color[:3],1);alpha=color[3]
+WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\scripts\apply_modern_fill_setup.py:12: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  g=m.grease_pencil;color=g.fill_color if g.show_fill else g.color;m.diffuse_color=color;m.use_nodes=True;n=m.node_tree.nodes;n.clear();lk=m.node_tree.links;out=n.new('ShaderNodeOutputMaterial');em=n.new('ShaderNodeEmission');em.inputs['Color'].default_value=(*color[:3],1);alpha=color[3]
+00:01.937  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_MODERN_FILL_0021.png'
+00:02.078  render           | Saved: 'WTSC_LOCAL_WORKSPACE\locomotion\gp_coat_transition_v025\previews\GP_MODERN_FILL_0025.png'
+Info: Saved as "WTSC_GP_Coat_Transition_v025.blend"
+V025_MODERN_FILL_CHECK_COMPLETE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

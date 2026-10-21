@@ -1,0 +1,87 @@
+{
+  "status": "Completed focused limb-art and matched normal-speed review candidate; broader animation goal remains open",
+  "not_arcane_level_or_final_animation": true,
+  "native": {
+    "file": "native\\WTSC_Limb_Volume_and_Hand_Readability_v036.blend",
+    "bytes": 2624778,
+    "sha256": "8cd6c869cc7bb390c094fd9ac82b5d659dec8b7a967bd67533f18110ee3960f3"
+  },
+  "guide": "VIEWING_IMPORT_AND_ASSESSMENT_v036.txt",
+  "private_preview": {
+    "file": "previews\\WTSC_v036_vs_v033_Normal_Speed_9p3s.mp4",
+    "bytes": 1865748,
+    "sha256": "d89cb3d25df4b1a84f7141a573230b75a34f80d842e69e49acf8bb7401a1edde",
+    "seconds": 9.3,
+    "fps": 30.0,
+    "decoded_frames": 279,
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "confirmed_status": "succeeded",
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download",
+    "local_metadata_readback_verified": true
+  },
+  "changes": [
+    "Live drawn thigh/shin axes with local knee transition and restrained knee/calf taper",
+    "Narrower cuff sections and small upper shoe-canvas contour correction; support sole vertices and all foot/shoe object paths retained",
+    "Gradual sleeve/cuff taper into forearms",
+    "Small original-thumb silhouette clearance and restrained local charcoal hand/forearm separation"
+  ],
+  "preservation": {
+    "exact_active_control_actions_match_v033": true,
+    "changed_active_channels": [
+      {
+        "object": "LOCO_BOY | RIG",
+        "path": "pose.bones[\"forearm_near\"].constraints[\"V016 fixed-length ARM\"].pole_angle",
+        "index": 0
+      },
+      {
+        "object": "LOCO_BOY | RIG",
+        "path": "pose.bones[\"forearm_far\"].constraints[\"V016 fixed-length ARM\"].pole_angle",
+        "index": 0
+      }
+    ],
+    "allowed_change": "v035 copied/renamed the rig Action and refit only forearm IK pole-angle channels for the intentionally changed upper/forearm rest split. This is not an unchanged whole arm skeleton claim.",
+    "dense_samples": 745,
+    "range": [
+      1,
+      94
+    ],
+    "errors": {
+      "root_matrix": 0.0,
+      "all_control_world_matrices": 0.0,
+      "non_arm_bone_world_matrices": 0.0,
+      "shoulder_path_m": 0.0,
+      "head_vertex_m": 0.0,
+      "hand_bone_world_matrices": 0.0,
+      "sole_min_z_change_m": 0.0,
+      "arm_IK_wrist_endpoint_m": 5.092726140322807e-07
+    },
+    "GP_coat_drawings_unchanged": true,
+    "packed_images": true,
+    "protected_sources_unchanged": true
+  },
+  "F20_far_hand": {
+    "FULL": 0,
+    "NO_NEAR_TROUSER": 391
+  },
+  "actual_render_scope": "186 clean candidate native frames at original30fps, three cycles in each view; two opaque overlap masks. No full world/trailer render. Earlier126-frame v035 baseline diagnostic retained locally.",
+  "technical_vs_art": "Numerical preservation, clean exports and straight drawing axes do not establish convincing animation. Actual stills/decoded movie frames inspected; continuous player playback not observed. User/independent visual judgment pending.",
+  "remaining": [
+    "Passing feet and leg overlaps still read as a crowded cluster",
+    "Hands remain small and subdued at shot size despite improved local separation",
+    "Smooth graphic coat panels versus dense painterly head/limb texture remain a construction/style mismatch",
+    "Coherent coat/shoulder/waist volume, distinct paired intentions, fatigue, credible support/clasp and recovery-to-walking restart remain unfinished"
+  ],
+  "next_bounded_direction": "Coherent garment shape and retained painterly material language, with preferred rhythm/identity preserved; then authored paired acting/transitions. No wholesale redesign.",
+  "integration": {
+    "fps": 30,
+    "period_frames": 31,
+    "stride_m": 0.9524437384576381,
+    "D_F": "0.9524437384576381*(F-1)/31 metres +X",
+    "production24fps_map": "F=1+(G-G0)*30/24; evaluate root/bones/shape drawings/live contours/shoe bake/world with one clock",
+    "production_integration_done": false,
+    "edit_limit": "Inherited cuff drawings and shoe art bakes still require unified rebake for new poses; see guide."
+  },
+  "blockers": [],
+  "render_status": "All Blender jobs exited; no active character render."
+}

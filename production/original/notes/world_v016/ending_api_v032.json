@@ -1,0 +1,85 @@
+{
+  "CompositorNodeTransform": {
+    "inputs": [
+      [
+        "Image",
+        "NodeSocketColor"
+      ],
+      [
+        "X",
+        "NodeSocketFloatPixel"
+      ],
+      [
+        "Y",
+        "NodeSocketFloatPixel"
+      ],
+      [
+        "Angle",
+        "NodeSocketFloatAngle"
+      ],
+      [
+        "Scale",
+        "NodeSocketFloat"
+      ],
+      [
+        "Interpolation",
+        "NodeSocketMenu"
+      ],
+      [
+        "Extension X",
+        "NodeSocketMenu"
+      ],
+      [
+        "Extension Y",
+        "NodeSocketMenu"
+      ]
+    ],
+    "outputs": [
+      [
+        "Image",
+        "NodeSocketColor"
+      ]
+    ]
+  },
+  "CompositorNodeMixRGB": "Error: Node type CompositorNodeMixRGB undefined\n",
+  "CompositorNodeImage": "'CompositorNodeImage' object has no attribute 'image_user'",
+  "CompositorNodeRGB": {
+    "inputs": [],
+    "outputs": [
+      [
+        "Color",
+        "NodeSocketColor"
+      ]
+    ]
+  },
+  "CompositorNodeRLayers": {
+    "inputs": [],
+    "outputs": [
+      [
+        "Image",
+        "NodeSocketColor"
+      ],
+      [
+        "Alpha",
+        "NodeSocketFloat"
+      ]
+    ]
+  },
+  "scenes": [
+    "WTSC_MASTER_4K_100S_v031",
+    "WTSC_WORLD_EDIT_v031"
+  ],
+  "gp": [
+    [
+      "v016 | CHILDREN | held painterly near-age pair",
+      [
+        -1.6891200542449951,
+        0.0,
+        0.7713720202445984
+      ]
+    ]
+  ],
+  "title_collections": [
+    "v016 | 07 Monumental title terrain"
+  ]
+}

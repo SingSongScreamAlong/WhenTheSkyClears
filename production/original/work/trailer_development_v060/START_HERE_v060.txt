@@ -1,0 +1,54 @@
+WHEN THE SKY CLEARS — TRAILER DEVELOPMENT v060
+Five-second first-danger passage, 39–44 seconds
+18 October 2026 UTC
+
+This is a developed shot candidate, not a replacement for the complete 106-second trailer. The latest complete full cut remains v040. Original production files are preserved.
+
+OPEN
+native/WTSC_First_Danger_Trailer_Development_v060.blend
+World: WTSC_FIRST_DANGER_WORLD_v060
+Existing title treatment: WTSC_FIRST_DANGER_TITLE_CHECK_v060
+Unmasked shot edit with original music: WTSC_FIRST_DANGER_EDIT_v060
+Native timeline: frames 937–1056, 24 fps, 3840 × 2160 settings.
+Preview renders are 1280 × 720; an actual UHD frame and native-pixel crops are included.
+
+SOURCES
+Uses the completed steady ordinary walk v047, saved 21:49:46 UTC, SHA-256 29a4d9f794187602af43f7349f2b01c1019f39cba9f1d1278b966b78d1770103.
+Uses the packed world v058d, SHA-256 13c2aee075315131eac6f85d9d726b766051a84edffa961f4ec38ecf7029a890.
+Both originals remained byte-identical at the final recency check. A newer weight-loading branch has a review record but no completed native deformation yet.
+
+DEVELOPMENT
+The age-ten pair now walk through the painted forest with camera travel driven by their actual stride. Their boots retain the source paths; measured contact cores and soft penumbrae follow evaluated sole clearance.
+A fresh backward offer and delayed response use the new steady gait. The girl reaches first, then the boy; they continue together with the original painted hand shapes folded into contact.
+One restrained offscreen light pulse is followed by a small, staggered head-pitch response. This is neck pitch using the original profiles, not a new look-back drawing or facial expression.
+The original paint gains localized light response and a very narrow girl-head edge. Native depth of field keeps the pair on a constant focus plane. Original image pixels and UVs are preserved.
+
+TIMING
+The source stride is 0.78 m per 32 frames at 30 fps: 0.73125 m/s.
+Production source evaluation: F = 1 + (G − 937) × 30/24.
+The 32-frame cycle becomes 25.6 production frames; it is not rounded. The girl's two-frame source lead is already baked.
+Music uses the existing supplied WAV at its actual 39–44-second position. No new music source or sound effects were added.
+
+VERIFICATION
+Cold-opened final native passed all preservation checks across 477 quarter-production-frame samples.
+Maximum evaluated boot deviation from the staged source: 0.0114 mm. Protected bone matrices remain within the recorded numerical tolerance.
+Rest anatomy, original meshes, UVs, attributes, packed images and original material data are intact. The intentional edits are the near arms, head response, copied light materials, camera staging and new contact marks.
+Both world and inherited glyph clocks are explicitly synchronized during rendering. The earlier stale-clock title keys are superseded by the final frame sequence.
+The native sound is packed. The saved full-trailer title glyph geometry and its animation remain unchanged.
+
+ARTISTIC LIMITS
+The inherited title mask still hides faces and parts of the hand-taking gesture. The unmasked performance preview is for judging the animation and world integration; it does not demonstrate solved title readability.
+The grip still needs articulated fingers and more hand angles. Faces remain profiles without gaze or expression changes. The head response is deliberately small.
+The foreground tree eventually covers part of the girl's leading boot; the joining hands remain readable before that crossing.
+The camera now follows the slower, correct character travel. Its route must be conformed across the surrounding full cut before splicing this candidate into v040, otherwise the scene position will jump at the edit boundary.
+Next work: refine weight transfer from the current gait branch, develop the actual look-back and body reaction, resolve title/character visibility, then conform the adjacent shots and render the full cut.
+This is progress toward the requested production benchmark; it is not Arcane-level completion.
+
+DELIVERY
+previews/WTSC_First_Danger_v060_HD.mp4 — full-size viewing copy.
+previews/WTSC_First_Danger_v060_Preview.mp4 — smaller viewing copy.
+previews/WTSC_First_Danger_Title_v060_Preview.mp4 — actual inherited title treatment.
+previews/World_and_Title_Readability_v060.jpg — matched native views.
+previews/WTSC_First_Danger_v060_Poster.jpg — current shot.
+previews/Native_Head_Hands_4K_Crop_v060.jpg and Native_Feet_4K_Crop_v060.jpg — actual UHD pixel crops.
+Evidence and source scripts are alongside the native file.

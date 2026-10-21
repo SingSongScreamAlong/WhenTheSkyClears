@@ -1,0 +1,51 @@
+{
+  "reviewer": "visual_review subagent",
+  "candidate": "main_impact_v015 / v015b scar correction",
+  "decision": "KEEP the anchored painted-matter direction and assets as an isolated working candidate. REJECT direct replacement of the retained v003 effect with the present phase animation until the visible phase cuts and material read are repaired.",
+  "artistic_acceptance": false,
+  "full_trailer_propagated": false,
+  "method": "Actual native4K key inspection, native-pixel adjacent-frame crop inspection at all three named phase cuts, and the chronological 25-frame analysis sheet covering1824-1848. This is dense/static temporal evidence, not continuous-speed playback observation or a finished-motion assessment.",
+  "evidence_viewed": [
+    "effects/main_impact_v015/previews/native4K_keys/1831.png",
+    "effects/main_impact_v015/previews/native4K_keys/1840.png",
+    "effects/main_impact_v015/previews/native4K_keys/1852.png",
+    "effects/main_impact_v015/previews/native4K_keys/1881.png",
+    "effects/main_impact_v015/previews/native4K_keys_v015b/1901.png",
+    "effects/main_impact_v015/previews/consecutive_native4Kcrop/1825.png",
+    "effects/main_impact_v015/previews/consecutive_native4Kcrop/1826.png",
+    "effects/main_impact_v015/previews/consecutive_native4Kcrop/1829.png",
+    "effects/main_impact_v015/previews/consecutive_native4Kcrop/1830.png",
+    "effects/main_impact_v015/previews/consecutive_native4Kcrop/1836.png",
+    "effects/main_impact_v015/previews/consecutive_native4Kcrop/1837.png",
+    "effects/main_impact_v015/previews/Actual_Consecutive_Native4K_Crops_1824_1848.jpg"
+  ],
+  "improvement_over_v003": "The painted-matter silhouettes clearly originate at and remain joined to the ground, while v003 develops into a detached hanging smoke clump. The new effect occupies a readable local impact footprint and has more of the world's painted surface language. This is a useful direction, not sufficient evidence for immediate integration.",
+  "phase_cut_findings": [
+    {
+      "transition": [1825, 1826],
+      "finding": "A tiny onset mark becomes a nearly full spear-shaped dirt mass in one frame. A fast onset can be intentional, but the near-static hold after this jump exposes the phase replacement rather than continued explosive growth."
+    },
+    {
+      "transition": [1829, 1830],
+      "finding": "The narrow upright spear changes abruptly into a substantially wider and taller curling mass. The entire outer contour and visible pebble arrangement change at once; the earlier mass does not visibly continue into the later one."
+    },
+    {
+      "transition": [1836, 1837],
+      "finding": "The complete upper mass disappears in one frame and is replaced by a low curling splash. This is the strongest continuity break: there is no readable fall, spread, residual dust or continued top mass to account for that lost volume."
+    }
+  ],
+  "material_and_motion_findings": [
+    "Pale continuous rims and curling lobes read as a wet or metallic splash more readily than dry earth/dust. The gray-white values are much brighter than nearby soil and retain extremely fine texture at native pixels.",
+    "The principal painted shapes change little within each phase hold. Many visible pebble marks remain locked to their painted phase rather than following independent arcs, so the landings are not yet convincing even if other native debris objects animate.",
+    "At1852 the low curling mass remains conspicuous. A dry impact needs a clearer handoff from dense thrown earth to spreading low dust and softer residual smoke.",
+    "The older1881 scar is an obvious straight horizontal textured strip. The v015b1901 correction removes that rectangular-strip read and leaves small debris at the far path edge, but the persistent disturbed-earth footprint is now subtle at whole-shot scale. It should be reviewed for readability without restoring a rectangular card edge."
+  ],
+  "next_fixes_in_order": [
+    "Preserve a common anchored dirt core across phase changes. Overlap the outgoing high mass with an incoming expanding/falling drawing long enough for its volume to read; do not simply dissolve between unrelated complete silhouettes.",
+    "Make within-phase shape and debris evolution visible: early growth, a short peak, falling chunks, then low dust. Keep a few readable independent chunks whose arcs end on the damaged ground and remain there.",
+    "Break up and restrain the continuous pale rim. Favor darker granular earth in the dense core and a separate softer dust value so the result stops reading as a bright liquid wave.",
+    "Retain the v015b nonrectangular scar contour, then tune a bounded dark-earth patch and settled fragments for whole-shot readability. Re-render named adjacent phase pairs and a short motion sequence before promotion."
+  ],
+  "scope_note": "The FX comparison scene shows the earlier character treatment. Its old shoulder/head values are not a regression of v048a; keep FX assessment separate from the newer retained character pass until deliberate integration.",
+  "mutations": "Only this review note was added. No Blender jobs, native scenes or art assets were changed."
+}

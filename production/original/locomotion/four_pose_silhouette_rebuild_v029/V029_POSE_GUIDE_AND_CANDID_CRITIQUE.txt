@@ -1,0 +1,83 @@
+WTSC v029 - FOUR FUNDAMENTAL BODY SILHOUETTES
+Status: four-pose review delivered; artistic foundation NOT PASSED.
+No full cycle, inbetweens, movement preview, recovery seam or production integration has been generated.
+
+VIEW
+previews/WTSC_v029_Four_Pose_Review_Board.png combines close and shot-framing comparisons.
+Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version 0.
+Verified board: 1,531,446 bytes, 1920x2220pixels.
+The separate full close and shot boards are supplied alongside it.
+Top row of each comparison: actual v028 Blender renders.
+Bottom row: actual v029 Blender renders, using the same two cameras and resolutions.
+Individual v029 renders are in previews/CLOSE (480x720) and previews/SHOT (1280x720).
+Columns: contact, loaded-down, passing, up. Native study frames1,4,11,13 select those drawings.
+The numbers are comparison labels, not approved physical timing. Do not play them as a walk.
+
+SUBSTANTIAL REBUILD
+The previous warped trouser ribbons and copied rig contours are not the new body representation.
+New native GP drawings define thigh mass, a front knee landmark, calf and tapered shin separately.
+Both legs use a shared anatomical proportion guide:260mmthigh /260mmshin.
+The supporting leg is nearly straight under the pelvis in passing; the bent swing knee has a separate contour.
+The contact step and planted ankle/hip relationship are re-authored rather than locked to the old trajectory.
+Fuller trouser volumes replace the first overly narrow drawing. Cuffs are narrow integrated bands.
+The original painted boot meshes/UVs are retained but re-fitted: horizontal scale.78,vertical.90 around the ankle.
+The resulting flat boot lengths are approximately188/203mm instead of242/260mm.
+New arm gestures use shoulder/elbow/wrist construction with a tapered sleeve, narrower cuff transition,
+and a larger, simpler relaxed hand silhouette instead of the abrupt original cuff/forearm/hand size changes.
+The trunk outline, waist fold and pelvis/hem relationship are authored per pose around the support/gesture.
+
+RETAINED DESIGN / SOURCE USE
+The original painted head/hair and collar are retained from the existing four profiles.
+Their evaluated meshes/UVs/materials are stored as four native shape samples, translated to each new neck.
+There is no head turnaround, edge-on head card or rejectedv008patch.
+Head, collar and boots retain original painting; the new body is a structural charcoal/value block-in,
+not finished painterly animation. Its flatness must not be confused with final painting quality.
+The user-supplied Animation Base Locomotion v3 adult skeleton was read at contact9.75,loading12,
+passing17.75 and up19 as a joint-anatomy guide. No adult contours were copied or declared child acting.
+That source has no heel/skin sole; its contact labels are inferred from ankle/foot behavior.
+REFERENCE_ANATOMY_READ.json records the inspected joint relationships and that limitation.
+
+MY CANDID ARTISTIC REVIEW OF THE ACTUAL RENDERS
+Useful changes:
+Passing now has a readable support leg under the body and a separately bent swing knee, rather than two bowed tubes.
+The smaller painted boots and restrained cuff bands reduce the previous dense foot/cuff cluster.
+Thigh and shin have more consistent fabric volumes, with a visible knee direction.
+Loaded-down shows more knee flexion and forward upper mass than contact; up extends the support silhouette.
+Arm/hand shapes are more deliberate and their cuff-to-skin proportions are less abrupt.
+
+Still not good enough to generate a full cycle:
+The trunk remains too planar/columnar; waist/pelvis articulation and rib-cage mass do not yet carry enough intent.
+Some knee/calf bends still look graphic and angular rather than soft anatomy inside trousers.
+The front arm gesture is clearer but can feel posed/reaching. The rear arm disappears against the coat in places.
+The coat is still broad flat value panels, and the plain new body surface contrasts with the retained painted head/boots.
+The contact and loaded-down poses do not yet have a sufficiently strong difference in whole-body attitude at shot size.
+The smaller boots may now need proportion refinement against the retained head/coat design; size change is not itself a pass.
+This is a more useful anatomical starting point than the previous micro-timing variants, but it is NOT accepted animation.
+The next drawing work should resolve trunk/pelvis mass and soften the leg construction within these four poses,
+before adding inbetweens, cloth polish or repeated-cycle rendering.
+
+EDITABLE NATIVE / IMPORT LIMIT
+native/WTSC_Four_Pose_Silhouette_Rebuild_v029.blend, Blender5.2.2LTS /d13f752e3b9c.
+GP object: V029 | contact down passing up | editable GP.
+Layer: 01 | whole-body anatomy and gesture. Only frames1,4,11,13 contain authored drawings.
+Head/collar/refitted boots use named native shape samples with CONSTANT exposure keys.
+The old v028 rig/artwork remain hidden in this isolated native as reference, not the rendered body.
+The stage/root is frozen. There is no travel or foot-contact curve to integrate into production.
+Use only the four selected frames. Intermediate playback and 24fps film retiming are undefined.
+Any later approved cycle needs a new authored travel/sole contract and a reviewed recovery restart.
+No approval is implied for a paired performance, girl motion, support clasp or the75-80second shot.
+
+REPRODUCTION
+scripts/pose_design.py defines the four body anchors/gestures and anatomical guide.
+scripts/build_four_poses.py reads the included preservedv028copy and writes only this v029 native/evidence.
+scripts/render_four_poses.py makes eight bounded close/shot images with two threads; coordinate the slot first.
+scripts/make_comparison_boards.py combines actual renders with the unchanged v028 render references.
+The first test exposed shared fill-group cuts; unique native fill groups were assigned and all eight images re-rendered.
+Those invalid test images are not the delivered boards.
+
+INDEPENDENT REVIEW / COORDINATION
+The world-task review request could not be delivered. Initial routing returned AbsolutePathBuf without a base path;
+an explicit-local request for the finished board returned no rollout found for thread01a14565-35ea-72b8-8731-2181768cf013.
+No independent world sign-off is claimed. The board is ready for parent/Conrad review.
+All Blender launches were host-process-gated,threads2; all jobs have exited. No full-trailer render occurred.
+Production and all earlier character native versions remain unchanged.

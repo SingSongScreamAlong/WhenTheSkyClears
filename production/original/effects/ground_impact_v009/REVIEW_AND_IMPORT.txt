@@ -1,0 +1,35 @@
+WHEN THE SKY CLEARS — GROUND-FIRST NATIVE MOTION PROOF v009d
+
+STATUS: PROTOTYPE FOR REVIEW. NOT AN ACCEPTED FINISHED EXPLOSION OR FULL EFFECTS PACK.
+The latest instruction narrows this pass to one ground/debris proof. Smoke and production integration remain excluded while the base is reviewed.
+
+What this contains
+- Eighteen coherent large fragments: installed Bullet rigid-body launch, gravity, floor collision, bounce and settling, baked directly from stored native transform curves.
+- A finite three-frame burst of 340 finer ballistic earth grains. Grains vanish only after contact; large fragments remain.
+- A native sculpted bowl, broken raised rim and local contact shadow which persist after the ejecta settle.
+- Native procedural matte pigments, without glossy surfaces or generated pose dissolves. No painted cloud meshes, smoke, gas, simulation cache or external images in the append collection.
+
+Import
+1. File > Append > WTSC_Ground_Debris_Append_v009d.blend > Collection >
+   FXv009 | GROUND IMPACT | baked Bullet and crater
+2. Select the empty FXv009 | impact anchor and controls. Move/rotate this anchor to place the entire effect. All geometry remains attached.
+3. Set start_frame to the desired impact frame. Defaults: start_frame=7, speed=1, size=1. Timing offsets and uniform size have been tested in a factory-empty scene. speed controls the common age clock. Scaling also scales the baked trajectory, rather than recomputing a new gravity simulation.
+4. Use Blender 5.2.2 LTS and 24fps. The reviewed proof spans frames1–120, five seconds; the impact begins at7. Animated large fragments clamp to their final settled pose after age113. The bowl/rim remain.
+
+Orientation and scale
+Metric, one Blender unit = one metre. X is horizontal, Z is up, and the held story camera looks toward +Y. The default root is approximately (109.18267,10,-0.43154), selected for the existing frame1825 held camera. Reset/move it for other shots. This is a fixed held-shot placement, not moving-camera integration.
+
+Native controls and dependencies
+All motion is native age-driven geometry keys. Rigid fragment keys retain exact coherent Bullet poses; their edges do not deform at the sampled frames. No runtime Python registration, new add-on, external cache or image dependency is needed to append this collection. Proof lighting and camera are deliberately excluded from the append asset. Materials respond to the receiving scene's lighting.
+
+The sibling append-test .blend is an independently created empty scene containing the appended collection, with matching geometry verified after a100-frame start offset and1.7x scale. It has no camera or lights.
+
+Preview and alpha
+The MP4 is muted H.264 RGB,1920x1080,24fps,120 actual Blender frames. It includes the held project background and therefore has no alpha. No RGBA image sequence is being presented as a finished effect in this ground-only review pass. Native render.film_transparent is enabled in the local proof, but its review compositor adds the fixed background/masks; disable that review composite for native RGBA exports. An exported PNG sequence should use straight alpha and24fps.
+
+Review limitations
+This pass establishes editable ground/ejecta construction and a native import test. It does not establish artistic acceptance. The faceted crater is still a coarse geometry study; the initial fine spray can read as scattered grit instead of a connected soil rupture. No connected decelerating dust front, landing dust, rolling smoke, firelight or tracer variation is finished here. Adding smoke before this ground-first proof is accepted would conceal the unresolved onset/ground integration. See evidence/visual_assessment_v009d.json for the actual review conclusion.
+
+Earlier v009/v009b/v009c NLA-based previews are diagnostic only: the independent retiming check exposed evaluation latency despite valid driver flags. v009d replaces that mechanism with direct baked rigid poses and supersedes their motion timing. The prior v008b remains explicitly rejected and unchanged.
+
+No active trailer scene, source script, original asset or production render has been modified. This proof and its deliverables are confined to effects/ground_impact_v009.

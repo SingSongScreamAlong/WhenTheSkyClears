@@ -1,0 +1,96 @@
+{
+  "status": "One compact low-smoke correction test completed for user review. No production integration or final-pack acceptance claimed.",
+  "latest_direction": "User21:12: too much smoke; regular explosion should be compact and brief with modest residual dust. Supersedes emphasis on substantial smoke masses.",
+  "library": [
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Compact_Low_Smoke_Test_v011.mp4",
+      "file_size_bytes": 344693
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Compact_Impact_Source_v011.zip",
+      "file_size_bytes": 25484790
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Compact_Actual_Frame_Sheet_v011.jpg",
+      "file_size_bytes": 689329
+    },
+    {
+      "status": "succeeded",
+      "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+      "file_name": "WTSC_Compact_Aftermath_v011.png",
+      "file_size_bytes": 2151091
+    }
+  ],
+  "primary_video_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "video": {
+    "frames": 72,
+    "fps": 24,
+    "seconds": 3,
+    "pixels": [
+      1920,
+      1080
+    ],
+    "muted": true,
+    "bytes": 344693,
+    "sha256": "7eb0e0827b42e561ff3d7a971c69d6545aac4af8fd883c53de461c7985ef5874",
+    "all_png_frames_checked": true,
+    "full_mp4_decode_returncode": 0
+  },
+  "changes": {
+    "painted_flash_frames": [
+      7,
+      8,
+      9
+    ],
+    "flash_uses_existing_original_paint": true,
+    "dust_density_gain_fraction_of_v010": 0.04,
+    "dust_height_cutoff_metres": 0.3,
+    "dust_zero_after_age": 22,
+    "small_debris_count": 9,
+    "large_block_fractures_removed": true,
+    "raised_ring_removed": true,
+    "persistent_groundmark": "Small ragged charcoal nick plus settled chips",
+    "new_simulation": false,
+    "cache_frames": 30,
+    "cache_bytes": 3669296
+  },
+  "native": {
+    "asset": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\native\\WTSC_Compact_Impact_Append_v011.blend",
+    "test": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\native\\WTSC_Compact_Impact_Append_Test_v011.blend",
+    "held_proof": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\native\\WTSC_Compact_Impact_Proof_v011.blend",
+    "objects": 22,
+    "images": 2,
+    "all_images_packed": true,
+    "cameras_lights": 0,
+    "fluid_modifiers": 0,
+    "append_geometry_error": 0,
+    "offset100_geometry_error": 0,
+    "offset100_loaded_vdb": "fluid_data_0020.vdb",
+    "asset_sha256": "8633f95653eb867d1fbf6b6b0211fe028e37711800919df34d919373b4d58861"
+  },
+  "actual_review": "Shot-size keys and actual-frame sheet show a small painted burst with no sustained smoke body, then small falling/settled chips and the restrained mark. The clip is a test of the smoke correction; user artistic review is pending.",
+  "remaining_limits": [
+    "Flash is a fixed original painted exposure lasting3frames rather than fully redrawn evolving shapes.",
+    "Residual dust is intentionally faint and nearly imperceptible at this shot size.",
+    "The ground nick is small and shallow, not a detailed crater.",
+    "No tutorial-specific motion/shape/timing claim is made."
+  ],
+  "repair_evidence": "New-folder relative cache path and global playback-window issues were caught by native append tests and fixed before the final72-frame render. No artistic parameters changed during those repairs.",
+  "coordination": "Final rendering yielded to concurrent Blender work and resumed only when clear. All72 final frames are present; only idle bridge PID39896 remained at last check.",
+  "preservation": "v038 production, v010h and v009d file hashes are unchanged. All writes are under compact_impact_v011 plus fresh private Temp helpers. No UI or production files edited.",
+  "guide": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\REVIEW_IMPORT.txt",
+  "review": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\evidence\\visual_assessment.json",
+  "tests": "WTSC_LOCAL_WORKSPACE\\effects\\compact_impact_v011\\evidence\\append_test.json",
+  "pending_or_denied": "No remaining execution approval, render or upload blocker. User review of this single test remains pending; no production integration.",
+  "library_local_metadata": "All four creates succeeded. Windows xattr helper failed; full receipts/identities retained locally; no claim that local extended metadata was applied."
+}

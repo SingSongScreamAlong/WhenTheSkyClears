@@ -1,0 +1,73 @@
+{
+  "factory_empty": true,
+  "append_source": "WTSC_Painted_Blast_Assets_v006.blend",
+  "collection": "FXv006 | APPEND ASSETS | painted blasts impacts tracers",
+  "native_helper": "FXv006 | HDR FX bloom over | append helper",
+  "objects": 133,
+  "packed_images": [
+    {
+      "name": "FXv002 original detailed eruption | packed",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_mode": "STRAIGHT"
+    },
+    {
+      "name": "FXv002 original granular ground surge | packed",
+      "size": [
+        2172,
+        724
+      ],
+      "alpha_mode": "STRAIGHT"
+    },
+    {
+      "name": "FXv003 | ORIGINAL four cold forms | packed straight alpha",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha_mode": "STRAIGHT"
+    },
+    {
+      "name": "Painted_Ground_Gouge_v006.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alpha_mode": "STRAIGHT"
+    }
+  ],
+  "retime_test": {
+    "start": 2000,
+    "speed": 0.5,
+    "frame": 2012,
+    "expected_age": 6,
+    "passed": true
+  },
+  "scale_test": {
+    "size": 1.25,
+    "passed": true
+  },
+  "persistent_impact_test": {
+    "frame": 2300,
+    "alpha": 0.9399999976158142,
+    "fixed_anchor": [
+      109.0999984741211,
+      10.0,
+      -0.7048802971839905
+    ],
+    "passed": true
+  },
+  "invalid_drivers": [],
+  "outside_driver_targets": [],
+  "rgba_render": "WTSC_LOCAL_WORKSPACE\\effects\\blast_refinement_v006\\sandbox\\Append_Test_RGBA_1826.png",
+  "render_pixels": [
+    960,
+    540
+  ],
+  "render_seconds": 1.344238099991344,
+  "source_contains_camera_or_lights": false,
+  "blender": "5.2.2 LTS",
+  "no_production_source_used": true
+}

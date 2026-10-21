@@ -1,0 +1,41 @@
+{
+  "blender": "5.2.2 LTS",
+  "append": "factory-empty Append of WTSC_PERFORMANCE_PAIR_v003",
+  "actions": [
+    "PERF_BOY__PLAYFUL_SKIP",
+    "PERF_BOY__WEARY_STUMBLE_RECOVER",
+    "PERF_GIRL__PLAYFUL_SKIP",
+    "PERF_GIRL__WEARY_STUMBLE_RECOVER",
+    "PERF_ROOT__WEARY_STUMBLE_RECOVER"
+  ],
+  "packed_images": [
+    "Pair_Painterly_Near_Age_v015.png"
+  ],
+  "tests": [
+    {
+      "clip": "PLAYFUL_SKIP",
+      "max_contact_pivot_dx_m": 2.384185791015625e-07,
+      "max_contact_pivot_above_floor_m": 0.004703892394900322,
+      "bone_scale_range": [
+        0.999999463558197,
+        1.0000004768371582
+      ],
+      "pose_loop_seam_max_matrix_error": 2.9391522145938313e-18
+    },
+    {
+      "clip": "WEARY_STUMBLE_RECOVER",
+      "max_contact_pivot_dx_m": 1.1920928955078125e-07,
+      "max_contact_pivot_above_floor_m": 0.004703892394900322,
+      "bone_scale_range": [
+        0.9999992847442627,
+        1.0000005960464478
+      ]
+    }
+  ],
+  "retime": {
+    "time_scale": 2,
+    "frame": 69,
+    "expected_distance_m": 0.4525,
+    "actual_distance_m": 0.45249998569488525
+  }
+}

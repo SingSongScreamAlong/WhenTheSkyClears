@@ -1,0 +1,85 @@
+WTSC v030 - FOUR-POSE VOLUME / SUPPORT REVISION
+Status: revised four-pose board for independent artistic review. No pass or full cycle claimed.
+V029 and all prior native files are preserved unchanged.
+
+VIEW
+previews/WTSC_v030_Four_Pose_Review_Board.png combines the actual close and shot-camera renders.
+Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version 0.
+Verified board: 1,446,040 bytes;1920x2220pixels.
+Top row: v029. Bottom row: v030. Columns: contact, loaded-down, passing, up.
+Separate full-size close/shot boards and eight individual v030 Blender renders are supplied.
+Both revisions use the same 480x720 close and1280x720 shot cameras. No altered camera scale hides the differences.
+Frames1,4,11,13 are drawing selectors/comparison labels, not approved timing. Do not play them as a cycle.
+
+RESPONSE TO THE INDEPENDENT V029 REVIEW
+Contact upper body:
+The shoulder/ribcage envelope is restored around the retained head. At the reviewed y270scan line,
+the dark upper-body/sleeve span is78pixels inv029 and112pixels inv030 using the same render/threshold.
+This verifies that the shrinkage was corrected; it does not establish good anatomy or appeal.
+The coat front opening now exposes a trouser/pelvis bridge. Its value plane sits behind the coat opening,
+rather than being painted as a floating highlight over the panel.
+Heel lead and the smaller painted boots/cuffs remain. The rear hand separates from the contact hem.
+
+Loaded-down:
+Relative to contact, pelvis lowers26mm, waist35mm, ribcage33mm and neck37mm.
+Waist and upper-body mass compress together rather than putting the extra change only into the head or knee.
+The waist/ribcage advance over the planted front foot, with a more rounded load-bearing knee.
+This is a deliberately stronger load drawing; whether it overstates fatigue still requires artistic review.
+
+Passing:
+The useful triangular separation between support leg and swing knee is retained.
+The swing boot is re-projected80mmforward and its toe-down angle changes18to30degrees.
+Minimum sole clearance remains95mm. It was not raised to conceal the overlap.
+The inspected close/shot renders show a clearer gap from the support ankle.
+
+Up:
+From passing, pelvis and waist rise26mm; ribcage and neck rise30mm.
+The support boot rolls to30degrees on the forefoot, lifting the ankle as the support leg extends.
+Both guide leg segments remain260mm; the pose is not made by stretching a limb or lifting only the head.
+The swing calf is fuller and tapers into the retained narrow cuff.
+
+Contour/arms:
+Rounded quadratic knee caps and soft rear folds replace the point-like knee turns while retaining separate thigh/shin masses.
+Shoulder attachments move with the restored torso envelope. Sleeves taper into the same small cuff design.
+Front gestures are reduced toward hanging arms, and the rear contact hand is staged outside the coat hem.
+These are four deliberately authored poses, not another angle/delay tuning pass on the old walk.
+
+MY CANDID REVIEW OF THE ACTUAL RENDERS
+Useful observed changes: the head is less dominant against the restored body; contact/down attitudes differ more;
+the loaded pose moves pelvis/waist/ribcage together; knee turns are softer; passing boots separate more clearly;
+up reads more like a forefoot-supported rise and the rear contact hand is visible.
+
+Remaining weaknesses: the coat/ribcage still reads as broad graphic panels and can look armor-like.
+The pelvis opening/value bridge is more connected, but its shape can still read as a patch rather than a convincing mass.
+The passing/up hands sometimes merge with the hem/upper leg; arm staging is calmer but not finished natural acting.
+The stronger loaded-down may feel too crouched in a future sequence. The expanded loaded-to-up range could also
+become too bouncy if treated as a generic interpolated loop. The swing-knee/ankle projection and calf volume
+need independent drawing review; a clear gap alone is not a natural gait.
+The new torso/limb surfaces remain structural value block-in, visibly simpler than the painted head/collar/boots.
+No dynamic weight, spacing, travel continuity, paired intention, support clasp or recovery restart has been demonstrated.
+Please review these four constructions before deciding whether any inbetweens are justified.
+
+EDITABLE NATIVE / PRESERVATION
+native/WTSC_Four_Pose_Volume_Revision_v030.blend
+Verified Blender5.2.2LTS, buildd13f752e3b9c. No addons, installations or frame handlers.
+GP object V030 | contact down passing up | editable GP contains only the four selected drawings.
+Head/collar are retained original painted profile/UV/material samples translated with the new whole-body poses.
+No head redesign, edge-on turnaround or rejectedv008patch is used.
+Original painted boot geometry/UVs retains the v029 .78X/.90Zrefit; smaller cuff design is retained.
+Each leg uses the same260mmthigh/260mmshin guide. New anatomy/volume is drawn, not stretched from old ribbons.
+V029's native is included as an immutable snapshot. Authoring reads the preservedv028painting/mesh source
+and evolves the v029drawing recipe into these new four body constructions.
+
+IMPORT LIMIT
+Root/stage is frozen. These four poses have no travel curve, cycle timing or production import seam.
+Use only frames1,4,11,13. Intermediate playback is undefined.
+Any later cycle requires authored spacing/travel/sole curves and a separate reviewed recovery-to-walk transition.
+Production, approved art base, music, title mask, duration and all prior specialist files remain untouched.
+
+REPRODUCTION / REVIEW ROUTING
+scripts/pose_design.py holds the four revised mass/gesture/support anchors.
+scripts/build_four_poses.py builds the editable native from the included preserved source.
+scripts/render_four_poses.py renders only eight bounded close/shot images,threads2 after a host Blender-process gate.
+scripts/make_comparison_boards.py uses actual v029/v030 renders; portable v029reference PNGs are included.
+All Blender jobs have exited. No full-cycle render was attempted.
+Per the parent's instruction, further review requests go through the parent. No direct world-thread message was attempted.

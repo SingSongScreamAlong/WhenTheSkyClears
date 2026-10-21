@@ -1,0 +1,47 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_World_First_v006.blend",
+  "source_sha256": "9b5623172c542aebe04efae0c6d0b3aac18ecf911a901d8166d99e8347fc6e63",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "frames_new_native": 1320,
+  "frames_reused_native": 1080,
+  "reused_source": "renders/world/WTSC_World_Atmosphere_4K_v004.mp4",
+  "reuse_proof": "notes/world_field_entry.json; repaired planes first possible visibility at frames 1143 and 1150",
+  "workers": [
+    {
+      "index": 1,
+      "start": 1081,
+      "end": 1410,
+      "pid": 15292,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_01.log"
+    },
+    {
+      "index": 2,
+      "start": 1411,
+      "end": 1740,
+      "pid": 52812,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_02.log"
+    },
+    {
+      "index": 3,
+      "start": 1741,
+      "end": 2070,
+      "pid": 42592,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_03.log"
+    },
+    {
+      "index": 4,
+      "start": 2071,
+      "end": 2400,
+      "pid": 45232,
+      "output": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world\\native_render_parts_v006\\part_04.log"
+    }
+  ]
+}

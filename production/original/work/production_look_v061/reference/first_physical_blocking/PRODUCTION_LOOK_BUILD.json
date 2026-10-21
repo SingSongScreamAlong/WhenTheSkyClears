@@ -1,0 +1,1418 @@
+{
+  "basis": "Preserved v060 current age-ten pair, owned production look branch",
+  "range": [
+    937,
+    1056
+  ],
+  "preserved_input_sha256": "e0f8f0b6c5434856f7dfe3d8dd5fcdff1586a858f16b8781b94f2b0b12757685",
+  "replaced_flat_objects": [
+    "v016 | Woods | near rooted oaks",
+    "v020 | Walking path | continuous blended paint",
+    "v020 | Foreground bank | continuous blended paint",
+    "v030 | High crown foreground oak 1",
+    "v048 | peaceful fixed foreground soil bank",
+    "v048 | transition fixed foreground soil bank",
+    "v048 | war_zone fixed foreground soil bank",
+    "V060 contact core | V044 BOY | boot far",
+    "V060 contact penumbra | V044 BOY | boot far",
+    "V060 contact core | V044 BOY | boot near",
+    "V060 contact penumbra | V044 BOY | boot near",
+    "V060 contact core | V044 GIRL | boot near",
+    "V060 contact penumbra | V044 GIRL | boot near",
+    "V060 contact core | V044 GIRL | boot far",
+    "V060 contact penumbra | V044 GIRL | boot far"
+  ],
+  "flat_floor_z": 0.7713720202445984,
+  "physical_objects": 391,
+  "ground_topology": [
+    5085,
+    4928
+  ],
+  "tree_positions": [
+    [
+      47,
+      4
+    ],
+    [
+      50.1,
+      7.3
+    ],
+    [
+      53.1,
+      5.4
+    ],
+    [
+      57.7,
+      8.8
+    ],
+    [
+      55,
+      -2.6
+    ]
+  ],
+  "paint_response": {
+    "objects": [
+      {
+        "name": "V044 BOY | boot far",
+        "identity": "boy"
+      },
+      {
+        "name": "V044 BOY | boot near",
+        "identity": "boy"
+      },
+      {
+        "name": "V044 BOY | collar",
+        "identity": "boy"
+      },
+      {
+        "name": "V044 BOY | head",
+        "identity": "boy"
+      },
+      {
+        "name": "V044 GIRL | boot far",
+        "identity": "girl"
+      },
+      {
+        "name": "V044 GIRL | boot near",
+        "identity": "girl"
+      },
+      {
+        "name": "V044 GIRL | head",
+        "identity": "girl"
+      },
+      {
+        "name": "V044 GIRL | neck overlap drawn bridge",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 BOY | original painted hand far",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 BOY | painted continuous rolled sleeve far",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 BOY | painted forearm far",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 BOY | painted forearm near",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 BOY | painted rigid-axis trousers far",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 BOY | painted rigid-axis trousers near",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 BOY | tailored coat",
+        "identity": "boy"
+      },
+      {
+        "name": "V046 GIRL | original painted hand far",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 GIRL | original painted stockings far",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 GIRL | original painted stockings near",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted continuous rolled sleeve far",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted forearm far",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 GIRL | painted forearm near",
+        "identity": "girl"
+      },
+      {
+        "name": "V046 GIRL | tailored knee-length dress",
+        "identity": "girl"
+      },
+      {
+        "name": "V060 BOY | reach sleeve near",
+        "identity": "boy"
+      },
+      {
+        "name": "V060 BOY | retained paint hand fold near",
+        "identity": "boy"
+      },
+      {
+        "name": "V060 GIRL | reach sleeve near",
+        "identity": "girl"
+      },
+      {
+        "name": "V060 GIRL | retained paint hand fold near",
+        "identity": "girl"
+      }
+    ],
+    "materials": [
+      {
+        "source": "V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V041 | linen broad fold",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V041 | linen turned leaf",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V044 preserved paint | V040 PAINT | matching leather boot | V038 COLOR | shoes | LOCO | ORIGINAL v015 charcoal paint, packed",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | subtle head edge | V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "copy": "V061 | actual-light girl wash | V060 | subtle head edge | V060 | girl light | V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V044 girl | quiet original charcoal neck bridge",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V044 girl | quiet original charcoal neck bridge",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V046 BOY | original atlas hand",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas hand",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V046 BOY | original atlas sleeve",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas sleeve",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V046 BOY | original atlas skin",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas skin",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V046 BOY | original atlas pants",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V046 BOY | original atlas pants",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | boy light | V046 BOY | seamless original painted bodice",
+        "copy": "V061 | actual-light boy wash | V060 | boy light | V046 BOY | seamless original painted bodice",
+        "identity": "boy",
+        "wash_levels": [
+          0.72,
+          0.91,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V046 GIRL | original atlas hand",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | original atlas hand",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V046 GIRL | retained original stocking painting",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | retained original stocking painting",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V046 GIRL | original atlas sleeve",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | original atlas sleeve",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V046 GIRL | original atlas skin",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | original atlas skin",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      },
+      {
+        "source": "V060 | girl light | V046 GIRL | seamless original painted bodice",
+        "copy": "V061 | actual-light girl wash | V060 | girl light | V046 GIRL | seamless original painted bodice",
+        "identity": "girl",
+        "wash_levels": [
+          0.86,
+          0.98,
+          1.07
+        ],
+        "irradiance_stops": [
+          0.08,
+          0.4,
+          0.9
+        ],
+        "emission_channels": [
+          "Emission"
+        ],
+        "retained_v060_response": true
+      }
+    ],
+    "skipped": [],
+    "engine": "BLENDER_EEVEE",
+    "event": "V060 | one offscreen distant flash | painted response",
+    "normal_world": [
+      0,
+      -1,
+      0
+    ],
+    "limits": [
+      "Actual native EEVEE lighting/shadows; not supported as the same look in Cycles.",
+      "Constant camera-facing world normal suits drawn planes; no invented 3D facial anatomy.",
+      "Original pigment chains, alpha, UVs, image pixels and Emission Strength remain intact.",
+      "No outlines or screen filter. Fine Object-space grain can move within strongly deforming art.",
+      "Existing V060 pulse/edge chains remain; inspect against physical flash to avoid double emphasis.",
+      "Light ramp needs actual-key calibration; finite shadow floors deliberately preserve palette."
+    ]
+  },
+  "contacts": {
+    "method": "Geometry-driven grounding marks on real horizontal world XY floor.",
+    "collection": "V061 | physical floor XY contact marks | measured sole support",
+    "objects": [
+      "V061 floor contact core | V044 BOY | boot far",
+      "V061 floor contact penumbra | V044 BOY | boot far",
+      "V061 floor contact core | V044 BOY | boot near",
+      "V061 floor contact penumbra | V044 BOY | boot near",
+      "V061 floor contact core | V044 GIRL | boot near",
+      "V061 floor contact penumbra | V044 GIRL | boot near",
+      "V061 floor contact core | V044 GIRL | boot far",
+      "V061 floor contact penumbra | V044 GIRL | boot far"
+    ],
+    "range": [
+      937.0,
+      1056.0
+    ],
+    "quarter_samples_per_boot": 477,
+    "floor_z": 0.7713720202445984,
+    "mark_z": 0.7723720202445984,
+    "mark_plane": "WORLD XY; normal+Z",
+    "material_surface_method": "BLENDED; same method as original v060 contact helper",
+    "core_full_below_m": 0.0005,
+    "core_zero_at_m": 0.003,
+    "penumbra_full_below_m": 0.002,
+    "penumbra_zero_at_m": 0.045,
+    "all_checked_evaluated_boot_vertex_max_error_m": 0.0,
+    "protected_boot_rig_root_actions_hash_exact": true,
+    "boot_rest_meshes_hash_exact": true,
+    "old_objects_hidden_deleted_or_modified": false,
+    "transverse_width_method": "Explicit estimate: coreY=clamp(evaluated bootXspan*.28,.035,.075); planar source art has no physical sole breadth.",
+    "per_boot": {
+      "V044 BOY | boot far": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0192394256591797e-05,
+          "maximum": 0.04498392343521118
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.636431211017886e-14,
+          "maximum": 0.15
+        },
+        "core_width_x_m": {
+          "minimum": 0.022980815277539597,
+          "maximum": 0.10780285503774538
+        },
+        "core_depth_y_m": {
+          "minimum": 0.05987533569335938,
+          "maximum": 0.06246017456054688
+        },
+        "source_boot_y_span_m": {
+          "minimum": 0.0,
+          "maximum": 2.9802322387695312e-08
+        },
+        "samples_penetrating_flat_floor_over3mm": 0,
+        "lifted_samples_at_or_above3mm": 178,
+        "lifted_core_opacity_exactly_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": 0.0,
+            "support_x": 49.188546456602104,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.049045590063997904,
+            "lower_support_span_x_m": 0.06317520141601562,
+            "lower_support_count": 12,
+            "evaluated_boot_x_span_m": 0.22159957885742188,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.046593310560798004,
+            "penumbra_width_x_m": 0.08493106087167765,
+            "core_depth_y_m": 0.06204788208007813,
+            "penumbra_depth_y_m": 0.10204788208007813
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": 0.0017423033714294434,
+            "support_x": 49.842840805211836,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.0624513058187,
+            "lower_support_span_x_m": 0.06923294067382812,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22060394287109375,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.09167012782441916,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.059328740527764996,
+            "penumbra_width_x_m": 0.1000549908830907,
+            "core_depth_y_m": 0.061769104003906256,
+            "penumbra_depth_y_m": 0.10185672669682361
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": 0.0,
+            "support_x": 49.92446176440532,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10729147488913643,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 16,
+            "evaluated_boot_x_span_m": 0.22301101684570312,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.1019269011446796,
+            "penumbra_width_x_m": 0.15016645187583283,
+            "core_depth_y_m": 0.06244308471679688,
+            "penumbra_depth_y_m": 0.10244308471679689
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.012993931770324707,
+            "support_x": 50.54318470305813,
+            "support_y": -0.3250000178813935,
+            "effective_support_span_x_m": 0.042234289494148966,
+            "lower_support_span_x_m": 0.0189361572265625,
+            "lower_support_count": 5,
+            "evaluated_boot_x_span_m": 0.22084808349609375,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1051657569815067,
+            "core_width_x_m": 0.04012257501944152,
+            "penumbra_width_x_m": 0.08235202173635818,
+            "core_depth_y_m": 0.061837463378906256,
+            "penumbra_depth_y_m": 0.10587715738123532
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.0,
+            "support_x": 50.70280871304111,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10883031086607352,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10338879532276984,
+            "penumbra_width_x_m": 0.15188994817000234,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.028630554676055908,
+            "support_x": 51.1842569628397,
+            "support_y": -0.3250000178813934,
+            "effective_support_span_x_m": 0.024215272499663147,
+            "lower_support_span_x_m": 0.022365570068359375,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22177886962890625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.015787672359656606,
+            "core_width_x_m": 0.023004508874679988,
+            "penumbra_width_x_m": 0.07460347610913258,
+            "core_depth_y_m": 0.062098083496093755,
+            "penumbra_depth_y_m": 0.11608398022370164
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.0,
+            "support_x": 51.482805649924416,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10882764438466949,
+            "lower_support_span_x_m": 0.10398101806640625,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10338626216543602,
+            "penumbra_width_x_m": 0.15188696171082983,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.04148709774017334,
+            "support_x": 51.80011801985457,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.03181965150077171,
+            "lower_support_span_x_m": 0.022396087646484375,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.2220611572265625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 5.3762656046448474e-05,
+            "core_width_x_m": 0.030228668925733126,
+            "penumbra_width_x_m": 0.09020474128785184,
+            "core_depth_y_m": 0.06217712402343751,
+            "penumbra_depth_y_m": 0.12183050930902753
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.0,
+            "support_x": 52.26280655813962,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10882906170685366,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10338760862151097,
+            "penumbra_width_x_m": 0.1518885491116761,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.04332011938095093,
+            "support_x": 52.46408296259998,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.11274086575078766,
+            "lower_support_span_x_m": 0.1037139892578125,
+            "lower_support_count": 14,
+            "evaluated_boot_x_span_m": 0.22292709350585938,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 2.9829894003881594e-06,
+            "core_width_x_m": 0.10710382246324827,
+            "penumbra_width_x_m": 0.18116785232724,
+            "core_depth_y_m": 0.06241958618164063,
+            "penumbra_depth_y_m": 0.12233805233072688
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": 0.0,
+            "support_x": 53.04280400934437,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_x_m": 0.10882928123948951,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 2.9802322387695312e-08,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10338781717751504,
+            "penumbra_width_x_m": 0.15188879498822827,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          }
+        ]
+      },
+      "V044 BOY | boot near": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0192394256591797e-05,
+          "maximum": 0.04498392343521118
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.636431211017886e-14,
+          "maximum": 0.15
+        },
+        "core_width_x_m": {
+          "minimum": 0.022980942545891798,
+          "maximum": 0.10780170704062889
+        },
+        "core_depth_y_m": {
+          "minimum": 0.05987533569335938,
+          "maximum": 0.06246017456054688
+        },
+        "source_boot_y_span_m": {
+          "minimum": 0.0,
+          "maximum": 2.9802322387695312e-08
+        },
+        "samples_penetrating_flat_floor_over3mm": 0,
+        "lifted_samples_at_or_above3mm": 147,
+        "lifted_core_opacity_exactly_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": 0.0,
+            "support_x": 49.4644280604347,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.06357917901735116,
+            "lower_support_span_x_m": 0.0692291259765625,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22059249877929688,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.0604002200664836,
+            "penumbra_width_x_m": 0.10120868049943331,
+            "core_depth_y_m": 0.06176589965820313,
+            "penumbra_depth_y_m": 0.10176589965820312
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": 0.0,
+            "support_x": 49.56136187262612,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.051435212698107566,
+            "lower_support_span_x_m": 0.0484619140625,
+            "lower_support_count": 9,
+            "evaluated_boot_x_span_m": 0.22303009033203125,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.04886345206320219,
+            "penumbra_width_x_m": 0.08760743822188047,
+            "core_depth_y_m": 0.062448425292968755,
+            "penumbra_depth_y_m": 0.10244842529296876
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": 0.0063721537590026855,
+            "support_x": 50.2014592856703,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.05584628399452863,
+            "lower_support_span_x_m": 0.06922149658203125,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22064971923828125,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.14145153352923073,
+            "core_width_x_m": 0.053053969794802196,
+            "penumbra_width_x_m": 0.09390973440743529,
+            "core_depth_y_m": 0.06178192138671876,
+            "penumbra_depth_y_m": 0.10287143845356934
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.0,
+            "support_x": 50.31280624931623,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10882916258126873,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.1033877044522053,
+            "penumbra_width_x_m": 0.15188866209102098,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.020711898803710938,
+            "support_x": 50.869448555351326,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.029045683720574055,
+            "lower_support_span_x_m": 0.01894378662109375,
+            "lower_support_count": 5,
+            "evaluated_boot_x_span_m": 0.22137069702148438,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05341016672053437,
+            "core_width_x_m": 0.02759339953454535,
+            "penumbra_width_x_m": 0.07354421839509206,
+            "core_depth_y_m": 0.06198379516601563,
+            "penumbra_depth_y_m": 0.11079423726845493
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.0,
+            "support_x": 51.0928068994551,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10882909873545374,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10338764379868105,
+            "penumbra_width_x_m": 0.15188859058370818,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.03585416078567505,
+            "support_x": 51.49325898006501,
+            "support_y": -0.40500003099441534,
+            "effective_support_span_x_m": 0.029190126221280806,
+            "lower_support_span_x_m": 0.022388458251953125,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.2220001220703125,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.0020348636191610497,
+            "core_width_x_m": 0.027730619910216765,
+            "penumbra_width_x_m": 0.08501468950936864,
+            "core_depth_y_m": 0.062160034179687504,
+            "penumbra_depth_y_m": 0.12001743269291479
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.0,
+            "support_x": 51.87280762260724,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10882916258126873,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22299957275390625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.1033877044522053,
+            "penumbra_width_x_m": 0.15188866209102098,
+            "core_depth_y_m": 0.062439880371093756,
+            "penumbra_depth_y_m": 0.10243988037109375
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.04463374614715576,
+            "support_x": 52.10903086426872,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.03998205439872154,
+            "lower_support_span_x_m": 0.022411346435546875,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22218704223632812,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 7.024938745902765e-09,
+            "core_width_x_m": 0.03798295167878546,
+            "penumbra_width_x_m": 0.09977495966608159,
+            "core_depth_y_m": 0.06221237182617188,
+            "penumbra_depth_y_m": 0.12220841881778265
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.0,
+            "support_x": 52.65280126155469,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10883053822956865,
+            "lower_support_span_x_m": 0.10398483276367188,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22300338745117188,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10338901131809021,
+            "penumbra_width_x_m": 0.1518902028171169,
+            "core_depth_y_m": 0.062440948486328134,
+            "penumbra_depth_y_m": 0.10244094848632813
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": 0.01651585102081299,
+            "support_x": 52.77130573034354,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_x_m": 0.048424787575622893,
+            "lower_support_span_x_m": 0.059894561767578125,
+            "lower_support_count": 10,
+            "evaluated_boot_x_span_m": 0.21812820434570312,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.08104773336872538,
+            "core_width_x_m": 0.04600354819684175,
+            "penumbra_width_x_m": 0.09186655294681934,
+            "core_depth_y_m": 0.06107589721679688,
+            "penumbra_depth_y_m": 0.10718052990649424
+          }
+        ]
+      },
+      "V044 GIRL | boot near": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0192394256591797e-05,
+          "maximum": 0.04498392343521118
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.636431211017886e-14,
+          "maximum": 0.15
+        },
+        "core_width_x_m": {
+          "minimum": 0.02279277566674572,
+          "maximum": 0.10675800476547638
+        },
+        "core_depth_y_m": {
+          "minimum": 0.059343414306640634,
+          "maximum": 0.06190048217773438
+        },
+        "source_boot_y_span_m": {
+          "minimum": 0.0,
+          "maximum": 2.9802322387695312e-08
+        },
+        "samples_penetrating_flat_floor_over3mm": 0,
+        "lifted_samples_at_or_above3mm": 153,
+        "lifted_core_opacity_exactly_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": 0.0,
+            "support_x": 50.25540026118435,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10596030241143742,
+            "lower_support_span_x_m": 0.09790420532226562,
+            "lower_support_count": 10,
+            "evaluated_boot_x_span_m": 0.22073745727539062,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10066228729086554,
+            "penumbra_width_x_m": 0.1486755387008099,
+            "core_depth_y_m": 0.06180648803710938,
+            "penumbra_depth_y_m": 0.10180648803710937
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": 0.0,
+            "support_x": 50.35073218395875,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.047221694011826,
+            "lower_support_span_x_m": 0.059383392333984375,
+            "lower_support_count": 9,
+            "evaluated_boot_x_span_m": 0.21576309204101562,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.0448606093112347,
+            "penumbra_width_x_m": 0.08288829729324512,
+            "core_depth_y_m": 0.06041366577148438,
+            "penumbra_depth_y_m": 0.10041366577148439
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": 0.0,
+            "support_x": 50.99568836545746,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_x_m": 0.06208938336081846,
+            "lower_support_span_x_m": 0.06862258911132812,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.21864700317382812,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.058984914192777536,
+            "penumbra_width_x_m": 0.09954010936411668,
+            "core_depth_y_m": 0.06122116088867188,
+            "penumbra_depth_y_m": 0.10122116088867189
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.0,
+            "support_x": 51.09116698863877,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.051364079518589595,
+            "lower_support_span_x_m": 0.04802703857421875,
+            "lower_support_count": 9,
+            "evaluated_boot_x_span_m": 0.22103500366210938,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.048795875542660114,
+            "penumbra_width_x_m": 0.08752776906082035,
+            "core_depth_y_m": 0.06188980102539063,
+            "penumbra_depth_y_m": 0.10188980102539064
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.0063721537590026855,
+            "support_x": 51.73260851724533,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.054316382084140497,
+            "lower_support_span_x_m": 0.06861114501953125,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.21869659423828125,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.14145153352923073,
+            "core_width_x_m": 0.05160056297993347,
+            "penumbra_width_x_m": 0.09219624426780058,
+            "core_depth_y_m": 0.061235046386718756,
+            "penumbra_depth_y_m": 0.10232456345356934
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.0,
+            "support_x": 51.842996786209625,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.1078531238410929,
+            "lower_support_span_x_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22100067138671875,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10246046764903825,
+            "penumbra_width_x_m": 0.15079549870202408,
+            "core_depth_y_m": 0.06188018798828126,
+            "penumbra_depth_y_m": 0.10188018798828126
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.020711898803710938,
+            "support_x": 52.4002179934753,
+            "support_y": -0.4050000309944152,
+            "effective_support_span_x_m": 0.028332683743954902,
+            "lower_support_span_x_m": 0.01877593994140625,
+            "lower_support_count": 5,
+            "evaluated_boot_x_span_m": 0.21937942504882812,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.05341016672053437,
+            "core_width_x_m": 0.026916049556757155,
+            "penumbra_width_x_m": 0.07274565842127861,
+            "core_depth_y_m": 0.061426239013671884,
+            "penumbra_depth_y_m": 0.11023668111611118
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.0,
+            "support_x": 52.62299713823787,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10785237938012135,
+            "lower_support_span_x_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22100067138671875,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10245976041111528,
+            "penumbra_width_x_m": 0.15079466490573593,
+            "core_depth_y_m": 0.06188018798828126,
+            "penumbra_depth_y_m": 0.10188018798828126
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.03585416078567505,
+            "support_x": 53.02399056948389,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.029491880610109232,
+            "lower_support_span_x_m": 0.022186279296875,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22000503540039062,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.0020348636191610497,
+            "core_width_x_m": 0.02801728657960377,
+            "penumbra_width_x_m": 0.08535265442485646,
+            "core_depth_y_m": 0.061601409912109384,
+            "penumbra_depth_y_m": 0.11945880842533668
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.0,
+            "support_x": 53.402990531218606,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.10785312813466935,
+            "lower_support_span_x_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22100067138671875,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10246047172793588,
+            "penumbra_width_x_m": 0.15079550351082968,
+            "core_depth_y_m": 0.06188018798828126,
+            "penumbra_depth_y_m": 0.10188018798828126
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": 0.041588783264160156,
+            "support_x": 53.60124590188947,
+            "support_y": -0.4050000309944153,
+            "effective_support_span_x_m": 0.09738935258594072,
+            "lower_support_span_x_m": 0.10305404663085938,
+            "lower_support_count": 14,
+            "evaluated_boot_x_span_m": 0.22105026245117188,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 4.7962379609997204e-05,
+            "core_width_x_m": 0.09251988495664368,
+            "penumbra_width_x_m": 0.1636668772594091,
+            "core_depth_y_m": 0.06189407348632813,
+            "penumbra_depth_y_m": 0.12156671537685251
+          }
+        ]
+      },
+      "V044 GIRL | boot far": {
+        "sample_count": 477,
+        "sole_clearance_m": {
+          "minimum": -1.0192394256591797e-05,
+          "maximum": 0.04498392343521118
+        },
+        "core_opacity": {
+          "minimum": 0.0,
+          "maximum": 0.36
+        },
+        "penumbra_opacity": {
+          "minimum": 2.636431211017886e-14,
+          "maximum": 0.15
+        },
+        "core_width_x_m": {
+          "minimum": 0.022780435250920602,
+          "maximum": 0.10682967246687196
+        },
+        "core_depth_y_m": {
+          "minimum": 0.059343414306640634,
+          "maximum": 0.06190048217773438
+        },
+        "source_boot_y_span_m": {
+          "minimum": 0.0,
+          "maximum": 2.9802322387695312e-08
+        },
+        "samples_penetrating_flat_floor_over3mm": 0,
+        "lifted_samples_at_or_above3mm": 178,
+        "lifted_core_opacity_exactly_zero": true,
+        "key_samples": [
+          {
+            "frame": 937.0,
+            "clearance_m": 0.0,
+            "support_x": 49.971156350044325,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.03939603788310632,
+            "lower_support_span_x_m": 0.048828125,
+            "lower_support_count": 9,
+            "evaluated_boot_x_span_m": 0.21246719360351562,
+            "evaluated_boot_y_span_m": 2.9802322387695312e-08,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.037426235988951,
+            "penumbra_width_x_m": 0.07412356242907908,
+            "core_depth_y_m": 0.05949081420898438,
+            "penumbra_depth_y_m": 0.09949081420898438
+          },
+          {
+            "frame": 949.0,
+            "clearance_m": 0.0,
+            "support_x": 50.613974521515146,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_x_m": 0.03632097266838137,
+            "lower_support_span_x_m": 0.018772125244140625,
+            "lower_support_count": 5,
+            "evaluated_boot_x_span_m": 0.21903228759765625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.0345049240349623,
+            "penumbra_width_x_m": 0.07067948938858715,
+            "core_depth_y_m": 0.06132904052734375,
+            "penumbra_depth_y_m": 0.10132904052734376
+          },
+          {
+            "frame": 961.0,
+            "clearance_m": 0.0,
+            "support_x": 50.71809975940103,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.048369790440898515,
+            "lower_support_span_x_m": 0.06261825561523438,
+            "lower_support_count": 12,
+            "evaluated_boot_x_span_m": 0.2196197509765625,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.045951300918853584,
+            "penumbra_width_x_m": 0.08417416529380634,
+            "core_depth_y_m": 0.061493530273437506,
+            "penumbra_depth_y_m": 0.10149353027343751
+          },
+          {
+            "frame": 973.0,
+            "clearance_m": 0.0017423033714294434,
+            "support_x": 51.374085758209084,
+            "support_y": -0.3250000476837158,
+            "effective_support_span_x_m": 0.06094569746012514,
+            "lower_support_span_x_m": 0.06862258911132812,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.21865463256835938,
+            "evaluated_boot_y_span_m": 2.9802322387695312e-08,
+            "core_opacity": 0.09167012782441916,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.05789841258711888,
+            "penumbra_width_x_m": 0.09836870952148684,
+            "core_depth_y_m": 0.06122329711914063,
+            "penumbra_depth_y_m": 0.10131091981205798
+          },
+          {
+            "frame": 985.0,
+            "clearance_m": 0.0,
+            "support_x": 51.45462178765539,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10634517372509147,
+            "lower_support_span_x_m": 0.10305404663085938,
+            "lower_support_count": 16,
+            "evaluated_boot_x_span_m": 0.22101211547851562,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.1010279150388369,
+            "penumbra_width_x_m": 0.14910659457210246,
+            "core_depth_y_m": 0.061883392333984384,
+            "penumbra_depth_y_m": 0.10188339233398438
+          },
+          {
+            "frame": 997.0,
+            "clearance_m": 0.012993931770324707,
+            "support_x": 52.074133455444255,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.04094990151903866,
+            "lower_support_span_x_m": 0.018772125244140625,
+            "lower_support_count": 5,
+            "evaluated_boot_x_span_m": 0.21886062622070312,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.1051657569815067,
+            "core_width_x_m": 0.03890240644308673,
+            "penumbra_width_x_m": 0.08091350720423465,
+            "core_depth_y_m": 0.061280975341796884,
+            "penumbra_depth_y_m": 0.10532066934412596
+          },
+          {
+            "frame": 1009.0,
+            "clearance_m": 0.0,
+            "support_x": 52.23299463928914,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10785334038370124,
+            "lower_support_span_x_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22099685668945312,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10246067336451618,
+            "penumbra_width_x_m": 0.1507957412297454,
+            "core_depth_y_m": 0.06187911987304688,
+            "penumbra_depth_y_m": 0.10187911987304688
+          },
+          {
+            "frame": 1021.0,
+            "clearance_m": 0.028630554676055908,
+            "support_x": 52.71497203447898,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.024067768723198178,
+            "lower_support_span_x_m": 0.02216339111328125,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.21978378295898438,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 0.015787672359656606,
+            "core_width_x_m": 0.02286438028703827,
+            "penumbra_width_x_m": 0.07443827187949181,
+            "core_depth_y_m": 0.06153945922851563,
+            "penumbra_depth_y_m": 0.11552535595612351
+          },
+          {
+            "frame": 1033.0,
+            "clearance_m": 0.0,
+            "support_x": 53.01299531264497,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.10785367209625644,
+            "lower_support_span_x_m": 0.10305404663085938,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22100067138671875,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10246098849144362,
+            "penumbra_width_x_m": 0.15079611274780724,
+            "core_depth_y_m": 0.06188018798828126,
+            "penumbra_depth_y_m": 0.10188018798828126
+          },
+          {
+            "frame": 1045.0,
+            "clearance_m": 0.041486382484436035,
+            "support_x": 53.330858816409936,
+            "support_y": -0.3250000474762627,
+            "effective_support_span_x_m": 0.03222103334520654,
+            "lower_support_span_x_m": 0.022190093994140625,
+            "lower_support_count": 6,
+            "evaluated_boot_x_span_m": 0.22006607055664062,
+            "evaluated_boot_y_span_m": 2.9802322387695312e-08,
+            "core_opacity": 0.0,
+            "penumbra_opacity": 5.380519341834009e-05,
+            "core_width_x_m": 0.03060998167794621,
+            "penumbra_width_x_m": 0.09065411734675455,
+            "core_depth_y_m": 0.06161849975585938,
+            "penumbra_depth_y_m": 0.12127174775595795
+          },
+          {
+            "frame": 1056.0,
+            "clearance_m": 0.0,
+            "support_x": 53.792993722431035,
+            "support_y": -0.32500001788139343,
+            "effective_support_span_x_m": 0.1078531059416403,
+            "lower_support_span_x_m": 0.10305023193359375,
+            "lower_support_count": 17,
+            "evaluated_boot_x_span_m": 0.22100067138671875,
+            "evaluated_boot_y_span_m": 0.0,
+            "core_opacity": 0.36,
+            "penumbra_opacity": 0.15,
+            "core_width_x_m": 0.10246045064455828,
+            "penumbra_width_x_m": 0.15079547865463716,
+            "core_depth_y_m": 0.06188018798828126,
+            "penumbra_depth_y_m": 0.10188018798828126
+          }
+        ]
+      }
+    },
+    "limits": [
+      "Grounding paint, not a physically simulated light shadow.",
+      "Marks lie on the real floor and may appear thin at a low camera angle; no camera-facing geometry is substituted.",
+      "Exact stance clearance is measured; a geometric threshold is not a gait-phase label.",
+      "Inspect native floor/foot crops for darkness, intersections and blended transparency sorting."
+    ]
+  }
+}

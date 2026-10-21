@@ -1,0 +1,29 @@
+{
+  "v021_baseline": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\leaves_child_pose_correction_v021\\native\\WTSC_Child_Coherent_Support_Eight_Poses_v021.blend",
+    "sha256": "4f7fc0d5d9f8fd94a69d4eed23edb69ede5de7519b9cbbd0630fe1db11471ada"
+  },
+  "guide_contract": "dcc-mcp-production-reuse/v1",
+  "guide_checker": "PASS; actual check executed this request",
+  "typed_DCC_tools_exposed": false,
+  "DCC_CLI_on_PATH": false,
+  "native_fallback": "Existing authorized Blender bpy workflow; actual runtime5.2.2LTS d13f752e3b9c",
+  "reuse_candidates": [
+    {
+      "name": "Original v021 native asset and packed v015 painting",
+      "decision": "Selected; preserves exact design, existing rights and support solve; native host readback verified."
+    },
+    {
+      "name": "Blender Corrective Shape Keys extension",
+      "url": "https://extensions.blender.org/add-ons/corrective-shape-keys/",
+      "decision": "Not acquired; native mesh and Geometry Nodes suffice, user prohibits installs. No5.2host compatibility claimed."
+    },
+    {
+      "name": "Blender Pose Shape Keys extension",
+      "url": "https://extensions.blender.org/add-ons/pose-shape-keys/",
+      "decision": "Not acquired; requires install and rig setup; native pose-specific drawings fill the bounded representation gap."
+    }
+  ],
+  "cloud_library_transfer_helper": "Current child resource read failed: skill package is not available. Single final preview direct create is within surfaced tool contract; retain exact receipt and attempt returned local xattrs.",
+  "render_coordination": "World task notified as authorized; local Blender CPU checked before each render; eight960x540stills per iteration, one threads2job; finaljob3seconds. No contention observed."
+}

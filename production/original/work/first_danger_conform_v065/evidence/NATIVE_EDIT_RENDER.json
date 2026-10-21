@@ -1,0 +1,38 @@
+{
+  "native_sha256": "d73f23c9b5e2d28a65454fbcdf363c1d837c90e88dfbf33d9dec39df1bdbe78f",
+  "native_unchanged": true,
+  "resolution": [
+    1280,
+    720
+  ],
+  "rows": [
+    {
+      "frame": 937,
+      "render": "direct",
+      "global_color": 0.36102294921875,
+      "expected_color": 0.36102294921875,
+      "color_error": 0.0
+    },
+    {
+      "frame": 937,
+      "render": "master",
+      "global_color": 0.36102294921875,
+      "expected_color": 0.36102294921875,
+      "color_error": 0.0
+    },
+    {
+      "frame": 1056,
+      "render": "direct",
+      "global_color": 0.436998188495636,
+      "expected_color": 0.4369982026404968,
+      "color_error": 1.4144860838172235e-08
+    },
+    {
+      "frame": 1056,
+      "render": "master",
+      "global_color": 0.436998188495636,
+      "expected_color": 0.4369982026404968,
+      "color_error": 1.4144860838172235e-08
+    }
+  ]
+}

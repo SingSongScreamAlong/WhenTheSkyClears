@@ -1,0 +1,65 @@
+{
+  "review_png": "WTSC_LOCAL_WORKSPACE\\renders\\village_lookdev\\Village_Still_v013_4K.png",
+  "size": [
+    3840,
+    2160
+  ],
+  "decode_ok": true,
+  "solid_black_child_pixels_in_review_region": 66246,
+  "paint_sources": [
+    {
+      "file": "Rear_Countryside.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "Village_Middle.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Foreground_Ground.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "preserved_original_deliverables": [
+    {
+      "path": "shots/world/WTSC_Living_World_v010.blend",
+      "sha256": "dedb85194afa2776e5bd0ca8bcbdd16f45e34ad47095a06dd2e03ba10adc6560",
+      "unchanged": true
+    },
+    {
+      "path": "shots/world/WTSC_Living_World_Editable_v011.blend",
+      "sha256": "13ab34cf37953f6fa8ce12ce3a70c7202547b7f144770399e5d3bd7f5ac409e4",
+      "unchanged": true
+    },
+    {
+      "path": "renders/living_world/WTSC_Living_World_4K_v010.mp4",
+      "sha256": "bd4da200c33b40a89e80312215d75d597f63cf28318493758ee7ef114037029a",
+      "unchanged": true
+    }
+  ],
+  "approval": "Pending; technical validation does not approve art or scrolling"
+}

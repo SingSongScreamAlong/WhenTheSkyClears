@@ -1,0 +1,86 @@
+WHEN THE SKY CLEARS / LOCOMOTION FIRST PACK v001
+Blender 5.2.2 LTS / 24fps / METRIC / 1 unit = 1 metre / XZ plane
+
+START HERE
+Open native/WTSC_Neutral_Walk_Proof_v001.blend for the neutral walk.
+Append from native/WTSC_Locomotion_Library_v001.blend:
+File > Append > Collection > WTSC_LOCO_PAIR_v001.
+This imports both rigs, 17 visible flat painted parts, packed original paint,
+and all eight native Actions via active/muted NLA tracks. No add-on required.
+The source GP outline is retained hidden in the library file as a design
+reference. Visible animation uses editable flat 2D painted meshes. It is not a
+generic 3D replacement or newly drawn frame-by-frame Grease Pencil animation.
+
+ROOT / STAGING
+LOCO_PAIR | CONTROLS is the floor origin between the children.
+X = forward, Z = up, +Y = depth; camera looks from negative Y.
+Move/scale the controls object for placement. Scale uniformly.
+root_motion: 0 = in place, 1 = travel along local +X.
+ground_speed_mps: local travel speed. start_frame: root travel zero time.
+pair_gap_m defaults to 0.66m between hip roots, close to the existing drawing.
+The two roots are +/- half that gap, so the average framing stays centred.
+The native preview floor moves backwards in in-place mode. Delete the preview
+stage or append only the collection when integrating. Production was not edited.
+Original drawing heights: boy 1.45m; girl 1.3699m. Walking knees lower the heads
+naturally. The boy remains slightly taller; original face/hair/clothes retained.
+
+SELECT / RETIME A CLIP
+The library contains a Blender Text named configure_clip.py. Run it in the
+Text Editor, then in Blender's Python Console, for example:
+  configure('WALK', start=1, repeat=3, time_scale=1, root_motion=False)
+  configure('TRUDGE', start=101, repeat=2, time_scale=1, root_motion=True)
+  configure('WALK', start=1, repeat=3, time_scale=2, root_motion=True)
+The separate scripts/configure_clip.py is the same helper. It only changes the
+appended pack. With multiple appended packs pass root=the exact controls object.
+The helper mutes other clip tracks, applies NLA timing and updates root speed.
+Manual alternative: enable one matching NLA track per child; mute the others.
+The active walk has three repeats. Pose bones are independent planar controls,
+with editable native keys sampled each frame; no live Python handler is needed.
+
+SPEED / CONTACTS
+WALK: 32-frame period = 1.333333s, 0.40m/s, 0.533333m/cycle.
+  Near foot planted source frames 1-20; swing 21-32; next contact 33.
+  Far foot planted frames 1-4 and 17-32; swing 5-16.
+  Near touchdown 1/33; far touchdown 17. Double support 1-4 and 17-20.
+TRUDGE: 44-frame period = 1.833333s, 0.24m/s, 0.44m/cycle.
+  Near foot planted source frames 1-31; swing 32-44; next contact 45.
+  Far foot planted frames 1-9 and 23-44; swing 10-22.
+  Near touchdown 1/45; far touchdown 23. Double support 1-9 and 23-31.
+Cycle closing keys at 33 or 45 duplicate frame 1; render periods omit that key.
+Both children share these timings. This is a restrained paired profile gait.
+
+For uniform physical scale S and NLA time scale T, world speed is v*S/T.
+Example: WALK at T=2, S=1 travels 0.20m/s. Native contact retime test passed.
+For changing production ground speed g(t), advance action phase by distance:
+  phase(t) = accumulated signed ground distance / (cycle_stride_metres * S).
+Match the camera/ground projection at foot depth, not a distant background's
+parallax. A single NLA scale fits only constant speed. Build distance-driven
+time remap or bake new phase keys for a varying route. Faster walking cannot
+be forced onto an arbitrary fast route without changing gait; use a run clip
+or revise route timing. Do not add this pack's root travel to an existing
+production route twice. For route parenting, use root_motion=0 and match phase.
+
+PROTOTYPES / NOT FINISHED MOTIONS
+CAUTION_CROUCH: 48-frame stationary lower/hold/rise blocking study. Feet planted.
+CARE_REACH: 64-frame stationary paired reach/release blocking study. Wrist goals
+meet in XZ around frames 24-40, with the authored 0.66m gap. The girl keeps the
+existing right-facing profile; this is not a finished face-to-face helping act.
+Both contain missing hidden sleeve/underarm surfaces at larger bends. They
+need dedicated layered redraws and joint cleanup before use in production.
+Their native keys are supplied for continued authoring; they are not accepted
+movement clips. Do not blend them onto a walk without matching planted feet.
+
+VERIFICATION / LIMITS
+Fresh factory-empty Append imported both rigs, all eight Actions and packed
+paint. Root placement, 1.5x scale, in-place/root travel and 2x NLA retime tested.
+Planted ankle drift <= 0.00000012m per frame; sampled visible sole support is
+within ~0.0022m of the floor. No gait limb stretch; maximum bone scale ~1.000001.
+The fixed pelvis control has a rest-length conversion of ~0.978, not animated
+squash. See evidence/append_validation.json and visible_support_samples.json.
+All protected production/source hashes match the read-only audit.
+Previews are actual native Blender Cycles CPU renders, 2 threads, 960x540/24fps.
+The readability video uses copied actual production glyph alpha in an
+accelerated 4-second fragment; it is not final trailer integration.
+No shared UI/GPU use, production writes, external assets, purchases or installs.
+The .blend library is self-contained. Regeneration scripts assume the original
+project workspace and original source files. Artistic approval remains open.

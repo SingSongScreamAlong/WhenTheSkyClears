@@ -1,0 +1,102 @@
+WTSC v027 - BODY LOADING AND PASSIVE COAT COMPARISON
+Status: focused solo-walk art comparison, not approved final animation.
+Preserved baseline: v026, which Conrad described as directional improvement, about 3/10.
+All work lives in body_loading_overlap_v027. Production and other specialists' files are unchanged.
+
+WHAT CHANGED / WHY
+Two visible causes were identified in the actual v026 rendered poses and source trajectories:
+1. The upper body remains nearly columnar while the hips perform a late backward reset.
+   The centered hip moves backward 36.659mm between F25.25 and F27.25 in v026.
+   V027 spreads the transfer across the step; the same interval moves backward 5.298mm.
+   Weight acceptance now has a clearer compression, a delayed upper-mass settle and an effort to rise.
+2. The coat flare/tuck has its own phase-authored sequence instead of responding to the torso.
+   V027 retains one preserved v026 coat design and derives the hem lag from the actual torso angle.
+   A damped follower settles over twelve cycles before any output sample is taken.
+   Its only input is torso motion; there is no separate sinusoidal flap or new texture pass.
+
+Footfall timing, root travel, actual boots, world sole goals and character proportions remain v026.
+The new hip/body spacing changes the leg poses, so the painted trouser centerlines are re-fitted too.
+Their UVs, rolled-cuff design and final seven-vertex boot-collar row remain unchanged.
+The original arm swing is carried with the torso; it has not been given a separate new timing scheme.
+The original painted profile, hair and gaze orientation remain intact; the head follows the neck position.
+No flat head card turnaround, design replacement or rejected v008 head patch is used.
+
+NORMAL-SPEED VIEWING
+WTSC_v027_vs_v026_Loading_Comparison_27p9s.mp4 is the primary comparison.
+Private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED], version 0.
+Verified upload file_id: [PRIVATE_LIBRARY_REFERENCE_REMOVED]; 5,937,097 bytes, 27.9 seconds.
+0.0-9.3s: matched close views side by side, V026 left / V027 right.
+9.3-18.6s: V026 at the original shot-camera framing.
+18.6-27.9s: V027 at exactly the same shot-camera framing.
+Every segment contains nine uninterrupted 31-frame cycles at 30fps.
+Each segment starts at native F1 and ends at F279; the view cut restarts the same sequence.
+No inserted bookend, hold, slowdown, optical interpolation or halfway reset is used.
+The source shot camera is retained on a neutral stage; this is not a battlefield composite.
+Separate candidate-only CLOSE and SHOT movies are also supplied for uninterrupted viewing.
+
+I can decode and inspect the movie frames, contact sheets and matched native poses.
+I cannot observe continuous playback with the exposed tools, so I do not claim a playback art pass.
+The human normal-speed assessment remains necessary for weight, rhythm, coat passivity and character intent.
+
+EDITABLE NATIVE / REPRODUCTION
+native/WTSC_Body_Loading_Overlap_v027.blend
+Verified actual executable: Blender 5.2.2 LTS, build d13f752e3b9c.
+No addon, installation or frame handler is required. Original source pigments are packed.
+Boy control objects keep the existing BOY | HIP / CHEST / HEAD_PROFILE / WRIST / POLE ABI.
+Edited target actions have V027 names, quarter-frame keys F1-32 and native repeat modifiers.
+The root hierarchy and world sole goals keep their existing offset-repeat actions.
+Painted trousers remain the two V024 continuous near/far trouser drawing meshes with cyclic shape samples.
+The coat remains V025 | COAT drawings | editable GP, using current GreasePencil / GREASEPENCIL data.
+F1-31 are editable native drawings on ones. F32 is an instance of F1, then instances repeat to F280.
+Changing a shared drawing changes its instances. Unlink/copy a drawing before making a unique cycle variation.
+Original head/collar/near arm/hand composite through the retained native foreground view layer.
+Use the saved Render result/compositor for visual judgment; the viewport alone is not the final layer stack.
+The optional old bare-torso diagnostic remains hidden and is not part of the rendered comparison.
+
+scripts/loading_model.py holds the authored hip XZ and chest direction knots.
+scripts/build_loading_pass.py reads the included immutable baseline, builds the new target actions,
+re-fits the painted trousers, draws the passive coat response, checks support and saves the native.
+scripts/render_proof.py produces the small 32-frame proof.
+scripts/render_long_comparison.py renders the candidate's 279 close and 279 shot frames with two threads.
+scripts/encode_comparison.py reuses the preserved v026 frame sequence for the matched comparison.
+Raw PNG sequences are omitted from the ZIP. To reproduce outside this workspace, render the preserved
+baseline too: render_long_comparison.py -- --baseline. The encoder then finds previews/BASELINE automatically.
+Render jobs must remain coordinated with the world/explosion specialists; no heavy trailer render is needed.
+
+EXACT TIMING / TRAVEL CONTRACT
+One unit = one metre, Z up, +X travel, camera from -Y.
+30fps native study. Period = 31 frames = 1.0333333333 seconds.
+Stride S = .9524437384576381m. Nominal speed = .9217197468944884m/s.
+q = native F - 1. Unwrapped root D(q) = S*q/31.
+Native movie range F1-279 is nine cycles. F280 is the next bookend and is not encoded.
+Near foot initial contact = F1 / q0. Far foot initial contact = F17 / q16.
+Near stance lasts 18.5 native frames; far stance lasts 19.25 native frames.
+Root and both world sole-goal X channels repeat with spatial offset; the boy pose controls repeat locally.
+World sole position at q+31n equals first-cycle sole position plus n*S.
+
+V027_TRAVEL_AND_SUPPORT_QUARTER_FRAMES.csv supplies q0..279 at quarter-frame spacing,
+including D, centered world scroll, new hip/upper origin, chest direction and unchanged foot bone goals.
+The native is authoritative for the actual sole mesh, its rocker geometry and interpolation.
+Import the new body controls, trouser drawings and GP coat together with the existing rig/render dependencies.
+Moving only the root object while leaving the separate world sole goals behind breaks contact.
+Use one common placement transform for the root hierarchy and both separate world-space sole-goal objects.
+For a centered character, evaluate body/feet relative to D and move the ground/world by the same -D.
+If production already supplies D through a moving world, remove that common translation once, consistently.
+Do not apply both native root travel and a second equivalent world/camera travel.
+
+At 24fps production timing, preserve seconds:
+native F = 1 + phase_q + 30*(film_frame - chosen_film_start_frame)/24.
+Relative world travel from the chosen seam is D(native F)-D(1+phase_q).
+Do not paste 31 native samples into 31 production frames at 24fps; resample the GP exposures and drawing keys.
+The phase, seam and root placement for the 75-80second recovery shot remain to be authored and reviewed.
+This file does not supply an approved recovery restart or a finished paired recovery-to-walk transition.
+
+TECHNICAL EVIDENCE VS ART
+125 first-cycle native samples plus nine later contact repeats were checked.
+Actual boot vertex positions and world sole-goal matrices match v026 exactly at the sampled first-cycle times.
+The final trouser cuff row is unchanged, no sampled fixed-length chain is unreachable, head mesh is unchanged.
+Pelvis minima F3.75/F19.75 precede upper-mass minima F4.75/F20.75 by one native frame.
+These checks establish source preservation and support consistency. They do not establish convincing animation.
+The initial proof caught an invalid copied fill-color reference; it was repaired and all 32 proof frames rechecked.
+The rejected initial proof is retained separately as evidence and excluded from the delivery movies/package.
+See V027_CANDID_ASSESSMENT.txt for the remaining artistic limits.

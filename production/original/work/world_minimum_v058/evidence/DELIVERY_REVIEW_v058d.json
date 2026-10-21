@@ -1,0 +1,132 @@
+{
+  "videos": [
+    {
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_minimum_v058\\WTSC_v058d_World_Foreground_6s_24fps.mp4",
+      "sha256": "d91d672b44c6b497a258a9c1c287b46ebc4fc1c60c8951d51d2a27615774742b",
+      "bytes": 2779245,
+      "decoded_frames": 144,
+      "pts_contiguous": true,
+      "fps": 24,
+      "duration": 6,
+      "dimensions": [
+        1280,
+        800
+      ],
+      "unique_decoded_frames": 144
+    },
+    {
+      "file": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\world_minimum_v058\\WTSC_v058d_Before_After_6s_24fps.mp4",
+      "sha256": "d572bbd03e0ffba2c81f583d142af9936f04aeda6f7946482f8ea4ce5315ec52",
+      "bytes": 5756394,
+      "decoded_frames": 144,
+      "pts_contiguous": true,
+      "fps": 24,
+      "duration": 6,
+      "dimensions": [
+        1280,
+        1520
+      ],
+      "unique_decoded_frames": 144
+    }
+  ],
+  "all_region_pixel_preservation": [
+    {
+      "frame": 241,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        1279,
+        596
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 601,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        986,
+        669
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 961,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        1279,
+        670
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 1201,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        1279,
+        597
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 1537,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        1279,
+        669
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 1849,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        499,
+        1279,
+        597
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 2161,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        1279,
+        670
+      ],
+      "max_abs_diff_top_500": 1
+    },
+    {
+      "frame": 2377,
+      "top_500_rows_exactly_identical": false,
+      "changed_bbox": [
+        0,
+        498,
+        1279,
+        670
+      ],
+      "max_abs_diff_top_500": 1
+    }
+  ],
+  "review_scope": "All eight route stills and three two-second normal-speed traversals; same old held characters, no new character proof",
+  "continuous_player_playback_observed": false,
+  "source_foot_image_exclusion": "source v<=0.245, hard clamped below all source character pixels",
+  "minimum_standard_attained": false,
+  "remaining_gates": [
+    "Paired drawn character performance and story beats",
+    "World/character registration and occlusion after integration",
+    "Broader native architectural depth",
+    "Full film artistic review after integration"
+  ]
+}

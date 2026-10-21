@@ -1,0 +1,34 @@
+{
+  "benchmark_seconds": [
+    64,
+    69
+  ],
+  "frames": [
+    1537,
+    1656
+  ],
+  "decoded_frames": 120,
+  "fps": 24,
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Camp_Light_Ground_Benchmark_v039.blend",
+  "source_sha256": "0febe04dfc246c5a56509563f3f48966761c122d55a11ec572722821ee1e8dab",
+  "baseline_movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v037.mp4",
+  "baseline_world": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\Baseline_v037_World_64_69.mp4",
+  "baseline_knockout": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\Baseline_v037_Knockout_64_69.mp4",
+  "study_world": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\WTSC_Camp_World_64_69_v039.mp4",
+  "study_knockout": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\WTSC_Camp_Knockout_64_69_v039.mp4",
+  "comparison": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\camp_benchmark_v039\\WTSC_Camp_5s_Baseline_vs_Study_v039.mp4",
+  "comparison_resolution": [
+    1920,
+    1080
+  ],
+  "comparison_bytes": 5234661,
+  "comparison_sha256": "81943127edceda7eddc4bb7641519a5efd8281c2d31269be19a789ddb7742485",
+  "native_study_resolution": [
+    3840,
+    2160
+  ],
+  "source_audio": "Original global64\u201369 segment in comparison only; no timing change to full film",
+  "mask_source": "Exact unchanged nativeFontalpha fromv037 at source global64\u201369; no obsoleteworld reused in study.",
+  "v001_pack_used": false,
+  "stage": "Actual moving comparison ready for visual QA, no artistic approval inferred. Full updated film still pending propagation/QA."
+}

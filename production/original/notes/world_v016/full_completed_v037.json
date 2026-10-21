@@ -1,0 +1,105 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend",
+  "source_sha256": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "world_frames": 2400,
+  "credit_frames": 144,
+  "total_frames": 2544,
+  "total_seconds": 106,
+  "resource_plan": {
+    "maximum_parallel_blender": 4,
+    "threads_per_blender": 3,
+    "world_eevee_samples": 32,
+    "world_and_mask_phases_sequential": true,
+    "shared_UI": false,
+    "effects_pack_dependency": false
+  },
+  "fresh_native_world": true,
+  "cached_old_world_used": false,
+  "split_compositor_proof": "4K split world+raw native Fontalpha matched direct native compositor with mean pixel error0 atframe1609.",
+  "world_workers": [
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_01.log",
+      "start": 1,
+      "end": 600,
+      "pid": 42896
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_02.log",
+      "start": 601,
+      "end": 1200,
+      "pid": 54320
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_03.log",
+      "start": 1201,
+      "end": 1800,
+      "pid": 848
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\world_04.log",
+      "start": 1801,
+      "end": 2400,
+      "pid": 10448
+    }
+  ],
+  "mask_workers": [
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_01.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_01.log",
+      "start": 1,
+      "end": 600,
+      "pid": 37996
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_02.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_02.log",
+      "start": 601,
+      "end": 1200,
+      "pid": 42700
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_03.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_03.log",
+      "start": 1201,
+      "end": 1800,
+      "pid": 50356
+    },
+    {
+      "out": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_04.mp4",
+      "log": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\full_parts_v037\\mask_04.log",
+      "start": 1801,
+      "end": 2400,
+      "pid": 30924
+    }
+  ],
+  "movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v037.mp4",
+  "movie_sha256": "fe19daa7c105475fedc089331f93ed00b28a9b787baaeee37a6c119e05205390",
+  "bytes": 214442225,
+  "full_decode_frames": 2544,
+  "full_decode_pass": true,
+  "audio": "One original suppliedWAV, single90\u2013100fade, silent100\u2013106",
+  "credit_source": "Native4K frame2401 held144frames, no interpolation",
+  "frame_duplication_in_moving_portion": false,
+  "frame_interpolation": false,
+  "viewing_copy": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_View_v037.mp4",
+    "bytes": 15065118,
+    "sha256": "712b86abb2e5eacbebca27d08cf2cca3deb27ccdf6963a30192ef7f876413693",
+    "resolution": [
+      1280,
+      720
+    ],
+    "frames": 2544,
+    "under20000000bytes": true,
+    "full_decode_pass": true
+  }
+}

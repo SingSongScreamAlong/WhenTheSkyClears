@@ -1,0 +1,76 @@
+{
+  "file": "previews\\WTSC_v036_vs_v033_Normal_Speed_9p3s.mp4",
+  "bytes": 1865748,
+  "sha256": "d89cb3d25df4b1a84f7141a573230b75a34f80d842e69e49acf8bb7401a1edde",
+  "decoded_frames": 279,
+  "fps": 30.0,
+  "dimensions": [
+    1280,
+    840
+  ],
+  "seconds": 9.3,
+  "sections": [
+    {
+      "seconds": [
+        0,
+        3.1
+      ],
+      "layout": "Matched close v033/v036 at native480x720 each"
+    },
+    {
+      "seconds": [
+        3.1,
+        6.2
+      ],
+      "layout": "Matched shot v033/v036 at50percent each"
+    },
+    {
+      "seconds": [
+        6.2,
+        9.3
+      ],
+      "layout": "Candidate shot at native1280x720"
+    }
+  ],
+  "native_source_frames": "1..93 at30fps, three31-frame cycles; same camera/time as saved v033 renders. No time warping, holds, interpolation, phase alignment or invented frames. Layouts reuse the same three-cycle shot footage as clearly labelled.",
+  "hand_value_measurements": [
+    {
+      "frame": 11,
+      "v033_near_hand_median_RGB_luma": 31.0,
+      "v036_near_hand_median_RGB_luma": 49.0
+    },
+    {
+      "frame": 27,
+      "v033_near_hand_median_RGB_luma": 31.0,
+      "v036_near_hand_median_RGB_luma": 50.0
+    }
+  ],
+  "F20_far_hand_ID_pixels": {
+    "FULL": 0,
+    "NO_NEAR_TROUSER": 391
+  },
+  "selected_actual_decoded_frames": [
+    "previews\\DECODED_000.png",
+    "previews\\DECODED_003.png",
+    "previews\\DECODED_010.png",
+    "previews\\DECODED_019.png",
+    "previews\\DECODED_026.png",
+    "previews\\DECODED_030.png",
+    "previews\\DECODED_031.png",
+    "previews\\DECODED_061.png",
+    "previews\\DECODED_092.png",
+    "previews\\DECODED_103.png",
+    "previews\\DECODED_112.png",
+    "previews\\DECODED_119.png",
+    "previews\\DECODED_185.png",
+    "previews\\DECODED_186.png",
+    "previews\\DECODED_196.png",
+    "previews\\DECODED_205.png",
+    "previews\\DECODED_212.png",
+    "previews\\DECODED_216.png",
+    "previews\\DECODED_217.png",
+    "previews\\DECODED_247.png",
+    "previews\\DECODED_278.png"
+  ],
+  "observation_limit": "Actual native stills and decoded movie frames inspected. Continuous player playback not observed through available tools; no cinematic or studio-quality acceptance inferred."
+}

@@ -1,0 +1,60 @@
+WHEN THE SKY CLEARS - KNOCKOUT ENDING v032
+
+Completed moving ending preview (global 82-103 seconds):
+renders/world_v016/WTSC_Knockout_Ending_4K_v032.mp4
+3840 x 2160, 24 fps, 504 frames, exactly 21 seconds. 25,713,640 bytes.
+SHA256 63145d7075fd4b1b3ab0072ffb799fecf489566068a150c331ac1cec53320183
+
+Small viewing copy:
+renders/world_v016/WTSC_Knockout_Ending_View_v032.mp4
+1920 x 1080, same timing and audio. The 4K preview above is the primary output.
+
+Editable native Blender source:
+shots/world/WTSC_Knockout_Ending_Editable_v032.blend
+Opens WTSC_KNOCKOUT_ENDING_v032. Native Font objects provide the real animated
+alpha mask. Compositor mixes the moving world with black using that glyph alpha.
+Change to WTSC_MASTER_4K_103S_v032 for the full 103-second native edit and music.
+Change to WTSC_WORLD_CENTERED_v032 for world/GP authoring. Its separate camera
+follows the held pair's shared horizontal center; local poses are unchanged.
+
+Timing:
+82.000: the huge single-line WHEN THE SKY CLEARS starts entering from the right.
+82-100: lettering travels left; moving picture appears only within the glyphs.
+99.958333: last video frame showing the remaining fragment of the final S.
+100.000: final S's trailing ink edge reaches the left edge; cut to bold white
+WHEN THE / SKY CLEARS / 2027, centered on black.
+100-103: silent, stationary final card. The final frame starts at102.958333.
+
+Picture source and centering scope:
+The moving fill reuses clean v030 cached world footage52-70 seconds under the
+new global82-100 title sequence. This avoids the old title-as-terrain letters
+that are already baked into the v030 movie after about71 seconds. No loop,
+retiming or interpolation. The existing world direction/render is preserved.
+Uniform2x finishing crop centers the pair in both axes, preserving their spacing
+and proportions. This produces effective1920x1080 cached-world detail within
+the UHD output; the native text/mask is4K. This preview is not a fresh4K render
+of the centered world. The full103-second edit is prepared but NOT exported.
+Children remain held for this world pass; no gait or character acting added.
+
+Music:
+Original supplied100-second WAV remains at global0-100 in the native master.
+Preview uses its original82-100 section, never a restarted song, retaining the
+global90-100 fade, followed by3 seconds silence. The preview uses that WAV
+directly in its mux. Native master volume keys preserve the existing project
+fade keys1=1,2161=1,2400=0. Native master picture mapping was rendered/read back.
+
+Dependencies:
+World image/font/audio assets are packed. The cached movie cannot be packed by
+Blender and is linked relatively as //../../renders/world_v016/WTSC_Painted_World_4K_v030.mp4.
+Keep that original movie with this project. Earlier v030/v031 sources and the
+v030 movie have unchanged SHA256 hashes. The old terrain-title collection is
+disabled only in this NEW source file.
+
+Verification:
+notes/world_v016/ending_verification_v032.json
+notes/world_v016/knockout_native_audit_v032.json
+All504 frames fully decoded; output duration, UHD resolution and24fps checked.
+Native pixels outside the glyph alpha are exactly black. Final card stable.
+Native master frame matches ending-scene frame exactly. Original music aligns
+and fades; decoded audio RMS is zero during the silent card. This is a focused
+finishing preview; it does not establish final artistic/performance acceptance.

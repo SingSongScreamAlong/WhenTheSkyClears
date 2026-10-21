@@ -1,0 +1,1384 @@
+[
+  {
+    "name": "V044 BOY | head",
+    "role": "head",
+    "rig": "V044 BOY | estimated joint centres",
+    "vertices": 4,
+    "uvs": [
+      "V040 | separated painted part registration"
+    ],
+    "materials": [
+      {
+        "name": "V044 preserved paint | V040 PAINT | complete fixed child profile",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "preserved_source_part": "V040 | painted boy profile and neck",
+      "proportion_role": "head"
+    }
+  },
+  {
+    "name": "V044 GIRL | head",
+    "role": "head",
+    "rig": "V044 GIRL | estimated joint centres",
+    "vertices": 549,
+    "uvs": [
+      "Original v015 paint source"
+    ],
+    "materials": [
+      {
+        "name": "V044 preserved paint | LOCO | ORIGINAL v015 charcoal paint, packed.001",
+        "nodes": [
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "Pair_Painterly_Near_Age_v015.png.001",
+            "inputs": [
+              [
+                "Vector",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ]
+            ]
+          },
+          {
+            "name": "Hue/Saturation/Value",
+            "type": "HUE_SAT",
+            "image": null,
+            "inputs": [
+              [
+                "Hue",
+                "0.5"
+              ],
+              [
+                "Saturation",
+                "0.0"
+              ],
+              [
+                "Value",
+                "0.800000011920929"
+              ],
+              [
+                "Factor",
+                "1.0"
+              ]
+            ]
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          }
+        ],
+        "links": [
+          [
+            "Image Texture",
+            "Color",
+            "Hue/Saturation/Value",
+            "Color"
+          ],
+          [
+            "Hue/Saturation/Value",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "preserved_source_part": "PERF_GIRL | original head and attached braid",
+      "proportion_role": "head"
+    }
+  },
+  {
+    "name": "V046 BOY | painted forearm near",
+    "role": "skin",
+    "rig": "V044 BOY | estimated joint centres",
+    "vertices": 297,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas skin",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "skin"
+    }
+  },
+  {
+    "name": "V046 BOY | original painted hand near",
+    "role": "hand",
+    "rig": "V044 BOY | estimated joint centres",
+    "vertices": 833,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas hand",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "hand",
+      "wrist_crease_source_row_estimate": 950.0,
+      "actual_painted_fingertip_source_row": 1188,
+      "painted_vertical_hand_span_m": 0.145,
+      "V049_scope": "Original painted fingers grouped horizontally, thumb brought closer and wrist tapered. Original vertical coordinates and measured extended-hand target retained; no finger animation system."
+    }
+  },
+  {
+    "name": "V046 BOY | painted forearm far",
+    "role": "skin",
+    "rig": "V044 BOY | estimated joint centres",
+    "vertices": 297,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas skin",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "skin"
+    }
+  },
+  {
+    "name": "V046 BOY | original painted hand far",
+    "role": "hand",
+    "rig": "V044 BOY | estimated joint centres",
+    "vertices": 833,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 BOY | original atlas hand",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "hand",
+      "wrist_crease_source_row_estimate": 950.0,
+      "actual_painted_fingertip_source_row": 1188,
+      "painted_vertical_hand_span_m": 0.145,
+      "V049_scope": "Original painted fingers grouped horizontally, thumb brought closer and wrist tapered. Original vertical coordinates and measured extended-hand target retained; no finger animation system."
+    }
+  },
+  {
+    "name": "V046 GIRL | painted forearm near",
+    "role": "skin",
+    "rig": "V044 GIRL | estimated joint centres",
+    "vertices": 297,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | original atlas skin",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "inputs": [
+              [
+                "Value",
+                "0.03500000014901161"
+              ],
+              [
+                "Value",
+                "0.0020000000949949026"
+              ]
+            ]
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "RGB to BW",
+            "Color"
+          ],
+          [
+            "RGB to BW",
+            "Val",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "skin"
+    }
+  },
+  {
+    "name": "V046 GIRL | original painted hand near",
+    "role": "hand",
+    "rig": "V044 GIRL | estimated joint centres",
+    "vertices": 833,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | original atlas hand",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "inputs": [
+              [
+                "Value",
+                "0.03500000014901161"
+              ],
+              [
+                "Value",
+                "0.0020000000949949026"
+              ]
+            ]
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "RGB to BW",
+            "Color"
+          ],
+          [
+            "RGB to BW",
+            "Val",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "hand",
+      "wrist_crease_source_row_estimate": 950.0,
+      "actual_painted_fingertip_source_row": 1188,
+      "painted_vertical_hand_span_m": 0.144,
+      "V049_scope": "Original painted fingers grouped horizontally, thumb brought closer and wrist tapered. Original vertical coordinates and measured extended-hand target retained; no finger animation system."
+    }
+  },
+  {
+    "name": "V046 GIRL | painted forearm far",
+    "role": "skin",
+    "rig": "V044 GIRL | estimated joint centres",
+    "vertices": 297,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | original atlas skin",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "inputs": [
+              [
+                "Value",
+                "0.03500000014901161"
+              ],
+              [
+                "Value",
+                "0.0020000000949949026"
+              ]
+            ]
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "RGB to BW",
+            "Color"
+          ],
+          [
+            "RGB to BW",
+            "Val",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "skin"
+    }
+  },
+  {
+    "name": "V046 GIRL | original painted hand far",
+    "role": "hand",
+    "rig": "V044 GIRL | estimated joint centres",
+    "vertices": 833,
+    "uvs": [
+      "V046 | original pigment registration"
+    ],
+    "materials": [
+      {
+        "name": "V046 GIRL | original atlas hand",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "WTSC_Boy_Painted_Parts_Atlas_v040.png",
+            "inputs": []
+          },
+          {
+            "name": "RGB to BW",
+            "type": "RGBTOBW",
+            "image": null,
+            "inputs": []
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "inputs": [
+              [
+                "Value",
+                "0.03500000014901161"
+              ],
+              [
+                "Value",
+                "0.0020000000949949026"
+              ]
+            ]
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "inputs": [
+              [
+                "Strength",
+                "1.0"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "inputs": [
+              [
+                "Displacement",
+                "<bpy_float[3], NodeSocketVector.default_value>"
+              ],
+              [
+                "Thickness",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "inputs": [
+              [
+                "Color",
+                "<bpy_float[4], NodeSocketColor.default_value>"
+              ],
+              [
+                "Weight",
+                "0.0"
+              ]
+            ]
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "inputs": []
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "RGB to BW",
+            "Color"
+          ],
+          [
+            "RGB to BW",
+            "Val",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Emission",
+            "Color"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Mix Shader",
+            "Factor"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Emission",
+            "Emission",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      }
+    ],
+    "visible": true,
+    "properties": {
+      "wardrobe_role": "hand",
+      "wrist_crease_source_row_estimate": 950.0,
+      "actual_painted_fingertip_source_row": 1188,
+      "painted_vertical_hand_span_m": 0.144,
+      "V049_scope": "Original painted fingers grouped horizontally, thumb brought closer and wrist tapered. Original vertical coordinates and measured extended-hand target retained; no finger animation system."
+    }
+  }
+]

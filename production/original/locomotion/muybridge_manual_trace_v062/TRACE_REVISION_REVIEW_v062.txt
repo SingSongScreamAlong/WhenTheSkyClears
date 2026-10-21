@@ -1,0 +1,32 @@
+WTSC — manual Muybridge phase 6 contour revision, v062
+2026-10-19
+
+Purpose and scope
+This is a single-frame source-anatomy study for the locomotion work. It is not an animation pass, child design, production character asset, or approval candidate for the trailer. v061 is preserved in its own folder. No approved source, character, shot, music, title, world or production file was changed.
+
+Source and method
+The source is the retained Muybridge Plate 2 JPEG, phase 6, cropped at source pixels [1581, 32, 1891, 620]. The original JPEG's SHA256 was verified by the Blender build script. The crop is only 310 x 588 pixels. Eighteen independent visible-contour strokes contain 187 manually selected points. They were placed through an isolated Blender Grease Pencil operator using the explicit point list in reference/phase06_manual_contours.json. No automatic image tracing, interpolated anatomy, procedural pose generation or child-proportion adaptation was used. The source photo remains a separate companion file; it is not packed into the .blend.
+
+Visual comparison with v061
+The rounded fist now follows the visible end of the forward arm rather than the former wedge. The jaw/nose notch that made the v061 head look polygonal has been removed; the profile reads as a simpler continuous contour. The abrupt torso through-lines were shortened to match visible occlusion boundaries. The forward knee has a clearer change in direction. Foot placement and stride registration remain close to the photo. These are credible local improvements when the overlays are compared at the same 2x registration.
+
+At native source scale, the improvement is modest. As a standalone line drawing, v062 still has a long, nearly parallel hanging-arm contour, unresolved shoulder/upper-arm overlap, a blunt head and limited hand description. The hip and knee contour choices remain diagrammatic. Line weight is uniform. This does not meet the project's target for a convincing painterly child or an Arcane-level performance. It should inform specific weight/contact observations, not be copied into the children's designs.
+
+Why the remaining errors persist
+- Source resolution: the chosen phase is 310 pixels wide and contains motion-era grain and blur. Several anatomically important transitions cover only a few source pixels.
+- Reference ambiguity: the head face, shoulder and breast/arm overlap are low-contrast or occluded. There is no reliable visible edge for a detailed face or complete upper-arm seam. Inventing those lines would be a claim unsupported by the photograph.
+- Drawing ability/finish: the manually selected points accurately register the broad silhouette, but the even stroke width, sparse hand shape, and some rigid connections do not convey an expressive finished drawing. Better source pixels alone would not supply the project's child design or painterly treatment.
+
+Technical verification
+Blender 5.2.2 LTS was verified from the actual installed executable. The isolated .blend was cold opened. Readback found one editable GREASEPENCIL object with 18 distinct strokes, all 187 points in the specified order, and maximum coordinate deviation 1.15e-7 Blender units. The cold-reopen check passed. The comparison overlays use alpha from the actual Blender renders at identical source registration; they are presentation composites, not screenshots of a viewport.
+
+Deliverables
+- native/Muybridge_Phase06_Manual_Trace_v062.blend — editable source study
+- reference/phase06_manual_contours.json — hand-selected source pixel points
+- reference/phase06_source_crop.png — exact source crop used for alignment
+- previews/Phase06_Source_Before_After_v062.png — source, v061, v062 comparison
+- previews/Phase06_Source_Native_Overlay_v062.png — source, isolated native render, v062 overlay
+- evidence/PHASE06_NATIVE_BUILD_v062.json and PHASE06_COLD_REOPEN_v062.json — technical checks
+
+Decision
+Stop this single-phase trace refinement here. It improved the local contour errors identified in v061, but another outline pass on this ambiguous phase is unlikely to solve the character look. The next meaningful animation work should use the motion observations with the actual children and evaluate timed weight transfer, contacts, overlapping action and painted silhouettes in the 75–80 s scene. This study does not establish a travel curve or integration timing contract because no motion was authored in this revision.

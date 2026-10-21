@@ -1,0 +1,334 @@
+{
+  "status": "FOUR_POSE_COMPARISON_DELIVERED_FOUNDATION_NOT_PASSED",
+  "native": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_silhouette_rebuild_v029\\native\\WTSC_Four_Pose_Silhouette_Rebuild_v029.blend",
+  "native_bytes": 2531116,
+  "native_sha256": "5a810378e997691493aacb99bb00ffcdd41db10bcca124f9d9164a425c4381ed",
+  "primary_board": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\four_pose_silhouette_rebuild_v029\\previews\\WTSC_v029_Four_Pose_Review_Board.png",
+    "bytes": 1531446,
+    "sha256": "0128e41184c469698a28995f37f39b027ea193d448f70d7ef472c0f767de5a3a",
+    "dimensions": [
+      1920,
+      2220
+    ],
+    "content": "Actual Blender-rendered v028/v029 contact,down,passing,up close and shot comparisons"
+  },
+  "private_preview": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v029_Four_Pose_Review_Board.png",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v029_Four_Pose_Review_Board.png",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "image/png",
+    "library_artifact_type": "image",
+    "file_size_bytes": 1531446,
+    "external_connectors_accessed": false
+  },
+  "actual_Blender_renders": {
+    "frames": [
+      1,
+      4,
+      11,
+      13
+    ],
+    "views": {
+      "CLOSE": [
+        480,
+        720
+      ],
+      "SHOT": [
+        1280,
+        720
+      ]
+    },
+    "actual_Blender_renders": 8,
+    "threads": 2,
+    "elapsed_seconds": 3.606252670288086,
+    "no_cycle_rendered": true
+  },
+  "anatomical_guide_only": {
+    "scope": "Anatomy/support safeguards, not visual acceptance",
+    "source_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+    "version": "5.2.2 LTS",
+    "selected_frames": [
+      1,
+      4,
+      11,
+      13
+    ],
+    "new_drawings": 4,
+    "shared_thigh_length_m": 0.26,
+    "shared_shin_length_m": 0.26,
+    "boot_refit": [
+      0.78,
+      0.9
+    ],
+    "new_arm_lengths_m": [
+      0.198,
+      0.178
+    ],
+    "head_design": "Four existing painted source profiles retained as translated native mesh shape samples; head/hair UV/materials unchanged. No turnaround.",
+    "head_vertices": 9,
+    "collar_vertices": 114,
+    "poses": [
+      {
+        "frame": 1,
+        "name": "CONTACT",
+        "hip": [
+          0,
+          0.594
+        ],
+        "neck": [
+          0.033,
+          1.085
+        ],
+        "legs": {
+          "near": {
+            "hip": [
+              0.018,
+              0.594
+            ],
+            "knee": [
+              0.09720053276628887,
+              0.3463565554884684
+            ],
+            "ankle": [
+              0.15,
+              0.09177412039162935
+            ],
+            "sole_clearance": 0.0,
+            "boot_length_x": 0.18659004233834597
+          },
+          "far": {
+            "hip": [
+              -0.022,
+              0.594
+            ],
+            "knee": [
+              -0.04722613560983651,
+              0.33522665886495545
+            ],
+            "ankle": [
+              -0.17,
+              0.10603988301890936
+            ],
+            "sole_clearance": 0.0,
+            "boot_length_x": 0.19689399572619762
+          }
+        }
+      },
+      {
+        "frame": 4,
+        "name": "LOADED_DOWN",
+        "hip": [
+          0.02,
+          0.585
+        ],
+        "neck": [
+          0.065,
+          1.065
+        ],
+        "legs": {
+          "near": {
+            "hip": [
+              0.038,
+              0.585
+            ],
+            "knee": [
+              0.15015634237815642,
+              0.3504345403424584
+            ],
+            "ankle": [
+              0.115,
+              0.09282236751168967
+            ],
+            "sole_clearance": 0.0,
+            "boot_length_x": 0.18838380619883538
+          },
+          "far": {
+            "hip": [
+              -0.0019999999999999983,
+              0.585
+            ],
+            "knee": [
+              -0.04640544002405047,
+              0.3288200692945084
+            ],
+            "ankle": [
+              -0.195,
+              0.11546670807056619
+            ],
+            "sole_clearance": 0.0,
+            "boot_length_x": 0.18907313513888446
+          }
+        }
+      },
+      {
+        "frame": 11,
+        "name": "PASSING",
+        "hip": [
+          0,
+          0.61
+        ],
+        "neck": [
+          0.025,
+          1.11
+        ],
+        "legs": {
+          "near": {
+            "hip": [
+              0.018,
+              0.61
+            ],
+            "knee": [
+              0.012862254751494693,
+              0.350050767314536
+            ],
+            "ankle": [
+              -0.025,
+              0.09282236751168967
+            ],
+            "sole_clearance": 0.0,
+            "boot_length_x": 0.18838380619883538
+          },
+          "far": {
+            "hip": [
+              -0.022,
+              0.61
+            ],
+            "knee": [
+              0.13739645785675764,
+              0.4045912143487555
+            ],
+            "ankle": [
+              -0.015,
+              0.19393671135222923
+            ],
+            "sole_clearance": 0.09500000000000001,
+            "boot_length_x": 0.20059693240115745
+          }
+        }
+      },
+      {
+        "frame": 13,
+        "name": "UP",
+        "hip": [
+          0.015,
+          0.614
+        ],
+        "neck": [
+          0.038,
+          1.12
+        ],
+        "legs": {
+          "near": {
+            "hip": [
+              0.033,
+              0.614
+            ],
+            "knee": [
+              0.0253369431226753,
+              0.3541129523056316
+            ],
+            "ankle": [
+              -0.065,
+              0.11031131837499006
+            ],
+            "sole_clearance": 0.0,
+            "boot_length_x": 0.18340154177397017
+          },
+          "far": {
+            "hip": [
+              -0.006999999999999999,
+              0.614
+            ],
+            "knee": [
+              0.14027452666449172,
+              0.39973331151168195
+            ],
+            "ankle": [
+              0.13,
+              0.13993640217321304
+            ],
+            "sole_clearance": 0.05499999999999999,
+            "boot_length_x": 0.1979060624719559
+          }
+        }
+      }
+    ],
+    "no_cycle_or_production_integration": true
+  },
+  "observed_useful_changes": [
+    "Passing support leg is straighter under the pelvis, with a separately bent swing knee and readable negative space.",
+    "Smaller original painted boots and narrower cuff bands reduce the earlier passing congestion.",
+    "Separate thigh/knee/calf/shin contours and fuller cloth volumes replace bowed ribbon drawings.",
+    "Pose-specific arm gestures and less abrupt cuff/skin/hand proportions."
+  ],
+  "candid_not_passed": [
+    "Trunk/pelvis mass still reads too planar/columnar, without enough whole-body attitude difference at shot size.",
+    "Some knee/calf transitions remain graphic/angular.",
+    "Coat panels are still flat; new body is structural value block-in and lacks original painterly finish.",
+    "Front arm gesture is posed/reaching; rear arm merges with coat in places.",
+    "Boot scaling and clearer anatomy are changes to assess, not evidence of artistic acceptance."
+  ],
+  "next_drawing_priority": "Resolve torso/pelvis mass and soften the four leg silhouettes before generating inbetweens or a cycle.",
+  "full_cycle_or_inbetweens_generated": false,
+  "motion_playback_or_animation_pass_claimed": false,
+  "production_integration": false,
+  "travel_contract": "None authored. Root/stage frozen. Frames1,4,11,13 select independent poses; timing/intermediate playback undefined.",
+  "head_choice": "Original source profile artwork/UVs/materials retained as translated native shape samples. No turnaround or v008 patch.",
+  "critique_and_native_guide": "V029_POSE_GUIDE_AND_CANDID_CRITIQUE.txt",
+  "source_preservation": {
+    "v046": {
+      "path": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+      "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661",
+      "unchanged": true
+    },
+    "v007": {
+      "path": "locomotion/supported_recovery_v007/native/WTSC_Supported_Recovery_v007.blend",
+      "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de",
+      "unchanged": true
+    },
+    "v045c": {
+      "path": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+      "sha256": "5dd333d28452e1427daf828711c3a6ac9abee5223d69090623e92e53e8583fb4",
+      "unchanged": true
+    },
+    "v026": {
+      "path": "locomotion/gp_extended_review_v026/native/WTSC_GP_Extended_Review_v026.blend",
+      "sha256": "208406e74658fe7b809c9ac4f1512aaa657647a5e9e69c829320e2e338c86959",
+      "unchanged": true
+    },
+    "v027": {
+      "path": "locomotion/body_loading_overlap_v027/native/WTSC_Body_Loading_Overlap_v027.blend",
+      "sha256": "f24114a894e777c7e1dcf2df87bb539e78eba2259c3a89098b94b8ccef98b139",
+      "unchanged": true
+    },
+    "v028": {
+      "path": "locomotion/upper_body_pose_refinement_v028/native/WTSC_Upper_Body_Pose_Refinement_v028.blend",
+      "sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4",
+      "unchanged": true
+    }
+  },
+  "coordination": "Messaging failed, so all short threads2 Blender jobs used immediate host no-Blender-process gates. All Blender jobs exited. No heavy render or full-trailer job.",
+  "blockers": [
+    {
+      "action": "Request independent read-only critique of the actual four-pose comparison board",
+      "target_thread_id": "01a14565-35ea-72b8-8731-2181768cf013",
+      "reason": "Thread routing returned no rollout found after an explicit local-host request; earlier coordination returned AbsolutePathBuf without a base path.",
+      "status": "FAILED_NOT_DELIVERED",
+      "denied": false,
+      "completed_independent_work": "Four editable poses, eight valid Blender renders, comparison boards, own candid critique and private Library board are complete."
+    }
+  ]
+}

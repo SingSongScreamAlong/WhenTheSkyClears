@@ -1,0 +1,134 @@
+{
+  "status": "New unpainted motion foundation test ready for artistic review. v010 remains rejected. No production integration or claim of convincing final animation.",
+  "native": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_rebuild_unpainted_v011\\native\\WTSC_Unpainted_Motion_Rebuild_v011.blend",
+    "bytes": 762662,
+    "sha256": "c664cb05c989937ec2d63989150fd6713e56c66a8c2e01c61c345df009bdce8e",
+    "collection": "WTSC_UNPAINTED_MOTION_REBUILD_v011",
+    "frames": [
+      1,
+      144
+    ],
+    "fps": 24,
+    "seconds": 6,
+    "armatures": 2,
+    "external_images": 0
+  },
+  "previews": [
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_rebuild_unpainted_v011\\WTSC_v011_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+      "bytes": 274362,
+      "sha256": "d0d1ca12ab4b6c63464138268e6383d350fa62ca46170320c697ad8a61b71444",
+      "decoded_frames": 144,
+      "fps": 24.0,
+      "seconds": 6.0,
+      "size": [
+        960,
+        540
+      ],
+      "sound": "Silent motion test; no soundtrack edits."
+    },
+    {
+      "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_rebuild_unpainted_v011\\WTSC_v011_Unpainted_Shot_Size_6s.mp4",
+      "bytes": 182813,
+      "sha256": "84c8caae316e846496a723569e09d1f7735fce14fcf25318d62d4feaf447542a",
+      "decoded_frames": 144,
+      "fps": 24.0,
+      "seconds": 6.0,
+      "size": [
+        960,
+        540
+      ],
+      "sound": "Silent motion test; no soundtrack edits."
+    }
+  ],
+  "private_library": {
+    "operation": "create_library_file",
+    "status": "succeeded",
+    "path": "/WTSC_v011_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+    "file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "file_name": "WTSC_v011_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+    "current_version_number": 0,
+    "restored_from_version_number": null,
+    "xattrs": [
+      {
+        "name": "user.library-file-version",
+        "value": "0"
+      }
+    ],
+    "directory_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "mime_type": "video/mp4",
+    "library_artifact_type": "other",
+    "file_size_bytes": 274362,
+    "external_connectors_accessed": false
+  },
+  "guide": "DIAGNOSIS_AND_TEST_GUIDE_v011.txt",
+  "fundamental_changes": [
+    "Independent child root position/velocity curves rather than a common route",
+    "Toe-first scuff, rapid next-foot catch, compression after that heel arrival, then rise over the planted front foot before trailing lift",
+    "Smaller girl braking/compression and a wait on her own feet; distinct restart contact clock",
+    "Higher walking pelvis/leg extension, shorter regular steps and lower foot clearance",
+    "Separate lumbar/chest/head response and rebuilt elbow distribution/continuous arm articulation; no backward turn or clasp"
+  ],
+  "artistic_assessment": {
+    "status": "New unpainted foundation test for review. v010 remains artistically rejected; no artistic acceptance claimed for v011.",
+    "actual_review": "Close and shot-size144frame actual renders, dense every-two-frame catch progression, phase/trajectory data; no claim of human approval.",
+    "fundamental_changes": [
+      "Independent child root position/velocity curves rather than a common route",
+      "Toe-first scuff, rapid next-foot catch, compression after that heel arrival, then rise over the planted front foot before trailing lift",
+      "Smaller girl braking/compression and a wait on her own feet; distinct restart contact clock",
+      "Higher walking pelvis/leg extension, shorter regular steps and lower foot clearance",
+      "Separate lumbar/chest/head response and rebuilt elbow distribution/continuous arm articulation; no backward turn or clasp"
+    ],
+    "what_is_readable": "In actual pose/progression views the catch loading and recovery are separated more clearly, the boy drops more than the girl, and both resume stepping without a final held body. This is a staging assessment, not proof of naturalistic motion.",
+    "limitations": [
+      "Authored kinematics and approximate mass proxy, not force simulation or measured child motion",
+      "Simple proxy joints still lack torso twist, lateral balance and nuanced hip/shoulder acting",
+      "The toe-scuff cue and recovery pacing may need retiming after full-speed user review",
+      "No clothing, painted contours, fingers, real grip or hair follow-through; these forms are only a test scaffold",
+      "Six-second diagnostic is separate from the original production clock; no new integration approved"
+    ],
+    "do_not_do": "Do not reapply paint or integrate into production based only on technical checks. If the motion still reads badly, revise support/timing/weight again rather than polish surfaces."
+  },
+  "technical_integrity": {
+    "binding_joint_target_error_m": 1.3706284170978053e-06,
+    "bound_mesh_center_error_m": 1.9110702922202824e-06,
+    "fixed_segment_length_error_m": 7.187214566273248e-07,
+    "flat_sole_vertex_drift_m": 3.8640151616457497e-07,
+    "floor_min_z_m": -2.977394046865811e-07,
+    "fresh_append": {
+      "fresh_empty_scene_append": true,
+      "objects": 38,
+      "native_armatures": 2,
+      "camera_light_count": 0,
+      "sample_joint_world_error_m": 1.2305192693066694e-06,
+      "external_images": 0
+    },
+    "note": "These prevent technical defects from contaminating review. They are not artistic acceptance or a force/dynamics validation."
+  },
+  "timing": "New standalone0..6s test, not mapped into75..80s production. Source1..144 at24fps; boundary145. New independent per-child root/foot data in world_motion_samples.csv. Do not apply old travel curve.",
+  "prior_narrow_patch": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\lean_gap_correction_v010a\\native\\WTSC_Stumble_Polish_Continuation_v010a.blend",
+    "status": "Saved and held; not accepted or integrated. Scope changed when user rejected overall v010 movement. No further gap iterations."
+  },
+  "sources_preserved": {
+    "locomotion/stumble_polish_continuation_v010/native/WTSC_Stumble_Polish_Continuation_v010.blend": true,
+    "locomotion/stumble_polish_continuation_v010/native/WTSC_v010_Matched_Review_Copy.blend": true,
+    "locomotion/stumble_polish_continuation_v010/WTSC_v010_Matched_5s_Polish_PLUS_Separate_2s_Continuation.mp4": true,
+    "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend": true
+  },
+  "remaining_limitations": [
+    "Authored kinematics and approximate mass proxy, not force simulation or measured child motion",
+    "Simple proxy joints still lack torso twist, lateral balance and nuanced hip/shoulder acting",
+    "The toe-scuff cue and recovery pacing may need retiming after full-speed user review",
+    "No clothing, painted contours, fingers, real grip or hair follow-through; these forms are only a test scaffold",
+    "Six-second diagnostic is separate from the original production clock; no new integration approved"
+  ],
+  "ancillary_delivery_issue": {
+    "action": "Persist local Library identity xattrs",
+    "target": "WTSC_LOCAL_WORKSPACE\\locomotion\\motion_rebuild_unpainted_v011\\WTSC_v011_Unpainted_Stumble_Recovery_Walk_6s.mp4",
+    "reason": "Windows Python has no os.setxattr",
+    "state": "Unavailable; no local xattrs written. Private Library preview create succeeded and its identity receipt is retained. No uncertain upload."
+  }
+}

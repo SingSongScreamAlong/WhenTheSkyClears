@@ -1,0 +1,11308 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Art_Study_v045b.blend",
+  "base_source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Drawn_Trial_v044.blend",
+  "base_sha256": "6d661eaa07198d44c40db1abf936c9ffd42d1db8c4c12e4ca18149a2b0379593",
+  "world_scene": "WTSC_OPEN_BATTLEFIELD_ART_STUDY_v045b",
+  "master_scene": "WTSC_OPEN_5S_ART_MASTER_v045b",
+  "scope": "Isolated art-only frame-first candidate; no new motion/FX import, no movie render.",
+  "changed_materials": [
+    {
+      "object": "v016 | Battlefield | broken village line",
+      "original_material": "v041 OWNED | live event receiver | v016 | Battlefield | broken village line",
+      "art_material": "v045b ART ONLY | v016 | Battlefield | broken village line",
+      "fog_mix": 0.3,
+      "fog_linear_color": [
+        0.22,
+        0.25,
+        0.275,
+        1
+      ],
+      "alpha_changed": false,
+      "character_following_inputs": false,
+      "local_fire_receiver_stays_downstream": true
+    },
+    {
+      "object": "v026 | Countryside panorama | stationary at true depth",
+      "original_material": "v026 | Continuous countryside paint | fixed land, cloud wind only",
+      "art_material": "v045b ART ONLY | v026 | Countryside panorama | stationary at true depth",
+      "fog_mix": 0.12,
+      "fog_linear_color": [
+        0.34,
+        0.38,
+        0.41,
+        1
+      ],
+      "alpha_changed": false,
+      "character_following_inputs": false,
+      "local_fire_receiver_stays_downstream": false
+    },
+    {
+      "object": "v020 | Walking path | continuous blended paint",
+      "original_material": "v041 OWNED | live event receiver | v020 | Walking path | continuous blended paint",
+      "art_material": "v045b ART ONLY | v020 | Walking path | continuous blended paint",
+      "method": "Original v044road below sparse plant sites; quiet areas use original ground underpainting with original near-bank dark earth multiplier(.13,.17,.16). Uniform world-scaled source density148.224px/metre, calibrated to the apparent near-bank texture scale. Fixed3Dnoise makes feather boundaries organic; no clamped/stretched source strips, pale road frontage, character/camera/time inputs.",
+      "source_pixel_density_per_metre": [
+        148.224,
+        148.224
+      ],
+      "plant_sites_x_m": [
+        [
+          104.85,
+          0.38
+        ],
+        [
+          107.35,
+          0.12
+        ],
+        [
+          109.25,
+          0.18
+        ],
+        [
+          110.65,
+          0.5
+        ],
+        [
+          113.8,
+          0.28
+        ]
+      ],
+      "camera_or_character_inputs_added": false,
+      "image_pixels_changed": false,
+      "noise_scale": 3.1,
+      "noise_uv_edge_amplitude": 0.1
+    }
+  ],
+  "unchanged_protected_fingerprint": "c1e0095462f9865eb1ec5a58b43de87a48e9a13f87ba5e7f8423aa3ffc0630cd",
+  "protected_ids": [
+    "BATTLEFIELD_WEARY | CONTROLS.001",
+    "FXv003 | brief torn ignition core",
+    "FXv003 | broad low asymmetric dust sheets",
+    "FXv003 | fixed ground origin and controls",
+    "FXv003 | rolling smoke 00 | born 00",
+    "FXv003 | rolling smoke 01 | born 01",
+    "FXv003 | rolling smoke 02 | born 03",
+    "FXv003 | rolling smoke 03 | born 05",
+    "FXv003 | rolling smoke 04 | born 08",
+    "FXv003 | rolling smoke 05 | born 12",
+    "FXv003 | rolling smoke 06 | born 16",
+    "FXv003 | rolling smoke 07 | born 20",
+    "FXv003 | rolling smoke 08 | born 25",
+    "FXv003 | rolling smoke 09 | born 30",
+    "FXv003 | rolling smoke 10 | born 36",
+    "FXv003 | rolling smoke 11 | born 42",
+    "FXv003 | rolling smoke 12 | born 48",
+    "FXv003 | short hot launch jet | gone after hot_frames",
+    "FXv003 | weighted debris 00",
+    "FXv003 | weighted debris 01",
+    "FXv003 | weighted debris 02",
+    "FXv003 | weighted debris 03",
+    "FXv003 | weighted debris 04",
+    "FXv003 | weighted debris 05",
+    "FXv003 | weighted debris 06",
+    "FXv003 | weighted debris 07",
+    "FXv003 | weighted debris 08",
+    "FXv003 | weighted debris 09",
+    "FXv003 | weighted debris 10",
+    "FXv003 | weighted debris 11",
+    "FXv003 | weighted debris 12",
+    "FXv003 | weighted debris 13",
+    "FXv003 | weighted debris 14",
+    "FXv003 | weighted debris 15",
+    "FXv003 | weighted debris 16",
+    "FXv003 | weighted debris 17",
+    "FXv003 | weighted debris 18",
+    "FXv003 | weighted debris 19",
+    "FXv003 | weighted debris 20",
+    "FXv003 | weighted debris 21",
+    "FXv003 | weighted debris 22",
+    "FXv003 | weighted debris 23",
+    "FXv003 | weighted debris 24",
+    "FXv003 | weighted debris 25",
+    "FXv003 | weighted debris 26",
+    "FXv003 | weighted debris 27",
+    "FXv003 | weighted debris 28",
+    "FXv003 | weighted debris 29",
+    "FXv003 | weighted debris 30",
+    "FXv003 | weighted debris 31",
+    "FXv003 | weighted debris 32",
+    "FXv003 | weighted debris 33",
+    "FXv003 | weighted debris 34",
+    "FXv003 | weighted debris 35",
+    "FXv003 | weighted debris 36",
+    "FXv003 | weighted debris 37",
+    "LOCO_BOY | PAINT body.001",
+    "LOCO_BOY | PAINT far_leg.001",
+    "LOCO_BOY | PAINT near_leg.001",
+    "LOCO_BOY | RIG.001",
+    "LOCO_GIRL | PAINT body.001",
+    "LOCO_GIRL | PAINT far_leg.001",
+    "LOCO_GIRL | PAINT near_leg.001",
+    "LOCO_GIRL | RIG.001",
+    "LOCO_PAIR | TRAVEL.001",
+    "PERF | DISTANCE_CURVE.001",
+    "PERF_BOY | original hand far.001",
+    "PERF_BOY | original hand near.001",
+    "PERF_BOY | original head.001",
+    "PERF_BOY | rigid original boot far.001",
+    "PERF_BOY | rigid original boot near.001",
+    "PERF_BOY | skin far.001",
+    "PERF_BOY | skin near.001",
+    "PERF_BOY | sleeve far | source gray cuff.001",
+    "PERF_BOY | sleeve far.001",
+    "PERF_BOY | sleeve near | source gray cuff.001",
+    "PERF_BOY | sleeve near.001",
+    "PERF_GIRL | hidden thigh overlap far.001",
+    "PERF_GIRL | hidden thigh overlap near.001",
+    "PERF_GIRL | original hand far.001",
+    "PERF_GIRL | original hand near.001",
+    "PERF_GIRL | original head and attached braid.001",
+    "PERF_GIRL | rigid original boot far.001",
+    "PERF_GIRL | rigid original boot near.001",
+    "PERF_GIRL | skin far.001",
+    "PERF_GIRL | skin near.001",
+    "PERF_GIRL | sleeve far | source gray cuff.001",
+    "PERF_GIRL | sleeve far.001",
+    "PERF_GIRL | sleeve near | source gray cuff.001",
+    "PERF_GIRL | sleeve near.001",
+    "POSE1801 | BOY far rounded knee",
+    "POSE1801 | BOY far skin",
+    "POSE1801 | BOY far sleeve",
+    "POSE1801 | BOY near rounded knee",
+    "POSE1801 | BOY near skin",
+    "POSE1801 | BOY near sleeve",
+    "POSE1801 | GIRL far rounded knee",
+    "POSE1801 | GIRL far skin",
+    "POSE1801 | GIRL far sleeve",
+    "POSE1801 | GIRL near rounded knee",
+    "POSE1801 | GIRL near skin",
+    "POSE1801 | GIRL near sleeve",
+    "POSE1825 | BOY far rounded knee",
+    "POSE1825 | BOY far skin",
+    "POSE1825 | BOY far sleeve",
+    "POSE1825 | BOY near rounded knee",
+    "POSE1825 | BOY near skin",
+    "POSE1825 | BOY near sleeve",
+    "POSE1825 | GIRL far rounded knee",
+    "POSE1825 | GIRL far skin",
+    "POSE1825 | GIRL far sleeve",
+    "POSE1825 | GIRL near rounded knee",
+    "POSE1825 | GIRL near skin",
+    "POSE1825 | GIRL near sleeve",
+    "POSE1837 | BOY far rounded knee",
+    "POSE1837 | BOY far skin",
+    "POSE1837 | BOY far sleeve",
+    "POSE1837 | BOY near rounded knee",
+    "POSE1837 | BOY near skin",
+    "POSE1837 | BOY near sleeve",
+    "POSE1837 | GIRL far rounded knee",
+    "POSE1837 | GIRL far skin",
+    "POSE1837 | GIRL far sleeve",
+    "POSE1837 | GIRL near rounded knee",
+    "POSE1837 | GIRL near skin",
+    "POSE1837 | GIRL near sleeve",
+    "POSE1847 | BOY far rounded knee",
+    "POSE1847 | BOY far skin",
+    "POSE1847 | BOY far sleeve",
+    "POSE1847 | BOY near rounded knee",
+    "POSE1847 | BOY near skin",
+    "POSE1847 | BOY near sleeve",
+    "POSE1847 | GIRL far rounded knee",
+    "POSE1847 | GIRL far skin",
+    "POSE1847 | GIRL far sleeve",
+    "POSE1847 | GIRL near rounded knee",
+    "POSE1847 | GIRL near skin",
+    "POSE1847 | GIRL near sleeve",
+    "POSE1858 | BOY far rounded knee",
+    "POSE1858 | BOY far skin",
+    "POSE1858 | BOY far sleeve",
+    "POSE1858 | BOY near rounded knee",
+    "POSE1858 | BOY near skin",
+    "POSE1858 | BOY near sleeve",
+    "POSE1858 | GIRL far rounded knee",
+    "POSE1858 | GIRL far skin",
+    "POSE1858 | GIRL far sleeve",
+    "POSE1858 | GIRL near rounded knee",
+    "POSE1858 | GIRL near skin",
+    "POSE1858 | GIRL near sleeve",
+    "POSE1881 | BOY far rounded knee",
+    "POSE1881 | BOY far skin",
+    "POSE1881 | BOY far sleeve",
+    "POSE1881 | BOY near rounded knee",
+    "POSE1881 | BOY near skin",
+    "POSE1881 | BOY near sleeve",
+    "POSE1881 | GIRL far rounded knee",
+    "POSE1881 | GIRL far skin",
+    "POSE1881 | GIRL far sleeve",
+    "POSE1881 | GIRL near rounded knee",
+    "POSE1881 | GIRL near skin",
+    "POSE1881 | GIRL near sleeve",
+    "POSE1901 | BOY far rounded knee",
+    "POSE1901 | BOY far skin",
+    "POSE1901 | BOY far sleeve",
+    "POSE1901 | BOY near rounded knee",
+    "POSE1901 | BOY near skin",
+    "POSE1901 | BOY near sleeve",
+    "POSE1901 | GIRL far rounded knee",
+    "POSE1901 | GIRL far skin",
+    "POSE1901 | GIRL far sleeve",
+    "POSE1901 | GIRL near rounded knee",
+    "POSE1901 | GIRL near skin",
+    "POSE1901 | GIRL near sleeve",
+    "POSE1920 | BOY far rounded knee",
+    "POSE1920 | BOY far skin",
+    "POSE1920 | BOY far sleeve",
+    "POSE1920 | BOY near rounded knee",
+    "POSE1920 | BOY near skin",
+    "POSE1920 | BOY near sleeve",
+    "POSE1920 | GIRL far rounded knee",
+    "POSE1920 | GIRL far skin",
+    "POSE1920 | GIRL far sleeve",
+    "POSE1920 | GIRL near rounded knee",
+    "POSE1920 | GIRL near skin",
+    "POSE1920 | GIRL near sleeve",
+    "V006_BOY | articulated drawn hand far",
+    "V006_BOY | articulated drawn hand near",
+    "V006_BOY | drawn leg far",
+    "V006_BOY | drawn leg near",
+    "V006_BOY | drawn skin far",
+    "V006_BOY | drawn skin near",
+    "V006_BOY | drawn sleeve far",
+    "V006_BOY | drawn sleeve near",
+    "V006_BOY | drawn source gray cuff far",
+    "V006_BOY | drawn source gray cuff near",
+    "V006_BOY | soft source boot collar far",
+    "V006_BOY | soft source boot collar near",
+    "V006_GIRL | articulated drawn hand far",
+    "V006_GIRL | articulated drawn hand near",
+    "V006_GIRL | drawn leg far",
+    "V006_GIRL | drawn leg near",
+    "V006_GIRL | drawn skin far",
+    "V006_GIRL | drawn skin near",
+    "V006_GIRL | drawn sleeve far",
+    "V006_GIRL | drawn sleeve near",
+    "V006_GIRL | drawn source gray cuff far",
+    "V006_GIRL | drawn source gray cuff near",
+    "V006_GIRL | soft source boot collar far",
+    "V006_GIRL | soft source boot collar near",
+    "v016 | Cold title side light",
+    "v032 | Camera follows shared pair center",
+    "v036 | Battlefield burn | physical firelight",
+    "v036 | Camp hearth | physical firelight",
+    "v036 | Distant ruin burn | physical firelight",
+    "v036 | School debris | physical firelight",
+    "v041 sole contact | PERF_BOY | rigid original boot far",
+    "v041 sole contact | PERF_BOY | rigid original boot near",
+    "v041 sole contact | PERF_GIRL | rigid original boot far",
+    "v041 sole contact | PERF_GIRL | rigid original boot near",
+    "v043 OWNED | Brief eruption light"
+  ],
+  "protected_definition": "All new-pair geometry, all120shape drawings, object/NLA/action/driver channels, character and FX material nodes, all FX geometry, lights, camera, sole contact geometry/actions.",
+  "evaluated_120frame_errors": {
+    "camera": 0.0,
+    "travel": 0.0,
+    "root": 0.0,
+    "fx": 0.0,
+    "age": 0.0,
+    "hot": 0.0,
+    "watts": 0.0
+  },
+  "unchanged_render_settings": {
+    "render": {
+      "resolution_x": 3840,
+      "resolution_y": 2160,
+      "resolution_percentage": 100,
+      "preview_pixel_size": "AUTO",
+      "pixel_aspect_x": 1.0,
+      "pixel_aspect_y": 1.0,
+      "ppm_factor": 72.0,
+      "ppm_base": 0.02539999969303608,
+      "fps": 24,
+      "fps_base": 1.0,
+      "frame_map_old": 100,
+      "frame_map_new": 100,
+      "dither_intensity": 0.0,
+      "filter_size": 1.5,
+      "film_transparent": false,
+      "use_freestyle": false,
+      "threads": 2,
+      "threads_mode": "FIXED",
+      "use_motion_blur": false,
+      "motion_blur_shutter": 0.5,
+      "motion_blur_position": "CENTER",
+      "hair_type": "STRAND",
+      "hair_subdiv": 0,
+      "use_high_quality_normals": false,
+      "anisotropic_filter": "FILTER_2",
+      "use_border": false,
+      "border_min_x": 0.0,
+      "border_min_y": 0.0,
+      "border_max_x": 1.0,
+      "border_max_y": 1.0,
+      "use_crop_to_border": false,
+      "use_placeholder": false,
+      "use_overwrite": true,
+      "save_output": true,
+      "use_compositing": true,
+      "use_sequencer": false,
+      "use_file_extension": true,
+      "file_extension": ".png",
+      "is_movie_format": true,
+      "use_lock_interface": false,
+      "filepath": "//..\\..\\renders\\world_v016\\integration_v044\\WTSC_Drawn_Picture_Only_v044.mp4",
+      "use_render_cache": false,
+      "use_stamp_time": true,
+      "use_stamp_date": true,
+      "use_stamp_frame": true,
+      "use_stamp_frame_range": false,
+      "use_stamp_camera": true,
+      "use_stamp_lens": false,
+      "use_stamp_scene": true,
+      "use_stamp_note": false,
+      "use_stamp_marker": false,
+      "use_stamp_filename": true,
+      "use_stamp_sequencer_strip": false,
+      "use_stamp_render_time": true,
+      "stamp_note_text": "",
+      "use_stamp": false,
+      "use_stamp_labels": true,
+      "metadata_input": "SCENE",
+      "use_stamp_memory": true,
+      "use_stamp_hostname": false,
+      "stamp_font_size": 12,
+      "stamp_foreground": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "stamp_background": [
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "sequencer_gl_preview": "SOLID",
+      "use_sequencer_override_scene_strip": false,
+      "use_single_layer": false,
+      "use_multiview": false,
+      "views_format": "STEREO_3D",
+      "engine": "BLENDER_EEVEE",
+      "has_multiple_engines": true,
+      "use_spherical_stereo": false,
+      "use_simplify": false,
+      "simplify_subdivision": 6,
+      "simplify_child_particles": 1.0,
+      "simplify_subdivision_render": 0,
+      "simplify_child_particles_render": 0.0,
+      "simplify_volumes": 1.0,
+      "use_simplify_normals": false,
+      "use_texture_cache": true,
+      "use_auto_generate_texture_cache": false,
+      "simplify_gpencil": false,
+      "simplify_gpencil_onplay": false,
+      "simplify_gpencil_antialiasing": true,
+      "simplify_gpencil_view_fill": true,
+      "simplify_gpencil_modifier": true,
+      "simplify_gpencil_shader_fx": true,
+      "simplify_gpencil_tint": true,
+      "use_persistent_data": false,
+      "line_thickness_mode": "ABSOLUTE",
+      "line_thickness": 1.0,
+      "compositor_device": "GPU",
+      "compositor_precision": "AUTO",
+      "compositor_denoise_device": "AUTO",
+      "compositor_denoise_preview_quality": "BALANCED",
+      "compositor_denoise_final_quality": "HIGH"
+    },
+    "eevee": {
+      "gi_diffuse_bounces": 3,
+      "gi_cubemap_resolution": "512",
+      "gi_visibility_resolution": "32",
+      "gi_glossy_clamp": 0.0,
+      "gi_irradiance_pool_size": "16",
+      "taa_samples": 16,
+      "taa_render_samples": 32,
+      "use_taa_reprojection": true,
+      "ray_tracing_method": "SCREEN",
+      "use_shadow_jitter_viewport": false,
+      "clamp_surface_direct": 0.0,
+      "clamp_surface_indirect": 10.0,
+      "clamp_volume_direct": 0.0,
+      "clamp_volume_indirect": 0.0,
+      "direct_light_intensity": 1.0,
+      "indirect_light_intensity": 1.0,
+      "volumetric_start": 0.10000000149011612,
+      "volumetric_end": 100.0,
+      "volumetric_tile_size": "8",
+      "volumetric_samples": 64,
+      "volumetric_sample_distribution": 0.800000011920929,
+      "volumetric_ray_depth": 16,
+      "volumetric_light_clamp": 0.0,
+      "use_volumetric_shadows": false,
+      "volumetric_shadow_samples": 16,
+      "use_volume_custom_range": false,
+      "use_fast_gi": false,
+      "fast_gi_thickness_near": 0.10000000149011612,
+      "fast_gi_quality": 0.25,
+      "fast_gi_step_count": 8,
+      "fast_gi_ray_count": 2,
+      "fast_gi_method": "GLOBAL_ILLUMINATION",
+      "fast_gi_distance": 0.0,
+      "fast_gi_bias": 0.05000000074505806,
+      "fast_gi_resolution": "2",
+      "bokeh_max_size": 100.0,
+      "bokeh_threshold": 1.0,
+      "bokeh_neighbor_max": 10.0,
+      "use_bokeh_jittered": false,
+      "bokeh_overblur": 5.0,
+      "motion_blur_depth_scale": 100.0,
+      "motion_blur_max": 32,
+      "motion_blur_steps": 1,
+      "use_shadows": true,
+      "shadow_pool_size": "512",
+      "shadow_ray_count": 1,
+      "shadow_step_count": 6,
+      "light_threshold": 0.009999999776482582,
+      "use_overscan": false,
+      "overscan_size": 3.0,
+      "use_raytracing": false,
+      "shadow_resolution_scale": 1.0
+    },
+    "view": {
+      "look": "None",
+      "view_transform": "Standard",
+      "exposure": 0.0,
+      "gamma": 1.0,
+      "use_curve_mapping": false,
+      "use_white_balance": false,
+      "white_balance_temperature": 6500.0,
+      "white_balance_tint": 10.0,
+      "white_balance_whitepoint": [
+        0.9993047714233398,
+        1.0003489255905151,
+        0.9985780119895935
+      ],
+      "is_hdr": false,
+      "support_emulation": true
+    },
+    "camera": {
+      "name": "v012 | Side-on 50mm.001",
+      "name_full": "v012 | Side-on 50mm.001",
+      "id_type": "CAMERA",
+      "session_uid": 789,
+      "is_evaluated": false,
+      "users": 1,
+      "use_fake_user": false,
+      "use_extra_user": false,
+      "is_embedded_data": false,
+      "is_linked_packed": false,
+      "is_missing": false,
+      "is_runtime_data": false,
+      "is_editable": true,
+      "tag": false,
+      "is_library_indirect": false,
+      "type": "PERSP",
+      "sensor_fit": "HORIZONTAL",
+      "passepartout_alpha": 0.5,
+      "angle_x": 0.3561858832836151,
+      "angle_y": 0.23885785043239594,
+      "angle": 0.3561858832836151,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 500.0,
+      "lens": 100.0,
+      "sensor_width": 36.0,
+      "sensor_height": 24.0,
+      "ortho_scale": 6.0,
+      "display_size": 1.0,
+      "shift_x": -0.30000022053718567,
+      "shift_y": -0.26705533266067505,
+      "show_limits": false,
+      "show_mist": false,
+      "show_passepartout": true,
+      "show_safe_areas": false,
+      "show_safe_center": false,
+      "show_name": false,
+      "show_sensor": false,
+      "show_background_images": false,
+      "lens_unit": "MILLIMETERS",
+      "composition_guide_color": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "show_composition_center": false,
+      "show_composition_center_diagonal": false,
+      "show_composition_thirds": false,
+      "show_composition_golden": false,
+      "show_composition_golden_tria_a": false,
+      "show_composition_golden_tria_b": false,
+      "show_composition_harmony_tri_a": false,
+      "show_composition_harmony_tri_b": false,
+      "panorama_type": "FISHEYE_EQUISOLID",
+      "fisheye_fov": 3.1415927410125732,
+      "fisheye_lens": 10.5,
+      "latitude_min": -1.5707963705062866,
+      "latitude_max": 1.5707963705062866,
+      "longitude_min": -3.1415927410125732,
+      "longitude_max": 3.1415927410125732,
+      "fisheye_polynomial_k0": -1.1735143743862864e-05,
+      "fisheye_polynomial_k1": -0.019988736137747765,
+      "fisheye_polynomial_k2": -3.3525323033245513e-06,
+      "fisheye_polynomial_k3": 3.0992753181635635e-06,
+      "fisheye_polynomial_k4": -2.60646473293491e-08,
+      "central_cylindrical_range_u_min": -3.1415927410125732,
+      "central_cylindrical_range_u_max": 3.1415927410125732,
+      "central_cylindrical_range_v_min": -1.0,
+      "central_cylindrical_range_v_max": 1.0,
+      "central_cylindrical_radius": 1.0,
+      "custom_filepath": "",
+      "custom_mode": "INTERNAL",
+      "custom_bytecode": "",
+      "custom_bytecode_hash": ""
+    },
+    "world": "v012 | black outside plate"
+  },
+  "baseline_staging": [
+    {
+      "frame": 1801,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.3619613647461
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -23.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1802,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.3619613647461
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -22.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1803,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.3619613647461
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -21.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1804,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.3619613647461
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.63395690917969,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -20.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1805,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.37151336669922
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.64350891113281,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -19.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1806,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.38107299804688
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.65306854248047,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -18.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1807,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.390625
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.6626205444336,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -17.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1808,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.40017700195312
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.67217254638672,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -16.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1809,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.40973663330078
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.68173217773438,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -15.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1810,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.4192886352539
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.6912841796875,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -14.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1811,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.42884063720703
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.70083618164062,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -13.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1812,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.43840026855469
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.71039581298828,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -12.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1813,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.44795227050781
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.7199478149414,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -11.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1814,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.45750427246094
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.72949981689453,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -10.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1815,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.4670639038086
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.73905944824219,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -9.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1816,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.47661590576172
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.74861145019531,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -8.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1817,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.48616790771484
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.75816345214844,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -7.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1818,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.4957275390625
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.7677230834961,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -6.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1819,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.50527954101562
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.77727508544922,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -5.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1820,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.51483154296875
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.78682708740234,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -4.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1821,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.5243911743164
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.79638671875,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -3.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1822,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.53394317626953
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.80593872070312,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -2.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1823,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.54349517822266
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.81549072265625,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": -1.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1824,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.55305480957031
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.8250503540039,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 0.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1825,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.56401062011719
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.83600616455078,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 1.0,
+      "hot": 1.0,
+      "watts": 1692.0
+    },
+    {
+      "frame": 1826,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.5793685913086
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.85136413574219,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 2.0,
+      "hot": 0.7165313363075256,
+      "watts": 1212.3709716796875
+    },
+    {
+      "frame": 1827,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.5947265625
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.8667221069336,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 3.0,
+      "hot": 0.51341712474823,
+      "watts": 868.7017822265625
+    },
+    {
+      "frame": 1828,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.61007690429688
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.88207244873047,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 4.0,
+      "hot": 0.3678794503211975,
+      "watts": 622.4520263671875
+    },
+    {
+      "frame": 1829,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.62543487548828
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.89743041992188,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 5.0,
+      "hot": 0.26359713077545166,
+      "watts": 446.00634765625
+    },
+    {
+      "frame": 1830,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.64079284667969
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.91278839111328,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 6.0,
+      "hot": 0.18887560069561005,
+      "watts": 319.5775146484375
+    },
+    {
+      "frame": 1831,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.65614318847656
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.92813873291016,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 7.0,
+      "hot": 0.1353352814912796,
+      "watts": 228.98728942871094
+    },
+    {
+      "frame": 1832,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.67150115966797
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.94349670410156,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 8.0,
+      "hot": 0.09697196632623672,
+      "watts": 164.07656860351562
+    },
+    {
+      "frame": 1833,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.68685913085938
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.95885467529297,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 9.0,
+      "hot": 0.0694834515452385,
+      "watts": 117.56600189208984
+    },
+    {
+      "frame": 1834,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.70220947265625
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.97420501708984,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 10.0,
+      "hot": 0.049787066876888275,
+      "watts": 84.23971557617188
+    },
+    {
+      "frame": 1835,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.71756744384766
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        107.98956298828125,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 11.0,
+      "hot": 0.035673994570970535,
+      "watts": 60.36039733886719
+    },
+    {
+      "frame": 1836,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.73292541503906
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.00492095947266,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 12.0,
+      "hot": 0.017041021957993507,
+      "watts": 28.83340835571289
+    },
+    {
+      "frame": 1837,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.74828338623047
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.02027893066406,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 13.0,
+      "hot": 0.006105212960392237,
+      "watts": 10.3300199508667
+    },
+    {
+      "frame": 1838,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.76363372802734
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.03562927246094,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 14.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1839,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.77899169921875
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.05098724365234,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 15.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1840,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.7881088256836
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.06010437011719,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 16.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1841,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.79288482666016
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.06488037109375,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 17.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1842,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.79766845703125
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.06966400146484,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 18.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1843,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.80244445800781
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.0744400024414,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 19.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1844,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.80722045898438
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.07921600341797,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 20.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1845,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.81199645996094
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.08399200439453,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 21.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1846,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.8167724609375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.0887680053711,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 22.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1847,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.82154846191406
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.09354400634766,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 23.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1848,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.82633209228516
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.09832763671875,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 24.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1849,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.83110809326172
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.10310363769531,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 25.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1850,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.83588409423828
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.10787963867188,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 26.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1851,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.84066009521484
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.11265563964844,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 27.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1852,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.8454360961914
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.117431640625,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 28.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1853,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.85021209716797
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.12220764160156,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 29.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1854,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.85499572753906
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.12699127197266,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 30.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1855,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.85977172851562
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.13176727294922,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 31.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1856,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.86454772949219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.13654327392578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 32.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1857,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.86932373046875
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.14131927490234,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 33.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1858,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.87409973144531
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.1460952758789,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 34.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1859,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.87887573242188
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.15087127685547,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 35.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1860,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.88365936279297
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.15565490722656,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 36.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1861,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.88843536376953
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.16043090820312,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 37.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1862,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.8913345336914
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.163330078125,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 38.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1863,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.8930435180664
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.1650390625,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 39.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1864,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.8947525024414
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.166748046875,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 40.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1865,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.89645385742188
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.16844940185547,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 41.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1866,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.89816284179688
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.17015838623047,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 42.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1867,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.89986419677734
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.17185974121094,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 43.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1868,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.90157318115234
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.17356872558594,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 44.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1869,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.90328216552734
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.17527770996094,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 45.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1870,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.90498352050781
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.1769790649414,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 46.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1871,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.90669250488281
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.1786880493164,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 47.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1872,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.90840148925781
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.1803970336914,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 48.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1873,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.91010284423828
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.18209838867188,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 49.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1874,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.91181182861328
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.18380737304688,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 50.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1875,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.91351318359375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.18550872802734,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 51.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1876,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.91522216796875
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.18721771240234,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 52.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1877,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.91693115234375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.18892669677734,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 53.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1878,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.91863250732422
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19062805175781,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 54.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1879,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92034149169922
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19233703613281,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 55.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1880,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92205047607422
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19404602050781,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 56.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1881,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 57.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1882,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 58.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1883,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 59.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1884,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 60.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1885,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 61.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1886,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 62.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1887,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 63.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1888,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 64.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1889,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 65.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1890,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 66.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1891,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 67.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1892,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 68.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1893,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 69.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1894,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 70.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1895,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 71.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1896,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 72.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1897,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 73.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1898,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 74.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1899,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 75.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1900,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 76.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1901,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 77.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1902,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 78.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1903,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 79.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1904,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 80.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1905,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 81.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1906,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 82.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1907,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 83.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1908,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 84.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1909,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 85.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1910,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 86.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1911,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 87.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1912,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 88.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1913,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 89.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1914,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 90.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1915,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 91.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1916,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 92.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1917,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 93.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1918,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 94.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1919,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 95.0,
+      "hot": 0.0,
+      "watts": 0.0
+    },
+    {
+      "frame": 1920,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.92362976074219
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "travel": [
+        108.19562530517578,
+        0.0,
+        0.7200736999511719
+      ],
+      "root": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          107.63395690917969
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.7200736999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fx": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          109.0999984741211
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7048802971839905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "age": 96.0,
+      "hot": 0.0,
+      "watts": 0.0
+    }
+  ],
+  "preserved_inputs": {
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Drawn_Trial_v044.blend": "6d661eaa07198d44c40db1abf936c9ffd42d1db8c4c12e4ca18149a2b0379593",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\WTSC_Drawn_Open_75_80_4K_v044.mp4": "33397c2a362ae914fcf534e7b68b28002c59f4ae61bf3a5c9e7d6dddd928d39d",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\WTSC_Drawn_Open_75_80_View_v044.mp4": "236d540111aafa88bfcb0b01c9da798d677bdbd640e907c554a6f6d818a88900",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v044\\WTSC_v043_vs_v044_Matched_EEVEE_75_80.mp4": "2e89a1486388b12ca890995307fb853bc0d0e83bea17e5765b8e4f56e27e036a",
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Combined_Trial_v043.blend": "afe5f18602023c3c35732ff0132e1bb3c79c1aa1f4e14eb55d14af3216f5fd7f",
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Painted_World_Full_Trailer_Editable_v040.blend": "c3ed3c15055ae5cd242a68964d6980bb8bda3ff6f7f4882d69fa4198e937819f",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\integration_v043\\WTSC_Combined_Open_75_80_4K_v043.mp4": "4078fcf20fc69e40d7512eac6a6391ec79a664f1b264512cd39a8851264abae9",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v040.mp4": "a8b4edc357498ba3e2ffb585624a862d88ee852f4bb97caca617a14a19ad8569",
+    "WTSC_LOCAL_WORKSPACE\\locomotion\\battlefield_corrections_v006\\native\\WTSC_Battlefield_Drawn_Corrections_v006.blend": "d74339ba11bd0d8d5dcd09f30ea8e1ff42d5b329f706410b0565d145100f8189",
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Art_Study_v045.blend": "cbc66bea6d14d2baaea7ffe73488e5db233964593964a5014335c322ac93288b",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045\\Art_v045_1842_4K.png": "4a772657e384379488197cb63aff76eb6dc2fed695cfb2309f14e3045a3f3b1f",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045\\Art_v045_1849_4K.png": "6968c4aedfa7e45853d1b0ee66c8f434e47bdff1a776f43350ce890100e66a2d",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045\\Art_v045_1856_4K.png": "4234d931768a56abc09dbe351a8bdfcc1f9f0d0393947bdb73c0afe471ad3a5c",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045\\Art_v045_1881_4K.png": "436892b68c2da23e7b0209673295a85c3c9f02dee6fd7b87da1198b71a0b49f6",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045\\Art_v045_1901_4K.png": "e85c5aba51228ca6edde076bda1159a4b46b6ca0c036dc0f5892a4a323178665",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045\\Art_v045_1920_4K.png": "e2f67cc6340e473ba47176754e4527e5cfd61a2cd503345d259b5a1f5ac0affe",
+    "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Art_Study_v045a.blend": "7dc52ab80047ab3b7d7ae3f8ca61414b4763a04ecf6784b23afb34219b2630fa",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045a\\Art_v045a_1842_4K.png": "1764ee1552425429e92b556d8ca186546a3bfb8c8b7e117967e1cc6509a5a222",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045a\\Art_v045a_1849_4K.png": "32f5da90c9dea136a1efc34718ae20baf2bbfaa906c923f37284a8c734a126c2",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045a\\Art_v045a_1856_4K.png": "72dc7507935134bdcc08ecb16c39c1f6a08086ef6280f3ea66222f6f5218de86",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045a\\Art_v045a_1881_4K.png": "0703cf4c25247bd70a7182910429d16f9cd0ec18bc02417b38f0449c57376922",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045a\\Art_v045a_1901_4K.png": "b49e96afc2065be6293e051f77f6ddd27d70531878197acf0a2a1ff3c963460c",
+    "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\art_v045a\\Art_v045a_1920_4K.png": "2a4654fe1528d53324b428c39502857b98e4aaa44c0f19a2211ee5322d748c2e"
+  },
+  "frame_first": [
+    1842,
+    1849,
+    1856,
+    1881,
+    1901,
+    1920
+  ],
+  "new_nodes_have_no_animation_drivers": true,
+  "source_image_pixels_unchanged": true,
+  "layer_alpha_and_geometry_unchanged": true,
+  "no_character_outline_or_following_halo": true,
+  "light_direction_and_existing_local_fire_influence": "No light data/material response changed. New background color grade is upstream of the unchanged source-bound eruption receiver.",
+  "reuse": {
+    "contract": "dcc-mcp-production-reuse/v1",
+    "guide_checked": "notes/dcc_agent_workflows.md",
+    "native_reuse": "Original packed paintings and native shader interfaces; no replacement plugin/asset needed for this controlled art comparison. Existing provider/marketplace investigation retained in notes/production_reuse_evidence.json; no new provider-call claim.",
+    "transport": "Established owned background bpy fallback; no live DCC-MCP validation claimed.",
+    "asset_rights": "Same local original GPT project paintings; no new third-party content or publication."
+  },
+  "artistic_acceptance": false,
+  "movie_render_started": false,
+  "full_trailer_propagation": false,
+  "rejected_predecessor": "v045bctualsource/PNGs retained: UVstrip sampling failed visualreview; broadgrade over-fogged. v045a uniformdensity passed but brightpalette failed. This separatev045b uses the matching darkbank palette, uniform-density underpaint and restrained world-fixed corridor grade.",
+  "pending": "First two actual4KPNGs1849/1901 must read continuously before rendering fullsix. Movie remains prohibited pending coordinated review.",
+  "source_sha256": "b1de051977efd68c7871de638df55f9dd7505dc1c04bdc8124a79ee6ba430f64",
+  "unrendered_first_owned_native_archived": {
+    "path": "WTSC_LOCAL_WORKSPACE\\shots\\integration\\v045b\\Initial_Unrendered_Dark_Palette_v045b.blend",
+    "sha256": "0ca68a48b82d1ba3075bd847ec23ea338ecb3a7578579d8f31232b7651ad2358"
+  },
+  "first_test_gate": [
+    1849,
+    1901
+  ]
+}

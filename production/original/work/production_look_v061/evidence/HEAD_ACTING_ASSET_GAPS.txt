@@ -1,0 +1,52 @@
+HEAD ACTING ASSET GAPS | v061 read-only assessment
+Reviewed: original Pair_Painterly_Near_Age_v015.png, all four characters/head_turn_v047 PNGs, provenance.json, native v044 scale construction and v060 ACTOR_WORLD_INTERFACE evidence. No Blender process, image edit, drawing generation or native asset write performed for this review.
+
+FINDING
+The four generated views are useful painting/pose candidates. They are not a production-ready registered turnaround, and direct whole-card swaps would cause identity and braid discontinuities. A genuine look back also needs a shoulder/collar counterturn; a rigid profile torso with a 120-180 degree head reversal overtwists the neck.
+
+SOURCE IDENTITY / PROVENANCE
+The four PNGs are built-in GPT imagegen outputs referenced to the original charcoal girl. All four SHA256 values match their published provenance. They are RGBA1199x1312.
+3Q-right: c7bad607ba0b1c80f24d458d13aacb9d6934faaacb833bf276eb0680fda2bdfa
+3Q-left: d9f2482c796e9a4ab87fc8bff47ae77ac01b648edbfb678577f238e56060cd8e
+Front: b1ece1c31aa0ab8a7990536113b4a530245a53bf8a4ef664861c85cdd916553a
+Left profile:303ea678164b1d98f030da16b341ca02a3f35d7b8380c84e1612c00a4bb679e9
+
+The original profile uses one small flat white eye wedge. Generated views add black pupils and larger exposed eye shapes; their cheeks/jaw read rounder and younger. That is an artistic continuity judgment, not an anthropometric age measurement. Quarter-view eye lines tilt about15 degrees, so these are not level, orthographic yaw keys. They require a deliberate gaze/pitch decision instead of automatic card scaling.
+
+EXACT RETAINED NATIVE REGISTRATION
+Age-ten GIRL rest head bone:0.1929999585m. Rest head pivot:(0,0,1.212). Rest crown estimate:(-0.0310419574,-0.065,1.405). Rest chin/menton estimate:(+0.0755804181,-0.065,1.212).
+Original image mapping in rig coordinates:
+x=(source_px_x-1008)*0.00134965034965
+z=1.405-(source_px_y-137)*0.00134965034965
+The original anatomical vertical head target is193mm, derived from estimated source crown(985,137) and chin(1064,280). These landmarks are explicitly estimates; they are not independently measured skull anatomy.
+Original head+braid object at native F1 has combined dimensions approximately0.3482649m wide x0.4184822m high. That includes braid, hair and card extent. It must not be interpreted as skull size.
+Original neck overlap bridge F1 dimensions approximately0.0557876m wide x0.0741392m high; source rest construction spans roughly54mm width at top and73mm height.
+
+REGISTRATION PLAN
+1. Preserve the native193mm headbone and actual head-base pivot through the entire pose sequence. Never refit the rig to a generated PNG.
+2. Annotate each new drawing separately: under-hair crown, chin/menton, near/far ear attachment, eye corners/eyeline, neck center at chin height, neck cut corners, braid emergence, bow knot and strand silhouette. Some landmarks hidden by hair must be marked estimated.
+3. Fit a 2D similarity transform only: uniform scale, translation and intentional in-plane rotation. Fit193mm vertical crown-to-chin projection in a neutralized pose, then anchor the neck-axis pivot. Do not fit diagonal crown/chin distance to193mm: the existing crown and chin have different X coordinates. Do not use the full PNG or head+braid alpha bbox as head size.
+4. Compare native shot-pixel skull/hair envelopes, eye-to-chin spacing, neck width and braid strand/bow width against the original age-ten profile. A width mismatch must trigger a revised drawing, not anisotropic stretching.
+5. Braid requires independent continuity:3Q-right has braid imageLEFT, front/3Q-left imageRIGHT. Need a middle drawing with braid passing behind/occluded at center, or separated registered braid root/body/tip drawings with native pivots. Do not let whole-card switching teleport the braid.
+6. Use held drawing exposures with explicit occlusion and native visibility cuts. Do not opacity-blend two faces or smear one profile into the next. A blink can motivate the fastest part of the turn but requires actual eyelid drawings.
+7. Validate source/candidate native pixel head crops and whole-body keys in the actual world camera. Existing evidence gives source coordinates; a fresh bounded native registration witness is still needed on the final v061 camera/staging.
+
+ALPHA / CONTOUR CAUTION
+All new PNG alpha>0 bounds reach image margins because of faint fringe/noise. At alpha>204/255, whole drawing bounds (INCLUDING BRAID) are:
+Front:(107,140)-(1088,1223)
+3Q-right:(142,133)-(1115,1236)
+3Q-left:(149,139)-(1112,1237)
+Left profile:(131,108)-(1154,1231)
+Contours must remain alpha-aware and preserve legitimate hair wisps. These whole-art bounds are not skull bounding boxes.
+
+SPECIFIC DRAWINGS NEEDED
+Minimum turn keys before approval: original right profile, a matching right near-profile around60 degrees, revised matching3Q-right around35, near-front right around15, revised front, near-front left around15, revised3Q-left around35. Left profile is available as a candidate but is not necessary for a restrained check; a full reverse needs more torso rotation and a left near-profile bridge.
+Need at least one actual blink/squeeze breakdown, an eye-direction change toward the boy, and a settled reassurance expression at the held back glance. Return poses need their own gaze timing; reversed exposure order alone does not supply acting.
+Need girl upper-torso/neck/collar painted counterturn keys at roughly15/30/45 degrees, with shoulder/sleeve overlaps and braid occlusion matched to the head. Retain walking root/feet; do not replace the cast with unrelated3D characters.
+The taking-hand interaction also needs authored open offer, fingertip contact, thumb wrap and settled clasp drawings. Current native folded hand grids are motion/registration rehearsals, not final interlocking finger anatomy.
+
+FIVE-SECOND SHOT STRUCTURE
+At24fps, hand offering begins aroundG956.2 and the paired clasp reaches its goal aroundG980.2 under existing F=1+(G-937)*30/24. A useful staging pass is: notice/eye lead, turn through registered keys, hold a brief check toward the boy through contact, then return attention to the route. Head/shoulder drawing work must be timed to these existing contact events, not pasted after them. The exact exposure sheet should be chosen from native playback after the new drawings are available.
+
+ACCEPTANCE LIMIT
+Existing assets can support a registered acting candidate. They do not currently justify claims of a completed natural head turn, exact identity continuity, or full production/Arcane-level character performance. Native landmark proof, new in-betweens, shoulder counterturn, contact drawing cleanup and actual24fps review remain necessary.

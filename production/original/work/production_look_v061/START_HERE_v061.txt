@@ -1,0 +1,52 @@
+VISUAL DIRECTION WITHDRAWN — 2026-10-18 23:02 UTC
+The user flagged major visual discontinuity. The assistant withdraws v061's replacement set direction from active work. Preserve this branch as an experiment only.
+Do not use its new bark/earth artwork, physical tree/ground/foliage geometry, camera changes or new lighting/shader treatment as a visual continuation or rollout.
+The established painted forest in v060/v058 remains the continuity reference. This does not assert user acceptance of v060.
+The owned continuity_restore_v062 branch starts from the exact frozen v060 native scene with ONLY copied actor-material BLENDED-to-DITHERED correction for the diagnosed depth-of-field fault. It uses no new shader helper or v061 set/style changes. Its actual restoration preview still requires review.
+Character palette clarification remains optional and pending: earlier both-charcoal designs versus the later colored-boy/charcoal-girl pair. Do not treat either as a newly confirmed preference.
+The goal is to improve animation quality, detail and depth within the established visual language. Greater production quality does not imply permission to redesign the project.
+See VISUAL_DIRECTION_WITHDRAWN.txt. The historical experiment notes below remain evidence; their prior direction, rollout and palette statements are superseded by this notice.
+
+WHEN THE SKY CLEARS | HISTORICAL V061 EXPERIMENT NOTES
+Current scope: an owned five-second ink-and-wash / physical-depth development candidate at trailer time39-44s. This is not a finished full trailer or a claim of Arcane-level production.
+
+TARGET
+Arcane is the craft and performance bar. The intended finish is expressive, intentional acting; consistent age-ten identities; painted forms that retain volume; selective pressure-varying ink; translucent-looking wash and pigment; motivated light, shadows, atmosphere and foreground/middle/background depth. It requires drawing/model construction and shot-specific performance as well as lighting and compositing. A static painted-card scene or a walking puppet with a filter does not meet the target.
+
+OPEN
+native/WTSC_Physical_Ink_Wash_Forest_v061.blend
+Scene: WTSC_INK_WASH_DEPTH_v061
+Native settings3840x2160,24fps, productionframes937-1056.
+The original current full v040 trailer and external character branches remain preserved. The external evidence/FINAL_PRODUCTION_STATUS.txt records later discoveries after the embedded native note was written.
+
+REVIEW
+previews/WTSC_Ink_Wash_Depth_v061_HD.mp4
+previews/WTSC_Ink_Wash_Depth_v061_Preview.mp4
+previews/Native_Contact_4K_v061.png
+previews/Lateral_Depth_Witness_v061.png
+The lateral view is a geometry/depth witness, not an extra trailer shot.
+All preview frames are native renders; source music retains its original39-44s timing.
+
+BUILT IN THIS BRANCH
+Real horizontal ground and sloping front bank; eight solid oak forms with roots and branching volumes; native ink curves; dimensional understory and overhead leaves; actual key/fill/flash lights and bounded atmosphere. New ink/wash bark and earth albedo artwork is packed into the native. The drawn cast uses copied material overrides that respond to actual scene light without changing its source painting pixels. A confirmed EEVEE transparency/depth-of-field fault has been corrected with DITHERED alpha depth on these copies: faces and hands retain their original detail with DOF still active. The pre-correction package is preserved in reference/pre_focus_correction. The lower camera maintains the children's screen placement while giving the scene a more natural horizon.
+
+ANIMATION BASIS AND RECENCY
+The preserved v060 first-contact performance is built on the completed32-source-frame/.78m v047 steady gait. Its hand reach and brief head response are rehearsal construction, not final finger or face acting. The newer v048 connected-weight-loading native completed during this work (22:27UTC Oct18), and v049's targeted static model-fit revision completed22:41 with its guide at22:45. Both v048 motion movies fully decode. v049 is the newest character source as of22:47; its clothing/wrist fit still requires artistic assessment and its faces, rigid hands and planar construction remain unresolved. These sources remain separate from this frozen look study for a deliberate subsequent rebase. No older gait clock has been mixed into the current cast.
+
+WHAT STILL NEEDS PRODUCTION WORK
+Retain the intended colored-boy/charcoal-girl palette contrast while authoring readable forms and acting within each style.
+The characters need identity-matched head angles, eyes/lids, a shoulder/collar counterturn, independent braid continuity, and drawn/anatomically resolved hand contact. Profile cards cannot supply all camera angles or facial volume. They need new authored forms/drawings wherever the shot demands them.
+The complete trailer needs individual play, danger, protective, exhaustion, help-up and farewell performances. Ordinary walking is only a foundation.
+The current v061 forest remains R&D: unsupported foliage clumps, coarse plant/trunk forms, broad exposed ground and even lighting need further authored work. The previous v060 painted forest still has richer organic grouping; this study is not promoted as its finished visual replacement.
+The world needs the same surface/depth/lighting standard through village, wall, camp, ruins, school, battlefield and title terrain, with purposeful camera staging.
+The old scrolling title knockout obscures faces and hands. Its treatment needs a story/readability revision.
+The new slower route must be conformed across the complete cut; this shot cannot simply replace five seconds of the old faster camera route.
+
+EVIDENCE
+evidence/TRANSPARENT_FOCUS_FIX.json and previews/Focus_Depth_Correction_v061.jpg: verified render-mode correction; original image pixels unchanged.
+evidence/FLAT_STAGE_NATIVE_VALIDATION.json: exact preserved cast data and measured floor/camera checks.
+evidence/NATIVE_SEQUENCE_RENDER.json and ENCODED_REVIEW_VALIDATION.json: actual frame, clock, encode/decode and music checks.
+evidence/HEAD_ACTING_ASSET_GAPS.txt: exact native head anchors and missing turn/contact artwork.
+evidence/FULL_PRODUCTION_ANIMATION_AUDIT.txt: full100s acting breakdown plus6s credits.
+reference/Ink_Wash_Material_Provenance_v061.json: generated albedo provenance, exact hashes and imperfect tiling limits.
+reference/first_physical_blocking: retained bare-ground first pass; not the production finish.

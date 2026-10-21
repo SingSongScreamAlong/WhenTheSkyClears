@@ -1,0 +1,119 @@
+{
+  "blender": "5.2.2 LTS",
+  "append": "factory empty, bpy.data.libraries.load(link=False), collection WTSC_LOCO_PAIR_v001",
+  "rigs": [
+    "LOCO_BOY | RIG",
+    "LOCO_GIRL | RIG"
+  ],
+  "native_actions": [
+    "LOCO_BOY__CARE_REACH__v001",
+    "LOCO_BOY__CAUTION_CROUCH__v001",
+    "LOCO_BOY__TRUDGE__v001",
+    "LOCO_BOY__WALK__v001",
+    "LOCO_GIRL__CARE_REACH__v001",
+    "LOCO_GIRL__CAUTION_CROUCH__v001",
+    "LOCO_GIRL__TRUDGE__v001",
+    "LOCO_GIRL__WALK__v001"
+  ],
+  "packed_images": [
+    "Pair_Painterly_Near_Age_v015.png"
+  ],
+  "meshes": 17,
+  "geometry": "All visible child meshes planar at rest; native armature deformation, original packed paint",
+  "tests": [
+    {
+      "clip": "WALK",
+      "config": {
+        "clip": "WALK",
+        "start": 1,
+        "end": 33.0,
+        "root_speed_mps": 0.4,
+        "time_scale": 1.0,
+        "root_motion": true
+      },
+      "max_planted_ankle_drift_per_frame_m": 1.1920928955078125e-07,
+      "bone_scale_range": [
+        0.9781609177589417,
+        1.0000003576278687
+      ],
+      "pair_average_tracks_travel_error_m": 7.450580596923828e-08,
+      "stretched_bones": []
+    },
+    {
+      "clip": "TRUDGE",
+      "config": {
+        "clip": "TRUDGE",
+        "start": 1,
+        "end": 45.0,
+        "root_speed_mps": 0.24,
+        "time_scale": 1.0,
+        "root_motion": true
+      },
+      "max_planted_ankle_drift_per_frame_m": 1.1920928955078125e-07,
+      "bone_scale_range": [
+        0.9781609177589417,
+        1.0000003576278687
+      ],
+      "pair_average_tracks_travel_error_m": 3.6954879767403526e-08,
+      "stretched_bones": []
+    },
+    {
+      "clip": "CAUTION_CROUCH",
+      "config": {
+        "clip": "CAUTION_CROUCH",
+        "start": 1,
+        "end": 49.0,
+        "root_speed_mps": 0.0,
+        "time_scale": 1.0,
+        "root_motion": true
+      },
+      "max_planted_ankle_drift_per_frame_m": 0.0,
+      "bone_scale_range": [
+        0.9781606197357178,
+        1.0000003576278687
+      ],
+      "pair_average_tracks_travel_error_m": 0.0,
+      "stretched_bones": []
+    },
+    {
+      "clip": "CARE_REACH",
+      "config": {
+        "clip": "CARE_REACH",
+        "start": 1,
+        "end": 65.0,
+        "root_speed_mps": 0.0,
+        "time_scale": 1.0,
+        "root_motion": true
+      },
+      "max_planted_ankle_drift_per_frame_m": 0.0,
+      "bone_scale_range": [
+        0.9781609177589417,
+        1.0000004768371582
+      ],
+      "pair_average_tracks_travel_error_m": 0.0,
+      "stretched_bones": []
+    }
+  ],
+  "retime_test": {
+    "NLA_time_scale": 2,
+    "speed_mps": 0.2,
+    "planted_drift_m": 2.9802322387695312e-08
+  },
+  "placement_test": {
+    "root_location": [
+      4.0,
+      2.0,
+      0.699999988079071
+    ],
+    "root_scale": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "pair_midpoint": [
+      4.0,
+      2.0,
+      0.699999988079071
+    ]
+  }
+}

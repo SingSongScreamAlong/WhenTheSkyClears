@@ -1,0 +1,206 @@
+{
+  "native_test": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v057\\WTSC_Continuous_Facade_Source_Lighting_TEST_v057.blend",
+  "native_sha256": "87c897b5ccc178b1288f5d614eeaa34d642b8e8ac2c239bcd2ab50a79569361a",
+  "source": "WTSC_LOCAL_WORKSPACE\\work\\world_architecture_v049i\\WTSC_School_Window_Depth_Proof_v049i.blend",
+  "source_sha256": "796a6cafff68acfbcc110e92a38d2a5b0c75ea3188b63e95ae059ea16cf640c8",
+  "source_unchanged": true,
+  "candidate_path": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v056\\WTSC_Continuous_Facade_Source_Lighting_v056.exr",
+  "candidate_sha256": "94b44156eed7f365c0753c906452dce94ce18899ac300bd6e64126f869000fc8",
+  "candidate_dimensions": [
+    1536,
+    1024
+  ],
+  "patch_source_box": [
+    824,
+    324,
+    1448,
+    740
+  ],
+  "feather_source_pixels": 24,
+  "candidate_interior_strength": 1.0,
+  "original_object_fingerprints_equal": true,
+  "original_object_count": 437,
+  "original_actions_equal": true,
+  "actions_count": 41,
+  "original_child_material_values_equal": true,
+  "child_object_material_sets": 14,
+  "scene_ranges_fps_equal": true,
+  "camera_samples_equal": true,
+  "camera_samples": [
+    [
+      1201,
+      [
+        [
+          1.0,
+          0.0,
+          0.0,
+          67.79999542236328
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      100.0,
+      -0.30000022053718567,
+      -0.26705533266067505
+    ],
+    [
+      1225,
+      [
+        [
+          1.0,
+          0.0,
+          0.0,
+          69.0941162109375
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      100.0,
+      -0.30000022053718567,
+      -0.26705533266067505
+    ],
+    [
+      1249,
+      [
+        [
+          1.0,
+          0.0,
+          0.0,
+          70.38822937011719
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -16.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      100.0,
+      -0.30000022053718567,
+      -0.26705533266067505
+    ]
+  ],
+  "actual_4K_frames": [
+    1225,
+    1201,
+    1249
+  ],
+  "resolution": [
+    3840,
+    2160
+  ],
+  "samples": 32,
+  "threads": 2,
+  "cold_reopen_pass": true,
+  "unpacked_images": [],
+  "host": "5.2.2 LTS",
+  "status": "LOCAL BOUNDED FACADE VISUAL GATE PASSED; isolated proof; not production adoption",
+  "pit_regions_source_space": [
+    [
+      1005.2317,
+      402.5976,
+      7.0
+    ],
+    [
+      1021.125,
+      450.75,
+      6.0
+    ],
+    [
+      1047.5,
+      446.0,
+      6.0
+    ],
+    [
+      1084.9386,
+      465.2193,
+      8.0
+    ],
+    [
+      1044.0833,
+      497.9167,
+      6.0
+    ]
+  ],
+  "pit_full_source_retention_radius_pixels": [
+    7,
+    6,
+    6,
+    8,
+    6
+  ],
+  "pit_feather_source_pixels": 4,
+  "lower_vegetation_preservation_rectangles": [
+    [
+      824,
+      618,
+      1120,
+      740
+    ],
+    [
+      1320,
+      580,
+      1448,
+      740
+    ]
+  ],
+  "source_candidate_library_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "source_candidate_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+  "source_candidate_version": 0,
+  "source_candidate_native_dimensions": [
+    1536,
+    1024
+  ],
+  "source_candidate_sha256": "ddca0933d4cf19052891b1a92541a624f6c41493055838e72bae78b1a609ba4b",
+  "derived_image_has_no_original_library_identity": true,
+  "recipe": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v056\\WTSC_Continuous_Facade_Lighting_Recipe_v056.blend",
+  "method": "Candidate RGB times spatial perRGB original/candidate lowpass ratio;8source-pixel bandwidth;24source-pixel outer join;original silhouette alpha, broken-window area, original impact pits and lower foliage/rubble retained.",
+  "original_silhouette_alpha_replaced": false,
+  "original_sharpened": false,
+  "new_procedural_grain": false,
+  "visual_acceptance_report": "WTSC_LOCAL_USER\\Documents\\Codex\\2026-10-16\\task\\facade_continuous_v057\\FACADE_VISUAL_ACCEPTANCE_v057.json"
+}

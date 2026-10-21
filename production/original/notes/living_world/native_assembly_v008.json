@@ -1,0 +1,116 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Living_World_v008.blend",
+  "seed": 93161016,
+  "typed_mesh_counts": {
+    "meshes": 50,
+    "vertices": 140086,
+    "faces": 83271
+  },
+  "animated_meshes": [
+    {
+      "object": "LW_Village_Grass_00",
+      "kind": "Grass",
+      "driver": ".5+.5*sin(frame*0.028+1.4200)"
+    },
+    {
+      "object": "LW_Village_Leaves_00",
+      "kind": "Canopy",
+      "driver": ".5+.5*sin(frame*0.028+7.8100)"
+    },
+    {
+      "object": "LW_Village_Washing0_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+16.3300)"
+    },
+    {
+      "object": "LW_Village_Washing1_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+17.0400)"
+    },
+    {
+      "object": "LW_Village_Washing2_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+17.7500)"
+    },
+    {
+      "object": "LW_Village_Bark_00",
+      "kind": "Branches",
+      "driver": ".5+.5*sin(frame*0.028+18.4600)"
+    },
+    {
+      "object": "LW_Departure_Bark_00",
+      "kind": "Branches",
+      "driver": ".5+.5*sin(frame*0.028+19.1700)"
+    },
+    {
+      "object": "LW_Departure_Leaves_00",
+      "kind": "Canopy",
+      "driver": ".5+.5*sin(frame*0.028+19.8800)"
+    },
+    {
+      "object": "LW_Woods_Bark_00",
+      "kind": "Branches",
+      "driver": ".5+.5*sin(frame*0.028+20.5900)"
+    },
+    {
+      "object": "LW_Woods_Leaves_00",
+      "kind": "Canopy",
+      "driver": ".5+.5*sin(frame*0.028+21.3000)"
+    },
+    {
+      "object": "LW_Woods_Bark_01",
+      "kind": "Branches",
+      "driver": ".5+.5*sin(frame*0.028+22.0100)"
+    },
+    {
+      "object": "LW_Camp_TentCanvas_00",
+      "kind": "Tent",
+      "driver": ".5+.5*sin(frame*0.028+28.4000)"
+    },
+    {
+      "object": "LW_Camp_CampHangingCanvas_00",
+      "kind": "Cloth",
+      "driver": ".5+.5*sin(frame*0.028+31.2400)"
+    },
+    {
+      "object": "LW_Battlefield_Bark_00",
+      "kind": "Branches",
+      "driver": ".5+.5*sin(frame*0.028+34.0800)"
+    }
+  ],
+  "images": [
+    {
+      "name": "Architecture_Paint_Atlas_v001.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true
+    },
+    {
+      "name": "Oak_Foliage_Cluster_v001.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "Ground_Painted_v001.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "Oak_Bark_Canvas_Atlas_v001.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed": true
+    }
+  ],
+  "scope": "Native shape keys: canopy/branches, grass, washing and tent canvas. Animated reflective water normals, 3D smoke density and drift, restrained practical/ember/blast light, tumbling papers. Deterministic native drivers, no external handler."
+}

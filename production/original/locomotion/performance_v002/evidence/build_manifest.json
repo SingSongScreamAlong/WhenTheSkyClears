@@ -1,0 +1,36 @@
+{
+  "blender": "5.2.2 LTS",
+  "source_library": "WTSC_LOCAL_WORKSPACE\\locomotion\\first_pack_v001\\native\\WTSC_Locomotion_Library_v001.blend",
+  "source_sha256": "2d73bb3c266806a5686808e54faa7fb5a24cd084dce0d934c843f61d253f1b60",
+  "clips": [
+    {
+      "id": "PLAYFUL_SKIP",
+      "frames": 40,
+      "speed": 0.6,
+      "loop": true,
+      "reel_frames": 120
+    },
+    {
+      "id": "WEARY_STUMBLE_RECOVER",
+      "frames": 96,
+      "speed": 0.28,
+      "loop": false,
+      "reel_frames": 96
+    }
+  ],
+  "actions": [
+    "PERF_BOY__PLAYFUL_SKIP",
+    "PERF_GIRL__PLAYFUL_SKIP",
+    "PERF_BOY__WEARY_STUMBLE_RECOVER",
+    "PERF_GIRL__WEARY_STUMBLE_RECOVER"
+  ],
+  "new_art": "Native flat sleeve, cuff and skin overlap vectors sample original paint; hands traced from original source; original heads recontoured to include attached braid; no generated bitmap or visible 3D model",
+  "height_source_m": [
+    1.45,
+    1.3699177
+  ],
+  "fps": 24,
+  "units": "metres",
+  "plane": "XZ",
+  "source_preserved": true
+}

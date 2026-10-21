@@ -1,0 +1,186 @@
+[
+  {
+    "id": "A01",
+    "priority": "P1",
+    "area": "Assembly and production control",
+    "finding": "The current film and newer development components have no single promoted integration manifest.",
+    "evidence": [
+      "native_full_v040.json",
+      "native_world_v058.json",
+      "native_color_v063.json",
+      "../../work/color_arc_v063/START_HERE_v063.txt"
+    ],
+    "impact": "Work repeatedly advances in separate studies while the complete review movie continues to show held children and older world/color work.",
+    "next_action": "Create a versioned assembly candidate with explicitly selected world, character design, performance, effects, palette, title and audio dependencies. Pin paths, hashes, scenes, frame ranges and review status; keep the original v040 master frozen.",
+    "done_when": "A full 2544-frame edit resolves its declared components and matches its own exported review movie. Candidate, reviewed and artistically accepted remain separate states."
+  },
+  {
+    "id": "A02",
+    "priority": "P1",
+    "area": "Story performance",
+    "finding": "The full film translates one held pair drawing instead of delivering the planned progression of paired acting.",
+    "evidence": [
+      "native_full_v040.json",
+      "full_cut_samples.jpg",
+      "../../work/production_review_v059/START_HERE_v059.txt",
+      "../../work/trailer_development_v060/START_HERE_v060.txt"
+    ],
+    "impact": "The audience cannot read the intended change from play to fear, protection, fatigue and mutual reassurance through the children.",
+    "next_action": "Build a timed performance map for the whole 100-second picture. Finish story-specific poses and transitions, including real gaze changes, anticipation, hand contact and the first resumed step after recovery. Reuse the working ordinary walk where it serves the beat.",
+    "done_when": "Each narrative interval has intentional, readable acting at normal playback speed in the full composition; held drawings are only deliberate dramatic holds."
+  },
+  {
+    "id": "A03",
+    "priority": "P1",
+    "area": "Final composition",
+    "finding": "The moving title masks important faces, feet and hand-taking gestures.",
+    "evidence": [
+      "full_cut_samples.jpg",
+      "development_samples.jpg",
+      "../../work/production_review_v059/Title_Visibility_Review_CORRECTED_v059.jpg"
+    ],
+    "impact": "Animation can improve in an unmasked view while remaining unreadable in the actual trailer.",
+    "next_action": "Review every important acting beat through the exact moving glyph mask. Adjust staging and beat timing inside readable openings in a separate composition candidate, retaining the established wording and current timing unless the user directs a treatment change.",
+    "done_when": "Faces and the meaningful contact/reaction remain legible during their story beats in normal-speed masked playback."
+  },
+  {
+    "id": "A04",
+    "priority": "P1",
+    "area": "Color and native export",
+    "finding": "The v063 native edit uses AgX while its world uses Standard, changing the rendered picture.",
+    "evidence": [
+      "color_master_check.json",
+      "color_master_pixel_comparison.json",
+      "color_pipeline_comparison.jpg"
+    ],
+    "impact": "The native review edit can darken and alter the palette relative to the world renders used to judge the artwork.",
+    "next_action": "Match the intended world/edit color pipeline in a new candidate, then verify direct-world, native Scene-strip and encoded output agreement at representative early/middle/late color states.",
+    "done_when": "The same source frame agrees within an explicit color/quantization tolerance through the native edit and the encoder. At G981/720p, changing only the edit view to Standard in RAM reduced maximum RGB error from 52 to 1 and mean error from 5.112 to 0.280 code values."
+  },
+  {
+    "id": "A05",
+    "priority": "P1",
+    "area": "Camera, travel and time",
+    "finding": "The first-danger candidate cannot be spliced directly back into the old route without a camera/world discontinuity.",
+    "evidence": [
+      "camera_travel_samples.json",
+      "../../work/trailer_development_v060/START_HERE_v060.txt"
+    ],
+    "impact": "The candidate begins at the old position but finishes about 3.779 metres behind it, producing a large jump at the outgoing join.",
+    "next_action": "Conform body travel, camera route and world progression as one continuous sequence. Preserve the source 30fps-to-production-24fps mapping F=1+(G-G0)*30/24, including garment caches; preserve the baked girl phase lead and apply root travel once.",
+    "done_when": "The adjacent shots have continuous camera/landmark positions and velocity, correct feet/ground contacts and stable color/effect clocks. The 32-source-frame cycle remains 25.6 production frames rather than being rounded."
+  },
+  {
+    "id": "A06",
+    "priority": "P2",
+    "area": "Character craft and motion",
+    "finding": "The walking model is improved, but fixed profiles, rigid hand poses and highly regular torso/arm timing limit the performance.",
+    "evidence": [
+      "development_samples.jpg",
+      "../../locomotion/face_hand_finish_v050/IMPORT_TIMING_AND_ASSESSMENT_v050.txt",
+      "../../locomotion/coat_fluidity_v051/evidence/ROBOTIC_MOTION_DIAGNOSIS.json"
+    ],
+    "impact": "Good contact measurements alone do not create convincing body intention, emotional expression or connected drawing construction.",
+    "next_action": "Develop registered head angles, eye/gaze and expression drawings, relaxed/reaching/clasping/supporting hands, and deliberate chest/pelvis/shoulder/elbow timing. Keep the age-ten proportions and established paintings. Distinguish reassuring contact from a grip bearing body weight.",
+    "done_when": "A normal-speed shot review confirms clear intent, connected shoulders/necks/wrists and motivated rhythm; technical foot-contact checks also pass."
+  },
+  {
+    "id": "A07",
+    "priority": "P2",
+    "area": "Cloth, hair and drawing dependencies",
+    "finding": "Boy-coat follow-through now has a separate v051 native; girl cloth/braid work was deferred and is not established in the current shot.",
+    "evidence": [
+      "native_coat_v051.json",
+      "../../locomotion/coat_fluidity_v051/evidence/COLD_COAT_VALIDATION.json",
+      "../../locomotion/girl_cloth_followthrough_v047/DEFERRED_NOT_BUILT.txt"
+    ],
+    "impact": "Secondary motion remains inconsistent and cached garment drawings can stop matching newly edited rig poses.",
+    "next_action": "Finish the v051 same-gait review before selecting it. Add restrained girl dress, braid and ribbon response after primary performance settles. Invalidate/rebuild dependent drawing caches when the rig or retiming changes.",
+    "done_when": "No contour gaps, intersections or cycle seam pops at fractional frames; cloth supports the body action without masking a robotic gait."
+  },
+  {
+    "id": "A08",
+    "priority": "P2",
+    "area": "World and art resolution",
+    "finding": "The painted world is coherent, but detail and depth need selective refinement; many principal source paintings are 1672x941.",
+    "evidence": [
+      "native_color_v063.json",
+      "development_samples.jpg",
+      "../../work/world_minimum_v058/START_HERE_v058.txt"
+    ],
+    "impact": "UHD output can still reveal soft source detail, flat facades, competing background texture or pasted-on contacts.",
+    "next_action": "Retain the v058d foreground fix and the restored layered 2D/2.5D direction. Quiet values behind faces/hands, ground firelight, and add separated painted edges/interiors only where parallax or contact reveals them. Repaint selected hero-facing source regions at sufficient detail after composition is settled.",
+    "done_when": "Actual UHD crops and moving-camera reviews show useful depth and stable world-space roots, while the final mask still lets the detail read. The withdrawn v061 forest is not reintroduced."
+  },
+  {
+    "id": "A09",
+    "priority": "P2",
+    "area": "Effects",
+    "finding": "Painted main-impact and newer clod-silhouette experiments are separate candidates, not a single established full-film effect.",
+    "evidence": [
+      "native_impact_v015d.json",
+      "development_samples.jpg",
+      "../../effects/squat_clods_v015/ROUGH_NOTES.txt"
+    ],
+    "impact": "Replacing one plume with the latest experiment can regress the drawn look, scale, attachment or settling behavior.",
+    "next_action": "Select the impact silhouette and timing in context first. Then connect flash, light, eruption, debris, landing and persistent ground response on the global clock. Use a separate append collection with an explicit root/timing contract; the empty scene in an append asset is expected.",
+    "done_when": "The effect is rooted, force-directed, visually compatible and readable through the title; it leaves a coherent disturbance and has normal-speed artistic review."
+  },
+  {
+    "id": "A10",
+    "priority": "P2",
+    "area": "Sound and delivery record",
+    "finding": "The project has the real 100-second music source, but no separate local footsteps/cloth/impact ambience sources were found in the census.",
+    "evidence": [
+      "census.json",
+      "audio_signal_check.json",
+      "../../notes/music_source.json"
+    ],
+    "impact": "Contacts and distant threats lack the additional restrained sound layer described in the source treatment.",
+    "next_action": "Add sparse contact and distant environmental sound after acting timing is stable, keeping the music dominant. Preserve the 90-100-second fade and silent credits; centralize the existing source/permission records before any public delivery.",
+    "done_when": "A listening review confirms restrained perspective, synchronized contacts, no extra terminal impact and silence in the credits. Local records still describe music release permissions as not established; this audit makes no licensing determination."
+  },
+  {
+    "id": "A11",
+    "priority": "P1",
+    "area": "Version control and reproducibility",
+    "finding": "The repository has zero commits, zero tracked files and no .gitignore; 421 of 1070 Python files contain absolute Windows paths.",
+    "evidence": [
+      "census.json",
+      "source_hashes.json"
+    ],
+    "impact": "Directory copies preserve many checkpoints, but do not provide a reviewable source history or a portable, repeatable build.",
+    "next_action": "Establish source/version history with an explicit large-file policy and tested backup. Keep source art/native assets/manifests separate from generated caches. Consolidate launch/render/encode configuration, dependency versions and a project-root resolver; migrate the active path first.",
+    "done_when": "A clean restore can locate Blender/Python/FFmpeg, resolve the pinned inputs and reproduce a bounded shot. External backups are not established or disproved by this local audit."
+  },
+  {
+    "id": "A12",
+    "priority": "P2",
+    "area": "Render and review workflow",
+    "finding": "Verification is extensive but fragmented among version-specific scripts and historical status files.",
+    "evidence": [
+      "census.json",
+      "media_headers.json",
+      "media_decodes.json",
+      "color_master_pixel_comparison.json"
+    ],
+    "impact": "A technically valid new proof can be mistaken for a complete film, and repeated UHD reviews consume time before acting/composition is resolved.",
+    "next_action": "Use one bounded render job record with input hashes, scene and global range, output color settings, exit state, expected/decoded frame count and review status. Write temporary outputs and publish them atomically after success. Render 720p acting and mask proofs first, UHD keys next, and the final UHD sequence after the relevant reviews.",
+    "done_when": "Every review clearly states its scope and exact native source. A decode pass remains distinct from normal-speed artistic acceptance, and unchanged historical proofs are not rerendered without reason."
+  },
+  {
+    "id": "A13",
+    "priority": "P3",
+    "area": "Historical hygiene and navigation",
+    "finding": "Old entry points and abandoned outputs remain mixed with current work.",
+    "evidence": [
+      "census.json",
+      "media_headers.json",
+      "exact_duplicate_sources.json",
+      "../../LIVING_WORLD_START_HERE.txt"
+    ],
+    "impact": "The old start file still points to v010/v011, while current work is v063; old failures can also confuse tooling or broad scans.",
+    "next_action": "Add one current entry point and component map, retaining historical documents. Label or exclude failed historical artifacts from active validation. Archive only after a verified restore; preserve intentional reference duplicates.",
+    "done_when": "A new collaborator reaches the current world/design/shot/palette sources unambiguously. Historical cleanup addresses one syntax-invalid v034 verifier, four non-JSON historical .json files and four 48-byte v019 MP4 stubs without presenting them as current-master failures."
+  }
+]

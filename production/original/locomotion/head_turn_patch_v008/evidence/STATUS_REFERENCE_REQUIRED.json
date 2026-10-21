@@ -1,0 +1,49 @@
+{
+  "status": "NOT FIXED - REJECTED STUDY; additional drawing reference required. No production-ready patch released.",
+  "blocked_action": "Release/apply a faithful girl head-turn correction for global frames1844 and1845(local44,45).",
+  "target": "Girl passing-head mesh in the accepted v007 performance on production v046.",
+  "reason": "Profile/reflected-profile source paint does not supply the missing quarter-view hairline, cheek/jaw and braid attachment. Authored native face studies removed the disc but introduced cropped-cap/attachment design drift; they failed visual review.",
+  "action_state": "Pending additional matching head drawing reference; not a permission denial and no uncertain production write.",
+  "needed_reference": [
+    "Three-quarter view between the existing right profile and front view, matching original charcoal girl, swept fringe, skull/cheek/jaw proportions and braid root",
+    "Corresponding three-quarter view toward the boy/left profile, with the same scale and resolved fringe/braid attachment"
+  ],
+  "completed": [
+    "Inspected independent native4K exposure evidence and productionv046 read-only",
+    "Built editable native two-frame face/hair/braid study and narrow in-memory apply helper",
+    "Rendered only four before/after native4K EEVEE head-border crops; no whole movie rerender",
+    "Verified every rig bone matrix,camera and root travel across all120 frames unchanged; only passing-head mesh data changed in isolated comparison copy"
+  ],
+  "all120_unchanged_errors": {
+    "all_rig_bone_matrices": 0,
+    "camera": 0,
+    "root_travel": 0
+  },
+  "unchanged_adjacent_frame_pixels": [
+    {
+      "frame": 1843,
+      "max_channel_difference": 0,
+      "changed_pixel_count": 0
+    },
+    {
+      "frame": 1846,
+      "max_channel_difference": 0,
+      "changed_pixel_count": 0
+    }
+  ],
+  "production_preserved": {
+    "path": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+    "sha256": "f4972ea64ceab1c8c88f1c77ed6875f373daac81c007492e4adddfb3660fb661"
+  },
+  "accepted_v007_preserved": {
+    "path": "WTSC_LOCAL_WORKSPACE\\locomotion\\supported_recovery_v007\\native\\WTSC_Supported_Recovery_v007.blend",
+    "sha256": "77f253b88300415ce13cf4710455174f9afc64366b6dd361416703362b8788de"
+  },
+  "rejected_study_paths": {
+    "WTSC_Girl_Head_Turn_Patch_v008.blend": "WTSC_LOCAL_WORKSPACE\\locomotion\\head_turn_patch_v008\\native\\WTSC_Girl_Head_Turn_STUDY_v008_NOT_APPROVED.blend",
+    "WTSC_Head_Patch_v008_Critical_Comparison_Copy.blend": "WTSC_LOCAL_WORKSPACE\\locomotion\\head_turn_patch_v008\\native\\WTSC_Head_STUDY_v008_Comparison_NOT_APPROVED.blend"
+  },
+  "comparison": "HEAD_TURN_STUDY_v008_REFERENCE_NEEDED.jpg",
+  "scope_remaining_unchanged": "Hands remain the accepted light offered touch. Restart remains unresolved. No foot/root/body/FX/full-trailer changes.",
+  "next_step": "Author/obtain the two matching quarter-view head references, then replace only local44/45 head drawings. Stop this correction until those views are available."
+}

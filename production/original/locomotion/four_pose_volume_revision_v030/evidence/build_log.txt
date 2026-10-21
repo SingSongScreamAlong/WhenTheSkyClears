@@ -1,0 +1,10 @@
+00:00.687  blend            | Read blend: "WTSC_LOCAL_WORKSPACE\locomotion\four_pose_volume_revision_v030\reference\PRESERVED_BASELINE_v028.blend"
+WTSC_LOCAL_WORKSPACE\locomotion\four_pose_volume_revision_v030\scripts\build_four_poses.py:54: DeprecationWarning: 'MaterialGPencilStyle.show_fill' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('V030 | '+name);bpy.data.materials.create_gpencil_data(m);g=m.grease_pencil;g.show_fill=fill;g.show_stroke=stroke;g.fill_color=color;g.color=color;gp.materials.append(m);return len(gp.materials)-1
+WTSC_LOCAL_WORKSPACE\locomotion\four_pose_volume_revision_v030\scripts\build_four_poses.py:54: DeprecationWarning: 'MaterialGPencilStyle.show_stroke' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('V030 | '+name);bpy.data.materials.create_gpencil_data(m);g=m.grease_pencil;g.show_fill=fill;g.show_stroke=stroke;g.fill_color=color;g.color=color;gp.materials.append(m);return len(gp.materials)-1
+Info: Saved as "WTSC_Four_Pose_Volume_Revision_v030.blend"
+V030_FOUR_POSES_BUILT {"scope": "Anatomy/support safeguards, not visual acceptance", "source_sha256": "c4af8cc12d907f43fac7d452fecf43dd228aef78a5fc1448ace58ea7033c2eb4", "version": "5.2.2 LTS", "selected_frames": [1, 4, 11, 13], "new_drawings": 4, "shared_thigh_length_m": 0.26, "shared_shin_length_m": 0.26, "boot_refit": [0.78, 0.9], "new_arm_lengths_m": [0.198, 0.178], "head_design": "Four existing painted source profiles retained as translated native mesh shape samples; head/hair UV/materials unchanged. No turnaround.", "head_vertices": 9, "collar_vertices": 114, "no_cycle_or_production_integration": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

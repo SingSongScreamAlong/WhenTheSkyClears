@@ -1,0 +1,23 @@
+v016 - PAINTED CHARACTER RIG CAPABILITY STUDY
+Status: technical linkage demonstrated within tested ranges; FINAL-ART READINESS UNPASSED.
+
+The concrete repair is on the actual painted children, not the v014 proxy. Sixteen limb/cuff surfaces previously ran on 120 cached drawings without following individual bones. They now use native pose-driven curved contours. The original 33 rest bones (boy 15/girl 18), 28 painted meshes, UVs, topology, packed painting, body weights, boots and existing finger drawings are retained. No source or production file was overwritten.
+
+Tested capabilities
+- Native HIP/CHEST/HEAD controls, fixed-length leg/arm IK, independent wrist targets, relaxed-hand torso follow, near-thigh brace follow and independent Reach/Brace hand shapes. Blends normalize safely when both hand shapes are selected.
+- Twelve actual-art tests: neutral, planted squat, off-cache intermediate, reach/deep elbow, heel/flat/toe/lift, thigh brace, opposed chest/head tilt, profile attention limit, crossed limbs and pair clearance at 0.8 m.
+- All 16 contours respond to a new native HIP edit without the old drawing clock. Boot drift remains below 0.001 mm in that plant test. All four boots remain rigid and sole-fitted across the tested -15 to 35 degree rolls.
+- Both delivered natives were reopened with scripts disabled. The unkeyed asset has zero Actions and retains its control drivers. All 96 saved diagnostic frames pass: maximum IK endpoint error 0.048mm; brace projected palm gap 0.500 to 0.500mm; no plant drift. This measures planar drawing contact, not forces or a 3D grasp.
+- Original profile head/braid moves coherently under a 12 degree in-plane head edit. Separate braid and skirt controls were tested at +/-5 degrees: stable non-braid head vertices and no dress triangle inversions.
+- Fresh native collection append passes. Original UVs, topology, body weights and rest-bone positions compare exactly. Known v007 / v046 / v045c source hashes remain unchanged.
+
+Candid visual assessment / remaining defects
+The linkage gap is repaired. The children are still not ready to call final animation assets. Cuffs remain boxy, crossed/deep elbows reveal construction, and knees/garment compression can read as bent strips rather than authored cloth volume. Fixed near/far layering is usable in the shown tests but needs pose-specific occlusion choices for extreme crossings. The tiny fingers are controllable drawings; they are not an arbitrary finger rig or an approved load-bearing clasp. The 0.8 m static offer keeps about 11.7 mm of visible fingertip separation.
+
+The girl's required look back toward the boy is UNSOLVED. The delivered rig deliberately retains the original right profile, with in-plane pitch; it does not turn a flat card edge-on, substitute the v014 proxy, use a negative-scale snap or reuse rejected v008. There is no independent eye-gaze drawing control. The original v046 1844-45 disc defect is shown openly in the contact/head sheet. Keeping one profile avoids reproducing that defect in this rig test; it does not fulfil the story's attention turn.
+
+Precise remaining art requirement: two matching registered girl quarter views between the original right profile, front passage and toward-boy left profile. Preserve the swept fringe, skull/cheek/jaw, eye/nose identity and anatomical braid origin. Use the original 1672x941 atlas registration or supply crop offsets. Source neck registration is approximately [1009.0, 315.0]; source braid root approximately [947.0, 282.0]. Tag the braid root deliberately in each new view; it need not stay at the same screen coordinate during a turn. These are concrete authoring requirements, not a request for user-supplied drawings before other rig work. New views still need design review and a fresh paired-clearance test.
+
+Review method: native perturbation/append tests, actual painted renders, full movie decoding and chronological decoded-frame review. Normal-speed playback was not available to this agent. Technical passes are not artistic acceptance. Performance development and v015 inbetweens remain paused. No Mixamo/Synty motion was imported, no adapter was built, and setting/FX/music/title/duration/production integration were untouched.
+
+Existing-art alternatives inspected: Girl_Parts_Imagegen_v001.png and Girl_Profile_Imagegen_v001.png are older flat profile designs, with different hair rendering, and do not provide matching v015 quarter views. The retained v015 image and native reflected-profile exposure were inspected; the rejected v008 study was not reused.

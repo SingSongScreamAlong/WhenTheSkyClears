@@ -1,0 +1,17 @@
+from pathlib import Path
+P=Path(__file__).resolve().parents[1];R=P.parents[1];old=R/'locomotion/battlefield_corrections_v006/scripts'
+s=(old/'render_neutral.py').read_text().replace('v006','v007').replace('V006','V007').replace('WTSC_Battlefield_Drawn_Corrections_v007.blend','WTSC_Supported_Recovery_v007.blend')
+s=s.replace("s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=2;", "assert s.render.engine=='BLENDER_EEVEE';")
+s=s.replace('[1,37,47,58,81,101,120]','[1,37,43,47,48,58,81,89,101,110,120]')
+(P/'scripts/render_neutral.py').write_text(s)
+s=(old/'integrated_comparison.py').read_text().replace('v006','v007').replace('V006','V007')
+s=s.replace('WTSC_Open_Battlefield_Combined_Trial_v043.blend','WTSC_Open_Battlefield_Drawn_Trial_v044.blend').replace("bpy.data.scenes['WTSC_OPEN_BATTLEFIELD_COMBINED_TRIAL_v043']","bpy.data.scenes['WTSC_OPEN_BATTLEFIELD_DRAWN_TRIAL_v044']")
+s=s.replace("o.get('loco_pack')=='WTSC_BATTLEFIELD_WEARY_v005'", "o.get('motion_revision')=='v006_drawn_pose_corrections'")
+s=s.replace('WTSC_Battlefield_Drawn_Corrections_v007.blend','WTSC_Supported_Recovery_v007.blend')
+s=s.replace("s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=2;s.cycles.use_denoising=False;", "assert s.render.engine=='BLENDER_EEVEE';")
+s=s.replace("s.cycles.transparent_max_bounces=64", "# Original production EEVEE renderer and renderer settings retained.")
+s=s.replace('[1837,1847,1858,1881,1901,1920]','[1837,1843,1847,1848,1858,1881,1889,1901,1910,1920]')
+s=s.replace('CPU Cycles two-sample 960x540 proof; original was EEVEE4K. Native geometry/camera/FX clocks retained. Compare performance, not renderer appearance.', 'Same production EEVEE renderer/settings at960x540; original v044 view1920x1080. Native geometry/camera/FX clocks retained; performance is the only revised asset.')
+s=s.replace('CPU previews','matched EEVEE previews')
+(P/'scripts/integrated_comparison.py').write_text(s)
+print('V007_EEVEE_PREVIEW_SCRIPTS_READY')

@@ -1,0 +1,100 @@
+WHEN THE SKY CLEARS / NEW UNPAINTED MOTION FOUNDATION TEST v011
+User rejected v010 movement artistically. v010 and narrow v010a remain held,
+not acceptable final motion. This is a new diagnostic, not another painted polish.
+
+WHAT WAS WRONG IN THE INHERITED MOTION
+Actual v010 rendered poses/streams, joint lengths and world-contact samples were
+inspected. Hip heights remain about0.54-0.56m in the late walk, substantially
+below the original rig's possible upright support height. Long bent-knee poses
+therefore read as a crouched mechanical shuffle instead of walking over support.
+Large torso rotations and separate drawing/foot trajectories obscure where
+weight arrives, compresses and is released. Correct sole lock did not fix this.
+The original boy has0.2898m upper arm and0.1265m forearm, encouraging elbow loops
+and wrist reversals in the existing construction. Hand/body gestures could not
+rescue the underlying weight/timing. The two children shared too much travel
+and phase logic. v010's later foot swing speed/body speed ratio was about2.67;
+that ratio by itself is NORMAL evidence of neither good nor bad gait, because
+a planted foot has to regain body travel during swing. It is not treated as a
+biomechanical failure test. The observed low hips, held torso and poor load
+response/acting were the actual artistic problems to address.
+
+THIS TEST CHANGES THE FOUNDATIONS
+No painting, native v010 curves, source rig, production camera or FX imported.
+New plain jointed forms preserve approximate child heights, large head sizes,
+body proportions and total reach; internal elbow placement is more balanced.
+Heights remain boy1.45m,girl1.3699m basis. This is not a new approved design.
+Boy and girl have separate root curves. Camera follows their average, so neither
+child is forced to keep the same route or phase as the other.
+The boy's swing toe scuffs, lowers into support, then the other foot takes a
+fast catch step. That landing compresses him before recovery. His pelvis then
+travels over the planted front foot as he rises; the trailing heel rolls up
+before toe-off and restart. There is no stationary body posed over moving feet.
+The girl brakes with a shorter step, a smaller compression and a different arm
+reaction, waits while the boy recovers, then resumes on a different contact clock.
+Regular restart steps are about0.25m between contacts, with3.4-4.2cm swing
+clearance. The emergency catch is deliberately faster/longer, not a walk cycle.
+Walking hips return toward upright extension and load down after contact.
+Spine segments and head have a small lag/counter-response instead of one rigid
+whole-torso hinge. Arms follow continuous joint angles with contralateral swing;
+hands do not reverse at the wrist. No backward head turn or load-bearing clasp.
+
+LOCAL CLOCK - SEPARATE FROM PRODUCTION
+144frames,24fps,6seconds; frame1=0s,frame144=5.958333s,boundary145=6s.
+This is NOT an extended trailer edit or a replacement75-80s production contract.
+1..22 approach;23..29 toe scuff/momentum;30..44 catch and compression;
+45..65 weight-over-front-foot recovery;66..82 restart;83..144 continued walking.
+Boy scuff toe24,flat27;new catch heel40,compression44;trailing toe-off66,
+restart heel78;later heels94,109,124,139.
+Girl shortened heel27,braking heel41,smaller load response44;restart heel82,
+later heels98,113,128,143. These contacts are distinct and not copied.
+Root/foot/sample data: evidence/world_motion_samples.csv and joint_targets.json.
+The new root curves are independent of v009/v010 and require approval before
+any world integration. Do not combine them with the old DISTANCE_CURVE.
+
+NATIVE / REBUILD
+native/WTSC_Unpainted_Motion_Rebuild_v011.blend opens on the plain test stage.
+Collection WTSC_UNPAINTED_MOTION_REBUILD_v011 contains two native armatures and
+bound plain proxy meshes, no source painting or production assets. Bone/route
+Actions use1..144 at24fps. Native segments keep fixed lengths.
+TEST | INSPECTION is the close camera; TEST | SHOT_SIZE uses approximately the
+original shot's character size. Both follow pair-average world travel.
+OPTIONAL | support and mass proxy diagnostics is hidden in primary previews;
+show it to inspect green support marks and orange geometric mass dots.
+scripts/motion_design.py contains explicit root positions/velocities, foot event
+timing, compression, spine/head response and arm logic. build_unpainted.py
+creates the asset from this recipe; no external source art is required.
+Both scripts are also embedded as native Texts. No installs or downloads.
+
+REFERENCE PRINCIPLES AND LIMITS
+Hof2007,The equations of motion for a standing human reveal three mechanisms
+for balance,doi10.1016/j.jbiomech.2005.12.016:
+https://pubmed.ncbi.nlm.nih.gov/16530203/
+Used as a general balance-design principle: ground support and counter-rotating
+body segments matter; an external helping force is not needed for this test.
+Wang&Srinivasan2014,Stepping in the direction of the fall,doi10.1098/rsbl.2014.0405:
+https://pubmed.ncbi.nlm.nih.gov/25252834/
+Used as an inference for authoring: foot placement should relate to body
+position/velocity rather than independent decorative limb arcs. That study's
+data are adult steady-state/lateral walking, not validation of this child trip.
+The mass dot is an approximate geometric mass proxy. No dynamics, forces,
+calibrated child COM, motion capture or physically correct recovery is claimed.
+Dynamic walking/falling can have COM outside static support; no false rule
+requiring it to stay inside a foot throughout every frame is imposed.
+
+REVIEW GATE
+Technical integrity (joint targets, binding, fixed lengths, sole lock, floor)
+is checked separately from whether the movement reads. The first proxy build
+had a parent-space binding defect; it was caught in actual renders and fixed
+before motion assessment. Failed evidence is retained as such, not delivered
+as a motion result. Current native meshes are checked against joint centers.
+The first valid poses show a readable two-stage catch/compression and separate
+girl braking. Full-speed and shot-size motion still need artistic review.
+The motion remains an authored stylized test: simple limbs, limited torso
+twist/lateral balance, no clothing/hair dynamics or real grip. Do not transplant
+it into painting based only on native/contact checks. Review this foundation
+first; if it still reads badly, change timing/support rather than polish artwork.
+
+PRESERVATION
+v010 native/review/movie and productionv046 hashes remain unchanged. v010a narrow
+head-lean candidate is separately saved and held after motion rejection. No
+full-trailer duration,music,title,painting,FX/smoke or other specialist changes.

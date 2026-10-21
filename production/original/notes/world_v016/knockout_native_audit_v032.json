@@ -1,0 +1,116 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Knockout_Ending_Editable_v032.blend",
+  "source_sha256": "b71b3ec247a60e5d022121444c95ce47f3c1cbd7d1668233327e87e8da1df352",
+  "native_pair_center_samples": [
+    {
+      "frame": 1,
+      "projected_pair_center_x": 0.5,
+      "camera": [
+        -1.6891200542449951,
+        -16.0,
+        3.0
+      ],
+      "pair": [
+        -1.6891200542449951,
+        0.0,
+        0.7713720202445984
+      ]
+    },
+    {
+      "frame": 241,
+      "projected_pair_center_x": 0.4999999850988388,
+      "camera": [
+        4.977546691894531,
+        -16.0,
+        3.0
+      ],
+      "pair": [
+        4.977546691894531,
+        0.0,
+        0.7713720202445984
+      ]
+    },
+    {
+      "frame": 1249,
+      "projected_pair_center_x": 0.5000000149011612,
+      "camera": [
+        41.075584411621094,
+        -16.0,
+        3.0
+      ],
+      "pair": [
+        41.075584411621094,
+        0.0,
+        0.7713720202445984
+      ]
+    },
+    {
+      "frame": 1681,
+      "projected_pair_center_x": 0.5000000149011612,
+      "camera": [
+        56.849342346191406,
+        -16.0,
+        3.0
+      ],
+      "pair": [
+        56.849342346191406,
+        0.0,
+        0.7713720202445984
+      ]
+    },
+    {
+      "frame": 2161,
+      "projected_pair_center_x": 0.5000000149011612,
+      "camera": [
+        78.31088256835938,
+        -35.0,
+        4.300000190734863
+      ],
+      "pair": [
+        78.31088256835938,
+        0.0,
+        0.7713720202445984
+      ]
+    },
+    {
+      "frame": 2400,
+      "projected_pair_center_x": 0.4999999850988388,
+      "camera": [
+        88.27963256835938,
+        -56.0,
+        7.400000095367432
+      ],
+      "pair": [
+        88.27963256835938,
+        0.0,
+        0.7713720202445984
+      ]
+    }
+  ],
+  "master_strips": [
+    {
+      "name": "WORLD | shared pair centered | 0\u201382",
+      "type": "SCENE",
+      "visible_start": 1,
+      "visible_end_exclusive": 1969,
+      "scene": "WTSC_WORLD_CENTERED_v032"
+    },
+    {
+      "name": "ENDING | native font alpha | 82\u2013103",
+      "type": "SCENE",
+      "visible_start": 1969,
+      "visible_end_exclusive": 2473,
+      "scene": "WTSC_KNOCKOUT_ENDING_v032"
+    },
+    {
+      "name": "MUSIC | original start + original 90\u2013100 fade",
+      "type": "SOUND",
+      "visible_start": 1,
+      "visible_end_exclusive": 2401,
+      "scene": null
+    }
+  ],
+  "legacy_title_collection_hidden": true,
+  "linked_movie": "//../../renders/world_v016/WTSC_Painted_World_4K_v030.mp4",
+  "packed_world_assets": true
+}

@@ -1,0 +1,154 @@
+{
+  "project": "When the Sky Clears",
+  "stage": "Painted animated world development pass",
+  "movie": "renders/world_v016/WTSC_Painted_World_4K_v030.mp4",
+  "source": "shots/world/WTSC_Painted_World_Trailer_v030.blend",
+  "movie_sha256": "64729abab8e899cf717781f664d82ff1f3b6a8a02afaee82ec947c59f29b6999",
+  "source_sha256": "b68e097922883c9cb409da4d5a999a889be2ffc9768627824087f44745574bb6",
+  "output": {
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 24,
+    "frames": 2400,
+    "duration_s": 100,
+    "audio": "Supplied WAV, AAC 48 kHz stereo, fade 90-100s",
+    "picture_fade": "98-100s, black last frame verified",
+    "duplicated_frames": 0,
+    "dropped_frames": 0
+  },
+  "preview": "renders/world_v016/WTSC_Readability_Excerpts_1080p_v030.mp4",
+  "preview_scope": "1920x1080,24fps,4s: timeline30-32s and43-45s, actual native scene motion",
+  "important_assets": [
+    {
+      "path": "characters/Pair_Painterly_Near_Age_v015.png",
+      "bytes": 723191,
+      "sha256": "e7968ec2efa29e176330a74f0557578702b3b5de0a9eb7855a069d1b0f8a5d04"
+    },
+    {
+      "path": "characters/Pair_Painterly_Near_Age_Vector_v015.json",
+      "bytes": 389502,
+      "sha256": "16e6e966ced5c6f68ac3153ad463913adb99dc752219f7bb884820216b1e3994"
+    },
+    {
+      "path": "sets/village_lookdev/v014/Bakery_Detail_Repaint.png",
+      "bytes": 2959040,
+      "sha256": "683198739bb50517f1a7bce90d4a936e942790827079c7d4089936944273d392"
+    },
+    {
+      "path": "sets/village_lookdev/v014/Path_Detail_Repaint.png",
+      "bytes": 2655687,
+      "sha256": "560460fdf0d2d1ff689e4da726a6a7f151a40f6e373f14c3ceb10aadc3a4a240"
+    },
+    {
+      "path": "sets/fx/Painted_Smoke_Wisp_v016.png",
+      "bytes": 1609305,
+      "sha256": "9ea3adce6d3567d9a952ee86e5ac0bcdfdf4527b2e6236775cc2eb77edb62ce1"
+    },
+    {
+      "path": "sets/world_v026/Countryside_Continuous_Panorama.png",
+      "bytes": 2762002,
+      "sha256": "7f6c63b1577c3996106ad98c2ac31448bb79de9bd91e86a6d23870f8045137c9"
+    },
+    {
+      "path": "sets/world_v030/High_Crown_Oak.png",
+      "bytes": 2491715,
+      "sha256": "2ac891f2fdc927501799b391f3090e5e096df51bc9079daa6c000a20c3c27f90"
+    }
+  ],
+  "paint_sources": {
+    "most_base_images": [
+      1672,
+      941
+    ],
+    "bakery_repaint": [
+      1356,
+      1159
+    ],
+    "path_repaint": [
+      1908,
+      824
+    ],
+    "near_age_children": [
+      1672,
+      941
+    ],
+    "smoke": [
+      1024,
+      1536
+    ],
+    "continuous_panorama": [
+      1983,
+      793
+    ],
+    "high_crown_oak": [
+      1024,
+      1536
+    ]
+  },
+  "children": "Held native GP vector drawing with vector-clipped painterly fill; slightly taller boy; object translation only",
+  "world": "2.5D painted sets at distinct native depths, rooted canopy/cloth/grass shape keys, localized light/shadow shaders, anchored smoke, drifting leaves/paper/ash/mist, actual extruded 3D title",
+  "motion_feedback_resolved": [
+    "Original oak was split across two depths: now whole oak/roots/fence/path share one surface",
+    "Rear countryside followed camera: replaced with stationary continuous world panorama",
+    "Nearly same-size duplicate woods: distant row smaller, different whole foreground tree asset",
+    "Smoke base translation: origins fixed at emitters",
+    "Opaque lower strip: continuous native painted ground with irregular feathered joins"
+  ],
+  "evidence": [
+    "notes/world_v016/layer_motion_diagnosis_v019.json",
+    "notes/world_v016/attachment_corrections_v025.json",
+    "notes/world_v016/native_motion_audit_v030.json",
+    "notes/world_v016/movie_verification_v030.json",
+    "notes/world_v016/prior_source_preservation_v027.json",
+    "notes/world_v016/readability_and_reuse_v030.json",
+    "notes/world_v016/ambient_motion_verified_v030.json"
+  ],
+  "prompt_files": [
+    "notes/village_lookdev/imagegen_prompts_v014.json",
+    "notes/village_lookdev/character_imagegen_prompts_v015.json",
+    "notes/world_v016/smoke_imagegen_prompt.txt",
+    "notes/world_v016/panorama_imagegen_prompt_v026.txt",
+    "notes/world_v016/high_crown_imagegen_prompt_v030.txt"
+  ],
+  "limitations": [
+    "Character gait, performance and interaction remain deliberately held for this world pass",
+    "Architecture primarily painted depth cards, not modeled 3D buildings",
+    "Source paintings have lower raster resolution than UHD output",
+    "Exact older approved ink-and-wash image remains missing; current direction is liked, not final art/motion approval",
+    "Not a claim of Arcane-level finish"
+  ],
+  "editable_source": "shots/world/WTSC_Painted_World_Editable_v031.blend",
+  "editable_sha256": "ff2158da0174ba6b6ad985f82195d668857d84caded6c71101a7d6ca8f655bc4",
+  "editable_visual_change": false,
+  "native_edit_scene": "WTSC_WORLD_EDIT_v031",
+  "native_export_scene": "WTSC_MASTER_4K_100S_v031",
+  "music_packed_in_editable": true,
+  "native_audio_export_verified": true,
+  "portable_reopen_evidence": "notes/world_v016/portable_reopen_v031.json",
+  "paint_provenance": "Raster paint assets generated through GPT imagegen. Native GP, mesh/vector FX and title geometry authored in Blender. Title uses the packed local Arial Black font.",
+  "observed_review_note": "Foreground trunks can briefly pass in front of the held pair; large low crowns were corrected and actual decoded school/woods frames inspected. Artistic acceptance remains open.",
+  "foreground_readability": "New purpose-painted high-crown oak asset keeps the school and child heads visible, with source proportions preserved.",
+  "native_frame_reuse": {
+    "new_frames": 1572,
+    "reused_frames": 828,
+    "ranges_new": [
+      301,
+      1872
+    ],
+    "ranges_reused": [
+      [
+        1,
+        300
+      ],
+      [
+        1873,
+        2400
+      ]
+    ],
+    "reuse_source_movie": "renders/world_v016/WTSC_Painted_World_4K_v027.mp4",
+    "proof": "notes/world_v016/readability_and_reuse_v030.json",
+    "method": "Original unchanged native footage and newly rendered native UHD sections joined in one CFR H264 encode; no scaling or interpolation."
+  }
+}

@@ -1,0 +1,45 @@
+WHEN THE SKY CLEARS — v035 STATIC STRUCTURE REVIEW
+Status: isolated candidate, awaiting visual judgment. No full-cycle render or production integration.
+
+OPEN FIRST
+previews/WTSC_v035_Matched_Arm_and_Leg_Structure_Comparison.png
+One actual-render comparison board, F11/F20/F27. A=preferred v033; B=arms/local values; C=arms plus leg drawing correction. D/E are source/candidate with temporary light materials and actual native bone guides. Orange=near; blue=far. H=hip, K=knee, A=ankle. The guides are explicitly overlaid; the actual hand meshes are NOT x-rays. The lower pair on each frame panel retains native 1280 x 720 shot pixels. No lighting changes.
+
+EDITABLE NATIVES
+native/WTSC_Arm_Proportion_Correction_v035.blend — arm-only test, original leg drawings.
+native/WTSC_Arm_and_Leg_Structure_v035.blend — combined charcoal candidate.
+native/WTSC_Light_Structure_Review_v035.blend — temporary light diagnostic and actual native joint guides, not a final palette.
+reference/PREFERRED_v033.blend — retained source. v028 timing and upper-body motion; consistent v033 shoes. v031/v032 movement is not used.
+
+CAUSE OF THE CURVED LEGS
+The bones were not curved or stretched. Cold native samples show two straight rigid segments connected at each knee; near thigh/shin lengths approximately 288.801/248.088 mm and far 233.829/286.662 mm, constant to numerical precision. V024/V027 trouser drawings instead used cubic Hermite centerlines with a shared averaged tangent through the knee. That distributed bend along the drawn thigh/shin and produced the rubber-tube appearance. These trousers have native pose shape keys, not weighted skinning or a subdivision modifier.
+
+LEG CORRECTION
+Only those two trouser drawing meshes' 31 shape samples are refitted. Their centerlines follow the actual straight thigh and shin directions, with an 18 mm local knee rounding region. Original painted UVs, cross-section widths and rolled cuff detail are retained. The final 9 percent blends into the retained shoe cuff, whose final ring is exact. The skeleton, animation curves, shoe paths, root and hip/knee/ankle positions are unchanged. At quarter-frame samples, shape interpolation retains up to about 5.3 mm deviation in the measured straight portions; this is not a claim that every interpolated contour is analytically rigid. Source maximum measured deviations in those same regions were 33–36 mm along the thigh and 19–24 mm along the shin.
+
+ARM CORRECTION
+Upper arm 218 mm; forearm 198.239 mm near /198.091 mm far. Original total reach 416.239/416.091 mm is preserved. Shoulder and wrist paths, hand matrices, hand X/Z shapes and gesture are retained. Native fixed-length IK re-solves the elbow on the original bend branch. Existing joint-dependent Geometry Nodes refit the sleeves/cuffs, with local elbow rounding scaled to the new split; original widths, UVs and paint remain. The far hand mesh is shifted 2 mm in depth only, and exposed far forearm depth is set to 22 mm, just ahead of its own far trouser plane. Neither is promoted into the foreground collection. Original near-side body/coat ordering remains.
+
+LOCAL READABILITY / INTENTIONAL OCCLUSION
+Texture-preserving neutral charcoal additions: hand+.010 linear RGB; exposed forearm+.007. No new lights or glow. At shot size, F11/F27 near hand median rises from 31 to 41 against adjacent garment approximately 31–32; this helps local separation but does not make small fingers clearly readable. F20 far hand remains fully hidden. Actual opaque-ID ablations show it returns when the near trouser is removed; this near-side overlap is retained. It is not a missing hand or a reason to force the far hand above the body.
+
+CANDID ARTISTIC ASSESSMENT
+The two-segment leg structure is clearer in these static comparisons, and the elbow/cuff break no longer sits so low. This does not establish that normal-speed movement feels better. Knees still look broad in the passing poses, the overlapping legs/shoes remain crowded, and the arm/coat design is still graphic and dark at shot size. The source's angular sleeve/shoulder edges and limited hand articulation remain. The temporary light view reveals structure; it is not a proposed final lighting/palette pass. User judgment is still needed before a cycle render. Paired acting, the girl's motion, load-bearing contact and recovery-to-walking remain separate unfinished work.
+
+TIMING AND TRAVEL — UNCHANGED FROM v028/v033
+31-frame cycle at 30 fps. Source frame F phase q=(F-1) mod 31.
+Unwrapped travel +X metres: D(F)=0.9524437384576381*(F-1)/31.
+Speed 0.9217197468944885 m/s. Near contact F1; far contact F17.
+Near stance phase 0..18.5; far stance own phase 0..19.25, offset 16 frames.
+Root: V021 | CHILD_SUPPORT_TRAVEL. Rig: LOCO_BOY | RIG.
+Do not also add the same travel to the child. For a centered presentation, match camera/world motion to D(F) while retaining the same sole goals. At 24 fps production frame G mapped to source F: F=1+(G-G0)*30/24. A cycle spans 24.8 production frames; do not round it to 25 and independently retime the world. Bake character, shoe art, trouser drawings and world/camera against one mapping. No 24 fps integration or full-scene acceptance is included here.
+
+EDITING LIMITS
+The control rig is live; trouser contours are 31 authored native shape samples and the v033 canonical shoe art has baked object curves. Editing ankle or hip controls alone does not regenerate those drawings/shoe bakes. Refit/rebake them together if authoring new poses; preserve exact cuff and sole checks. The native joint guides are review overlays, not new controllers. Do not append the diagnostic stage/materials into production.
+
+TECHNICAL EVIDENCE IS SEPARATE FROM ARTISTIC ACCEPTANCE
+STRUCTURAL_BUILD_AND_PRESERVATION.json: 125 quarter-frame samples; original actions unchanged; root, head/shoes, non-arm bones and hand matrices unchanged; hand X/Z error below 0.00000006 m. Maximum arm IK wrist error below 0.00000038 m; analytic elbow-branch estimate differs by up to 2.04 mm due to the native 3D pole solution.
+COLD_STRUCTURE_AND_OVERLAP_CHECK.json: cold reopen 125 samples; actual leg joint and final cuff-ring changes exactly 0; fixed segment lengths and measured drawing-axis deviations.
+STILL_READABILITY_MEASUREMENTS.json: real raster hand-ID ablations and charcoal measurements; these are not artistic scores.
+STILL_RENDER_RECORD.json: 30 actual matched Blender stills, F11/F20/F27 only. Additional 12 bounded F20 occlusion masks. No full cycle or trailer render.
+Blender executable verified 5.2.2 LTS, build d13f752e3b9c. Two threads per bounded job; shared process gate checked before launch. No production, music, title or duration edits.

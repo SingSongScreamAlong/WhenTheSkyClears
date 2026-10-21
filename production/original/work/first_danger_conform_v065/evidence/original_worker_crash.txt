@@ -1,0 +1,1198 @@
+# Blender 5.2.2, Commit date: 2026-09-14 15:14, Hash d13f752e3b9c
+
+# backtrace
+Exception Record:
+
+ExceptionCode         : EXCEPTION_ACCESS_VIOLATION (0xc0000005)
+Exception Address     : 0x00007FF64EA3AB2E
+Exception Module      : blender.exe
+Exception Flags       : 0x00000000
+Exception Parameters  : 0x2
+	Parameters[0] (action)  : 0x0000000000000000 (read)
+	Parameters[1] (address) : 0x0000000000000008
+
+
+Stack trace:
+blender.exe         :0x00007FF64EA3AB20  blender::GPU_texture_extend_mode
+blender.exe         :0x00007FF64F909E90  blender::draw::VolumeModule::VolumeModule
+blender.exe         :0x00007FF64F909D00  blender::draw::DRW_volume_init
+blender.exe         :0x00007FF64E7DF9D0  blender::DRWContext::acquire_data
+blender.exe         :0x00007FF64E7E2F40  blender::DRW_render_gpencil
+blender.exe         :0x00007FF64E0C8F80  blender::engine_render_view_layer
+blender.exe         :0x00007FF64E0C8830  blender::RE_engine_render
+blender.exe         :0x00007FF64E0C3190  blender::do_render_full_pipeline
+blender.exe         :0x00007FF64E0C26F0  blender::RE_RenderFrame
+blender.exe         :0x00007FF650B698B0  blender::screen_render_exec
+blender.exe         :0x00007FF64E0F1270  blender::wm_operator_invoke
+blender.exe         :0x00007FF64E0E9160  blender::wm_operator_call_internal
+blender.exe         :0x00007FF64E0E9BA0  blender::WM_operator_call_py
+blender.exe         :0x00007FF6511151B0  blender::bpy_op_fn_call
+python313.dll       :0x00007FFFA42C3790  PyObject_MakeTpCall
+python313.dll       :0x00007FFFA42C3B90  PyObject_Vectorcall
+python313.dll       :0x00007FFFA444C5A0  PyEval_EvalFrameDefault
+python313.dll       :0x00007FFFA444C330  PyEval_EvalCode
+blender.exe         :0x00007FF64E116340  blender::python_script_exec
+blender.exe         :0x00007FF64E116320  blender::BPY_run_filepath
+blender.exe         :0x00007FF64DCA54F0  blender::arg_handle_python_file_run
+blender.exe         :0x00007FF64E0202B0  blender::BLI_args_parse
+blender.exe         :0x00007FF64DCA1030  main
+blender.exe         :0x00007FF6528A58F4  __scrt_common_main_seh
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Threads:
+Thread : 00002774
+ntdll.dll           :0x00007FF96C0659B0  ZwWaitForAlertByThreadId
+ntdll.dll           :0x00007FF96BF595E0  RtlSleepConditionVariableSRW
+KERNELBASE.dll      :0x00007FF969762A20  SleepConditionVariableSRW
+MSVCP140.dll        :0x00007FF926532340  Cnd_wait
+OpenImageIO_Util.dll:0x00007FF8FE2A7BC0  OpenImageIO::v3_1::paropt::operator=
+OpenImageIO_Util.dll:0x00007FF8FE2A3B00  OpenImageIO::v3_1::Sysutil::usleep
+ucrtbase.dll        :0x00007FF96944CBE0  wcsrchr
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000ad7c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+IlmThread.dll       :0x00007FF9266C4920  IlmThread_3_4::Semaphore::wait
+IlmThread.dll       :0x00007FF9266C33C0  IlmThread_3_4::ThreadPool::setThreadProvider
+IlmThread.dll       :0x00007FF9266C1280  IlmThread_3_4::supportsThreads
+ucrtbase.dll        :0x00007FF96944CBE0  wcsrchr
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006d18
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+IlmThread.dll       :0x00007FF9266C4920  IlmThread_3_4::Semaphore::wait
+IlmThread.dll       :0x00007FF9266C33C0  IlmThread_3_4::ThreadPool::setThreadProvider
+IlmThread.dll       :0x00007FF9266C1280  IlmThread_3_4::supportsThreads
+ucrtbase.dll        :0x00007FF96944CBE0  wcsrchr
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00003eb4
+ntdll.dll           :0x00007FF96C065A10  NtWaitForWorkViaWorkerFactory
+ntdll.dll           :0x00007FF96BF23300  TpCallbackMayRunLong
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c9b4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+tbb12.dll           :0x00007FF9240C5600  tbb::detail::r1::set_end_of_input
+tbb12.dll           :0x00007FF9240C5600  tbb::detail::r1::set_end_of_input
+ucrtbase.dll        :0x00007FF96944CBE0  wcsrchr
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006810
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvoglv64.dll        :0x00007FFF5433CDA0  DrvValidateVersion
+nvoglv64.dll        :0x00007FFF540CCD89  Symbols not available
+
+
+Thread : 00004ffc
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvoglv64.dll        :0x00007FFF5436D490  DrvPresentBuffers
+nvoglv64.dll        :0x00007FFF5436D490  DrvPresentBuffers
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00003970
+win32u.dll          :0x00007FF96958AEF0  NtUserMsgWaitForMultipleObjectsEx
+nvoglv64.dll        :0x00007FFF5433CDA0  DrvValidateVersion
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000b548
+ntdll.dll           :0x00007FF96C061E60  ZwRemoveIoCompletion
+KERNELBASE.dll      :0x00007FF969762CF0  GetQueuedCompletionStatus
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c1d8
+ntdll.dll           :0x00007FF96C0659B0  ZwWaitForAlertByThreadId
+ntdll.dll           :0x00007FF96BF595E0  RtlSleepConditionVariableSRW
+KERNELBASE.dll      :0x00007FF969762A20  SleepConditionVariableSRW
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+NvMessageBus.dll    :0x00007FF9529F5E00  releaseMessageBusInterface
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00005164
+ntdll.dll           :0x00007FF96C0659B0  ZwWaitForAlertByThreadId
+ntdll.dll           :0x00007FF96BF595E0  RtlSleepConditionVariableSRW
+KERNELBASE.dll      :0x00007FF969762A20  SleepConditionVariableSRW
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF931FDE3F0  NVENCODEAPI_Thunk
+nvwgf2umx.dll       :0x00007FF931FDE3F0  NVENCODEAPI_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00005dac
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c8a8
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvwgf2umx.dll       :0x00007FF931EC58B0  NVAPI_DirectMethods
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00008af0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00008814
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00003b2c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00001780
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000acbc
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00002aac
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000062f0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000bd04
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000a0bc
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000b730
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00005c70
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c688
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00003b20
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000aef8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000d0f8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006cf4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007130
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000ba24
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000910c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000451c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c030
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c08c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00005820
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00009598
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007f24
+ntdll.dll           :0x00007FF96C0659B0  ZwWaitForAlertByThreadId
+ntdll.dll           :0x00007FF96BF595E0  RtlSleepConditionVariableSRW
+KERNELBASE.dll      :0x00007FF969762A20  SleepConditionVariableSRW
+igd10umt64xe.DLL    :0x00007FF95E152C50  QueryDesiredMode1
+igd10umt64xe.DLL    :0x00007FF95E152C50  QueryDesiredMode1
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00008278
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF931FDE3F0  NVENCODEAPI_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000822c
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c1f4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00004c30
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvwgf2umx.dll       :0x00007FF931EC58B0  NVAPI_DirectMethods
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007f20
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000d480
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000a3a0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000ae70
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000089b4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00005da0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000066b0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007958
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000d0a0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006748
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000afe8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00008060
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007ce8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000022b0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000080c4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007708
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000045d8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000065ac
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000069a4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000b68c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000049a0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007954
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c424
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00005c64
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000078d0
+ntdll.dll           :0x00007FF96C0659B0  ZwWaitForAlertByThreadId
+ntdll.dll           :0x00007FF96BF595E0  RtlSleepConditionVariableSRW
+KERNELBASE.dll      :0x00007FF969762A20  SleepConditionVariableSRW
+igd10umt64xe.DLL    :0x00007FF95E152C50  QueryDesiredMode1
+igd10umt64xe.DLL    :0x00007FF95E152C50  QueryDesiredMode1
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006afc
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006d44
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00003860
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvwgf2umx.dll       :0x00007FF931EC58B0  NVAPI_DirectMethods
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000bc78
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007370
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000c22c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000a968
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00002460
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007004
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000086b0
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000019dc
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000b5c8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006420
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000d4e4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000658c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000b0e4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006a98
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000cb94
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007de8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000089ec
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00007c7c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00006b0c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000814c
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 000016e8
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00002d50
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000aad4
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00008040
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF9325BF7E0  OpenAdapter12
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00002fe0
+ntdll.dll           :0x00007FF96C0659B0  ZwWaitForAlertByThreadId
+ntdll.dll           :0x00007FF96BF595E0  RtlSleepConditionVariableSRW
+KERNELBASE.dll      :0x00007FF969762A20  SleepConditionVariableSRW
+igd10umt64xe.DLL    :0x00007FF95E152C50  QueryDesiredMode1
+igd10umt64xe.DLL    :0x00007FF95E152C50  QueryDesiredMode1
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00009964
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+nvwgf2umx.dll       :0x00007FF932716560  NVDEV_Thunk
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 0000d6d4
+ntdll.dll           :0x00007FF96C062890  ZwWaitForMultipleObjects
+KERNELBASE.dll      :0x00007FF969762650  WaitForMultipleObjectsEx
+KERNELBASE.dll      :0x00007FF969762630  WaitForMultipleObjects
+blender.exe         :0x00007FF65234F3E0  _ptw32_mcs_flag_wait
+blender.exe         :0x00007FF65234DB60  sem_timedwait
+blender.exe         :0x00007FF65234F3E0  _ptw32_mcs_flag_wait
+blender.exe         :0x00007FF64E033060  blender::BLI_thread_queue_pop
+blender.exe         :0x00007FF64F886CA0  std::thread::_Invoke<std::tuple<`lambda at C:\Users\blender\git\blender-v520\blender.git\source\ble
+ucrtbase.dll        :0x00007FF96944CBE0  wcsrchr
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Thread : 00003e54
+ntdll.dll           :0x00007FF96C061DC0  NtWaitForSingleObject
+KERNELBASE.dll      :0x00007FF96975BDF0  WaitForSingleObjectEx
+nvoglv64.dll        :0x00007FFF5433CDA0  DrvValidateVersion
+nvoglv64.dll        :0x00007FFF540CCD89  Symbols not available
+
+
+Thread : 00008558
+ntdll.dll           :0x00007FF96C065A10  NtWaitForWorkViaWorkerFactory
+ntdll.dll           :0x00007FF96BF23300  TpCallbackMayRunLong
+KERNEL32.DLL        :0x00007FF96A16DD90  BaseThreadInitThunk
+ntdll.dll           :0x00007FF96BF7EE20  RtlUserThreadStart
+
+
+Loaded Modules :
+0x00007FF64DCA0000 5.2.2.0              blender.exe WTSC_LOCAL_USER\AppData\Local\Programs\Blender\blender-5.2.2-windows-x64\blender.pdb [unmatched]
+0x00007FF96BF00000 10.0.26100.9711      ntdll.dll  
+0x00007FF926FD0000 26.9.11171.0         aswhook.dll  
+0x00007FF96A140000 10.0.26100.9711      KERNEL32.DLL  
+0x00007FF969740000 10.0.26100.9711      KERNELBASE.dll  
+0x00007FF964910000 10.0.26100.9711      apphelp.dll  
+0x00007FF96AF90000 10.0.26100.9711      SHELL32.dll  
+0x00007FF9690F0000 10.0.26100.9711      msvcp_win.dll  
+0x00007FF969420000 10.0.26100.9711      ucrtbase.dll  
+0x00007FF93BFF0000                      blender_cpu_check.dll  
+0x00007FF969F60000 10.0.26100.9549      USER32.dll  
+0x00007FF927120000 2022.3.0.0           tbbmalloc.dll  
+0x00007FF969580000 10.0.26100.9711      win32u.dll  
+0x00007FF96AB20000 10.0.26100.8328      GDI32.dll  
+0x00007FF9692F0000 10.0.26100.9711      gdi32full.dll  
+0x00007FF96A3D0000 10.0.26100.9549      ole32.dll  
+0x00007FF96AB50000 10.0.26100.9711      combase.dll  
+0x00007FF969C30000 10.0.26100.9711      RPCRT4.dll  
+0x00007FF90BAD0000                      gmp-10.dll  
+0x00007FF96BDD0000 10.0.26100.9711      SHLWAPI.dll  
+0x00007FF926520000 14.44.35211.0        MSVCP140.dll  
+0x00007FF926950000 2022.3.0.0           tbbmalloc_proxy.dll  
+0x00007FF96A990000 10.0.26100.9711      ADVAPI32.dll  
+0x00007FF96AEE0000 7.0.26100.9711       msvcrt.dll  
+0x00007FF926960000 14.44.35211.0        VCRUNTIME140.dll  
+0x00007FF96A320000 10.0.26100.9711      sechost.dll  
+0x00007FF929280000 14.44.35211.0        VCRUNTIME140_1.dll  
+0x00007FF969DE0000 10.0.26100.9711      shcore.dll  
+0x00007FF96A640000 10.0.26100.9711      OLEAUT32.dll  
+0x00007FF96A570000 10.0.26100.9278      IMM32.dll  
+0x00007FF9240B0000 2022.3.0.0           tbb12.dll  
+0x00007FF8FE240000 3.1.13.0             OpenImageIO_Util.dll  
+0x00007FF85A370000 13.0.0.0             openvdb.dll  
+0x00007FF9664A0000 10.0.26100.9549      dbghelp.dll  
+0x00007FF92EB70000 6.10.26100.9711      COMCTL32.dll  
+0x00007FF962510000 10.0.26100.1150      VERSION.dll  
+0x00007FF966980000 10.0.26100.9711      dxgi.dll  
+0x00007FF916DB0000                      epoxy-0.dll  
+0x00007FF8C0F50000 60.26.100.0          avutil-60.dll  
+0x00007FFFACED0000 62.12.100.0          avformat-62.dll  
+0x00007FF9695B0000 10.0.26100.9549      CRYPT32.dll  
+0x00007FF969D50000 10.0.26100.9711      WS2_32.dll  
+0x00007FFF7FD40000 62.28.100.0          avcodec-62.dll  
+0x00007FF9267F0000 62.3.100.0           avdevice-62.dll  
+0x00007FFFA4180000 3.13.13150.1013      python313.dll  
+0x00007FFFAC9E0000                      OpenColorIO_2_5.dll  
+0x00007FF8BFC50000 1.39.4.0             MaterialXCore.dll  
+0x00007FF9264F0000 1.39.4.0             MaterialXFormat.dll  
+0x00007FF9160F0000 1.4.341.0            vulkan-1.dll  
+0x00007FF8B6160000 9.5.100.0            swscale-9.dll  
+0x00007FFF649B0000                      usd_ms.dll  
+0x00007FFFAC490000                      shaderc_shared.dll  
+0x00007FF8CFC90000                      OpenEXR.dll  
+0x00007FF914E40000                      Iex.dll  
+0x00007FF924080000 2.5.0.0              OpenImageDenoise.dll  
+0x00007FFFAD620000 1.23.1.0             OpenAL32.dll  
+0x00007FF90A160000                      Imath.dll  
+0x00007FF965310000 10.0.26100.9549      dwmapi.dll  
+0x00007FFF7F510000 3.1.13.0             OpenImageIO.dll  
+0x00007FF94DED0000 10.0.26100.7019      MPR.dll  
+0x00007FFF7DC60000                      oslcomp.dll  
+0x00007FF916F30000                      oslquery.dll  
+0x00007FFF61A70000                      oslexec.dll  
+0x00007FFFAC2C0000 1.2.2.0              sndfile.dll  
+0x00007FFF7D790000                      ceres.dll  
+0x00007FFF60070000 4.4.1.0              embree4.dll  
+0x00007FF968D60000 10.0.26100.9549      CFGMGR32.dll  
+0x00007FF8AC180000                      hiprt0200564.dll  
+0x00007FFF5D1B0000                      cycles_kernel_oneapi_aot.dll  
+0x00007FFF7D440000 8.0.0.0              sycl8.dll  
+0x00007FF90BA80000 14.44.35211.0        MSVCP140_2.dll  
+0x00007FF967BC0000 10.0.26100.3912      powrprof.dll  
+0x00007FF968FD0000 10.0.26100.9711      bcrypt.dll  
+0x00007FF9689C0000 10.0.26100.9711      ncrypt.dll  
+0x00007FF916D80000 6.3.100.0            swresample-6.dll  
+0x00007FFF7CA70000                      aom.dll  
+0x00007FFF7C650000 11.14.100.0          avfilter-11.dll  
+0x00007FF964E60000 10.0.26100.7705      Secur32.dll  
+0x00007FF9160D0000 10.0.26100.1150      AVICAP32.dll  
+0x00007FF8FEBB0000 1.39.4.0             MaterialXRender.dll  
+0x00007FF8FCA30000 1.39.4.0             MaterialXGenGlsl.dll  
+0x00007FF88DFE0000 10.0.26100.9278      OPENGL32.dll  
+0x00007FF8D0F60000 1.39.4.0             MaterialXGenMsl.dll  
+0x00007FF85A280000 1.39.4.0             MaterialXGenShader.dll  
+0x00007FF8B3C30000                      OpenEXRCore.dll  
+0x00007FFF5A4E0000 2.5.0.0              OpenImageDenoise_core.dll  
+0x00007FF962520000 10.0.26100.9549      WINMM.dll  
+0x00007FF8FEDD0000                      openjph.0.25.dll  
+0x00007FF915EB0000 14.44.35211.0        MSVCP140_ATOMIC_WAIT.dll  
+0x00007FF9266C0000                      IlmThread.dll  
+0x00007FF91BE20000                      oslnoise.dll  
+0x00007FF9170E0000 8.8.0.0              ur_win_proxy_loader.dll  
+0x00007FF914B30000 10.0.26100.1150      MSVFW32.dll  
+0x00007FF88DFA0000 10.0.26100.9549      GLU32.dll  
+0x00007FF965870000 10.0.26100.9549      dxcore.dll  
+0x00007FF968170000 10.0.26100.9711      SSPICLI.DLL  
+0x00007FF967BA0000 10.0.26100.8972      UMPDC.dll  
+0x00007FF968970000 10.0.26100.1882      NTASN1.dll  
+0x00007FFFAD900000 0.12.0.0             ur_loader.dll  
+0x00007FF8FC930000 1.20.1.0             ze_loader.dll  
+0x00007FF967E90000 10.0.26100.9278      kernel.appcore.dll  
+0x00007FF966AE0000 10.0.26100.9711      windows.storage.dll  
+0x00007FF969000000 10.0.26100.9549      profapi.dll  
+0x00007FF968780000 10.0.26100.9711      CRYPTBASE.DLL  
+0x000001E166570000 10.0.26100.9711      bcryptPrimitives.dll  
+0x00007FF96AA60000 2001.12.10941.16384  clbcatq.dll  
+0x00007FF956F90000 10.0.26100.9711      MMDevApi.dll  
+0x00007FF968D20000 10.0.26100.9549      DEVOBJ.dll  
+0x000001E14C8D0000 3.13.13150.1013      python3.DLL  
+0x00007FF914DA0000 3.13.13150.1013      _bz2.pyd  
+0x00007FF914D30000 3.13.13150.1013      _lzma.pyd  
+0x00007FF8C2720000 3.13.13150.1013      unicodedata.pyd  
+0x00007FF911BE0000 3.13.13150.1013      _hashlib.pyd  
+0x00007FFF7C010000 3.5.6.0              libcrypto-3.dll  
+0x00007FF90C240000 3.13.13150.1013      _socket.pyd  
+0x00007FF9677A0000 10.0.26100.9278      IPHLPAPI.DLL  
+0x00007FF916BC0000 3.13.13150.1013      select.pyd  
+0x00007FF916B50000 3.13.13150.1013      _multiprocessing.pyd  
+0x00007FF916980000 3.13.13150.1013      _wmi.pyd  
+0x00007FF9631E0000 7.0.26100.9549       PROPSYS.dll  
+0x00007FF909920000 3.13.13150.1013      _ssl.pyd  
+0x00007FFFA3FF0000 3.5.6.0              libssl-3.dll  
+0x00007FF968470000 10.0.26100.9549      mswsock.dll  
+0x00007FFFAAC40000                      backend_c.cp313-win_amd64.pyd  
+0x00007FF916430000 3.13.13150.1013      _queue.pyd  
+0x00007FF968760000 10.0.26100.9711      CRYPTSP.dll  
+0x00007FF967DF0000 10.0.26100.7705      rsaenh.dll  
+0x00007FF916330000 3.13.13150.1013      _uuid.pyd  
+0x00007FF9651C0000 10.0.26100.9711      uxtheme.dll  
+0x00007FF8F1890000 2.6.31.0             AudioDevProps2.dll  
+0x00007FF94CB40000 10.0.26100.7309      amsi.dll  
+0x00007FF968520000 10.0.26100.9549      USERENV.dll  
+0x00007FF930670000 26.9.11171.0         aswAMSI.dll  
+0x00007FF96A820000 10.0.26100.9549      MSCTF.dll  
+0x00007FF961680000 10.0.26100.9711      directxdatabasehelper.dll  
+0x00007FF94CD10000 10.0.26100.9711      windows.staterepositorycore.dll  
+0x00007FFF53930000 32.0.15.9144         nvoglv64.dll  
+0x00007FF96B930000 10.0.26100.9549      SETUPAPI.dll  
+0x00007FF964E80000 10.0.26100.9549      WTSAPI32.dll  
+0x00007FF9687E0000 10.0.26100.9711      msasn1.dll  
+0x00007FF9606D0000 10.0.26100.9549      cryptnet.dll  
+0x00007FF968860000 10.0.26100.9549      wldp.dll  
+0x00007FF960390000 10.0.26100.9549      drvstore.dll  
+0x00007FF9691A0000 10.0.26100.9711      WINTRUST.dll  
+0x00007FF967FC0000 10.0.26100.7019      ntmarta.dll  
+0x00007FF96BE90000 10.0.26100.4202      imagehlp.dll  
+0x00007FF93C4E0000 32.0.15.9144         nvgpucomp64.dll  
+0x00007FF9676A0000 10.0.26100.9549      WINSTA.dll  
+0x00007FF966700000 10.0.26100.9711      d3d11.dll  
+0x00007FF941A40000 32.0.15.9144         nvldumdx.dll  
+0x00007FF9529E0000 3.15.3538.9611       NvMessageBus.dll  
+0x00007FF93C200000                      NvMemMapStoragex.dll  
+0x00007FF931DD0000 32.0.15.9144         nvwgf2umx.dll  
+0x00007FF8F55F0000 32.0.15.9144         nvppex.dll  
+0x00007FF953280000 32.0.15.9144         nvapi64.dll  
+0x00007FF95FAC0000 32.0.101.6629        igd10iumd64.dll  
+0x00007FF95E0F0000 32.0.101.6629        igd10umt64xe.DLL  
+0x00007FF95D770000 32.0.101.6629        igdgmm64.dll  
+0x00007FF958700000 32.0.101.6629        igc64.dll  
+0x00007FF9586B0000 1.0.233.0            ControlLib.dll  
+0x00007FF91E570000 1.0.233.0            IntelControlLib.dll  
+0x00007FF957FF0000 32.0.101.6629        igdml64.dll  
+0x00007FF963BB0000 10.0.26100.9549      dcomp.dll  
+0x00007FF9634C0000                      Microsoft.Internal.WarpPal.dll  
+
+# Python backtrace

@@ -1,0 +1,28 @@
+WHEN THE SKY CLEARS / CONTINUOUS PAINTERLY FACADE PROOF v057
+
+LOCAL BOUNDED FACADE VISUAL GATE PASSED AT FRAMES1201,1225,1249.
+This is an isolated proof checkpoint, not automatic production integration.
+
+Open WTSC_Continuous_Painterly_Facade_Proof_v057.blend.
+Scene: WTSC_CONTINUOUS_FACADE_SOURCE_LIGHTING_v057_TEST
+Material-only continuous facade paint uses the1536x1024 reference-guided candidate,
+spatially corrected to original broadRGB lighting. Source native geometry and
+existing window depth remain intact. All images are packed.
+
+Actual4Kstills: native_4k_after. Existing baseline before images remain in
+work/world_architecture_v049i/native_4k_after.
+Review board in private Library: [PRIVATE_LIBRARY_REFERENCE_REMOVED] version0
+WTSC_Continuous_Painterly_Facade_v057_4K_Before_After.jpg
+
+Preserved:437original objects,41Actions,14child material sets,cameras,timing,
+source opacity graph,original impact pits,window and lower foliage regions.
+The visible pit matches native baseline center and dark area exactly in all3frames.
+Pixels outside the edit envelope and protected window/foliage witness regions
+match baseline exactly. No source sharpening or new procedural grain.
+
+Limits: candidate artwork is1536x1024,not3456x2304. The output stills are3840x2160.
+This passes the specified facade still gate only; whole-film integration,normal-speed
+review,colour progression and the newer separate character task remain separate.
+
+Source baseline SHA256:796a6cafff68acfbcc110e92a38d2a5b0c75ea3188b63e95ae059ea16cf640c8
+Proof SHA256:87c897b5ccc178b1288f5d614eeaa34d642b8e8ac2c239bcd2ab50a79569361a

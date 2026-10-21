@@ -1,0 +1,24 @@
+WHEN THE SKY CLEARS | v064 PROCEDURAL FULL CUT
+
+Both original full-cut children now progress from full painted color to a detail-preserving neutral charcoal treatment as the actual trailer advances. One global frame-driven smoothstep controls saturation and charcoal blending from 0–96 seconds, with no palette keyframes or shot resets.
+
+The established layered 2D/2.5D painted world, camera/route, original held-pair drawings, title mask, supplied music fade and six silent credit seconds are retained: 100 seconds of picture plus six seconds of credits, 24 fps. This is a material-only full-cut integration; the v063 gesture study remains separate.
+
+START HERE
+work/procedural_cut_v064/START_HERE_v064.txt
+
+4K EDITABLE NATIVE
+work/procedural_cut_v064/native/WTSC_Procedural_Full_Trailer_v064.blend
+Active scene: WTSC_PROCEDURAL_MASTER_106S_v064
+
+720p REVIEW OUTPUTS
+work/procedural_cut_v064/previews/WTSC_Procedural_Full_Knockout_v064.mp4
+Full 106-second title cut with the original audio fade and silent credits.
+
+work/procedural_cut_v064/previews/WTSC_Procedural_Unmasked_World_v064.mp4
+Full 100-second unmasked world, mute, for color and character readability.
+
+The native build and completed export verification are recorded under work/procedural_cut_v064/evidence. New gait and full story acting remain production work; no finished-animation claim is made.
+IMPLEMENTATION
+Scripts are in work/procedural_cut_v064/scripts/, including build_procedural_cut.py and color_original_pair_v064.py.
+Active render monitor: work/procedural_cut_v064/scripts/monitor_verified_render.py.

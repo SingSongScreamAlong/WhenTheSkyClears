@@ -1,0 +1,63 @@
+WTSC FX v001 - HANDOFF FOR THE FIVE-SECOND POLISH TEST
+No production file was changed to write these notes.
+
+PLACEMENT AND TIMING
+Append one FX collection into the moving WORLD scene, upstream of the lettering.
+Move its CONTROLS empty to the emitter; leave the child hierarchy attached.
+Use local size, start_frame, speed, intensity, wind, warmth and tint controls.
+Do not translate the emitter to animate the smoke or parent it to the camera.
+For independently timed repeats, Append the standalone file again; ordinary
+linked duplicates share animated materials. Independent Append was tested.
+At24fps a five-second test is120frames. A burst start at test_first_frame+12
+leaves room to see a short flash and the following billow. For a distant pass,
+try size0.5, intensity0.65, wind0.1 as review starting points, not fixed standards.
+Keep ash sparse enough to read as scale cues rather than foreground snow.
+
+DEPTH AND CONTACT
+The measured v037 world uses+X right,+Z up,+Y depth; camera on-Y looking+Y.
+Keep effects behind the children and in front of the appropriate painted set.
+A correct emitter can be hidden by a painting at nearly the same depth; check
+depth order before increasing opacity or size. Test the native effect in the
+world scene before judging its visibility through the knockout letters.
+Place the emitter at the visible floor ray, not an arbitrary universal Z0.
+For the measured fixed cameraY=-16,Z=3:
+  z = 3 - ((3 - sole_z)/(16 + sole_y))*(16 + emitter_y)
+Re-measure camera and GP sole contact if their setup changes.
+The successful read-only v037 test at frame1801 used:
+  FX01: X102.7,Y6,Z-0.134899; size0.8; start1773; evaluated age28.
+  FX03: X106.8,Y6,Z-0.134899; size0.65; start1755; evaluated age46.
+  FX04: X106.7,Y5,Z0.007597; size0.65; start1796; evaluated age5.
+These are reference coordinates for that shot, not reusable global placements.
+Keep a small charcoal contact footprint/charred debris at the actual emitter.
+The contact must stay fixed while the upper smoke bends and expands. Match the
+footprint softness and ink grain to the receiving ground; avoid a bright oval
+that reads as an independent sticker. Let existing foreground occlude the base.
+
+FIRELIGHT ON PAINT
+FX09 has a real point light and a soft optional painted pool. A point light
+cannot relight an Emission-painted set by itself. Retain the physical light for
+lit receivers, and add only a localized color response to relevant paint layers.
+Use world-position distance to the fixed fire emitter; never a screen-space
+gradient or a wash across every building. Restrict the receiver mask to visible
+surfaces facing/near the flame. Do not change architecture alpha or line art.
+An illustrative receiver weight is:
+  q = clamp(1 - distance(world_position, emitter)/radius, 0, 1)
+  falloff = q*q*(3 - 2*q)
+  mix_weight = small_strength * falloff * flicker
+Start small_strength around0.04-0.12 and judge in the shot. Preserve the original
+paper/charcoal texture and darkest ink strokes when applying the warm response.
+This is guidance for the helper's material adaptation; no receiver shader in
+production was edited by the effects task.
+
+Use the same relative time as the flame:
+  t = (frame - start_frame)*speed
+FX09 physical-light energy is38 times:
+  intensity*warmth*(0.8 +0.14*sin(2*pi*t/24) +0.06*sin(2*pi*t/8))
+Using that same factor for the receiving paint avoids independent light beats.
+Scale the receiver radius with the chosen fire size. Keep distant smoke cooler
+and lower contrast than the fire core; reserve the hottest warm value for a
+small area. The optional pool can be hidden if it does not fit the ground paint.
+
+The five-second pass should verify fixed contact, depth occlusion, one coherent
+warm-light beat, preserved line/paper texture, and the children remaining the
+clearest silhouettes. This pack is a first artistic pass for adaptation.

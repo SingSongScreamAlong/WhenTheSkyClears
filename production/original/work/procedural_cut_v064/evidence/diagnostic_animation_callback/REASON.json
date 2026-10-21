@@ -1,0 +1,4 @@
+{
+  "reason": "Animation callback read original saved datablock properties instead of evaluated render values; exported opening image was full-color correctly. Batch stopped after failed verification. Corrected explicit frame_set/render loop retains native procedural drivers and checks each actual frame.",
+  "preserved_frames": 264
+}

@@ -1,0 +1,131 @@
+{
+  "source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Camp_Light_Ground_Benchmark_v039.blend",
+  "matched_baseline": "v037 immutable native world",
+  "benchmark_seconds": [
+    64,
+    69
+  ],
+  "benchmark_frames": [
+    1537,
+    1656
+  ],
+  "benchmark_frame_count": 120,
+  "production_render_preserved": true,
+  "v001_effects_pack_used": false,
+  "external_effects_imported": false,
+  "unchanged": "Held GP drawing, fill topology, root/pose/spacing, camera/route, static architecture visibility, full-film typography and exact106s credits/audio",
+  "changes": {
+    "camp_broad_additive_wash_bypassed": [
+      "Mix.002",
+      "Mix.001",
+      "Mix"
+    ],
+    "fire_radius_metres": 2.8,
+    "receiver_strength": 0.075,
+    "physical_firelight_watts": 420,
+    "source_connected_fire_beat": "(.82+.12*sin(frame*.77+2.13)+.065*sin(frame*1.93+3.13)+.045*sin(frame*.313+4.13))",
+    "canvas_form": "Preserved original texture; modest bump-derived directional cool key/sky fill and bounded warm Lambert response",
+    "actor_rim": "Subtle source-connected warm contour and cool top edge, eye/ink preservation; no new character artwork",
+    "shoe_contacts": [
+      {
+        "shoe": 0,
+        "kind": "core",
+        "width": 0.16208883666274976,
+        "location_relative_to_pair": [
+          0.5254496932029724,
+          -0.33000001311302185,
+          -0.005296122282743454
+        ]
+      },
+      {
+        "shoe": 0,
+        "kind": "penumbra",
+        "width": 0.23262749706227973,
+        "location_relative_to_pair": [
+          0.5354496836662292,
+          -0.33000001311302185,
+          -0.005296122282743454
+        ]
+      },
+      {
+        "shoe": 1,
+        "kind": "core",
+        "width": 0.2592,
+        "location_relative_to_pair": [
+          0.17049427330493927,
+          -0.33000001311302185,
+          -0.007000000216066837
+        ]
+      },
+      {
+        "shoe": 1,
+        "kind": "penumbra",
+        "width": 0.372,
+        "location_relative_to_pair": [
+          0.1804942786693573,
+          -0.33000001311302185,
+          -0.007000000216066837
+        ]
+      },
+      {
+        "shoe": 2,
+        "kind": "core",
+        "width": 0.24673748531139839,
+        "location_relative_to_pair": [
+          -0.13470657169818878,
+          -0.33000001311302185,
+          -0.0035922443494200706
+        ]
+      },
+      {
+        "shoe": 2,
+        "kind": "penumbra",
+        "width": 0.35411398354876616,
+        "location_relative_to_pair": [
+          -0.12470657378435135,
+          -0.33000001311302185,
+          -0.0035922443494200706
+        ]
+      },
+      {
+        "shoe": 3,
+        "kind": "core",
+        "width": 0.21729447708578148,
+        "location_relative_to_pair": [
+          -0.5062646865844727,
+          -0.33000001311302185,
+          -0.001888366648927331
+        ]
+      },
+      {
+        "shoe": 3,
+        "kind": "penumbra",
+        "width": 0.3118578143360753,
+        "location_relative_to_pair": [
+          -0.4962646961212158,
+          -0.33000001311302185,
+          -0.001888366648927331
+        ]
+      }
+    ],
+    "ground_repetition_variation": [
+      {
+        "object": "v020 | Walking path | continuous blended paint",
+        "stable_uv_variation_images": [
+          "Path_Detail_Repaint.png"
+        ]
+      },
+      {
+        "object": "v020 | Foreground bank | continuous blended paint",
+        "stable_uv_variation_images": [
+          "Foreground_Ground.png"
+        ]
+      }
+    ],
+    "flame": "Existing production asset, cooler muted outer paint and coherent beat; no v001 art",
+    "smoke": "Existing production wisps only; reset opacity goes tozero; no v001 art"
+  },
+  "resource_plan": "Scene edits/CPU readback and at most tiny low-cost stills while037runs. Substantive120frame4Kworld benchmark rendering waits for037production tocomplete.",
+  "comparison_plan": "Same64\u201369range unmasked andknockout against matched037baseline, native4Ksources; comparison deliveredFIRST, then propagate appropriate changes and full106s updatedfilm afterQA.",
+  "artistic_scope": "2.5D paint relighting/contact study; no Arcane-level approval inferred."
+}

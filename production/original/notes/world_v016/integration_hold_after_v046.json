@@ -1,0 +1,56 @@
+{
+  "historical_hold": true,
+  "status": "Historical v046 hold superseded by the user's direct request to work, review, fix and repeat. New paintings were generated and tested in separate v047 revisions; v008 remains rejected.",
+  "current_refinement": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Open_Battlefield_Refinement_v047g.blend",
+  "current_refinement_scope": "New original head drawings/GP contours, earlier hand-direction corrections, tapered arm contours, foreground repaint and rooted wind wisps. Bounded5second4K review; full trailer remains preserved.",
+  "new_references_available": "characters/head_turn_v047/provenance.json",
+  "feedback_source": "Coordinating thread relayed Conrad's review: painted FX v006 still needs work.",
+  "preserved_checkpoints": {
+    "motion_review": "shots/world/WTSC_Open_Battlefield_Supported_Trial_v046.blend",
+    "art": "shots/world/WTSC_Open_Battlefield_Art_Study_v045c.blend",
+    "existing_fx": "v003",
+    "full_trailer": "shots/world/WTSC_Painted_World_Full_Trailer_Editable_v040.blend"
+  },
+  "fx_v006": {
+    "accepted": false,
+    "appended_to_retained_checkpoint": false,
+    "propagated": false,
+    "integration_or_render_started_here": false,
+    "next_dependency": "Targeted FX review and a new reviewed handoff."
+  },
+  "head_patch_v008": {
+    "status_receipt": "locomotion/head_turn_patch_v008/evidence/STATUS_REFERENCE_REQUIRED.json",
+    "observed_status": "NOT FIXED - REJECTED STUDY; additional drawing reference required. No production-ready patch released.",
+    "rejection_reason": "The studies remove the disc but introduce cropped-cap hair, weak braid attachment and design drift.",
+    "rejected_studies": [
+      "locomotion/head_turn_patch_v008/native/WTSC_Girl_Head_Turn_STUDY_v008_NOT_APPROVED.blend",
+      "locomotion/head_turn_patch_v008/native/WTSC_Head_STUDY_v008_Comparison_NOT_APPROVED.blend"
+    ],
+    "production_ready_patch_released": false,
+    "integration_started": false,
+    "next_dependency": "Two matching three-quarter girl head drawings for global frames 1844-1845, preserving swept fringe, skull/cheek/jaw proportions and braid root between current profiles.",
+    "hold": "No further character build, render or integration until those drawings are available. Do not import or apply either rejected native study.",
+    "allowed_followup_scope": "Narrow head-turn correction only; preserve other motion, art, foreground, existing FX, and full-trailer timing.",
+    "v007_or_v046_artistic_acceptance": false
+  },
+  "process_check": {
+    "owned_render_jobs_remaining": 0,
+    "observed_blender_pid": 39896,
+    "observed_blender_role": "Existing DCC bridge bootstrap; left untouched."
+  },
+  "preserve": [
+    "4K native settings",
+    "24 fps",
+    "title",
+    "duration",
+    "foreground hold",
+    "light offered touch",
+    "unresolved restart",
+    "v045c art",
+    "FXv003",
+    "v040 full trailer"
+  ],
+  "full_trailer_propagated": false,
+  "artistic_acceptance": false,
+  "current_refinement_receipt": "WTSC_LOCAL_WORKSPACE\\notes\\improvement_v047\\checkpoint_v047g.json"
+}

@@ -1,0 +1,116 @@
+{
+  "source": "v013 viable whole-pose blocking foundation",
+  "all72frames_compared": true,
+  "allowed_change_windows": {
+    "BOY10_to21": "Both arms only",
+    "BOY22_to48": "Near upper-arm/forearm/hand brace only",
+    "GIRL12_to21": "Both arms only"
+  },
+  "max_world_matrix_element_error_outside_allowed_bones": 0,
+  "root_routes_exactly_preserved": true,
+  "mesh_UV_material_assignments_exactly_preserved": true,
+  "cameras_exactly_preserved": true,
+  "pose_clocks_and_exposures": "Unchanged15boy/11girl keys at24fps for72frames, CONSTANT interpolation.",
+  "changed_allowed_bone_samples": 213,
+  "brace_surface_samples": [
+    {
+      "frame": 22,
+      "min_hand_vertex_to_thigh_surface_m": 0.000448826263891533,
+      "min_signed_hand_vertex_distance_m": 0.0004356155257170258,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        0.8647274971008301,
+        -0.05199990049004555,
+        0.4399561285972595
+      ],
+      "hand_axis_to_thigh_axis_degrees": 0.02197866290670597,
+      "loaded_front_foot_flat": true,
+      "purpose": "Maintained brace"
+    },
+    {
+      "frame": 26,
+      "min_hand_vertex_to_thigh_surface_m": 0.0004487728583626449,
+      "min_signed_hand_vertex_distance_m": 0.000435560087904463,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        0.8867992162704468,
+        -0.051999934017658234,
+        0.4391820430755615
+      ],
+      "hand_axis_to_thigh_axis_degrees": 0.017132015451589565,
+      "loaded_front_foot_flat": true,
+      "purpose": "Maintained brace"
+    },
+    {
+      "frame": 32,
+      "min_hand_vertex_to_thigh_surface_m": 0.0004489574348554015,
+      "min_signed_hand_vertex_distance_m": 0.0004356970295305018,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        0.9291722774505615,
+        -0.051999904215335846,
+        0.4334660768508911
+      ],
+      "hand_axis_to_thigh_axis_degrees": 0.008566044899188715,
+      "loaded_front_foot_flat": true,
+      "purpose": "Maintained brace"
+    },
+    {
+      "frame": 38,
+      "min_hand_vertex_to_thigh_surface_m": 0.00044903650996275246,
+      "min_signed_hand_vertex_distance_m": 0.00043579696845874594,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        0.9791216850280762,
+        -0.05199996754527092,
+        0.4207687973976135
+      ],
+      "hand_axis_to_thigh_axis_degrees": 0.01713202425898049,
+      "loaded_front_foot_flat": true,
+      "purpose": "Maintained brace"
+    },
+    {
+      "frame": 43,
+      "min_hand_vertex_to_thigh_surface_m": 0.00044883094960823655,
+      "min_signed_hand_vertex_distance_m": 0.0004355806976743537,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        0.9970265626907349,
+        -0.051999956369400024,
+        0.4384816288948059
+      ],
+      "hand_axis_to_thigh_axis_degrees": 0.02422831550003947,
+      "loaded_front_foot_flat": true,
+      "purpose": "Maintained brace"
+    },
+    {
+      "frame": 48,
+      "min_hand_vertex_to_thigh_surface_m": 0.00044883094960823655,
+      "min_signed_hand_vertex_distance_m": 0.0004355806976743537,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        0.9970265626907349,
+        -0.051999956369400024,
+        0.4384816288948059
+      ],
+      "hand_axis_to_thigh_axis_degrees": 0.02422831550003947,
+      "loaded_front_foot_flat": true,
+      "purpose": "Maintained brace"
+    },
+    {
+      "frame": 49,
+      "min_hand_vertex_to_thigh_surface_m": 0.073263019323349,
+      "min_signed_hand_vertex_distance_m": 0.07091938005760312,
+      "intersecting_face_pairs": 0,
+      "palm_center_world": [
+        1.0030337572097778,
+        -0.05200003460049629,
+        0.5675169825553894
+      ],
+      "hand_axis_to_thigh_axis_degrees": 15.560961388768321,
+      "loaded_front_foot_flat": true,
+      "purpose": "Unchanged v013 release key"
+    }
+  ],
+  "scope": "Pose scope and proxy geometric contact only. Does not certify perceived weight, forces, final finger deformation or normal-speed artistic quality."
+}

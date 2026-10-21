@@ -1,0 +1,117 @@
+{
+  "project": "When the Sky Clears",
+  "delivery": "Complete106-second v037 CHECKPOINT; v039 lighting/contact benchmark and updated film remain in progress",
+  "movie": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_4K_v037.mp4",
+  "movie_bytes": 214442225,
+  "movie_sha256": "fe19daa7c105475fedc089331f93ed00b28a9b787baaeee37a6c119e05205390",
+  "chat_viewing_copy": {
+    "path": "WTSC_LOCAL_WORKSPACE\\renders\\world_v016\\WTSC_Full_Knockout_Trailer_View_v037.mp4",
+    "bytes": 15065118,
+    "sha256": "712b86abb2e5eacbebca27d08cf2cca3deb27ccdf6963a30192ef7f876413693",
+    "resolution": [
+      1280,
+      720
+    ],
+    "frames": 2544,
+    "under20000000bytes": true,
+    "full_decode_pass": true
+  },
+  "editable": {
+    "editable": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v038.blend",
+    "immutable_render_source": "WTSC_LOCAL_WORKSPACE\\shots\\world\\WTSC_Full_Knockout_Trailer_Editable_v037.blend",
+    "immutable_render_source_sha256": "f4738a21c27824953f3db88b0072e10601e13b2cdffe66d09157448c94b980c4",
+    "native_export_scene": "WTSC_MASTER_4K_106S_v038",
+    "world_scene_unchanged": "WTSC_WORLD_CORRECTED_v037",
+    "picture_scene_unchanged": "WTSC_FULL_FILM_KNOCKOUT_v037",
+    "world_or_typography_change": false,
+    "only_changes": "Native audio fade ends at exact100s frame2401 instead of previous last-picture-frame2400; pack installed editable-embedding fonts for local authoring; clear current note. Movie mux already uses exact90\u2013100.",
+    "sound_frames": [
+      1,
+      2401
+    ],
+    "fade_keys": [
+      [
+        1,
+        1
+      ],
+      [
+        2161,
+        1
+      ],
+      [
+        2401,
+        0
+      ]
+    ],
+    "duration_seconds": 106,
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 24,
+    "frames": 2544,
+    "font_scope": "Local authoring companion only; delivered MP4 contains pixels, no font files. WindowsfsType8 inspected for selected fonts.",
+    "editable_sha256": "f08c0d6f004b85693b124a1c84aac10617ca7742475979e2d80ca3d6961778ed",
+    "native_output_paths": {
+      "world": "//../../renders/world_v016/WTSC_Corrected_World_Native_v038.mp4",
+      "picture": "//../../renders/world_v016/WTSC_Full_Knockout_Picture_Native_v038.mp4",
+      "master": "//..\\..\\renders\\world_v016\\WTSC_Full_Knockout_Native_Edit_v038.mp4"
+    },
+    "path_scope": "Versioned default exports avoid overwriting earlier world/movie files."
+  },
+  "timing": {
+    "fps": 24,
+    "resolution": [
+      3840,
+      2160
+    ],
+    "total_frames": 2544,
+    "total_seconds": 106,
+    "moving_world_seconds": [
+      0,
+      100
+    ],
+    "last_S_clear_seconds": 100,
+    "silent_credit_seconds": [
+      100,
+      106
+    ],
+    "music_start": 0,
+    "music_fade_seconds": [
+      90,
+      100
+    ]
+  },
+  "exact_card_wording": [
+    "WHEN THE SKY CLEARS.",
+    "The Animated Series.",
+    "2027.",
+    "A Two Truck Productions project."
+  ],
+  "picture_method": "All100seconds of the corrected world rendered fresh at native3840x2160, with nativeFontalpha rendered losslessly and composited into black. Native source provides equivalent direct compositor. No obsolete fading-world cache or repeated52\u201370excerpt.",
+  "environment_corrections": [
+    "7persistentregionalmaterialfadecurves removed; no building hide/alpha animation",
+    "Whole paintings spaced physically; slight depth separation prevents coplanar transitions",
+    "Continuous ground extended toX220; opaque panorama covers route keys and all linear interpolation",
+    "Static paint-edge masks blend layer boundaries spatially, no time-driven edge fades",
+    "4groundedfires withroot-pinnedflames,16newrootedsmokelayers,40embers,physicalpointlights andmatchinglocalpaintresponse",
+    "Existing15smokewisps reanchored/moved withtheirsets; grass/canopy/cloud/mist motion retained"
+  ],
+  "children": "Held near-age painterly pair, slightly tallerboy; shared center .5/.5, existing local drawing/spacing untouched, whole-root route only. No gait.",
+  "asset_provenance": {
+    "new_flame_asset": "WTSC_LOCAL_WORKSPACE\\sets\\fx\\v036\\Painterly_Flame.png",
+    "pixels": [
+      1024,
+      1536
+    ],
+    "sha256": "233ed5fdb0cf7d041c4418c00211fa52d39e7cd6b46e745580708c1af8be5e5e",
+    "generator": "Built-in GPTimagegen, transparent_background=true",
+    "original_alpha_unchanged": true,
+    "prompt_file": "WTSC_LOCAL_WORKSPACE\\notes\\world_v016\\flame_imagegen_prompt_v036.txt"
+  },
+  "fonts": "Installed ArialBlack/Impact/Arial; fsType8 inspected; source local. Rendered-video usage checked against Microsoft FontFAQ.",
+  "font_rights_source": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+  "verification": "notes/world_v016/full_verification_v037.json",
+  "native_verification": "notes/world_v016/full_native_audit_v037.json",
+  "artist_review_scope": "Technical checkpoint QC complete; current painterly2.5D world with held characters. v039 polish benchmark and full updated movie still pending. No artistic acceptance or Arcane-level quality inferred."
+}

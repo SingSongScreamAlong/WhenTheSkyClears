@@ -1,0 +1,108 @@
+{
+  "drawing_functions": [
+    "add_strokes",
+    "remove_strokes",
+    "resize_strokes",
+    "reorder_strokes",
+    "set_types",
+    "tag_positions_changed",
+    "vertex_group_assign",
+    "vertex_group_remove",
+    "set_vertex_weights"
+  ],
+  "material_props": [
+    "rna_type",
+    "color",
+    "fill_color",
+    "mix_color",
+    "mix_factor",
+    "mix_stroke_factor",
+    "texture_angle",
+    "texture_scale",
+    "texture_offset",
+    "pixel_size",
+    "hide",
+    "lock",
+    "ghost",
+    "texture_clamp",
+    "flip",
+    "use_overlap_strokes",
+    "use_stroke_holdout",
+    "use_fill_holdout",
+    "show_stroke",
+    "show_fill",
+    "alignment_mode",
+    "alignment_rotation",
+    "placement_mode",
+    "placement_count",
+    "placement_radius_spacing",
+    "placement_density",
+    "use_randomization",
+    "random_size_factor",
+    "random_strength_factor",
+    "random_rotation_factor",
+    "random_hue_factor",
+    "random_saturation_factor",
+    "random_value_factor",
+    "random_noise_scale",
+    "pass_index",
+    "mode",
+    "stroke_style",
+    "stroke_image",
+    "fill_style",
+    "gradient_type",
+    "fill_image",
+    "is_stroke_visible",
+    "is_fill_visible"
+  ],
+  "drawing_attrs": [
+    {
+      "name": "position",
+      "domain": "POINT",
+      "data_type": "FLOAT_VECTOR",
+      "count": 672
+    },
+    {
+      "name": "curve_type",
+      "domain": "CURVE",
+      "data_type": "INT8",
+      "count": 2
+    },
+    {
+      "name": "material_index",
+      "domain": "CURVE",
+      "data_type": "INT",
+      "count": 2
+    },
+    {
+      "name": "cyclic",
+      "domain": "CURVE",
+      "data_type": "BOOLEAN",
+      "count": 2
+    },
+    {
+      "name": "fill_id",
+      "domain": "CURVE",
+      "data_type": "INT",
+      "count": 2
+    },
+    {
+      "name": "hide_stroke",
+      "domain": "CURVE",
+      "data_type": "BOOLEAN",
+      "count": 2
+    },
+    {
+      "name": "radius",
+      "domain": "POINT",
+      "data_type": "FLOAT",
+      "count": 672
+    },
+    {
+      "name": "opacity",
+      "domain": "POINT",
+      "data_type": "FLOAT",
+      "count": 672
+    }
+  ]
+}

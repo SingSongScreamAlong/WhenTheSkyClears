@@ -1,0 +1,70 @@
+{
+  "status": "Isolated static structure candidate; user/parent artistic judgment pending. No full cycle render, no production integration.",
+  "preferred_movement": "v028 via retained v033; rejected v031/v032 movement not used",
+  "cause_of_curved_legs": "Bones are straight fixed-length IK segments. V024/V027 trouser shape samples use cubic Hermite centerlines with averaged tangent at knee; smooth bending propagates through thigh/shin drawing. Candidate changes only trouser drawing shape coordinates, not skeleton or animation.",
+  "native_files": {
+    "WTSC_Arm_and_Leg_Structure_v035.blend": {
+      "bytes": 2570346,
+      "sha256": "6716e341414155bb25837235b1a359e107e325b021d7fa21adc8064b1c71a4a7"
+    },
+    "WTSC_Arm_Proportion_Correction_v035.blend": {
+      "bytes": 2571358,
+      "sha256": "b7fe18692ae926b0eb129857267f9b27e900b6a3b26063e45a833991b0d69ac5"
+    },
+    "WTSC_Light_Structure_Review_v035.blend": {
+      "bytes": 2644286,
+      "sha256": "5f9cea7f155ab2b6cb552ed04be95462246feb30b179255c896b37c64d2894e3"
+    }
+  },
+  "guide": "V035_VIEWING_IMPORT_AND_CANDID_ASSESSMENT.txt",
+  "private_preview": {
+    "file": "previews\\WTSC_v035_Matched_Arm_and_Leg_Structure_Comparison.png",
+    "bytes": 3488750,
+    "sha256": "a22cf2daaa2e52fabcbc8c7fc5209396147d4d3f9d7ab12943e6243269c05cc4",
+    "library_file_id": "[PRIVATE_LIBRARY_REFERENCE_REMOVED]",
+    "version": 0,
+    "confirmed_status": "succeeded",
+    "download_url": "https://chatgpt.com/api/library/files/[PRIVATE_LIBRARY_REFERENCE_REMOVED]/download",
+    "metadata_EA_readback_confirmed": true
+  },
+  "technical_preservation": {
+    "samples": 125,
+    "original_actions_changed": [],
+    "errors": {
+      "root_matrix": 0.0,
+      "protected_mesh_m": 0.0,
+      "hand_xz_m": 5.960464477539063e-08,
+      "hand_matrix": 0.0,
+      "non_arm_bone_matrix": 0.0,
+      "shoulder_head_m": 0.0
+    },
+    "cold_leg_joint_change_m": 0.0,
+    "cold_cuff_ring_change_m": 0.0,
+    "all_original_images_packed": true,
+    "protected_sources_unchanged": true
+  },
+  "actual_render_scope": "30 matched static native renders at F11,F20,F27 +12 bounded F20 occlusion masks. No unrelated full render.",
+  "visual_assessment": [
+    "Straighter thigh/shin structure and more localized knee bend in inspected static renders.",
+    "Elbow/cuff split is higher; total reach, hand gesture and wrist path retained.",
+    "Near hand separation improves modestly but remains small and dark at shot size.",
+    "F20 far hand correctly remains behind near trouser; no forced foreground hand.",
+    "Knee volume remains broad in passing poses; overlapping leg/shoe silhouettes remain crowded; sleeve/shoulder contours remain graphic.",
+    "No continuous playback was observed; no claim of improved normal-speed animation or final acceptance."
+  ],
+  "remaining_work": [
+    "Review this matched static comparison before any full-cycle render.",
+    "Normal-speed structural continuity after visual direction is accepted.",
+    "Paired recovery, girl acting, credible support/clasp and recovery-to-walking remain unfinished."
+  ],
+  "integration_contract": {
+    "fps": 30,
+    "period_frames": 31,
+    "stride_m": 0.9524437384576381,
+    "D_F": "0.9524437384576381*(F-1)/31 metres +X",
+    "production24fps_map": "F=1+(G-G0)*30/24; bake character/cloth/shoes/world against one clock",
+    "production_integration_done": false
+  },
+  "blockers": [],
+  "shared_render_status": "All v035 Blender jobs exited; no further rendering planned before static review."
+}

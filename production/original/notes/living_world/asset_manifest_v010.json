@@ -1,0 +1,54 @@
+{
+  "project": "When the Sky Clears",
+  "stage": "Dimensional environment and ambient motion iteration",
+  "source": "shots/world/WTSC_Living_World_Editable_v011.blend",
+  "source_sha256": "13ab34cf37953f6fa8ce12ce3a70c7202547b7f144770399e5d3bd7f5ac409e4",
+  "movie_render_source": "shots/world/WTSC_Living_World_v010.blend",
+  "movie_render_source_sha256": "dedb85194afa2776e5bd0ca8bcbdd16f45e34ad47095a06dd2e03ba10adc6560",
+  "movie": "renders/living_world/WTSC_Living_World_4K_v010.mp4",
+  "movie_sha256": "bd4da200c33b40a89e80312215d75d597f63cf28318493758ee7ef114037029a",
+  "output": {
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 24,
+    "duration_seconds": 100,
+    "decoded_frames": 2400
+  },
+  "new_paint": [
+    {
+      "path": "sets/surface_paint/Architecture_Paint_Atlas_v001.png",
+      "sha256": "2af0285cfef197931f2a7285ff4c437385a1897b9d20b5e2ad031618954ad838",
+      "bytes": 3191841
+    },
+    {
+      "path": "sets/surface_paint/Oak_Bark_Canvas_Atlas_v001.png",
+      "sha256": "c7a4385cb9e880b662f7b29004cd4d2f9fc715219a49046ae4641d7e748de8f7",
+      "bytes": 3711880
+    },
+    {
+      "path": "sets/surface_paint/Oak_Foliage_Cluster_v001.png",
+      "sha256": "f41329de6a404b7c7071215c7b5a813b3d5e69cf7efa0060517f891bd2ef8f8c",
+      "bytes": 2136938
+    }
+  ],
+  "packed_images": 16,
+  "music_packed_sha256": "0694b2f40f56df5bbadaa23e1c92ac6a048507a8920cebf5b060fc7493368114",
+  "mesh_and_curve_evidence": [
+    "notes/living_world/native_reopen_v010.json",
+    "notes/living_world/native_reopen_v011.json"
+  ],
+  "editable_asset_roots": 40,
+  "native_mesh_receipts": [
+    "notes/living_world/typed_mesh_creation_v008.jsonl",
+    "notes/living_world/typed_details_v009.jsonl"
+  ],
+  "imagegen_prompt_files": [
+    "notes/living_world/reuse_and_paint_sources.json",
+    "notes/living_world/organic_paint_prompt.json"
+  ],
+  "character_animation": "Held native GP pair; position animation only. Reference-guided gait and acting remain deferred.",
+  "visual_scope": "Real near architecture, roofs, branch curves, terrain, props, tents, classroom and ruins; painted foliage on branches and distant matte layers.",
+  "review_status": "Full technical export verified; artistic quality and final character performance are not approved."
+}
