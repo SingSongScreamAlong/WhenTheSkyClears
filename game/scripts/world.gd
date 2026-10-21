@@ -9,6 +9,7 @@ var rocks = []
 var font = preload("res://assets/fonts/display.ttf")
 var prop_atlas=preload("res://assets/props/painted_survival_atlas_v020.png")
 var interaction_art=preload("res://scripts/interaction_art.gd").new()
+var rig_parts=preload("res://assets/props/Counterweight_Parts_v042.png")
 var prop_regions={"wall":Rect2(0,165,488,222),"log":Rect2(488,185,450,202),"crate":Rect2(938,185,316,202),"tent":Rect2(0,435,505,322),"cart":Rect2(505,488,415,269),"rubble":Rect2(920,482,334,275),"door":Rect2(0,767,475,414),"stove":Rect2(475,798,426,383),"winch":Rect2(901,768,353,413)}
 
 func _ready():
@@ -425,7 +426,7 @@ func draw_surface_dressing(left):
 		var height=3+noise_at(i*19)*9
 		if theme in ["rail_yard","school_courtyard","shattered_arcade","signal_yard","drainage_tunnel"]: height*=.45
 		if theme=="terraced_garden": height*=1.15
-		var wind=sin(game.clock*1.4+x*.028)*2.4
+		var wind=sin(game.clock*1.4+x*.028)*2.4+foliage_displacement(x,y)
 		var green=Color(.13,.19,.15,.54) if game.chapter<2 else Color(.17,.22,.20,.48)
 		for blade in range(2):
 			var dx=blade*3.4
@@ -815,20 +816,30 @@ func interact_prop(p):
 			glow(pos+Vector2(0,-110),Color(.82,.87,.8),190,.18)
 
 func gate(g):
+	if g.has("plate"):
+		draw_logging_gate(g); return
 	var open = game.gate_open(g)
 	var x = float(g.x)
 	var ground_y=surface(x,float(g.y))
-	var bottom = ground_y - (g.h-15 if open else 0)
-	paint_asset(self,"door",Vector2(x,bottom),45,float(g.h),Color(.45,.53,.45))
-	for dx in [-24,24]: paint_beam(Vector2(x+dx,ground_y+3),Vector2(x+dx,ground_y-g.h-23),10,Color(.39,.47,.38))
-	paint_beam(Vector2(x-31,ground_y-g.h-23),Vector2(x+31,ground_y-g.h-23),9,Color(.53,.59,.44))
-	if g.has("plate"):
-		var px = float(g.plate)
-		var py=surface(px)
-		draw_rect(Rect2(px-40,py-4,80,4),Color("8e9b86") if open else Color("596c62"))
-		for i in range(12):
-			var line_x=px+40+i*22
-			draw_line(Vector2(line_x,surface(line_x)-1),Vector2(line_x+11,surface(line_x+11)-1),Color(.55,.63,.53,.24),1,true)
+	var height=float(g.h)
+	var bottom=ground_y-(height-15 if open else 0)
+	var top=ground_y-height*2-12
+	# Individually painted boards retain their grain scale. The guides support
+	# the raised leaf instead of stretching an entire doorway into a thin strip.
+	for index in range(int(ceil(height/15.0))):
+		var thickness=minf(15.0,height-index*15.0)
+		var y=bottom-index*15.0-thickness*.5
+		paint_beam(Vector2(x-20,y),Vector2(x+20,y),thickness+1,Color(.71,.72,.61))
+	for side in [-1,1]:
+		paint_beam(Vector2(x+side*28,ground_y+3),Vector2(x+side*28,top),10,Color(.64,.68,.57))
+		draw_line(Vector2(x+side*13,bottom-7),Vector2(x+side*13,bottom-height+7),Color(.22,.26,.23),3,true)
+		for bolt in range(4): draw_circle(Vector2(x+side*13,bottom-14-bolt*(height-28)/3),1.3,Color(.58,.56,.44))
+	paint_beam(Vector2(x-35,top),Vector2(x+35,top),10,Color(.72,.71,.59))
+	var pulley=Vector2(x+39,top+14)
+	draw_polyline(PackedVector2Array([Vector2(x,bottom-height),Vector2(x,top+14),pulley,Vector2(x+39,ground_y-95+(78 if open else 0))]),Color(.46,.45,.32),1.8,true)
+	draw_arc(pulley,6,0,TAU,20,Color(.26,.28,.22),3,true)
+	draw_arc(pulley,5,0,TAU,20,Color(.56,.54,.40),1.1,true)
+	rig_piece(self,Rect2(132,691,446,492),Vector2(x+39,ground_y-71+(78 if open else 0)),24,Color(.81,.84,.72))
 
 func paint_beam(a,b,thickness,tint):
 	var delta=b-a
@@ -837,3 +848,47 @@ func paint_beam(a,b,thickness,tint):
 	# The opaque bark interior avoids the transparent margin of the log sprite.
 	draw_texture_rect_region(prop_atlas,Rect2(0,-thickness*.5,delta.length(),thickness),Rect2(555,296,300,52),tint)
 	draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
+
+func rig_piece(canvas,source,bottom,width,tint=Color.WHITE):
+	var height=width*source.size.y/source.size.x
+	canvas.draw_texture_rect_region(rig_parts,Rect2(bottom-Vector2(width*.5,height),Vector2(width,height)),source,tint)
+
+func draw_logging_gate(g):
+	var x=float(g.x); var py=surface(float(g.plate)); var ground_y=float(g.y)
+	var lift=game.gate_lift(g)
+	var amount=clampf(lift/(float(g.h)+12),0,1)
+	var plank_tint=Color(.77,.76,.64)
+	# Timber slats have the same lower edge as the moving collider.
+	for index in range(13):
+		var y=ground_y-lift-index*15-7
+		paint_beam(Vector2(x-22,y),Vector2(x+22,y+sin(index*3.2)*.8),17,plank_tint)
+	for side in [-1,1]:
+		var rail=x+side*32
+		paint_beam(Vector2(rail,ground_y+2),Vector2(rail,ground_y-float(g.h)-140),12,Color(.68,.66,.55))
+	paint_beam(Vector2(x-43,ground_y-float(g.h)-137),Vector2(x+43,ground_y-float(g.h)-137),13,plank_tint)
+	for side in [-1,1]:
+		var rail=x+side*16
+		draw_line(Vector2(rail,ground_y-lift-12),Vector2(rail,ground_y-lift-float(g.h)+8),Color(.19,.22,.18),3,true)
+		for bolt in range(4): draw_circle(Vector2(rail,ground_y-lift-18-bolt*51),1.5,Color(.59,.55,.43))
+	var plate_x=float(g.plate)
+	# This raised treadle is seen in profile at foot level, not a glowing UI bar.
+	rig_piece(self,Rect2(49,310,584,274),Vector2(plate_x,py+12+amount*3),88,Color(.87,.87,.78))
+	var pulley=Vector2(x+38,ground_y-float(g.h)-120)
+	var wire=PackedVector2Array([Vector2(plate_x+35,py-7+amount*3),Vector2(plate_x+54,py-29),pulley,Vector2(x+68,ground_y-128+amount*99)])
+	draw_polyline(wire,Color(.16,.19,.16,.94),3.5,true)
+	draw_polyline(wire,Color(.66,.58,.39,.84),1.3,true)
+	draw_arc(pulley,8,0,TAU,24,Color(.24,.24,.19),4,true)
+	draw_arc(pulley,7,0,TAU,24,Color(.59,.54,.40),1.2,true)
+	var tether=PackedVector2Array([Vector2(x,ground_y-lift-float(g.h)),Vector2(x,ground_y-float(g.h)-120),pulley])
+	draw_polyline(tether,Color(.50,.47,.33),2.2,true)
+	rig_piece(self,Rect2(132,691,446,492),Vector2(x+68,ground_y-105+amount*99),32,Color(.82,.83,.73))
+	interaction_art.draw_lantern(self,game,Vector2(x-32,ground_y-146),.9)
+
+func foliage_displacement(x,y):
+	var bend=0.0
+	for child in [game.player,game.boy]:
+		if child==null or absf(child.position.y-y)>28: continue
+		var dx=x-child.position.x
+		var influence=maxf(0,1-absf(dx)/38.0)
+		bend+=influence*(signf(dx)*3.0+clampf(child.velocity.x/35.0,-5,5))
+	return bend

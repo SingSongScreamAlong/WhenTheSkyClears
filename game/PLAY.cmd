@@ -1,6 +1,8 @@
 @echo off
 cd /d "%~dp0"
-if exist "build\v0.4.1\When the Sky Clears.exe" (
+if exist "build\v0.4.2\When the Sky Clears.exe" (
+    start "" "build\v0.4.2\When the Sky Clears.exe"
+) else if exist "build\v0.4.1\When the Sky Clears.exe" (
     start "" "build\v0.4.1\When the Sky Clears.exe"
 ) else if exist "build\v0.4.0\When the Sky Clears.exe" (
     start "" "build\v0.4.0\When the Sky Clears.exe"

@@ -6,6 +6,8 @@ func _draw():
 	if game==null or game.world==null or game.level.is_empty(): return
 	for mill in game.get("mill_encounters") if game.get("mill_encounters")!=null else []:
 		if is_instance_valid(mill): mill.draw_foreground(self)
+	for sluice in game.get("sluice_encounters") if game.get("sluice_encounters")!=null else []:
+		if is_instance_valid(sluice): sluice.draw_foreground(self)
 	for c in game.level.covers:
 		if c.kind=="wall":
 			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w+20,82,Color(.56,.65,.63))
@@ -16,7 +18,7 @@ func _draw():
 		var x=i*67.0+game.world.noise_at(i*2)*21
 		if not game.ground_at(x) or game.world.near_route_focus(x): continue
 		var y=float(game.surface_y_at(x,700))
-		var wind=sin(game.clock*1.3+i)*2
+		var wind=sin(game.clock*1.3+i)*2+game.world.foliage_displacement(x,y)
 		var height=3+game.world.noise_at(i)*5
 		var theme=game.world.zone_at(x)
 		if theme in ["school_courtyard","rail_yard","shattered_arcade","signal_yard","drainage_tunnel"]: height*=.5

@@ -1,0 +1,132 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.4.2
+
+STATUS
+The frozen executable passed 431 native functional checks across 14 suites,
+16 native 4K captures, and both labelled native movie validations. The separate
+source animation fixture passed 27/27. Full traversal completed all five
+chapters in 730.45 simulated seconds with one checkpoint recovery, final health
+100 and no failure. Simulated traversal time is not measured human playtime.
+The verified build is ready for packaging/publication; earlier evidence stays
+preserved.
+Export identity covers 157 runtime files. EXE: 142500064 bytes; SHA-256:
+0ecef38b7ea9544734d86e86fc3263ded0514a739e36f4fdd3a9e570e6a4da91
+
+TWO-CHILD WOODS PUZZLE
+The existing woods route now has an optional counterweighted footbridge before
+the mill. Bring the boy onto the near pressure cradle and ask him to wait [Q].
+His physical weight lowers the hinged span. Wait for it to settle, cross, and
+step onto the far iron tooth. A different child must still hold the cradle for
+the ratchet to latch. Then call him across [Q] and search the keeper's medicine.
+Calling too early releases the cradle; the span returns above the safe lower
+road. Real bridge collision and child-floor contacts drive the sequence.
+This version keeps the existing five chapters and 79,200 world-unit route.
+
+CHARACTERS AND WORLD
+The girl has a dedicated painted coat/sleeve/boot atlas mapped to her rig,
+preserving her established head, hair and blue ribbon. Pumping, bracing,
+clearing, searching, warming and balancing use distinct work poses. Both
+children's hands follow the moving pump grips. Physical cradle contact starts
+a balance pose; walking off releases it without action locking. Turn follow-
+through, landing anticipation, cold hands and quiet care develop their acting.
+The native pump fixture measured maximum grip errors of 1.091 world pixels
+for the girl and 1.045 for the boy, with zero stationary body drift during that
+fixture. The labelled normal-speed review is available; artistic acceptance
+remains separate.
+
+Logging gates lift gradually with actual collision. A closing gate arrests
+above a child beneath it; a far latch preserves the open state. Painted
+cradles, pulleys, ropes and opposed weights follow the physical displacement.
+Generic barriers use timber slats, iron straps and support guides. Nearby
+grass responds to physical contact. The painted tent remains the material
+clarity benchmark for the new clothing and mechanism parts.
+
+Finite food/salvage/medicine, companion protection, cover, listening lanes,
+shared work, route choices, shelter and the breakaway-wheel mill remain the
+survival baseline. Campaign saves remain compatible with v0.4.0.
+
+PLAY
+Extract a Windows package and run When the Sky Clears.exe; standalone play
+needs no Godot or Python. The v0.4.2 build passed final verification.
+In a prepared checkout, PLAY.cmd prefers the v0.4.2 export. SLUICE_PLAYTEST.cmd
+opens an isolated unsaved footbridge rehearsal (-- --sluice-preview). Mill,
+canal and freight launchers remain; freight uses its own save.
+A/D or arrows move; Space/W/Up jump; Shift run; S/Down crouch; hold E work;
+Q wait/call; H medicine; Tab pack; R checkpoint; Esc pause; F11 fullscreen.
+
+BUILD AND VERIFY
+Open project.godot in Godot 4.6 Standard and use F5. Editor play needs no
+templates or Python. From the repository root, after source is frozen:
+  python game/tools/setup_godot.py
+  python game/tools/build_v042.py export
+  python game/tools/build_v042.py test all
+  python game/tools/build_v042.py test capture
+  python game/tools/build_v042.py verify
+
+Outputs stay under build/v0.4.2 and evidence/v042. Export temporarily selects
+portable Windows templates/product metadata, restoring the preset byte for
+byte. Identity hashes runtime source, assets and UID sidecars. Native checks
+must match the exact executable. Source animation is a separate fixture with
+overlapping baseline checks, excluded from the native functional total.
+
+New suites are --sluice-checks, --craft-checks and --world-craft-checks, alongside
+retained suites and continuous traversal. They cover bridge cooperation/reset,
+rendered work contacts, pause/release, gate collision/safety and persistence.
+Targeted initial placements are separate from campaign navigation.
+
+Capture uses --capture-v042 for 16 required native 4K PNGs. New views are
+13_counterweight_wait.png, 14_counterweight_crossing.png,
+15_counterweight_reunion.png and 16_logging_counterweight.png. The last view
+stages the moving logging gate at partial height with the boy on its cradle.
+Fresh sluice_capture.json identifies only views 13-15. Capture fails immediately
+if the wait, crossing and reunion sequence states were not reached.
+
+NATIVE REVIEW
+Install requirements-dev.txt for Python image/movie tooling. From repo root:
+  python game/tools/build_v042.py test craft-playthrough sluice-playthrough
+  python game/tools/make_review_v042.py all
+  python game/tools/build_v042.py package
+
+The recording flags are --craft-checks --record-craft and --sluice-checks
+--record-sluice, at 30 fps. Each run clears only known numeric JPG outputs in
+its own frame folder, then hashes the new frames. Review checks the invocation,
+executable, exact fresh frame range, full decode, count and duration. Movies
+are silent and explicitly labelled. Verified review artifacts:
+  V042_PLAYABLE_REVIEW.jpg (nine views selected from 16 native 4K captures)
+  WTSC_Character_Craft_Review_v042.mp4: 1440x810, 30fps, 686 frames, 22.8667s
+  craft_movie_validation.json: complete decode and exact frame count passed
+  WTSC_Sluice_Playthrough_v042.mp4: 1440x810, 30fps, 313 frames, 10.4333s
+  sluice_movie_validation.json: complete decode and exact frame count passed
+
+The craft study uses staged locomotion, cold/care, pump, cradle, warming and
+search sections; preparation/scene changes are excluded. The sluice movie is
+a bounded authored fixture with earlier hazards disabled. They are distinct
+from uninterrupted campaign traversal. Optional test motion launches the
+dedicated scenes/animation_review.tscn close study with --motion.
+
+Verify writes no delivery files. Package writes separate Windows/source ZIPs,
+manifest and hashes. Individual diagnostics: test KIND --source --tag NAME.
+The completed full-journey report and separate 27/27 source animation fixture
+are under evidence/v042/release_final/traverse and animation-checks.
+No new offline terrain audit is claimed.
+
+ASSETS AND PORTABLE SOURCE
+The new girl clothing and counterweight component PNGs are 1254x1254 RGBA with
+alpha, generated using built-in ImageGen. Exact prompts/source/reference paths
+are preserved in their provenance JSON files; raw pixels remain unmodified.
+Native source rectangles map them onto the characters and physical mechanisms.
+
+The editable ZIP keeps project.godot at its root. Its archive-only export
+preset keeps custom templates empty and sets v0.4.2 output/version metadata.
+The manifest declares before/after hashes. Docs/licenses resolve in repository
+and flattened-source layouts. In that ZIP use python tools/build_v042.py ... .
+Manual exports need matching Godot 4.6 templates installed through Godot.
+Editor play needs no templates; downloaded editor binaries stay outside ZIPs.
+
+REMAINING POLISH
+After the keeper's medicine cache is emptied, the encounter objective can still
+prompt a search until the children leave its radius.
+
+QUALITY BOUNDARY
+Technical checks, staged rendered review, human playtesting and user artistic
+acceptance have different scopes. AAA quality remains a production target;
+bespoke acting, world craft, sound and balance remain active work.

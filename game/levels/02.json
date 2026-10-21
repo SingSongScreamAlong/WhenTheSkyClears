@@ -367,6 +367,36 @@
       "kind": "scaffold",
       "one_way": true,
       "route": "mill_wheel_approach"
+    },
+    {
+      "x": 14840,
+      "y": 625,
+      "w": 170,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_counterweight"
+    },
+    {
+      "x": 14990,
+      "y": 570,
+      "w": 150,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_counterweight"
+    },
+    {
+      "x": 15390,
+      "y": 570,
+      "w": 130,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "woods_counterweight"
     }
   ],
   "scenery": [
@@ -692,6 +722,19 @@
       "y": 700.0,
       "label": "Share warmth before choosing the next way",
       "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 15490,
+      "y": 570,
+      "label": "The crossing keeper's dry medicine and bread",
+      "hold_seconds": 1.2,
+      "id": "woods_counterweight_medicine",
+      "optional": true,
+      "requires_flag": "woods_counterweight_latched",
+      "rations": 1,
+      "scrap": 0,
+      "medicine": 1
     }
   ],
   "gates": [
@@ -1122,6 +1165,26 @@
       "roll_direction": 1,
       "retreat_x": 16540,
       "exit_x": 17800
+    },
+    {
+      "kind": "counterweight_crossing",
+      "id": "woods_counterweight",
+      "key": "woods_counterweight_latched",
+      "bridge_x": 15140,
+      "bridge_y": 570,
+      "bridge_w": 250,
+      "bridge_h": 14,
+      "plate_x": 15055,
+      "plate_w": 76,
+      "latch_x": 15445,
+      "latch_w": 58,
+      "lower_seconds": 1.4,
+      "return_seconds": 2.2,
+      "entry_x": 14770,
+      "exit_x": 15530,
+      "cache_id": "woods_counterweight_medicine",
+      "optional": true,
+      "description": "A child waits on the pressure cradle while the other crosses the lowered timber span. The far iron treadle locks the rope ratchet only while a different child still holds the near cradle. Call the waiting child across after the latch catches. Safe ground remains below if either child steps away early."
     }
   ]
 }

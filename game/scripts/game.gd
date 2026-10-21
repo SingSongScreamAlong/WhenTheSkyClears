@@ -88,16 +88,18 @@ var noise_level=0.0
 var heard_level=0.0
 var companion_notice_clock=0.0
 var mill_encounters=[]
+var sluice_encounters=[]
 var right_boundary
 var section_preview=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears Â· Development 0.4.1")
+	DisplayServer.window_set_title("When the Sky Clears Â· Development 0.4.2")
 	qa_args=OS.get_cmdline_user_args()
 	smoke_test="--mill-preview" in qa_args or "--mill-checks" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--development-checks" in qa_args or "--movement-checks" in qa_args or "--capture-v040" in qa_args or "--side-routes" in qa_args
 	smoke_test=smoke_test or "--story-checks" in qa_args or "--capture-story" in qa_args
 	smoke_test=smoke_test or "--refinement-checks" in qa_args or "--capture-v041" in qa_args or "--canal-preview" in qa_args
+	smoke_test=smoke_test or "--sluice-checks" in qa_args or "--craft-checks" in qa_args or "--capture-v042" in qa_args or "--sluice-preview" in qa_args or "--world-craft-checks" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args: smoke_test=true
 	setup_input()
@@ -142,8 +144,17 @@ func _ready():
 		smoke_test=true; call_deferred("run_movement_checks")
 	if "--capture-v040" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
-	if "--capture-v041" in qa_args:
+	if "--capture-v041" in qa_args or "--capture-v042" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
+	if "--sluice-checks" in qa_args: call_deferred("run_sluice_checks")
+	if "--craft-checks" in qa_args: call_deferred("run_craft_checks")
+	if "--world-craft-checks" in qa_args: call_deferred("run_world_craft_checks")
+	if "--sluice-preview" in qa_args:
+		smoke_test=true; journey_active=true; flags={}; load_chapter(1,false); mode="playing"
+		for gate in level.gates:
+			if float(gate.x)<14900: flags[gate.key]=true
+		checkpoint_x=14820; respawn(false); chapter_card=0
+		announce_message("The timber cradle carries a rope to the bridge. Find a way across together.",7)
 	if "--refinement-checks" in qa_args:
 		load("res://scripts/refinement_checks.gd").run.call_deferred(self)
 	if "--mill-checks" in qa_args:
@@ -219,6 +230,9 @@ func apply_volume():
 
 func load_chapter(idx, announce=true):
 	if is_instance_valid(story): story.reset()
+	for sluice in sluice_encounters:
+		if is_instance_valid(sluice): remove_child(sluice); sluice.queue_free()
+	sluice_encounters.clear()
 	for mill in mill_encounters:
 		if is_instance_valid(mill): remove_child(mill); mill.queue_free()
 	mill_encounters.clear()
@@ -233,7 +247,7 @@ func load_chapter(idx, announce=true):
 	right_boundary=solid_rect(Rect2(float(level.width),-500,60,1800))
 	for g in level.gates:
 		var body=solid_rect(Rect2(g.x-13,g.y-g.h,26,g.h))
-		gate_bodies.append({"data":g,"body":body})
+		gate_bodies.append({"data":g,"body":body,"lift":float(g.h)+12.0 if flags.get(g.key,false) else 0.0})
 	for bridge in level.get("bridges",[]):
 		var body=solid_rect(Rect2(bridge.x,bridge.y,bridge.w,bridge.h)); body.collision_layer=1 if flags.get(bridge.key,false) else 0
 		bridge_bodies.append({"data":bridge,"body":body})
@@ -245,6 +259,9 @@ func load_chapter(idx, announce=true):
 		if mechanism.kind=="breakaway_mill":
 			var mill=load("res://scripts/mill_encounter.gd").new()
 			mill.game=self; mill.data=mechanism; add_child(mill); mill_encounters.append(mill)
+		elif mechanism.kind=="counterweight_crossing":
+			var sluice=load("res://scripts/sluice_crossing.gd").new()
+			sluice.game=self; sluice.data=mechanism; add_child(sluice); sluice_encounters.append(sluice)
 	player=Child.new(); player.game=self; player.name="Girl"; player.position=Vector2(180,698); add_child(player)
 	boy=Child.new(); boy.is_girl=false; boy.controlled=false; boy.game=self; boy.name="Boy"; boy.position=Vector2(123,698); add_child(boy)
 	checkpoint_x=180; trail.clear(); shell_clock=0; shell_warning=0; exposure=0; invulnerable=2
@@ -298,6 +315,10 @@ func surface_y_at(x,fallback_y=700.0):
 			if absf(dx)<radius:
 				var y=mill.wheel.position.y-sqrt(maxf(0,radius*radius-dx*dx))
 				if absf(y-fallback_y)<distance: closest=y; distance=absf(y-fallback_y)
+	for sluice in sluice_encounters:
+		var supported=sluice.support_at(x,fallback_y)
+		if is_finite(supported) and absf(supported-fallback_y)<distance:
+			closest=supported; distance=absf(supported-fallback_y)
 	return closest
 
 func new_journey():
@@ -385,8 +406,7 @@ func _physics_process(dt):
 		if player.position.x>=sector.x and player.position.x<sector.x+sector.w and not sector_seen.has(sector.x):
 			sector_seen[sector.x]=true
 			if sector.has("caption"): announce_message(sector.caption,5)
-	for gb in gate_bodies:
-		gb.body.collision_layer=0 if gate_open(gb.data) else 1
+	update_gate_physics(dt)
 	for bridge in bridge_bodies: bridge.body.collision_layer=1 if flags.get(bridge.data.key,false) else 0
 	update_prompt()
 	for m in level.memories:
@@ -463,6 +483,8 @@ func update_companion(_dt):
 
 
 func ground_at(x):
+	for sluice in sluice_encounters:
+		if sluice.ground_at(x): return true
 	for mechanism in level.get("mechanisms",[]):
 		if mechanism.kind=="breakaway_mill" and x>=mechanism.bridge_x and x<=mechanism.bridge_x+mechanism.bridge_w: return true
 	for bridge in level.get("bridges",[]):
@@ -479,6 +501,30 @@ func is_covered(child):
 
 func beam_x(): return 2650+sin(clock*.29)*1970
 
+func update_gate_physics(dt):
+	for entry in gate_bodies:
+		var gate=entry.data
+		if not gate.has("plate"):
+			entry.body.collision_layer=0 if gate_open(gate) else 1
+			continue
+		var target=float(gate.h)+12.0 if gate_open(gate) else 0.0
+		# A child underneath arrests the falling gate before it can intersect
+		# the head. Releasing the plate never seals a body into solid timber.
+		if target==0:
+			for child in [player,boy]:
+				if absf(child.position.x-float(gate.x))<36 and absf(child.position.y-float(gate.y))<65:
+					var head=child.col.shape.size.y
+					var clearance=float(gate.y)-child.position.y+head+10
+					if float(entry.lift)>=clearance-1: target=maxf(target,clearance)
+		entry.lift=move_toward(float(entry.lift),target,dt*(118.0 if target>float(entry.lift) else 64.0))
+		entry.body.position.y=-float(entry.lift)
+		entry.body.collision_layer=1
+
+func gate_lift(g):
+	for entry in gate_bodies:
+		if str(entry.data.key)==str(g.key): return float(entry.get("lift",0.0))
+	return 0.0
+
 func gate_open(g):
 	if flags.get(g.key,false): return true
 	if g.has("plate"):
@@ -490,6 +536,7 @@ func gate_open(g):
 func update_prompt():
 	prompt=""; near_item={}
 	for p in level.interact:
+		if p.has("requires_flag") and not flags.get(p.requires_flag,false): continue
 		if p.kind=="cache" and flags.get(p.id,false): continue
 		if p.kind in ["wheel","latch","repair","roof","pump","bridge","relay","clear","brace"] and flags.get(p.id,false): continue
 		if abs(player.position.x-p.x)<86 and abs(player.position.y-p.y)<100:
@@ -500,6 +547,10 @@ func update_prompt():
 			near_item=moment.duplicate(true); near_item.kind="story"
 			prompt="HOLD E   "+str(moment.label)
 	if prompt=="":
+		for sluice in sluice_encounters:
+			var local_hint=sluice.objective_text()
+			if not local_hint.is_empty(): prompt=local_hint; break
+	if prompt=="":
 		for tutorial in level.tutorials:
 			if abs(player.position.x-tutorial.x)<180: prompt=tutorial.text; break
 
@@ -509,6 +560,9 @@ func in_safe_zone(x):
 	return false
 
 func current_objective():
+	for sluice in sluice_encounters:
+		var local_objective=sluice.objective_text()
+		if not local_objective.is_empty(): return local_objective
 	for mill in mill_encounters:
 		if player.position.x>mill.data.bridge_x-650 and not flags.get(mill.data.key,false):
 			if mill.state in ["warning","rolling"]: return "Get both children behind the loose wheel. Give it room to pull the sluice."
@@ -604,6 +658,7 @@ func tick_hazard_lanes(dt):
 
 func interact():
 	if not pending_action.is_empty() or near_item.is_empty(): return
+	if near_item.has("requires_flag") and not flags.get(near_item.requires_flag,false): return
 	if player.action_time>0: return
 	pending_action=near_item.duplicate(); action_progress=0; action_duration=float(pending_action.get("hold_seconds",1.1))
 	if pending_action.kind=="end" and abs(player.position.x-boy.position.x)>120:
@@ -635,6 +690,7 @@ func complete_interaction(task={}):
 	if player.action_time>0: return
 	if task.is_empty() and near_item.is_empty(): return
 	var p=near_item if task.is_empty() else task
+	if p.has("requires_flag") and not flags.get(p.requires_flag,false): return
 	if p.has("scrap_cost") and scrap<int(p.scrap_cost): return
 	match p.kind:
 		"story":
@@ -707,6 +763,7 @@ func recover(count=true,reason="Take another breath. Try a different path."):
 	mode="recovering"; recovery_clock=1.4; announce_message(reason,4)
 
 func respawn(reset_survival=true):
+	for sluice in sluice_encounters: sluice.reset_from_progress()
 	for mill in mill_encounters: mill.reset_from_progress()
 	player.position=Vector2(checkpoint_x,surface_y_at(checkpoint_x,700)-5); boy.position=Vector2(maxf(40,checkpoint_x-54),surface_y_at(checkpoint_x-54,700)-5)
 	player.velocity=Vector2.ZERO; boy.velocity=Vector2.ZERO; boy.following=true
@@ -803,6 +860,9 @@ func run_smoke():
 		assert_check("chapter_%d_jump_lands"%(i+1),player.is_on_floor())
 		for p in level.interact:
 			# These are targeted interaction setups, including elevated routes.
+			# Mechanism checks separately earn and refuse gated rewards; this fixture
+			# supplies their prerequisite to exercise the cache interaction itself.
+			if p.has("requires_flag"): flags[p.requires_flag]=true
 			# The old fixed y=699 placed upper-gallery actions below their platform.
 			player.position=Vector2(p.x,surface_y_at(p.x,p.y)-1)
 			boy.position=Vector2(p.x-50,surface_y_at(p.x-50,p.y)-1)
@@ -1374,8 +1434,11 @@ func capture_v040():
 	await get_tree().process_frame; camera.position=Vector2(12875,427)
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(report_path("07_character_close_study.png"))
-	if "--capture-v041" in qa_args:
+	if "--capture-v041" in qa_args or "--capture-v042" in qa_args:
 		await load("res://scripts/refinement_checks.gd").capture(self)
+	if "--capture-v042" in qa_args:
+		await load("res://scripts/sluice_checks.gd").capture(self)
+		await load("res://scripts/world_craft_checks.gd").capture(self)
 	print("V040_NATIVE_4K_CAPTURE_COMPLETE"); call_deferred("quit_game")
 
 func run_mill_checks():
@@ -1401,3 +1464,42 @@ func run_crossing_checks():
 
 func capture_crossing():
 	await load("res://scripts/crossing_checks.gd").capture(self)
+
+func character_work_contacts(child):
+	# Both renderers sample this same mechanism pose: hands follow the bearing,
+	# while game logic still owns work, child movement and completion.
+	for sluice in sluice_encounters:
+		var contact=sluice.work_contacts(child)
+		if not contact.is_empty(): return contact
+	if pending_action.is_empty() or child.action_time<=0: return {}
+	if str(pending_action.kind)=="pump":
+		var at=Vector2(pending_action.x,pending_action.get("y",child.position.y))
+		var pivot=at+Vector2(54,-79)
+		var angle=world.interaction_art.pump_angle(self,pending_action)
+		var reach=60.0 if child.is_girl else 92.0
+		var near=pivot+Vector2(reach,0).rotated(angle)
+		var far=pivot+Vector2(reach-9,0).rotated(angle)
+		if child.position.distance_to(near+Vector2(0,54))<78:
+			return {"near":near,"far":far,"look":pivot,"kind":"pump","weight":1.0}
+	return {}
+
+func run_sluice_checks():
+	var report=await load("res://scripts/sluice_checks.gd").run(self)
+	var file=FileAccess.open(report_path("sluice_checks.json"),FileAccess.WRITE)
+	file.store_string(JSON.stringify(report,"\t")); file.close()
+	print("SLUICE_CHECKS_RESULT ",JSON.stringify(report))
+	call_deferred("quit_game",0 if report.all_passed else 1)
+
+func run_craft_checks():
+	var report=await load("res://scripts/craft_checks.gd").run(self)
+	var file=FileAccess.open(report_path("craft_checks.json"),FileAccess.WRITE)
+	file.store_string(JSON.stringify(report,"\t")); file.close()
+	print("CRAFT_CHECKS_RESULT ",JSON.stringify(report))
+	call_deferred("quit_game",0 if report.all_passed else 1)
+
+func run_world_craft_checks():
+	var report=await load("res://scripts/world_craft_checks.gd").run(self)
+	var file=FileAccess.open(report_path("world_craft_checks.json"),FileAccess.WRITE)
+	file.store_string(JSON.stringify(report,"\t")); file.close()
+	print("WORLD_CRAFT_CHECKS_RESULT ",JSON.stringify(report))
+	call_deferred("quit_game",0 if report.all_passed else 1)

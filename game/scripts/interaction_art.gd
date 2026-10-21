@@ -83,7 +83,7 @@ func draw_pump(canvas,game,item,pos):
 	# The sprite's circular bearing is 9% from its left edge, 38% down.
 	var pivot=pos+Vector2(54,-79)
 	canvas.draw_set_transform(pivot,pump_angle(game,item),Vector2.ONE)
-	canvas.draw_texture_rect_region(atlas,Rect2(-7,-5,81,15),regions.lever,Color(.97,.96,.90))
+	canvas.draw_texture_rect_region(atlas,Rect2(-9,-6,104,18),regions.lever,Color(.97,.96,.90))
 	canvas.draw_set_transform(Vector2.ZERO,0,Vector2.ONE)
 	canvas.draw_circle(pivot,2.0,Color(.35,.39,.34))
 	var work=progress(game,item)

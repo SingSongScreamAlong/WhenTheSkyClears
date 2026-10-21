@@ -73,9 +73,21 @@ var animation_state="idle"
 var recoil_blend=0.0
 var paint_light=Color.WHITE
 var paint_bounce=0.0
+var girl_cloth:Texture2D
+var work_clock=0.0
+var work_contacts={}
+var work_signature=""
+var cold_blend=0.0
+var care_blend=0.0
+var care_target=Vector2.ZERO
+var landing_approach=0.0
+var turn_time=0.0
+var pose_facing=1.0
 
 func _ready():
 	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	if ResourceLoader.exists("res://assets/characters/girl_cloth_v042.png"):
+		girl_cloth=load("res://assets/characters/girl_cloth_v042.png")
 	anim_time=0 if is_girl else .83
 	collision_layer=2; collision_mask=1; floor_snap_length=14
 	col=CollisionShape2D.new(); col.shape=RectangleShape2D.new(); col.shape.size=Vector2(23,99 if is_girl else 84); col.position.y=-col.shape.size.y/2
@@ -131,10 +143,21 @@ func update_animation(dt):
 	var braking=1.0 if input_axis!=0 and velocity.x*input_axis< -30 else 0.0
 	brake_blend=lerpf(brake_blend,braking,1-exp(-dt*16))
 	push_blend=lerpf(push_blend,1.0 if pushing else 0.0,1-exp(-dt*9))
-	work_blend=lerpf(work_blend,1.0 if action_time>0 else 0.0,1-exp(-dt*11))
+	work_contacts={}
+	if game!=null and game.has_method("character_work_contacts") and is_on_floor() and not climbing:
+		var contacts=game.character_work_contacts(self)
+		if contacts is Dictionary: work_contacts=contacts
+	var external_weight=clampf(float(work_contacts.get("weight",1.0)),0,1) if work_contacts.has("kind") else 0.0
+	var working=action_time>0 or external_weight>0
+	var next_kind=str(work_contacts.get("kind",game.pending_action.get("kind",work_kind))) if working else work_kind
+	var signature=next_kind+":"+str(game.pending_action.get("id",""))
+	if working and signature!=work_signature: work_clock=0; work_signature=signature
+	if working: work_clock+=dt; work_kind=next_kind
+	work_blend=lerpf(work_blend,maxf(1.0 if action_time>0 else 0.0,external_weight),1-exp(-dt*11))
 	recoil_blend=lerpf(recoil_blend,1.0 if hit_time>0 else 0.0,1-exp(-dt*18))
 	mantle_blend=lerpf(mantle_blend,1.0 if climbing else 0.0,1-exp(-dt*14))
-	if action_time>0 and not game.pending_action.is_empty(): work_kind=str(game.pending_action.kind)
+	turn_time=maxf(0,turn_time-dt)
+	if facing!=pose_facing: turn_time=.20; pose_facing=facing
 	var was_contact=hand_blend
 	hand_blend=lerpf(hand_blend,1.0 if hand_active and not climbing and action_time<=0 else 0.0,1-exp(-dt*12))
 	if hand_active:
@@ -152,14 +175,23 @@ func update_animation(dt):
 	var threat=0.0
 	var tired=0.0
 	var glance=0.0
+	var cold=0.0
+	var care=0.0
 	if game!=null:
 		threat=maxf(float(game.shell_warning),clampf(float(game.exposure)/1.4,0,1))
 		var lane_notice=game.get("lane_warning")
 		if lane_notice!=null and not str(lane_notice).is_empty(): threat=maxf(threat,.72)
 		tired=maxf(clampf((38-float(game.warmth))/38.0,0,1),clampf((32-float(game.health))/32.0,0,1))
 		tired=maxf(tired,float(game.wetness)*.45)
+		cold=maxf(clampf((40-float(game.warmth))/40.0,0,1),float(game.wetness)*.6)
 		if controlled: tired=maxf(tired,clampf((24-float(game.stamina))/24.0,0,1)*.6)
 		var companion=game.boy if is_girl else game.player
+		if is_girl and is_instance_valid(companion) and is_on_floor() and absf(velocity.x)<8 and action_time<=0 and external_weight<=0 and not climbing:
+			var gap=companion.position-position
+			var care_beat=fposmod(anim_time,11.8)
+			if absf(gap.x)>18 and absf(gap.x)<43 and absf(gap.y)<16 and threat<.25 and (tired>.25 or float(game.health)<65) and care_beat>7.3 and care_beat<9.0:
+				care=sin((care_beat-7.3)/1.7*PI)
+				care_target=companion.global_position+Vector2(signf(-gap.x)*9,-(84 if not companion.is_girl else 99)*.68)
 		if is_instance_valid(companion) and game.mode=="playing" and not climbing and action_time<=0:
 			var gap=companion.position.x-position.x
 			var glance_window=fposmod(anim_time+(0.0 if is_girl else 2.4),7.4)
@@ -170,7 +202,15 @@ func update_animation(dt):
 				glance_direction=signf(gap)
 	danger_blend=lerpf(danger_blend,threat,1-exp(-dt*4.5))
 	fatigue_blend=lerpf(fatigue_blend,tired,1-exp(-dt*2.0))
+	cold_blend=lerpf(cold_blend,cold,1-exp(-dt*3))
+	care_blend=lerpf(care_blend,care,1-exp(-dt*7))
 	glance_blend=lerpf(glance_blend,glance,1-exp(-dt*5.0))
+	var approaching=0.0
+	if not is_on_floor() and velocity.y>90 and not climbing:
+		var ray=PhysicsRayQueryParameters2D.create(global_position+Vector2(0,2),global_position+Vector2(0,112),1,[get_rid()])
+		var ground=get_world_2d().direct_space_state.intersect_ray(ray)
+		if not ground.is_empty(): approaching=clampf(1-global_position.distance_to(ground.position)/105.0,0,1)*clampf(velocity.y/350,0,1)
+	landing_approach=lerpf(landing_approach,approaching,1-exp(-dt*17))
 	# Damped follow-through responds to acceleration as well as the gait.
 	var inertia=clampf((velocity.x-previous_horizontal)*.035,-4,4)
 	previous_horizontal=velocity.x
@@ -377,13 +417,19 @@ func paint_joint(center,radius,region,tint,texture):
 		uv.append((region.position+(direction*.5+Vector2(.5,.5))*region.size)/Vector2(texture.get_size()))
 	draw_polygon(outline,painted_colors(outline,tint),uv,texture)
 
+func limb_strip(a,b,width_a,width_b):
+	var normal=Vector2(-(b-a).y,(b-a).x).normalized()
+	var middle=(a+b)*.5
+	var fullness=(width_a+width_b)*.5+.38
+	return PackedVector2Array([a+normal*width_a,middle+normal*fullness,b+normal*width_b,b-normal*width_b,middle-normal*fullness,a-normal*width_a])
+
 func tube(a,b,c,width_a,width_b,width_c,color,material="",depth=1.0):
 	var n1=Vector2(-(b-a).y,(b-a).x).normalized(); var n2=Vector2(-(c-b).y,(c-b).x).normalized()
 	# Separate convex bone strips cannot fold across themselves at a tightly
 	# bent elbow. A single six-point contour could disappear during hand contact.
 	var sections=[]
-	if a.distance_squared_to(b)>.0001: sections.append({"points":PackedVector2Array([a+n1*width_a,b+n1*width_b,b-n1*width_b,a-n1*width_a]),"upper":true})
-	if b.distance_squared_to(c)>.0001: sections.append({"points":PackedVector2Array([b+n2*width_b,c+n2*width_c,c-n2*width_c,b-n2*width_b]),"upper":false})
+	if a.distance_squared_to(b)>.0001: sections.append({"points":limb_strip(a,b,width_a,width_b),"upper":true})
+	if b.distance_squared_to(c)>.0001: sections.append({"points":limb_strip(b,c,width_b,width_c),"upper":false})
 	for section in sections: draw_colored_polygon(section.points,color)
 	draw_circle(a,width_a*.94,color); draw_circle(b,width_b*.94,color); draw_circle(c,width_c*.94,color)
 	if not material.is_empty():
@@ -393,27 +439,39 @@ func tube(a,b,c,width_a,width_b,width_c,color,material="",depth=1.0):
 		var region=Rect2(1042,125,68,315) if material=="sleeve" else (Rect2(640,1100,220,220) if material=="stocking" else Rect2(580,690,72,420))
 		var split=(b-a).length()/maxf(.01,(b-a).length()+(c-b).length())
 		var tint=lit_color(Color(.99,1.08,1.12,.98) if material=="sleeve" else (Color(.69,.78,.88,.98) if material=="stocking" else Color(.91,.98,1.04,.98)),depth)
+		var dedicated=is_girl and material=="sleeve" and girl_cloth!=null
+		if dedicated: texture=girl_cloth; tint=lit_color(Color(.97,1.01,1.02,.99),depth)
 		for section in sections:
 			var low=0.0 if section.upper else split; var high=split if section.upper else 1.0
+			var source=region
+			if dedicated:
+				source=Rect2(888,175,102,350) if section.upper else Rect2(306,790,92,215)
+				low=0; high=1
 			var uv=PackedVector2Array()
-			for point in [Vector2(0,low),Vector2(0,high),Vector2(1,high),Vector2(1,low)]: uv.append((region.position+point*region.size)/Vector2(texture.get_size()))
+			for point in [Vector2(0,low),Vector2(0,(low+high)*.5),Vector2(0,high),Vector2(1,high),Vector2(1,(low+high)*.5),Vector2(1,low)]: uv.append((source.position+point*source.size)/Vector2(texture.get_size()))
 			draw_polygon(section.points,painted_colors(section.points,tint),uv,texture)
+			var edge_normal=n1 if section.upper else n2
+			var start=a if section.upper else b; var end=b if section.upper else c
+			var width=width_a if section.upper else width_b
+			draw_line(start-edge_normal*width*.68,start.lerp(end,.86)-edge_normal*width*.58,Color(.09,.13,.14,.16*depth),.9,true)
 		# Cloth continues around the elbow/knee instead of leaving an unpainted
 		# dark circular hinge between two illustrated bone sections.
 		var joint_region=Rect2(region.position+region.size*Vector2(.22,.38),region.size*Vector2(.56,.22))
+		if dedicated: joint_region=Rect2(904,379,71,85)
 		paint_joint(b,width_b*.97,joint_region,tint,texture)
 		# A quiet fold catches at the elbow/knee, following the bend rather
 		# than painting an unchanging rectangular limb over the anatomy.
 		draw_line(b-n2*width_b*.58,b+n2*width_b*.36,Color(.10,.15,.17,.18),.65,true)
 
-func painted_cloth(points,origin,end_y,region,tint):
+func painted_cloth(points,origin,end_y,region,tint,texture=null):
+	if texture==null: texture=head_atlas
 	var uv=PackedVector2Array()
 	for p in points:
 		var v=clampf((p.y-origin.y)/maxf(1,end_y-origin.y),0,1)
 		var center_x=lerpf(origin.x,body_lean*.65,v)
-		var u=clampf((p.x-center_x+18)/36.0,0,1)
-		uv.append((region.position+Vector2(u,v)*region.size)/Vector2(head_atlas.get_size()))
-	draw_polygon(PackedVector2Array(points),painted_colors(points,tint),uv,head_atlas)
+		var u=clampf(((p.x-center_x)*facing+18)/36.0,0,1)
+		uv.append((region.position+Vector2(u,v)*region.size)/Vector2(texture.get_size()))
+	draw_polygon(PackedVector2Array(points),painted_colors(points,tint),uv,texture)
 
 func sole_roll(side):
 	var scale_body=1.0 if is_girl else .84
@@ -433,11 +491,13 @@ func boot(ankle,color,roll=0.0,depth=1.0):
 	var f=facing
 	var outline=PackedVector2Array(); var uv=PackedVector2Array()
 	var leather=Rect2(845,866,397,309)
+	var texture=girl_cloth if is_girl and girl_cloth!=null else head_atlas
+	if texture==girl_cloth: leather=Rect2(710,817,499,389)
 	for p in [Vector2(-4.5*f,-8),Vector2(3.5*f,-8),Vector2(4*f,-4),Vector2(9*f,-3),Vector2(12*f,-1),Vector2(12*f,1.5),Vector2(6*f,2.5),Vector2(-5*f,2.5),Vector2(-5*f,-3)]:
 		outline.append(ankle+p.rotated(roll))
-		uv.append((leather.position+Vector2(clampf((p.x*f+5)/17.0,0,1),clampf((p.y+8)/10.5,0,1))*leather.size)/Vector2(head_atlas.get_size()))
+		uv.append((leather.position+Vector2(clampf((p.x*f+5)/17.0,0,1),clampf((p.y+8)/10.5,0,1))*leather.size)/Vector2(texture.get_size()))
 	draw_colored_polygon(outline,lit_color(Color(.22,.17,.13),depth))
-	draw_polygon(outline,painted_colors(outline,lit_color(Color(1.04,1.02,.96,.98),depth)),uv,head_atlas)
+	draw_polygon(outline,painted_colors(outline,lit_color(Color(1.00,.99,.96,.98),depth)),uv,texture)
 	draw_polyline(PackedVector2Array([ankle+Vector2(-5*f,1).rotated(roll),ankle+Vector2(6*f,1.5).rotated(roll),ankle+Vector2(11*f,.5).rotated(roll)]),Color(.37,.38,.31,.45),1,true)
 	draw_line(ankle+Vector2(-4*f,-7).rotated(roll),ankle+Vector2(3*f,-7).rotated(roll),Color(.48,.47,.39,.35),1.2,true)
 	draw_line(ankle+Vector2(3*f,-4).rotated(roll),ankle+Vector2(6*f,-2).rotated(roll),Color(.43,.46,.41,.27),.8,true)
@@ -457,26 +517,79 @@ func draw_hand(at,elbow,color,open_hand=false,depth=1.0):
 		draw_line(at+across*1.0,at+direction*5+across*1.0,color,1.3,true)
 		draw_line(at-across*1.0,at+direction*4.4-across*1.0,color,1.2,true)
 
+func work_profile():
+	# Each task has a different line of effort. External mechanism contacts
+	# replace these grips, while these offsets still carry weight through hips.
+	var f=facing
+	var drive=.5-.5*cos(work_clock*5.2)
+	var p={"hip":Vector2.ZERO,"shoulder":Vector2(f*5,3),"near":Vector2(f*23,10),"far":Vector2(f*12,19),"nod":.05}
+	match work_kind:
+		"pump":
+			p.hip=Vector2(-f*2,1+drive*2); p.shoulder=Vector2(f*(5+drive*3),3+drive*5)
+			p.near=Vector2(f*25,5+drive*8); p.far=Vector2(f*20,11+drive*6); p.nod=.05+drive*.08
+		"wheel":
+			p.hip=Vector2(-f*2,2); p.shoulder=Vector2(f*(6+sin(work_clock*4)*2),5)
+			p.near=Vector2(f*(23+sin(work_clock*4)*4),8+cos(work_clock*4)*7)
+			p.far=Vector2(f*(21-sin(work_clock*4)*4),8-cos(work_clock*4)*7)
+		"relay","bridge","repair":
+			p.hip=Vector2(-f*3,4); p.shoulder=Vector2(f*9,8+sin(work_clock*2.3)*.8)
+			p.near=Vector2(f*26,5); p.far=Vector2(f*22,12); p.nod=.10
+		"balance_hold":
+			p.hip=Vector2(-f*2,1); p.shoulder=Vector2(f*4,2+sin(work_clock*2.1)*.4)
+			p.near=Vector2(f*16,13); p.far=Vector2(f*10,11); p.nod=-.025
+		"roof","brace":
+			p.hip=Vector2(-f*2,1); p.shoulder=Vector2(f*4,-2+sin(work_clock*2.1)*.6)
+			p.near=Vector2(f*17,-22); p.far=Vector2(f*8,-19); p.nod=-.15
+		"clear":
+			p.hip=Vector2(-f*3,8); p.shoulder=Vector2(f*12,17+sin(work_clock*2.7)*1.4)
+			p.near=Vector2(f*(23+sin(work_clock*2.7)*2),16); p.far=Vector2(f*14,22); p.nod=.17
+		"cache":
+			p.hip=Vector2(-f*2,8); p.shoulder=Vector2(f*10,19)
+			p.near=Vector2(f*(17+sin(work_clock*4.1)*3),25); p.far=Vector2(-f*6,26); p.nod=.22
+		"fire":
+			p.hip=Vector2(-f,12); p.shoulder=Vector2(f*4,16)
+			var rub=sin(work_clock*3.0)*1.5
+			p.near=Vector2(f*(18+rub),15); p.far=Vector2(f*(13-rub),18); p.nod=.12
+	return p
+
 func body_pose():
+	# Mechanism artwork advances at render rate; read its current geometry for
+	# this whole pose instead of carrying a physics-step-old grip into drawing.
+	# This is read-only: clocks, blends, feet and the controller stay in physics.
+	var contacts=current_work_contacts()
 	var run=run_blend
 	var gait=fposmod(phase,1)*TAU
 	var bob=(1-cos(gait*2))*(.7+run*.7)*moving_blend
 	var squat=30.0*crouch_blend
-	var landing=sin(sqrt(clampf(1-land_time/.24,0,1))*PI)*(1+land_impact*5) if land_time>0 else 0.0
+	var landing=sin(sqrt(clampf(1-land_time/.24,0,1))*PI)*(1+land_impact*6.2) if land_time>0 else 0.0
 	var airborne=not is_on_floor() and game!=null and game.mode=="playing"
 	var rise=clampf(-velocity.y/400,0,1) if airborne else 0.0
 	var fall=clampf(velocity.y/500,0,1) if airborne else 0.0
 	var weary=fatigue_blend*(1.0-moving_blend*.35)
 	var shiver=sin(anim_time*28)*.32*fatigue_blend*(1-moving_blend)
-	var hip=Vector2(body_lean*.65-facing*push_blend*4,-45+run*2+squat*.58+bob+landing+push_blend*2)
-	var shoulder=Vector2(body_lean*1.5+facing*(weary*2+push_blend*11+rise*2-brake_blend*3),-75+squat+bob+landing+weary*2+push_blend*8+fall*2)
+	var twist=sin(gait)*moving_blend*(.7+run*1.2)
+	var hip=Vector2(body_lean*.65-facing*push_blend*4-facing*twist*.45,-45+run*2+squat*.58+bob+landing+push_blend*2+landing_approach*3)
+	var shoulder=Vector2(body_lean*1.5+facing*(weary*2+push_blend*11+rise*2-brake_blend*4+twist),-75+squat+bob+landing*1.18+weary*2+push_blend*8+fall*2+landing_approach*4.5)
 	if takeoff_time>0:
 		var extension=sin(takeoff_time/.18*PI)
-		shoulder.y-=extension*1.7; hip.y-=extension*.8
+		shoulder+=Vector2(facing*2,-3.8)*extension; hip.y-=extension*2
 	shoulder+=Vector2(facing*12,15)*mantle_blend
 	shoulder.x-=facing*4*recoil_blend
-	shoulder+=Vector2(facing*7,9)*work_blend
-	if work_kind=="fire": hip.y+=9*work_blend; shoulder.y+=10*work_blend
+	var work=work_profile()
+	hip+=work.hip*work_blend; shoulder+=work.shoulder*work_blend
+	if work_blend>.001 and (contacts.has("near") or contacts.has("far")):
+		var target=Vector2.ZERO; var targets=0
+		var scale_body=1.0 if is_girl else .84
+		for grip in ["near","far"]:
+			if contacts.has(grip): target+=to_local(contacts[grip])/scale_body; targets+=1
+		target/=maxi(1,targets)
+		var reach=target-shoulder
+		var effort=(reach-reach.limit_length(24.5)).limit_length(28)
+		# A small child bends through the waist to follow a low lever instead
+		# of silently stretching the forearm or detaching the fingers from it.
+		shoulder+=effort*work_blend
+		hip+=Vector2(effort.x*.24,maxf(0,effort.y)*.48)*work_blend
+	shoulder+=Vector2(signf(care_target.x-global_position.x)*3,3)*care_blend
 	# A planted ankle is authoritative. Lower the pelvis a little when a long
 	# support step would otherwise stretch the shin beyond its authored length.
 	var original_hip_y=hip.y
@@ -492,15 +605,83 @@ func body_pose():
 	var head=shoulder+Vector2(facing*(1.2+weary*2),-15+weary*1.7+crouch_blend*4)
 	var head_facing=facing
 	if glance_blend>.55 and glance_direction!=facing: head_facing=glance_direction
+	if brake_blend>.30 and input_axis!=0: head_facing=signf(input_axis)
+	if care_blend>.20: head_facing=signf(care_target.x-global_position.x)
+	if contacts.has("look") and work_blend>.25:
+		var look=contacts.look-global_position
+		if absf(look.x)>5: head_facing=signf(look.x)
 	head.x+=head_facing*glance_blend*1.6
 	var head_tilt=facing*(-run*.055+weary*.13+fall*.05)-head_facing*glance_blend*.035
+	head_tilt+=facing*(landing_approach*.09+landing*.015)
+	head_tilt=lerpf(head_tilt,head_facing*work.nod,work_blend)
+	head_tilt=lerpf(head_tilt,-head_facing*.06,care_blend)
 	head+=Vector2(facing*2,-1)*mantle_blend+Vector2(-facing*2,1)*recoil_blend
 	head_tilt=lerpf(head_tilt,-facing*.12,mantle_blend)
 	head_tilt=lerpf(head_tilt,facing*.18,recoil_blend)
-	return {"hip":hip,"shoulder":shoulder,"head":head,"head_facing":head_facing,"head_tilt":head_tilt,"rise":rise,"fall":fall,"weary":weary,"airborne":airborne}
+	return {"hip":hip,"shoulder":shoulder,"head":head,"head_facing":head_facing,"head_tilt":head_tilt,"rise":rise,"fall":fall,"weary":weary,"airborne":airborne,"landing":landing,"twist":twist,"work":work,"contacts":contacts}
+
+func current_work_contacts():
+	if game!=null and game.has_method("character_work_contacts") and is_on_floor() and not climbing:
+		var contacts=game.character_work_contacts(self)
+		if contacts is Dictionary: return contacts
+	return {}
 
 func reachable_hand(shoulder,target):
 	return shoulder+(target-shoulder).limit_length(30.5)
+
+func arm_pose(pose):
+	var f=facing; var run=run_blend; var gait=fposmod(phase,1)*TAU
+	var swing=sin(gait+PI)*moving_blend
+	var near_shoulder=pose.shoulder+Vector2(f*(1.3+pose.twist*.45),1.4)
+	var far_shoulder=pose.shoulder+Vector2(-f*(1.8+pose.twist*.45),.6)
+	var near=near_shoulder+Vector2(-swing*f*(16+run*5),27-absf(swing)*5-run*5)
+	var far=far_shoulder+Vector2(swing*f*(15+run*5),27-absf(swing)*4-run*6)
+	near=near.lerp(near_shoulder+Vector2(f*22,9),crouch_blend)
+	if pose.airborne:
+		near=near_shoulder+Vector2(f*(13+pose.fall*5),10-pose.rise*18)
+		far=far_shoulder+Vector2(-f*(12+pose.rise*3),17-pose.rise*17+pose.fall*2)
+		var launch=clampf((takeoff_time-.075)/.105,0,1)
+		near=near.lerp(near_shoulder+Vector2(-f*12,22),launch)
+		far=far.lerp(far_shoulder+Vector2(-f*22,13),launch)
+		near=near.lerp(near_shoulder+Vector2(f*19,20),landing_approach*.75)
+		far=far.lerp(far_shoulder+Vector2(-f*13,24),landing_approach*.75)
+	elif brake_blend>.01:
+		near=near.lerp(near_shoulder+Vector2(-f*15,18),brake_blend*.7)
+		far=far.lerp(far_shoulder+Vector2(f*19,12),brake_blend*.7)
+	var cold=cold_blend*(1-moving_blend*.9)*(1-crouch_blend*.65)
+	if not pose.airborne:
+		near=near.lerp(near_shoulder+Vector2(f*2,15),cold*.82)
+		far=far.lerp(far_shoulder+Vector2(f*13,11),cold*.88)
+		if danger_blend>.1:
+			near=near.lerp(near_shoulder+Vector2(-f*15,14) if not crouching else near_shoulder+Vector2(f*15,-6),danger_blend*.8)
+			far=far.lerp(far_shoulder+Vector2(-f*12,7),danger_blend*.72)
+	if care_blend>.01 and is_girl: far=far.lerp(to_local(care_target),care_blend)
+	near=near.lerp(near_shoulder+Vector2(f*27,10),push_blend)
+	far=far.lerp(far_shoulder+Vector2(f*26,6),push_blend)
+	near=near.lerp(near_shoulder+pose.work.near,work_blend)
+	far=far.lerp(far_shoulder+pose.work.far,work_blend)
+	var s=1.0 if is_girl else .84
+	if pose.contacts.has("near"): near=near.lerp(to_local(pose.contacts.near)/s,work_blend)
+	if pose.contacts.has("far"): far=far.lerp(to_local(pose.contacts.far)/s,work_blend)
+	var ledge=(climb_target-position)/s-Vector2(climb_direction*14,0)
+	var pull=clampf((ledge.y+60)/60,0,1)
+	near=near.lerp(near_shoulder+Vector2(f*19,lerpf(-19,22,pull)),mantle_blend)
+	far=far.lerp(far_shoulder+Vector2(f*11,lerpf(-17,17,pull)),mantle_blend)
+	if hand_blend>.001: near=near.lerp(to_local(smoothed_contact)/s,hand_blend*(1-work_blend))
+	return {"near_shoulder":near_shoulder,"far_shoulder":far_shoulder,"near":reachable_hand(near_shoulder,near),"far":reachable_hand(far_shoulder,far)}
+
+func near_elbow(shoulder,hand,head):
+	# Keep the elbow below/forward of overhead work for the whole stroke. A
+	# per-frame flip between the two IK solutions would make the elbow snap.
+	if work_blend>.2 and work_kind in ["pump","roof","brace"]:
+		return solve_knee(shoulder,hand,15,16,facing)
+	var preferred=solve_knee(shoulder,hand,15,16,-facing)
+	if (work_blend>.2 or mantle_blend>.2) and hand.y<shoulder.y-2:
+		var alternate=solve_knee(shoulder,hand,15,16,facing)
+		var close=Geometry2D.get_closest_point_to_segment(head,preferred,hand).distance_squared_to(head)
+		var clear=Geometry2D.get_closest_point_to_segment(head,alternate,hand).distance_squared_to(head)
+		if clear>close+9: return alternate
+	return preferred
 
 func _draw():
 	paint_light=local_illumination()
@@ -520,32 +701,25 @@ func _draw():
 		legs[i]=knee
 		if i==0:
 			tube(leg_hip,knee,foot,5.6,4.5,3.3,far,"stocking" if is_girl else "trouser",.78); boot(foot,far,sole_roll(i),.78)
-	var arm_swing=sin(gait+PI)*moving_blend*facing
-	var far_hand=shoulder+Vector2(arm_swing*(16+run*5),29-run*10)
-	if airborne: far_hand=shoulder+Vector2(-facing*(12+rise*3),17-rise*17+fall*2)
-	if danger_blend>.1:
-		var guard=shoulder+Vector2(-facing*16,13 if is_girl else 7)
-		far_hand=far_hand.lerp(guard,danger_blend*.78)
-	if weary>.1: far_hand=far_hand.lerp(shoulder+Vector2(facing*8,14),weary*.55)
-	if push_blend>.01: far_hand=far_hand.lerp(shoulder+Vector2(facing*26,6),push_blend)
-	if work_blend>.01:
-		var work_hand=shoulder+Vector2(facing*(20+sin(anim_time*3.8+PI)*3),15+cos(anim_time*3.8)*2)
-		if work_kind=="roof": work_hand=shoulder+Vector2(facing*12,-20+sin(anim_time*4+PI)*2)
-		elif work_kind=="fire": work_hand=shoulder+Vector2(facing*19,18)
-		far_hand=far_hand.lerp(work_hand,work_blend)
-	far_hand=far_hand.lerp(shoulder+Vector2(facing*17,-15),mantle_blend)
-	far_hand=reachable_hand(shoulder,far_hand)
-	var far_elbow=solve_knee(shoulder,far_hand,15,16,facing)
-	tube(shoulder+Vector2(-2,2),far_elbow,far_hand,4.5,3.4,2.7,far,"sleeve",.76)
-	draw_hand(far_hand,far_elbow,lit_color(Color(.61,.40,.27),.78),push_blend>.4 or climbing,.78)
+	var arms=arm_pose(pose)
+	var far_hand=arms.far; var far_shoulder=arms.far_shoulder
+	var far_elbow=solve_knee(far_shoulder,far_hand,15,16,facing)
+	tube(far_shoulder,far_elbow,far_hand,4.5,3.4,2.7,far,"sleeve",.78)
+	draw_hand(far_hand,far_elbow,lit_color(Color(.61,.40,.27),.78),push_blend>.4 or climbing or work_kind=="balance_hold",.78)
 	var skirt_wind=sin(gait-.65)*moving_blend*2+cloth_drag+rise*facing*2
 	var hem=hip.y+(20 if is_girl else 8)
-	var body=[shoulder+Vector2(-8,-1),shoulder+Vector2(7,-1),shoulder+Vector2(11,8),hip+Vector2(9,0),Vector2(15+skirt_wind,hem),Vector2(-16+skirt_wind,hem-1),hip+Vector2(-9,0),shoulder+Vector2(-11,8)]
+	var f=facing
+	var body=[shoulder+Vector2(-f*7,-1),shoulder+Vector2(f*6,-1),shoulder+Vector2(f*10,6),shoulder.lerp(hip,.82)+Vector2(f*8,0),hip+Vector2(f*9,0),Vector2(hip.x+f*15+skirt_wind,hem),Vector2(hip.x-f*16+skirt_wind,hem-1),hip+Vector2(-f*9,-1),shoulder.lerp(hip,.46)+Vector2(-f*9,0),shoulder.lerp(hip,.18)+Vector2(-f*9,0)]
 	draw_colored_polygon(PackedVector2Array(body),cloth)
-	painted_cloth(body,shoulder,hem,Rect2(557,86,244,448),lit_color(Color(.98,1.09,1.16,.98) if is_girl else Color(1.03,1.08,1.10,.98)))
+	if is_girl and girl_cloth!=null: painted_cloth(body,shoulder,hem,Rect2(350,65,210,625),lit_color(Color(.98,1.02,1.04,.99)),girl_cloth)
+	else: painted_cloth(body,shoulder,hem,Rect2(557,86,244,448),lit_color(Color(.98,1.09,1.16,.98) if is_girl else Color(1.03,1.08,1.10,.98)))
 	# Cloth seams and edge light move with the silhouette, rather than floating
 	# pasted body rectangles. The final anatomy is authored for these children.
-	draw_polyline(PackedVector2Array([shoulder+Vector2(-8,1),shoulder+Vector2(-10,10),hip+Vector2(-9,0),Vector2(-15+skirt_wind,hem-2)]),Color(edge,.20),.8,true)
+	draw_polyline(PackedVector2Array([shoulder+Vector2(-f*7,1),shoulder.lerp(hip,.46)+Vector2(-f*9,0),hip+Vector2(-f*9,0),Vector2(hip.x-f*15+skirt_wind,hem-2)]),Color(edge,.17),.7,true)
+	var compression=clampf(crouch_blend+work_blend*.8+pose.landing*.1,0,1)
+	for crease in range(2):
+		var at=hip+Vector2(-f*7,-7+crease*4)
+		draw_line(at,at+Vector2(f*(11-crease*2),-2-compression*2),Color(.08,.13,.15,.18*compression),.9,true)
 	for i in range(3):
 		var x=-7+i*7
 		draw_line(Vector2(x,hip.y-2),Vector2(x*1.5+skirt_wind,hem-3),Color(.38,.45,.43,.11),.8,true)
@@ -561,16 +735,18 @@ func _draw():
 	tube(near_hip,knee,foot,5.6,4.5,3.1,ink,"stocking" if is_girl else "trouser"); boot(foot,ink,sole_roll(1))
 	if is_girl:
 		# The dress is in front of the thighs and has a stable, sculpted hem.
-		var hem_shape=PackedVector2Array([hip+Vector2(-10,-4),hip+Vector2(10,-4),Vector2(16+skirt_wind,hem),Vector2(-17+skirt_wind,hem-1)])
+		var hem_shape=PackedVector2Array([hip+Vector2(-f*10,-4),hip+Vector2(f*10,-4),Vector2(hip.x+f*16+skirt_wind,hem),Vector2(hip.x-f*17+skirt_wind,hem-1)])
 		draw_colored_polygon(hem_shape,cloth)
-		painted_cloth(hem_shape,hip+Vector2(0,-4),hem,Rect2(546,330,247,210),lit_color(Color(.94,1.08,1.16,.98)))
-		draw_line(Vector2(-16+skirt_wind,hem-2),Vector2(15+skirt_wind,hem-1),Color(edge,.25),1,true)
+		if girl_cloth!=null: painted_cloth(hem_shape,hip+Vector2(0,-4),hem,Rect2(270,400,290,295),lit_color(Color(.96,1.01,1.03,.99)),girl_cloth)
+		else: painted_cloth(hem_shape,hip+Vector2(0,-4),hem,Rect2(546,330,247,210),lit_color(Color(.94,1.08,1.16,.98)))
+		draw_line(Vector2(hip.x-f*16+skirt_wind,hem-2),Vector2(hip.x+f*15+skirt_wind,hem-1),Color(edge,.21),.8,true)
 		draw_line(hip+Vector2(-9,-2),hip+Vector2(8,-2),Color(.44,.47,.40,.32),1.2,true)
 		var patch=Vector2(-8+skirt_wind*.7,hem-8)
 		draw_colored_polygon(PackedVector2Array([patch+Vector2(-3,-3),patch+Vector2(3,-2),patch+Vector2(2,4),patch+Vector2(-3,3)]),Color(.23,.30,.29,.7))
 		draw_line(patch+Vector2(-2,-2),patch+Vector2(-2,3),Color(.55,.56,.46,.25),.7,true)
 	draw_line(shoulder+Vector2(0,-2),head+Vector2(0,6),lit_color(Color(.50,.32,.20)),6,true)
-	draw_set_transform(head*s,head_tilt,Vector2(s*head_facing,s))
+	var turn_width=1.0-sin(clampf(1-turn_time/.20,0,1)*PI)*.16 if turn_time>0 else 1.0
+	draw_set_transform(head*s,head_tilt,Vector2(s*head_facing*turn_width,s))
 	var profile_tint=lit_color(Color(.96,.97,.95))
 	if is_girl: draw_texture_rect_region(girl_profile,Rect2(-19,-17,34,32),Rect2(30,15,1135,1000),profile_tint)
 	else: draw_texture_rect_region(head_atlas,Rect2(-15,-17,31,34),Rect2(0,0,440,490),profile_tint)
@@ -586,28 +762,11 @@ func _draw():
 		draw_colored_polygon(PackedVector2Array([ribbon,ribbon+Vector2(-head_facing*5,-2),ribbon+Vector2(-head_facing*4,3),ribbon+Vector2(head_facing*3,2),ribbon+Vector2(head_facing*4,-2)]),Color("5e8291"))
 		draw_line(ribbon,ribbon+Vector2(-head_facing*8+cloth_drag*.3,4+sin(anim_time*5)*1.3),Color("658d9b"),2.0,true)
 		draw_line(ribbon,ribbon+Vector2(-head_facing*4,8),Color("537d91"),1.6,true)
-	var hand=shoulder+Vector2(-arm_swing*(16+run*5),29-run*10)
-	hand=hand.lerp(shoulder+Vector2(facing*22,9),crouch_blend)
-	if airborne: hand=shoulder+Vector2(facing*(13+fall*5),10-rise*18)
-	if danger_blend>.1 and not hand_active:
-		var shelter_hand=shoulder+Vector2(facing*17,-7) if crouching else shoulder+Vector2(-facing*13,18)
-		hand=hand.lerp(shelter_hand,danger_blend*.8)
-	if weary>.1 and not crouching: hand=hand.lerp(shoulder+Vector2(facing*10,15),weary*.52)
-	if push_blend>.01: hand=hand.lerp(shoulder+Vector2(facing*27,10),push_blend)
-	if work_blend>.01:
-		var work_hand=shoulder+Vector2(facing*24,13)
-		if work_kind in ["wheel","pump","bridge","relay"]: work_hand=shoulder+Vector2(facing*(24+sin(anim_time*3.8)*3),6+cos(anim_time*3.8)*3)
-		elif work_kind=="roof": work_hand=shoulder+Vector2(facing*18,-18+sin(anim_time*4)*2)
-		elif work_kind in ["clear","brace"]: work_hand=shoulder+Vector2(facing*(22+sin(anim_time*2.7)*2),15+cos(anim_time*2.7)*2)
-		elif work_kind=="fire": work_hand=shoulder+Vector2(facing*22,17)
-		hand=hand.lerp(work_hand,work_blend)
-	hand=hand.lerp(shoulder+Vector2(facing*17,-15),mantle_blend)
-	if hand_blend>.001: hand=hand.lerp(to_local(smoothed_contact)/s,hand_blend)
-	hand=reachable_hand(shoulder,hand)
-	var elbow=solve_knee(shoulder,hand,15,16,-facing)
-	tube(shoulder+Vector2(1,3),elbow,hand,4.6,3.5,2.5,ink,"sleeve")
-	draw_line(shoulder+Vector2(-2,3),elbow+Vector2(-1,0),Color(edge,.20),1,true)
-	draw_hand(hand,elbow,lit_color(Color(.67,.43,.28)),climbing or push_blend>.4 or danger_blend>.45)
+	var hand=arms.near; var near_shoulder=arms.near_shoulder
+	var elbow=near_elbow(near_shoulder,hand,head)
+	tube(near_shoulder,elbow,hand,4.7,3.5,2.5,ink,"sleeve")
+	draw_line(near_shoulder+Vector2(-facing*2,3),elbow+Vector2(-facing,0),Color(edge,.14),.8,true)
+	draw_hand(hand,elbow,lit_color(Color(.67,.43,.28)),climbing or push_blend>.4 or danger_blend>.45 or work_kind in ["fire","balance_hold"] and work_blend>.3)
 	# The sleeve cuff ends at the wrist, letting a small hand read separately.
 	var cuff=(hand-elbow).normalized()
 	var cuff_cross=Vector2(-cuff.y,cuff.x)
