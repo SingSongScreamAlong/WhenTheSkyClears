@@ -1,0 +1,165 @@
+{
+	"actual_sequences": {
+		"freight": {
+			"actual_lift_travel": 170.0,
+			"boarding": {
+				"boy": {
+					"x": 14002.4736328125,
+					"y": 695.925231933594
+				},
+				"girl": {
+					"x": 14010.546875,
+					"y": 695.925231933594
+				},
+				"physics_samples": 67,
+				"reached": true
+			},
+			"boy": {
+				"x": 14426.7109375,
+				"y": 525.925231933594
+			},
+			"boy_catches_upper_floor": true,
+			"girl": {
+				"x": 14458.96875,
+				"y": 525.998291015625
+			},
+			"girl_climbs_loading_steps": {
+				"legs": [
+					{
+						"boy": {
+							"x": 13999.400390625,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14140.578125,
+							"y": 695.925231933594
+						},
+						"physics_samples": 121,
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 13999.400390625,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14308.794921875,
+							"y": 635.925231933594
+						},
+						"physics_samples": 61,
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 13999.400390625,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14468.7119140625,
+							"y": 575.925231933594
+						},
+						"physics_samples": 58,
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 13999.400390625,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14458.96875,
+							"y": 525.998291015625
+						},
+						"physics_samples": 39,
+						"reached": true
+					}
+				],
+				"reached": true
+			},
+			"health": 100,
+			"latched": true,
+			"q_call_used": true,
+			"q_wait_used": true,
+			"return_to_winch": {
+				"boy": {
+					"x": 13999.400390625,
+					"y": 695.925231933594
+				},
+				"girl": {
+					"x": 13824.3681640625,
+					"y": 755.925231933594
+				},
+				"physics_samples": 74,
+				"reached": true
+			},
+			"reunion": {
+				"boy": {
+					"x": 14373.3203125,
+					"y": 525.925231933594
+				},
+				"girl": {
+					"x": 14458.96875,
+					"y": 525.998291015625
+				},
+				"physics_samples": 108,
+				"reached": true
+			},
+			"reward_taken": true,
+			"rider_ticks": 345,
+			"signal_not_offered_from_deck": true,
+			"waiting_contact": true,
+			"winch_ticks": 244
+		},
+		"orchard": {
+			"actual_crate_travel": 130.30029296875,
+			"ascent": {
+				"boy": {
+					"x": 7777.74755859375,
+					"y": 579.925231933594
+				},
+				"girl": {
+					"x": 7765.13671875,
+					"y": 579.925231933594
+				},
+				"physics_samples": 170,
+				"reached": true
+			},
+			"boy": {
+				"x": 7800.4990234375,
+				"y": 579.925231933594
+			},
+			"boy_ramp_ticks": 59,
+			"crate": {
+				"x": 7460.30029296875,
+				"y": 672.272216796875
+			},
+			"crate_velocity": {
+				"x": 78.0,
+				"y": 0.0
+			},
+			"girl": {
+				"x": 7765.13671875,
+				"y": 579.925231933594
+			},
+			"girl_ramp_ticks": 51,
+			"health": 100,
+			"latched": true,
+			"native_contacts": [
+				"WeightCradle",
+				"IronWeightChock"
+			],
+			"plate_contact": true,
+			"push_ticks": 217,
+			"ramp_angle": -0.643501102924347,
+			"reward_taken": true
+		}
+	},
+	"all_states_reached": true,
+	"build": "0.4.4",
+	"screenshots": [
+		"20_orchard_weighted_mechanism.png",
+		"21_orchard_open_route.png",
+		"22_freight_lift_wait.png",
+		"23_freight_lift_reunion.png"
+	]
+}

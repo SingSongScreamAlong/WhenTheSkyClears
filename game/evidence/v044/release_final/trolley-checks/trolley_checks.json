@@ -1,0 +1,219 @@
+{
+	"all_passed": true,
+	"build": "0.4.3",
+	"checks": [
+		{
+			"check": "native_chassis_uses_real_rigid_body",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "drawn_wheels_contact_actual_sloped_ground",
+			"details": "0.0",
+			"passed": true
+		},
+		{
+			"check": "both_crouched_children_fit_actual_canvas",
+			"details": "[{ \"x\": 10588.0, \"y\": 655.705017089844 }, { \"x\": 10538.0, \"y\": 648.40771484375 }, 660.717590332031]",
+			"passed": true
+		},
+		{
+			"check": "moving_canvas_protects_both_from_actual_sweep",
+			"details": "100",
+			"passed": true
+		},
+		{
+			"check": "exposed_boy_is_not_protected_by_girls_canvas",
+			"details": "72.0",
+			"passed": true
+		},
+		{
+			"check": "exposed_girl_is_not_protected_by_boys_canvas",
+			"details": "72.0",
+			"passed": true
+		},
+		{
+			"check": "standing_under_canvas_is_still_exposed",
+			"details": "72.0",
+			"passed": true
+		},
+		{
+			"check": "walking_into_cart_without_E_does_not_drive_it",
+			"details": "0.0",
+			"passed": true
+		},
+		{
+			"check": "held_E_contact_physically_pushes_cart",
+			"details": "[93.076171875, 89]",
+			"passed": true
+		},
+		{
+			"check": "released_parking_brake_stops_cart_on_slope",
+			"details": "0.0",
+			"passed": true
+		},
+		{
+			"check": "pause_freezes_real_cart",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "inventory_freezes_real_cart",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unsolved_respawn_restores_cart_and_closed_hatch",
+			"details": "[{ \"x\": 10355.0, \"y\": 622.272216796875 }, { \"x\": 10355.0, \"y\": 622.0 }, 0.0, false]",
+			"passed": true
+		},
+		{
+			"check": "closed_hatch_refuses_reward_from_far_approach",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "continuous_push_reaches_real_far_dock",
+			"details": "{\"actual_travel\":565.3974609375,\"body\":{\"x\":10920.3974609375,\"y\":675.868591308594},\"both_cover_ticks\":600,\"both_protected\":true,\"boy\":{\"x\":10999.2236328125,\"y\":699.925231933594},\"docked\":true,\"exit\":{\"boy\":{\"x\":11174.7763671875,\"y\":699.925231933594},\"girl\":{\"x\":11235.7109375,\"y\":699.925231933594},\"reached\":true},\"girl\":{\"x\":11022.49609375,\"y\":699.999206542969},\"hatch_amount\":1.0,\"health\":100,\"held_push\":true,\"medicine\":1,\"push_contact_ticks\":526,\"reunion\":{\"boy\":{\"x\":11022.4794921875,\"y\":699.924011230469},\"girl\":{\"x\":11022.49609375,\"y\":699.999206542969},\"reached\":true,\"settled_boy\":{\"x\":10999.2236328125,\"y\":699.925231933594},\"settled_girl\":{\"x\":11022.49609375,\"y\":699.999206542969}},\"reward_taken\":true,\"scrap\":1,\"settled_spacing\":23.2724609375}",
+			"passed": true
+		},
+		{
+			"check": "both_children_survive_under_moving_canvas",
+			"details": "{\"actual_travel\":565.3974609375,\"body\":{\"x\":10920.3974609375,\"y\":675.868591308594},\"both_cover_ticks\":600,\"both_protected\":true,\"boy\":{\"x\":10999.2236328125,\"y\":699.925231933594},\"docked\":true,\"exit\":{\"boy\":{\"x\":11174.7763671875,\"y\":699.925231933594},\"girl\":{\"x\":11235.7109375,\"y\":699.925231933594},\"reached\":true},\"girl\":{\"x\":11022.49609375,\"y\":699.999206542969},\"hatch_amount\":1.0,\"health\":100,\"held_push\":true,\"medicine\":1,\"push_contact_ticks\":526,\"reunion\":{\"boy\":{\"x\":11022.4794921875,\"y\":699.924011230469},\"girl\":{\"x\":11022.49609375,\"y\":699.999206542969},\"reached\":true,\"settled_boy\":{\"x\":10999.2236328125,\"y\":699.925231933594},\"settled_girl\":{\"x\":11022.49609375,\"y\":699.999206542969}},\"reward_taken\":true,\"scrap\":1,\"settled_spacing\":23.2724609375}",
+			"passed": true
+		},
+		{
+			"check": "dock_opens_real_rotating_hatch",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "boy_navigates_cart_to_reunite_at_cabinet",
+			"details": "{\"boy\":{\"x\":11022.4794921875,\"y\":699.924011230469},\"girl\":{\"x\":11022.49609375,\"y\":699.999206542969},\"reached\":true,\"settled_boy\":{\"x\":10999.2236328125,\"y\":699.925231933594},\"settled_girl\":{\"x\":11022.49609375,\"y\":699.999206542969}}",
+			"passed": true
+		},
+		{
+			"check": "natural_reunion_keeps_child_silhouettes_apart",
+			"details": "23.2724609375",
+			"passed": true
+		},
+		{
+			"check": "both_can_clear_the_opened_supply_cabinet",
+			"details": "{\"boy\":{\"x\":11174.7763671875,\"y\":699.925231933594},\"girl\":{\"x\":11235.7109375,\"y\":699.925231933594},\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "native_search_grants_finite_medicine_and_iron",
+			"details": "[1, 1]",
+			"passed": true
+		},
+		{
+			"check": "exhausted_cart_objective_moves_on",
+			"details": "The medicine is packed. Take the road behind the school kitchens.",
+			"passed": true
+		},
+		{
+			"check": "depleted_cabinet_cannot_duplicate_resources",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "partial_search_keeps_only_uncollected_painted_medicine",
+			"details": "[\"medicine\"]",
+			"passed": true
+		},
+		{
+			"check": "remaining_medicine_is_finite_after_partial_search",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "solved_reset_preserves_docked_cart_and_open_hatch",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "open_cabinet_reports_its_actual_physical_top",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "rotated_lid_support_matches_native_collision",
+			"details": "0.00006703155577",
+			"passed": true
+		},
+		{
+			"check": "save_resume_restores_solved_cart_and_spent_reward",
+			"details": "",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"continuous_success": {
+			"actual_travel": 565.3974609375,
+			"body": {
+				"x": 10920.3974609375,
+				"y": 675.868591308594
+			},
+			"both_cover_ticks": 600,
+			"both_protected": true,
+			"boy": {
+				"x": 10999.2236328125,
+				"y": 699.925231933594
+			},
+			"docked": true,
+			"exit": {
+				"boy": {
+					"x": 11174.7763671875,
+					"y": 699.925231933594
+				},
+				"girl": {
+					"x": 11235.7109375,
+					"y": 699.925231933594
+				},
+				"reached": true
+			},
+			"girl": {
+				"x": 11022.49609375,
+				"y": 699.999206542969
+			},
+			"hatch_amount": 1.0,
+			"health": 100,
+			"held_push": true,
+			"medicine": 1,
+			"push_contact_ticks": 526,
+			"reunion": {
+				"boy": {
+					"x": 11022.4794921875,
+					"y": 699.924011230469
+				},
+				"girl": {
+					"x": 11022.49609375,
+					"y": 699.999206542969
+				},
+				"reached": true,
+				"settled_boy": {
+					"x": 10999.2236328125,
+					"y": 699.925231933594
+				},
+				"settled_girl": {
+					"x": 11022.49609375,
+					"y": 699.999206542969
+				}
+			},
+			"reward_taken": true,
+			"scrap": 1,
+			"settled_spacing": 23.2724609375
+		}
+	},
+	"method": "Actual school sweep lane and native rigid body. Isolated setups test each child's exposure, release, modal pause, recovery and persistence. Success uses native held movement/E/crouch/jump and actual floor/contact ticks without repositioning, flags or resource grants.",
+	"recorded_frames": 0,
+	"recording": {
+		"cues": [],
+		"enabled": false,
+		"fps": 30,
+		"frame_directory": "",
+		"frames": 0,
+		"scope": "Continuous native crouch, held E push, actual slope travel, dock ratchet, reunion and finite search after one explicit near-bank setup. Refusal/exposure/pause/save fixtures are excluded."
+	}
+}

@@ -90,21 +90,24 @@ var companion_notice_clock=0.0
 var mill_encounters=[]
 var sluice_encounters=[]
 var trolley_encounters=[]
+var puzzle_encounters=[]
 var right_boundary
 var section_preview=false
 var playable_preview=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears · Development 0.4.3")
+	DisplayServer.window_set_title("When the Sky Clears · Development 0.4.4")
 	qa_args=OS.get_cmdline_user_args()
-	for flag in ["--mill-preview","--canal-preview","--sluice-preview","--trolley-preview"]:
+	for flag in ["--mill-preview","--canal-preview","--sluice-preview","--trolley-preview","--orchard-preview","--freight-lift-preview","--garden-preview"]:
 		if flag in qa_args: playable_preview=true
 	smoke_test="--mill-preview" in qa_args or "--mill-checks" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--development-checks" in qa_args or "--movement-checks" in qa_args or "--capture-v040" in qa_args or "--side-routes" in qa_args
 	smoke_test=smoke_test or "--story-checks" in qa_args or "--capture-story" in qa_args
 	smoke_test=smoke_test or "--refinement-checks" in qa_args or "--capture-v041" in qa_args or "--canal-preview" in qa_args
 	smoke_test=smoke_test or "--sluice-checks" in qa_args or "--craft-checks" in qa_args or "--capture-v042" in qa_args or "--sluice-preview" in qa_args or "--world-craft-checks" in qa_args
 	smoke_test=smoke_test or "--trolley-checks" in qa_args or "--performance-checks" in qa_args or "--capture-v043" in qa_args or "--trolley-preview" in qa_args
+	for flag in ["--physical-v044-checks","--garden-v044-checks","--character-v044-checks","--capture-v044","--orchard-preview","--freight-lift-preview","--garden-preview"]:
+		if flag in qa_args: smoke_test=true
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args: smoke_test=true
 	setup_input()
@@ -149,13 +152,22 @@ func _ready():
 		smoke_test=true; call_deferred("run_movement_checks")
 	if "--capture-v040" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
-	if "--capture-v041" in qa_args or "--capture-v042" in qa_args or "--capture-v043" in qa_args:
+	if "--capture-v041" in qa_args or "--capture-v042" in qa_args or "--capture-v043" in qa_args or "--capture-v044" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
 	if "--sluice-checks" in qa_args: call_deferred("run_sluice_checks")
 	if "--craft-checks" in qa_args: call_deferred("run_craft_checks")
 	if "--world-craft-checks" in qa_args: call_deferred("run_world_craft_checks")
 	if "--trolley-checks" in qa_args: call_deferred("run_trolley_checks")
 	if "--performance-checks" in qa_args: call_deferred("run_performance_checks")
+	if "--physical-v044-checks" in qa_args: run_v044_checks.call_deferred("physical_puzzle_checks_v044", "physical_puzzles_v044")
+	if "--garden-v044-checks" in qa_args: run_v044_checks.call_deferred("garden_puzzle_checks_v044", "garden_puzzle_v044")
+	if "--character-v044-checks" in qa_args: run_v044_checks.call_deferred("character_checks_v044", "character_checks_v044")
+	for preview in [{"flag":"--orchard-preview","chapter":0,"x":7250}, {"flag":"--freight-lift-preview","chapter":2,"x":13740}, {"flag":"--garden-preview","chapter":4,"x":12160}]:
+		if preview.flag in qa_args:
+			journey_active=true; flags={}; load_chapter(preview.chapter,false); mode="playing"
+			for gate in level.gates:
+				if float(gate.x)<preview.x: flags[gate.key]=true
+			checkpoint_x=preview.x; respawn(false); chapter_card=0
 	if "--trolley-preview" in qa_args:
 		smoke_test=true; journey_active=true; flags={}; load_chapter(3,false); mode="playing"
 		for gate in level.gates:
@@ -243,6 +255,9 @@ func apply_volume():
 
 func load_chapter(idx, announce=true):
 	if is_instance_valid(story): story.reset()
+	for puzzle in puzzle_encounters:
+		if is_instance_valid(puzzle): remove_child(puzzle); puzzle.queue_free()
+	puzzle_encounters.clear()
 	for trolley in trolley_encounters:
 		if is_instance_valid(trolley): remove_child(trolley); trolley.queue_free()
 	trolley_encounters.clear()
@@ -281,6 +296,10 @@ func load_chapter(idx, announce=true):
 		elif mechanism.kind=="shelter_trolley":
 			var trolley=load("res://scripts/trolley_encounter.gd").new()
 			trolley.game=self; trolley.data=mechanism; add_child(trolley); trolley_encounters.append(trolley)
+		elif mechanism.kind in ["weighted_orchard","freight_winch_lift","garden_rope_ferry"]:
+			var script_path="res://scripts/garden_ferry_v044.gd" if mechanism.kind=="garden_rope_ferry" else "res://scripts/physical_puzzles_v044.gd"
+			var puzzle=load(script_path).new()
+			puzzle.game=self; puzzle.data=mechanism; add_child(puzzle); puzzle_encounters.append(puzzle)
 	player=Child.new(); player.game=self; player.name="Girl"; player.position=Vector2(180,698); add_child(player)
 	boy=Child.new(); boy.is_girl=false; boy.controlled=false; boy.game=self; boy.name="Boy"; boy.position=Vector2(123,698); add_child(boy)
 	checkpoint_x=180; trail.clear(); shell_clock=0; shell_warning=0; exposure=0; invulnerable=2
@@ -340,6 +359,10 @@ func surface_y_at(x,fallback_y=700.0):
 			closest=supported; distance=absf(supported-fallback_y)
 	for trolley in trolley_encounters:
 		var supported=trolley.support_at(x,fallback_y)
+		if is_finite(supported) and absf(supported-fallback_y)<distance:
+			closest=supported; distance=absf(supported-fallback_y)
+	for puzzle in puzzle_encounters:
+		var supported=puzzle.support_at(x,fallback_y)
 		if is_finite(supported) and absf(supported-fallback_y)<distance:
 			closest=supported; distance=absf(supported-fallback_y)
 	return closest
@@ -501,6 +524,11 @@ func update_companion(_dt):
 				# A short gap between raised boards needs a step-up jump before
 				# his support foot leaves the previous board, not at the far face.
 				if approach>0 and approach<68 and p.y<boy.position.y-12 and p.y>boy.position.y-145 and (not p.get("optional_route",false) or player.position.y<float(p.y)+30): boy.ai_jump=true
+			for puzzle in puzzle_encounters:
+				for obstacle in puzzle.obstacle_rects():
+					var edge=obstacle.position.x if forward>0 else obstacle.end.x
+					var approach=(edge-boy.position.x)*forward
+					if approach>0 and approach<68 and obstacle.position.y<boy.position.y-12 and obstacle.position.y>boy.position.y-145 and player.position.y<obstacle.position.y+30: boy.ai_jump=true
 			# An old high trail point can belong to the girl's descent from a
 			# platform. Treating it as a jump cue made him leap before a gap and
 			# fall short. Read the actual edge/platform, or a solid crate ahead.
@@ -526,6 +554,8 @@ func ground_at(x):
 	return false
 
 func is_covered(child):
+	for puzzle in puzzle_encounters:
+		if puzzle.has_method("is_covered") and puzzle.is_covered(child): return true
 	for trolley in trolley_encounters:
 		if trolley.is_covered(child): return true
 	if in_safe_zone(child.position.x): return true
@@ -573,13 +603,17 @@ func update_prompt():
 		if p.has("requires_flag") and not flags.get(p.requires_flag,false): continue
 		if p.kind=="cache" and flags.get(p.id,false): continue
 		if p.kind in ["wheel","latch","repair","roof","pump","bridge","relay","clear","brace"] and flags.get(p.id,false): continue
-		if abs(player.position.x-p.x)<86 and abs(player.position.y-p.y)<100:
+		if abs(player.position.x-p.x)<86 and abs(player.position.y-p.y)<float(p.get("vertical_reach",100)):
 			near_item=p; prompt="HOLD E   "+p.label; break
 	if near_item.is_empty() and is_instance_valid(story):
 		var moment=story.available()
 		if not moment.is_empty():
 			near_item=moment.duplicate(true); near_item.kind="story"
 			prompt="HOLD E   "+str(moment.label)
+	if prompt=="":
+		for puzzle in puzzle_encounters:
+			var local_hint=puzzle.objective_text()
+			if not local_hint.is_empty(): prompt=local_hint; break
 	if prompt=="":
 		for trolley in trolley_encounters:
 			var local_hint=trolley.objective_text()
@@ -598,6 +632,9 @@ func in_safe_zone(x):
 	return false
 
 func current_objective():
+	for puzzle in puzzle_encounters:
+		var local_objective=puzzle.objective_text()
+		if not local_objective.is_empty(): return local_objective
 	for trolley in trolley_encounters:
 		var local_objective=trolley.objective_text()
 		if not local_objective.is_empty(): return local_objective
@@ -701,6 +738,7 @@ func interact():
 	if not pending_action.is_empty() or near_item.is_empty(): return
 	if near_item.has("requires_flag") and not flags.get(near_item.requires_flag,false): return
 	if player.action_time>0: return
+	if near_item.has("vertical_reach") and absf(player.position.y-float(near_item.get("y",player.position.y)))>float(near_item.vertical_reach): return
 	pending_action=near_item.duplicate(); action_progress=0; action_duration=float(pending_action.get("hold_seconds",1.1))
 	if pending_action.kind=="end" and abs(player.position.x-boy.position.x)>120:
 		pending_action={}; announce_message("Wait for him. You made it this far together.",3)
@@ -713,7 +751,7 @@ func interact():
 
 func tick_action(dt):
 	if pending_action.is_empty(): return
-	if not Input.is_action_pressed("interact") or abs(player.position.x-pending_action.x)>100 or abs(player.position.y-float(pending_action.get("y",player.position.y)))>100:
+	if not Input.is_action_pressed("interact") or abs(player.position.x-pending_action.x)>100 or abs(player.position.y-float(pending_action.get("y",player.position.y)))>float(pending_action.get("vertical_reach",100)):
 		action_interrupts+=1; pending_action={}; action_progress=0; player.action_time=0; boy.action_time=0; return
 	player.action_time=.12
 	if pending_action.get("companion_required",false):
@@ -804,6 +842,7 @@ func recover(count=true,reason="Take another breath. Try a different path."):
 	mode="recovering"; recovery_clock=1.4; announce_message(reason,4)
 
 func respawn(reset_survival=true):
+	for puzzle in puzzle_encounters: puzzle.reset_from_progress()
 	for trolley in trolley_encounters: trolley.reset_from_progress()
 	for sluice in sluice_encounters: sluice.reset_from_progress()
 	for mill in mill_encounters: mill.reset_from_progress()
@@ -922,6 +961,9 @@ func run_smoke():
 				# already-supplied prerequisite. The cabinet center is solid geometry.
 				for trolley in trolley_encounters: trolley.reset_from_progress()
 				approach_x-=52; companion_gap=28
+			if p.get("physical_cache",false):
+				for puzzle in puzzle_encounters: puzzle.reset_from_progress()
+				approach_x=float(p.get("qa_approach_x",approach_x)); companion_gap=float(p.get("qa_companion_gap",42))
 			player.position=Vector2(approach_x,surface_y_at(approach_x,p.y)-1)
 			boy.position=Vector2(approach_x-companion_gap,surface_y_at(approach_x-companion_gap,p.y)-1)
 			boy.velocity=Vector2.ZERO; player.velocity=Vector2.ZERO; boy.following=true; trail.clear()
@@ -1071,8 +1113,8 @@ func traverse_journey():
 				if not p.get("optional_route",false) and p.x-player.position.x>0 and p.x-player.position.x<45 and p.y<player.position.y-12 and p.y>player.position.y-145: need_jump=true
 			for body in pushables:
 				if body.position.x-player.position.x>0 and body.position.x-player.position.x<78: need_jump=true
-			for trolley in trolley_encounters:
-				for obstacle in trolley.obstacle_rects():
+			for mechanism in trolley_encounters+puzzle_encounters:
+				for obstacle in mechanism.obstacle_rects():
 					var approach=obstacle.position.x-player.position.x
 					if approach>0 and approach<60 and obstacle.position.y<player.position.y-12 and obstacle.position.y>player.position.y-110: need_jump=true
 			for mill in mill_encounters:
@@ -1499,13 +1541,17 @@ func capture_v040():
 	await get_tree().process_frame; camera.position=Vector2(12875,427)
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(report_path("07_character_close_study.png"))
-	if "--capture-v041" in qa_args or "--capture-v042" in qa_args or "--capture-v043" in qa_args:
+	if "--capture-v041" in qa_args or "--capture-v042" in qa_args or "--capture-v043" in qa_args or "--capture-v044" in qa_args:
 		await load("res://scripts/refinement_checks.gd").capture(self)
-	if "--capture-v042" in qa_args or "--capture-v043" in qa_args:
+	if "--capture-v042" in qa_args or "--capture-v043" in qa_args or "--capture-v044" in qa_args:
 		await load("res://scripts/sluice_checks.gd").capture(self)
 		await load("res://scripts/world_craft_checks.gd").capture(self)
-	if "--capture-v043" in qa_args:
+	if "--capture-v043" in qa_args or "--capture-v044" in qa_args:
 		await load("res://scripts/trolley_checks.gd").capture(self)
+	if "--capture-v044" in qa_args:
+		await load("res://scripts/physical_puzzle_checks_v044.gd").capture(self)
+		await load("res://scripts/garden_puzzle_checks_v044.gd").capture(self)
+		await load("res://scripts/character_checks_v044.gd").capture(self)
 	print("V040_NATIVE_4K_CAPTURE_COMPLETE"); call_deferred("quit_game")
 
 func run_mill_checks():
@@ -1533,6 +1579,9 @@ func capture_crossing():
 	await load("res://scripts/crossing_checks.gd").capture(self)
 
 func character_work_contacts(child):
+	for puzzle in puzzle_encounters:
+		var contact=puzzle.work_contacts(child)
+		if not contact.is_empty(): return contact
 	for trolley in trolley_encounters:
 		var contact=trolley.work_contacts(child)
 		if not contact.is_empty(): return contact
@@ -1586,4 +1635,11 @@ func run_performance_checks():
 	var file=FileAccess.open(report_path("performance_checks.json"),FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"\t")); file.close()
 	print("PERFORMANCE_CHECKS_RESULT ",JSON.stringify(report))
+	call_deferred("quit_game",0 if report.all_passed else 1)
+
+func run_v044_checks(script_name, report_name):
+	var report=await load("res://scripts/"+script_name+".gd").run(self)
+	var file=FileAccess.open(report_path(report_name+".json"),FileAccess.WRITE)
+	file.store_string(JSON.stringify(report,"\t")); file.close()
+	print(report_name.to_upper()+"_RESULT ",JSON.stringify(report))
 	call_deferred("quit_game",0 if report.all_passed else 1)

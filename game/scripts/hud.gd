@@ -83,7 +83,7 @@ func title_screen():
 	button("Settings & controls",Rect2(112,y,410,49),"settings"); y+=52
 	button("Leave",Rect2(112,y,410,49),"quit")
 	text_at("A PAINTED STORY OF DISPLACEMENT",Vector2(119,844),11,dim)
-	text_at("DEVELOPMENT  0.4.0",Vector2(1338,847),10,dim)
+	text_at("DEVELOPMENT  0.4.4",Vector2(1338,847),10,dim)
 	text_at("Wait until he catches up.",Vector2(1138,816),19,Color(palette,.75),true)
 
 func playing_hud():

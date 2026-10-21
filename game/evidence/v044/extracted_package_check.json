@@ -1,0 +1,45 @@
+{
+  "build": "0.4.4",
+  "created_at_utc": "2026-10-21T13:31:21.260593+00:00",
+  "archives": [
+    {
+      "file": "When_The_Sky_Clears_Windows_v0.4.4.zip",
+      "bytes": 81791218,
+      "sha256": "1aa9acc3b744aa407fbbbe14919a230b7cbcafaf5fc7488e0bd1f95972e00207",
+      "crc_passed": true,
+      "path_safety_passed": true,
+      "members": 18,
+      "extracted_to": "C:\\Users\\conra\\Documents\\ChatGPT\\When The Sky Clears\\game\\build\\world_v044",
+      "runtime_hashes_verified": true
+    },
+    {
+      "file": "When_The_Sky_Clears_Editable_Source_v0.4.4.zip",
+      "bytes": 88968543,
+      "sha256": "19c341ca74ec5360263150a8b6c70cc3f65a49502c558143649b01245ee711c9",
+      "crc_passed": true,
+      "path_safety_passed": true,
+      "members": 399,
+      "extracted_to": "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\build\\source_v044_verified",
+      "runtime_hashes_verified": true
+    }
+  ],
+  "standalone_startup": {
+    "exit_code": 0,
+    "engine_errors": [],
+    "log": "extracted_startup.log"
+  },
+  "source_import": {
+    "exit_code": 0,
+    "engine_errors": [],
+    "log": "source_import.log"
+  },
+  "source_startup": {
+    "exit_code": 0,
+    "engine_errors": [],
+    "log": "source_startup.log"
+  },
+  "extracted_native_audio_garden_checks": 26,
+  "extracted_source_audio_garden_checks": 26,
+  "extracted_executable_sha256": "62b4c50f600632a1886759a912cfaa22d33405782a625ef0db92478476d22fed",
+  "scope": "Fresh Windows and editable-source archive extraction, path safety, full CRC, source/export-transform/executable hashes, native preview-audio startup with all garden ferry checks and normal game shutdown, fresh source import and the same source startup/check/normal-close sequence. Full functional and visual checks are separate."
+}

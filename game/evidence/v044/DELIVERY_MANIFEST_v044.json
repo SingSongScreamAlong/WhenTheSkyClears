@@ -1,0 +1,1415 @@
+{
+  "build": "0.4.4",
+  "created_at_utc": "2026-10-21T13:30:46.633762+00:00",
+  "executable": {
+    "executable": "build/v0.4.4/When the Sky Clears.exe",
+    "bytes": 150662592,
+    "sha256": "62b4c50f600632a1886759a912cfaa22d33405782a625ef0db92478476d22fed"
+  },
+  "source": {
+    "assets/audio/blast.wav": "11375d4fa937782ac3876a6bc86a5d0975cbf1d1877c06d02eee315aa7aca6c2",
+    "assets/audio/blast.wav.import": "376596e2e795b2d3436b5b5d2158f0167027d3d04189f2dcd81413c03d96f3b3",
+    "assets/audio/collect.wav": "cb872650605cb6963d928db31eb9bb9279e1c4a52a913f2a685de2f97bea38d9",
+    "assets/audio/collect.wav.import": "246ea4ef068118d7367f3dcd7a5931509898104241a88e46f044f9406c382bc3",
+    "assets/audio/foley/footstep_concrete_000.ogg": "d7267e183067757c92c169de2a379abea592cfca6b39bb2e8feea15221ad79fe",
+    "assets/audio/foley/footstep_concrete_000.ogg.import": "71ee475493b798410142fe9b1259fbbd0f0a695226eca26705c63178799b1d49",
+    "assets/audio/foley/footstep_concrete_001.ogg": "507a75eb19b897087855a3be3cf11a12d7fa37d143ad535eeebe0b8031c7325d",
+    "assets/audio/foley/footstep_concrete_001.ogg.import": "8187a2c194129b614785f65487ef86cf443e95986790a7d8b3c3f3ff12a40cf6",
+    "assets/audio/foley/footstep_concrete_002.ogg": "b21fa546d74941196b25da8a20b7010abd8c05c4fcf93545d1f344e66a664e13",
+    "assets/audio/foley/footstep_concrete_002.ogg.import": "f5d2800fbc36ed2ef1d89b7ed9b2d2c9a2a62393fe64205a2bc8e1f3e63098c2",
+    "assets/audio/foley/footstep_concrete_003.ogg": "8b513c2f0316324060b9174b8f28df6c2147418c506e6a53b77f18e149a5547b",
+    "assets/audio/foley/footstep_concrete_003.ogg.import": "b1e980f62772e1f6b5f24ce11ba32e5fc59a8cb9a889607d18302f80b275f34e",
+    "assets/audio/foley/footstep_concrete_004.ogg": "24dd8db2413e5b81ad181e1205c12a1c7801da5f85715d471b92a4b2f632e45e",
+    "assets/audio/foley/footstep_concrete_004.ogg.import": "1346970cad7b32fa93b78cef2f7a5668df15651487920b6878547bd8638ed559",
+    "assets/audio/foley/footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "assets/audio/foley/footstep_grass_000.ogg.import": "5b4ecb44f418eba4a7dc108724a55887fb702f18cfb0c17fe8a1ef14bcd457db",
+    "assets/audio/foley/footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "assets/audio/foley/footstep_grass_001.ogg.import": "cdd098cc3fe1ea05c47449bcbc7274319d6b7768be03b5a4ddb5eddd7d7a8239",
+    "assets/audio/foley/footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "assets/audio/foley/footstep_grass_002.ogg.import": "6dd670b3323e552fc472882c6a130fd73b50847963d4bca0e9b662cc9abead5b",
+    "assets/audio/foley/footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "assets/audio/foley/footstep_grass_003.ogg.import": "7b77fe138e973c7ab667625e6dfc5371027157cc7c108665407e96c06ffe1a22",
+    "assets/audio/foley/footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "assets/audio/foley/footstep_grass_004.ogg.import": "656a0144316d1dab65fcf2dde8c549fbeded5aafe2bced50c51b6b5c33a7d5dc",
+    "assets/audio/foley/footstep_wood_000.ogg": "5f1c252942a220d658121bd9417448cd19649ded9fff2ff15f6e50899373ce8e",
+    "assets/audio/foley/footstep_wood_000.ogg.import": "d3ad1c16dabaf9ad7f15d7827150f39690438137bdcb1f741879d091757e5810",
+    "assets/audio/foley/footstep_wood_001.ogg": "e4f68e1c9fd55b4dc8ca89ed2bbab6f200171bc54bdc18aa96b80d8e7336f462",
+    "assets/audio/foley/footstep_wood_001.ogg.import": "87c155409cd19a8f011f60c9a39c19e705b95b3fa6d84eb69fbc4c9d2932a796",
+    "assets/audio/foley/footstep_wood_002.ogg": "9ff095b05cee5eec40b081defe3f0eef7232bb16d4865ce03b9f6dbab875cfdd",
+    "assets/audio/foley/footstep_wood_002.ogg.import": "fbf77ce4941d9c2cc23b07432130ef9b337a122efe9bed951b1cf66abb019980",
+    "assets/audio/foley/footstep_wood_003.ogg": "2a68a083daa9eda08fed0ea5da5280dfbe0de226196c576be02f95259dd139d9",
+    "assets/audio/foley/footstep_wood_003.ogg.import": "0d22e158425e5cf0603c4b733effe74c641116ca293df432fc2e530e385f3b03",
+    "assets/audio/foley/footstep_wood_004.ogg": "b33e0854e2b3f6b6492e25c25ef8f90447a332f7c6bb25dd02edced9581d3441",
+    "assets/audio/foley/footstep_wood_004.ogg.import": "b099f8dd315d4c3e1e1c0ab8fee6b3b05ca6107bcc006a7b83fa24a8f948f08f",
+    "assets/audio/foley/KENNEY-LICENSE.txt": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db",
+    "assets/audio/horizon.wav": "01842506ede64a16fec3c78b0d69468e246ce3cafd2b0f0f46c34ec58c6ac99f",
+    "assets/audio/horizon.wav.import": "c77928700ba725704781f5a4d99aac56c15843071d7acb152263d8d7ee02e9ed",
+    "assets/audio/step.wav": "e75fabf3d82804e963fd7b37451e18c20c4552c60d99ed5ed02ee264bbfcc256",
+    "assets/audio/step.wav.import": "5d43bf042a41b238a332dd5cbace280dabbc5b10a67dd1c4601b28a84264d7ba",
+    "assets/audio/warning.wav": "f0998a5fa5986f07040e64257bf3d6bf31e795ad780753d4b338c0921a329464",
+    "assets/audio/warning.wav.import": "c78550e199db0a75ccc0f021bc7b1ea0c21cd002be1b6d823f72b4ffaa2b2d79",
+    "assets/audio/wheel.wav": "d530203bbb711658967e76db5c8f90a9e69d49cad07a008e7cdfaac3d471da01",
+    "assets/audio/wheel.wav.import": "1ff1bd3a7d8875f68e412d59a8445f5fcb7bd21cf38887f322b02b010daca1d6",
+    "assets/characters/boy_atlas.png": "6b1bf80d09f1de01a4664a6d73a873e5237ab1c73c7ae781bca6908dddd79121",
+    "assets/characters/boy_atlas.png.import": "0e2c427d269a6c2b456e2ac36db06c47c21739443b2552c717846d368cfa0c86",
+    "assets/characters/boy_cloth_v043.png": "cc4d7175cacb5eff66b8077f545f1bbf0ac47c3ef9b3ff317662a2257e8a3659",
+    "assets/characters/boy_cloth_v043.png.import": "016e70e8f36fd0aed0f381ad4120999e33587ddc61ea4976f928c7322a63de6f",
+    "assets/characters/boy_cloth_v043.provenance.json": "13bab6ff9b2a280ca06945eb5264f04ced52632db20ed0d9918d34449dee7852",
+    "assets/characters/girl_cloth_PROVENANCE_v042.json": "9bffa4eb2a7bff956e476bb2f625ae2cc363d958d07a1c630e61163377f490c7",
+    "assets/characters/girl_cloth_v042.png": "fc1b2f21a0b6a90f258684b56f8eefa33254ce0921030f54774ccf9415cae80f",
+    "assets/characters/girl_cloth_v042.png.import": "5c7f01b64e1d1f2668ed76acf033ccdb0e2f03bea6badbc081b3898cc703ce31",
+    "assets/characters/girl_profile.png": "8fad8c4a79e7acb67e3f6e8df4f065532b4942c79b74f0572195dc4076e6de64",
+    "assets/characters/girl_profile.png.import": "a09edc18f10ce7029e0abff15909b1882a71f99bfae554768ec33c206f2648ae",
+    "assets/characters/head_angles_v044.png": "e69d49d93d6eababa32ae7fefda19510569c4578e46f53a2d087cf68d3270155",
+    "assets/characters/head_angles_v044.png.import": "7695d7ea8db70f1e2ddf7941eb86417cd05ba7b774685f000eba533d243d9f00",
+    "assets/characters/head_angles_v044.prompt.txt": "4c90de4168432ec96a4c135ceba9a056e3dbd94589bcc88ebbb0ea9a3b488f0f",
+    "assets/characters/head_angles_v044.provenance.json": "a3ae1b3fcd5613796f3176d5cbcd7a59439bcc469024de4749c6139e05a39b33",
+    "assets/environments/Battlefield_v001.png": "0df226b7990f4824a6963bfac64a29588211264924de36b242c48c393829f730",
+    "assets/environments/Battlefield_v001.png.import": "be640d52933c4b48000a2cdd53ba6e6e91aae9b040cbafe54b3f61b2abd827bc",
+    "assets/environments/Camp_v001.png": "08fec9d076fd4618a9a14a3ee293b04fe4bef8bc95fdf0f61ceec45d7c8ed16d",
+    "assets/environments/Camp_v001.png.import": "2c26d132722a9503ebd017fc09b65424468c563a4254c937e98aa4ddb3de833e",
+    "assets/environments/Canal_PROVENANCE_v040.txt": "a907aaa58c696bcc6d067961def1e1384b74a806bcce5028af32317f93ef3896",
+    "assets/environments/Canal_v040.png": "3e4b8aeb23d445b833115dc8ea2239023d148387d25fb10752c606f6235b9ec3",
+    "assets/environments/Canal_v040.png.import": "f7609d62fce47527f1d2093f52eb2733d0628d8c13d5f8f73337320542082b07",
+    "assets/environments/Distant_Hills_v001.png": "14cb94a5c8c284177999b9c6411c99350e18420b766646e6a412daba4dc0550f",
+    "assets/environments/Distant_Hills_v001.png.import": "76b649fa7e48a53224c7ae8f1eec042d89c3bf89012fbffab7c327f09290e3a8",
+    "assets/environments/Foreground_Tree_v001.png": "ecb09f26712f69d5606169462b54d521a1456e8bbca86046502e9c5824aa4432",
+    "assets/environments/Foreground_Tree_v001.png.import": "3571ff0d24f0f3f640c93a3d7bac834651f1237b951d2a53a777b8fa04c87d1e",
+    "assets/environments/Ground_Painted_v001.png": "acabce9a2e6a30779ef58e2ba06c6653db8808125034423a914b86031c4f1705",
+    "assets/environments/Ground_Painted_v001.png.import": "dd3e79325566debdcb3c6cdd0d5fd101e7c1a2ae36f28b7510c788d085b3c728",
+    "assets/environments/Mill_Background_PROVENANCE_v040.txt": "e0466031d0a3b056f18428bb786a0c93fb4f2043cdf66614d3d1931d5485fa72",
+    "assets/environments/Mill_Background_v040.png": "0faee756ddaa03c55ebb9df4c9d02f2184170280ea3e0610cb852706515d12f5",
+    "assets/environments/Mill_Background_v040.png.import": "250817dda171e506752a22f5e59a0119b61bbb7d4d188bfa26e766d372ea0fb3",
+    "assets/environments/Rail_Yard_PROVENANCE_v030.txt": "4490d23a313d8ab8c6a889c0e68f8dbc0d7c88a43b4dfd8e5279685450b97b5b",
+    "assets/environments/Rail_Yard_v030.png": "81e06f307e1cbe44d2b6d26212d59df33ff403f6d9a88030fb185c1b7c2b07bd",
+    "assets/environments/Rail_Yard_v030.png.import": "ba6e68227563716428e92f7ed3f339c8ccb1d90e47e70d27894e8695d49cb345",
+    "assets/environments/School_v001.png": "fc35b9b9d575254a639ce61bb539729d866e4addc0556457efcca0f57715aefc",
+    "assets/environments/School_v001.png.import": "addce78528db3fcf6ce8a19b2df9871a2c5dc862bbf4d143075290e6522138a8",
+    "assets/environments/Sky_Painted_v001.png": "147b6d2b5ef4a74fc3e7519bb37b56aa2c17c15a55018c55a6d6862b8819b86f",
+    "assets/environments/Sky_Painted_v001.png.import": "0f3f2ca74c5bfcd40b75fce8f58867bba8f873ebd591ec2d2b5965016ed3bc99",
+    "assets/environments/Village_Empty_v001.png": "dbf3b04cdb88913eb6fff4868eeaa0a1beea5271a79f4e5fc7477d2a277212d3",
+    "assets/environments/Village_Empty_v001.png.import": "bc638de64327cf96d5e053008b4ab46f756c000b9d46767985fd3b33e8530767",
+    "assets/environments/Village_Warm_v001.png": "5730d2db1976b342df81059f10046d2f8d1c7ab046e489f6c84632ed56fb7ea4",
+    "assets/environments/Village_Warm_v001.png.import": "f2c0d2e729da2b5f23de4c1401f625a22a7419e5ae9e846f25bb17dd92666e54",
+    "assets/environments/Woods_v001.png": "62d7cb0f8f42454095a3aba65088f93fbafc27ffdead46934d614aad115a8e89",
+    "assets/environments/Woods_v001.png.import": "d8d0b0936265ffdba6e5348edfb690b6c50e4e6db663ad87fa03f16775f53cfa",
+    "assets/fonts/Cormorant-OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "assets/fonts/display.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "assets/fonts/display.ttf.import": "87799f854464b4606c237a57deda4a890f2c9e73713db693d61ea5b22d96c17b",
+    "assets/fonts/Inter-OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "assets/fonts/interface.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "assets/fonts/interface.ttf.import": "43b94549fbb3a797154d9e726422effabfab235362d7fff1d87a28741921a900",
+    "assets/motion/child_motion.json": "8f0a65569c18e565cf132a255fa23751f898f7ba2db55a10f50ba942ba7e6f0d",
+    "assets/props/Counterweight_Parts_PROVENANCE_v042.json": "1c33e1e9d5ab9e5901bc7d53251c64311aaa51111814de00566f350a1987a4e5",
+    "assets/props/Counterweight_Parts_v042.png": "341226ce22b94e2d8990221ee9c27065b0753c348bb21d4da9a1ddb83bc57b4f",
+    "assets/props/Counterweight_Parts_v042.png.import": "b57526cb33e42fa62b58a6f1e92763622a94291e9ca63abe456d3dd3a2a23a13",
+    "assets/props/ferry_parts_v044.png": "6407a0adff5336b625fd4a38bde6da8769a157e2298950533eebc2b72d9b5c52",
+    "assets/props/ferry_parts_v044.png.import": "d7e2cf309768ccf7c09039ebfa7228a7ad66d217f95f163f685ad36be4da9fa5",
+    "assets/props/ferry_parts_v044.provenance.json": "44863ee44331c8211dd10d044b50e0dc7453b7ccde7afb78caea550649b95919",
+    "assets/props/Interaction_Props_PROVENANCE_v041.json": "70615e6c748435dda3d7b2f036a37aa32b54726003cb9a320843ef9b50427bbf",
+    "assets/props/Interaction_Props_v041.png": "ae17dead152ab1b8ddbed30456aeee496e1e0827e8af9f14a13faae070606edc",
+    "assets/props/Interaction_Props_v041.png.import": "d84971feecb1868701895e6db461286f6d81ae145c9a63a2903f130471c75f5b",
+    "assets/props/mechanical_parts_v044.png": "c97f9933ff98a6c438c0d3b7d0a69dbf3242289830afe0c9feb0fb52f496b4e0",
+    "assets/props/mechanical_parts_v044.png.import": "306690731f1cf3b959ebce02877d20ec31b9152a180404576d022fd82687c570",
+    "assets/props/mechanical_parts_v044.provenance.json": "9e8f8cc138e46fc2711bd2a279d40a437d24a7e68435efcfa45a04fe25006181",
+    "assets/props/Mill_Parts_PROVENANCE_v040.txt": "6c3ad629afdaecae5a973eccddecaa3e52eb834b353990f1cfdcafe0733425ee",
+    "assets/props/Mill_Parts_v040.png": "c18bc26fa298400ddb13910acfda263f938a4f19756ae13604b2bbbe35394171",
+    "assets/props/Mill_Parts_v040.png.import": "4c5c5235422a00ab7c1de6903f1acb3af858150a9e3d6a9f17fdb23254c032eb",
+    "assets/props/painted_survival_atlas_v020.png": "b75d8f31c860df9270d0bc8e0521faba26dd3ead3cc5e9568e8fd3adda32bec9",
+    "assets/props/painted_survival_atlas_v020.png.import": "035f05e99d183f0dfaebc6738b6bec23ed4356a2d33a34db21d4c4985fc8533c",
+    "assets/props/PROVENANCE_v020.txt": "804cf61a652ee4ee77799162065f96cd9f9c572ee354f29e602254dc48181252",
+    "assets/props/Trolley_Parts_v043.png": "ecc34fe304a8f6c6f2abfe0b250c194c2db38a00fc110976a19c73dbcc94d7c2",
+    "assets/props/Trolley_Parts_v043.png.import": "565adbb546b6f6a4ebb263779308763657d2b03c699a456f9d02e2186ddee6e2",
+    "assets/props/Trolley_Parts_v043.provenance.json": "729fd8063b6e0fb1bf2b8d0940dedd58e69b0f9752148530d8eda8bfd4e16025",
+    "export_presets.cfg": "08b360c73d5ccb9e6d541d5af8419c56951e38236c8d9399f6889ea393043816",
+    "levels/01.json": "59cba8d87dce68a847b0b8267fa53875e375052534f0d09e83741120a9a02c80",
+    "levels/02.json": "a29f9d40424ee8f93895ead5ec4bd3429ab5b794395f924c8f82873487e8316d",
+    "levels/03.json": "db806ab64561b4238ac2169070e1bb3771ade8ca58ba9198af1ef7838abfa80b",
+    "levels/04.json": "f8ef0c6dca4e8aa6f4068b791b2763431b86c04e1f91c147e4eb09a8e8c5d314",
+    "levels/05.json": "442352e3be5808d2303e341e7814da5107fb6451326961965316c82c070460b8",
+    "levels/freight_crossing.json": "90e81d2d8f34f239f12bf60df1e74a35e6f5026717cc6544390fd62bc25e08e7",
+    "project.godot": "21f950c312314ced1eb41f8d101e1583cd5510e7886ddb3467ac394355603f21",
+    "scenes/animation_review.tscn": "83b465f09ba6ffb4b8cf89662b0c9aaad1eb998a18dc8580afe6459e1a3752fd",
+    "scenes/main.tscn": "52b82512b52f5bba4b6dbc18296839873bb6466943896723e91c672abecc26ec",
+    "scripts/animation_movement_checks.gd": "d5dbf7bbaf2f1b63cb54c12f80130f2b3226abb20035c32f74f7455090698732",
+    "scripts/animation_movement_checks.gd.uid": "55d421cfed8e4b66c3385af6bcf184c53e47a909c6ffdfaf6a4a04ce28bebc93",
+    "scripts/animation_review.gd": "e62e1c095d7b7d29ac3831c9e93748a8a2fbc5c8b42ccefe02c22b08053746b5",
+    "scripts/animation_review.gd.uid": "7c5d14b4bf4bb031e0858ca2b034dc5920c835bf562e78570d2f03ae686a34f2",
+    "scripts/character_checks_v044.gd": "0f65958da8ed726bb3e2829804b5b307a668453da115a2fc6b5fb120ad6145df",
+    "scripts/character_checks_v044.gd.uid": "7d3be3ffd34b3ac9276b6a7f8ed03f21111ed743a493681f6ef10225f51019d6",
+    "scripts/child.gd": "87c8dcb2127cd868e5615333f167265c6b24715de07bfc06457262b3747b731a",
+    "scripts/child.gd.uid": "e0358e821e975776dc050e03d9c5cc604195406304b1337dec459326785f1fac",
+    "scripts/child_v2.gd": "ba02685d11922fe5b24342524765032a2fc81869aa5bccdf8b68d9b67f2006c5",
+    "scripts/child_v2.gd.uid": "7580c2baf68e24a1d94278973d79b7f6c10421420d0ce8d740c36c8e7be3caff",
+    "scripts/craft_checks.gd": "90b48be673f28972eb937fa922f25c4485914a8ae2c3f14a7dc057b98c3f3637",
+    "scripts/craft_checks.gd.uid": "db619cc795abe8607515cbce6f62836e95fe96f8939cbc4847415c4e5839a375",
+    "scripts/crossing_checks.gd": "d161d4f7c81e4eefadee19597d23354729fa7fde9254c4fe8ac7ba4805bff865",
+    "scripts/crossing_checks.gd.uid": "3c484968f313bc08f69a23456b25e800d96efbe3c082dd4998bc47f557db3126",
+    "scripts/development_checks.gd": "0b13787c6cbd7339e0a571c7ed340b68bc8f0d5a137b2f707fe4ec8b994dd95d",
+    "scripts/development_checks.gd.uid": "5bd493769cd6127ae3a232b2251e8dc8fd3caeb935de7e11154de44b5b2a71b0",
+    "scripts/foreground.gd": "76656603e759b1462982524e3dca51dba70ae3fee867d298ae9642861717378b",
+    "scripts/foreground.gd.uid": "53545838701b4c78dd59ee6366b2692cce1073857e7b2a5d9e5471097f5e3771",
+    "scripts/game.gd": "7d00863b535754979f9cd71a65ae2038a984fc8b782e08f4c4587f91779d5b54",
+    "scripts/game.gd.uid": "b42abaf92f79be93b8e2ba006ff5f75317bfeaa8c2cf9240dcb53de4c7cce8fb",
+    "scripts/garden_ferry_v044.gd": "a4d80233d528d20a467d8afad5052d3d59753e8eeba39c1ce79085a47f035098",
+    "scripts/garden_ferry_v044.gd.uid": "53b41ef5594e4c02cfe6bff35100851464927331f5537aca882b354ad5fcf497",
+    "scripts/garden_puzzle_checks_v044.gd": "86a1b76e7279f9337f92cbf21daaff0caf031c1d392a58e4abe641ead591f51d",
+    "scripts/garden_puzzle_checks_v044.gd.uid": "95ff957af2cea484ef16a7f9dd8bc509219d8d94720ecf8e20fa5f2d7959734b",
+    "scripts/hud.gd": "9723acb66930ea3149096f4d0adbeb32c21216ed47292fa98ec71b6823df09fb",
+    "scripts/hud.gd.uid": "0ca2f16dcd37a5654727716d4d4683366d5390456089439ab8e9604e61c73b9b",
+    "scripts/interaction_art.gd": "e513326b92ba3c730bef274f704e06530e0bcf9ff36415d6a496365f4f6d6142",
+    "scripts/interaction_art.gd.uid": "3e01cfdd6b6e4bfd107502d1233bb006156062a7321d0b34471953dc66a4802a",
+    "scripts/mill_checks.gd": "b8eb030110624dd040dfcc42f6b80959e70c8dca3e24c704885dcadec33bc954",
+    "scripts/mill_checks.gd.uid": "ae70effd9cbe4fd14afd1148af7aac13a6f6f5aee737eb7dde0d33d18ef90432",
+    "scripts/mill_encounter.gd": "34960738042025f1d245ed91a7b9405a3c50b883514adb471a6fea2590871e95",
+    "scripts/mill_encounter.gd.uid": "4c2aac6502f03e3ee5a3724947db343ab92ba2127064002e42247bfe6a0ca495",
+    "scripts/movement_checks.gd": "c826da81692979cef262603820bb4c4047b5ac3b0e2dc42fb512b09d3de2aade",
+    "scripts/movement_checks.gd.uid": "faa4df4b1dc599022c8fdf4941f368dc30158a90888601f8398d859578091342",
+    "scripts/performance_checks.gd": "e1292a2f58673598833ff669577db81d73acf3bad7c65f6308aaaf306c924c59",
+    "scripts/performance_checks.gd.uid": "71308b68c3fc3fde30d54dd30af2a7d57d6265637a0c235e7bcb274ce09aa072",
+    "scripts/physical_puzzle_checks_v044.gd": "1cbb114d3184feffff03f36c7d909c44395b54bcc205b1a31b9c1a3dc83f1298",
+    "scripts/physical_puzzle_checks_v044.gd.uid": "d495e758a18f11b08a29f30c9fc575656f0f3acd354cc5b17ef2312c9db7a563",
+    "scripts/physical_puzzles_v044.gd": "004a82d58818a0b2eb92d8e4db9270270e70aa930163c8182c788a619d0a2915",
+    "scripts/physical_puzzles_v044.gd.uid": "65ddfe49c48ec35c1b28540466476af136b44cc88786501230ec21810b01b9af",
+    "scripts/pushable.gd": "a8d59325c07a5008ad6d79cf0bad14a2b680f53ad00826e703582c8c847f3910",
+    "scripts/pushable.gd.uid": "8c0001652f3c85f1341165595471f167c48b12bb3d289b0d0b0c7fe9797f3348",
+    "scripts/refinement_checks.gd": "3ae658263859a19fd6bbc5dbe553f84a88037c7204e1c0fd007c928168c39bd9",
+    "scripts/refinement_checks.gd.uid": "53c3d5a56804232968fd9ef76f7cc2f4b5fa8c0a2c262697be3d5c0c036d905d",
+    "scripts/side_route_checks.gd": "c3451d8d861cb28f3186d1c2c191dee4e51cab290631170982ae353956cb6622",
+    "scripts/side_route_checks.gd.uid": "db4937cc1c33b28b9a7959bc157f7a1f8ca3441b79d472d82c3f6d3c486513f7",
+    "scripts/sluice_checks.gd": "4885311e3d455518466b603d5cacd6d87a9662549b7685d852b7c9963c5eb95d",
+    "scripts/sluice_checks.gd.uid": "efb0a124fa4224f9b49e28d21c7926c0b2054f5182765d6334f8a91bda9c8c32",
+    "scripts/sluice_crossing.gd": "52e7cb5ebb936395bae2083ea505bd5353382565b401105a9ff39e99d50d3db0",
+    "scripts/sluice_crossing.gd.uid": "01b396326071b30dc49f8c05f002278b0b8f2f5dfe193514b99ecc3170f4931d",
+    "scripts/story_checks.gd": "cac513857b435f2b304b5c5c5eac522318af9e1e73f86441d1a5af0fb5986cc2",
+    "scripts/story_checks.gd.uid": "5f5f2fbde99a56cd0cceac0e0556fef408c143385a9b5373992745d5dd07f9bf",
+    "scripts/story_director.gd": "88e5b15abd1c9fcebb6578ead3688723967a9cde88b474ce2ad1733412524545",
+    "scripts/story_director.gd.uid": "3c3adf04d4c8f62477e8ed59c6468a6dc1c7cdea69df0b0b27b842c9681b5404",
+    "scripts/title_route_checks.gd": "46d0c9082189b321036280aa4958b8fc63f127c2e4fb9ba1a8bea3a31b1b7e9d",
+    "scripts/title_route_checks.gd.uid": "a15341bec8b08ceeca0aa63e4a1356a8b0d6684c2c573e60deb404cbaceaabce",
+    "scripts/trolley_checks.gd": "f0b651d3d151e6c05218e2b156ddcaf3eae97bcd8b4d11dfd9a042d6cd83591d",
+    "scripts/trolley_checks.gd.uid": "92444a4cbff75d1c6075b3077125003791f91d25e867376e0398beefc81e426c",
+    "scripts/trolley_encounter.gd": "6f98d5f33418be1be59cf6c1135ff641050e9453e1029909bfccb43ccc1b41cf",
+    "scripts/trolley_encounter.gd.uid": "37a9858bca45c26bd206d3a40a13c2451441c186ad3445c6d8cbbb1f3e7ce804",
+    "scripts/world.gd": "9b5b0439d839b709a95661e02df2a81d8c8c74358cd6242abc4f517d4afd8237",
+    "scripts/world.gd.uid": "2186abbed5b3e691f821efdfdb136147f4232de492a2e11f7aabba293466ba71",
+    "scripts/world_craft_checks.gd": "64a33900e69eb908d9a77051a20292a8a1beded7d8f3c26cf568b4151c46825f",
+    "scripts/world_craft_checks.gd.uid": "aa12fe36acc8208f475cac38a5c5bf658dbeb0319f8293a9239a6a7cc78a15cf",
+    "story/moments.json": "1862ef3f0f0ce385ec9e5d3e40473d0542f57cfcc20ebd4bc20c9e5b0f7bda53"
+  },
+  "export_overrides": {
+    "custom_template/debug": "\"res://tools/windows_debug_x86_64.exe\"",
+    "custom_template/release": "\"res://tools/windows_release_x86_64.exe\"",
+    "application/product_version": "\"0.4.4.0\"",
+    "application/file_version": "\"0.4.4.0\""
+  },
+  "checks": {
+    "smoke": 162,
+    "survival": 13,
+    "encounters": 10,
+    "journey-checks": 35,
+    "side-routes": 13,
+    "development-checks": 45,
+    "movement-checks": 13,
+    "mill-checks": 16,
+    "story-checks": 56,
+    "crossing-checks": 12,
+    "refinement-checks": 15,
+    "sluice-checks": 21,
+    "craft-checks": 11,
+    "world-craft-checks": 13,
+    "trolley-checks": 29,
+    "performance-checks": 19,
+    "physical-v044-checks": 30,
+    "garden-v044-checks": 26,
+    "character-v044-checks": 18
+  },
+  "total_functional_checks": 557,
+  "animation_fixture": {
+    "checks": 27,
+    "excluded_from_functional_total": true,
+    "scope": "Native source fixture bound to the full export source identity; includes baseline movement checks."
+  },
+  "journey": {
+    "build": "0.4.0",
+    "chapters_reached": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "completed": true,
+    "deaths": 1,
+    "encounters": [
+      {
+        "chapter": 0,
+        "id": "village_parcel",
+        "kind": "cache",
+        "time": 4.58333333333332
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_gate",
+        "kind": "wheel",
+        "time": 19.6000000000002
+      },
+      {
+        "chapter": 0,
+        "id": "village_sill",
+        "kind": "cache",
+        "time": 31.2333333333328
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_bar",
+        "kind": "relay",
+        "time": 50.3666666666651
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_boughs",
+        "kind": "clear",
+        "time": 65.4833333333309
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_food",
+        "kind": "cache",
+        "time": 74.1999999999971
+      },
+      {
+        "chapter": 0,
+        "id": "orchard_shed_brace",
+        "kind": "brace",
+        "time": 80.58333333333
+      },
+      {
+        "chapter": 0,
+        "id": "mill_road_beam",
+        "kind": "relay",
+        "time": 105.416666666662
+      },
+      {
+        "chapter": 0,
+        "id": "mill_kitchen_tin",
+        "kind": "cache",
+        "time": 109.649999999995
+      },
+      {
+        "chapter": 0,
+        "id": "mill_passage_roof",
+        "kind": "brace",
+        "time": 117.166666666661
+      },
+      {
+        "chapter": 0,
+        "id": "mill_roots",
+        "kind": "clear",
+        "time": 124.233333333328
+      },
+      {
+        "chapter": 1,
+        "id": "woods_pack",
+        "kind": "cache",
+        "time": 131.916666666664
+      },
+      {
+        "chapter": 1,
+        "id": "forest_bridge",
+        "kind": "bridge",
+        "time": 136.116666666667
+      },
+      {
+        "chapter": 1,
+        "id": "forest_latch",
+        "kind": "latch",
+        "time": 148.066666666677
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 156.316666666683
+      },
+      {
+        "chapter": 1,
+        "id": "woods_tin",
+        "kind": "cache",
+        "time": 166.716666666691
+      },
+      {
+        "chapter": 1,
+        "id": "ridge_lunch",
+        "kind": "cache",
+        "time": 182.750000000038
+      },
+      {
+        "chapter": 1,
+        "id": "woods_loading_roof",
+        "kind": "brace",
+        "time": 189.433333333376
+      },
+      {
+        "chapter": 1,
+        "id": "rail_fence",
+        "kind": "relay",
+        "time": 200.066666666718
+      },
+      {
+        "chapter": 1,
+        "id": "woods_keeper_tin",
+        "kind": "cache",
+        "time": 204.133333333388
+      },
+      {
+        "chapter": 1,
+        "id": "woods_culvert",
+        "kind": "clear",
+        "time": 218.083333333399
+      },
+      {
+        "chapter": 1,
+        "id": "canal_approach_pack",
+        "kind": "cache",
+        "time": 225.883333333405
+      },
+      {
+        "chapter": 1,
+        "id": "",
+        "kind": "fire",
+        "time": 231.716666666743
+      },
+      {
+        "chapter": 1,
+        "id": "woods_canal_drain",
+        "kind": "pump",
+        "time": 238.150000000082
+      },
+      {
+        "chapter": 1,
+        "id": "signal_keeper_supper",
+        "kind": "cache",
+        "time": 257.833333333428
+      },
+      {
+        "chapter": 1,
+        "id": "woods_signal_sleepers",
+        "kind": "clear",
+        "time": 266.400000000086
+      },
+      {
+        "chapter": 1,
+        "id": "woods_mill",
+        "kind": "mill_weight",
+        "time": 281.683333333406
+      },
+      {
+        "chapter": 1,
+        "id": "woods_mill",
+        "kind": "mill_breakaway",
+        "time": 282.883333333405
+      },
+      {
+        "chapter": 1,
+        "id": "woods_mill",
+        "kind": "mill_open",
+        "time": 284.75000000007
+      },
+      {
+        "chapter": 2,
+        "id": "camp_tools",
+        "kind": "cache",
+        "time": 300.600000000055
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_door",
+        "kind": "repair",
+        "time": 334.250000000025
+      },
+      {
+        "chapter": 2,
+        "id": "shelter_roof",
+        "kind": "roof",
+        "time": 339.950000000019
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 346.21666666668
+      },
+      {
+        "chapter": 2,
+        "id": "camp_loaf",
+        "kind": "cache",
+        "time": 349.083333333345
+      },
+      {
+        "chapter": 2,
+        "id": "camp_sacks",
+        "kind": "clear",
+        "time": 355.766666666672
+      },
+      {
+        "chapter": 2,
+        "id": "camp_carriage",
+        "kind": "relay",
+        "time": 381.866666666648
+      },
+      {
+        "chapter": 2,
+        "id": "camp_station_passage",
+        "kind": "clear",
+        "time": 401.283333333297
+      },
+      {
+        "chapter": 2,
+        "id": "signal_approach_food",
+        "kind": "cache",
+        "time": 407.866666666624
+      },
+      {
+        "chapter": 2,
+        "id": "",
+        "kind": "fire",
+        "time": 413.699999999952
+      },
+      {
+        "chapter": 2,
+        "id": "camp_yard_signal",
+        "kind": "relay",
+        "time": 430.449999999937
+      },
+      {
+        "chapter": 2,
+        "id": "station_arcade_loaf",
+        "kind": "cache",
+        "time": 439.383333333262
+      },
+      {
+        "chapter": 2,
+        "id": "camp_arcade_stones",
+        "kind": "clear",
+        "time": 445.449999999924
+      },
+      {
+        "chapter": 3,
+        "id": "school_gate",
+        "kind": "wheel",
+        "time": 465.266666666572
+      },
+      {
+        "chapter": 3,
+        "id": "school_cupboard",
+        "kind": "cache",
+        "time": 472.533333333232
+      },
+      {
+        "chapter": 3,
+        "id": "school_drain",
+        "kind": "pump",
+        "time": 478.083333333227
+      },
+      {
+        "chapter": 3,
+        "kind": "recovery",
+        "reason": "They need a safer way through.",
+        "time": 484.749999999888
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 493.016666666547
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 497.766666666543
+      },
+      {
+        "chapter": 3,
+        "id": "school_blanket",
+        "kind": "cache",
+        "time": 505.066666666536
+      },
+      {
+        "chapter": 3,
+        "id": "school_kitchen_tin",
+        "kind": "cache",
+        "time": 512.383333333196
+      },
+      {
+        "chapter": 3,
+        "id": "school_shelf",
+        "kind": "relay",
+        "time": 520.316666666522
+      },
+      {
+        "chapter": 3,
+        "id": "school_library_awning",
+        "kind": "brace",
+        "time": 530.716666666513
+      },
+      {
+        "chapter": 3,
+        "id": "school_staff_flask",
+        "kind": "cache",
+        "time": 542.033333333169
+      },
+      {
+        "chapter": 3,
+        "id": "school_desks",
+        "kind": "clear",
+        "time": 549.333333333162
+      },
+      {
+        "chapter": 3,
+        "id": "arcade_approach_food",
+        "kind": "cache",
+        "time": 567.783333333146
+      },
+      {
+        "chapter": 3,
+        "id": "",
+        "kind": "fire",
+        "time": 573.616666666474
+      },
+      {
+        "chapter": 3,
+        "id": "school_arcade_drain",
+        "kind": "pump",
+        "time": 579.883333333135
+      },
+      {
+        "chapter": 3,
+        "id": "library_garden_food",
+        "kind": "cache",
+        "time": 602.416666666447
+      },
+      {
+        "chapter": 3,
+        "id": "school_greenhouse_frames",
+        "kind": "clear",
+        "time": 609.399999999774
+      },
+      {
+        "chapter": 4,
+        "id": "ash_parcel",
+        "kind": "cache",
+        "time": 617.349999999767
+      },
+      {
+        "chapter": 4,
+        "id": "ash_wire",
+        "kind": "clear",
+        "time": 661.449999999727
+      },
+      {
+        "chapter": 4,
+        "id": "ash_branch",
+        "kind": "relay",
+        "time": 675.599999999714
+      },
+      {
+        "chapter": 4,
+        "id": "ash_awning",
+        "kind": "brace",
+        "time": 688.233333333036
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "fire",
+        "time": 699.916666666359
+      },
+      {
+        "chapter": 4,
+        "id": "ash_garden_trellis",
+        "kind": "relay",
+        "time": 709.249999999684
+      },
+      {
+        "chapter": 4,
+        "id": "terrace_last_supper",
+        "kind": "cache",
+        "time": 720.849999999673
+      },
+      {
+        "chapter": 4,
+        "id": "ash_greenhouse_beam",
+        "kind": "brace",
+        "time": 727.283333333001
+      },
+      {
+        "chapter": 4,
+        "id": "",
+        "kind": "end",
+        "time": 732.549999999662
+      }
+    ],
+    "failure": "",
+    "health": 100.0,
+    "medicine_remaining": 2,
+    "method": "Continuous native physics traversal driven with Input actions; no position changes, gate bypass, resource grants or damage immunity. Interactions require held input and complete their actual duration. This is automated traversal, not human artistic acceptance.",
+    "rations_remaining": 4,
+    "simulated_seconds": 732.549999999662
+  },
+  "sluice_capture": {
+    "actual_sequence": {
+      "approach": {
+        "legs": [
+          {
+            "boy": {
+              "x": 14955.634765625,
+              "y": 624.925170898438
+            },
+            "bridge_floor_frames": 0,
+            "bridge_floor_seconds": 0.0,
+            "bridge_floor_ticks": 0,
+            "bridge_render_samples": 0,
+            "frames": 66,
+            "girl": {
+              "x": 14917.4443359375,
+              "y": 624.925231933594
+            },
+            "reached": true
+          },
+          {
+            "boy": {
+              "x": 15031.1337890625,
+              "y": 569.925231933594
+            },
+            "bridge_floor_frames": 0,
+            "bridge_floor_seconds": 0.0,
+            "bridge_floor_ticks": 0,
+            "bridge_render_samples": 0,
+            "frames": 69,
+            "girl": {
+              "x": 15096.7060546875,
+              "y": 569.925231933594
+            },
+            "reached": true
+          }
+        ],
+        "reached": true
+      },
+      "boy": {
+        "x": 15442.296875,
+        "y": 569.925231933594
+      },
+      "boy_bridge_frames": 68,
+      "boy_bridge_render_samples": 68,
+      "boy_bridge_seconds": 1.13333333333333,
+      "boy_bridge_ticks": 68,
+      "boy_holds": true,
+      "cache_approach": {
+        "boy": {
+          "x": 15417.578125,
+          "y": 569.925231933594
+        },
+        "bridge_floor_frames": 0,
+        "bridge_floor_seconds": 0.0,
+        "bridge_floor_ticks": 0,
+        "bridge_render_samples": 0,
+        "frames": 14,
+        "girl": {
+          "x": 15468.4599609375,
+          "y": 569.925231933594
+        },
+        "reached": true
+      },
+      "called_prompt": "The ratchet holds. Wait on the far landing while he comes across.",
+      "crossing": {
+        "boy": {
+          "x": 15038.6494140625,
+          "y": 569.925231933594
+        },
+        "bridge_floor_frames": 39,
+        "bridge_floor_seconds": 0.65,
+        "bridge_floor_ticks": 39,
+        "bridge_render_samples": 40,
+        "frames": 61,
+        "girl": {
+          "x": 15260.7041015625,
+          "y": 569.925231933594
+        },
+        "reached": true
+      },
+      "far_child": "Girl",
+      "far_treadle": {
+        "boy": {
+          "x": 15038.6494140625,
+          "y": 569.925231933594
+        },
+        "bridge_floor_frames": 43,
+        "bridge_floor_seconds": 0.716666666666667,
+        "bridge_floor_ticks": 43,
+        "bridge_render_samples": 43,
+        "frames": 63,
+        "girl": {
+          "x": 15434.4453125,
+          "y": 569.925231933594
+        },
+        "reached": true
+      },
+      "girl": {
+        "x": 15475.3759765625,
+        "y": 569.925231933594
+      },
+      "holder_at_latch": "Boy",
+      "latched": true,
+      "q_call_used": true,
+      "q_wait_used": true,
+      "resources": {
+        "health": 100,
+        "medicine": 1,
+        "rations": 1
+      },
+      "reunited": true,
+      "wait_positions": {
+        "boy": {
+          "x": 15038.6494140625,
+          "y": 569.925231933594
+        },
+        "girl": {
+          "x": 15103.6220703125,
+          "y": 569.925231933594
+        },
+        "holder": "Boy"
+      },
+      "waiting_prompt": "He's holding the cradle. Cross the lowered span and step onto the far iron tooth."
+    },
+    "all_states_reached": true,
+    "build": "0.4.2",
+    "screenshots": [
+      "13_counterweight_wait.png",
+      "14_counterweight_crossing.png",
+      "15_counterweight_reunion.png"
+    ]
+  },
+  "trolley_capture": {
+    "actual_sequence": {
+      "actual_travel": 565.3974609375,
+      "body": {
+        "x": 10920.3974609375,
+        "y": 675.868591308594
+      },
+      "both_cover_ticks": 599,
+      "both_protected": true,
+      "boy": {
+        "x": 10999.2236328125,
+        "y": 699.925231933594
+      },
+      "docked": true,
+      "exit": {
+        "boy": {
+          "x": 11174.7763671875,
+          "y": 699.925231933594
+        },
+        "girl": {
+          "x": 11235.7109375,
+          "y": 699.925231933594
+        },
+        "reached": true
+      },
+      "girl": {
+        "x": 11022.49609375,
+        "y": 699.999206542969
+      },
+      "hatch_amount": 1.0,
+      "health": 100,
+      "held_push": true,
+      "medicine": 1,
+      "push_contact_ticks": 526,
+      "reunion": {
+        "boy": {
+          "x": 11022.4794921875,
+          "y": 699.924011230469
+        },
+        "girl": {
+          "x": 11022.49609375,
+          "y": 699.999206542969
+        },
+        "reached": true,
+        "settled_boy": {
+          "x": 10999.2236328125,
+          "y": 699.925231933594
+        },
+        "settled_girl": {
+          "x": 11022.49609375,
+          "y": 699.999206542969
+        }
+      },
+      "reward_taken": true,
+      "scrap": 1,
+      "settled_spacing": 23.2724609375
+    },
+    "all_states_reached": true,
+    "build": "0.4.3",
+    "screenshots": [
+      "17_trolley_cover.png",
+      "18_trolley_dock.png",
+      "19_trolley_reunion.png"
+    ]
+  },
+  "physical_v044_capture": {
+    "actual_sequences": {
+      "freight": {
+        "actual_lift_travel": 170.0,
+        "boarding": {
+          "boy": {
+            "x": 14002.4736328125,
+            "y": 695.925231933594
+          },
+          "girl": {
+            "x": 14010.546875,
+            "y": 695.925231933594
+          },
+          "physics_samples": 67,
+          "reached": true
+        },
+        "boy": {
+          "x": 14426.7109375,
+          "y": 525.925231933594
+        },
+        "boy_catches_upper_floor": true,
+        "girl": {
+          "x": 14458.96875,
+          "y": 525.998291015625
+        },
+        "girl_climbs_loading_steps": {
+          "legs": [
+            {
+              "boy": {
+                "x": 13999.400390625,
+                "y": 525.925231933594
+              },
+              "girl": {
+                "x": 14140.578125,
+                "y": 695.925231933594
+              },
+              "physics_samples": 121,
+              "reached": true
+            },
+            {
+              "boy": {
+                "x": 13999.400390625,
+                "y": 525.925231933594
+              },
+              "girl": {
+                "x": 14308.794921875,
+                "y": 635.925231933594
+              },
+              "physics_samples": 61,
+              "reached": true
+            },
+            {
+              "boy": {
+                "x": 13999.400390625,
+                "y": 525.925231933594
+              },
+              "girl": {
+                "x": 14468.7119140625,
+                "y": 575.925231933594
+              },
+              "physics_samples": 58,
+              "reached": true
+            },
+            {
+              "boy": {
+                "x": 13999.400390625,
+                "y": 525.925231933594
+              },
+              "girl": {
+                "x": 14458.96875,
+                "y": 525.998291015625
+              },
+              "physics_samples": 39,
+              "reached": true
+            }
+          ],
+          "reached": true
+        },
+        "health": 100,
+        "latched": true,
+        "q_call_used": true,
+        "q_wait_used": true,
+        "return_to_winch": {
+          "boy": {
+            "x": 13999.400390625,
+            "y": 695.925231933594
+          },
+          "girl": {
+            "x": 13824.3681640625,
+            "y": 755.925231933594
+          },
+          "physics_samples": 74,
+          "reached": true
+        },
+        "reunion": {
+          "boy": {
+            "x": 14373.3203125,
+            "y": 525.925231933594
+          },
+          "girl": {
+            "x": 14458.96875,
+            "y": 525.998291015625
+          },
+          "physics_samples": 108,
+          "reached": true
+        },
+        "reward_taken": true,
+        "rider_ticks": 345,
+        "signal_not_offered_from_deck": true,
+        "waiting_contact": true,
+        "winch_ticks": 244
+      },
+      "orchard": {
+        "actual_crate_travel": 130.30029296875,
+        "ascent": {
+          "boy": {
+            "x": 7777.74755859375,
+            "y": 579.925231933594
+          },
+          "girl": {
+            "x": 7765.13671875,
+            "y": 579.925231933594
+          },
+          "physics_samples": 170,
+          "reached": true
+        },
+        "boy": {
+          "x": 7800.4990234375,
+          "y": 579.925231933594
+        },
+        "boy_ramp_ticks": 59,
+        "crate": {
+          "x": 7460.30029296875,
+          "y": 672.272216796875
+        },
+        "crate_velocity": {
+          "x": 78.0,
+          "y": 0.0
+        },
+        "girl": {
+          "x": 7765.13671875,
+          "y": 579.925231933594
+        },
+        "girl_ramp_ticks": 51,
+        "health": 100,
+        "latched": true,
+        "native_contacts": [
+          "WeightCradle",
+          "IronWeightChock"
+        ],
+        "plate_contact": true,
+        "push_ticks": 217,
+        "ramp_angle": -0.643501102924347,
+        "reward_taken": true
+      }
+    },
+    "all_states_reached": true,
+    "build": "0.4.4",
+    "screenshots": [
+      "20_orchard_weighted_mechanism.png",
+      "21_orchard_open_route.png",
+      "22_freight_lift_wait.png",
+      "23_freight_lift_reunion.png"
+    ]
+  },
+  "garden_v044_capture": {
+    "actual_sequence": {
+      "actual_dock_contact": true,
+      "boarding": {
+        "boy": {
+          "x": 12423.58203125,
+          "y": 669.925231933594
+        },
+        "girl": {
+          "x": 12465.7451171875,
+          "y": 669.925231933594
+        },
+        "reached": true
+      },
+      "both_on_real_deck": true,
+      "both_protected_ticks": 519,
+      "both_riding_ticks": 553,
+      "boy": {
+        "x": 12885.9609375,
+        "y": 669.925231933594
+      },
+      "crank_ticks": 503,
+      "exit": {
+        "boy": {
+          "x": 13132.9560546875,
+          "y": 748.297424316406
+        },
+        "girl": {
+          "x": 13164.2548828125,
+          "y": 721.084167480469
+        },
+        "reached": true
+      },
+      "girl": {
+        "x": 12924.6572265625,
+        "y": 669.925231933594
+      },
+      "health": 100,
+      "medicine": 1,
+      "moored": true,
+      "native_travel": 450.1171875,
+      "reward_taken": true,
+      "ride_wetness": 0.0
+    },
+    "all_states_reached": true,
+    "build": "0.4.4",
+    "screenshots": [
+      "24_garden_ferry_board.png",
+      "25_garden_ferry_crossing.png",
+      "26_garden_ferry_moored.png"
+    ]
+  },
+  "captures": [
+    {
+      "file": "evidence/v044/release_final/capture/01_mill_gardens.png",
+      "sha256": "59cd06e2eb56fcca9c7ad4bd4e6be6a11ce86b70db1484eb8d998a795ff5da02",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/02_canal_lower_route.png",
+      "sha256": "7a0a548a0a0e621780b6d501579a246b53edd3db1016c2270e963ae8d79e98d5",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/03_canal_upper_route.png",
+      "sha256": "bf1b112aeaa163e74ad6baf129fef597408383605618e7d96906354584368891",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/04_signal_yard.png",
+      "sha256": "19ea1fd2166973fa21c635dc196636f1fb81aa19ca2339ff54d0eafe91c012ba",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/05_school_gallery.png",
+      "sha256": "dd0ba4600b0d831ac2b9ecfa48b65a0a495d492e3af901add6bef93c71f23b38",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/06_living_terraces.png",
+      "sha256": "903137af35f767ed087c7a2418f02a8bc4b515b1ddb3c2c8d58e22363b8b40a5",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/07_character_close_study.png",
+      "sha256": "1c717a4f7c07bf1395ee04a10562ac97a6f2730f4a265fb924b1cc795c314e52",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Staged close view"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/08_interactive_mill_bridge.png",
+      "sha256": "b9f6c9a56d275086c65916fe3aa86104ae77371bf35b1ece7620017d106758c3",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/09_interactive_wheel_approach.png",
+      "sha256": "1d5e099926286bc0c94ded99663c467a067440f50baca0403658c8d40e639108",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/10_canal_pump_work.png",
+      "sha256": "0cfa33341a306a4f6cee2c3b00739c25e8ac18f64d52355e0a0796b83bf32281",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/11_canal_sluice_drained.png",
+      "sha256": "041ac1a75c5ec6c736e472836e035804beb4f3cc6134bb980ed426a91f6c030c",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/12_supplies_close_study.png",
+      "sha256": "54528c0f896838c40ca6d04f5e4251edd9bad4a05aeb010b7aeb3c61e7dbc936",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Staged close view"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/13_counterweight_wait.png",
+      "sha256": "56adb449cf4b473b11998bee9bc3c21c7ed320651904c867c420509419f63cac",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/14_counterweight_crossing.png",
+      "sha256": "b5d50ae574eddef83f438ceda9a4a285207a9e32be1765e0a0d7351786bc325e",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/15_counterweight_reunion.png",
+      "sha256": "af489f5706a4d11f6af3d91f04c652676209d1218ae919ec626b1e75aa810369",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/16_logging_counterweight.png",
+      "sha256": "ed9973a9e79a50faacd03cc0524990bfb5d452d182d3e6d4eee013368871bb5c",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/17_trolley_cover.png",
+      "sha256": "d6e6b54901879b7c885efc10367c7c65ca929be1f89eb5927225d7d7422e571d",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/18_trolley_dock.png",
+      "sha256": "d1182186894a96102061fe69f5926bb4d0e70cce46e4d15b2d79c052f9efd740",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/19_trolley_reunion.png",
+      "sha256": "a7326425798211ea2e3f5222431794c101bded5839ddfb8feeb8ed99855c3097",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/20_orchard_weighted_mechanism.png",
+      "sha256": "a59afa9fcdebf2cfe74aa433de00dee0bf6ee04a7d5914cc19efa0bdffe44dc7",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/21_orchard_open_route.png",
+      "sha256": "f3c8ae071b819926334122e1f96d857ca24b08bbb0f19a44d4629cf4770fe6c0",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/22_freight_lift_wait.png",
+      "sha256": "8e7514cfffdd4d415c84c5b006fba91d7d77faaf61df39d735ae517552b1a30b",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/23_freight_lift_reunion.png",
+      "sha256": "451c49ccb97e51d7d313e5a6d742f32d341cf47a6ec3904b29bdb2561e9d6ac4",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/24_garden_ferry_board.png",
+      "sha256": "e85726b8d8cc658b72b9d6ed5d54c6b7a64ce267d2bf9780a88ecaf26c392316",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/25_garden_ferry_crossing.png",
+      "sha256": "5efd137ba8003bdedce9ff69b64f1394b830dc135b3b1ee8dbfe2de083f1e3a2",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/26_garden_ferry_moored.png",
+      "sha256": "5f0935c5e6f5221947d4625a5d6bc6fbfe7b1ce8ca4ebbd39b4f4e2d268ca3bf",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    },
+    {
+      "file": "evidence/v044/release_final/capture/27_character_attention_study.png",
+      "sha256": "dccee055255ef73308dae481a28978c68e483180a093a07a5be8a5aa3843cd8f",
+      "size": [
+        3840,
+        2160
+      ],
+      "scope": "Native rendered scene"
+    }
+  ],
+  "evidence": {
+    "evidence/v044/EXPORT_IDENTITY.json": "9aacd8c83e5cc486b657416ea0779c38585b16a3ed4afb77405f6aaccdbb362c",
+    "evidence/v044/release_final/smoke/runtime_smoke.json": "f1ea527a9daf30e871212d82b7d6d5119196b3cfcd432ebb7e10202a523e81eb",
+    "evidence/v044/release_final/smoke/invocation.json": "7b72257c179d4b919cc349b091263b38a0e5aaa235f050753e37209a102d2952",
+    "evidence/v044/release_final/survival/survival_consequences.json": "7403e47f2524c98d589ee55da9cb046414cd2bcdbcef5cb3e0697e0b94a103ad",
+    "evidence/v044/release_final/survival/invocation.json": "f45cabc164fd5cce23936641f4568d9ee4755f78cdda10e14dbbb81d5a46d502",
+    "evidence/v044/release_final/encounters/encounter_checks.json": "06854bc49bf43dd8fa6fe63608b024dc11c2cefb965c761d431370bd62b62c5c",
+    "evidence/v044/release_final/encounters/invocation.json": "26326358c071fea0c8539f33e536a41f4006144335d73530c9f581d99263563e",
+    "evidence/v044/release_final/journey-checks/journey_checks.json": "019406afde70f9c184c0f9aa9fdafad0cf0b7aeae9290013a721f4abe270eb26",
+    "evidence/v044/release_final/journey-checks/invocation.json": "b951448e1d816cf8ac4a4a90f54bc1c1ee849c736ce9ba53e7fb8f6a0b727640",
+    "evidence/v044/release_final/side-routes/side_route_checks.json": "37c02f35a4df958fa5a26c7f2b20b1504e90cfb0900f6ea8deb34142620ac9e5",
+    "evidence/v044/release_final/side-routes/invocation.json": "06e09a4a29648f1667df3ac389001cb9b46f7fc4bac06bb36b183341e743060b",
+    "evidence/v044/release_final/development-checks/development_checks.json": "32239240db6ac213371cbe792b9d3419ce7e3563e0bc4017b7175d155a577360",
+    "evidence/v044/release_final/development-checks/invocation.json": "0b49459d0fedcfcf19e25b253b3741154a0901f945638e3f63562a36371ca07e",
+    "evidence/v044/release_final/movement-checks/movement_checks.json": "1ae51e54e587619e23eb8c7ca221aae5c1d4eef5aa9e0a5adfb0f402f7eb43ac",
+    "evidence/v044/release_final/movement-checks/invocation.json": "5e50201e932d1f028e12f103fa5e53ae440aa0f53b3e09da11d3dbb621832c95",
+    "evidence/v044/release_final/mill-checks/mill_checks.json": "25d3e32f4bb03b151fbf68cc8fe1d4500495fbbe35ccff093ab421bb6bbc6542",
+    "evidence/v044/release_final/mill-checks/invocation.json": "0e243a217cc44d4379eb6913638732570ff703b13afaabdad008d6f2293c0c35",
+    "evidence/v044/release_final/story-checks/story_checks.json": "b5b27660d81db9fb0993e3ebf98289854facbddffa2fc0a05f560c720078ff77",
+    "evidence/v044/release_final/story-checks/invocation.json": "40550c2ca4e5ce17dbc883740020afbc667e7861324880d2459dd792569002d6",
+    "evidence/v044/release_final/crossing-checks/crossing_checks.json": "6b0ed34e3d215167a27549526aaf053eb0b6ce489821feca10724982e7c41916",
+    "evidence/v044/release_final/crossing-checks/invocation.json": "964f2b7ba4ce208f0b355c1c700b76197ff429ddc485cfafc7300a83a8d14f37",
+    "evidence/v044/release_final/refinement-checks/refinement_checks.json": "0815d97b5b922560f2bce6a4d66ee025bdf971571e39f1d0d70306ccf63301a4",
+    "evidence/v044/release_final/refinement-checks/invocation.json": "5e27009527db539f2c599c978adafaf246286e41de7d7a6802121db86e250798",
+    "evidence/v044/release_final/sluice-checks/sluice_checks.json": "b0f746b91a5feb3eb4912e81099f20bf07ddd19b92b8b2cef72095bedabfdd13",
+    "evidence/v044/release_final/sluice-checks/invocation.json": "7090221459c9ebf999aef26da1d531426a6f06fe62c5402420330ca443cfff63",
+    "evidence/v044/release_final/craft-checks/craft_checks.json": "cceb7f994a0fd257b9789402b4902cc744edef9051f49a9d293d99a4b47e6c03",
+    "evidence/v044/release_final/craft-checks/invocation.json": "7cacac7e798004e4555375a9b4eeb89d74e9482caa5fcedc67e6ca5a1b19ae8c",
+    "evidence/v044/release_final/world-craft-checks/world_craft_checks.json": "0e9145d72a1d9669d11bf85c6f50cea24b5908b7e18fdd79c09e8ec420723af4",
+    "evidence/v044/release_final/world-craft-checks/invocation.json": "90cc3ffc7aa55353d9603d887f774647e5d7b884a4fe24936ee977f2bd51ca61",
+    "evidence/v044/release_final/trolley-checks/trolley_checks.json": "e4f5a74e81cc522ff93d2cc68759643a9dc6e3b2b3361e2c2fd4b5ba8a95447f",
+    "evidence/v044/release_final/trolley-checks/invocation.json": "2d0c50f82d6e3c131e4fdb0649e373c368f2ab5ed252f1a4724909024edd81eb",
+    "evidence/v044/release_final/performance-checks/performance_checks.json": "13789b9a310c718e02b1b442fe432c3e42389540b4c7834d6a5efa4669d4dfe8",
+    "evidence/v044/release_final/performance-checks/invocation.json": "bc5bd16e5b21d9016202bdcb84013b5af1b81529880a0b5281edd7d8486e4d43",
+    "evidence/v044/release_final/physical-v044-checks/physical_puzzles_v044.json": "24c17ec7991fd10762f57689f28849cb9f14539bd4a7b7658b3be3251ded583f",
+    "evidence/v044/release_final/physical-v044-checks/invocation.json": "7780f9c2483e6e7161623589fab736684a9bd257982ba6f6fda31e4bae580d29",
+    "evidence/v044/release_final/garden-v044-checks/garden_puzzle_v044.json": "8f72df9c966e28a3979d8e37d39fc9fdc8f43f2b7896e7f0de88a6dcf9ef1408",
+    "evidence/v044/release_final/garden-v044-checks/invocation.json": "ee18b780a59041d365e586a3c7b8342b2180ca64b9c626fc018de002cd623b8c",
+    "evidence/v044/release_final/character-v044-checks/character_checks_v044.json": "8dc8b08a3bf383d4a93a71eb3353c3fd91e1a24273929feaf6db58b38c08a835",
+    "evidence/v044/release_final/character-v044-checks/invocation.json": "0172cb0bc2b53e4e11151d22eac7466aab201b74aea0d7b9185754eef881598f",
+    "evidence/v044/release_final/traverse/continuous_traversal.json": "0577673dfc22d60b396d8eae3ddc54f3fa39406cf20470a308aa295b3a2d3295",
+    "evidence/v044/release_final/traverse/invocation.json": "5cb0ebbe8bcc4f4d82f143f79c6a48e5f21eb85553514dcf4cf858389df1804c",
+    "evidence/v044/release_final/animation-checks/movement_checks.json": "a9c97f7332b3ccb2e73e4878f5872cf7602f5e6463561cf483a205aaa9a37916",
+    "evidence/v044/release_final/animation-checks/invocation.json": "6a2378af09e42e97e53deb848a9667625518466582255ec03e51b6943ea43ee6",
+    "evidence/v044/release_final/capture/invocation.json": "a0db713a3a51306fd9ab454cff8db4dfe918dc4550e9a36892a7a1739b343346",
+    "evidence/v044/release_final/capture/sluice_capture.json": "023cd6afaf4f4914d13785e905a2d3a2203c0c5d80c0d40427391fad66fe7821",
+    "evidence/v044/release_final/capture/trolley_capture.json": "95e35961ac027ab43f673741135e8a4668ff9f993aeed477d95f7b909704d9e1",
+    "evidence/v044/release_final/capture/physical_v044_capture.json": "732f8a9cb8d6dca216d9bb2ae9b7cae98ad9256a078038a6421216450cbce13e",
+    "evidence/v044/release_final/capture/garden_v044_capture.json": "bf0b50389432e32b17dbb00b584585882235de6d5e6ba3d5729a074469d2dfa3",
+    "evidence/v044/V044_PLAYABLE_REVIEW.jpg": "4f5c12dc43538781c20ed9b066905a482515fcc6afd55afa23fe56d2456e5afd",
+    "evidence/v044/review_board_validation.json": "641c0d6ae3983fc43ecd8dac03a89cb853776d05f5296c22c9f6451593a9499e",
+    "evidence/v044/WTSC_Physical_Puzzles_Review_v044.mp4": "90fd12c4759c091416a43f08a5cd38ddaf3ee8de0cfe55076b38eaa22085169a",
+    "evidence/v044/physical_movie_validation.json": "3fc105e35e2f2254b7246adec40af2abaf024b338b71f8705da5b47188273b3d",
+    "evidence/v044/WTSC_Garden_Puzzle_Review_v044.mp4": "a35202c3bc8c7021f53b1fb71399b9ed145a91dd70a0b839378bd4ef19b42844",
+    "evidence/v044/garden_movie_validation.json": "ed9fe04fde7ddcedbc2579e5962130e83c01c029114570685f01f80e6d805881",
+    "evidence/v044/WTSC_Character_Review_v044.mp4": "06af6065e717472dd299e633f75e1348929591d0e67ec24b1fb400b67aabde25",
+    "evidence/v044/character_movie_validation.json": "bdaffb546f0894e3b15604f54d3aeca9c16aa3f476d4356a7c4cbd85f50c89d4"
+  },
+  "runtime_report_labels": {
+    "smoke": null,
+    "survival": null,
+    "encounters": "0.4.0",
+    "journey-checks": "0.4.0",
+    "side-routes": "0.3.0",
+    "development-checks": "0.4.0",
+    "movement-checks": "0.4.0",
+    "mill-checks": "0.4.0",
+    "story-checks": null,
+    "crossing-checks": null,
+    "refinement-checks": "0.4.1",
+    "sluice-checks": "0.4.2",
+    "craft-checks": "0.4.2",
+    "world-craft-checks": "0.4.2",
+    "trolley-checks": "0.4.3",
+    "performance-checks": "0.4.3",
+    "physical-v044-checks": "0.4.4",
+    "garden-v044-checks": "0.4.4",
+    "character-v044-checks": "0.4.4",
+    "traverse": "0.4.0",
+    "animation-checks": null
+  },
+  "notes": [
+    "v0.4.4 identifies this wrapper/export snapshot; runtime report labels are preserved as recorded.",
+    "The source animation fixture overlaps baseline checks and is excluded from the native functional total.",
+    "Campaign traversal, targeted fixtures and rendered studies have different scopes.",
+    "No movie, terrain audit or artistic approval is claimed by this manifest unless separately supplied.",
+    "v0.4.0 through v0.4.3 artifacts and evidence are preserved; AAA finish remains a production target."
+  ],
+  "source_archive_transform": {
+    "file": "export_presets.cfg",
+    "operation": "Clear custom templates; set portable v0.4.4 output path and product/file versions in source ZIP only.",
+    "original_sha256": "08b360c73d5ccb9e6d541d5af8419c56951e38236c8d9399f6889ea393043816",
+    "archive_sha256": "4caeff552e1cbbc11a3c9fa8318c5e2f2b92f0068c04912882f74d06e7cd6794"
+  }
+}

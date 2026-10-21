@@ -91,6 +91,17 @@ var steady_reachable=false
 var stance_load=0.0
 var previous_crouch=0.0
 var held_contact_snapshot={}
+var head_angles:Texture2D
+var head_yaw=1.0
+var head_goal=1.0
+var head_from=1.0
+var head_request=1.0
+var head_request_clock=0.0
+var head_turn_elapsed=.34
+var head_turn_count=0
+var last_work_shoulder=Vector2.ZERO
+var last_work_hip=Vector2.ZERO
+var support_delta=Vector2.ZERO
 
 func _ready():
 	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
@@ -98,6 +109,9 @@ func _ready():
 		girl_cloth=load("res://assets/characters/girl_cloth_v042.png")
 	if ResourceLoader.exists("res://assets/characters/boy_cloth_v043.png"):
 		boy_cloth=load("res://assets/characters/boy_cloth_v043.png")
+	if ResourceLoader.exists("res://assets/characters/head_angles_v044.png"):
+		head_angles=load("res://assets/characters/head_angles_v044.png")
+	head_yaw=facing; head_goal=facing; head_from=facing; head_request=facing
 	anim_time=0 if is_girl else .83
 	collision_layer=2; collision_mask=1; floor_snap_length=14
 	col=CollisionShape2D.new(); col.shape=RectangleShape2D.new(); col.shape.size=Vector2(23,99 if is_girl else 84); col.position.y=-col.shape.size.y/2
@@ -161,7 +175,8 @@ func update_animation(dt):
 	var working=action_time>0 or external_weight>0
 	var next_kind=str(work_contacts.get("kind",game.pending_action.get("kind",work_kind))) if working else work_kind
 	var signature=next_kind+":"+str(game.pending_action.get("id",""))
-	if working and signature!=work_signature: work_clock=0; work_signature=signature
+	if working and signature!=work_signature:
+		work_clock=0; work_signature=signature; last_work_shoulder=Vector2.ZERO; last_work_hip=Vector2.ZERO
 	if working: work_clock+=dt; work_kind=next_kind
 	work_blend=lerpf(work_blend,maxf(1.0 if action_time>0 else 0.0,external_weight),1-exp(-dt*11))
 	recoil_blend=lerpf(recoil_blend,1.0 if hit_time>0 else 0.0,1-exp(-dt*18))
@@ -231,6 +246,7 @@ func update_animation(dt):
 	care_blend=lerpf(care_blend,care,1-exp(-dt*7))
 	protect_blend=lerpf(protect_blend,protect,1-exp(-dt*7))
 	glance_blend=lerpf(glance_blend,glance,1-exp(-dt*5.0))
+	update_head_attention(dt)
 	var approaching=0.0
 	if not is_on_floor() and velocity.y>90 and not climbing:
 		var ray=PhysicsRayQueryParameters2D.create(global_position+Vector2(0,2),global_position+Vector2(0,112),1,[get_rid()])
@@ -244,7 +260,64 @@ func update_animation(dt):
 	cloth_velocity*=exp(-dt*10)
 	cloth_drag=clampf(cloth_drag+cloth_velocity*dt,-6,6)
 	braid_drag=lerpf(braid_drag,-body_lean*1.7+sin(anim_time*4.6)*.45,1-exp(-dt*5))
+	if work_blend>.001 and (work_contacts.has("near") or work_contacts.has("far")):
+		var pose=body_pose()
+		last_work_shoulder=pose.contact_shoulder/maxf(.001,work_blend)
+		last_work_hip=pose.contact_hip/maxf(.001,work_blend)
 	queue_redraw()
+
+func desired_head_direction():
+	var direction=facing
+	if glance_blend>.55 and glance_direction!=facing: direction=glance_direction
+	if brake_blend>.30 and input_axis!=0: direction=signf(input_axis)
+	if care_blend>.20: direction=signf(care_target.x-global_position.x)
+	if protect_blend>.28 and is_girl: direction=protect_direction
+	if work_contacts.has("look") and work_blend>.25:
+		var look=work_contacts.look-global_position
+		if absf(look.x)>5: direction=signf(look.x)
+	return direction
+
+func update_head_attention(dt):
+	var request=desired_head_direction()
+	if request!=head_request: head_request=request; head_request_clock=0.0
+	else: head_request_clock+=dt
+	if request!=head_goal and head_request_clock>=.035:
+		head_from=head_yaw; head_goal=request; head_turn_elapsed=0.0; head_turn_count+=1
+	head_turn_elapsed=minf(.34,head_turn_elapsed+dt)
+	# A held anticipation beat precedes the drawn quarter/front turn. Rapid
+	# retargets start from the presented angle instead of flipping a profile.
+	var u=clampf((head_turn_elapsed-.055)/.265,0,1)
+	var eased=u*u*(3-2*u)
+	head_yaw=lerpf(head_from,head_goal,eased)
+
+func head_render_profile():
+	var angle=absf(head_yaw)
+	# Opaque drawn angle changes sit on the continuous neck turn. Blending two
+	# translucent portraits would ghost the eyes and reveal the background.
+	var profile=1.0 if angle>=.76 else 0.0
+	var quarter=1.0 if angle>=.24 and angle<.76 else 0.0
+	var front=1.0 if angle<.24 else 0.0
+	return {"profile":profile,"quarter":quarter,"front":front,"yaw":head_yaw}
+
+func draw_painted_head(pose,scale_body):
+	var mix=head_render_profile(); var tint=lit_color(Color(.96,.97,.95))
+	var direction=-1.0 if head_yaw<0 else 1.0
+	if head_angles==null: mix={"profile":1.0,"quarter":0.0,"front":0.0}
+	draw_set_transform(pose.head*scale_body,pose.head_tilt,Vector2(scale_body*direction,scale_body))
+	if mix.profile>.001:
+		var color=Color(tint,tint.a*mix.profile)
+		if is_girl: draw_texture_rect_region(girl_profile,Rect2(-19,-17,34,32),Rect2(30,15,1135,1000),color)
+		else: draw_texture_rect_region(head_atlas,Rect2(-15,-17,31,34),Rect2(0,0,440,490),color)
+	if head_angles!=null and mix.quarter>.001:
+		var source=Rect2(38,11,614,616) if is_girl else Rect2(54,629,595,576)
+		var target=Rect2(-16.5,-17,32.5,32) if is_girl else Rect2(-17,-17,34,34)
+		draw_texture_rect_region(head_angles,target,source,Color(tint,tint.a*mix.quarter))
+	if head_angles!=null and mix.front>.001:
+		draw_set_transform(pose.head*scale_body,pose.head_tilt,Vector2(scale_body,scale_body))
+		var source=Rect2(664,23,556,610) if is_girl else Rect2(676,639,548,580)
+		var target=Rect2(-15,-17,30,32) if is_girl else Rect2(-16,-17,32,34)
+		draw_texture_rect_region(head_angles,target,source,Color(tint,tint.a*mix.front))
+	draw_set_transform(Vector2.ZERO,0,Vector2(scale_body,scale_body))
 
 func _physics_process(dt):
 	if game==null or game.mode!="playing": return
@@ -291,6 +364,8 @@ func _physics_process(dt):
 	if action_time>0: axis=0; jump=false; leap_axis=0; jump_buffer=0
 	input_axis=axis
 	var before=position
+	var supported_before=is_on_floor()
+	support_delta=Vector2.ZERO
 	var acceleration=1350 if is_on_floor() else 540
 	if axis==0 and is_on_floor(): acceleration=1660
 	elif axis*velocity.x<0 and is_on_floor(): acceleration=2050
@@ -311,6 +386,13 @@ func _physics_process(dt):
 	if controlled and (Input.is_action_just_released("jump") or (launched and jump_released)) and not Input.is_action_pressed("jump") and velocity.y< -170: velocity.y*=.55
 	var impact_speed=velocity.y
 	move_and_slide()
+	if supported_before and is_on_floor():
+		# Native platform transport moves the body before its own velocity.
+		# Carry the drawn support anchors with that same contact motion.
+		support_delta=get_platform_velocity()*dt
+		if not support_delta.is_zero_approx():
+			for i in range(2): foot_lock[i]+=support_delta; foot_start[i]+=support_delta
+			idle_settle_start+=support_delta; idle_settle_target+=support_delta
 	if not is_on_floor() and is_on_wall() and velocity.y> -75 and abs(axis)>.1 and not crouching:
 		var ledges=game.level.platforms+game.level.ground
 		for ledge in ledges:
@@ -322,9 +404,9 @@ func _physics_process(dt):
 	if controlled and Input.is_action_pressed("interact") and abs(axis)>.1:
 		for i in range(get_slide_collision_count()):
 			var body=get_slide_collision(i).get_collider()
-			if body is RigidBody2D:
+			if body is RigidBody2D and not bool(body.get_meta("mechanism_drive_only",false)):
 				body.linear_velocity.x=axis*78; pushing=true
-	var distance=absf(position.x-before.x)
+	var distance=absf(position.x-before.x-support_delta.x)
 	if sprinting and absf(velocity.x)>175 and distance>.1: game.stamina=maxf(0,game.stamina-dt*21)
 	if is_on_floor():
 		if not was_floor:
@@ -589,8 +671,11 @@ func work_profile():
 			p.hip=Vector2(-f*3,4); p.shoulder=Vector2(f*9,8+sin(work_clock*2.3)*.8)
 			p.near=Vector2(f*26,5); p.far=Vector2(f*22,12); p.nod=.10
 		"balance_hold":
-			p.hip=Vector2(-f*2,1); p.shoulder=Vector2(f*4,2+sin(work_clock*2.1)*.4)
+			p.hip=Vector2(-f*2,1); p.shoulder=Vector2(-f*4,2+sin(work_clock*2.1)*.4)
 			p.near=Vector2(f*16,13); p.far=Vector2(f*10,11); p.nod=-.025
+		"winch","freight_winch":
+			p.hip=Vector2(-f*3,2); p.shoulder=Vector2(f*3,-1+sin(work_clock*2.6)*.45)
+			p.near=Vector2(f*17,7); p.far=Vector2(f*16,3); p.nod=.015
 		"cart_push":
 			p.hip=Vector2(-f*3,4); p.shoulder=Vector2(-f*6,4)
 			p.near=Vector2(f*18,7); p.far=Vector2(f*17,4); p.nod=-.015
@@ -637,13 +722,15 @@ func body_pose():
 	shoulder.x-=facing*4*recoil_blend
 	var work=work_profile()
 	hip+=work.hip*work_blend; shoulder+=work.shoulder*work_blend
+	var contact_shoulder=Vector2.ZERO; var contact_hip=Vector2.ZERO
 	if work_blend>.001 and (contacts.has("near") or contacts.has("far")):
+		var contact_origin=shoulder
 		var target=Vector2.ZERO; var targets=0
 		var scale_body=1.0 if is_girl else .84
 		for grip in ["near","far"]:
 			if contacts.has(grip): target+=to_local(contacts[grip])/scale_body; targets+=1
 		target/=maxi(1,targets)
-		if work_kind=="cart_push":
+		if work_kind in ["cart_push","winch","freight_winch"]:
 			# The chassis stops the feet close to its rear handle. Keep the
 			# chest behind that real grip; leaning past it folds the elbow up
 			# across the face even though the fingers remain correctly placed.
@@ -654,7 +741,14 @@ func body_pose():
 		# A small child bends through the waist to follow a low lever instead
 		# of silently stretching the forearm or detaching the fingers from it.
 		shoulder+=effort*work_blend
-		hip+=Vector2(effort.x*.24,maxf(0,effort.y)*.48)*work_blend
+		contact_shoulder=shoulder-contact_origin
+		contact_hip=Vector2(effort.x*.24,maxf(0,effort.y)*.48)*work_blend
+		hip+=contact_hip
+	elif work_blend>.001:
+		# A released grip lets the loaded torso settle through its last effort
+		# instead of losing the reach displacement in a single render frame.
+		contact_shoulder=last_work_shoulder*work_blend; contact_hip=last_work_hip*work_blend
+		shoulder+=contact_shoulder; hip+=contact_hip
 	shoulder+=Vector2(signf(care_target.x-global_position.x)*3,3)*care_blend
 	shoulder+=Vector2(protect_direction*2,1.2)*protect_blend*(1-work_blend)
 	# A planted ankle is authoritative. Lower the pelvis a little when a long
@@ -669,25 +763,24 @@ func body_pose():
 	shoulder.y=minf(shoulder.y,hip.y-11)
 	var breathe=sin(anim_time*(2.8+weary*.7))*(.5+weary*.3)*(1-moving_blend)
 	shoulder+=Vector2(shiver+sin(anim_time*.65)*.45*(1-moving_blend),breathe)
-	var head=shoulder+Vector2(facing*(1.2+weary*2),-15+weary*1.7+crouch_blend*4)
-	var head_facing=facing
-	if glance_blend>.55 and glance_direction!=facing: head_facing=glance_direction
-	if brake_blend>.30 and input_axis!=0: head_facing=signf(input_axis)
-	if care_blend>.20: head_facing=signf(care_target.x-global_position.x)
-	if protect_blend>.28 and is_girl: head_facing=protect_direction
-	if contacts.has("look") and work_blend>.25:
-		var look=contacts.look-global_position
-		if absf(look.x)>5: head_facing=signf(look.x)
-	head.x+=head_facing*glance_blend*1.6
+	var head=shoulder+Vector2(head_yaw*(1.2+weary*2),-15+weary*1.7+crouch_blend*4)
+	var head_facing=-1.0 if head_yaw<0 else 1.0
+	var attention=sin(clampf(head_turn_elapsed/.34,0,1)*PI) if head_turn_elapsed<.34 else 0.0
+	head+=Vector2(head_goal*attention*.9,attention*.55)
+	head.x+=head_yaw*glance_blend*1.6
 	var head_tilt=facing*(-run*.055+weary*.13+fall*.05)-head_facing*glance_blend*.035
-	head_tilt+=facing*(landing_approach*.09+landing*.015)
+	head_tilt+=facing*(landing_approach*.09+landing*.015)+head_goal*attention*.035
 	head_tilt=lerpf(head_tilt,head_facing*work.nod,work_blend)
+	if work_kind=="balance_hold":
+		# Keep the face behind a high physical rail while the arms brace ahead.
+		head+=Vector2(-facing*6,1.2)*work_blend
+		head_tilt-=facing*.035*work_blend
 	head_tilt=lerpf(head_tilt,-head_facing*.06,care_blend)
 	head+=Vector2(0,danger_blend*1.8*(1-work_blend))
 	head+=Vector2(facing*2,-1)*mantle_blend+Vector2(-facing*2,1)*recoil_blend
 	head_tilt=lerpf(head_tilt,-facing*.12,mantle_blend)
 	head_tilt=lerpf(head_tilt,facing*.18,recoil_blend)
-	return {"hip":hip,"shoulder":shoulder,"head":head,"head_facing":head_facing,"head_tilt":head_tilt,"rise":rise,"fall":fall,"weary":weary,"airborne":airborne,"landing":landing,"twist":twist,"work":work,"contacts":contacts,"stance":stance}
+	return {"hip":hip,"shoulder":shoulder,"head":head,"head_facing":head_facing,"head_tilt":head_tilt,"rise":rise,"fall":fall,"weary":weary,"airborne":airborne,"landing":landing,"twist":twist,"work":work,"contacts":contacts,"stance":stance,"contact_shoulder":contact_shoulder,"contact_hip":contact_hip,"head_yaw":head_yaw,"attention":attention}
 
 func current_work_contacts():
 	# Some mechanisms stop publishing live contacts in a modal screen. Hold
@@ -742,8 +835,11 @@ func arm_pose(pose):
 	near=near.lerp(near_shoulder+pose.work.near,work_blend)
 	far=far.lerp(far_shoulder+pose.work.far,work_blend)
 	var s=1.0 if is_girl else .84
-	if pose.contacts.has("near"): near=near.lerp(to_local(pose.contacts.near)/s,work_blend)
-	if pose.contacts.has("far"): far=far.lerp(to_local(pose.contacts.far)/s,work_blend)
+	# Contact weight scales effort, while a settled real grip still meets its
+	# authored rail. Normalize the ease to that contact's requested strength.
+	var grip_blend=clampf(work_blend/maxf(.001,float(pose.contacts.get("weight",1.0))),0,1)
+	if pose.contacts.has("near"): near=near.lerp(to_local(pose.contacts.near)/s,grip_blend)
+	if pose.contacts.has("far"): far=far.lerp(to_local(pose.contacts.far)/s,grip_blend)
 	var ledge=(climb_target-position)/s-Vector2(climb_direction*14,0)
 	var pull=clampf((ledge.y+60)/60,0,1)
 	near=near.lerp(near_shoulder+Vector2(f*19,lerpf(-19,22,pull)),mantle_blend)
@@ -754,7 +850,7 @@ func arm_pose(pose):
 func near_elbow(shoulder,hand,head):
 	# Keep the elbow below/forward of overhead work for the whole stroke. A
 	# per-frame flip between the two IK solutions would make the elbow snap.
-	if work_kind=="cart_push" and work_blend>.02:
+	if work_kind in ["cart_push","winch","freight_winch"] and work_blend>.02:
 		return solve_knee(shoulder,hand,15,16,facing)
 	if work_blend>.2 and work_kind in ["pump","roof","brace"]:
 		return solve_knee(shoulder,hand,15,16,facing)
@@ -839,14 +935,9 @@ func _draw():
 		draw_colored_polygon(PackedVector2Array([patch+Vector2(-3,-3),patch+Vector2(3,-2),patch+Vector2(2,4),patch+Vector2(-3,3)]),Color(.23,.30,.29,.7))
 		draw_line(patch+Vector2(-2,-2),patch+Vector2(-2,3),Color(.55,.56,.46,.25),.7,true)
 	draw_line(shoulder+Vector2(0,-2),head+Vector2(0,6),lit_color(Color(.50,.32,.20)),6,true)
-	var turn_width=1.0-sin(clampf(1-turn_time/.20,0,1)*PI)*.08 if turn_time>0 else 1.0
-	draw_set_transform(head*s,head_tilt,Vector2(s*head_facing*turn_width,s))
-	var profile_tint=lit_color(Color(.96,.97,.95))
-	if is_girl: draw_texture_rect_region(girl_profile,Rect2(-19,-17,34,32),Rect2(30,15,1135,1000),profile_tint)
-	else: draw_texture_rect_region(head_atlas,Rect2(-15,-17,31,34),Rect2(0,0,440,490),profile_tint)
 	draw_set_transform(Vector2.ZERO,0,Vector2(s,s))
 	if is_girl:
-		var braid=head+Vector2(-9*head_facing,4)
+		var braid=head+Vector2(-9*head_yaw,4)
 		for i in range(6):
 			var wind=sin(anim_time*5-i*.4)*(.3+run*.8)+braid_drag*(float(i)+1)/6.0
 			var center=braid+Vector2(wind,5+i*3.2)
@@ -858,6 +949,7 @@ func _draw():
 		draw_set_transform(ribbon*s,cloth_drag*.012,Vector2(s*head_facing,s))
 		draw_texture_rect_region(girl_profile,Rect2(-5,-2.6,10,5.2),Rect2(118,1003,257,137),lit_color(Color(.96,1.03,1.08)))
 		draw_set_transform(Vector2.ZERO,0,Vector2(s,s))
+	draw_painted_head(pose,s)
 	var hand=arms.near; var near_shoulder=arms.near_shoulder
 	var elbow=near_elbow(near_shoulder,hand,head)
 	tube(near_shoulder,elbow,hand,4.7,3.5,2.5,ink,"sleeve")

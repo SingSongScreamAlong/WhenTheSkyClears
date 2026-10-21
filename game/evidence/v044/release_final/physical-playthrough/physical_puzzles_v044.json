@@ -1,0 +1,330 @@
+{
+	"all_passed": true,
+	"build": "0.4.4",
+	"checks": [
+		{
+			"check": "orchard_crate_and_ramp_have_native_bodies",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "walking_without_E_cannot_drive_weight",
+			"details": "0.0",
+			"passed": true
+		},
+		{
+			"check": "orchard_pause_freezes_weight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "orchard_inventory_freezes_weight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "orchard_unsolved_reset_restores_native_transform",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unsolved_orchard_supplies_refuse_far_approach",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "standing_child_cannot_substitute_for_heavy_weight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "real_crate_contact_latches_hinged_ramp",
+			"details": "{\"actual_crate_travel\":130.30029296875,\"ascent\":{\"boy\":{\"x\":7777.74755859375,\"y\":579.925231933594},\"girl\":{\"x\":7766.26025390625,\"y\":579.925231933594},\"physics_samples\":85,\"reached\":true},\"boy\":{\"x\":7800.4990234375,\"y\":579.925231933594},\"boy_ramp_ticks\":60,\"crate\":{\"x\":7460.30029296875,\"y\":672.272216796875},\"crate_velocity\":{\"x\":78.0,\"y\":0.0},\"girl\":{\"x\":7766.26025390625,\"y\":579.925231933594},\"girl_ramp_ticks\":51,\"health\":100,\"latched\":true,\"native_contacts\":[\"WeightCradle\",\"IronWeightChock\"],\"plate_contact\":true,\"push_ticks\":217,\"ramp_angle\":-0.643501102924347,\"reward_taken\":true}",
+			"passed": true
+		},
+		{
+			"check": "both_children_physically_ascend_hinged_ramp",
+			"details": "{\"actual_crate_travel\":130.30029296875,\"ascent\":{\"boy\":{\"x\":7777.74755859375,\"y\":579.925231933594},\"girl\":{\"x\":7766.26025390625,\"y\":579.925231933594},\"physics_samples\":85,\"reached\":true},\"boy\":{\"x\":7800.4990234375,\"y\":579.925231933594},\"boy_ramp_ticks\":60,\"crate\":{\"x\":7460.30029296875,\"y\":672.272216796875},\"crate_velocity\":{\"x\":78.0,\"y\":0.0},\"girl\":{\"x\":7766.26025390625,\"y\":579.925231933594},\"girl_ramp_ticks\":51,\"health\":100,\"latched\":true,\"native_contacts\":[\"WeightCradle\",\"IronWeightChock\"],\"plate_contact\":true,\"push_ticks\":217,\"ramp_angle\":-0.643501102924347,\"reward_taken\":true}",
+			"passed": true
+		},
+		{
+			"check": "native_search_earns_finite_orchard_supplies",
+			"details": "{\"actual_crate_travel\":130.30029296875,\"ascent\":{\"boy\":{\"x\":7777.74755859375,\"y\":579.925231933594},\"girl\":{\"x\":7766.26025390625,\"y\":579.925231933594},\"physics_samples\":85,\"reached\":true},\"boy\":{\"x\":7800.4990234375,\"y\":579.925231933594},\"boy_ramp_ticks\":60,\"crate\":{\"x\":7460.30029296875,\"y\":672.272216796875},\"crate_velocity\":{\"x\":78.0,\"y\":0.0},\"girl\":{\"x\":7766.26025390625,\"y\":579.925231933594},\"girl_ramp_ticks\":51,\"health\":100,\"latched\":true,\"native_contacts\":[\"WeightCradle\",\"IronWeightChock\"],\"plate_contact\":true,\"push_ticks\":217,\"ramp_angle\":-0.643501102924347,\"reward_taken\":true}",
+			"passed": true
+		},
+		{
+			"check": "orchard_spent_cache_cannot_duplicate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "orchard_latched_reset_keeps_ramp_and_weight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "empty_cargo_lift_refuses_to_raise",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "same_x_overhead_signal_refuses_native_E",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "ordinary_sloped_ground_signal_works_before_lift",
+			"details": "[{ \"x\": 13690.0, \"y\": 733.302124023438 }, { \"x\": 13648.0, \"y\": 725.462097167969 }, 735.466666666667]",
+			"passed": true
+		},
+		{
+			"check": "released_winch_holds_actual_partial_load",
+			"details": "[49.0008544921875, 49.0008544921875]",
+			"passed": true
+		},
+		{
+			"check": "freight_pause_freezes_physical_deck",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "freight_inventory_freezes_physical_deck",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "crouch_E_physically_recovers_unlatched_load",
+			"details": "[0.0, { \"x\": 13970.0, \"y\": 695.925720214844 }]",
+			"passed": true
+		},
+		{
+			"check": "unsolved_respawn_restores_low_deck_without_softlock",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "descending_platform_arrests_above_real_child_collider",
+			"details": "[675.300964355469, 0.697021484375, { \"x\": 13980.0, \"y\": 755.997985839844 }]",
+			"passed": true
+		},
+		{
+			"check": "native_Q_clearance_resumes_safe_lowering",
+			"details": "[0.0, { \"x\": 13815.0, \"y\": 755.925720214844 }, { \"x\": 13855.01953125, \"y\": 755.925231933594 }]",
+			"passed": true
+		},
+		{
+			"check": "boy_boards_real_platform_then_native_Q_waits",
+			"details": "{\"actual_lift_travel\":170.0,\"boarding\":{\"boy\":{\"x\":14002.4736328125,\"y\":695.925231933594},\"girl\":{\"x\":14008.3798828125,\"y\":695.925231933594},\"physics_samples\":34,\"reached\":true},\"boy\":{\"x\":14422.177734375,\"y\":525.925231933594},\"boy_catches_upper_floor\":true,\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"girl_climbs_loading_steps\":{\"legs\":[{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14141.177734375,\"y\":695.925231933594},\"physics_samples\":61,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14310.6044921875,\"y\":635.925231933594},\"physics_samples\":31,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14468.96484375,\"y\":575.925231933594},\"physics_samples\":29,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":20,\"reached\":true}],\"reached\":true},\"health\":100,\"latched\":true,\"q_call_used\":true,\"q_wait_used\":true,\"return_to_winch\":{\"boy\":{\"x\":13991.36328125,\"y\":695.925231933594},\"girl\":{\"x\":13824.9677734375,\"y\":755.925231933594},\"physics_samples\":37,\"reached\":true},\"reunion\":{\"boy\":{\"x\":14377.388671875,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":54,\"reached\":true},\"reward_taken\":true,\"rider_ticks\":358,\"signal_not_offered_from_deck\":true,\"waiting_contact\":true,\"winch_ticks\":244}",
+			"passed": true
+		},
+		{
+			"check": "cargo_deck_cannot_offer_or_start_lower_road_signal",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "actual_winch_and_rider_contact_catch_upper_latch",
+			"details": "{\"actual_lift_travel\":170.0,\"boarding\":{\"boy\":{\"x\":14002.4736328125,\"y\":695.925231933594},\"girl\":{\"x\":14008.3798828125,\"y\":695.925231933594},\"physics_samples\":34,\"reached\":true},\"boy\":{\"x\":14422.177734375,\"y\":525.925231933594},\"boy_catches_upper_floor\":true,\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"girl_climbs_loading_steps\":{\"legs\":[{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14141.177734375,\"y\":695.925231933594},\"physics_samples\":61,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14310.6044921875,\"y\":635.925231933594},\"physics_samples\":31,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14468.96484375,\"y\":575.925231933594},\"physics_samples\":29,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":20,\"reached\":true}],\"reached\":true},\"health\":100,\"latched\":true,\"q_call_used\":true,\"q_wait_used\":true,\"return_to_winch\":{\"boy\":{\"x\":13991.36328125,\"y\":695.925231933594},\"girl\":{\"x\":13824.9677734375,\"y\":755.925231933594},\"physics_samples\":37,\"reached\":true},\"reunion\":{\"boy\":{\"x\":14377.388671875,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":54,\"reached\":true},\"reward_taken\":true,\"rider_ticks\":358,\"signal_not_offered_from_deck\":true,\"waiting_contact\":true,\"winch_ticks\":244}",
+			"passed": true
+		},
+		{
+			"check": "girl_uses_loading_steps_and_Q_reunites_both",
+			"details": "{\"actual_lift_travel\":170.0,\"boarding\":{\"boy\":{\"x\":14002.4736328125,\"y\":695.925231933594},\"girl\":{\"x\":14008.3798828125,\"y\":695.925231933594},\"physics_samples\":34,\"reached\":true},\"boy\":{\"x\":14422.177734375,\"y\":525.925231933594},\"boy_catches_upper_floor\":true,\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"girl_climbs_loading_steps\":{\"legs\":[{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14141.177734375,\"y\":695.925231933594},\"physics_samples\":61,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14310.6044921875,\"y\":635.925231933594},\"physics_samples\":31,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14468.96484375,\"y\":575.925231933594},\"physics_samples\":29,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":20,\"reached\":true}],\"reached\":true},\"health\":100,\"latched\":true,\"q_call_used\":true,\"q_wait_used\":true,\"return_to_winch\":{\"boy\":{\"x\":13991.36328125,\"y\":695.925231933594},\"girl\":{\"x\":13824.9677734375,\"y\":755.925231933594},\"physics_samples\":37,\"reached\":true},\"reunion\":{\"boy\":{\"x\":14377.388671875,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":54,\"reached\":true},\"reward_taken\":true,\"rider_ticks\":358,\"signal_not_offered_from_deck\":true,\"waiting_contact\":true,\"winch_ticks\":244}",
+			"passed": true
+		},
+		{
+			"check": "native_shared_search_earns_freight_medicine",
+			"details": "{\"actual_lift_travel\":170.0,\"boarding\":{\"boy\":{\"x\":14002.4736328125,\"y\":695.925231933594},\"girl\":{\"x\":14008.3798828125,\"y\":695.925231933594},\"physics_samples\":34,\"reached\":true},\"boy\":{\"x\":14422.177734375,\"y\":525.925231933594},\"boy_catches_upper_floor\":true,\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"girl_climbs_loading_steps\":{\"legs\":[{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14141.177734375,\"y\":695.925231933594},\"physics_samples\":61,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14310.6044921875,\"y\":635.925231933594},\"physics_samples\":31,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14468.96484375,\"y\":575.925231933594},\"physics_samples\":29,\"reached\":true},{\"boy\":{\"x\":13991.36328125,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":20,\"reached\":true}],\"reached\":true},\"health\":100,\"latched\":true,\"q_call_used\":true,\"q_wait_used\":true,\"return_to_winch\":{\"boy\":{\"x\":13991.36328125,\"y\":695.925231933594},\"girl\":{\"x\":13824.9677734375,\"y\":755.925231933594},\"physics_samples\":37,\"reached\":true},\"reunion\":{\"boy\":{\"x\":14377.388671875,\"y\":525.925231933594},\"girl\":{\"x\":14455.71484375,\"y\":525.998291015625},\"physics_samples\":54,\"reached\":true},\"reward_taken\":true,\"rider_ticks\":358,\"signal_not_offered_from_deck\":true,\"waiting_contact\":true,\"winch_ticks\":244}",
+			"passed": true
+		},
+		{
+			"check": "freight_spent_cache_cannot_duplicate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "freight_latched_reset_retains_physical_upper_deck",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "save_resume_restores_solved_lift_and_spent_supplies",
+			"details": "[true, true, 170.0, true, 1, 1, 2]",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"freight_success": {
+			"actual_lift_travel": 170.0,
+			"boarding": {
+				"boy": {
+					"x": 14002.4736328125,
+					"y": 695.925231933594
+				},
+				"girl": {
+					"x": 14008.3798828125,
+					"y": 695.925231933594
+				},
+				"physics_samples": 34,
+				"reached": true
+			},
+			"boy": {
+				"x": 14422.177734375,
+				"y": 525.925231933594
+			},
+			"boy_catches_upper_floor": true,
+			"girl": {
+				"x": 14455.71484375,
+				"y": 525.998291015625
+			},
+			"girl_climbs_loading_steps": {
+				"legs": [
+					{
+						"boy": {
+							"x": 13991.36328125,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14141.177734375,
+							"y": 695.925231933594
+						},
+						"physics_samples": 61,
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 13991.36328125,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14310.6044921875,
+							"y": 635.925231933594
+						},
+						"physics_samples": 31,
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 13991.36328125,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14468.96484375,
+							"y": 575.925231933594
+						},
+						"physics_samples": 29,
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 13991.36328125,
+							"y": 525.925231933594
+						},
+						"girl": {
+							"x": 14455.71484375,
+							"y": 525.998291015625
+						},
+						"physics_samples": 20,
+						"reached": true
+					}
+				],
+				"reached": true
+			},
+			"health": 100,
+			"latched": true,
+			"q_call_used": true,
+			"q_wait_used": true,
+			"return_to_winch": {
+				"boy": {
+					"x": 13991.36328125,
+					"y": 695.925231933594
+				},
+				"girl": {
+					"x": 13824.9677734375,
+					"y": 755.925231933594
+				},
+				"physics_samples": 37,
+				"reached": true
+			},
+			"reunion": {
+				"boy": {
+					"x": 14377.388671875,
+					"y": 525.925231933594
+				},
+				"girl": {
+					"x": 14455.71484375,
+					"y": 525.998291015625
+				},
+				"physics_samples": 54,
+				"reached": true
+			},
+			"reward_taken": true,
+			"rider_ticks": 358,
+			"signal_not_offered_from_deck": true,
+			"waiting_contact": true,
+			"winch_ticks": 244
+		},
+		"orchard_success": {
+			"actual_crate_travel": 130.30029296875,
+			"ascent": {
+				"boy": {
+					"x": 7777.74755859375,
+					"y": 579.925231933594
+				},
+				"girl": {
+					"x": 7766.26025390625,
+					"y": 579.925231933594
+				},
+				"physics_samples": 85,
+				"reached": true
+			},
+			"boy": {
+				"x": 7800.4990234375,
+				"y": 579.925231933594
+			},
+			"boy_ramp_ticks": 60,
+			"crate": {
+				"x": 7460.30029296875,
+				"y": 672.272216796875
+			},
+			"crate_velocity": {
+				"x": 78.0,
+				"y": 0.0
+			},
+			"girl": {
+				"x": 7766.26025390625,
+				"y": 579.925231933594
+			},
+			"girl_ramp_ticks": 51,
+			"health": 100,
+			"latched": true,
+			"native_contacts": [
+				"WeightCradle",
+				"IronWeightChock"
+			],
+			"plate_contact": true,
+			"push_ticks": 217,
+			"ramp_angle": -0.643501102924347,
+			"reward_taken": true
+		}
+	},
+	"method": "Native rigid and animatable bodies with actual floor contacts; component evidence counts physics ticks, independent of render FPS. Refusal, modal pause and resets use separate isolated fixtures.",
+	"recorded_frames": 913,
+	"recording": {
+		"cues": [
+			{
+				"cue": "Held E moves an actual weighted crate onto the iron chock, paying out a hinged timber ramp.",
+				"frame": 0
+			},
+			{
+				"cue": "Escort Boy onto the native cargo platform; Q wait; Girl returns to the lower winch, raises his actual standing weight to the latch, climbs and calls him across.",
+				"frame": 350
+			}
+		],
+		"enabled": true,
+		"fps": 30,
+		"frame_directory": "C:\\Users\\conra\\.codex\\worktrees\\world-v040\\When The Sky Clears\\game\\evidence\\v044\\release_final\\physical-playthrough/physical_v044_motion_frames",
+		"frames": 913,
+		"scope": "Two uninterrupted native Input sequences after explicit safe-road setups; unrelated campaign hazards disabled only at initial setup. All crate push, rider lift, Q wait/call, climbs and finite searches are real physics."
+	}
+}

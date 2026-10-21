@@ -244,6 +244,46 @@
       "w": 220,
       "h": 22,
       "kind": "stone"
+    },
+    {
+      "x": 14070,
+      "y": 696,
+      "w": 120,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "freight_child_lift"
+    },
+    {
+      "x": 14240,
+      "y": 636,
+      "w": 120,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "freight_child_lift"
+    },
+    {
+      "x": 14410,
+      "y": 576,
+      "w": 120,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "freight_child_lift"
+    },
+    {
+      "x": 14060,
+      "y": 526,
+      "w": 460,
+      "h": 18,
+      "kind": "scaffold",
+      "one_way": true,
+      "optional_route": true,
+      "route": "freight_child_lift"
     }
   ],
   "scenery": [
@@ -515,13 +555,14 @@
     },
     {
       "kind": "relay",
-      "x": 14040,
-      "y": 756.0,
+      "x": 13690,
+      "y": 735.4666666666667,
       "label": "Turn the yard signal together",
       "hold_seconds": 3.2,
       "id": "camp_yard_signal",
       "companion_required": true,
-      "optional": true
+      "optional": true,
+      "vertical_reach": 20
     },
     {
       "kind": "cache",
@@ -548,6 +589,21 @@
       "label": "Clear the fallen arcade stones",
       "hold_seconds": 2.8,
       "id": "camp_arcade_stones"
+    },
+    {
+      "kind": "cache",
+      "id": "freight_upper_supplies",
+      "x": 14460,
+      "y": 526,
+      "label": "A railway dressing and an untouched lunch tin",
+      "hold_seconds": 1.3,
+      "requires_flag": "freight_child_lift_latched",
+      "companion_required": true,
+      "optional": true,
+      "rations": 1,
+      "scrap": 0,
+      "medicine": 1,
+      "physical_cache": true
     }
   ],
   "gates": [
@@ -691,7 +747,8 @@
       "x": 14150,
       "w": 300,
       "kind": "wall",
-      "y": 756.0
+      "y": 756.0,
+      "rear_plane": true
     },
     {
       "x": 14930,
@@ -912,5 +969,19 @@
   "original_route_end": 5700,
   "previous_route_end": 11800,
   "branch_routes": [],
-  "mechanisms": []
+  "mechanisms": [
+    {
+      "kind": "freight_winch_lift",
+      "id": "freight_child_lift",
+      "key": "freight_child_lift_latched",
+      "lift_x": 13900,
+      "low_y": 696,
+      "upper_y": 526,
+      "winch_x": 13815,
+      "floor_y": 756,
+      "cache_id": "freight_upper_supplies",
+      "optional": true,
+      "lift_w": 160
+    }
+  ]
 }

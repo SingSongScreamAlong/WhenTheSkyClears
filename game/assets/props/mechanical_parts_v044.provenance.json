@@ -1,0 +1,18 @@
+{
+  "build": "0.4.4",
+  "mode": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "source_image": "C:/Users/conra/.codex/generated_images/01a155ac-2feb-7b40-9efe-28c1a20d8840/exec-9bbb1db3-cafa-4bab-8a34-734438c33aef.png",
+  "runtime_image": "game/assets/props/mechanical_parts_v044.png",
+  "reference_image": "game/assets/props/painted_survival_atlas_v020.png",
+  "reference_usage": "Tent material, light and brushwork. Existing original image and prior atlases preserved.",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "channels": "RGBA",
+  "processing": "Unmodified original PNG copied byte for byte; runtime region sampling only.",
+  "prompt": "Create a new production sprite PARTS atlas for a painterly side-view survival game. Use the attached artwork ONLY as a visual material and lighting reference: the small weathered canvas tent is the gold standard. Match its hand-painted timber grain, frayed canvas, muted warm browns, cool grey shadows, delicate uneven edges and readable open midtones. Genuine transparent alpha, no background, no text or labels. Strict orthographic side elevation, no perspective. Arrange SIX fully separated objects in a clean 2 column by 3 row grid with generous transparent gutters. TOP LEFT: a small heavy weathered wooden crate, iron straps, no ground shadow. TOP RIGHT: an isolated short flat wooden ramp deck, long horizontal planks with iron hinge at left, no legs, no ground. MIDDLE LEFT: a horizontal freight-lift timber platform with a low front rim and attached rope eyelets; no people and no surrounding building. MIDDLE RIGHT: a tall narrow timber lift guide with pulley and cable, weathered joinery, independent from the platform. BOTTOM LEFT: a standalone hand-operated rusty winch mechanism mounted on a timber post, circular reel and crank CLEARLY visible, clean silhouette, no scenery. BOTTOM RIGHT: an isolated circular iron ratchet and pawl with short lever. All six are detailed believable handmade objects, not icons, consistent diffuse light from upper left, avoid black crush and bright green moss. Objects must not touch each other. Square atlas. Fine brush detail but legible at game scale.",
+  "acceptance": "Generated candidate integrated for native visual review; not an artistic AAA acceptance.",
+  "sha256": "c97f9933ff98a6c438c0d3b7d0a69dbf3242289830afe0c9feb0fb52f496b4e0"
+}

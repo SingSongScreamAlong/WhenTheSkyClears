@@ -10,6 +10,8 @@ func _draw():
 		if is_instance_valid(sluice): sluice.draw_foreground(self)
 	for trolley in game.get("trolley_encounters") if game.get("trolley_encounters")!=null else []:
 		if is_instance_valid(trolley): trolley.draw_foreground(self)
+	for puzzle in game.puzzle_encounters:
+		if is_instance_valid(puzzle) and puzzle.has_method("draw_foreground"): puzzle.draw_foreground(self)
 	for c in game.level.covers:
 		if c.kind=="wall" and not c.get("rear_plane",false):
 			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w+20,82,Color(.56,.65,.63))

@@ -735,7 +735,7 @@ func prop(p):
 			paint_beam(Vector2(x-25,y-32),Vector2(x+115,y-45),6,Color(.62,.66,.49))
 
 func interact_prop(p):
-	if p.get("trolley_cache",false): return
+	if p.get("trolley_cache",false) or p.get("physical_cache",false): return
 	var pos = Vector2(p.x,surface(float(p.x),float(p.get("y",700))))
 	var used = game.flags.get(p.get("id",p.get("key","")),false)
 	var work=interaction_art.progress(game,p)

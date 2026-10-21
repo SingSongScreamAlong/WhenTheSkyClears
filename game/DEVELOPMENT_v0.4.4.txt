@@ -1,0 +1,125 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.4.4
+
+STATUS
+The frozen executable passed 557 native functional checks across 19 suites,
+including physical 30, garden 26 and character 18. Separate source animation
+27/27 passed and is excluded from that total. All 27 native 4K captures, four
+semantic state reports and three movie validations passed. Continuous native
+Input navigation completed all five chapters in 732.55 simulated seconds,
+one school checkpoint recovery, health 100, rations 4, medicine 2 and no failure.
+This is automated navigation, not measured human playtime.
+This is the v0.4.4 development snapshot. Prior v0.4.3 evidence remains preserved.
+Runtime identity: 189 files. EXE: 150662592 bytes. SHA-256:
+62b4c50f600632a1886759a912cfaa22d33405782a625ef0db92478476d22fed
+AAA quality and user artistic acceptance remain open.
+
+PHYSICAL ROUTES
+Orchard: hold E and move against the heavy crate to push it 130 pixels along the iron
+track. Actual end-chock contact loads the cradle and raises a hinged timber
+ramp. Both children climb to 1 food + 1 salvage. Releasing the crate arrests its motion.
+
+Freight lift: board the boy on the real 160-pixel cargo deck, ask him to wait with Q, return to the
+lower winch and hold E. Raising him 170 pixels catches the upper ratchet through his
+actual floor contact. Climb the steps, call him with Q across and search 1 food + 1 medicine
+together. Crouch+E lowers an unlatched lift. Descent arrests above either child
+beneath the deck, then resumes with the winch held once the path is clear.
+
+The yard signal's shared control is independently reachable on the actual lower-
+road slope at x=13690. Its 20-pixel vertical reach requires the grounded approach.
+Reunite at that control to turn the patrol light away.
+
+Garden ferry: board both children from the near jetty and crouch beneath the
+cloth. Hold E beside the reel to move the real rigid deck 450 pixels; release to brake.
+Each child needs an actual deck floor contact and crouched position. Real far-
+dock collision moors the ferry. Exit together for the existing finite medicine.
+The complete lower wading route stays passable, with wetness/cold as its cost.
+Both deck and graded-shore exits are tested. No checkpoint sits inside the hull
+corridor. Pause, recovery, solved save state and finite reward are exercised.
+
+These routes are optional. The 79,200-unit five-chapter campaign stays the same
+length. Survival supplies, cover, timed hazards, shared work and protecting both
+children remain the baseline.
+
+CHARACTERS AND ART
+Original opaque quarter/front head paintings carry attention and reversals
+through intermediate angles, retaining resting profiles. Physics owns attention,
+anticipation and pause. Foot anchors follow actual rigid ferry/Animatable lift
+motion while carried stance remains planted. Weighted reach/release and actual
+pump, counterweight rail and ferry reel/rail contacts develop work performance.
+
+Three built-in ImageGen atlases are retained raw, each 1254 x 1254 RGBA with alpha:
+  assets/props/mechanical_parts_v044.png with its matching .provenance.json
+  assets/props/ferry_parts_v044.png with its matching .provenance.json
+  assets/characters/head_angles_v044.png with its matching .provenance.json
+The head prompt is head_angles_v044.prompt.txt. Exact references, prompts and
+hashes remain beside the images. Prior paintings, profiles and receipts remain.
+
+Final silent native movies passed full decode and independent frame-count/
+duration checks at 1440x810 and 30 fps, bound to the exact executable above:
+  WTSC_Physical_Puzzles_Review_v044.mp4: 913 frames / 30.4333 seconds
+  WTSC_Garden_Puzzle_Review_v044.mp4: 487 frames / 16.2333 seconds
+  WTSC_Character_Review_v044.mp4: 457 frames / 15.2333 seconds
+Their matching physical/garden/character_movie_validation.json files bind native
+invocations, reports and fresh frame inventories. VISUAL_REVIEW_v044.json records
+sampled native views with artistic acceptance kept separate. Final logs contain
+no engine/script errors or leak/resource warnings.
+
+BUILD AND CHECKS
+Open project.godot in Godot 4.6 Standard and press F5. Editor play needs no Python
+or export templates. From the repository root after runtime freeze:
+  python game/tools/setup_godot.py
+  python game/tools/build_v044.py export
+  python game/tools/build_v044.py test all
+  python game/tools/build_v044.py test capture
+  python game/tools/build_v044.py verify
+
+Outputs use build/v0.4.4 and evidence/v044. Older releases are preserved. The
+export helper temporarily selects portable templates/version metadata, restores
+the preset byte for byte, and hashes runtime assets/source/UIDs. All final native
+results must match that exact executable and unchanged source.
+
+New required reports:
+  --physical-v044-checks -> physical_puzzles_v044.json
+  --garden-v044-checks -> garden_puzzle_v044.json
+  --character-v044-checks -> character_checks_v044.json
+Retained suites, continuous traversal and source animation remain required.
+The overlapping source animation fixture stays outside the native total.
+
+--capture-v044 requires 27 native 4K views: earlier 19 + 2 orchard + 2 freight lift + 3 ferry
++ 1 character attention. physical_v044_capture.json and garden_v044_capture.json
+must confirm exact sequences alongside retained sluice/trolley reports. Missing
+or incomplete semantic states fail capture immediately. All final sequences
+passed; V044_PLAYABLE_REVIEW.jpg selects nine native views from that capture run.
+
+The native package adds ORCHARD_PLAYTEST.cmd, FREIGHT_LIFT_PLAYTEST.cmd and
+GARDEN_FERRY_PLAYTEST.cmd. Source CLI flags are -- --orchard-preview,
+-- --freight-lift-preview and -- --garden-preview. These previews are unsaved,
+retain audio and pause on focus loss. Earlier launchers and v0.4.0-compatible
+campaign saves remain.
+
+MEDIA AND DELIVERY
+Install requirements-dev.txt for Python media tools. After final native QA:
+  python game/tools/build_v044.py test physical-playthrough garden-playthrough character-playthrough
+  python game/tools/make_review_v044.py all
+  python game/tools/build_v044.py package
+
+Each recording has one explicit check flag plus its --record-physical-v044,
+--record-garden-v044 or --record-character-v044 flag at 30 fps. Review modes
+physical/garden/character run independently; movies encodes all 3 and all adds
+the board. Every fresh frame must match its invocation inventory. Full FFmpeg
+decode and independent frame-count/duration checks bind each labelled movie.
+Fixture preparation and character scene cuts are excluded; these are separate
+from continuous campaign navigation, measured human playtime or artistic approval.
+
+Packaging rejects stale media identities, file hashes and native bindings.
+The validated board and three movies are included in the editable-source ZIP; admitted
+hashes enter the manifest and required evidence is rechecked before promotion.
+Verify writes nothing. Package writes Windows/source ZIPs, DELIVERY_MANIFEST_v044.json
+and artifact hashes only after required checks pass. Fresh extraction, archive/
+path/hash checks and native startup complete the delivery workflow before publish.
+
+The source ZIP puts project.godot at its root. Its declared archive-only preset
+transform clears custom templates and sets v0.4.4 output/version metadata. Use
+python tools/build_v044.py ... there. Docs/licenses, original assets and receipts
+remain included. Downloaded engines, import caches and intermediate frames are
+excluded. Manual exports need matching Godot 4.6 templates installed through Godot.

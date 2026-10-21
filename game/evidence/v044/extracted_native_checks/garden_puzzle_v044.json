@@ -1,0 +1,203 @@
+{
+	"all_passed": true,
+	"build": "0.4.4",
+	"checks": [
+		{
+			"check": "ferry_is_actual_native_rigid_body",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "both_children_have_native_deck_floor_contacts",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "each_crouched_child_has_its_own_canvas_cover",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unworked_ferry_does_not_auto_travel",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "standing_operator_cannot_drive_ferry",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "girl_aboard_cannot_leave_boy_on_bank",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "boy_on_bank_does_not_borrow_girls_cover",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "boy_aboard_cannot_depart_without_girl",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "held_reel_moves_actual_body_and_both_riders",
+			"details": "[80.859375, { \"x\": 12555.03515625, \"y\": 669.996887207031 }, { \"x\": 12513.03515625, \"y\": 669.996887207031 }]",
+			"passed": true
+		},
+		{
+			"check": "released_reel_brakes_without_teleport",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pause_holds_ferry_and_both_children",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "inventory_holds_ferry_and_both_children",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unsolved_recovery_restores_ferry_before_canal",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unmoored_ferry_cannot_grant_far_bank_medicine",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "native_bank_approach_boards_both_children",
+			"details": "{\"boy\":{\"x\":12423.58203125,\"y\":669.925231933594},\"girl\":{\"x\":12465.7451171875,\"y\":669.925231933594},\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "continuous_native_crank_reaches_far_dock",
+			"details": "{\"actual_dock_contact\":true,\"boarding\":{\"boy\":{\"x\":12423.58203125,\"y\":669.925231933594},\"girl\":{\"x\":12465.7451171875,\"y\":669.925231933594},\"reached\":true},\"both_on_real_deck\":true,\"both_protected_ticks\":518,\"both_riding_ticks\":552,\"boy\":{\"x\":12885.9609375,\"y\":669.925231933594},\"crank_ticks\":503,\"exit\":{\"boy\":{\"x\":13132.9560546875,\"y\":748.297424316406},\"girl\":{\"x\":13164.2548828125,\"y\":721.084167480469},\"reached\":true},\"girl\":{\"x\":12924.6572265625,\"y\":669.925231933594},\"health\":100,\"medicine\":1,\"moored\":true,\"native_travel\":450.1171875,\"reward_taken\":true,\"ride_wetness\":0.0}",
+			"passed": true
+		},
+		{
+			"check": "mooring_requires_real_dock_collision",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "both_children_physically_ride_and_stay_dry",
+			"details": "{\"actual_dock_contact\":true,\"boarding\":{\"boy\":{\"x\":12423.58203125,\"y\":669.925231933594},\"girl\":{\"x\":12465.7451171875,\"y\":669.925231933594},\"reached\":true},\"both_on_real_deck\":true,\"both_protected_ticks\":518,\"both_riding_ticks\":552,\"boy\":{\"x\":12885.9609375,\"y\":669.925231933594},\"crank_ticks\":503,\"exit\":{\"boy\":{\"x\":13132.9560546875,\"y\":748.297424316406},\"girl\":{\"x\":13164.2548828125,\"y\":721.084167480469},\"reached\":true},\"girl\":{\"x\":12924.6572265625,\"y\":669.925231933594},\"health\":100,\"medicine\":1,\"moored\":true,\"native_travel\":450.1171875,\"reward_taken\":true,\"ride_wetness\":0.0}",
+			"passed": true
+		},
+		{
+			"check": "both_children_exit_via_real_far_shore",
+			"details": "{\"boy\":{\"x\":13132.9560546875,\"y\":748.297424316406},\"girl\":{\"x\":13164.2548828125,\"y\":721.084167480469},\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "moored_pair_searches_finite_existing_medicine",
+			"details": "{\"actual_dock_contact\":true,\"boarding\":{\"boy\":{\"x\":12423.58203125,\"y\":669.925231933594},\"girl\":{\"x\":12465.7451171875,\"y\":669.925231933594},\"reached\":true},\"both_on_real_deck\":true,\"both_protected_ticks\":518,\"both_riding_ticks\":552,\"boy\":{\"x\":12885.9609375,\"y\":669.925231933594},\"crank_ticks\":503,\"exit\":{\"boy\":{\"x\":13132.9560546875,\"y\":748.297424316406},\"girl\":{\"x\":13164.2548828125,\"y\":721.084167480469},\"reached\":true},\"girl\":{\"x\":12924.6572265625,\"y\":669.925231933594},\"health\":100,\"medicine\":1,\"moored\":true,\"native_travel\":450.1171875,\"reward_taken\":true,\"ride_wetness\":0.0}",
+			"passed": true
+		},
+		{
+			"check": "depleted_far_bank_reward_cannot_duplicate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "solved_recovery_preserves_mooring_and_spent_cache",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "native_save_resume_keeps_mooring_and_finite_reward",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "lower_route_remains_native_walkable_for_both",
+			"details": "{\"boy\":{\"x\":13175.62109375,\"y\":711.19873046875},\"girl\":{\"x\":13177.3046875,\"y\":709.643310546875},\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "lower_route_has_real_cold_water_cost",
+			"details": "[0.0, 0.9919, 96.728856458334]",
+			"passed": true
+		},
+		{
+			"check": "no_checkpoint_is_authored_inside_ferry_corridor",
+			"details": "",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"continuous_success": {
+			"actual_dock_contact": true,
+			"boarding": {
+				"boy": {
+					"x": 12423.58203125,
+					"y": 669.925231933594
+				},
+				"girl": {
+					"x": 12465.7451171875,
+					"y": 669.925231933594
+				},
+				"reached": true
+			},
+			"both_on_real_deck": true,
+			"both_protected_ticks": 518,
+			"both_riding_ticks": 552,
+			"boy": {
+				"x": 12885.9609375,
+				"y": 669.925231933594
+			},
+			"crank_ticks": 503,
+			"exit": {
+				"boy": {
+					"x": 13132.9560546875,
+					"y": 748.297424316406
+				},
+				"girl": {
+					"x": 13164.2548828125,
+					"y": 721.084167480469
+				},
+				"reached": true
+			},
+			"girl": {
+				"x": 12924.6572265625,
+				"y": 669.925231933594
+			},
+			"health": 100,
+			"medicine": 1,
+			"moored": true,
+			"native_travel": 450.1171875,
+			"reward_taken": true,
+			"ride_wetness": 0.0
+		},
+		"lower_wading_route": {
+			"boy": {
+				"x": 13175.62109375,
+				"y": 711.19873046875
+			},
+			"girl": {
+				"x": 13177.3046875,
+				"y": 709.643310546875
+			},
+			"reached": true
+		}
+	},
+	"fps": 30,
+	"recorded_frames": 0,
+	"recording": {
+		"cues": [],
+		"duration_seconds": 0.0,
+		"enabled": false,
+		"fps": 30,
+		"frame_directory": "",
+		"frames": 0,
+		"scope": "One near-bank fixture precedes native approach/jump, both-child boarding/crouch, held reel, native moving-platform ride, actual far-dock collision, shoreline exit and finite search. Refusal, release, modal pause, recovery, persistence and lower wading fixtures are separate."
+	}
+}
