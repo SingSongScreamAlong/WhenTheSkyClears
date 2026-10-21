@@ -1,0 +1,23 @@
+{
+  "version": "0.4.3",
+  "created": "2026-10-20",
+  "generator": "Built-in image_gen",
+  "purpose": "Boy clothing mesh material; original head, silhouette and identity retained.",
+  "reference": "game/assets/characters/boy_atlas.png",
+  "original_generated_file": "C:/Users/conra/.codex/generated_images/01a155ac-2feb-7b40-9efe-28c1a20d8840/exec-f37083c8-bcb7-463a-a22d-19c8429f793e.png",
+  "transparent_background": true,
+  "prompt": "Use case: stylized-concept. Create a new four-part clothing texture atlas for the small boy in this painterly side-scrolling game. Reference image is costume/style continuity ONLY. Keep the original worn slate/teal short wool jacket and muted olive-brown trousers; preserve this quiet, humble costume. NO heads, faces, hair, hands, feet or new character design. Genuine transparent background. Square 1536x1536 or larger with four isolated cloth pieces in a spacious2x2 grid and broad transparent gutters. Top left: short child jacket torso only, no arms, worn collar, simple small buttons, deep teal/slate grey wool, broad naturally shaded folds; full opaque front cloth without large empty holes, straight-on side-profile-friendly flattened clothing shape. Top right: separate upper sleeve cloth patch in matching wool, broad soft shoulder/arm folds rather than thin stripes. Bottom left: separate forearm sleeve with simple cuff, matching wool, generous naturally bent fabric wrinkles and no hand. Bottom right: isolated muted olive-brown trouser/knee fabric panel with worn softly folded cloth, no foot. All material interiors opaque and generous for mesh UV sampling; high-resolution finely painted but simple broad forms readable at game scale. Hand-painted oil/gouache materials matching the reference, warm soft rim/top-left light with cool soft fill, open midtones and visible fabric. No outlines, logos, extra accessories, boots, backgrounds, cast shadows, text, mannequins or plastic/CGI. Original identity and palette must stay consistent.",
+  "source_preserved": true,
+  "sha256": "cc4d7175cacb5eff66b8077f545f1bbf0ac47c3ef9b3ff317662a2257e8a3659",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "fully_transparent_pixels": 1032407,
+    "fully_opaque_pixels": 786,
+    "partial_pixels": 539323
+  },
+  "integration": "Original generated RGBA retained without raster modifications; runtime atlas regions and deforming meshes use these pixels; mipmaps enabled."
+}

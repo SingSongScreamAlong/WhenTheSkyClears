@@ -1,0 +1,33 @@
+{
+  "build": "0.4.3",
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "current_review_artifacts_admitted",
+      "passed": true
+    },
+    {
+      "check": "reject_source_exe_sha256",
+      "passed": true,
+      "reason": "Stale review identity: performance_movie_validation.json"
+    },
+    {
+      "check": "reject_sha256",
+      "passed": true,
+      "reason": "Changed review artifact: WTSC_Character_Performance_Review_v043.mp4"
+    },
+    {
+      "check": "reject_native_invocation_sha256",
+      "passed": true,
+      "reason": "Stale native review invocation: performance_movie_validation.json"
+    },
+    {
+      "check": "reject_native_frame_inventory_sha256",
+      "passed": true,
+      "reason": "Unverified native review movie: performance_movie_validation.json"
+    }
+  ],
+  "scope": "Delivery-helper admission tests; metadata altered in memory only. Separate from native functional check count.",
+  "helper_sha256": "524f9b82062a9fe097c01d0e544902c93cb9f87d757a76c5b780384d0235a2a2",
+  "executable_sha256": "d99fb0152e947c0fb9848c64548f7cb886d678d11bc9507f468e6aade4efb2d3"
+}

@@ -1,0 +1,307 @@
+{
+	"all_passed": true,
+	"build": "0.4.3",
+	"checks": [
+		{
+			"check": "both_children_lower_into_existing_cover",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "crouch_and_stand_preserve_the_grounded_feet",
+			"details": "body_drift=0.0000",
+			"passed": true
+		},
+		{
+			"check": "weighted_stance_has_no_large_pose_step",
+			"details": "maximum_shoulder_step=6.8308",
+			"passed": true
+		},
+		{
+			"check": "curved_coat_contours_remain_valid_through_stance",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "safe_close_idle_does_not_repeat_guarding_gestures",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "native_warning_drives_low_cover_protection",
+			"details": "warning=0.994 guard=0.848 health=100.0",
+			"passed": true
+		},
+		{
+			"check": "protective_hand_reaches_the_crouched_companion",
+			"details": "closest_wrist_to_upper_arm=4.409",
+			"passed": true
+		},
+		{
+			"check": "cold_and_danger_have_different_hand_silhouettes",
+			"details": "hand_pose_difference=7.825",
+			"passed": true
+		},
+		{
+			"check": "native_reversal_turns_head_and_keeps_valid_cloth",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "overlapping_landing_recovers_through_physical_steps",
+			"details": "separation=28.757 maximum_step=0.803",
+			"passed": true
+		},
+		{
+			"check": "overlap_recovery_never_backsteps_off_an_actual_ledge",
+			"details": "boy_drift=0.0000",
+			"passed": true
+		},
+		{
+			"check": "performance_uses_the_real_rigid_body_cart",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "native_contact_push_moves_the_cart_without_action_lock",
+			"details": "travel=370.528 push_ticks=345",
+			"passed": true
+		},
+		{
+			"check": "both_hands_follow_the_actual_moving_handle",
+			"details": "samples=316 max_grip_error=0.497",
+			"passed": true
+		},
+		{
+			"check": "whole_push_keeps_the_near_forearm_clear_of_the_face",
+			"details": "minimum_cheek_to_forearm_centerline=9.939 contact_ticks=346",
+			"passed": true
+		},
+		{
+			"check": "loaded_cart_pose_keeps_bent_knees_and_valid_cloth",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pause_holds_handle_pose_and_physical_cart",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "release_settles_without_torso_pop_or_forearm_face_overlap",
+			"details": "minimum_clearance=17.144 maximum_shoulder_step=5.052",
+			"passed": true
+		},
+		{
+			"check": "letting_go_releases_the_push_pose",
+			"details": "",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"cart": {
+			"contact_ticks": 346,
+			"maximum_grip_error": 0.497173011302948,
+			"minimum_face_clearance": 9.93931770324707,
+			"push_ticks": 345,
+			"samples": 316,
+			"trace": [
+				{
+					"clearance": 26.6784133911133,
+					"contact": "",
+					"elbow": "(12.11992, -29.73039)",
+					"frame": 0,
+					"head": "(5.387897, -55.58442)",
+					"near": "(27.48748, -34.18441)",
+					"push": 0.0,
+					"shoulder": "(5.487476, -43.18441)",
+					"threat": 0.0,
+					"work": 0.0
+				},
+				{
+					"clearance": 11.1830224990845,
+					"contact": "cart_push",
+					"elbow": "(9.608438, -24.76713)",
+					"frame": 24,
+					"head": "(0.995918, -49.36353)",
+					"near": "(11.29447, -40.67805)",
+					"push": 0.870362215701746,
+					"shoulder": "(0.876435, -36.96353)",
+					"threat": 0.0,
+					"work": 0.916672150583065
+				},
+				{
+					"clearance": 10.4048690795898,
+					"contact": "cart_push",
+					"elbow": "(10.57413, -25.66215)",
+					"frame": 48,
+					"head": "(0.825063, -49.70364)",
+					"near": "(10.55077, -41.66213)",
+					"push": 0.996457813163153,
+					"shoulder": "(1.114962, -37.30363)",
+					"threat": 0.0,
+					"work": 0.998976955669317
+				},
+				{
+					"clearance": 11.0359954833984,
+					"contact": "cart_push",
+					"elbow": "(9.489895, -25.70827)",
+					"frame": 72,
+					"head": "(0.843315, -50.37456)",
+					"near": "(10.5421, -41.67363)",
+					"push": 0.999903214270014,
+					"shoulder": "(0.856344, -37.97456)",
+					"threat": 0.0,
+					"work": 0.999987439737016
+				},
+				{
+					"clearance": 11.1230392456055,
+					"contact": "cart_push",
+					"elbow": "(9.418695, -25.71325)",
+					"frame": 96,
+					"head": "(0.857134, -50.46791)",
+					"near": "(10.54199, -41.67377)",
+					"push": 0.999997355453577,
+					"shoulder": "(0.912091, -38.06791)",
+					"threat": 0.0,
+					"work": 0.999999845793382
+				},
+				{
+					"clearance": 10.5374135971069,
+					"contact": "cart_push",
+					"elbow": "(10.39796, -25.67442)",
+					"frame": 120,
+					"head": "(0.863236, -49.86501)",
+					"near": "(10.54199, -41.67377)",
+					"push": 0.999999927741147,
+					"shoulder": "(1.125311, -37.465)",
+					"threat": 0.0,
+					"work": 0.999999998106753
+				},
+				{
+					"clearance": 9.98184585571289,
+					"contact": "cart_push",
+					"elbow": "(10.69782, -25.67453)",
+					"frame": 144,
+					"head": "(0.861189, -49.28889)",
+					"near": "(10.54199, -41.67377)",
+					"push": 0.999999998025619,
+					"shoulder": "(0.735988, -36.88889)",
+					"threat": 0.0,
+					"work": 0.999999999976756
+				},
+				{
+					"clearance": 10.1232585906982,
+					"contact": "cart_push",
+					"elbow": "(10.96761, -25.67943)",
+					"frame": 168,
+					"head": "(0.851129, -49.43285)",
+					"near": "(10.54199, -41.67377)",
+					"push": 0.999999999946053,
+					"shoulder": "(1.164553, -37.03284)",
+					"threat": 0.0,
+					"work": 0.999999999999715
+				},
+				{
+					"clearance": 10.6413869857788,
+					"contact": "cart_push",
+					"elbow": "(9.759706, -25.69291)",
+					"frame": 192,
+					"head": "(1.540877, -50.12531)",
+					"near": "(10.54199, -41.67377)",
+					"push": 0.999999999998526,
+					"shoulder": "(0.803071, -37.7253)",
+					"threat": 0.294080137655893,
+					"work": 0.999999999999996
+				},
+				{
+					"clearance": 13.4873704910278,
+					"contact": "cart_push",
+					"elbow": "(5.666981, -23.86989)",
+					"frame": 216,
+					"head": "(2.341093, -50.52154)",
+					"near": "(10.59375, -39.09247)",
+					"push": 0.99999999999996,
+					"shoulder": "(0.988262, -38.12154)",
+					"threat": 0.649595920283028,
+					"work": 1.0
+				},
+				{
+					"clearance": 13.5027341842651,
+					"contact": "cart_push",
+					"elbow": "(5.837676, -22.90057)",
+					"frame": 240,
+					"head": "(2.487074, -49.53657)",
+					"near": "(10.83232, -38.10101)",
+					"push": 0.961806288177884,
+					"shoulder": "(1.216709, -37.17105)",
+					"threat": 0.70836228389652,
+					"work": 0.972955306194532
+				},
+				{
+					"clearance": 13.0453157424927,
+					"contact": "cart_push",
+					"elbow": "(6.155588, -22.94899)",
+					"frame": 264,
+					"head": "(2.400163, -49.31107)",
+					"near": "(10.59546, -38.32063)",
+					"push": 0.998956405618941,
+					"shoulder": "(0.673973, -36.9115)",
+					"threat": 0.718076298466656,
+					"work": 0.999667963101576
+				},
+				{
+					"clearance": 13.2651691436768,
+					"contact": "cart_push",
+					"elbow": "(6.045962, -22.98298)",
+					"frame": 288,
+					"head": "(2.370224, -49.53204)",
+					"near": "(10.59281, -38.32333)",
+					"push": 0.999971485116784,
+					"shoulder": "(1.065584, -37.13204)",
+					"threat": 0.719682014275268,
+					"work": 0.999995923470138
+				},
+				{
+					"clearance": 13.8027610778809,
+					"contact": "cart_push",
+					"elbow": "(5.058083, -23.31156)",
+					"frame": 312,
+					"head": "(2.340516, -50.06963)",
+					"near": "(10.59277, -38.32379)",
+					"push": 0.999999220867245,
+					"shoulder": "(0.716909, -37.66963)",
+					"threat": 0.719947437313231,
+					"work": 0.999999949951057
+				},
+				{
+					"clearance": 14.2211179733276,
+					"contact": "cart_push",
+					"elbow": "(4.483644, -23.53558)",
+					"frame": 336,
+					"head": "(2.314102, -50.48688)",
+					"near": "(10.59277, -38.32336)",
+					"push": 0.999999978711193,
+					"shoulder": "(0.842256, -38.08688)",
+					"threat": 0.719991311446315,
+					"work": 0.999999999385532
+				}
+			],
+			"travel": 370.5283203125
+		},
+		"cover": {
+			"body_drift": 0.0,
+			"contact_distance": 4.40915441513062,
+			"maximum_guard": 0.847608756856538,
+			"maximum_warning": 0.99358974358979,
+			"stance_pose_step": 6.83078002929688
+		},
+		"overlap_recovery": {
+			"landing_separation": 28.75732421875,
+			"ledge_drift": 0.0,
+			"maximum_horizontal_step": 0.802734375
+		}
+	},
+	"method": "Native children, actual existing low cover and warning/impact timer, held crouch and reversal Input, and actual physical trolley contact. Only fixture start positions/resources and warning phase are prepared; no child or cart positions/velocities are driven afterward. Tests measure visible contact, stationary support, distinct threat/cold poses, curved polygon validity, pause and release. Not campaign traversal or artistic acceptance.",
+	"physics_fps": 60
+}

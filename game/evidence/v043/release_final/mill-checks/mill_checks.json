@@ -1,0 +1,291 @@
+{
+	"all_passed": true,
+	"build": "0.4.0",
+	"checks": [
+		{
+			"check": "mill_starts_physically_locked",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "both_children_walk_on_real_bridge_deck",
+			"details": "girl_floor_frames=67 boy_floor_frames=65",
+			"passed": true
+		},
+		{
+			"check": "both_children_physically_climb_mill_steps",
+			"details": "{\"legs\":[{\"boy\":{\"x\":16380.4130859375,\"y\":639.924011230469},\"frames\":149,\"girl\":{\"x\":16422.666015625,\"y\":639.924011230469},\"jump_inputs\":1,\"mode\":\"playing\",\"reached\":true},{\"boy\":{\"x\":16595.568359375,\"y\":579.979919433594},\"frames\":60,\"girl\":{\"x\":16588.126953125,\"y\":579.925231933594},\"jump_inputs\":1,\"mode\":\"playing\",\"reached\":true}],\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "gate_stays_closed_before_wheel_weight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "standing_on_actual_wheel_triggers_warning",
+			"details": "{\"boy\":{\"x\":16648.7109375,\"y\":516.561462402344},\"boy_contact\":true,\"frames\":59,\"girl\":{\"x\":16684.298828125,\"y\":508.024932861328},\"girl_contact\":true,\"loading\":true,\"state\":\"warning\",\"travel_before_warning\":0.0,\"warning\":true}",
+			"passed": true
+		},
+		{
+			"check": "both_children_retreat_before_wheel_releases",
+			"details": "{\"boy\":{\"x\":16569.119140625,\"y\":579.925231933594},\"frames\":63,\"girl\":{\"x\":16518.541015625,\"y\":579.925231933594},\"reached\":true,\"safe_before_release\":true,\"state\":\"warning\",\"travel\":0.0}",
+			"passed": true
+		},
+		{
+			"check": "native_rigid_wheel_rolls_required_distance",
+			"details": "dx=242.484 rotation=2.501",
+			"passed": true
+		},
+		{
+			"check": "chain_gate_opens_after_real_travel",
+			"details": "travel=240.160 lift=217.000",
+			"passed": true
+		},
+		{
+			"check": "both_children_cross_opened_mill_gate",
+			"details": "{\"boy\":{\"x\":17744.052734375,\"y\":699.925231933594},\"frames\":465,\"girl\":{\"x\":17786.060546875,\"y\":699.925231933594},\"jump_inputs\":0,\"mode\":\"playing\",\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "safe_route_preserves_both_children",
+			"details": "100",
+			"passed": true
+		},
+		{
+			"check": "moving_wheel_freezes_in_pause",
+			"details": "0.0",
+			"passed": true
+		},
+		{
+			"check": "moving_wheel_resumes_after_pause",
+			"details": "69.84375",
+			"passed": true
+		},
+		{
+			"check": "moving_wheel_freezes_in_inventory",
+			"details": "0.0",
+			"passed": true
+		},
+		{
+			"check": "moving_wheel_resumes_after_inventory",
+			"details": "69.84375",
+			"passed": true
+		},
+		{
+			"check": "moving_wheel_can_hit_waiting_boy",
+			"details": "victims=[&\"Boy\"] health=66.000",
+			"passed": true
+		},
+		{
+			"check": "clear_girl_does_not_hide_boy_wheel_risk",
+			"details": "{\"boy\":{\"x\":16976.0,\"y\":699.996887207031},\"girl\":{\"x\":16513.341796875,\"y\":579.925231933594}}",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"boy_risk": {
+			"contact": {
+				"boy": {
+					"x": 16976.0,
+					"y": 699.996887207031
+				},
+				"boy_contact": false,
+				"frames": 59,
+				"girl": {
+					"x": 16683.27734375,
+					"y": 508.077239990234
+				},
+				"girl_contact": true,
+				"loading": true,
+				"state": "warning",
+				"travel_before_warning": 0.0,
+				"warning": true
+			},
+			"health": 66.0,
+			"hits": [
+				"Boy"
+			],
+			"retreat": {
+				"boy": {
+					"x": 16976.0,
+					"y": 699.996887207031
+				},
+				"frames": 62,
+				"girl": {
+					"x": 16520.259765625,
+					"y": 579.925231933594
+				},
+				"reached": true,
+				"safe_before_release": true,
+				"state": "warning",
+				"travel": 0.0
+			},
+			"steps": {
+				"legs": [
+					{
+						"boy": {
+							"x": 16976.0,
+							"y": 699.996887207031
+						},
+						"frames": 62,
+						"girl": {
+							"x": 16421.765625,
+							"y": 639.924011230469
+						},
+						"jump_inputs": 1,
+						"mode": "playing",
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 16976.0,
+							"y": 699.996887207031
+						},
+						"frames": 60,
+						"girl": {
+							"x": 16587.2265625,
+							"y": 579.925231933594
+						},
+						"jump_inputs": 1,
+						"mode": "playing",
+						"reached": true
+					}
+				],
+				"reached": true
+			},
+			"travel": 172.888671875
+		},
+		"gate_crossing": {
+			"boy": {
+				"x": 17744.052734375,
+				"y": 699.925231933594
+			},
+			"frames": 465,
+			"girl": {
+				"x": 17786.060546875,
+				"y": 699.925231933594
+			},
+			"jump_inputs": 0,
+			"mode": "playing",
+			"reached": true
+		},
+		"initial": {
+			"boy": {
+				"x": 15543.4912109375,
+				"y": 699.925231933594
+			},
+			"girl": {
+				"x": 15580.0,
+				"y": 699.996887207031
+			},
+			"state": "locked",
+			"wheel": {
+				"x": 16700.0,
+				"y": 604.0
+			}
+		},
+		"modal_motion": [
+			{
+				"mode": "pause",
+				"paused_drift": 0.0,
+				"resumed_x": 69.84375
+			},
+			{
+				"mode": "inventory",
+				"paused_drift": 0.0,
+				"resumed_x": 69.84375
+			}
+		],
+		"physical_result": {
+			"gate_lift": 217.0,
+			"health": 100,
+			"hit_children": [],
+			"wheel_travel": 242.484375
+		},
+		"retreat": {
+			"boy": {
+				"x": 16569.119140625,
+				"y": 579.925231933594
+			},
+			"frames": 63,
+			"girl": {
+				"x": 16518.541015625,
+				"y": 579.925231933594
+			},
+			"reached": true,
+			"safe_before_release": true,
+			"state": "warning",
+			"travel": 0.0
+		},
+		"risk_initial": {
+			"boy": {
+				"x": 16976.0,
+				"y": 699.996887207031
+			},
+			"girl": {
+				"x": 16270.0,
+				"y": 699.996887207031
+			}
+		},
+		"stairs": {
+			"legs": [
+				{
+					"boy": {
+						"x": 16380.4130859375,
+						"y": 639.924011230469
+					},
+					"frames": 149,
+					"girl": {
+						"x": 16422.666015625,
+						"y": 639.924011230469
+					},
+					"jump_inputs": 1,
+					"mode": "playing",
+					"reached": true
+				},
+				{
+					"boy": {
+						"x": 16595.568359375,
+						"y": 579.979919433594
+					},
+					"frames": 60,
+					"girl": {
+						"x": 16588.126953125,
+						"y": 579.925231933594
+					},
+					"jump_inputs": 1,
+					"mode": "playing",
+					"reached": true
+				}
+			],
+			"reached": true
+		},
+		"weight_contact": {
+			"boy": {
+				"x": 16648.7109375,
+				"y": 516.561462402344
+			},
+			"boy_contact": true,
+			"frames": 59,
+			"girl": {
+				"x": 16684.298828125,
+				"y": 508.024932861328
+			},
+			"girl_contact": true,
+			"loading": true,
+			"state": "warning",
+			"travel_before_warning": 0.0,
+			"warning": true
+		}
+	},
+	"method": "Native physical mill fixtures. Only initial actor/resource state and earlier campaign gates are prepared; unrelated timed dangers are disabled. Actual Input walks the collision bridge, jumps the stairs and circular wheel, stands on it to load the breakaway support, and retreats before physical rolling. No E interactions, actor repositioning after setup, forced wheel velocity/state, mechanism progress flags, damage immunity or resource grants drive the encounter. Real wheel translation/rotation and chain lift must open a collision gate, then both children physically cross. A separate repeat leaves the boy waiting ahead to test actual moving-wheel harm to either child. Every navigation/wait has a hard frame bound.",
+	"recording": {
+		"duration_seconds": 0.0,
+		"enabled": false,
+		"fps": 30,
+		"frame_directory": "",
+		"frames": 0,
+		"scope": "Safe Input-driven native mill playthrough, starting after explicit initial fixture setup and ending when both children have physically crossed the gate. Preparation, modal suspension checks and the separate boy-risk fixture are excluded."
+	}
+}

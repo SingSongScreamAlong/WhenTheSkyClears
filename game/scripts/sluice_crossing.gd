@@ -130,6 +130,8 @@ func ground_at(x):
 func objective_text():
 	if not is_instance_valid(game.player) or game.player.position.x<hinge.x-420 or game.player.position.x>hinge.x+span+420: return ""
 	if latched:
+		if game.flags.get(str(data.get("cache_id","woods_counterweight_medicine")),false):
+			return "The keeper's medicine is packed. Take the road to the mill."
 		if game.boy.position.x>hinge.x+span+8 and absf(game.boy.position.y-hinge.y)<25:
 			return "You are both across. Search the keeper's medicine, then take the road to the mill."
 		if game.boy.following: return "The ratchet holds. Wait on the far landing while he comes across."

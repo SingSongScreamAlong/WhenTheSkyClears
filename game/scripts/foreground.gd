@@ -8,8 +8,10 @@ func _draw():
 		if is_instance_valid(mill): mill.draw_foreground(self)
 	for sluice in game.get("sluice_encounters") if game.get("sluice_encounters")!=null else []:
 		if is_instance_valid(sluice): sluice.draw_foreground(self)
+	for trolley in game.get("trolley_encounters") if game.get("trolley_encounters")!=null else []:
+		if is_instance_valid(trolley): trolley.draw_foreground(self)
 	for c in game.level.covers:
-		if c.kind=="wall":
+		if c.kind=="wall" and not c.get("rear_plane",false):
 			game.world.paint_asset(self,"wall",Vector2(c.x,float(c.get("y",game.surface_y_at(c.x,700)))+5),c.w+20,82,Color(.56,.65,.63))
 	# Foot-level foreground accents sit in front of the actors; major scenery
 	# stays behind them, so stealth reads without hiding the route.

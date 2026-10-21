@@ -1,0 +1,142 @@
+{
+	"all_passed": true,
+	"checks": [
+		{
+			"details": "166.0",
+			"name": "walk_reaches_cruise_in_ten_ticks",
+			"passed": true
+		},
+		{
+			"details": "ticks=6 distance=6.906",
+			"name": "release_stops_within_eight_ticks",
+			"passed": true
+		},
+		{
+			"details": "0.0",
+			"name": "idle_support_feet_do_not_slide",
+			"passed": true
+		},
+		{
+			"details": "131.83332824707",
+			"name": "reversal_brakes_before_pivot",
+			"passed": true
+		},
+		{
+			"details": "-72.3333358764648",
+			"name": "reversal_responds_within_eight_ticks",
+			"passed": true
+		},
+		{
+			"details": "94.0",
+			"name": "crouch_enters_without_height_pop",
+			"passed": true
+		},
+		{
+			"details": "",
+			"name": "crouch_reaches_low_pose",
+			"passed": true
+		},
+		{
+			"details": "74.0",
+			"name": "ceiling_keeps_low_clearance",
+			"passed": true
+		},
+		{
+			"details": "1144.4140625",
+			"name": "standing_returns_after_clearance",
+			"passed": true
+		},
+		{
+			"details": "held=92.707 short=50.585",
+			"name": "jump_release_controls_apex",
+			"passed": true
+		},
+		{
+			"details": "samples=170 max_y=0.03398",
+			"name": "slope_stance_follows_collision_profile",
+			"passed": true
+		},
+		{
+			"details": "max_x=0.00000",
+			"name": "slope_stance_stays_planted",
+			"passed": true
+		},
+		{
+			"details": "{\"before\":{\"coyote\":0.09,\"floor\":false,\"held\":false,\"x\":2222.125,\"y\":703.865539550781},\"buffer\":0,\"coyote\":0,\"velocity_y\":-501.333343505859}",
+			"name": "coyote_jump_after_leaving_edge",
+			"passed": true
+		},
+		{
+			"details": "max=51.5000 pixels, authored leg=52.5",
+			"name": "girl_walk_run_reverse_constant_leg_reach",
+			"passed": true
+		},
+		{
+			"details": "samples=257 max_drift=0.00000",
+			"name": "girl_stance_stays_planted_in_both_directions",
+			"passed": true
+		},
+		{
+			"details": "",
+			"name": "girl_pause_freezes_pose_and_action_timers",
+			"passed": true
+		},
+		{
+			"details": "max=51.5000 pixels, authored leg=52.5",
+			"name": "boy_walk_run_reverse_constant_leg_reach",
+			"passed": true
+		},
+		{
+			"details": "samples=252 max_drift=0.00000",
+			"name": "boy_stance_stays_planted_in_both_directions",
+			"passed": true
+		},
+		{
+			"details": "",
+			"name": "boy_pause_freezes_pose_and_action_timers",
+			"passed": true
+		},
+		{
+			"details": "(0.0, 0.0)",
+			"name": "held_work_cannot_execute_buffered_jump",
+			"passed": true
+		},
+		{
+			"details": "",
+			"name": "held_work_does_not_spend_running_stamina",
+			"passed": true
+		},
+		{
+			"details": "0.16883498233318",
+			"name": "work_pose_eases_in",
+			"passed": true
+		},
+		{
+			"details": "0.79566617517021",
+			"name": "work_pose_eases_out",
+			"passed": true
+		},
+		{
+			"details": "0.0",
+			"name": "wall_pressure_does_not_spend_running_stamina",
+			"passed": true
+		},
+		{
+			"details": "",
+			"name": "wall_pressure_does_not_cycle_footsteps",
+			"passed": true
+		},
+		{
+			"details": "[92.7803955078125, 29.1881713867188]",
+			"name": "buffered_jump_preserves_tap_height",
+			"passed": true
+		},
+		{
+			"details": "",
+			"name": "blocked_mantle_does_not_start",
+			"passed": true
+		}
+	],
+	"method": "Real child controllers, native collision, and input in isolated fixtures. Both children walk, run and reverse; tests measure planted ankles and anatomical reach, pause, work, stamina, buffered tap/held jumps and blocked mantles. Campaign traversal and artistic acceptance are separate.",
+	"physics_fps": 60
+}

@@ -621,6 +621,21 @@
       "id": "school_drain",
       "label": "Work the old drainage pump",
       "hold_seconds": 4.0
+    },
+    {
+      "kind": "cache",
+      "x": 11070,
+      "y": 700,
+      "id": "school_trolley_medicine",
+      "label": "The keeper's dry medicine and spare iron",
+      "hold_seconds": 1.3,
+      "requires_flag": "school_trolley_docked",
+      "companion_required": true,
+      "optional": true,
+      "trolley_cache": true,
+      "rations": 0,
+      "scrap": 1,
+      "medicine": 1
     }
   ],
   "gates": [
@@ -724,12 +739,14 @@
       "x": 10270,
       "w": 300,
       "kind": "wall",
+      "rear_plane": true,
       "y": 646.0
     },
     {
       "x": 10990,
       "w": 300,
       "kind": "wall",
+      "rear_plane": true,
       "y": 700.0
     },
     {
@@ -1005,5 +1022,20 @@
       "description": "The lower canal costs warmth and makes noise. Spend one salvage at the pump to drain it, or climb and spend that salvage on the upper crossbar. The upper path stays dry and reaches a finite food/medicine cache. Crouching quietly through the lower water remains a no-salvage alternative."
     }
   ],
-  "mechanisms": []
+  "mechanisms": [
+    {
+      "kind": "shelter_trolley",
+      "id": "school_trolley",
+      "key": "school_trolley_docked",
+      "x": 10355,
+      "y": 646,
+      "dock_x": 10920,
+      "dock_y": 700,
+      "cache_x": 11070,
+      "cache_y": 700,
+      "cache_id": "school_trolley_medicine",
+      "optional": true,
+      "description": "Crouch beneath the mobile canvas and push the actual handcart with E and movement. Both children need the moving cover during the patrol sweep. At the far dock a ratchet catches the chassis and physically opens the finite medicine cabinet. The original static covers and timed route remain available."
+    }
+  ]
 }

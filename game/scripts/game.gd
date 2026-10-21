@@ -89,17 +89,22 @@ var heard_level=0.0
 var companion_notice_clock=0.0
 var mill_encounters=[]
 var sluice_encounters=[]
+var trolley_encounters=[]
 var right_boundary
 var section_preview=false
+var playable_preview=false
 
 func _ready():
 	get_tree().auto_accept_quit=false
-	DisplayServer.window_set_title("When the Sky Clears Â· Development 0.4.2")
+	DisplayServer.window_set_title("When the Sky Clears · Development 0.4.3")
 	qa_args=OS.get_cmdline_user_args()
+	for flag in ["--mill-preview","--canal-preview","--sluice-preview","--trolley-preview"]:
+		if flag in qa_args: playable_preview=true
 	smoke_test="--mill-preview" in qa_args or "--mill-checks" in qa_args or "--smoke" in qa_args or "--traverse" in qa_args or "--survival" in qa_args or "--encounters" in qa_args or "--motion" in qa_args or "--capture" in qa_args or "--capture-uhd" in qa_args or "--journey-checks" in qa_args or "--capture-new" in qa_args or "--development-checks" in qa_args or "--movement-checks" in qa_args or "--capture-v040" in qa_args or "--side-routes" in qa_args
 	smoke_test=smoke_test or "--story-checks" in qa_args or "--capture-story" in qa_args
 	smoke_test=smoke_test or "--refinement-checks" in qa_args or "--capture-v041" in qa_args or "--canal-preview" in qa_args
 	smoke_test=smoke_test or "--sluice-checks" in qa_args or "--craft-checks" in qa_args or "--capture-v042" in qa_args or "--sluice-preview" in qa_args or "--world-craft-checks" in qa_args
+	smoke_test=smoke_test or "--trolley-checks" in qa_args or "--performance-checks" in qa_args or "--capture-v043" in qa_args or "--trolley-preview" in qa_args
 	motion_data=JSON.parse_string(FileAccess.get_file_as_string("res://assets/motion/child_motion.json"))
 	if "--crossing-checks" in qa_args or "--crossing-capture" in qa_args: smoke_test=true
 	setup_input()
@@ -144,11 +149,19 @@ func _ready():
 		smoke_test=true; call_deferred("run_movement_checks")
 	if "--capture-v040" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
-	if "--capture-v041" in qa_args or "--capture-v042" in qa_args:
+	if "--capture-v041" in qa_args or "--capture-v042" in qa_args or "--capture-v043" in qa_args:
 		smoke_test=true; call_deferred("capture_v040")
 	if "--sluice-checks" in qa_args: call_deferred("run_sluice_checks")
 	if "--craft-checks" in qa_args: call_deferred("run_craft_checks")
 	if "--world-craft-checks" in qa_args: call_deferred("run_world_craft_checks")
+	if "--trolley-checks" in qa_args: call_deferred("run_trolley_checks")
+	if "--performance-checks" in qa_args: call_deferred("run_performance_checks")
+	if "--trolley-preview" in qa_args:
+		smoke_test=true; journey_active=true; flags={}; load_chapter(3,false); mode="playing"
+		for gate in level.gates:
+			if float(gate.x)<10200: flags[gate.key]=true
+		checkpoint_x=10230; respawn(false); chapter_card=0
+		announce_message("The cart still rolls. Keep both children low behind its canvas, then bring it to the far dock.",8)
 	if "--sluice-preview" in qa_args:
 		smoke_test=true; journey_active=true; flags={}; load_chapter(1,false); mode="playing"
 		for gate in level.gates:
@@ -206,16 +219,16 @@ func setup_audio():
 	stream.loop_mode=AudioStreamWAV.LOOP_FORWARD
 	stream.loop_begin=0; stream.loop_end=int(stream.get_length()*stream.mix_rate)
 	ambience.stream=stream; ambience.volume_db=-14; add_child(ambience)
-	if not smoke_test: ambience.play()
+	if not smoke_test or playable_preview: ambience.play()
 	apply_volume()
 
 func play_sfx(name,db=-12):
-	if not sfx.has(name) or smoke_test: return
+	if mode=="quitting" or not sfx.has(name) or (smoke_test and not playable_preview): return
 	var a=AudioStreamPlayer.new(); a.stream=sfx[name]; a.volume_db=db; a.pitch_scale=randf_range(.94,1.04) if name=="step" else 1.0
 	add_child(a); a.finished.connect(a.queue_free); a.play()
 
 func play_step(pos,db=-20):
-	if smoke_test: return
+	if mode=="quitting" or (smoke_test and not playable_preview): return
 	var material="concrete" if chapter>=2 else "grass"
 	for bridge in level.get("bridges",[]):
 		if pos.x>bridge.x and pos.x<bridge.x+bridge.w: material="wood"
@@ -230,6 +243,9 @@ func apply_volume():
 
 func load_chapter(idx, announce=true):
 	if is_instance_valid(story): story.reset()
+	for trolley in trolley_encounters:
+		if is_instance_valid(trolley): remove_child(trolley); trolley.queue_free()
+	trolley_encounters.clear()
 	for sluice in sluice_encounters:
 		if is_instance_valid(sluice): remove_child(sluice); sluice.queue_free()
 	sluice_encounters.clear()
@@ -262,6 +278,9 @@ func load_chapter(idx, announce=true):
 		elif mechanism.kind=="counterweight_crossing":
 			var sluice=load("res://scripts/sluice_crossing.gd").new()
 			sluice.game=self; sluice.data=mechanism; add_child(sluice); sluice_encounters.append(sluice)
+		elif mechanism.kind=="shelter_trolley":
+			var trolley=load("res://scripts/trolley_encounter.gd").new()
+			trolley.game=self; trolley.data=mechanism; add_child(trolley); trolley_encounters.append(trolley)
 	player=Child.new(); player.game=self; player.name="Girl"; player.position=Vector2(180,698); add_child(player)
 	boy=Child.new(); boy.is_girl=false; boy.controlled=false; boy.game=self; boy.name="Boy"; boy.position=Vector2(123,698); add_child(boy)
 	checkpoint_x=180; trail.clear(); shell_clock=0; shell_warning=0; exposure=0; invulnerable=2
@@ -317,6 +336,10 @@ func surface_y_at(x,fallback_y=700.0):
 				if absf(y-fallback_y)<distance: closest=y; distance=absf(y-fallback_y)
 	for sluice in sluice_encounters:
 		var supported=sluice.support_at(x,fallback_y)
+		if is_finite(supported) and absf(supported-fallback_y)<distance:
+			closest=supported; distance=absf(supported-fallback_y)
+	for trolley in trolley_encounters:
+		var supported=trolley.support_at(x,fallback_y)
 		if is_finite(supported) and absf(supported-fallback_y)<distance:
 			closest=supported; distance=absf(supported-fallback_y)
 	return closest
@@ -453,6 +476,15 @@ func update_companion(_dt):
 	var gap=player.position.x-boy.position.x
 	if boy.following:
 		if abs(gap)>42: boy.ai_axis=sign(gap)
+		# A long landing can bring him inside her silhouette. Give him a small,
+		# grounded recovery step when there is real safe room behind her.
+		elif absf(gap)<28 and absf(player.velocity.x)<12 and player.is_on_floor() and boy.is_on_floor() and absf(player.position.y-boy.position.y)<12 and pending_action.is_empty() and player.action_time<=0 and boy.action_time<=0:
+			var away=-player.facing if absf(gap)<2 else -signf(gap)
+			var landing_x=boy.position.x+away*34
+			var step_query=PhysicsRayQueryParameters2D.create(boy.position+Vector2(0,-18),boy.position+Vector2(away*29,-18),1)
+			var clear=get_world_2d().direct_space_state.intersect_ray(step_query).is_empty()
+			if ground_at(landing_x) and absf(surface_y_at(landing_x,boy.position.y)-boy.position.y)<12 and clear and character_work_contacts(boy).is_empty():
+				boy.ai_axis=away*.28
 		# Jump from the same edge, before walking into the void. Physics stays native.
 		var forward=sign(gap)
 		if boy.is_on_floor() and (abs(gap)>55 or player.position.y<boy.position.y-35):
@@ -494,6 +526,8 @@ func ground_at(x):
 	return false
 
 func is_covered(child):
+	for trolley in trolley_encounters:
+		if trolley.is_covered(child): return true
 	if in_safe_zone(child.position.x): return true
 	for c in level.covers:
 		if abs(child.position.x-c.x)<c.w/2.0 and (child.crouching or c.kind=="tent") and abs(child.position.y-float(c.get("y",surface_y_at(c.x,700))))<65: return true
@@ -547,6 +581,10 @@ func update_prompt():
 			near_item=moment.duplicate(true); near_item.kind="story"
 			prompt="HOLD E   "+str(moment.label)
 	if prompt=="":
+		for trolley in trolley_encounters:
+			var local_hint=trolley.objective_text()
+			if not local_hint.is_empty(): prompt=local_hint; break
+	if prompt=="":
 		for sluice in sluice_encounters:
 			var local_hint=sluice.objective_text()
 			if not local_hint.is_empty(): prompt=local_hint; break
@@ -560,6 +598,9 @@ func in_safe_zone(x):
 	return false
 
 func current_objective():
+	for trolley in trolley_encounters:
+		var local_objective=trolley.objective_text()
+		if not local_objective.is_empty(): return local_objective
 	for sluice in sluice_encounters:
 		var local_objective=sluice.objective_text()
 		if not local_objective.is_empty(): return local_objective
@@ -625,7 +666,7 @@ func tick_hazard_lanes(dt):
 		if not near: continue
 		var active=hazard_active(h); var warning=hazard_warning(h)
 		if active or warning:
-			lane_warning={"debris":"LOOSE MASONRY Â· WAIT FOR THE DUST TO SETTLE","sweep":"PATROL LIGHT Â· KEEP BOTH CHILDREN LOW","wind":"CROSSWIND Â· CROUCH TO STEADY YOURSELVES","listener":"LISTENING POST Â· RUNNING AND SPLASHING CARRY"}.get(h.kind,"WAIT FOR A CLEAR MOMENT")
+			lane_warning={"debris":"LOOSE MASONRY · WAIT FOR THE DUST TO SETTLE","sweep":"PATROL LIGHT · KEEP BOTH CHILDREN LOW","wind":"CROSSWIND · CROUCH TO STEADY YOURSELVES","listener":"LISTENING POST · RUNNING AND SPLASHING CARRY"}.get(h.kind,"WAIT FOR A CLEAR MOMENT")
 		if h.kind=="listener":
 			listening_near=true
 			noise_level=maxf(noise_level,maxf(movement_noise(player),movement_noise(boy)))
@@ -763,6 +804,7 @@ func recover(count=true,reason="Take another breath. Try a different path."):
 	mode="recovering"; recovery_clock=1.4; announce_message(reason,4)
 
 func respawn(reset_survival=true):
+	for trolley in trolley_encounters: trolley.reset_from_progress()
 	for sluice in sluice_encounters: sluice.reset_from_progress()
 	for mill in mill_encounters: mill.reset_from_progress()
 	player.position=Vector2(checkpoint_x,surface_y_at(checkpoint_x,700)-5); boy.position=Vector2(maxf(40,checkpoint_x-54),surface_y_at(checkpoint_x-54,700)-5)
@@ -817,13 +859,22 @@ func load_save(resume=false):
 
 func _notification(what):
 	if what==NOTIFICATION_WM_CLOSE_REQUEST: quit_game()
-	if what==NOTIFICATION_APPLICATION_FOCUS_OUT and mode in ["playing","stillness"] and not smoke_test and not "--capture" in qa_args and not "--traverse" in qa_args: mode="pause"
+	if what==NOTIFICATION_APPLICATION_FOCUS_OUT and mode in ["playing","stillness"] and (not smoke_test or playable_preview) and not "--capture" in qa_args and not "--traverse" in qa_args: mode="pause"
 
 func quit_game(code=0):
-	write_save()
-	if is_instance_valid(ambience): ambience.stop(); ambience.stream=null
-	await get_tree().process_frame
-	await get_tree().process_frame
+	if mode=="quitting": return
+	write_save(); mode="quitting"
+	# Stop transient footsteps and work sounds as well as the ambient loop.
+	# No new sounds may start while queued audio players leave the tree.
+	for audio in get_children():
+		if audio is AudioStreamPlayer:
+			audio.stop(); audio.stream=null; audio.queue_free()
+	sfx.clear(); step_sounds.clear()
+	# The mixer releases playback references on its own wall-clock schedule.
+	# Two simulation frames can elapse before a mix in fixed-fps native QA.
+	var audio_drain_until=Time.get_ticks_msec()+250
+	while Time.get_ticks_msec()<audio_drain_until:
+		await get_tree().process_frame
 	get_tree().quit(code)
 
 func assert_check(name,condition,details=""):
@@ -864,8 +915,15 @@ func run_smoke():
 			# supplies their prerequisite to exercise the cache interaction itself.
 			if p.has("requires_flag"): flags[p.requires_flag]=true
 			# The old fixed y=699 placed upper-gallery actions below their platform.
-			player.position=Vector2(p.x,surface_y_at(p.x,p.y)-1)
-			boy.position=Vector2(p.x-50,surface_y_at(p.x-50,p.y)-1)
+			var approach_x=float(p.x)
+			var companion_gap=50.0
+			if p.get("trolley_cache",false):
+				# Stage this isolated cache check on the clear approach, matching the
+				# already-supplied prerequisite. The cabinet center is solid geometry.
+				for trolley in trolley_encounters: trolley.reset_from_progress()
+				approach_x-=52; companion_gap=28
+			player.position=Vector2(approach_x,surface_y_at(approach_x,p.y)-1)
+			boy.position=Vector2(approach_x-companion_gap,surface_y_at(approach_x-companion_gap,p.y)-1)
 			boy.velocity=Vector2.ZERO; player.velocity=Vector2.ZERO; boy.following=true; trail.clear()
 			for child in [player,boy]:
 				child.climbing=false; child.leap_axis=0; child.ai_jump=false; child.jump_buffer=0; child.reset_feet()
@@ -1013,6 +1071,10 @@ func traverse_journey():
 				if not p.get("optional_route",false) and p.x-player.position.x>0 and p.x-player.position.x<45 and p.y<player.position.y-12 and p.y>player.position.y-145: need_jump=true
 			for body in pushables:
 				if body.position.x-player.position.x>0 and body.position.x-player.position.x<78: need_jump=true
+			for trolley in trolley_encounters:
+				for obstacle in trolley.obstacle_rects():
+					var approach=obstacle.position.x-player.position.x
+					if approach>0 and approach<60 and obstacle.position.y<player.position.y-12 and obstacle.position.y>player.position.y-110: need_jump=true
 			for mill in mill_encounters:
 				if mill.state in ["locked","loading"] and player.position.x>mill.data.wheel_x-mill.data.radius-125 and player.position.x<mill.data.wheel_x-mill.data.radius+25:
 					need_jump=true
@@ -1170,7 +1232,10 @@ func run_encounter_tests():
 	for frame in range(60): await get_tree().physics_frame
 	Input.action_release("right")
 	assert_check("flood_slows_wading_and_soaks_clothes",player.velocity.x<110 and wetness>.18,str(wetness))
-	var pump=level.interact[-1]
+	# Select the authored pump by identity; optional rewards can follow it.
+	var pump={}
+	for item in level.interact:
+		if item.get("id","")=="school_drain": pump=item; break
 	player.position=Vector2(pump.x,699); player.velocity=Vector2.ZERO; boy.position=Vector2(pump.x-44,699); shell_clock=0
 	await test_action(pump)
 	assert_check("pump_removes_water_hazard",flags.get("school_drain",false) and not in_water(pump.x))
@@ -1214,7 +1279,7 @@ func run_motion_review():
 			if frame<252: Input.action_press("jump")
 		elif frame<300: label="SETTLE"
 		else: Input.action_press("crouch"); label="LOW COVER POSE"
-		message="LOCOMOTION STUDY  Â·  "+label; message_time=1
+		message="LOCOMOTION STUDY  ·  "+label; message_time=1
 		await get_tree().process_frame
 		await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_jpg(folder.path_join("%04d.jpg"%frame),.86)
@@ -1434,11 +1499,13 @@ func capture_v040():
 	await get_tree().process_frame; camera.position=Vector2(12875,427)
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(report_path("07_character_close_study.png"))
-	if "--capture-v041" in qa_args or "--capture-v042" in qa_args:
+	if "--capture-v041" in qa_args or "--capture-v042" in qa_args or "--capture-v043" in qa_args:
 		await load("res://scripts/refinement_checks.gd").capture(self)
-	if "--capture-v042" in qa_args:
+	if "--capture-v042" in qa_args or "--capture-v043" in qa_args:
 		await load("res://scripts/sluice_checks.gd").capture(self)
 		await load("res://scripts/world_craft_checks.gd").capture(self)
+	if "--capture-v043" in qa_args:
+		await load("res://scripts/trolley_checks.gd").capture(self)
 	print("V040_NATIVE_4K_CAPTURE_COMPLETE"); call_deferred("quit_game")
 
 func run_mill_checks():
@@ -1466,6 +1533,9 @@ func capture_crossing():
 	await load("res://scripts/crossing_checks.gd").capture(self)
 
 func character_work_contacts(child):
+	for trolley in trolley_encounters:
+		var contact=trolley.work_contacts(child)
+		if not contact.is_empty(): return contact
 	# Both renderers sample this same mechanism pose: hands follow the bearing,
 	# while game logic still owns work, child movement and completion.
 	for sluice in sluice_encounters:
@@ -1502,4 +1572,18 @@ func run_world_craft_checks():
 	var file=FileAccess.open(report_path("world_craft_checks.json"),FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"\t")); file.close()
 	print("WORLD_CRAFT_CHECKS_RESULT ",JSON.stringify(report))
+	call_deferred("quit_game",0 if report.all_passed else 1)
+
+func run_trolley_checks():
+	var report=await load("res://scripts/trolley_checks.gd").run(self)
+	var file=FileAccess.open(report_path("trolley_checks.json"),FileAccess.WRITE)
+	file.store_string(JSON.stringify(report,"\t")); file.close()
+	print("TROLLEY_CHECKS_RESULT ",JSON.stringify(report))
+	call_deferred("quit_game",0 if report.all_passed else 1)
+
+func run_performance_checks():
+	var report=await load("res://scripts/performance_checks.gd").run(self)
+	var file=FileAccess.open(report_path("performance_checks.json"),FileAccess.WRITE)
+	file.store_string(JSON.stringify(report,"\t")); file.close()
+	print("PERFORMANCE_CHECKS_RESULT ",JSON.stringify(report))
 	call_deferred("quit_game",0 if report.all_passed else 1)

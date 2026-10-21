@@ -1,0 +1,239 @@
+{
+	"all_passed": true,
+	"build": "0.4.2",
+	"checks": [
+		{
+			"check": "raised_span_has_real_rotated_support",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "far_treadle_cannot_latch_without_other_child",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "keeper_cache_refuses_unsolved_right_approach",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "real_weight_lowers_span_without_solving",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pause_freezes_counterweight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "inventory_freezes_counterweight",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "early_release_folds_span_without_softlock",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "unsolved_reset_restores_raised_span",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "both_climb_authored_cradle_approach",
+			"details": "{\"legs\":[{\"boy\":{\"x\":14955.634765625,\"y\":624.925170898438},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":66,\"girl\":{\"x\":14917.4443359375,\"y\":624.925231933594},\"reached\":true},{\"boy\":{\"x\":15031.1337890625,\"y\":569.925231933594},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":69,\"girl\":{\"x\":15096.7060546875,\"y\":569.925231933594},\"reached\":true}],\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "real_Q_wait_keeps_boy_on_pressure_cradle",
+			"details": "{\"boy\":{\"x\":15041.5166015625,\"y\":569.925231933594},\"girl\":{\"x\":15103.6220703125,\"y\":569.925231933594},\"holder\":\"Boy\"}",
+			"passed": true
+		},
+		{
+			"check": "waiting_prompt_does_not_ask_for_second_Q",
+			"details": "He's holding the cradle. Cross the lowered span and step onto the far iron tooth.",
+			"passed": true
+		},
+		{
+			"check": "girl_crosses_real_lowered_support",
+			"details": "{\"boy\":{\"x\":15041.5166015625,\"y\":569.925231933594},\"bridge_floor_frames\":39,\"bridge_floor_seconds\":0.65,\"bridge_floor_ticks\":39,\"bridge_render_samples\":40,\"frames\":61,\"girl\":{\"x\":15260.7041015625,\"y\":569.925231933594},\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "different_children_hold_and_latch",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "real_Q_call_brings_boy_across_actual_bridge",
+			"details": "{\"approach\":{\"legs\":[{\"boy\":{\"x\":14955.634765625,\"y\":624.925170898438},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":66,\"girl\":{\"x\":14917.4443359375,\"y\":624.925231933594},\"reached\":true},{\"boy\":{\"x\":15031.1337890625,\"y\":569.925231933594},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":69,\"girl\":{\"x\":15096.7060546875,\"y\":569.925231933594},\"reached\":true}],\"reached\":true},\"boy\":{\"x\":15441.6630859375,\"y\":569.925231933594},\"boy_bridge_frames\":68,\"boy_bridge_render_samples\":68,\"boy_bridge_seconds\":1.13333333333333,\"boy_bridge_ticks\":68,\"boy_holds\":true,\"cache_approach\":{\"boy\":{\"x\":15417.1875,\"y\":569.925231933594},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":14,\"girl\":{\"x\":15468.4599609375,\"y\":569.925231933594},\"reached\":true},\"called_prompt\":\"The ratchet holds. Wait on the far landing while he comes across.\",\"crossing\":{\"boy\":{\"x\":15041.5166015625,\"y\":569.925231933594},\"bridge_floor_frames\":39,\"bridge_floor_seconds\":0.65,\"bridge_floor_ticks\":39,\"bridge_render_samples\":40,\"frames\":61,\"girl\":{\"x\":15260.7041015625,\"y\":569.925231933594},\"reached\":true},\"far_child\":\"Girl\",\"far_treadle\":{\"boy\":{\"x\":15041.5166015625,\"y\":569.925231933594},\"bridge_floor_frames\":44,\"bridge_floor_seconds\":0.733333333333333,\"bridge_floor_ticks\":44,\"bridge_render_samples\":43,\"frames\":63,\"girl\":{\"x\":15434.4453125,\"y\":569.925231933594},\"reached\":true},\"girl\":{\"x\":15475.3759765625,\"y\":569.925231933594},\"holder_at_latch\":\"Boy\",\"latched\":true,\"q_call_used\":true,\"q_wait_used\":true,\"resources\":{\"health\":100,\"medicine\":1,\"rations\":1},\"reunited\":true,\"wait_positions\":{\"boy\":{\"x\":15041.5166015625,\"y\":569.925231933594},\"girl\":{\"x\":15103.6220703125,\"y\":569.925231933594},\"holder\":\"Boy\"},\"waiting_prompt\":\"He's holding the cradle. Cross the lowered span and step onto the far iron tooth.\"}",
+			"passed": true
+		},
+		{
+			"check": "called_prompt_does_not_ask_for_second_Q",
+			"details": "The ratchet holds. Wait on the far landing while he comes across.",
+			"passed": true
+		},
+		{
+			"check": "finite_reward_enters_campaign_inventory",
+			"details": "[1, 1]",
+			"passed": true
+		},
+		{
+			"check": "collected_cache_objective_points_to_mill",
+			"details": "The keeper's medicine is packed. Take the road to the mill.",
+			"passed": true
+		},
+		{
+			"check": "reward_cannot_duplicate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "safe_solution_preserves_both_children",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "solved_reset_preserves_physical_latch",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "chapter_reload_preserves_solved_bridge",
+			"details": "",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"continuous_success": {
+			"approach": {
+				"legs": [
+					{
+						"boy": {
+							"x": 14955.634765625,
+							"y": 624.925170898438
+						},
+						"bridge_floor_frames": 0,
+						"bridge_floor_seconds": 0.0,
+						"bridge_floor_ticks": 0,
+						"bridge_render_samples": 0,
+						"frames": 66,
+						"girl": {
+							"x": 14917.4443359375,
+							"y": 624.925231933594
+						},
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 15031.1337890625,
+							"y": 569.925231933594
+						},
+						"bridge_floor_frames": 0,
+						"bridge_floor_seconds": 0.0,
+						"bridge_floor_ticks": 0,
+						"bridge_render_samples": 0,
+						"frames": 69,
+						"girl": {
+							"x": 15096.7060546875,
+							"y": 569.925231933594
+						},
+						"reached": true
+					}
+				],
+				"reached": true
+			},
+			"boy": {
+				"x": 15441.6630859375,
+				"y": 569.925231933594
+			},
+			"boy_bridge_frames": 68,
+			"boy_bridge_render_samples": 68,
+			"boy_bridge_seconds": 1.13333333333333,
+			"boy_bridge_ticks": 68,
+			"boy_holds": true,
+			"cache_approach": {
+				"boy": {
+					"x": 15417.1875,
+					"y": 569.925231933594
+				},
+				"bridge_floor_frames": 0,
+				"bridge_floor_seconds": 0.0,
+				"bridge_floor_ticks": 0,
+				"bridge_render_samples": 0,
+				"frames": 14,
+				"girl": {
+					"x": 15468.4599609375,
+					"y": 569.925231933594
+				},
+				"reached": true
+			},
+			"called_prompt": "The ratchet holds. Wait on the far landing while he comes across.",
+			"crossing": {
+				"boy": {
+					"x": 15041.5166015625,
+					"y": 569.925231933594
+				},
+				"bridge_floor_frames": 39,
+				"bridge_floor_seconds": 0.65,
+				"bridge_floor_ticks": 39,
+				"bridge_render_samples": 40,
+				"frames": 61,
+				"girl": {
+					"x": 15260.7041015625,
+					"y": 569.925231933594
+				},
+				"reached": true
+			},
+			"far_child": "Girl",
+			"far_treadle": {
+				"boy": {
+					"x": 15041.5166015625,
+					"y": 569.925231933594
+				},
+				"bridge_floor_frames": 44,
+				"bridge_floor_seconds": 0.733333333333333,
+				"bridge_floor_ticks": 44,
+				"bridge_render_samples": 43,
+				"frames": 63,
+				"girl": {
+					"x": 15434.4453125,
+					"y": 569.925231933594
+				},
+				"reached": true
+			},
+			"girl": {
+				"x": 15475.3759765625,
+				"y": 569.925231933594
+			},
+			"holder_at_latch": "Boy",
+			"latched": true,
+			"q_call_used": true,
+			"q_wait_used": true,
+			"resources": {
+				"health": 100,
+				"medicine": 1,
+				"rations": 1
+			},
+			"reunited": true,
+			"wait_positions": {
+				"boy": {
+					"x": 15041.5166015625,
+					"y": 569.925231933594
+				},
+				"girl": {
+					"x": 15103.6220703125,
+					"y": 569.925231933594
+				},
+				"holder": "Boy"
+			},
+			"waiting_prompt": "He's holding the cradle. Cross the lowered span and step onto the far iron tooth."
+		}
+	},
+	"method": "Bounded authored woods encounter. Refusal/release/reset fixtures use explicit initial placements. Success begins on ordinary signal-path ground, then uses held movement/jump and native parsed Q events, real child-floor contacts, rotating bridge support, far-bank ratchet and finite campaign cache; no actor repositioning or flag grants during success. Earlier hazards are disabled in this bounded fixture.",
+	"recorded_frames": 0
+}

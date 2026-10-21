@@ -1,0 +1,127 @@
+{
+	"all_passed": true,
+	"build": "0.4.2",
+	"checks": [
+		{
+			"check": "authored_pump_work_starts_with_held_input",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "girl_hands_follow_actual_moving_lever",
+			"details": "samples=73 max_error=1.091 world_px",
+			"passed": true
+		},
+		{
+			"check": "boy_hands_follow_actual_moving_lever",
+			"details": "samples=73 max_error=1.045 world_px",
+			"passed": true
+		},
+		{
+			"check": "cooperative_effort_moves_shoulders_without_sliding_feet",
+			"details": "boy_shoulder_range=18.722 foot_drift=0.0000",
+			"passed": true
+		},
+		{
+			"check": "pause_holds_actual_contact_pose_and_effort_clock",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "releasing_shared_work_eases_both_arms_out",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pressure_pose_fixture_reaches_plate_through_native_movement",
+			"details": "{\"legs\":[{\"boy\":{\"x\":14955.634765625,\"y\":624.925170898438},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":66,\"girl\":{\"x\":14917.4443359375,\"y\":624.925231933594},\"reached\":true},{\"boy\":{\"x\":15031.1337890625,\"y\":569.925231933594},\"bridge_floor_frames\":0,\"bridge_floor_seconds\":0.0,\"bridge_floor_ticks\":0,\"bridge_render_samples\":0,\"frames\":69,\"girl\":{\"x\":15096.7060546875,\"y\":569.925231933594},\"reached\":true}],\"reached\":true}",
+			"passed": true
+		},
+		{
+			"check": "physical_plate_contact_activates_sustained_balance_pose",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "balance_hands_meet_the_real_cradle_rail",
+			"details": "{ \"error\": 0.98531174659729, \"grips\": 2 }",
+			"passed": true
+		},
+		{
+			"check": "balance_acting_does_not_lock_the_child_in_an_action",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "calling_and_walking_off_plate_releases_balance_pose",
+			"details": "travel=92.368 blend=0.000",
+			"passed": true
+		}
+	],
+	"evidence": {
+		"pressure": {
+			"approach": {
+				"legs": [
+					{
+						"boy": {
+							"x": 14955.634765625,
+							"y": 624.925170898438
+						},
+						"bridge_floor_frames": 0,
+						"bridge_floor_seconds": 0.0,
+						"bridge_floor_ticks": 0,
+						"bridge_render_samples": 0,
+						"frames": 66,
+						"girl": {
+							"x": 14917.4443359375,
+							"y": 624.925231933594
+						},
+						"reached": true
+					},
+					{
+						"boy": {
+							"x": 15031.1337890625,
+							"y": 569.925231933594
+						},
+						"bridge_floor_frames": 0,
+						"bridge_floor_seconds": 0.0,
+						"bridge_floor_ticks": 0,
+						"bridge_render_samples": 0,
+						"frames": 69,
+						"girl": {
+							"x": 15096.7060546875,
+							"y": 569.925231933594
+						},
+						"reached": true
+					}
+				],
+				"reached": true
+			},
+			"contact": {
+				"error": 0.98531174659729,
+				"grips": 2
+			},
+			"walk_off_distance": 92.3678970336914
+		},
+		"pump": {
+			"foot_drift": 0.0,
+			"grip_error": [
+				1.09052908420563,
+				1.04528880119324
+			],
+			"samples": [
+				73,
+				73
+			],
+			"shoulder_max": [
+				-66.6052627563477,
+				-53.2529373168945
+			],
+			"shoulder_min": [
+				-72.3487167358398,
+				-71.9751205444336
+			]
+		}
+	},
+	"method": "Real authored pump and counterweight cradle, native children and Input. Isolated initial placements and disabled unrelated timed hazards. Measures rendered rig hand targets against actual mechanism grips, waist/shoulder effort, stationary work feet, pause, release and walking off a real pressure plate without action locking. Artistic review and campaign navigation are separate."
+}

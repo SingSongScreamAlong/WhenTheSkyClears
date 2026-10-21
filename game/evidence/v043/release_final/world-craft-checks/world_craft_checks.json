@@ -1,0 +1,72 @@
+{
+	"all_passed": true,
+	"build": "0.4.2",
+	"checks": [
+		{
+			"check": "logging_gate_starts_physically_closed",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "closed_timber_blocks_native_movement",
+			"details": "(2555.5, 699.9992)",
+			"passed": true
+		},
+		{
+			"check": "weight_pays_out_gate_gradually",
+			"details": "39.3333333333333",
+			"passed": true
+		},
+		{
+			"check": "collision_and_painted_edge_share_displacement",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "pause_holds_logging_gate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "inventory_holds_logging_gate",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "held_plate_clears_both_child_heights",
+			"details": "217.0",
+			"passed": true
+		},
+		{
+			"check": "raised_timber_allows_native_crossing",
+			"details": "(2690.496, 699.9252)",
+			"passed": true
+		},
+		{
+			"check": "release_arrests_above_child_head",
+			"details": "[600.925720214844, 590.925720214844]",
+			"passed": true
+		},
+		{
+			"check": "arrested_gate_keeps_child_alive_and_free",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "gate_returns_after_child_clears_it",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "far_latch_permanently_releases_weight_requirement",
+			"details": "",
+			"passed": true
+		},
+		{
+			"check": "new_grass_response_uses_physical_contact",
+			"details": "",
+			"passed": true
+		}
+	],
+	"method": "Native held-input crossing of the authored logging gate. Explicit initial placements isolate weight, modal pause and anti-crush safety. Real collision displacement is compared to rendered displacement; full-journey navigation is separate."
+}

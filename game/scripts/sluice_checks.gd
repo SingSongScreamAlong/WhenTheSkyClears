@@ -211,6 +211,7 @@ static func run(g):
 	add(checks,"real_Q_call_brings_boy_across_actual_bridge",route.get("q_call_used",false) and route.get("reunited",false) and route.get("boy_bridge_ticks",0)>35,JSON.stringify(route))
 	add(checks,"called_prompt_does_not_ask_for_second_Q",route.get("latched",false) and route.get("q_call_used",false) and not "[Q]" in route.get("called_prompt","[Q]"),route.get("called_prompt",""))
 	add(checks,"finite_reward_enters_campaign_inventory",g.rations==1 and g.medicine==1 and g.flags.get(node.data.cache_id,false),str([g.rations,g.medicine]))
+	add(checks,"collected_cache_objective_points_to_mill",g.flags.get(node.data.cache_id,false) and "packed" in node.objective_text() and not "Search" in node.objective_text(),node.objective_text())
 	var resources=[g.rations,g.medicine]
 	g.update_prompt(); await hold_action(g,"interact",90); release()
 	add(checks,"reward_cannot_duplicate",resources==[g.rations,g.medicine])

@@ -1,0 +1,137 @@
+WHEN THE SKY CLEARS - DEVELOPMENT 0.4.3
+
+STATUS
+The frozen build passed 481 native functional checks across 16 suites, plus a
+separate 27/27 source animation fixture. All 19 native 4K captures and both labelled
+movie validations passed. Full navigation completed all five chapters in
+730.4167 simulated seconds with one checkpoint recovery, final health 100 and no
+failure. This is automated navigation, not measured human playtime.
+This is the v0.4.3 development snapshot. Earlier v0.4.2 evidence is preserved.
+Identity: 169 files; EXE: 145721376 bytes; SHA-256:
+d99fb0152e947c0fb9848c64548f7cb886d678d11bc9507f468e6aade4efb2d3
+
+CURRENT SCOPE
+Normal close stops active audio, releases streams and allows a short
+asynchronous drain before engine exit, addressing an intermittent WAV playback
+leak on quit.
+
+A moving-cover handcart joins the school patrol crossing. Keep both children
+crouched under its canvas; hold E and move against the actual cart to push.
+Each child's height, floor contact and cloth position determine their cover.
+Release the handle to brake, push into the far dock, and wait for the right-
+hinged medicine hatch. Search together for one medicine and one salvage, then
+jump past the cabinet and raised lid. Original static cover/timing remains.
+Pause holds cart/hatch/work poses. Recovery resets unsolved progress; solved
+dock and spent/partial cache progress survive save/resume. Dock, cabinet and
+open lid remain physical obstacles with an exit route.
+
+Boy cloth preserves his head/costume. Softer sleeves/hands/collars, original
+painted ribbon, weighted stance/turn and grounded body/cloth recovery develop
+the performance. Actual warnings drive a guarded reach toward the crouched
+companion; safe close idle avoids repeated gestures. Hands follow moving cart
+grips with coherent release/pause. Existing interaction props now use mipmaps
+to reduce noisy small-screen sampling. Recorded full-push/release measurements
+are below; user artistic acceptance remains open.
+The route stays 79,200 units across five chapters; no added human playtime is
+claimed. Final native behavior is verified; human balance/artistic review remains.
+Survival, cover, finite inventory, shared work, the physical mill and two-child
+woods footbridge remain the existing baseline. AAA quality remains a target.
+
+New boy-cloth and trolley-parts ImageGen atlases are present, each actual
+1254x1254 RGBA with alpha. Boy jacket/sleeve/trouser materials preserve the
+established head and identity. Cart chassis, canvas, wheel, dock and separate
+supply cabinet/lid remain independent parts. Raw pixels and exact provenance
+prompts/source paths are retained; native board/motion evidence is below.
+
+ISOLATED BUILD
+Use Godot 4.6 Standard to open project.godot and press F5. Editor play needs no
+export templates or Python. From the repository root after runtime freeze:
+  python game/tools/setup_godot.py
+  python game/tools/build_v043.py export
+  python game/tools/build_v043.py test all
+  python game/tools/build_v043.py test capture
+  python game/tools/build_v043.py verify
+
+Outputs stay under build/v0.4.3 and evidence/v043. Earlier outputs are untouched.
+Export temporarily selects portable Windows templates/product metadata, then
+restores the preset byte for byte. Identity hashes runtime source, assets and
+UID sidecars. Final checks must match the exact executable and unchanged source.
+
+New required flags are --trolley-checks and --performance-checks, producing
+trolley_checks.json and performance_checks.json. Retained functional suites,
+continuous traversal and separate source animation remain required. The source
+animation fixture overlaps baseline checks and is outside the native total.
+The ordinary performance suite passed 19. The performance recording passed 22:
+its 19 ordinary checks plus 3 whole-push/release render checks. These scopes
+overlap and are not added together.
+
+CAPTURES AND PREVIEWS
+--capture-v043 retains the earlier 16 views and adds:
+  17_trolley_cover.png
+  18_trolley_dock.png
+  19_trolley_reunion.png
+All 19 fresh native 4K PNGs passed. Fresh sluice_capture.json and
+trolley_capture.json both confirm their own three sequence states. Incomplete
+state reports fail the capture operation immediately. TROLLEY_PLAYTEST.cmd adds the -- --trolley-preview rehearsal;
+sluice, mill, canal and freight launchers remain included.
+Playable previews retain audio and pause on focus loss while their smoke-mode
+save guard prevents campaign writes.
+
+RECORD AND REVIEW
+Install requirements-dev.txt for the Python image/movie tools. From repo root:
+  python game/tools/build_v043.py test trolley-playthrough performance-playthrough
+  python game/tools/make_review_v043.py board
+  python game/tools/make_review_v043.py trolley
+  python game/tools/make_review_v043.py performance
+  python game/tools/build_v043.py package
+
+Each recording uses one native check flag and its matching record flag at 30fps:
+  --trolley-checks --record-trolley -> trolley_motion_frames/%05d.jpg
+  --performance-checks --record-performance -> performance_motion_frames/%05d.jpg
+Known numeric JPGs in that scenario's frame folder are cleared before recording.
+Fresh report/capture/frame hashes bind outputs to their invocation. Review
+rejects missing, stale or modified frames. It requires exact 30fps ranges,
+full FFmpeg decode, independent frame count/duration and executable bindings.
+
+The review helper can encode either new movie independently. movies encodes
+these two new reviews; all also composes the board. Earlier craft/sluice movies
+need not be re-recorded. Verified media (1440x810, 30fps, silent, full decode/count):
+  V043_PLAYABLE_REVIEW.jpg (nine views from 19 verified native 4K captures)
+  WTSC_Trolley_Playthrough_v043.mp4: 530frames/17.6667s
+  WTSC_Character_Performance_Review_v043.mp4: 522frames/17.4s
+  trolley_movie_validation.json and performance_movie_validation.json
+
+Across 180 recorded push frames, forearm/face clearance was at least 9.941px.
+159 settled live-grip frames had maximum contact error 0.484px. Across 45 release
+frames clearance was at least 23.153px and maximum shoulder step 5.694px. These
+are measurements of this bounded render-time fixture.
+
+Movies are silent, explicitly labelled fixture reviews. Trolley success starts
+from one near-bank setup, then uses continuous crouching, held push, slope,
+dock, reunion and finite search. Refusal/exposure/pause/save fixtures are
+separate. Performance stages stance/turn, actual warning, cold and physical
+cart contact; preparation is excluded. These are distinct from uninterrupted
+full-campaign navigation and artistic acceptance.
+The completed five-chapter traversal and separate 27/27 source fixture are under
+evidence/v043/release_final/traverse and animation-checks.
+
+PORTABLE SOURCE
+The editable ZIP keeps project.godot at its root. Its archive-only preset leaves
+custom templates empty and sets v0.4.3 output/version metadata, with before/after
+hashes declared. Use python tools/build_v043.py ... in that flattened layout.
+Docs/licenses and original assets/source receipts remain included. Manual
+exports need matching Godot 4.6 templates installed through Godot.
+Downloaded engines, import caches and redundant frames stay outside source ZIPs.
+
+Verify writes no delivery files. Package writes separate Windows/source ZIPs,
+DELIVERY_MANIFEST_v043.json and artifact hashes after all required checks pass.
+Packaging rejects optional review media with stale identity, file hashes or native invocation bindings.
+Technical validation,
+normal-speed craft review, human playtesting and user artistic acceptance remain
+distinct; performance, world craft, sound and balance remain active work.
+
+REMAINING POLISH
+At school checkpoint x=10900, respawning beside the dock can cause about 34px
+of collision correction. Both children can still exit; this small position pop
+remains development polish. Human balancing, artistic acceptance and the AAA
+production target remain open.

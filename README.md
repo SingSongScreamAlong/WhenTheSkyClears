@@ -4,17 +4,19 @@ A painted, side-scrolling survival game about two children holding on to each ot
 
 Guide the older child, keep her companion close, and find shelter for both. Environmental problems and survival decisions shape the route: climb a machine to set it moving, find a dry way above a listening post, or save a scarce piece of salvage and cross cold water quietly. Food, warmth, medicine, and salvage are finite. Low cover requires crouching; exposed crossings require timing. Shared lifting, searching, repairs, and rest take time while the world keeps moving.
 
-![Development 0.4.2 gameplay review](game/evidence/v042/V042_PLAYABLE_REVIEW.jpg)
+![Development 0.4.3 gameplay review](game/evidence/v043/V043_PLAYABLE_REVIEW.jpg)
 
 ## Play
 
-Download the verified [v0.4.2 Windows ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.2/When_The_Sky_Clears_Windows_v0.4.2.zip) or [editable-source ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.2/When_The_Sky_Clears_Editable_Source_v0.4.2.zip). Extract a Windows package and run **When the Sky Clears.exe**; standalone play needs neither Godot nor Python. Source opens in Godot 4.6 Standard. The [v0.4.1 release](docs/releases/v0.4.1.md) remains preserved. The earlier [v0.4.0 Windows ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.0/When_The_Sky_Clears_Windows_v0.4.0.zip) and [source ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.0/When_The_Sky_Clears_Editable_Source_v0.4.0.zip) remain available.
+Download the verified [v0.4.3 Windows ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.3/When_The_Sky_Clears_Windows_v0.4.3.zip) or [editable-source ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.3/When_The_Sky_Clears_Editable_Source_v0.4.3.zip). Extract a Windows package and run **When the Sky Clears.exe**; standalone play needs neither Godot nor Python. Source opens in Godot 4.6 Standard. The [v0.4.2](docs/releases/v0.4.2.md) and [v0.4.1](docs/releases/v0.4.1.md) releases remain preserved. The earlier [v0.4.0 Windows ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.0/When_The_Sky_Clears_Windows_v0.4.0.zip) and [source ZIP](https://github.com/SingSongScreamAlong/WhenTheSkyClears/releases/download/v0.4.0/When_The_Sky_Clears_Editable_Source_v0.4.0.zip) remain available.
 
 Use [`game/PLAY.cmd`](game/PLAY.cmd) to launch the full journey from a prepared checkout. [`game/MILL_PLAYTEST.cmd`](game/MILL_PLAYTEST.cmd) opens the mill directly in an isolated, unsaved playtest (`-- --mill-preview`). [`game/FREIGHT_CROSSING.cmd`](game/FREIGHT_CROSSING.cmd) opens a separate freight rehearsal (`-- --freight-crossing`) combining supply searches, shelter, stealth, traversal, and shared work. Its own save keeps the main journey intact. Normal campaign progress uses `journey_v4.json` in the separate `WhenTheSkyClears/v040` Godot user-data directory; earlier saves are preserved.
 
 [`game/CANAL_PLAYTEST.cmd`](game/CANAL_PLAYTEST.cmd) (`-- --canal-preview`) starts an isolated, unsaved canal approach with no salvage. Search the existing tool roll before choosing between the pump and raised route. The full campaign remains compatible with v0.4.0 saves.
 
 [`game/SLUICE_PLAYTEST.cmd`](game/SLUICE_PLAYTEST.cmd) (`-- --sluice-preview`) opens the new woods footbridge as an isolated, unsaved rehearsal. It is included in the v0.4.2 Windows package.
+
+[`game/TROLLEY_PLAYTEST.cmd`](game/TROLLEY_PLAYTEST.cmd) (`-- --trolley-preview`) opens the new school handcart rehearsal from a prepared v0.4.3 checkout. The launcher is included in the v0.4.3 Windows package. Mill, canal, sluice and trolley previews retain sound, pause on focus loss and keep campaign saves untouched.
 
 **On macOS:** install Godot 4.6 stable Standard, import `game/project.godot`, and run with F5. Python, .NET, Windows executables, and external runtime asset downloads are unnecessary for editor play. See [macOS setup and verification limits](docs/MACOS.md); a Mac runtime test is not claimed here.
 
@@ -27,7 +29,7 @@ The current build uses Godot's Vulkan Mobile renderer. The source checkout conta
 | Shift | Run |
 | S / Down | Crouch |
 | Hold E | Search, work, or rest |
-| Hold E + move against a crate | Push |
+| Hold E + move against a crate or cart | Push |
 | Q | Ask the companion to wait low / call him |
 | H | Use medicine |
 | Tab | Pack and objective |
@@ -36,21 +38,19 @@ The current build uses Godot's Vulkan Mobile renderer. The source checkout conta
 
 Controller: left stick or D-pad to move, A to jump, B to crouch, hold X to work, Y to wait/call, RB to run, Back for the pack, and Start to pause.
 
-## Development pass 0.4.2
+## Development pass 0.4.3
 
-The new optional woods puzzle asks both children to operate a real counterweighted footbridge. Bring the boy onto the near cradle, ask him to wait with **Q**, cross after the span settles, and step onto the far ratchet. His weight holds the bridge while the other child crosses; the ratchet then lets him follow. Calling too soon releases the cradle and the bridge returns above the safe lower road. The keeper's medicine is finite and gated by the actual latch. This encounter uses the existing woods route; the five-chapter journey remains **79,200 world units**.
+The school now has an optional moving shelter: a real handcart with a canvas screen, rotating wheels, parking brake, dock and hinged medicine hatch. Keep both children crouched beneath its cloth and **hold E while moving against the cart**. Coverage is checked for each child's actual position, height and floor contact. Release the handle to brake; push into the far dock to catch its ratchet and open the physical lid. Bring both children to search **one medicine and one salvage**, then jump past the cabinet and raised lid. The original static-cover and timed route remains available.
 
-The girl now has a dedicated painted coat and sleeve/boot atlas, preserving her established face, hair and blue ribbon. Work has distinct poses for pumping, bracing, clearing, searching, shelter and balancing. Both children's hands follow the actual moving pump grips; pressure-cradle balance responds to physical contact and releases when a child walks away. Turn follow-through, landing anticipation, cold hands and quiet care develop their performance between hazards. The native work fixture measured maximum moving-grip errors of 1.091 pixels for the girl and 1.045 for the boy, with zero stationary body drift during that fixture. The staged normal-speed review is linked below; artistic acceptance remains separate.
+Normal close now stops active audio, releases its streams and allows a short asynchronous drain before the engine exits. The cart, hatch and child poses hold during pause. Recovery resets an unsolved cart; a solved dock and spent/partial cache follow the campaign's saved progress. The right-hinged lid, dock stop and cabinet remain real obstacles with an actual exit route. The native trolley checks exercise physical pushing, cover, pause, recovery, persistence and exit.
 
-Logging gates now lift gradually with their collision bodies, ropes and opposed counterweights. A released gate arrests above a child beneath it. Painted pressure cradles, pulleys, timber supports and ratchets share the mechanism's state. Generic barriers use timber slats, iron straps and guides; nearby grass responds to the children. The tent's painted material clarity remains the benchmark for faces, cloth, props and terrain.
+The boy gains dedicated painted jacket, sleeve and trouser material while retaining his established face, silhouette and costume. Sleeves, hands and collars use softer contours; the girl's ribbon reuses its original painted detail. Crouch/rise and turn poses carry weight, while feet stay grounded and body/cloth settle through recovery. Actual warnings drive a protective reach toward the crouched companion; quiet safe idle avoids repeating that gesture. The cart grip drives the pushing hands, and released or paused contact retains a coherent pose. Existing interaction-prop mipmaps now improve their appearance at small screen sizes.
 
-The established journey runs from the village through woods, a camp and railway station, a flooded school, and an ash garden. Woods and school forks offer cold quiet water, a shared salvage-powered pump, or a secured upper climb. Eighteen timed hazard lanes include two sound-sensitive listening posts. Food, salvage and medicine are finite; shared work, repairs and rest demand time and proximity. The physical mill still connects its bridge, fence, breakaway wheel, tether and gate. Its rolling wheel can hurt a child left ahead of it.
+The established **79,200-unit, five-chapter journey** remains: village, woods, camp/railway, flooded school and ash garden. Food, warmth, medicine and salvage remain finite. Route choices, low cover, timed listening lanes, shelter and shared work still demand protection for both children. The earlier woods footbridge needs one child on its cradle while the other catches the far ratchet; the mill's breakaway wheel can hurt a child left ahead of it.
 
-This pass retains the v0.4.1 painted supply props, partial cache contents, animated pump and draining sluice, regional staging, mill feedback, planted-foot movement, and pause/interruption rules. The main campaign remains compatible with v0.4.0 saves. Authored interactive situations and the player's decisions drive the journey.
+The [v0.4.3 notes](docs/releases/v0.4.3.md) and [development instructions](game/DEVELOPMENT_v0.4.3.txt) describe the implementation. The image above selects nine views from **19 verified native 4K captures**. The labelled [character performance](game/evidence/v043/WTSC_Character_Performance_Review_v043.mp4) and [trolley sequence](game/evidence/v043/WTSC_Trolley_Playthrough_v043.mp4) movies now bind to the frozen export. Final native verification passed; the prior [v0.4.2 release](docs/releases/v0.4.2.md) remains preserved.
 
-The [v0.4.2 notes](docs/releases/v0.4.2.md) and [development instructions](game/DEVELOPMENT_v0.4.2.txt) describe the implementation. The image above selects nine views from **16 verified native 4K captures**, including the actual wait/crossing/reunion sequence. The [character craft review](game/evidence/v042/WTSC_Character_Craft_Review_v042.mp4) and [sluice sequence](game/evidence/v042/WTSC_Sluice_Playthrough_v042.mp4) are labelled, silent native footage. The [earlier art comparison](game/evidence/v040/ART_READABILITY_BEFORE_AFTER.jpg), original paintings and exact ImageGen prompts remain preserved.
-
-This is an evolving development game. AAA quality remains a production target; bespoke acting, animation transitions, world craft, sound design, human balancing and user artistic acceptance remain active work.
+AAA quality remains a production target. Bespoke acting, animation transitions, world craft, sound design, human balancing and user artistic acceptance remain active work. Original paintings and exact generation prompts stay preserved.
 
 ## Edit and build
 
@@ -61,10 +61,10 @@ Editor play needs no export templates. To build the Windows package with the por
 
 ```sh
 python game/tools/setup_godot.py
-python game/tools/build_v042.py export
+python game/tools/build_v043.py export
 ```
 
-The setup helper downloads the official editor and Windows export templates and checks their recorded SHA-512 values. The export helper temporarily selects those portable templates and v0.4.2 product metadata, restores the checked-in preset byte for byte, then records the source and executable identity. Python is needed for development helpers, not for the game itself. Downloaded engines and generated import caches are not committed.
+The setup helper downloads the official editor and Windows export templates and checks their recorded SHA-512 values. The export helper temporarily selects those portable templates and v0.4.3 product metadata, restores the checked-in preset byte for byte, then records the source and executable identity. Python is needed for development helpers, not for the game itself. Downloaded engines and generated import caches are not committed.
 
 For manual editor or command-line exports, install matching Godot 4.6 export templates through the editor. The checked-in preset keeps its custom-template fields empty. Example commands with `godot` pointing to your editor:
 
@@ -91,26 +91,27 @@ Create the output directory before a manual export. See the [repository guide](d
 
 ## Verification
 
-The v0.4.2 executable passed **431 native functional checks across 14 suites**, including two-child footbridge cooperation, rendered work contacts and pressure-gate physics. Its identity freezes **157 runtime files**. All **16 fresh native 3840 × 2160 captures** passed with a successful wait/crossing/reunion state report. A separate **27/27 source animation fixture** passed against the frozen source and is excluded from that native total. Continuous traversal completed **all five chapters in 730.45 simulated seconds**, with **one checkpoint recovery**, final health 100 and no failure. This is an automated route result, not measured human playtime.
+The final v0.4.3 executable passed **481 native functional checks across 16 suites**. A separate **27/27 source animation fixture** passed against the frozen source and stays outside that total. The [export identity](game/evidence/v043/EXPORT_IDENTITY.json) records **169 runtime files**. Continuous traversal completed **all five chapters in 730.4167 simulated seconds**, with **one checkpoint recovery**, final health 100 and no failure. Simulated traversal time is not measured human playtime.
 
-Run source scenarios into separate evidence tags:
+The trolley and performance checks exercise independent child exposure, held physical pushing, parking, dock/hatch collision, pause, save/recovery, guarded acting and moving hand contact. The performance recording passes 22 checks: its 19 ordinary checks plus 3 over the complete rendered push/release. These scopes overlap and are not added together.
+
+Run source diagnostics into separate tags:
 
 ```sh
-python game/tools/build_v042.py test sluice-checks --source --tag source_sluice
-python game/tools/build_v042.py test craft-checks --source --tag source_craft
-python game/tools/build_v042.py test world-craft-checks --source --tag source_world
+python game/tools/build_v043.py test trolley-checks --source --tag source_trolley
+python game/tools/build_v043.py test performance-checks --source --tag source_performance
 ```
 
-[`build_v042.py`](game/tools/build_v042.py) provides independent `export`, `test`, `verify` and `package` operations. After export, run `test all`, then `test capture`; `verify` writes nothing, and `package` writes separate v0.4.2 ZIPs. Source and executable hashes, UID sidecars, fresh report/capture hashes and per-frame recording inventories keep results tied to their own invocation. The separate source animation fixture overlaps baseline checks and stays outside the native functional total.
+[`build_v043.py`](game/tools/build_v043.py) provides independent `export`, `test`, `verify` and `package` operations. After runtime freeze/export, run `test all` and `test capture`; `verify` writes nothing, and `package` writes separate v0.4.3 ZIPs. The source animation fixture overlaps baseline movement checks and stays outside the native total. All runtime assets and UID sidecars belong to the frozen source identity.
 
-The silent [craft movie](game/evidence/v042/WTSC_Character_Craft_Review_v042.mp4) passed full decode and exact frame-count validation at **1440 × 810, 30 fps, 686 frames / 22.8667 seconds**. The [sluice movie](game/evidence/v042/WTSC_Sluice_Playthrough_v042.mp4) passed the same checks at **313 frames / 10.4333 seconds**. Their [craft](game/evidence/v042/craft_movie_validation.json) and [sluice](game/evidence/v042/sluice_movie_validation.json) records bind every source frame and invocation to the exact native executable. The craft study stages separate acting situations; the sluice uses an authored starting fixture with earlier hazards disabled, then native input and physical contacts for the successful sequence. Targeted fixtures, staged acting, uninterrupted campaign navigation and human playtesting have different scopes.
+All **19 fresh native 3840 × 2160 captures** passed, including successful sluice and trolley sequence reports. The silent [performance movie](game/evidence/v043/WTSC_Character_Performance_Review_v043.mp4) passed full decode at **1440 × 810 / 30 fps / 522 frames / 17.4 seconds**; the [trolley movie](game/evidence/v043/WTSC_Trolley_Playthrough_v043.mp4) passed at **530 frames / 17.6667 seconds**, with the same size/rate. Their [performance](game/evidence/v043/performance_movie_validation.json) and [trolley](game/evidence/v043/trolley_movie_validation.json) records bind every source frame and invocation to the exact executable. The performance recording also passes three render-time checks over the complete push/release. Both are labelled bounded fixtures; setup and preparation are excluded. Targeted encounters, staged acting, continuous navigation and human playtesting have different scopes.
 
-The preserved [v0.4.1 manifest](game/evidence/v041/DELIVERY_MANIFEST_v041.json) records **386 native functional checks**, a separate **27-check source animation fixture**, **12 fresh native 4K captures**, and all five chapters completed in **730.45 simulated seconds with one checkpoint recovery**. Its silent [mill movie](game/evidence/v041/WTSC_Mill_Playthrough_v041.mp4) fully decoded at 1440 × 810, 30 fps and 540 frames / 18 seconds. Those results belong to v0.4.1, and the simulated traversal time is not measured human playtime. The earlier [v0.4.0 evidence](game/evidence/v040/DELIVERY_MANIFEST_v040.json) and packages remain available.
+The preserved [v0.4.2 manifest](game/evidence/v042/DELIVERY_MANIFEST_v042.json) records **431 native functional checks**, a separate **27/27 source animation fixture**, **157 runtime files**, **16 fresh native 4K captures**, and all five chapters completed in **730.45 simulated seconds with one checkpoint recovery**, final health 100 and no failure. Its silent [craft](game/evidence/v042/WTSC_Character_Craft_Review_v042.mp4) and [sluice](game/evidence/v042/WTSC_Sluice_Playthrough_v042.mp4) movies passed full decode at 1440 × 810 / 30 fps, respectively 686 and 313 frames. These results belong to v0.4.2, and simulated traversal time is not measured human playtime. [v0.4.1](docs/releases/v0.4.1.md) and [v0.4.0](docs/releases/v0.4.0.md) remain available.
 
 ## Artwork and licenses
 
 See [asset sources and provenance](docs/ASSET_SOURCES.md). Runtime assets retain their available source receipts and third-party licenses. Kenney footsteps are CC0; bundled fonts retain their SIL Open Font Licenses; Godot is MIT licensed. Quaternius models and animation were acquired as development references; the raw vendor archives and unused 3D reference libraries are not redistributed as part of the playable game's source tree.
 
-Generated paintings include their recorded prompts and provenance beside the assets, including the [new girl clothing atlas](game/assets/characters/girl_cloth_PROVENANCE_v042.json), [counterweight components](game/assets/props/Counterweight_Parts_PROVENANCE_v042.json), [six-prop interaction atlas](game/assets/props/Interaction_Props_PROVENANCE_v041.json), [canal layer](game/assets/environments/Canal_PROVENANCE_v040.txt), [mill background](game/assets/environments/Mill_Background_PROVENANCE_v040.txt), [separate mill parts](game/assets/props/Mill_Parts_PROVENANCE_v040.txt), [railway layer](game/assets/environments/Rail_Yard_PROVENANCE_v030.txt), and [survival prop atlas](game/assets/props/PROVENANCE_v020.txt).
+Generated paintings include their recorded prompts and provenance beside the assets, including the [new boy cloth](game/assets/characters/boy_cloth_v043.provenance.json), [trolley parts](game/assets/props/Trolley_Parts_v043.provenance.json), [girl clothing atlas](game/assets/characters/girl_cloth_PROVENANCE_v042.json), [counterweight components](game/assets/props/Counterweight_Parts_PROVENANCE_v042.json), [six-prop interaction atlas](game/assets/props/Interaction_Props_PROVENANCE_v041.json), [canal layer](game/assets/environments/Canal_PROVENANCE_v040.txt), [mill background](game/assets/environments/Mill_Background_PROVENANCE_v040.txt), [separate mill parts](game/assets/props/Mill_Parts_PROVENANCE_v040.txt), [railway layer](game/assets/environments/Rail_Yard_PROVENANCE_v030.txt), and [survival prop atlas](game/assets/props/PROVENANCE_v020.txt).
 
 No blanket open-source license is granted for this repository. Rights to original game code, story, and artwork remain with their owner; third-party materials retain their own license terms.
